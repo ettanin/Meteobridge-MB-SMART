@@ -22,6 +22,10 @@ feel free to modify and include your own credit alongside to acknowledge your wo
 
 sample credit is all that is required  "Original CSS/SVG/PHP scripts by weather34.com © 2015-2019"
 
+# This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+
+
 # Screenshot 
 <p align="center">
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1556612213/mb-rrw_si0hhk.png" width="550" title="weather34 meteobridge weatherflow beta template ">
