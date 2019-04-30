@@ -12,7 +12,7 @@ in the master version maintained by @lightmaster in the future.
 1.this version uses a reworked menu and slimmer code 
 
 2.this version uses a new jquery library for pop up moduels and charts offering a 
-a better user experience when using mobile devices in landscape view.
+better user experience when using mobile devices in landscape view.
 the new library is called Lity and is ultra-lightweight .more info https://sorgalla.com/lity/
 
 3.all popup modules and scripts have been changed to use new library , thus meaning it is not
