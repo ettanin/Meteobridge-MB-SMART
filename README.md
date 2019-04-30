@@ -7,9 +7,17 @@ mode on mobile devices.
 important to note this is a beta version and will not recieve frequent changes ,some of these scripts may appear
 in the master version maintained by @lightmaster in the future.
 
+# What is different? 
+1.this version uses a reworked menu and slimmer code 
+2.this version uses a new jquery library for pop up moduels and charts offering a 
+a better user experience when using mobile devices in landscape view.
+the new library is called Lity and is ultra-lightweight .more info https://sorgalla.com/lity/
+3.all popup modules and scripts have been changed to use new library , thus meaning it is not
+backwards compatible with any other versions from the master release maintained by @lightmaster at https://github.com/weather34/Meteobridge-Weather34-Template so do not mix and match !
+
 # Credits must be retained in pop ups
 widely noticed credits are blatantly removed in another version ,not sure why this is an issue but it is what is
-and I can only kindly ask the please retain credits in pop ups where CSS used, SVG scripts are used or PHP scripts are used. 
+and I can only kindly ask "please retain credits" in pop ups where CSS is used,SVG scripts are used or PHP scripts are used. 
 feel free to modify and include your own credit alongside to acknowledge your work and input.
 
 sample credit is all that is required  "Original CSS/SVG/PHP scripts by weather34.com © 2015-2019"
