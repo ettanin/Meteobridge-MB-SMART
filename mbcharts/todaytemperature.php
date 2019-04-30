@@ -199,7 +199,7 @@
     </script>
      <link rel="stylesheet" href="weather34chartstyle.css?ver=8.0">
 <body>
-<div class="weather34darkbrowser" url="<?php echo $stationlocation;?> Temperature/Dewpoint Recorded (°<?php echo $tempunit ;?>) <?php echo date('D F jS Y') ;?>"></div>
+<div class="weather34darkbrowser" url="Temperature/Dewpoint Recorded (°<?php echo $tempunit ;?>) <?php echo date('D F jS Y') ;?>"></div>
 <div style="width:auto;background:0;padding:0px;margin-left:5px;font-size: 12px;border-radius:3px;">
 <div id="chartContainer" class="chartContainer"></div></div>
 <div class="weather34browser-footer">
