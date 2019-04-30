@@ -1,12 +1,12 @@
 #Settings
 settings1.php
 
-#personal Weather Data
+# Historical Data
 mbcharts/*.csv
 mbcharts/*/*.csv
 jsondata/*.txt
 chartswudata/*
-#demodata/*
+demodata/*
 mbridge/MBrealtimeupload.txt
 
 #Ignore all backup files
