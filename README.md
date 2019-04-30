@@ -7,6 +7,8 @@ mode on mobile devices.
 important to note this is a beta version and will not recieve frequent changes ,some of these scripts may appear
 in the master version maintained by @lightmaster in the future.
 
-# Credits must be reatained in pop ups
+# Credits must be retained in pop ups
 widely noticed credits are blatantly removed in another version ,not sure why this is an issue but it is what is
 and I can only kindly ask retains credits in pop ups. 
+
+sample credit is all that is required  "Original CSS/SVG/PHP scripts by weather34.com © 2015-2019"
