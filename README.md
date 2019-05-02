@@ -18,6 +18,10 @@ the new library is called Lity and is ultra-lightweight .more info https://sorga
 3.all popup modules and scripts have been changed to use new library , thus meaning it is not
 backwards compatible with any other versions from the master release maintained by @lightmaster at https://github.com/weather34/Meteobridge-Weather34-Template so do not mix and match !
 
+4.this version uses a new canvasJs updated library 2.3.1GA 
+
+5.this version uses a responsive design for mobiles when viewing charts .
+
 # Credits must be retained in pop ups
 widely noticed credits are blatantly removed in another version ,not sure why this is an issue but it is what is
 and I can only kindly ask "please retain credits" in pop ups where CSS is used,SVG scripts are used or PHP scripts are used. 
