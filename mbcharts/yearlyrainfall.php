@@ -134,7 +134,7 @@
 		lineThickness: 1,		
 		gridThickness: 1,
 		gridDashType: "dot",
-		interval:<?php echo $interval ;?>,		
+		interval:'auto',		
         includeZero: false,
 		gridColor: "#aaa",
 		labelFontSize: 11,
