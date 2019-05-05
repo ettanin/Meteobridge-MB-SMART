@@ -4,8 +4,8 @@ reworked pop up scripts using new library , offers better use for mobile devices
 
 *note 90% of popups now use the new pop up script for mobile use as of 5th May 2019.
 
-# This is a BETA version 
-important to note this is a beta version and will not recieve frequent changes ,some of these scripts may appear
+# This is a BETA version 5th May 2019
+important to note this is a beta version some of these scripts should appear
 in the master version maintained by @lightmaster in the future.
 
 # What is different? 
