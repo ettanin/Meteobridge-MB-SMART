@@ -8,7 +8,7 @@ reworked pop up scripts using new library , offers better use for mobile devices
 important to note this is a beta version some of these scripts should appear
 in the master version maintained by @lightmaster in the future.
 
-# What is different? 
+# What is different? Its optimized for mobile use many new scripts..
 1.this version uses a reworked menu and slimmer code 
 
 2.this version uses a new jquery library for pop up moduels and charts offering a 
