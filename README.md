@@ -20,7 +20,7 @@ backwards compatible with any other versions from the master release maintained 
 
 4.this version uses a new canvasJs updated library 2.3.1GA 
 
-5.this version uses a responsive design for mobiles when viewing charts .
+5.this version uses a responsive design for mobiles when viewing charts and many pop up modules.
 
 # Credits must be retained in pop ups
 widely noticed credits are blatantly removed in another version ,not sure why this is an issue but it is what is
