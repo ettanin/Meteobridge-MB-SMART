@@ -1,8 +1,8 @@
-# Meteobridge-Beta Version MB-UB40-RRW
+# Meteobridge-Beta Version MB-UB40-RRW 5th MAY 2019
 reworked pop up scripts using new library , offers better use for mobile devices and using charts in landscape mode
 
-*note almanac data is disabled in mobile devices view , these need to be reworked to be able to use smoothly in landscape
-mode on mobile devices.
+
+*note 90% of popups now use the new pop up script for mobile use as of 5th May 2019.
 
 # This is a BETA version 
 important to note this is a beta version and will not recieve frequent changes ,some of these scripts may appear
