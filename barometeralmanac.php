@@ -30,20 +30,21 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
 
 .grid1 { 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(382px, 1fr));
   grid-gap: 5px;
     color:#f5f7fc;
   
   }
 
 .grid1 > articlegraph {
-  border: 1px solid #212428;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+   border: 1px solid rgba(245, 247, 252,.02);
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);
   padding:5px;
   font-size:0.8em;
   -webkit-border-radius:4px;
   border-radius:4px;
-  
+  background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
+  height:160px  
 }
 
   
@@ -65,7 +66,7 @@ smalluvunit{font-size:.7rem;font-family:Arial,Helvetica,system;}
 .hitempy{position:relative;background:rgba(61, 64, 66, 0.5);color:#aaa;font-size:12px;width:90px;padding:1px;-webit-border-radius:2px;border-radius:2px;
 margin-top:-20px;margin-left:92px;padding-left:3px;line-height:11px;font-size:10px}
 .actualt{position:relative;left:0px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
-padding:5px;font-family:Arial, Helvetica, sans-serif;width:120px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;border-bottom:2px solid rgba(56,56,60,1);
+padding:5px;font-family:Arial, Helvetica, sans-serif;width:120px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
 
 
@@ -214,14 +215,19 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 
     
   <article>
-  <div class=actualt>&nbsp;&nbsp &copy; Info</div>  
-  <div class="lotemp">
+   <div class=actualt>&nbsp;&nbsp &copy; Information</div>  
   <?php echo $info?> CSS/SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:9px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?>
-  </div></article> 
+  <br><br>
+  <div class="lotemp">
+  <?php echo $info?> 
+<a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank" style="font-size:9px;"> Charts rendered and compiled using <?php echo $creditschart ;?> </a></span>
+  </div>
+  
+  </article> 
   <main class="grid1">
   <articlegraph> 
   <div class=actualt>&nbsp;&nbsp Today Barometer Chart</div>  
-  <iframe  src="mbcharts/todaybarometersmall.php" frameborder="0" scrolling="no"></iframe>
+  <iframe  src="mbcharts/todaybarometersmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
    

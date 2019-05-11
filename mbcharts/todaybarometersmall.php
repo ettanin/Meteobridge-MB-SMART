@@ -96,10 +96,12 @@
 		toolTip:{
 			   fontStyle: "normal",
 			   cornerRadius: 4,
-			   backgroundColor: "#fff",			   
-			   toolTipContent: " x: {x} y: {y} <br/> name: {name}, label:{label}",
+			   backgroundColor: "rgba(40, 45, 52,1)",	
+			   fontColor: '#aaa',	
+			   fontSize: 11,	   
+			   toolTipContent: " x: {x} y: {y} <br/> name: {name}, label:{label} ",
 			   shared: true, 
- 		},
+ },
 		axisX: {
 			gridColor: "#333",
 		    labelFontSize: 6,
@@ -111,6 +113,15 @@
 			gridDashType: "dot",
    			intervalType: "hour",
 			minimum:0,
+			crosshair: {
+			enabled: true,
+			snapToDataPoint: true,
+			color: "#44a6b5",
+			labelFontColor: "#F8F8F8",
+			labelFontSize:6,
+			labelBackgroundColor: "#44a6b5",
+			}
+		
 			},
 			
 			
@@ -133,7 +144,16 @@
 		labelFormatter: function ( e ) {
         return e.value .toFixed(1) + " <?php echo $pressureunit ;?> " ;  
          },		 
-		 
+		 crosshair: {
+			enabled: true,
+			snapToDataPoint: true,
+			color: "#ff9350",
+			labelFontColor: "#fff",
+			labelFontSize:8,
+			labelBackgroundColor: "#d05f2d",
+			labelMaxWidth: 60,
+			valueFormatString: "##0.#",
+		}
       },
 	  
 	  legend:{

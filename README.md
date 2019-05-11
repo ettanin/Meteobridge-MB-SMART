@@ -1,40 +1,92 @@
-# Meteobridge-Beta Version MB-UB40-RRW 5th MAY 2019
-reworked pop up scripts using new library , offers better use for mobile devices and using charts in landscape mode
+# This repository is maintained William (aka lightmaster)
+
+William will be maintaining on behalf of Brian Underdown whilst he ventures off for the next 6-12 months
+support is available via the Github issues function or via email support@lightmaster.pw
 
 
-*note 90% of popups now use the new pop up script for mobile use as of 5th May 2019.
+# Meteobridge-Weather34-Template MB-UB40-RRW
+Github repository for the Meteobridge version of the original weather34 template 
+Weather Template for Meteobridge users only 
 
-# This is a BETA version 5th May 2019
-important to note this is a beta version some of these scripts should appear
-in the master version maintained by @lightmaster in the future.
+# Basic Setup guide 
+https://weather34.com/homeweatherstation/guides/setup.html
 
-# What is different? Its optimized for mobile use many new scripts..
-1.this version uses a reworked menu and slimmer code 
+# Myqsl Setup Guide
+https://weather34.com/homeweatherstation/guides/setupmeteobridge.html
 
-2.this version uses a new jquery library for pop up moduels and charts offering a 
-better user experience when using mobile devices in landscape view.
-the new library is called Lity and is ultra-lightweight .more info https://sorgalla.com/lity/
+# Weather34 Historic Timeline of design 2014-2019 
+https://weather34.com/homeweatherstation/weather34timeline/weather34timeline.html
 
-3.all popup modules and scripts have been changed to use new library , thus meaning it is not
-backwards compatible with any other versions from the master release maintained by @lightmaster at https://github.com/weather34/Meteobridge-Weather34-Template so do not mix and match !
+# Meteobridge Version Screenshot MB-UB40-RRW
+<p align="center">
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1553679424/weather34_meteobridge2019_bzq4sa.png" width="550" title="weather34 meteobridge template ">
+ 
+</p>
 
-4.this version uses a new canvasJs updated library 2.3.1GA 
+<p align="center">
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1557158225/almanacs_m5vmum.jpg" width="550" title="weather34 meteobridge alamanacs ">
+ 
+</p>
 
-5.this version uses a responsive design for mobiles when viewing charts and many pop up modules.
+# Thanks to the following sites which I have monitored for anomalies this helps due to different scenarios and hardware which is not always obvious when changes happen.ps my brain is stuck in metric :-)
 
-# Credits must be retained in pop ups
-widely noticed credits are blatantly removed in another version ,not sure why this is an issue but it is what is
-and I can only kindly ask "please retain credits" in pop ups where CSS is used,SVG scripts are used or PHP scripts are used. 
-feel free to modify and include your own credit alongside to acknowledge your work and input.
+Singapore Weather
 
-sample credit is all that is required  "Original CSS/SVG/PHP scripts by weather34.com © 2015-2019"
+Bath(UK) Weather
+
+Myrtle Beach WX
+
+Milehighweather
+
+Okawville WX
+
+Baxley, GA Weather Station
+
+Toulouse Meteo
+
+
+# Alternative versions 
+
+# Cumulus
+you can find the Cumulus version maintained by Ken True (Saratoga) at 
+https://github.com/ktrue/CU-HWS
+
+# Weewx
+you can find a Weewx version maintained by Ian Millard is also avaialble via 
+https://github.com/steepleian/WX-HWS
+
+# Weatherflow
+you can find a Weatherflow version not maintained but fully tested as of May 5th 2019 
+https://github.com/weather34/Weather34-Weatherflow
+
 
 # This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
 http://creativecommons.org/licenses/by-nc-nd/4.0/
 
+# Credits and thanks to the contributors who made this all possible since 2015.
 
-# Screenshot 
-<p align="center">
-  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1556612213/mb-rrw_si0hhk.png" width="550" title="weather34 meteobridge weatherflow beta template ">
+ Erik M Madsen for language idea and initial script
  
-
+ Paul @komoka weather in Canada for continous support and testing 
+ 
+ Josep for Spanish/Catalan language translation and for many ideas and refinements
+ 
+ Pascal Catte French translation and ideas fowarded 
+ 
+ Steve the developer of Cumulus for support and providing a platform to resolve issues 
+ 
+ Mats Ahlklo Swedish translation and his work on using Davis weatherlink 
+ 
+ Betejuice (Cumulus Forum) for providing a solution for meteor shower listings 
+ 
+ Ken True (Saratoga) for kindly granting permission allowing use of many scripts he developed which gave inspiration and ideas  though not used today it was the inspiration that allowed to do something more suited to the design. 
+ 
+ Eric Rechlin Special thanks for originally creating the theme switching and extensive work on metrics/non metrics
+ 
+ Boris at smartbedded (meteobridge) for ongoing support and upkeep of meteobridge 
+ 
+ Wim van der Kuil for the original meteobridge script (now offers Weather Display and other versions of template)
+ 
+ David St John at weatherflow for providing hardware for testing and his non bias logical views 
+ 
+ Paul Wilman , Tina Thomas, Vaggos , Chuck M , Aaron Gersztoff , Ian Millard, and many many more for continous constructive supportive feedback .. 

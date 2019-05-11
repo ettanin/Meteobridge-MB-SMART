@@ -95,11 +95,11 @@
 		toolTip:{
 			   fontStyle: "normal",
 			   cornerRadius: 4,
-			   backgroundColor: "#fff",			   
+			   backgroundColor: "rgba(40, 45, 52,1)",	
+			   fontColor: '#aaa',	
+			   fontSize: 11,	   
 			   toolTipContent: " x: {x} y: {y} <br/> name: {name}, label:{label} ",
 			   shared: true, 
-			   
-    
  },
 		axisX: {
 			gridColor: "#333",
@@ -142,7 +142,7 @@
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0) + " °" ;  
+        return e.value .toFixed(0);  
          },		 
 		crosshair: {
 			enabled: true,
@@ -151,7 +151,8 @@
 			labelFontColor: "#fff",
 			labelFontSize:8,
 			labelBackgroundColor: "#ff832f",
-			valueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			labelMaxWidth: 60,
+			valueFormatString: "#0.#",
 		}	 
       },
 	  
@@ -177,16 +178,7 @@
 			
 		},
 		{
-			type: "splineArea",
-			color:"#00A4B4",
-			markerSize:0,
-			showInLegend:false,
-			legendMarkerType: "circle",
-			lineThickness: 0,
-			markerType: "circle",
-			name:" DewPoint",
-			dataPoints: dataPoints2,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			
 			
 		}
 

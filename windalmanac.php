@@ -29,20 +29,21 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
 
 .grid1 { 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(382px, 1fr));
   grid-gap: 5px;
-    color:#f5f7fc;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
+    color:#f5f7fc;
   
   }
 
 .grid1 > articlegraph {
-  border: 1px solid #212428;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+   border: 1px solid rgba(245, 247, 252,.02);
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);
   padding:5px;
   font-size:0.8em;
   -webkit-border-radius:4px;
-  border-radius:4px;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
-  
+  border-radius:4px;
+  background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
+  height:160px  
 }
 
 
@@ -386,15 +387,20 @@ Max Recorded <br><blue><?php echo $weather["windamaxtime"];?></blue></div>
 
                                         </article> 
   <article>
-  <div class=actualt>&nbsp;&nbsp &copy; Info</div>  
-  <div class="lotemp">
+   <div class=actualt>&nbsp;&nbsp &copy; Information</div>  
   <?php echo $info?> CSS/SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:9px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?>
-  </div></article> 
+  <br><br>
+  <div class="lotemp">
+  <?php echo $info?> 
+<a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank" style="font-size:9px;"> Charts rendered and compiled using <?php echo $creditschart ;?> </a></span>
+  </div>
+  
+  </article> 
    
  
   <main class="grid1">
   <articlegraph> 
   <div class=actualt>&nbsp;&nbsp Today Wind Speed Chart</div>  
-  <iframe  src="mbcharts/todaywindspeedsmall.php" frameborder="0" scrolling="no"></iframe>
+  <iframe  src="mbcharts/todaywindspeedsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph></div></body>

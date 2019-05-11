@@ -66,11 +66,12 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather["temp_today_low"]     = $meteobridgeapi[28];
 	$weather["temp_avg15"]         = $meteobridgeapi[67];
 	$weather["temp_avg"]           = $meteobridgeapi[123]; // last 60 minutes
-	$weather["wind_speed_avg"]     = $meteobridgeapi[5];
+	$weather["wind_speed_avg"]     = $meteobridgeapi[5]; //Console's Average Wind Speed
 	$weather["wind_direction"]     = number_format($meteobridgeapi[7],0);
 	$weather["wind_direction_avg"] = number_format($meteobridgeapi[46],0);
-	$weather["wind_speed"]         = number_format($meteobridgeapi[5]);
-	$weather["wind_gust_speed"]    = $meteobridgeapi[6];
+	$weather["wind_speed"]         = number_format($meteobridgeapi[5]); // Also the Console's Average Wind Speed
+  $weather["wind_gust_10min"]    = $meteobridgeapi[40]; // Wind Speed Gust - Max speed of last 10 minutes
+	$weather["wind_gust_speed"]    = $meteobridgeapi[6]; // Instanteous Speed
 	$weather["wind_speed_bft"]     = $meteobridgeapi[12];
 	$weather["wind_speed_max"]     = $meteobridgeapi[30];	
 	$weather["wind_gust_speed_max"]= $meteobridgeapi[32];	
@@ -324,12 +325,12 @@ $weather["humidity_ydmintime"]=$humydmintime;
     $rainlasttoday = date("H:i", strtotime($originalDate26));
 	$originalDate27 = $meteobridgeapi[124];
     $rainlasttoday1 = date("jS", strtotime($originalDate27));
-	$weather["rainydmax"]		    = $meteobridgeapi[100]; //rain max yesterday
-	$weather["rainmmax"]		    = $meteobridgeapi[101]; //wind max month
-	$weather["rainmmaxtime"]		= $rainmmaxtime; //seconds	
-	$weather["rainymax"]		    = $meteobridgeapi[103]; //wind max year
-	$weather["rainymaxtime"]		= $rainymaxtime; //seconds
-	
+	$weather["rainydmax"]       = $meteobridgeapi[100]; //rain max yesterday
+	$weather["rainmmax"]        = $meteobridgeapi[101]; //wind max month
+	$weather["rainmmaxtime"]    = $rainmmaxtime; //seconds	
+	$weather["rainymax"]        = $meteobridgeapi[103]; //wind max year
+	$weather["rainymaxtime"]    = $rainymaxtime; //seconds
+	$weather["rain_alltime"]    = $meteobridgeapi[151]; // Total rain, all years
 	
 	
 	//pressure	
@@ -544,7 +545,8 @@ if ($rainunit != $weather["rain_units"]) {
 		inTomm($weather, "rain_lasthour");
 		inTomm($weather, "rainymax");		
 		inTomm($weather, "rainmmax");
-		inTomm($weather, "rain_24hrs");		
+		inTomm($weather, "rain_24hrs");	
+    inTomm($weather, "rain_alltime");
 		$weather["rain_units"] = $rainunit;
 	}
 	else if ($rainunit == "in") {
@@ -556,7 +558,8 @@ if ($rainunit != $weather["rain_units"]) {
 		mmToin($weather, "rain_lasthour");
 		mmToin($weather, "rainymax");		
 		mmToin($weather, "rainmmax");
-		mmToin($weather, "rain_24hrs");				
+		mmToin($weather, "rain_24hrs");
+    mmToin($weather, "rain_alltime");
 		$weather["rain_units"] = $rainunit;
 	}
 }

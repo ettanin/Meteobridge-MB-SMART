@@ -72,5 +72,5 @@ var clockID;var yourTimeZoneFrom=<?php echo $UTC?>;var d=new Date();var weekdays
   .html(a);<?php if ($wuupdate >0) {
   echo 'setTimeout(stationcron,' . 1000*$wuupdate.')';}?>},
   contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
-  type:"GET",url:"<?php if ($chartsource =='wucharts'){echo 'jsondata/wuupdate.php';}?>"})}; 
+  type:"GET",url:"jsondata/wuupdate.php"})}; 
   </script>   
