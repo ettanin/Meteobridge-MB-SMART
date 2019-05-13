@@ -101,7 +101,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 <span class="yearpopup">  <a alt="almanac temperature" title="almanac temperature" href="tempalmanac.php" data-lity > <?php echo $chartinfo?> Almanac </a></span>
 <span class="yearpopup"> <a alt="Temperature charts" title="Temperature charts" href="temperaturechart.php" data-lity > <?php echo $menucharticonpage, ' Temperature';?> </a></span>
 <span class="monthpopup"> <a alt="Dewpoint charts" title="Dewpoint charts" href="dewpointchart.php" data-lity ><?php echo $menucharticonpage, ' Dewpoint' ;?> </a></span>
-<span class="todaypopup"> <a alt="today temperature" title="today temperature" href="<?php echo $chartsource ;?>/todaytemperature.php" data-lity >  <?php echo $menucharticonpage?> <?php echo $lang['Today']; ?> </a></span>
+<span class="todaypopup"> <a alt="today temperature" title="today temperature" href="todaytemperaturechart.php" data-lity >  <?php echo $menucharticonpage?> <?php echo $lang['Today']; ?> </a></span>
       </div>
 <span class='moduletitle'> <?php echo $lang['Temperature']; ?> (<valuetitleunit>&deg;<?php echo $weather["temp_units"] ;?></valuetitleunit>) </span><br /></span>
   <div id="temperature"></div><br></div>
@@ -128,8 +128,9 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 <div class="weather-container"><div class="weather-item"><div class="chartforecast">
 <span class="yearpopup">  <a alt="windspeed almanac" title="windspeed almanac" href="windalmanac.php" data-lity ><?php echo $chartinfo?> Almanac </a></span>
 <span class="yearpopup"> <a alt="windspeed charts" title="windspeed charts" href="windchart.php" data-lity > <?php echo $menucharticonpage, ' Wind-Speed';?> </a></span>
-<span class="todaypopup"> <a alt="today windspeed" title="today windspeed" href="<?php echo $chartsource ;?>/todaywindspeedgust.php" data-lity ><?php echo $menucharticonpage?> <?php echo $lang['Today']; ?> </a></span>
-<span class="todaypopup"> <a alt="today wind direction" title="today wind direction" href="<?php echo $chartsource ;?>/todaywinddirection.php" data-lity ><?php echo $menucharticonpage.' '.$lang['Winddirection'] ?></a></span>
+<span class="todaypopup"> <a alt="today windspeed" title="today windspeed" href="todaywindcharts.php" data-lity ><?php echo $menucharticonpage?> <?php echo $lang['Today']; ?> </a></span>
+
+
       </div>
   <span class='moduletitle'><?php echo $lang['Direction'];?> | <?php echo $lang['Windspeed'] ," (<valuetitleunit>",$weather["wind_units"];?></valuetitleunit>)</span><br />
          <div id="windspeed"></div></div>
@@ -137,7 +138,6 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   <div class="weather-item"><div class="chartforecast" >
   <span class="yearpopup">  <a alt="barometer almanac" title="barometer almanac" href="barometeralmanac.php" data-lity ><?php echo $chartinfo?> Almanac</a></span>
 <span class="yearpopup"> <a alt="Barometer charts" title="Barometer charts" href="barometerchart.php" data-lity > <?php echo $menucharticonpage, ' Barometer';?> </a></span>
-<span class="todaypopup"> <a alt="today barometer" title="today barometer" href="<?php echo $chartsource ;?>/todaybarometer.php" data-lity ><?php echo $menucharticonpage?> <?php echo $lang['Today']; ?></a></span>
       </div>
   <span class='moduletitle'><?php echo $lang['Barometer']," (<valuetitleunit>",$weather["barometer_units"]; ?></valuetitleunit>)</span><br />
          <div id="barometer"></div></div>
@@ -156,7 +156,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 <div class="weather-container"><div class="weather-item"><div class="chartforecast" >
 <span class="yearpopup">  <a alt="almanac rainfall" title="almanac rainfall" href="rainfallalmanac.php" data-lity ><?php echo $chartinfo?> Almanac </a></span>
 <span class="yearpopup"> <a alt="Rainfall charts" title="Rainfall charts" href="rainfallchart.php" data-lity > <?php echo $menucharticonpage, ' Rainfall';?> </a></span>
-<span class="todaypopup"> <a alt="today rainfall" title="today rainfall" href="<?php echo $chartsource ;?>/todayrainfall.php" data-lity ><?php echo $menucharticonpage?> <?php echo $lang['Today']; ?> </a></span>
+<span class="todaypopup"> <a alt="today rainfall" title="today rainfall" href="todayrainchart.php" data-lity ><?php echo $menucharticonpage?> <?php echo $lang['Today']; ?> </a></span>
       </div>
   <span class='moduletitle'><?php echo $lang['Rainfalltoday']," (<valuetitleunit>".$weather["rain_units"]?></valuetitleunit>)</span><br />
          <div id="rainfall"></div></div>        
