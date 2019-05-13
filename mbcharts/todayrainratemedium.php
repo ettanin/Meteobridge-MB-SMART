@@ -64,7 +64,7 @@
 			for (var i = 2; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData.length >1)
-					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[4]*<?php echo $conv;?>)});
+					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[10]*<?php echo $conv;?>)});
 			}
 		}
 		requestTempCsv();}function requestTempCsv(){}
@@ -124,7 +124,7 @@
 		titleFontSize: 6,
         titleWrap: false,
 		margin: 3,
-		interval:0.5,
+		interval:'auto',
 		lineThickness: 1,		
 		gridThickness: 0,	
 		gridDashType: "dot",	
@@ -191,21 +191,19 @@
 		data: [
 		{
 			
-			
-			
-		},
-		{
 			type: "column",
-			color:"#cd5245",
+			color:"#3b9cac",
 			markerSize:0,
 			showInLegend:false,			
-			axisYType: "secondary",
-			axisYIndex: 1,
 			lineThickness: 1,
 			markerType: "circle",
 			name:"Rain Rate",
-			dataPoints: dataPoints2,
+			dataPoints: dataPoints1,
 			yValueFormatString: "#0.#<?php echo $rainunit ;?>",
+			
+		},
+		{
+			
 			
 		}
 

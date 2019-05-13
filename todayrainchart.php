@@ -76,7 +76,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   
   
   <articlegraph> 
-  <div class=actualt>Today <blue>Rain Rate Periods <?php echo "<smalluvunit>",$rainunit ;?></smalluvunit></blue></div>  
+  <div class=actualt>Today <blue>Rain Rate <?php echo "<smalluvunit>",$rainunit ;?></smalluvunit></blue></div>  
   <iframe  src="mbcharts/todayrainratemedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 

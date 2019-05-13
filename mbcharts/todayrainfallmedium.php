@@ -124,7 +124,7 @@
 		titleFontSize: 6,
         titleWrap: false,
 		margin: 3,
-		interval:0.5,
+		interval:'auto',
 		lineThickness: 1,		
 		gridThickness: 0,	
 		gridDashType: "dot",	
