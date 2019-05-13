@@ -91,11 +91,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
    
   </articlegraph> 
   
-  <articlegraph> 
-  <div class=actualt>Today Wind Direction <blue><?php echo "<smalluvunit>Degrees";?></smalluvunit></span> </blue></div>  
-  <iframe  src="mbcharts/todaywinddirectionsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
-   
-  </articlegraph> 
+  
   <articlegraph> 
   <div class=actualt><?php echo date('M Y');?> <span style="color:#d35d4e"> Wind Speed <?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></span> | <blue>Average <smalluvunit><?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></blue></div>  
   <iframe  src="mbcharts/monthlywindspeedgustsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
@@ -105,6 +101,12 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   <articlegraph> 
   <div class=actualt><?php echo date('Y');?> <span style="color:#d35d4e"> Wind Speed <?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></span> | <blue>Average <smalluvunit><?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></blue></div>  
   <iframe  src="mbcharts/yearlywindspeedgustsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
+   
+  </articlegraph> 
+  
+   <articlegraph> 
+  <div class=actualt><?php echo date('Y', strtotime('last year'));?> <span style="color:#d35d4e"> Wind Speed <?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></span> | <blue>Average <smalluvunit><?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></blue></div>  
+  <iframe  src="mbcharts/yearlywindspeedgustprevious.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   

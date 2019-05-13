@@ -95,8 +95,8 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
    
   </articlegraph> 
    <articlegraph> 
-  <div class=actualt>2018 <blue>Rainfall <?php echo "<smalluvunit>",$rainunit ;?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/yearlyrainfallsmall2018.php" frameborder="0" scrolling="no" width="375px"></iframe>
+  <div class=actualt><?php echo date('Y', strtotime('last year'));?> <blue>Rainfall <?php echo "<smalluvunit>",$rainunit ;?></smalluvunit></blue></div>  
+  <iframe  src="mbcharts/yearlyrainfallprevious.php" frameborder="0" scrolling="no" width="375px"></iframe>
    
   </articlegraph> 
   
