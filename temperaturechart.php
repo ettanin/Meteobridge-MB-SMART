@@ -117,8 +117,8 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   </articlegraph> 
   
   <articlegraph> 
-  <div class=actualt>2018 Temp <span style="color:#ff9350">Max:<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></span> | <blue>Min:<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></blue></div>  
-  <iframe  src="mbcharts/yearlytemperaturesmall2018.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <div class=actualt><?php echo date('Y', strtotime('last year'));?> Temp <span style="color:#ff9350">Max:<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></span> | <blue>Min:<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></blue></div>  
+  <iframe  src="mbcharts/yearlytemperatureprevious.php" frameborder="0" scrolling="no" width="100%">No Data Avaialble</iframe>
    
   </articlegraph> 
   

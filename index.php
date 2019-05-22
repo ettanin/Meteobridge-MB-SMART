@@ -1,59 +1,12 @@
-<?php header('Content-type: text/html; charset=utf-8');error_reporting(0);
-function downloadfromgit($filename) {
-    if (!is_readable($filename) || filesize($filename) < 100) {
-        //Download $filename if it doesn't exist
-        $fileopen = fopen($filename, 'w');
-        $options  = array(
-            CURLOPT_FILE => $fileopen,
-            CURLOPT_TIMEOUT => 10,
-            CURLOPT_URL => 'https://raw.githubusercontent.com/lightmaster/Meteobridge-Weather34-Template/master/settings1.default.php'
-        );
-        $ch       = curl_init();
-        curl_setopt_array($ch, $options);
-        curl_exec($ch);
-        curl_close($ch);
-        $fstat = fstat($fileopen);
-        fclose($fileopen);
-        if (!file_exists($filename) || $fstat['size'] < 100) {
-            echo ($filename . " did not download properly, please visit <a href='https://raw.githubusercontent.com/lightmaster/Meteobridge-Weather34-Template/master/settings1.default.php' target='_blank'>https://raw.githubusercontent.com/lightmaster/Meteobridge-Weather34-Template/master/settings1.default.php</a>, right click anywhere on the page and choose to save the file. Then copy the file into the root of your website (where you downloaded the website files to on your server).<br/>");
-            die();
-        }
-    }
-}
-function loadSettings($file) {
-    if (basename($file) != 'settings1.default.php' && !file_exists($file)) {
-        return [];
-    } else if (basename($file) == 'settings1.default.php' && filesize($file) < 100) {
-        downloadfromgit($file);
-    }
-    require $file;
-    unset($file);
-    return get_defined_vars();
-}
-$s1d   = loadSettings('./settings1.default.php');
-$s1    = loadSettings('./settings1.php');
-$check = array_diff_key($s1d, $s1);
-if (!empty($check)) {
-    //check if dir is writable
-    if (!is_writable(".")) {
-        echo ("<p>Unable to write to the website's folder. Make sure the root of the website is writable by your webserver.<br/>If you're using Apache on linux, Apache should be running as user 'www-data' and group 'www-data'. If so, run these commands or adjust them for Apache's user:group <br/><br/><i>find . -type d -exec sudo chown www-data:www-data {} \; -exec sudo chmod 2775 {} \;</i> <br/><br/>and <br/><br/><i>find . -type f -exec sudo chown www-data:www-data {} \; -exec sudo chmod 664 {} \;</i> <br/><br/>from within the root of your website's folder, probably located in '/var/www/example.com/html/pws.'<br/><br/><br/>or, do yourself a huge favor and navigate into your 'html' folder and use these 3 commands to automatically set the permissions on all files and folders created inside it:<br/><br/><i>chmod g+s .</i><br/><br/><i>setfacl -d -m g::rwx .</i><br/><br/><i>setfacl -d -m o::rx .</i></p>");
-        die();
-    }
-    $s1   = array_merge($s1d, $s1);
-    $code = '<?php' . "\n";
-    foreach ($s1 as $var => $value) {
-        /// ${var} = "{value}";\n
-        $code .= '$' . $var . ' = ' . var_export($value, true) . ";\n";
-    }
-    file_put_contents('./settings1.php', $code);
-}
+<?php header('Content-type: text/html; charset=utf-8');error_reporting(0); 
+
 ####################################################################################################
 # HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2017-2018-2019                    			   #
 # CREATED FOR HOMEWEATHERSTATION TEMPLATE at                									   #
 #   https://weather34.com/homeweatherstation/index.html                                            #
 #  WEATHER STATION TEMPLATE 2017-2018-2019 Meteobridge.     									   #
-#  Weatherflow Meteobridge Version  April 2019  									               #
-#   https://github.com/weather34/Weather34-Weatherflow                                             #
+#  Meteobridge Version  Beta  May 2019 												               #
+#        https://github.com/weather34/Meteobridge-Beta               							   #
 ####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 include_once('livedata.php');include_once('common.php');include_once('settings1.php'); date_default_timezone_set($TZ);?>
@@ -197,7 +150,7 @@ if ($positionlastmodule=='eq.php') {echo ' <span class="yearpopup"><a alt="Earth
 if ($positionlastmodule=='airqualitymodule.php') {echo '<span class="yearpopup"><a alt="Earthquakes Worldwide" title="Earthquakes Worldwide" href="eqlist.php" data-lity>'. $chartinfo. " Worldwide Earthquakes </a></span>";}?>
 </div><span class='moduletitle'><?php echo $positionlastmoduletitle?></span></span><div id="dldata"></div>
 </div></div>
- <!--end outdoor data for homeweatherstation template-->
+<!--end outdoor data for homeweatherstation template-->
   <!--footer area for homeweatherstation template warning dont mess with this below this line unless you really know what you are doing-->
 <div class=weatherfooter-container><div class=weatherfooter-item> 
 <div class=hardwarelogo1>

@@ -1,42 +1,45 @@
 <?php
 
 	####################################################################################################
-	#	DATACHARTS by BRIAN UNDERDOWN 2017                                                      	   #
-	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at https://weather34.com/homeweatherstation/index.html #
+	#	WUDATACHARTS by BRIAN UNDERDOWN 2016                                                           #
+	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at http://weather34.com/homeweatherstation/index.html  #
 	# 	                                                                                               #
 	# 	built on CanvasJs  	                                                                           #
 	#   canvasJs.js is protected by CREATIVE COMMONS LICENCE BY-NC 3.0  	                           #
 	# 	free for non commercial use and credit must be left in tact . 	                               #
 	# 	                                                                                               #
-	# 	Weather Data is based on your PWS quality Stored								               #
+	# 	Weather Data is based on your PWS upload quality collected at Weather Underground 	           #
 	# 	                                                                                               #
-	# 	3rd General Release: updated : 4th Nov 2017  	                                      		   #
+	# 	Second General Release: 4th October 2016  	                                                   #
 	# 	                                                                                               #
-	#   https://www.weather34.com 	                                                                   #
+	#   http://www.weather34.com 	                                                                   #
 	####################################################################################################
-	include('chartslivedata.php');header('Content-type: text/html; charset=utf-8');
-	$weatherfile = date('Y', strtotime('last year'));
 
-	if ($tempunit == 'F') {
-	$conv = '(9 / 5) + 32';
-	} else {
-	$conv = '1';
-	}
+	include('chartslivedata.php');include('./chart_theme.php');header('Content-type: text/html; charset=utf-8');
+	$weatherfile = date('Y');
+
+  $conv = 1;
+	if ($windunit == 'mph') {$conv= '2.23694';}
+	else if ($windunit == 'm/s') {$conv= '1';}
+	else if ($windunit == 'km/h'){$conv= '3.6';}
+
+	//echo $conv;
 
 	$animationduration = '500';
-    echo '
+
+?>
+
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>DEWPOINT TEMP YEAR CHART</title>
+		<title>OUTDOOR WIND YEAR CHART</title>
 		<script src=../js/jquery.js></script>
 
-	';
-	?>
+
+
     <br>
     <script type="text/javascript">
-		// today temperature
         $(document).ready(function () {
 		var dataPoints1 = [];
 		var dataPoints2 = [];
@@ -51,11 +54,13 @@
 	function processData1(allText) {
 		var allLinesArray = allText.split('\n');
 		if(allLinesArray.length>0){
-			//hi
+
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
-				if ( rowData.length >7)
-					dataPoints1.push({label: rowData[0],y:parseFloat(rowData[3]*<?php echo $conv ;?>)});
+				if ( rowData.length >1)
+					dataPoints1.push({label: rowData[0],y:parseFloat(rowData[6]*<?php echo $conv;?>)});
+
+
 			}
 		}
 		requestTempCsv();}function requestTempCsv(){}
@@ -63,20 +68,22 @@
 	function processData2(allText) {
 		var allLinesArray = allText.split('\n');
 		if(allLinesArray.length>0){
-			//lo
+
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
-				if ( rowData.length >7)
-					dataPoints2.push({label: rowData[0],y:parseFloat(rowData[4]*<?php echo $conv ;?>)});
+				if ( rowData.length >1)
+					dataPoints2.push({label: rowData[0],y:parseFloat(rowData[7]*<?php echo $conv;?>)});
+					//parseFloat(rowData[13])});
 
 			}
 			drawChart(dataPoints1 , dataPoints2 );
 		}
 	}
 
-		function drawChart( dataPoints1 , dataPoints2 ) {
+
+	function drawChart( dataPoints1 , dataPoints2 ) {
 		var chart = new CanvasJS.Chart("chartContainer2", {
-		 backgroundColor: "rgba(40, 45, 52,.4)",
+		backgroundColor: "rgba(40, 45, 52,.4)",
 		 animationEnabled: false,
 		 margin: 0,
 
@@ -98,95 +105,94 @@
  },
 		axisX: {
 			gridColor: '#333',
-		    labelFontSize: 7,
+		    labelFontSize: 10,
 			labelFontColor: '#aaa',
-			lineThickness: 0.5,
+			lineThickness: 1,
 			gridThickness: 1,
-      gridDashType: "dot",
 			titleFontFamily: "arial",
 			labelFontFamily: "arial",
-			minimum:0,
-			interval:'auto',
-			intervalType:"day",
-			//xValueType: "dateTime",
+			minimum:-0.5,
+			gridDashType: "dot",
+			intervalType:"month",
+			xValueType: "dateTime",
 			crosshair: {
-        enabled: true,
-        snapToDataPoint: true,
-        color: '#44a6b5',
-        labelFontColor: "#fff",
-        labelFontSize:8,
-        labelBackgroundColor: "#44a6b5",
-      }
+			enabled: true,
+			snapToDataPoint: true,
+			color: '<?php echo $xcrosshaircolor;?>',
+			labelFontColor: "#F8F8F8",		
+			
+			labelFontSize:8,
+			labelMaxWidth: 60,
+			labelBackgroundColor: "#44a6b5",
+		}
 
 			},
 
 		axisY:{
 		title: "",
-		titleFontColor: '#aaa',
-		titleFontSize: 8,
+		titleFontColor: "#555",
+		titleFontSize: 10,
         titleWrap: false,
 		margin: 0,
-		lineThickness: 0.5,
+		lineThickness: 1,
 		gridThickness: 1,
-        gridDashType: "dot",
         includeZero: false,
-		interval: 'auto',
 		gridColor: '#333',
-		labelFontSize: 8,
+		labelFontSize: 11,
 		labelFontColor: '#aaa',
+		gridDashType: "dot",
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0) + " °<?php echo $tempunit ;?>" ;
+        return e.value .toFixed(0) + " <?php echo $windunit ;?> " ;
          },
-		crosshair: {
+		 crosshair: {
 			enabled: true,
 			snapToDataPoint: true,
-			color: "#ff9350",
-			labelFontColor: "#fff",
-			labelFontSize:8,
-			labelBackgroundColor: "#d05f2d",
+			color: '<?php echo $ycrosshaircolor;?>',
+			labelFontColor: "#F8F8F8",
+			labelFontSize:10,
 			labelMaxWidth: 60,
-			valueFormatString: "##0.#",
+			labelBackgroundColor: "#44a6b5",
+			valueFormatString: "#0.#<?php echo $windunit ;?>",
 		}
+
       },
 
 	  legend:{
       fontFamily: "arial",
-      fontColor: '<?php echo $fontcolor;?>',
+      fontColor: '#aaa',
 
  },
 
-
 		data: [
 		{
-			type: "spline",			
-			color: '#ff832f',
+			// Max Wind Gust
+			type: "column",
+			color: '#d35d4e',
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
-			lineThickness: 1,
+			lineThickness: 0,
 			markerType: "circle",
-			name:" Hi Dewpoint",
+			name:"Max Wind Gust",
 			dataPoints: dataPoints1,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
-
+			yValueFormatString:"#0.# <?php echo $windunit ;?>",
 		},
 		{
-
+			// Average Wind Speed
 			type: "spline",
-			color: '#44a6b5>',
+			color: 'rgba(0, 164, 180, 1.000)',
 			markerSize:0,
-            markerColor: '#44a6b5',
+     		markerColor: 'rgba(0, 164, 180, 1.000)',
 			showInLegend:false,
 			legendMarkerType: "circle",
-			lineThickness: 1,
-      		lineColor: '#44a6b5',
+			lineThickness: 2,
+     		 lineColor: 'rgba(0, 164, 180, 1.000)',
 			markerType: "circle",
-			name:" Lo Dewpoint",
+			name:"Avg Wind Speed",
 			dataPoints: dataPoints2,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
-
+			yValueFormatString:"#0.# <?php echo $windunit ;?>",
 		}
 
 		]
@@ -196,10 +202,13 @@
 	}
 });
 
-    </script>
+   </script>
 
 <body>
-<div id="chartContainer2" style="width:auto;height:125px;padding:0;margin-top:-25px;border-radius:3px;border: 1px solid rgba(245, 247, 252,.02);
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;font-size:10px;color:#aaa;font-family:Arial, Helvetica, sans-serif">NO DATA AVAILABLE FOR <?php echo date('Y', strtotime('last year'));?></div></div></body>
+<div id="chartContainer2" style="width:auto;height:190px;padding:0;margin-top:-25px;border-radius:3px;border: 1px solid rgba(245, 247, 252,.02);
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;"></div></div>
+
+
+</body>
 <script src='canvasJs.js'></script>
 </html>

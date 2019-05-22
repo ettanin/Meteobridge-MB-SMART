@@ -45,19 +45,14 @@ $rainrate = "'. $_POST["rainrate"]. '";
 $pressureunit  = "'. $_POST["pressureunit"]. '";
 $livedataFormat = "'. $_POST["livedataFormat"]. '";
 $livedata   = "'. $_POST["livedata"]. '";
-
 $currentconditions   = "'. $_POST["currentconditions"]. '";
-
 $chartsource   = "'. $_POST["chartsource"]. '";
 $extralinks   = "'. $_POST["extralinks"]. '";
 $languages   = "'. $_POST["languages"]. '";
-
 $dateFormat   = "'. $_POST["dateFormat"]. '";
 $timeFormat    = "'. $_POST["timeFormat"]. '";
 $timeFormatShort    = "'. $_POST["timeFormatShort"]. '";
 $clockformat    = "'. $_POST["clockformat"]. '";
-$clockformat2    = "'. $_POST["clockformat2"]. '";
-
 $showDate = '. $_POST["showDate"]. ';
 $temperaturemodule   = "'. $_POST["temperaturemodule"]. '";
 $position1   = "'. $_POST["position1"]. '";
@@ -75,23 +70,17 @@ $position12   = "'. $_POST["position12"]. '";
 $positionlastmoduletitle   = "'. $_POST["positionlastmoduletitle"]. '";
 $positionlastmodule   = "'. $_POST["positionlastmodule"]. '";
 $webcamurl   = "'. $_POST["webcamurl"]. '";
-
 $email    = "'. $_POST["email"]. '";
 $twitter   = "'. $_POST["twitter"]. '";
-
-
 $theme1   = "'. $_POST["theme1"]. '";
 $since    = "'. $_POST["since"]. '";
-
 $weatherhardware   = "'.$_POST["weatherhardware"]. '";
 $mbplatform   = "'.$_POST["mbplatform"]. '";
 $davis   = "'.$_POST["davis"]. '";
-
 $db_host   = "'. $_POST["db_host"]. '";
 $db_user    = "'. $_POST["db_user"]. '";
 $db_pass  = "'. $_POST["db_pass"]. '";
 $db_name   = "'. $_POST["db_name"]. '";
-
 $notifications = "'. $_POST["notifications"]. '";
 $sunoption = "'. $_POST["sunoption"]. '";
 $hemisphere   = "'. $_POST["hemisphere"]. '";
@@ -99,11 +88,12 @@ $metar   = "'. $_POST["metar"]. '";
 $icao1   = "'. $_POST["icao1"]. '";
 $airport1   = "'. $_POST["airport1"]. '";
 $airport1dist   = "'. $_POST["airport1dist"]. '";
-
 $defaultlanguage   = "'.$_POST["defaultlanguage"]. '";
 $language    = "'.$_POST['language']. '";
 $password    = "'.$_POST['password']. '";
 $flag   = "'.$_POST["flag"]. '";
+$dshourly   = "'.$_POST["dshourly"].'";
+$manifestShortName = "'.$_POST["manifestShortName"].'";
 ';
  
 $fp = FOPEN("settings1.php", "w") or die("Unable to open settings1.php file check file permissions !");
@@ -139,7 +129,7 @@ function showForm($error="LOGIN"){
      <input name="passwd" type="password" class="input-button"/>  <input type="submit" name="submit_pwd" value="Login " class="modal-button" /> 
          </form> 
      </center>
-      <?php echo "2015-" ;?><?php echo date('Y');?> &copy;</a> WEATHER34 MB-UB<orange>40</orange>-SE</span></span></span>
+      <?php echo "2015-" ;?><?php echo date('Y');?> &copy;</a> WEATHER34 MB-UB<orange>40</orange>-RRW</span></span></span>
       <br><br>
         
 
@@ -259,7 +249,7 @@ check languages
     <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
     <circle cx="16" cy="16" r="4" />
 </svg>
-  Database (Used for <strong>Meteobridge-API</strong> users only at present)</div><p>
+  Database Credentials</div><p>
 
 <div class= "stationvalue">  Database Host</div>
 <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -491,8 +481,8 @@ METEOBRIDGE Software Path to Data file</div><p>
     <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
 </svg>
 
-Meteobridge Chart Data Source</div><p>
-      <div class= "stationvalue">This is important</div>
+Meteobridge Chart Data (Fixed Option WU history charts no longer supported)</div><p>
+      <div class= "stationvalue">Fixed</div>
       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -501,20 +491,10 @@ Meteobridge Chart Data Source</div><p>
  <label name="chartsource"></label>
         <select id="chartsource" name="chartsource" class="choose1">
            <option ><?php echo $chartsource;?></option>  
-            <option>mbcharts</option>
-            <option>chartswu</option>       
-          
+            <option>mbcharts</option>         
            
         </select>
-            <br>
-    <span style="color:rgba(86, 95, 103, 1.000)">
-    <strong> <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#FF793A" stroke="#FF793A" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> choose <span style="color:rgba(24, 25, 27, 0.8)">mbcharts</span> if you are using MYSQL !</strong></span>
-     <br>
-    <span style="color:rgba(86, 95, 103, 1.000)">
-    <strong> <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#FF793A" stroke="#FF793A" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> choose <span style="color:#FF793A">chartswu</span> if you are NOT using MYSQL and will use your data history stored at weather underground</strong></span>
-     
+           
         
         </p>
         
@@ -711,7 +691,13 @@ Which Meteobridge Platform</div><p>
   
 <p>
   </div>
-  
+  <div class="weatheroptionssidebar"> try and keep these short dont include full country try a short code
+  <br/><br/>
+  <svg id="i-alert" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M16 3 L30 29 2 29 Z M16 11 L16 19 M16 23 L16 25" /> </svg>
+    Web App Name should be less than 10 characters long. If you exceed 10 characters, the excess will be replaced with ... on Android or iPhone.
+  </div>
+  <div class="weatherbottominfo"></div>
  <div class="weatheroptions">
 <div class= "weathersectiontitle">
 <svg id="i-location" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -719,23 +705,31 @@ Which Meteobridge Platform</div><p>
     <path d="M24 15 C21 22 16 30 16 30 16 30 11 22 8 15 5 8 10 2 16 2 22 2 27 8 24 15 Z" />
 </svg>
 
-Location Details <strong>try and keep these short dont include full country try a short code</strong></div><p>
+Location Details and Station Name</div><p>
 <div class= "stationvalue">  Station Location</div>
 <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg>
 
-  <input name="stationlocation" type="text" id="stationlocation" value="<?php echo $stationlocation ;?>" class="choose">
-  
+  <input name="stationlocation" type="text" id="stationlocation" value="<?php echo $stationlocation ;?>" class="chooseapi">
+  <br/>
   
 <div class= "stationvalue">  Station Name</div>
 <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg>
 
-  <input name="stationName" type="text" id="stationName" value="<?php echo $stationName ;?>" class="choose">
+  <input name="stationName" type="text" id="stationName" value="<?php echo $stationName ;?>" class="chooseapi">
+   <br/>
+
+   <div class= "stationvalue">Web App Name</div>
+<svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg>
+
+  <input name="manifestShortName" type="text" id="manifestShortName" value="<?php echo $manifestShortName ;?>" class="chooseapi">
+
    </div>
-   
  <br>
    <div class="weatheroptionssidebar">Here is the area where you set your Lat/Lon with timezone + UTC offset , for timezone you can check
    <a href="http://php.net/manual/en/timezones.php" title="http://php.net/manual/en/timezones.php" target="_blank"> the official php timezone documented page</a>
@@ -1629,26 +1623,11 @@ your nearly there :-) keep going<br><br>
         </select>
         
          &nbsp;<br><br>
-         
-          <div class= "stationvalue">Set the Top Bar Clock Format 12hr or 24hr</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>
-   
-   <label name="clockformat2"></label>
-        <select id="clockformat2" name="clockformat2" class="choose1">
-            <option><?php echo $clockformat2 ;?></option>
-            <option>% 24 || 24 </option>
-            <option>% 12 || 12</option>            
-        </select>
         
-         &nbsp;<br><br>
-        <span style="color:#777;font-weight:600;">Top Bar Clock Format<br></span>
-         <span style="color:rgba(86, 95, 103, 1.000);font-weight:normal;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> 2 options <span style="color:#777;"> % 24 || 24 = 24hr option2 % 12 || 12 12hr</span></span><br> 
-        <span style="color:rgba(86, 95, 103, 1.000);font-weight:normal;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%"></svg><br>
-		<span style="color:#777;font-weight:600;">Date format<br></span>
+        
+        
+        <span style="color:#777;font-weight:600;">Date format<br></span>
+        <span style="color:rgba(86, 95, 103, 1.000);font-weight:normal;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> d-m-Y <span style="color:#777;">for DAY MONTH YEAR format (12-03-2017)</span></span><br> 
         <span style="color:rgba(86, 95, 103, 1.000);"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#FF793A" stroke="#FF793A" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> m-d-Y <span style="color:#777;">for MONTH DAY YEAR format (03-12-2017)</span></span><br> 
@@ -1840,6 +1819,23 @@ your nearly there :-) keep going<br><br>
  <center> <span style="color:rgba(86, 95, 103, 1.000);">*IMPORTANT</span> NEW DARKSKY API (uses old script originally used in  2016) requires personal API KEY(MAY 30TH 2018) available via 
      <a href="https://darksky.net/dev/docs" title="https://darksky.net/dev/docs" target="_blank"> https://darksky.net/dev/docs</a></center>  
 <P>
+
+<div class= "stationvalue">
+<img src="img/darksky.svg" width="100" /> DarkSky Hourly Forecast (If using WU Weekly)</div>
+ <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg>
+    <label name="dshourly"></label>
+        <select id="dshourly" name="dshourly" value="<?php echo $dshourly ;?>" class="choose1" >
+          <option><?php echo $dshourly ;?></option>
+            <option>yes</option> 
+            <option>no</option>
+            </select>
+
+<br/>
+ Whether or not to show the DarkSky Hourly Forecast when using WeatherUnderground's Weekly Forecast
+<P>
+
 
        
           <div class="seperator"></div>
