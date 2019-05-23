@@ -1,7 +1,7 @@
 # Beta Version May 2019
 
 
-# Meteobridge-Weather34-Template MB-UB40-RRW
+# Meteobridge-Weather34-Template MB-UB40-Beta
 Github repository for the Meteobridge version of the original weather34 template 
 Weather Template for Meteobridge users only 
 
@@ -14,9 +14,13 @@ https://weather34.com/homeweatherstation/guides/setupmeteobridge.html
 # Weather34 Historic Timeline of design 2014-2019 
 https://weather34.com/homeweatherstation/weather34timeline/weather34timeline.html
 
-# Meteobridge Version Screenshot MB-UB40-RRW
+# Meteobridge Version Screenshot MB-UB40-Beta
 <p align="center">
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1553679424/weather34_meteobridge2019_bzq4sa.png" width="550" title="weather34 meteobridge template ">
+  
+  <p align="center">
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1558605068/mb-beta_lhfixw.png" width="550" title="weather34 meteobridge template ">
+  
  
 </p>
 
