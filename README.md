@@ -3,7 +3,10 @@
 
 # Meteobridge-Weather34-Template MB-UB40-Beta
 Github repository for the Meteobridge version of the original weather34 template 
-Weather Template for Meteobridge users only 
+Weather Template for Meteobridge users only .
+
+# Meteobridge-Weather34-Template Charts
+All charts are responsive , all modules are responsive
 
 # Basic Setup guide 
 https://weather34.com/homeweatherstation/guides/setup.html
@@ -29,3 +32,7 @@ https://weather34.com/homeweatherstation/weather34timeline/weather34timeline.htm
  
 </p>
 
+# This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+
+# This work is not permitted to be used in any other versions without prior permission
