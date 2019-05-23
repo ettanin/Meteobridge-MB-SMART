@@ -101,6 +101,11 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather["temp_avgtoday"]=$meteobridgeapi[152];
 	$weather['wind_speed_avg30']=$meteobridgeapi[158];
 	$weather['wind_speed_avgday']=$meteobridgeapi[158];
+	$weather['indoorbattery']=$meteobridgeapi[171];
+	$weather['outdoorbattery']=$meteobridgeapi[172];
+	$weather['rainlastmonth']=$meteobridgeapi[173];
+	$weather['rainlastyear']=$meteobridgeapi[174];
+	$weather['airquality']=$meteobridgeapi[175];
 	//weather34 windrun
 	$windrunhr=date('G');$windrunmin=(($windrunmin=date('i')/60));
 	$windrunformula=$windrunhr=date('G')+$windrunmin;
@@ -548,7 +553,10 @@ if ($rainunit != $weather["rain_units"]) {
 		inTomm($weather, "rainymax");		
 		inTomm($weather, "rainmmax");
 		inTomm($weather, "rain_24hrs");	
-    inTomm($weather, "rain_alltime");
+   		inTomm($weather, "rain_alltime");
+		inTomm($weather, "rainlastmonth");
+		inTomm($weather, "rainlastyear");	
+		
 		$weather["rain_units"] = $rainunit;
 	}
 	else if ($rainunit == "in") {
@@ -561,7 +569,9 @@ if ($rainunit != $weather["rain_units"]) {
 		mmToin($weather, "rainymax");		
 		mmToin($weather, "rainmmax");
 		mmToin($weather, "rain_24hrs");
-    mmToin($weather, "rain_alltime");
+    	mmToin($weather, "rain_alltime");
+		mmToin($weather, "rainlastmonth");
+		mmToin($weather, "rainlastyear");	
 		$weather["rain_units"] = $rainunit;
 	}
 }
