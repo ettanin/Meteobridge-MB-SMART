@@ -125,7 +125,7 @@ else if($weather["temp_units"]=='F' && ($weather["dewpoint"]>=-50)){ echo   "<di
 ?></smalltempunit2>
 <?php //dewpoint trend
 if($weather["dewpoint_trend"]>0){echo '&nbsp;'.$risingsymbol;}else if($weather["dewpoint_trend"]<0){echo '&nbsp;'.$fallingsymbol;}else{ echo '';}?></span></div></div></div></div></div>
-<div class="tempconverter2">
+<div class="tempconverter">
 <?php
 //metric to f 
 if( $weather["temp_units"]=='F' &&  anyToC($weather["temp"])<-10){echo "<div class=tempconvertercircleminus10>".anyToC($weather["temp"])."&deg;<smalltempunit2>C" ;}
