@@ -22,10 +22,11 @@ example screenshot
 Github Beta repository for the Meteobridge version of the original weather34 template 
 Weather Template for Meteobridge users only 
 
-# This work is not permitted to be used in any other versions without prior permission unless listed below 
-Permission is granted for use in Cumulus version maintained by Ken True 
-
-Permission is granted for use in Weewx version maintained by Ian Millard
+*This work is for development use only it is for meteobridge users and contributors,participants who communicate
+ideas and request permission to use.
+*This work is not to be used without prior permission , please clearly outline on how you want to use this work.
+*This work requires credits to be left intact where work is used ,it has no legal binding warrant but it is ethical
+to create a working enviroment to exchange ideas without creating unwanted noise, the community is smaller than you may think..
 
 *This work means CSS/SVG/PHP .
 
