@@ -91,14 +91,11 @@
 			fontColor:' #aaa',
 			fontFamily: "arial",
         },
-		dataPointWidth: 1,
 		toolTip:{
 			   fontStyle: "normal",
 			   cornerRadius: 4,
-			   backgroundColor: "rgba(40, 45, 52,1)",	
-			   fontColor: '#aaa',	
-			   fontSize: 11,	   
-			   toolTipContent: " x: {x} y: {y} <br/> name: {name}, label:{label} ",
+			   backgroundColor: "#fff",
+			   toolTipContent: " x: {x} y: {y} <br/> name: {name}, label:{label}",
 			   shared: true, 
  },
 		axisX: {
@@ -112,15 +109,6 @@
 			gridDashType: "dot",
    			intervalType: "hour",
 			minimum:0,
-			crosshair: {
-			enabled: true,
-			snapToDataPoint: true,
-			color: "#44a6b5",
-			labelFontColor: "#F8F8F8",
-			labelFontSize:6,
-			labelBackgroundColor: "#44a6b5",
-		
-			}
 			},
 			
 		axisY:{
@@ -140,19 +128,9 @@
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0);  
+        return e.value .toFixed(0) + " <?php echo $windunit ;?> " ;  
          },		
-		crosshair: {
-			enabled: true,
-			snapToDataPoint: true,
-			color: "#ff9350",
-			labelFontColor: "#fff",
-			labelFontSize:8,
-			labelBackgroundColor: "#d05f2d",
-			labelMaxWidth: 60,
-			valueFormatString: "##0.#",
-		}
-      	 
+			 
 		 
       },
 	  
@@ -179,12 +157,12 @@
 		},
 		{
 			// wind gust
-			type: "spline",
+			type: "column",
 			color:"#00a4b4",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
-			lineThickness: 1,
+			lineThickness: 0,
 			markerType: "none",
 			name:"Avg Wind",
 			dataPoints: dataPoints1,

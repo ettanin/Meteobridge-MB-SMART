@@ -1,1 +1,0 @@
-<?php include('../settings.php');?><script rel="preload" src='canvasJs.js' as="script"></script>

@@ -91,7 +91,7 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rain_today"]*25.
 ?>
 <div></div>
 
-<div class="hitempy"><?php echo $raininfo . "Last Hour<blue> ", $weather["rain_lasthour"]."</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>"?></div>
+<div class="hitempy"><?php echo $raininfo . "Last Hour<blue> ", $weather["rain_lasthour"]."</blue> " .$weather["rain_units"] ?></div>
 </article>  
 
  <article>  
@@ -105,7 +105,7 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rainydmax"]*25.4
 ?>
 <div></div>
 
-<div class="hitempy"><?php echo $raininfo . "Last 24 Hours<blue> ", $weather["rain_24hrs"]."</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>"?></div>
+<div class="hitempy"><?php echo $raininfo . "Last 24 Hours<blue> ", $weather["rain_24hrs"]."</blue> " .$weather["rain_units"] ?></div>
 </article>  
   
   
@@ -121,7 +121,7 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rain_month"]*25.
 <div></div>
 
 <div class="hitempy"><?php if ($meteobridgeapi[124]=='--'){echo "";}else echo $raininfo." Last <blue>Rainfall </blue>";?>
-<?php if ($meteobridgeapi[124]=='--'){echo $raininfo,"<blue>Rainfall</blue> Previous Month <blue>".$weather['rainlastmonth']."</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>";}else echo " ".$rainlasttime?></div>
+<?php if ($meteobridgeapi[124]=='--'){echo $raininfo,"<blue>Rainfall</blue> N/A";}else echo " ".$rainlasttime?></div>
 </article> 
   
    
@@ -136,8 +136,8 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rain_year"]*25.4
 ?>
 <div></div>
 
-<div class="hitempy">
-<?php echo $raininfo,"<blue>Rainfall</blue> Previous Year <blue>".$weather['rainlastyear']."</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>";?></div></div>
+<div class="hitempy"><blue>Rainfall</blue><br>
+Since Jan 2019</div>
 </article>  
 
 <article>
@@ -160,6 +160,7 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rain_alltime"]*2
 <div class="hitempy"><blue>Rainfall</blue><br>
 Since Jan 2018 </div>
                                         </article> </main>
+
 
 
  <main class="grid1">

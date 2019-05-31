@@ -85,6 +85,7 @@
 		var chart = new CanvasJS.Chart("chartContainer", {
 		 backgroundColor: '<?php echo $backgroundcolor;?>',
 		 animationEnabled: true,
+		 animationDuration: <?php echo $animationduration;?>,
 
 		title: {
             text: "",
@@ -95,7 +96,7 @@
 		toolTip:{
 			   fontStyle: "normal",
 			   cornerRadius: 4,
-			   backgroundColor: '<?php echo $backgroundcolor;?>',
+			   backgroundColor: '<?php echo $tooltipbackgroundcolor;?>',
 			   contentFormatter: function(e) {
       var str = '<span style="color: <?php echo $fontcolor;?>;">' + e.entries[0].dataPoint.label + '</span><br/>';
       for (var i = 0; i < e.entries.length; i++) {
@@ -170,10 +171,11 @@
 			// Max Wind Gust
 			type: "splineArea",
 			color: '<?php echo $line1color;?>',
+			lineColor: '<?php echo $line1linecolor;?>',
 			markerSize:0,
 			showInLegend:true,
 			legendMarkerType: "circle",
-			lineThickness: 2,
+			lineThickness: 0,
 			markerType: "circle",
 			name:"Max Wind Gust",
 			dataPoints: dataPoints2,
@@ -187,7 +189,7 @@
       markerColor: '<?php echo $line2markercolor;?>',
 			showInLegend:true,
 			legendMarkerType: "circle",
-			lineThickness: 2,
+			lineThickness: 0,
       lineColor: '<?php echo $line2markercolor;?>',
 			markerType: "circle",
 			name:"Avg Wind Speed",

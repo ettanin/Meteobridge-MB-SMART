@@ -71,7 +71,7 @@
 			var allLinesArray = allText.split('\n');
 			if(allLinesArray.length>0){
 				for (var i = 0; i <= allLinesArray.length-1; i++) {
-					var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
+					var rowData = allLinesArray[i].replace(/\�|\"|\u0000/g,'').split(',');
 					if (rowData[9] >0)
 						dataPoints1.push({label:rowData[0],y:parseFloat(rowData[9]*<?php echo $conv ;?>)});
 				}
@@ -83,7 +83,7 @@
 			var allLinesArray = allText.split('\n');
 			if(allLinesArray.length>0){
 				for (var i = 0; i <= allLinesArray.length-1; i++) {
-					var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
+					var rowData = allLinesArray[i].replace(/\�|\"|\u0000/g,'').split(',');
 					if ( rowData[10] >0)
 						dataPoints2.push({label: rowData[0],y:parseFloat(rowData[10]*<?php echo $conv ;?>)});
 					//parseFloat(rowData[13])});
@@ -95,6 +95,7 @@
 			var chart = new CanvasJS.Chart("chartContainer", {
 				backgroundColor: '<?php echo $backgroundcolor;?>',
 				animationEnabled: true,
+				animationDuration: <?php echo $animationduration;?>,
 				title: {
 					text: "",
 					fontSize: 12,
@@ -104,9 +105,9 @@
 				toolTip:{
 					fontStyle: "normal",
 					cornerRadius: 4,
-					backgroundColor: '<?php echo $backgroundcolor;?>',
+					backgroundColor: '<?php echo $tooltipbackgroundcolor;?>',
 					contentFormatter: function(e) {
-						var str = '<span style="color: <?php echo $fontcolor;?>;">' + CanvasJS.formatDate(e.entries[0].dataPoint.label, "DD MMM") + '</span><br/>';
+						var str = '<span style="color: <?php echo $fontcolor;?>;">' + e.entries[0].dataPoint.label + '</span><br/>';
 						for (var i = 0; i < e.entries.length; i++) {
 							var temp = '<span style="color: ' + e.entries[i].dataSeries.color + ';">' + e.entries[i].dataSeries.name + '</span> <span style="color: <?php echo $fontcolor;?>;">' + e.entries[i].dataPoint.y.toFixed(<?php echo $pressdecimal?> + 1) + "<?php echo ' '.$pressureunit ;?>" + '</span> <br/>';
 							str = str.concat(temp);
@@ -176,6 +177,7 @@
 					// High Barometer
 					type: "spline",
 					color: '<?php echo $line1color;?>',
+					lineColor: '<?php echo $line1linecolor;?>',
 					markerSize:0,
 					showInLegend:true,
 					legendMarkerType: "circle",

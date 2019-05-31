@@ -17,9 +17,9 @@ return $weather34timeago;}?>
 <body>
 <div class="simsekcontainer">
 <div class="simsekdata">Strikes</div>
-<?php //weather34 sez lets make the temperature look nice 
+<?php //weather34 sez lets make  it look nice 
 if($weather["lightningmax"]>0){echo '<div class=simsek>'.number_format($weather["lightningmax"],0,',','');}
-else if($weather["lightningmax"]==0){echo '<div class=simsek>'.number_format($weather["lightning2max"],0,',','');}?>
+else if($weather["lightningmax"]==0){echo '<div class=simsek>'.number_format($weather["lightningmax"],0,',','');}?>
 </smalltempunit></div>
 <div class="simsektoday"><valuetext>Today</valuetext></div></div></div>
 
@@ -33,7 +33,7 @@ echo "<lightningannualx1> Total ".date('Y').":<lorange> " .str_replace(",","",$w
 if ($lightningseconds <61 ){ echo "<timeago>Last Strike Detected<br> <agolightning>Now ";}
 else if ($lightningseconds >=61 ) echo "<timeago>Last Strike Detected<br> <agolightning>", convert($lightningseconds)," ago";?>
 </div>
-<div class="rainconverter">
+<div class="lightningcoverter">
 <?php
 //distance
 if($weather["lightningkm"]=='--'){echo "<div class=tempconvertercirclered>34<smallrainunit>km</smallrainunit>";}

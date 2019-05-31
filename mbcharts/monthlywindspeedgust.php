@@ -52,7 +52,7 @@ $(document).ready(function () {
 		var allLinesArray = allText.split('\n');
 		if(allLinesArray.length>0){
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
+				var rowData = allLinesArray[i].replace(/\�|\"|\u0000/g,'').split(',');
 				if ( rowData.length >1){
 					dataPoints1.push({label: rowData[0],y:parseFloat(rowData[6]*<?php echo $conv;?>)});
 				}
@@ -67,7 +67,7 @@ $(document).ready(function () {
 		var allLinesArray = allText.split('\n');
 		if(allLinesArray.length>0){
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
+				var rowData = allLinesArray[i].replace(/\�|\"|\u0000/g,'').split(',');
 				if ( rowData.length >1) {
 					dataPoints2.push({label: rowData[0],y:parseFloat(rowData[7]*<?php echo $conv;?>)});
 				}
@@ -77,9 +77,10 @@ $(document).ready(function () {
 		}
 	}
 	function drawChart( dataPoints1 , dataPoints2 ) {
-		var chart = new CanvasJS.Chart("chartContainer2", {
+		var chart = new CanvasJS.Chart("chartContainer", {
 			backgroundColor: '<?php echo $backgroundcolor;?>',
 			animationEnabled: true,
+			animationDuration: <?php echo $animationduration;?>,
 			title: {
 				text: "",
 				fontSize: 12,
@@ -89,9 +90,9 @@ $(document).ready(function () {
 			toolTip:{
 				fontStyle: "normal",
 				cornerRadius: 4,
-				backgroundColor: '<?php echo $backgroundcolor;?>',
+				backgroundColor: '<?php echo $tooltipbackgroundcolor;?>',
 				contentFormatter: function(e) {
-					var str = '<span style="color: <?php echo $fontcolor;?>;">' + CanvasJS.formatDate(e.entries[0].dataPoint.label, "DD MMM") + '</span><br/>';
+					var str = '<span style="color: <?php echo $fontcolor;?>;">' + e.entries[0].dataPoint.label + '</span><br/>';
 					for (var i = 0; i < e.entries.length; i++) {
 						var temp = '<span style="color: ' + e.entries[i].dataSeries.color + ';">' + e.entries[i].dataSeries.name + '</span> <span style="color: <?php echo $fontcolor;?>;">' + e.entries[i].dataPoint.y.toFixed(1) + "<?php echo ' '.$windunit ;?>" + '</span> <br/>';
 						str = str.concat(temp);
@@ -159,6 +160,7 @@ $(document).ready(function () {
 				// Max Wind Gust
 				type: "splineArea",
 				color: '<?php echo $line1color;?>',
+				lineColor: '<?php echo $line1linecolor;?>',
 				markerSize:0,
 				showInLegend:true,
 				legendMarkerType: "circle",
