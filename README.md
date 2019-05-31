@@ -12,6 +12,11 @@ this provides the platform for increasing modules to display for example have sm
 on main page , increase the total of moduels to 24 and choosing optional layouts.
 * important this code may not be supported on old browsers prior to end of 2018.
 
+example screenshot 
+
+<p align="center">
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1557736951/december2019_mqrll6.png" width="550" title="weather34 meteobridge beta template "> 
+</p>
 
 # Meteobridge-Weather34-Template Beta
 Github Beta repository for the Meteobridge version of the original weather34 template 
