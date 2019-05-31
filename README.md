@@ -1,12 +1,17 @@
-# This repository is maintained William (aka lightmaster)
+# This repository is a beta project
 
-William will be maintaining on behalf of Brian Underdown .Brian no longer wishes to contribute
-and does not want to stifle progress .
-Please use the support available via the Github issues function or via email support@baxleyweather.com
+This version uses new css grid layouts based on 
+
+  display:grid;
+  grid-template-columns: 236px 236px 236px 236px;
+  grid-gap: 5px;
 
 
-# Meteobridge-Weather34-Template MB-UB40-RRW
-Github repository for the Meteobridge version of the original weather34 template 
+* important this code may not be supported on old browsers prior to end of 2018.
+
+
+# Meteobridge-Weather34-Template Beta
+Github Beta repository for the Meteobridge version of the original weather34 template 
 Weather Template for Meteobridge users only 
 
 # This work is not permitted to be used in any other versions without prior permission unless listed below 
@@ -15,9 +20,6 @@ Permission is granted for use in Cumulus version maintained by Ken True
 Permission is granted for use in Weewx version maintained by Ian Millard
 
 *This work means CSS/SVG/PHP .
-
-# important  
-for those not using mysql and using weather underground for chart data unfortunately this is no longer supported and only mysql is supported .this has been on the cards for sometime and crosschecking some sites i have to hand using the wucharts option i see no chart data any longer or the service is intermittent .sorry for any inconvience but it is not a template issue. the issue lies with weather underground and it looks like they may have discontinued this facility .If it returns in some form it may be possible to use again but it will have to be a tried and tested feature of weather underground .as of today 19th May 2019 the option and related files were removed ..brian
 
 # Basic Setup guide 
 https://weather34.com/homeweatherstation/guides/setup.html
@@ -28,11 +30,7 @@ https://weather34.com/homeweatherstation/guides/setupmeteobridge.html
 # Weather34 Historic Timeline of design 2014-2019 
 https://weather34.com/homeweatherstation/weather34timeline/weather34timeline.html
 
-# Meteobridge Version Screenshot MB-UB40-RRW
+# Meteobridge Beta Version Screenshot 
 <p align="center">
-  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1553679424/weather34_meteobridge2019_bzq4sa.png" width="550" title="weather34 meteobridge template "> 
-</p>
-<p align="center">
-  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1557158225/almanacs_m5vmum.jpg" width="550" title="weather34 meteobridge alamanacs ">
- 
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1559212022/wf1_qftxrd.png" width="550" title="weather34 meteobridge beta template "> 
 </p>
