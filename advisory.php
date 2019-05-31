@@ -1,6 +1,6 @@
  <?php //original weather34 script original css/svg/php by weather34 2015-2019 // 
  include('livedata.php');date_default_timezone_set($TZ);?>
- 
+ <div class="topframe">
 <?php 
 if ($position6=="forecast3wularge.php" || $position6=="forecast3wu.php"){
 
@@ -31,12 +31,11 @@ $parsed_weather34wujson = json_decode($weather34wuurl,false);
 	 $wuskysnow4 = $parsed_weather34wujson->{'daypart'}[0]->{'qpfSnow'}[4];
 	 $wuskysnow5 = $parsed_weather34wujson->{'daypart'}[0]->{'qpfSnow'}[5];
 	 $wuskysnow6 = $parsed_weather34wujson->{'daypart'}[0]->{'qpfSnow'}[6];
-	 $wuskysnow7 = $parsed_weather34wujson->{'daypart'}[0]->{'qpfSnow'}[7];
+	 $wuskysnow7 = $parsed_weather34wujson->{'daypart'}[0]->{'qpfSnow'}[7]; 
 	 
 	 }}?>
 
-<div class="wulargeforecasthome"><div class="wulargediv">
-<div class="eqcirclehomeregional"><div class="eqtexthomeregional">
+<div class="advisorycontainer">
 
 <?php  
     //weather34 //forecast3wularge wu alerts storms 
@@ -139,5 +138,6 @@ $parsed_weather34wujson = json_decode($weather34wuurl,false);
    </spanelightning></div></div></div>';} 
  //WEATHER34 solar eclipse events and no alerts 
  else {echo '<spanelightning><alertvalue>'.$eclipse_default.'</spanelightning></div></div></div>';}   
+  
  
   ?></noalert></div></div>

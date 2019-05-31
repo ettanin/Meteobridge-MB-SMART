@@ -22,9 +22,7 @@ foreach($json['obs'] as $item){
    $weatherflow['lastlightningtime']  = $item['lightning_strike_last_epoch'];   $weatherflow['lightningdistance']  = $item['lightning_strike_last_distance'];
    $weatherflow['lightning']  = $item['lightning_strike_count'];   $weatherflow['lightning3hr']  = $item['lightning_strike_count_last_3hr'];}
 ?>
-
-
-</div>
+<div class="topframe">
 <div class="wfstrike">
 <?php //weather34 wf lightning
  echo "<wfstriketoday>",$weatherflow["lightning3hr"]  ;
