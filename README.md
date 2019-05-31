@@ -1,4 +1,4 @@
-# This repository is a beta project
+# This repository is a beta project for Meteobridge-Weather34-Template 2020
 
 This version uses new css grid layouts based on 
 
@@ -8,7 +8,8 @@ This version uses new css grid layouts based on
   
   grid-gap: 5px;
 
-
+this provides the platform for increasing modules to display for example have small charts displayed in small modules
+on main page , increase the total of moduels to 24 and choosing optional layouts.
 * important this code may not be supported on old browsers prior to end of 2018.
 
 
