@@ -3,7 +3,9 @@
 This version uses new css grid layouts based on 
 
   display:grid;
+  
   grid-template-columns: 236px 236px 236px 236px;
+  
   grid-gap: 5px;
 
 
