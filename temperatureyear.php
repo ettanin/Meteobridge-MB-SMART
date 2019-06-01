@@ -26,11 +26,40 @@ else if ($weather["temp_units"]=='F'){echo anyToC($weather["tempymin"])."&deg;C"
 ?></div>
 
 
+
+<div class="tempavgthisyear">
+<?php //temperture min year
+ if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>30){echo "<maxtempred>",$weather["tempyearavg"]  ;echo "</maxtempred><wunit>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>24){echo "<maxtemporange>",$weather["tempyearavg"]  ;echo "</maxtemporange><wunit>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>20){echo "<maxtemporange>",$weather["tempyearavg"]  ;echo "</maxtemporange><wunit>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>18){echo "<maxtempyellow>",$weather["tempyearavg"]  ;echo "</maxtempyellow><wunit>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>12){echo "<maxtempyellow>",$weather["tempyearavg"]  ;echo "</maxtempyellow><wunit>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>=10){ echo "<maxtempgreen>", $weather["tempyearavg"]  ;echo "</maxtempgreen><wunit>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>-50){ echo "<maxtempblue>", $weather["tempyearavg"]  ;echo "</maxtempblue><wunit>&deg;".$weather["temp_units"] ; }
+ //non metric
+ if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>86){echo "<maxtempred>",$weather["tempyearavg"]  ;echo "</maxtempred><wunit>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>75.2){echo "<maxtemporange>",$weather["tempyearavg"]  ;echo "</maxtemporange><wunit>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>68){echo "<maxtemporange>",$weather["tempyearavg"]  ;echo "</maxtemporange><wunit>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>64.4){echo "<maxtempyellow>",$weather["tempyearavg"]  ;echo "</maxtempyellow><wunit>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>53.6){echo "<maxtempyellow>",$weather["tempyearavg"]  ;echo "</maxtempyellow><wunit>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>=42.8){ echo "<maxtempgreen>", $weather["tempyearavg"]  ;echo "</maxtempgreen><wunit>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>-50){ echo "<maxtempblue>", $weather["tempyearavg"]  ;echo "</maxtempblue><wunit>&deg;".$weather["temp_units"] ; }
+ ?></div></wunit>
+<div class="tyearavg">Average</div>
+<div class="tavgconv"><?php 
+if ($weather["temp_units"]=='C'){ echo anyToF($weather["tempyearavg"])."&deg;F";}
+else if ($weather["temp_units"]=='F'){echo anyToC($weather["tempyearavg"])."&deg;C";}
+?></div>
+
+
+
+
+
 <div class="yearwordtempbig">Temperature</div>
 <div class="tempmaxthisyear">
 <?php //temperture min year
  if ($weather["temp_units"]=='C' && $weather["tempymax"]>30){echo "<maxtempred>",$weather["tempymax"]  ;echo "</maxtempred><wunit>&deg;".$weather["temp_units"] ; }
- else if ($weather["temp_units"]=='C' && $weather["tempymax"]>24){echo "<maxtemporange>",$weather["tempymax"]  ;echo "</maxtemporange<wunit>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempymax"]>24){echo "<maxtemporange>",$weather["tempymax"]  ;echo "</maxtemporange><wunit>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='C' && $weather["tempymax"]>20){echo "<maxtemporange>",$weather["tempymax"]  ;echo "</maxtemporange><wunit>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='C' && $weather["tempymax"]>18){echo "<maxtempyellow>",$weather["tempymax"]  ;echo "</maxtempyellow><wunit>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='C' && $weather["tempymax"]>12){echo "<maxtempyellow>",$weather["tempymax"]  ;echo "</maxtempyellow><wunit>&deg;".$weather["temp_units"] ; }
