@@ -32,6 +32,11 @@ to create a working enviroment to exchange ideas without creating unwanted noise
 
 *This work means CSS/SVG/PHP .
 
+<p align="center">
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1559377666/beta_p500z5.png" width="550" title="weather34 meteobridge beta template "> 
+</p>
+
+
 # Basic Setup guide 
 https://weather34.com/homeweatherstation/guides/setup.html
 
