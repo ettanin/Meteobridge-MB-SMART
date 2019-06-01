@@ -60,7 +60,7 @@ var refreshId;$(document).ready(function(){solar()});function solar(){$.ajax({ca
 var refreshId;$(document).ready(function(){dldata()});function dldata(){$.ajax({cache:false,success:function(a){$("#dldata").html(a);<?php if ($daylightRefresh > 0) { echo 'setTimeout(dldata,' . 1000*$daylightRefresh.')';  } ?>}, type:"GET",url:"<?php echo $positionlastmodule?>"})}; 
 //current 3dy forecast
 var refreshId;$(document).ready(function(){currentfore()});function currentfore(){$.ajax({cache:false,success:function(a){$("#currentfore").html(a);setTimeout(currentfore,360000)},type:"GET",url:"<?php echo $position6?>"})};</script>
-<?php if ($position1=="weather34clock.php"){?>
+
 <script>
 var clockID;
 var yourTimeZoneFrom=<?php echo $UTC?>;
@@ -94,9 +94,9 @@ function UpdateClock(){
   if(c<10){
     c="0"+c
   }
-  document.getElementById("theTime").innerHTML="<div class='weatherclock34'> "+i+" "+b+" "+h+" "+f+"<div class='orangeclock'>"+c+":"+a+":"+g+amorpm
+  document.getElementById("theTime").innerHTML="<weather34thetime>"+i+" "+b+" "+h+" "+f+" &nbsp;"+c+":"+a+":"+g+amorpm
 }
 function StartClock(){clockID=setInterval(UpdateClock,500)}
 function KillClock(){clearTimeout(clockID)}
 window.onload=function(){StartClock()};
-</script><?php }?>
+</script>
