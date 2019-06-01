@@ -28,14 +28,12 @@ else if ($weather["wind_units"] =='km/h'){echo number_format($weather["windmmax"
 <?php //wind max month
 if ($weather["wind_units"]=='km/h' && $weather["windspeedyearavg"]>60){echo "<maxtempred>",$weather["windspeedyearavg"]."</maxtempred><wunit>".$weather["wind_units"] ; }
  else if ($weather["wind_units"]=='km/h' && $weather["windspeedyearavg"]>40){echo "<maxtemporange>",$weather["windspeedyearavg"]."</maxtemporange><wunit>".$weather["wind_units"] ; }
- else if ($weather["wind_units"]=='km/h' && $weather["windspeedyearavg"]>30){echo "<maxtempyellow>",$weather["windspeedyearavg"]."</maxtempyellow><wunit>".$weather["wind_units"] ; }
- else if ($weather["wind_units"]=='km/h' && $weather["windspeedyearavg"]>10){ echo "<maxtempgreen>", $weather["windspeedyearavg"]."</maxtempgreen><wunit>".$weather["wind_units"] ; }
+ else if ($weather["wind_units"]=='km/h' && $weather["windspeedyearavg"]>30){echo "<maxtempyellow>",$weather["windspeedyearavg"]."</maxtempyellow><wunit>".$weather["wind_units"] ; } 
  else if ($weather["wind_units"]=='km/h' && $weather["windspeedyearavg"]>0){ echo "<maxtempblue>", $weather["windspeedyearavg"]."</maxtempblue><wunit>".$weather["wind_units"] ; }
  
  if ($weather["wind_units"]=='mph' && $weather["windspeedyearavg"]>40){echo "<maxtempred>",$weather["windspeedyearavg"]."</maxtempred><wunit>".$weather["wind_units"] ; }
  else if ($weather["wind_units"]=='mph' && $weather["windspeedyearavg"]>24){echo "<maxtemporange>",$weather["windspeedyearavg"]."</maxtemporange><wunit>".$weather["wind_units"] ; }
- else if ($weather["wind_units"]=='mph' && $weather["windspeedyearavg"]>18){echo "<maxtempyellow>",$weather["windspeedyearavg"]."</maxtempgreen><wunit>".$weather["wind_units"] ; }
- else if ($weather["wind_units"]=='mph' && $weather["windspeedyearavg"]>6){ echo "<maxtempgreen>", $weather["windspeedyearavg"]."</maxtempgreen><wunit>".$weather["wind_units"] ; }
+ else if ($weather["wind_units"]=='mph' && $weather["windspeedyearavg"]>18){echo "<maxtempyellow>",$weather["windspeedyearavg"]."</maxtempgreen><wunit>".$weather["wind_units"] ; } 
  else if ($weather["wind_units"]=='mph' && $weather["windspeedyearavg"]>-50){ echo "<maxtempblue>", $weather["windspeedyearavg"]."</maxtempblue><wunit>".$weather["wind_units"] ; }
 
  ;?></div></wunit>
