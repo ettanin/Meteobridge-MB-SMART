@@ -31,7 +31,7 @@ $now =date('G.i');
 	
 
 ?><head>
-<div class="updatedtimecurrent">
+<div class="updatedtime1">
 <?php $forecastime=filemtime('jsondata/darksky.txt');
 	$weather34wuurl = file_get_contents("jsondata/dark.txt");
 	if(filesize('jsondata/darksky.txt')<1){echo "".$offline. " Offline<br>";}else echo $online,"";echo " ",	date($timeFormat,$forecastime);	?></div>
