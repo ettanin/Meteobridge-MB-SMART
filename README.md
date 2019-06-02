@@ -18,7 +18,7 @@ example screenshot
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1557736951/december2019_mqrll6.png" width="550" title="weather34 meteobridge beta template "> 
 </p>
 
-# Meteobridge-Weather34-Template Beta
+# Meteobridge-Weather34-Beta Smart Version
 Github Beta repository for the Meteobridge version of the original weather34 template 
 Weather Template for Meteobridge users only 
 
