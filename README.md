@@ -7,6 +7,8 @@ This version uses new css grid layouts based on
   grid-template-columns: 236px 236px 236px 236px;
   
   grid-gap: 5px;
+  
+  *does not use bootstrap or any other ready made framework it is devloped and built locally using sample of above.
 
 this provides the platform for increasing modules to display for example have small charts displayed in small modules
 on main page , increase the total of moduels to 24 and choosing optional layouts.
