@@ -1,4 +1,4 @@
-# This repository is a beta project for Meteobridge-Weather34-Template (expected release 2020)
+# This repository is a beta project for Meteobridge-Weather34-Samrt Version (expected release 2020)
 
 This version uses new css grid layouts based on 
 
