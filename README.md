@@ -22,7 +22,13 @@ example screenshot
 Github Beta repository for the Meteobridge version of the original weather34 template 
 Weather Template for Meteobridge users only 
 
-*This work is for development use only it is for meteobridge users and contributors,participants who communicate
+*The aim is to create the cleanest and most friendly approach to displaying your personal
+weather data for your personal use and reap the full potential of meteobridge nanosd and meteobridge pro.
+
+*This template is primed for use with meteobridge NANOSD and Pro unfortunately the smaller TP-LINK is not
+fully compatible due to the requirement of being able to retrieve historical values realtime .
+
+*This work is for development use only it is for meteobridge NANO/Pro users and contributors,participants who communicate
 ideas and request permission to use.
 
 *This work is not to be used without prior permission , please clearly outline on how you want to use this work.
