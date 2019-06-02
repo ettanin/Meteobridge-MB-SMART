@@ -52,7 +52,7 @@ https://weather34.com/homeweatherstation/guides/setupmeteobridge.html
 # Weather34 Historic Timeline of design 2014-2019 
 https://weather34.com/homeweatherstation/weather34timeline/weather34timeline.html
 
-# Meteobridge Beta Version Screenshot 
+# Meteobridge Beta Smart Version Screenshot 
 <p align="center">
-  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1559212022/wf1_qftxrd.png" width="550" title="weather34 meteobridge beta template "> 
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1559467750/col_ddcheg.png" width="550" title="weather34 meteobridge beta template "> 
 </p>
