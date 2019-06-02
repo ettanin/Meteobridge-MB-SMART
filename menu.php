@@ -11,16 +11,16 @@ else echo' <div class="menucolor"><a href="./?units=metric">Units</a></div>';?><
   </label>
  <div id="weather34sidebarMenu">
 <ul class="weather34sidebarMenuInner">
-<br /><br /><br />
-<li class="header">ADMIN</li>
+<br /><br /><p>
+<li><a href="#">Settings</a></li>
 <li><a href="easyweathersetup.php" target="_blank" title="WEATHERSTATION SETTINGS PAGE"><?php echo " <weather34menumarkeryellow></weather34menumarkeryellow> ",$lang['Settings']; ?> </a></li> 
 <p>
 <li><a href="index.php" title="WEATHERSTATION HOME PAGE"> <weather34menumarkergreen></weather34menumarkergreen> Home </a></li>  
-<li class="header">UI THEME</li>
+<li><a href="#">UI THEME</a></li>
 <li><a href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>>
 <?php if($theme=='dark'){echo' <weather34menumarkerlight></weather34menumarkerlight> Light Mode';}else{echo'<weather34menumarkerbluegrey></weather34menumarkerbluegrey> Dark Mode';}?></a></li>
 <p>
-<li class="header">UNITS</a></li>
+<li><a href="#">UNITS</a></li>
 <?php 
   if($units!=Null && $units!='default'){echo '<li> <a  href="./?units=default"> <weather34menumarkerred></weather34menumarkerred> Default Units '.(($tempunit=='F')?'<topbarimperialf>&deg;F</topbarimperialf>':'<topbarmetricc>&deg;C</topbarmetricc>').'</a><br />';}
   if($units!='us'){echo '<li> <a  href="./?units=us"> <weather34menumarkerorange></weather34menumarkerorange>  Imperial  <topbarimperialf>&deg;F</topbarimperialf> </a><br />  ';}
@@ -29,7 +29,7 @@ else echo' <div class="menucolor"><a href="./?units=metric">Units</a></div>';?><
   if($units!='scandinavia'){echo '<li> <a  href="./?units=scandinavia"> <weather34menumarkerred></weather34menumarkerred> M/S  <topbarmetricc>&deg;C</topbarmetricc></a>';}
 ?>
 
-<li class="header">EXTRAS</a></li>
+<li><a href="#">EXTRAS</a></li>
 <li>
 <?php if($weatherflowoption=="yes"){ echo "<a href=https://staging.smartweather.weatherflow.com/map/".$lat."/".$lon."/".$weatherflowmapzoom." data-lity title='see your weather station on official weatherflow map'><weather34menumarkerblue></weather34menumarkerblue> Weatherflow Map </a></li>" ;}
 else echo "";?>
@@ -68,9 +68,8 @@ else echo "";?>
      '?>
      <!---credits | download info---> 
 <?php // please do not remove this and if so no support is given and your domain will be blacklisted from support it is not much to ask //?>
-<li><a href="https://github.com/weather34/Meteobridge-Weather34-Template/" title="Weather34 Meteobridge version via Github " target="_blank">
-<weather34menumarkerbluegrey></weather34menumarkerbluegrey> Download Meteobridge Template</a></li>
-<li><a href="https://github.com/weather34/Meteobridge-Weather34-Template/" title="Weather34 Meteobridge version via Github " target="_blank">
-<weather34menumarkerbluegrey></weather34menumarkerbluegrey> Maintained by William(lightmaster)</a></li>
+<li><a href="https://github.com/weather34/Meteobridge-Beta" title="Weather34 MB Beta-Smart Version via Github " target="_blank">
+<weather34menumarkerbluegrey></weather34menumarkerbluegrey> Download MB Beta-Smart Version</a></li>
+
 <li><a href="https://github.com/weather34/Meteobridge-Weather34-Template" title="https://github.com/weather34/Meteobridge-Weather34-Template/" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> Designed by weather34.com</a></li>    
 </div></div></header>  
