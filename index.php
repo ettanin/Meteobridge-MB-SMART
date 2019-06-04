@@ -176,10 +176,6 @@ if ($positionlastmodule=='airqualitymodule.php') {echo '<span class="yearpopup">
   <div class=hardwareimg2><a href=https://wiki.meteobridge.com/wiki/index.php/Home target=_blank title=https://wiki.meteobridge.com/wiki/index.php/Home><img src=img/davisvp2proconsole.svg width=90px height=50px alt=meteobridge></a></div>
   <div class=hardware><?php echo $info?>&nbsp;<?php echo $weatherhardware;?></div>
   <div class=hardwareinfo><?php echo $info?>&nbsp;Installed: <?php echo $hardwareinstalled;?></div>
-  <?php if ($weather['outdoorbattery']<1){$weather['outdoorbattery']="<ogreen>Good</ogreen>";}
-  else $weather['outdoorbattery']="<ored>Poor</ored>";?>
-  <?php if ($weather['indoorbattery']<1){$weather['indoorbattery']="<ogreen>Good</ogreen>";}
-  else $weather['indoorbattery']="<ored>Poor</ored>";?>
   <div class=hardwareuptime><?php echo $info?>&nbsp;Power Console:<?php echo $weather['indoorbattery']?> <?php echo $info?>ISS:<?php echo $weather['outdoorbattery']?></div>  
   </weather34infoboxes>
   

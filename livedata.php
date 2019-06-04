@@ -104,7 +104,14 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather['rainlastmonth']=$meteobridgeapi[173];
 	$weather['rainlastyear']=$meteobridgeapi[174];
 	$weather['tempyearavg']=$meteobridgeapi[175];
-	$weather['windspeedyearavg']=$meteobridgeapi[176];
+	$weather['windspeedyearavg']=$meteobridgeapi[176];	
+	//battery
+	$weather['indoorbattery']=$meteobridgeapi[171];
+	$weather['outdoorbattery']=$meteobridgeapi[172];
+if ($weather['outdoorbattery']<1){$weather['outdoorbattery']="<oblue>Good</oblue>";}
+else $weather['outdoorbattery']="<ored>Poor</ored>";
+if ($weather['indoorbattery']<1){$weather['indoorbattery']="<oblue>Good</oblue>";}
+else $weather['indoorbattery']="<ored>Poor</ored>";
 	//weather34 windrun
 	$windrunhr=date('G');$windrunmin=(($windrunmin=date('i')/60));
 	$windrunformula=$windrunhr=date('G')+$windrunmin;
