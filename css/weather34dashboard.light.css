@@ -99,6 +99,43 @@ alertadvisory{top:30px;left:160px;position:absolute}
   background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
   height:70px;  
 }
+
+.gridhardware { 
+  display: grid;
+  grid-template-columns: 317px 317px 316px  ;  
+  grid-template-rows: 3fr;
+  grid-column-gap: 5px;
+  align-items: stretch;
+  margin:0 auto;
+  margin-top:0px;
+  color:rgba(47, 54, 63, 1.000)
+  }
+
+.gridhardware > weather34infoboxes{
+  border:1px solid rgba(230, 232, 239, .8);  
+  padding:5px;  
+  background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
+  height:65px;  
+}
+
+.hardwareimg1{position:absolute;margin:0;padding:0;float:left;margin-left:-25px;}
+.hardwareimg2{position:absolute;margin:0;padding:0;float:left;margin-left:0;}
+
+
+.mbtype{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:50px;margin-top:5px}
+.mbfirmware{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:50px;margin-top:18px}
+.nanouptime{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:50px;margin-top:32px}
+
+
+.hardware{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:100px;margin-top:5px}
+.hardwareinfo{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:100px;margin-top:18px}
+.hardwareuptime{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:100px;margin-top:32px}
+
+.locinfo{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:15px;margin-top:5px}
+.locinfo2{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:15px;margin-top:18px}
+.locinfo3{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:15px;margin-top:32px}
+
+
  
 .actualt{position:relative;left:2px;-webkit-border-radius:2px;border-radius:2px;font-family:Arial, Helvetica, sans-serif;width:140px;height:1.5em;font-size:0.6rem;top:-1px;color:rgba(47, 54, 63, 1.000);align-items:left;justify-content:left;margin:0 auto;}
 .weather34chartlinks{ font-size:.65em;position:absolute;margin-top:164px;margin-left:5px;z-index:20;font-family:weathertext2;}
@@ -235,6 +272,25 @@ maxtempred{color:#d35d4e}maxtempblue{color:#44a6b5}maxtemporange{color:#d05f2d}m
   height:198px; 
   
   }
+  
+   .gridhardware { 
+  display: grid;
+  grid-template-columns: 317px;  
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  align-items: stretch;
+  margin:0 auto;
+  margin-top:0px;
+  color:rgba(47, 54, 63, 1.000)
+  }
+  
+  .gridhardware > weather34infoboxes{
+  border:1px solid rgba(230, 232, 239, .8);  
+  padding:5px;  
+  background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
+  height:60px;  
+}
  
  
   .grid { 
@@ -301,7 +357,7 @@ topbarimperial,topbarmetric{margin-right:45px;}
   display: none
 }
 
-.gridfooter { 
+.gridfooter,.gridhardware { 
  display: none 
   
   }

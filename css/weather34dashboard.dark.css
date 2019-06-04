@@ -151,6 +151,25 @@ maxtempred{color:#d35d4e}maxtempblue{color:#44a6b5}maxtemporange{color:#d05f2d}m
 .orangeclock{position:relative;background:rgba(205,82,69,.8);padding:2px;color:#fff;-moz-border-radius:2px;-o-border-radius:2px;border-radius:2px;width:6.5rem;height:1.25rem;text-align:center;margin-left:40px;margin-top:3px;font-size:.9rem;font-family:clock}
 .weatherclock34{position:absolute;margin:0px auto 0;left:20px;font-size:.7rem;color:silver;font-family:weathertext2;text-align:center;width:200px;padding:5px;line-height:18px}
 
+.hardwareimg1{position:absolute;margin:0;padding:0;float:left;margin-left:-25px;}
+.hardwareimg2{position:absolute;margin:0;padding:0;float:left;margin-left:0;}
+
+
+.mbtype{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:50px;margin-top:5px}
+.mbfirmware{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:50px;margin-top:18px}
+.nanouptime{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:50px;margin-top:32px}
+
+
+.hardware{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:100px;margin-top:5px}
+.hardwareinfo{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:100px;margin-top:18px}
+.hardwareuptime{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:100px;margin-top:32px}
+
+.locinfo{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:15px;margin-top:5px}
+.locinfo2{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:15px;margin-top:18px}
+.locinfo3{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:15px;margin-top:32px}
+
+
+
 .topframe{ 
 top:6px;
 position:absolute;
@@ -225,6 +244,27 @@ position:absolute;
   background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
   height:80px;
 }
+
+.gridhardware { 
+  display: grid;
+  grid-template-columns: 317px 317px 316px  ;  
+  grid-template-rows: 3fr;
+  grid-column-gap: 5px;
+  align-items: stretch;
+  margin:0 auto;
+  margin-top:0px;
+  color:#c0c0c0;
+  }
+
+.gridhardware > weather34infoboxes{
+  padding:7px; 
+  background:0;
+  -webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
+  height:65px;
+  border: 1px solid rgba(245, 247, 252,.02);
+  -webkit-box-sizing:border-box;box-sizing:border-box;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);
+}
  
 .actualt{position:relative;left:2px;-webkit-border-radius:2px;border-radius:2px;font-family:Arial, Helvetica, sans-serif;width:140px;height:1.5em;font-size:0.6rem;top:-22px;color:#c0c0c0;
 align-items:left;justify-content:left;margin:0 auto;background:0}
@@ -289,6 +329,24 @@ align-items:left;justify-content:left;margin:0 auto;background:0}
 .gridfooter > weather34footer {
   display: none  
 }
+.gridhardware { 
+  display: grid;
+  grid-template-columns: 317px;  
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  align-items: stretch;
+  margin:0 auto;
+  margin-top:0px;
+ 
+  }
+  
+  .gridhardware > weather34infoboxes{
+ 
+  padding:5px;  
+  background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
+  height:60px;  
+}
 
  .maincontainer{display:flex;max-width:99%;margin:0 auto;text-align:center;} 
 .weather34admin__header{display:flex;flex-basis:95%;grid-area:header;height:40px;background-color:0;position:absolute;font-size:12px;}
@@ -346,7 +404,7 @@ align-items:left;justify-content:left;margin:0 auto;background:0}
   display: none
 }
 
-.gridfooter { 
+.gridfooter,.gridhardware { 
  display: none 
   
   }

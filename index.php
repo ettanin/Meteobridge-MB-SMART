@@ -161,30 +161,34 @@ if ($positionlastmodule=='airqualitymodule.php') {echo '<span class="yearpopup">
  <div id=dldata></div></weather34module> 
   <!-- Weather34 main moudles end -->
  
-  <main class="gridfooter"> <!-- Weather34 Footer -->
-  <weather34footer>
-  <!-- Weather34 left logo -->
-  <div class=hardwarelogo1><a href="https://www.meteobridge.com/wiki/index.php/Home" alt="https://www.meteobridge.com/wiki/index.php/Home" title="https://www.meteobridge.com/wiki/index.php/Home">
-<?php
-if ($mbplatform== "Meteobridge Pro"){echo '<img src="img/MeteobridgePRO.svg" alt="Davis Instruments-Meteobridge" title="Davis Instruments-Meteobridge"  width="140px" height="45px" >';}
-else if ($mbplatform== "MB TP-Link"){echo '<img src="img/meteobridge.svg" alt="Meteobridge TP-LINK" title="Meteobridge TP-LINK"  width="140px" height="45px" >';}
-else if ($mbplatform== "MB D-Link"){echo '<img src="img/meteobridge.svg" alt="Meteobridge D-LINK" title="Meteobridge D-LINK"  width="140px" height="45px" >';}
-else if ($mbplatform== "MB Asus"){echo '<img src="img/meteobridge.svg" alt="Meteobridge Asus" title="Meteobridge Asus"  width="140px" height="45px" >';}
-else if ($mbplatform== "Meteobridge"){echo '<img src="img/meteobridge.svg" alt="Meteobridge TP-LINK" title="Meteobridge TP-LINK"  width="140px" height="45px" >';}
-?></a> </div>
-<!-- Weather34 right logo -->
-<div class=hardwarelogo2 ><?php
-if ($weatherhardware== "Davis Vantage Vue"){echo '<img src="img/designedfordavisvue.svg" alt="Davis Instruments-Meteobridge" title="Davis Instruments-Meteobridge"  width="150px" height="55px" >';}
-else if ($weatherhardware== "Davis Envoy8x"){echo '<img src="img/designedfordavisenvoy8x.svg" alt="Davis Instruments-Meteobridge" title="Davis Instruments-Meteobridge"  width="150px" height="55px" >';}
-else if ($davis=="Yes"){echo '<img src="img/designedfor-1.svg" alt="Davis Instruments-Meteobridge" title="Davis Instruments-Meteobridge"  width="150px" height="55px" >';}else if ($weatherhardware=='Weatherflow Air-Sky'){echo '<a href="http://weatherflow.com/" title="http://weatherflow.com/" target="_blank"><img src="img/wflogo.svg" width="125px" height=55px alt="http://weatherflow.com/" ></a>';}
-else echo '<a href="https://weather34.com/homeweatherstation/" title="https://weather34.com/homeweatherstation/" target="_blank"><br><img src="img/weather34logo.svg" width="40px" alt="https://weather34.com/homeweatherstation/" class="homeweatherstationlogo" ><weather34>designed by weather34 2015-'.date('Y').'</weather34></a>';?> </div>
-<!-- Weather34 middle text-->
-<div class=footertext>
-<?php echo $info?>&nbsp;(<value><?php echo $templateversion?></value>)&nbsp;
-<?php echo $mbplatform;?>-(<value><maxred><?php echo $weather["swversion"];echo "</maxred>-",$weather["build"]?></value>)&nbsp;
-<?php echo $info."&nbsp;".$weatherhardware;?></div> 
-<div class=footertext><?php echo $info;?>&nbsp;<?php echo $stationlocation ;?> Weather Station &nbsp; <img src="img/flags/<?php echo $flag ;?>.svg" width="20px" ></div>
- </weather34footer>
+   <!-- Weather34 Footer -->
+ 
+  <main class="gridhardware">
+  <weather34infoboxes>
+  <div class=hardwareimg1><a href=https://wiki.meteobridge.com/wiki/index.php/Home target=_blank title=https://wiki.meteobridge.com/wiki/index.php/Home><img src=img/nano.svg width=90px height=50px alt=meteobridge></a></div>
+  
+  <div class=mbtype> <?php echo $info?>&nbsp;Meteobridge NanoSD:<?php echo $weather["mbplatform"]?></div>
+  <div class=mbfirmware> <?php echo $info?>&nbsp;Firmware:<oblue><?php echo $weather["swversion"];echo "-",$weather["build"]?><oblue></div>
+  <div class=nanouptime> <?php echo $info?>&nbsp;Uptime:<?php echo "<orange>", $uptimedays;echo " </orange> Days";?></div>
+  </weather34infoboxes>
+  
+  <weather34infoboxes>
+  <div class=hardwareimg2><a href=https://wiki.meteobridge.com/wiki/index.php/Home target=_blank title=https://wiki.meteobridge.com/wiki/index.php/Home><img src=img/davisvp2proconsole.svg width=90px height=50px alt=meteobridge></a></div>
+  <div class=hardware><?php echo $info?>&nbsp;<?php echo $weatherhardware;?></div>
+  <div class=hardwareinfo><?php echo $info?>&nbsp;Installed: <?php echo $hardwareinstalled;?></div>
+  <?php if ($weather['outdoorbattery']<1){$weather['outdoorbattery']="<ogreen>Good</ogreen>";}
+  else $weather['outdoorbattery']="<ored>Poor</ored>";?>
+  <?php if ($weather['indoorbattery']<1){$weather['indoorbattery']="<ogreen>Good</ogreen>";}
+  else $weather['indoorbattery']="<ored>Poor</ored>";?>
+  <div class=hardwareuptime><?php echo $info?>&nbsp;Power Console:<?php echo $weather['indoorbattery']?> <?php echo $info?>ISS:<?php echo $weather['outdoorbattery']?></div>  
+  </weather34infoboxes>
+  
+  <weather34infoboxes> 
+  <div class=locinfo><?php echo $info?>&nbsp;Operational Since:<?php echo $since;?></div>
+  <div class=locinfo2><?php echo $info?>&nbsp;<?php echo $stationlocation?></div>
+  <div class=locinfo3><?php echo $info?>&nbsp;Designed by Weather<orange>34</orange>&nbsp;&copy;2015-<?php echo date('Y');?></div>  
+  </weather34infoboxes>
+  
   <!-- Weather34 fotter ends -->
 </main>
 </div>

@@ -74,6 +74,7 @@ $email    = "'. $_POST["email"]. '";
 $twitter   = "'. $_POST["twitter"]. '";
 $theme1   = "'. $_POST["theme1"]. '";
 $since    = "'. $_POST["since"]. '";
+$hardwareinstalled    = "'. $_POST["hardwareinstalled"]. '";
 $weatherhardware   = "'.$_POST["weatherhardware"]. '";
 $mbplatform   = "'.$_POST["mbplatform"]. '";
 $davis   = "'.$_POST["davis"]. '";
@@ -549,63 +550,22 @@ Your Weather Station Hardware</div><p>
            <option><?php echo $weatherhardware ;?></option>
            <option>Davis Vantage Pro2</option>
            <option>Davis Vantage Pro2 Plus</option> 
-           <option>Davis Vantage Pro2 Plus+FARS</option>
+           <option>Davis Vantage Pro2+FARS</option>
            <option>Davis Vantage Pro2 FARS</option>
            <option>Davis Vantage Pro2 Solar</option>
            <option>Davis Vantage Pro2 UV</option> 
            <option>Davis Vantage Vue</option>
            <option>Davis Envoy8x</option>
            <option>Davis Cabled Vantage Pro2</option>  
-           <option>Davis Cabled Vantage Pro2 Plus</option>           
-           <option>Davis Vantage Pro1</option>
-           <option>Davis Vantage Pro1+Solar/UV</option>
-           <option>Davis Vantage Pro1+Solar/UV/FARS</option>
-           <option>Davis Vantage Pro1+FARS</option>   
-           <option>Davis Cabled Vantage Pro1</option>           
-           <option>Davis Cabled Vantage Pro1+Solar/UV</option>
-           <option>Davis Cabled Vantage Pro1+Solar/UV/FARS</option> 
-           <option>Davis Cabled Vantage Pro1+FARS</option>              
-           <option>Oregon Scientific WMR-100</option> 
-           <option>Oregon Scientific WMR-200</option> 
-           <option>Oregon Scientific WMR-300</option> 
-           <option>Oregon Scientific WMR-100</option>             
-           <option>Oregon Scientific WMR-88</option>
-           <option>Oregon Scientific WMR-968</option>
-           <option>Oregon Scientific WMR-969</option>
-           <option>Oregon Scientific WMR-100</option>
-           <option>Ambient Weather Observer-IP</option>
-           <option>Ambient Weather WS-12-IP</option>
-           <option>Ambient Weather WS-1000</option>
-           <option>Fine Offset WH-1080</option>
-           <option>Fine Offset WH-2080</option>
-           <option>Fine Offset WH-3080</option>
-           <option>Fine Offset WH-1080</option>
-           <option>Accurite</option>
-           <option>La Crosse</option>
-           <option>Weatherflow Air-Sky</option>
-           <option>Lufft WS10</option>
-           <option>Lufft WS100</option>
-           <option>Lufft WS200 UMB</option>
-           <option>Lufft WS300 UMB</option>
-           <option>Lufft WS301 UMB</option>
-           <option>Lufft WS302 UMB</option>
-           <option>Lufft WS303 UMB</option>
-           <option>Lufft WS304 UMB</option>
-           <option>Lufft WS310 UMB</option>
-           <option>Lufft WS400 UMB</option>
-           <option>Lufft WS401 UMB</option>
-           <option>Lufft WS500 UMB</option>
-           <option>Lufft WS501 UMB</option>
-           <option>Lufft WS502 UMB</option>
-           <option>Lufft WS503 UMB</option>
-           <option>Lufft WS504 UMB</option>
-           <option>Lufft WS510 UMB</option>
-           <option>Lufft WS600 UMB</option>
-           <option>Lufft WS601 UMB</option>
-           <option>Lufft WS700 UMB</option>
-           <option>Lufft WS800 UMB</option>
-           <option>Lufft WS3100 UMB</option>           
-           <option>None of above</option>
+           <option>Davis Cabled Vantage Pro2+</option>           
+           <option>Davis Pro1</option>
+           <option>Davis Pro1+Sol/UV</option>
+           <option>Davis Pro1+Sol/UV/FARS</option>
+           <option>Davis Pro1+FARS</option>   
+           <option>Davis Cabled Pro1</option>           
+           <option>Davis Cabled Pro1+Solar/UV</option>
+           <option>Davis Cabled Pro1+Solar/UV/FARS</option> 
+           <option>Davis Cabled Pro1+FARS</option>          
         </select>
         <br><br>
     
@@ -637,6 +597,30 @@ Which Meteobridge Platform</div><p>
            <option>MB D-Link</option>
            <option>MB Asus</option>
            <option>Meteobridge</option>
+        </select>
+        <br><br>
+    
+
+<br> 
+
+ <div class= "weathersectiontitle">
+<svg id="i-code" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
+</svg>
+
+When Did You Install Your Hardware Currently in Use </div><p>
+      <div class= "stationvalue"> Type the Date
+     </div>
+      <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M30 12 L16 24 2 12" />
+</svg>
+      
+       <label name="hardwareinstalled"></label>
+        <input name="hardwareinstalled" type="text" id="hardwareinstalled" value="<?php echo $hardwareinstalled ;?>" class="choose">       
+           
+           
         </select>
         <br><br>
     
