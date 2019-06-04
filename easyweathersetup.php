@@ -548,24 +548,9 @@ Your Weather Station Hardware</div><p>
        <label name="weatherhardware"></label>
         <select id="weatherhardware" name="weatherhardware" class="chooseapi">           
            <option><?php echo $weatherhardware ;?></option>
-           <option>Davis Vantage Pro2</option>
-           <option>Davis Vantage Pro2 Plus</option> 
-           <option>Davis Vantage Pro2+FARS</option>
-           <option>Davis Vantage Pro2 FARS</option>
-           <option>Davis Vantage Pro2 Solar</option>
-           <option>Davis Vantage Pro2 UV</option> 
+           <option>Davis Vantage Pro2</option>           
            <option>Davis Vantage Vue</option>
-           <option>Davis Envoy8x</option>
-           <option>Davis Cabled Vantage Pro2</option>  
-           <option>Davis Cabled Vantage Pro2+</option>           
-           <option>Davis Pro1</option>
-           <option>Davis Pro1+Sol/UV</option>
-           <option>Davis Pro1+Sol/UV/FARS</option>
-           <option>Davis Pro1+FARS</option>   
-           <option>Davis Cabled Pro1</option>           
-           <option>Davis Cabled Pro1+Solar/UV</option>
-           <option>Davis Cabled Pro1+Solar/UV/FARS</option> 
-           <option>Davis Cabled Pro1+FARS</option>          
+           <option>Davis Envoy8x</option>             
         </select>
         <br><br>
     
@@ -592,11 +577,7 @@ Which Meteobridge Platform</div><p>
            <option><?php echo $mbplatform ;?></option>
            <option>Meteobridge Nano</option>
            <option>Meteobridge NanoSD</option>
-           <option>Meteobridge Pro</option>  
-           <option>MB TP-Link</option>
-           <option>MB D-Link</option>
-           <option>MB Asus</option>
-           <option>Meteobridge</option>
+           <option>Meteobridge Pro</option>             
         </select>
         <br><br>
     

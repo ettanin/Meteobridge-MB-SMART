@@ -165,7 +165,13 @@ if ($positionlastmodule=='airqualitymodule.php') {echo '<span class="yearpopup">
  
   <main class="gridhardware">
   <weather34infoboxes>
-  <div class=hardwareimg1><a href=https://wiki.meteobridge.com/wiki/index.php/Home target=_blank title=https://wiki.meteobridge.com/wiki/index.php/Home><img src=img/nano.svg width=90px height=50px alt=meteobridge></a></div>
+  <div class=hardwareimg1>
+  <a href="https://www.meteobridge.com/wiki/index.php/Home" alt="https://www.meteobridge.com/wiki/index.php/Home" title="https://www.meteobridge.com/wiki/index.php/Home">
+<?php
+if ($mbplatform== "Meteobridge Pro"){echo '<img src="img/MeteobridgePRO.svg" alt="Davis Instruments-Meteobridge" title="Davis Instruments-Meteobridge"  width=60px height=50px >';}
+else if ($mbplatform== "Meteobridge Nano"){echo '<img src="img/nano.svg" alt="Meteobridge TP-LINK" title="Meteobridge Nano"  width=60px height=50px >';}
+else if ($mbplatform== "Meteobridge NanoSD"){echo '<img src="img/nano.svg" alt="Meteobridge D-LINK" title="Meteobridge NanoSD"  width=60px height=50px" >';}
+?></a> </div>
   
   <div class=mbtype> <?php echo $info?>&nbsp;Meteobridge NanoSD:<?php echo $weather["mbplatform"]?></div>
   <div class=mbfirmware> <?php echo $info?>&nbsp;Firmware:<oblue><?php echo $weather["swversion"];echo "-",$weather["build"]?><oblue></div>
@@ -173,7 +179,11 @@ if ($positionlastmodule=='airqualitymodule.php') {echo '<span class="yearpopup">
   </weather34infoboxes>
   
   <weather34infoboxes>
-  <div class=hardwareimg2><a href=https://wiki.meteobridge.com/wiki/index.php/Home target=_blank title=https://wiki.meteobridge.com/wiki/index.php/Home><img src=img/davisvp2proconsole.svg width=90px height=50px alt=meteobridge></a></div>
+  <div class=hardwareimg2>
+  <?php
+if ($weatherhardware== "Davis Vantage Vue"){echo '<img src="img/davisvue.svg" alt="Davis Instruments-Meteobridge" title="Davis Instruments-Meteobridge"  width="90px" height="55px" >';}
+else if ($weatherhardware== "Davis Envoy8x"){echo '<img src="img/designedfordavisenvoy8x.svg" alt="Davis Instruments-Meteobridge" title="Davis Instruments-Meteobridge"  width="90px" height="55px" >';}
+else if ($davis=="Yes"){echo '<img src="img/logoDAVISCONSOLEVECTOR.svg" alt="Davis Instruments-Meteobridge" title="Davis Instruments-Meteobridge"  width="90px" height="55px" >';}?></div>
   <div class=hardware><?php echo $info?>&nbsp;<?php echo $weatherhardware;?></div>
   <div class=hardwareinfo><?php echo $info?>&nbsp;Installed: <?php echo $hardwareinstalled;?></div>
   <div class=hardwareuptime><?php echo $info?>&nbsp;Power Console:<?php echo $weather['indoorbattery']?> <?php echo $info?>ISS:<?php echo $weather['outdoorbattery']?></div>  
