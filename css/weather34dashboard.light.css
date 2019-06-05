@@ -80,24 +80,29 @@ alertadvisory{top:30px;left:160px;position:absolute}
   border-bottom:15px solid rgba(230, 232, 239, .5);-webkit-box-shadow:inset 0 20px rgba(230, 232, 239,.5);box-shadow:inset 0 20px rgba(230, 232, 239, .5);-webkit-box-sizing:border-box;box-sizing:border-box;
  
 }
-.gridfooter { 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(960px, 1fr));
+.footercontainer{margin:0 auto;width:900px;}
+.gridfooter {
+  display:grid;
+  grid-template-columns:900px  ;  
+  grid-template-rows: 1fr;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   align-items: stretch;
   margin:0 auto;
-  margin-top:0px;
-  color:rgba(47, 54, 63, 1.000)
+  margin-top:5px;
+  color:rgba(47, 54, 63, 1.000);
   
-  
+    
   }
 
 .gridfooter > weather34footer {
-  border:1px solid rgba(230, 232, 239, .8);  
+  border:1px solid rgba(230, 232, 239, .5); 
+  -webkit-box-sizing:border-box;box-sizing:border-box;
+  box-shadow:0;
   padding:5px;  
   background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
-  height:70px;  
+  height:40px;
+  margin-bottom:5px
 }
 
 .gridhardware { 
@@ -118,13 +123,13 @@ alertadvisory{top:30px;left:160px;position:absolute}
   height:65px;  
 }
 
-.hardwareimg1{position:absolute;margin:0;padding:0;float:left;margin-left:-25px;}
+.hardwareimg1{position:absolute;margin:0;padding:0;float:left;margin-left:5px;}
 .hardwareimg2{position:absolute;margin:0;padding:0;float:left;margin-left:0;}
 
 
-.mbtype{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:50px;margin-top:5px}
-.mbfirmware{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:50px;margin-top:18px}
-.nanouptime{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:50px;margin-top:32px}
+.mbtype{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:70px;margin-top:5px}
+.mbfirmware{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:70px;margin-top:18px}
+.nanouptime{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:70px;margin-top:32px}
 
 
 .hardware{position:absolute;float:left;font-family:weathertext2,arial,helvetica;font-size:10px;margin-left:100px;margin-top:5px}
@@ -301,13 +306,29 @@ maxtempred{color:#d35d4e}maxtempblue{color:#44a6b5}maxtemporange{color:#d05f2d}m
   display: none
 }
 
-.gridfooter { 
- display: none 
+.footercontainer{margin:0 auto;width:600px;}
+.gridfooter {
+  display:grid;
+  grid-template-columns:600px  ;  
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  align-items: stretch;
+  margin:0 auto;
+  margin-top:5px;
+  color:rgba(47, 54, 63, 1.000);
   
+    
   }
 
-.gridfooter > weatherfooter {
-  display: none  
+.gridfooter > weather34footer {
+  border:1px solid rgba(230, 232, 239, .5); 
+  -webkit-box-sizing:border-box;box-sizing:border-box;
+  box-shadow:0;
+  padding:5px;  
+  background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
+  height:40px;
+  margin-bottom:5px
 }
 
  .maincontainer{display:flex;max-width:100%;margin:0 auto;text-align:center;} 
@@ -357,14 +378,38 @@ topbarimperial,topbarmetric{margin-right:45px;}
   display: none
 }
 
-.gridfooter,.gridhardware { 
+.gridhardware { 
  display: none 
   
   }
 
-.gridfooter > weatherfooter {
-  display: none  
+.footercontainer{margin:0 auto;width:320px;}
+.gridfooter {
+  display:grid;
+  grid-template-columns:320px  ;  
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  align-items: stretch;
+  margin:0 auto;
+  margin-top:5px;
+  color:rgba(47, 54, 63, 1.000);
+  
+    
+  }
+
+.gridfooter > weather34footer {
+  border:1px solid rgba(230, 232, 239, .5); 
+  -webkit-box-sizing:border-box;box-sizing:border-box;
+  box-shadow:0;
+  padding:5px;  
+  background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
+  height:40px;
+  margin-bottom:5px
 }
+
+.footertext{position:relative;left:-5px;font-family:weathertext2,Arial, Helvetica, sans-serif;width:320px;height:1.5em;font-size:0.65rem;top:2px;align-items:left;justify-content:left;margin:0 auto;padding:0;}
+
 
  .maincontainer{display:flex;max-width:100%;margin:0 auto;} 
 .weather34admin__header{display:flex;flex-basis:99%;grid-area:header;height:40px;background-color:0;position:absolute;font-size:12px;}

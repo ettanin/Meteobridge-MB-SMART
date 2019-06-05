@@ -1,3 +1,4 @@
+
 <?php 
 include('settings1.php');error_reporting(0); 
 	####################################################################################################
@@ -77,6 +78,7 @@ $creditsURL         = ""; // for chart pages only
 $credits            = "Data Supplied via Weather Underground"; // for chart pages only
 $templateinfo       = ''; // template information page
 $templateversion    = 'MB-<maxred>Smart</maxred>';
+$designedby="designed by weather34.com";
 $software    = 'Meteobridge <span>Hardware</span> Users';$designedfor='<br>For Meteobridge Users';$chartversion='(WUDATACHARTS)';$somethinggoeshere ='d4586dec-e7a2-47ae-99b6-25527b2563c9';$chartversionmysql  =  '(DATACHARTS version Final MYSQL-Meteobridge)';
 if (array_key_exists('theme', $_GET) && ($_GET['theme'] == 'dark' || $_GET['theme'] == 'light')) {
   SetCookie('theme', $_GET['theme'], time() + 15552000);

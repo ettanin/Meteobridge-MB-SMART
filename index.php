@@ -173,7 +173,7 @@ else if ($mbplatform== "Meteobridge Nano"){echo '<img src="img/nano.svg" alt="Me
 else if ($mbplatform== "Meteobridge NanoSD"){echo '<img src="img/nano.svg" alt="Meteobridge D-LINK" title="Meteobridge NanoSD"  width=60px height=50px" >';}
 ?></a> </div>
   
-  <div class=mbtype> <?php echo $info?>&nbsp;Meteobridge NanoSD:<?php echo $weather["mbplatform"]?></div>
+  <div class=mbtype> <?php echo $info?>&nbsp;<?php echo $mbplatform?>: <?php echo $weather["mbplatform"]?></div>
   <div class=mbfirmware> <?php echo $info?>&nbsp;Firmware:<oblue><?php echo $weather["swversion"];echo "-",$weather["build"]?><oblue></div>
   <div class=nanouptime> <?php echo $info?>&nbsp;Uptime:<?php echo "<orange>", $uptimedays;echo " </orange> Days";?></div>
   </weather34infoboxes>
@@ -192,10 +192,12 @@ else if ($davis=="Yes"){echo '<img src="img/logoDAVISCONSOLEVECTOR.svg" alt="Dav
   <weather34infoboxes> 
   <div class=locinfo><?php echo $info?>&nbsp;Operational Since:<?php echo $since;?></div>
   <div class=locinfo2><?php echo $info?>&nbsp;<?php echo $stationlocation?></div>
-  <div class=locinfo3><?php echo $info?>&nbsp;Designed by Weather<orange>34</orange>&nbsp;&copy;2015-<?php echo date('Y');?></div>  
-  </weather34infoboxes>
-  
-  <!-- Weather34 fotter ends -->
-</main>
-</div>
-<div id=lightningalert></div></body><?php include_once('updater.php');include_once('menu.php')?></html>
+  <div class=locinfo3><?php echo $info?>&nbsp;<?php echo $designedby;?>&nbsp;&copy;2015-<?php echo date('Y');?></div>  
+  </weather34infoboxes></div></div>
+  <div class="footercontainer">
+  <main class="gridfooter">
+  <weather34footer>
+  <div class=footertext><?php echo $info?>&nbsp;Realtime Weather Data Provided By:&nbsp;<?php echo $stationlocation?> Home Weather Station</div>
+ </weather34footer></main></div>
+ 
+ </body><?php include_once('updater.php');include_once('menu.php');?><div id=lightningalert></div>
