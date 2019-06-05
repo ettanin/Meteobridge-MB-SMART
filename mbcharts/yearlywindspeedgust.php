@@ -23,6 +23,10 @@
 	else if ($windunit == 'm/s') {$conv= '1';}
 	else if ($windunit == 'km/h'){$conv= '3.6';}
 
+	//echo $conv;
+
+	$animationduration = '500';
+
 ?>
 
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -52,7 +56,7 @@
 		if(allLinesArray.length>0){
 
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].replace(/\�|\"|\u0000/g,'').split(',');
+				var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
 				if ( rowData.length >1)
 					dataPoints1.push({label: rowData[0],y:parseFloat(rowData[6]*<?php echo $conv;?>)});
 
@@ -66,7 +70,7 @@
 		if(allLinesArray.length>0){
 
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].replace(/\�|\"|\u0000/g,'').split(',');
+				var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
 				if ( rowData.length >1)
 					dataPoints2.push({label: rowData[0],y:parseFloat(rowData[7]*<?php echo $conv;?>)});
 					//parseFloat(rowData[13])});
@@ -92,9 +96,9 @@
 		toolTip:{
 			   fontStyle: "normal",
 			   cornerRadius: 4,
-			   backgroundColor: '<?php echo $tooltipbackgroundcolor;?>',
+			   backgroundColor: '<?php echo $backgroundcolor;?>',
 			   contentFormatter: function(e) {
-      var str = '<span style="color: <?php echo $fontcolor;?>;">' + e.entries[0].dataPoint.label + '</span><br/>';
+      var str = '<span style="color: <?php echo $fontcolor;?>;">' + CanvasJS.formatDate(e.entries[0].dataPoint.label, "DD MMM") + '</span><br/>';
       for (var i = 0; i < e.entries.length; i++) {
         var temp = '<span style="color: ' + e.entries[i].dataSeries.color + ';">' + e.entries[i].dataSeries.name + '</span> <span style="color: <?php echo $fontcolor;?>;">' + e.entries[i].dataPoint.y.toFixed(1) + "<?php echo ' '.$windunit ;?>" + '</span> <br/>';
         str = str.concat(temp);
@@ -151,7 +155,7 @@
 			labelFontColor: "#F8F8F8",
 			labelFontSize:11,
 			labelBackgroundColor: '<?php echo $ycrosshaircolor;?>',
-			valueFormatString: "#0.0 <?php echo $windunit ;?>",
+			valueFormatString: "#0.# <?php echo $windunit ;?>",
 		}
 
       },
@@ -167,7 +171,6 @@
 			// Max Wind Gust
 			type: "splineArea",
 			color: '<?php echo $line1color;?>',
-			lineColor: '<?php echo $line1linecolor;?>',
 			markerSize:0,
 			showInLegend:true,
 			legendMarkerType: "circle",
@@ -175,22 +178,22 @@
 			markerType: "circle",
 			name:"Max Wind Gust",
 			dataPoints: dataPoints1,
-			yValueFormatString:"#0.0 <?php echo $windunit ;?>",
+			yValueFormatString:"#0.# <?php echo $windunit ;?>",
 		},
 		{
 			// Average Wind Speed
 			type: "splineArea",
 			color: '<?php echo $line2color;?>',
 			markerSize:0,
-      		markerColor: '<?php echo $line2markercolor;?>',
+      markerColor: '<?php echo $line2markercolor;?>',
 			showInLegend:true,
 			legendMarkerType: "circle",
 			lineThickness: 2,
-      		lineColor: '<?php echo $line2markercolor;?>',
+      lineColor: '<?php echo $line2markercolor;?>',
 			markerType: "circle",
 			name:"Avg Wind Speed",
 			dataPoints: dataPoints2,
-			yValueFormatString:"#0.0 <?php echo $windunit ;?>",
+			yValueFormatString:"#0.# <?php echo $windunit ;?>",
 		}
 
 		]

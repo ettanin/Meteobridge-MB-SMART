@@ -1,7 +1,9 @@
 <?php
 
+
+
 	####################################################################################################
-	#	WUDATACHARTS by BRIAN UNDERDOWN 2016                                                           #
+	#	API MYSQL CHARTS by BRIAN UNDERDOWN 2016                                                       #
 	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at http://weather34.com/homeweatherstation/index.html  #
 	# 	                                                                                               #
 	# 	built on CanvasJs  	                                                                           #
@@ -10,54 +12,23 @@
 	# 	                                                                                               #
 	# 	Weather Data is based on your PWS upload quality collected at Weather Underground 	           #
 	# 	                                                                                               #
-	# 	Second General Release: 4th October 2016  	                                                   #
+	# 	Second General Release: NOV 2017 Wind Direction                                                #
 	# 	                                                                                               #
 	#   http://www.weather34.com 	                                                                   #
 	####################################################################################################
 
 	include('chartslivedata.php');include('./chart_theme.php');header('Content-type: text/html; charset=utf-8');
-	$weatherfile = date('Y');
-
-  $conv = 1;
-	if ($pressureunit == 'mb' || $pressureunit == 'hPa') {
-    $conv = '1';
-  } else if ($pressureunit == 'inHg') {
-    $conv = '0.02953';
-  }
-
-	$int = '\'auto\'';
-	if ($pressureunit == 'mb' || $pressureunit == 'hPa') {
-		$int= '10';
-	} else if ($pressureunit == 'inHg') {
-		$int= '0.5';
-	}
-
-	if ($pressureunit == 'mb' || $pressureunit == 'hPa') {
-		$pressdecimal = '0';
-	} else {
-		$pressdecimal = '1';
-	}
-
-	if ($pressureunit == 'mb' || $pressureunit == 'hPa') {
-		$maximum = '1050';
-		$minimum = '970';
-	} else if ($pressureunit == 'inHg') {
-		$maximum = '31';
-		$minimum = '28';
-	}
-
-  $animationduration = '500';
-
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>OUTDOOR Barometer YEAR CHART</title>
+		<title>OUTDOOR WIND day CHART</title>
 		<script src=../js/jquery.js></script>
 
 	';
-	?>
+
+	$date= date('D jS Y');$weatherfile = date('dmY');?>
     <br>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -65,7 +36,7 @@
 		var dataPoints2 = [];
 		$.ajax({
 			type: "GET",
-			url: "<?php echo $weatherfile;?>.csv",
+			url: "result.csv",
 			dataType: "text",
 			cache:false,
 			success: function(data) {processData1(data),processData2(data);}
@@ -75,10 +46,10 @@
 		var allLinesArray = allText.split('\n');
 		if(allLinesArray.length>0){
 
-			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
-				if ( rowData[9] >0)
-					dataPoints1.push({label:rowData[0],y:parseFloat(rowData[9]*<?php echo $conv ;?>)});
+			for (var i = 1; i <= allLinesArray.length-1; i++) {
+				var rowData = allLinesArray[i].split(',');
+				if ( rowData.length >1)
+					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[11])});
 
 
 			}
@@ -89,29 +60,28 @@
 		var allLinesArray = allText.split('\n');
 		if(allLinesArray.length>0){
 
-			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
-				if ( rowData[10] >0)
-					dataPoints2.push({label: rowData[0],y:parseFloat(rowData[10]*<?php echo $conv ;?>)});
+			for (var i = 1; i <= allLinesArray.length-1; i++) {
+				var rowData = allLinesArray[i].split(',');
+				if ( rowData.length >1)
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[11])});
 					//parseFloat(rowData[13])});
 
 			}
-			drawChart(dataPoints1,dataPoints2 );
+			drawChart(dataPoints1 , dataPoints2 );
 		}
 	}
 
 
 	function drawChart( dataPoints1 , dataPoints2 ) {
 		var chart = new CanvasJS.Chart("chartContainer2", {
-		backgroundColor: "rgba(40, 45, 52,.4)",
+		 backgroundColor: "rgba(40, 45, 52,.4)",
 		 animationEnabled: false,
 		 margin: 0,
-
-
+		 
 		title: {
-            text: " ",
-			fontSize: 11,
-			fontColor: '#aaa',
+            text: "",
+			fontSize: 0,
+			fontColor: '#aaa>',
 			fontFamily: "arial",
         },
 		toolTip:{
@@ -124,27 +94,25 @@
 			   shared: true, 
  },
 		axisX: {
-			gridColor: '#333',
-		    labelFontSize: 10,
-			labelFontColor: '#aaa',
+			gridColor: "#333",
+		    labelFontSize: 6,
+			labelFontColor:' #aaa',
 			lineThickness: 1,
-			gridThickness: 1,
-			titleFontFamily: "arial",
-			labelFontFamily: "arial",
-			minimum:0,
+			gridThickness: 1,	
+			titleFontFamily: "arial",	
+			labelFontFamily: "arial",	
 			gridDashType: "dot",
-			interval: 'auto',
-			intervalType:"day",
-			xValueType: "dateTime",
+   			intervalType: "hour",
+			minimum:0,
 			crosshair: {
-				enabled: true,
-				snapToDataPoint: true,
-				color: '<?php echo $xcrosshaircolor;?>',
-				labelFontColor: "#F8F8F8",
-				labelFontSize:11,
-				labelBackgroundColor: '<?php echo $xcrosshaircolor;?>',
-			}
-
+        enabled: true,
+        snapToDataPoint: true,
+        color: '#44a6b5',
+        labelFontColor: "#F8F8F8",
+        labelFontSize:8,
+		labelMaxWidth: 30,
+        labelBackgroundColor: '#44a6b5',
+      }
 			},
 
 		axisY:{
@@ -155,69 +123,53 @@
 		margin: 0,
 		lineThickness: 1,
 		gridThickness: 1,
-		interval: <?php echo $int;?>,
         includeZero: false,
 		gridColor: '#333',
 		labelFontSize: 8,
-		gridDashType: "dot",
 		labelFontColor: '#aaa',
+		gridDashType: "dot",
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
-		maximum: <?php echo $maximum;?>,
-		minimum: <?php echo $minimum;?>,
+		maximum:360,
+      minimum:0,
+		interval: 40,
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(<?php echo $pressdecimal;?>) + " <?php echo $pressureunit ;?> " ;
-       },
-		crosshair: {
+        return e.value .toFixed(0) + '°' ;
+				 },
+				 crosshair: {
 			enabled: true,
 			snapToDataPoint: true,
-			color: '<?php echo $ycrosshaircolor;?>',
-			labelFontColor: "#F8F8F8",
+			color: '#44a6b5',
+			labelFontColor: "#fff",
 			labelFontSize:8,
-			labelBackgroundColor: "#ff832f",
 			labelMaxWidth: 60,
-			labelBackgroundColor: '<?php echo $ycrosshaircolor;?>',
-			valueFormatString:"##0.# <?php echo $pressureunit ;?>",
+			labelBackgroundColor: '#d85d30',
+			valueFormatString: "#0.#°",
 		}
-
       },
 
 	  legend:{
       fontFamily: "arial",
-      fontColor: '#aaa',
+      fontColor: '<?php echo $fontcolor;?>',
 
  },
 
 
 		data: [
 		{
-			// High Barometer
-			type: "spline",
-			color: 'rgba(255, 131, 47, 1.000)',
-			markerSize:0,
+			//wind direction
+			type: "scatter",
+			color: '#44a6b5',
+			markerSize:2,
 			showInLegend:false,
 			legendMarkerType: "circle",
-			lineThickness: 2,
+			lineThickness: 1,
 			markerType: "circle",
-			name:"Hi Barometer",
+			name:"Wind-Direction",
 			dataPoints: dataPoints1,
-			yValueFormatString:"##0.## <?php echo $pressureunit ;?>",
+			yValueFormatString:"#0.# °",
 		},
-		{
-			// Low Barometer
-			type: "spline",
-			color: 'rgba(0, 164, 180, 1.000)',
-			markerSize:0,
-      markerColor: 'rgba(0, 164, 180, 1.000)',
-			showInLegend:false,
-			legendMarkerType: "circle",
-			lineThickness: 2,
-      lineColor: 'rgba(0, 164, 180, 1.000)',
-			markerType: "circle",
-			name:"Lo Barometer",
-			dataPoints: dataPoints2,
-			yValueFormatString:"##0.## <?php echo $pressureunit ;?>",
-		}
+
 
 		]
 		});
@@ -229,9 +181,8 @@
    </script>
 
 <body>
-<div id="chartContainer2" style="width:auto;height:190px;padding:0;margin-top:-25px;border-radius:3px;border: 1px solid rgba(245, 247, 252,.02);
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;"></div></div>
-
+<div id="chartContainer2" class="chartContainer2" style="width:100%;height:125px;padding:0;margin-top:-25px;border-radius:3px;border: 1px solid rgba(245, 247, 252,.02);
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);"></div></div>
 
 </body>
 <script src='canvasJs.js'></script>

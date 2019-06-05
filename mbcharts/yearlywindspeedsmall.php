@@ -17,33 +17,35 @@
 	#   http://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	include('chartslivedata.php');header('Content-type: text/html; charset=utf-8');
+	include('chartslivedata.php');include('./chart_theme.php');header('Content-type: text/html; charset=utf-8');
+	$weatherfile = date('Y');
+
 	$conv = 1;
-	
-	if ($uk == true) {$conv= '2.23694';}
-	else if ($usa == true) {$conv= '2.23694';}
-	else if ($windunit == 'mph') {$conv= '2.23694';}
-	else if ($windunit == 'm/s') {$conv= '1';}
-	else if ($windunit == 'km/h'){$conv= '3.6';}
-    echo '
+	if ($windunit == 'mph') {
+		$conv= '2.23694';
+	} else if ($windunit == 'm/s') {
+		$conv= '1';
+	} else if ($windunit == 'km/h'){
+		$conv= '3.6';
+	}
+		echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>OUTDOOR WIND day CHART</title>	
-		<script src=../js/jquery.js></script>
-		
+		<title>OUTDOOR WIND Month CHART</title>
+	<script src=../js/jquery.js></script>
+
 	';
-	
-	$date= date('D jS Y');$weatherfile = date('dmY');?>
-    <br>
-    <script type="text/javascript">
-        $(document).ready(function () {
-		var dataPoints1 = [];
-		var dataPoints2 = [];
-		$.ajax({
-			type: "GET",
-			url: "result.csv",
+	?>
+<br>
+<script type="text/javascript">
+$(document).ready(function () {
+	var dataPoints1 = [];
+	var dataPoints2 = [];
+	$.ajax({
+		type: "GET",
+		url: "<?php echo date('Y')?>.csv",
 			dataType: "text",
 			cache:false,
 			success: function(data) {processData1(data),processData2(data);}
@@ -56,7 +58,7 @@
 			for (var i = 1; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData.length >1)
-					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[5])});
+					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[6]*<?php echo $conv;?>)});
 					
 					
 			}
@@ -70,7 +72,7 @@
 			for (var i = 1; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData.length >1)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[5])});
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[7]*<?php echo $conv;?>)});
 					//parseFloat(rowData[13])});
 				
 			}
@@ -91,14 +93,11 @@
 			fontColor:' #aaa',
 			fontFamily: "arial",
         },
-		dataPointWidth: 1,
 		toolTip:{
 			   fontStyle: "normal",
 			   cornerRadius: 4,
-			   backgroundColor: "rgba(40, 45, 52,1)",	
-			   fontColor: '#aaa',	
-			   fontSize: 11,	   
-			   toolTipContent: " x: {x} y: {y} <br/> name: {name}, label:{label} ",
+			   backgroundColor: "#fff",
+			   toolTipContent: " x: {x} y: {y} <br/> name: {name}, label:{label}",
 			   shared: true, 
  },
 		axisX: {
@@ -122,7 +121,7 @@
 		margin: 3,
 		lineThickness: 1,		
 		gridThickness: 1,	
-		interval:1,	
+		interval:'auto',	
         includeZero: true,
 		gridColor: "#333",
 		gridDashType: "dot",
@@ -131,7 +130,7 @@
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0);  
+        return e.value .toFixed(0) + " <?php echo $windunit ;?> " ;  
          },		
 			 
 		 
@@ -146,20 +145,30 @@
 		
 		data: [
 		{
-			
-		},
-		{
-			// wind gust
+			//wind speed
 			type: "column",
-			color:"rgba(255, 131, 47, 1.000)",
+			color:"#F05E40",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
 			lineThickness: 0,
 			markerType: "none",
-			name:"UV-INDEX",
+			name:"Gusts",
+			dataPoints: dataPoints2,
+			yValueFormatString:"#0.# <?php echo $windunit ;?>",
+		},
+		{
+			// wind gust
+			type: "column",
+			color:"#00a4b4",
+			markerSize:0,
+			showInLegend:false,
+			legendMarkerType: "circle",
+			lineThickness: 0,
+			markerType: "none",
+			name:"Avg Wind",
 			dataPoints: dataPoints1,
-			yValueFormatString:"#0.# UVI",
+			yValueFormatString:"#0.# <?php echo $windunit ;?>",
 		}
 
 		]

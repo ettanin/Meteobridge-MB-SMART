@@ -63,7 +63,7 @@ $(document).ready(function () {
 		var allLinesArray = allText.split('\n');
 		if(allLinesArray.length>0){
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].replace(/\�|\"|\u0000/g,'').split(',');
+				var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
 				if ( rowData.length >1)
 				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[5]*<?php echo $conv;?>)});
 			}
@@ -77,7 +77,7 @@ $(document).ready(function () {
 		var allLinesArray = allText.split('\n');
 		if(allLinesArray.length>0){
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].replace(/\�|\"|\u0000/g,'').split(',');
+				var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
 				if ( rowData.length >1)
 				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[5]*<?php echo $conv;?>)});
 				//parseFloat(rowData[13])});
@@ -89,7 +89,6 @@ $(document).ready(function () {
 		var chart = new CanvasJS.Chart("chartContainer", {
 			backgroundColor: '<?php echo $backgroundcolor;?>',
 			animationEnabled: true,
-			animationDuration: <?php echo $animationduration;?>,
 			title: {
 				text: "",
 				fontSize: 12,
@@ -99,9 +98,9 @@ $(document).ready(function () {
 			toolTip:{
 				fontStyle: "normal",
 				cornerRadius: 4,
-				backgroundColor: '<?php echo $tooltipbackgroundcolor;?>',
+				backgroundColor: '<?php echo $backgroundcolor;?>',
 				contentFormatter: function(e) {
-					var str = '<span style="color: <?php echo $fontcolor;?>;">' + e.entries[0].dataPoint.label + '</span><br/>';
+					var str = '<span style="color: <?php echo $fontcolor;?>;">' + CanvasJS.formatDate(e.entries[0].dataPoint.label, "DD MMM") + '</span><br/>';
 					for (var i = 0; i < e.entries.length; i++) {
 						var temp = '<span style="color: ' + e.entries[i].dataSeries.color + ';">' + e.entries[i].dataSeries.name + '</span> <span style="color: <?php echo $fontcolor;?>;">' + e.entries[i].dataPoint.y.toFixed(2) + "<?php echo ' '.$rainunit ;?>" + '</span> <br/>';
 						str = str.concat(temp);

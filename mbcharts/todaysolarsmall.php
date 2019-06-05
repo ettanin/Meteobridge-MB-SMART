@@ -1,5 +1,7 @@
 <?php
 
+
+	
 	####################################################################################################
 	#	DATACHARTS by BRIAN UNDERDOWN 2016                                                           #
 	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at http://weather34.com/homeweatherstation/index.html  # 
@@ -15,7 +17,14 @@
 	#   http://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	include('chartslivedata.php');include('./chart_theme.php');header('Content-type: text/html; charset=utf-8');
+	include('chartslivedata.php');header('Content-type: text/html; charset=utf-8');
+	$conv = 1;
+	
+	if ($uk == true) {$conv= '2.23694';}
+	else if ($usa == true) {$conv= '2.23694';}
+	else if ($windunit == 'mph') {$conv= '2.23694';}
+	else if ($windunit == 'm/s') {$conv= '1';}
+	else if ($windunit == 'km/h'){$conv= '3.6';}
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -72,37 +81,30 @@
 	
 	function drawChart( dataPoints1 , dataPoints2 ) {
 		var chart = new CanvasJS.Chart("chartContainer2", {
-		 backgroundColor: '<?php echo $darkbackgroundcolor;?>',
-		 animationEnabled: true,
-		 animationDuration: <?php echo $animationduration;?>,
+		 backgroundColor: "rgba(40, 45, 52,.4)",
+		 animationEnabled: false,
 		 margin: 0,
 		 
 		title: {
             text: "",
 			fontSize: 0,
-			fontColor: '<?php echo $darkfontcolor;?>',
+			fontColor:' #aaa',
 			fontFamily: "arial",
         },
 		dataPointWidth: 1,
 		toolTip:{
 			   fontStyle: "normal",
 			   cornerRadius: 4,
-			   backgroundColor: '<?php echo $tooltipbackgroundcolor;?>',
+			   backgroundColor: "rgba(40, 45, 52,1)",	
+			   fontColor: '#aaa',	
 			   fontSize: 11,	   
-			   contentFormatter: function(e) {
-      var str = '<span style="color: <?php echo $darkfontcolor;?>;">' + e.entries[0].dataPoint.label + '</span><br/>';
-      for (var i = 0; i < e.entries.length; i++) {
-        var temp = '<span style="color: ' + e.entries[i].dataSeries.color + ';">' + e.entries[i].dataSeries.name + '</span> <span style="color: <?php echo $darkfontcolor;?>;">' + e.entries[i].dataPoint.y.toFixed(0) + ' Wm/2</span> <br/>';
-        str = str.concat(temp);
-      }
-      return (str);
-    },
+			   toolTipContent: " x: {x} y: {y} <br/> name: {name}, label:{label} ",
 			   shared: true, 
  },
 		axisX: {
-			gridColor: '<?php echo $darkgridcolor;?>',
-		    labelFontSize: 10,
-			labelFontColor: '<?php echo $darkfontcolor;?>',
+			gridColor: "#333",
+		    labelFontSize: 8,
+			labelFontColor:' #aaa',
 			lineThickness: 1,
 			gridThickness: 1,	
 			titleFontFamily: "arial",	
@@ -110,70 +112,57 @@
 			gridDashType: "dot",
    			intervalType: "hour",
 			minimum:0,
-			crosshair: {
-        		enabled: true,
-        		snapToDataPoint: true,
-				color: '<?php echo $darkxcrosshaircolor;?>',
-				labelFontColor: "#F8F8F8",
-				labelFontSize:11,
-				labelBackgroundColor: '<?php echo $darkxcrosshaircolor;?>',
-      		}
-		},
+			},
 			
 		axisY:{
 		title: "",
-		titleFontColor: '<?php echo $darkfontcolor;?>',
-		titleFontSize: 0,
+		titleFontColor: "#aaa",
+		titleFontSize: 10,
         titleWrap: false,
-		margin: 0,
+		margin: 3,
 		lineThickness: 1,		
 		gridThickness: 1,	
-		interval: 'auto',	
-        includeZero: false,
-		gridColor: '<?php echo $darkgridcolor;?>',
+		interval:100,	
+        includeZero: true,
+		gridColor: "#333",
 		gridDashType: "dot",
-		labelFontSize: 9,
-		labelFontColor: '<?php echo $darkfontcolor;?>',
+		labelFontSize: 6,
+		labelFontColor:' #aaa',
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0);
-         },
-		crosshair: {
-			enabled: true,
-			snapToDataPoint: true,
-			color: '<?php echo $darkycrosshaircolor;?>',
-			labelFontColor: "#fff",
-			labelFontSize:10,
-			labelMaxWidth: 60,
-			labelBackgroundColor: '<?php echo $darkycrosshaircolor;?>',
-			labelFormatter: function ( e ) {
-        return e.value .toFixed(0);
-         },
-		}
+        return e.value .toFixed(0);  
+         },		
+			 
+		 
       },
 	  
 	  legend:{
       fontFamily: "arial",
-      fontColor: '<?php echo $darkfontcolor;?>',
+      fontColor:"#aaa",
   
  },
 		
 		
-		data: [{
-			type: "splineArea",
-			color: '<?php echo $darkline1color;?>',
-			lineColor: '<?php echo $darkline1linecolor;?>',
+		data: [
+		{
+			
+		},
+		{
+			// wind gust
+			type: "column",
+			color:"rgba(255, 131, 47, 1.000)",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
-			lineThickness: 1,
-			markerType: "circle",
-			name:" Solar Radiation",
+			lineThickness: 0,
+			markerType: "none",
+			name:"Solar Radiation",
 			dataPoints: dataPoints1,
-			yValueFormatString: "#0 Wm/2",
+			yValueFormatString:"#0.# Wm/2",
+		}
 
-		}]
+		]
 		});
 		
 
@@ -184,7 +173,7 @@
  </script>
 
 <body>
-<div id="chartContainer2" class="chartContainer2" style="width:100%;height:175px;padding:0;margin-top:-25px;border-radius:3px;border: 1px solid rgba(245, 247, 252,.02);
+<div id="chartContainer2" class="chartContainer2" style="width:100%;height:125px;padding:0;margin-top:-25px;border-radius:3px;border: 1px solid rgba(245, 247, 252,.02);
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);"></div></div>
 
 </body>

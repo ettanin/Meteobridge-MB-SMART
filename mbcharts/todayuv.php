@@ -80,7 +80,7 @@ echo '
 		toolTip:{
 			   fontStyle: "normal",
 			   cornerRadius: 4,
-			   backgroundColor: '<?php echo $tooltipbackgroundcolor;?>',
+			   backgroundColor: '<?php echo $backgroundcolor;?>',
 			   contentFormatter: function(e) {
       var str = '<span style="color: <?php echo $fontcolor;?>;">' + e.entries[0].dataPoint.label + '</span><br/>';
       for (var i = 0; i < e.entries.length; i++) {
@@ -136,7 +136,6 @@ echo '
 			//type: "spline",
 			type: "splineArea",
 			color: '<?php echo $line1color;?>',
-			lineColor: '<?php echo $line1linecolor;?>',
 			markerSize:2,
 			showInLegend:true,
 			legendMarkerType: "circle",

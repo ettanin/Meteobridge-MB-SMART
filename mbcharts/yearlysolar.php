@@ -18,6 +18,8 @@
 	include('chartslivedata.php');include('./chart_theme.php');header('Content-type: text/html; charset=utf-8');
 	$weatherfile = date('Y');
 
+	$animationduration = '500';
+
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -45,7 +47,7 @@
 		if(allLinesArray.length>0){
 
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].replace(/\�|\"|\u0000/g,'').split(',');
+				var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
 				if ( rowData.length >1)
 					dataPoints1.push({label:rowData[0],y:parseFloat(rowData[8])});
 
@@ -59,7 +61,7 @@
 		if(allLinesArray.length>1){
 
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].replace(/\�|\"|\u0000/g,'').split(',');
+				var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
 				if ( rowData.length >0)
 					dataPoints2.push({label: rowData[0],y:parseFloat(rowData[3]*1.60934)});
 					//parseFloat(rowData[13])});
@@ -85,9 +87,9 @@
 		toolTip:{
 			   fontStyle: "normal",
 			   cornerRadius: 4,
-			   backgroundColor: '<?php echo $tooltipbackgroundcolor;?>',
+			   backgroundColor: '<?php echo $backgroundcolor;?>',
 			   contentFormatter: function(e) {
-      var str = '<span style="color: <?php echo $fontcolor;?>;">' + e.entries[0].dataPoint.label + '</span><br/>';
+      var str = '<span style="color: <?php echo $fontcolor;?>;">' + CanvasJS.formatDate(e.entries[0].dataPoint.label, "DD MMM") + '</span><br/>';
       for (var i = 0; i < e.entries.length; i++) {
         var temp = '<span style="color: ' + e.entries[i].dataSeries.color + ';">' + e.entries[i].dataSeries.name + '</span> <span style="color: <?php echo $fontcolor;?>;">' + e.entries[i].dataPoint.y.toFixed(1) + ' Wm/2</span> <br/>';
         str = str.concat(temp);
@@ -146,7 +148,6 @@
 			//Solar Radiation
 			type: "splineArea",
 			color: '<?php echo $line1color;?>',
-			lineColor: '<?php echo $line1linecolor;?>',
 			markerSize:0,
 			showInLegend:true,
 			legendMarkerType: "circle",

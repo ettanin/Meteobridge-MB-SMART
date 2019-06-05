@@ -16,7 +16,7 @@
 	####################################################################################################
 
 	include('chartslivedata.php');include('./chart_theme.php');header('Content-type: text/html; charset=utf-8');
-	$weatherfile = date('M');
+	$weatherfile = date('Y');
 
 	$conv = '1';
 	if ($pressureunit == 'mb' || $pressureunit == 'hPa') {
@@ -62,7 +62,7 @@
 		var dataPoints2 = [];
 		$.ajax({
 			type: "GET",
-			url: "<?php echo date('Y');?>/<?php echo $weatherfile;?>.csv",
+			url: "<?php echo $weatherfile;?>.csv",
 			dataType: "text",
 			cache:false,
 			success: function(data) {processData1(data),processData2(data);}
@@ -92,80 +92,79 @@
 			}
 		}
 		function drawChart( dataPoints1 , dataPoints2 ) {
-			var chart = new CanvasJS.Chart("chartContainer", {
-				backgroundColor: '<?php echo $backgroundcolor;?>',
-				animationEnabled: true,
-				title: {
-					text: "",
-					fontSize: 12,
-					fontColor: '<?php echo $fontcolor;?>',
-					fontFamily: "arial",
-				},
-				toolTip:{
-					fontStyle: "normal",
-					cornerRadius: 4,
-					backgroundColor: '<?php echo $backgroundcolor;?>',
-					contentFormatter: function(e) {
-						var str = '<span style="color: <?php echo $fontcolor;?>;">' + CanvasJS.formatDate(e.entries[0].dataPoint.label, "DD MMM") + '</span><br/>';
-						for (var i = 0; i < e.entries.length; i++) {
-							var temp = '<span style="color: ' + e.entries[i].dataSeries.color + ';">' + e.entries[i].dataSeries.name + '</span> <span style="color: <?php echo $fontcolor;?>;">' + e.entries[i].dataPoint.y.toFixed(<?php echo $pressdecimal?> + 1) + "<?php echo ' '.$pressureunit ;?>" + '</span> <br/>';
-							str = str.concat(temp);
-						}
-						return (str);
-					},
-					shared: true,
-				},
+		var chart = new CanvasJS.Chart("chartContainer2", {
+		 backgroundColor: "rgba(40, 45, 52,.4)",
+		 animationEnabled: false,
+		 margin: 0,
+			title: {
+				text: "",
+				fontSize: 0,
+				fontColor: '#aaa',
+				fontFamily: "arial",
+			},
+			toolTip:{
+			   fontStyle: "normal",
+			   cornerRadius: 4,
+			   backgroundColor: "rgba(40, 45, 52,1)",	
+			   fontColor: '#aaa',	
+			   fontSize: 11,	   
+			   toolTipContent: " x: {x} y: {y} <br/> name: {name}, label:{label} ",
+			   shared: true, 
+ },
+			
 				axisX: {
-					gridColor: '<?php echo $gridcolor;?>',
-					labelFontSize: 10,
-					labelFontColor: '<?php echo $fontcolor;?>',
+					gridColor: '#333',
+					labelFontSize: 8,
+					labelFontColor: '#aaa',
 					lineThickness: 1,
 					gridThickness: 1,
 					gridDashType: "dot",
 					titleFontFamily: "arial",
 					labelFontFamily: "arial",
 					minimum:0,
+					interval:28,
 					intervalType:"day",
 					xValueType: "dateTime",
 					includezero: false,
 					crosshair: {
 						enabled: true,
 						snapToDataPoint: true,
-						color: '<?php echo $xcrosshaircolor;?>',
+						color: '#44a6b5',
 						labelFontColor: "#F8F8F8",
-						labelFontSize:10,
-						labelBackgroundColor: '<?php echo $xcrosshaircolor;?>',
+						labelFontSize:8,
+						labelBackgroundColor: '#44a6b5',
 					}
 				},
 				axisY:{
-					title: "Barometer (<?php echo $pressureunit ;?>) Recorded",
-					titleFontColor: '<?php echo $fontcolor;?>',
-					titleFontSize: 10,
+					title: "",
+					titleFontColor: '#aaa',
+					titleFontSize: 8,
 					titleWrap: false,
-					margin: 10,
+					margin: 0,
 					lineThickness: 1,
 					gridThickness: 1,
 					gridDashType: "dot",
 					interval: <?php echo $int;?>,
 					includeZero: false,
-					gridColor: '<?php echo $gridcolor;?>',
-					labelFontSize: 11,
-					labelFontColor: '<?php echo $fontcolor;?>',
+					gridColor: '#333',
+					labelFontSize: 8,
+					labelFontColor: '#aaa',
 					titleFontFamily: "arial",
 					labelFontFamily: "arial",
 					maximum: <?php echo $maximum; ?>,
 					minimum: <?php echo $minimum; ?>,
 					labelFormatter: function ( e ) {
-						return e.value .toFixed(<?php echo $pressdecimal;?>) + " <?php echo $pressureunit ;?> ";
+						return e.value .toFixed(1);
 					},
 					crosshair: {
 						enabled: true,
 						snapToDataPoint: true,
-						color: '<?php echo $ycrosshaircolor;?>',
+						color: '#44a6b5',
 						labelFontColor: "#F8F8F8",
-						labelFontSize:11,
-						labelBackgroundColor: '<?php echo $ycrosshaircolor;?>',
-						valueFormatString:"##0.## <?php echo $pressureunit ;?>",
+						labelFontSize:8,
+						labelBackgroundColor: '#44a6b5',
+						labelMaxWidth: 60,
+						valueFormatString:"##0.##",
 					}
 				},
 				legend:{
@@ -175,11 +174,11 @@
 				data: [{
 					// High Barometer
 					type: "spline",
-					color: '<?php echo $line1color;?>',
+					color: '#ff832f',
 					markerSize:0,
-					showInLegend:true,
+					showInLegend:false,
 					legendMarkerType: "circle",
-					lineThickness: 2,
+					lineThickness: 1,
 					markerType: "circle",
 					name:"Hi Barometer",
 					dataPoints: dataPoints1,
@@ -188,13 +187,13 @@
 				{
 					// Low Barometer
 					type: "spline",
-					color: '<?php echo $line2color;?>',
+					color: '#44a6b5',
 					markerSize:0,
 					markerColor: '<?php echo $line2markercolor;?>',
-					showInLegend:true,
+					showInLegend:false,
 					legendMarkerType: "circle",
 					lineThickness: 0,
-					//lineColor: '<?php echo $line2markercolor;?>',
+					lineColor: '#44a6b5',
 					markerType: "circle",
 					name:"Lo Barometer",
 					dataPoints: dataPoints2,
@@ -206,24 +205,11 @@
 	}
 });
 </script>
-<link rel="stylesheet" href="weather34chartstyle-<?php echo $charttheme;?>.css">
+
 <body>
-<div class="weather34darkbrowser" url="Barometer - <?php echo date('F Y') ;?> &nbsp;&nbsp;|&nbsp;&nbsp; High: <?php echo $weather["thb0seapressmmax"];?> <?php echo $pressureunit ;?> &nbsp;&nbsp; Low: <?php echo $weather["thb0seapressmmin"];?> <?php echo $pressureunit ;?>"></div>
-<div style="width:auto;background:0;padding:0px;margin-left:5px;font-size: 12px;border-radius:3px;">
-<div id="chartContainer" class="chartContainer"></div></div>
-<div class="weather34browser-footer">
-<span style="position:absolute;color:#fff;font-family:arial;padding-top:5px;margin-left:25px;border-radius:3px;">
-&nbsp;
-<svg id="i-external" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-<path d="M14 9 L3 9 3 29 23 29 23 18 M18 4 L28 4 28 14 M28 4 L14 18" /></svg>
-<a href="https://github.com/weather34/Meteobridge-Weather34-Template" title="Weather34 GitHub" target="_blank">
-<span style="color:#00A4B4;"><?php echo $chartversionmysql  ;?> CSS & PHP scripts by weather34</span> </a></span>
-<span style="position:absolute;color:#aaa;font-family:arial;padding-top:5px;margin-left:25px;display:block;margin-top:12px;">
-&nbsp;
-<svg id="i-external" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-<path d="M14 9 L3 9 3 29 23 29 23 18 M18 4 L28 4 28 14 M28 4 L14 18" /></svg>
-<a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank"><?php echo $creditschart ;?> </a></span>
-<div class="weather34browser-footerlogo"><a href="https://github.com/weather34/Meteobridge-Weather34-Template" title="Weather34 GitHub" target="_blank"><img src="../img/weatherlogo34.svg" width="35px"</img></a></div></div>
+<div id="chartContainer2" class="chartContainer2" style="width:100%;height:125px;padding:0;margin-top:-25px;border-radius:3px;border: 1px solid rgba(245, 247, 252,.02);
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);"></div></div>
+
 </body>
 <script src='canvasJs.js'></script>
 </html>

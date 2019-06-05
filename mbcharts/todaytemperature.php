@@ -80,7 +80,6 @@
 		var chart = new CanvasJS.Chart("chartContainer", {
 		 backgroundColor: '<?php echo $backgroundcolor;?>', //backgroundcolor
 		 animationEnabled: true,
-		 animationDuration: <?php echo $animationduration;?>,
 
 		title: {
             text: " ",
@@ -91,7 +90,7 @@
 		toolTip:{
       fontStyle: "normal",
       cornerRadius: 4,
-      backgroundColor: '<?php echo $tooltipbackgroundcolor;?>', //backgroundcolor
+      backgroundColor: '<?php echo $backgroundcolor;?>', //backgroundcolor
       contentFormatter: function(e) {
       var str = '<span style="color: <?php echo $fontcolor;?>;">' + e.entries[0].dataPoint.label + '</span><br/>'; //font colors
       for (var i = 0; i < e.entries.length; i++) {
@@ -169,7 +168,6 @@
 		{
 			type: "splineArea",
 			color: '<?php echo $line1color;?>', //line1color
-			lineColor: '<?php echo $line1linecolor;?>',
 			markerSize:0,
 			showInLegend:true,
 			legendMarkerType: "circle",

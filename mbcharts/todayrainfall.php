@@ -87,7 +87,6 @@ $(document).ready(function () {
 		var chart = new CanvasJS.Chart("chartContainer", {
 			backgroundColor: '<?php echo $backgroundcolor;?>',
 			animationEnabled: true,
-			animationDuration: <?php echo $animationduration;?>,
 			title: {
 				text: " ",
 				fontSize: 11,
@@ -97,7 +96,7 @@ $(document).ready(function () {
 			toolTip:{
 				fontStyle: "normal",
 				cornerRadius: 4,
-				backgroundColor: '<?php echo $tooltipbackgroundcolor;?>',
+				backgroundColor: '<?php echo $backgroundcolor;?>',
 				contentFormatter: function(e) {
 					var str = '<span style="color: <?php echo $fontcolor;?>;">' + e.entries[0].dataPoint.label + '</span><br/>';
 					for (var i = 0; i < e.entries.length; i++) {
@@ -141,6 +140,7 @@ $(document).ready(function () {
 				includeZero: false,
 				gridColor: '<?php echo $gridcolor;?>',
 				labelFontSize: 11,
+				maximum: <?php echo $weather['rain_today']?> * 1.1,
 				labelFontColor: '<?php echo $fontcolor;?>',
 				titleFontFamily: "arial",
 				labelFontFamily: "arial",
@@ -206,7 +206,6 @@ $(document).ready(function () {
 			{
 				type: "line",
 				color: '<?php echo $line1color;?>',
-				lineColor: '<?php echo $line1linecolor;?>',
 				markerSize:2,
 				showInLegend:true,
 				axisYType: "secondary",

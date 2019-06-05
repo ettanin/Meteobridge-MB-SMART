@@ -18,6 +18,8 @@
 	include('chartslivedata.php');include('./chart_theme.php');header('Content-type: text/html; charset=utf-8');
 	$weatherfile = date('Y');
 
+	$animationduration = '500';
+
   $conv = 1;
 	if ($rainunit == 'in') {
     $conv = '0.0393701';
@@ -62,7 +64,7 @@
 		if(allLinesArray.length>0){
 
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].replace(/\�|\"|\u0000/g,'').split(',');
+				var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
 				if ( rowData.length >1)
 					dataPoints1.push({label:rowData[0],y:parseFloat(rowData[5]*<?php echo $conv;?>)});
 
@@ -76,7 +78,7 @@
 		if(allLinesArray.length>0){
 
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].replace(/\�|\"|\u0000/g,'').split(',');
+				var rowData = allLinesArray[i].replace(/�|\"/g,'').split(',');
 				if ( rowData.length >1)
 					dataPoints2.push({label: rowData[0],y:parseFloat(rowData[5]*<?php echo $conv;?>)});
 					//parseFloat(rowData[13])});
@@ -90,37 +92,30 @@
 	
 	function drawChart( dataPoints1 , dataPoints2 ) {
 		var chart = new CanvasJS.Chart("chartContainer2", {
-		backgroundColor: '<?php echo $darkbackgroundcolor;?>',
-		animationEnabled: true,
-		animationDuration: <?php echo $animationduration;?>,
+		backgroundColor: "rgba(40, 45, 52,.4)",
+		 animationEnabled: false,
 		 margin: 0,
 
 
 		title: {
             text: " ",
 			fontSize: 11,
-			fontColor: '<?php echo $darkfontcolor;?>',
+			fontColor: '#aaa',
 			fontFamily: "arial",
         },
 		toolTip:{
 			   fontStyle: "normal",
 			   cornerRadius: 4,
-			   backgroundColor: '<?php echo $darktooltipbackgroundcolor;?>',
+			   backgroundColor: "rgba(40, 45, 52,1)",	
+			   fontColor: '#aaa',	
 			   fontSize: 11,	   
-			   contentFormatter: function(e) {
-      var str = '<span style="color: <?php echo $darkfontcolor;?>;">' + e.entries[0].dataPoint.label + '</span><br/>';
-      for (var i = 0; i < e.entries.length; i++) {
-        var temp = '<span style="color: ' + e.entries[i].dataSeries.color + ';">' + e.entries[i].dataSeries.name + '</span> <span style="color: <?php echo $darkfontcolor;?>;">' + e.entries[i].dataPoint.y.toFixed(2) + "<?php echo ' '.$rainunit ;?>" + '</span> <br/>';
-        str = str.concat(temp);
-      }
-      return (str);
-    },
+			   toolTipContent: " x: {x} y: {y} <br/> name: {name}, label:{label} ",
 			   shared: true, 
  },
 		axisX: {
-			gridColor: '<?php echo $darkgridcolor;?>',
+			gridColor: '#333',
 		    labelFontSize: 10,
-			labelFontColor: '<?php echo $darkfontcolor;?>',
+			labelFontColor: '#aaa',
 			lineThickness: 1,
 			gridThickness: 1,
 			gridDashType: "dot",
@@ -133,16 +128,16 @@
 			crosshair: {
         enabled: true,
         snapToDataPoint: true,
-        color: '<?php echo $darkxcrosshaircolor;?>',
+        color: '<?php echo $xcrosshaircolor;?>',
         labelFontColor: "#F8F8F8",
         labelFontSize:11,
-        labelBackgroundColor: '<?php echo $darkxcrosshaircolor;?>',
+        labelBackgroundColor: '<?php echo $xcrosshaircolor;?>',
       }
     },
 
 		axisY:{
 		title: "",
-		titleFontColor: '<?php echo $darkfontcolor;?>',
+		titleFontColor: '#aaa',
 		titleFontSize: 10,
         titleWrap: false,
 		margin: 0,
@@ -151,9 +146,9 @@
 		gridDashType: "dot",
 		interval: 'auto',
         includeZero: false,
-		gridColor: '<?php echo $darkgridcolor;?>',
+		gridColor: '#333',
 		labelFontSize: 10,
-		labelFontColor: '<?php echo $darkfontcolor;?>',
+		labelFontColor: '#aaa',
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
@@ -162,20 +157,18 @@
 		crosshair: {
 			enabled: true,
 			snapToDataPoint: true,
-			color: '<?php echo $darkxcrosshaircolor;?>',
+			color: 'rgba(0, 164, 180, 1.000)>',
 			labelFontColor: "#fff",
-			labelFontSize:10,
+			labelFontSize:9,
 			labelMaxWidth: 60,
-			labelBackgroundColor: '<?php echo $darkxcrosshaircolor;?>',
-			labelFormatter: function ( e ) {
-        return e.value .toFixed(<?php echo $raindecimal;?>) + " <?php echo $rainunit ;?> " ;
-         },
+			labelBackgroundColor: "#44a6b5",
+			valueFormatString: "#0.##'<?php echo $rainunit ?>'",
 		}
       },
 
 	  legend:{
       fontFamily: "arial",
-      fontColor: '<?php echo $darkfontcolor;?>',
+      fontColor: '#aaa',
 
  },
 
@@ -184,13 +177,13 @@
 		{
 			//rainfall
 			type: "column",
-			color: '<?php echo $darkline2color;?>',
+			color: 'rgba(0, 164, 180, 1.000)',
 			markerSize:0,
-      markerColor: '<?php echo $darkline2color;?>',
+      markerColor: 'rgba(0, 164, 180, 1.000)',
 			showInLegend:false,
 			legendMarkerType: "circle",
 			lineThickness: 0,
-     		//lineColor: '<?php echo $darkline2color;?>',
+     		//lineColor: 'rgba(0, 164, 180, 1.000)',
 			markerType: "none",
 			name:"Total Rainfall",
 			dataPoints: dataPoints1,

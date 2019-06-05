@@ -98,11 +98,11 @@
 		toolTip:{
 			   fontStyle: "normal",
 			   cornerRadius: 4,
-			   backgroundColor: "#fff",			   
+			   backgroundColor: "rgba(40, 45, 52,1)",	
+			   fontColor: '#aaa',	
+			   fontSize: 11,	   
 			   toolTipContent: " x: {x} y: {y} <br/> name: {name}, label:{label} ",
 			   shared: true, 
-			   
-    
  },
 		axisX: {
 			gridColor: "#aaa",
@@ -140,11 +140,12 @@
 		crosshair: {
 			enabled: true,
 			snapToDataPoint: true,
-			color: "#ff9350",
+			color: "#44a6b5",
 			labelFontColor: "#fff",
 			labelFontSize:8,
-			labelBackgroundColor: "#d05f2d",
-			valueFormatString: "#0.#<?php echo $rainunit ;?>",
+			labelBackgroundColor: "#44a6b5",
+			labelMaxWidth: 60,
+			valueFormatString: "#0.#",
 		}	 
       },
 	  
