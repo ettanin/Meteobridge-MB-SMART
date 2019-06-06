@@ -60,42 +60,23 @@ var refreshId;$(document).ready(function(){solar()});function solar(){$.ajax({ca
 var refreshId;$(document).ready(function(){dldata()});function dldata(){$.ajax({cache:false,success:function(a){$("#dldata").html(a);<?php if ($daylightRefresh > 0) { echo 'setTimeout(dldata,' . 1000*$daylightRefresh.')';  } ?>}, type:"GET",url:"<?php echo $positionlastmodule?>"})}; 
 //current 3dy forecast
 var refreshId;$(document).ready(function(){currentfore()});function currentfore(){$.ajax({cache:false,success:function(a){$("#currentfore").html(a);setTimeout(currentfore,360000)},type:"GET",url:"<?php echo $position6?>"})};</script>
-
 <script>
 var clockID;
 var yourTimeZoneFrom=<?php echo $UTC?>;
 var d=new Date();
 var weekdays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-var months=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var months=["Jan","Feb","March","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
 var tzDifference=yourTimeZoneFrom*60+d.getTimezoneOffset();
 var offset=tzDifference*60*1000;
 function UpdateClock(){
-  var e=new Date(new Date().getTime()+offset);
-  var c=e.getHours()<?php if ($clockformat == '12') { echo '% 12 || 12';} else { echo '% 24 || 24';}?>;
-  <?php
-  if($clockformat=='12') {
-    echo "if(e.getHours()<12){amorpm=' am'}else{amorpm=' pm'}";
-  } else {
-    echo "amorpm='';";
-  }
-  ?>
-  var a=e.getMinutes();
-  var g=e.getSeconds();
-  var f=e.getFullYear();
-  var h=months[e.getMonth()];
-  var b=e.getDate();
-  var i=weekdays[e.getDay()];
-  if(a<10){
-    a="0"+a
-  }
-  if(g<10){
-    g="0"+g
-  }
-  if(c<10){
-    c="0"+c
-  }
-  document.getElementById("theTime").innerHTML="<weather34thetime>"+i+" "+b+" "+h+" "+f+" &nbsp;"+c+":"+a+":"+g+amorpm
-}
+var e=new Date(new Date().getTime()+offset);
+var c=e.getHours()<?php if ($clockformat == '12') { echo '% 12 || 12';} else { echo '% 24 || 24';}?>;
+<?php if($clockformat=='12') {echo "if(e.getHours()<12){amorpm=' am'}else{amorpm=' pm'}";} else {echo "amorpm='';";}?>
+var a=e.getMinutes();var g=e.getSeconds();var f=e.getFullYear();var h=months[e.getMonth()];var b=e.getDate();
+switch(e.getDate()) {case '1': case '21': case '31': suffix = 'st'; break; case '2': case '22': suffix = 'nd'; break;case '3': case '23': suffix = 'rd'; break;default: suffix = 'th';}
+var i=weekdays[e.getDay()];
+if(a<10){a="0"+a}if(g<10){g="0"+g}if(c<10){c="0"+c}
+document.getElementById("theTime").innerHTML="<weather34thetime>"+i+" "+b+suffix+" "+h+" "+f+" &nbsp;"+c+":"+a+":"+g+amorpm}
 function StartClock(){clockID=setInterval(UpdateClock,500)}
 function KillClock(){clearTimeout(clockID)}
 window.onload=function(){StartClock()};

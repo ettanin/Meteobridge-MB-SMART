@@ -1,5 +1,6 @@
 <?php include('livedata.php'); //WEATHER34 Davis Console Forecast Outlook/Icon ?> 
 <div class="topframe">
+<div class="yearwordtempbig">Console Forecast</div>
 <div class="consoleoutlook">
 <?php  //weather34 script Davis forecast outlook
 $weather["vpforecasttext"]	=str_replace('with little', '<ogreen>No Significant </ogreen>', $weather["vpforecasttext"]);
@@ -35,4 +36,4 @@ else if (preg_match("/Mostly clear/i", $weather["vpforecasttext"])) {echo '<img 
 else if (preg_match("/Partly cloudy/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/partly-cloudy-day.svg" class="consoleicon">';} 
 else if (preg_match("/Mostly cloudy/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/mostlycloudy.svg" class="consoleicon">';} 
 else if (preg_match("/Increasing clouds/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/scatteredclouds.svg" class="consoleicon">';} 
-echo $weather["vpforecasttext"]	; ?></div></div> 
+echo $weather["vpforecasttext"]	; ?></div></div>

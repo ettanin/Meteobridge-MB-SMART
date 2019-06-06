@@ -1,5 +1,6 @@
 <?php include('livedata.php'); //WEATHER34 Davis Console Forecast Outlook/Icon ?> 
 <div class="topframe">
+<div class="yearwordtempbig">Console Forecast</div>
 <div class="consoleoutlook">
 <?php  //weather34 script Davis forecast outlook
 $weather["vpforecasttext"]	=str_replace('with little', '<ogreen>No Significant </ogreen>', $weather["vpforecasttext"]);
