@@ -333,8 +333,9 @@ maxtempred{color:#d35d4e}maxtempblue{color:#44a6b5}maxtemporange{color:#d05f2d}m
 
  .maincontainer{display:flex;max-width:100%;margin:0 auto;text-align:center;} 
 .weather34admin__header{display:flex;flex-basis:98%;grid-area:header;height:40px;background-color:0;position:absolute;font-size:12px;}
+.weather34toolbar right{font-size:1.2em;right:0;}
 .wulargeforecasthome{position:absolute;width:328px;background:0;margin:0 auto 0 10px;font-size:.65rem;display:block;border-radius:3px;overflow:hidden}
-topbarimperial,topbarmetric{margin-right:45px;}
+topbarimperial,topbarmetric{margin-right:5px;}
 .barometerconverter{margin-left:278px;}
 .tempconverter{margin-left:278px}
 .windconverter{margin-left:278px}
@@ -343,6 +344,7 @@ topbarimperial,topbarmetric{margin-right:45px;}
 .cloudconverter{margin-left:258px;}
 .tempconverter2{margin-left:278px}
 .lightningcoverter{margin-left:278px}
+weather34toptitle{position:relative;float:left;margin-left:-50px}
 }
 
 @media screen and (max-width:640px){
