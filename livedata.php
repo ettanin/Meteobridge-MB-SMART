@@ -118,7 +118,7 @@ else $weather['indoorbattery']="<ored>Poor</ored>";
 	$weather["windrun34"]=$weather['wind_speed_avg30']*number_format($windrunformula,1);
 	//weather34 meteobridge moon sun data 
     $weather["moonphase"]=$meteobridgeapi[153];$weather["luminance"]=$meteobridgeapi[154];$weather["daylight"]=$meteobridgeapi[155];if ($meteobridgeapi[156]=='--'){$weather["moonrise"]='In Transit';}
-	else $weather["moonrise"]='Rise<moonrisecolor> '.date($timeFormatShort, strtotime($meteobridgeapi[156]));$weather["moonset"]='Set<moonsetcolor> '.date($timeFormatShort, strtotime($meteobridgeapi[157]));
+	else $weather["moonrise"]='<moonrisecolor> '.date($timeFormatShort, strtotime($meteobridgeapi[156]));$weather["moonset"]='<moonsetcolor> '.date($timeFormatShort, strtotime($meteobridgeapi[157]));
 	//weather34 meteobridge real feel 02-08-2018 based on cumulus forum formula (THW)
 	$weather['realfeel'] = round(($weather['temp'] + 0.33*($weather['humidity']/100)*6.105*exp(17.27*$weather['temp']/(237.7+$weather['temp']))- 0.70*$weather["wind_speed"] - 4.00),1);
 	//uptimealt
