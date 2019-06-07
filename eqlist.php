@@ -75,6 +75,23 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
   max-width: 100%;
 }
 
+.gridfooter { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(760, 1fr));
+  grid-gap: 10px;
+  align-items: stretch;
+  color:#f5f7fc
+  }
+.grid > footer {
+ border: 1px solid rgba(245, 247, 252,.02);
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);
+  padding:2px;
+  font-size:0.8em;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+  background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
+}
+
   
  .weather34chart-btn.close:after,.weather34chart-btn.close:before{color:#ccc;position:absolute;font-size:14px;font-family:Arial,Helvetica,sans-serif;font-weight:600}.weather34browser-header{flex-basis:auto;height:35px;background:#ebebeb;background:0;border-bottom:0;display:flex;margin-top:-20px;width:100%;-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;border-top-left-radius:5px;border-top-right-radius:5px}.weather34browser-footer{flex-basis:auto;height:35px;background:#ebebeb;background:rgba(56,56,60,1);border-bottom:0;display:flex;bottom:-20px;width:97.4%;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-bottomleft:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px}.weather34chart-btns{position:absolute;height:35px;display:inline-block;padding:0 10px;line-height:38px;width:55px;flex-basis:auto;top:5px}.weather34chart-btn{width:14px;height:14px;border:1px solid rgba(0,0,0,.15);border-radius:6px;display:inline-block;margin:1px}.weather34chart-btn.close{background-color: rgba(255, 124, 57, 1.000)}.weather34chart-btn.close:before{content:"x";margin-top:-14px;margin-left:2px}.weather34chart-btn.close:after{content:"close window";margin-top:-13px;margin-left:15px;width:300px}a{color:#aaa;text-decoration:none}
 .weather34darkbrowser{position:relative;background:0;width:100%;max-height:30px;margin:auto;margin-top:-15px;margin-left:0px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:45px;background-image:radial-gradient(circle,#EB7061 6px,transparent 8px),radial-gradient(circle,#F5D160 6px,transparent 8px),radial-gradient(circle,#81D982 6px,transparent 8px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),linear-gradient(to bottom,rgba(59,60,63,0.4) 40px,transparent 0);background-position:left top,left top,left top,right top,right top,right top,0 0;background-size:50px 45px,90px 45px,130px 45px,50px 30px,50px 45px,50px 60px,100%;background-repeat:no-repeat,no-repeat}.weather34darkbrowser[url]:after{content:attr(url);color:#aaa;font-size:10px;position:absolute;left:0;right:0;top:0;padding:4px 15px;margin:11px 50px 0 90px;border-radius:3px;background:rgba(97, 106, 114, 0.3);height:20px;box-sizing:border-box}
@@ -773,17 +790,102 @@ else if ($windunit == 'mph') {
 </div>
 </smalluvunit>
 </article>  
+
+
+
+<article>  
+   <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
+    <?php //7
+				if($magnitude[8]>=7){echo "<div class=mag9-10>",$magnitude[8],"";}
+				else if($magnitude[8]>=5.8){echo "<div class=mag9-10>",$magnitude[8],"";}
+				else if($magnitude[8]>=5){echo "<div class=mag6-8>",$magnitude[8],"";}
+				else if($magnitude[8]>=4){echo "<div class=mag4-5>",$magnitude[8],"";}
+				else if($magnitude[8]>=2){echo "<div class=mag1-3>",$magnitude[8],"";}	
+				else if($magnitude[7]<2){echo "<div class=mag1-3>N/A";}		
+						
+				?>
+<div></div>
+
+
+
+<div class="hitempy">
+<?php
+	echo "";
+for ($i = 0; $i < 1; $i++) {
+	// EQ Latest earthquake 
+	
+	if ($eqdist[8]<1300)  {
+	echo "<div class='time'><orange1>*Regional</orange1> <span> ".$eventime[8]."</div></span>";
+	echo $eqtitle[8];
+	} 
+	else if ($magnitude[8]>7)  {
+	echo "<div class='time'><span>",$eventime[8] ,"</div></span>";
+	echo $eqtitle[8] ;
+	} 
+	
+	
+	else if ($magnitude[8]>5.7)  {
+	echo "<div class='time'><span>",$eventime[8] ,"</div></span>";
+	echo $eqtitle[8] ;
+	} 
+	
+	
+	else if ($magnitude[8]>5.2)  {
+	echo "<div class='time'><span>",$eventime[8] ,"</div></span>";
+	echo $eqtitle[8] ;
+	} 
+	
+	else if ($magnitude[8]>4)  {
+	echo "<div class='time'><span>",$eventime[8] ,"</div></span>";
+	echo $eqtitle[8] ;
+	} 
+	
+	
+	else if ($magnitude[8]>3)  {
+	echo "<div class='time'><span>",$eventime[8] ,"</div></span>";
+	echo $eqtitle[8] ;
+	} 
+	
+	else if ($magnitude[8]>2)  {
+	echo "<div class='time'><span>",$eventime[8] ,"</div></span>";
+	echo $eqtitle[8] ;
+	} 
+}
+
+?><br>
+<?php
+			
+if ($windunit == 'mph' && $eqdist[8]<200) {
+		 echo round($eqdist[8]  * 0.621371) ." Miles from<br> $stationlocation";
+	}
+	
+else if ($windunit == 'km/h' && $eqdist[8]<700) {
+		 echo "<orange>",round($eqdist[8]) ." </orange>Km from<br> $stationlocation";
+	}			
+
+else if ($windunit == 'mph') {
+		 echo round($eqdist[8]  * 0.621371) ." Miles from<br> $stationlocation";
+	} else {
+		 echo $eqdist[8] ." Km from<br> $stationlocation" ;
+	}
+	echo "";
+	?>
+
+</div>
+</smalluvunit>
+</article>  
+
+
+
   
   
-  <article>
-   <div class=actualt>&nbsp;&nbsp &copy; Information</div>
+  <article style="height:18px;width:760px;padding:0;padding-left:5px;">  
    <span style="font-size:8px;">  
   <?php echo $info?> CSS/SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:9px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?>
-  
-  <br>
-  <br>
+ &nbsp;
+ 
   <?php echo $info?>  
-<a href="http://earthquake-report.com" title="Earthquake-Report.com" target="_blank">Data © <?php echo date('Y');?> Earthquake-Report.com</a></span>
+<a href="http://earthquake-report.com" title="Earthquake-Report.com" target="_blank">Data Provided by © <?php echo date('Y');?> Earthquake-Report.com</a></span>
 
   
   </article> 
