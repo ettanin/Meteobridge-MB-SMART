@@ -146,8 +146,8 @@ weather34Moon();function weather34Moon() {var day = Date.now() / 86400000;var re
 var refweather34Day = referenceweather34Moon / 86400000;var phase = (day - refweather34Day) % 29.530588853;var s=String;
 switch (Math.round(phase / 3.75)){}document.getElementById("weather34moonphases");
 var weather34moonCurve;var lf=Math.min(3-4*(phase/28),1);var lc=Math.abs(lf*50);	var lb=(lf<0) ? "0" : "1";
-var rf=Math.min(3+4*((phase-30)/30),1);	var rc=Math.abs(rf*28);	var rb=(rf<0) ? "0" : "1";weather34moonCurve="M 50,0 "+ "a "+s(lc)+",50 0 0 "+lb+" 0,100 "+ "a "+s(rc)+",50 0 0 "+rb+" 0,-100";
-document.getElementById("weather34shape").setAttribute("d",weather34moonCurve);}</script>      </div></div>
+var rf=Math.min(3+4*((phase-30)/28),1);	var rc=Math.abs(rf*50);	var rb=(rf<0) ? "0" : "1";weather34moonCurve="M 50,0 "+ "a "+s(lc)+",50 0 0 "+lb+" 0,100 "+ "a "+s(rc)+",50 0 0 "+rb+" 0,-100";
+document.getElementById("weather34shape").setAttribute("d",weather34moonCurve);}</script>     </div></div>
 
 <div class="fullmoon1">
 <svg id="weather34 full moon" viewBox="0 0 32 32" width="6" height="6" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"><circle cx="16" cy="16" r="14" /><path d="M6 6 L26 26" /></svg>
