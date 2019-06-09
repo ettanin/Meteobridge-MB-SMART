@@ -103,8 +103,8 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather['wind_speed_avgday']=$meteobridgeapi[158];
 	$weather['rainlastmonth']=$meteobridgeapi[173];
 	$weather['rainlastyear']=$meteobridgeapi[174];
-	$weather['tempyearavg']=$meteobridgeapi[175];
-	$weather['windspeedyearavg']=$meteobridgeapi[176];	
+	$weather['tempyearavg']=$meteobridgeapi[184];
+	$weather['windspeedyearavg']=$meteobridgeapi[185];	
 	//battery
 	$weather['indoorbattery']=$meteobridgeapi[171];
 	$weather['outdoorbattery']=$meteobridgeapi[172];
