@@ -39,27 +39,27 @@ $now =date('G.i');
  <span1><?php 
   
 //lightning
-if ($weather["lightningtimeago"]>0 && $weather["lightningtimeago"]<600 && $weather["rain_rate"]>0){echo "<img rel='prefetch' src='css/icons/tstorm.svg' width='70px' height='60px' alt='weather34 rain lightning icon'>";}
-else if ($weather["lightningtimeago"]>0 && $weather["lightningtimeago"]<600 ){echo "<img rel='prefetch' src='css/icons/lightning.svg' width='70px' height='60px' alt='weather34 rain lightning icon'>";}
+if ($weather["lightningtimeago"]>0 && $weather["lightningtimeago"]<600 && $weather["rain_rate"]>0){echo "<img rel='prefetch' src='css/icons/tstorm.svg' width='60px' height='55px' alt='weather34 rain lightning icon'>";}
+else if ($weather["lightningtimeago"]>0 && $weather["lightningtimeago"]<600 ){echo "<img rel='prefetch' src='css/icons/lightning.svg' width='60px' height='55px' alt='weather34 rain lightning icon'>";}
 //rain
-else if ($result <20 && $weather["rain_rate"]>0) {echo "<img rel='prefetch' src='css/icons/tstorm.svg' width='70px' height='60px' alt='weather34 lightning icon'>";}
-else if ($result <20){echo "<img rel='prefetch' src='css/icons/lightning.svg' width='70px' height='60px' alt='weather34 lightning icon'>";}
+else if ($result <20 && $weather["rain_rate"]>0) {echo "<img rel='prefetch' src='css/icons/tstorm.svg' width='60px' height='55px' alt='weather34 lightning icon'>";}
+else if ($result <20){echo "<img rel='prefetch' src='css/icons/lightning.svg' width='60px' height='55px' alt='weather34 lightning icon'>";}
 //homeweatherstation weather34 current conditions using hardware values
 
 //rain-weather34
-else if($weather["rain_rate"]>10){echo "<img rel='prefetch' src='css/icons/rain.svg' width='70px' height='60px' alt='weather34 heavy rain icon'>";}
-else if($weather["rain_rate"]>0){echo "<img rel='prefetch' src='css/icons/rain.svg' width='70px' height='60px' alt='weather34 rain icon'>";}
+else if($weather["rain_rate"]>10){echo "<img rel='prefetch' src='css/icons/rain.svg' width='60px' height='55px' alt='weather34 heavy rain icon'>";}
+else if($weather["rain_rate"]>0){echo "<img rel='prefetch' src='css/icons/rain.svg' width='60px' height='55px' alt='weather34 rain icon'>";}
 
-else if($weather["rain_rate2"]>10){echo "<img rel='prefetch' src='css/icons/rain.svg' width='70px' height='60px' alt='weather34 heavy rain icon'>";}
-else if($weather["rain_rate2"]>0){echo "<img rel='prefetch' src='css/icons/rain.svg' width='70px' height='60px' alt='weather34 rain icon'>";}
+else if($weather["rain_rate2"]>10){echo "<img rel='prefetch' src='css/icons/rain.svg' width='60px' height='55px' alt='weather34 heavy rain icon'>";}
+else if($weather["rain_rate2"]>0){echo "<img rel='prefetch' src='css/icons/rain.svg' width='60px' height='55px' alt='weather34 rain icon'>";}
 
 
 else if($now >$suns2){echo "
- <img rel='prefetch' src='css/darkskyicons/nt_".$darkskycurIcon.".svg' width='70px' height='60px' alt='weather34 icon'>";}
+ <img rel='prefetch' src='css/darkskyicons/nt_".$darkskycurIcon.".svg' width='60px' height='55px' alt='weather34 icon'>";}
 else if($now <$sunr2){echo "
- <img rel='prefetch' src='css/darkskyicons/nt_".$darkskycurIcon.".svg' width='70px' height='60px' alt='weather34icon'>";}
+ <img rel='prefetch' src='css/darkskyicons/nt_".$darkskycurIcon.".svg' width='60px' height='55px' alt='weather34icon'>";}
 else echo "
- <img rel='prefetch' src='css/darkskyicons/".$darkskycurIcon.".svg' width='70px' height='60px' alt='weather34 icon'>";?> 
+ <img rel='prefetch' src='css/darkskyicons/".$darkskycurIcon.".svg' width='60px' height='55px' alt='weather34 icon'>";?> 
  
  </div></div><div class="darkskysummary"><span>
 <?php 

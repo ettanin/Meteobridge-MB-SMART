@@ -37,7 +37,7 @@ bluetds{background:#01a4b5}yellowtds{background:#e6a141}orangetds{background:#d0
 .moduleupdatetime{position:relative;font:.6em weathertext2;margin-left:230px;padding:0;margin-top:-33px;color:silver;line-height:10px;margin-bottom:0}
 .cloudconverter{margin-left:220px;margin-top:5px}.earthquakedistance{position:absolute;margin-left:288px;margin-top:7px;font-size:12px}
 .cwxiconcurrent{position:relative;margin-top:10px;margin-bottom:-5px;margin-left:35px;float:left}
-.cwxiconsummary{position:absolute;font-family:weathertext2;font-size:11px;line-height:12px;height:35px;padding:5px;margin-top:10px;margin-left:125px;max-width:120px;color:silver}
+.cwxiconsummary{position:absolute;font-family:weathertext2;font-size:.7em;line-height:12px;height:35px;padding:5px;margin-top:10px;margin-left:125px;max-width:120px;color:silver}
 .averagestext{font-size:.7rem;position:relative;text-align:center;margin:65px auto auto;width:240px;line-height:12px;font-family:arial,helvetica,system;color:silver;}
 .wulargediv{width:310px;height:180px;margin-top:5px}
 
