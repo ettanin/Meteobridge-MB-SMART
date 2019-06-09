@@ -32,7 +32,7 @@ $thehour=date('H');$theminute=date('i');
 ?>
 <style>.weather34sunclock {-webkit-transform:rotate(<?php echo ((($thehour*15)+($theminute/4))-86)?>deg);transform:rotate(<?php echo ((($thehour*15)+($theminute/4))-86)?>deg);border:5px solid rgba(255, 255,255,0);width:110px; height:110px;top:-9px;margin-left:104px}.weather34sunclock #poscircircle {display:none;}</style>
 <?php if($elev>=0){$elev1=$_SunPos->elevation."&deg;<div class=sunaboveweather34>&nbsp;</div>";}else if($elev<0){$elev1=$_SunPos->elevation."&deg;<div class=sunbelowweather34>&nbsp;</div>";}?>
-<div class="updatedtime1"><?php echo $online.' '.date($timeFormat);?></div>
+<div class="moduleupdatetime"><?php echo $online.' '.date($timeFormat);?></div>
 <div class="daylightmoduleposition" > 
 <?php echo '
 <div class="weather34sunlightday"><weather34daylightdaycircle></weather34daylightdaycircle> '.$daylight.' hrs<br>Daylight</div>

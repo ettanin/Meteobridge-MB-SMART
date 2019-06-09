@@ -22,13 +22,13 @@ $shorttime=date( $timeFormatShort, strtotime("$time1") );
 // Brian Underdown July 28th 2016 //
 $eqdist;if ($weather["wind_units"] == 'mph') {$eqdist = round(distance($lat, $lon, $lati, $longi) * 0.621371) ."mi";} else {$eqdist = round(distance($lat, $lon, $lati, $longi)) ."km";}
 $eqdista;if ($weather["wind_units"] == 'mph') {$eqdista = round(distance($lat, $lon, $lati, $longi) * 0.621371) ."<smallrainunit>mi";} else {$eqdista = round(distance($lat, $lon, $lati, $longi)) ."<smallrainunit>km";} ?>  
-<div class="updatedtime">
+<div class="moduleupdatetime">
 <span><?php 
 $updated=filemtime('jsondata/eqnotification.txt');
 echo  $online, " ",date($timeFormat, $updated);?></span>
  </div>
-<br />
-<div class="tempindoorconverter">
+
+<div class="earthquakedistance">
 <?php //chuck
 if($eqdista <= 200){echo "<div class=tempconvertercirclered>".$eqdista ;}
 else if($eqdista <= 500){echo "<div class=tempconvertercircleorange>".$eqdista ;}
@@ -36,7 +36,7 @@ else if($magnitude <=1000){echo "<div class=tempconvertercircleyellow>".$eqdista
 else if($magnitude >= 1000){echo "<div class=tempconvertercirclegreen>".$eqdista ;}
 
 
-?></smalltempunit2></div></div>
+?></smalltempunit2></div></div><br />
 <div class='eqcontainer1'>
 <!-- EQ homeweather station earthquakes now with value values 27th July 2016--> 
 <?php

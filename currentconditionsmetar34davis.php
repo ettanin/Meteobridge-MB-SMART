@@ -12,7 +12,7 @@ $tw=date_sunrise(strtotime('+1 day', time()), SUNFUNCS_RET_STRING, $lat, $lon, 9
 $suns2 =date('G.i', $result['sunset']);$sunr2 =date('G.i', $result['sunrise']);$suns3 =date('G.i', $result['sunset']);$sunr3 =date('G.i', $result['sunrise']);$sunrisehour =date('G', $result['sunrise']);
 $sunsethour =date('G', $result['sunset']);$twighlight_begin =date('G:i', $result['civil_twilight_begin']);$twighlight_end =date('G:i', $result['civil_twilight_end']);$now =date('G.i');
 ?>
-<div class="updatedtime1">
+<div class="moduleupdatetime">
 <?php $forecastime=filemtime('jsondata/metar34.txt');$weather34wuurl = file_get_contents("jsondata/metar34.txt");if(filesize('jsondata/metar34.txt')<10){echo  $online;}
 else echo $online,"";echo " ",	date($timeFormat,$forecastime);	?></div>
 <div class="cloudconverter">
@@ -21,8 +21,8 @@ if ($weather['temp_units']=='C' && $weather["cloudbase3"]>=1999){echo "<div clas
 else if ($weather['temp_units']=='C' && $weather["cloudbase3"]<1999){echo "<div class=cloudconvertercircle>Clouds<tblue> ".round($weather["cloudbase3"])."</tblue><smalltempunit2> ft</tblue><smalltempunit2>" ;}
 else if ($weather['temp_units']=='F' && $weather["cloudbase3"]*0.3048>=609){echo "<div class=cloudconvertercircle2000>Clouds<tyellow> ".round($weather["cloudbase3"]*0.3048,0)."</tyellow><smalltempunit2> m<smalltempunit2>" ;}
 else if ($weather['temp_units']=='F' && $weather["cloudbase3"]*0.3048<609){echo "<div class=cloudconvertercircle>Clouds<tblue> ".round($weather["cloudbase3"]*0.3048,0)."</tblue><smalltempunit2> m</tblue><smalltempunit2>" ;}
-?></div></div>
-<div class="darkskyiconcurrent"><span1>
+?></div></div><br>
+<div class="cwxiconcurrent"><span1>
 <?php 
 //homeweatherstation weather34 current conditions using hardware values
 //rain-weather34
@@ -48,7 +48,7 @@ else if(filesize('jsondata/metar34.txt')<160){
 echo "<img rel='prefetch' src='css/icons/offline.svg'width='70px' height='60px' alt='weather34 offline icon'>";} 	
 else echo "<img rel='prefetch' src='css/icons/".$sky_icon."' width='70px' height='60px'>";
 ?></div>
-<div class="darkskysummary"><span>
+<div class="cwxiconsummary"><span>
 <?php echo '';
 
 //rain-weather34
@@ -77,7 +77,7 @@ else echo '<uppercase>',$sky_desc.'</uppercase><br>';
 ?>
 </span></div>
  <!-- weather34 Meteobridge generated Data--> 
-<div class="darkskynexthours">
+<div class="averagestext">
 <?php //weather34 average station data 
 echo "Average <oorange>Temperature</oorange> last 60 minutes ";if($weather["temp_avg"]>=20){echo "<oorange>" .$weather["temp_avg"]."</oorange>°<valuetext>".$tempunit;} else if($weather["temp_avg"]<=10){echo "<oblue>" .$weather["temp_avg"]."</oblue>°<valuetext>".$tempunit;}else if($weather["temp_avg"]<20){echo "<ogreen>" .$weather["temp_avg"]."</ogreen>°<valuetext>".$tempunit;}echo "</valuetext><br>";
 echo  "Max <oblue>Wind Speed</oblue> ";

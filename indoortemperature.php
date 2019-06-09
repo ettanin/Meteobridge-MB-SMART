@@ -1,5 +1,5 @@
 <?php include('livedata.php');include('common.php');?>
-<div class="updatedtime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div><br />
+<div class="moduleupdatetime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div><br />
 <div class="tempindoorconverter">
 <?php //chuck
 if($weather["temp_units"]=='F' &&  anyToC($weather["temp_indoor"])>=30){echo "<div class=tempconvertercirclered><tred>".anyToC($weather["temp_indoor"])."</tred>&deg;<smalltempunit2>C" ;}

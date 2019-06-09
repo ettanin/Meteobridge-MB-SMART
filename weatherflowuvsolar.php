@@ -18,7 +18,7 @@ foreach($json['obs'] as $item)
 $section1 = file_get_contents('https://swd.weatherflow.com/swd/rest/observations/station/'.$weatherflowID.'?api_key='.$somethinggoeshere.'');file_put_contents('jsondata/weatherflow.txt',$section1);
 ?>
 
-<div class="updatedtime"><span><?php if(file_exists($file1)&&time()- filemtime($file1)>900)echo '
+<div class="moduleupdatetime"><span><?php if(file_exists($file1)&&time()- filemtime($file1)>900)echo '
 <svg id=i-info viewBox="0 0 32 32" width=7 height=7 fill=#ff8841 stroke=#ff8841 stroke-linecap=round stroke-linejoin=round stroke-width=6.25%><path d="M16 14 L16 23 M16 8 L16 10" /><circle cx=16 cy=16 r=14 /></svg><offline> Offline </offline>';else echo '<svg id=i-info viewBox="0 0 32 32" width=7 height=7 fill=#9aba2f stroke=#9aba2f stroke-linecap=round stroke-linejoin=round stroke-width=6.25%><path d="M16 14 L16 23 M16 8 L16 10" /><circle cx=16 cy=16 r=14 />
 </svg>';?></span> <?php echo date($timeFormat,$weatherflow["time"]);?></div>
 <div class="weather34solarword">W/m&sup2 </div><div class="weather34solarvalue">

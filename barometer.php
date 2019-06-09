@@ -15,7 +15,7 @@ transform:rotate(<?php if ($weather["barometer_units"]=='mb' OR $weather["barome
 if ($weather["barometer_units"]=='mb' OR $weather["barometer_units"]=="hPa" ){echo $weather["barometer_max"]*0.02953*50.6;}else if ($weather["barometer_units"]=='inHg'){echo $weather["barometer_max"]*50.6;}?>deg);
 transform:rotate(<?php if ($weather["barometer_units"]=='mb' OR $weather["barometer_units"]=="hPa" ){echo $weather["barometer_max"]*0.02953*50.6;}else if ($weather["barometer_units"]=='inHg'){echo $weather["barometer_max"]*50.6;}?>deg);}
 </style>
-<div class="updatedtime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div>  
+<div class="moduleupdatetime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div>  
 <div class='barometermax'>
 <?php echo '<div class=barometerorange><valuetext>Max ('.$weather["thb0seapressmaxtime"].')<br><maxred><value>',$weather["barometer_max"],'</maxred>&nbsp;',$weather["barometer_units"],' </valuetext></div>';?></div>
 <div class='barometermin'>

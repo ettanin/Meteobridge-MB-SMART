@@ -22,7 +22,7 @@ $sunsethour =date('G', $result['sunset']);
 $twighlight_begin =date('G:i', $result['civil_twilight_begin']);
 $twighlight_end =date('G:i', $result['civil_twilight_end']);
 $now =date('G.i');?>
-<div class="updatedtimecurrent">
+<div class="moduleupdatetime">
 <?php $forecastime=filemtime('jsondata/metar34.txt');
 	$weather34wuurl = file_get_contents("jsondata/metar34.txt");
 	if(filesize('jsondata/metar34.txt')<160){echo $online;}else echo $online,"";echo " ",	date($timeFormat,$forecastime);	?></div>
