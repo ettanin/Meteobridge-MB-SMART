@@ -77,55 +77,19 @@ else if($weather["rain_rate"]>0){echo "".$lang['Rain']."";echo '<br>';}
 //darksky conditions
 else echo '<uppercase>',$darkskycurSummary.'<br>'.$lang['Conditions'].'</uppercase> '; ?>
 </span></div>
-<!-- Darksky Hourly Next 3 hours HOMEWEATHER STATION--> 
-<div class="darkskynexthours">
-
-<?php 
-
-echo $lang['Hourlyforecast'];echo "<br>";
-//weather34 darksky script for current conditions next hours
-      $hi = 0;
-      foreach ($darkskyhourlyCond as $cond) {
-        $darkskyhourlyTime = $cond['time'];
-        $darkskyhourlySummary = $cond['summary'];
-        $darkskyhourlyIcon = $cond['icon'];
-        $darkskyhourlyTemp = round($cond['temperature']);            
-         $darkskyhourlyWinddir = $cond['windBearing'];
-			$darkskyhourlyuv = $cond['uvIndex'];
-			$darkskyhourlyClouds = $cond['cloudCover']*100;
-            $darkskyhourlyHumidity = $cond['humidity']*100;
-            $darkskyhourlyPrecipProb = $cond['precipProbability']*100;
-            if (isset($cond['precipType'])){
-            $darkskyhourlyPrecipType = $cond['precipType'];}
-			$darkskyhourlyprecipIntensity = number_format($cond['precipIntensityMax'],1);         
-            $darkskyhourlyWindSpeed = round($cond['windSpeed'],0);
-			$darkskyhourlyWindGust = round($cond['windGust'],0);   
-			
-			echo " ".$lang['Temperature']." ";
-			//celsius
-			if($tempunit=="C" && $darkskyhourlyTemp>=20){echo "<oorange>" .$darkskyhourlyTemp."</oorange>°".$tempunit;} 
-			else if($tempunit=="C" && $darkskyhourlyTemp<=10){echo "<oblue>" .$darkskyhourlyTemp."</oblue>°".$tempunit;}
-			else if($tempunit=="C" && $darkskyhourlyTemp<20){echo "<ogreen>" .$darkskyhourlyTemp."</ogreen>°".$tempunit;} 			
-			//fahrenheitt
-			if($tempunit=="F" && $darkskyhourlyTemp>=65){echo "<oorange>" .$darkskyhourlyTemp."</oorange>°".$tempunit;}
-			else if($tempunit=="F" && $darkskyhourlyTemp<=40){echo "<oblue>" .$darkskyhourlyTemp."</oblue>°".$tempunit;}   
-			else if($tempunit=="F" && $darkskyhourlyTemp<65){echo "<ogreen>" .$darkskyhourlyTemp."</ogreen>°".$tempunit;} 
-			echo  "<ogreen> ".$darkskyhourlySummary."	</ogreen>".$lang['Conditions'].". <oorange><br>".$lang['Windspeed']. " "  .$lang['Gust']."</oorange> ";
-			if($tempunit=="C" && $darkskyhourlyWindGust>=40){echo "<oorange>" .$darkskyhourlyWindGust."</oorange> ".$windunit;} 			
-			else if($tempunit=="C" && $darkskyhourlyWindGust>=0){echo "<ogreen>" .$darkskyhourlyWindGust."</ogreen> ".$windunit;} 	
-			
-			if($tempunit=="F" && $darkskyhourlyWindGust>=30){echo "<oorange>" .$darkskyhourlyWindGust."</oorange> ".$windunit;} 
-			else if($tempunit=="F" && $darkskyhourlyWindGust>=0){echo "<ogreen>" .$darkskyhourlyWindGust."</ogreen> ".$windunit;}	
-			//rain		
-			echo ". ".$lang['Rainfall']."   ".$rainsvg." ".$darkskyhourlyPrecipProb. "%<oblue> " .$darkskyhourlyprecipIntensity."</oblue> " .$rainunit;  
-			
-			//uvindex forecast
-			echo "<br><oorange>UVI</oorange> ".$lang['Forecast']. " ";
-			if ($darkskyhourlyuv>=8){ echo "<uviforecasthourred>"  .$darkskyhourlyuv."</uviforecasthourred>".$uvhigh ;}
-			else if ($darkskyhourlyuv>=6){ echo "<uviforecasthourorange>"  .$darkskyhourlyuv."</uviforecasthourorange>".$uvnormal ;}
-			else if ($darkskyhourlyuv>=3){ echo "<uviforecasthouryellow>"  .$darkskyhourlyuv."</uviforecasthouryellow>".$uvnormal ;}
-			else if ($darkskyhourlyuv>=0.1){ echo "<uviforecasthourgreen>"  .$darkskyhourlyuv."</uviforecasthourgreen>".$uvnormal ;}
-			else echo "<uviforecasthourgreen>"  .$darkskyhourlyuv."</uviforecasthourgreen>".$uvdark ;
-			
-      if ($hi++ == 0) break; };?>   
-    </div></div>
+<!-- weather34 Meteobridge generated Data--> 
+<div class="averagestext" style="margin-top:75px">
+<?php //weather34 average station data 
+echo "Average <oorange>Temperature</oorange> last 60 minutes ";if($weather["temp_avg"]>=20){echo "<oorange>" .$weather["temp_avg"]."</oorange>°<valuetext>".$tempunit;} else if($weather["temp_avg"]<=10){echo "<oblue>" .$weather["temp_avg"]."</oblue>°<valuetext>".$tempunit;}else if($weather["temp_avg"]<20){echo "<ogreen>" .$weather["temp_avg"]."</ogreen>°<valuetext>".$tempunit;}echo "</valuetext><br>";
+echo  "Max <oblue>Wind Speed</oblue> ";
+if($weather["wind_speed_max"]>=50){echo "<ored>" .$weather["wind_speed_max"]."</ored> ".$windunit;}
+else if($weather["wind_speed_max"]>=30){echo "<oorange>" .$weather["wind_speed_max"]."</oorange><valuetext> ".$windunit;}
+else if($weather["wind_speed_max"]>=0){echo "<ogreen>" .$weather["wind_speed_max"]."</ogreen><valuetext> ".$windunit;}echo " </valuetext>last 10 minutes ";
+echo  " <br>Average <oblue>Wind Speed</oblue> last 60 minutes ";if($weather["wind_speed_avg"]>=30){echo "<ored>" .$weather["wind_speed_avg"]."</ored> ".$windunit;}else if($weather["wind_speed_avg"]>=20){echo "<oorange>" .$weather["wind_speed_avg"]."</oorange><valuetext> ".$windunit;}
+else if($weather["wind_speed_avg"]>=0){echo "<ogreen>" .$weather["wind_speed_avg"]."</ogreen><valuetext> ".$windunit;}
+echo  "</valuetext><br>Average Direction <oorange>";
+if($weather["wind_direction_avg"]<=11.25){echo "North";}else if($weather["wind_direction_avg"]<=33.75){echo "NNE";}else if($weather["wind_direction_avg"]<=56.25){echo "NE";}else if($weather["wind_direction_avg"]<=78.75){echo "ENE";}else if($weather["wind_direction_avg"]<=101.25){echo "East";}else if($weather["wind_direction_avg"]<=123.75){echo "ESE";}else if($weather["wind_direction_avg"]<=146.25){echo "SE";}
+else if($weather["wind_direction_avg"]<=168.75){echo "SSE";}else if($weather["wind_direction_avg"]<=191.25){echo "South";}else if($weather["wind_direction_avg"]<=213.75){echo "SSW";}else if($weather["wind_direction_avg"]<=236.25){echo "SW";}else if($weather["wind_direction_avg"]<=258.75){echo "WSW";}else if($weather["wind_direction_avg"]<=281.25){echo "West";}else if($weather["wind_direction_avg"]<=303.75){echo "WNW";}else if($weather["wind_direction_avg"]<=326.25){echo "NW";}else if($weather["wind_direction_avg"]<=348.75){echo "NNW";}else{echo "North";}
+echo " </oorange><oblue> ".$weather["wind_direction_avg"]."</oblue>°";
+echo "</oorange><br><oblue>Rainfall</oblue> for the last hour <oblue> " .$weather["rain_lasthour"]."</oblue><valuetext> " .$rainunit;
+?></valuetext></div></div></div>
