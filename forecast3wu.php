@@ -66,7 +66,7 @@ for ($k=0;$k<=4;$k++) {if(empty($parsed_weather34wujson->{'daypart'}[0]->{'iconC
 	echo '<div class="darkskyforecastinghome">';echo '<div class="darkskyweekdayhome">'.$wuskydayTime.'</div><div class=darkskyhomeicons>';
 	if ($wuskydaynight=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon.'.svg" width="40px" height="35px" ></img>';}
 	if ($wuskydaynight=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon.'.svg" width="40px" height="35px"></img>';}	
-	echo '</div><div class=darkskytempdesc>'.$wuskydesc.'</div>';
+	echo '</div><br><div class=darkskytempdesc>'.$wuskydesc.'</div><br>';
 	//temp non metric
 	if($tempunit=='F' && $wuskydayTempHigh<44.6){echo '<darkskytemphihome><bluet>'.number_format($wuskydayTempHigh,0).'°</bluet></darkskytemphihome>';}
 	else if($tempunit=='F' && $wuskydayTempHigh>104){echo '<darkskytemphihome><purplet>'.number_format($wuskydayTempHigh,0).'°</purplet></darkskytemphihome>';}
