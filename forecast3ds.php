@@ -53,10 +53,13 @@ else if ($weather["wind_units"] == 'm/s' && $darkskyunit=='uk2') {$windspeedconv
 $darkskydayWindSpeed = round($cond['windSpeed']*$windspeedconversion,0);
 $darkskydayWindGust = round($cond['windGust']*$windspeedconversion,0);
 //begin darksky
-echo '<div class="darkskyforecastinghome">';echo '<div class="darkskyweekdayhome">'.strftime("%a %b %e", $darkskydayTime).'</div>';if ($darkskydayacumm>0 ){echo '<img src="css/darkskyicons/snow.svg" width="40rem" height="38rem"></img><br>';} 
-else if ($darkskydayIcon == 'partly-cloudy-night'){echo '<img src="css/darkskyicons/partly-cloudy-day.svg" width="40rem" height="38rem"></img><br>';}else echo '<img src="css/darkskyicons/'.$darkskydayIcon.'.svg" width="40rem" height="38rem"></img><br>';
+echo '<div class="darkskyforecastinghome">';echo '<div class="darkskyweekdayhome">'.strftime("%a %b %e", $darkskydayTime).'</div>';
+
+if ($darkskydayacumm>0 ){echo '<div class=darkskyhomeicons><img src="css/darkskyicons/snow.svg" width="38rem" height="38rem"></img></div>';} 
+else if ($darkskydayIcon == 'partly-cloudy-night'){echo '<div class=darkskyhomeicons><img src="css/darkskyicons/partly-cloudy-day.svg" width="38rem" height="38rem"></img></div>';}
+else echo '<div class=darkskyhomeicons><img src="css/darkskyicons/'.$darkskydayIcon.'.svg" width="38rem" height="38rem"></img></div>';
 //Hi temp non metric
-echo " <hilo> </hilo>";
+echo " ";
 if($tempunit=='F' && $darkskydayTempHigh<44.6){echo '<darkskytemphihome><bluetds>'.number_format($darkskydayTempHigh,0).'°</bluetds></darkskytemphihome>';}
 else if($tempunit=='F' && $darkskydayTempHigh>104){echo '<darkskytemphihome><purpletds>'.number_format($darkskydayTempHigh,0).'°</purpletds></darkskytemphihome>';}
 else if($tempunit=='F' && $darkskydayTempHigh>80.6){echo '<darkskytemphihome><redtds>'.number_format($darkskydayTempHigh,0).'°</redtds></darkskytemphihome>';}
