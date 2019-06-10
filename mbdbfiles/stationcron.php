@@ -122,7 +122,7 @@ fclose($fp4);}
 if($purpleairhardware=='yes'){
 $url4d = 'https://api.luftdaten.info/v1/sensor/'.$luftdatenID.'';
 $ch4d = curl_init($url4d);
-$filenamed = '../jsondata/purpleair.txt';
+$filenamed = '../jsondata/luftdaten.txt';
 $complete_save_locd = $filenamed;
 $fpd = fopen($complete_save_locd, 'wb');
 curl_setopt($chd, CURLOPT_FILE, $fpd);
