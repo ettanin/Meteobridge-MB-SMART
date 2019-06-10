@@ -193,7 +193,7 @@ else if ($davis=="Yes"){echo '<img src="img/logoDAVISCONSOLEVECTOR.svg" alt="Dav
   
   <weather34infoboxes> 
   <div class=locinfo><?php echo $info?>&nbsp;Operational Since:<?php echo $since;?></div>
-  <div class=locinfo2><?php echo $info?>&nbsp;<?php echo $stationlocation?></div>
+  <div class=locinfo2><?php echo $info?>&nbsp;<?php echo $stationlocation?> <img src="img/flags/<?php echo $flag ;?>.svg" width="15px" ></div>
   <div class=locinfo3><?php echo $info?>&nbsp;<?php echo $designedby;?>&nbsp;&copy;2015-<?php echo date('Y');?></div>  
   </weather34infoboxes></div></div>
   <div class="footercontainer">
