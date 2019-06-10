@@ -132,6 +132,22 @@ if ($weather['luminance']>99.9){$weather['luminance']=100;}
 if ($weather['luminance']<100){$weather['luminance']=$weather['luminance'];}
 //weather34 convert meteobridge lunar segment
 if ($weather["moonphase"]==0) {$weather["moonphase"]='New Moon';}else if ($weather["moonphase"]==1) {$weather["moonphase"]='Waxing Crescent';}else if ($weather["moonphase"]==2 ) {$weather["moonphase"]='First Quarter';}else if ($weather["moonphase"]==3 ) {$weather["moonphase"]='Waxing Gibbous';}else if ($weather["moonphase"]==4 ) {$weather["moonphase"]='Full Moon';}else if ($weather["moonphase"]==5) {$weather["moonphase"]='Waning Gibbous';}else if ($weather["moonphase"]==6) {$weather["moonphase"]='Last Quarter';}else if ($weather["moonphase"]==7){$weather["moonphase"]='Waning Crescent';}
+
+
+# Convert Start times for Pro and Nano SD, Other MBs unforunately don't provide this data
+if (is_numeric($meteobridgeapi[186]) && $meteobridgeapi[186] != '--') {
+	$weather['tempStartTime']	= date('M jS Y', strtotime($meteobridgeapi[186]));
+	$weather['windStartTime']	= date('M jS Y', strtotime($meteobridgeapi[187]));
+	$weather['pressStartTime']	= date('M jS Y', strtotime($meteobridgeapi[188]));
+	$weather['rainStartSec']	= strtotime($meteobridgeapi[189]);
+	$weather['rainStartTime']	= date('M jS Y', $weather['rainStartSec']);
+} else {
+	$weather['tempStartTime']	= 'All Time';
+	$weather['windStartTime']	= 'All Time';
+	$weather['pressStartTime']	= 'All Time';
+	$weather['rainStartTime']	= 'All Time';
+}
+
 	
 	// weatherflow lightning
 	$weather["lightning"]          = $meteobridgeapi[76];

@@ -16,8 +16,9 @@ else if ($weather["rain_units"] =='in'){echo number_format($weather["rainmmax"]*
 
 <div class="rainavgthisyear">
 <?php //rain last month
+if($weather["rainlastmonth"]<0.1){ echo " &nbsp;&nbsp;N/A";}
 if($weather["rainlastmonth"]>=1000){ echo "<maxtempblue>".round($weather["rainlastmonth"],0)  ;}
-else  echo "<maxtempblue>".$weather["rainlastmonth"]  ;echo "</maxtempblue><wunit>".$weather["rain_units"];
+else if ($weather["rainlastmonth"]>0){echo "<maxtempblue>".$weather["rainlastmonth"]  ;echo "</maxtempblue><wunit>".$weather["rain_units"];}
 ?>
 </div></wunit>
 
