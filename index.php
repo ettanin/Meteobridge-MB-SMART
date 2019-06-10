@@ -175,7 +175,7 @@ else if ($mbplatform== "Meteobridge NanoSD"){echo '<img src="img/nano.svg" alt="
   
   <div class=mbtype> <?php echo $info?>&nbsp;<?php echo $mbplatform?>: <?php echo $weather["mbplatform"]?></div>
   <div class=mbfirmware> <?php echo $info?>&nbsp;Firmware:<oblue><?php echo $weather["swversion"];echo "-",$weather["build"]?><oblue></div>
-  <div class=nanouptime> <?php echo $info?>&nbsp;Uptime:<?php echo "<orange>", $uptimedays;echo " </orange> Days";?></div>
+  <div class=nanouptime> <?php echo $info?>&nbsp;Uptime:<?php echo "<oblue>";$mbuptimeseconds=$weather["uptime"];$w34up = (int)$mbuptimeseconds;echo sprintf('%d days %02d hrs:%02d min', $w34up/86400, $w34up/3600%24, $w34up/60%60, $w34up%60);echo "</oblue>";?></div>
   </weather34infoboxes>
   
   <weather34infoboxes>
