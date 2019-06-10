@@ -403,6 +403,10 @@ align-items:left;justify-content:left;margin:0 auto;background:0}
 .tempconverter2{margin-left:330px}
 .lightningcoverter{margin-left:330px}
 weather34toptitle{position:relative;float:left;margin-left:-50px}
+.barometerpos{margin-left:30px}
+.barometerlimits{margin-left:45px}
+.weather34sunsetday{margin-left:235px}
+.weather34sundarkday{margin-left:255px}
 }
 
 
@@ -489,5 +493,9 @@ align-items:left;justify-content:left;margin:0 auto;background:0}
 .cloudconverter{margin-left:228px;margin-top:-5px}
 .tempconverter2{margin-left:288px}
 .lightningcoverter{margin-left:288px}
+.barometerpos{margin-left:0px}
+.barometerlimits{margin-left:15px}
+.weather34sunsetday{margin-left:195px}
+.weather34sundarkday{margin-left:220px}
 }
 canvas,iframe,img,svg{aspect-ratio:attr(width px)/attr(height px);image-rendering:auto}
