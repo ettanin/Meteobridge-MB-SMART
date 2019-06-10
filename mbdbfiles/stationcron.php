@@ -115,3 +115,19 @@ curl_exec($ch4);
 curl_close($ch4);
 fclose($fp4);}
 ?>
+
+
+
+<?php // weather34 Luftdaten air quality  curl based
+if($purpleairhardware=='yes'){
+$url4d = 'https://api.luftdaten.info/v1/sensor/'.$luftdatenID.'';
+$ch4d = curl_init($url4d);
+$filenamed = '../jsondata/purpleair.txt';
+$complete_save_locd = $filenamed;
+$fpd = fopen($complete_save_locd, 'wb');
+curl_setopt($chd, CURLOPT_FILE, $fpd);
+curl_setopt($chd, CURLOPT_HEADER, 0);
+curl_exec($chd);
+curl_close($chd);
+fclose($fpd);}
+?>

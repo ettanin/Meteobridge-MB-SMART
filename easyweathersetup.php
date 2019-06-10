@@ -19,6 +19,8 @@ $weatherflowmapzoom   = "'. $_POST["weatherflowmapzoom"]. '";
 $id = "'. $_POST["WUID"]. '";
 $purpleairID = "'. $_POST["purpleair"]. '";
 $purpleairhardware   = "'. $_POST["purpleairhardware"]. '";
+$luftdatenID = "'. $_POST["luftdatenID"]. '";
+$luftdatenhardware   = "'. $_POST["luftdatenhardware"]. '";
 $metarapikey ="'. $_POST["metarapikey"]. '";
 $TZ = "'. $_POST["TZ"]. '";
 $UTC = "'. $_POST["UTC"]. '";
@@ -1284,7 +1286,8 @@ your nearly there :-) keep going<br><br>
         <select id="position12" name="position12" class="choose">  
             <option><?php echo $position12 ;?></option> 
             <option>indoortemperature.php</option> 
-            <option>airqualitymodule.php</option>   
+            <option>airqualitymodule.php</option>  
+            <option>airqualityluftdaten.php</option>  
             <option>webcamsmall.php</option> 
             <option>moonphase.php</option>  
             <option>weather34uvsolar.php</option>  
@@ -1321,7 +1324,8 @@ your nearly there :-) keep going<br><br>
         <select id="positionlastmodule" name="positionlastmodule" class="choose">  
             <option><?php echo $positionlastmodule ;?></option> 
             <option>indoortemperature.php</option> 
-            <option>airqualitymodule.php</option>   
+            <option>airqualitymodule.php</option> 
+            <option>airqualityluftdaten.php</option>  
             <option>webcamsmall.php</option> 
             <option>moonphase.php</option>  
             <option>weather34uvsolar.php</option>  
@@ -1954,7 +1958,41 @@ Weatherflow Map Zoom</div>
         
     
     
+    <div class="seperator"></div> 
     
+       <span style="color:#F75C46;"> Luftdaten AIR QUALITY INDEX option <BR>
+     * <span style="color:#777;">IMPORTANT TO NOTE <span style="color:#F75C46;">FOR Luftdaten OWNERS ONLY </span> </span></span> <br> 
+    
+    
+    
+        
+    <div class= "stationvalue"> Do you have Luftdaten Air Quality Hardware (yes or no) </div> 
+    <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg>
+
+    <input name="luftdatenhardware" type="text" id="luftdatenhardware" value="<?php echo $luftdatenhardware ;?>" class="choose"> 
+    <br> <span style="color:#777;">enter yes or no(lowercase)</span>
+    <P>
+    
+    
+    <div class= "stationvalue"> Luftdaten ID</div> 
+    <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg>
+
+    <input name="luftdatenID" type="text" id="luftdatenID" value="<?php echo $luftdatenID ;?>" class="choose"> 
+    
+    
+    
+    
+    <br> <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M16 14 L16 23 M16 8 L16 10" />
+    <circle cx="16" cy="16" r="14" />
+</svg> <span style="color:#777;">enter your <strong>Luftdaten Station ID </strong> station id example <strong><span style="color:rgba(86, 95, 103, 1.000);"> 1200</strong></span></span>
+    
+    
+        
     
     
     

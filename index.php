@@ -128,7 +128,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   &nbsp; <a alt="Indoor Guide" title="Indoor Guide" href="homeindoor.php" data-lity>'. $chartinfo. ' Indoor Guide </a></span>
   &nbsp; <a alt="Moon Info" title="Moon Info" href="mooninfo.php" data-lity>'. $chartinfo. ' Moon Info </a></span>';}
 if ($position12=='airqualitymodule.php') {echo ' &nbsp;<a alt="air quality information" title="air quality information" href="purpleair.php" data-lity>'. $chartinfo. " Air Quality | Cloudbase </a></span>";}
-if ($position12=='weather34uvsolar.php') {echo ' &nbsp;<a alt="UV Guide" title="UV Guide" href="uvindex.php" data-lity>'. $chartinfo. " UV Guide  </a></span>";} 
+if ($position12=='airqualityluftdaten.php') {echo ' &nbsp;<a alt="air quality" title="air quality" href="luftdaten.php" data-lity>'. $chartinfo. " Luftdaten Air Quality | Cloudbase </a></span>";}
 if ($position12=='weather34uvsolar.php') {echo ' &nbsp;<a alt="UV Alamanac" title="UV Alamanac" href="uvalmanac.php" data-lity>&nbsp;'. $chartinfo. " UV Alamanac </a></span>";}
 if ($position12=='weather34uvsolar.php') {echo '&nbsp; <a alt="Solar Alamanac" title="Solar Alamanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar Alamanac </a></span>";}
 if ($position12=='solaruvds.php') {echo ' &nbsp;<a alt="UV Guide" title="UV Guide" href="uvindexds.php" data-lity>'. $chartinfo. " UV Guide </a></span>";}
@@ -147,6 +147,7 @@ if ($position12=='eq.php') {echo ' &nbsp;<a alt="Earthquakes Worldwide" title="E
   &nbsp; <a alt="Indoor Guide" title="Indoor Guide" href="homeindoor.php" data-lity>'. $chartinfo. ' Indoor Guide </a></span>
   &nbsp; <a alt="Moon Info" title="Moon Info" href="mooninfo.php" data-lity>'. $chartinfo. ' Moon Info </a></span>';}
 if ($positionlastmodule=='airqualitymodule.php') {echo ' &nbsp;<a alt="air quality" title="air quality" href="purpleair.php" data-lity>'. $chartinfo. " Air Quality | Cloudbase </a></span>";}
+if ($positionlastmodule=='airqualityluftdaten.php') {echo ' &nbsp;<a alt="air quality" title="air quality" href="luftdaten.php" data-lity>'. $chartinfo. " Luftdaten Air Quality | Cloudbase </a></span>";}
 if ($positionlastmodule=='weather34uvsolar.php') {echo ' &nbsp;<a alt="UV Guide" title="UV Guide" href="uvindex.php" data-lity>'. $chartinfo. " UV Guide  </a></span>";}
 if ($positionlastmodule=='weather34uvsolar.php') {echo ' &nbsp;<a alt="UV Alamanac" title="UV Alamanac" href="uvalmanac.php" data-lity>&nbsp;'. $chartinfo. " UV Alamanac </a></span>";}
 if ($positionlastmodule=='weather34uvsolar.php') {echo '&nbsp; <a alt="Solar Alamanac" title="Solar Alamanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar Alamanac </a></span>";}
