@@ -96,7 +96,16 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather["build"]			   = $meteobridgeapi[39];
 	$weather["actualhardware"]	   = $meteobridgeapi[42];
 	$weather["mbplatform"]	       = $meteobridgeapi[41];
-	$weather["uptime"]		       = $meteobridgeapi[81];//uptime in seconds
+	$weather["uptime"]=$meteobridgeapi[81];
+$nanosduptime = $meteobridgeapi[81];function convert($nanosduptime){$weather34nanotimeago = "";$days = intval(intval($nanosduptime) / (3600*24));
+$hours = (intval($nanosduptime) / 3600) % 24;$minutes = (intval($nanosduptime) / 60) % 60;$seconds = (intval($nanosduptime)) % 60;
+if($days> 1){$weather34nanotimeago .= "$days Days ";}
+else {if($days>0){$weather34nanotimeago .= "$days Day ";}
+if($hours > 1){$weather34nanotimeago .= "$hours hrs ";}
+else if($hours >=0){$weather34nanotimeago .= "$hours hr ";}
+if($minutes > 1){$weather34nanotimeago .= "$minutes mins ";}
+else if($minutes >=0){$weather34nanotimeago .= "$minutes min ";}
+}return $weather34nanotimeago;}
 	$weather["vpforecasttext"]	   = $meteobridgeapi1[1];//davis console forecast text
 	$weather["temp_avgtoday"]=$meteobridgeapi[152];
 	$weather['wind_speed_avg30']=$meteobridgeapi[158];
