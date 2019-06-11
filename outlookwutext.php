@@ -213,7 +213,7 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
 .grid > article {
  border: 1px solid rgba(245, 247, 252,.02);
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);
-  padding:5px;
+  padding:10px;
   font-size:0.8em;
   -webkit-border-radius:4px;
   border-radius:4px;
@@ -233,42 +233,39 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
 .weather34darkbrowser{position:relative;background:0;width:100%;max-height:30px;margin:auto;margin-top:-15px;margin-left:0px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:45px;background-image:radial-gradient(circle,#EB7061 6px,transparent 8px),radial-gradient(circle,#F5D160 6px,transparent 8px),radial-gradient(circle,#81D982 6px,transparent 8px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),linear-gradient(to bottom,rgba(59,60,63,0.4) 40px,transparent 0);background-position:left top,left top,left top,right top,right top,right top,0 0;background-size:50px 45px,90px 45px,130px 45px,50px 30px,50px 45px,50px 60px,100%;background-repeat:no-repeat,no-repeat}.weather34darkbrowser[url]:after{content:attr(url);color:#aaa;font-size:10px;position:absolute;left:0;right:0;top:0;padding:4px 15px;margin:11px 50px 0 90px;border-radius:3px;background:rgba(97, 106, 114, 0.3);height:20px;box-sizing:border-box}
  blue{color:#01a4b4}orange{color:#ff832f}green{color:#84a927}red{color:#f37867}red6{color:#d65b4a}value{color:#fff}yellow{color:#e7963b}purple{color:#916392}
 smalluvunit{font-size:.6rem;font-family:Arial,Helvetica,system;}.hitempy{position:relative;background:rgba(61, 64, 66, 0.5);color:#fff;font-size:12px;width:110px;padding:1px;-webit-border-radius:2px;border-radius:2px;
-margin-top:-44px;margin-left:72px;padding:2px;line-height:10px;font-size:9px}.svgimage{background:rgba(0, 155, 171, 1.000);-webit-border-radius:2px;border-radius:2px;}orange1{color:#aaa;}.greydesc{color:#c5c5c5;margin-left:40px;margin-top:-20px;position:absolute;font-size:0.85em}.none{float:none;margin-top:10px;position:absolute}spantemp{font-size:0.75em;color:#fff;font-family:weathertext2;}.tempicon{position:relative;font-family:weathertext2;margin-top:4px;margin-left:125px}.uvforecast{font-size:0.8rem;color:#c0c0c0;font-family:Arial,Helvetica;line-height:auto;margin-top:-15px;margin-bottom:5px}.storm{font-size:0.8rem;color:#c0c0c0;font-family:Arial,Helvetica;line-height:auto;margin-top:5px;margin-bottom:2px}.iconpos{margin-top:-5px;}
+margin-top:-44px;margin-left:72px;padding:2px;line-height:10px;font-size:9px}.svgimage{background:rgba(0, 155, 171, 1.000);-webit-border-radius:2px;border-radius:2px;}orange1{color:#aaa;}
+
+.greydesc{color:#c5c5c5;margin-left:40px;margin-top:-20px;position:absolute;font-size:0.85em}
+.summarydesc{position:relative;color:#f8f8f8;margin-left:5px;margin-top:-5px;font-size:0.75rem;width:100%;}
+.none{float:none;margin-top:10px;position:absolute}
+spantemp{font-size:0.75em;color:#fff;font-family:weathertext2;}.tempicon{position:relative;font-family:weathertext2;margin-top:4px;margin-left:125px}.uvforecast{font-size:0.8rem;color:#c0c0c0;font-family:Arial,Helvetica;line-height:auto;margin-top:-15px;margin-bottom:5px}.storm{font-size:0.8rem;color:#c0c0c0;font-family:Arial,Helvetica;line-height:auto;margin-top:5px;margin-bottom:2px}
+.iconpos{margin-left:60%;margin-top:-12px;}
 bluer{color:#fff;border-radius:2px;padding:0 2px 0 2px;align-items:center;justify-content:center;background:rgba(0, 155, 180, .6)}
 bluet,blueu{background:#01a4b5}yellowt,yellowu{background:#e6a141}oranget,orangeu{background:#d05f2d}greent{background:#90b12a}greenu{background:#565f67}redt,redu{background:#cd5245}purplet,purpleu{background:rgba(151, 88, 190,.8)}bluet,yellowt,oranget,greent,redt,purplet{-webkit-border-radius:2px;border-radius:2px;padding:2px;height:.9rem}
-blueu,yellowu,orangeu,greenu,redu,purpleu{color:#fff;border-radius:2px;padding:0 3px 0 3px;align-items:center;justify-content:center;}summary{font-size:.9em;color:#aaa;display:none}blue1{color:#009bb4}value{font-size:.95em;color:#aaa}valuer{color:#aaa;font-size:.9em;}thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}
+blueu,yellowu,orangeu,greenu,redu,purpleu{color:#fff;border-radius:2px;padding:0 3px 0 3px;align-items:center;justify-content:center;}
+summary{font-size:.9em;color:#aaa;display:none}blue1{color:#009bb4}value{font-size:.95em;color:#aaa}valuer{color:#aaa;font-size:.9em;}thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}
 </style>
 <div class="weather34darkbrowser" url="Weather Underground Summary Forecast"></div>  
 <main class="grid">
   <article>  
    <actualt><?php echo $wuskydayTime ?></actualt>
- <?php //0  detailed forecast 
- //temp				  
-	
-	//icon        
-	echo"<div class=iconpos> ";      		  			  
-	if ($wuskydaynight=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon.'.svg" width="40" class="iconpos"></img></div>';}
-	if ($wuskydaynight=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon.'.svg" width="40" class="iconpos"></img></div>';}
-	 //summary of icon
-	 echo '<div class=greydesc>'. $wuskydesc.'</div>';	
-				  //uvi			  
-				  echo $wusummary;?>  
+ <?php //0  forecast 
+	 //summary
+	 echo '<div class=greydesc>'. $wuskydesc.'</div>';
+	 echo"<div class=iconpos> ";      		  			  
+	 if ($wuskydaynight=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon.'.svg" width="35" class="iconpos"></img></div>';}
+	 if ($wuskydaynight=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon.'.svg" width="35" class="iconpos"></img></div>';}	 
+	 echo '<div class=summarydesc>'. $wusummary.'</div>';?>  
 </article>  
  <article>  
   <actualt><?php echo $wuskydayTime1 ?></actualt>   
-    
-
- <?php  //  detailed forecast 
- //temp				  
-	
-	//icon        
-	echo"<div class=iconpos> ";      		  			  
-	if ($wuskydaynight1=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon1.'.svg" width="40" class="iconpos"></img></div>';}
-	if ($wuskydaynight1=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon1.'.svg" width="40" class="iconpos"></img></div>';}
-	 //summary of icon
-	 echo '<div class=greydesc>'. $wuskydesc1.'</div>';	
-				  //uvi			  
-				  echo $wusummary1;?>  
+  <?php //0  forecast 
+	 //summary
+	 echo '<div class=greydesc>'. $wuskydesc1.'</div>';
+	 echo"<div class=iconpos> ";      		  			  
+	 if ($wuskydaynight1=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon1.'.svg" width="35" class="iconpos"></img></div>';}
+	 if ($wuskydaynight1=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon1.'.svg" width="35" class="iconpos"></img></div>';}	 
+	 echo '<div class=summarydesc>'. $wusummary1.'</div>';?>  
 </article>  
 
 
@@ -276,104 +273,81 @@ blueu,yellowu,orangeu,greenu,redu,purpleu{color:#fff;border-radius:2px;padding:0
   
    <article>  
     <actualt><?php echo $wuskydayTime2 ?></actualt>   
-    
- <?php  //1  detailed forecast 
- //temp				  
-	
-	//icon        
-	echo"<div class=iconpos> ";      		  			  
-	if ($wuskydaynight2=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon2.'.svg" width="40" class="iconpos"></img></div>';}
-	if ($wuskydaynight2=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon2.'.svg" width="40" class="iconpos"></img></div>';}
-	 //summary of icon
-	 echo '<div class=greydesc>'. $wuskydesc2.'</div>';	
-				  //uvi			  
-				  echo $wusummary2;?>  		  
+    <?php //2  forecast 
+	 //summary
+	 echo '<div class=greydesc>'. $wuskydesc2.'</div>';
+	 echo"<div class=iconpos> ";      		  			  
+	 if ($wuskydaynight2=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon2.'.svg" width="35" class="iconpos"></img></div>';}
+	 if ($wuskydaynight2=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon2.'.svg" width="35" class="iconpos"></img></div>';}	 
+	 echo '<div class=summarydesc>'. $wusummary2.'</div>';?>  
 				  
 </article> 
  <article>  
  <actualt><?php echo $wuskydayTime3 ?></actualt>     
-    
-
- <?php  //  3 detailed forecast 
- 	//icon        
-	echo"<div class=iconpos> ";      		  			  
-	if ($wuskydaynight3=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon3.'.svg" width="40" class="iconpos"></img></div>';}
-	if ($wuskydaynight3=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon3.'.svg" width="40" class="iconpos"></img></div>';}
-	 //summary period
-	 echo '<div class=greydesc>'. $wuskydesc3.'</div>';	
-	//summary		  
-	echo $wusummary3;?>  
+   <?php //3  forecast 
+	 //summary
+	 echo '<div class=greydesc>'. $wuskydesc3.'</div>';
+	 echo"<div class=iconpos> ";      		  			  
+	 if ($wuskydaynight3=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon3.'.svg" width="35" class="iconpos"></img></div>';}
+	 if ($wuskydaynight3=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon3.'.svg" width="35" class="iconpos"></img></div>';}	 
+	 echo '<div class=summarydesc>'. $wusummary3.'</div>';?>  
 </article>  
   
  <article>  
      <actualt><?php echo $wuskydayTime4 ?></actualt>    
-    
-     <?php   //4  short forecast	 
-	//icon        
-	echo"<div class=iconpos> ";      		  			  
-	if ($wuskydaynight4=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon4.'.svg" width="40" class="iconpos"></img></div>';}
-	if ($wuskydaynight4=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon4.'.svg" width="40" class="iconpos"></img></div>';}
-	 //summary period
-	 echo '<div class=greydesc>'. $wuskydesc4.'</div>';	
-	//summary		  
-	echo $wusummary4;?>  
+    <?php //4  forecast 
+	 //summary
+	 echo '<div class=greydesc>'. $wuskydesc4.'</div>';
+	 echo"<div class=iconpos> ";      		  			  
+	 if ($wuskydaynight4=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon4.'.svg" width="35" class="iconpos"></img></div>';}
+	 if ($wuskydaynight4=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon4.'.svg" width="35" class="iconpos"></img></div>';}	 
+	 echo '<div class=summarydesc>'. $wusummary4.'</div>';?>  
 </article> 
 
 <article>  
      <actualt><?php echo $wuskydayTime5 ?></actualt>       
-     <?php   //5 short forecast	 
-	 //icon        
-	echo"<div class=iconpos> ";      		  			  
-	if ($wuskydaynight5=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon5.'.svg" width="40" class="iconpos"></img></div>';}
-	if ($wuskydaynight5=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon5.'.svg" width="40" class="iconpos"></img></div>';}
-	 //summary period
-	 echo '<div class=greydesc>'. $wuskydesc5.'</div>';	
-	//summary		  
-	echo $wusummary5;?>  
-	 
-	 
-	 
-	 
+     <?php //5  forecast 
+	 //summary
+	 echo '<div class=greydesc>'. $wuskydesc5.'</div>';
+	 echo"<div class=iconpos> ";      		  			  
+	 if ($wuskydaynight5=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon5.'.svg" width="35" class="iconpos"></img></div>';}
+	 if ($wuskydaynight5=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon5.'.svg" width="35" class="iconpos"></img></div>';}	 
+	 echo '<div class=summarydesc>'. $wusummary5.'</div>';?>  	 
 </article> 
+
   <article>
      <actualt><?php echo $wuskydayTime6 ?></actualt>   
-     <?php   //6 short forecast 	 
-	  //icon        
-	echo"<div class=iconpos> ";      		  			  
-	if ($wuskydaynight6=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon6.'.svg" width="40" class="iconpos"></img></div>';}
-	if ($wuskydaynight6=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon6.'.svg" width="40" class="iconpos"></img></div>';}
-	 //summary period
-	 echo '<div class=greydesc>'. $wuskydesc6.'</div>';	
-	//summary		  
-	echo $wusummary6;?>  
+     <?php //6  forecast 
+	 //summary
+	 echo '<div class=greydesc>'. $wuskydesc6.'</div>';
+	 echo"<div class=iconpos> ";      		  			  
+	 if ($wuskydaynight6=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon6.'.svg" width="35" class="iconpos"></img></div>';}
+	 if ($wuskydaynight6=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon6.'.svg" width="35" class="iconpos"></img></div>';}	 
+	 echo '<div class=summarydesc>'. $wusummary6.'</div>';?>  
   </article> 
   
   <article>
     <actualt><?php echo $wuskydayTime7 ?></actualt>         
-     <?php   //7  short forecast  	 
-	 //icon        
-	echo"<div class=iconpos> ";      		  			  
-	if ($wuskydaynight7=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon7.'.svg" width="40" class="iconpos"></img></div>';}
-	if ($wuskydaynight7=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon7.'.svg" width="40" class="iconpos"></img></div>';}
-	 //summary period
-	 echo '<div class=greydesc>'. $wuskydesc7.'</div>';	
-	//summary		  
-	echo $wusummary7;?>  
+     <?php //7  forecast 
+	 //summary
+	 echo '<div class=greydesc>'. $wuskydesc7.'</div>';
+	 echo"<div class=iconpos> ";      		  			  
+	 if ($wuskydaynight7=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon7.'.svg" width="35" class="iconpos"></img></div>';}
+	 if ($wuskydaynight7=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon7.'.svg" width="35" class="iconpos"></img></div>';}	 
+	 echo '<div class=summarydesc>'. $wusummary7.'</div>';?>  
   </article> 
   
   
   
   <article>
     <actualt><?php echo $wuskydayTime8 ?></actualt>         
-     <?php   //8  short forecast  	 
-	 //icon        
-	echo"<div class=iconpos> ";      		  			  
-	if ($wuskydaynight8=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon8.'.svg" width="40" class="iconpos"></img></div>';}
-	if ($wuskydaynight8=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon8.'.svg" width="40" class="iconpos"></img></div>';}
-	 //summary period
-	 echo '<div class=greydesc>'. $wuskydesc8.'</div>';	
-	//summary		  
-	echo $wusummary8;?>  
+     <?php //8  forecast 
+	 //summary
+	 echo '<div class=greydesc>'. $wuskydesc8.'</div>';
+	 echo"<div class=iconpos> ";      		  			  
+	 if ($wuskydaynight8=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon8.'.svg" width="35" class="iconpos"></img></div>';}
+	 if ($wuskydaynight8=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon8.'.svg" width="35" class="iconpos"></img></div>';}	 
+	 echo '<div class=summarydesc>'. $wusummary8.'</div>';?>  
 	 
 	 
   </article> 
@@ -381,30 +355,23 @@ blueu,yellowu,orangeu,greenu,redu,purpleu{color:#fff;border-radius:2px;padding:0
   
   <article>
     <actualt><?php echo $wuskydayTime9 ?></actualt>         
-     <?php   //9  short forecast  	 
-	 
-	 //icon        
-	echo"<div class=iconpos> ";      		  			  
-	if ($wuskydaynight9=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon9.'.svg" width="40" class="iconpos"></img></div>';}
-	if ($wuskydaynight9=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon9.'.svg" width="40" class="iconpos"></img></div>';}
-	 //summary period
-	 echo '<div class=greydesc>'. $wuskydesc9.'</div>';	
-	//summary		  
-	echo $wusummary9;?>  
-	 
+     <?php //9  forecast 
+	 //summary
+	 echo '<div class=greydesc>'. $wuskydesc9.'</div>';
+	 echo"<div class=iconpos> ";      		  			  
+	 if ($wuskydaynight9=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon9.'.svg" width="35" class="iconpos"></img></div>';}
+	 if ($wuskydaynight9=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon9.'.svg" width="35" class="iconpos"></img></div>';}	 
+	 echo '<div class=summarydesc>'. $wusummary9.'</div>';?>  	 
   </article> 
   <article>
   <actualt><?php echo $wuskydayTime10 ?></actualt>         
-     <?php   //9  short forecast  	 
-	 //icon        
-	echo"<div class=iconpos> ";      		  			  
-	if ($wuskydaynight10=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon10.'.svg" width="40" class="iconpos"></img></div>';}
-	if ($wuskydaynight10=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon10.'.svg" width="40" class="iconpos"></img></div>';}
-	 //summary period
-	 echo '<div class=greydesc>'. $wuskydesc10.'</div>';	
-	//summary		  
-	echo $wusummary10;?>  
-	 
+     <?php //10  forecast 
+	 //summary
+	 echo '<div class=greydesc>'. $wuskydesc10.'</div>';
+	 echo"<div class=iconpos> ";      		  			  
+	 if ($wuskydaynight10=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon10.'.svg" width="35" class="iconpos"></img></div>';}
+	 if ($wuskydaynight10=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon10.'.svg" width="35" class="iconpos"></img></div>';}	 
+	 echo '<div class=summarydesc>'. $wusummary10.'</div>';?>  	 
   </article> 
   
   
