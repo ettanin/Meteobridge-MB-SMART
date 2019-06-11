@@ -119,7 +119,7 @@ fclose($fp4);}
 
 
 <?php // weather34 Luftdaten air quality  curl based
-if($purpleairhardware=='yes'){
+if($luftdatenhardware=='yes'){
 $url4d = 'https://api.luftdaten.info/v1/sensor/'.$luftdatenID.'';
 $ch4d = curl_init($url4d);
 $filenamed = '../jsondata/luftdaten.txt';
