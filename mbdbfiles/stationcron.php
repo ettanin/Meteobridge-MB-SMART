@@ -116,18 +116,18 @@ curl_close($ch4);
 fclose($fp4);}
 ?>
 
-
-
-<?php // weather34 Luftdaten air quality  curl based
+<?php // weather34 luftdaten air quality  curl based
 if($luftdatenhardware=='yes'){
-$url4d = 'https://api.luftdaten.info/v1/sensor/'.$luftdatenID.'';
-$ch4d = curl_init($url4d);
-$filenamed = '../jsondata/luftdaten.txt';
-$complete_save_locd = $filenamed;
-$fpd = fopen($complete_save_locd, 'wb');
-curl_setopt($chd, CURLOPT_FILE, $fpd);
-curl_setopt($chd, CURLOPT_HEADER, 0);
-curl_exec($chd);
-curl_close($chd);
-fclose($fpd);}
+$url9 = 'https://api.luftdaten.info/v1/sensor/'.$luftdatenID.'/';
+$ch9 = curl_init($url9);
+$filename9 = '../jsondata/luftdaten.txt';
+$complete_save_loc9 = $filename9;
+$fp9 = fopen($complete_save_loc9, 'wb');
+curl_setopt($ch9, CURLOPT_FILE, $fp9);
+curl_setopt($ch9, CURLOPT_HEADER, 0);
+curl_exec($ch9);
+curl_close($ch9);
+fclose($fp9);}
 ?>
+
+
