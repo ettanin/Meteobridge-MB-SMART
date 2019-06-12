@@ -466,9 +466,8 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 if ($wuskythunderindex>0){
 	 echo '<rainsnow>'.$lightningalert4; echo ' <thunder><orange1>'.$wuskythunder.'</orange1></thunder></grey></value></div>';}
 	 else if ($wuskydaynight=="D" && $wuskyheatindex>27){
-	 echo '<rainsnow>'.$lightningalert4.' <thunder><orange1>'.$wuskyheatindex.'</orange1></thunder></grey></value></div>';}?>  
-	 
-	
+	echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
+	 else echo "";?>  
 </article>  
  <article>  
   <actualt><?php echo $wuskydayTime1 ?></actualt>   
@@ -484,12 +483,9 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 if ($wuskythunderindex1>0){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder><orange1>'.$wuskythunder1.'</orange1></thunder></grey></value></div>';}
 	 else if ($wuskydaynight1=="D" && $wuskyheatindex1>27){
-	 echo '<rainsnow>'.$lightningalert4.' <thunder><orange1>'.$wuskyheatindex1.'</orange1></thunder></grey></value></div>';}	 
-	 ?>  
+	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex1.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
+	 else echo "";?> 
 </article>  
-
-
-
   
    <article>  
     <actualt><?php echo $wuskydayTime2 ?></actualt>   
