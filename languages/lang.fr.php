@@ -21,7 +21,14 @@ $year = date("Y");
 setlocale(LC_TIME, "fr_FR.UTF-8");
 $lang = array();
 
+//new
 
+$lang['Dewpoint'] = 'Point de rosée';
+$lang['Clouds'] = 'Nuages';
+$lang['Avg Speed Today'] = 'Vent moyen du jour';
+$lang['Last 24Hrs'] = 'Dernière 24Hrs';
+$lang['Wind Speed'] = 'Vitesse du vent';
+$lang['Solar Radiation'] = 'Radiations solaire';
 
 
 // Menu
@@ -50,7 +57,7 @@ $lang['Feelslike'] = 'Ressenti';
 $lang['Humidity'] = 'Humidité';
 $lang['Dewpoint'] = 'Point de rosée';
 $lang['Trend'] = 'Tendance';
-$lang['trend'] = 'Tendance:';
+$lang['trend'] = 'tendance:';
 $lang['Heatindex'] = 'Indice de chaleur';
 $lang['Windchill'] = 'Facteur vent ';
 $lang['Tempfactors'] = 'Facteur temp.';
@@ -79,22 +86,22 @@ $lang['Windspeed'] = 'Vitesse du vent';
 $lang['Gust'] = 'Rafale';
 $lang['Direction'] = 'Direction';
 $lang['Gusting'] = 'Rafale de';
-$lang['Blowing'] = 'Souffler à';
+$lang['Blowing'] = 'Souffle à';
 $lang['Wind'] = 'Vitesse';
-$lang ['Wind Run'] = 'Vitesse Run';
+$lang ['Wind Run'] = 'Vitesse du Vent';
 
 $lang['Calm'] = 'Calme';
-$lang['Lightair'] = 'Calme';
-$lang['Lightbreeze'] = 'Légère brise ';
-$lang['Gentelbreeze'] = 'Petite Brise';
-$lang['Moderatebreeze'] = 'Jolie brise';
-$lang['Freshbreeze'] = 'Bonne brise ';
-$lang['Strongbreeze'] = 'Forte brise';
-$lang['Neargale'] = 'Tempete proche';
-$lang['Galeforce'] = 'Force du Vent';
-$lang['Stronggale'] = 'Forte tempête';
+$lang['Light Air'] = 'Calme';
+$lang['Light Breeze'] = 'Légère brise ';
+$lang['Gentel Breeze'] = 'Petite Brise';
+$lang['Moderate Breeze'] = 'Jolie brise';
+$lang['Fresh Breeze'] = 'Bonne brise ';
+$lang['Strong Breeze'] = 'Forte brise';
+$lang['Near Gale'] = 'Tempete proche';
+$lang['Gale Force'] = 'Force du Vent';
+$lang['Strong Gale'] = 'Forte tempête';
 $lang['Storm'] = 'Orage';
-$lang['Violentstorm'] = 'Orage violent';
+$lang['Violent Storm'] = 'Orage violent';
 $lang['Hurricane'] = 'Ouragan';
 
 // Wind phrases from Beaufort scale for current conditions area
@@ -112,7 +119,7 @@ $lang['ViolentStormConditions'] = 'Conditions de violente tempête';
 $lang['HurricaneConditions'] = 'Conditions pour un ouragan';
 
 
-$lang['Avg'] = '<span2> Moy. : </span2>';
+$lang['Avg'] = 'Moyenne';
 
 //wind direction compass
 $lang['Northdir'] = 'Dir <span>Nord<br></span>';
@@ -156,9 +163,9 @@ $lang['NWN'] = 'NNO';
 
 //rain
 $lang['raintoday'] = 'Précipitations';
-$lang['Rate'] = 'Taux';
+$lang['Rate'] = 'Débit';
 $lang['Rainfall'] = 'Précipitations';
-$lang['Precip'] = 'précip'; // must be short name do not use full precipatation !!!! ///
+$lang['Precip'] = 'précip.'; // must be short name do not use full precipatation !!!! ///
 $lang['Rain'] = 'Pluie';
 $lang['Heavyrain'] = 'Faible pluie';
 $lang['Flooding'] = 'Inondation possible';
@@ -173,7 +180,7 @@ $lang['Sunset'] = 'Coucher du soleil';
 $lang['Moonrise'] = 'Lever de lune ';
 $lang['Moonset'] = 'Coucher de lune';
 $lang['Night'] = 'Nuit ';
-$lang['Day'] = 'Le Jour';
+$lang['Day'] = 'Ce Jour';
 $lang['Nextnewmoon'] = 'Nouvelle lune';
 $lang['Nextfullmoon'] = 'Pleine lune';
 $lang['Luminance'] = 'Luminance';
@@ -251,7 +258,7 @@ $lang['Rainratealert'] = 'par/hr<span> Chute de pluie ';
 
 //Earthquake Notifications
 $lang['Regional'] = 'Tremblement de terre régionaux';
-$lang['Significant'] = 'Tremblements de terre importants';
+$lang['Significant'] = 'Tremblement de terre important';
 $lang['Nosignificant'] = 'Pas de tremblement de terre important';
 
 
@@ -259,7 +266,7 @@ $lang['Nosignificant'] = 'Pas de tremblement de terre important';
 $lang['Barometer'] = 'Baromètre';
 $lang['UVSOLAR'] = 'UV | Solaires';
 $lang['Earthquakes'] = 'Autres tremblements de terre ';
-$lang['Earthquake'] = 'TREMBLEMENTS DE TERRE ';
+$lang['Earthquake'] = 'TREMBLEMENT DE TERRE ';
 $lang['Daynight'] = 'Ephémérides';
 
 $lang['Location'] = 'Location';
@@ -279,8 +286,8 @@ $lang['Regionalearthquake'] = 'Tremblements de terre régionaux';
 $lang['Average'] = 'Moyenne';
 $lang['Notifications'] = 'Notifications des alertes';
 $lang['Indoor'] = 'Intérieur';
-$lang['Today'] = 'Du jour';
-$lang['Tonight'] = 'Du soir';
+$lang['Today'] = 'Ce jour';
+$lang['Tonight'] = 'Ce soir';
 $lang['Tomorrow'] = 'Demain';
 $lang['Tomorrownight'] 	  = 'Demain soir';
 $lang['Updated'] 		 = 'Mise à jour';
@@ -293,7 +300,7 @@ $lang['Nometeor'] = 'Pas de pluies de météorites';
 $lang['LiveWebCam'] = 'Webcam'; 
 $lang['Online'] = 'En ligne';
 $lang['Offline'] = 'Hors ligne';
-$lang['Weatherstation'] = 'Station méteo';
+$lang['Weatherstation'] = 'Station météo';
 $lang['Cloudbase'] = 'Base des nuages';
 $lang['uvalert'] = 'Caution UVINDEX Fort';
 $lang['Rainbow'] = 'Arc en ciel';
@@ -306,23 +313,23 @@ $lang['Min'] = 'Min';
 $lang['ModerateE'] = 'Tremblement de terre modéré';
 $lang['MinorE'] = 'Tremblement de terre mineur';
 $lang['StrongE'] = 'Tremblement de terre fort';
-$lang['RegionalE'] = 'Regionale';
+$lang['RegionalE'] = 'Regional';
 
 //extras
-$lang['SunPosition'] = 'Sun Position';
+$lang['SunPosition'] = 'Position du soleil';
 $lang['Conditions'] = 'Conditions';
 $lang['Cloudbase Height'] = 'Base des nuages';
 $lang['Station'] = 'Station';
 
-$lang['Detailed Forecast'] = 'Detailed Forecast';
-$lang['Summary Outlook'] = 'Summary';
+$lang['Detailed Forecast'] = 'Prévisions détaillées';
+$lang['Summary Outlook'] = 'Résumé';
 
 
 //Air Quality
-$lang['Hazordous']= 'Hazardous Conditions';
-$lang['VeryUnhealthy']= 'Very Unhealthy';
-$lang['Unhealthy']= 'Unhealthy Air Quality';
-$lang['UnhealthyFS']= 'Unhealthy For Some';
-$lang['Moderate']= 'Moderate Air Quality ';
-$lang['Good']= 'Good Air Quality ';
+$lang['Hazordous']= 'Conditions très  dangereuses';
+$lang['VeryUnhealthy']= 'Dangereux';
+$lang['Unhealthy']= 'Mauvais pour la santé';
+$lang['UnhealthyFS']= 'Malsain pour certains';
+$lang['Moderate']= 'Modéré';
+$lang['Good']= 'Bon ';
 ?>
