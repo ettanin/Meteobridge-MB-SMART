@@ -63,9 +63,9 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
 .hitempypos{position:absolute;margin-top:-70px;margin-left:23px;margin-bottom:20px;display:block;}
 .hitempypos2{position:absolute;margin-top:-25px;margin-left:23px;margin-bottom:20px;display:block;}
 
-.hitempd{position:absolute;font-family:weathertext2,Arial, Helvetica, sans-serif;background:rgba(86, 95, 103, 0.3);color:#aaa;font-size:0.7rem;width:120px;padding:0;margin-left:32px;padding-left:3px;align-items:center;justify-content:center;display:block;margin-top:-20px;}
-.hitempd1{position:absolute;font-family:weathertext2,Arial, Helvetica, sans-serif;background:rgba(86, 95, 103, 0.3);color:#aaa;font-size:0.7rem;width:120px;padding:0;margin-left:32px;padding-left:3px;align-items:center;justify-content:center;display:block;margin-top:10px;}
-.hitempd2{position:absolute;font-family:weathertext2,Arial, Helvetica, sans-serif;background:rgba(86, 95, 103, 0.3);color:#aaa;font-size:0.7rem;width:90px;padding:0;margin-left:32px;padding-left:3px;align-items:center;justify-content:center;display:block;margin-top:-15px;}
+.hitempd{position:absolute;font-family:weathertext2,Arial, Helvetica, sans-serif;background:rgba(86, 95, 103, 0.3);color:#aaa;font-size:0.7rem;width:120px;padding:0;margin-left:32px;padding-left:3px;align-items:center;justify-content:center;display:block;margin-top:-10px;}
+.hitempd1{position:absolute;font-family:weathertext2,Arial, Helvetica, sans-serif;background:rgba(86, 95, 103, 0.3);color:#aaa;font-size:0.7rem;width:120px;padding:0;margin-left:32px;padding-left:3px;align-items:center;justify-content:center;display:block;margin-top:20px;}
+.hitempd2{position:absolute;font-family:weathertext2,Arial, Helvetica, sans-serif;background:rgba(86, 95, 103, 0.3);color:#aaa;font-size:0.7rem;width:90px;padding:0;margin-left:32px;padding-left:3px;align-items:center;justify-content:center;display:block;margin-top:-10px;}
 .actual{font-size:2rem;float:right;position:absolute;left:120px;top:25px;background:0;padding:2px;font-weight:normal;color:rgba(74, 99, 111, 0.5);margin-bottom:5px;}
 .actual1{font-size:11px;float:none;position:absolute;left:10px;top:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(86, 95, 103, 0.2);padding:1px;font-weight:normal;margin-bottom:5px;}
 .hitemp{color:#aaa;font-size:0.7rem;display:inline;}.hitemp span{color:rgba(255, 124, 57, 1.000)}blue{color:rgba(0, 154, 171, 1.000)}
@@ -90,7 +90,7 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
 smalluvunit{font-size:.7rem;font-family:weathertext2,Arial,Helvetica,system;}
 .w34convertrain{position:relative;font-size:.5em;top:10px;color:#c0c0c0;margin-left:5px}
 .hitempy{position:relative;background:rgba(61, 64, 66, 0.5);color:#aaa;width:90px;padding:1px;-webit-border-radius:2px;border-radius:2px;
-margin-top:-20px;margin-left:98px;padding-left:3px;line-height:11px;font-size:9px}
+margin-top:10px;margin-left:98px;padding-left:3px;line-height:11px;font-size:9px}
 .actualt{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:130px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
@@ -100,8 +100,13 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actual{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:95%;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
+.dewpointword{position:absolute;font-size:.8em;margin-left:65px;margin-top:-20px;color:#c0c0c0}
+.humidityword{position:absolute;font-size:.8em;margin-left:65px;margin-top:20px;color:#c0c0c0}
+.highestword{position:absolute;font-size:.8em;margin-left:45px;margin-top:-15px;color:#c0c0c0;width:100px}
+.lowestword{position:absolute;font-size:.8em;margin-left:45px;margin-top:28px;color:#c0c0c0;width:100px}
+orange{color:#ff832f}
 </style>
-<div class="weather34darkbrowser" url="Temperature Almanac"></div>
+<div class="weather34darkbrowser" url="Temperature Almanac <?php echo "&deg;",$weather["temp_units"]?>"></div>
   
 <main class="grid">
   <article>  
@@ -221,15 +226,17 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 	echo "<smalluvunit>".$weather["temp_units"]."</smalluvunit>"
 	?>	</div></div>
     <div class="temperaturetrend"><?php echo $weather["tempdmintime"];?></span></div>	
-     
-<div class=hitempypos> 
- <div class="hitempd" >Dew Max<orange><?php echo "&nbsp;".$weather["dewmax"],"</orange>&deg;",$weather["temp_units"]," ",$weather["dewmaxtime"];?></span><br></div>
- <div class="hitempd" style="margin-top:-5px;">Dew Min<blue><?php echo "&nbsp;".$weather["dewmin"],"</blue>&deg;",$weather["temp_units"]," ",$weather["dewmintime"];?></span><br></div>
+    
+<div class=hitempypos>
+<div class="dewpointword"> Dewpoint</div>
+ <div class="hitempd" style="width:100px;">Max<orange><?php echo "&nbsp;".$weather["dewmax"],"</orange>&deg;",$weather["temp_units"]," ",$weather["dewmaxtime"];?></span><br></div>
+ <div class="hitempd" style="margin-top:5px;width:100px;">Min<blue><?php echo "&nbsp;".$weather["dewmin"],"</blue>&deg;",$weather["temp_units"]," ",$weather["dewmintime"];?></span><br></div>
 </div>
-
+ 
  <div class=hitempypos> 
-<div class="hitempd1" style="margin-top:25px;">Hum Max<orange><?php echo "&nbsp;".$weather["humidity_max"],"</orange>%  ",$weather["humidity_maxtime"];?></span><br></div><br>
-<div class="hitempd1" style="margin-top:30px;">Hum Min<blue><?php echo "&nbsp;".$weather["humidity_min"],"</blue>%  ",$weather["humidity_mintime"];?></span><br></div><br>
+ <div class="humidityword"> Humidity</div>
+<div class="hitempd1" style="margin-top:30px;width:100px;">Max<orange><?php echo "&nbsp;".$weather["humidity_max"],"</orange>%  ",$weather["humidity_maxtime"];?></span><br></div><br>
+<div class="hitempd1" style="margin-top:33px;width:100px;">Min<blue><?php echo "&nbsp;".$weather["humidity_min"],"</blue>%  ",$weather["humidity_mintime"];?></span><br></div><br>
 </div>    
 </div>    
 </article> 
@@ -353,13 +360,15 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
     <div class="temperaturetrend"><?php echo $weather["tempydmintime"];?></span></div>	
      
 <div class=hitempypos> 
- <div class="hitempd" >Dew Max<orange><?php echo "&nbsp;".$weather["dewydmax"],"</orange>&deg;",$weather["temp_units"]," ",$weather["dewydmaxtime"];?></span><br></div>
- <div class="hitempd" style="margin-top:-5px;">Dew Min<blue><?php echo "&nbsp;".$weather["dewydmin"],"</blue>&deg;",$weather["temp_units"]," ",$weather["dewydmintime"];?></span><br></div>
+<div class="dewpointword"> Dewpoint</div>
+ <div class="hitempd" style="width:100px;">Max<orange><?php echo "&nbsp;".$weather["dewydmax"],"</orange>&deg;",$weather["temp_units"]," ",$weather["dewydmaxtime"];?></span><br></div>
+ <div class="hitempd" style="margin-top:5px;width:100px;">Min<blue><?php echo "&nbsp;".$weather["dewydmin"],"</blue>&deg;",$weather["temp_units"]," ",$weather["dewydmintime"];?></span><br></div>
 </div>
 
  <div class=hitempypos> 
-<div class="hitempd1" style="margin-top:25px;">Hum Max<orange><?php echo "&nbsp;".$weather["humidity_ydmax"],"</orange>%  ",$weather["humidity_ydmaxtime"];?></span><br></div><br>
-<div class="hitempd1" style="margin-top:30px;">Hum Min<blue><?php echo "&nbsp;".$weather["humidity_ydmin"],"</blue>%  ",$weather["humidity_ydmintime"];?></span><br></div><br>
+ <div class="humidityword"> Humidity</div>
+<div class="hitempd1" style="margin-top:30px;width:100px;">Max<orange><?php echo "&nbsp;".$weather["humidity_ydmax"],"</orange>%  ",$weather["humidity_ydmaxtime"];?></span><br></div><br>
+<div class="hitempd1" style="margin-top:33px;width:100px;">Min<blue><?php echo "&nbsp;".$weather["humidity_ydmin"],"</blue>%  ",$weather["humidity_ydmintime"];?></span><br></div><br>
 </div>    
 </article>  
   
@@ -484,14 +493,16 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 	?>	</div></div>
     <div class="temperaturetrend1"><?php echo $weather["tempmmintime"];?></span></div>	
      
-<div class=hitempypos> 
+<div class=hitempypos > 
+<div class="dewpointword"> Dewpoint</div>
  <div class="hitempd" >Dew Max<orange><?php echo "&nbsp;".$weather["dewmmax"],"</orange>&deg;",$weather["temp_units"]," ",$weather["dewmmaxtime"];?></span><br></div>
- <div class="hitempd" style="margin-top:-5px;">Dew Min<blue><?php echo "&nbsp;".$weather["dewmmin"],"</blue>&deg;",$weather["temp_units"]," ",$weather["dewmmintime"];?></span><br></div>
+ <div class="hitempd" style="margin-top:5px;">Dew Min<blue><?php echo "&nbsp;".$weather["dewmmin"],"</blue>&deg;",$weather["temp_units"]," ",$weather["dewmmintime"];?></span><br></div>
 </div>
 
  <div class=hitempypos> 
-<div class="hitempd1" style="margin-top:25px;">Hum Max<orange><?php echo "&nbsp;".$weather["humidity_mmax"],"</orange>%  ",$weather["humidity_mmaxtime"];?></span><br></div><br>
-<div class="hitempd1" style="margin-top:30px;">Hum Min<blue><?php echo "&nbsp;".$weather["humidity_mmin"],"</blue>%  ",$weather["humidity_mmintime"];?></span><br></div><br>
+ <div class="humidityword"> Humidity</div>
+<div class="hitempd1" style="margin-top:30px;">Hum Max<orange><?php echo "&nbsp;".$weather["humidity_mmax"],"</orange>%  ",$weather["humidity_mmaxtime"];?></span><br></div><br>
+<div class="hitempd1" style="margin-top:33px;">Hum Min<blue><?php echo "&nbsp;".$weather["humidity_mmin"],"</blue>%  ",$weather["humidity_mmintime"];?></span><br></div><br>
 </div>    
 </article>  
   
@@ -615,13 +626,15 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
     <div class="temperaturetrend1"><?php echo $weather["tempymintime"];?></span></div>	
      
  <div class=hitempypos> 
- <div class="hitempd" >Dew Max<orange><?php echo "&nbsp;".$weather["dewymax"],"</orange>&deg;",$weather["temp_units"]," ",$weather["dewymaxtime"];?></span><br></div>
- <div class="hitempd" style="margin-top:-5px;">Dew Min<blue><?php echo "&nbsp;".$weather["dewymin"],"</blue>&deg;",$weather["temp_units"]," ",$weather["dewymintime"];?></span><br></div>
+ <div class="dewpointword"> Dewpoint</div>
+ <div class="hitempd" >Max<orange><?php echo "&nbsp;".$weather["dewymax"],"</orange>&deg;",$weather["temp_units"]," ",$weather["dewymaxtime"];?></span><br></div>
+ <div class="hitempd" style="margin-top:5px;">Min<blue><?php echo "&nbsp;".$weather["dewymin"],"</blue>&deg;",$weather["temp_units"]," ",$weather["dewymintime"];?></span><br></div>
 </div>
 
  <div class=hitempypos> 
-<div class="hitempd1" style="margin-top:25px;">Hum Max<orange><?php echo "&nbsp;".$weather["humidity_ymax"],"</orange>%  ",$weather["humidity_ymaxtime"];?></span><br></div><br>
-<div class="hitempd1" style="margin-top:30px;">Hum Min<blue><?php echo "&nbsp;".$weather["humidity_ymin"],"</blue>%  ",$weather["humidity_ymintime"];?></span><br></div><br>
+ <div class="humidityword"> Humidity</div>
+<div class="hitempd1" style="margin-top:30px;">Max<orange><?php echo "&nbsp;".$weather["humidity_ymax"],"</orange>%  ",$weather["humidity_ymaxtime"];?></span><br></div><br>
+<div class="hitempd1" style="margin-top:33px;">Min<blue><?php echo "&nbsp;".$weather["humidity_ymin"],"</blue>%  ",$weather["humidity_ymintime"];?></span><br></div><br>
 </div>    
 </article> 
 
@@ -749,8 +762,10 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
    
      
   <div class=hitempypos> 
- <div class="hitempd2" ><?php echo $weather["tempamaxtime"];?></span><br></div>
- <div class="hitempd2" style="margin-top:25px;"><?php echo $weather["tempamintime"];?></div>
+  <div class="highestword"> Highest Recorded</div> 
+ <div class="hitempd2" style="margin-top:-3px;"><?php echo $weather["tempamaxtime"];?></span><br></div>
+  <div class="lowestword"> Lowest Recorded</div> 
+ <div class="hitempd2" style="margin-top:40px;"><?php echo $weather["tempamintime"];?></div>
 </div>
 
 </article> 
@@ -872,9 +887,12 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 	echo "<div class='temperaturetodayminus10'>",$weather["dewamin"] . "</value>";}		
 	echo "<smalluvunit>".$weather["temp_units"]."</smalluvunit>"
 	?>	</div></div>
-   <div class=hitempypos> 
- <div class="hitempd2" ><?php echo $weather["dewamaxtime"];?></span><br></div>
- <div class="hitempd2" style="margin-top:25px;"><?php echo $weather["dewamintime"];?></div>
+   <div class=hitempypos>
+  <div class="highestword"> Highest Recorded</div> 
+ <div class="hitempd2" style="margin-top:-3px;"><?php echo $weather["dewamaxtime"];?></span><br></div>
+ 
+ <div class="lowestword"> Lowest Recorded</div> 
+ <div class="hitempd2" style="margin-top:40px;"><?php echo $weather["dewamintime"];?></div>
 </div>
 
  
