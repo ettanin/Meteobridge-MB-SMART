@@ -79,7 +79,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 <?php if ($position6=='forecast3ds.php'){echo'<a alt="Dark Sky Forecast " title="Dark Sky Forecast " href="outlookds.php" data-lity>'. $chartinfo. " Daily Forecast </a>&nbsp;";}?>
 <?php if ($position6=='forecast3wu.php' || $position6=='forecast3wularge.php') {echo ' <a alt="weather underground forecast" title="weather underground forecast" href="outlookwu.php" data-lity>'. $chartinfo. " Daily Forecast </a>&nbsp;";}?>
 <?php if ($position6=='forecast3wu.php' || $position6=='forecast3wularge.php') {echo ' <a alt="weather underground forecast summary" title="weather underground forecast summary" href="outlookwutext.php" data-lity>'. $chartinfo. "  Forecast Summary</a>&nbsp;";}?>
-<?php if ($position6=='forecast3ds.php' || ($apikey!= '11111111111111' && ($position6=='forecast3wu.php' || $position6=='forecast3wularge.php'))) {echo '<a alt="Hourly Forecast" title="Hourly Forecast" href="forecastdshour.php" data-lity>&nbsp;'. $chartinfo. " Hourly Forecast</a>&nbsp;";}?></span></div>
+<?php if ($position6=='forecast3ds.php') {echo '<a alt="Hourly Forecast" title="Hourly Forecast" href="forecastdshour.php" data-lity>&nbsp;'. $chartinfo. " Hourly Forecast</a>&nbsp;";}?></span></div>
  <div id=currentfore></div></weather34module> 
   
   <weather34module> <!-- Weather34 Main Module 3 Current-->
