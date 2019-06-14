@@ -65,7 +65,7 @@ fclose($fp4a);}?>
 <?php
 if ($position6=="forecast3wu.php" || $position6=="forecast3wularge.php"){
 // weather34 weather underground  curl based
-$url4c = 'https://api.weather.com/v3/wx/forecast/daily/5day?geocode='.$lat.','.$lon.'&language=en-US&format=json&units='.$wuapiunit.'&apiKey='.$wuapikey ;
+$url4c = 'https://api.weather.com/v3/wx/forecast/daily/5day?geocode='.$lat.','.$lon.'&language='.$wulanguage.'&format=json&units='.$wuapiunit.'&apiKey='.$wuapikey ;
 $ch4c = curl_init($url4c);
 $filename4c = '../jsondata/wuforecast.txt';
 $complete_save_loc4c = $filename4c;

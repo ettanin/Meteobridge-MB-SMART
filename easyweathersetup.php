@@ -96,6 +96,7 @@ $language    = "'.$_POST['language']. '";
 $password    = "'.$_POST['password']. '";
 $flag   = "'.$_POST["flag"]. '";
 $dshourly   = "'.$_POST["dshourly"].'";
+$wulanguage    = "'.$_POST['wulanguage']. '";
 $manifestShortName = "'.$_POST["manifestShortName"].'";
 ';
  
@@ -1751,6 +1752,53 @@ your nearly there :-) keep going<br><br>
              <br><span style="color:#777;"> h = <span style="color:#cd5245;">mph wind speed + metric(UK) </span>
             
     <p>
+    
+    
+    
+    <div class= "weathersectiontitle">
+Choose the Weather Underground Forecast Language ..</div>
+    <br>
+    
+     <div class= "stationvalue">WU Forecast Language</div> 
+    <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M30 12 L16 24 2 12" />
+</svg>
+
+ <label name="wulanguage"></label>
+      <select id="wulanguage" name="wulanguage" class="choose1">
+           <option><?php echo $wulanguage ;?></option>
+                     
+           <option>ca-ES</option>
+           <option>de-DE</option>             
+           <option>dk-DK</option>
+           <option>de-DE</option>
+           <option>el-GR</option>                      
+           <option>en-GB</option>
+           <option>en-US</option> 
+           <option>es-AR</option>  
+           <option>es-ES</option> 
+           <option>fi-FI</option>  
+           <option>fr-FR</option> 
+           <option>hu-HU</option>           
+           <option>it-IT</option>                   
+           <option>nl-NL</option>
+           <option>no-NO</option>            
+           <option>pl-PL</option>
+           <option>sv-SE-</option> 
+           <option>tr-TR</option>                      
+        </select> <br>
+        
+       <div class= "stationvalue"> English en-GB is the default 
+       </div>
+        
+  <p>
+   
+    
+    
+    
+    
     
         <div class= "stationvalue">
 <img src="img/darksky.svg" width="100" /> DarkSky API Key  for forecast Data </div>
