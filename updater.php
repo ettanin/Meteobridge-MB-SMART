@@ -73,7 +73,7 @@ var e=new Date(new Date().getTime()+offset);
 var c=e.getHours()<?php if ($clockformat == '12') { echo '% 12 || 12';} else { echo '% 24 || 24';}?>;
 <?php if($clockformat=='12') {echo "if(e.getHours()<12){amorpm=' am'}else{amorpm=' pm'}";} else {echo "amorpm='';";}?>
 var a=e.getMinutes();var g=e.getSeconds();var f=e.getFullYear();var h=months[e.getMonth()];var b=e.getDate();
-switch(e.getDate()) {case '1': case '21': case '31': suffix = 'st'; break; case '2': case '22': suffix = 'nd'; break;case '3': case '23': suffix = 'rd'; break;default: suffix = 'th';}
+var suffix = "";switch(b) {case 1: case 21: case 31: suffix = 'st'; break;case 2: case 22: suffix = 'nd'; break;case 3: case 23: suffix = 'rd'; break;default: suffix = 'th';}
 var i=weekdays[e.getDay()];
 if(a<10){a="0"+a}if(g<10){g="0"+g}if(c<10){c="0"+c}
 document.getElementById("theTime").innerHTML="<weather34thetime>"+i+" "+b+suffix+" "+h+" "+f+" &nbsp;"+c+":"+a+":"+g+amorpm}
