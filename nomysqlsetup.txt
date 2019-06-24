@@ -15,7 +15,7 @@ step 1 setup storing todays data to a CSV file for today charts to read file is 
 
 6. Now look for new HTTP request 
 
-7. select every 10 MINUTES
+7. select every FULL 10 MINUTES
 
 8. NOW INSERT THE URL  example https://weathersomething.dot.com/chartstoday.php 
 
