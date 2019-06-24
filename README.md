@@ -26,7 +26,7 @@ how mysql works or is setup , reap the benefit of meteobridge services ,no exter
 just let meteobridge https://www.meteobridge.com/wiki/index.php/Home do it all.. https://www.meteobridge.com/wiki/index.php/Home meteobridge is a feature rich product that totally caters for the weather enthusiast.
 
 important and mostly mis understood mysql database of growing millions of records unless regurlarly maintained can grind your sites to halt over time or cause slow down , its not just about executing a database where it begins to grind when complex routines are called where and the resources of a server get pushed 100% each time called..
-siffling through millions of data values is not smart on poorly low cost histed servers.. non maintained databases are not smart ..
+siffling through millions of data values is not smart on poorly low cost hosted or configured servers.. non maintained databases are not smart ..
 
 
 
