@@ -25,7 +25,7 @@ programs like excel for example,these files can be edited if erroneous data appe
 how mysql works or is setup , reap the benefit of meteobridge services ,no external cron jobs , no server setup of cron jobs 
 just let meteobridge do it all.. meteobridge is a feature rich product that totally caters for the weather enthusiast.
 
-imoortant and mostly mis understood mysql database of growing millions of records unless regurlarly maintained can grind your sites to halt over time or cause slow down , its not just about executing a database where it begins to grind when complex routines are called where and the resources of a server get pushed 100% each time called..
+important and mostly mis understood mysql database of growing millions of records unless regurlarly maintained can grind your sites to halt over time or cause slow down , its not just about executing a database where it begins to grind when complex routines are called where and the resources of a server get pushed 100% each time called..
 siffling through millions of data values is not smart on poorly low cost histed servers.. non maintained databases are not smart ..
 
 
