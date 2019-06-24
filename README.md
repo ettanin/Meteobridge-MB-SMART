@@ -14,6 +14,55 @@ this provides the platform for increasing modules to display for example have sm
 on main page , increase the total of moduels to 24 and choosing optional layouts.
 * important this code may not be supported on old browsers prior to end of 2018.
 
+
+# New No mysql setup use meteobridge data instead..
+How to use this non mysql database version with ease.
+
+
+step 1 setup storing todays data to a CSV file for today charts to read file is chartstoday.php 
+
+1.Goto meteobridge services screen 
+
+2.Goto Select new service
+
+3.Select from the drop down menu HTTP Request
+
+4.Select Perodical in the next menu
+
+5. Click Save at the bottom of the screen
+
+6. Now look for new HTTP request 
+
+7. select every 10 MINUTES
+
+8. NOW INSERT THE URL  example https://weathersomething.dot.com/chartstoday.php 
+
+9. now click save .
+
+
+
+step 1 setup storing todays data to a CSV file for monthly/year charts to read file is charts-month-year.php
+
+1.Goto meteobridge services screen 
+
+2.Goto Select new service
+
+3.Select from the drop down menu HTTP Request
+
+4.Select Specific Time in the next menu
+
+5. Click Save at the bottom of the screen
+
+6. Now look for new HTTP request 
+
+7. select 23:45 (its the nearest the meteobridge will allow you get to the end of the day)
+
+8. NOW INSERT THE URL  example https://weathersomething.dot.com/charts-month-year.php
+
+9. now click save .
+
+thats it !!! no mysql to setup just these two files will do all the work .
+
 example of future layout screenshot 
 
 <p align="center">
