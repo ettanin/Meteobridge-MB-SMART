@@ -23,7 +23,7 @@ How to use this non mysql database version with ease.
 you have a file with every day ,month,year individually recorded , your data is yours and these files can be used in other 
 programs like excel for example,these files can be edited if erroneous data appears .so no learning curve for understanding
 how mysql works or is setup , reap the benefit of meteobridge services ,no external cron jobs , no server setup of cron jobs 
-just let meteobridge do it all.. meteobridge is a feature rich product that totally caters for the weather enthusiast.
+just let meteobridge https://www.meteobridge.com/wiki/index.php/Home do it all.. https://www.meteobridge.com/wiki/index.php/Home meteobridge is a feature rich product that totally caters for the weather enthusiast.
 
 important and mostly mis understood mysql database of growing millions of records unless regurlarly maintained can grind your sites to halt over time or cause slow down , its not just about executing a database where it begins to grind when complex routines are called where and the resources of a server get pushed 100% each time called..
 siffling through millions of data values is not smart on poorly low cost histed servers.. non maintained databases are not smart ..
