@@ -70,14 +70,14 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 <main class="grid1">
   <articlegraph> 
   <div class=actualt>Today <blue>Rainfall <?php echo "<smalluvunit>",$rainunit ;?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/todayrainfallmedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/todayrainfallmedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   
   
   <articlegraph> 
   <div class=actualt>Today <blue>Rain Rate <?php echo "<smalluvunit>",$rainunit ;?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/todayrainratemedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/todayrainratemedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   

@@ -80,13 +80,13 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
  <main class="grid1">
   <articlegraph> 
   <div class=actualt>Today <span style="color:#d35d4e">Wind Speed <?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></span> | <blue>Average <smalluvunit><?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/todaywindspeedsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/todaywindspeedsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   
   <articlegraph> 
   <div class=actualt>Today Wind Direction <blue><?php echo "<smalluvunit>Degrees";?></smalluvunit></span> </blue></div>  
-  <iframe  src="mbcharts/todaywinddirectionsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/todaywinddirectionsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   

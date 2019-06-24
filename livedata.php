@@ -72,7 +72,7 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather["wind_direction"]     = number_format($meteobridgeapi[7],0);
 	$weather["wind_direction_avg"] = number_format($meteobridgeapi[46],0);
 	$weather["wind_speed"]         = number_format($meteobridgeapi[5]); // Also the Console's Average Wind Speed
-  $weather["wind_gust_10min"]    = $meteobridgeapi[40]; // Wind Speed Gust - Max speed of last 10 minutes
+    $weather["wind_gust_10min"]    = $meteobridgeapi[40]; // Wind Speed Gust - Max speed of last 10 minutes
 	$weather["wind_gust_speed"]    = $meteobridgeapi[6]; // Instanteous Speed
 	$weather["wind_speed_bft"]     = $meteobridgeapi[12];
 	$weather["wind_speed_max"]     = $meteobridgeapi[30];	
@@ -238,9 +238,9 @@ if (is_numeric($meteobridgeapi[186]) && $meteobridgeapi[186] != '--') {
     $dewmaxtime = date('H:i', strtotime($originalDate46));	
 	$originalDate47 = $meteobridgeapi[66];
     $dewmintime =  date('H:i', strtotime($originalDate47));
-	$weather["dewmax"]		    = $meteobridgeapi[63]; //temp max year
+	$weather["dewmax"]		    = $meteobridgeapi[63]; //
 	$weather["dewmaxtime"]		= $dewmaxtime; //seconds	
-	$weather["dewmin"]		    = $meteobridgeapi[65]; //temp min year
+	$weather["dewmin"]		    = $meteobridgeapi[65]; //
 	$weather["dewmintime"]		= $dewmintime; //seconds
 	//dewpoint month
 	$originalDate74 = $meteobridgeapi[49];

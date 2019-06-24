@@ -100,23 +100,23 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   <main class="grid1">
   <articlegraph> 
   <div class=actualt>Today <blue>Dewpoint<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></blue></div>  
-  <iframe  src="mbcharts/todaydewpointsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/todaydewpointsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph>   
   <articlegraph> 
   <div class=actualt><?php echo date('M Y');?> <span style="color:#ff9350">Dewpoint <?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></span> | <blue>Min<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></blue></div>  
-  <iframe  src="mbcharts/monthlydewpointsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>   
+  <iframe  src="weather34charts/monthlydewpointsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>   
   </articlegraph> 
   
   <articlegraph> 
   <div class=actualt><?php echo date('Y');?> Dewpoint <span style="color:#ff9350">Max:<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></span> | <blue>Min:<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></blue></div>  
-  <iframe  src="mbcharts/yearlydewpointsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/yearlydewpointsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   
    <articlegraph> 
   <div class=actualt><?php echo date('Y', strtotime('last year'));?> Dewpoint <span style="color:#ff9350">Max:<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></span> | <blue>Min:<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></blue></div>  
-  <iframe  src="mbcharts/yearlydewpointprevious.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/yearlydewpointprevious.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   

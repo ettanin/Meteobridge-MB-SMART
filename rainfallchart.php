@@ -78,25 +78,25 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 <main class="grid1">
   <articlegraph> 
   <div class=actualt>Today <blue>Rainfall <?php echo "<smalluvunit>",$rainunit ;?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/todayrainfallsmall.php" frameborder="0" scrolling="no" width="375px"></iframe>
+  <iframe  src="weather34charts/todayrainfallsmall.php" frameborder="0" scrolling="no" width="375px"></iframe>
    
   </articlegraph> 
   
   
   <articlegraph> 
   <div class=actualt><?php echo date('M Y');?> <blue>Rainfall <?php echo "<smalluvunit>",$rainunit ;?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/monthlyrainfallsmall.php" frameborder="0" scrolling="no" width="375px"></iframe>
+  <iframe  src="weather34charts/monthlyrainfallsmall.php" frameborder="0" scrolling="no" width="375px"></iframe>
    
   </articlegraph> 
   
   <articlegraph> 
   <div class=actualt><?php echo date('Y');?> <blue>Rainfall <?php echo "<smalluvunit>",$rainunit ;?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/yearlyrainfallsmall.php" frameborder="0" scrolling="no" width="375px"></iframe>
+  <iframe  src="weather34charts/yearlyrainfallsmall.php" frameborder="0" scrolling="no" width="375px"></iframe>
    
   </articlegraph> 
    <articlegraph> 
   <div class=actualt><?php echo date('Y', strtotime('last year'));?> <blue>Rainfall <?php echo "<smalluvunit>",$rainunit ;?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/yearlyrainfallprevious.php" frameborder="0" scrolling="no" width="375px"></iframe>
+  <iframe  src="weather34charts/yearlyrainfallprevious.php" frameborder="0" scrolling="no" width="375px"></iframe>
    
   </articlegraph> 
   

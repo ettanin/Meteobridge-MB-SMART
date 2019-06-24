@@ -210,7 +210,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   <main class="grid1">
   <articlegraph> 
   <div class=actualt><?php echo date('Y')?> Barometer Chart</div>  
-  <iframe  src="mbcharts/yearlybarometermedium.php" frameborder="0" scrolling="no" width="100%" height="205px"></iframe>
+  <iframe  src="weather34charts/yearlybarometermedium.php" frameborder="0" scrolling="no" width="100%" height="205px"></iframe>
    
   </articlegraph> 
   

@@ -3,36 +3,6 @@ include('../settings.php');
 // extras added march 23rd 2016 //
 date_default_timezone_set($TZ);
 $date = date_create();
-
-if ($chartsource =="mbcharts"){
-   //connect to mysqli db for homeweatherstation save to csv files october 2017
-$conn = mysqli_connect($db_host,$db_user,$db_pass,$db_name);
-$result = mysqli_query($conn,'SELECT * FROM `weatherstation` LIMIT 1'); // query to get just the 1st row to speed up naming fields
-if (!$result) die('Couldn\'t fetch records');
-$num_fields = mysqli_num_fields($result);
-$headers = array();
-for ($i = 0; $i < $num_fields; $i++)
-{
-       $headers[] = mysqli_fetch_field_direct($result , $i)->name;
-}
-//$result = mysqli_query($conn,'SELECT * FROM `weatherstation`'); // query to get the full list this time
-$result = mysqli_query($conn, 'SELECT * FROM `weatherstation` ORDER BY `weatherstation`.`ID` ASC');
-$output='../mbcharts/result.csv';
-$fp = fopen('../mbcharts/result.csv', 'w');
-if ($fp && $result)
-{
-       fputcsv($fp, $headers);
-       while ($row = mysqli_fetch_row($result))
-       {
-          fputcsv($fp, array_values($row),',','"');
-		  // fputs($fp, implode($row, ',')."\n");
-       }} }
-
-	   else "weather34 sez do nothing";
-
-?>
-
-<?php
 $w34header= array(
             "X-API-KEY:".$metarapikey."",);
 $ch = curl_init();
@@ -129,5 +99,3 @@ curl_exec($ch9);
 curl_close($ch9);
 fclose($fp9);}
 ?>
-
-

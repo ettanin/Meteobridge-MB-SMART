@@ -101,24 +101,24 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   
   <articlegraph> 
   <div class=actualt>Today Temp <span style="color:#ff9350"><?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></div>  
-  <iframe  src="mbcharts/todaytempsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/todaytempsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   <articlegraph> 
   <div class=actualt><?php echo date('M Y');?> <span style="color:#ff9350">Temp<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></span> | <blue>Min<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></blue></div>  
-  <iframe  src="mbcharts/monthlytemperaturesmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/monthlytemperaturesmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   
   <articlegraph> 
   <div class=actualt><?php echo date('Y');?> Temp <span style="color:#ff9350">Max:<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></span> | <blue>Min:<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></blue></div>  
-  <iframe  src="mbcharts/yearlytemperaturesmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/yearlytemperaturesmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   
   <articlegraph> 
   <div class=actualt><?php echo date('Y', strtotime('last year'));?> Temp <span style="color:#ff9350">Max:<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></span> | <blue>Min:<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></blue></div>  
-  <iframe  src="mbcharts/yearlytemperatureprevious.php" frameborder="0" scrolling="no" width="100%">No Data Avaialble</iframe>
+  <iframe  src="weather34charts/yearlytemperatureprevious.php" frameborder="0" scrolling="no" width="100%">No Data Avaialble</iframe>
    
   </articlegraph> 
   

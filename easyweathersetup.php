@@ -253,36 +253,37 @@ check languages
     <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
     <circle cx="16" cy="16" r="4" />
 </svg>
-  Database Credentials</div><p>
+  Database is No longer Required(may be useful in the future)<br> ** see file in download and important read file called nomysqlsetup.txt  </div><p>
 
-<div class= "stationvalue">  Database Host</div>
+<div class= "stationvalue">  Database Host(leave blank )</div>
 <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg>
 
   <input name="db_host" type="text" id="db_host" value="<?php echo $db_host ;?>" class="choose">
-  
-  <div class= "stationvalue">  Database Username</div>
+  <br>
+  <div class= "stationvalue">  Database Username(leave blank)</div>
 <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg>
   <input name="db_user" type="text" id="db_user" value="<?php echo $db_user ;?>" class="choose">
   <p>
   
-  <div class= "stationvalue">  Database Password</div>
+  <div class= "stationvalue">  Database Password(leave blank)</div>
 <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg>
   <input name="db_pass" type="password" id="db_pass" value="<?php echo $db_pass ;?>" class="choose">
-  
-  <div class= "stationvalue">  Database Name</div>
+  <br>
+  <div class= "stationvalue">  Database Name(leave blank)</div>
 <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg>
   <input name="db_name" type="text" id="db_name" value="<?php echo $db_name ;?>" class="choose">
-  
-  
-  
+  <br><br>
+  <strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="0" stroke="#F75C46" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg></strong><span style="color:#777;"> ** see file in download and important read file called nomysqlsetup.txt  </span><br>
+ <br>
   
   
    </div>
@@ -485,8 +486,8 @@ METEOBRIDGE Software Path to Data file</div><p>
     <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
 </svg>
 
-Meteobridge Chart Data (Fixed Option WU history charts no longer supported)</div><p>
-      <div class= "stationvalue">Fixed</div>
+Meteobridge Chart Data (Now uses direct data from meteobridge)</div><p>
+      <div class= "stationvalue">Fixed No Options </div>
       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -495,7 +496,7 @@ Meteobridge Chart Data (Fixed Option WU history charts no longer supported)</div
  <label name="chartsource"></label>
         <select id="chartsource" name="chartsource" class="choose1">
            <option ><?php echo $chartsource;?></option>  
-            <option>mbcharts</option>         
+            <option>weather34charts</option>         
            
         </select>
            
@@ -2107,6 +2108,14 @@ Check<b>WX</b> Metar API KEY you need to sign up here for free API key <a href="
    
 <div class="weatheroptions">
 
+
+<br><br>
+  <strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="0" stroke="#F75C46" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg></strong><span style="color:#777;"> ** see file in download and important read file called nomysqlsetup.txt  </span><br>
+ <br>
+
+
+
     <input type="submit" name="Submit" value="Save Configuration" class="button"><p><span style="color:#777;font-size:12px;padding:5px;line-height:16px;">
   <svg id="i-alert" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M16 3 L30 29 2 29 Z M16 11 L16 19 M16 23 L16 25" /> </svg> Click "save configuration" if everything looks ok and dont forget to set the password.</span>
@@ -2140,7 +2149,10 @@ now check the weather
 </div>
 </div>
 
-   
+   <br><br>
+  <strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="0" stroke="#F75C46" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg></strong><span style="color:#777;"> ** see file in download and important read file called nomysqlsetup.txt  </span><br>
+ <br>
     <span style="font-size:12px;color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M16 14 L16 23 M16 8 L16 10" />
     <circle cx="16" cy="16" r="14" />

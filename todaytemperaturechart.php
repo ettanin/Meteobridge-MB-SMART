@@ -72,12 +72,12 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   
   <articlegraph> 
   <div class=actualt>Today Temp <span style="color:#ff9350"><?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></div>  
-  <iframe  src="mbcharts/todaytempsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/todaytempsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   <articlegraph> 
   <div class=actualt>Today  <span style="color:#44a6b5">Dewpoint<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></span></blue></div>  
-  <iframe  src="mbcharts/todaydewpointsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/todaydewpointsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph>   
  

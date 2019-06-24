@@ -103,6 +103,7 @@ $lang['Gusting'] = 'Ριπές στα';
 $lang['Blowing'] = 'Πνέει στα';
 $lang['Wind'] = 'Ταχύτητα';
 $lang ['Wind Run'] = 'Ταχύτητα Run';
+$lang['Avg Speed Today'] = 'Avg Speed Today';
 
 $lang['Calm'] = 'Απνοια';
 $lang['Lightair'] = 'Σχεδόν Απνοια';

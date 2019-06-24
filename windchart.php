@@ -87,26 +87,26 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
  <main class="grid1">
   <articlegraph> 
   <div class=actualt>Today <span style="color:#d35d4e">Wind Speed <?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></span> | <blue>Average <smalluvunit><?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/todaywindspeedsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/todaywindspeedsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   
   
   <articlegraph> 
   <div class=actualt><?php echo date('M Y');?> <span style="color:#d35d4e"> Wind Speed <?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></span> | <blue>Average <smalluvunit><?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/monthlywindspeedgustsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/monthlywindspeedsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   
   <articlegraph> 
   <div class=actualt><?php echo date('Y');?> <span style="color:#d35d4e"> Wind Speed <?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></span> | <blue>Average <smalluvunit><?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/yearlywindspeedgustsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/yearlywindspeedsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   
    <articlegraph> 
   <div class=actualt><?php echo date('Y', strtotime('last year'));?> <span style="color:#d35d4e"> Wind Speed <?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></span> | <blue>Average <smalluvunit><?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/yearlywindspeedgustprevious.php" frameborder="0" scrolling="no" width="100%"></iframe>
+  <iframe  src="weather34charts/yearlywindspeedprevious.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   

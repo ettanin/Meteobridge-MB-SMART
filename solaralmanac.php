@@ -195,7 +195,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 <main class="grid1">
   <articlegraph> 
   <div class=actualt>Today <span style="color:#ff9350">Solar W/m<supwm2>2</supwm2></div>  
-  <iframe  src="mbcharts/todaysolarsmall.php" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+  <iframe  src="weather34charts/todaysolarsmall.php" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
    
   </articlegraph> 
   

@@ -79,6 +79,7 @@ $lang['Gusting'] = 'in Böeen';
 $lang['Blowing'] = 'Wehen';
 $lang['Wind'] = 'Wind';
 $lang ['Wind Run'] = 'Wehen Run';
+$lang['Avg Speed Today'] = 'Avg Speed Today';
 
 $lang['Calm'] = 'Windstill';
 $lang['Lightair'] = 'Nahezu Windstill';

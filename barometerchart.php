@@ -78,25 +78,25 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 <main class="grid1">
   <articlegraph> 
   <div class=actualt>Today <blue>Barometer <?php echo "<smalluvunit>",$pressureunit ;?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/todaybarometersmall.php" frameborder="0" scrolling="no" width="375px"></iframe>
+  <iframe  src="weather34charts/todaybarometersmall.php" frameborder="0" scrolling="no" width="375px"></iframe>
    
   </articlegraph> 
   
   
   <articlegraph> 
   <div class=actualt><?php echo date('M Y');?> <blue>Barometer <?php echo "<smalluvunit>",$pressureunit ;?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/monthlybarometersmall.php" frameborder="0" scrolling="no" width="375px"></iframe>
+  <iframe  src="weather34charts/monthlybarometersmall.php" frameborder="0" scrolling="no" width="375px"></iframe>
    
   </articlegraph> 
   
   <articlegraph> 
   <div class=actualt><?php echo date('Y');?> <blue>Barometer <?php echo "<smalluvunit>",$pressureunit ;?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/yearlybarometersmall.php" frameborder="0" scrolling="no" width="375px"></iframe>
+  <iframe  src="weather34charts/yearlybarometersmall.php" frameborder="0" scrolling="no" width="375px"></iframe>
    
   </articlegraph> 
    <articlegraph> 
   <div class=actualt><?php echo date('Y', strtotime('last year'));?> <blue>Barometer <?php echo "<smalluvunit>",$pressureunit ;?></smalluvunit></blue></div>  
-  <iframe  src="mbcharts/yearlybarometerprevious.php" frameborder="0" scrolling="no" width="375px"></iframe>
+  <iframe  src="weather34charts/yearlybarometerprevious.php" frameborder="0" scrolling="no" width="375px"></iframe>
    
   </articlegraph> 
   

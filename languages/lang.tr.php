@@ -78,6 +78,7 @@ $lang['Gusting'] = 'Max Rüzgar ';
 $lang['Blowing'] = 'üfleme ';
 $lang['Blowing'] = 'Rüzgar';
 $lang ['Wind Run'] = 'Rüzgar Run';
+$lang['Avg Speed Today'] = 'Avg Bugün';
 
 $lang['Calm'] = 'Sakin';
 $lang['Lightair'] = 'Çok hafif Rüzgarlı';
