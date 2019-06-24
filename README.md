@@ -21,13 +21,13 @@ How to use this non mysql database version with ease.
 
 step 1 setup storing todays data to a CSV file for today charts to read file is chartstoday.php 
 
-1.Goto meteobridge services screen 
+1. Goto meteobridge services screen 
 
-2.Goto Select new service
+2. Goto Select new service
 
-3.Select from the drop down menu HTTP Request
+3. Select from the drop down menu HTTP Request
 
-4.Select Perodical in the next menu
+4. Select Perodical in the next menu
 
 5. Click Save at the bottom of the screen
 
@@ -41,15 +41,15 @@ step 1 setup storing todays data to a CSV file for today charts to read file is 
 
 
 
-step 1 setup storing todays data to a CSV file for monthly/year charts to read file is charts-month-year.php
+step 2 setup storing monthly yearly data to a CSV file for monthly/year charts to read file is charts-month-year.php
 
-1.Goto meteobridge services screen 
+1. Goto meteobridge services screen 
 
-2.Goto Select new service
+2. Goto Select new service
 
-3.Select from the drop down menu HTTP Request
+3. Select from the drop down menu HTTP Request
 
-4.Select Specific Time in the next menu
+4. Select Specific Time in the next menu
 
 5. Click Save at the bottom of the screen
 
