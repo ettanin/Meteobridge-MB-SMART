@@ -41,7 +41,7 @@ step 1 setup storing todays data to a CSV file for today charts to read file is 
 
 
 
-step 2 setup storing todays data to a CSV file for monthly/year charts to read file is charts-month-year.php
+step 2 setup storing monthly yearly data to a CSV file for monthly/year charts to read file is charts-month-year.php
 
 1. Goto meteobridge services screen 
 
