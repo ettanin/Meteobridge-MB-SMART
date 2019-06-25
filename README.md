@@ -117,8 +117,6 @@ example of current beta
 # Basic Setup guide 
 https://weather34.com/homeweatherstation/guides/setup.html
 
-# Myqsl Setup Guide
-https://weather34.com/homeweatherstation/guides/setupmeteobridge.html
 
 # Weather34 Historic Timeline of design 2014-2019 
 https://weather34.com/homeweatherstation/weather34timeline/weather34timeline.html
