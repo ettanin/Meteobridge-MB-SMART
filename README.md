@@ -76,7 +76,7 @@ thats it !!! no mysql to setup just these two files will do all the work .
 
 
 <p align="center">
-  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1561366487/nomysql_sqompr.png" width="550" title="weather34 meteobridge nomysql charts "> 
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1561432649/nomysql_slsl7v.png" width="550" title="weather34 meteobridge nomysql charts "> 
 </p>
 
 
