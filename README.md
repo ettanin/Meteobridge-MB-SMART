@@ -99,6 +99,8 @@ ideas and request permission to use.
 *This work requires credits to be left intact where work is used ,it has no legal binding warrant but it is ethical
 to create a working enviroment to exchange ideas without creating unwanted noise, the community is smaller than you may think..
 
+*THIS VERSION HAS NO MYSQL DEPENDANCY 
+
 *This work means CSS/SVG/PHP .
 
 example of current beta
