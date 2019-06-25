@@ -1,4 +1,4 @@
-# This repository is a beta project for Meteobridge-Weather34-Smart Version (expected release 2020)
+# This repository is a beta project for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED (expected final release 2020)
 
 This version uses new css grid layouts based on 
 
@@ -74,6 +74,19 @@ step 2 setup storing monthly yearly data to a CSV file for monthly/year charts t
 
 thats it !!! no mysql to setup just these two files will do all the work .
 
+behind the code ....
+
+simple logic pull data from livedata.php and generate a required values. utilizes meteobridge software ability to 
+pull data in many ways. i.e max wind last 10 minutes , rainfall amount last 10 minutes , average windpeed last 10 minutes and so on ....
+
+short example of daily genrated file adds new line every 10 minutes
+id,time,temp,barometer,rainfall,maxwind_last10,avgwind_last10,dewpoint,rainfall_last10min,avgdirection_last10min,date,humidity,indoortemp,indoorhumidity,uv,solar,lightning1,lightning2....
+
+0,19:40,28.2,1013.6,0.0,8.0,4.5,15.5,0.0,36.0,24 Jun,46.0,27.6,38,0.2,38.0,3,2
+
+0,19:50,27.9,1013.6,0.0,7.6,4.3,15.9,0.0,42.0,24 Jun,48.0,27.5,38,0.2,33.0,0,0
+
+0,20:00,27.8,1013.6,0.0,8.0,4.4,16.1,0.0,39.0,24 Jun,49.0,27.4,39,0.1,27.0,1,4
 
 <p align="center">
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1561432649/nomysql_slsl7v.png" width="550" title="weather34 meteobridge nomysql charts "> 
