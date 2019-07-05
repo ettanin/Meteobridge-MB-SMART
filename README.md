@@ -46,7 +46,7 @@ step 1 setup storing todays data to a CSV file for today charts to read file is 
 
 7. select every FULL 10 MINUTES
 
-8. NOW INSERT THE URL  example **ttps://weathersomething/chartstoday.php
+8. NOW INSERT THE URL  example **http(s)://weathersomething/chartstoday.php
 
 9. now click save .
 
@@ -68,7 +68,7 @@ step 2 setup storing monthly yearly data to a CSV file for monthly/year charts t
 
 7. select 23:45 (its the nearest the meteobridge will allow you get to the end of the day)
 
-8. NOW INSERT THE URL  example **ttps://weathersomething/charts-month-year.php
+8. NOW INSERT THE URL  example **http(s)://weathersomething/charts-month-year.php
 
 9. now click save .
 
