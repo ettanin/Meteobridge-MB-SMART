@@ -1,5 +1,7 @@
 # This repository is a beta project for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED (expected final release 2020)
 
+# you are strongly advised do not use this template for main viewing it will be many months before it is ready..
+
 This version uses new css grid layouts based on 
 
   display:grid;
