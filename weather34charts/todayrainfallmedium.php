@@ -28,7 +28,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>OUTDOOR TEMPERATURE DATABASE CHART</title>	
+		<title>OUTDOOR RAINFALL DATABASE CHART</title>	
 		<script src=../js/jquery.js></script>
 		
 		

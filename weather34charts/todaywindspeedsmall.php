@@ -67,7 +67,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[5]>-1)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[5]*<?php echo $conv;?>)});
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[7]*<?php echo $conv;?>)});
 					//parseFloat(rowData[13])});
 				
 			}
@@ -169,7 +169,7 @@
 			lineThickness: 1,
 			markerType: "none",
 			name:"10 Min Max Wind Speed",
-			dataPoints: dataPoints2,
+			dataPoints: dataPoints1,
 			yValueFormatString:"#0.# <?php echo $windunit ;?>",
 		},
 		{
@@ -183,7 +183,7 @@
 			lineThickness: 1,
 			markerType: "circle",
 			name:"10 Min Avg Wind Speed",
-			dataPoints: dataPoints1,
+			dataPoints: dataPoints2,
 			yValueFormatString:"#0.# <?php echo $windunit ;?>",
 		}
 
