@@ -80,4 +80,16 @@ height:95px;left:14px;bottom:0;width:100px;background:url(rain/weather34rainbeak
 
 }
 canvas,iframe,img,svg{aspect-ratio:attr(width px)/attr(height px);image-rendering:auto}
-.weather34tip{position:relative;box-sizing:border-box}valuetextheading1a{margin-left:10px;font-family:weathertext2;font-size:1em}.weather34tip:after,.weather34tip:before{visibility:hidden;opacity:0;position:absolute;left:50%;box-sizing:border-box}.weather34tip:after{content:attr(data-weather34tip);background:rgba(255,108,52,1);top:100%;margin-top:12px;padding:2px;color:#fff;line-height:1.5;width:120px;margin-left:-50px;-webkit-border-radius:3px;border-radius:3px;font-size:1.1em;font-weight:600;z-index:100;font-family:Arial,Helvetica,sans-serif}.weather34tip:hover:after,.weather34tip:hover:before{transition:all .4s ease .2s;visibility:visible;opacity:1}.weather34tip:hover:after{margin-top:5px}.weather34tip:hover:before{margin-top:0}
+a{font-family:arial,system;z-index:20}
+valuetextheading1a{margin-left:10px;font-family:weathertext2;font-size:1em}
+.weather34tip{position:relative;box-sizing:border-box}
+valuetextheading1a{margin-left:10px;font-family:weathertext2;font-size:1em}.weather34tip:after,.weather34tip:before{visibility:hidden;opacity:0;position:absolute;left:50%;box-sizing:border-box}.weather34tip:after{content:attr(data-weather34tip);background:rgba(255,108,52,1);top:100%;margin-top:12px;padding:2px;color:#fff;line-height:1.5;width:120px;margin-left:-50px;-webkit-border-radius:3px;border-radius:3px;font-size:1.1em;font-weight:600;z-index:100;font-family:Arial,Helvetica,sans-serif}.weather34tip:hover:after,.weather34tip:hover:before{transition:all .4s ease .2s;visibility:visible;opacity:1}.weather34tip:hover:after{margin-top:5px}.weather34tip:hover:before{margin-top:0}
+
+.weather34tipr{position:absolute;box-sizing:border-box;}
+.weather34tipr:after,.weather34tipr:before{visibility:hidden;opacity:0;position:absolute;left:50%;box-sizing:border-box}
+.weather34tipr:after{content:attr(data-weather34tipr);background:rgba(6, 162, 177, 1.000);top:100%;margin-top:12px;padding:2px;color:#fff;line-height:1.5;width:125px;margin-left:-50px;-webkit-border-radius:3px;border-radius:3px;font-size:1.1em;font-weight:600;z-index:100;font-family:Arial,Helvetica,sans-serif}
+.weather34tipr:hover:after,.weather34tipr:hover:before{transition:all .4s ease .2s;visibility:visible;opacity:1}
+.weather34tipr:hover:after{margin-top:5px}
+.weather34tipr:hover:before{margin-top:0}
+valuetextheading1r{font-family:weathertext2;font-size:1em;margin-left:-10px}
+valuetextsolar{font-size:1em;margin-left:0}
