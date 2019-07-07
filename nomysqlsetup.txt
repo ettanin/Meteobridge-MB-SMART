@@ -9,7 +9,7 @@ step 1 setup storing todays data to a CSV file for today charts to read file is 
 
 3. Select from the drop down menu HTTP Request
 
-4. Select Perodical in the next menu
+4. Select Periodical in the next menu
 
 5. Click Save at the bottom of the screen
 
