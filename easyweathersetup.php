@@ -184,10 +184,6 @@ Welcome you have logged into the <br>WEATHER34 Meteobridge MB-SMART setup screen
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> Please setup and password protect this page for later use it is for your privacy and protection.
 <br>
 
-<svg id="i-checkmark" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M2 20 L12 28 30 4" />
-</svg>
-
 
 
 
@@ -394,19 +390,25 @@ Choose the default Language to display and use..</div>
 
      <br />
      
-    
+  
 
-<div class="weatherbottominfo">
-<svg id="i-checkmark" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M2 20 L12 28 30 4" />
-</svg>
 
-check path to data file 
+
+
+ <p>
+   
+ 
+   <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg>  Davis Hardware 
+     
+     <p>
+   
+ 
+   <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg>  Fixed Charts 
+
+
 </div>
-
-
-</div>
-
    <p>
 
 
