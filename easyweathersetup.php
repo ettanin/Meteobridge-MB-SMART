@@ -3,8 +3,8 @@ include('settings1.php');
  // HOMEWEATHERSTATION EASY SETUP AUGUST 2016 //
  // SIMPLE EASY PHP BASED AND CSS //
  // DEVELOPED BY BRIAN UNDERDOWN //
- // RELEASED NOVEMBER 2016 //
- // Meteobridge //
+ // RELEASED NOVEMBER 2019 //
+ // Meteobridge SMART//
  //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 
 IF (ISSET($_POST["Submit"])) {
@@ -109,7 +109,9 @@ FCLOSE($fp);
 <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 <link href="favicon.ico" rel="icon" type="image/x-icon">
 <style> <!---cleaned and minified at http:http://refresh-sf.com --->
-body{font-size:12px;font-family:Arial,Helvetica,sans-serif;color:#777;background:white}h1{color:rgba(86, 95, 103, 1.000);font-size:24px;margin-bottom:10px;font-weight:bold;margin:10px 0}h2{color:rgba(86, 95, 103, 1.000);font-size:20px;margin-bottom:10px;font-weight:bold;margin:10px 0}h3{color:#ccc;font-size:14px;margin-bottom:20px;font-weight:bold;margin:20px 0}.weathersetuptitle{font-size:18px;text-align:center;font-weight:200;font-family:Arial,Helvetica,sans-serif;padding:5px;border:0;background:rgba(67, 58, 80, 1.000);border-radius:5px;color:#fff;width:600px;margin:0 auto;border:0;border:1px solid #777}.theframe1{font-size:14px;font-family:Arial,Helvetica,sans-serif;color:#fff;border:0px solid #777;margin:0 auto;margin-top:10px;margin-bottom:10px;width:1024px;background:0;padding:5px;border-radius:4px}.theframe{font-size:14px;font-family:Arial,Helvetica,sans-serif;color:#fff;border:5px solid rgba(24, 25, 27, 0.2);margin:0 auto;margin-top:10px;margin-bottom:10px;width:960px;background:white;padding:5px;border-radius:4px}.weatheroptions{margin:5px;padding:10px;border-radius:4px;border:1px solid #e9ebf1;border-bottom:18px solid #e9ebf1;width:75%}.weatheroptionssidebar{margin:1px;margin-top:-5px;margin-bottom:-5px;margin-left:-5px;padding:5px;border-radius:4px;border:1px solid #e9ebf1;border-bottom:18px solid #f6f8fc;width:200px;position:relative;float:right;margin:5px;color:#777}.weatheroptionssidebarbottom{margin:1px;margin-top:-145px;margin-left:200px;padding:5px;border-radius:4px;border:1px solid #e9ebf1;border-bottom:18px solid #f6f8fc;width:200px;position:relative;float:right;color:#777}.weatherbottominfo{position:absolute;font-size:12px;color:#777;padding:3px;margin-top:3px}.weatherbottomwarning{position:absolute;font-size:12px;color:#777;padding:3px;margin-top:7px}.weatheroptions .button{background:rgba(240,94,64,1);border-radius:4px;padding:5px;font-size:16px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;-webkit-appearance:none}.weatheroptions .choose{background:rgba(24, 25, 27, 0.8);border-radius:4px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:160px;max-width:400px;outline:0;-webkit-appearance:none;text-align:left}.weatheroptions .choose1{background:rgba(24, 25, 27, 0.8);border-radius:3px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:130px;outline:0;-webkit-appearance:none}.weatheroptions .choose2{background:rgba(86, 95, 103, 1.000);border-radius:3px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:100px;outline:0;-webkit-appearance:none}.weatheroptions .chooseapi{background:rgba(24, 25, 27, 0.8);border-radius:4px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:300px;outline:0;-webkit-appearance:none;text-align:left}.weatheroptions .personal{background:rgba(24, 25, 27, 0.8);border-radius:4px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:99%;outline:0;-webkit-appearance:none;text-align:left}.weatheroptions .stationvalue{background:rgba(86, 95, 103, 1.000);border-radius:3px;padding:5px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;display:inline-block;-webkit-appearance:none}.weatheroptions .stationvalue1{background:#777;border-radius:3px;padding:5px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;display:inline-block;-webkit-appearance:none}.weathersectiontitle{background:#777;border-radius:4px;padding:5px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;margin:5px;display:inline-block;-webkit-appearance:none}.weatheroptions a{font-size:14px;color:rgba(86, 95, 103, 1.000);font-family:Arial,Helvetica,sans-serif;border:0;text-transform:none;outline:0;-webkit-appearance:none}a{font-size:14px;color:rgba(86, 95, 103, 1.000);font-family:Arial,Helvetica,sans-serif;border:0;text-transform:none;outline:0;-webkit-appearance:none}#weatherpopupcontainer{width:960px;margin:auto;padding:30px}p{margin-bottom:20px;line-height:24px}#hover{position:fixed;background:white;width:100%;height:100%;opacity:.6}#weatherpopup{position:fixed;width:600px;height:320px;background:white;left:50%;top:25%;border-radius:5px;padding:60px 0;margin-left:-320px;margin-top:-100px;text-align:center;border:1px solid #e9ebf1;border-bottom:23px solid rgba(40,39,39,0.7);color:#fff;padding:10px}.weatherpopupbottom{margin-top:55px;padding:10px;float:left;color:#fff;position:absolute;font-size:11px}#close{position:absolute;background:white;color:#fff;right:-10px;top:-10px;border-radius:50%;width:30px;height:30px;line-height:30px;text-align:center;font-size:14px;font-weight:bold;font-family:'Arial',Arial,sans-serif;cursor:pointer}body{background:white}.seperator{width:700px;border-top:1px #ddd dotted;margin-top:5px;padding:10px}*{box-sizing:border-box}*:focus{outline:0}.login{margin:0 auto;width:300px;background-color:none}a{font-size:12px;text-transform:none;text-decoration:none;color:#2095a7}a:hover{color:#7bbb28}.login-screen{background-color:none;padding:20px;border-radius:5px;margin:0 auto}.app-title{text-align:center;color:#ccc;background-color:none}.login-form{text-align:center;background-color:none}.control-group{margin-bottom:10px}input{text-align:center;background-color:#777;border:2px solid transparent;border-radius:3px;font-size:16px;font-weight:200;padding:10px 0;width:250px;transition:border .5s;color:#fff;border:2px solid rgba(86, 95, 103, 1.000);box-shadow:none;margin:0 auto;margin-top:10px}input:focus{border:2px solid rgba(86, 95, 103, 1.000);box-shadow:none}.btn{border:2px solid transparent;background:rgba(86, 95, 103, 1.000);color:#fff;font-size:16px;line-height:25px;padding:10px 0;text-decoration:none;text-shadow:none;border-radius:3px;box-shadow:none;transition:.25s;display:block;width:150px;margin:10px;text-align:center;-webkit-appearance:none}.btn:hover{background-color:rgba(86, 95, 103, 1.000)}.login-link{font-size:12px;color:#444;display:block;margin-top:12px}.loginformarea{margin:0 auto;text-align:center}orange{color:rgba(236, 87, 27, 1.000)}green{color:rgba(67, 58, 80, 1.000)}blue{color:rgba(67, 58, 80, 1.000)}img{border-radius:4px;}white{color:#fff}.input-button,.modal-button{font-size:18px;padding:10px 40px}.input-block input,.input-button,.modal-button{font-family:Arial,sans-serif;border:1px solid #ccc;}.icon-button,.input-block input,.input-button,.modal-button{outline:0;cursor:pointer}.modal-button{color:#7d695e;border-radius:5px;background:rgba(230, 232, 239, 1.000);width:120px;text-align:center}.modal-button:hover{border-color:rgba(255,255,255,.2);background:rgba(144,177,42,1);color:#f8f8f8}.input-button{color:#7d695e;border-radius:5px;background:#fff}.input-button:hover{background:rgba(144,177,42,1);color:#fff}.input-label{font-size:11px;text-transform:uppercase;font-family:Arial,sans-serif;font-weight:600;letter-spacing:.7px;color:#8c7569;}.input-block{display:flex;flex-direction:column;padding:10px 10px 8px;border:1px solid #ddd;border-radius:4px;margin-bottom:20px;}.input-block input{color:#fff;font-size:18px;padding:10px 40px;border-radius:5px;background:rgba(144,177,42,1)}.input-block input::-webkit-input-placeholder{color:#ccc;opacity:1}.input-block input:-ms-input-placeholder{color:#ccc;opacity:1}.input-block input::-ms-input-placeholder{color:#ccc;opacity:1}.input-block input::placeholder{color:#ccc;opacity:1}.input-block:focus-within{border-color:#8c7569}.input-block:focus-within .input-label{color:rgba(140,117,105,.8)}.icon-button{position:absolute;right:10px;top:12px;width:32px;height:32px;background:0;padding:0}
+body{font-size:12px;font-family:Arial,Helvetica,sans-serif;color:#777;background:white}h1{color:rgba(86, 95, 103, 1.000);font-size:24px;margin-bottom:10px;font-weight:bold;margin:10px 0}h2{color:rgba(86, 95, 103, 1.000);font-size:20px;margin-bottom:10px;font-weight:bold;margin:10px 0}h3{color:#ccc;font-size:14px;margin-bottom:20px;font-weight:bold;margin:20px 0}.weathersetuptitle{font-size:18px;text-align:center;font-weight:200;font-family:Arial,Helvetica,sans-serif;padding:5px;border:0;background:rgba(67, 58, 80, 1.000);border-radius:5px;color:#fff;width:600px;margin:0 auto;border:0;border:1px solid #777}.theframe1{font-size:14px;font-family:Arial,Helvetica,sans-serif;color:#fff;border:0px solid #777;margin:0 auto;margin-top:10px;margin-bottom:10px;width:1024px;background:0;padding:5px;border-radius:4px}.theframe{font-size:14px;font-family:Arial,Helvetica,sans-serif;color:#fff;border:1px solid rgba(7, 114, 125, 1.000,.4);margin:0 auto;margin-top:10px;margin-bottom:10px;width:960px;background:white;padding:5px;border-radius:4px;-webkit-box-shadow: 4px 7px 20px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 7px 20px -5px rgba(0,0,0,0.75);
+box-shadow: 4px 7px 20px -5px rgba(0,0,0,0.75);}.weatheroptions{margin:5px;padding:10px;border-radius:4px;border:1px solid #e9ebf1;border-bottom:18px solid #e9ebf1;width:75%}.weatheroptionssidebar{margin:1px;margin-top:-5px;margin-bottom:-5px;margin-left:-5px;padding:5px;border-radius:4px;border:1px solid #e9ebf1;border-bottom:18px solid #f6f8fc;width:200px;position:relative;float:right;margin:5px;color:#777}.weatheroptionssidebarbottom{margin:1px;margin-top:-145px;margin-left:200px;padding:5px;border-radius:4px;border:1px solid #e9ebf1;border-bottom:18px solid #f6f8fc;width:200px;position:relative;float:right;color:#777}.weatherbottominfo{position:absolute;font-size:12px;color:#777;padding:3px;margin-top:3px}.weatherbottomwarning{position:absolute;font-size:12px;color:#777;padding:3px;margin-top:7px}.weatheroptions .button{background:rgba(240,94,64,1);border-radius:4px;padding:5px;font-size:16px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;-webkit-appearance:none}.weatheroptions .choose{background:rgba(7, 114, 125, 1.000);border-radius:4px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:160px;max-width:400px;outline:0;-webkit-appearance:none;text-align:left}.weatheroptions .choose1{background:rgba(7, 114, 125, 1.000);border-radius:3px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:130px;outline:0;-webkit-appearance:none}.weatheroptions .choose2{background:rgba(86, 95, 103, 1.000);border-radius:3px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:100px;outline:0;-webkit-appearance:none}.weatheroptions .chooseapi{background:rgba(7, 114, 125, 1.000);border-radius:4px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:300px;outline:0;-webkit-appearance:none;text-align:left}.weatheroptions .personal{background:rgba(7, 114, 125, 1.000);border-radius:4px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:99%;outline:0;-webkit-appearance:none;text-align:left}.weatheroptions .stationvalue{background:rgba(86, 95, 103, 1.000);border-radius:3px;padding:5px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;display:inline-block;-webkit-appearance:none}.weatheroptions .stationvalue1{background:#777;border-radius:3px;padding:5px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;display:inline-block;-webkit-appearance:none}.weathersectiontitle{background:#777;border-radius:4px;padding:5px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;margin:5px;display:inline-block;-webkit-appearance:none}.weatheroptions a{font-size:14px;color:rgba(86, 95, 103, 1.000);font-family:Arial,Helvetica,sans-serif;border:0;text-transform:none;outline:0;-webkit-appearance:none}a{font-size:14px;color:rgba(86, 95, 103, 1.000);font-family:Arial,Helvetica,sans-serif;border:0;text-transform:none;outline:0;-webkit-appearance:none}#weatherpopupcontainer{width:960px;margin:auto;padding:30px}p{margin-bottom:20px;line-height:24px}#hover{position:fixed;background:white;width:100%;height:100%;opacity:.6}#weatherpopup{position:fixed;width:600px;height:320px;background:white;left:50%;top:25%;border-radius:5px;padding:60px 0;margin-left:-320px;margin-top:-100px;text-align:center;border:1px solid #e9ebf1;border-bottom:23px solid rgba(40,39,39,0.7);color:#fff;padding:10px}.weatherpopupbottom{margin-top:55px;padding:10px;float:left;color:#fff;position:absolute;font-size:11px}#close{position:absolute;background:white;color:#fff;right:-10px;top:-10px;border-radius:50%;width:30px;height:30px;line-height:30px;text-align:center;font-size:14px;font-weight:bold;font-family:'Arial',Arial,sans-serif;cursor:pointer}body{background:white}.seperator{width:700px;border-top:1px #ddd dotted;margin-top:5px;padding:10px}*{box-sizing:border-box}*:focus{outline:0}.login{margin:0 auto;width:300px;background-color:none}a{font-size:12px;text-transform:none;text-decoration:none;color:#2095a7}a:hover{color:#7bbb28}.login-screen{background-color:none;padding:20px;border-radius:5px;margin:0 auto}.app-title{text-align:center;color:#ccc;background-color:none}.login-form{text-align:center;background-color:none}.control-group{margin-bottom:10px}input{text-align:center;background-color:#777;border:2px solid transparent;border-radius:3px;font-size:16px;font-weight:200;padding:10px 0;width:250px;transition:border .5s;color:#fff;border:2px solid rgba(86, 95, 103, 1.000);box-shadow:none;margin:0 auto;margin-top:10px}input:focus{border:2px solid rgba(86, 95, 103, 1.000);box-shadow:none}.btn{border:2px solid transparent;background:rgba(86, 95, 103, 1.000);color:#fff;font-size:16px;line-height:25px;padding:10px 0;text-decoration:none;text-shadow:none;border-radius:3px;box-shadow:none;transition:.25s;display:block;width:150px;margin:10px;text-align:center;-webkit-appearance:none}.btn:hover{background-color:rgba(86, 95, 103, 1.000)}.login-link{font-size:12px;color:#444;display:block;margin-top:12px}.loginformarea{margin:0 auto;text-align:center}orange{color:rgba(236, 87, 27, 1.000)}green{color:rgba(67, 58, 80, 1.000)}blue{color:rgba(67, 58, 80, 1.000)}img{border-radius:4px;}white{color:#fff}.input-button,.modal-button{font-size:18px;padding:10px 40px}.input-block input,.input-button,.modal-button{font-family:Arial,sans-serif;border:1px solid #ccc;}.icon-button,.input-block input,.input-button,.modal-button{outline:0;cursor:pointer}.modal-button{color:#7d695e;border-radius:5px;background:rgba(230, 232, 239, 1.000);width:120px;text-align:center}.modal-button:hover{border-color:rgba(255,255,255,.2);background:rgba(144,177,42,1);color:#f8f8f8}.input-button{color:#7d695e;border-radius:5px;background:#fff}.input-button:hover{background:rgba(144,177,42,1);color:#fff}.input-label{font-size:11px;text-transform:uppercase;font-family:Arial,sans-serif;font-weight:600;letter-spacing:.7px;color:#8c7569;}.input-block{display:flex;flex-direction:column;padding:10px 10px 8px;border:1px solid #ddd;border-radius:4px;margin-bottom:20px;}.input-block input{color:#fff;font-size:18px;padding:10px 40px;border-radius:5px;background:rgba(144,177,42,1)}.input-block input::-webkit-input-placeholder{color:#ccc;opacity:1}.input-block input:-ms-input-placeholder{color:#ccc;opacity:1}.input-block input::-ms-input-placeholder{color:#ccc;opacity:1}.input-block input::placeholder{color:#ccc;opacity:1}.input-block:focus-within{border-color:#8c7569}.input-block:focus-within .input-label{color:rgba(140,117,105,.8)}.icon-button{position:absolute;right:10px;top:12px;width:32px;height:32px;background:0;padding:0}
 
 </style>
 <script src="js/jquery.js"></script>
@@ -133,7 +135,7 @@ function showForm($error="LOGIN"){
      <input name="passwd" type="password" class="input-button"/>  <input type="submit" name="submit_pwd" value="Login " class="modal-button" /> 
          </form> 
      </center>
-      <?php echo "2015-" ;?><?php echo date('Y');?> &copy;</a> WEATHER34 MB-UB<orange>40</orange>-RRW</span></span></span>
+      <?php echo "2015-" ;?><?php echo date('Y');?> &copy;</a> WEATHER34 MB-<orange>SMART</orange></span></span></span>
       <br><br>
         
 
@@ -151,11 +153,11 @@ function showForm($error="LOGIN"){
 $Password = $password; 
 if (isset($_POST['submit_pwd'])){    $pass = isset($_POST['passwd']) ? $_POST['passwd'] : '';  
    if ($pass != $Password) { 
-      showForm("Dashboard Meteobridge EASY SETUP"); 
+      showForm("Dashboard Meteobridge MB-SMART EASY SETUP"); 
       exit();      
    } 
 } else { 
-   showForm("Dashboard Meteobridge EASY SETUP"); 
+   showForm("Dashboard Meteobridge MB-SMART EASY SETUP"); 
    exit(); 
 } 
 ?>
@@ -167,7 +169,7 @@ if (isset($_POST['submit_pwd'])){    $pass = isset($_POST['passwd']) ? $_POST['p
 <img src='img/nano.svg' width='40px' style="float:none;transform: rotate(100grad)"><img src='img/MeteobridgePRO.svg' width='60px' style="float:none;"><img src='img/TP-LINK.svg' width='60px' style="float:none;">
 <br>
 
-Welcome you have logged into the WEATHER34 Meteobridge setup screen <?php echo date("M jS Y H:i"); ?>
+Welcome you have logged into the <br>WEATHER34 Meteobridge MB-SMART setup screen <?php echo date("M jS Y H:i"); ?>
 </span>
 </div>
 </div></div>
@@ -178,7 +180,7 @@ Welcome you have logged into the WEATHER34 Meteobridge setup screen <?php echo d
 <p>
 <form action="" method="post" name="install" id="install">
 <div class="weatheroptionssidebar">
-<svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+<svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> Please setup and password protect this page for later use it is for your privacy and protection.
 <br>
 
@@ -187,14 +189,6 @@ Welcome you have logged into the WEATHER34 Meteobridge setup screen <?php echo d
 </svg>
 
 
-<br><br><br><br>
-
-
-
-
-
-<svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> Database uses the standard PHP connection strings for mySqli,you need to have database setup on server prior to using this feature.This feature currently only supports <strong>Meteobridge-API</strong> with direct server upload.
 
 
 
@@ -203,23 +197,7 @@ Welcome you have logged into the WEATHER34 Meteobridge setup screen <?php echo d
     <path d="M2 20 L12 28 30 4" />
 </svg>
 
-check username password 
-
-<br><br><br><br>
-<div class="weatherbottominfo"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg>  Setup the default language 
-
-<div class="weatherbottominfo">
-<svg id="i-checkmark" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M2 20 L12 28 30 4" />
-</svg>
-
-check languages 
-</div>
-
-
-</div></div>
-
+check password </div>
 
 </div>
 
@@ -253,7 +231,7 @@ check languages
     <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
     <circle cx="16" cy="16" r="4" />
 </svg>
-  Database is No longer Required(may be useful in the future)<br> ** see file in download and important read file called nomysqlsetup.txt  </div><p>
+  Database is No longer Required (may be useful in the future)<br> ** see file in download and important read file called <strong>nomysqlsetup.txt</strong>  </div><p>
 
 <div class= "stationvalue">  Database Host(leave blank )</div>
 <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -282,7 +260,7 @@ check languages
   <input name="db_name" type="text" id="db_name" value="<?php echo $db_name ;?>" class="choose">
   <br><br>
   <strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="0" stroke="#F75C46" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg></strong><span style="color:#777;"> ** see file in download and important read file called nomysqlsetup.txt  </span><br>
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg></strong><span style="color:#777;"> ** see file in download and important read file called <strong>nomysqlsetup.txt </strong> </span><br>
  <br>
   
   
@@ -411,7 +389,7 @@ Choose the default Language to display and use..</div>
       
    <p>
    <div class="weatheroptionssidebar">
-   <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+   <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg>  Meteobridge Hardware 
 
      <br />
@@ -465,12 +443,12 @@ METEOBRIDGE Software Path to Data file</div><p>
   
   <br><br>
        
-	<strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+	<strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg></strong><span style="color:#777;"> METEOBRIDGE-API path example: http://yourdomain/mbridge/MBrealtimeupload.txt</span><br>
 	
     <br>
     
-    <strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+    <strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg></strong><span style="color:#777;"> METEOBRIDGE path example: http://yourdomain/mbridge/MBrealtime.txt</span><br>
 	
     <br>
@@ -818,7 +796,7 @@ check unit(s)
             <option <?php if($metric=="false") echo "selected"; ?> >false</option>
             <option <?php if($metric=="true") echo "selected"; ?> >true</option>
             </select>
-       <span style="color:#777;"> set: <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+       <span style="color:#777;"> set: <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> true=metric , <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#FF793A" stroke="#FF793A" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> false=non metric</span>
   
@@ -1064,19 +1042,7 @@ General template settings with options to choose which type of module to display
     <path d="M2 20 L12 28 30 4" />
 </svg>
 
-your nearly there :-) keep going<br><br>
-<svg id="i-checkmark" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M2 20 L12 28 30 4" />
-</svg> Make sure you have a <strong><span style="color:#F8712E;"><a href="https://www.wunderground.com/weather/api" title="https://www.wunderground.com/weather/api" target="_blank">Weather Underground Developer API KEY</a></span></strong> ..
-
-<br><br>
-<svg id="i-checkmark" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M2 20 L12 28 30 4" />
-</svg> Options to use UVINDEX forecast data if you <strong>DO NOT</strong> have UVINDEX hardware ..
-<br><br>
-<svg id="i-checkmark" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M2 20 L12 28 30 4" />
-</svg> Moonset offset times can be adjusted here to align with your location it is measured in hours ,please adjust by hours to correct the output you may have to adjust when clocks move with annually daylight saving times ..
+your nearly there :-) keep going
 </div>
 
 </div>
@@ -1360,61 +1326,61 @@ your nearly there :-) keep going<br><br>
      
       <strong> <span style="color:rgba(86, 95, 103, 1.000);">options Top 4 positions</span></strong><br>
        
-       <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> rainfallf-year-month.php</span> Totals <span style="color:rgba(24, 25, 27, 0.8)">YEARLY-MONTHLY</span> Rainfall<br></span>
+       <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> rainfallf-year-month.php</span> Totals <span style="color:rgba(7, 114, 125, 1.000)">YEARLY-MONTHLY</span> Rainfall<br></span>
      
         
         
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> windgustyear.php</span> *English only<span style="color:rgba(24, 25, 27, 0.8)"> Current Monthly / Yearly max Gust </span> <br>
+     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> windgustyear.php</span> *English only<span style="color:rgba(7, 114, 125, 1.000)"> Current Monthly / Yearly max Gust </span> <br>
               
            
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> temperatureyear.php</span> *English only<span style="color:rgba(24, 25, 27, 0.8)"> Current Monthly / Yearly Temperature </span>  <br>
+     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> temperatureyear.php</span> *English only<span style="color:rgba(7, 114, 125, 1.000)"> Current Monthly / Yearly Temperature </span>  <br>
          
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> davisconsoleoutlook.php <span style="color:rgba(24, 25, 27, 0.8)">Davis Hardware Console users only</span> <br></span>
+     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> davisconsoleoutlook.php <span style="color:rgba(7, 114, 125, 1.000)">Davis Hardware Console users only</span> <br></span>
      
          
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> wflightning.php <span style="color:rgba(24, 25, 27, 0.8)">Weatherflow users only uses direct weatherflow API not meteobridge data must add station ID below in the weatherflow section </span> <br></span>
+     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> wflightning.php <span style="color:rgba(7, 114, 125, 1.000)">Weatherflow users only uses direct weatherflow API not meteobridge data must add station ID below in the weatherflow section </span> <br></span>
                  
                  
        
       <br></span></span>
          <strong> <span style="color:rgba(86, 95, 103, 1.000);">options Positions 6 and 12 + last module</span></strong><br>
-        <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+        <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> indoortemperature.php <orange>display indoor temperature</orange><br></span>
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> airqualitymodule.php <orange>display airquality</orange><br></span>
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> webcamsmall.php</span> <orange>display webcam</orange>.*
      add your url/path to wecam image using option below <br></span>
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> mooonphase.php</span> <orange>display moonphase</orange><br></span>
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> weather34uvsolar.php</span> <orange>display uv and solar radiation if you have hardware</orange> <br></span>
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> solaruvds.php</span> <orange>display Darksky UV forecast and if you have only solar radiation </orange> <br></span>
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> solaruvwu.php</span> <orange>display Weather Underground Day UV forecast and if you have only solar radiation </orange> <br></span>
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> eq.php</span> <orange>display last earthquake from earthquakereport.com</orange>   <br>
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> forecas3ds.php</span> <orange>display 3 day forecast from DARK SKY</orange>   <br>    
      </span>
    
-   <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+   <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> forecas3wu.php</span> <orange>display 3 period day/night forecast from Weather Underground</orange>   <br>    
      </span>
      
      
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> forecas3wularge.php</span> <orange>large display of current period day/night forecast from Weather Underground</orange>   <br>    
      </span>
      
      
-        <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+        <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> lightning34.php</span> <orange>Lightning for those using weatherflow direct with meteobridge</orange>   <br>    
      </span>
         
@@ -1462,28 +1428,27 @@ your nearly there :-) keep going<br><br>
             
         </select>
 <br><br>
-        <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+        <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> <strong> <span style="color:#F75C46;">set to 0 for Northern hemisphere</span></strong><br>
-         <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+         <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> <strong> <span style="color:rgba(86, 95, 103, 1.000);">set to 180 for Southern hemisphere (180 degrees reversed)</span></strong><br>
     
      
      <div class= "stationvalue">   
-   Sun Position Module</div> 
+   Sun Position Module Fixed</div> 
    <svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="rgba(86, 95, 103, 1.000)" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M30 12 L16 24 2 12" />
 </svg>
 <select id="sunoption" name="sunoption" class="choose1">
          <option><?php echo $sunoption ;?></option>
-            <option>sun3.php</option>
-            <option>sun4.php</option> 
+            <option>sun3.php</option>           
             
                  
             
         </select>
         <br>
-        <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> <strong>two options sun3.php works northern latitudes, sun4.php is for southern hemisphere only ..</strong><br>
+        <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> <strong>sun3.php only no options..</strong><br>
 
 <br> 
     
@@ -1596,7 +1561,7 @@ your nearly there :-) keep going<br><br>
         
         
         <span style="color:#777;font-weight:600;">Date format<br></span>
-        <span style="color:rgba(86, 95, 103, 1.000);font-weight:normal;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+        <span style="color:rgba(86, 95, 103, 1.000);font-weight:normal;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> d-m-Y <span style="color:#777;">for DAY MONTH YEAR format (12-03-2017)</span></span><br> 
         <span style="color:rgba(86, 95, 103, 1.000);"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#FF793A" stroke="#FF793A" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> m-d-Y <span style="color:#777;">for MONTH DAY YEAR format (03-12-2017)</span></span><br> 
@@ -1606,13 +1571,13 @@ your nearly there :-) keep going<br><br>
          
      
      <span style="color:#777;font-weight:600;">Main Clock format<br></span>
-        <span style="color:rgba(86, 95, 103, 1.000);font-weight:normal;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+        <span style="color:rgba(86, 95, 103, 1.000);font-weight:normal;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> 24 <span style="color:#777;">Main Clock output example 17:32:12 </span></span><br> 
         <span style="color:rgba(86, 95, 103, 1.000);"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#FF793A" stroke="#FF793A" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> 12 <span style="color:#777;">Main Clock output example 5:32:12 pm</span></span><br> <br>
      
       <span style="color:#777;font-weight:600;">Time format<br></span>
-       <span style="color:rgba(86, 95, 103, 1.000);font-weight:normal;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%"><path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> H:i:s <span style="color:#777;"> 17:34:22 format</span> </span><br> 
+       <span style="color:rgba(86, 95, 103, 1.000);font-weight:normal;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%"><path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> H:i:s <span style="color:#777;"> 17:34:22 format</span> </span><br> 
        
      <span style="color:rgba(86, 95, 103, 1.000);"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#FF793A" stroke="#FF793A" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> g:i:s a <span style="color:#777;"> 05:34:22 am format</span></span><br> 
@@ -1622,7 +1587,7 @@ your nearly there :-) keep going<br><br>
      
      
       <span style="color:#777;font-weight:600;">Short Time format used for Sunrise/Set & Moonrise/Set areas<br></span>      
-      <span style="color:rgba(86, 95, 103, 1.000);font-weight:normal;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> H:i <span style="color:#777;">17:34 format</span></span><br> 
+      <span style="color:rgba(86, 95, 103, 1.000);font-weight:normal;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> H:i <span style="color:#777;">17:34 format</span></span><br> 
       
      <span style="color:rgba(86, 95, 103, 1.000);"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#FF793A" stroke="#FF793A" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> g:i a  <span style="color:#777;">05:34 am format</span></span><br> 
@@ -1671,8 +1636,8 @@ your nearly there :-) keep going<br><br>
          <strong> <span style="color:rgba(86, 95, 103, 1.000);">options</span></strong><br>
         <span style="color:#777;"><strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#FF793A" stroke="#FF793A" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> No</strong> use if do <span style="color:rgba(86, 95, 103, 1.000)">NOT HAVE</span> external links to use<br>
-        <strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> Yes</strong> use if you do <span style="color:rgba(24, 25, 27, 0.8)"> HAVE</span> <span style="color:#777;">  external links to use<br>
+        <strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> Yes</strong> use if you do <span style="color:rgba(7, 114, 125, 1.000)"> HAVE</span> <span style="color:#777;">  external links to use<br>
         </span></span>
         <br>
         
@@ -1694,8 +1659,8 @@ your nearly there :-) keep going<br><br>
          <strong> <span style="color:rgba(86, 95, 103, 1.000);">options</span></strong><br>
         <span style="color:#777;"><strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#FF793A" stroke="#FF793A" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> No</strong> use if you do <span style="color:rgba(86, 95, 103, 1.000)">NOT WANT</span> languages selection<br>
-        <strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(24, 25, 27, 0.8)" stroke="rgba(24, 25, 27, 0.8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> Yes</strong> use if you do <span style="color:rgba(24, 25, 27, 0.8)"> WANT</span> <span style="color:#777;"> languages selection<br>
+        <strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> Yes</strong> use if you do <span style="color:rgba(7, 114, 125, 1.000)"> WANT</span> <span style="color:#777;"> languages selection<br>
         </span></span>
      
      
@@ -1878,7 +1843,7 @@ Choose the Weather Underground Forecast Language ..</div>
             <option>no</option>
             </select>
             <br>
-        <strong> Select <span style="color:rgba(24, 25, 27, 0.8);">Yes</span> or <span style="color:rgba(86, 95, 103, 1.000);">No</span></strong><br>
+        <strong> Select <span style="color:rgba(7, 114, 125, 1.000);">Yes</span> or <span style="color:rgba(86, 95, 103, 1.000);">No</span></strong><br>
         
   <br>
         <strong> <span style="color:rgba(236, 87, 27, 1.000)">*important</span> only select yes if your weatherflow hardware is not connected directly to meteobridge and want to use weatherflow hardware alongside existing hardware connected to meteobridge..this option uses weatherflow API data for UV,SOLAR and lightning only </span></strong><br>
@@ -2156,7 +2121,7 @@ now check the weather
     <span style="font-size:12px;color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M16 14 L16 23 M16 8 L16 10" />
     <circle cx="16" cy="16" r="14" />
-</svg> Meteobridge DASHBOARD EASY SETUP &copy; 2015-<?php echo date('Y');?> Dashboard MB-UB40-SE</span><br>
+</svg> Meteobridge DASHBOARD EASY SETUP &copy; 2015-<?php echo date('Y');?> Dashboard MB-SMART</span><br>
 <center><a href="http://www.meteobridge.com/wiki/index.php/Home" title="http://www.meteobridge.com/wiki/index.php/Home" target="_blank"><img src="img/meteobridge.svg" width="120" /></a></center><br>
  
 </form></div> 
