@@ -16,8 +16,8 @@ header('Content-type: text/html; charset=UTF-8');
 
 $jsonfile="jsondata/wuforecast.txt";if(!file_exists($jsonfile)) {return;}
 ?>
-<div class="updatedtime1"><?php $forecastime=filemtime('jsondata/wuforecast.txt');$weather34wuurl = file_get_contents("jsondata/wuforecast.txt");if(filesize('jsondata/wuforecast.txt')<1){echo "".$offline. "";}else echo $online,"";echo " ",	date($timeFormat,$forecastime);	?></div>
-<div class="darkskyforecasthome" ><div class="darkskydiv">
+<div class="moduleupdatetime"><?php $forecastime=filemtime('jsondata/wuforecast.txt');$weather34wuurl = file_get_contents("jsondata/wuforecast.txt");if(filesize('jsondata/wuforecast.txt')<1){echo "<offlinenew></offlinenew> Offline<br>";}else echo "<onlinenew></onlinenew> ",	date($timeFormat,$forecastime);	?></div>
+<div class="darkskyforecasthome" style="margin-top:3px;"><div class="darkskydiv">
 <?php //begin wu stuff 
 $weather34wuurl=file_get_contents($jsonfile);$parsed_weather34wujson = json_decode($weather34wuurl,false);$wucount = 0;
 for ($k=0;$k<=4;$k++) {if(empty($parsed_weather34wujson->{'daypart'}[0]->{'iconCode'}[$k])) { continue; }if($wucount > 3) {break; }
