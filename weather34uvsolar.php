@@ -9,7 +9,7 @@ $nextset = $result['sunset']; if ($now > $nextset) { $nextset = date('H:i',$resu
 <div class="solartodaycontainer1"><?php 
 if ($weather["solar"]==0){echo "<div class=solarluxtodaydark>".$weather["solar"];}
 else if ($weather["solar"]>0){echo "<div class=solarluxtoday>".$weather["solar"];}?></div></div></div>
-<div class="solarluxtodayword"><a class="weather34tip" href="#" data-weather34tip="Max: <?php echo $weather["solardmax"]."  W/m2 (".$weather["solardmaxtime"]?>)">
+<div class="solarluxtodayword"><a class="weather34tip" data-weather34tip="Max: <?php echo $weather["solardmax"]."  W/m2 (".$weather["solardmaxtime"]?>)">
 <valuetextsolar>Solar Radiation</valuetextsolar></a></div><div class="solarwrap"></div>
 <div class="uvsolarwordbig">Currently</div>
 

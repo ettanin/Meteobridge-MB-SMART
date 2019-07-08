@@ -618,7 +618,7 @@ When Did You Install Your Hardware Currently in Use </div><p>
                    
                      <option>currentconditionsmetar34davis.php</option>  
                      <option>currentconditionsmetar34.php</option>   
-                     <option>currentconditionsds.php</option>    
+                    
              
         </select>
       <br>          
@@ -1216,8 +1216,7 @@ your nearly there :-) keep going
 </svg>
         <label name="position6"></label>
         <select id="position6" name="position6" class="choose">  
-            <option><?php echo $position6 ;?></option> 
-            <option>forecast3ds.php</option> 
+            <option><?php echo $position6 ;?></option>           
             <option>forecast3wu.php</option> 
             <option>forecast3wularge.php</option>  
                      </select>
@@ -1260,8 +1259,7 @@ your nearly there :-) keep going
             <option>airqualityluftdaten.php</option>  
             <option>webcamsmall.php</option> 
             <option>moonphase.php</option>  
-            <option>weather34uvsolar.php</option>  
-            <option>solaruvds.php</option> 
+            <option>weather34uvsolar.php</option>             
             <option>solaruvwu.php</option>
             <option>eq.php</option>    
             <option>lightning34.php</option>  
@@ -1298,9 +1296,8 @@ your nearly there :-) keep going
             <option>airqualityluftdaten.php</option>  
             <option>webcamsmall.php</option> 
             <option>moonphase.php</option>  
-            <option>weather34uvsolar.php</option>  
-            <option>solaruvds.php</option> 
-             <option>solaruvwu.php</option>  
+            <option>weather34uvsolar.php</option>            
+            <option>solaruvwu.php</option>  
             <option>eq.php</option>   
             <option>lightning34.php</option>  
                      </select>
@@ -1362,16 +1359,12 @@ your nearly there :-) keep going
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> mooonphase.php</span> <orange>display moonphase</orange><br></span>
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> weather34uvsolar.php</span> <orange>display uv and solar radiation if you have hardware</orange> <br></span>
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> solaruvds.php</span> <orange>display Darksky UV forecast and if you have only solar radiation </orange> <br></span>
+     
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> solaruvwu.php</span> <orange>display Weather Underground Day UV forecast and if you have only solar radiation </orange> <br></span>
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> eq.php</span> <orange>display last earthquake from earthquakereport.com</orange>   <br>
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> forecas3ds.php</span> <orange>display 3 day forecast from DARK SKY</orange>   <br>    
-     </span>
-   
+        
    <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> forecas3wu.php</span> <orange>display 3 period day/night forecast from Weather Underground</orange>   <br>    
      </span>

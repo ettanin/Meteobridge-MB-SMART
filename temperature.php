@@ -94,7 +94,7 @@ else if ($weather["temp_units"]=='F' && $weather["temp_avgtoday"]>=32){echo "<di
 else if ($weather["temp_units"]=='F' && $weather["temp_avgtoday"]>14){echo "<div class=tempconverter1><div class=tempmodulehome-10-0c>". $weather["temp_avgtoday"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 else if ($weather["temp_units"]=='F' && $weather["temp_avgtoday"]>-50){echo "<div class=tempconverter1><div class=tempmodulehome-50-10c>". $weather["temp_avgtoday"]."&deg;<smalltempunit2>".$weather["temp_units"];}?>
 </smalltempunit2></div></div></div></div>
-<div class="heatcircle3"><div class="heatcircle-content"><a class="weather34tip" href="#" data-weather34tip="Max: <?php echo $weather["humidity_max"]."%    Min: ".$weather["humidity_min"]."%"?>">
+<div class="heatcircle3"><div class="heatcircle-content"><a class="weather34tip" data-weather34tip="Max: <?php echo $weather["humidity_max"]."%    Min: ".$weather["humidity_min"]."%"?>">
 <valuetextheading1a><?php echo $lang['Humidity']?></a></valuetextheading1>
 <?php //humidity
 if ($weather["humidity"]>90){echo "<div class=tempconverter1><div class=temphumcircle80-100>".$weather["humidity"];}
@@ -104,7 +104,7 @@ else if ($weather["humidity"]>25){echo "<div class=tempconverter1><div class=tem
 else if ($weather["humidity"]<=25){echo "<div class=tempconverter1><div class=temphumcircle0-25>".$weather["humidity"];}?><smalltempunit2>%</smalltempunit2>
 <?php //humidity trend
 if($weather["humidity_trend"]>0){echo '&nbsp;'.$risingsymbol;}else if($weather["humidity_trend"]<0){echo '&nbsp;'.$fallingsymbol;}else{ echo '';}?></span></div></div></div></div>
-<div class="heatcircle4"><div class="heatcircle-content"><a class="weather34tip" href="#" data-weather34tip="Max: <?php echo $weather["dewmax"]."&deg;    Min: ".$weather["dewmin"]."&deg;"?>">
+<div class="heatcircle4"><div class="heatcircle-content"><a class="weather34tip" data-weather34tip="Max: <?php echo $weather["dewmax"]."&deg;    Min: ".$weather["dewmin"]."&deg;"?>">
 <valuetextheading1a><?php echo $lang['Dewpoint']?></a></valuetextheading1>
 <?php //dewpoint
 if ($weather["temp_units"]=='C' && ($weather["dewpoint"]>21)){ echo  "<div class=tempconverter1><div class=tempmodulehome25-30c>&nbsp;".$weather['dewpoint'].'&deg;<smalltempunit2>'.$weather["temp_units"];}

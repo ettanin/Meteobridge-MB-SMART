@@ -7,7 +7,7 @@ include_once('livedata.php');?><div class="moduleupdatetime"><span><?php if(file
 <?php if ($weather["rain_units"] =='in'){	echo '<div class=raintoday1>'.number_format($weather["rain_today"],2)."<sup><smallrainunita> ".$weather["rain_units"];}else if ($weather["rain_units"] =='mm' && $weather["rain_today"]<10){echo '<div class=raintoday1>'.number_format($weather["rain_today"],2)."<sup><smallrainunita>".$weather["rain_units"];}else if ($weather["rain_units"] =='mm'){echo '<div class=raintoday1>'.number_format($weather["rain_today"],1)."<sup><smallrainunita>".$weather["rain_units"];}
 ?></sup></smallrainunita></div></div>
 <div class="heatcircle"><div class="heatcircle-content">
-<valuetextheading1r><a class="weather34tipr" href="#" data-weather34tipr="All-Time: <?php echo $weather["rain_alltime"].$weather["rain_units"]?>"><?php echo date('Y')?></a>
+<valuetextheading1r><a class="weather34tipr" data-weather34tipr="<?php echo "Since ".$weather['rainStartTime'].": ".$weather["rain_alltime"].$weather["rain_units"]?>"><?php echo date('Y')?></a>
 <?php  //rain year
 echo "<br><div class=tempconverter1><div class=rainmodulehome><raiblue>";if($weather["rain_year"]>=1000){echo round($weather["rain_year"],0);}else if($weather["rain_year"]<1000){echo $weather["rain_year"];}echo "</raiblue><smallrainunit2>".$weather["rain_units"];?>
 <smallrainunit2></div></div></div>

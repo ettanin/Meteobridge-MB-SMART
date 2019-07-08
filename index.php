@@ -5,8 +5,8 @@
 # CREATED FOR HOMEWEATHERSTATION TEMPLATE at                									   #
 #   https://weather34.com/homeweatherstation/index.html                                            #
 #  WEATHER STATION TEMPLATE 2017-2018-2019 Meteobridge.     									   #
-#  Weatherflow Meteobridge Version  June 2019  									                   #
-#   https://github.com/weather34/Weather34-Weatherflow                                             #
+#  Meteobridge SMART Version  July 2019  											               #
+#   https://github.com/weather34/Weather34				                                           #
 ####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 include_once('livedata.php');include_once('common.php');include_once('settings1.php'); date_default_timezone_set($TZ);?>
@@ -76,10 +76,10 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   <weather34module> <!-- Main Module 2 Forecast-->
   <div class=actualt><?php echo $position6title ;?>  (<valuetitleunit>&deg;<?php echo $weather["temp_units"] ;?></valuetitleunit>) </div>  
   <div class=weather34chartlinks> 
-<?php if ($position6=='forecast3ds.php'){echo'<a alt="Dark Sky Forecast " title="Dark Sky Forecast " href="outlookds.php" data-lity>'. $chartinfo. " Daily Forecast </a>&nbsp;";}?>
+
 <?php if ($position6=='forecast3wu.php' || $position6=='forecast3wularge.php') {echo ' <a alt="weather underground forecast" title="weather underground forecast" href="outlookwu.php" data-lity>'. $chartinfo. " Daily Forecast </a>&nbsp;";}?>
 <?php if ($position6=='forecast3wu.php' || $position6=='forecast3wularge.php') {echo ' <a alt="weather underground forecast summary" title="weather underground forecast summary" href="outlookwutext.php" data-lity>'. $chartinfo. "  Forecast Summary</a>&nbsp;";}?>
-<?php if ($position6=='forecast3ds.php') {echo '<a alt="Hourly Forecast" title="Hourly Forecast" href="forecastdshour.php" data-lity>&nbsp;'. $chartinfo. " Hourly Forecast</a>&nbsp;";}?></span></div>
+</span></div>
  <div id=currentfore></div></weather34module> 
   
   <weather34module> <!-- Weather34 Main Module 3 Current-->
@@ -132,8 +132,6 @@ if ($position12=='airqualitymodule.php') {echo ' &nbsp;<a alt="air quality infor
 if ($position12=='airqualityluftdaten.php') {echo ' &nbsp;<a alt="air quality" title="air quality" href="luftdaten.php" data-lity>'. $chartinfo. " Luftdaten Air Quality | Cloudbase </a></span>";}
 if ($position12=='weather34uvsolar.php') {echo ' &nbsp;<a alt="UV Alamanac" title="UV Alamanac" href="uvalmanac.php" data-lity>&nbsp;'. $chartinfo. " UV Alamanac </a></span>";}
 if ($position12=='weather34uvsolar.php') {echo '&nbsp; <a alt="Solar Alamanac" title="Solar Alamanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar Alamanac </a></span>";}
-if ($position12=='solaruvds.php') {echo ' &nbsp;<a alt="UV Guide" title="UV Guide" href="uvindexds.php" data-lity>'. $chartinfo. " UV Guide </a></span>";}
-if ($position12=='solaruvds.php') {echo ' &nbsp;<a alt="Solar Alamanac" title="Solar Alamanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar Alamanac </a></span>";}
 if ($position12=='solaruvwu.php') {echo ' &nbsp;<a alt="UV Guide" title="UV Guide" href="uvindexwu.php" data-lity>'. $chartinfo. " UV Guide </a></span>";}
 if ($position12=='solaruvwu.php') {echo ' &nbsp;<a alt="Solar Alamanac" title="Solar Alamanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar Alamanac </a></span>";}
 if ($position12=='solaruvwu.php') {echo ' &nbsp;<a alt="Solar Chart" title="Solar Chart" href="mbcharts/todaysolar.php" data-lity>&nbsp;'. $menucharticonpage. " Solar chart </a></span>";}
@@ -152,8 +150,6 @@ if ($positionlastmodule=='airqualityluftdaten.php') {echo ' &nbsp;<a alt="air qu
 if ($positionlastmodule=='weather34uvsolar.php') {echo ' &nbsp;<a alt="UV Guide" title="UV Guide" href="uvindex.php" data-lity>'. $chartinfo. " UV Guide  </a></span>";}
 if ($positionlastmodule=='weather34uvsolar.php') {echo ' &nbsp;<a alt="UV Alamanac" title="UV Alamanac" href="uvalmanac.php" data-lity>&nbsp;'. $chartinfo. " UV Alamanac </a></span>";}
 if ($positionlastmodule=='weather34uvsolar.php') {echo '&nbsp; <a alt="Solar Alamanac" title="Solar Alamanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar Alamanac </a></span>";}
-if ($positionlastmodule=='solaruvds.php') {echo ' &nbsp;<a alt="UV Guide" title="UV Guide" href="uvindexds.php" data-lity>'. $chartinfo. " UV Guide </a></span>";}
-if ($positionlastmodule=='solaruvds.php') {echo ' &nbsp;<a alt="Solar Alamanac" title="Solar Alamanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar Alamanac </a></span>";}
 if ($positionlastmodule=='solaruvwu.php') {echo ' &nbsp;<a alt="UV Guide" title="UV Guide" href="uvindexwu.php" data-lity>'. $chartinfo. " UV Guide </a></span>";}
 if ($positionlastmodule=='solaruvwu.php') {echo ' &nbsp;<a alt="Solar Alamanac" title="Solar Alamanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar Alamanac </a></span>";}
 if ($positionlastmodule=='solaruvwu.php') {echo ' &nbsp;<a alt="Solar Chart" title="Solar Chart" href="mbcharts/todaysolar.php" data-lity>&nbsp;' .$menucharticonpage. " Solar chart </a></span>";}
