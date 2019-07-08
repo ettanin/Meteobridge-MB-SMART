@@ -17,8 +17,8 @@
 	
 	include('preload.php');
 	$conv = 1;
-	if ($windunit == 'mph') {$conv= '(1.8) +32';}
-	if ($units == 'uk' && $windunit == 'mph') {$conv= '1';}
+	if ($tempunit=='C' && $windunit == 'mph') {$conv= '1';}
+	else if ($windunit == 'mph') {$conv= '(1.8) +32';}
 	else if ($windunit == 'm/s') {$conv= '1';}
 	else if ($windunit == 'km/h'){$conv= '1';}
 	$max = 40;
