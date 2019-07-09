@@ -6,7 +6,7 @@ $year=date('Y');
 //disable error logging if you get server errors
 error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);ini_set("display_errors","off");
 //path is weathercharts/year/month.csv (eg: weathercharts/2019/June.csv )
-$weatherchartfilemonth ="weather34charts/".$year."/".date('M').".csv";
+$weatherchartfilemonth ="weather34charts/".$year."/".date('F').".csv";
 //path is weathercharts/year.csv (eg: weathercharts/2019.csv )
 $weatherchartfileyear = "weather34charts/".date('Y').".csv";
 //(date),MAX(outsideTemp),MIN(outsideTemp),MAX(dewpoint),MIN(dewpoint),MAX(raintoday),MAX(windspeed),ROUND(AVG(windSpeed),2),MAX(barometer),MIN(barometer)
