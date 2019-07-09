@@ -129,7 +129,7 @@
         titleWrap: false,
 		margin: 3,
 		lineThickness: 1,	
-		interval:<?php if ($rainunit == 'mm'){echo '1';}else echo '0.15'?>,	
+		interval:'<?php if ($rainunit == 'mm'){echo "auto";}else echo "0.15"?>',	
 		gridThickness: 1,	
 		gridDashType: "dot",	
         includeZero:true,
