@@ -67,8 +67,8 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   <div class=actualt><?php echo $lang['Temperature']; ?> (<valuetitleunit>&deg;<?php echo $weather["temp_units"] ;?></valuetitleunit>) </div>  
   <div class=weather34chartlinks> 
  	<a class="weather34tiplink" data-weather34tiplink="Temperature Almanac" href=tempalmanac.php data-lity><chartinfocolor><?php echo $chartinfo?></chartinfocolor> Almanac</a>&nbsp;&nbsp;
-	<a class="weather34tiplink" data-weather34tiplink="Temperature Charts"  href=temperaturechart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> Temperature</a>&nbsp;&nbsp;
-	<a class="weather34tiplink" data-weather34tiplink="Dewpoint Charts"  href=dewpointchart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> Dewpoint</a>&nbsp;&nbsp;
+	<a class="weather34tiplink" data-weather34tiplink="Temperature <?php echo date('Y');?>"  href=temperaturechart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> Temperature</a>&nbsp;&nbsp;
+	<a class="weather34tiplink" data-weather34tiplink="Dewpoint <?php echo date('Y');?>"  href=dewpointchart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> Dewpoint</a>&nbsp;&nbsp;
 	<a class="weather34tiplink" data-weather34tiplink="Today Charts"  href=todaytemperaturechart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> <?php echo $lang['Today']; ?> </a></div>
   <div id=temperature></div></weather34module> 
   
@@ -95,7 +95,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   <div class=actualt><?php echo $lang['Direction'];?> | <?php echo $lang['Windspeed'] ," (<valuetitleunit>",$weather["wind_units"];?></valuetitleunit>)</div>  
   <div class=weather34chartlinks> 
  	<a class="weather34tiplink" data-weather34tiplink="Wind Speed Almanac" href=windalmanac.php data-lity><chartinfocolor><?php echo $chartinfo?></chartinfocolor> Almanac</a>&nbsp;&nbsp;
-	<a class="weather34tiplink" data-weather34tiplink="Wind Speed Year Charts" href=windchart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> Wind-Speed</a>&nbsp;&nbsp;
+	<a class="weather34tiplink" data-weather34tiplink="Wind Speed <?php echo date('Y');?>" href=windchart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> Wind-Speed</a>&nbsp;&nbsp;
 	<a class="weather34tiplink" data-weather34tiplink="Wind Speed Today" href=todaywindcharts.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> <?php echo $lang['Today']; ?></a></div>
  <div id=windspeed></div></weather34module> 
   
@@ -118,7 +118,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   <div class=actualt><?php echo $lang['Rainfalltoday']," (<valuetitleunit>".$weather["rain_units"]?></valuetitleunit>)</div>  
   <div class=weather34chartlinks> 
  	<a class="weather34tiplink" data-weather34tiplink="Rainfall Almanac" href=rainfallalmanac.php data-lity><chartinfocolor><?php echo $chartinfo?></chartinfocolor> Almanac</a>&nbsp;&nbsp;
-	<a class="weather34tiplink" data-weather34tiplink="Rainfall Charts" href=rainfallchart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> Rainfall</a>&nbsp;&nbsp;
+	<a class="weather34tiplink" data-weather34tiplink="Rainfall <?php echo date('Y');?>" href=rainfallchart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> Rainfall</a>&nbsp;&nbsp;
 	<a class="weather34tiplink" data-weather34tiplink="Rainfall Today Charts" href=todayrainchart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> <?php echo $lang['Today']; ?></a></div>
  <div id=rainfall></div></weather34module> 
   
