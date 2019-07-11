@@ -3,6 +3,7 @@
 include('livedata.php');include('common.php');?>
 <div class="moduleupdatetime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div>  
 <div class="tempcontainer">
+<a class="weather34tiptemp" data-weather34tiptemp="<?php echo date('M')." Max: "?><?php echo $weather["tempmmax"]."&deg;"?> <?php echo date('M')." Min: "?><?php echo $weather["tempmmin"]."&deg;"?>">
 <div class="maxdata"><?php 
 if ($weather["temp_today_high"]<10){echo "&nbsp;".$weather["temp_today_high"]."&deg;\n";?> | <?php echo $weather["temp_today_low"]."&deg;";}else if ($weather["temp_today_high"]>=10){echo $weather["temp_today_high"]."&deg;\n";?> | <?php echo $weather["temp_today_low"]."&deg;";}?>
 </div>
@@ -31,7 +32,7 @@ if($weather["temp_trend"]<0){echo '<trendmovementfallingx>&nbsp;&nbsp;&nbsp;<val
 elseif($weather["temp_trend"]>0){echo '<trendmovementrisingx>&nbsp;&nbsp;&nbsp;<valuetext>Trend '.$risingsymbol.' '.number_format($weather["temp_trend"],1).'&deg;</valuetext></trendmovementfallingx>';}
 //steady
 else echo '<trendmovementsteadyx><valuetext>Trend '.$steadysymbol.'Steady</valuetext></trendmovementsteadyx>';?>
-</span></div></div></div>
+</span></div></div></div></a>
 <div class="heatcircle"><div class="heatcircle-content">
 <?php  //heat-index/real feel
 if(anyToC($weather["heat_index"])>=40 ||($showFeelsLike&&anyToC($weather["temp"])>40)){echo " <valuetextheading1>Heat Index</valuetextheading1><br><div class=tempconverter1><div class=tempmodulehome40-50c>".$weather["heat_index"]."&deg;<smalltempunit2>".$weather["temp_units"];}
