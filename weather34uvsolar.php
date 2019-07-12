@@ -6,11 +6,12 @@ $nextset = $result['sunset']; if ($now > $nextset) { $nextset = date('H:i',$resu
 $nextset = $result['sunset']; if ($now > $nextset) { $nextset = date('H:i',$result2['sunset']);}?>
 <div class="moduleupdatetime"><span><?php if(file_exists($livedata2)&&time()- filemtime($livedata2)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div>  
 <div class="weather34solarword"><valuetext>W/m&sup2 </valuetext> </div><div class="weather34solarvalue">
-<div class="solartodaycontainer1"><?php 
+<div class="solartodaycontainer1">
+<a class="weather34tipsol" data-weather34tipsol="Max: <?php echo $weather["solardmax"]."  W/m2 (".$weather["solardmaxtime"]?>)">  <?php 
 if ($weather["solar"]==0){echo "<div class=solarluxtodaydark>".$weather["solar"];}
-else if ($weather["solar"]>0){echo "<div class=solarluxtoday>".$weather["solar"];}?></div></div></div>
-<div class="solarluxtodayword"><a class="weather34tip" data-weather34tip="Max: <?php echo $weather["solardmax"]."  W/m2 (".$weather["solardmaxtime"]?>)">
-<valuetextsolar>Solar Radiation</valuetextsolar></a></div><div class="solarwrap"></div>
+else if ($weather["solar"]>0){echo "<div class=solarluxtoday>".$weather["solar"];}?></div></a></div></div>
+<div class="solarluxtodayword">
+<valuetextsolar>Solar Radiation</valuetextsolar></div><div class="solarwrap"></div>
 <div class="uvsolarwordbig">Currently</div>
 
 <div class="uvcontainer1"><?php if ($weather["uv"]>10) {echo '<div class=uvtoday11>'.number_format($weather["uv"],1)."<smalluvunit> &nbsp;UVI";}else if ($weather["uv"]>8) {echo '<div class=uvtoday9-10>'.number_format($weather["uv"],1)."<smalluvunit> &nbsp;UVI";}else if ($weather["uv"]>5) {echo '<div class=uvtoday6-8>'.number_format($weather["uv"],1)."<smalluvunit> &nbsp;UVI";}else if ($weather["uv"]>3) {echo '<div class=uvtoday4-5>'.number_format($weather["uv"],1)."<smalluvunit> &nbsp;UVI";}
