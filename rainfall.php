@@ -7,10 +7,10 @@ include_once('livedata.php');?><div class="moduleupdatetime"><span><?php if(file
 <?php if ($weather["rain_units"] =='in'){	echo '<div class=raintoday1>'.number_format($weather["rain_today"],2)."<sup><smallrainunita> ".$weather["rain_units"];}else if ($weather["rain_units"] =='mm' && $weather["rain_today"]<10){echo '<div class=raintoday1>'.number_format($weather["rain_today"],2)."<sup><smallrainunita>".$weather["rain_units"];}else if ($weather["rain_units"] =='mm'){echo '<div class=raintoday1>'.number_format($weather["rain_today"],1)."<sup><smallrainunita>".$weather["rain_units"];}
 ?></sup></smallrainunita></div></div>
 <div class="heatcircle"><div class="heatcircle-content">
-<valuetextheading1r><a class="weather34tipr" data-weather34tipr="<?php echo "Since ".$weather['rainStartTime'].": ".$weather["rain_alltime"].$weather["rain_units"]?>"><?php echo date('Y')?></a>
+<valuetextheading1>&nbsp;<?php echo date('Y')?></valuetextheading1><a class="weather34tipr" data-weather34tipr="Since 2018: <?php echo $weather["rain_alltime"].$weather["rain_units"]?>">
 <?php  //rain year
 echo "<br><div class=tempconverter1><div class=rainmodulehome><raiblue>";if($weather["rain_year"]>=1000){echo round($weather["rain_year"],0);}else if($weather["rain_year"]<1000){echo $weather["rain_year"];}echo "</raiblue><smallrainunit2>".$weather["rain_units"];?>
-<smallrainunit2></div></div></div>
+<smallrainunit2></div></a></div></div>
 <div class="heatcircle2"><div class="heatcircle-content">
 <?php  //rain month
 echo " &nbsp;&nbsp;&nbsp;<valuetextheading1>".date('F')."</valuetextheading1> <br><div class=tempconverter1><div class=rainmodulehome><raiblue>".$weather["rain_month"]."</raiblue><smallrainunit2>".$weather["rain_units"];?>
@@ -20,9 +20,12 @@ echo " &nbsp;&nbsp;&nbsp;<valuetextheading1>".date('F')."</valuetextheading1> <b
 echo " &nbsp;&nbsp;<valuetextheading1>Last Hour</valuetextheading1><br><div class=tempconverter1><div class=rainmodulehome><raiblue>".$weather["rain_lasthour"]."</raiblue><smallrainunit2>".$weather["rain_units"];?>
 </smallrainunit2></div></div></div></div>
 <div class="heatcircle4"><div class="heatcircle-content">
+
 <?php  //rain last 24 hours
-echo " &nbsp;&nbsp;<valuetextheading1>Last 24hr</valuetextheading1><br><div class=tempconverter1><div class=rainmodulehome><raiblue>".$weather["rain_24hrs"]."</raiblue><smallrainunit2>".$weather["rain_units"];?>
-</smallrainunit2></div></div></div></div></div>
+echo " &nbsp;&nbsp;<valuetextheading1>Last 24hr</valuetextheading1><br>";?>
+<a class="weather34tipr" data-weather34tipr="Yesterday: <?php echo $weather["rainydmax"].$weather["rain_units"]?>">
+<?php echo "<div class=tempconverter1><div class=rainmodulehome><raiblue>".$weather["rain_24hrs"]."</raiblue><smallrainunit2>".$weather["rain_units"];?>
+</smallrainunit2></div></a></div></div></div></div>
 <div class="rainconverter">
 <?php if ($weather["rain_units"] =='in'){echo "<div class=rainconvertercircle>".number_format($weather["rain_today"]*25.400013716,1)."<smallrainunit>mm";}else if ($weather["rain_units"] =='mm'){echo "<div class=rainconvertercircle>".number_format($weather["rain_today"]*0.0393701,2)."<smallrainunit>in";}?></span>
 </div></div></div></div>
