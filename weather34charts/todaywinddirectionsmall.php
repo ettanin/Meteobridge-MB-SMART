@@ -50,7 +50,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[9] >1)
-					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[9])});
+					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[11])});
 					
 					
 			}
@@ -64,7 +64,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[9] >1)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[9])});
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[11])});
 					//parseFloat(rowData[13])});
 				
 			}
