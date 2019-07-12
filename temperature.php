@@ -109,7 +109,7 @@ else if ($weather["humidity"]<=25){echo "<div class=tempconverter1><div class=te
 if($weather["humidity_trend"]>0){echo '&nbsp;'.$risingsymbol;}else if($weather["humidity_trend"]<0){echo '&nbsp;'.$fallingsymbol;}else{ echo '';}?></span></div></a></div></div></div>
 <div class="heatcircle4"><div class="heatcircle-content">
 <valuetextheading1><?php echo $lang['Dewpoint']?></valuetextheading1>
-<a class="weather34tip" data-weather34tip="Max: <?php echo $weather["dewmax"]."&deg;    Min: ".$weather["dewmin"]."&deg;"?>">
+<a class="weather34tip" data-weather34tip="Wetbulb <?php echo $wetbulbx."&deg;"?>">
 <?php //dewpoint
 if ($weather["temp_units"]=='C' && ($weather["dewpoint"]>21)){ echo  "<div class=tempconverter1><div class=tempmodulehome25-30c>&nbsp;".$weather['dewpoint'].'&deg;<smalltempunit2>'.$weather["temp_units"];}
 else if ($weather["temp_units"]=='C' && ($weather["dewpoint"]>=20)){ echo "<div class=tempconverter1><div class=tempmodulehome20-25c>&nbsp;".$weather['dewpoint'].'&deg;<smalltempunit2>'.$weather["temp_units"];}
