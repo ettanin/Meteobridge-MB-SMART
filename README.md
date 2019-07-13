@@ -140,3 +140,8 @@ https://weather34.com/homeweatherstation/weather34timeline/weather34timeline.htm
 <p align="center">
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1559467750/col_ddcheg.png" width="550" title="weather34 meteobridge beta template "> 
 </p>
+
+
+
+# This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. http://creativecommons.org/licenses/by-nc-nd/4.0/
+*This work means CSS/SVG/PHP .
