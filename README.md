@@ -34,7 +34,8 @@ siffling through millions of data values is not smart on poorly low cost hosted 
 
 # 3 simple steps 
 
-step 1 setup storing todays data to a CSV file for today charts to read file is chartstoday.php 
+# step 1 
+setup storing todays data to a CSV file for today charts to read file is chartstoday.php 
 
 1. Goto meteobridge services screen 
 
@@ -57,7 +58,8 @@ step 1 setup storing todays data to a CSV file for today charts to read file is 
 
 
 
-step 2 setup storing monthly yearly data to a CSV file for monthly/year charts to read file is charts-month-year.php
+# step 2 
+setup storing monthly yearly data to a CSV file for monthly/year charts to read file is charts-month-year.php
 
 1. Goto meteobridge services screen 
 
@@ -79,7 +81,8 @@ step 2 setup storing monthly yearly data to a CSV file for monthly/year charts t
 9. now click save .
 
 
-step 3 setting the stationcron.php to run every 30 minutes 
+# step 3 
+setting the stationcron.php to run every 30 minutes (this collects the forecast,earthquake,air quality data etc
 
 1. Goto meteobridge services screen 
 
