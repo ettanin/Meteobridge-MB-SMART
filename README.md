@@ -1,8 +1,5 @@
 # This repository is a beta project for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED (expected final release 2020)
 
-# you are strongly advised do not use this template for main viewing it will be many months before it is ready..
-
-# do not forget to run stationcron.php at 30 minute periods as per original for forecast data etc . do read below about running charts and do not mix older code or files with this version..
 
 This version uses new css grid layouts based on 
 
@@ -158,7 +155,7 @@ to create a working enviroment to exchange ideas without creating unwanted noise
 example of current beta
 
 <p align="center">
-  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1559632919/Beta_aqbm0a.png" width="550" title="weather34 meteobridge beta template "> 
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1563168802/mbsmart_khhdjg.png" width="550" title="weather34 meteobridge beta template "> 
 </p>
 
 
