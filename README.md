@@ -104,7 +104,7 @@ step 3 setting the stationcron.php to run every 30 minutes
 
 
 
-thats it !!! no mysql to setup just these two files will do all the work .
+thats it !!! no mysql to setup just these three files will do all the work .screenshots below
 
 behind the code ....
 
