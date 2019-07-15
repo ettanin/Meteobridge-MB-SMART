@@ -87,13 +87,13 @@ valuetextheading1a{margin-left:10px;font-family:weathertext2;font-size:1em}
 .weather34tip:after,.weather34tip:before{visibility:hidden;opacity:0;position:absolute;box-sizing:border-box}
 .weather34tip:after{content:attr(data-weather34tip);
 background:rgba(255,108,52,1);
-background: -moz-linear-gradient(top, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 108, 52, 1)), color-stop(49%, rgba(255, 108, 52, 1)), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(100%, rgba(6, 162, 177, 1)));
-background: -webkit-linear-gradient(top, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-background: -o-linear-gradient(top, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-background: -ms-linear-gradient(top, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-background: linear-gradient(to bottom, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255, 108, 52, 1)', endColorstr='rgba(6, 162, 177, 1)', GradientType=0 );
+background: -moz-linear-gradient(top, #d05f2d 0%, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #d05f2d), color-stop(49%, #d05f2d), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(100%, rgba(6, 162, 177, 1)));
+background: -webkit-linear-gradient(top, #d05f2d 0%, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
+background: -o-linear-gradient(top, #d05f2d 0%, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
+background: -ms-linear-gradient(top, #d05f2d 0%, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
+background: linear-gradient(to bottom, #d05f2d 0%, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d05f2d', endColorstr='rgba(6, 162, 177, 1)', GradientType=0 );
 top:100%;margin-top:-12px;padding:2px;color:#fff;line-height:1.5;width:65px;margin-left:-33px;-webkit-border-radius:3px;border-radius:3px;font-size:1em;font-weight:700;z-index:9999999;font-family: Arial, Helvetica, sans-serif}
 .weather34tip:hover:after,.weather34tip:hover:before{transition:all .4s ease .2s;visibility:visible;z-index:100;opacity:1}
 .weather34tip:hover:after{margin-top:-30px}.weather34tip:hover:before{margin-top:0}
@@ -137,14 +137,14 @@ top:100%;margin-top:12px;padding:2px;color:#fff;line-height:1.5;width:105px;marg
 .weather34tipty, .a{position:relative;box-sizing:border-box;font-size:.5rem;font-family:weathertext2}
 .weather34tipty:after,.weather34tipty:before{visibility:hidden;opacity:0;position:absolute;left:50%;box-sizing:border-box}
 .weather34tipty:after{content:attr(data-weather34tipty);background:rgba(255,108,52,1);
-background: -moz-linear-gradient(top, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 108, 52, 1)), color-stop(49%, rgba(255, 108, 52, 1)), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(100%, rgba(6, 162, 177, 1)));
-background: -webkit-linear-gradient(top, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-background: -o-linear-gradient(top, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-background: -ms-linear-gradient(top, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-background: linear-gradient(to bottom, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255, 108, 52, 1)', endColorstr='rgba(6, 162, 177, 1)', GradientType=0 );
-top:100%;margin-top:12px;padding:0px;color:#fff;line-height:1.5;width:85px;margin-left:-44px;-webkit-border-radius:3px;border-radius:3px;font-size:1.3em;font-weight:400;z-index:9999999;font-family: Arial, Helvetica, sans-serif}
+background: -moz-linear-gradient(top, #d05f2d 0%, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #d05f2d), color-stop(49%, #d05f2d), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(100%, rgba(6, 162, 177, 1)));
+background: -webkit-linear-gradient(top, #d05f2d 0%, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
+background: -o-linear-gradient(top, #d05f2d 0%, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
+background: -ms-linear-gradient(top, #d05f2d 0%, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
+background: linear-gradient(to bottom, #d05f2d 0%, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d05f2d', endColorstr='rgba(6, 162, 177, 1)', GradientType=0 );
+top:100%;margin-top:12px;padding:0px;color:#fff;line-height:1.5;width:80px;margin-left:-44px;-webkit-border-radius:3px;border-radius:3px;font-size:1.3em;font-weight:400;z-index:9999999;font-family: Arial, Helvetica, sans-serif}
 .weather34tipty:hover:after,.weather34tipty:hover:before{transition:all .4s ease .2s;visibility:visible;z-index:9999999;opacity:1}.weather34tipty:hover:after{margin-top:-10px;z-index:9999999;}.weather34tipty:hover:before a{margin-top:0;font-size:12px;}
 
 .weather34tipcelsius{position:absolute;box-sizing:border-box;margin-left:-20px;top:10px}
@@ -182,13 +182,13 @@ top:100%;margin-top:12px;padding:2px;color:#fff;line-height:1.5;width:75px;margi
 .weather34tiptemp{position:absolute;box-sizing:border-box;left:0}
 .weather34tiptemp:after,.weather34tiptemp:before{visibility:hidden;opacity:0;position:absolute;left:10%;box-sizing:border-box}
 .weather34tiptemp:after{content:attr(data-weather34tiptemp);background:rgba(255,108,52,1);
-background: -moz-linear-gradient(top, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 108, 52, 1)), color-stop(49%, rgba(255, 108, 52, 1)), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(100%, rgba(6, 162, 177, 1)));
-background: -webkit-linear-gradient(top, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-background: -o-linear-gradient(top, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-background: -ms-linear-gradient(top, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-background: linear-gradient(to bottom, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255, 108, 52, 1)', endColorstr='rgba(6, 162, 177, 1)', GradientType=0 );top:100%;margin-top:-12px;padding:2px;color:#fff;line-height:1.5;width:80px;left:7px;-webkit-border-radius:3px;border-radius:3px;font-size:.8em;font-weight:700;z-index:9999999;font-family: Arial, Helvetica, sans-serif}
+background: -moz-linear-gradient(top, #d05f2d 0%, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #d05f2d), color-stop(49%, #d05f2d), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(100%, rgba(6, 162, 177, 1)));
+background: -webkit-linear-gradient(top, #d05f2d 0%, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
+background: -o-linear-gradient(top, #d05f2d 0%, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
+background: -ms-linear-gradient(top, #d05f2d 0%, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
+background: linear-gradient(to bottom, #d05f2d 0%, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d05f2d', endColorstr='rgba(6, 162, 177, 1)', GradientType=0 );top:100%;margin-top:-12px;padding:2px;color:#fff;line-height:1.5;width:80px;left:7px;-webkit-border-radius:3px;border-radius:3px;font-size:.8em;font-weight:700;z-index:9999999;font-family: Arial, Helvetica, sans-serif}
 .weather34tiptemp:hover:after,.weather34tiptemp:hover:before{transition:all .4s ease .2s;visibility:visible;opacity:1}
 .weather34tiptemp:hover:after{margin-top:-25px}
 .weather34tiptemp:hover:before{margin-top:0}
