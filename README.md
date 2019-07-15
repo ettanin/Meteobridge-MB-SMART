@@ -32,7 +32,7 @@ just let meteobridge https://www.meteobridge.com/wiki/index.php/Home do it all..
 important and mostly mis understood mysql database of growing millions of records unless regurlarly maintained can grind your sites to halt over time or cause slow down , its not just about executing a database where it begins to grind when complex routines are called where and the resources of a server get pushed 100% each time called..
 siffling through millions of data values is not smart on poorly low cost hosted or configured servers.. non maintained databases are not smart ..
 
-
+# 3 simple steps 
 
 step 1 setup storing todays data to a CSV file for today charts to read file is chartstoday.php 
 
@@ -78,6 +78,32 @@ step 2 setup storing monthly yearly data to a CSV file for monthly/year charts t
 
 9. now click save .
 
+
+step 3 setting the stationcron.php to run every 30 minutes 
+
+1. Goto meteobridge services screen 
+
+2. Goto Select new service
+
+3. Select from the drop down menu HTTP Request
+
+4. Select periodically in the next menu
+
+5. Click Save at the bottom of the screen
+
+6. Now look for new HTTP request 
+
+7. select 30 minutes 
+
+8. NOW INSERT THE URL  example 
+# http(s)://weathersomething/mbdbfiles/stationcron.php
+
+9. now click save .
+
+
+
+
+
 thats it !!! no mysql to setup just these two files will do all the work .
 
 behind the code ....
@@ -96,6 +122,10 @@ id,time,temp,barometer,rainfall,maxwind_last10,avgwind_last10,dewpoint,rainfall_
 
 <p align="center">
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1561432649/nomysql_slsl7v.png" width="550" title="weather34 meteobridge nomysql charts "> 
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1563167987/stationcron_js0fmg.png" width="550" title="weather34 stationcron.php "> 
 </p>
 
 
