@@ -1,33 +1,17 @@
 # This repository is a beta project for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED (expected final release 2020)
 
-
-This version uses new css grid layouts based on 
-
-  display:grid;
-  
-  grid-template-columns: 236px 236px 236px 236px;
-  
-  
-  grid-gap: 5px;
-  
-  *does not use bootstrap or any other ready made framework it is developed and built locally using sample of above.
-
-this provides the platform for increasing modules to display for example have small charts displayed in small modules
-on main page , increase the total of moduels to 24 and choosing optional layouts.
-* important this code may not be supported on old browsers prior to end of 2018.
-
+# More info
+https://weather34.com/homeweatherstation/beta-meteobridge.html
 
 # New No mysql setup use meteobridge data instead..
 How to use this non mysql database version with ease.
 
-*what is the benefit ? 
+# Meteobridge  what is the benefit ? 
 you have a file with every day ,month,year individually recorded , your data is yours and these files can be used in other 
 programs like excel for example,these files can be edited if erroneous data appears .so no learning curve for understanding
 how mysql works or is setup , reap the benefit of meteobridge services ,no external cron jobs , no server setup of cron jobs 
 just let meteobridge https://www.meteobridge.com/wiki/index.php/Home do it all.. https://www.meteobridge.com/wiki/index.php/Home meteobridge is a feature rich product that totally caters for the weather enthusiast.
 
-important and mostly mis understood mysql database of growing millions of records unless regurlarly maintained can grind your sites to halt over time or cause slow down , its not just about executing a database where it begins to grind when complex routines are called where and the resources of a server get pushed 100% each time called..
-siffling through millions of data values is not smart on poorly low cost hosted or configured servers.. non maintained databases are not smart ..
 
 # 3 simple steps 
 
@@ -101,9 +85,6 @@ setting the stationcron.php to run every 30 minutes (this collects the forecast,
 9. now click save .
 
 
-
-
-
 thats it !!! no mysql to setup just these three files will do all the work .screenshots below
 
 behind the code ....
@@ -160,15 +141,16 @@ example of current beta
 
 
 # Basic Setup guide 
-https://weather34.com/homeweatherstation/guides/setup.html
+https://weather34.com/homeweatherstation/setupguidemb.html
+
+# Chart Non Mysql setup 
+https://weather34.com/homeweatherstation/beta-chartsetup.html
 
 
 # Weather34 Historic Timeline of design 2014-2019 
 https://weather34.com/homeweatherstation/weather34timeline/weather34timeline.html
 
-# Meteobridge Beta Smart Version Screenshot 
-<p align="center">
-  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1559467750/col_ddcheg.png" width="550" title="weather34 meteobridge beta template "> 
+
 </p>
 
 
