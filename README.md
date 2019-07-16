@@ -1,8 +1,5 @@
 # This repository is a beta project for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED (expected final release 2020)
 
-# you are strongly advised do not use this template for main viewing it will be many months before it is ready..
-
-# do not forget to run stationcron.php at 30 minute periods as per original for forecast data etc . do read below about running charts and do not mix older code or files with this version..
 
 This version uses new css grid layouts based on 
 
@@ -32,9 +29,10 @@ just let meteobridge https://www.meteobridge.com/wiki/index.php/Home do it all..
 important and mostly mis understood mysql database of growing millions of records unless regurlarly maintained can grind your sites to halt over time or cause slow down , its not just about executing a database where it begins to grind when complex routines are called where and the resources of a server get pushed 100% each time called..
 siffling through millions of data values is not smart on poorly low cost hosted or configured servers.. non maintained databases are not smart ..
 
+# 3 simple steps 
 
-
-step 1 setup storing todays data to a CSV file for today charts to read file is chartstoday.php 
+# step 1 
+setup storing todays data to a CSV file for today charts to read file is chartstoday.php 
 
 1. Goto meteobridge services screen 
 
@@ -57,7 +55,8 @@ step 1 setup storing todays data to a CSV file for today charts to read file is 
 
 
 
-step 2 setup storing monthly yearly data to a CSV file for monthly/year charts to read file is charts-month-year.php
+# step 2 
+setup storing monthly yearly data to a CSV file for monthly/year charts to read file is charts-month-year.php
 
 1. Goto meteobridge services screen 
 
@@ -78,7 +77,34 @@ step 2 setup storing monthly yearly data to a CSV file for monthly/year charts t
 
 9. now click save .
 
-thats it !!! no mysql to setup just these two files will do all the work .
+
+# step 3 
+setting the stationcron.php to run every 30 minutes (this collects the forecast,earthquake,air quality data etc
+
+1. Goto meteobridge services screen 
+
+2. Goto Select new service
+
+3. Select from the drop down menu HTTP Request
+
+4. Select periodically in the next menu
+
+5. Click Save at the bottom of the screen
+
+6. Now look for new HTTP request 
+
+7. select 30 minutes 
+
+8. NOW INSERT THE URL  example 
+# http(s)://weathersomething/mbdbfiles/stationcron.php
+
+9. now click save .
+
+
+
+
+
+thats it !!! no mysql to setup just these three files will do all the work .screenshots below
 
 behind the code ....
 
@@ -96,6 +122,10 @@ id,time,temp,barometer,rainfall,maxwind_last10,avgwind_last10,dewpoint,rainfall_
 
 <p align="center">
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1561432649/nomysql_slsl7v.png" width="550" title="weather34 meteobridge nomysql charts "> 
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1563167987/stationcron_js0fmg.png" width="550" title="weather34 stationcron.php "> 
 </p>
 
 
@@ -125,7 +155,7 @@ to create a working enviroment to exchange ideas without creating unwanted noise
 example of current beta
 
 <p align="center">
-  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1559632919/Beta_aqbm0a.png" width="550" title="weather34 meteobridge beta template "> 
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1563168802/mbsmart_khhdjg.png" width="550" title="weather34 meteobridge beta template "> 
 </p>
 
 
