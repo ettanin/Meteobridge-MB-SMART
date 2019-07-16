@@ -313,8 +313,8 @@ $sky_desc='Clear <br>Conditions';
 }
 //few
 else if($metar34clouds=='FEW'){
-if ($now >$suns2 ){$sky_icon='partlycloudy.svg';} 
-else if ($now <$sunrs2 ){$sky_icon='partlycloudy.svg';} 
+if ($now >$suns2 ){$sky_icon='nt_partlycloudy.svg';} 
+else if ($now <$sunrs2 ){$sky_icon='nt_partlycloudy.svg';} 
 else $sky_icon='partlysunny.svg'; 
 $sky_desc='Partly Cloudy <br>Conditions';
 }
