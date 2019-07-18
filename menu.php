@@ -12,9 +12,9 @@ else echo' <div class="menucolor"><a href="./?units=metric">Units</a></div>';?><
  <div id="weather34sidebarMenu">
 <ul class="weather34sidebarMenuInner">
 <br /><br /><p>
-<li><a href="#">Settings</a></li>
-<li><a href="easyweathersetup.php" target="_blank" title="WEATHERSTATION SETTINGS PAGE"><?php echo " <weather34menumarkeryellow></weather34menumarkeryellow> ",$lang['Settings']; ?> </a></li> 
-<p>
+<li><a href="#">Settings
+</svg></a></li>
+<li><a href="easyweathersetup.php" target="_blank" title="WEATHERSTATION SETTINGS PAGE"><?php echo " <weather34menumarkeryellow></weather34menumarkeryellow> ",$lang['Settings']; ?> <svg viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 9 9 5 16 5 23 5 23 9 23 15 M16 20 L16 23" /><circle cx="16" cy="24" r="1" /></svg></a></li> <p>
 <li><a href="index.php" title="WEATHERSTATION HOME PAGE"> <weather34menumarkergreen></weather34menumarkergreen> Home </a></li>  
 <li><a href="#">UI THEME</a></li>
 <li><a href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>>
