@@ -56,12 +56,12 @@ height:95px;left:14px;bottom:0;width:100px;background:url(rain/weather34rainbeak
 .tempavgthisyear{font-size:.5em;color:silver;position:absolute;font-family:weathertext2;display:flex;top:15px;left:85px;}
 .rainavgthisyear{font-size:.5em;color:silver;position:absolute;font-family:weathertext2;display:flex;top:15px;left:80px;}
 .rainmaxthismonth{font-size:.5em;color:silver;position:absolute;font-family:weathertext2;display:flex;top:15px;left:15px;}
-.rainmaxthisyear{font-size:.5em;color:silver;position:absolute;font-family:weathertext2;display:flex;top:15px;left:145px;}
+.rainmaxthisyear{font-size:.5em;color:silver;position:absolute;font-family:weathertext2;display:flex;top:15px;left:150px;}
 .wmonthmax{font-size:.3em;color:#333;position:absolute;font-family:weathertext2;display:flex;top:5px;left:15px}
 .wyearmax{font-size:.3em;color:#333;position:absolute;font-family:weathertext2;display:flex;top:5px;left:150px}
 .tmonthmax{font-size:.3em;color:#333;position:absolute;font-family:weathertext2;display:flex;top:5px;left:20px}
 .tyearmax{font-size:.3em;color:#333;position:absolute;font-family:weathertext2;display:flex;top:5px;left:150px}
-.tyearconv{font-size:.3em;color:#333;position:absolute;font-family:weathertext2;display:flex;top:33px;left:160px}
+.tyearconv{font-size:.3em;color:#333;position:absolute;font-family:weathertext2;display:flex;top:33px;left:155px}
 .tmonthconv{font-size:.3em;color:#333;position:absolute;font-family:weathertext2;display:flex;top:33px;left:20px}
 .wyearconv{font-size:.3em;color:#333;position:absolute;font-family:weathertext2;display:flex;top:33px;left:150px}
 .wmonthconv{font-size:.3em;color:#333;position:absolute;font-family:weathertext2;display:flex;top:33px;left:15px}
