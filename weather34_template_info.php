@@ -25,7 +25,7 @@
  .card .card\:content ul li .collection .collection\:data span{font-size:.8rem;font-weight:500;color:#38383c;float:left;text-align:left;} 
  .card .card\:content ul li .collection svg{max-width:43px;height:calc(80px - 2rem)}.card .card\:content ul li .collection svg.ghost{height:calc(70px - 2rem)}.card .card\:content ul li:last-of-type{border-bottom:0;padding:calc(1rem + .5px) 1.5rem}
  a{text-decoration:none;color:#aaa;font-size:.875rem;font-weight:500;color:rgba(45,56,68,1)}.weather34darkbrowser{position:relative;background:0;width:100%;max-height:30px;margin:auto;margin-top:-10px;margin-left:-0px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:45px;background-image:radial-gradient(circle,#EB7061 6px,transparent 8px),radial-gradient(circle,#F5D160 6px,transparent 8px),radial-gradient(circle,#81D982 6px,transparent 8px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),linear-gradient(to bottom,rgba(59,60,63,0.4) 40px,transparent 0);background-position:left top,left top,left top,right top,right top,right top,0 0;background-size:50px 45px,90px 45px,130px 45px,50px 30px,50px 45px,50px 60px,100%;background-repeat:no-repeat,no-repeat;margin-bottom:-20px;}.weather34darkbrowser[url]:after{content:attr(url);color:#aaa;font-size:14px;position:absolute;left:0;right:0;top:0;padding:2px 15px;margin:11px 50px 0 90px;border-radius:3px;background:rgba(97, 106, 114, 0.3);height:20px;box-sizing:border-box}orange{color:#d35d4e}blue{color:#44a6b5}
- .davishardwaresvg{position:absolute;margin-left:240px;}.nanohardwaresvg{position:absolute;margin-left:270px;}.wfhardwaresvg{position:absolute;margin-left:260px;margin-top:10px}
+ .davishardwaresvg{position:absolute;margin-left:240px;}.nanohardwaresvg{position:absolute;margin-left:270px;}.wfhardwaresvg{position:absolute;margin-left:260px;margin-top:10px}body{text-shadow:1px 1px 3px rgba(61,70,77,.2)}
 </style>
 </head>
 <body>
@@ -55,7 +55,7 @@
                                     </div>
                                     <div class="collection:data">
                                         <h3>Weather34 Original Design</h3>
-                                      <a href="https://github.com/weather34/Meteobridge-Weather34-Template" alt="weather34 Meteobridge Template Download" title="weather34 Meteobridge Template Download" target="_blank"> This is the original <orange>Meteobridge</orange> version design by weather34 you can find variants of this template supporting 
+                                      <a href="https://weather34.com/homeweatherstation/beta-meteobridge.html" alt="weather34 Meteobridge Beta Template Download" title="weather34 Meteobridge Beta Template Download" target="_blank"> This is the original <orange>Meteobridge</orange> version design by weather34 you can find variants of this template supporting 
                                         software like <blue>Cumulus,Weewx</blue> maintained by enthusiasts and experienced template designers/coders.
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@
                                     </div>
                                     <div class="collection:data">
                                         <h3>Template Download</h3>
-                                        <a href="https://github.com/weather34/Meteobridge-Weather34-Template" alt="weather34 Meteobridge Template Download" title="weather34 Meteobridge Template Download" target="_blank">https://github.com/weather34/Meteobridge-Weather34-Template</a>
+                                        <a href="https://weather34.com/homeweatherstation/beta-meteobridge.html" alt="weather34 Meteobridge Beta Template Download" title="weather34 Meteobridge Beta Template Download" target="_blank">https://weather34.com/homeweatherstation/beta-meteobridge.html</a>
                                     </div>
                                 </div>
                             </a>
