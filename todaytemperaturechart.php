@@ -116,7 +116,14 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   </articlegraph> 
   
   
-  <articlegraph style="height:45px;"> 
+ <articlegraph> 
+  <div class=actualt>Today <dewpoint>Cloudbase</dewpoint> ft</smalluvunit></span></div>  
+  <iframe  src="weather34charts/todaycloudbasemedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
+   
+  </articlegraph> 
+  </main>
+  <main class="grid2">
+  <footer style="height:30px;"> 
   <div class="lotemp">
   <?php echo $info?> 
 <a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank" style="font-size:9px;"> Charts rendered and compiled using <?php echo $creditschart ;?> </a></span>
@@ -124,6 +131,6 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   <?php echo $info?> <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:9px;">CSS/SVG/PHP scripts were developed by weather34.com  for use in the weather34 template &copy; 2015-<?php echo date('Y');?>
   </a></div>
    
-  </articlegraph> 
+  </footer> 
   
 </main>
