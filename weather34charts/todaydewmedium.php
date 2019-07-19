@@ -76,7 +76,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[7] >-50)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[9]*<?php echo $conv ;?>)});
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[16]*<?php echo $conv ;?>)});
 				
 			}
 			drawChart(dataPoints1 , dataPoints2 );
@@ -172,28 +172,41 @@
  },
 		
 		
+		
 		data: [
 		{
 			type: "spline",
-			color:"#44a6b5",
+			lineDashType: "dash",
+			color:"rgba(241, 107, 79, 1)",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
 			lineThickness: 1,
 			markerType: "circle",
-			name:" Dewpoint",
-			dataPoints: dataPoints1,
+			name:" Wetbulb",
+			dataPoints: dataPoints2,
 			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
 			
 		},
 		{
 			
-			
+			type: "splineArea",
+           
+			color:"#06a2b1",
+			markerSize:1,
+			showInLegend:false,
+			legendMarkerType: "circle",
+			lineThickness: 0,
+			markerType: "circle",
+			name:" Dewpoint",
+			dataPoints: dataPoints1,
+			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
 			
 		}
 
 		]
 		});
+		
 
 		chart.render();
 	}

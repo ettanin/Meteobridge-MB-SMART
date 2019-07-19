@@ -84,13 +84,12 @@ smalluvunit{font-size:.7rem;font-family:weathertext2,Arial,Helvetica,system;}
 .hitempy{position:relative;background:rgba(61, 64, 66, 0.5);color:#aaa;width:90px;padding:1px;-webit-border-radius:2px;border-radius:2px;
 margin-top:-20px;margin-left:92px;padding-left:3px;line-height:11px;font-size:9px}
 .actualt{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
-padding:5px;font-family:Arial, Helvetica, sans-serif;width:130px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
+padding:5px;font-family:Arial, Helvetica, sans-serif;width:180px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actualt temp{background:rgba(208, 95, 45, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff}
 .actualt feel{background:rgba(211, 93, 78, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff}
 .actualt dewpoint{background:rgba(6, 162, 177, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff}
 .actualt wetbulb{background:rgba(241, 107, 79, .8);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff}
-
 .actual{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:95%;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
@@ -104,17 +103,12 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
    
   </articlegraph> 
   <articlegraph> 
-  <div class=actualt>Today <dewpoint>Dewpoint</dewpoint> <?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></span></blue></div>  
+  <div class=actualt>Today <dewpoint>Dewpoint</dewpoint> <wetbulb>Wetbulb ---</wetbulb> <?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></span></blue></div>  
   <iframe  src="weather34charts/todaydewmedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   
-  <articlegraph> 
-  <div class=actualt>Today <wetbulb>Wetbulb</wetbulb> <?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></span></div>  
-  <iframe  src="weather34charts/todaywetbulb.php" frameborder="0" scrolling="no" width="100%"></iframe>
-   
-  </articlegraph> 
-  
+    
   <articlegraph> 
   <div class=actualt>Today <dewpoint>Humidity</dewpoint> %</smalluvunit></span></div>  
   <iframe  src="weather34charts/todayhumiditymedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
@@ -122,10 +116,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   </articlegraph> 
   
   
-  </main>
-   <main class="grid2">
-  
-   <footer >  
+  <articlegraph style="height:45px;"> 
   <div class="lotemp">
   <?php echo $info?> 
 <a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank" style="font-size:9px;"> Charts rendered and compiled using <?php echo $creditschart ;?> </a></span>
@@ -133,6 +124,6 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   <?php echo $info?> <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:9px;">CSS/SVG/PHP scripts were developed by weather34.com  for use in the weather34 template &copy; 2015-<?php echo date('Y');?>
   </a></div>
    
-  </footer> 
+  </articlegraph> 
   
 </main>
