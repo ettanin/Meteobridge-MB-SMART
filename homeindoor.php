@@ -86,11 +86,15 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
   height:160px;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
 }
 
+
+
 .grid1 { 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(382px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 2fr));
   grid-gap: 5px;
-    color:#f5f7fc;
+  align-items: stretch;
+  color:#f5f7fc;
+  margin-top:5px
   
   }
 
@@ -104,6 +108,7 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
   background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
   height:160px  
 }
+
 
   
  .weather34chart-btn.close:after,.weather34chart-btn.close:before{color:#ccc;position:absolute;font-size:14px;font-family:Arial,Helvetica,sans-serif;font-weight:600}
@@ -381,41 +386,30 @@ else if ($aqiweather["aqi"]>=0) echo "#90b12a";
 </div></div>
 </article> 
 <?php ;}?>
+</main>
 
-<article>
-   <div class=actualt>Temperature Guide</div>        
- <span style="font-size:.9em;">    
-<?php echo $info ;?>Long term Temperatures below <yellow>15&deg;C/59&deg;F</yellow> can cause <br>
-<?php echo $info ;?>Dampness<br>
-<?php echo $info ;?>Risk of colds and respiratory illness<br><br>
-
-<?php echo $info ;?>Long term Temperatures above <red>25&deg;C/77&deg;F</red> can cause <br>
-<?php echo $info ;?>Risk of electrical items overheating<br>
-<?php echo $info ;?>Sleep deprevation
-</span></div>
-    </article> 
-
-<article>
-   <div class=actualt>Humidity Guide</div>        
- <span style="font-size:.9em;">    
-Long periods below <humred>35%</humred> can cause<br>
-<?php echo $info ;?>Dry, itchy skin and hair.<br>
-<?php echo $info ;?>Risk of colds and respiratory illness.<br>
-<?php echo $info ;?>Risk of allergies from dust.<br><br>
-Long periods above <humblue>80%</humblue> can cause <br>
-<?php echo $info ;?>Irritable feelings.<br>
-<?php echo $info ;?>Sleep deprevation.
-</span></div>
-    </article> 
+<main class="grid1">
+  <articlegraph> 
+  <div class=actualt>Indoor <span style="color:#ff742c">Temp<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></span></div>  
+  <iframe  src="weather34charts/indoortemp.php" frameborder="0" scrolling="no" width="100%" height="140px"></iframe>
    
-    <article>
-  <div class=actualt>&copy; Info</div>  
+  </articlegraph>  
+  
+  <articlegraph> 
+  <div class=actualt>Indoor <blue>Humidity %</div>  
+  <iframe  src="weather34charts/indoorhum.php" frameborder="0" scrolling="no" width="100%" height="140px"></iframe>
+   
+  </articlegraph>  
+   <articlegraph style="height:30px">  
   <div class="lotemp">
-  <?php echo $info?> <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:9px;"> CSS/SVG/PHP scripts were developed by weather34.com for use in the weather34 template &copy; 2015-<?php echo date('Y');?></a>
-  <br><br>
-   <div class="lotemp">
   <?php echo $info?> 
-<a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank" style="font-size:9px;"> Charts rendered and compiled using <?php echo $creditschart ;?> </a></span>
+<a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank" style="font-size:8px;"> Charts rendered and compiled using <?php echo $creditschart ;?> </a></span>
   </div>
-  </div></article> 
-  </div> 
+  </articlegraph> 
+  <articlegraph style="height:30px">  
+  <div class="lotemp">
+  <?php echo $info?> <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">CSS/SVG/PHP scripts were developed by weather34.com  for use in the weather34 template &copy; 2015-<?php echo date('Y');?>
+  </a></div>
+   
+  </articlegraph> 
+  

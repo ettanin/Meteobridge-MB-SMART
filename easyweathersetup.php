@@ -632,9 +632,7 @@ When Did You Install Your Hardware Currently in Use </div><p>
     
      <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#01a4b4" stroke="#01a4b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> <span style="color:rgba(86, 95, 103, 1.000);">currentconditionsmetar34.php</span> uses Nearby Metar Aviation Weather Options must get API key and insert into option near bottom of this setup screen<BR>
-     <br>
-     <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#01a4b4" stroke="#01a4b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> <span style="color:rgba(86, 95, 103, 1.000);">currentconditionsds.php</span> uses DarkSky must get API key and insert into option near bottom of this setup screen<BR></strong></span></span>
+     </span></span>
      
 <p>
   
