@@ -56,7 +56,7 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[2] >-50)
+				if ( rowData[18] >=0)
 					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[18])});
 			}
 		}
@@ -68,7 +68,7 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[2] >-50)
+				if ( rowData[18] >=0)
 					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[18])});
 				
 			}
@@ -131,7 +131,7 @@
 		titleFontSize: 8,
         titleWrap: false,
 		margin: 0,
-		interval:500,			
+				
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
