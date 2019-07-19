@@ -1,24 +1,23 @@
 <?php
 	
 	####################################################################################################
-	#	WUDATACHARTS by BRIAN UNDERDOWN 2016                                                           #
-	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at http://weather34.com/homeweatherstation/index.html  # 
+	#	CHARTS by BRIAN UNDERDOWN 2016                                                          	   #
+	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at https://weather34.com/homeweatherstation/index.html # 
 	# 	                                                                                               #
 	# 	built on CanvasJs  	                                                                           #
 	#   canvasJs.js is protected by CREATIVE COMMONS LICENCE BY-NC 3.0  	                           #
 	# 	free for non commercial use and credit must be left in tact . 	                               #
-	# 	                                                                                               #
-	# 	Weather Data is based on your PWS upload quality collected at Weather Underground 	           #
+	# 	                                                                                               #	 	
 	# 	                                                                                               #
 	# 	Second General Release: 4th October 2016  	                                                   #
 	# 	                                                                                               #
-	#   http://www.weather34.com 	                                                                   #
+	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
 	include('preload.php');
 	$conv = 1;
-	if ($tempunit=='C' && $windunit == 'mph') {$conv= '1';}
-	else if ($windunit == 'mph') {$conv= '(1.8) +32';}
+	if ($windunit == 'mph') {$conv= '(1.8) +32';}
+	if ($units == 'uk' && $windunit == 'mph') {$conv= '1';}
 	else if ($windunit == 'm/s') {$conv= '1';}
 	else if ($windunit == 'km/h'){$conv= '1';}
 	$max = 40;
@@ -36,7 +35,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>OUTDOOR TEMPERATURE DATABASE CHART</title>	
+		<title>Wetbulb DATABASE CHART</title>	
 		<script src=../js/jquery.js></script>
 		
 		
@@ -64,7 +63,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[2] >-50)
-					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[9]*<?php echo $conv ;?>)});
+					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[16]*<?php echo $conv ;?>)});
 			}
 		}
 		requestTempCsv();}function requestTempCsv(){}
@@ -76,7 +75,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[7] >-50)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[9]*<?php echo $conv ;?>)});
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[16]*<?php echo $conv ;?>)});
 				
 			}
 			drawChart(dataPoints1 , dataPoints2 );
@@ -155,10 +154,10 @@
 		crosshair: {
 			enabled: true,
 			snapToDataPoint: true,
-			color: "#44a6b5",
+			color: "#9aba2f",
 			labelFontColor: "#fff",
 			labelFontSize:8,
-			labelBackgroundColor: "#44a6b5",
+			labelBackgroundColor: "#ff832f",
 			labelMaxWidth: 60,
 			valueFormatString: "#0.#",
 		}	 
@@ -174,22 +173,19 @@
 		
 		data: [
 		{
-			type: "spline",
-			color:"#44a6b5",
+			type: "splineArea",			
+			color:"rgba(241, 107, 79, .8)",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
-			lineThickness: 1,
+			lineThickness: 0,
 			markerType: "circle",
-			name:" Dewpoint",
+			name:" Wetbulb",
 			dataPoints: dataPoints1,
 			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
 			
 		},
 		{
-			
-			
-			
 		}
 
 		]

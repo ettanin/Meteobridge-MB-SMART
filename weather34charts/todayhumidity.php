@@ -65,7 +65,7 @@ orange{color:rgba(255, 124, 57, 1.000)}
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[2] >-50)
-					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[2]*<?php echo $conv ;?>)});
+					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[18])});
 			}
 		}
 		requestTempCsv();}function requestTempCsv(){}
@@ -77,7 +77,7 @@ orange{color:rgba(255, 124, 57, 1.000)}
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[2]>-50)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[11])});
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[18])});
 			}
 			drawChart(dataPoints1 , dataPoints2 );
 		}

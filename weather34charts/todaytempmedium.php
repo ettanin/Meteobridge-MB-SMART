@@ -76,7 +76,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[7] >-50)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[7]*<?php echo $conv ;?>)});
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[15]*<?php echo $conv ;?>)});
 				
 			}
 			drawChart(dataPoints1 , dataPoints2 );
@@ -175,29 +175,41 @@
 		data: [
 		{
 			type: "spline",
-			color:"#ff8841",
+			lineDashType: "dash",
+			color:"rgba(241, 107, 79, 1)",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
 			lineThickness: 1,
 			markerType: "circle",
-			name:" Temperature",
-			dataPoints: dataPoints1,
+			name:" Real Feel",
+			dataPoints: dataPoints2,
 			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
 			
 		},
 		{
 			
-			
+			type: "splineArea",
+           
+			color:"rgba(208, 95, 45, 1.000)",
+			markerSize:1,
+			showInLegend:false,
+			legendMarkerType: "circle",
+			lineThickness: 0,
+			markerType: "circle",
+			name:" Temperature",
+			dataPoints: dataPoints1,
+			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
 			
 		}
 
 		]
 		});
+		
 
 		chart.render();
 	}
 });</script>
 <body>
-</script>
+
 <div id="chartContainer2" style="width:auto;height:125px;padding:0;margin-top:-25px;border-radius:3px;border: 1px solid rgba(245, 247, 252,.02); box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;backgroundColor:rgba(40, 45, 52,.4)"></div></div></body></html>
