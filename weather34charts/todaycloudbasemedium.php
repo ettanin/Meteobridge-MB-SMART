@@ -166,7 +166,8 @@
 		
 		data: [
 		{
-			type: "splineArea",
+			type: "spline",
+			lineDashType: "dash",
 			color:"rgba(6, 162, 177, 1.000)",
 			markerSize:0,
 			showInLegend:false,
