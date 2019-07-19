@@ -173,20 +173,7 @@
 		
 		
 		data: [
-		{
-			type: "spline",
-			lineDashType: "dash",
-			color:"rgba(241, 107, 79, 1)",
-			markerSize:0,
-			showInLegend:false,
-			legendMarkerType: "circle",
-			lineThickness: 1,
-			markerType: "circle",
-			name:" Real Feel",
-			dataPoints: dataPoints2,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
-			
-		},
+		
 		{
 			
 			type: "splineArea",
@@ -201,7 +188,22 @@
 			dataPoints: dataPoints1,
 			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
 			
+		},
+		{
+			type: "spline",
+			lineDashType: "dash",
+			color:"rgba(241, 107, 79, 1)",
+			markerSize:0,
+			showInLegend:false,
+			legendMarkerType: "circle",
+			lineThickness: 1,
+			markerType: "circle",
+			name:" Real Feel",
+			dataPoints: dataPoints2,
+			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			
 		}
+		
 
 		]
 		});
