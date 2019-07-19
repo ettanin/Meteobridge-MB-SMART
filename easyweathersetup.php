@@ -532,7 +532,8 @@ Your Weather Station Hardware</div><p>
        <label name="weatherhardware"></label>
         <select id="weatherhardware" name="weatherhardware" class="chooseapi">           
            <option><?php echo $weatherhardware ;?></option>
-           <option>Davis Vantage Pro2</option>           
+           <option>Davis Vantage Pro2</option>   
+           <option>Davis Vantage Pro2 Plus</option>        
            <option>Davis Vantage Vue</option>
            <option>Davis Envoy8x</option>             
         </select>

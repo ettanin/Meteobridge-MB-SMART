@@ -48,7 +48,12 @@
                                     <div class="collection:data">
                                         <h3>Weather Station <blue> Davis</blue></h3>
                                         <span>Model:<?php echo $weatherhardware?></span>
-                                        <img src="img/<?php if($bottomlogo=='designedfordavisvue'){echo 'VANTAGEVUEVECTOR';}else if($bottomlogo=='designedfordavisvp2'){echo 'davishardware1';}else if($bottomlogo=='designedfordavisenvoy8x'){echo 'designedfordavisenvoy8x';}else echo 'davisw34';?>.svg" width="70px" height="70px" alt="Davis Instruments" title="Davis Instruments" class="davishardwaresvg" >
+                                        <img src="img/<?php 
+										if($weatherhardware=='Davis Vantage Vue'){echo 'davisvue';}
+										else if($weatherhardware=='Davis Vantage Pro2'){echo 'davisvp2proconsole';}
+										else if($weatherhardware=='Davis Vantage Pro2 Plus'){echo 'davisvp2proconsole';}
+										else if($weatherhardware=='Davis Envoy8x'){echo 'designedfordavisenvoy8x';}
+										else echo 'davisw34';?>.svg" width="80px" height="80px" alt="Davis Instruments" title="Davis Instruments" class="davishardwaresvg" >
                                     </div>
                                 </div>
                             </a>
