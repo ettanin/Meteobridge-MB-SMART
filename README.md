@@ -1,10 +1,12 @@
 # This repository is a beta project for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED (expected final release 2020)
 
 # More info
+
 https://weather34.com/homeweatherstation/beta-meteobridge.html
 
 # New No mysql setup use meteobridge data instead..
 How to use this non mysql database version with ease.
+
 https://weather34.com/homeweatherstation/beta-chartsetup.html
 
 # MB-SMART FAQ
