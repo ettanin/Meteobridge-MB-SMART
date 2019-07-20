@@ -1,4 +1,19 @@
 <?php include('../settings.php');include('../shared.php');
+
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	built on CanvasJs  	                                                                           #
+	#   canvasJs.js is protected by CREATIVE COMMONS LICENCE BY-NC 3.0  	                           #
+	# 	free for non commercial use and credit must be left in tact . 	                               #
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+	
+
 $livedataFormat=='meteobridge-api';
 if($livedataFormat=='meteobridge-api'&&$livedata){$file_live=file_get_contents("../davisvp2/MBrealtimeupload.txt");$meteobridgeapi=explode(" ",$file_live);
 $weather["barometer_max"]=$meteobridgeapi[34];$weather["barometer_min"]=$meteobridgeapi[36];$weather["barometer_units"]=$meteobridgeapi[15];$weather["temp_units"]=$meteobridgeapi[14];$weather["rain_today"]=$meteobridgeapi[9];$weather["rain_month"]=$meteobridgeapi[19];$weather["rain_year"]=$meteobridgeapi[20];$weather["rain_units"]=$meteobridgeapi[16];$weather["temp"]=$meteobridgeapi[2];$weather["temp_avg"]=$meteobridgeapi[123];$weather["temp_avgtoday"]=$meteobridgeapi[152];$weather["temp_today_high"]=$meteobridgeapi[26];$weather["temp_today_low"]=$meteobridgeapi[28];$weather["wind_speed_max"]=number_format($meteobridgeapi[40],1);$weather["wind_gust_speed_max"]=number_format($meteobridgeapi[32],1);$weather["windmmax"]=$meteobridgeapi[96];$weather["windymax"]=$meteobridgeapi[98];$weather["winddmax"]=$meteobridgeapi[32];$weather["wind_units"]=$meteobridgeapi[13];$weather['wind_speed_avg30']=$meteobridgeapi[158];$weather['wind_speed_avgday']=$weather['wind_speed_avg30'];$weather["tempmmax"]=$meteobridgeapi[86];$weather["tempmmin"]=$meteobridgeapi[88];$weather["tempymax"]=$meteobridgeapi[90];$weather["tempymin"]=$meteobridgeapi[92];$weather["tempdmax"]=$meteobridgeapi[26];$weather["tempdmin"]=$meteobridgeapi[28];$weather["dewymax"]=$meteobridgeapi[54];$weather["dewymin"]=$meteobridgeapi[56];$weather["dewmax"]=$meteobridgeapi[63];$weather["dewmin"]=$meteobridgeapi[65];$weather["dewmmax"]=$meteobridgeapi[48];$weather["dewmmin"]=$meteobridgeapi[50];$weather["thb0seapressmmax"]=$meteobridgeapi[139];

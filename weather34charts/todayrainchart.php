@@ -1,5 +1,17 @@
 <?php 
-//original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	built on CanvasJs  	                                                                           #
+	#   canvasJs.js is protected by CREATIVE COMMONS LICENCE BY-NC 3.0  	                           #
+	# 	free for non commercial use and credit must be left in tact . 	                               #
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+	
 include('livedata.php');
  ?>
 <!DOCTYPE html>
