@@ -138,7 +138,7 @@
 		gridThickness: 1,		
         includeZero: true,
 		interval:<?php if ($tempunit=='F'){echo 10 ;} else echo '10';?>,
-		maximum:<?php if ($tempunit=='F'){echo 80 ;} else echo '25';?>,
+		maximum:<?php if ($tempunit=='F'){echo 90 ;} else echo '35';?>,
 		minimum:<?php if ($tempunit=='F'){echo 10 ;} else echo '-15';?>,
 		gridColor: "#444",
 		gridDashType: "dot",
