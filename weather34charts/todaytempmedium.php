@@ -191,7 +191,7 @@
 		{
 			type: "spline",
 			lineDashType: "dash",
-			color:"#44a6b5",
+			color:"#d35d4e",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
