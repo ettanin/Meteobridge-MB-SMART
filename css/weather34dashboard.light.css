@@ -79,7 +79,7 @@ tunit{position:relative;font-size:.5em;vertical-align:middle;top:5px;color:#555}
 .cloudconverter{margin-left:220px;margin-top:5px}
 .cwxiconcurrent{position:relative;margin-top:10px;margin-bottom:-5px;margin-left:35px;float:left}
 .cwxiconsummary{position:absolute;font-family:weathertext2;font-size:.7em;line-height:12px;height:35px;padding:5px;margin-top:10px;margin-left:125px;max-width:120px;color:#333}
-.averagestext{font-size:.7rem;position:relative;text-align:center;margin:65px auto auto;width:240px;line-height:12px;font-family:arial,helvetica,system;color:#333;}
+.averagestext{font-size:11px;position:relative;text-align:center;margin:65px auto auto;width:240px;line-height:1;font-family:arial,helvetica,system;color:#333;}
 .wulargediv{width:310px;height:180px;margin-top:12px}
 .earthquakedistance{position:absolute;margin-left:248px;margin-top:7px;font-size:12px}
 
