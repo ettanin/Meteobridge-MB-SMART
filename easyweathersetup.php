@@ -95,7 +95,6 @@ $defaultlanguage   = "'.$_POST["defaultlanguage"]. '";
 $language    = "'.$_POST['language']. '";
 $password    = "'.$_POST['password']. '";
 $flag   = "'.$_POST["flag"]. '";
-$dshourly   = "'.$_POST["dshourly"].'";
 $wulanguage    = "'.$_POST['wulanguage']. '";
 $manifestShortName = "'.$_POST["manifestShortName"].'";
 ';
@@ -1178,7 +1177,7 @@ your nearly there :-) keep going
         <br>
         
         
-        <div class= "stationvalue"> Position 4 </div>
+        <div class= "stationvalue"> Position 4 *Fixed</div>
        <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -1186,22 +1185,21 @@ your nearly there :-) keep going
 </svg>
         <label name="position4"></label>
         <select id="position4" name="position4" class="choose">  
-            <option><?php echo $position4 ;?></option> 
-            <option>temperatureyear.php</option>              
+            <option><?php echo $position4 ;?></option>                      
             <option>davisconsoleoutlook.php</option>   
            
                      </select>
                
         
         
-        <div class= "stationvalue"> Position 4 Title</div>
+        <div class= "stationvalue"> Position 4 Title *FIXED</div>
        <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M30 12 L16 24 2 12" />
 </svg>   
         <label name="position4title"></label>
-       <input name="position4title" type="text" id="position4title" value="<?php echo $position4title ;?>" class="choose"> 
+       <input name="position4title" type="text" id="position4title" value="&nbsp;<oblue>Davis VP2</oblue><oorange><supdavis>&reg;</supdavis></oorange>&nbsp;Console Forecast" class="choose"> 
            
             
         </select>
@@ -1755,13 +1753,13 @@ Choose the Weather Underground Forecast Language ..</div>
         
   <p>
    
-    
+     <div class="seperator"></div>
     
     
     
     
         <div class= "stationvalue">
-<img src="img/darksky.svg" width="100" /> DarkSky API Key  for forecast Data </div>
+<img src="img/darksky.svg" width="100" /> DarkSky API Key  for forecast Data *will be removed in Final Release</div>
  <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg>
@@ -1770,7 +1768,7 @@ Choose the Weather Underground Forecast Language ..</div>
 <P>
 
     <div class= "stationvalue">
-<img src="img/darksky.svg" width="100" /> DarkSky API UNITS *important</div>
+<img src="img/darksky.svg" width="100" /> DarkSky API UNITS *will be removed in Final Release</div>
  <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg>
@@ -1791,25 +1789,9 @@ Choose the Weather Underground Forecast Language ..</div>
     <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg> <span style="color:#777;"><green>US</green> Imperial units (NON METRIC)</span>
 <br> <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg> <span style="color:#777;"><green>SI</green> units</span>
- <center> <span style="color:rgba(86, 95, 103, 1.000);">*IMPORTANT</span> NEW DARKSKY API (uses old script originally used in  2016) requires personal API KEY(MAY 30TH 2018) available via 
-     <a href="https://darksky.net/dev/docs" title="https://darksky.net/dev/docs" target="_blank"> https://darksky.net/dev/docs</a></center>  
+ <center> <span style="color:rgba(86, 95, 103, 1.000);">*Darksky will be removed in Final Release</a></center>  
 <P>
 
-<div class= "stationvalue">
-<img src="img/darksky.svg" width="100" /> DarkSky Hourly Forecast (If using WU Weekly)</div>
- <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg>
-    <label name="dshourly"></label>
-        <select id="dshourly" name="dshourly" value="<?php echo $dshourly ;?>" class="choose1" >
-          <option><?php echo $dshourly ;?></option>
-            <option>yes</option> 
-            <option>no</option>
-            </select>
-
-<br/>
- Whether or not to show the DarkSky Hourly Forecast when using WeatherUnderground's Weekly Forecast
-<P>
 
 
        
@@ -1821,7 +1803,7 @@ Choose the Weather Underground Forecast Language ..</div>
     <path d="M16 14 L16 23 M16 8 L16 10" />
     <circle cx="16" cy="16" r="14" />
 </svg>
-</svg> <img src="img/wflogo.svg" width="200px"/></span> <br> 
+</svg> </span> <br> 
 
 
 <div class= "stationvalue">Do you have Weatherflow Station</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
