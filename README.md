@@ -5,6 +5,10 @@ https://weather34.com/homeweatherstation/beta-meteobridge.html
 
 # New No mysql setup use meteobridge data instead..
 How to use this non mysql database version with ease.
+https://weather34.com/homeweatherstation/beta-chartsetup.html
+
+# MB-SMART FAQ
+https://weather34.com/homeweatherstation/faq.html
 
 # Meteobridge  what is the benefit ? 
 you have a file with every day ,month,year individually recorded , your data is yours and these files can be used in other 
