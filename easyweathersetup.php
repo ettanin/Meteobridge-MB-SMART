@@ -1189,7 +1189,7 @@ your nearly there :-) keep going
             <option><?php echo $position4 ;?></option> 
             <option>temperatureyear.php</option>              
             <option>davisconsoleoutlook.php</option>   
-           <option>advisory.php</option> 
+           
                      </select>
                
         
