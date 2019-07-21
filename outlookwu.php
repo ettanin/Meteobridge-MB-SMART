@@ -1096,7 +1096,7 @@ blueu,yellowu,orangeu,greenu,redu,purpleu{color:#fff;border-radius:2px;padding:0
 	if ($wuskydaynight=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon.'.svg" width="35" class="iconpos"></img></div>';}
 	if ($wuskydaynight=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon.'.svg" width="35" class="iconpos"></img></div>';}
 	 //summary of icon
-	echo '<div class=greydesc>'. $wuskydesc1.'</div><br>';	
+	echo '<div class=greydesc>'. $wuskydesc.'</div><br>';	
 	//humidity night
 	if ($wuskydaynight=='N'){
 	echo '<div class=uvforecast><grey> Humidity ';	
