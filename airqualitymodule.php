@@ -1,5 +1,16 @@
 <body>
 <?php  include('shared.php');include('common.php');
+
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+
 // PURPLE AIR additional conversion script included by Andrew Billits 24 April 2018
 function pm25_to_aqi($pm25){
 	if ($pm25 > 500.5) {

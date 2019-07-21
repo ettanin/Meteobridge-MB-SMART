@@ -1,12 +1,15 @@
 <?php header('Content-type: text/html; charset=utf-8');
+	 
+
 	####################################################################################################
-	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2015-2016-2017-18-19                          #
-	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at 													   #
-	#   https://weather34.com/homeweatherstation/index.html 										   # 
-	# 	WEATHER STATION TEMPLATE 2015-2017    wxcharts.php 											   #
-	# 	  updated 11-04-2019                                                                           #
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
+
 
 include('livedata.php');include('common.php');include('settings1.php');
 date_default_timezone_set($TZ);?>

@@ -1,4 +1,15 @@
-<?php include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');?>
+<?php 
+
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');?>
 <div class="hometemperatureindoor">
 <?php 
  //weather34 wind kmh

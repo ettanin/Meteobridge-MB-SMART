@@ -1,5 +1,15 @@
 <body>
-<?php  include('shared.php');include('common.php');
+<?php  
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+include('shared.php');include('common.php');
 
 $url = 'jsondata/luftdaten.txt'; // luftdaten JSON file
 $data = file_get_contents($url); // put the contents of the file into a variable

@@ -1,4 +1,17 @@
 <?php
+
+
+
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+
 include('settings1.php');
 date_default_timezone_set($TZ);
 //translations for HOMEWEATHERSTATION TEMPLATE UPDATED 2nd November added set locale

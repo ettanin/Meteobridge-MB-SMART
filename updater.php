@@ -1,4 +1,15 @@
-<?php include('settings1.php');?>
+<?php  
+
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+include('settings1.php');?>
 <script src="js/jquery.js"></script>
 <script Defer>
 //update the modules

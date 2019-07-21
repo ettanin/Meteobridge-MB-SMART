@@ -1,4 +1,14 @@
-<?php include('livedata.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
+<?php 
+
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+include('livedata.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
 <body>
 <div class="yesterdaymax">
 <?php 

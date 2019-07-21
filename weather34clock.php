@@ -1,3 +1,16 @@
+<?php
+ 
+
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+?>
 <body>
 <div class="topframe">
 <div class="calendar34"><svg id="weather34clock icon" width="16pt" height="16pt" viewBox="0 0 720 720" version="27-09-2018" >

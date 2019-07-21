@@ -1,14 +1,17 @@
 <?php
 include_once('settings.php');include('livedata.php');
+	 
+
 	####################################################################################################
-	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2016-18-19                                    #
-	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE https://weather34.com/homeweatherstation/index.html # 
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	                                                                                               #
-	# 	FORECAST WU WEATHER FORECAST: Original FEB 2019	(Updated May 2019)  			               #
+	# 	Release: July 2019						  	                                                   #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
+
+
 	//original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 	
 //start the wu output

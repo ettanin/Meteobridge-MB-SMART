@@ -1,13 +1,15 @@
 <?php 
+	
+
 	####################################################################################################
-	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2015-2016-2017-2018-2019                      #
-	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at https://weather34.com/homeweatherstation            # 
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	                                                                                               #
-	# 	updated Mar 2019 LIVEDATA.PHP ITS WHERE A LOT HAPPENS SO DONT MESS IT UP	  		           #
+	# 	Release: July 2019						  	                                                   #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
+
  //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
  include('settings.php');include('shared.php');error_reporting(0); 
  	

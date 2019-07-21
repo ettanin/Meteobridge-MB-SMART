@@ -1,4 +1,17 @@
-<?php include('livedata.php'); //WEATHER34 Davis Console Forecast Outlook/Icon ?> 
+<?php 
+
+
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+
+include('livedata.php'); //WEATHER34 Davis Console Forecast Outlook/Icon ?> 
 <div class="topframe">
 <div class="yearwordtempbig">Console Forecast</div>
 <div class="consoleoutlook">

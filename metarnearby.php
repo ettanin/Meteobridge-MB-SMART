@@ -1,4 +1,15 @@
-<?php include('metar34get.php');
+<?php  
+
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+include('metar34get.php');
 //weather34 original metarnearby script 201-2019//
 ?>
 <!DOCTYPE html>

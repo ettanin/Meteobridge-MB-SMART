@@ -1,4 +1,17 @@
 <?php include('livedata.php');
+
+
+
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+
 // weather34 pure csv without mysql extras built September 2018 finished June 2019//
 date_default_timezone_set($TZ);
 $date = date_create();

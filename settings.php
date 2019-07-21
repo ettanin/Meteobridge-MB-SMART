@@ -1,14 +1,18 @@
 
 <?php 
 include('settings1.php');error_reporting(0); 
+	 
+
 	####################################################################################################
-	#	HOME WEATHER STATION TEMPLATE SETUP please set up and check thoroughly                         #
-	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at https://weather34.com/homeweatherstation/index.html # 
-	# 	   FILE= SETTINGS.PHP                                                                          #
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	WEATHER34 HOMEWEATHER METEOBRIDGE MYSQL                                                        #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
+
+
 
 
 ###########################################################################

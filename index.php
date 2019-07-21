@@ -1,13 +1,15 @@
 <?php header('Content-type: text/html; charset=utf-8');error_reporting(0); 
 
-####################################################################################################
-# HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2017-2018-2019                    			   #
-# CREATED FOR HOMEWEATHERSTATION TEMPLATE at                									   #
-#   https://weather34.com/homeweatherstation/index.html                                            #
-#  WEATHER STATION TEMPLATE 2017-2018-2019 Meteobridge.     									   #
-#  Meteobridge SMART Version  July 2019  											               #
-#   https://github.com/weather34/Weather34				                                           #
-####################################################################################################
+
+
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 include_once('livedata.php');include_once('common.php');include_once('settings1.php'); date_default_timezone_set($TZ);?>
  <!DOCTYPE html><html><head>

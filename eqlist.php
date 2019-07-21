@@ -1,15 +1,16 @@
 <?php include('settings.php');include('livedata.php');
 error_reporting(0); 
 
+
 	####################################################################################################
-	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2015-18                                       #
-	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at https://weather34.com/homeweatherstation/index.html # 
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	                                                                                               #
-	# 	WEATHER34 EARTHQUAKES LISTING: 7th Feb 2018   	                                               #
+	# 	Release: July 2019						  	                                                   #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
+
 
 ?>
 

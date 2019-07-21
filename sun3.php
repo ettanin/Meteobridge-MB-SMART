@@ -1,4 +1,16 @@
 <?php include_once('livedata.php');include_once('common.php');
+ 
+
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+
 # heavily modified version of Wim weather display version cleaner output 
 $result = date_sun_info(time(), $lat, $lon);time(); 
 $nextday = time() + 24*60*60; 

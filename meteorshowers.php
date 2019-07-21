@@ -1,16 +1,17 @@
 <?php include('settings.php');include('livedata.php');
 
-
+ 
 
 	####################################################################################################
-	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2015-18                                       #
-	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at https://weather34.com/homeweatherstation/index.html # 
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	                                                                                               #
-	# 	WEATHER34 Meteor Shower<br>: 25TH JANUARY 2018  	                                               #
+	# 	Release: July 2019						  	                                                   #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
+
+
 
 ?>
 <?php 

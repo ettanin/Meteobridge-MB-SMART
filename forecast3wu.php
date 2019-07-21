@@ -3,14 +3,17 @@ error_reporting(0); date_default_timezone_set($TZ);
 header('Content-type: text/html; charset=UTF-8');
 
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
+	
+
 	####################################################################################################
-	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2016-17-18-19 
-	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at https://weather34.com/homeweatherstation/
-	#
-	#
-	# 	3 DAY WU WEATHER FORECAST:  original FEB 2019
-	#      https://www.weather34.com
-	#
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
 	# 	Code simplified by ktrue - 30-Mar-2019
 	####################################################################################################
 

@@ -1,6 +1,19 @@
-<?php include('livedata.php');include('common.php');date_default_timezone_set($TZ);$json_string=file_get_contents('jsondata/eqnotification.txt');$parsed_json=json_decode($json_string,true);
-$software    = 'Cumulus <span>Software</span>';
-$designedfor    = '<br>For Cumulus';
+<?php 
+
+
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+
+
+
+include('livedata.php');include('common.php');date_default_timezone_set($TZ);$json_string=file_get_contents('jsondata/eqnotification.txt');$parsed_json=json_decode($json_string,true);
 $magnitude=number_format($parsed_json{0}{'magnitude'},1);
 $eqtitle=$parsed_json{0}['location'];
 $time=$parsed_json{0}['date_time'];
