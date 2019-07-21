@@ -66,8 +66,11 @@ if($weather["wind_direction"]<=11.25){echo $lang['Northdir'] ;}else if($weather[
 else if( $weather["wind_direction_avg"]<=78.75){echo "ENE";}else if( $weather["wind_direction_avg"]<=101.25){echo "East";}else if( $weather["wind_direction_avg"]<=123.75){echo "ESE";}
 else if( $weather["wind_direction_avg"]<=146.25){echo "SE";}else if( $weather["wind_direction_avg"]<=168.75){echo "SSE";}else if( $weather["wind_direction_avg"]<=191.25){echo "South";}
 else if( $weather["wind_direction_avg"]<=213.75){echo "SSW";}else if( $weather["wind_direction_avg"]<=236.25){echo "SW";}else if( $weather["wind_direction_avg"]<=258.75){echo "WSW";}
-else if( $weather["wind_direction_avg"]<=281.25){echo "West";}else if( $weather["wind_direction_avg"]<=303.75){echo "WNW";}else if( $weather["wind_direction_avg"]<=326.25){echo "NW";}
-else if( $weather["wind_direction_avg"]<=348.75){echo "NNW";}"&deg;"?></averwordwindword></div> 
+else if( $weather["wind_direction_avg"]<=281.25){echo "West";}
+else if( $weather["wind_direction_avg"]<=303.75){echo "WNW";}
+else if( $weather["wind_direction_avg"]<=326.25){echo "NW";}
+else if( $weather["wind_direction_avg"]<=348.75){echo "NNW";}
+else if( $weather["wind_direction_avg"]<=360){echo "North";}"&deg;"?></averwordwindword></div> 
 <?php echo ' <div class=weather34windrun>'.$windrunicon.' &nbsp;<grey><valuetext1>',number_format($weather['wind_speed_avgday'],1)."<weather34windrunspan>" .$weather["wind_units"];?>
 <grey></valuetext>
 </weather34windrunspan>
