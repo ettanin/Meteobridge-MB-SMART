@@ -239,8 +239,16 @@ echo "<div class=wulargeheatindex>";
 if ($wuskydaynight=='D' && $tempunit=='F' && $wuskyheatindex>=89){echo "Heat Index ".$heatindexwu."<heatindexwu>".number_format($wuskyheatindex,0). '°<wuunits>F&nbsp; </wuunits>'.$heatindexalert8a.'</heatindexwu>';}
 //wu heat index C
 if ($wuskydaynight=='D' && $tempunit=='C' && $wuskyheatindex>=32){echo "Heat Index ".$heatindexwu." <heatindexwu>".number_format($wuskyheatindex,0). '°<wuunits>C&nbsp; </wuunits>'.$heatindexalert8a.'</heatindexwu>';}
+else if ($wuskydaynight=='D'){
+echo 'Humidity';
+if ($wuskyhumidity>=90){echo 	"<bluewuhum>".$wuskyhumidity. '%</bluewuhum></div>';}
+else  if ($wuskyhumidity>75){echo 	"<orangewuhum>".$wuskyhumidity. '%</orangewuhum></div>';}
+else if ($wuskyhumidity>60){echo 	"<yellowwuhum>".$wuskyhumidity. '%</yellowwuhum></div>';}
+else if ($wuskyhumidity>40){echo 	"<greenwuhum>".$wuskyhumidity. '%</greenwuhum></div>';}	
+else if ($wuskyhumidity>0){echo 	"<redwuhum>".$wuskyhumidity. '%</redwuhum></div>';}}
 //lightning wu
-echo '</div><div class=wulargeheatindex style="margin-top:27px;width:16em;margin-left:98px">';
+if ($wuskydaynight=='D'){echo '<div class=wulargeheatindex style="margin-top:27px;width:16em;margin-left:98px">';}
+if ($wuskydaynight=='N'){echo '</div><div class=wulargeheatindex style="width:16em;margin-left:98px">';}
 if ($wuskythunder>0 )  {echo 'Thunderstorms expected '.$wuskydayTime.' </wuthunder2>';}
 else if ($wuskythunder1>0 )  {echo $infowu.'<ored>Thunder</ored> '.$wuskydayTime1. '&nbsp;'.$lightningalert8.'';}
 else if ($wuskythunder2>0 )  {echo $infowu.'<ored>Thunder</ored> '.$wuskydayTime2. '&nbsp;'.$lightningalert8.'';}
