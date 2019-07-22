@@ -130,7 +130,7 @@
 		titleFontSize: 8,
         titleWrap: false,
 		margin: 0,
-		interval:5,		
+		interval:<?php if ($tempunit=='F'){echo 10 ;} else echo '5';?>,	
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
@@ -141,8 +141,8 @@
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0);  
-         },		 
+        return e.value .toFixed(0) + "°<?php echo $tempunit ;?>" ;  
+         },	 
 		crosshair: {
 			enabled: true,
 			snapToDataPoint: true,

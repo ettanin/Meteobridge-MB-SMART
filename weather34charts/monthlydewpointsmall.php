@@ -131,15 +131,16 @@
 		lineThickness: 0.5,		
 		gridThickness: 1,		
         includeZero: false,
-		//interval:10,
-		//maximum:35,
+		interval:<?php if ($tempunit=='F'){echo 10 ;} else echo '5';?>,
+		maximum:<?php if ($tempunit=='F'){echo 90 ;} else echo '35';?>,
+		//minimum:'auto',
 		gridColor: "#333",
 		labelFontSize: 8,
 		labelFontColor:' #aaa',
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0);  
+        return e.value .toFixed(0) + "°<?php echo $tempunit ;?>" ;  
          },		 
 		 crosshair: {
 			enabled: true,

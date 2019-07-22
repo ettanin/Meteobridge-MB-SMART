@@ -128,14 +128,15 @@
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
-        includeZero: false,		
+        includeZero: false,	
+		interval:<?php if ($tempunit=='F'){echo 10 ;} else echo '5';?>,	
 		gridColor: "#333",
 		labelFontSize: 8,
 		labelFontColor:' #aaa',
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0);  
+        return e.value .toFixed(0) + "°<?php echo $tempunit ;?>" ;  
          },		 
 		 crosshair: {
 			enabled: true,

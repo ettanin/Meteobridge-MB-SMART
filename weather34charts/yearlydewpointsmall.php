@@ -135,18 +135,18 @@
 		margin: 8,
 		lineThickness: 0.5,		
 		gridThickness: 1,		
-        includeZero: true,
-		interval:<?php if ($tempunit=='F'){echo 10 ;} else echo '10';?>,
+        includeZero: false,
+		interval:<?php if ($tempunit=='F'){echo 10 ;} else echo '5';?>,
 		maximum:<?php if ($tempunit=='F'){echo 90 ;} else echo '35';?>,
-		minimum:<?php if ($tempunit=='F'){echo 10 ;} else echo '-15';?>,
+		//minimum:'auto',
 		gridColor: "#444",
 		gridDashType: "dot",
-		labelFontSize: 9,
+		labelFontSize: 8,
 		labelFontColor:' #aaa',
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0);  
+        return e.value .toFixed(0) + "°<?php echo $tempunit ;?>" ;  
          },		 
 		 crosshair: {
 			enabled: true,
