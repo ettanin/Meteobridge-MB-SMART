@@ -1,9 +1,9 @@
 <?php include_once('livedata.php');error_reporting(0); date_default_timezone_set($TZ);
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 	####################################################################################################
-	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2016-17-18-19                                 #
-	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at https://weather34.com/homeweatherstation/           # 
-	# 	LARGE DAY WU WEATHER FORECAST:  original MAR 2019			   		                           #
+	#	METEOBRIDGE WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2016-17-18-19                          #
+	#	CREATED FOR MB-SMART TEMPLATE at https://weather34.com/homeweatherstation/  				    # 
+	# 	LARGE DAY WU WEATHER FORECAST:  original MAR 2019	updated JUL 2019                           #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //start the wu output
