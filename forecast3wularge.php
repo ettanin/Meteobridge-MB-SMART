@@ -1,16 +1,11 @@
 <?php include_once('livedata.php');error_reporting(0); date_default_timezone_set($TZ);
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-	
-
 	####################################################################################################
-	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
-	# https://weather34.com/homeweatherstation/index.html 											   # 
-	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
-	# 	                                                                                               #
+	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2016-17-18-19                                 #
+	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at https://weather34.com/homeweatherstation/           # 
+	# 	LARGE DAY WU WEATHER FORECAST:  original MAR 2019			   		                           #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
-
 //start the wu output
 $json='jsondata/wuforecast.txt';
 $weather34wuurl=file_get_contents($json);
@@ -247,7 +242,7 @@ else if ($wuskyhumidity>60){echo 	"<yellowwuhum>".$wuskyhumidity. '%</yellowwuhu
 else if ($wuskyhumidity>40){echo 	"<greenwuhum>".$wuskyhumidity. '%</greenwuhum></div>';}	
 else if ($wuskyhumidity>0){echo 	"<redwuhum>".$wuskyhumidity. '%</redwuhum></div>';}}
 //lightning wu
-if ($wuskydaynight=='D'){echo '<div class=wulargeheatindex style="margin-top:27px;width:16em;margin-left:98px">';}
+if ($wuskydaynight=='D'){echo '</div><div class=wulargeheatindex style="margin-top:27px;width:16em;margin-left:98px">';}
 if ($wuskydaynight=='N'){echo '</div><div class=wulargeheatindex style="width:16em;margin-left:98px">';}
 if ($wuskythunder>0 )  {echo 'Thunderstorms expected '.$wuskydayTime.' </wuthunder2>';}
 else if ($wuskythunder1>0 )  {echo $infowu.'<ored>Thunder</ored> '.$wuskydayTime1. '&nbsp;'.$lightningalert8.'';}
