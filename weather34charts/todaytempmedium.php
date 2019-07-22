@@ -137,7 +137,7 @@
 		titleFontSize: 8,
         titleWrap: false,
 		margin: 3,
-		interval:4,
+		interval:'auto',
 		//maximum: <?php echo $max ;?>,		
 		lineThickness: 1,		
 		gridThickness: 1,	
@@ -149,8 +149,8 @@
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0);  
-         },		 
+        return e.value .toFixed(0) + "°<?php echo $tempunit ;?>" ;  
+         },	
 		crosshair: {
 			enabled: true,
 			snapToDataPoint: true,
