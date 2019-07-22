@@ -219,32 +219,33 @@ else  if ($wuskydayUV>7){echo 	"<redwuv>".$wuskydayUV. '</redwuv><wuinfo> '.$wus
 else if ($wuskydayUV>5){echo 	"<orangewuv>".$wuskydayUV. '</orangewuv><wuinfo> '.$wuskydayUVdesc;}
 else if ($wuskydayUV>2){echo 	"<yellowwuv>".$wuskydayUV. '</yellowwuv><wuinfo> '.$wuskydayUVdesc;}
 else if ($wuskydayUV>0){echo 	"<greenwuv>".$wuskydayUV. '</greenwuv><wuinfo>'.$wuskydayUVdesc;}	
-else if ($wuskydayUV==0){echo 	"<greywuv>".$wuskydayUV. '</greywuv><wuinfo> No Caution';}echo '</div>';}
+echo '</div>';}
 //night humidity
 if ($wuskydaynight=='N'){
 echo '<br><div class=wulargeuvindex>Humidity';
-if ($wuskyhumidity>=90){echo 	"<bluewuhum>".$wuskyhumidity. '%</bluewuhum>';}
-else  if ($wuskyhumidity>75){echo 	"<orangewuhum>".$wuskyhumidity. '%</orangewuhum>';}
-else if ($wuskyhumidity>60){echo 	"<yellowwuhum>".$wuskyhumidity. '%</yellowwuhum>';}
-else if ($wuskyhumidity>40){echo 	"<greenwuhum>".$wuskyhumidity. '%</greenwuhum>';}	
-else if ($wuskyhumidity>0){echo 	"<redwuhum>".$wuskyhumidity. '%</redwuhum>';}echo '</div>';}
-
-///wuheat index F
-echo "<div class=wulargeheatindex>";
-if ($wuskydaynight=='D' && $tempunit=='F' && $wuskyheatindex>=89){echo "Heat Index ".$heatindexwu."<heatindexwu>".number_format($wuskyheatindex,0). '°<wuunits>F&nbsp; </wuunits>'.$heatindexalert8a.'</heatindexwu>';}
-//wu heat index C
-if ($wuskydaynight=='D' && $tempunit=='C' && $wuskyheatindex>=32){echo "Heat Index ".$heatindexwu." <heatindexwu>".number_format($wuskyheatindex,0). '°<wuunits>C&nbsp; </wuunits>'.$heatindexalert8a.'</heatindexwu>';}
-else if ($wuskydaynight=='D'){
-echo 'Humidity';
-if ($wuskyhumidity>=90){echo 	"<bluewuhum>".$wuskyhumidity. '%</bluewuhum></div>';}
+if ($wuskyhumidity>=90){echo 	"<bluewuhum>".$wuskyhumidity. '%</bluewuhum>></div>';}
 else  if ($wuskyhumidity>75){echo 	"<orangewuhum>".$wuskyhumidity. '%</orangewuhum></div>';}
 else if ($wuskyhumidity>60){echo 	"<yellowwuhum>".$wuskyhumidity. '%</yellowwuhum></div>';}
 else if ($wuskyhumidity>40){echo 	"<greenwuhum>".$wuskyhumidity. '%</greenwuhum></div>';}	
 else if ($wuskyhumidity>0){echo 	"<redwuhum>".$wuskyhumidity. '%</redwuhum></div>';}}
+
+///wuheat index F
+else if ($wuskydaynight=='D'){
+echo "<div class=wulargeheatindex>";
+if ($wuskydaynight=='D' && $tempunit=='F' && $wuskyheatindex>=89){echo "Heat Index ".$heatindexwu."<heatindexwu>".number_format($wuskyheatindex,0). '°<wuunits>F&nbsp; </wuunits>'.$heatindexalert8a.'</heatindexwu></div>';}
+//wu heat index C
+if ($wuskydaynight=='D' && $tempunit=='C' && $wuskyheatindex>=32){echo "Heat Index ".$heatindexwu." <heatindexwu>".number_format($wuskyheatindex,0). '°<wuunits>C&nbsp; </wuunits>'.$heatindexalert8a.'</heatindexwu></div>';}
+
+else if ($wuskyhumidity>=90){echo 	"Humidity <bluewuhum>".$wuskyhumidity. '%</bluewuhum></div>';}
+else  if ($wuskyhumidity>75){echo 	"Humidity <orangewuhum>".$wuskyhumidity. '%</orangewuhum></div>';}
+else if ($wuskyhumidity>60){echo 	"Humidity <yellowwuhum>".$wuskyhumidity. '%</yellowwuhum></div>';}
+else if ($wuskyhumidity>40){echo 	"Humidity <greenwuhum>".$wuskyhumidity. '%</greenwuhum></div>';}	
+else if ($wuskyhumidity>0){echo 	"Humidity <redwuhum>".$wuskyhumidity. '%</redwuhum></div>';}}
+
+
 //lightning wu
-if ($wuskydaynight=='D'){echo '</div><div class=wulargeheatindex style="margin-top:27px;width:16em;margin-left:98px">';}
-if ($wuskydaynight=='N'){echo '</div><div class=wulargeheatindex style="width:16em;margin-left:98px">';}
-if ($wuskythunder>0 )  {echo 'Thunderstorms expected '.$wuskydayTime.' </wuthunder2>';}
+echo '<div class=wulargealert>';
+if ($wuskythunder>0 )  {echo 'Thunderstorms expected '.$wuskydayTime.'';}
 else if ($wuskythunder1>0 )  {echo $infowu.'<ored>Thunder</ored> '.$wuskydayTime1. '&nbsp;'.$lightningalert8.'';}
 else if ($wuskythunder2>0 )  {echo $infowu.'<ored>Thunder</ored> '.$wuskydayTime2. '&nbsp;'.$lightningalert8.'';}
 else if ($wuskythunder3>0 )  {echo $infowu.'<ored>Thunder</ored> '.$wuskydayTime3. '&nbsp;'.$lightningalert8.'';}
@@ -280,4 +281,4 @@ else if ($wuskyrain8>0 )  {echo $infowu.'<blue>Rain</blue> '.$wuskydayTime8. '&n
 else if ($wuskyrain9>0 )  {echo $infowu.'<blue>Rain</blue> '.$wuskydayTime9. '&nbsp;'.$rainfallalert8.'';}
 else if ($wuskyrain10>0 )  {echo $infowu.'<blue>Rain</blue> '.$wuskydayTime10. '&nbsp;'.$rainfallalert8.'';}
 
-else echo "";?></div></div>
+else echo "";?></div></div></div></div>
