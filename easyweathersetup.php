@@ -504,9 +504,9 @@ Meteobridge Chart Data (Now uses direct data from meteobridge)</div><p>
     <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
 </svg>
 
-Davis Hardware (more future options currently just displays logo)</div><p>
+Davis Hardware</div><p>
       <div class= "stationvalue"> 
-     If Davis Hardware Select Yes</div>
+     Fixed No Options</div>
       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -517,7 +517,7 @@ Davis Hardware (more future options currently just displays logo)</div><p>
         <select id="davis" name="davis" class="choose1">           
            <option><?php echo $davis ;?></option>
            <option>Yes</option>
-           <option>No</option>
+          
           </select>
         <br><br>
     
