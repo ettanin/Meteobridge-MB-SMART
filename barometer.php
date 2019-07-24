@@ -33,12 +33,12 @@ valuetextba{font-size:1em}valuetextbc{font-size:.8em}
 <div class='minpressure'><a class="weather34tipmin" data-weather34tipmin="<?php echo "Min ".$weather["thb0seapressymin"]." ".$weather["barometer_units"]."&nbsp; ".$weather["thb0seapressyearmintime"]?>">
 <?php echo '<valuetext>Min ('.$weather["thb0seapressmintime"].')<br><minblue>',$weather["barometer_min"],'&nbsp;</minblue><pressureunits>',$weather["barometer_units"],' </pressureunits></valuetext></div>';?></a></div>
 <div class="trendpressure">
-<?php  echo "<valuetextbc>&nbsp;&nbsp;Trend";
+<?php  echo "<valuetextbc>&nbsp;Tendency";
 if ($weather["barometer_trend"] > 20  && $weather["barometer_trend"] < 100)  {echo '<rise> '.$risingsymbol.' </rise><valuetextba>';echo number_format($weather["barometer_trend"],2), '</valuetextba><pressureunits> ';echo $weather["barometer_units"], '</pressureunits>';}
 else if ($weather["barometer_trend"] < 0) {echo '<fall> '.$fallingsymbol.'</fall><valuetextba>'; echo number_format($weather["barometer_trend"],2), '</valuetextba><pressureunits> ';echo $weather["barometer_units"], '</pressureunits></valuetext>';}
 else if ($weather["barometer_trend"] > 0 && $weather["barometer_trend"] < 100) {
 echo '<rising><rise> '.$risingsymbol.'&nbsp;</rise><valuetextba>';echo number_format($weather["barometer_trend"],2), ' </valuetextba><pressureunits>';echo $weather["barometer_units"], '</pressureunits></valuetext>';}	  
-else echo '<ogreen> '.$steadysymbol.'</ogreen><steady><ogreen><valuetextba>Steady</valuetextba></ogreen></steady></div>';?></valuetext>
+else echo '<ogreen> '.$steadysymbol.'</ogreen><steady><valuetextba>'.number_format($weather["barometer_trend"],2).'</valuetextba></steady><pressureunits> '.$weather["barometer_units"], '</pressureunits></div>';?></valuetext>
 </div>
 <div class="barometerconverter">
 <?php echo "";
