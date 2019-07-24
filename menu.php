@@ -81,8 +81,8 @@ else echo "";?>
      '?>
      <!---credits | download info---> 
 <?php // please do not remove this and if so no support is given and your domain will be blacklisted from support it is not much to ask //?>
-<li><a href="https://weather34.com/homeweatherstation/beta-meteobridge.html" title="Weather34 MB Beta-Smart Version " target="_blank">
+<li><a href="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" data-title="Weather34 MB Beta-Smart Version" target="_blank">
 <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Download MB Beta-Smart Version</a></li>
 
-<li><a href="https://weather34.com/homeweatherstation/beta-meteobridge.html" title="https://weather34.com/homeweatherstation/beta-meteobridge.html" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> Designed by weather34.com</a></li>    
+<li><a href="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" data-title="Weather34 MB Beta-Smart Version"" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> Designed by weather34.com</a></li>    
 </div></div></header>  
