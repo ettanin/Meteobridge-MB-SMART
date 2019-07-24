@@ -34,7 +34,7 @@ valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 <?php echo '<valuetext>Min ('.$weather["thb0seapressmintime"].')<br><minblue>',$weather["barometer_min"],'&nbsp;</minblue><pressureunits>',$weather["barometer_units"],' </pressureunits></valuetext></div>';?></a>
 </div>
 <div class="trendpressure">
-<?php  echo "<valuetexttr>&nbsp;Tendency<valuetexttr>";
+<?php  echo "<valuetexttr>&nbsp;Tendency (hr)<valuetexttr>";
 if ($weather["barometer_trend"] < 0) {echo '<fall> '.$fallingsymbol.'&nbsp;</fall><valuetextba>';
 echo number_format($weather["barometer_trend"],2), '</valuetextba><pressureunits>';}
 else if ($weather["barometer_trend"] > 0) {
