@@ -1,5 +1,5 @@
 # This GITHUB repository is for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
-(Beta Testing Ended  Final Version Released until Late January 2020)
+(Beta Testing Ended  Final Version Released July 24th 2019)
 
 # IMPORTANT THIS TEMPLATE IS FOR METEOBRIDGE NANOSD AND DAVIS HARDWARE USERS ONLY !!
 
@@ -119,20 +119,16 @@ id,time,temp,barometer,rainfall,maxwind_last10,avgwind_last10,dewpoint,rainfall_
 
 
 
-# Meteobridge-Weather34-Beta Smart Version
-Github Beta repository for the Meteobridge version of the original weather34 template 
-Weather Template for Meteobridge users only 
-
+# Meteobridge-Weather34 MB-Smart Version
 *The aim is to create the cleanest and most friendly approach to displaying your personal
 weather data for your personal use and reap the full potential of meteobridge nanosd and meteobridge pro.
 
-*This template is primed for use with meteobridge NANOSD and Pro unfortunately the smaller TP-LINK is not
+*This template is primed for use with meteobridge NANOSD AND DAVIS hardware unfortunately the smaller TP-LINK is not
 fully compatible due to the requirement of being able to retrieve historical values realtime .
 
-*This work is for development use only it is for meteobridge NANO/Pro users and contributors,participants who communicate
-ideas and request permission to use.
+*This work is for use only it is for meteobridge NANOSD.
 
-*This work is not to be used without prior permission , please clearly outline on how you want to use this work.
+*This work is not to be used without prior permission other versions , please clearly outline on how you want to use this work.
 
 *This work requires credits to be left intact where work is used ,it has no legal binding warrant but it is ethical
 to create a working enviroment to exchange ideas without creating unwanted noise, the community is smaller than you may think..
@@ -140,8 +136,6 @@ to create a working enviroment to exchange ideas without creating unwanted noise
 *THIS VERSION HAS NO MYSQL DEPENDANCY 
 
 *This work means CSS/SVG/PHP .
-
-example of current beta
 
 <p align="center">
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1563168802/mbsmart_khhdjg.png" width="550" title="weather34 meteobridge beta template "> 
