@@ -4,12 +4,12 @@
 # IMPORTANT THIS TEMPLATE IS FOR METEOBRIDGE NANOSD AND DAVIS HARDWARE USERS ONLY !!
 
 # More info
-https://weather34.com/homeweatherstation/beta-meteobridge.html
+https://weather34.com/homeweatherstation/meteobridge-mb-smart.html
 
 # New No mysql setup use meteobridge data instead..
 How to use this non mysql database version with ease.
 
-https://weather34.com/homeweatherstation/beta-chartsetup.html
+https://weather34.com/homeweatherstation/meteobridge-mb-smart-chartsetup.html
 
 # MB-SMART FAQ
 https://weather34.com/homeweatherstation/faq.html
@@ -146,7 +146,7 @@ to create a working enviroment to exchange ideas without creating unwanted noise
 https://weather34.com/homeweatherstation/setupguidemb.html
 
 # Chart Non Mysql setup 
-https://weather34.com/homeweatherstation/beta-chartsetup.html
+https://weather34.com/homeweatherstation/meteobridge-mb-smart-chartsetup.html
 
 
 # Weather34 Historic Timeline of design 2014-2019 
