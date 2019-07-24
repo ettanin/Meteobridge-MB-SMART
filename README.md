@@ -1,7 +1,9 @@
-# This repository is a beta project for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED (expected final release 2020)
+# This GITHUB repository is for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
+(Beta Testing Ended  Final Version Released until Late January 2020)
+
+# IMPORTANT THIS TEMPLATE IS FOR METEOBRIDGE NANOSD AND DAVIS HARDWARE USERS ONLY !!
 
 # More info
-
 https://weather34.com/homeweatherstation/beta-meteobridge.html
 
 # New No mysql setup use meteobridge data instead..
