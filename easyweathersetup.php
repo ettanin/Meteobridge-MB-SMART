@@ -177,9 +177,9 @@ if (isset($_POST['submit_pwd'])){    $pass = isset($_POST['passwd']) ? $_POST['p
 
 
 </div>
-<div span style="width:390px;margin:0 auto;margin-top:10px;text-align:center;color:#4a636f;background:0;font-family:arial;padding:20px;border-radius:4px;border:1px solid rgba(74, 99, 111, 0.4);"> 
-<img src='img/easyweathersetupweather34.svg' width='120px'>
-<img src='img/nano.svg' width='40px' style="float:none;transform: rotate(100grad)"><img src='img/MeteobridgePRO.svg' width='60px' style="float:none;"><img src='img/TP-LINK.svg' width='60px' style="float:none;">
+<div span style="width:450px;margin:0 auto;margin-top:10px;text-align:center;color:#4a636f;background:0;font-family:arial;padding:20px;border-radius:4px;border:1px solid rgba(74, 99, 111, 0.4);"> 
+<img src='img/MB-smart-easyweathersetupweather34.svg' width='420px'>
+
 <br>
 
 Welcome you have logged into the <br>WEATHER34 Meteobridge MB-SMART setup screen <?php echo date("M jS Y H:i"); ?>
