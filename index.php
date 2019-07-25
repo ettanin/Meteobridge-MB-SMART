@@ -206,7 +206,7 @@ else if ($davis=="Yes"){echo '<img src="img/logoDAVISCONSOLEVECTOR.svg" alt="Dav
   <div class="footercontainer">
   <main class="gridfooter">
   <weather34footer>
-  <div class=footertext><?php echo $info?>&nbsp;Realtime Weather Data Provided By:&nbsp;<?php echo $stationlocation?> Home Weather Station</div>
+  <div class=footertext><?php echo $info?>&nbsp;Realtime Weather Data Provided By:&nbsp;<?php echo $stationlocation?> Home Weather Station <div class="logoweather34"><a class="weather34tipfooter" href="https://weather34.com/homeweatherstation/" data-weather34tipfooter="WEATHER34 MB-SMART" target="_blank"><img src="img/weather34-logo.svg" width=50em ></a></div></div>
  </weather34footer></main></div>
  
  </body><?php include_once('updater.php');include_once('menu.php');?><div id=lightningalert></div>
