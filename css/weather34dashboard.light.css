@@ -107,7 +107,8 @@ tunit{position:relative;font-size:.5em;vertical-align:middle;top:5px;color:#555}
 .averagestext{font-size:10px;position:relative;text-align:center;margin:65px auto auto;width:240px;line-height:1;font-family:arial,helvetica,system;color:#333;}
 .wulargediv{width:310px;height:180px;margin-top:12px}
 .earthquakedistance{position:absolute;margin-left:248px;margin-top:7px;font-size:12px}
-.logoweather34,.weather34-mbsmartlogo{position:absolute;left:-125px;float:left;top:-12px;image-rendering:auto}
+.weather34-mbsmartlogo{position:absolute;left:-125px;float:left;top:-12px;image-rendering:auto}
+.weather34-mbsmartlogo span{line-height:.5;width:16px;font-size:.8em}
 weather34toptitle{display:flex;justify-content:center;font:500 1em system;margin-left:37%;margin-top:15px;line-height:1;color:silver}
 @media screen and (max-width:960px){
 .grid1{display:grid;grid-template-columns:360px 360px;grid-gap:5px;grid-template-rows:1fr;align-items:stretch;margin:0 auto;margin-top:45px;color:rgba(47,54,63,1)}

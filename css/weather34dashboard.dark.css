@@ -112,8 +112,8 @@ tunit{position:relative;font-size:.45em;vertical-align:middle;top:5px;color:silv
 .cwxiconsummary{position:absolute;font-family:weathertext2;font-size:.7em;line-height:12px;height:35px;padding:5px;margin-top:10px;margin-left:125px;max-width:120px;color:silver}
 .averagestext{font-size:10px;position:relative;text-align:center;margin:65px auto auto;width:240px;line-height:1;font-family:arial,helvetica,system;color:silver;}
 .wulargediv{width:310px;height:180px;margin-top:5px}
-.logoweather34,.weather34-mbsmartlogo{position:absolute;left:-125px;float:left;top:-12px;image-rendering:auto}
-
+.weather34-mbsmartlogo{position:absolute;left:-125px;float:left;top:-12px;image-rendering:auto}
+.weather34-mbsmartlogo span{line-height:.5;width:16px;font-size:.8em}
 weather34toptitle{display:flex;justify-content:center;font:500 1em system;margin-left:37%;margin-top:15px;line-height:1;color:silver}
 .weather34tipcelsius{position:absolute;box-sizing:border-box;right:50px;top:10px}
 .weather34tipfah{position:absolute;box-sizing:border-box;right:50px;top:10px}
