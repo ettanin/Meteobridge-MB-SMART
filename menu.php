@@ -10,11 +10,18 @@
 	####################################################################################################
 
 ?>
-<div class="weather34admin"><header class="weather34admin__header"><div class="weather34toolbar">
-<div class="weather34toolbar__left"><button class="weather34btn weather34btn--primary"></button></div><div class="weather34toolbar__center"><button class="weather34btn weather34btn--primary"><weather34toptitle><?php echo $stationName;?>&nbsp; Home Weather Station</weather34toptitle> 
-</button></div><div class="weather34toolbar__right"><div id="theTime"></div>
-<a href="#"><?php if($units!='us'){echo' <a href="./?units=us" alt="select fahrenhiet" title="select fahrenhiet"><topbarimperial>&deg;F</topbarimperial></a></div>';}else if($units!='metric'){echo' <a  alt="select metric" title="select metric" href="./?units=metric"><topbarmetric>&deg;C</topbarmetric></a></div>';}
-else echo' <div class="menucolor"><a href="./?units=metric">Units</a></div>';?></a></div></div></header>
+<div class="weather34admin"><header class="weather34admin__header">
+<weather34toptitle><?php echo $stationName;?>&nbsp;Weather Station</weather34toptitle>
+<div class="weather34toolbar">
+<div class="weather34toolbar__right"><div id="theTime"></div></div>
+
+<a href="#">
+<?php if($units!='us'){echo' <a href="./?units=us" class="weather34tipfah"><topbarimperial>&deg;F</topbarimperial></a></div>';}
+else if($units!='metric'){echo' <a  class="weather34tipcelsius"  href="./?units=metric"><topbarmetric>&deg;C</topbarmetric></a></div>';}
+else echo' <div class="menucolor"><a href="./?units=metric">Units</a></div>';?>
+</a></div></div>
+
+
  <input type="checkbox" class="openweather34sidebarMenu" id="openweather34sidebarMenu">
   <label for="openweather34sidebarMenu" class="weather34sidebarIconToggle">
     <div class="weather34spinner weather34cross part-1"></div>
