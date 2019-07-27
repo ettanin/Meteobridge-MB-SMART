@@ -1,5 +1,8 @@
 # This GITHUB repository is for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
-(Beta Testing Ended  Final Version Released July 24th 2019)
+(Beta Testing Ended  Version Released July 27th 2019)
+
+# Live Demo
+https://singaporeweather.info 
 
 # IMPORTANT THIS TEMPLATE IS FOR METEOBRIDGE NANOSD AND DAVIS HARDWARE USERS ONLY !!
 
@@ -155,6 +158,8 @@ https://weather34.com/homeweatherstation/weather34timeline/weather34timeline.htm
 
 </p>
 
+# Thanks to Lars 
+Lars at  https://singaporeweather.info for access to test ideas realtime in a different climate.
 
 
 # This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. http://creativecommons.org/licenses/by-nc-nd/4.0/
