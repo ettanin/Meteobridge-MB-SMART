@@ -311,6 +311,8 @@ $lang['Station'] = 'Station';
 
 $lang['Detailed Forecast'] = 'Detailed Forecast';
 $lang['Summary Outlook'] = 'Summary';
+$lang['Almanac'] = 'Almanac';
+
 
 //Air Quality
 $lang['Hazordous']= 'Hazardous Conditions';

@@ -310,7 +310,7 @@ $lang['Cloudbase Height'] = 'Bulutu';
 $lang['Station'] = 'İstasyon';
 $lang['Detailed Forecast'] = 'Hava Durumu Gun ';
 $lang['Summary Outlook'] = 'Hava Durumu';
-
+$lang['Almanac'] = 'Almanak';
 //Air Quality
 $lang['Hazordous']= 'Kötü Hava Kosullari';
 $lang['VeryUnhealthy']= 'Sağlıksız Hava Kalitesi';

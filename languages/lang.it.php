@@ -297,7 +297,7 @@ $lang['Cloudbase Height'] = 'Altezza Nuvole';
 $lang['Station'] = 'Stazione';
 $lang['Detailed Forecast'] = 'Dettagli Previsione';
 $lang['Summary Outlook'] = 'Riepilogo Previsione';
-
+$lang['Almanac'] = 'Almanac';
 
 
 $lang['Max'] = 'Max';

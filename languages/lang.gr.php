@@ -330,7 +330,7 @@ $lang['Cloudbase Height'] = 'Βάση Νεφών';
 $lang['Station'] = 'Σταθμός';
 $lang['Detailed Forecast'] = 'Λεπτομερής Πρόγνωση';
 $lang['Summary Outlook'] = 'Συνοπτικά';
-
+$lang['Almanac'] = 'Almanac';
 //Air Quality
 $lang['Hazordous']= 'Hazardous Conditions';
 $lang['VeryUnhealthy']= 'Very Unhealthy';

@@ -296,7 +296,7 @@ $lang['Rainbow'] = 'Rainbow';
 $lang['Windy'] = 'Windy';
 $lang['Max'] = 'Max';
 $lang['Min'] = 'Min';
-
+$lang['Almanac'] = 'Almanak';
 //Firerisk
 $lang['Firerisk']                             = 'Brandgevaar';
 

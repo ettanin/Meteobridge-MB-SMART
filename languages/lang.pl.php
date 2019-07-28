@@ -310,7 +310,7 @@ $lang['Station'] = 'Stacja';
 
 $lang['Detailed Forecast'] = 'Szczegółowa Prognoza';
 $lang['Summary Outlook'] = 'Podsumowanie';
-
+$lang['Almanac'] = 'Almanac';
 
 //Air Quality
 $lang['Hazordous']= 'Hazardous Conditions';

@@ -314,7 +314,7 @@ $lang['Station'] = 'Állomás';
 
 $lang['Detailed Forecast'] = 'Részletes előrejelzés';
 $lang['Summary Outlook'] = 'Összefoglalás';
-
+$lang['Almanac'] = 'Almanac';
 //Air Quality
 $lang['Hazordous']= 'Veszélyes körülmények';
 $lang['VeryUnhealthy']= 'Nagyon egészségtelen';

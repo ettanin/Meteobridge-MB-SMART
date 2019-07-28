@@ -319,10 +319,9 @@ $lang['SunPosition'] = 'Sun Position';
 $lang['Conditions'] = 'Conditions';
 $lang['Cloudbase Height'] = 'Base de núvols ';
 $lang['Station'] = 'Estació';
-
 $lang['Detailed Forecast'] = 'Previsió detallada';
 $lang['Summary Outlook'] = 'Resum';
-
+$lang['Almanac'] = 'Almanac';
 //other
 $lang['FullWxsimForecast'] = 'Ajustos';
 $lang['LiveWebcamimagesofWeatherstationSauwerd'] = 'Canviar distribució';
