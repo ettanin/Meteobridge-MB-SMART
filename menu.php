@@ -89,5 +89,5 @@ else echo '<svg id="weather34 locked" viewBox="0 0 32 32" width="12" height="12"
 <li><a href="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" data-title="Weather34 MB-Smart Version" target="_blank">
 <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Download MB-Smart Version</a></li>
 
-<li><a href="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" data-title="Weather34 MB-Smart Version"" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> Designed by weather34.com</a></li>    
+<li><a href="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" data-title="Weather34 MB-Smart Version" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> Designed by weather34.com</a></li>    
 </div></div></header>  
