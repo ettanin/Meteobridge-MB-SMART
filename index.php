@@ -116,7 +116,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
  <div id=barometer></div></weather34module> 
  
   <weather34module> <!-- Weather34 Main Module 6 Sky-->
- <div class=actualt><?php echo $lang['Daylight']. " | ". $lang['Darkness'];?></div> 
+ <div class=actualt>Sun Position</div> 
  <div class=weather34chartlinks> 
  	<a class="weather34tiplink" data-weather34tiplink="Moon Phase Data" href=mooninfo.php data-lity><chartinfocolor><?php echo $chartinfo?></chartinfocolor> Moon Information</a>&nbsp;&nbsp;
 	<a class="weather34tiplink" data-weather34tiplink="Meteor Shower Data" href=meteorshowers.php data-lity><chartinfocolor><?php echo $chartinfo?></chartinfocolor> Meteor Showers</a></div>	
@@ -208,6 +208,5 @@ else if ($davis=="Yes"){echo '<img src="img/logoDAVISCONSOLEVECTOR.svg" alt="Dav
   <weather34footer>
   <div class=footertext>
   <div class="weather34-mbsmartlogo"><a class="weather34tipfooter" href="https://weather34.com/homeweatherstation/" data-weather34tipfooter="WEATHER34 MB-SMART" target="_blank"><img src="img/weather34-logo.svg" width=47em > <span>weather<ored>34</ored> designed</span></a></div>
-  <?php echo $info?>&nbsp;Weather Data Provided By:&nbsp;<?php echo $stationlocation?> Home Weather Station </main></div>
- 
+  <?php echo $info?>&nbsp;Weather Data Provided By:&nbsp;<?php echo $stationlocation?> Home Weather Station </main></div> 
  </body><?php include_once('updater.php');include_once('menu.php');?><div id=lightningalert></div>
