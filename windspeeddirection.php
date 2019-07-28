@@ -61,8 +61,7 @@ else if ($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]*$toKnots<1
 <div class="windirectiontext1">
 <?php  //weather34 wind direction value output   
 if($weather["wind_direction"]<=11.25){echo $lang['Northdir'] ;}else if($weather["wind_direction"]<=33.75){echo $lang['NNEdir'];}else if($weather["wind_direction"]<=56.25){echo $lang['NEdir'];}else if($weather["wind_direction"]<=78.75){echo $lang['ENEdir'];}else if($weather["wind_direction"]<=101.25){echo $lang['Eastdir'];}else if($weather["wind_direction"]<=123.75){echo $lang['ESEdir'];}else if($weather["wind_direction"]<=146.25){echo $lang['SEdir'];}else if($weather["wind_direction"]<=168.75){echo $lang['SSEdir'];}else if($weather["wind_direction"]<=191.25){echo $lang['Southdir'];}  else if($weather["wind_direction"]<=213.75){echo $lang['SSWdir'];}else if($weather["wind_direction"]<=236.25){echo $lang['SWdir'];}else if($weather["wind_direction"]<=258.75){echo $lang['WSWdir'];}else if($weather["wind_direction"]<=281.25){echo $lang['Westdir'];}else if($weather["wind_direction"]<=303.75){echo $lang['WNWdir'];}else if($weather["wind_direction"]<=326.25){echo $lang['NWdir'];}else if($weather["wind_direction"]<=348.75){echo $lang['NWNdir'];}else {echo $lang['Northdir'];}?>
- </div> 
-
+ </div>
  <averwordwindword><?php echo "Avg ";if( $weather["wind_direction_avg"]<=11.25){echo $lang['North'];}
 else if( $weather["wind_direction_avg"]<=33.75){echo $lang['NNE'];} else if( $weather["wind_direction_avg"]<=56.25){echo $lang['NE'];}
 else if( $weather["wind_direction_avg"]<=78.75){echo $lang['ENE'];}else if( $weather["wind_direction_avg"]<=101.25){echo $lang['East'];}else if( $weather["wind_direction_avg"]<=123.75){echo $lang['ESE'];}
@@ -73,7 +72,7 @@ else if( $weather["wind_direction_avg"]<=348.75){echo $lang['NWN'];}else if( $we
 <?php echo ' <div class=weather34windrun>'.$windrunicon.' &nbsp;<grey><valuetext1>',number_format($weather['wind_speed_avgday'],1)."<weather34windrunspan>" .$weather["wind_units"];?>
 <grey></valuetext>
 </weather34windrunspan>
-</div></div><br /><div class=windrun1><?php echo  'Avg Speed Today'?></div>
+</div></div><br /><div class=windrun1><?php echo  $lang['Average']." ".$lang['Today']?></div>
 <?php ///weather34 beaufort
 if ($weather["wind_speed_bft"] >= 12) {
   echo '<div class=weather34beaufort6>' . $beaufort12 . "&nbsp; " . $weather["wind_speed_bft"];
@@ -103,34 +102,35 @@ if ($weather["wind_speed_bft"] >= 12) {
   echo '<div class=weather34beaufort1-3>' . $beaufort0 . "&nbsp; " . $weather["wind_speed_bft"];
 }
 ?>
+
  <weather34bftspan>BFT<weather34bftspan></div>
 <div class="beaufort1"><?php
 if ($weather["wind_speed_bft"] == 0) {
   echo "Calm";
 } else if ($weather["wind_speed_bft"] == 1) {
-  echo "Light Air";
+  echo $lang['Lightair'];
 } else if ($weather["wind_speed_bft"] == 2) {
-  echo "Light Breeze";
+  echo $lang['Lightbreeze'];
 } else if ($weather["wind_speed_bft"] == 3) {
-  echo "Gentle Breeze";
+  echo $lang['Gentelbreeze'];
 } else if ($weather["wind_speed_bft"] == 4) {
-  echo "Moderate Breeze";
+  echo $lang['Moderatebreeze'];
 } else if ($weather["wind_speed_bft"] == 5) {
-  echo "Fresh Breeze";
+  echo $lang['Freshbreeze'];
 } else if ($weather["wind_speed_bft"] == 6) {
-  echo "Strong Breeze";
+  echo $lang['Strongbreeze'];
 } else if ($weather["wind_speed_bft"] == 7) {
-  echo "Near Gale " . $alert . "";
+  echo $lang['Neargale'] . $alert . "";
 } else if ($weather["wind_speed_bft"] == 8) {
-  echo "Gale Force " . $alert . "";
+  echo $lang['Galeforce'] . $alert . "";
 } else if ($weather["wind_speed_bft"] == 9) {
-  echo "Strong Gale " . $alert . "";
+  echo $lang['Stronggale'] . $alert . "";
 } else if ($weather["wind_speed_bft"] == 10) {
-  echo "Storm Force " . $alert . "";
+  echo $lang['Storm'] . $alert . "";
 } else if ($weather["wind_speed_bft"] == 11) {
-  echo "Violent Storm " . $alert . "";
+  echo $lang['Violentstorm'] . $alert . "";
 } else if ($weather["wind_speed_bft"] >= 12) {
-  echo "Hurricane Force " . $alert . "";
+  echo $lang['Hurricane'] . $alert . "";
 }
 ?>
 </div>
