@@ -26,10 +26,6 @@ IF (ISSET($_POST["Submit"])) {
 $string = '<?php 
 $apikey = "'. $_POST["wuapi"]. '";
 $wuapikey = "'. $_POST["wuapikey"]. '";
-$weatherflowID = "'. $_POST["wfid"]. '";
-$weatherflowoption   = "'. $_POST["weatherflowoption"]. '";
-$weatherflowlightning = "'. $_POST["wfli"]. '";
-$weatherflowmapzoom   = "'. $_POST["weatherflowmapzoom"]. '";
 $id = "'. $_POST["WUID"]. '";
 $purpleairID = "'. $_POST["purpleair"]. '";
 $purpleairhardware   = "'. $_POST["purpleairhardware"]. '";
@@ -1148,8 +1144,7 @@ your nearly there :-) keep going
             <option><?php echo $position2 ;?></option> 
             <option>rainfallf-year-month.php</option>
             <option>windgustyear.php</option> 
-            <option>temperatureyear.php</option>
-            <option>wflightning.php</option>                 
+            <option>temperatureyear.php</option>                           
            </select>
         
         
@@ -1176,8 +1171,8 @@ your nearly there :-) keep going
             <option><?php echo $position3 ;?></option> 
             <option>rainfallf-year-month.php</option>
             <option>windgustyear.php</option> 
-            <option>temperatureyear.php</option>             
-            <option>wflightning.php</option>      
+            <option>temperatureyear.php</option>           
+            
             </select>
      <div class= "stationvalue"> Position 3 Title</div>
        <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -1309,8 +1304,8 @@ your nearly there :-) keep going
             <option>moonphase.php</option>  
             <option>weather34uvsolar.php</option>            
             <option>solaruvwu.php</option>  
-            <option>eq.php</option>   
-            <option>lightning34.php</option>  
+            <option>eq.php</option>  
+            
                      </select>
                
         
@@ -1350,12 +1345,6 @@ your nearly there :-) keep going
          
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> davisconsoleoutlook.php <span style="color:rgba(7, 114, 125, 1.000)">Davis Hardware Console users only</span> <br></span>
-     
-         
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> wflightning.php <span style="color:rgba(7, 114, 125, 1.000)">Weatherflow users only uses direct weatherflow API not meteobridge data must add station ID below in the weatherflow section </span> <br></span>
-                 
-                 
        
       <br></span></span>
          <strong> <span style="color:rgba(86, 95, 103, 1.000);">options Positions 6 and 12 + last module</span></strong><br>
@@ -1377,17 +1366,16 @@ your nearly there :-) keep going
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> eq.php</span> <orange>display last earthquake from earthquakereport.com</orange>   <br>
         
    <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> forecas3wu.php</span> <orange>display 3 period day/night forecast from Weather Underground</orange>   <br>    
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> forecast3wu.php</span> <orange>display 3 period day/night forecast from Weather Underground</orange>   <br>    
      </span>
      
      
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> forecas3wularge.php</span> <orange>large display of current period day/night forecast from Weather Underground</orange>   <br>    
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> forecast3wularge.php</span> <orange>large display of current period day/night forecast from Weather Underground</orange>   <br>    
      </span>
      
      
-        <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> lightning34.php</span> <orange>Lightning for those using weatherflow direct with meteobridge</orange>   <br>    
+        
      </span>
         
         <br>
@@ -1811,92 +1799,7 @@ Choose the Weather Underground Forecast Language ..</div>
        
           <div class="seperator"></div>
     
-    
-    
-     <span style="color:#F75C46;"><svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M16 14 L16 23 M16 8 L16 10" />
-    <circle cx="16" cy="16" r="14" />
-</svg>
-</svg> </span> <br> 
-
-
-<div class= "stationvalue">Do you have Weatherflow Station</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>
-   
-   <label name="weatherflowoption"></label>
-        <select id="weatherflowoption" name="weatherflowoption" class="choose1" >
-            <option><?php echo $weatherflowoption ;?></option>
-            <option>yes</option>
-            <option>no</option>
-            </select>
-            <br>
-        <strong> Select <span style="color:rgba(7, 114, 125, 1.000);">Yes</span> or <span style="color:rgba(86, 95, 103, 1.000);">No</span></strong><br>
-        
-  <br>
-        <strong> <span style="color:rgba(236, 87, 27, 1.000)">*important</span> only select yes if your weatherflow hardware is not connected directly to meteobridge and want to use weatherflow hardware alongside existing hardware connected to meteobridge..this option uses weatherflow API data for UV,SOLAR and lightning only </span></strong><br>
-
-
-
-     <div class= "stationvalue"> Weather-Flow STATION ID</div> 
-    <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg>
-
-    <input name="wfid" type="text" id="wfid" value="<?php echo $weatherflowID ;?>" class="choose"> 
-    
-    
-    
-    
-    
-    <br> <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M16 14 L16 23 M16 8 L16 10" />
-    <circle cx="16" cy="16" r="14" />
-</svg> <span style="color:#777;">enter your <strong>WeatherFlow </strong> station id example <strong><span style="color:rgba(86, 95, 103, 1.000);"> 1200</strong></span></span>
-    
-    <br>
-        <div class= "stationvalue"> Weather-Flow Lightning module </div> 
-    <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg>
-
-    <input name="wfli" type="text" id="wfli" value="<?php echo $weatherflowlightning ;?>" class="choose"> 
-    
-    
-    
-    
-    
-    <br> <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M16 14 L16 23 M16 8 L16 10" />
-    <circle cx="16" cy="16" r="14" />
-</svg> <span style="color:#777;">(option works when available weatherflow is connected to meteobridge) select yes if you wish to display lightning module </span></span>
-
-<br><br>
-
-<div class= "stationvalue">
-Weatherflow Map Zoom</div>
- <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg>
-    <label name="weatherflowmapzoom"></label>
-        <select id="weatherflowmapzoom" name="weatherflowmapzoom" value="<?php echo $weatherflowmapzoom ;?>" class="choose1" >
-          <option><?php echo $weatherflowmapzoom ;?></option>
-            <option>5</option> 
-            <option>6</option>
-             <option>7</option>
-             <option>8</option>
-             <option>9</option>
-             <option>10</option>
-             <option>11</option>
-            </select>
-
-<br> <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg> <span style="color:#777;"><green>Select Map Zoom level</green> 5-11</span>
-
-    
-<P>
+ 
 
 <div class="seperator"></div>
 <span style="color:#F75C46;"><svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
