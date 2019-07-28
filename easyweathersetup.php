@@ -24,7 +24,6 @@ include('settings1.php');
 IF (ISSET($_POST["Submit"])) {
  
 $string = '<?php 
-$apikey = "'. $_POST["wuapi"]. '";
 $wuapikey = "'. $_POST["wuapikey"]. '";
 $id = "'. $_POST["WUID"]. '";
 $purpleairID = "'. $_POST["purpleair"]. '";
@@ -36,7 +35,6 @@ $TZ = "'. $_POST["TZ"]. '";
 $UTC = "'. $_POST["UTC"]. '";
 $lon = '. $_POST["lon"]. ';
 $lat = '. $_POST["lat"]. ';
-$darkskyunit   = "'. $_POST["darkskyunit"]. '";
 $wuapiunit   = "'. $_POST["wuapiunit"]. '";
 $stationlocation = "'. $_POST["stationlocation"]. '";
 $stationName = "'. $_POST["stationName"]. '";
@@ -45,10 +43,6 @@ $minmag = "'. $_POST["minmag"]. '";
 $unit = "'. $_POST["unit"]. '";
 $metric = '. $_POST["metric"]. ';
 $elevation = "'. $_POST["elevation"]. '";
-$uk = '. $_POST["uk"]. ';
-$usa = '. $_POST["usa"]. ';
-$scandinavia = '. $_POST["scandinavia"]. ';
-$restoftheworld = '. $_POST["restoftheworld"]. ';
 $windunit = "'. $_POST["windunit"]. '";
 $distanceunit = "'. $_POST["distanceunit"]. '";
 $tempunit = "'. $_POST["tempunit"]. '";
@@ -102,7 +96,6 @@ $icao1   = "'. $_POST["icao1"]. '";
 $airport1   = "'. $_POST["airport1"]. '";
 $airport1dist   = "'. $_POST["airport1dist"]. '";
 $defaultlanguage   = "'.$_POST["defaultlanguage"]. '";
-$language    = "'.$_POST['language']. '";
 $password    = "'.$_POST['password']. '";
 $flag   = "'.$_POST["flag"]. '";
 $wulanguage    = "'.$_POST['wulanguage']. '";
@@ -357,40 +350,7 @@ Choose the default Language to display and use..</div>
            <option>wal</option>     
         </select>
         <br><br>
-  <div class= "stationvalue">DARK SKY Forecast Language  full list here <a href="https://darksky.net/dev/docs" title="https://darksky.net/dev/docs" target="_blank"><white>https://darksky.net/dev/docs</white></a></div> 
-    <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>
-
- <label name="language"></label>
-      <select id="language" name="language" class="choose1">
-           <option><?php echo $language ;?></option>
-           <option>en</option>
-           <option>bg</option>
-           <option>bs</option>
-           <option>ca</option> 
-           <option>da</option>            
-           <option>de</option>
-           <option>el</option> 
-           <option>es</option>  
-           <option>fi</option>
-           <option>fr</option> 
-           <option>hu</option>           
-           <option>it</option>   
-           <option>nl</option>         
-           <option>pl</option>
-           <option>sv</option>
-           <option>tr</option> 
-          
-            
-                   
-                  
-            
-        </select> 
-  </div>
-   
+  </p></div>
       
    <p>
    <div class="weatheroptionssidebar">
@@ -853,76 +813,6 @@ check unit(s)
     
     
     <p>
-   <div class="weatheroptionssidebar"><svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg> In this area only select one as true , it converts the charts to display units same as main page
-
-<div class="weatherbottominfo">
-<svg id="i-checkmark" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M2 20 L12 28 30 4" />
-</svg>
-
-only set one as true
-</div>
-
-</div>
-   <p>       
- 
-    
-<div class="weatheroptions">
-       <div class= "weathersectiontitle">
-       
-       <svg id="i-location" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <circle cx="16" cy="11" r="4" />
-    <path d="M24 15 C21 22 16 30 16 30 16 30 11 22 8 15 5 8 10 2 16 2 22 2 27 8 24 15 Z" />
-</svg>
-       Tell us where your are so we can convert the charts. very important  set only one box to true set all others false (important to set each option do not leave blank !!)
-    </div>     <p>
-        <label name="uk"></label>
-        <div class= "stationvalue">Are you in the UK</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>
-        <select id="uk" name="uk" class="choose1">
-            <option <?php if($uk=="false") echo "selected"; ?> >false</option>
-            <option <?php if($uk=="true") echo "selected"; ?> >true</option>           
-        </select>
-        
-        <label name="usa"></label>
-        <div class= "stationvalue">Are you in the USA</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>
-        <select id="usa" name="usa" class="choose1">
-            <option <?php if($usa=="false") echo "selected"; ?> >false</option>
-            <option <?php if($usa=="true") echo "selected"; ?> >true</option>
-        </select>
-        <P>
-        <label name="scandinavia"></label>
-        <div class= "stationvalue">Are you in Scandinavia</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>
-        <select id="scandinavia" name="scandinavia" class="choose1">
-            <option <?php if($scandinavia=="false") echo "selected"; ?> >false</option>
-            <option <?php if($scandinavia=="true") echo "selected"; ?> >true</option>            
-        </select>
-       
-         <label name="restoftheworld"></label>
-        <div class= "stationvalue">Are you not in any of others</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>
-        <select id="restoftheworld" name="restoftheworld" class="choose1">
-            <option <?php if($restoftheworld=="false") echo "selected"; ?> >false</option>
-            <option <?php if($restoftheworld=="true") echo "selected"; ?> >true</option>
-        </select>
-    
-   </div>
    
    
    <p>
@@ -1755,48 +1645,7 @@ Choose the Weather Underground Forecast Language ..</div>
         
   <p>
    
-     <div class="seperator"></div>
     
-    
-    
-    
-        <div class= "stationvalue">
-<img src="img/darksky.svg" width="100" /> DarkSky API Key  for forecast Data *will be removed in Final Release</div>
- <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg>
-    <input name="wuapi" type="text" id="wuapi" value="<?php echo $apikey ;?>" class="chooseapi">
-<br> <span style="color:#777;">enter your <strong>DarkSky</strong> <strong>API key</strong> this is the most common mistake made be careful when cut and paste often an hidden space is either inserted before or after causing the <strong>API key</strong> to fail. </span>
-<P>
-
-    <div class= "stationvalue">
-<img src="img/darksky.svg" width="100" /> DarkSky API UNITS *will be removed in Final Release</div>
- <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg>
-    <label name="darkskyunit"></label>
-        <select id="darkskyunit" name="darkskyunit" value="<?php echo $darkskyunit ;?>" class="choose1" >
-          <option><?php echo $darkskyunit ;?></option>
-            <option>ca</option> 
-            <option>uk2</option>
-             <option>us</option>
-             <option>si</option>
-            </select>
-
-<br> <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg> <span style="color:#777;"><green>CA</green> same as si, windSpeed km/h</span>
-<br> <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg> <span style="color:#777;"><green>UK2</green>  same as si,windSpeed mph</span>
-<br> <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg> <span style="color:#777;"><green>US</green> Imperial units (NON METRIC)</span>
-<br> <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg> <span style="color:#777;"><green>SI</green> units</span>
- <center> <span style="color:rgba(86, 95, 103, 1.000);">*Darksky will be removed in Final Release</a></center>  
-<P>
-
-
-
-       
           <div class="seperator"></div>
     
  

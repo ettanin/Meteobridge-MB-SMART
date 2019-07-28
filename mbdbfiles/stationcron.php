@@ -84,17 +84,3 @@ curl_exec($ch9);
 curl_close($ch9);
 fclose($fp9);}
 ?>
-
-<?php
-if ($position6=="forecast3ds.php" || $position6=='forecast3wu.php' || $position6=='forecast3wularge.php' || $position4 == "advisory.php"){
-// weather34 darksky  curl based
-$url4a = 'https://api.forecast.io/forecast/'.$apikey.'/'.$lat.','.$lon.'?lang='.$language.'&units='.$darkskyunit ;
-$ch4a = curl_init($url4a);
-$filename4a = '../jsondata/darksky.txt';
-$complete_save_loc4a = $filename4a;
-$fp4a = fopen($complete_save_loc4a, 'wb');
-curl_setopt($ch4a, CURLOPT_FILE, $fp4a);
-curl_setopt($ch4a, CURLOPT_HEADER, 0);
-curl_exec($ch4a);
-curl_close($ch4a);
-fclose($fp4a);}?>
