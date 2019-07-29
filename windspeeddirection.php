@@ -69,7 +69,7 @@ else if( $weather["wind_direction_avg"]<=146.25){echo $lang['SE'];}else if( $wea
 else if( $weather["wind_direction_avg"]<=213.75){echo $lang['SSW'];}else if( $weather["wind_direction_avg"]<=236.25){echo $lang['SW'];}else if( $weather["wind_direction_avg"]<=258.75){echo $lang['WSW'];}
 else if( $weather["wind_direction_avg"]<=281.25){echo $lang['West'];}else if( $weather["wind_direction_avg"]<=303.75){echo $lang['WNW'];}else if( $weather["wind_direction_avg"]<=326.25){echo $lang['NW'];}
 else if( $weather["wind_direction_avg"]<=348.75){echo $lang['NWN'];}else if( $weather["wind_direction_avg"]<=360){echo $lang['North'];}"&deg;"?></averwordwindword></div> 
-<?php echo ' <div class=weather34windrun>'.$windrunicon.' &nbsp;<grey><valuetext1>',number_format($weather['wind_speed_avgday'],1)."<weather34windrunspan>" .$weather["wind_units"];?>
+<?php echo ' <div class=weather34windrun>'.$windrunicon.' &nbsp;<grey><valuetext1>',number_format($weather['wind_speed_avg30'],1)."<weather34windrunspan>" .$weather["wind_units"];?>
 <grey></valuetext>
 </weather34windrunspan>
 </div></div><br /><div class=windrun1><?php echo  $lang['Average']." ".$lang['Today']?></div>
