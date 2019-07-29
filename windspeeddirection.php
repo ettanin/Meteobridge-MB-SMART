@@ -72,7 +72,7 @@ else if( $weather["wind_direction_avg"]<=348.75){echo $lang['NWN'];}else if( $we
 <?php echo ' <div class=weather34windrun>'.$windrunicon.' &nbsp;<grey><valuetext1>',number_format($weather['wind_speed_avg30'],1)."<weather34windrunspan>" .$weather["wind_units"];?>
 <grey></valuetext>
 </weather34windrunspan>
-</div></div><br /><div class=windrun1><?php echo  $lang['Average']." ".$lang['Today']?></div>
+</div></div><br /><div class=windrun1>Avg Speed Today</div>
 <?php ///weather34 beaufort
 if ($weather["wind_speed_bft"] >= 12) {
   echo '<div class=weather34beaufort6>' . $beaufort12 . "&nbsp; " . $weather["wind_speed_bft"];
