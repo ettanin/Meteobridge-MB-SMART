@@ -503,42 +503,6 @@ else if($windunit=='kts'&&$weather["wind_units"]=='mph'){mphTokts($weather,"wind
 
 else if($windunit=='kts'&&$weather["wind_units"]=='km/h'){kmhTokts($weather,"wind_speed");kmhTokts($weather,"wind_speed2");kmhTokts($weather,"wind_speed_trend");kmhTokts($weather,"wind_gust_speed");kmhTokts($weather,"wind_gust_speed2");kmhTokts($weather,"wind_gust_speed_trend");kmhTokts($weather,"wind_speed_max");kmhTokts($weather,"wind_gust_speed_max");kmhTokts($weather,"wind_run");kmhTokts($weather,"wind_speed_avg");kmhTokts($weather,"wind_speed_avg15");kmhTokts($weather,"wind_speed_avg30");kmhTokts($weather,"winddmax");kmhTokts($weather,"windamax");kmhTokts($weather,"windydmax");kmhTokts($weather,"windmmax");kmhTokts($weather,"windymax");kmhTokts($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}}$toKnots=1;
 if($weather["wind_units"]=='mph'){$toKnots=0.868976;}else if($weather["wind_units"]=='km/h'){$toKnots=0.539957;}else if($weather["wind_units"]=='m/s'){$toKnots=1.94384;}
-
-
-
-
-// darksky api forecast and current script for HOMEWEATHERSTATION gets data from jsondata/darksky.json Friday 2nd December 2016 //
-//$units = 'auto';  // Read the API docs for full details // default is auto
-date_default_timezone_set($TZ);
-$json = 'jsondata/darksky.txt'; 
-$json = file_get_contents($json); 
-$response = json_decode($json, true);       
-if ($response != null) {
-  //darksky api Current SKY Conditions
-  $darkskycurTime = $response['currently']['time'];
-  $darkskycurSummary = $response['currently']['summary'];
-  $darkskycurIcon = $response['currently']['icon'];
-  $darkskycurTemp = round($response['currently']['temperature']);
-  $darkskycurCover = $response['currently']['cloudCover']*100;   
-  //darksky api Hourly Forecast
-  $darkskyhourlySummary = $response['hourly']['summary'];
-  $darkskyhourlyIcon = $response['hourly']['icon'];
-  $darkskyhourlyUV = $response['hourly']['uvIndex'];
-  $darkskyhourlyCond= array();
-    foreach ($response['hourly']['data'] as $td) {
-      $darkskyhourlyCond[] = $td;
-    }
-  //darksky api Daily Forecast
-  $darkskydaySummary = $response['daily']['summary'];
-  $darkskydayIcon = $response['daily']['icon'];
-  $darkskydayCond= array();
-    foreach ($response['daily']['data'] as $d) {
-      $darkskydayCond[] = $d;
-    }}
-//end darksky api and convert winspeed below
-
-
-
 $o='Designed by weather34.com';
 ?>
 <?php 
@@ -579,13 +543,6 @@ foreach ($meteor_events as $meteor_check) {if ($meteor_check["event_start"]<=$me
 //end meteor
 $uptime=$weather["uptime"];function convert_uptime($uptime) {$dt1 = new DateTime("@0");$dt2 = new DateTime("@$uptime");  return $dt1->diff($dt2)->format('%a day(s) %h hrs %i min');}
 //lunar and solar eclipse /meteor shpwers advisory 2018-2019-2020
-$eclipse_default=" <noalert>No Current Weather <spanyellow><ored>Alerts ".$alert."</ored></spanyellow></noalert>";
-//2 jul solar 2019
-$eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 7, 2, 2019),"event_title"=>"<div style ='margin-top:5px;'>".$solareclipsesvg." <alert>Total Solar <spanyellow>Eclipse</spanyellow></alert>  </div>
-","event_end"=>mktime(23, 59, 59, 7, 2, 2019),);
-//16/17 jul solar 2019
-$eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 7, 16, 2019),"event_title"=>"<div style ='margin-top:5px;'>".$solareclipsesvg."  <alert>Partial Lunar <spanyellow>Eclipse</spanyellow></alert>  </div>
-","event_end"=>mktime(23, 59, 59, 7, 17, 2019),);
 //persieds 2019
 $eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 8, 12 , 2019),"event_title"=>"<div style ='margin-top:5px;'>".$meteorsvg." <alert>Perseids <spanyellow>Meteor Shower</spanyellow></alert>  </div>
 ","event_end"=>mktime(23, 59, 59, 8, 13, 2019),);
