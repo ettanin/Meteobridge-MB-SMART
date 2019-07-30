@@ -1,5 +1,5 @@
 # This GITHUB repository is for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
-(Beta Testing Ended  1st Master Version Released July 27th 2019)
+(Beta Testing Ended  2nd Master Version Released July 30th 2019)
 
 # Live Demo
 https://singaporeweather.info 
