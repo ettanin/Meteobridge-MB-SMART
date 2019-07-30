@@ -12,7 +12,8 @@ $weather34wuurl=file_get_contents($json);
 $parsed_weather34wujson = json_decode($weather34wuurl,false);
 {    if ($parsed_weather34wujson->{'daypart'}[0]->{'iconCode'}[0]==null){
 	 $wuskydayIcon=$parsed_weather34wujson->{'daypart'}[0]->{'iconCode'}[1];$wuskydayTime = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[1];	
-	 $wuskydayTempHigh = $parsed_weather34wujson->{'daypart'}[0]->{'temperature'}[1];$wuskydayTempLow = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureWindChill'}[1];	 
+	 $wuskydayTempHigh = $parsed_weather34wujson->{'daypart'}[0]->{'temperature'}[1];
+	 $wuskydayTempLow = $parsed_weather34wujson->{'temperatureMin'}[1];	 
 	 $wuskydayWindGust = $parsed_weather34wujson->{'daypart'}[0]->{'windSpeed'}[1];$wuskydayWinddir = $parsed_weather34wujson->{'daypart'}[0]->{'windDirection'}[1];
 	 $wuskydayWinddircardinal = $parsed_weather34wujson->{'daypart'}[0]->{'windDirectionCardinal'}[1];$wuskydayacumm = $parsed_weather34wujson->{'daypart'}[0]->{'snowRange'}[1];
 	 $wuskydayPrecipType = $parsed_weather34wujson->{'daypart'}[0]->{'precipType'}[1];$wuskydayprecipIntensity = $parsed_weather34wujson->{'daypart'}[0]->{'qpf'}[1];
@@ -27,7 +28,8 @@ $parsed_weather34wujson = json_decode($weather34wuurl,false);
 	 }	 
 	 else {
 	 $wuskydayIcon=$parsed_weather34wujson->{'daypart'}[0]->{'iconCode'}[0];$wuskydayTime = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[0];	
-	 $wuskydayTempHigh = $parsed_weather34wujson->{'daypart'}[0]->{'temperature'}[0];$wuskydayTempLow = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureWindChill'}[0];	 
+	 $wuskydayTempHigh = $parsed_weather34wujson->{'daypart'}[0]->{'temperature'}[0];
+	 $wuskydayTempLow = $parsed_weather34wujson->{'temperatureMin'}[0];	 
 	 $wuskydayWindGust = $parsed_weather34wujson->{'daypart'}[0]->{'windSpeed'}[0];$wuskydayWinddir = $parsed_weather34wujson->{'daypart'}[0]->{'windDirection'}[0];
 	 $wuskydayWinddircardinal = $parsed_weather34wujson->{'daypart'}[0]->{'windDirectionCardinal'}[0];$wuskydayacumm = $parsed_weather34wujson->{'daypart'}[0]->{'snowRange'}[0];
 	 $wuskydayPrecipType = $parsed_weather34wujson->{'daypart'}[0]->{'precipType'}[0];$wuskydayprecipIntensity = $parsed_weather34wujson->{'daypart'}[0]->{'qpf'}[0];
@@ -118,6 +120,7 @@ else if ( $wuskythunder==2 ){$wuskythunder=$lightningalert8.' &nbsp;Thunder Stor
 //wu convert temps-rain-wind
 //metric to F
 if ($tempunit=='F' && $wuapiunit=='m' ){$wuskydayTempHigh=($wuskydayTempHigh*9/5)+32;}
+if ($tempunit=='F' && $wuapiunit=='m' ){$wuskydayTempLow=($wuskydayTempLow*9/5)+32;}
 if ($tempunit=='F' && $wuapiunit=='m' ){$wuskyheatindex=($wuskyheatindex*9/5)+32;}
 if ($tempunit=='F' && $wuapiunit=='m' ){$wuskywindchill=($wuskywindchill*9/5)+32;}
 if ($tempunit=='F' && $wuapiunit=='m' ){$wuskydayTempHigh1=($wuskydayTempHigh1*9/5)+32;}
@@ -128,6 +131,7 @@ if ($tempunit=='F' && $wuapiunit=='m' ){$wuskyheatindex2=($wuskyheatindex2*9/5)+
 if ($tempunit=='F' && $wuapiunit=='m' ){$wuskywindchill2=($wuskywindchill2*9/5)+32;}
 // metric to F UK
 if ($tempunit=='F' && $wuapiunit=='h' ){$wuskydayTempHigh=($wuskydayTempHigh*9/5)+32;}
+if ($tempunit=='F' && $wuapiunit=='h' ){$wuskydayTempLow=($wuskydayTempLow*9/5)+32;}
 if ($tempunit=='F' && $wuapiunit=='h' ){$wuskyheatindex=($wuskyheatindex*9/5)+32;}
 if ($tempunit=='F' && $wuapiunit=='h' ){$wuskywindchill=($wuskywindchill*9/5)+32;}
 if ($tempunit=='F' && $wuapiunit=='h' ){$wuskydayTempHigh1=($wuskydayTempHigh1*9/5)+32;}
@@ -138,6 +142,7 @@ if ($tempunit=='F' && $wuapiunit=='h' ){$wuskyheatindex2=($wuskyheatindex2*9/5)+
 if ($tempunit=='F' && $wuapiunit=='h' ){$wuskywindchill2=($wuskywindchill2*9/5)+32;}
 // ms non metric to c Scandinavia 
 if ($tempunit=='F' && $wuapiunit=='s'){$wuskydayTempHigh=($wuskydayTempHigh*30);}
+if ($tempunit=='F' && $wuapiunit=='s'){$wuskydayTempLow=($wuskydayTempLow*30);}
 if ($tempunit=='F' && $wuapiunit=='s'){$wuskyheatindex=($wuskyheatindex*30);}
 if ($tempunit=='F' && $wuapiunit=='s'){$wuskywindchill=($wuskywindchill*30);}
 if ($tempunit=='F' && $wuapiunit=='s'){$wuskydayTempHigh1=($wuskydayTempHigh1*30);}
@@ -148,6 +153,7 @@ if ($tempunit=='F' && $wuapiunit=='s'){$wuskyheatindex2=($wuskyheatindex2*30);}
 if ($tempunit=='F' && $wuapiunit=='s'){$wuskywindchill2=($wuskywindchill2*30);}
 // non metric to c US
 if ($tempunit=='C' && $wuapiunit=='e' ){$wuskydayTempHigh=($wuskydayTempHigh-32)/1.8;}
+if ($tempunit=='C' && $wuapiunit=='e' ){$wuskydayTempLow=($wuskydayTempLow-32)/1.8;}
 if ($tempunit=='C' && $wuapiunit=='e' ){$wuskyheatindex=($wuskyheatindex-32)/1.8;}
 if ($tempunit=='C' && $wuapiunit=='e' ){$wuskywindchill=($wuskywindchill-32)/1.8;}
 if ($tempunit=='C' && $wuapiunit=='e' ){$wuskydayTempHigh1=($wuskydayTempHigh1-32)/1.8;}
@@ -181,21 +187,29 @@ if ($rainunit=='in' && $wuapiunit=='m' ){$wuskydayprecipIntensity=$wuskydaypreci
 echo '<div class="wulargeforecastinghome">';echo '<div class="wulargeweekdayhome">'.$wuskydayTime.'s Forecast</div><div class=wulargehomeicons>';
 if ($wuskydaynight=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon.'.svg" width="50" height="40" alt="'.$wuskydesc.'" title="'.$wuskydesc.'"></img>';}
 if ($wuskydaynight=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon.'.svg" width="50" height="40" alt="'.$wuskydesc.'" title="'.$wuskydesc.'"></img>';}
+
+
+
 echo '</div><wulargetempdesc><value>'.$wuskydesc.'<value></wulargetempdesc><br>';
+
 //temp non metric wu
-if($tempunit=='F' && $wuskydayTempHigh<44.6){echo '<wulargetemphihome><bluewu>'.number_format($wuskydayTempHigh,0).'°<wuunits>F</wuunits></bluewu></wulargetemphihome>';}
-else if($tempunit=='F' && $wuskydayTempHigh>104){echo '<wulargetemphihome><purplewu>'.number_format($wuskydayTempHigh,0).'°<wuunits>F</wuunits></purplewu></wulargetemphihome>';}
-else if($tempunit=='F' && $wuskydayTempHigh>80.6){echo '<wulargetemphihome><redwu>'.number_format($wuskydayTempHigh,0).'°<wuunits>F</wuunits></redwu></wulargetemphihome>';}
-else if($tempunit=='F' && $wuskydayTempHigh>64.4){echo '<wulargetemphihome><orangewu>'.number_format($wuskydayTempHigh,0).'°<wuunits>F</wuunits></orangewu></wulargetemphihome>';}
-else if($tempunit=='F' && $wuskydayTempHigh>55){echo '<wulargetemphihome><yellowwu>'.number_format($wuskydayTempHigh,0).'°<wuunits>F</wuunits></yellowwu></wulargetemphihome>';}
-else if($tempunit=='F' && $wuskydayTempHigh>=44.6){echo '<wulargetemphihome><greenwu>'.number_format($wuskydayTempHigh,0).'°<wuunits>F</wuunits></greenwu></wulargetemphihome>';}
+if($tempunit=='F' && $wuskydayTempHigh<44.6){echo '<a class="weather34tipforecast" data-weather34tipforecast="Low '.$wuskydayTempLow.'°F" ><wulargetemphihome><bluewu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></redwu></wulargetemphihome>';}
+else if($tempunit=='F' && $wuskydayTempHigh>104){echo '<a class="weather34tipforecast" data-weather34tipforecast="Low '.$wuskydayTempLow.'°F" ><wulargetemphihome><purplewu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></redwu></wulargetemphihome>';}
+else if($tempunit=='F' && $wuskydayTempHigh>80.6){echo '<a class="weather34tipforecast" data-weather34tipforecast="Low '.$wuskydayTempLow.'°F" ><wulargetemphihome><redwu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></redwu></wulargetemphihome>';}
+else if($tempunit=='F' && $wuskydayTempHigh>64.4){echo '<a class="weather34tipforecast" data-weather34tipforecast="Low '.$wuskydayTempLow.'°F" ><wulargetemphihome><orangewu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></redwu></wulargetemphihome>';}
+else if($tempunit=='F' && $wuskydayTempHigh>55){echo '<a class="weather34tipforecast" data-weather34tipforecast="Low '.$wuskydayTempLow.'°F" ><wulargetemphihome><yellowwu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></redwu></wulargetemphihome>';}
+else if($tempunit=='F' && $wuskydayTempHigh>=44.6){echo '<a class="weather34tipforecast" data-weather34tipforecast="Low '.$wuskydayTempLow.'°F" ><wulargetemphihome><greenwwu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></redwu></wulargetemphihome>';}
 //temp metric wu
-else if($wuskydayTempHigh<7){echo '<wulargetemphihome><bluewu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></bluewu></wulargetemphihome>';}
-else if($wuskydayTempHigh>40){echo '<wulargetemphihome><purplewu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></purplewu></wulargetemphihome>';}
-else if($wuskydayTempHigh>27){echo '<wulargetemphihome><redwu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></redwu></wulargetemphihome>';}
-else if($wuskydayTempHigh>18){echo '<wulargetemphihome><orangewu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></orangewu></wulargetemphihome>';}
-else if($wuskydayTempHigh>12.7){echo '<wulargetemphihome><yellowwu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></yellowwu></wulargetemphihome>';}
-else if($wuskydayTempHigh>=7){echo '<wulargetemphihome><greenwu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></greenwu></wulargetemphihome>';}
+else if($wuskydayTempHigh<7){echo '<a class="weather34tipforecast" data-weather34tipforecast="Low '.$wuskydayTempLow.'°C" ><wulargetemphihome><bluewu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></redwu></wulargetemphihome>';}
+else if($wuskydayTempHigh>40){echo '<a class="weather34tipforecast" data-weather34tipforecast="Low '.$wuskydayTempLow.'°C" ><wulargetemphihome><purplewu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></redwu></wulargetemphihome>';}
+else if($wuskydayTempHigh>27){echo '<a class="weather34tipforecast" data-weather34tipforecast="Low '.$wuskydayTempLow.'°C" ><wulargetemphihome><redwu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></redwu></wulargetemphihome>';}
+else if($wuskydayTempHigh>18){echo '<a class="weather34tipforecast" data-weather34tipforecast="Low '.$wuskydayTempLow.'°C" ><wulargetemphihome><orangewu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></redwu></wulargetemphihome>';}
+else if($wuskydayTempHigh>12.7){echo '<a class="weather34tipforecast" data-weather34tipforecast="Low '.$wuskydayTempLow.'°C" ><wulargetemphihome><yellowwu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></redwu></wulargetemphihome>';}
+else if($wuskydayTempHigh>=7){echo '<a class="weather34tipforecast" data-weather34tipforecast="Low '.$wuskydayTempLow.'°C" ><wulargetemphihome><greenwu>'.number_format($wuskydayTempHigh,0).'°<wuunits>C</wuunits></redwu></wulargetemphihome>';}
+echo '</a><br>';
+
+
+
 //wind wu
 //gusts shown if wind greater than 25kmh
 if($tempunit=='F' && $wuskydayWindGust>=15){echo "<div class='wulargewindspeedicon'> Gusts <blueu>";echo $wuskydayWinddircardinal; 
