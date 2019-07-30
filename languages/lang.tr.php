@@ -109,7 +109,7 @@ $lang['ViolentStormConditions'] = 'şiddetli Fırtına';
 $lang['HurricaneConditions'] = 'Kasırga';
 
 
-$lang['Avg'] = '<span2> Avg: </span2>';
+$lang['Avg'] = 'Avg';
 
 //wind direction compass
 $lang['Northdir'] = '<span>Kuzey<br></span>';

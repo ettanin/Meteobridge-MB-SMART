@@ -111,7 +111,7 @@ $lang['StormConditions'] = 'Stormy Conditions';
 $lang['ViolentStormConditions'] = 'Violent Storm Conditions';
 $lang['HurricaneConditions'] = 'Hurricane Conditions';
 
-$lang['Avg'] = '<span2> Avg: </span2>';
+$lang['Avg'] = 'Avg';
 
 //wind direction compass
 $lang['Northdir'] = 'Due <span>North<br></span>';
@@ -312,6 +312,7 @@ $lang['Station'] = 'Station';
 $lang['Detailed Forecast'] = 'Detailed Forecast';
 $lang['Summary Outlook'] = 'Summary';
 $lang['Almanac'] = 'Almanac';
+
 
 
 //Air Quality

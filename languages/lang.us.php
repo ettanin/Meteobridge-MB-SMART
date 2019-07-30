@@ -112,7 +112,7 @@ $lang['StormConditions'] = 'Stormy Conditions';
 $lang['ViolentStormConditions'] = 'Violent Storm Conditions';
 $lang['HurricaneConditions'] = 'Hurricane Conditions';
 
-$lang['Avg'] = '<span2> Avg: </span2>';
+$lang['Avg'] = 'Avg';
 
 //wind direction compass
 $lang['Northdir'] = 'Due <span>North<br></span>';
@@ -308,7 +308,6 @@ $lang['SunPosition'] = 'Sun Position';
 $lang['Conditions'] = 'Conditions';
 $lang['Cloudbase Height'] = 'Cloudbase Height';
 $lang['Station'] = 'Station';
-
 $lang['Detailed Forecast'] = 'Detailed Forecast';
 $lang['Summary Outlook'] = 'Summary';
 $lang['Almanac'] = 'Almanac';

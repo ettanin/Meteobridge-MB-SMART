@@ -114,7 +114,7 @@ $lang['StormConditions']                      = 'Stormachtige Condities';
 $lang['ViolentStormConditions']               = 'Orkaanachtig Condities';
 $lang['HurricaneConditions']                  = 'Orkaan Condities';
 
-$lang['Avg']                                  = '<span2> Gem: </span2>';
+$lang['Avg']                                  = 'Gem';
 
 //Wind direction compass
 

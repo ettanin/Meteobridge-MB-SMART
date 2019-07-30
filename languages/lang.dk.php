@@ -109,7 +109,7 @@ $lang['ViolentStormConditions'] = 'Stærk storm';
 $lang['HurricaneConditions'] = 'Orkan';
 
 
-$lang['Avg'] = '<span2> Gns: </span2>';
+$lang['Avg'] = 'Gns';
 
 //wind direction compass
 $lang['Northdir'] = 'Stik <span>Nord<br></span>';

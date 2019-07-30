@@ -111,7 +111,7 @@ $lang['HurricaneConditions'] = 'Temporal huracanado';
 
 
 
-$lang['Avg'] = '<span2> Avg: </span2>';
+$lang['Avg'] = 'Avg';
 
 //wind direction compass
 $lang['Northdir'] = 'Del <span>Norte<br></span>';

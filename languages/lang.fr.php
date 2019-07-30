@@ -119,7 +119,7 @@ $lang['ViolentStormConditions'] = 'Conditions de violente tempête';
 $lang['HurricaneConditions'] = 'Conditions pour un ouragan';
 
 
-$lang['Avg'] = 'Moyenne';
+$lang['Avg'] = 'Avg';
 
 //wind direction compass
 $lang['Northdir'] = 'Dir <span>Nord<br></span>';
