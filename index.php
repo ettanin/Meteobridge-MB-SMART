@@ -18,7 +18,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 <meta name="title" content="<?php echo $stationlocation;?> Home Weather Station">
 <meta name="description" content="Home weather station providing current weather conditions for <?php echo $stationlocation;?>">
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:card" content="img/weather34_template-min.png">
 <meta property="twitter:url" content="">
 <meta property="twitter:title" content="<?php echo $stationlocation;?> Home Weather Station">
 <meta property="twitter:description" content="Home weather station providing current weather conditions for <?php echo $stationlocation;?>">
@@ -41,7 +41,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 <meta name="theme-color" content="#ffffff">
 <link rel="preload" href="css/fonts/clock3-webfont.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="css/fonts/verbatim-regular.woff" as="font" type="font/woff" crossorigin>
-<link href="css/weather34dashboard.<?php echo $theme?>.css?version=<?php echo filemtime('css/weather34dashboard.'.$theme.'.css')?>" rel="stylesheet prefetch">
+<link rel="stylesheet" href="css/weather34dashboard.<?php echo $theme?>.css?version=<?php echo filemtime('css/weather34dashboard.'.$theme.'.css')?>" media="print" onload="this.media='all'">
 </head>
 <!-- Weather34 top moudles begin -->
 <div class="maincontainer">
