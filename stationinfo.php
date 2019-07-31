@@ -101,7 +101,7 @@ include('settings.php');$url = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://
                             </a>
                         </li>
                         <li>
-                            <a href="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" alt="weather34 Meteobridge MB-SMART Download" title="weather34 Meteobridge MB-SMART Download" target="_blank">
+                            <a href="https://github.com/weather34/Meteobridge-MB-SMART" alt="weather34 Meteobridge MB-SMART Download" title="weather34 Meteobridge MB-SMART Download" target="_blank">
                                 <div class="collection">
                                     <div class="collection:icon">
                                         
