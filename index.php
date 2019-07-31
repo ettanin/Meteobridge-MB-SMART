@@ -136,11 +136,11 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   &nbsp; <a class="weather34tiplink" data-weather34tiplink="Moon Phase Data" href="mooninfo.php" data-lity>'. $chartinfo. ' Moon Info </a></span>';}
 if ($position12=='airqualitymodule.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Air Quality Data" href="purpleair.php" data-lity>'. $chartinfo. " Air Quality | Cloudbase </a></span>";}
 if ($position12=='airqualityluftdaten.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Air Quality Data" href="luftdaten.php" data-lity>'. $chartinfo. " Luftdaten Air Quality | Cloudbase </a></span>";}
-if ($position12=='weather34uvsolar.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="UV Almanac" href="uvalmanac.php" data-lity>&nbsp;'. $chartinfo. " UV ".$lang['Almanac']." </a></span>";}
-if ($position12=='weather34uvsolar.php') {echo '&nbsp; <a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar ".$lang['Almanac']." </a></span>";}
-if ($position12=='solaruvwu.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="UV Index Guide" href="uvindexwu.php" data-lity>'. $chartinfo. " UV Guide </a></span>";}
+if ($position12=='weather34uvsolar.php') {echo ' <a class="weather34tiplink" data-weather34tiplink="UV Almanac" href="uvalmanac.php" data-lity>'. $chartinfo. " UV ".$lang['Almanac']." </a></span>";}
+if ($position12=='weather34uvsolar.php') {echo '&nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar ".$lang['Almanac']." </a></span>";}
+if ($position12=='solaruvwu.php') {echo '<a class="weather34tiplink" data-weather34tiplink="UV Index Guide" href="uvindexwu.php" data-lity>'. $chartinfo. " UV Guide </a></span>";}
 if ($position12=='solaruvwu.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar ".$lang['Almanac']." </a></span>";}
-if ($position12=='solaruvwu.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Chart" href="mbcharts/todaysolar.php" data-lity>&nbsp;'. $menucharticonpage. " Solar chart </a></span>";}
+if ($position12=='solaruvwu.php') {echo '&nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Chart" href="mbcharts/todaysolar.php" data-lity>'. $menucharticonpage. " Solar chart </a></span>";}
 if ($position12=='eq.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Recent World Wide Earthquakes" href="eqlist.php" data-lity>'. $chartinfo. " Worldwide Earthquakes </a></span>";}?>	
 	</div> 
  <div id=solar></div></weather34module> 
