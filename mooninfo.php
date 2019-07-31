@@ -70,7 +70,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 <?php echo $info;?> Current Moon Phase<br><br>  
  
 <div id="weather34moonphases" class="moonphasesvg"></div>
-<svg id="weather34 simple moonphase"><circle cx="50" cy="50" r="49.5" fill="rgba(86, 95, 103, .4)"/><path id="weather34shape" fill="rgba(230, 232, 239, .5)"/></svg>
+<svg id="weather34 simple moonphase"><circle cx="50" cy="50" r="49.5" fill="rgba(86, 95, 103, 1)"/><path id="weather34shape" fill="rgba(230, 232, 239, .3)"/></svg>
 <script> //simple moonphase for weather34
 weather34Moon();function weather34Moon() {var day = Date.now() / 86400000;var referenceweather34Moon = Date.UTC(1980, 0, 17, 2, 17, 0, 0);
 var refweather34Day = referenceweather34Moon / 86400000;var phase = (day - refweather34Day) % 29.53058868;var s=String;

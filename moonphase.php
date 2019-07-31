@@ -140,7 +140,7 @@ foreach ($meteor_events as $meteor_check) {
 <div class="weather34moonmodulepos">
 <div id="weather34moonphases"></div>
 <div class="weather34moonmodule">
-<svg id="weather34 simple moonphase"><circle cx="50" cy="50" r="49.5" fill="rgba(86, 95, 103, 0.8)"/><path id="weather34shape" fill="currentcolor"/></svg></div>
+<svg id="weather34 simple moonphase"><circle cx="50" cy="50" r="49.5" fill="rgba(86, 95, 103, 1)"/><path id="weather34shape" fill="rgba(230, 232, 239, .3)"/></svg></div>
 <script> //simple moonphase for weather34
 weather34Moon();function weather34Moon() {var day = Date.now() / 86400000;var referenceweather34Moon = Date.UTC(1980, 0, 17, 2, 17, 0, 0);
 var refweather34Day = referenceweather34Moon / 86400000;var phase = (day - refweather34Day) % 29.53058868;var s=String;
