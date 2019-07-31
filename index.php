@@ -1,7 +1,4 @@
 <?php header('Content-type: text/html; charset=utf-8');error_reporting(0); 
-
-
-
 	####################################################################################################
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
@@ -10,7 +7,7 @@
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
-//original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
+//original weather34 MB-SMART script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 include_once('livedata.php');include_once('common.php');include_once('settings1.php'); date_default_timezone_set($TZ);?>
  <!DOCTYPE html><html><head>
 <!-- Primary Meta Tags -->
@@ -41,7 +38,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 <meta name="theme-color" content="#ffffff">
 <link rel="preload" href="css/fonts/clock3-webfont.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="css/fonts/verbatim-regular.woff" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="css/weather34dashboard.<?php echo $theme?>.css?version=<?php echo filemtime('css/weather34dashboard.'.$theme.'.css')?>" media="print" onload="this.media='all'">
+<link href="css/weather34dashboard.<?php echo $theme?>.css?version=<?php echo filemtime('css/weather34dashboard.'.$theme.'.css')?>" rel="stylesheet prefetch">
 </head>
 <!-- Weather34 top moudles begin -->
 <div class="maincontainer">
