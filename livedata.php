@@ -151,14 +151,6 @@ if (is_numeric($meteobridgeapi[186]) && $meteobridgeapi[186] != '--') {
 }
 
 	
-	// weatherflow lightning
-	$weather["lightning"]          = $meteobridgeapi[76];
-	$weather["lightningkm"]        = $meteobridgeapi[75];
-	$weather["lightningmax"]       = $meteobridgeapi[77];
-	$weather["lightningmaxdist"]   = $meteobridgeapi[75];
-	$weather["lightningtimeago"]   = $meteobridgeapi[76];
-	$weather["lightningmonth"]     = $meteobridgeapi[78];
-	$weather["lightningyear"]      = $meteobridgeapi[79];
 	
 	$originalDate = $meteobridgeapi[83];
     $tempydmaxtime = date("H:i", strtotime($originalDate));
@@ -546,9 +538,6 @@ $uptime=$weather["uptime"];function convert_uptime($uptime) {$dt1 = new DateTime
 //persieds 2019
 $eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 8, 12 , 2019),"event_title"=>"<div style ='margin-top:5px;'>".$meteorsvg." <alert>Perseids <spanyellow>Meteor Shower</spanyellow></alert>  </div>
 ","event_end"=>mktime(23, 59, 59, 8, 13, 2019),);
-//leonids 2019
-$eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 11, 17 , 2019),"event_title"=>"<div style ='margin-top:5px;'>".$meteorsvg." <alert>Leonids <spanyellow>Meteor Shower</spanyellow></alert>  </div>
-","event_end"=>mktime(23, 59, 59, 11, 18, 2018),);
 //geminids 2019
 $eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 12, 13 , 2019),"event_title"=>"<div style ='margin-top:5px;'>".$meteorsvg." <alert>Geminids <spanyellow>Meteor Shower</spanyellow></alert>  </div>
 ","event_end"=>mktime(23, 59, 59, 12, 14, 2019),);
