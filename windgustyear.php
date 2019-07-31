@@ -33,7 +33,7 @@ if ($weather["wind_units"]=='km/h' && $weather["windmmax"]>60){echo "<maxtempred
  else if ($weather["wind_units"]=='m/s' && $weather["windmmax"]>-50){ echo "<maxtempblue>", $weather["windmmax"]."</maxtempblue><wunit>".$weather["wind_units"] ; }
 
  ;?></div></wunit>
-<div class="wmonthmax"><?php echo $weather["windmmaxtime2"]?></div>
+<div class="wmonthmax"> <?php echo $weather["windmmaxtime2"]?></div>
 <div class="wmonthconv"><?php 
 if ($weather["wind_units"] =='mph'){ echo number_format($weather["windmmax"]*1.60934,1)." km/h";}
 else if ($weather["wind_units"] =='km/h'){echo number_format($weather["windmmax"]*0.621371,1)." mph";}
