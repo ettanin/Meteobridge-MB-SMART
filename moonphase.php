@@ -134,7 +134,7 @@ foreach ($meteor_events as $meteor_check) {
 <div class="moduleupdatetime"><span><?php if(file_exists($livedata2)&&time()- filemtime($livedata2)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></span></div>
 <div class="moonphasemoduleposition">
 <div class="moonrise1">
-<svg id="weather34 moon rise" viewBox="0 0 32 32" width="6" height="6" fill="none" stroke="#ff9350" stroke-linecap="round" stroke-linejoin="round" stroke-width="10%">    <path d="M30 20 L16 8 2 20" /></svg> <?php echo $lang['Moon'];?> <br /><blueu><?php  echo $weather['moonrise'];?>
+<svg id="weather34 moon rise" viewBox="0 0 32 32" width="6" height="6" fill="none" stroke="#ff9350" stroke-linecap="round" stroke-linejoin="round" stroke-width="10%">    <path d="M30 20 L16 8 2 20" /></svg> <?php echo $lang['Moonrise'];?> <br /><blueu><?php  echo $weather['moonrise'];?>
 
  
 <div class="weather34moonmodulepos">
@@ -182,7 +182,7 @@ echo "$nextnewmoon";
 <div class="moonset1">
 <svg id="weather34 moon set" viewBox="0 0 32 32" width="6" height="6" fill="none" stroke="#f26c4f" stroke-linecap="round" stroke-linejoin="round" stroke-width="10%">
     <path d="M30 12 L16 24 2 12" /></svg>
-<?php echo $lang['Moon']?><div class="nextnewmoon">
+<?php echo $lang['Moonset']?><div class="nextnewmoon">
 <?php echo  $weather['moonset'];?></span> 
 
 </div></div>
