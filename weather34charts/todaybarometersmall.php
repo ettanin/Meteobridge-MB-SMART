@@ -37,7 +37,7 @@
 		
 	';
 	$weatherfile =date('Y')."/".date('jMY');?>
-	?>
+	
     <br>	
 	<script type="text/javascript">
 	// today barometer

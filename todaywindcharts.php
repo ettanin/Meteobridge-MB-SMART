@@ -1,15 +1,4 @@
-<?php  
-
-	####################################################################################################
-	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
-	# https://weather34.com/homeweatherstation/index.html 											   # 
-	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
-	# 	                                                                                               #
-	#   https://www.weather34.com 	                                                                   #
-	####################################################################################################
-
-
+<?php 
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 include('livedata.php');
  ?>
@@ -78,25 +67,34 @@ metricsblue{color:#44a6b5;font-family:"weathertext2",Helvetica, Arial, sans-seri
 margin-top:-34px;margin-left:92px;padding-left:3px;line-height:11px;font-size:10px}
 
 .actualt{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
-padding:5px;font-family:Arial, Helvetica, sans-serif;width:200px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
+padding:5px;font-family:Arial, Helvetica, sans-serif;width:300px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
+.actualt temp{background:rgba(208, 95, 45, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-right:5px}
+.actualt feel{background:rgba(211, 93, 78, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
+.actualt dewpoint{background:rgba(6, 162, 177, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff}
+.actualt wetbulb{background:rgba(241, 107, 79, .8);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
 .actual{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:95%;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
 
-
 </style>
-<div class="weather34darkbrowser" url="Windspeed Charts"></div>
+<div class="weather34darkbrowser" url="Windspeed Charts <?php echo $weather["wind_units"]?>"></div>
   
  <main class="grid1">
   <articlegraph> 
-  <div class=actualt>Today <span style="color:#d35d4e">Wind Speed <?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></span> | <blue>Average <smalluvunit><?php echo "<smalluvunit>",$weather["wind_units"]?></smalluvunit></blue></div>  
+  <div class=actualt>Today 
+  <temp>Wind <?php echo "Max ",$weather["wind_speed_max"].$weather["wind_units"]?> </temp> 
+  <dewpoint>Wind <?php echo "Average ",$weather['wind_speed_avg30'].$weather["wind_units"]?> </dewpoint></div>  
   <iframe  src="weather34charts/todaywindspeedsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   
   <articlegraph> 
-  <div class=actualt>Today Wind Direction <blue><?php echo "<smalluvunit>Degrees";?></smalluvunit></span> </blue></div>  
+  <div class=actualt>Today 
+  <dewpoint><?php echo "Wind Direction &deg;";?> </dewpoint> 
+  
+  
+  </smalluvunit></span> </blue></div>  
   <iframe  src="weather34charts/todaywinddirectionsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
