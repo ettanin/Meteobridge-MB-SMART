@@ -83,7 +83,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
  <main class="grid1">
   <articlegraph> 
   <div class=actualt>Today 
-  <temp>Wind <?php echo "Max ",$weather["wind_speed_max"].$weather["wind_units"]?> </temp> 
+  <temp>Wind <?php echo "Max ",$weather["winddmax"].$weather["wind_units"]?> </temp> 
   <dewpoint>Wind <?php echo "Average ",$weather['wind_speed_avg30'].$weather["wind_units"]?> </dewpoint></div>  
   <iframe  src="weather34charts/todaywindspeedsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
