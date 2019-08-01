@@ -1,4 +1,12 @@
 <?php 
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 include('livedata.php');
  ?>
@@ -56,7 +64,7 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
  blue{color:#01a4b4}orange{color:#009bb4}orange1{position:relative;color:#009bb4;margin:0 auto;text-align:center;margin-left:5%;font-size:1.1rem}green{color:#aaa}red{color:#f37867}red6{color:#d65b4a}value{color:#fff}yellow{color:#CC0}purple{color:#916392}
 .temperaturecontainer1{position:relative;left:10px;margin-top:0px}
 .temperaturecontainer2{position:relative;left:10px;margin-top:0px}
-smalluvunit{font-size:.7rem;font-family:Arial,Helvetica,system;}
+smalluvunit{font-size:.6rem;font-family:Arial,Helvetica,system;}
 .w34convertrain{position:relative;font-size:.5em;top:10px;color:#c0c0c0;margin-left:5px}
 .lotemp{color:#aaa;font-size:0.65rem;}.hitempy{position:relative;background:rgba(61, 64, 66, 0.5);color:#aaa;font-size:12px;width:90px;padding:1px;-webit-border-radius:2px;border-radius:2px;
 margin-top:-20px;margin-left:92px;padding-left:3px;line-height:11px;font-size:10px}
@@ -76,8 +84,8 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   <articlegraph> 
   <div class=actualt>Today <blue>Barometer</blue>
   
-  <temp><?php echo "Max ",$weather["barometer_max"].$pressureunit?> </temp> 
-  <dewpoint><?php echo "Min ",$weather["barometer_min"].$pressureunit?> </dewpoint>
+  <temp><?php echo "Max ",$weather["barometer_max"]." <smalluvunit>".$pressureunit?> </smalluvunit></temp> 
+  <dewpoint><?php echo "Min ",$weather["barometer_min"]." <smalluvunit>".$pressureunit?> </smalluvunit></dewpoint>
   
   
   </div>  
@@ -89,8 +97,8 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   <articlegraph> 
   <div class=actualt><?php echo date('M Y');?> <blue>Barometer </blue>
   
-  <temp><?php echo "Max ",$weather["thb0seapressmmax"].$pressureunit?> </temp> 
-  <dewpoint><?php echo "Min ",$weather["thb0seapressmmin"].$pressureunit?> </dewpoint>
+  <temp><?php echo "Max ",$weather["thb0seapressmmax"]." <smalluvunit>".$pressureunit?></smalluvunit> </temp> 
+  <dewpoint><?php echo "Min ",$weather["thb0seapressmmin"]." <smalluvunit>".$pressureunit?> </smalluvunit></dewpoint>
   
   
   </div>  
@@ -100,8 +108,8 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   
   <articlegraph> 
   <div class=actualt><?php echo date('Y');?> <blue>Barometer </blue>
-  <temp><?php echo "Max ",$weather["thb0seapressymax"].$pressureunit?> </temp> 
-  <dewpoint><?php echo "Min ",$weather["thb0seapressymin"].$pressureunit?> </dewpoint>
+  <temp><?php echo "Max ",$weather["thb0seapressymax"]." <smalluvunit>".$pressureunit?> </smalluvunit></temp> 
+  <dewpoint><?php echo "Min ",$weather["thb0seapressymin"]." <smalluvunit>".$pressureunit?> </smalluvunit></dewpoint>
   
   </div>  
   <iframe  src="weather34charts/yearlybarometersmall.php" frameborder="0" scrolling="no" width="100%"></iframe>

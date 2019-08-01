@@ -1,4 +1,12 @@
 <?php 
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 include('livedata.php');
  ?>
@@ -83,16 +91,15 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
  <main class="grid1">
   <articlegraph> 
   <div class=actualt>Today 
-  <temp>Wind <?php echo "Max ",$weather["winddmax"].$weather["wind_units"]?> </temp> 
-  <dewpoint>Wind <?php echo "Average ",$weather['wind_speed_avg30'].$weather["wind_units"]?> </dewpoint></div>  
+  <temp>Wind <?php echo "Max ",$weather["winddmax"]." <smalluvunit>".$weather["wind_units"]?> </smalluvunit></temp> 
+  <dewpoint>Wind <?php echo "Average ",$weather['wind_speed_avg30']." <smalluvunit>".$weather["wind_units"]?> </smalluvunit></dewpoint></div>  
   <iframe  src="weather34charts/todaywindspeedsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   
   <articlegraph> 
   <div class=actualt>Today 
-  <dewpoint><?php echo "Wind Direction &deg;";?> </dewpoint> 
-  
+  <dewpoint><?php echo "Wind Direction Bearing &deg;";?> </dewpoint> 
   
   </smalluvunit></span> </blue></div>  
   <iframe  src="weather34charts/todaywinddirectionsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
