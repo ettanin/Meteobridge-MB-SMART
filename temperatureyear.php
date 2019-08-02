@@ -2,7 +2,7 @@
 <div class="topframe">
 
 <div class="tempminthisyear">
-<a class="weather34tipdewm" data-weather34tipdewm=" Dewpoint Min  <?php echo $weather["dewymin"]."&deg;".$weather["temp_units"]?>  <?php echo $weather["dewymintime"]?>">
+<a class="weather34tipdewm" data-weather34tipdewm=" Dewpoint Min  <?php echo $weather["dewymin"]."&deg;".$weather["temp_units"]." ";?>  <?php echo "&nbsp; ".$weather["dewymintime"]?>">
 <?php //temperture min year
  if ($weather["temp_units"]=='C' && $weather["tempymin"]>30){echo "<maxtempred>",$weather["tempymin"]  ;echo "</maxtempred><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='C' && $weather["tempymin"]>24){echo "<maxtemporange>",$weather["tempymin"]  ;echo "</maxtemporange><tunit1>&deg;".$weather["temp_units"] ; }
@@ -59,7 +59,7 @@ else if ($weather["temp_units"]=='F'){echo anyToC($weather["tempyearavg"])."&deg
 
 <div class="yearwordtempbig">Temperature</div>
 <div class="tempmaxthisyear">
-<a class="weather34tipdewh" data-weather34tipdewh=" Dewpoint Max  <?php echo $weather["dewymax"]."&deg;".$weather["temp_units"]?>  <?php echo $weather["dewymaxtime"]?>">
+<a class="weather34tipdewh" data-weather34tipdewh=" Dewpoint Max &nbsp;<?php echo $weather["dewymax"]."&deg;".$weather["temp_units"]." "?><?php echo "&nbsp;&nbsp;".$weather["dewymaxtime"]?>">
 <?php //temperture min year
  if ($weather["temp_units"]=='C' && $weather["tempymax"]>30){echo "<maxtempred>",$weather["tempymax"]  ;echo "</maxtempred><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='C' && $weather["tempymax"]>24){echo "<maxtemporange>",$weather["tempymax"]  ;echo "</maxtemporange><tunit1>&deg;".$weather["temp_units"] ; }
