@@ -30,21 +30,21 @@ else if ($weather["temp_units"]=='F'){echo anyToC($weather["tempymin"])."&deg;C"
 
 <div class="tempavgthisyear">
 <?php //temperture min year
- if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>30){echo "<maxtempred>",$weather["tempyearavg"]  ;echo "</maxtempred><tunit>&deg;".$weather["temp_units"] ; }
- else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>24){echo "<maxtemporange>",$weather["tempyearavg"]  ;echo "</maxtemporange><tunit>&deg;".$weather["temp_units"] ; }
- else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>20){echo "<maxtemporange>",$weather["tempyearavg"]  ;echo "</maxtemporange><tunit>&deg;".$weather["temp_units"] ; }
- else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>18){echo "<maxtempyellow>",$weather["tempyearavg"]  ;echo "</maxtempyellow><tunit>&deg;".$weather["temp_units"] ; }
- else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>12){echo "<maxtempyellow>",$weather["tempyearavg"]  ;echo "</maxtempyellow><tunit>&deg;".$weather["temp_units"] ; }
- else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>=10){ echo "<maxtempgreen>", $weather["tempyearavg"]  ;echo "</maxtempgreen><tunit>&deg;".$weather["temp_units"] ; }
- else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>-50){ echo "<maxtempblue>", $weather["tempyearavg"]  ;echo "</maxtempblue><tunit>&deg;".$weather["temp_units"] ; }
+ if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>30){echo "<maxtempred>",$weather["tempyearavg"]  ;echo "</maxtempred><tunit1>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>24){echo "<maxtemporange>",$weather["tempyearavg"]  ;echo "</maxtemporange><tunit1>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>20){echo "<maxtemporange>",$weather["tempyearavg"]  ;echo "</maxtemporange><tunit1>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>18){echo "<maxtempyellow>",$weather["tempyearavg"]  ;echo "</maxtempyellow><tunit1>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>12){echo "<maxtempyellow>",$weather["tempyearavg"]  ;echo "</maxtempyellow><tunit1>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>=10){ echo "<maxtempgreen>", $weather["tempyearavg"]  ;echo "</maxtempgreen><tunit1>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>-50){ echo "<maxtempblue>", $weather["tempyearavg"]  ;echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"] ; }
  //non metric
- if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>86){echo "<maxtempred>",$weather["tempyearavg"]  ;echo "</maxtempred><tunit>&deg;".$weather["temp_units"] ; }
- else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>75.2){echo "<maxtemporange>",$weather["tempyearavg"]  ;echo "</maxtemporange><tunit>&deg;".$weather["temp_units"] ; }
- else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>68){echo "<maxtemporange>",$weather["tempyearavg"]  ;echo "</maxtemporange><tunit>&deg;".$weather["temp_units"] ; }
- else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>64.4){echo "<maxtempyellow>",$weather["tempyearavg"]  ;echo "</maxtempyellow><tunit>&deg;".$weather["temp_units"] ; }
- else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>53.6){echo "<maxtempyellow>",$weather["tempyearavg"]  ;echo "</maxtempyellow><tunit>&deg;".$weather["temp_units"] ; }
- else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>=42.8){ echo "<maxtempgreen>", $weather["tempyearavg"]  ;echo "</maxtempgreen><tunit>&deg;".$weather["temp_units"] ; }
- else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>-50){ echo "<maxtempblue>", $weather["tempyearavg"]  ;echo "</maxtempblue><tunit>&deg;".$weather["temp_units"] ; }
+ if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>86){echo "<maxtempred>",$weather["tempyearavg"]  ;echo "</maxtempred><tunit1>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>75.2){echo "<maxtemporange>",$weather["tempyearavg"]  ;echo "</maxtemporange><tunit1>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>68){echo "<maxtemporange>",$weather["tempyearavg"]  ;echo "</maxtemporange><tunit1>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>64.4){echo "<maxtempyellow>",$weather["tempyearavg"]  ;echo "</maxtempyellow><tunit1>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>53.6){echo "<maxtempyellow>",$weather["tempyearavg"]  ;echo "</maxtempyellow><tunit1>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>=42.8){ echo "<maxtempgreen>", $weather["tempyearavg"]  ;echo "</maxtempgreen><tunit1>&deg;".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>-50){ echo "<maxtempblue>", $weather["tempyearavg"]  ;echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"] ; }
  ?></div></tunit>
 
 <div class="tyearavg" >Average</div>

@@ -324,7 +324,7 @@ top:100%;margin-top:-12px;padding:2px;color:#fff;line-height:1.75;width:60px;lef
 .weather34tipdewh:hover:after{margin-top:-26px}
 .weather34tipdewh:hover:before{margin-top:0}
 
-tunit1{position:relative;font-size:.45em;vertical-align:top;top:5px}
+tunit1{position:relative;font-size:.5em;vertical-align:top;top:5px}
 .consoleoutlook{position:relative;color:#bbb;font-size:10px;margin-top:.2rem;line-height:1;margin-left:5px;width:185px;text-align:left;}.consoleicon{position:absolute;left:175px;top:25px;width:26px;height:26px}
 bluewuhum,greenwuhum,greywuhum,orangewuhum,purplewuhum,redwuhum,yellowwuhum{position:absolute;font-family:weathertext2;width:1.75rem;height:.95rem;font-size:.9em;padding-top:0;color:#fff;display:flex;align-items:center;justify-content:center;-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;border-radius:2px;margin-left:50px;top:0;line-height:.9}
 bluewuhum{background:#009bab}orangewuhum{background:#d05f2d}yellowwuhum{background:#e6a141}redwuhum{background:rgba(211, 93, 78, 1)}greenwuhum{background:rgba(144, 177, 42, 1)}.barometerpos{margin-top:5px}
