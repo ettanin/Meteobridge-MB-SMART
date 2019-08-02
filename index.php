@@ -83,7 +83,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   <div class=actualt><?php echo $position6title ;?>  (<valuetitleunit>&deg;<?php echo $weather["temp_units"] ;?></valuetitleunit>) </div>  
   <div class=weather34chartlinks> 
 
-<?php if ($position6=='forecast3wu.php' || $position6=='forecast3wularge.php') {echo ' <a class="weather34tiplink" data-weather34tiplink="10 Day Forecast" href="outlookwu.php" data-lity>'. $chartinfo. " Daily Forecast </a>&nbsp;";}?>
+<?php if ($position6=='forecast3wu.php' || $position6=='forecast3wularge.php') {echo ' <a class="weather34tiplink" data-weather34tiplink="Daily Forecast" href="outlookwu.php" data-lity>'. $chartinfo. " Daily Forecast </a>&nbsp;";}?>
 <?php if ($position6=='forecast3wu.php' || $position6=='forecast3wularge.php') {echo ' <a class="weather34tiplink" data-weather34tiplink="Forecast Summary" href="outlookwutext.php" data-lity>'. $chartinfo. "  Forecast Summary</a>&nbsp;";}?>
 </span></div>
  <div id=currentfore></div></weather34module> 
