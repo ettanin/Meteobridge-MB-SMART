@@ -107,8 +107,8 @@
 			   shared: true, 
  },
 		axisX: {
-			gridColor: "#333",	
-		    labelFontSize: 6,
+			gridColor: "#444",	
+		    labelFontSize:8,
 			labelFontColor:' #aaa',
 			lineThickness: 1,
 			gridThickness: 1,
@@ -116,7 +116,7 @@
 			titleFontFamily: "arial",	
 			labelFontFamily: "arial",	
 			minimum:-0.5,
-			interval:28,
+			interval:'auto',
 			intervalType:"month",
 			xValueType: "dateTime",	
 			crosshair: {
@@ -139,17 +139,16 @@
 		margin: 3,
 		lineThickness: 1,		
 		gridThickness: 1,
-		gridDashType: "dot",
-		maximum:<?php echo $ymax;?>,
-		interval:<?php echo $int;?>,	
+		gridDashType: "dot",		
+		interval:10,	
         includeZero: false,
-		gridColor: "#333",	
-		labelFontSize: 7,
+		gridColor: "#444",	
+		labelFontSize: 9,
 		labelFontColor:' #aaa',
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",		
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(<?php if ($pressureunit == 'hPa'){echo '0';} else echo '1';?>) ;
+        return e.value .toFixed(<?php if ($pressureunit == 'hPa'){echo '0';} else echo '0';?>) ;
          },		
 		crosshair: {
 			enabled: true,

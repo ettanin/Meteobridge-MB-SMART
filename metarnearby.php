@@ -1,16 +1,13 @@
-<?php  
-
+<?php include('metar34get.php');
 	####################################################################################################
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
+	# 	Updated Release: August 2019						  	                                       #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
-
-include('metar34get.php');
-//weather34 original metarnearby script 201-2019//
+//weather34 original metarnearby script 2018-2019 checkwx attribution must be in tact//
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -126,6 +123,17 @@ stationid{font-size:1.4em;font-family:weathertext2;color:#009bb4}
   <div class="icontext"><?php  echo $sky_desc; ?> </div>
 <br><br><br>
 <div class="pressure">
+
+
+<blue>Rainfall</blue><br>
+<?php
+if ($tempunits ='C') {
+	echo $metar34rainmm  ," (mm) - ";
+	echo $metar34rainin," (in)";
+}
+?> 
+
+<br>
 <blue>Pressure</blue> <br>
 <?php
 if ($pressureunit == 'mb' || $pressureunit == 'hPa') {
@@ -156,6 +164,8 @@ if ($distanceunit =='mi') {
 	echo $metar34vismiles ," (miles)";
 }
 ?>
+
+
 </div>
   </article> 
   
