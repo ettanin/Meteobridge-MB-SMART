@@ -48,8 +48,8 @@ else if (preg_match("/Sleet/i", $weather["vpforecasttext"]) && anyToC($weather["
 else if (preg_match("/Rain/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/rainvp.svg" class="consoleicon">';} 
 else if (preg_match("/Precipitation/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/rainvp.svg" class="consoleicon">';} 
 else if (preg_match("/Windy/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/windy.svg" class="consoleicon">';} 
-else if (preg_match("/Mostly clear/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/clear.svg" class="consoleicon">';}
-else if (preg_match("/Partly cloudy/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/partly-cloudy-day.svg" class="consoleicon">';} 
+else if (preg_match("/clear/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/clear.svg" class="consoleicon">';}
+else if (preg_match("/Partly/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/partly-cloudy-day.svg" class="consoleicon">';} 
 else if (preg_match("/Mostly cloudy/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/mostlycloudy.svg" class="consoleicon">';} 
 else if (preg_match("/Scattered/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/scatteredclouds.svg" class="consoleicon">';} 
 echo $weather["vpforecasttext"]	; ?></div></div>
