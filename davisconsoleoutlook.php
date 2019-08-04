@@ -42,7 +42,7 @@ $weather["vpforecasttext"]	=str_replace('South East', 'SE', $weather["vpforecast
 $weather["vpforecasttext"]	=str_replace('W, NW, or N', 'W, NW to North', $weather["vpforecasttext"]);
 $weather["vpforecasttext"]	=str_replace('little temperature change.', 'No <oorange>Significant </oorange> change in temperature<br>', $weather["vpforecasttext"]);
 
-//vp2 Davis forecast icon
+//weather34 console vue-vp2 Davis forecast icon
 if (preg_match("/Snow/i", $weather["vpforecasttext"]) && anyToC($weather["temp"])<-1)  {echo '<img rel="prefetch" src="css/icons/snow.svg" class="consoleicon">';} 
 else if (preg_match("/Sleet/i", $weather["vpforecasttext"]) && anyToC($weather["temp"])<1)  {echo '<img rel="prefetch" src="css/icons/sleet.svg" class="consoleicon">';} 
 else if (preg_match("/Rain/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/rainvp.svg" class="consoleicon">';} 
@@ -51,5 +51,5 @@ else if (preg_match("/Windy/i", $weather["vpforecasttext"])) {echo '<img rel="pr
 else if (preg_match("/Mostly clear/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/clear.svg" class="consoleicon">';}
 else if (preg_match("/Partly cloudy/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/partly-cloudy-day.svg" class="consoleicon">';} 
 else if (preg_match("/Mostly cloudy/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/mostlycloudy.svg" class="consoleicon">';} 
-else if (preg_match("/Increasing clouds/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/scatteredclouds.svg" class="consoleicon">';} 
+else if (preg_match("/Scattered/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/scatteredclouds.svg" class="consoleicon">';} 
 echo $weather["vpforecasttext"]	; ?></div></div>
