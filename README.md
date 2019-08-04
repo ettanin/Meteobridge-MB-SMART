@@ -1,12 +1,10 @@
 # This GITHUB repository is for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
-(Beta Testing Ended  3rd Master Version Released August 4th 2019)
+(Beta Testing Ended  2nd Master Version Released July 30th 2019)
 
 # Live Demo
 https://singaporeweather.info 
 
 # IMPORTANT THIS TEMPLATE IS FOR METEOBRIDGE NANOSD AND DAVIS HARDWARE USERS ONLY !!
-
-# IMPORTANT NOT COMPATIBLE WITH PREVIOUS MYSQL CSV CHART FILES  !!
 
 # More info
 https://weather34.com/homeweatherstation/meteobridge-mb-smart.html

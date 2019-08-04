@@ -21,7 +21,7 @@ mb_http_input('UTF-8');
 mb_language('uni');
 mb_regex_encoding('UTF-8');
 ob_start('mb_output_handler');
-
+$language    = "en";
 if(isSet($_GET['lang']))
 {
 $lang = $_GET['lang'];
@@ -41,7 +41,7 @@ $lang = $_COOKIE['lang'];
 }
 else
 {
-$lang = $defaultlanguage;
+$lang = $language;
 }
 
 switch ($lang) {

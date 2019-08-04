@@ -5,7 +5,7 @@
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	Updated Release: August 2019						  	                                       #
+	# 	Release: July 2019						  	                                                   #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
