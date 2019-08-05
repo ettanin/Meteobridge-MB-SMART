@@ -83,6 +83,8 @@ $lang['FeelingExtremelyHot'] = 'Ressenti extrèmement chaud';
 
 //wind
 $lang['Windspeed'] = 'Vitesse du vent';
+$lang['Wind-speed'] = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vitesse';
+$lang['Avg-speed']  = '&nbsp;&nbsp;&nbsp;Avg';
 $lang['Gust'] = 'Rafale';
 $lang['Direction'] = 'Direction';
 $lang['Gusting'] = 'Rafale de';

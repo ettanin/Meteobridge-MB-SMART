@@ -24,17 +24,22 @@ require_once('livedata.php');require_once('common.php');?>
 .avgw{ width:27px; height:27px;	margin-left:35px;-webkit-transform:rotate(<?php echo $weather["wind_direction_avg"];?>deg);-moz-transform:rotate(<?php echo $weather["wind_direction_avg"];?>deg);-o-transform:rotate(<?php echo $weather["wind_direction_avg"];?>deg);-ms-transform:rotate(<?php echo $weather["wind_direction_avg"];?>deg);transform:rotate(<?php echo $weather["wind_direction_avg"];?>deg);}
 spancalm{postion:relative;font-family:weathertext,Arial;font-size:26px;}</style>
 <div class="moduleupdatetime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div> <br />
-<div class="windspeedvalues"><div class="windspeedvalue">
-<?php  
-//weather34-windspeed avg
-if ($weather["wind_speed"]<10){echo "&nbsp;".number_format($weather["wind_speed"],1);}else echo number_format($weather["wind_speed"],1);?>
-<div class="windunitidspeed"><?php echo $lang['Average'];?></div><div class="windunitspeed"><?php echo $weather["wind_units"]?></div></div>
-<div class="windgustvalue">
+<div class="weather34windspeed">
+<weather34windunitidspeed><?php echo $lang['Avg-speed'];?></weather34windunitidspeed>
+<?php 
+//weather34-windaverage speed
+if ($weather["wind_speed"]<10){echo "&nbsp;",number_format($weather["wind_speed"],1);}else echo number_format($weather["wind_speed"],1);?>
+<weather34windunitidunit>10 Min</weather34windunitidunit></div></div>
+
+<div class="weather34windgust">
+<weather34windunitidspeed1><?php echo $lang['Wind-speed']; ?></weather34windunitidspeed1>
 <?php 
 //weather34-windgust
-if ($weather["wind_gust_speed"]*$toKnots>=26.9978){echo "<windred>",number_format($weather["wind_gust_speed"],1),"</span>";}else if ($weather["wind_gust_speed"]*$toKnots>=21.5983){echo "<windorange>",number_format($weather["wind_gust_speed"],1),"</span>";}else if ($weather["wind_gust_speed"]*$toKnots>=16.1987){echo "<windgreen>",number_format($weather["wind_gust_speed"],1),"</span>";}else if ($weather["wind_gust_speed"]<10){echo "&nbsp;",number_format($weather["wind_gust_speed"],1);}else echo number_format($weather["wind_gust_speed"],1);?>
-<div class="windunitgust"><?php echo  $weather["wind_units"]?></div>
-<div class="windunitidgust"><?php echo $lang['Currently']; ?></div></span></div></div>
+if ($weather["wind_gust_speed"]*$toKnots>=26.9978){echo "<windred>",number_format($weather["wind_gust_speed"],1),"</span>";}else if ($weather["wind_gust_speed"]*$toKnots>=21.5983){echo "<windorange>",number_format($weather["wind_gust_speed"],1),"</span>";}else if ($weather["wind_gust_speed"]*$toKnots>=16.1987){echo "<windgreen>",number_format($weather["wind_gust_speed"],1),"</span>";}else if ($weather["wind_gust_speed"]*$toKnots<16.1987 && $weather["wind_gust_speed"]*$toKnots>=5.39957){echo "<windblue>",number_format($weather["wind_gust_speed"],1);}else echo"</windblue> &nbsp;". number_format($weather["wind_gust_speed"],1);?>
+<weather34windunitidunit1><?php echo $weather["wind_units"];?></weather34windunitidunit1></div></div>
+
+
+
 <div class="maxwindgust"><a class="weather34tipmax" data-weather34tipmax="<?php echo "Max ".$weather["windymax"]." ".$weather["wind_units"]."&nbsp; &nbsp;".$weather["windymaxtime"]?>">
 <?php echo "<valuetext>Max (".$weather["winddmaxtime"].")<br>"."<maxred>".number_format($weather["wind_gust_speed_max"],1)."</maxred> ".$weather["wind_units"];?></a></div>
 <div class="windconverter"><?php 

@@ -74,6 +74,8 @@ $lang['FeelingExtremelyHot'] = 'Extremely Hot';
 
 //wind
 $lang['Windspeed'] = 'Wind';
+$lang['Wind-speed'] = 'Wind Speed';
+$lang['Avg-speed']  = 'Average';
 $lang['Gust'] = 'Gust';
 $lang['Direction'] = 'Direction';
 $lang['Gusting'] = 'Gusting at';

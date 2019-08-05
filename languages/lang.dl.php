@@ -73,6 +73,8 @@ $lang['FeelingExtremelyHot'] = 'Gefühlt extrem heiss';
 
 //wind
 $lang['Windspeed'] = 'Windspeed';
+$lang['Wind-speed'] = 'Wind Speed';
+$lang['Avg-speed']  = '&nbsp;Schnitt';
 $lang['Gust'] = 'Böeen';
 $lang['Direction'] = 'Richtung';
 $lang['Gusting'] = 'in Böeen';

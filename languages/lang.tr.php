@@ -72,6 +72,8 @@ $lang['FeelingExtremelyHot'] = 'Duygu Çok Çok Sıcak';
 
 //wind
 $lang['Windspeed'] = 'Rüzgar hızı';
+$lang['Wind-speed'] = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rüzgar';
+$lang['Avg-speed']  = '&nbsp;&nbsp;&nbsp;&nbsp;Avg';
 $lang['Gust'] = 'Rüzgar';
 $lang['Direction'] = 'Yön';
 $lang['Gusting'] = 'Max Rüzgar ';
