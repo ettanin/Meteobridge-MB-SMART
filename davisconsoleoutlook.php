@@ -41,6 +41,7 @@ $weather["vpforecasttext"]	=str_replace('South West', 'SW', $weather["vpforecast
 $weather["vpforecasttext"]	=str_replace('South East', 'SE', $weather["vpforecasttext"]);
 $weather["vpforecasttext"]	=str_replace('W, NW, or N', 'W, NW to North', $weather["vpforecasttext"]);
 $weather["vpforecasttext"]	=str_replace('little temperature change.', 'No <oorange>Significant </oorange> change in temperature<br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace(', possibly heavy at times', '', $weather["vpforecasttext"]);
 
 //weather34 console vue-vp2 Davis forecast icon
 if (preg_match("/Snow/i", $weather["vpforecasttext"]) && anyToC($weather["temp"])<-1)  {echo '<img rel="prefetch" src="css/icons/snow.svg" class="consoleicon">';} 
