@@ -26,6 +26,7 @@ spancalm{postion:relative;font-family:weathertext,Arial;font-size:26px;}</style>
 <div class="moduleupdatetime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div> <br />
 <div class="weather34windspeed">
 <weather34windunitidspeed><?php echo $lang['Avg-speed'];?></weather34windunitidspeed>
+
 <?php 
 //weather34-windaverage speed
 if ($weather["wind_speed"]<10){echo "&nbsp;",number_format($weather["wind_speed"],1);}else echo number_format($weather["wind_speed"],1);?>
@@ -74,10 +75,17 @@ else if( $weather["wind_direction_avg"]<=146.25){echo $lang['SE'];}else if( $wea
 else if( $weather["wind_direction_avg"]<=213.75){echo $lang['SSW'];}else if( $weather["wind_direction_avg"]<=236.25){echo $lang['SW'];}else if( $weather["wind_direction_avg"]<=258.75){echo $lang['WSW'];}
 else if( $weather["wind_direction_avg"]<=281.25){echo $lang['West'];}else if( $weather["wind_direction_avg"]<=303.75){echo $lang['WNW'];}else if( $weather["wind_direction_avg"]<=326.25){echo $lang['NW'];}
 else if( $weather["wind_direction_avg"]<=348.75){echo $lang['NWN'];}else if( $weather["wind_direction_avg"]<=360){echo $lang['North'];}"&deg;"?></averwordwindword></div> 
-<?php echo ' <div class=weather34windrun>'.$windrunicon.' &nbsp;<grey><valuetext1>',number_format($weather['wind_speed_avg30'],1)."<weather34windrunspan>" .$weather["wind_units"];?>
+
+
+<div class=weather34windrun>
+<?php echo $windrunicon.' &nbsp;<grey><valuetext1>',number_format($weather['wind_speed_avg30'],1)."<weather34windrunspan>" .$weather["wind_units"];?>
 <grey></valuetext>
-</weather34windrunspan>
-</div></div><br /><div class=windrun1><?php echo $lang['Avg Speed Today'];?></div>
+</weather34windrunspan></div>
+<div class=windrun1>Avg Speed Today</div>
+</div>
+
+
+
 <?php ///weather34 beaufort
 if ($weather["wind_speed_bft"] >= 12) {
   echo '<div class=weather34beaufort6>' . $beaufort12 . "&nbsp; " . $weather["wind_speed_bft"];
@@ -107,7 +115,6 @@ if ($weather["wind_speed_bft"] >= 12) {
   echo '<div class=weather34beaufort1-3>' . $beaufort0 . "&nbsp; " . $weather["wind_speed_bft"];
 }
 ?>
-
  <weather34bftspan>BFT<weather34bftspan></div>
 <div class="beaufort1"><?php
 if ($weather["wind_speed_bft"] == 0) {
