@@ -1,12 +1,11 @@
 <?php
 ini_set ('display_errors', 'Off');
 error_reporting(E_ALL);
-include('../livedata.php');
-####################################################################################################
+	####################################################################################################
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
+	# 	Release: August 2019						  	                                               #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################

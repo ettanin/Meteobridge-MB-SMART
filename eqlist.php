@@ -1,16 +1,15 @@
 <?php include('settings.php');include('livedata.php');
 error_reporting(0); 
 
-
 	####################################################################################################
-	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
-	# https://weather34.com/homeweatherstation/index.html 											   # 
+	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2015-18                                       #
+	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at https://weather34.com/homeweatherstation/index.html # 
 	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	# 	WEATHER34 EARTHQUAKES LISTING: 7th Feb 2018   	                                               #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
-
 
 ?>
 
@@ -74,23 +73,6 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
 }
 .grid > article img {
   max-width: 100%;
-}
-
-.gridfooter { 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(760, 1fr));
-  grid-gap: 10px;
-  align-items: stretch;
-  color:#f5f7fc
-  }
-.grid > footer {
- border: 1px solid rgba(245, 247, 252,.02);
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);
-  padding:2px;
-  font-size:0.8em;
-  -webkit-border-radius:4px;
-  border-radius:4px;
-  background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
 }
 
   
@@ -791,102 +773,17 @@ else if ($windunit == 'mph') {
 </div>
 </smalluvunit>
 </article>  
-
-
-
-<article>  
-   <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
-    <?php //7
-				if($magnitude[8]>=7){echo "<div class=mag9-10>",$magnitude[8],"";}
-				else if($magnitude[8]>=5.8){echo "<div class=mag9-10>",$magnitude[8],"";}
-				else if($magnitude[8]>=5){echo "<div class=mag6-8>",$magnitude[8],"";}
-				else if($magnitude[8]>=4){echo "<div class=mag4-5>",$magnitude[8],"";}
-				else if($magnitude[8]>=2){echo "<div class=mag1-3>",$magnitude[8],"";}	
-				else if($magnitude[7]<2){echo "<div class=mag1-3>N/A";}		
-						
-				?>
-<div></div>
-
-
-
-<div class="hitempy">
-<?php
-	echo "";
-for ($i = 0; $i < 1; $i++) {
-	// EQ Latest earthquake 
-	
-	if ($eqdist[8]<1300)  {
-	echo "<div class='time'><orange1>*Regional</orange1> <span> ".$eventime[8]."</div></span>";
-	echo $eqtitle[8];
-	} 
-	else if ($magnitude[8]>7)  {
-	echo "<div class='time'><span>",$eventime[8] ,"</div></span>";
-	echo $eqtitle[8] ;
-	} 
-	
-	
-	else if ($magnitude[8]>5.7)  {
-	echo "<div class='time'><span>",$eventime[8] ,"</div></span>";
-	echo $eqtitle[8] ;
-	} 
-	
-	
-	else if ($magnitude[8]>5.2)  {
-	echo "<div class='time'><span>",$eventime[8] ,"</div></span>";
-	echo $eqtitle[8] ;
-	} 
-	
-	else if ($magnitude[8]>4)  {
-	echo "<div class='time'><span>",$eventime[8] ,"</div></span>";
-	echo $eqtitle[8] ;
-	} 
-	
-	
-	else if ($magnitude[8]>3)  {
-	echo "<div class='time'><span>",$eventime[8] ,"</div></span>";
-	echo $eqtitle[8] ;
-	} 
-	
-	else if ($magnitude[8]>2)  {
-	echo "<div class='time'><span>",$eventime[8] ,"</div></span>";
-	echo $eqtitle[8] ;
-	} 
-}
-
-?><br>
-<?php
-			
-if ($windunit == 'mph' && $eqdist[8]<200) {
-		 echo round($eqdist[8]  * 0.621371) ." Miles from<br> $stationlocation";
-	}
-	
-else if ($windunit == 'km/h' && $eqdist[8]<700) {
-		 echo "<orange>",round($eqdist[8]) ." </orange>Km from<br> $stationlocation";
-	}			
-
-else if ($windunit == 'mph') {
-		 echo round($eqdist[8]  * 0.621371) ." Miles from<br> $stationlocation";
-	} else {
-		 echo $eqdist[8] ." Km from<br> $stationlocation" ;
-	}
-	echo "";
-	?>
-
-</div>
-</smalluvunit>
-</article>  
-
-
-
   
   
-  <article style="height:18px;width:760px;padding:0;padding-left:5px;">  
+  <article>
+   <div class=actualt>&nbsp;&nbsp &copy; Information</div>
    <span style="font-size:8px;">  
   <?php echo $info?> CSS/SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:9px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?>
- &nbsp;
- 
+  
+  <br>
+  <br>
   <?php echo $info?>  
-<a href="http://earthquake-report.com" title="Earthquake-Report.com" target="_blank">Data Provided by © <?php echo date('Y');?> Earthquake-Report.com</a></span>
+<a href="http://earthquake-report.com" title="Earthquake-Report.com" target="_blank">Data © <?php echo date('Y');?> Earthquake-Report.com</a></span>
 
   
   </article> 

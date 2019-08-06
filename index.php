@@ -3,7 +3,7 @@
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
+	# 	Release: August 2019						  	                                               #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
@@ -72,7 +72,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   <weather34module> <!-- Weather34 Main Module 1 Temperature-->
   <div class=actualt><?php echo $lang['Temperature']; ?> (<valuetitleunit>&deg;<?php echo $weather["temp_units"] ;?></valuetitleunit>) </div>  
   <div class=weather34chartlinks> 
- 	<a class="weather34tiplink" data-weather34tiplink="Temperature Almanac" href=tempalmanac.php data-lity><chartinfocolor><?php echo $chartinfo?></chartinfocolor> <?php echo $lang['Almanac']; ?></a>&nbsp;&nbsp;
+ 	<a class="weather34tiplink" data-weather34tiplink="Temperature Almanac" href=tempalmanac.php data-lity><chartinfocolor><?php echo $chartinfo?></chartinfocolor> Alamanac</a>&nbsp;&nbsp;
 	<a class="weather34tiplink" data-weather34tiplink="Temperature <?php echo date('Y');?>"  href=temperaturechart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> Temperature</a>&nbsp;&nbsp;
 	<a class="weather34tiplink" data-weather34tiplink="Dewpoint <?php echo date('Y');?>"  href=dewpointchart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> Dewpoint</a>&nbsp;&nbsp;
 	<a class="weather34tiplink" data-weather34tiplink="Today Charts"  href=todaytemperaturechart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> <?php echo $lang['Today']; ?> </a></div>
@@ -100,7 +100,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   <weather34module> <!-- Main Module 4 Wind-->
   <div class=actualt><?php echo $lang['Direction'];?> | <?php echo $lang['Windspeed'] ," (<valuetitleunit>",$weather["wind_units"];?></valuetitleunit>)</div>  
   <div class=weather34chartlinks> 
- 	<a class="weather34tiplink" data-weather34tiplink="Wind Speed Almanac" href=windalmanac.php data-lity><chartinfocolor><?php echo $chartinfo?></chartinfocolor> <?php echo $lang['Almanac']; ?></a>&nbsp;&nbsp;
+ 	<a class="weather34tiplink" data-weather34tiplink="Wind Speed Almanac" href=windalmanac.php data-lity><chartinfocolor><?php echo $chartinfo?></chartinfocolor> Alamanac</a>&nbsp;&nbsp;
 	<a class="weather34tiplink" data-weather34tiplink="Wind Speed <?php echo date('Y');?>" href=windchart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> Wind-Speed</a>&nbsp;&nbsp;
 	<a class="weather34tiplink" data-weather34tiplink="Wind Speed Today" href=todaywindcharts.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> <?php echo $lang['Today']; ?></a></div>
  <div id=windspeed></div></weather34module> 
@@ -108,7 +108,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   <weather34module> <!-- Weather34 Main Module 5 Barometer-->
   <div class=actualt><?php echo $lang['Barometer']," (<valuetitleunit>",$weather["barometer_units"]; ?></valuetitleunit>)</div>  
   <div class=weather34chartlinks> 
- 	<a class="weather34tiplink" data-weather34tiplink="Barometer Almanac" href=barometeralmanac.php data-lity><chartinfocolor><?php echo $chartinfo?></chartinfocolor> <?php echo $lang['Almanac']; ?></a>&nbsp;&nbsp;
+ 	<a class="weather34tiplink" data-weather34tiplink="Barometer Almanac" href=barometeralmanac.php data-lity><chartinfocolor><?php echo $chartinfo?></chartinfocolor> Alamanac</a>&nbsp;&nbsp;
 	<a class="weather34tiplink" data-weather34tiplink="Barometer Charts" href=barometerchart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> Barometer</a></div>
  <div id=barometer></div></weather34module> 
  
@@ -123,7 +123,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   <weather34module> <!-- Weather34 Main Module 7 Rainfall-->
   <div class=actualt><?php echo $lang['Rainfalltoday']," (<valuetitleunit>".$weather["rain_units"]?></valuetitleunit>)</div>  
   <div class=weather34chartlinks> 
- 	<a class="weather34tiplink" data-weather34tiplink="Rainfall Almanac" href=rainfallalmanac.php data-lity><chartinfocolor><?php echo $chartinfo?></chartinfocolor> <?php echo $lang['Almanac']; ?></a>&nbsp;&nbsp;
+ 	<a class="weather34tiplink" data-weather34tiplink="Rainfall Almanac" href=rainfallalmanac.php data-lity><chartinfocolor><?php echo $chartinfo?></chartinfocolor> Alamanac</a>&nbsp;&nbsp;
 	<a class="weather34tiplink" data-weather34tiplink="Rainfall <?php echo date('Y');?>" href=rainfallchart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> Rainfall</a>&nbsp;&nbsp;
 	<a class="weather34tiplink" data-weather34tiplink="Rainfall Today Charts" href=todayrainchart.php data-lity><chartinfocolor><?php echo $menucharticonpage?></chartinfocolor> <?php echo $lang['Today']; ?></a></div>
  <div id=rainfall></div></weather34module> 
@@ -136,10 +136,10 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   &nbsp; <a class="weather34tiplink" data-weather34tiplink="Moon Phase Data" href="mooninfo.php" data-lity>'. $chartinfo. ' Moon Info </a></span>';}
 if ($position12=='airqualitymodule.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Air Quality Data" href="purpleair.php" data-lity>'. $chartinfo. " Air Quality | Cloudbase </a></span>";}
 if ($position12=='airqualityluftdaten.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Air Quality Data" href="luftdaten.php" data-lity>'. $chartinfo. " Luftdaten Air Quality | Cloudbase </a></span>";}
-if ($position12=='weather34uvsolar.php') {echo ' <a class="weather34tiplink" data-weather34tiplink="UV Almanac" href="uvalmanac.php" data-lity>'. $chartinfo. " UV ".$lang['Almanac']." </a></span>";}
-if ($position12=='weather34uvsolar.php') {echo '&nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar ".$lang['Almanac']." </a></span>";}
+if ($position12=='weather34uvsolar.php') {echo ' <a class="weather34tiplink" data-weather34tiplink="UV Almanac" href="uvalmanac.php" data-lity>'. $chartinfo. " UV Almanac </a></span>";}
+if ($position12=='weather34uvsolar.php') {echo '&nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar Almanac</a></span>";}
 if ($position12=='solaruvwu.php') {echo '<a class="weather34tiplink" data-weather34tiplink="UV Index Guide" href="uvindexwu.php" data-lity>'. $chartinfo. " UV Guide </a></span>";}
-if ($position12=='solaruvwu.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar ".$lang['Almanac']." </a></span>";}
+if ($position12=='solaruvwu.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar Almanac</a></span>";}
 if ($position12=='eq.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Recent World Wide Earthquakes" href="eqlist.php" data-lity>'. $chartinfo. " Worldwide Earthquakes </a></span>";}?>	
 	</div> 
  <div id=solar></div></weather34module> 
@@ -153,10 +153,10 @@ if ($position12=='eq.php') {echo ' &nbsp;<a class="weather34tiplink" data-weathe
 if ($positionlastmodule=='airqualitymodule.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Air Quality Data" href="purpleair.php" data-lity>'. $chartinfo. " Air Quality | Cloudbase </a></span>";}
 if ($positionlastmodule=='airqualityluftdaten.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Air Quality Data" href="luftdaten.php" data-lity>'. $chartinfo. " Luftdaten Air Quality | Cloudbase </a></span>";}
 if ($positionlastmodule=='weather34uvsolar.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="UV Index Guide" href="uvindex.php" data-lity>'. $chartinfo. " UV Guide  </a></span>";}
-if ($positionlastmodule=='weather34uvsolar.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="UV Almanac" href="uvalmanac.php" data-lity>&nbsp;'. $chartinfo. " UV ".$lang['Almanac']." </a></span>";}
+if ($positionlastmodule=='weather34uvsolar.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="UV Almanac" href="uvalmanac.php" data-lity>&nbsp;'. $chartinfo. " UV Almanac </a></span>";}
 if ($positionlastmodule=='weather34uvsolar.php') {echo '&nbsp; <a class="weather34tiplink" data-weather34tiplink="Solar Almanac" data-lity>'. $chartinfo. " Solar Almanac </a></span>";}
 if ($positionlastmodule=='solaruvwu.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="UV Guide" href="uvindexwu.php" data-lity>'. $chartinfo. " UV Guide </a></span>";}
-if ($positionlastmodule=='solaruvwu.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar ".$lang['Almanac']." </a></span>";}
+if ($positionlastmodule=='solaruvwu.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar Almanac</a></span>";}
 if ($positionlastmodule=='eq.php') {echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Recent World Wide Earthquakes" href="eqlist.php" data-lity>'. $chartinfo. " Worldwide Earthquakes </a></span>";}
 if ($positionlastmodule=='airqualitymodule.php') {echo '&nbsp;<a class="weather34tiplink" data-weather34tiplink="Recent World Wide Earthquakes" href="eqlist.php" data-lity>'. $chartinfo. " Worldwide Earthquakes </a></span>";}?>
 	</div>

@@ -1,18 +1,16 @@
-
 <?php 
 include('settings1.php');error_reporting(0); 
-	 
-
+if( isset($_GET['debug']) ) {
+	$debug=$_GET['debug'];
+}
 	####################################################################################################
-	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
-	# https://weather34.com/homeweatherstation/index.html 											   # 
+	#	HOME WEATHER STATION TEMPLATE SETUP please set up and check thoroughly                         #
+	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at https://weather34.com/homeweatherstation/index.html # 
+	# 	   FILE= SETTINGS.PHP                                                                          #
 	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
-	# 	                                                                                               #
+	# 	WEATHER34 HOMEWEATHER METEOBRIDGE MYSQL                                                        #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
-
-
 
 
 ###########################################################################
@@ -38,25 +36,28 @@ $charttheme         = $theme;
 // Refresh Data Main Page  //																	   #
 // Automatic refresh times (in seconds) of each panel on the main dashboard						   #
 ####################################################################################################
-$copyYear = 2015;$curYear = date('Y');$copyrightcredit='&copy; weather34.com original CSS/SVG/PHP '.$copyYear . (($copyYear != $curYear) ? '-' . $curYear : 'Copyright');
-$indoorRefresh      = 120; // 2 minutes
-$notifyRefresh      = 17; // 17 seconds
-$tempRefresh        = 60; // 60 secondss
-$skyRefresh         = 300; // 5 minutes 
-$windSpeedRefresh   = 10; // 10 seconds
-$baroRefresh        = 300; // 15 minutes
-$windDirRefresh     = 10; // 10 seconds
-$moonRefresh    	= 1800; // 30 minutes 
-$rainRefresh        = 50; // 50 seconds 
-$solarRefresh       = 120; // 1 minutes 
-$daylightRefresh    = 120; // 2 minutes
-$moonphaseRefresh   = 120; // 2 minutes
-$eqRefresh          = 600; // 10 minutes 
-$forecastRefresh    = 900; // 15 minutes 
-$notificationcenterRefresh    = 300; // 5 minutes set refresh time for notification of earthquakes default 5 minutes
-$wuupdate           = 1800; // 30 minutes 
-$wfupdate           = 60; // weatherflow api 60 seconds
-$camRefresh		 = 60; // 1 minute refresh on camera popup
+$copyYear = 2015;
+$curYear = date('Y');
+$copyrightcredit='&copy; weather34.com original CSS/SVG/PHP '.$copyYear . (($copyYear != $curYear) ? '-' . $curYear : 'Copyright');
+
+  $indoorRefresh              = 120;
+  $advisoryRefresh            = 17;
+  $tempRefresh                = 60;
+  $skyRefresh                 = 300;
+  $windSpeedRefresh           = 10;
+  $baroRefresh                = 300;
+  $windDirRefresh             = 10;
+  $moonRefresh    	          = 1800;
+  $rainRefresh                = 50;
+  $p12Refresh                 = 60;       # Position 12 refresh (if not webcam)
+  $p13Refresh                 = 60;       #Last positon refresh (if not webcam)
+  $moonphaseRefresh           = 120;
+  $eqRefresh                  = 600;
+  $forecastRefresh            = 900;
+  $notificationcenterRefresh  = 300;
+  $wuupdate                   = 1800;
+  $wfupdate                   = 60;
+  $camRefresh		          = 60;       #Camera refresh rate
 
 // Thresholds for warnings or notifications
 $notifyDistEQ       = 300; // miles if $windunit is mph otherwise km
@@ -77,13 +78,16 @@ $scriptcredits     = "Original CSS/SVG ICONS/PHP scripts by <a href='https://wea
 $creditsEnabled     = "true"; // for chart pages only
 $creditsmysql       = "Weather Data Recorded from $stationName Database"; //for chart pages only
 $wucredits          = "Data provided by Weather Underground"; // for chart pages only
-$creditschart 		= "CanvasJs.com v2.3.1 GA (CC BY-NC 3.0) Non-Commercial-Version(Non MySql)"; 
+$creditschart 		= "CanvasJs.com v2.3.1 GA (CC BY-NC 3.0) Non-Commercial-Version"; 
 $creditsURL         = ""; // for chart pages only
 $credits            = "Data Supplied via Weather Underground"; // for chart pages only
 $templateinfo       = ''; // template information page
-$templateversion    = 'MB-<maxred>Smart</maxred>';
-$designedby="designed by weather34.com";
-$software    = 'Meteobridge <span>Hardware</span> Users';$designedfor='<br>For Meteobridge Users';$chartversion='(WUDATACHARTS)';$somethinggoeshere ='d4586dec-e7a2-47ae-99b6-25527b2563c9';$chartversionmysql  =  '(DATACHARTS version Meteobridge Non MySql)';
+$templateversion    = 'MB-UB<maxred>40.1</maxred>-IHVN';
+$software    = 'Meteobridge <span>Hardware</span> Users';
+$designedfor='<br>For Meteobridge Users';
+$chartversion='(WUDATACHARTS)';
+$somethinggoeshere ='5675886d-24b0-2a37-107e-b5076d5e1d9f';
+$chartversionmysql  =  '(DATACHARTS version Final MYSQL-Meteobridge)';
 if (array_key_exists('theme', $_GET) && ($_GET['theme'] == 'dark' || $_GET['theme'] == 'light')) {
   SetCookie('theme', $_GET['theme'], time() + 15552000);
   $theme = $_GET['theme'];

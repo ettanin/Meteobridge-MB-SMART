@@ -1,22 +1,20 @@
-<?php  
-
-	####################################################################################################
-	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
-	# https://weather34.com/homeweatherstation/index.html 											   # 
-	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
-	# 	                                                                                               #
-	#   https://www.weather34.com 	                                                                   #
-	####################################################################################################
-
-include('livedata.php');error_reporting(0);?>
+<?php include('livedata.php');error_reporting(0);?>
 <style>
 .webcam{
--webkit-border-radius:4px;	-moz-border-radius:4px;	-o-border-radius:4px;	-ms-border-radius:4px;border-radius:4px;border:solid RGBA(84, 85, 86, 1.00) 1px;width:275px;height:140px;margin:5px;margin-top:15px}
+-webkit-border-radius:4px;	-moz-border-radius:4px;	-o-border-radius:4px;	-ms-border-radius:4px;border-radius:4px;border:solid RGBA(84, 85, 86, 1.00) 2px;width:275px;height:145px;margin:4px;}
 </style>
 
-<div class="moduleupdatetime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div> 
-
+<?php $file_headers = @get_headers($webcamurl); ?>
+<div class="updatedtime1"><span>
+<?php if($file_headers && $file_headers[0] != 'HTTP/1.1 404 Not Found') {
+  echo $online.' '.date($timeFormat);
+} else if (file_exists($webcamurl)&&time()- filemtime($webcamurl)<300) {
+  echo $online. ' <online>'.date($timeFormat,filemtime($webcamurl)).'</online>';
+} else {
+  echo $offline. '<offline> Offline </offline>';
+}
+?>
+</span></div>
 <!-- HOMEWEATHER STATION TEMPLATE SIMPLE WEBCAM -add your url as shown below do NOT delete the class='webcam' !!! -->
-<img src="<?php echo $webcamurl?>?v=<?php echo date('YmdGis');?>>" alt="weathercam" class="webcam">
+<a href="cam.php" data-lity><img src="<?php echo $webcamurl?>?v=<?php echo date('YmdGis');?>>" alt="weathercam" class="webcam"></a>
 </span>

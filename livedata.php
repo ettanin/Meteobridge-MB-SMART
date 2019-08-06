@@ -1,15 +1,13 @@
 <?php 
-	
-
 	####################################################################################################
-	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
-	# https://weather34.com/homeweatherstation/index.html 											   # 
+	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2015-2016-2017-2018-2019                      #
+	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at https://weather34.com/homeweatherstation            # 
 	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	# 	updated Mar 2019 LIVEDATA.PHP ITS WHERE A LOT HAPPENS SO DONT MESS IT UP	  		           #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
-
  //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
  include('settings.php');include('shared.php');error_reporting(0); 
  	
@@ -47,8 +45,6 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather["temp_indoormax"]     = $meteobridgeapi[120];
 	$weather["temp_indoormin"]     = $meteobridgeapi[121];
 	$weather["humidity_indoor"]    = $meteobridgeapi[23];
-	$weather["humidity_indoor15"]=$meteobridgeapi[71];
-	$weather["humidity_indoortrend"]=$meteobridgeapi[23]-$meteobridgeapi[71];
 	$weather["rain_rate"]          = $meteobridgeapi[8];
 	$weather["dewpoint"]           = number_format($meteobridgeapi[4],1);
 	$weather["rain_today"]         = $meteobridgeapi[9];
@@ -70,12 +66,11 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather["temp_today_low"]     = $meteobridgeapi[28];
 	$weather["temp_avg15"]         = $meteobridgeapi[67];
 	$weather["temp_avg"]           = $meteobridgeapi[123]; // last 60 minutes
-	$weather["wind_speed_avg"]     = $meteobridgeapi[5]; //Console's Average Wind Speed
+	$weather["wind_speed_avg"]     = $meteobridgeapi[5];
 	$weather["wind_direction"]     = number_format($meteobridgeapi[7],0);
 	$weather["wind_direction_avg"] = number_format($meteobridgeapi[46],0);
-	$weather["wind_speed"]         = number_format($meteobridgeapi[5]); // Also the Console's Average Wind Speed
-    $weather["wind_gust_10min"]    = $meteobridgeapi[40]; // Wind Speed Gust - Max speed of last 10 minutes
-	$weather["wind_gust_speed"]    = $meteobridgeapi[6]; // Instanteous Speed
+	$weather["wind_speed"]         = number_format($meteobridgeapi[5]);
+	$weather["wind_gust_speed"]    = $meteobridgeapi[6];
 	$weather["wind_speed_bft"]     = $meteobridgeapi[12];
 	$weather["wind_speed_max"]     = $meteobridgeapi[30];	
 	$weather["wind_gust_speed_max"]= $meteobridgeapi[32];	
@@ -91,36 +86,27 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather["lowtemptime"]        = date($timeFormatShort, $meteobridgeapi[29]);
 	$weather["maxwindtime"]        = date($timeFormatShort, $meteobridgeapi[31]);
 	$weather["maxgusttime"]        = date($timeFormatShort, $meteobridgeapi[33]);
-	$weather["cloudbase"]          = round(($weather["temp"] - $weather["dewpoint"] )*1000 /2.4444,1) ; 
+	$weather["cloudbase"]          = round(($weather["temp"] - $weather["dewpoint"] ) *1000/4.4,1) ; 
 	$weather["cloudbase_units"]    = 'ft' ;	
 	$weather["wind_run"]           = number_format($weather["wind_speed"]/24,3); //10 minute wind run
 	$weather["swversion"]		   = $meteobridgeapi[38];
 	$weather["build"]			   = $meteobridgeapi[39];
 	$weather["actualhardware"]	   = $meteobridgeapi[42];
 	$weather["mbplatform"]	       = $meteobridgeapi[41];
-	$weather["uptime"]			   =$meteobridgeapi[81];	
+	$weather["uptime"]		       = $meteobridgeapi[81];//uptime in seconds
 	$weather["vpforecasttext"]	   = $meteobridgeapi1[1];//davis console forecast text
 	$weather["temp_avgtoday"]=$meteobridgeapi[152];
 	$weather['wind_speed_avg30']=$meteobridgeapi[158];
 	$weather['wind_speed_avgday']=$meteobridgeapi[158];
-	$weather['rainlastmonth']=$meteobridgeapi[173];
-	$weather['rainlastyear']=$meteobridgeapi[174];
 	$weather['tempyearavg']=$meteobridgeapi[184];
 	$weather['windspeedyearavg']=$meteobridgeapi[185];	
-	//battery
-	$weather['indoorbattery']=$meteobridgeapi[171];
-	$weather['outdoorbattery']=$meteobridgeapi[172];
-if ($weather['outdoorbattery']<1){$weather['outdoorbattery']="<oblue>Good</oblue>";}
-else $weather['outdoorbattery']="<ored>Poor</ored>";
-if ($weather['indoorbattery']<1){$weather['indoorbattery']="<oblue>Good</oblue>";}
-else $weather['indoorbattery']="<ored>Poor</ored>";
 	//weather34 windrun
 	$windrunhr=date('G');$windrunmin=(($windrunmin=date('i')/60));
 	$windrunformula=$windrunhr=date('G')+$windrunmin;
 	$weather["windrun34"]=$weather['wind_speed_avg30']*number_format($windrunformula,1);
 	//weather34 meteobridge moon sun data 
     $weather["moonphase"]=$meteobridgeapi[153];$weather["luminance"]=$meteobridgeapi[154];$weather["daylight"]=$meteobridgeapi[155];if ($meteobridgeapi[156]=='--'){$weather["moonrise"]='In Transit';}
-	else $weather["moonrise"]='<moonrisecolor> '.date($timeFormatShort, strtotime($meteobridgeapi[156]));$weather["moonset"]='<moonsetcolor> '.date($timeFormatShort, strtotime($meteobridgeapi[157]));
+	else $weather["moonrise"]='Rise<moonrisecolor> '.date($timeFormatShort, strtotime($meteobridgeapi[156]));$weather["moonset"]='Set<moonsetcolor> '.date($timeFormatShort, strtotime($meteobridgeapi[157]));
 	//weather34 meteobridge real feel 02-08-2018 based on cumulus forum formula (THW)
 	$weather['realfeel'] = round(($weather['temp'] + 0.33*($weather['humidity']/100)*6.105*exp(17.27*$weather['temp']/(237.7+$weather['temp']))- 0.70*$weather["wind_speed"] - 4.00),1);
 	//uptimealt
@@ -134,23 +120,15 @@ if ($weather['luminance']>99.9){$weather['luminance']=100;}
 if ($weather['luminance']<100){$weather['luminance']=$weather['luminance'];}
 //weather34 convert meteobridge lunar segment
 if ($weather["moonphase"]==0) {$weather["moonphase"]='New Moon';}else if ($weather["moonphase"]==1) {$weather["moonphase"]='Waxing Crescent';}else if ($weather["moonphase"]==2 ) {$weather["moonphase"]='First Quarter';}else if ($weather["moonphase"]==3 ) {$weather["moonphase"]='Waxing Gibbous';}else if ($weather["moonphase"]==4 ) {$weather["moonphase"]='Full Moon';}else if ($weather["moonphase"]==5) {$weather["moonphase"]='Waning Gibbous';}else if ($weather["moonphase"]==6) {$weather["moonphase"]='Last Quarter';}else if ($weather["moonphase"]==7){$weather["moonphase"]='Waning Crescent';}
-
-
-# Convert Start times for Pro and Nano SD, Other MBs unforunately don't provide this data
-if (is_numeric($meteobridgeapi[186]) && $meteobridgeapi[186] != '--') {
-	$weather['tempStartTime']	= date('M jS Y', strtotime($meteobridgeapi[186]));
-	$weather['windStartTime']	= date('M jS Y', strtotime($meteobridgeapi[187]));
-	$weather['pressStartTime']	= date('M jS Y', strtotime($meteobridgeapi[188]));
-	$weather['rainStartSec']	= strtotime($meteobridgeapi[189]);
-	$weather['rainStartTime']	= date('M jS Y', $weather['rainStartSec']);
-} else {
-	$weather['tempStartTime']	= 'All Time';
-	$weather['windStartTime']	= 'All Time';
-	$weather['pressStartTime']	= 'All Time';
-	$weather['rainStartTime']	= 'All Time';
-}
-
 	
+	// weatherflow lightning
+	$weather["lightning"]          = $meteobridgeapi[76];
+	$weather["lightningkm"]        = $meteobridgeapi[75];
+	$weather["lightningmax"]       = $meteobridgeapi[77];
+	$weather["lightningmaxdist"]   = $meteobridgeapi[75];
+	$weather["lightningtimeago"]   = $meteobridgeapi[76];
+	$weather["lightningmonth"]     = $meteobridgeapi[78];
+	$weather["lightningyear"]      = $meteobridgeapi[79];
 	
 	$originalDate = $meteobridgeapi[83];
     $tempydmaxtime = date("H:i", strtotime($originalDate));
@@ -232,9 +210,9 @@ if (is_numeric($meteobridgeapi[186]) && $meteobridgeapi[186] != '--') {
     $dewmaxtime = date('H:i', strtotime($originalDate46));	
 	$originalDate47 = $meteobridgeapi[66];
     $dewmintime =  date('H:i', strtotime($originalDate47));
-	$weather["dewmax"]		    = $meteobridgeapi[63]; //
+	$weather["dewmax"]		    = $meteobridgeapi[63]; //temp max year
 	$weather["dewmaxtime"]		= $dewmaxtime; //seconds	
-	$weather["dewmin"]		    = $meteobridgeapi[65]; //
+	$weather["dewmin"]		    = $meteobridgeapi[65]; //temp min year
 	$weather["dewmintime"]		= $dewmintime; //seconds
 	//dewpoint month
 	$originalDate74 = $meteobridgeapi[49];
@@ -348,13 +326,14 @@ $weather["humidity_ydmintime"]=$humydmintime;
     $rainlasttoday = date("H:i", strtotime($originalDate26));
 	$originalDate27 = $meteobridgeapi[124];
     $rainlasttoday1 = date("jS", strtotime($originalDate27));
-	$weather["rainydmax"]       = $meteobridgeapi[100]; //rain max yesterday
-	$weather["rainmmax"]        = $meteobridgeapi[101]; //wind max month
-	$weather["rainmmaxtime"]    = $rainmmaxtime; //seconds	
-	$weather["rainymax"]        = $meteobridgeapi[103]; //wind max year
-	$weather["rainymaxtime"]    = $rainymaxtime; //seconds
-	$weather["rain_alltime"]    = $meteobridgeapi[151]; // Total rain, all years
+	$weather["rainydmax"]		    = $meteobridgeapi[100]; //rain max yesterday
+	$weather["rainmmax"]		    = $meteobridgeapi[101]; //wind max month
+	$weather["rainmmaxtime"]		= $rainmmaxtime; //seconds	
+	$weather["rainymax"]		    = $meteobridgeapi[103]; //wind max year
+	$weather["rainymaxtime"]		= $rainymaxtime; //seconds
 	
+	$weather['rainlastmonth']=$meteobridgeapi[173];
+	$weather['rainlastyear']=$meteobridgeapi[174];
 	
 	//pressure	
 	//yesterday
@@ -458,23 +437,194 @@ $weather["humidity_ydmintime"]=$humydmintime;
 	$weather['barometer6h'] = $meteobridgeapi[10] - $meteobridgeapi[73];
 	$weather['winddir6h'] =	 $meteobridgeapi[72];
 	$weather["dirtrend"] =$dirtrend[0];
-	//wetbulb
-$Tc =($weather['temp']);$P = $weather['barometer'];$RH = $weather['humidity'];
-$Tdc = (($Tc - (14.55 + 0.114 * $Tc) * (1 - (0.01 * $RH)) - pow((2.5 + 0.007 * $Tc) * (1 - (0.01 * $RH)) , 3) - (15.9 + 0.117 * $Tc) * pow(1 - (0.01 * $RH),  14)));
-$E = (6.11 * pow(10 , (7.5 * $Tdc / (237.7 + $Tdc))));
-$wetbulbcalc = (((0.00066 * $P) * $Tc) + ((4098 * $E) / pow(($Tdc + 237.7) , 2) * $Tdc)) / ((0.00066 * $P) + (4098 * $E) / pow(($Tdc + 237.7) , 2));
-$wetbulbx =number_format($wetbulbcalc,1);
-$weather['wetbulb']=$wetbulbx;
 	
-	//weather34 start meteobridge conversions
-if($weather["barometer_units"]=="in"){$weather["barometer_units"]="inHg";}}if($tempunit!=$weather["temp_units"]){
-	if($tempunit=="C"){fToC($weather,"temp_indoor");fToC($weather,"indoor2");fToC($weather,"temp_indoormax");fToC($weather,"temp_indoormin");fToC($weather,"temp");fToC($weather,"temp2");fToC($weather,"temp_avg");fToC($weather,"windchill");fToC($weather,"heat_index");fToC($weather,"dewpoint");fToC($weather,"temp_indoor_feel");fToC($weather,"temp_indoor_feel2");fToC($weather,"temp_feel");fToC($weather,"temp_today_high");fToC($weather,"temp_today_low");fToC($weather,"avgtemp");fToC($weather,"temp_avgtoday");fToC($weather,"tempydmax");fToC($weather,"tempydmin");fToC($weather,"tempmmax");fToC($weather,"tempmmin");fToC($weather,"tempymax");fToC($weather,"tempymin");fToC($weather,"tempyearavg");fToC($weather,"tempdmax");fToC($weather,"tempdmin");fToC($weather,"tempamax");fToC($weather,"tempamin");fToC($weather,"dewmax");fToC($weather,"dewmin");fToC($weather,"dewamax");fToC($weather,"dewamin");fToC($weather,"dewmmax");fToC($weather,"dewmmin");fToC($weather,"dewymax");fToC($weather,"dewymin");fToC($weather,"dewydmax");fToC($weather,"dewydmin");fToC($weather,"dewpoint2");fToC($weather,"realfeel");fToCrel($weather,"temp_trend");fToCrel($weather,"dewpoint_trend");fToCrel($weather,"wetbulb");fToCrel($weather,"humidex");$weather["temp_units"]=$tempunit;}
 	
-	else if($tempunit=="F"){cToF($weather,"temp_indoor");cToF($weather,"temp");cToF($weather,"indoor2");cToF($weather,"temp2");cToF($weather,"temp_avg");cToF($weather,"temp_indoormax");cToF($weather,"temp_indoormin");cToF($weather,"windchill");cToF($weather,"heat_index");cToF($weather,"dewpoint");cToF($weather,"temp_indoor_feel");cToF($weather,"temp_indoor_feel2");cToF($weather,"temp_feel");cToF($weather,"temp_today_high");cToF($weather,"temp_today_low");cToF($weather,"avgtemp");cToF($weather,"temp_avgtoday");cToF($weather,"tempydmax");cToF($weather,"tempydmin");cToF($weather,"tempamax");cToF($weather,"tempamin");cToF($weather,"tempmmax");cToF($weather,"tempmmin");cToF($weather,"tempymax");cToF($weather,"tempymin");cToF($weather,"tempyearavg");cToF($weather,"tempdmax");cToF($weather,"tempdmin");cToF($weather,"dewmax");cToF($weather,"dewmin");cToF($weather,"dewamax");cToF($weather,"dewamin");cToF($weather,"dewmmax");cToF($weather,"dewmmin");cToF($weather,"dewymax");cToF($weather,"dewymin");cToF($weather,"dewydmax");cToF($weather,"dewydmin");cToF($weather,"dewpoint2");cToF($weather,"realfeel");cToFrel($weather,"temp_trend");cToFrel($weather,"dewpoint_trend");cToFrel($weather,"wetbulb");cToFrel($weather,"humidex");$weather["temp_units"]=$tempunit;}}
-if($rainunit!=$weather["rain_units"]){
 	
-	if($rainunit=="mm"){inTomm($weather,"rain_rate");inTomm($weather,"rain_today");inTomm($weather,"rain_month");inTomm($weather,"rain_year");inTomm($weather,"rainydmax");inTomm($weather,"rain_lasthour");inTomm($weather,"rainymax");inTomm($weather,"rainmmax");inTomm($weather,"rain_24hrs");inTomm($weather,"rain_alltime");inTomm($weather,"rainlastmonth");inTomm($weather,"rainlastyear");$weather["rain_units"]=$rainunit;}else if($rainunit=="in"){mmToin($weather,"rain_rate");mmToin($weather,"rain_today");mmToin($weather,"rain_month");mmToin($weather,"rain_year");mmToin($weather,"rainydmax");mmToin($weather,"rain_lasthour");mmToin($weather,"rainymax");mmToin($weather,"rainmmax");mmToin($weather,"rain_24hrs");mmToin($weather,"rainlastmonth");mmToin($weather,"rainlastyear");mmToin($weather,"rain_alltime");$weather["rain_units"]=$rainunit;}}
-if($pressureunit!=$weather["barometer_units"]){if(($pressureunit=='hPa'&&$weather["barometer_units"]=='mb')||($pressureunit=='mb'&&$weather["barometer_units"]=='hPa')){$weather["barometer_units"]=$pressureunit;}else if($pressureunit=="inHg"&&($weather["barometer_units"]=='mb'||$weather["barometer_units"]=='hPa')){mbToin($weather,"barometer");mbToin($weather,"thb0seapressamax");mbToin($weather,"thb0seapressamin");mbToin($weather,"thb0seapressymax");mbToin($weather,"thb0seapressymin");mbToin($weather,"thb0seapressydmax");mbToin($weather,"thb0seapressydmin");mbToin($weather,"thb0seapressmmax");mbToin($weather,"thb0seapressmmin");mbToin($weather,"barometer_trend");mbToin($weather,"barometer_trend1");mbToin($weather,"barometermovement");mbToin($weather,"barometer_max");mbToin($weather,"barometer_min");mbToin($weather,"barometer_avg");mbToin($weather,"barometert");mbToin($weather,"barotrend");mbToin($weather,"barometer_trendt");$weather["barometer_units"]=$pressureunit;}else if(($pressureunit=="mb"||$pressureunit=='hPa')&&$weather["barometer_units"]=='inHg'){inTomb($weather,"barometer");inTomb($weather,"thb0seapressamax");inTomb($weather,"thb0seapressamin");inTomb($weather,"thb0seapressymax");inTomb($weather,"thb0seapressymin");inTomb($weather,"thb0seapressydmax");inTomb($weather,"thb0seapressydmin");inTomb($weather,"thb0seapressmmax");inTomb($weather,"thb0seapressmmin");inTomb($weather,"barometer_trend");inTomb($weather,"barometer_trend1");inTomb($weather,"barometermovement");inTomb($weather,"barometer_max");inTomb($weather,"barometer_min");inTomb($weather,"barometer_avg");inTomb($weather,"barometert");inTomb($weather,"barotrend");inTomb($weather,"barometer_trendt");$weather["barometer_units"]=$pressureunit;}}
+	//barometer units
+	if ($weather["barometer_units"] == "in") {
+		// standardize format
+		$weather["barometer_units"] = "inHg";}}
+// Convert temperatures if necessary
+if ($tempunit != $weather["temp_units"]) {
+	if ($tempunit == "C") {
+		fToC($weather, "temp_indoor");
+		fToC($weather, "temp_indoormax");
+		fToC($weather, "temp_indoormin");
+		fToC($weather, "temp");	
+		fToC($weather, "temp2");
+		fToC($weather, "temp_avg");				
+		fToC($weather, "windchill");		
+		fToC($weather, "heat_index");		
+		fToC($weather, "dewpoint");
+		fToC($weather, "temp_indoor_feel");
+		fToC($weather, "temp_indoor_feel2");
+		fToC($weather, "temp_feel");
+		fToC($weather, "temp_today_high");
+		fToC($weather, "temp_today_low");
+		fToC($weather, "temp_avgtoday");		
+		fToC($weather, "avgtemp");
+		fToC($weather, "tempydmax");
+		fToC($weather, "tempydmin");
+		fToC($weather, "tempmmax");
+		fToC($weather, "tempmmin");
+		fToC($weather, "tempymax");
+		fToC($weather, "tempymin");
+		fToC($weather, "tempdmax");
+		fToC($weather, "tempdmin");
+		fToC($weather, "tempamax");
+		fToC($weather, "tempamin");
+		fToC($weather, "dewmax");
+		fToC($weather, "dewmin");
+		fToC($weather, "dewamax");
+		fToC($weather, "dewamin");
+		fToC($weather, "dewmmax");
+		fToC($weather, "dewmmin");
+		fToC($weather, "dewymax");
+		fToC($weather, "dewymin");
+		fToC($weather, "dewydmax");
+		fToC($weather, "dewydmin");
+		fToC($weather, "dewpoint2");
+		fToC($weather, "realfeel");	
+		fToC($weather,"tempyearavg");	
+		fToCrel($weather, "temp_trend");
+		fToCrel($weather, "dewpoint_trend");	
+		fToCrel($weather, "humidex");				
+		$weather["temp_units"] = $tempunit;
+	}
+	else if ($tempunit == "F") {
+		cToF($weather, "temp_indoor");
+		cToF($weather, "temp");
+		cToF($weather, "temp2");
+		cToF($weather, "temp_avg");	
+		cToF($weather, "temp_indoormax");
+		cToF($weather, "temp_indoormin");				
+		cToF($weather, "windchill");		
+		cToF($weather, "heat_index");		
+		cToF($weather, "dewpoint");		
+		cToF($weather, "temp_indoor_feel");
+		cToF($weather, "temp_indoor_feel2");
+		cToF($weather, "temp_feel");		
+		cToF($weather, "temp_today_high");
+		cToF($weather, "temp_today_low");
+		cToF($weather, "temp_avgtoday");	
+		cToF($weather, "avgtemp");
+		cToF($weather, "tempydmax");
+		cToF($weather, "tempydmin");
+		cToF($weather, "tempamax");
+		cToF($weather, "tempamin");
+		cToF($weather, "tempmmax");
+		cToF($weather, "tempmmin");
+		cToF($weather, "tempymax");
+		cToF($weather, "tempymin");
+		cToF($weather, "tempdmax");
+		cToF($weather, "tempdmin");
+		cToF($weather, "dewmax");
+		cToF($weather, "dewmin");
+		cToF($weather, "dewamax");
+		cToF($weather, "dewamin");
+		cToF($weather, "dewmmax");
+		cToF($weather, "dewmmin");
+		cToF($weather, "dewymax");		
+		cToF($weather, "dewymin");
+		cToF($weather, "dewydmax");
+		cToF($weather, "dewydmin");
+		cToF($weather, "dewpoint2");
+		cToF($weather, "realfeel");
+		cToF($weather,"tempyearavg");
+		cToFrel($weather, "temp_trend");
+		cToFrel($weather, "dewpoint_trend");	
+		cToFrel($weather, "humidex");	
+		$weather["temp_units"] = $tempunit;
+	}
+}
+
+// Convert rainfall units if necessary
+if ($rainunit != $weather["rain_units"]) {
+	if ($rainunit == "mm") {
+		inTomm($weather, "rain_rate");
+		inTomm($weather, "rain_today");
+		inTomm($weather, "rain_month");
+		inTomm($weather, "rain_year");
+		inTomm($weather, "rainydmax");
+		inTomm($weather, "rain_lasthour");
+		inTomm($weather, "rainymax");		
+		inTomm($weather, "rainmmax");
+		inTomm($weather, "rain_24hrs");	
+		inTomm($weather, "rainlastmonth");	
+		inTomm($weather, "rainlastyear");
+		
+		$weather["rain_units"] = $rainunit;
+	}
+	else if ($rainunit == "in") {
+		mmToin($weather, "rain_rate");
+		mmToin($weather, "rain_today");
+		mmToin($weather, "rain_month");
+		mmToin($weather, "rain_year");
+		mmToin($weather, "rainydmax");
+		mmToin($weather, "rain_lasthour");
+		mmToin($weather, "rainymax");		
+		mmToin($weather, "rainmmax");
+		mmToin($weather, "rain_24hrs");	
+		mmToin($weather, "rainlastmonth");	
+		mmToin($weather, "rainlastyear");			
+		$weather["rain_units"] = $rainunit;
+	}
+}
+
+// Convert pressure units if necessary
+if ($pressureunit != $weather["barometer_units"]) {
+	if (($pressureunit == 'hPa' && $weather["barometer_units"] == 'mb') ||
+		($pressureunit == 'mb' && $weather["barometer_units"] == 'hPa')) {
+		// 1 mb = 1 hPa so just change the unit being displayed
+		$weather["barometer_units"] = $pressureunit;
+	}
+	else if ($pressureunit == "inHg" && ($weather["barometer_units"] == 'mb' || $weather["barometer_units"] == 'hPa')) {
+		mbToin($weather, "barometer");	
+		mbToin($weather, "thb0seapressamax");
+		mbToin($weather, "thb0seapressamin");
+		mbToin($weather, "thb0seapressymax");
+		mbToin($weather, "thb0seapressymin");
+		mbToin($weather, "thb0seapressydmax");
+		mbToin($weather, "thb0seapressydmin");
+		mbToin($weather, "thb0seapressmmax");
+		mbToin($weather, "thb0seapressmmin");			
+		mbToin($weather, "barometer_trend");
+		mbToin($weather, "barometer_trend1");
+		mbToin($weather, "barometermovement");
+		mbToin($weather, "barometer_max");
+		mbToin($weather, "barometer_min");
+		mbToin($weather, "barometer_avg");
+		mbToin($weather, "barometert");
+		mbToin($weather, "barotrend");		
+		mbToin($weather, "barometer_trendt");
+		
+		$weather["barometer_units"] = $pressureunit;
+	}
+	else if (($pressureunit == "mb" || $pressureunit == 'hPa') && $weather["barometer_units"] == 'inHg') {
+		inTomb($weather, "barometer");	
+		inTomb($weather, "thb0seapressamax");
+		inTomb($weather, "thb0seapressamin");
+		inTomb($weather, "thb0seapressymax");
+		inTomb($weather, "thb0seapressymin");
+		inTomb($weather, "thb0seapressydmax");
+		inTomb($weather, "thb0seapressydmin");
+		inTomb($weather, "thb0seapressmmax");
+		inTomb($weather, "thb0seapressmmin");	
+		inTomb($weather, "barometer_trend");
+		inTomb($weather, "barometer_trend1");
+		inTomb($weather, "barometermovement");
+		inTomb($weather, "barometer_max");
+		inTomb($weather, "barometer_min");
+		inTomb($weather, "barometer_avg");
+		inTomb($weather, "barometert");
+		inTomb($weather, "barotrend");
+		inTomb($weather, "barometer_trendt");
+		
+		$weather["barometer_units"] = $pressureunit;
+	}
+}
+
+// Convert wind speed units if necessary
 
 if($windunit!=$weather["wind_units"]){
 	
@@ -499,9 +649,53 @@ else if($windunit=='kts'&&$weather["wind_units"]=='m/s'){msTokts($weather,"wind_
 
 else if($windunit=='kts'&&$weather["wind_units"]=='mph'){mphTokts($weather,"wind_speed");mphTokts($weather,"wind_speed2");mphTokts($weather,"wind_speed_trend");mphTokts($weather,"wind_gust_speed");mphTokts($weather,"wind_gust_speed2");mphTokts($weather,"wind_gust_speed_trend");mphTokts($weather,"wind_speed_max");mphTokts($weather,"wind_gust_speed_max");mphTokts($weather,"wind_run");mphTokts($weather,"wind_speed_avg");mphTokts($weather,"wind_speed_avg15");mphTokts($weather,"wind_speed_avg30");mphTokts($weather,"winddmax");mphTokts($weather,"windamax");mphTokts($weather,"windydmax");mphTokts($weather,"windmmax");mphTokts($weather,"windymax");mphTokts($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
 
-else if($windunit=='kts'&&$weather["wind_units"]=='km/h'){kmhTokts($weather,"wind_speed");kmhTokts($weather,"wind_speed2");kmhTokts($weather,"wind_speed_trend");kmhTokts($weather,"wind_gust_speed");kmhTokts($weather,"wind_gust_speed2");kmhTokts($weather,"wind_gust_speed_trend");kmhTokts($weather,"wind_speed_max");kmhTokts($weather,"wind_gust_speed_max");kmhTokts($weather,"wind_run");kmhTokts($weather,"wind_speed_avg");kmhTokts($weather,"wind_speed_avg15");kmhTokts($weather,"wind_speed_avg30");kmhTokts($weather,"winddmax");kmhTokts($weather,"windamax");kmhTokts($weather,"windydmax");kmhTokts($weather,"windmmax");kmhTokts($weather,"windymax");kmhTokts($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}}$toKnots=1;
-if($weather["wind_units"]=='mph'){$toKnots=0.868976;}else if($weather["wind_units"]=='km/h'){$toKnots=0.539957;}else if($weather["wind_units"]=='m/s'){$toKnots=1.94384;}
+else if($windunit=='kts'&&$weather["wind_units"]=='km/h'){kmhTokts($weather,"wind_speed");kmhTokts($weather,"wind_speed2");kmhTokts($weather,"wind_speed_trend");kmhTokts($weather,"wind_gust_speed");kmhTokts($weather,"wind_gust_speed2");kmhTokts($weather,"wind_gust_speed_trend");kmhTokts($weather,"wind_speed_max");kmhTokts($weather,"wind_gust_speed_max");kmhTokts($weather,"wind_run");kmhTokts($weather,"wind_speed_avg");kmhTokts($weather,"wind_speed_avg15");kmhTokts($weather,"wind_speed_avg30");kmhTokts($weather,"winddmax");kmhTokts($weather,"windamax");kmhTokts($weather,"windydmax");kmhTokts($weather,"windmmax");kmhTokts($weather,"windymax");kmhTokts($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}}
+// Keep track of the conversion factor for windspeed to knots because it is useful in multiple places
+$toKnots = 1;
+if ($weather["wind_units"] == 'mph') {
+	$toKnots = 0.868976;
+} else if ($weather["wind_units"] == 'km/h') {
+	$toKnots = 0.5399568;
+} else if ($weather["wind_units"] == 'm/s') {
+	$toKnots = 1.943844;
+}
+
+
+
+// darksky api forecast and current script for HOMEWEATHERSTATION gets data from jsondata/darksky.json Friday 2nd December 2016 //
+//$units = 'auto';  // Read the API docs for full details // default is auto
+date_default_timezone_set($TZ);
+$json = 'jsondata/darksky.txt'; 
+$json = file_get_contents($json); 
+$response = json_decode($json, true);       
+if ($response != null) {
+  //darksky api Current SKY Conditions
+  $darkskycurTime = $response['currently']['time'];
+  $darkskycurSummary = $response['currently']['summary'];
+  $darkskycurIcon = $response['currently']['icon'];
+  $darkskycurTemp = round($response['currently']['temperature']);
+  $darkskycurCover = $response['currently']['cloudCover']*100;   
+  //darksky api Hourly Forecast
+  $darkskyhourlySummary = $response['hourly']['summary'];
+  $darkskyhourlyIcon = $response['hourly']['icon'];
+  $darkskyhourlyUV = $response['hourly']['uvIndex'];
+  $darkskyhourlyCond= array();
+    foreach ($response['hourly']['data'] as $td) {
+      $darkskyhourlyCond[] = $td;
+    }
+  //darksky api Daily Forecast
+  $darkskydaySummary = $response['daily']['summary'];
+  $darkskydayIcon = $response['daily']['icon'];
+  $darkskydayCond= array();
+    foreach ($response['daily']['data'] as $d) {
+      $darkskydayCond[] = $d;
+    }}
+//end darksky api and convert winspeed below
+
+
+
 $o='Designed by weather34.com';
+$designedby='Designed by weather34.com';
 ?>
 <?php 
 date_default_timezone_set($TZ);
@@ -541,9 +735,19 @@ foreach ($meteor_events as $meteor_check) {if ($meteor_check["event_start"]<=$me
 //end meteor
 $uptime=$weather["uptime"];function convert_uptime($uptime) {$dt1 = new DateTime("@0");$dt2 = new DateTime("@$uptime");  return $dt1->diff($dt2)->format('%a day(s) %h hrs %i min');}
 //lunar and solar eclipse /meteor shpwers advisory 2018-2019-2020
+$eclipse_default=" <noalert>No Current Weather <spanyellow><ored>Alerts ".$alert."</ored></spanyellow></noalert>";
+//2 jul solar 2019
+$eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 7, 2, 2019),"event_title"=>"<div style ='margin-top:5px;'>".$solareclipsesvg." <alert>Total Solar <spanyellow>Eclipse</spanyellow></alert>  </div>
+","event_end"=>mktime(23, 59, 59, 7, 2, 2019),);
+//16/17 jul solar 2019
+$eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 7, 16, 2019),"event_title"=>"<div style ='margin-top:5px;'>".$solareclipsesvg."  <alert>Partial Lunar <spanyellow>Eclipse</spanyellow></alert>  </div>
+","event_end"=>mktime(23, 59, 59, 7, 17, 2019),);
 //persieds 2019
 $eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 8, 12 , 2019),"event_title"=>"<div style ='margin-top:5px;'>".$meteorsvg." <alert>Perseids <spanyellow>Meteor Shower</spanyellow></alert>  </div>
 ","event_end"=>mktime(23, 59, 59, 8, 13, 2019),);
+//leonids 2019
+$eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 11, 17 , 2019),"event_title"=>"<div style ='margin-top:5px;'>".$meteorsvg." <alert>Leonids <spanyellow>Meteor Shower</spanyellow></alert>  </div>
+","event_end"=>mktime(23, 59, 59, 11, 18, 2018),);
 //geminids 2019
 $eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 12, 13 , 2019),"event_title"=>"<div style ='margin-top:5px;'>".$meteorsvg." <alert>Geminids <spanyellow>Meteor Shower</spanyellow></alert>  </div>
 ","event_end"=>mktime(23, 59, 59, 12, 14, 2019),);
@@ -559,7 +763,37 @@ $eclipseNow=time();$eclipseOP=false;foreach ($eclipse_events as $eclipse_check) 
 ?>
 <?php // firerisk based on cumulus forum thread http://sandaysoft.com/forum/viewtopic.php?f=14&t=2789&sid=77ffab8f6f2359e09e6c58d8b13a0c3c&start=30
 $firerisk = number_format((((110 - 1.373 * $weather["humidity"] ) - 0.54 * (10.20 - $weather["temp"] )) * (124 * pow(10,(-0.0142 * $weather["humidity"] ))))/60,0);?>
-<?php 
+<?php //wetbulb
+$Tc =($weather['temp']);$P = $weather['barometer'];$RH = $weather['humidity'];
+$Tdc = (($Tc - (14.55 + 0.114 * $Tc) * (1 - (0.01 * $RH)) - pow((2.5 + 0.007 * $Tc) * (1 - (0.01 * $RH)) , 3) - (15.9 + 0.117 * $Tc) * pow(1 - (0.01 * $RH),  14)));
+$E = (6.11 * pow(10 , (7.5 * $Tdc / (237.7 + $Tdc))));
+$wetbulbcalc = (((0.00066 * $P) * $Tc) + ((4098 * $E) / pow(($Tdc + 237.7) , 2) * $Tdc)) / ((0.00066 * $P) + (4098 * $E) / pow(($Tdc + 237.7) , 2));
+$wetbulbx =number_format($wetbulbcalc,1);
+
+
+
+# Convert Start times for Pro and Nano SD, Other MBs unforunately don't provide this data
+if (is_numeric($meteobridgeapi[186]) && $meteobridgeapi[186] != '--') {
+	$weather['tempStartTime']	= date('M jS Y', strtotime($meteobridgeapi[186]));
+	$weather['windStartTime']	= date('M jS Y', strtotime($meteobridgeapi[187]));
+	$weather['pressStartTime']	= date('M jS Y', strtotime($meteobridgeapi[188]));
+	$weather['rainStartSec']	= strtotime($meteobridgeapi[189]);
+	$weather['rainStartTime']	= date('M jS Y', $weather['rainStartSec']);
+} else {
+	$weather['tempStartTime']	= 'All Time';
+	$weather['windStartTime']	= 'All Time';
+	$weather['pressStartTime']	= 'All Time';
+	$weather['rainStartTime']	= 'All Time';
+}
+
+//battery
+	$weather['indoorbattery']=$meteobridgeapi[171];
+	$weather['outdoorbattery']=$meteobridgeapi[172];
+if ($weather['outdoorbattery']<1){$weather['outdoorbattery']="<oblue>Good</oblue>";}
+else $weather['outdoorbattery']="<ored>Poor</ored>";
+if ($weather['indoorbattery']<1){$weather['indoorbattery']="<oblue>Good</oblue>";}
+else $weather['indoorbattery']="<ored>Poor</ored>";
+
 // K-INDEX & SOLAR DATA FOR WEATHER34 HOMEWEATHERSTATION TEMPLATE RADIO HAMS REJOICE :-) //
 $str = file_get_contents('jsondata/kindex.txt');$json = array_reverse(json_decode($str,false));$kp =  $json[1][1];?>
 <?php $file = $_SERVER["SCRIPT_NAME"];$break = Explode('/', $file);$mod34file = $break[count($break) - 1];?>

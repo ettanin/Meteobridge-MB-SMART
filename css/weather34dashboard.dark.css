@@ -2,13 +2,13 @@
 
 .homeweathercompass1{position:absolute;width:175px;height:175px;text-align:center;margin-top:-25px;margin-left:60px;z-index:1}.text1{z-index:10;text-align:center;margin:60px 0 auto}
 
-.weather34windspeed{font-size:1.7rem;position:absolute;margin-top:35px;margin-left:-20px;display:flex;align-items:center;justify-content:center;height:2em;width:100px;border:0;overflow:hidden;border-radius:2px;font-family:'clock', monospace;color:#AEB6BF  }
-.weather34windspeed > weather34windunitidspeed{position:absolute;font-size:.35em;display:flex;align-items:center;justify-content:center;top:1px;left:38px;}
-.weather34windspeed > weather34windunitidunit{position:absolute;font-size:.3em;display:flex;align-items:center;justify-content:center;top:38px;left:42px}
+.weather34windspeed{font-size:1.45rem;position:absolute;margin-top:35px;margin-left:-30px;display:flex;align-items:center;justify-content:center;height:2em;border:0;overflow:hidden;border-radius:2px;font-family:'weathertext2';color:#AEB6BF;font-weight:200;width:5em; letter-spacing: 0.05em }
+.weather34windspeed > weather34windunitidspeed{position:absolute;font-size:.35em;display:flex;align-items:center;justify-content:center;top:1px;left:45px;letter-spacing:0}
+.weather34windspeed > weather34windunitidunit{position:absolute;font-size:.35em;display:flex;align-items:center;justify-content:center;top:35px;left:47px;letter-spacing:0}
 
-.weather34windgust{font-size:1.7rem;position:absolute;margin-top:35px;margin-left:212px;display:flex;align-items:center;justify-content:center;height:2em;width:100px;border:0;overflow:hidden;border-radius:2px;font-family:'clock', monospace;color:#AEB6BF  }
-.weather34windgust weather34windunitidspeed1{position:absolute;font-size:.35em;display:flex;align-items:center;justify-content:center;top:1px;left:25px}
-.weather34windgust weather34windunitidunit1{position:absolute;font-size:.3em;display:flex;align-items:center;justify-content:center;top:38px;left:41px}
+.weather34windgust{font-size:1.45rem;position:absolute;margin-top:35px;margin-left:205px;display:flex;align-items:center;justify-content:center;height:2em;border:0;overflow:hidden;border-radius:2px;font-family:'weathertext2';color:#AEB6BF;font-weight:200;width:5em;letter-spacing: 0.05em }
+.weather34windgust weather34windunitidspeed1{position:absolute;font-size:.35em;display:flex;align-items:center;justify-content:center;top:1px;left:37px;letter-spacing:0 }
+.weather34windgust weather34windunitidunit1{position:absolute;font-size:.35em;display:flex;align-items:center;justify-content:center;top:35px;left:48px;letter-spacing:0}
 
 
 

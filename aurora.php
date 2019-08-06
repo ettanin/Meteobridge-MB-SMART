@@ -6,14 +6,14 @@ $kp =  $json[1][1];
 
 
 	####################################################################################################
-	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
-	# https://weather34.com/homeweatherstation/index.html 											   # 
+	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2015-18                                       #
+	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at https://weather34.com/homeweatherstation/index.html # 
 	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
+	# 	                                                                                               #
+	# 	WEATHER34 AURORA SUN INDEX: 25th January 2018   	                                           #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
-?>
 
 ?>
 

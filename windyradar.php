@@ -1,15 +1,4 @@
-<?php  
-
-	####################################################################################################
-	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
-	# https://weather34.com/homeweatherstation/index.html 											   # 
-	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
-	# 	                                                                                               #
-	#   https://www.weather34.com 	                                                                   #
-	####################################################################################################
-
-include('livedata.php');error_reporting(0);?>
+<?php include('livedata.php');error_reporting(0);?>
 <style>body{background:rgba(30, 31, 35, 1.000);}
 .webcamlarge{
 -webkit-border-radius:4px;	-moz-border-radius:4px;	-o-border-radius:4px;	-ms-border-radius:4px;border-radius:4px;border:solid RGBA(84, 85, 86, 1.00) 2px;	width:98%; 	height:380px;}
@@ -31,5 +20,5 @@ echo "</span>";
 <svg id="i-external" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
 <path d="M14 9 L3 9 3 29 23 29 23 18 M18 4 L28 4 28 14 M28 4 L14 18" /></svg> 
 Radar/Map provided by Windy.com</span>
-<div class="weather34browser-footerlogo" style="padding-top:7px;"><a href="https://github.com/weather34/Meteobridge-Weather34-Template" title="MB-HWS" target="_blank"><img src="img/weatherlogo34.svg" width="35"</img></a></div>
+<div class="weather34browser-footerlogo" style="padding-top:7px;"><a href="https://github.com/lightmaster/Meteobridge-Weather34-Template" title="MB-HWS" target="_blank"><img src="img/weatherlogo34.svg" width="35"</img></a></div>
 </div>

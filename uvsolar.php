@@ -1,16 +1,5 @@
 <?php include('livedata.php');header('Content-type: text/html; charset=utf-8');
 // 34 Aqi 
- 
-
-	####################################################################################################
-	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
-	# https://weather34.com/homeweatherstation/index.html 											   # 
-	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
-	# 	                                                                                               #
-	#   https://www.weather34.com 	                                                                   #
-	####################################################################################################
-
 
 
 ?>
