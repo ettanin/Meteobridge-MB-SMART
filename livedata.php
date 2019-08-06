@@ -86,7 +86,7 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather["lowtemptime"]        = date($timeFormatShort, $meteobridgeapi[29]);
 	$weather["maxwindtime"]        = date($timeFormatShort, $meteobridgeapi[31]);
 	$weather["maxgusttime"]        = date($timeFormatShort, $meteobridgeapi[33]);
-	$weather["cloudbase"]          = round(($weather["temp"] - $weather["dewpoint"] ) *1000/4.4,1) ; 
+	//$weather["cloudbase"]          = round(($weather["temp"] - $weather["dewpoint"] ) *1000/4.4,1) ; 
 	$weather["cloudbase_units"]    = 'ft' ;	
 	$weather["wind_run"]           = number_format($weather["wind_speed"]/24,3); //10 minute wind run
 	$weather["swversion"]		   = $meteobridgeapi[38];
@@ -769,6 +769,8 @@ $Tdc = (($Tc - (14.55 + 0.114 * $Tc) * (1 - (0.01 * $RH)) - pow((2.5 + 0.007 * $
 $E = (6.11 * pow(10 , (7.5 * $Tdc / (237.7 + $Tdc))));
 $wetbulbcalc = (((0.00066 * $P) * $Tc) + ((4098 * $E) / pow(($Tdc + 237.7) , 2) * $Tdc)) / ((0.00066 * $P) + (4098 * $E) / pow(($Tdc + 237.7) , 2));
 $wetbulbx =number_format($wetbulbcalc,1);
+$weather['wetbulb']=$wetbulbx;
+$weather["cloudbase"]= round(($weather["temp"] - $weather["dewpoint"] )*1000 /2.4444,1) ; 
 
 
 
