@@ -7,7 +7,7 @@ include('settings1.php');
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
+	# 	Release: August 2019						  	                                               #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
@@ -1557,7 +1557,7 @@ your nearly there :-) keep going
 
     
      
-     <div class= "stationvalue"> <img src="img/wunderground.svg" width="100" /> STATION ID  for PWS Historical Charts</div> 
+     <div class= "stationvalue"> <img src="img/wunderground.svg" width="100" /> STATION ID</div> 
     <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg>
