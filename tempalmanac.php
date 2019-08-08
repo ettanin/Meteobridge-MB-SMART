@@ -116,6 +116,16 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .highestword{position:absolute;font-size:.8em;margin-left:45px;margin-top:-15px;color:#c0c0c0;width:100px}
 .lowestword{position:absolute;font-size:.8em;margin-left:45px;margin-top:28px;color:#c0c0c0;width:100px}
 orange{color:#ff832f}
+.actualg{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
+padding:5px;font-family:Arial, Helvetica, sans-serif;width:300px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
+align-items:center;justify-content:center;margin-bottom:10px;top:0}
+.actualg temp{background:rgba(208, 95, 45, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-right:5px}
+.actualg feel{background:rgba(211, 93, 78, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
+.actualg dewpoint{background:rgba(6, 162, 177, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff}
+.actualg wetbulb{background:rgba(241, 107, 79, .8);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
+
+
+
 </style>
 <div class="weather34darkbrowser" url="Temperature Almanac <?php echo "&deg;",$weather["temp_units"]?>"></div>
   
@@ -930,7 +940,8 @@ orange{color:#ff832f}
 
   <main class="grid1" >
     <articlegraph> 
-  <div class=actualt><?php echo date('Y');?> Temp <span style="color:#ff9350">Max:<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></smalluvunit></span> | <blue>Min:<?php echo "&deg;<smalluvunit>",$weather["temp_units"]?></blue></div>  
+  <div class=actualg><?php echo date('Y');?> Temperature
+  <temp><?php echo "Max ",$weather["tempymax"]."&deg;"?> </temp><dewpoint><?php echo "Min ",$weather["tempymin"]."&deg;"?> </dewpoint>  </div>   
   <iframe  src="weather34charts/yearlytemperaturemedium.php" frameborder="0" scrolling="no" width="100%" height="120px" ></iframe>
    
   </articlegraph> 
