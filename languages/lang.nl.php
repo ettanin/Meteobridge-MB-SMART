@@ -3,10 +3,10 @@
 -----------------
 Language Translation File for HOMEWEATHERSTATION Template
 Language: Dutch
-Translated by: <Your Name Here>
+Translated by: Piet Kampen
 Developed By: Lightmaster/Brian Underdown/Erik M Madsen
 April 5th 2017
-Revised: 2019
+Revised: Aug - 2019
 -----------------
 */
 # -----------------------------------------------------
@@ -39,24 +39,24 @@ $lang['Weatherstationinfo']     = 'Weerstation informatie';
 $lang['Webdesigninfo']          = 'Webdesign info';
 $lang['Contact']                = 'Contact';
 //days
-$lang['Monday']                 = 'Monday';
-$lang['Tuesday']                = 'Tuesday';
-$lang['Wednesday']              = 'Wednesday';
-$lang['Thursday']               = 'Thursday';
-$lang['Friday']                 = 'Friday ';
-$lang['Saturday']               = 'Saturday';
-$lang['Sunday']                 = 'Sunday';
+$lang['Monday']                 = 'Maandag';
+$lang['Tuesday']                = 'Dinsdag';
+$lang['Wednesday']              = 'Woensdag';
+$lang['Thursday']               = 'Donderdag';
+$lang['Friday']                 = 'Vrijdag ';
+$lang['Saturday']               = 'Zaterdag';
+$lang['Sunday']                 = 'Zondag';
 //months
-$lang['January']                = 'January';
-$lang['Febuary']                = 'Febuary';
-$lang['March']                  = 'March';
+$lang['January']                = 'Januari';
+$lang['Febuary']                = 'Febuari';
+$lang['March']                  = 'Maart';
 $lang['April']                  = 'April';
-$lang['May']                    = 'May';
-$lang['June']                   = 'June';
-$lang['July']                   = 'July';
-$lang['August']                 = 'August';
+$lang['May']                    = 'Mei';
+$lang['June']                   = 'Juni';
+$lang['July']                   = 'Juli';
+$lang['August']                 = 'Augustus';
 $lang['September']              = 'September';
-$lang['October']                = 'October';
+$lang['October']                = 'Oktober';
 $lang['November']               = 'November';
 $lang['December']               = 'December';
 //temperature
@@ -120,19 +120,19 @@ $lang['ViolentStormConditions'] = 'Orkaanachtig Condities';
 $lang['HurricaneConditions']    = 'Orkaan Condities';
 $lang['Avg']                    = '<span2> Gem: </span2>';
 //wind direction compass
-$lang['Northdir']               = 'Het <span>Noorden<br></span>';
+$lang['Northdir']               = 'Pal <span>Noord<br></span>';
 $lang['NNEdir']                 = 'Noord Noord <br><span>Oost</span>';
 $lang['NEdir']                  = 'Noord <span> Oost<br></span>';
 $lang['ENEdir']                 = 'Oost Noord<br><span>Oost</span>';
-$lang['Eastdir']                = 'Het <span> Oosten<br></span>';
+$lang['Eastdir']                = 'Pal <span> Oost<br></span>';
 $lang['ESEdir']                 = 'Oost Zuid<br><span>Oost</span>';
 $lang['SEdir']                  = 'Zuid <span> Oost</span>';
 $lang['SSEdir']                 = 'Zuid Zuid<br><span>Oost</span>';
-$lang['Southdir']               = 'Het <span> Zuiden</span>';
+$lang['Southdir']               = 'Pal <span> Zuid</span>';
 $lang['SSWdir']                 = 'Zuid Zuid<br><span>West</span>';
 $lang['SWdir']                  = 'Zuid <span> West</span>';
-$lang['WSWdir']                 = 'West South<br><span>West</span>';
-$lang['Westdir']                = 'Het <span> Westen</span>';
+$lang['WSWdir']                 = 'West Zuid<br><span>West</span>';
+$lang['Westdir']                = 'Pal <span> West</span>';
 $lang['WNWdir']                 = 'West Noord<br><span>West</span>';
 $lang['NWdir']                  = 'Noord <span> West</span>';
 $lang['NWNdir']                 = 'Noord Noord<br><span>West</span>';
@@ -141,7 +141,7 @@ $lang['North']                  = 'Noord';
 $lang['NNE']                    = 'NNO';
 $lang['NE']                     = 'NO';
 $lang['ENE']                    = 'ONO';
-$lang['East']                   = 'Oosten ';
+$lang['East']                   = 'Oost ';
 $lang['ESE']                    = 'OZO';
 $lang['SE']                     = 'ZO';
 $lang['SSE']                    = 'ZZO';
@@ -152,17 +152,16 @@ $lang['WSW']                    = 'WZW';
 $lang['West']                   = 'West';
 $lang['WNW']                    = 'WNW';
 $lang['NW']                     = 'NW';
-$lang['NWN']                    = 'NWN';
+$lang['NWN']                    = 'NNW';
 //rain
 $lang['raintoday']              = 'Regen vandaag';
 $lang['Rate']                   = 'Intensiteit';
 $lang['Rainfall']               = 'Neerslag';
 $lang['precip']                 = 'Neerslag'; // must be short name do not use full precipatation or I will remove it if it does not align !!!! ///
-$lang['Precip']                 = 'Neerslag'; // must be short name do not use full precipatation or I will remove it if it does not align !!!! ///
 $lang['Rain']                   = 'Regen';
 $lang['HeavyRain']              = 'Hevige regen';
-$lang['Rainbow']                = 'Rainbow';
-$lang['Windy']                  = 'Windy';
+$lang['Rainbow']                = 'Regenboog';
+$lang['Windy']                  = 'Winderig';
 //sun -moon-daylight-darkness
 $lang['Sun']                    = 'Zon';
 $lang['Moon']                   = 'Maan';
@@ -174,7 +173,7 @@ $lang['Night']                  = 'Nacht ';
 $lang['Day']                    = 'Dag';
 $lang['Nextnewmoon']            = 'Nieuwe maan';
 $lang['Nextfullmoon']           = 'Volle maan';
-$lang['Luminance']              = '&nbsp;&nbsp;&nbsp;&nbsp;Verlicht';
+$lang['Luminance']              = 'Verlicht';
 $lang['Moonphase']              = 'Maanfase';
 $lang['Estimated']              = 'Geschatte';
 $lang['Daylight']               = 'Daglicht';
@@ -182,7 +181,7 @@ $lang['Darkness']               = 'Donker';
 $lang['Daysold']                = 'Dagen oud';
 $lang['Belowhorizon']           = 'achter de<br>horizon';
 $lang['Mintill']                = 'min tot';
-$lang['Till']                   = 'Till';
+$lang['Till']                   = 'Tot';
 $lang['Minago']                 = 'min geleden';
 $lang['Hrs']                    = ' hrs';
 $lang['Min']                    = ' min';
@@ -203,14 +202,6 @@ $lang['Rising']                 = ' Stijgend';
 $lang['Steady']                 = ' Stabiel';
 $lang['Rapidly']                = 'Snel';
 $lang['Temp']                   = 'Temp';
-//Solar-UV
-//uv
-$lang['Nocaution']              = 'Geen <color>voorzichtigheid</color> nodig';
-$lang['Wearsunglasses']         = 'Gebruik <color>zonnebril</color> op zonnige dagen';
-$lang['Stayinshade']            = 'Blijf in de schaduw in de buurt van de middag waarneer de <color>zon</color> het sterkste is';
-$lang['Reducetime']             = 'Verminder de tijd in de <color>zon</color> tussen 10:00 en 16:00 ';
-$lang['Minimize']               = 'Verklein blootstelling aan de <color>zon</color> tussen 10:00 en 16:00 ';
-$lang['Trytoavoid']             = 'Probeer<color>zon</color> te vermijden tussen 10:00 en 16:00 ';
 //solar
 $lang['Poor']                   = 'Zonnestraling<br><color2> Pover</color>';
 $lang['Low']                    = 'Zonnestraling<br><color2> Laag</color>';
@@ -271,45 +262,45 @@ $lang['LiveWebCam']             = 'Live Web Cam';
 $lang['Online']                 = 'Online';
 $lang['Offline']                = 'Offline';
 $lang['Weatherstation']         = 'Weerstation';
-$lang['Cloudbase']              = 'Cloudbase';
-$lang['uvalert']                = 'Caution High UVINDEX';
+$lang['Cloudbase']              = 'Wolkenbasis';
+$lang['uvalert']                = 'Let op Hoge UV';
 $lang['Max']                    = 'Max';
 $lang['Min']                    = 'Min';
 //earthquake TOP MODULE 10 July 2017
-$lang['MicroE']                  = 'Micro Earthquake';
-$lang['MinorE']                  = 'Minor Earthquake';
-$lang['LightE']                  = 'Light Earthquake';
-$lang['ModerateE']               = 'Moderate Earthquake';
-$lang['StrongE']                 = 'Strong Earthquake';
-$lang['MajorE']                  = 'Major Earthquake';
-$lang['GreatE']                  = 'Great Earthquake';
-$lang['RegionalE']              = 'Regional';
-$lang['Conditions']             = 'Conditions';
-$lang['Cloudbase Height']       = 'Cloudbase Height';
+$lang['MicroE']                  = 'Micro-aardbeving';
+$lang['MinorE']                  = 'Kleine aardbeving';
+$lang['LightE']                  = 'Lichte aardbeving';
+$lang['ModerateE']               = 'Matige aardbeving';
+$lang['StrongE']                 = 'Sterke aardbeving';
+$lang['MajorE']                  = 'Grote aardbeving';
+$lang['GreatE']                  = 'Zeer sterke aardbeving';
+$lang['RegionalE']              = 'Regionale';
+$lang['Conditions']             = 'Condities';
+$lang['Cloudbase Height']       = 'Hoogte wolkenbasis';
 $lang['Station']                = 'Station';
-$lang['Detailed Forecast']      = 'Detailed Forecast';
-$lang['Summary Outlook']        = 'Summary';
+$lang['Detailed Forecast']      = 'Gedetailleerde voorspelling';
+$lang['Summary Outlook']        = 'Samenvatting';
 //Air Quality
-$lang['Hazordous']              = 'Hazardous Conditions';
-$lang['VeryUnhealthy']          = 'Very Unhealthy';
-$lang['Unhealthy']              = 'Unhealthy Air Quality';
-$lang['UnhealthyFS']            = 'Unhealthy For Some';
-$lang['Moderate']               = 'Moderate Air Quality ';
-$lang['Good']                   = 'Good Air Quality ';
+$lang['Hazordous']              = 'Gevaarlijke omstandigheden';
+$lang['VeryUnhealthy']          = 'Heel ongezond';
+$lang['Unhealthy']              = 'Ongezonde luchtkwaliteit';
+$lang['UnhealthyFS']            = 'Ongezond voor sommigen';
+$lang['Moderate']               = 'Gematigde luchtkwaliteit ';
+$lang['Good']                   = 'Goede luchtkwaliteit ';
 #notification additions
 $lang['notifyTitle']            = 'Weerstation Meldingen';
-$lang['notifyAlert']             = "Alert";
-$lang['notifyLowBatteryAlert']   = "Low Battery Alert";
-$lang['notifyConsoleLowBattery'] = "Console's battery is low";
-$lang['notifyStationLowBattery'] = "Station's battery is low";
-$lang['notifyUVIndex']           = "UV-Index Caution";
-$lang['notifyUVExposure']        = "Reduce Sun Exposure";
-$lang['notifyHeatExaustion']     = "Heat Exhaustion";
-$lang['notifyExtremeWind']       = "Extreme Wind Warning";
-$lang['notifyGustUpTo']          = "Gusts up to";
-$lang['notifySeekShelter']       = "Seek shelter <notifyred><b>immediately</b></notifyred>";
-$lang['notifyHighWindWarning']   = "High Wind Warning";
-$lang['notifySustainedAvg']      = "Sustained avg";
-$lang['notifyWindAdvisory']      = "Wind Advisory";
-$lang['notifyFreezing']          = "Below Freezing";
+$lang['notifyAlert']             = "Alarm";
+$lang['notifyLowBatteryAlert']   = "Batterij bijna leeg";
+$lang['notifyConsoleLowBattery'] = "De batterij van de console is bijna leeg";
+$lang['notifyStationLowBattery'] = "De batterij van het station is bijna leeg";
+$lang['notifyUVIndex']           = "UV-index Let op";
+$lang['notifyUVExposure']        = "Blootstelling aan de zon verminderen";
+$lang['notifyHeatExaustion']     = "Oververhitting";
+$lang['notifyExtremeWind']       = "Waarschuwing extreme wind";
+$lang['notifyGustUpTo']          = "Windstoten tot";
+$lang['notifySeekShelter']       = "Zoek direct een <notifyred><b>schuilplaats</b></notifyred>";
+$lang['notifyHighWindWarning']   = "Waarschuwing harde wind";
+$lang['notifySustainedAvg']      = "Aanhoudende gem";
+$lang['notifyWindAdvisory']      = "Windadvies";
+$lang['notifyFreezing']          = "Onder het vriespunt";
 ?>
