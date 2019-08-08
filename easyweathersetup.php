@@ -100,6 +100,7 @@ $password    = "'.$_POST['password']. '";
 $flag   = "'.$_POST["flag"]. '";
 $wulanguage    = "'.$_POST['wulanguage']. '";
 $manifestShortName = "'.$_POST["manifestShortName"].'";
+$weatherflowID = "'. $_POST["wfid"]. '";
 ';
  
 $fp = FOPEN("settings1.php", "w") or die("Unable to open settings1.php file check file permissions !");
@@ -1061,7 +1062,8 @@ your nearly there :-) keep going
             <option><?php echo $position3 ;?></option> 
             <option>rainfallf-year-month.php</option>
             <option>windgustyear.php</option> 
-            <option>temperatureyear.php</option>           
+            <option>temperatureyear.php</option> 
+            <option>wflightning.php</option>               
             
             </select>
      <div class= "stationvalue"> Position 3 Title</div>
@@ -1744,10 +1746,16 @@ Choose the Weather Underground Forecast Language ..</div>
 </svg> <span style="color:#777;">enter your <strong>Luftdaten Station ID </strong> station id example <strong><span style="color:rgba(86, 95, 103, 1.000);"> 1200</strong></span></span>
     
     
-        
+        <br>
     
+    <div class="seperator"></div><br>
     
-    
+    <div class="stationvalue"> Weather-Flow STATION ID used for Lightning Option only </div>
+    <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg>
+
+    <input name="wfid" type="text" id="wfid" value="<?php echo $weatherflowID ;?>" class="choose"></span></span>
     
     
      
