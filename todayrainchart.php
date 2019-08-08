@@ -1,15 +1,4 @@
-<?php  
-
-	####################################################################################################
-	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
-	# https://weather34.com/homeweatherstation/index.html 											   # 
-	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
-	# 	                                                                                               #
-	#   https://www.weather34.com 	                                                                   #
-	####################################################################################################
-
-
+<?php 
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 include('livedata.php');
  ?>
@@ -73,21 +62,32 @@ smalluvunit{font-size:.7rem;font-family:Arial,Helvetica,system;}
 .actualt{position:relative;left:0px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:120px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
+.actualw{position:relative;left:0px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
+padding:5px;font-family:Arial, Helvetica, sans-serif;width:150px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
+align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actual{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:95%;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
+.actualg{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
+padding:5px;font-family:Arial, Helvetica, sans-serif;width:300px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
+align-items:center;justify-content:center;margin-bottom:10px;top:0}
+.actualg temp{background:rgba(208, 95, 45, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-right:5px}
+.actualg feel{background:rgba(211, 93, 78, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
+.actualg dewpoint{background:rgba(6, 162, 177, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff}
+.actualg wetbulb{background:rgba(241, 107, 79, .8);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
 </style>
-<div class="weather34darkbrowser" url="Today Rainfall"></div>
+<div class="weather34darkbrowser" url="Today Rainfall <?php echo $rainunit ;?>"></div>
 <main class="grid1">
   <articlegraph> 
-  <div class=actualt>Today <blue>Rainfall <?php echo "<smalluvunit>",$rainunit ;?></smalluvunit></blue></div>  
+ <div class=actualg>Today Rainfall
+  <dewpoint><?php echo "Total ",$weather["rain_today"]." " .$weather["rain_units"]?> </dewpoint></div>
   <iframe  src="weather34charts/todayrainfallmedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   
   
   <articlegraph> 
-  <div class=actualt>Today <blue>Rain Rate <?php echo "<smalluvunit>",$rainunit ;?></smalluvunit></blue></div>  
+  <div class=actualw>Today <blue>Rainfall</blue> Per 10 minute <?php echo "<smalluvunit>",$rainunit ;?></smalluvunit></blue></div>  
   <iframe  src="weather34charts/todayrainratemedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
