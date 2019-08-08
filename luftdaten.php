@@ -31,7 +31,11 @@ $aqiweather["pm"]=$weather34luftdatenaqi['sensordatavalues'][0]['value_type'];
 if($aqiweather["pm"]=="P1"){$aqiweather["pm"]="PM10";}
 if($aqiweather["pm"]=="P2"){$aqiweather["pm"]="PM2.5";}
 $aqiweather["stationid"]=$luftdatenID;
-$aqiweather["updatedtime"]=$weather34luftdatenaqi['timestamp'];
+
+
+
+
+$aqiweather["updatedtime"]=date('H:i', filemtime('jsondata/luftdaten.txt'));
 
 
 
