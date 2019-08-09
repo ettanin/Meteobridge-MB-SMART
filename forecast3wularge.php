@@ -237,10 +237,9 @@ echo '</div>';}
 //night humidity
 if ($wuskydaynight=='N'){
 echo '<br><div class=wulargeuvindex>Humidity';
-if ($wuskyhumidity>=90){echo 	"<bluewuhum>".$wuskyhumidity. '%</bluewuhum>></div>';}
-else  if ($wuskyhumidity>75){echo 	"<orangewuhum>".$wuskyhumidity. '%</orangewuhum></div>';}
-else if ($wuskyhumidity>60){echo 	"<yellowwuhum>".$wuskyhumidity. '%</yellowwuhum></div>';}
-else if ($wuskyhumidity>40){echo 	"<greenwuhum>".$wuskyhumidity. '%</greenwuhum></div>';}	
+if ($wuskyhumidity>=70){echo 	"<bluewuhum>".$wuskyhumidity. '%</bluewuhum></div>';}
+else if ($wuskyhumidity>=50){echo 	"<yellowwuhum>".$wuskyhumidity. '%</yellowwuhum></div>';}
+else if ($wuskyhumidity>=40){echo 	"<greenwuhum>".$wuskyhumidity. '%</greenwuhum></div>';}	
 else if ($wuskyhumidity>0){echo 	"<redwuhum>".$wuskyhumidity. '%</redwuhum></div>';}}
 
 ///wuheat index F
@@ -250,16 +249,14 @@ if ($wuskydaynight=='D' && $tempunit=='F' && $wuskyheatindex>=89){echo "Heat Ind
 //wu heat index C
 if ($wuskydaynight=='D' && $tempunit=='C' && $wuskyheatindex>=32){echo "Heat Index ".$heatindexwu." <heatindexwu>".number_format($wuskyheatindex,0). '°<wuunits>C&nbsp; </wuunits>'.$heatindexalert8a.'</heatindexwu></div>';}
 
-else if ($wuskyheatindex<89 && $wuskyhumidity>=90 && $tempunit=='F'){echo 	"Humidity <bluewuhum>".$wuskyhumidity. '%</bluewuhum></div>';}
-else if ($wuskyheatindex<89 && $wuskyhumidity>75 && $tempunit=='F'){echo 	"Humidity <orangewuhum>".$wuskyhumidity. '%</orangewuhum></div>';}
-else if ($wuskyheatindex<89 && $wuskyhumidity>60 && $tempunit=='F'){echo 	"Humidity <yellowwuhum>".$wuskyhumidity. '%</yellowwuhum></div>';}
-else if ($wuskyheatindex<89 && $wuskyhumidity>40 && $tempunit=='F'){echo 	"Humidity <greenwuhum>".$wuskyhumidity. '%</greenwuhum></div>';}	
+else if ($wuskyheatindex<89 && $wuskyhumidity>=75 && $tempunit=='F'){echo 	"Humidity <bluewuhum>".$wuskyhumidity. '%</bluewuhum></div>';}
+else if ($wuskyheatindex<89 && $wuskyhumidity>=50 && $tempunit=='F'){echo 	"Humidity <yellowwuhum>".$wuskyhumidity. '%</yellowwuhum></div>';}
+else if ($wuskyheatindex<89 && $wuskyhumidity>=40 && $tempunit=='F'){echo 	"Humidity <greenwuhum>".$wuskyhumidity. '%</greenwuhum></div>';}	
 else if ($wuskyheatindex<89 && $wuskyhumidity>0 && $tempunit=='F'){echo 	"Humidity <redwuhum>".$wuskyhumidity. '%</redwuhum></div>';}
 
-else if ($wuskyheatindex<32 && $wuskyhumidity>=90 && $tempunit=='C'){echo 	"Humidity <bluewuhum>".$wuskyhumidity. '%</bluewuhum></div>';}
-else if ($wuskyheatindex<32 && $wuskyhumidity>75 && $tempunit=='C'){echo 	"Humidity <orangewuhum>".$wuskyhumidity. '%</orangewuhum></div>';}
-else if ($wuskyheatindex<32 && $wuskyhumidity>60 && $tempunit=='C'){echo 	"Humidity <yellowwuhum>".$wuskyhumidity. '%</yellowwuhum></div>';}
-else if ($wuskyheatindex<32 && $wuskyhumidity>40 && $tempunit=='C'){echo 	"Humidity <greenwuhum>".$wuskyhumidity. '%</greenwuhum></div>';}	
+else if ($wuskyheatindex<32 && $wuskyhumidity>=75 && $tempunit=='C'){echo 	"Humidity <bluewuhum>".$wuskyhumidity. '%</bluewuhum></div>';}
+else if ($wuskyheatindex<32 && $wuskyhumidity>=50 && $tempunit=='C'){echo 	"Humidity <yellowwuhum>".$wuskyhumidity. '%</yellowwuhum></div>';}
+else if ($wuskyheatindex<32 && $wuskyhumidity>=40 && $tempunit=='C'){echo 	"Humidity <greenwuhum>".$wuskyhumidity. '%</greenwuhum></div>';}	
 else if ($wuskyheatindex<32 && $wuskyhumidity>0 && $tempunit=='C'){echo 	"Humidity <redwuhum>".$wuskyhumidity. '%</redwuhum></div>';}
 
 

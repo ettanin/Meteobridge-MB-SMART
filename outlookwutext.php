@@ -466,9 +466,8 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=summarydesc>'. $wusummary.'</div>';
 	 //thunder
 	 echo '<div class=alertdesc>';
-	 if ($wuskythunderindex>0){
-	 echo '<rainsnow>'.$lightningalert4; echo ' <thunder><orange1>'.$wuskythunder.'</orange1></thunder></grey></value></div>';}
-	 else if ($tempunit=='F' && $wuskydaynight=="D" && $wuskyheatindex >80.6){
+	 
+	 if ($tempunit=='F' && $wuskydaynight=="D" && $wuskyheatindex >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else if ($tempunit=='C' && $wuskydaynight=="D" && $wuskyheatindex>27){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
@@ -485,9 +484,8 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=summarydesc>'. $wusummary1.'</div>';
 	 //thunder
 	 echo '<div class=alertdesc>';		
-	 if ($wuskythunderindex1>0){
-	 echo '<rainsnow>'.$lightningalert4.' <thunder><orange1>'.$wuskythunder1.'</orange1></thunder></grey></value></div>';}
-	 else if ($tempunit=='F' && $wuskydaynight1=="D" && $wuskyheatindex1 >80.6){
+	 
+	 if ($tempunit=='F' && $wuskydaynight1=="D" && $wuskyheatindex1 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex1.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else if ($tempunit=='C' && $wuskydaynight1=="D" && $wuskyheatindex1>27){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex1.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
@@ -505,9 +503,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=summarydesc>'. $wusummary2.'</div>';
 	 //thunder	
 	 echo '<div class=alertdesc>';	
-	 if ($wuskythunderindex2>0){
-	 echo '<rainsnow>'.$lightningalert4; echo ' <thunder><orange1>'.$wuskythunder2.'</orange1></thunder></grey></value></div>';}
-	  else if ($tempunit=='F' && $wuskydaynight2=="D" && $wuskyheatindex2 >80.6){
+	 if ($tempunit=='F' && $wuskydaynight2=="D" && $wuskyheatindex2 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex2.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else if ($tempunit=='C' && $wuskydaynight2=="D" && $wuskyheatindex2>27){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex2.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
@@ -525,9 +521,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=summarydesc>'. $wusummary3.'</div>';
 	 //thunder
 	 echo '<div class=alertdesc>';		
-	 if ($wuskythunderindex3>0){
-	 echo '<rainsnow>'.$lightningalert4; echo ' <thunder><orange1>'.$wuskythunder3.'</orange1></thunder></grey></value></div>';}
-	 else if ($tempunit=='F' && $wuskydaynight3=="D" && $wuskyheatindex3 >80.6){
+	 if ($tempunit=='F' && $wuskydaynight3=="D" && $wuskyheatindex3 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex3.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else if ($tempunit=='C' && $wuskydaynight3=="D" && $wuskyheatindex3>27){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex3.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
@@ -546,9 +540,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=summarydesc>'. $wusummary4.'</div>';
 	//thunder
 	 echo '<div class=alertdesc>';		
-	 if ($wuskythunderindex4>0){
-	 echo '<rainsnow>'.$lightningalert4; echo ' <thunder><orange1>'.$wuskythunder4.'</orange1></thunder></grey></value></div>';}
-	 else if ($tempunit=='F' && $wuskydaynight4=="D" && $wuskyheatindex4 >80.6){
+	 if ($tempunit=='F' && $wuskydaynight4=="D" && $wuskyheatindex4 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex4.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else if ($tempunit=='C' && $wuskydaynight4=="D" && $wuskyheatindex4>27){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex4.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
@@ -566,9 +558,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=summarydesc>'. $wusummary5.'</div>';
 	 //thunder
 	 echo '<div class=alertdesc>';	
-	 if ($wuskythunderindex5>0){
-	 echo '<rainsnow>'.$lightningalert4; echo ' <thunder><orange1>'.$wuskythunder5.'</orange1></thunder></grey></value></div>';}
-	 else if ($tempunit=='F' && $wuskydaynight5=="D" && $wuskyheatindex5 >80.6){
+	 if ($tempunit=='F' && $wuskydaynight5=="D" && $wuskyheatindex5 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex5.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else if ($tempunit=='C' && $wuskydaynight5=="D" && $wuskyheatindex5>27){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex5.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
@@ -586,9 +576,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=summarydesc>'. $wusummary6.'</div>';
 	 //thunder	
 	 echo '<div class=alertdesc>';
-	 if ($wuskythunderindex6>0){
-	 echo '<rainsnow>'.$lightningalert4; echo ' <thunder><orange1>'.$wuskythunder6.'</orange1></thunder></grey></value></div>';}
-	 else if ($tempunit=='F' && $wuskydaynight6=="D" && $wuskyheatindex6 >80.6){
+	 if ($tempunit=='F' && $wuskydaynight6=="D" && $wuskyheatindex6 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex6.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else if ($tempunit=='C' && $wuskydaynight6=="D" && $wuskyheatindex6>27){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex6.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
@@ -606,9 +594,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=summarydesc>'. $wusummary7.'</div>';
 	 //thunder	
 	 echo '<div class=alertdesc>';
-	 if ($wuskythunderindex7>0){
-	 echo '<rainsnow>'.$lightningalert4; echo ' <thunder><orange1>'.$wuskythunder7.'</orange1></thunder></grey></value></div>';}
-	 else if ($tempunit=='F' && $wuskydaynight7=="D" && $wuskyheatindex7 >80.6){
+	 if ($tempunit=='F' && $wuskydaynight7=="D" && $wuskyheatindex7 >80.6){
 	 echo '<rainsnow>'.$lightningalert7.' <thunder>Heat Index <orange1>'.$wuskyheatindex7.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else if ($tempunit=='C' && $wuskydaynight7=="D" && $wuskyheatindex7>27){
 	 echo '<rainsnow>'.$lightningalert7.' <thunder>Heat Index <orange1>'.$wuskyheatindex7.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
@@ -628,9 +614,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=summarydesc>'. $wusummary8.'</div>';
 	//thunder	
 	echo '<div class=alertdesc>';
-	 if ($wuskythunderindex8>0){
-	 echo '<rainsnow>'.$lightningalert4; echo ' <thunder><orange1>'.$wuskythunder8.'</orange1></thunder></grey></value></div>';}
-	 else if ($tempunit=='F' && $wuskydaynight8=="D" && $wuskyheatindex8 >80.6){
+	 if ($tempunit=='F' && $wuskydaynight8=="D" && $wuskyheatindex8 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex8.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else if ($tempunit=='C' && $wuskydaynight8=="D" && $wuskyheatindex8>27){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex8.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
@@ -651,9 +635,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=summarydesc>'. $wusummary9.'</div>';
 	//thunder
 	 echo '<div class=alertdesc>';	
-	 if ($wuskythunderindex9>0){
-	 echo '<rainsnow>'.$lightningalert4; echo ' <thunder><orange1>'.$wuskythunder9.'</orange1></thunder></grey></value></div>';}
-	 else if ($tempunit=='F' && $wuskydaynight9=="D" && $wuskyheatindex9 >80.6){
+	 if ($tempunit=='F' && $wuskydaynight9=="D" && $wuskyheatindex9 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex9.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else if ($tempunit=='C' && $wuskydaynight9=="D" && $wuskyheatindex9>27){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex9.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
@@ -670,9 +652,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=summarydesc>'. $wusummary10.'</div>';
 	 //thunder	
 	 echo '<div class=alertdesc>';
-	 if ($wuskythunderindex10>0){
-	 echo '<rainsnow>'.$lightningalert4; echo ' <thunder><orange1>'.$wuskythunder10.'</orange1></thunder></grey></value></div>';}
-	 else if ($tempunit=='F' && $wuskydaynight10=="D" && $wuskyheatindex10 >80.6){
+	 if ($tempunit=='F' && $wuskydaynight10=="D" && $wuskyheatindex10 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex10.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else if ($tempunit=='C' && $wuskydaynight10=="D" && $wuskyheatindex10>27){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex10.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
