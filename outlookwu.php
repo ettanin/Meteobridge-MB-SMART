@@ -1033,7 +1033,7 @@ if ($windunit=='mph' && $wuapiunit=='m' ){$wuskydayWindGust11=(number_format($wu
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Weather34 Weather Underground Forecast</title>
+  <title>Weather34 Weather Underground Forecast For <?php echo $stationlocation ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 @font-face{font-family:weathertext2;src:url(css/fonts/verbatim-regular.woff) format("woff"),url(fonts/verbatim-regular.woff2) format("woff2"),url(fonts/verbatim-regular.ttf) format("truetype")}
@@ -1073,7 +1073,7 @@ bluer{color:#fff;border-radius:2px;padding:0 2px 0 2px;align-items:center;justif
 bluet,blueu{background:#01a4b5}yellowt,yellowu{background:#e6a141}oranget,orangeu{background:#d05f2d}greent,greenu{background:#90b12a}redt,redu{background:#cd5245}purplet,purpleu{background:rgba(151, 88, 190,.8)}bluet,yellowt,oranget,greent,redt,purplet{-webkit-border-radius:2px;border-radius:2px;padding:2px;height:.9rem}
 blueu,yellowu,orangeu,greenu,redu,purpleu{color:#fff;border-radius:2px;padding:0 3px 0 3px;align-items:center;justify-content:center;}summary{font-size:.9em;color:#aaa;display:none}blue1{color:#009bb4}value{font-size:.95em;color:#aaa}valuer{color:#aaa;font-size:.9em;}thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,iframe,svg{aspect-ratio:attr(width px)/attr(height px);image-rendering:auto;}
 </style>
-<div class="weather34darkbrowser" url="Weather Underground Forecast"></div>  
+<div class="weather34darkbrowser" url="Weather Underground Forecast For <?php echo $stationlocation ?>"></div>  
 <main class="grid">
   <article>  
    <actualt><?php echo $wuskydayTime ?></actualt>
