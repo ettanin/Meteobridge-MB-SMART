@@ -595,9 +595,9 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 //thunder	
 	 echo '<div class=alertdesc>';
 	 if ($tempunit=='F' && $wuskydaynight7=="D" && $wuskyheatindex7 >80.6){
-	 echo '<rainsnow>'.$lightningalert7.' <thunder>Heat Index <orange1>'.$wuskyheatindex7.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
+	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex7.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else if ($tempunit=='C' && $wuskydaynight7=="D" && $wuskyheatindex7>27){
-	 echo '<rainsnow>'.$lightningalert7.' <thunder>Heat Index <orange1>'.$wuskyheatindex7.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
+	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex7.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else echo "";?>   
   </article> 
   
