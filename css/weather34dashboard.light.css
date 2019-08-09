@@ -123,18 +123,20 @@ bluewu,greenwu,orangewu,purplewu,redwu,yellowwu{width:2.75rem;height:1.1rem;font
 
 
 .wflaststrike,.wfstrike,wfstriketoday{position:absolute}
-wfstriketoday{background:0;border:1px solid rgba(245,247,252,.02);box-shadow:2px 2px 6px 0 rgba(0,0,0,.2);}
 .eqcontainer1,wfstriketoday{font-family:weathertext2,system}
-.wflaststrike{margin-left:70px;margin-top:40px;font-size:.55rem;width:140px;border:1px solid rgba(245,247,252,.02);box-shadow:2px 2px 6px 0 rgba(0,0,0,.2);color:#555;}
+.wflaststrike{margin-left:75px;margin-top:40px;font-size:.55rem;width:140px;border:0;color:#555;}
 .wfstrike{margin-top:0;font-size:0}
 
-wfstriketoday{-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;width:4rem;height:3rem;font-size:.9rem;padding-top:12px;color:#d05f2d;border-bottom:0;align-items:center;justify-content:center;border-radius:3px;margin-left:0px;top:27px}
-.minwordl{margin-top:29px;font-size:.55rem;color:#555;z-index:1;position:absolute;margin-left:18px;}
-.lastthree{position:absolute;margin-top:48px;font-size:.54rem;z-index:1;color:#555;align-items:center;justify-content:center;width:3.4rem;margin-left:4px}
+wfstriketoday{background:0;border:1px solid rgba(245,247,252,.5);box-shadow:2px 2px 3px 0 rgba(0,0,0,.2);-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;width:3.8rem;height:2.9rem;font-size:.9rem;padding-top:12px;color:#d05f2d;border-bottom:0;align-items:center;justify-content:center;border-radius:3px;margin-left:7px;top:3px}
+
+.minwordl{margin-top:5px;font-size:.55rem;color:#555;z-index:1;position:absolute;margin-left:25px;}
+
+.strikes-today{margin-top:5px;font-size:.55rem;color:#555;z-index:1;position:absolute;margin-left:25px;}
+.last-three-hrs{position:absolute;margin-top:60px;font-size:.5rem;z-index:1;color:#555;align-items:center;justify-content:center;width:3.4rem;margin-left:12px}
 
 .maxtimedate,.mintimedate{position:absolute;margin-top:62px;font-size:.50rem;z-index:1;color:#555;align-items:center;justify-content:center;width:3.4rem;line-height:1}
-.maxtimedate{margin-left:140px}
-.mintimedate{margin-left:5px}
+.maxtimedate{margin-left:155px}
+.mintimedate{margin-left:12px}
 
 
 
