@@ -32,6 +32,9 @@ foreach($json['obs'] as $item){
  ?></wfstriketoday></div>
 <div class="strikes-today">Strikes</div></div>
 <div class="last-three-hrs">Last 3 Hrs</div>
+
+<div class="yearwordlightningbig">Lightning Strikes</div> 
+
 <div class='wflaststrike'>
 <?php 
 if ($windunit == 'mph'){echo "<spanfeelstitle>Last Distance At:<orange> " .number_format($weatherflow['lightningdistance']*0.621371,1). "  </orange>mi";}
@@ -40,4 +43,5 @@ else  echo "<spanfeelstitle>Last Distance At:<orange> " .$weatherflow['lightning
 <?php 
 //weather34 weather34 last detect
 echo "<spanfeelstitle>Last Detected: <orange> ".date('jS M H:i',$weatherflow['lastlightningtime'])." </orange> ";?></div>
+
 </div>
