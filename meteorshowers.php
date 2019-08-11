@@ -1,4 +1,4 @@
-<?php include('settings.php');include('skydata.php');
+<?php include('settings.php');include('livedata.php');
 
 
 
@@ -34,9 +34,8 @@ $meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 5, 6),"event_title"
 $meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 7, 27),"event_title"=>"Meteor Shower<br> <orange1> Perseids</orange1><div class=date><br>Active Jul 13th-Aug 26th<br>
 <green>Estimated ZHR: </green><orange>100</orange><br> Peaks <orange>Aug 11th-13th</orange></div>","event_end"=>mktime(23, 59, 59, 8, 10),);
 
-$meteor_eventsnext[]=array("event_start"=>mktime(0, 0, 0, 8, 11),"event_title"=>"Meteor Shower<br><orange1> Perseids</orange1> <br><div class=date><br>
+$meteor_eventsnext[]=array("event_start"=>mktime(0, 0, 0, 8, 11),"event_title"=>"Meteor Shower<br><orange1> Perseids</orange1> <div class=date><br>
 <green>Estimated ZHR: </green><orange>100</orange><br> Peaks <orange>Aug 11th-13th</orange></div></div>","event_end"=>mktime(23, 59, 59, 8, 13),);
-
 
 $meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 8, 13),"event_title"=>"Meteor Shower<br> <orange1> Draconids</orange1><div class=date><br>Active October 6th-10th<br>
 <green>Estimated ZHR: </green><orange>5</orange><br> Peaks <orange>Oct 9th</orange></div></div>","event_end"=>mktime(23, 59, 59, 10, 7),);
@@ -71,8 +70,8 @@ $meteorinfo3="<svg width='22px' height='22px' viewBox='0 0 16 16'><path fill='cu
 html,body{font-size:13px;font-family: "weathertext", Helvetica, Arial, sans-serif;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;}
 .grid { 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+  grid-gap: 5px;
   align-items: stretch;
   color:#f5f7fc
   }
@@ -98,8 +97,8 @@ padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;fo
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actualw{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;border-bottom:2px solid rgba(56,56,60,1);
-align-items:center;justify-content:center;margin-bottom:10px;top:0}
-peak{color:silver;font-size:.8rem}
+align-items:center;justify-content:center;margin-bottom:10px;top:0}peak{color:silver;font-size:.8rem}
+
 </style>
 
 </style>
