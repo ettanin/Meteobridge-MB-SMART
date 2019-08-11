@@ -135,7 +135,7 @@ $lang['WSWdir']                 = 'West Zuid<br><span>West</span>';
 $lang['Westdir']                = 'Pal <span> West</span>';
 $lang['WNWdir']                 = 'West Noord<br><span>West</span>';
 $lang['NWdir']                  = 'Noord <span> West</span>';
-$lang['NWNdir']                 = 'Noord Noord<br><span>West</span>';
+$lang['NNWdir']                 = 'Noord Noord<br><span>West</span>';
 //wind direction avg
 $lang['North']                  = 'Noord';
 $lang['NNE']                    = 'NNO';
@@ -152,7 +152,7 @@ $lang['WSW']                    = 'WZW';
 $lang['West']                   = 'West';
 $lang['WNW']                    = 'WNW';
 $lang['NW']                     = 'NW';
-$lang['NWN']                    = 'NNW';
+$lang['NNW']                    = 'NNW';
 //rain
 $lang['raintoday']              = 'Regen vandaag';
 $lang['Rate']                   = 'Intensiteit';

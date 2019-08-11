@@ -135,7 +135,7 @@ $lang['WSWdir']                 = 'Nyugat Dél<br><span>Nyugat</span>';
 $lang['Westdir']                = ' <span> Nyugati</span>';
 $lang['WNWdir']                 = 'Nyugat Észak<br><span>Nyugat</span>';
 $lang['NWdir']                  = 'Észak <span> Nyugat</span>';
-$lang['NWNdir']                 = 'Észak Észak<br><span>Nyugat</span>';
+$lang['NNWdir']                 = 'Észak Észak<br><span>Nyugat</span>';
 //wind direction avg
 $lang['North']                  = 'Észak';
 $lang['NNE']                    = 'ÉÉK';
@@ -152,7 +152,7 @@ $lang['WSW']                    = 'NyDNy';
 $lang['West']                   = 'Nyugati';
 $lang['WNW']                    = 'NYÉNY';
 $lang['NW']                     = 'ÉNY';
-$lang['NWN']                    = 'ÉÉNY';
+$lang['NNW']                    = 'ÉÉNY';
 //rain
 $lang['raintoday']              = 'Eső ma';
 $lang['Rate']                   = 'Arány';

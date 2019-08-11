@@ -135,7 +135,7 @@ $lang['WSWdir']                 = 'West Süd<br><span>West</span>';
 $lang['Westdir']                = '<span> West</span>';
 $lang['WNWdir']                 = 'West Nord<br><span>West</span>';
 $lang['NWdir']                  = 'Nord <span> West</span>';
-$lang['NWNdir']                 = 'Nord Nord<br><span>West</span>';
+$lang['NNWdir']                 = 'Nord Nord<br><span>West</span>';
 //wind direction avg
 $lang['North']                  = 'Nord';
 $lang['NNE']                    = 'NNE';
@@ -152,7 +152,7 @@ $lang['WSW']                    = 'WSW';
 $lang['West']                   = 'West';
 $lang['WNW']                    = 'WNW';
 $lang['NW']                     = 'NW';
-$lang['NWN']                    = 'NWN';
+$lang['NNW']                    = 'NNW';
 //rain
 $lang['raintoday']              = 'Regen Heute';
 $lang['Rate']                   = 'Rate';

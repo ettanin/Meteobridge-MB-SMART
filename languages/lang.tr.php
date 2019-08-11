@@ -135,7 +135,7 @@ $lang['WSWdir']                 = 'Batı Güney<br><span>Batı</span>';
 $lang['Westdir']                = '<span> Batı</span>';
 $lang['WNWdir']                 = 'Batı Kuzey<br><span>Batı</span>';
 $lang['NWdir']                  = 'Kuzey <span> Batı</span>';
-$lang['NWNdir']                 = 'Kuzey Kuzey<br><span>Batı</span>';
+$lang['NNWdir']                 = 'Kuzey Kuzey<br><span>Batı</span>';
 //wind direction avg
 $lang['North']                  = 'Kuzey';
 $lang['NNE']                    = 'KKD';
@@ -152,7 +152,7 @@ $lang['WSW']                    = 'BGB';
 $lang['West']                   = 'Batı';
 $lang['WNW']                    = 'BKB';
 $lang['NW']                     = 'KB';
-$lang['NWN']                    = 'KKB';
+$lang['NNW']                    = 'KKB';
 //rain
 $lang['raintoday']              = 'Bugün Yağmurlu';
 $lang['Rate']                   = 'Oran';

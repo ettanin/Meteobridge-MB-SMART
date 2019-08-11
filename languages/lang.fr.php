@@ -135,7 +135,7 @@ $lang['WSWdir']                 = 'Ouest Sud<br><span>Ouest</span>';
 $lang['Westdir']                = 'Dir <span> Ouest</span>';
 $lang['WNWdir']                 = 'Ouest Nord<br><span>Ouest</span>';
 $lang['NWdir']                  = 'Nord <span> Ouest</span>';
-$lang['NWNdir']                 = 'Nord Nord<br><span>Ouest</span>';
+$lang['NNWdir']                 = 'Nord Nord<br><span>Ouest</span>';
 //wind direction avg
 $lang['North']                  = 'Nord';
 $lang['NNE']                    = 'NNE';
@@ -152,7 +152,7 @@ $lang['WSW']                    = 'OSO';
 $lang['West']                   = 'Ouest';
 $lang['WNW']                    = 'ONO';
 $lang['NW']                     = 'NO';
-$lang['NWN']                    = 'NNO';
+$lang['NNW']                    = 'NNO';
 //rain
 $lang['raintoday']              = 'Précipitations';
 $lang['Rate']                   = 'Taux';

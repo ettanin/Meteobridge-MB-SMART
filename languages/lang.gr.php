@@ -135,7 +135,7 @@ $lang['WSWdir']                 = 'Δυτικός-Νοτιο<br><span>Δυτικ
 $lang['Westdir']                = '<span> Δυτικός</span>';
 $lang['WNWdir']                 = 'Δυτικός-Βορειο<br><span>Δυτικός</span>';
 $lang['NWdir']                  = 'Βορειο<span>Δυτικός</span>';
-$lang['NWNdir']                 = 'Βόρειος-Βορειο<br><span>Δυτικός</span>';
+$lang['NNWdir']                 = 'Βόρειος-Βορειο<br><span>Δυτικός</span>';
 //wind direction avg
 $lang['North']                  = 'Βόρειος';
 $lang['NNE']                    = 'ΒΒΑ';
@@ -152,7 +152,7 @@ $lang['WSW']                    = 'ΔΝΔ';
 $lang['West']                   = 'Δυτικός';
 $lang['WNW']                    = 'ΔΒΔ';
 $lang['NW']                     = 'ΒΔ';
-$lang['NWN']                    = 'ΒΔΒ';
+$lang['NNW']                    = 'ΒBΔ';
 //rain
 $lang['raintoday']              = 'Βροχή Σήμερα';
 $lang['Rate']                   = 'Ραγδαιότητα';

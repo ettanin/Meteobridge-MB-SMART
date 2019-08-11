@@ -135,7 +135,7 @@ $lang['WSWdir']                  = 'Vest Sør<br><span>Vest</span>';
 $lang['Westdir']                 = 'Rettning <span>Vest</span>';
 $lang['WNWdir']                  = 'Vest Nord<br><span>Vest</span>';
 $lang['NWdir']                   = 'Nord <span>Vest</span>';
-$lang['NWNdir']                  = 'Nord Nord<br><span>Vest</span>';
+$lang['NNWdir']                  = 'Nord Nord<br><span>Vest</span>';
 //wind direction avg
 $lang['North']                   = 'Nord';
 $lang['NNE']                     = 'NNØ';
@@ -152,7 +152,7 @@ $lang['WSW']                     = 'VSV';
 $lang['West']                    = 'Vest';
 $lang['WNW']                     = 'VNV';
 $lang['NW']                      = 'NV';
-$lang['NWN']                     = 'NVN';
+$lang['NNW']                     = 'NNV';
 //rain
 $lang['raintoday']               = 'Regn i dag';
 $lang['Rate']                    = 'Rate';
