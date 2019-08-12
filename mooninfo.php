@@ -59,7 +59,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actualw{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
-
+.moonphaseing{width:110px;}
 </style>
 <div class="weather34darkbrowser" url="Moon Phase Information"></div>
   
@@ -69,16 +69,21 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 
 <?php echo $info;?> Current Moon Phase<br><br>  
  
-<div id="weather34moonphases" class="moonphasesvg"></div>
-<svg id="weather34 simple moonphase"><circle cx="50" cy="50" r="49.5" fill="rgba(86, 95, 103, 1)"/><path id="weather34shape" fill="rgba(230, 232, 239, .3)"/></svg>
+<?php //weather34 moonphase with fallback svg Aug 2019
+if ($meteobridgeapi[153]==0) {echo '<img src="css/moonphases/NEW-MOON.svg" class="moonphaseing" >';}
+else if ($meteobridgeapi[153]==2 ) {echo '<img src="css/moonphases/FIRST-QUARTER.svg" class="moonphaseing">';}
+else if ($meteobridgeapi[153]==4 ) {echo '<img src="css/moonphases/FULL-MOON.svg" class="moonphaseing">';}
+else if ($meteobridgeapi[153]==6) {echo '<img src="css/moonphases/LAST-QUARTER.svg" class="moonphaseing">';}
+else {echo '
+	<svg id="weather34 simple moonphase"><circle cx="50" cy="50" r="49.5" fill="rgba(86, 95, 103, 1)"/><path id="weather34shape" fill="rgba(230, 232, 239, .3)"/></svg>
 <script> //simple moonphase for weather34
 weather34Moon();function weather34Moon() {var day = Date.now() / 86400000;var referenceweather34Moon = Date.UTC(1980, 0, 18, 0, 0, 0, 0);
 var refweather34Day = referenceweather34Moon / 86400000;var phase = (day - refweather34Day) % 29.53058868;var s=String;
 switch (Math.round(phase / 3.75)){}document.getElementById("weather34moonphases");
 var weather34moonCurve;var lf=Math.min(3-4*(phase/30),1);var lc=Math.abs(lf*50);	var lb=(lf<0) ? "0" : "1";
-var rf=Math.min(3+4*((phase-30)/30*0.89666),1);	var rc=Math.abs(rf*50);	var rb=(rf<0) ? "0" : "1";weather34moonCurve="M 50,0 "+ "a "+s(lc)+",50 0 0 "+lb+" 0,100 "+ "a "+s(rc)+",50 0 0 "+rb+" 0,-100";
-document.getElementById("weather34shape").setAttribute("d",weather34moonCurve);}</script>
-
+var rf=Math.min(3+4*((phase-30)/30*0.86666),1);	var rc=Math.abs(rf*50);	var rb=(rf<0) ? "0" : "1";weather34moonCurve="M 50,0 "+ "a "+s(lc)+",50 0 0 "+lb+" 0,100 "+ "a "+s(rc)+",50 0 0 "+rb+" 0,-100";
+document.getElementById("weather34shape").setAttribute("d",weather34moonCurve);}</script>';}
+?>
    <div class=moonphasetext>    
 <?php echo " ";{$day = date('l jS F Y');if($day===date("l jS F Y",strtotime('2019-7-2'))){echo 'Solar <orange>Eclipse</orange>';}else if($day===date("l jS F Y",strtotime('2019-7-16'))){echo 'Lunar <orange>Eclipse</orange>';}else if($day===date("l jS F Y",strtotime('2019-7-17'))){echo 'Lunar <orange>Eclipse</orange>';}else if($day===date("l jS F Y",strtotime('2019-12-26'))){echo 'Solar <orange>Eclipse</orange>';}		
 // weather34 moonphase no scraping its calculated from the livedata !

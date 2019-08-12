@@ -395,6 +395,6 @@ tunit1{position:relative;font-size:.5em;vertical-align:top;top:5px;color:#555}
 
 
 .consoleoutlook{position:relative;color:#555;font-size:10px;margin-top:.2rem;line-height:1;margin-left:5px;width:180px;text-align:left;}.consoleicon{position:absolute;left:175px;top:24px;width:26px;height:26px}
-bluewuhum,greenwuhum,greywuhum,orangewuhum,purplewuhum,redwuhum,yellowwuhum{position:absolute;font-family:weathertext2;width:1.75rem;height:.9rem;font-size:.9em;padding-top:0;color:#fff;display:flex;align-items:center;justify-content:center;-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;border-radius:2px;margin-left:50px;top:0;line-height:.9}
-bluewuhum{background:#009bab}orangewuhum{background:#d05f2d}yellowwuhum{background:#e6a141}redwuhum{background:rgba(211, 93, 78, 1)}greenwuhum{background:rgba(144, 177, 42, 1)}.barometerpos{margin-top:10px}
+bluewuhum,greenwuhum,greywuhum,orangewuhum,purplewuhum,redwuhum,yellowwuhum{position:absolute;font-family:weathertext2;width:2.1rem;height:.9rem;font-size:.9em;padding-top:0;color:#fff;display:flex;align-items:center;justify-content:center;-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;border-radius:2px;margin-left:50px;top:0;line-height:.9}
+bluewuhum{background:#009bab}orangewuhum{background:#d05f2d}yellowwuhum{background:#e6a141}redwuhum{background:rgba(211, 93, 78, 1)}greenwuhum{background:rgba(144, 177, 42, 1)}nextperiod{margin-left:45px}.barometerpos{margin-top:10px}
 boxred{color:rgba(211, 93, 78, 1);margin-right:5px}boxblue{color:#009bab;margin-right:5px}
