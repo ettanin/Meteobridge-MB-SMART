@@ -263,7 +263,7 @@ if ($weatherhardware== "Davis Vantage Vue") {
 } elseif ($weatherhardware== "Davis Envoy8x") {
     echo '<img src="img/designedfordavisenvoy8x.svg" alt="Davis Instruments Envoy8x" title="Davis Instruments Envoy8x" >';
 } elseif ($davis=="Yes") {
-    echo '<img src="img/weather34-vp2-davis-hardware.svg" alt="Davis Instruments Vantage Pro 2" title="Davis Instruments Vantage Pro 2">';
+    echo '<img src="img/weather34-davis-vp2.svg" alt="Davis Instruments Vantage Pro 2" title="Davis Instruments Vantage Pro 2">';
 }?></div>
   <div class=hardware><?php echo $info?>&nbsp;<?php echo $weatherhardware;?></div>
   <div class=hardwareinfo><?php echo $info?>&nbsp;Installed: <?php echo $hardwareinstalled;?></div>
