@@ -1,13 +1,24 @@
-# This GITHUB repository is for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
+# This GITHUB repository is for Meteobridge-Weather34-Smart (Beta) Version *NO MYSQL KNOWLEDGE REQUIRED 
 (6th Master Version Released August 12th 2019)
 
 *significant update fixes metrics/languages switching where problem was noticed on some servers particularly one and one hosted servers*
 	
-# Live Demo
+# Contributors Live Running Demo(s)
 https://singaporeweather.info 
-	
+https://www.paulwilman.com/pw4/
+http://seremange-meteolive.franceserv.com/pws/index.php
+
+
+
+# IMPORTANT THIS TEMPLATE IS NOTE EXPECTED TO BE COMPLETE UNTIL LATE DECEMBER 2019
+
+# NEXT PHASE FOR SEPTEMBER THIS WILL BE LANGUAGES AND ONLY 6 LANGUAGES 
+# NEXT PHASE FOR OCTOBER THIS WILL BE CSS REMOBAL OF UNUSED
+
 # IMPORTANT THIS TEMPLATE IS FOR METEOBRIDGE NANOSD AND DAVIS HARDWARE USERS ONLY !!
+# IT IS NOT COMPATIBLE WITH TP-LINK TYPE METEOBRIDGE HUBS
 	
+
 # IMPORTANT NOT COMPATIBLE WITH PREVIOUS MYSQL CSV CHART FILES  !!
 	
 # More info
