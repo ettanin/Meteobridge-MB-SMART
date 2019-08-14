@@ -51,7 +51,7 @@ include('settings.php');$url = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://
                         <p>Weather Station Hardware</p>
                     </div>
                     <div class="card:image">
-                        <img src="img/weather34logo.svg" alt="weather34 logo" title="weather34 logo">
+                        <img src="img/weather34logo.png" alt="weather34 logo" title="weather34 logo">
                     </div>                    
                 </div>
                 <div class="card:content">
@@ -75,8 +75,8 @@ include('settings.php');$url = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://
                                         <span>Model:<?php echo $weatherhardware?></span>
                                         <img src="img/<?php 
 										if($weatherhardware=='Davis Vantage Vue'){echo 'davisvue';}
-										else if($weatherhardware=='Davis Vantage Pro2'){echo 'davisvp2proconsole';}
-										else if($weatherhardware=='Davis Vantage Pro2 Plus'){echo 'davisvp2proconsole';}
+										else if($weatherhardware=='Davis Vantage Pro2'){echo 'weather34-davis-vp2';}
+										else if($weatherhardware=='Davis Vantage Pro2 Plus'){echo 'weather34-davis-vp2';}
 										else if($weatherhardware=='Davis Envoy8x'){echo 'designedfordavisenvoy8x';}
 										else echo 'davisw34';?>.svg" width="80px" height="80px" alt="Davis Instruments" title="Davis Instruments" class="davishardwaresvg" >
                                     </div>
@@ -95,7 +95,9 @@ include('settings.php');$url = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://
                                     <div class="collection:data">
                                         <h3>Interface <blue> Meteobridge</blue></h3>
                                         <span>Type:<?php echo $mbplatform?> </span>
-                                       <img src="img/nano.svg" width="60px" height="60px" class="nanohardwaresvg" alt="weather34 Meteobridge NANOSD" title="weather34 Meteobridge NANOSD">
+                                       <img src="img/<?php 
+										if($mbplatform=='Meteobridge Pro'){echo 'MeteobridgePRO';}
+										else echo 'nano';?>.svg" width="60px" height="60px" alt="Davis Instruments" title="Davis Instruments" class="davishardwaresvg" >
                                     </div>
                                 </div>
                             </a>

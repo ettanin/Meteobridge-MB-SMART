@@ -26,7 +26,7 @@
                         <p>Weather Station Information</p>
                     </div>
                     <div class="card:image">
-                        <img src="img/weather34logo.svg" alt="weather34 logo">
+                        <img src="img/weather34logo.png" alt="weather34 logo">
                     </div>                    
                 </div>
                 <div class="card:content">
