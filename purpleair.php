@@ -165,7 +165,7 @@ aqred{color:#d35d4e}aqpurple{color:rgba(151, 88, 190, 1.000)}aqorange{color:#d05
             }
 
         .trendicon{margin:0 auto;display:flex;margin-top:37px;align-items:center;justify-content:center;font-size:1.85em;font-family:weathertext2;position:absolute;}
-
+.mbsmartlogo{position:relative;float:right;top:55px;}
 
 
 </style>
@@ -344,6 +344,6 @@ else if ($weather["cloudbase3"]>=1500){echo "#e6a141";}
   <?php echo $info?> CSS/SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:9px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?></span>
  <br>
  <?php echo $info?> Guide Info provided by <br><a href="https://en.wikipedia.org/wiki/Air_quality_guideline" title="https://en.wikipedia.org/wiki/Air_quality_guideline" target="_blank">Wiki-Air Quality..</a>
-  
+   <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="30px"></div>
   </article> 
 </main>

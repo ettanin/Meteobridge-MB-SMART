@@ -26,7 +26,7 @@ $parsed_weather34wujson1 = json_decode($weather34wuurl,true);
 	 $wuskydayTime = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[1];	
 	 $wusummary = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[1];
 	 $wuskydaynight = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[1];	
-	 $wuskythunder = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[1];	
+	 $wuskythunder = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[1];	
 	 $wuskythunderindex = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[1];	  
 	}
 	 
@@ -35,7 +35,7 @@ $parsed_weather34wujson1 = json_decode($weather34wuurl,true);
 	 $wuskydayTime = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[0];	
 	 $wusummary = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[0];	
 	 $wuskydaynight = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[0];
-	 $wuskythunder = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[0];
+	 $wuskythunder = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[0];
 	 $wuskyheatindex = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[0];
 	 $wuskythunderindex = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[0];	 
 	 }
@@ -45,7 +45,7 @@ $parsed_weather34wujson1 = json_decode($weather34wuurl,true);
 	 $wuskydayTime1 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[2];	
 	 $wusummary1 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[2];	
 	 $wuskydaynight1 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[2];
-	 $wuskythunder1 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[2];		
+	 $wuskythunder1 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[2];		
 	 $wuskyheatindex1 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[2]; 
 	 $wuskythunderindex1 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[2];	 
 	 
@@ -55,7 +55,7 @@ $parsed_weather34wujson1 = json_decode($weather34wuurl,true);
 	 $wuskydayTime1 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[1];	
 	 $wusummary1 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[1];
 	 $wuskydaynight1 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[1];	
-	 $wuskythunder1 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[1];		
+	 $wuskythunder1 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[1];		
 	 $wuskyheatindex1 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[1]; 
 	 $wuskythunderindex1 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[1];	 
 	 
@@ -67,7 +67,7 @@ $parsed_weather34wujson1 = json_decode($weather34wuurl,true);
 	 $wuskydayTime2 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[3];	
 	 $wusummary2 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[3];
 	 $wuskydaynight2 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[3];	
-	 $wuskythunder2 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[3];		
+	 $wuskythunder2 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[3];		
 	 $wuskyheatindex2 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[3]; 
 	 $wuskythunderindex2 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[3];	 
 }
@@ -77,7 +77,7 @@ else {
 	 $wuskydayTime2 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[2];	
 	 $wusummary2 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[2];
 	 $wuskydaynight2 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[2];	
-	 $wuskythunder2 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[2];		
+	 $wuskythunder2 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[2];		
 	 $wuskyheatindex2 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[2]; 
 	 $wuskythunderindex2 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[2];	 
 	 }
@@ -87,7 +87,7 @@ else {
 	 $wuskydayTime3 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[4];	
 	 $wusummary3 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[4];	
 	 $wuskydaynight3 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[4];
-	 $wuskythunder3 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[4];		
+	 $wuskythunder3 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[4];		
 	 $wuskyheatindex3 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[4]; 
 	 $wuskythunderindex3 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[4];	 
 	 }
@@ -96,7 +96,7 @@ else {
 	 $wuskydayTime3 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[3];	
 	 $wusummary3 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[3];	
 	 $wuskydaynight3 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[3];
-	 $wuskythunder3 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[3];		
+	 $wuskythunder3 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[3];		
 	 $wuskyheatindex3 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[3]; 
 	 $wuskythunderindex3 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[3];	 
 	 	}	 
@@ -106,7 +106,7 @@ else {
 	 $wuskydayTime4 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[5];	
 	 $wusummary4 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[5];
 	 $wuskydaynight4 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[5];	
-	 $wuskythunder4 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[5];		
+	 $wuskythunder4 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[5];		
 	 $wuskyheatindex4 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[5]; 
 	 $wuskythunderindex4 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[5];	 
 	 }
@@ -116,7 +116,7 @@ else {
 	 $wuskydayTime4 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[4];	
 	 $wusummary4 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[4];
 	 $wuskydaynight4 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[4];	
-	 $wuskythunder4 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[4];		
+	 $wuskythunder4 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[4];		
 	 $wuskyheatindex4 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[4]; 
 	 $wuskythunderindex4 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[4];	 
 	
@@ -127,7 +127,7 @@ else {
 	 $wuskydayTime5 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[6];	
 	 $wusummary5 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[6];
 	 $wuskydaynight5 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[6];
-	 $wuskythunder5 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[6];		
+	 $wuskythunder5 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[6];		
 	 $wuskyheatindex5 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[6]; 
 	 $wuskythunderindex5 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[6];	 
 	
@@ -137,7 +137,7 @@ else {
 	 $wuskydayTime5 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[5];	
 	 $wusummary5 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[5];	
 	 $wuskydaynight5 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[5];
-	 $wuskythunder5 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[5];		
+	 $wuskythunder5 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[5];		
 	 $wuskyheatindex5 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[5]; 
 	 $wuskythunderindex5 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[5];	 
 	 }
@@ -147,7 +147,7 @@ else {
 	 $wuskydayTime6 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[7];	
 	 $wusummary6 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[7];	
 	 $wuskydaynight6 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[7];
-	 $wuskythunder6 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[7];		
+	 $wuskythunder6 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[7];		
 	 $wuskyheatindex6 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[7]; 
 	 $wuskythunderindex6 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[7];	 
 	
@@ -157,7 +157,7 @@ else {
 	 $wuskydayTime6 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[6];	
 	 $wusummary6 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[6];
 	 $wuskydaynight6 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[6];	
-	 $wuskythunder6 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[6];		
+	 $wuskythunder6 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[6];		
 	 $wuskyheatindex6 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[6]; 
 	 $wuskythunderindex6 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[6];	 
 	 }
@@ -167,7 +167,7 @@ else {
 	 $wuskydayTime7 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[8];	
 	 $wusummary7 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[8];
 	 $wuskydaynight7 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[8];	
-	 $wuskythunder7 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[8];		
+	 $wuskythunder7 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[8];		
 	 $wuskyheatindex7 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[8];
 	 $wuskythunderindex7 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[8];	  
 	
@@ -178,7 +178,7 @@ else {
 	 $wuskydayTime7 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[7];	
 	 $wusummary7 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[7];
 	 $wuskydaynight7 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[7];	
-	 $wuskythunder7 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[7];		
+	 $wuskythunder7 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[7];		
 	 $wuskyheatindex7 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[7]; 
 	 $wuskythunderindex7 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[7];	 
 	 
@@ -190,7 +190,7 @@ else {
 	 $wuskydayTime8 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[9];	
 	 $wusummary8 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[9];
 	 $wuskydaynight8 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[9];	
-	 $wuskythunder8 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[9];		
+	 $wuskythunder8 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[9];		
 	 $wuskyheatindex8 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[9]; 
 	 $wuskythunderindex8 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[9];	 
 	
@@ -200,7 +200,7 @@ else {
 	 $wuskydayTime8 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[8];	
 	 $wusummary8 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[8];	
 	 $wuskydaynight8 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[8];
-	 $wuskythunder8 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[8];		
+	 $wuskythunder8 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[8];		
 	 $wuskyheatindex8 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[8];
 	 $wuskythunderindex8 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[8];	  
 	 }
@@ -214,7 +214,7 @@ else {
 	 $wuskydayTime9 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[10];	
 	 $wusummary9 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[10];
 	 $wuskydaynight9 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[10];	
-	 $wuskythunder9 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[10];		
+	 $wuskythunder9 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[10];		
 	 $wuskyheatindex9 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[10]; 
 	 $wuskythunderindex9 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[10];	 
 	
@@ -225,7 +225,7 @@ else {
 	 $wuskydayTime9 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[9];	
 	 $wusummary9 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[9];	
 	 $wuskydaynight9 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[9];
-	 $wuskythunder9 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[9];		
+	 $wuskythunder9 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[9];		
 	 $wuskyheatindex9 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[9]; 
 	 
 	 }
@@ -239,7 +239,7 @@ else {
 	 $wuskydayTime10 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[11];	
 	 $wusummary10 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[11];		
 	 $wuskydaynight10 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[11];
-	 $wuskythunder10 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[11];		
+	 $wuskythunder10 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[11];		
 	 $wuskyheatindex10 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[11]; 
 	 $wuskythunderindex10 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[11];	 
 	 }
@@ -249,7 +249,7 @@ else {
 	 $wuskydayTime10 = $parsed_weather34wujson->{'daypart'}[0]->{'daypartName'}[10];	
 	 $wusummary10 = $parsed_weather34wujson->{'daypart'}[0]->{'narrative'}[10];	
 	 $wuskydaynight10 = $parsed_weather34wujson->{'daypart'}[0]->{'dayOrNight'}[10];
-	 $wuskythunder10 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderCategory'}[10];		
+	 $wuskythunder10 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[10];		
 	 $wuskyheatindex10 = $parsed_weather34wujson->{'daypart'}[0]->{'temperatureHeatIndex'}[10];
 	 $wuskythunderindex10 = $parsed_weather34wujson->{'daypart'}[0]->{'thunderIndex'}[10];	 
 	 
@@ -452,6 +452,7 @@ blueu,yellowu,orangeu,greenu,redu,purpleu{color:#fff;border-radius:2px;padding:0
 summary{font-size:.85em;color:#aaa;display:none}blue1{color:#009bb4}value{font-size:.95em;color:#aaa}valuer{color:#aaa;font-size:.9em;}
 .alertdesc{position:relative;color:#f8f8f8;bottom:0px;right:15px;font-size:0.75rem;width:100%;}
 thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,iframe,svg{aspect-ratio:attr(width px)/attr(height px);image-rendering:auto;}
+.mbsmartlogo{position:relative;float:right;top:0px;}
 </style>
 <div class="weather34darkbrowser" url="Weather Underground Summary Forecast For <?php echo $stationlocation ?>"></div>  
 <main class="grid">
@@ -668,5 +669,6 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
   <?php echo $info?> CSS/SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?></span> <br>
   <span style="font-size:8px;">
   <?php echo $info?> Data Forecast provided by <a href="https://www.wunderground.com/weather/api/" title="Weather Underground API" target="_blank">Weather Underground</a></span>
+  <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="30px"></div>
   </article> 
 </main>

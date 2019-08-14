@@ -1072,6 +1072,7 @@ margin-top:-44px;margin-left:72px;padding:2px;line-height:10px;font-size:9px}.sv
 bluer{color:#fff;border-radius:2px;padding:0 2px 0 2px;align-items:center;justify-content:center;background:rgba(0, 155, 180, .6)}
 bluet,blueu{background:#01a4b5}yellowt,yellowu{background:#e6a141}oranget,orangeu{background:#d05f2d}greent,greenu{background:#90b12a}redt,redu{background:#cd5245}purplet,purpleu{background:rgba(151, 88, 190,.8)}bluet,yellowt,oranget,greent,redt,purplet{-webkit-border-radius:2px;border-radius:2px;padding:2px;height:.9rem}
 blueu,yellowu,orangeu,greenu,redu,purpleu{color:#fff;border-radius:2px;padding:0 3px 0 3px;align-items:center;justify-content:center;}summary{font-size:.9em;color:#aaa;display:none}blue1{color:#009bb4}value{font-size:.95em;color:#aaa}valuer{color:#aaa;font-size:.9em;}thunder{font-size:.9em;color:#aaa;margin-right:5px}wind{color:#bbb;font-size:.9em}canvas,img,iframe,svg{aspect-ratio:attr(width px)/attr(height px);image-rendering:auto;}
+.mbsmartlogo{position:relative;float:right;top:20px;}
 </style>
 <div class="weather34darkbrowser" url="Weather Underground Forecast For <?php echo $stationlocation ?>"></div>  
 <main class="grid">
@@ -1742,5 +1743,6 @@ if ($wuskydaynight10=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon10.'.sv
   <?php echo $info?> CSS/SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?></span> <br>
   <span style="font-size:8px;">
   <?php echo $info?> Data Forecast provided by <a href="https://www.wunderground.com/weather/api/" title="Weather Underground API" target="_blank">Weather Underground</a></span>
+   <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="30px"></div>
   </article> 
 </main>

@@ -1,15 +1,4 @@
-<?php  
-
-	####################################################################################################
-	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
-	# https://weather34.com/homeweatherstation/index.html 											   # 
-	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
-	# 	                                                                                               #
-	#   https://www.weather34.com 	                                                                   #
-	####################################################################################################
-
-
+<?php 
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 include('livedata.php');
 //get moon rise/set updated 29th July
@@ -41,16 +30,14 @@ html,body{font-size:13px;font-family: "weathertext", Helvetica, Arial, sans-seri
 }
 .grid > article img {
   max-width: 100%;
-}
-
-  
+} 
  .weather34chart-btn.close:after,.weather34chart-btn.close:before{color:#ccc;position:absolute;font-size:14px;font-family:Arial,Helvetica,sans-serif;font-weight:600}.weather34browser-header{flex-basis:auto;height:35px;background:#ebebeb;background:0;border-bottom:0;display:flex;margin-top:-20px;width:100%;-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;border-top-left-radius:5px;border-top-right-radius:5px}.weather34browser-footer{flex-basis:auto;height:35px;background:#ebebeb;background:rgba(56,56,60,1);border-bottom:0;display:flex;bottom:-20px;width:97.4%;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-bottomleft:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px}.weather34chart-btns{position:absolute;height:35px;display:inline-block;padding:0 10px;line-height:38px;width:55px;flex-basis:auto;top:5px}.weather34chart-btn{width:14px;height:14px;border:1px solid rgba(0,0,0,.15);border-radius:6px;display:inline-block;margin:1px}.weather34chart-btn.close{background-color: rgba(255, 124, 57, 1.000)}.weather34chart-btn.close:before{content:"x";margin-top:-14px;margin-left:2px}.weather34chart-btn.close:after{content:"close window";margin-top:-13px;margin-left:15px;width:300px}a{color:#aaa;text-decoration:none}
 .weather34darkbrowser{position:relative;background:0;width:100%;max-height:30px;margin:auto;margin-top:-15px;margin-left:0px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:45px;background-image:radial-gradient(circle,#EB7061 6px,transparent 8px),radial-gradient(circle,#F5D160 6px,transparent 8px),radial-gradient(circle,#81D982 6px,transparent 8px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),linear-gradient(to bottom,rgba(59,60,63,0.4) 40px,transparent 0);background-position:left top,left top,left top,right top,right top,right top,0 0;background-size:50px 45px,90px 45px,130px 45px,50px 30px,50px 45px,50px 60px,100%;background-repeat:no-repeat,no-repeat}.weather34darkbrowser[url]:after{content:attr(url);color:#aaa;font-size:10px;position:absolute;left:0;right:0;top:0;padding:4px 15px;margin:11px 50px 0 90px;border-radius:3px;background:rgba(97, 106, 114, 0.3);height:20px;box-sizing:border-box}
  blue{color:#01a4b4}orange{color:#009bb4}orange1{position:relative;color:#009bb4;margin:0 auto;text-align:center;margin-left:5%;font-size:1.1rem}green{color:#aaa}red{color:#f37867}red6{color:#d65b4a}value{color:#fff}yellow{color:#CC0}purple{color:#916392}
  meteotextshowertext{font-size:1.2rem;color:#009bb4}
  meteorsvgicon{color:#f5f7fc}  
 .moonphasesvg{align-items:right;justify-content:center;display:flex;max-height:120px}
-.moonphasetext{font-size:.8rem;color:#f5f7fc;position:absolute;display:inline;left:125px;top:100px}
+.moonphasetext{font-size:.8rem;color:#f5f7fc;position:absolute;display:inline;left:145px;top:100px}
 moonphaseriseset{font-size:.75rem;}
 credit{position:relative;font-size:.7em;top:10%}
 .actualt{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
@@ -59,7 +46,8 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actualw{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
-.moonphaseing{width:110px;}
+.moonphaseing{width:110px;padding-bottom:50px;margin-top:-10px}
+.mbsmartlogo{position:relative;float:right;top:30px;}
 </style>
 <div class="weather34darkbrowser" url="Moon Phase Information"></div>
   
@@ -68,9 +56,8 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 
 
 <?php echo $info;?> Current Moon Phase<br><br>  
- 
-<?php //weather34 moonphase with fallback svg Aug 2019
-if ($meteobridgeapi[153]==0) {echo '<img src="css/moonphases/NEW-MOON.svg" class="moonphaseing" >';}
+<?php 
+if ($meteobridgeapi[153]==0) {echo '<img src="css/moonphases/NEW-MOON.svg" class="moonphaseing">';}
 else if ($meteobridgeapi[153]==2 ) {echo '<img src="css/moonphases/FIRST-QUARTER.svg" class="moonphaseing">';}
 else if ($meteobridgeapi[153]==4 ) {echo '<img src="css/moonphases/FULL-MOON.svg" class="moonphaseing">';}
 else if ($meteobridgeapi[153]==6) {echo '<img src="css/moonphases/LAST-QUARTER.svg" class="moonphaseing">';}
@@ -83,8 +70,10 @@ switch (Math.round(phase / 3.75)){}document.getElementById("weather34moonphases"
 var weather34moonCurve;var lf=Math.min(3-4*(phase/30),1);var lc=Math.abs(lf*50);	var lb=(lf<0) ? "0" : "1";
 var rf=Math.min(3+4*((phase-30)/30*0.86666),1);	var rc=Math.abs(rf*50);	var rb=(rf<0) ? "0" : "1";weather34moonCurve="M 50,0 "+ "a "+s(lc)+",50 0 0 "+lb+" 0,100 "+ "a "+s(rc)+",50 0 0 "+rb+" 0,-100";
 document.getElementById("weather34shape").setAttribute("d",weather34moonCurve);}</script>';}
+
 ?>
-   <div class=moonphasetext>    
+
+<div class=moonphasetext>    
 <?php echo " ";{$day = date('l jS F Y');if($day===date("l jS F Y",strtotime('2019-7-2'))){echo 'Solar <orange>Eclipse</orange>';}else if($day===date("l jS F Y",strtotime('2019-7-16'))){echo 'Lunar <orange>Eclipse</orange>';}else if($day===date("l jS F Y",strtotime('2019-7-17'))){echo 'Lunar <orange>Eclipse</orange>';}else if($day===date("l jS F Y",strtotime('2019-12-26'))){echo 'Solar <orange>Eclipse</orange>';}		
 // weather34 moonphase no scraping its calculated from the livedata !
 	else echo "<aqivalue1>".$weather['moonphase']." </aqivalue1>";}?>             
@@ -98,12 +87,12 @@ document.getElementById("weather34shape").setAttribute("d",weather34moonCurve);}
   
   <article>
  <moonphaseriseset>
-<?php echo $info;?> Moon Rise/Set Information<br><br>
+  <?php echo $info;?> Moon Rise/Set Information<br><br>
 <svg id="i-ban" viewBox="0 0 32 32" width="10" height="10" fill="#39739f" stroke="#39739f" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-<circle cx="16" cy="16" r="14" /><path d="M6 6 L26 26" /></svg> Moonrise:<?php echo $weather['moonrise']," ";?>
+<circle cx="16" cy="16" r="14" /><path d="M6 6 L26 26" /></svg> Moon:<?php echo $weather['moonrise']," ";?>
 <svg id="i-chevron-top" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="#ff8841" stroke-linecap="round" stroke-linejoin="round" stroke-width="10%"><path d="M30 20 L16 8 2 20" /></svg>
 </span><br>
-<svg id="i-ban" viewBox="0 0 32 32" width="10" height="10" fill="#D46842" stroke="#D46842" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"><circle cx="16" cy="16" r="14" /><path d="M6 6 L26 26" /></svg> Moonset:<?php echo $weather['moonset']," ";?>
+<svg id="i-ban" viewBox="0 0 32 32" width="10" height="10" fill="#D46842" stroke="#D46842" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"><circle cx="16" cy="16" r="14" /><path d="M6 6 L26 26" /></svg> Moon:<?php echo $weather['moonset']," ";?>
 <svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="#ff8841" stroke-linecap="round" stroke-linejoin="round" stroke-width="10%"><path d="M30 12 L16 24 2 12" /></svg>
 </span><br>
 <svg id="i-ban" viewBox="0 0 32 32" width="10" height="10" fill="rgba(255, 136, 65, 1.00)" stroke="rgba(255, 136, 65, 1.00)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -166,13 +155,19 @@ $moon = new MoonPhase();$moonage =round($moon->age(),2);echo "Current Moon cycle
  <br>
  <svg id="i-ban" viewBox="0 0 32 32" width="8" height="8" fill="#3b9cac" stroke="#3b9cac" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
 <circle cx="16" cy="16" r="14" /><path d="M6 6 L26 26" /></svg>
- Always shoot in RAW for post processing              
-  </article>    
+ Always shoot in RAW for post processing
+              
+  </article>  
+  
   <article>
    <?php echo $info ;?> Radio Ham Guide (<orange>EME</orange>)<br><br>
    Earth–Moon–Earth communication (<orange>EME</orange>), also known as Moon bounce, is a radio communications technique that relies on the propagation of radio waves from an Earth-based transmitter directed via reflection from the surface of the Moon back to an Earth-based receiver using VHF and UHF amateur radio bands.
+ 
+              
   </article> 
   <article>
    <div class=actualt>&nbsp;&nbsp &copy; Information</div>  
-  <?php echo $info?> CSS/SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:9px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?></span></article> 
+  <?php echo $info?> CSS/SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:9px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?></span>
+  <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="30px"></div>
+  </article> 
 </main>

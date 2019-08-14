@@ -77,6 +77,7 @@ align-items:center;justify-content:center;margin-bottom:0px;top:-15px}
 .actualw{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0px}
+.mbsmartlogo{position:relative;float:right;top:-20px;}
 </style>
 <div class="weather34darkbrowser" url="Solar Almanac"></div>
   
@@ -198,7 +199,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0px}
   <div class="lotemp">
   <?php echo $info?> <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">CSS/SVG/PHP scripts were developed by weather34.com  for use in the weather34 template &copy; 2015-<?php echo date('Y');?>
   </a></div>
-   
+   <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="30px"></div>
   </articlegraph> 
   
 </main>

@@ -230,7 +230,7 @@ elseif ($weather["temp_indoor"]>15) echo "#e6a141";
 else if ($weather["temp_indoor"]>=0) echo "#44a6b5";
 ?>;}
 
-
+.mbsmartlogo{position:relative;float:right;top:-20px;}
 
 </style>
 
@@ -421,6 +421,6 @@ else if ($aqiweather["aqi"]>=0) echo "#90b12a";
   <div class="lotemp">
   <?php echo $info?> <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">CSS/SVG/PHP scripts were developed by weather34.com  for use in the weather34 template &copy; 2015-<?php echo date('Y');?>
   </a></div>
-   
+    <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="30px"></div>
   </articlegraph> 
   

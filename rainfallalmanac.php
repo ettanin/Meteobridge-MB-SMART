@@ -1,4 +1,12 @@
-<?php 
+<?php
+######################################################################################
+#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2016-18-19                        #
+#	CREATED FOR MB-SMART TEMPLATE https://weather34.com/homeweatherstation/index.html  #
+# 	                                                                                 #
+# 	Original FEB 2019	(Updated Jul 2019)  			                                     #
+# 	                                                                                 #
+#   https://www.weather34.com 	                                                     #
+######################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 include('livedata.php');
  ?>
@@ -12,13 +20,13 @@ include('livedata.php');
 @font-face{font-family:weathertext2;src:url(css/fonts/verbatim-regular.woff) format("woff"),url(fonts/verbatim-regular.woff2) format("woff2"),url(fonts/verbatim-regular.ttf) format("truetype")}
 html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-serif;-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;}
-.grid { 
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 2fr));
   grid-gap: 5px;
   align-items: stretch;
   color:#f5f7fc;
-  
+
   }
 .grid > article {
    border: 1px solid rgba(245, 247, 252,.02);
@@ -30,14 +38,14 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
   background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
 }
 
-.grid1 { 
+.grid1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   grid-gap: 5px;
   align-items: stretch;
   color:#f5f7fc;
   margin-top:5px
-  
+
   }
 
 .grid1 > articlegraph {
@@ -48,9 +56,9 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
   -webkit-border-radius:4px;
   border-radius:4px;
   background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
-  height:260px  
+  height:260px
 }
-  
+
  .weather34chart-btn.close:after,.weather34chart-btn.close:before{color:#ccc;position:absolute;font-size:14px;font-family:Arial,Helvetica,sans-serif;font-weight:500}.weather34browser-header{flex-basis:auto;height:35px;background:#ebebeb;background:0;border-bottom:0;display:flex;margin-top:-20px;width:100%;-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;border-top-left-radius:5px;border-top-right-radius:5px}.weather34browser-footer{flex-basis:auto;height:35px;background:#ebebeb;background:rgba(56,56,60,1);border-bottom:0;display:flex;bottom:-20px;width:97.4%;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-bottomleft:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px}.weather34chart-btns{position:absolute;height:35px;display:inline-block;padding:0 10px;line-height:38px;width:55px;flex-basis:auto;top:5px}.weather34chart-btn{width:14px;height:14px;border:1px solid rgba(0,0,0,.15);border-radius:6px;display:inline-block;margin:1px}.weather34chart-btn.close{background-color: rgba(255, 124, 57, 1.000)}.weather34chart-btn.close:before{content:"x";margin-top:-14px;margin-left:2px}.weather34chart-btn.close:after{content:"close window";margin-top:-13px;margin-left:15px;width:300px}a{color:#aaa;text-decoration:none}
 .weather34darkbrowser{position:relative;background:0;width:100%;max-height:30px;margin:auto;margin-top:-15px;margin-left:0px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:45px;background-image:radial-gradient(circle,#EB7061 6px,transparent 8px),radial-gradient(circle,#F5D160 6px,transparent 8px),radial-gradient(circle,#81D982 6px,transparent 8px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),linear-gradient(to bottom,rgba(59,60,63,0.4) 40px,transparent 0);background-position:left top,left top,left top,right top,right top,right top,0 0;background-size:50px 45px,90px 45px,130px 45px,50px 30px,50px 45px,50px 60px,100%;background-repeat:no-repeat,no-repeat}.weather34darkbrowser[url]:after{content:attr(url);color:#aaa;font-size:10px;position:absolute;left:0;right:0;top:0;padding:4px 15px;margin:11px 50px 0 90px;border-radius:3px;background:rgba(97, 106, 114, 0.3);height:20px;box-sizing:border-box}
  blue{color:#01a4b4}orange{color:#009bb4}orange1{position:relative;color:#009bb4;margin:0 auto;text-align:center;margin-left:5%;font-size:1.1rem}green{color:#aaa}red{color:#f37867}red6{color:#d65b4a}value{color:#fff}yellow{color:#CC0}purple{color:#916392}
@@ -83,14 +91,14 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actualg feel{background:rgba(211, 93, 78, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
 .actualg dewpoint{background:rgba(6, 162, 177, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff}
 .actualg wetbulb{background:rgba(241, 107, 79, .8);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
-
+.mbsmartlogo{position:relative;float:right;top:-20px;}
 </style>
 <div class="weather34darkbrowser" url="Rainfall Almanac <?php echo $rainunit ;?>"></div>
-  
+
 <main class="grid">
-  <article>  
-   <div class=actualt>Rainfall Today </div>        
-  <?php // rain today 
+  <article>
+   <div class=actualt>Rainfall Today </div>
+  <?php // rain today
 echo "<div class='rainfalltoday1'>",$weather["rain_today"] . "</value>";echo "<smalluvunit>".$weather["rain_units"]."</smalluvunit>"?>
 <div class='w34convertrain'>
 <?php //convert rain
@@ -100,10 +108,10 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rain_today"]*25.
 <div></div>
 
 <div class="hitempy"><?php echo $raininfo . "Last Hour<blue> ", $weather["rain_lasthour"]."</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>"?></div>
-</article>  
+</article>
 
- <article>  
-    <div class=actualt>Rainfall Yesterday </div>      
+ <article>
+    <div class=actualt>Rainfall Yesterday </div>
   <?php // rain yesterday
 echo "<div class='rainfalltoday1'>",$weather["rainydmax"] . "</value>";echo "<smalluvunit>".$weather["rain_units"]."</smalluvunit>"?>
 <div class='w34convertrain'>
@@ -114,11 +122,11 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rainydmax"]*25.4
 <div></div>
 
 <div class="hitempy"><?php echo $raininfo . "Last 24 Hours<blue> ", $weather["rain_24hrs"]."</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>"?></div>
-</article>  
-  
-  
-  <article> 
-  <div class=actualt>Rainfall <?php echo date('M Y')?> </div>          
+</article>
+
+
+  <article>
+  <div class=actualt>Rainfall <?php echo date('M Y')?> </div>
   <?php // rain month
 echo "<div class='rainfalltoday1'>",$weather["rain_month"] . "</value>";echo "<smalluvunit>".$weather["rain_units"]."</smalluvunit>"?>
 <div class='w34convertrain'>
@@ -130,19 +138,19 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rain_month"]*25.
 
 <div class="hitempy">
     <?php echo $raininfo;?>
-    <?php if ($meteobridgeapi[179]=='--'){
-        echo " <blue>Rainfall</blue> Last <br>Month <blue>".$weather['rainlastmonth'],"</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>";
+    <?php if ($meteobridgeapi[179]='--'){
+        echo " <blue>Rainfall</blue> <br>Last Month <br><blue>".$weather['rainlastmonth'],"</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>";
     } else if ($rainlasttime == date("M jS Y ")) {
         echo 'Last <blue>Rainfall</blue><br>Today';
     } else {
         echo 'Last <blue>Rainfall</blue><br>'.$rainlasttime;
     }?></blue>
 </div>
-</article> 
-  
-   
-   <article> 
-   <div class=actualt>Rainfall <?php echo date("Y");?> </div>      
+</article>
+
+
+   <article>
+   <div class=actualt>Rainfall <?php echo date("Y");?> </div>
   <?php // rain year
 echo "<div class='rainfalltoday1'>",$weather["rain_year"] . "</value>";echo "<smalluvunit>".$weather["rain_units"]."</smalluvunit>"?>
 <div class='w34convertrain'>
@@ -154,12 +162,12 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rain_year"]*25.4
 
 <div class="hitempy">
 <?php echo $raininfo,"<blue>Rainfall</blue> Previous Year <blue>".$weather['rainlastyear']."</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>";?></div></div>
-</article>  
+</article>
 
 <article>
- <div class=actualt>&nbsp;Rainfall All-Time </div>      
-  <?php 
-  if ($weather["rain_alltime"]==''){echo "<div class='rainfalltoday1'>N/A</value>";}  
+ <div class=actualt>&nbsp;Rainfall All-Time </div>
+  <?php
+  if ($weather["rain_alltime"]==''){echo "<div class='rainfalltoday1'>N/A</value>";}
  // rain alltime
 else {echo "<div class='rainfalltoday1'>",$weather["rain_alltime"] . "</value>";
 echo "<smalluvunit>".$weather["rain_units"]."</smalluvunit>";}?>
@@ -180,22 +188,22 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rain_alltime"]*2
 
 
  <main class="grid1">
-    <articlegraph> 
+    <articlegraph>
   <div class=actualg><?php echo date('Y');?> Rainfall
   <dewpoint><?php echo "Total ",$weather["rain_year"]." " .$weather["rain_units"]?> </dewpoint></div>
   <iframe  src="weather34charts/yearlyrainfallmedium.php" frameborder="0" scrolling="no" width="100%"  height="225px"></iframe>
-   
-  </articlegraph> 
-  
-    <articlegraph style="height:30px">  
+
+  </articlegraph>
+
+    <articlegraph style="height:30px">
   <div class="lotemp">
-  <?php echo $info?> 
+  <?php echo $info?>
 <a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank" style="font-size:8px;"> Charts rendered and compiled using <?php echo $creditschart ;?> </a></span>
   </div>
   <div class="lotemp">
   <?php echo $info?> <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">CSS/SVG/PHP scripts were developed by weather34.com  for use in the weather34 template &copy; 2015-<?php echo date('Y');?>
   </a></div>
-   
-  </articlegraph> 
-  
+ <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="30px"></div>
+  </articlegraph>
+
 </main>

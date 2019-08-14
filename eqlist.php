@@ -113,6 +113,7 @@ padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;fo
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .svgimage{background:rgba(0, 155, 171, 1.000);-webit-border-radius:2px;border-radius:2px;}
 orange1{color:rgba(255, 131, 47, 1.000);}
+.mbsmartlogo{position:relative;float:right;top:20px;}
 </style>
 <div class="weather34darkbrowser" url="Recent Earthquakes"></div>
   
@@ -784,7 +785,7 @@ else if ($windunit == 'mph') {
   <br>
   <?php echo $info?>  
 <a href="http://earthquake-report.com" title="Earthquake-Report.com" target="_blank">Data © <?php echo date('Y');?> Earthquake-Report.com</a></span>
-
+ <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="30px"></div>
   
   </article> 
 </main>

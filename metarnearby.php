@@ -112,6 +112,7 @@ stationid{font-size:1.4em;font-family:weathertext2;color:#009bb4}
 .iconcondition{float:left;}
 .icontext{position:absolute;float:left;margin-top:40px;text-align:left;}
 .pressure{position:absolute;float:left;margin-top:30px;text-align:left;}
+.mbsmartlogo{position:relative;float:right;top:0px;}
 </style>
 <div class="weather34darkbrowser" url="Nearby Airport Conditions"></div>
   
@@ -404,6 +405,8 @@ $date=str_replace('Z', ' ', $date);$date1 = strtotime($date) + 60*60*$UTC;echo d
   <?php echo $info?> CSS/SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:9px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?>
   <br><br>
   <?php echo $info?> Guide Info provided  by <a href="https://en.wikipedia.org/wiki/METAR" title="https://en.wikipedia.org/wiki/METAR" target="_blank" style="font-size:9px;">Metar-Wikipedia </a>  
-  </div></article> 
+  </div>
+  <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="30px"></div>
+  </article> 
    
 </main>
