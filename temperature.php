@@ -111,9 +111,9 @@ else if ($weather["temp_units"]=='F' && $weather["temp_avgtoday"]>-50){echo "<di
 <valuetextheading1><?php echo $lang['Humidity']?></valuetextheading1>
 <a class="weather34tip" data-weather34tip="Max: <?php echo $weather["humidity_max"]."%    Min: ".$weather["humidity_min"]."%"?>">
 <?php //humidity
-if ($weather["humidity"]>90){echo "<div class=tempconverter1><div class=temphumcircle80-100>".$weather["humidity"];}
-else if ($weather["humidity"]>70){echo "<div class=tempconverter1><div class=temphumcircle60-80>".$weather["humidity"];}
-else if ($weather["humidity"]>35){echo "<div class=tempconverter1><div class=temphumcircle35-60>".$weather["humidity"];}
+if ($weather["humidity"]>70){echo "<div class=tempconverter1><div class=temphumcircle80-100>".$weather["humidity"];}
+else if ($weather["humidity"]>60){echo "<div class=tempconverter1><div class=temphumcircle60-80>".$weather["humidity"];}
+else if ($weather["humidity"]>40){echo "<div class=tempconverter1><div class=temphumcircle35-60>".$weather["humidity"];}
 else if ($weather["humidity"]>25){echo "<div class=tempconverter1><div class=temphumcircle25-35>".$weather["humidity"];}
 else if ($weather["humidity"]<=25){echo "<div class=tempconverter1><div class=temphumcircle0-25>".$weather["humidity"];}?><smalltempunit2>%</smalltempunit2>
 <?php //humidity trend
