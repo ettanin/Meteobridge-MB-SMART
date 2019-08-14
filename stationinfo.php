@@ -51,7 +51,7 @@ include('settings.php');$url = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://
                         <p>Weather Station Hardware</p>
                     </div>
                     <div class="card:image">
-                        <img src="img/weather34logo.png" alt="weather34 logo" title="weather34 logo">
+                        <img src="img/weather34-mbsmart-logo.svg" alt="weather34 logo" title="weather34 logo">
                     </div>                    
                 </div>
                 <div class="card:content">
