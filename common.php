@@ -28,7 +28,7 @@ $lang = $_COOKIE['lang'];
 }
 else
 {
-$lang = 'en';
+$lang = $defaultlanguage;
 }
 
 switch ($lang) {
