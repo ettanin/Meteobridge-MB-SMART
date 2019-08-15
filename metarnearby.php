@@ -91,7 +91,7 @@ spancalm{postion:relative;font-family:weathertext2,Arial;font-size:16px;}
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:150px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actualw{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
-padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
+padding:5px;font-family:Arial, Helvetica, sans-serif;width:150px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .metarwindtodaykts0{background:rgba(68, 166, 181, 1.000)}
 .metarwindtodaykts5{background:rgba(144, 177, 42, 1.000)}
