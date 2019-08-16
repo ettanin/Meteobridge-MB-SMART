@@ -8,7 +8,9 @@ https://singaporeweather.info
 
 https://www.paulwilman.com/pw4/
 
-http://seremange-meteolive.franceserv.com/pws/index.php
+http://seremange-meteolive.franceserv.com/pws/
+
+https://www.weerstation-sauwerd.nl/pwsmbms/
 
 
 
