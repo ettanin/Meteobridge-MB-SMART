@@ -27,7 +27,8 @@ https://www.weerstation-sauwerd.nl/pwsmbms/
 # IMPORTANT NOT COMPATIBLE WITH PREVIOUS MYSQL CSV CHART FILES  !!
 	
 # More info
-	https://weather34.com/homeweatherstation/meteobridge-mb-smart.html
+
+https://weather34.com/homeweatherstation/meteobridge-mb-smart.html
 
 # New No mysql setup use meteobridge data instead..
 How to use this non mysql database version with ease.
