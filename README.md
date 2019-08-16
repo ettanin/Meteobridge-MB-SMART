@@ -145,7 +145,7 @@ id,time,temp,barometer,rainfall,maxwind_last10,avgwind_last10,dewpoint,rainfall_
 
 # Meteobridge-Weather34 MB-Smart Version
 *The aim is to create the cleanest and most friendly approach to displaying your personal
-weather data for your personal use and reap the full potential of meteobridge nanosd and meteobridge pro.
+weather data for your personal use and reap the full potential of meteobridge nanosd.
 
 *This template is primed for use with meteobridge NANOSD AND DAVIS hardware unfortunately the smaller TP-LINK is not
 fully compatible due to the requirement of being able to retrieve historical values realtime .
