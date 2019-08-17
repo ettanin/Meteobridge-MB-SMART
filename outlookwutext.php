@@ -6,7 +6,7 @@ include_once('settings.php');include('livedata.php');
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
+	# 	Release: August 2019					  	                                                   #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
@@ -412,29 +412,35 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
 .grid { 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 5px;
+  grid-gap: 3px;
   align-items: stretch;
   color:#f5f7fc
   }
 .grid > article {
  border: 1px solid rgba(245, 247, 252,.02);
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);
-  padding:10px;
+  padding:15px;
+  padding-top:5px;
   font-size:0.8em;
-  -webkit-border-radius:4px;
-  border-radius:4px;
-  background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  background:0;
+  -webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
+  height:75px;
 }
 .grid > article img {
-  max-width: 100%;
+  max-width: 90%;
 }
 .grid > article rainsnow{
 	vertical-align:bottom;float:right}
 	
-.grid > article actualt{vertical-align:top;float:left-webkit-border-radius:2px;border-radius:2px;background:rgba(86, 95, 103,.2);font-family:Arial, Helvetica, sans-serif;padding:1px 3px 1px 3px;width:10rem;font-size:0.8rem;color:#c0c0c0;align-items:center;justify-content:center;margin-bottom:10px;top:-2px;display:flex}	
-.grid > article tempicon{vertical-align:top;float:right;font-size:1.1em;margin-top:-20px;margin-right:20px}
+.grid > article actualt{vertical-align:top;-webkit-border-radius:2px;border-radius:2px;background:rgba(86, 95, 103,.2);font-family:Arial, Helvetica, sans-serif;padding:1px 3px 1px 3px;width:10rem;font-size:0.8rem;color:#c0c0c0;align-items:center;justify-content:left;margin-bottom:10px;top:-15px;display:flex}	
+.grid > article tempicon{vertical-align:top;float:right;font-size:0;margin-top:-25px;margin-right:20px}
 
 .grid > article .summarytext{font-size:.9em;color:#aaa;margin-bottom:0px;height:50px;line-height:10px;font-family:Arial, Helvetica, sans-serif}
+
+.grid > article .alertdesc{position:relative;color:#f8f8f8;bottom:-15px;right:15px;font-size:0.75rem;}
+
  .weather34chart-btn.close:after,.weather34chart-btn.close:before{color:#ccc;position:absolute;font-size:14px;font-family:Arial,Helvetica,sans-serif;font-weight:600}.weather34browser-header{flex-basis:auto;height:35px;background:#ebebeb;background:0;border-bottom:0;display:flex;margin-top:-20px;width:100%;-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;border-top-left-radius:5px;border-top-right-radius:5px}.weather34browser-footer{flex-basis:auto;height:35px;background:#ebebeb;background:rgba(56,56,60,1);border-bottom:0;display:flex;bottom:-20px;width:97.4%;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-bottomleft:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px}.weather34chart-btns{position:absolute;height:35px;display:inline-block;padding:0 10px;line-height:38px;width:55px;flex-basis:auto;top:5px}.weather34chart-btn{width:14px;height:14px;border:1px solid rgba(0,0,0,.15);border-radius:6px;display:inline-block;margin:1px}.weather34chart-btn.close{background-color: rgba(255, 124, 57, 1.000)}.weather34chart-btn.close:before{content:"x";margin-top:-14px;margin-left:2px}.weather34chart-btn.close:after{content:"close window";margin-top:-13px;margin-left:15px;width:300px}a{color:#aaa;text-decoration:none}
 .weather34darkbrowser{position:relative;background:0;width:100%;max-height:30px;margin:auto;margin-top:-15px;margin-left:0px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:45px;background-image:radial-gradient(circle,#EB7061 6px,transparent 8px),radial-gradient(circle,#F5D160 6px,transparent 8px),radial-gradient(circle,#81D982 6px,transparent 8px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),linear-gradient(to bottom,rgba(59,60,63,0.4) 40px,transparent 0);background-position:left top,left top,left top,right top,right top,right top,0 0;background-size:50px 45px,90px 45px,130px 45px,50px 30px,50px 45px,50px 60px,100%;background-repeat:no-repeat,no-repeat}.weather34darkbrowser[url]:after{content:attr(url);color:#aaa;font-size:10px;position:absolute;left:0;right:0;top:0;padding:4px 15px;margin:11px 50px 0 90px;border-radius:3px;background:rgba(97, 106, 114, 0.3);height:20px;box-sizing:border-box}
  blue{color:#01a4b4}orange{color:#ff832f}green{color:#84a927}red{color:#f37867}red6{color:#d65b4a}value{color:#fff}yellow{color:#e7963b}purple{color:#916392}
@@ -450,9 +456,8 @@ bluer{color:#fff;border-radius:2px;padding:0 2px 0 2px;align-items:center;justif
 bluet,blueu{background:#01a4b5}yellowt,yellowu{background:#e6a141}oranget,orangeu{background:#d05f2d}greent{background:#90b12a}greenu{background:#565f67}redt,redu{background:#cd5245}purplet,purpleu{background:rgba(151, 88, 190,.8)}bluet,yellowt,oranget,greent,redt,purplet{-webkit-border-radius:2px;border-radius:2px;padding:2px;height:.9rem}
 blueu,yellowu,orangeu,greenu,redu,purpleu{color:#fff;border-radius:2px;padding:0 3px 0 3px;align-items:center;justify-content:center;}
 summary{font-size:.85em;color:#aaa;display:none}blue1{color:#009bb4}value{font-size:.95em;color:#aaa}valuer{color:#aaa;font-size:.9em;}
-.alertdesc{position:relative;color:#f8f8f8;bottom:0px;right:15px;font-size:0.75rem;width:100%;}
 thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,iframe,svg{aspect-ratio:attr(width px)/attr(height px);image-rendering:auto;}
-.mbsmartlogo{position:relative;float:right;top:0px;}
+.mbsmartlogo{position:relative;float:right;top:12px;}
 </style>
 <div class="weather34darkbrowser" url="Weather Underground Summary Forecast For <?php echo $stationlocation ?>"></div>  
 <main class="grid">
@@ -470,7 +475,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 
 	 if ($tempunit=='F' && $wuskydaynight=="D" && $wuskyheatindex >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
-	 else if ($tempunit=='C' && $wuskydaynight=="D" && $wuskyheatindex>27){
+	 else if ($tempunit=='C' && $wuskydaynight=="D" && $wuskyheatindex>29){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else echo "";?> 
 </article>  
@@ -488,7 +493,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 
 	 if ($tempunit=='F' && $wuskydaynight1=="D" && $wuskyheatindex1 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex1.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
-	 else if ($tempunit=='C' && $wuskydaynight1=="D" && $wuskyheatindex1>27){
+	 else if ($tempunit=='C' && $wuskydaynight1=="D" && $wuskyheatindex1>29){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex1.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else echo "";?> 
 </article>  
@@ -506,7 +511,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=alertdesc>';	
 	 if ($tempunit=='F' && $wuskydaynight2=="D" && $wuskyheatindex2 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex2.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
-	 else if ($tempunit=='C' && $wuskydaynight2=="D" && $wuskyheatindex2>27){
+	 else if ($tempunit=='C' && $wuskydaynight2=="D" && $wuskyheatindex2>29){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex2.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else echo "";?>  
 				  
@@ -524,7 +529,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=alertdesc>';		
 	 if ($tempunit=='F' && $wuskydaynight3=="D" && $wuskyheatindex3 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex3.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
-	 else if ($tempunit=='C' && $wuskydaynight3=="D" && $wuskyheatindex3>27){
+	 else if ($tempunit=='C' && $wuskydaynight3=="D" && $wuskyheatindex3>29){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex3.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else echo "";?>  
 	
@@ -543,7 +548,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=alertdesc>';		
 	 if ($tempunit=='F' && $wuskydaynight4=="D" && $wuskyheatindex4 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex4.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
-	 else if ($tempunit=='C' && $wuskydaynight4=="D" && $wuskyheatindex4>27){
+	 else if ($tempunit=='C' && $wuskydaynight4=="D" && $wuskyheatindex4>29){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex4.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else echo "";?>  
 </article> 
@@ -561,7 +566,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=alertdesc>';	
 	 if ($tempunit=='F' && $wuskydaynight5=="D" && $wuskyheatindex5 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex5.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
-	 else if ($tempunit=='C' && $wuskydaynight5=="D" && $wuskyheatindex5>27){
+	 else if ($tempunit=='C' && $wuskydaynight5=="D" && $wuskyheatindex5>29){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex5.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else echo "";?>  
 </article> 
@@ -579,7 +584,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=alertdesc>';
 	 if ($tempunit=='F' && $wuskydaynight6=="D" && $wuskyheatindex6 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex6.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
-	 else if ($tempunit=='C' && $wuskydaynight6=="D" && $wuskyheatindex6>27){
+	 else if ($tempunit=='C' && $wuskydaynight6=="D" && $wuskyheatindex6>29){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex6.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else echo "";?>    
   </article> 
@@ -597,7 +602,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=alertdesc>';
 	 if ($tempunit=='F' && $wuskydaynight7=="D" && $wuskyheatindex7 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex7.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
-	 else if ($tempunit=='C' && $wuskydaynight7=="D" && $wuskyheatindex7>27){
+	 else if ($tempunit=='C' && $wuskydaynight7=="D" && $wuskyheatindex7>29){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex7.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else echo "";?>   
   </article> 
@@ -617,7 +622,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	echo '<div class=alertdesc>';
 	 if ($tempunit=='F' && $wuskydaynight8=="D" && $wuskyheatindex8 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex8.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
-	 else if ($tempunit=='C' && $wuskydaynight8=="D" && $wuskyheatindex8>27){
+	 else if ($tempunit=='C' && $wuskydaynight8=="D" && $wuskyheatindex8>29){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex8.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else echo "";?>  
 	 
@@ -638,7 +643,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=alertdesc>';	
 	 if ($tempunit=='F' && $wuskydaynight9=="D" && $wuskyheatindex9 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex9.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
-	 else if ($tempunit=='C' && $wuskydaynight9=="D" && $wuskyheatindex9>27){
+	 else if ($tempunit=='C' && $wuskydaynight9=="D" && $wuskyheatindex9>29){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex9.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else echo "";?>  
   </article> 
@@ -655,7 +660,7 @@ thunder{font-size:.9em;color:#aaa}wind{color:#bbb;font-size:.9em}canvas,img,ifra
 	 echo '<div class=alertdesc>';
 	 if ($tempunit=='F' && $wuskydaynight10=="D" && $wuskyheatindex10 >80.6){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex10.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
-	 else if ($tempunit=='C' && $wuskydaynight10=="D" && $wuskyheatindex10>27){
+	 else if ($tempunit=='C' && $wuskydaynight10=="D" && $wuskyheatindex10>29){
 	 echo '<rainsnow>'.$lightningalert4.' <thunder>Heat Index <orange1>'.$wuskyheatindex10.'</orange1>°<spantemp>' .$tempunit. '</spantemp></thunder></grey></value></div>';}
 	 else echo "";?>  
   </article> 

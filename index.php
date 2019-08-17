@@ -215,11 +215,11 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <a href="https://www.meteobridge.com/wiki/index.php/Home" alt="https://www.meteobridge.com/wiki/index.php/Home" title="https://www.meteobridge.com/wiki/index.php/Home">
 <?php
 if ($mbplatform== "Meteobridge Pro") {
-    echo '<img src="img/MeteobridgePRO.svg" alt="Meteobridge Pro" title="Meteobridge Pro"  width=60px height=50px >';
+    echo '<img src="img/MeteobridgePRO.svg" alt="Meteobridge Pro" title="Meteobridge Pro"  width="60px" height="45px">';
 } elseif ($mbplatform== "Meteobridge Nano") {
-    echo '<img src="img/nano.svg" alt="Meteobridge TP-LINK" title="Meteobridge Nano"  width=60px height=50px >';
+    echo '<img src="img/nano.svg" alt="Meteobridge TP-LINK" title="Meteobridge Nano"   width="60px" height="45px">';
 } elseif ($mbplatform== "Meteobridge NanoSD") {
-    echo '<img src="img/nano.svg" alt="Meteobridge D-LINK" title="Meteobridge NanoSD"  width=60px height=50px" >';
+    echo '<img src="img/nano.svg" alt="Meteobridge D-LINK" title="Meteobridge NanoSD"   width="60px" height="45px">';
 }
 ?></a> </div>
 
@@ -259,11 +259,11 @@ $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime)
   <div class=hardwareimg2>
   <?php
 if ($weatherhardware== "Davis Vantage Vue") {
-    echo '<img src="img/davisvue.svg" alt="Davis Instruments Vantage Vue" title="Davis Instruments Vantage Vue" >';
+    echo '<img src="img/davisvue.svg" alt="Davis Instruments Vantage Vue" title="Davis Instruments Vantage Vue" width="100px" height="50px" style="margin-top:15px">';
 } elseif ($weatherhardware== "Davis Envoy8x") {
-    echo '<img src="img/designedfordavisenvoy8x.svg" alt="Davis Instruments Envoy8x" title="Davis Instruments Envoy8x" >';
+    echo '<img src="img/designedfordavisenvoy8x.svg" alt="Davis Instruments Envoy8x" title="Davis Instruments Envoy8x" width="100px" height="50px" style="margin-top:15px">';
 } elseif ($davis=="Yes") {
-    echo '<img src="img/weather34-davis-vp2.svg" alt="Davis Instruments Vantage Pro 2" title="Davis Instruments Vantage Pro 2">';
+    echo '<img src="img/weather34-davis-vp2.svg" alt="Davis Instruments Vantage Pro 2" title="Davis Instruments Vantage Pro 2" width="80px" height="80px">';
 }?></div>
   <div class=hardware><?php echo $info?>&nbsp;<?php echo $weatherhardware;?></div>
   <div class=hardwareinfo><?php echo $info?>&nbsp;Installed: <?php echo $hardwareinstalled;?></div>
@@ -272,14 +272,16 @@ if ($weatherhardware== "Davis Vantage Vue") {
 
   <weather34infoboxes>
   <div class=locinfo><?php echo $info?>&nbsp;Operational Since:<?php echo $since;?></div>
-  <div class=locinfo2><?php echo $info?>&nbsp;<?php echo $stationlocation?> <img src="img/flags/<?php echo $flag ;?>.svg" width="15px" ></div>
+  <div class=locinfo2><?php echo $info?>&nbsp;<?php echo $stationlocation?>
+  <img src="img/flags/<?php echo $flag ;?>.svg" width="15px" height="15px" alt="<?php echo $stationlocation?>" title="<?php echo $stationlocation?>">
+  </div>
   <div class=locinfo3><?php echo $info?>&nbsp;<?php echo $designedby;?>&nbsp;&copy;2015-<?php echo date('Y');?></div>
   </weather34infoboxes></div></div>
   <div class="footercontainer">
   <main class="gridfooter">
   <weather34footer>
   <div class=footertext>
-  <div class="weather34-mbsmartlogo"><a class="weather34tipfooter" href="https://weather34.com/homeweatherstation/" data-weather34tipfooter="WEATHER34 MB-SMART" target="_blank"><img src="img/weather34-logo.svg" width=47em > <span>weather<ored>34</ored> designed</span></a>
+  <div class="weather34-mbsmartlogo"><a class="weather34tipfooter" href="https://weather34.com/homeweatherstation/" data-weather34tipfooter="WEATHER34 MB-SMART" target="_blank"><img src="img/weather34-logo.svg" width="47em" height="45em"> <span>weather<ored>34</ored> designed</span></a>
   </div>
   <?php echo $info?>&nbsp;Weather Data Provided By:&nbsp;<?php echo $stationlocation?> Home Weather Station </div>
   <div class="weather34refresh"><a href="<?php $_SERVER['PHP_SELF']; ?>"> <?php echo $weather34refreshicon;?></a></div></div>
