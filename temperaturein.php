@@ -15,9 +15,10 @@ include('livedata.php');include('common.php');?>
 <div class="moduleupdatetime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div>  
 <div class="tempcontainer">
 <a class="weather34tiptemp" data-weather34tiptemp="<?php echo date('M')." Max: "?><?php echo $weather["tempmmax"]."&deg;"?> <?php echo date('M')." Min: "?><?php echo $weather["tempmmin"]."&deg;"?>">
-<div class="maxdata"><?php 
-if ($weather["temp_today_high"]<10){echo "&nbsp;".$weather["temp_today_high"]."&deg;\n";?> | <?php echo $weather["temp_today_low"]."&deg;";}else if ($weather["temp_today_high"]>=10){echo $weather["temp_today_high"]."&deg;\n";?> | <?php echo $weather["temp_today_low"]."&deg;";}?>
-</div>
+<?php echo "<div class='maxdata'>". $weather["temp_today_low"]."&deg;</div>";?> 
+<?php echo "<div class='mindata'>".$weather["temp_today_high"]."&deg;</div>";?>
+<?php echo "<div class='hidata'>Min</div>";?> 
+<?php echo "<div class='lodata'>Max</div>";?>
 <?php //weather34 sez lets make the temperature look nice 
 if($weather["temp_units"]=='C' && $weather['temp']<=-10){echo '<div class=outsideminus10>'.number_format($weather['temp'],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
 else if($weather["temp_units"]=='C' && $weather['temp']<=-5){echo '<div class=outsideminus5>'.number_format($weather['temp'],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
@@ -38,12 +39,25 @@ else if($weather["temp_units"]=='F' && $weather['temp']<86){echo '<div class=out
 <div class="temptrendx">
 <?php echo $weather["temp_trend"]." </span>\n";
 //falling
-if($weather["temp_trend"]<0){echo '<trendmovementfallingx>&nbsp;&nbsp;&nbsp;<valuetext>Trend '.$fallingsymbol.' '.number_format($weather["temp_trend"],1).'&deg;</valuetext></trendmovementfallingx>';}
+if($weather["temp_trend"]<0){echo '<trendmovementfallingx>'.$fallingsymbol.' '.number_format($weather["temp_trend"],1).'&deg;</trendmovementfallingx>';}
 //rising
-elseif($weather["temp_trend"]>0){echo '<trendmovementrisingx>&nbsp;&nbsp;&nbsp;<valuetext>Trend '.$risingsymbol.' '.number_format($weather["temp_trend"],1).'&deg;</valuetext></trendmovementfallingx>';}
+else if($weather["temp_trend"]>0){echo '<trendmovementrisingx>'.$risingsymbol.' '.number_format($weather["temp_trend"],1).'&deg;</trendmovementfallingx>';}
 //steady
-else echo '<trendmovementsteadyx><valuetext>Trend '.$steadysymbol.'Steady</valuetext></trendmovementsteadyx>';?>
+else echo '<trendmovementsteadyx>'.$steadysymbol.'</trendmovementsteadyx>';?>
+</span></div>
+
+
+<div class="temptrendphrase">
+<?php 
+//falling
+if($weather["temp_trend"]<0){echo '&nbsp;&nbsp;'.$lang['Falling'];}
+//rising
+else if($weather["temp_trend"]>0){echo '&nbsp;&nbsp;'.$lang['Rising'];}
+//steady
+else echo '&nbsp;&nbsp;&nbsp;'.$lang['Steady'];?>
 </span></div></div></div></a>
+
+
 <div class="heatcircle"><div class="heatcircle-content">
 <?php  //heat-index/real feel
 if(anyToC($weather["heat_index"])>=40 ||($showFeelsLike&&anyToC($weather["temp"])>40)){echo " <valuetextheading1>Heat Index</valuetextheading1><br><div class=tempconverter1><div class=tempmodulehome40-50c>".$weather["heat_index"]."&deg;<smalltempunit2>".$weather["temp_units"];}

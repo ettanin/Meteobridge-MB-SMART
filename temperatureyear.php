@@ -47,7 +47,7 @@ else if ($weather["temp_units"]=='F'){echo anyToC($weather["tempymin"])."&deg;C"
  else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>-50){ echo "<maxtempblue>", $weather["tempyearavg"]  ;echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"] ; }
  ?></div></tunit>
 
-<div class="tyearavg" >Average</div>
+<div class="tyearavg">Average <?php echo date('Y')?></div>
 <div class="tavgconv"><?php 
 if ($weather["temp_units"]=='C'){ echo anyToF($weather["tempyearavg"])."&deg;F";}
 else if ($weather["temp_units"]=='F'){echo anyToC($weather["tempyearavg"])."&deg;C";}

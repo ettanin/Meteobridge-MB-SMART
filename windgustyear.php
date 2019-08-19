@@ -60,7 +60,7 @@ else if ($weather["wind_units"] =='m/s'){echo number_format($weather["windmmax"]
 
 
  ;?></div></wunit>
-<div class="tyearavg">Average</div>
+<div class="tyearavg">Average <?php echo date('Y')?></div>
 <div class="tavgconv"><?php 
 if ($weather["wind_units"] =='mph'){ echo number_format($weather["windspeedyearavg"]*1.60934,1)." km/h";}
 else if ($weather["wind_units"] =='km/h'){echo number_format($weather["windspeedyearavg"]*0.621371,1)." mph";}
