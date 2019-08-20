@@ -82,7 +82,7 @@ a{color:#009bb4}
     
     <br><br>
     This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">http://creativecommons.org/licenses/by-nc-nd/4.0/</a><br><br>
-   Copyright (c) 2015-<?php echo date('Y')?> by Brian Underdown (https://weather34.com)
+   Copyright (c) 2015-<?php echo date('Y')?> by Brian Underdown (<a href="https://weather34.com/homeweatherstation/" title="https://weather34.com/homeweatherstation/" target="_blank">https://weather34.com</a>)
 <br><br>
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Template”), to deal in the Template without restriction, including without limitation the rights to, can use, can not copy, can modify for personal use,can use and publish for personal use ,can not distribute template,can not distribute any design or code, can not sublicense, and can not sell copies of the Template, and subject to the following conditions:
 <br><br>
