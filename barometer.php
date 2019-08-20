@@ -38,7 +38,7 @@ valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 if ($weather["barometer_trend"] < 0) {echo '<fall> '.$fallingsymbol.'&nbsp;</fall><valuetextba>';
 echo number_format($weather["barometer_trend"],2), '</valuetextba><pressureunits>';}
 else if ($weather["barometer_trend"] > 0) {
-echo '<rising><rise> '.$risingsymbol.'&nbsp;</rise><valuetextba>';echo number_format($weather["barometer_trend"],2), ' </valuetextba>';}
+echo '<rising><rise> '.$risingsymbol.'&nbsp;</rise>+<valuetextba> ';echo number_format($weather["barometer_trend"],2), ' </valuetextba>';}
 else echo '<ogreen> '.$steadysymbol.'</ogreen><valuetextba>'.number_format($weather["barometer_trend"],2).'</valuetextba></div>';?></valuetext>
 </div>
 <div class="barometerconverter">

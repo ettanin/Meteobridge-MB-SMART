@@ -118,7 +118,7 @@ $lang['StrongGaleattimes']      = 'Kuvvetli Fırtına ';
 $lang['StormConditions']        = 'Tam Fırtına';
 $lang['ViolentStormConditions'] = 'şiddetli Fırtına';
 $lang['HurricaneConditions']    = 'Kasırga';
-$lang['Avg']                    = '<span2> Avg: </span2>';
+$lang['Avg']                    = '<span2> Avg </span2>';
 //wind direction compass
 $lang['Northdir']               = '<span>Kuzey<br></span>';
 $lang['NNEdir']                 = 'Kuzey Kuzey <br><span>Doğu</span>';

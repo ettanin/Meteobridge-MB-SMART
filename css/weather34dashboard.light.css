@@ -3222,12 +3222,12 @@ smallsup {
 .temptrendphrase {
   z-index: auto;
   position: absolute;
-  margin-top: -17px;
+  margin-top: -15px; 
   margin-left: 0;
   color: #555;
   text-align: center;
   font-family: "weathertext2",Arial, system;
-  font-size:.8em;
+  font-size:9px;
 }
 
 
@@ -3235,23 +3235,22 @@ smallsup {
 .temptrendx { 
   z-index: auto;
   position: absolute;
-  margin-top: -17px;
-  margin-left: 57%;
+  margin-top: -15px;  
+  margin-left: 60%;
   color: #555;
-  text-align: center;
-  font-family: "weathertext2",Arial, system;
+  text-align: center;  
   font-size: 0;
 }
 
 trendmovementfallingx,
 trendmovementrisingx {
-  font-family: "weathertext2",Arial, system;
-  font-size: 0.65rem;
+ font-family: "weathertext2",Arial, system;
+ font-size:9px;
 }
 
 trendmovementsteadyx {
-   color: #555;
-  font-size: 0.75rem;
+  color: #555;
+  font-size:9px;
   margin-left:20px
 }
 

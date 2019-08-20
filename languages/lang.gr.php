@@ -118,7 +118,7 @@ $lang['StrongGaleattimes']      = 'Πολύ Θυελλώδης';
 $lang['StormConditions']        = 'Θύελλα';
 $lang['ViolentStormConditions'] = 'Ισχυρή Θύελλα';
 $lang['HurricaneConditions']    = 'Τυφώνα';
-$lang['Avg']                    = '<span2>Μέση:</span2>';
+$lang['Avg']                    = '<span2>Μέση</span2>';
 //wind direction compass
 $lang['Northdir']               = '<span>Βόρειος<br></span>';
 $lang['NNEdir']                 = 'Βόρειος-Βορειο<br><span>Ανατολικός</span>';

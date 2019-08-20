@@ -1869,9 +1869,4 @@ now check the weather
     <circle cx="16" cy="16" r="14" />
 </svg> Meteobridge DASHBOARD EASY SETUP &copy; 2015-<?php echo date('Y');?> Dashboard MB-SMART</span><br>
 <center><a href="http://www.meteobridge.com/wiki/index.php/Home" title="http://www.meteobridge.com/wiki/index.php/Home" target="_blank"><img src="img/meteobridge.svg" width="120" /></a></center><br>
- 
-<?php
-$url2='https://github.com/weather34/Meteobridge-MB-SMART';function url_test( $url2 ) {
-$timeout = 10;  $ch = curl_init();  curl_setopt ( $ch, CURLOPT_URL, $url2 );  curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, 1 );
-curl_setopt ( $ch, CURLOPT_TIMEOUT, $timeout );  $http_respond = curl_exec($ch);  $http_respond = trim( strip_tags( $http_respond ) );
-$http_code = curl_getinfo( $ch, CURLINFO_HTTP_CODE );  if ( ( $http_code == "200" ) || ( $http_code == "302" ) ) { return true;} else {return false;}curl_close( $ch );}?></p></form></p></div></div>
+</p></form></p></div></div>

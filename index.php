@@ -162,6 +162,9 @@ if ($position12=='solaruvwu.php') {
 if ($position12=='solaruvwu.php') {
     echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar Almanac</a></span>";
 }
+if ($position12=='weather34uvcalc.php') {
+    echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar Almanac</a></span>";
+}
 if ($position12=='eq.php') {
     echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Recent World Wide Earthquakes" href="eqlist.php" data-lity>'. $chartinfo. " Worldwide Earthquakes </a></span>";
 }?>
@@ -195,6 +198,10 @@ if ($positionlastmodule=='solaruvwu.php') {
     echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="UV Guide" href="uvindexwu.php" data-lity>'. $chartinfo. " UV Guide </a></span>";
 }
 if ($positionlastmodule=='solaruvwu.php') {
+    echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar Almanac</a></span>";
+}
+
+if ($positionlastmodule=='weather34uvcalc.php') {
     echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar Almanac</a></span>";
 }
 if ($positionlastmodule=='eq.php') {

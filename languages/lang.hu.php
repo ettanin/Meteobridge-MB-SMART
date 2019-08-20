@@ -118,7 +118,7 @@ $lang['StrongGaleattimes']      = 'Viharos szél';
 $lang['StormConditions']        = 'Szélvihar';
 $lang['ViolentStormConditions'] = 'Orkán';
 $lang['HurricaneConditions']    = 'Hurrikán';
-$lang['Avg']                    = '<span2> ÁTLAG: </span2>';
+$lang['Avg']                    = '<span2> Átlag </span2>';
 //wind direction compass
 $lang['Northdir']               = ' <span>Észak<br></span>';
 $lang['NNEdir']                 = 'Észak Észak <br><span>Kelet</span>';

@@ -41,7 +41,7 @@ else if($weather["temp_units"]=='F' && $weather['temp']<86){echo '<div class=out
 //falling
 if($weather["temp_trend"]<0){echo '<trendmovementfallingx>'.$fallingsymbol.' '.number_format($weather["temp_trend"],1).'&deg;</trendmovementfallingx>';}
 //rising
-else if($weather["temp_trend"]>0){echo '<trendmovementrisingx>'.$risingsymbol.' '.number_format($weather["temp_trend"],1).'&deg;</trendmovementfallingx>';}
+else if($weather["temp_trend"]>0){echo '<trendmovementrisingx>'.$risingsymbol.' +'.number_format($weather["temp_trend"],1).'&deg;</trendmovementfallingx>';}
 //steady
 else echo '<trendmovementsteadyx>'.$steadysymbol.'</trendmovementsteadyx>';?>
 </span></div>
