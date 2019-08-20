@@ -69,7 +69,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 border:solid 2px #4b545c;border-bottom:solid 5px #4b545c;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;}
 .hardwareimageaq{position:relative;display:flex;margin:0 auto;margin-top:10px;
 border:solid 2px #4b545c;border-bottom:solid 15px #4b545c;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;padding-right:3px;opacity:.8}
-.weather34logo{float:right;width:80px;}
+.weather34logo{float:right;width:60px;}
 a{color:#009bb4}
 
 </style>
@@ -78,9 +78,10 @@ a{color:#009bb4}
 <main class="grid">
   <article>  
    <div class=actualt>Weather34 MB-SMART Licence & Download</div> 
-    <img src="img/weather34-mbsmart-logo.svg" alt="weather34 logo" class="weather34logo">
+    <a href="https://weather34.com/homeweatherstation/" title="https://weather34.com/homeweatherstation/" target="_blank"><img src="img/cclicence.svg" alt="weather34 cc logo" class="weather34logo"></a>
     
     <br><br>
+    
     This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">http://creativecommons.org/licenses/by-nc-nd/4.0/</a><br><br>
    Copyright (c) 2015-<?php echo date('Y')?> by Brian Underdown * <a href="https://weather34.com/homeweatherstation/" title="https://weather34.com/homeweatherstation/" target="_blank">https://weather34.com</a> 
 <br><br>
@@ -89,8 +90,8 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Template.
 <br><br>
 THE TEMPLATE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE TEMPLATE OR THE USE OR OTHER DEALINGS IN THE TEMPLATE.
-
-
+<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">
+ <img src="img/weather34-mbsmart-logo.svg" alt="weather34 logo" class="weather34logo"></a>
 
 <br><br>
 <svg width="20pt" height="20pt" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg">
