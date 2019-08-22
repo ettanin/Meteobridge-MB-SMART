@@ -169,7 +169,7 @@ $lang['Last Hour']				= 'Laatste uur';
 $lang['Last-Twenty-Four-Hour']	= 'Laatste 24uur';
 $lang['Snow Accumulation']		= 'Sneeuw Accumulatie';
 $lang['Rain Accumulation']		= 'Regen Accumulatie';
-$lang['Thunderstorm']			= 'Onweersbui';
+$lang['Thunderstorm']			= 'Donder';
 //sun -moon-daylight-darkness
 $lang['Sun']                    = 'Zon';
 $lang['Moon']                   = 'Maan';

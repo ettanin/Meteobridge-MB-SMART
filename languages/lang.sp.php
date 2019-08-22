@@ -171,7 +171,7 @@ $lang['Last Hour']				= 'Ultima Hora';
 $lang['Last-Twenty-Four-Hour']  = 'Ultima 24 Horas';
 $lang['Snow Accumulation']		 = 'Acumulación Nieve';
 $lang['Rain Accumulation']		 = 'Acumulación Luvia';
-$lang['Thunderstorm']			 = 'Tormenta';
+$lang['Thunderstorm']			 = 'Trueno';
 //sun -moon-daylight-darkness
 $lang['Sun']                    = 'Sol';
 $lang['Moon']                   = 'Luna';
