@@ -169,6 +169,7 @@ $lang['Rainbow']                = 'Arcoiris';
 $lang['Windy']                  = 'Ventoso';
 $lang['Last Hour']				= 'Ultima Hora';
 $lang['Last-Twenty-Four-Hour']  = 'Ultima 24 Horas';
+$lang['Last-Ten-Minutes']  		= 'Ultima 10 min';
 $lang['Snow Accumulation']		 = 'Acumulación Nieve';
 $lang['Rain Accumulation']		 = 'Acumulación Luvia';
 $lang['Thunderstorm']			 = 'Trueno';

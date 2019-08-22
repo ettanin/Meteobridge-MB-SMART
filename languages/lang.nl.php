@@ -167,6 +167,7 @@ $lang['Rainbow']                = 'Regenboog';
 $lang['Windy']                  = 'Winderig';
 $lang['Last Hour']				= 'Laatste uur';
 $lang['Last-Twenty-Four-Hour']	= 'Laatste 24uur';
+$lang['Last-Ten-Minutes']  		= 'Laatste 10 minuten';
 $lang['Snow Accumulation']		= 'Sneeuw Accumulatie';
 $lang['Rain Accumulation']		= 'Regen Accumulatie';
 $lang['Thunderstorm']			= 'Donder';

@@ -169,6 +169,7 @@ $lang['Rainbow']                = 'Gökkuşağı';
 $lang['Windy']                  = 'Çok Ruzgar';
 $lang['Last Hour']				= 'Son Saat';
 $lang['Last-Twenty-Four-Hour']  = 'Son 24 Saat';
+$lang['Last-Ten-Minutes']  		= 'Son 10 dk';
 $lang['Last Hour']				 = 'Last Hour';
 $lang['Snow Accumulation']		 = 'Kar Accum';
 $lang['Rain Accumulation']		 = 'Yağmur Accum';

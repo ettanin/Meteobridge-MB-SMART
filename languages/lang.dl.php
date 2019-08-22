@@ -170,6 +170,7 @@ $lang['Rainbow']                = 'Rainbow';
 $lang['Windy']                  = 'Windy';
 $lang['Last Hour']				= 'Letzte Stunde';
 $lang['Last-Twenty-Four-Hour']	= 'Letzte 24h';
+$lang['Last-Ten-Minutes']  		= 'Letzte 10 min';
 $lang['Snow Accumulation']		 = 'Schnee Ansammlung';
 $lang['Rain Accumulation']		 = 'Regen Ansammlung';
 $lang['Thunderstorm']			 = 'Donner';

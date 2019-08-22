@@ -165,6 +165,7 @@ $lang['Heavyrain'] = 'Heavy Rain';
 $lang['Flooding'] = 'Flooding Possible';
 $lang['Last Hour']				 = 'Last Hour';
 $lang['Last-Twenty-Four-Hour']   = 'Last 24Hrs';
+$lang['Last-Ten-Minutes']  		 = 'Last 10 minutes';
 $lang['Snow Accumulation']		 = 'Snow Accumulation';
 $lang['Rain Accumulation']		 = 'Rain Accumulation';
 $lang['Thunderstorm']			 = 'Thunder';

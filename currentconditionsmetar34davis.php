@@ -103,7 +103,7 @@ if($weather["wind_speed_max"]>=50){echo "<ored>" .$weather["wind_speed_max"]."</
 else if($weather["wind_speed_max"]>=30){echo "<oorange>" .$weather["wind_speed_max"]."</oorange><valuetext> ".$windunit;}
 else if($weather["wind_speed_max"]>=0){echo "<ogreen>" .$weather["wind_speed_max"]."</ogreen><valuetext> ".$windunit;}
 
-echo " </valuetext>".$lang['10 minutes']."";
+echo " </valuetext>".$lang['Last-Ten-Minutes']."";
 
 
 echo  " <br>".$lang['Average']." <oblue>".$lang['Windspeed']." </oblue> ".$lang['Last Hour']." ";
