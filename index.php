@@ -142,7 +142,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
  	<?php if ($position12=='webcamsmall.php' or $position12=='indoortemperature.php' or $position12=='moonphase.php') {
     echo'&nbsp;<a class="weather34tiplink" data-weather34tiplink="Webcam" href="cam.php" data-lity>'. $webcamicon. ' Live Webcam </a></span>
   &nbsp; <a class="weather34tiplink" data-weather34tiplink="Indoor Data" href="homeindoor.php" data-lity>'. $chartinfo. ' Indoor Guide </a></span>
-  &nbsp; <a class="weather34tiplink" data-weather34tiplink="Moon Phase Data" href="mooninfo.php" data-lity>'. $chartinfo. ''.$lang['Moon']. " Data </a</span>";
+  &nbsp; <a class="weather34tiplink" data-weather34tiplink="Moon Phase Data" href="mooninfo.php" data-lity>'. $chartinfo. ''.$lang['Moon']. " Data </a></span>";
 }
 if ($position12=='airqualitymodule.php') {
     echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Air Quality Data" href="purpleair.php" data-lity>'. $chartinfo. " ".$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";
