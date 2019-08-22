@@ -1,12 +1,12 @@
 <?php
 /* 
 -----------------
-Language Translation File for HOMEWEATHERSTATION Template
+Language Translation File for Weather34 MB SMART 
 Language: Turkish
 Translated by: Brian Underdown / Erim Mehmet Eren
-Developed By: Lightmaster/Brian Underdown/Erik M Madsen
+Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
-Revised: 2019
+Revised: August 2019
 -----------------
 */
 # -----------------------------------------------------
@@ -277,6 +277,7 @@ $lang['uvalert']                = 'Dikkat UVINDEX';
 $lang['Max']                    = 'Max';
 $lang['Min']                    = 'Min';
 $lang['Almanac'] 				= 'Almanak';
+$lang['Weather Data Provided By']='Hava Data';
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Depremler';
 $lang['MinorE']                  = 'Az  Depremler';

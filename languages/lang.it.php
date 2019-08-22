@@ -1,12 +1,12 @@
 <?php
 /* 
 -----------------
-Language Translation File for HOMEWEATHERSTATION Template
+Language Translation File for Weather34 MB SMART 
 Language: Italian
-Translated by: Antonio Angelotti - meteopomarico.it - 23.04.2017
-Developed By: Lightmaster/Brian Underdown/Erik M Madsen
+Translated by: Antonio Angelotti 
+Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
-Revised: 2019
+Revised: August 2019
 -----------------
 */
 # -----------------------------------------------------
@@ -276,6 +276,7 @@ $lang['uvalert']                = 'Caution High UVINDEX';
 $lang['Max']                    = 'Max';
 $lang['Min']                    = 'Min';
 $lang['Almanac'] 				= 'Almanacco';
+$lang['Weather Data Provided By']='Weather Data Provided By';
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Micro Earthquake';
 $lang['MinorE']                  = 'Minor Earthquake';
@@ -298,6 +299,7 @@ $lang['UnhealthyFS']            = 'Unhealthy For Some';
 $lang['Moderate']               = 'Moderate Air Quality ';
 $lang['Good']                   = 'Good Air Quality ';
 $lang['Air Quality']			= 'Qualità dell Aria';
+
 #notification additions
 $lang['notifyTitle']            = 'Notifiche';
 $lang['notifyAlert']             = "Alert";

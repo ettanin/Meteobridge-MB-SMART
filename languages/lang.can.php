@@ -1,11 +1,12 @@
 <?php
 /* 
 -----------------
-Language Translation File for HOMEWEATHERSTATION Template
-Language: Canadian this is the master file
-Code By : BRIAN UNDERDOWN
+Language Translation File for Weather34 MB SMART 
+Language: Cnandian
+Translated by: Your Name Here
 Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
+Revised: August 2019
 -----------------
 */
 # -----------------------------------------------------
@@ -296,6 +297,7 @@ $lang['Rainbow'] = 'Rainbow';
 $lang['Windy'] = 'Windy';
 $lang['Max'] = 'Max';
 $lang['Min'] = 'Min';
+$lang['Weather Data Provided By']='Weather Data Provided By';
 
 //earthquake TOP MODULE 10 July 2017
 $lang['ModerateE'] = 'Moderate Earthquake';

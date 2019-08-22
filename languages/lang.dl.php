@@ -1,12 +1,13 @@
 <?php
 /*
 -----------------
-Language Translation File for HOMEWEATHERSTATION Template
+Language Translation File for Weather34 MB SMART 
 Language: German
-Translated by: Stefan Griessner
-Developed By: Lightmaster/Brian Underdown/Erik M Madsen
+Translated by: <Your Name Here>
+Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
-Revised: 2019
+Revised: August 2019
+
 -----------------
 */
 # -----------------------------------------------------
@@ -277,6 +278,7 @@ $lang['uvalert']                = 'Caution High UVINDEX';
 $lang['Max']                    = 'Max';
 $lang['Min']                    = 'Min';
 $lang['Almanac'] 				= 'Almanach';
+$lang['Weather Data Provided By']='Weather Data Provided By';
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Micro Earthquake';
 $lang['MinorE']                  = 'Minor Earthquake';

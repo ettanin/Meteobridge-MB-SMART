@@ -1,11 +1,12 @@
 <?php
 /* 
 -----------------
-Language Translation File for HOMEWEATHERSTATION Template
-Language: USA ENGLISH LANGUAGE TEMPLATE CODE 
-Code By : BRIAN UNDERDOWN
+Language Translation File for Weather34 MB SMART 
+Language: English/USA
+Translated by: Your Name Here
 Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
+Revised: August 2019
 -----------------
 */
 # -----------------------------------------------------
@@ -311,6 +312,7 @@ $lang['Station'] = 'Station';
 $lang['Detailed Forecast'] = 'Detailed Forecast';
 $lang['Summary Outlook'] = 'Summary';
 $lang['Almanac'] = 'Almanac';
+$lang['Weather Data Provided By']='Weather Data Provided By';
 //Air Quality
 $lang['Hazordous']= 'Hazardous Conditions';
 $lang['VeryUnhealthy']= 'Very Unhealthy';

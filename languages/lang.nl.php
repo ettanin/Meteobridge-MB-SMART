@@ -1,12 +1,12 @@
 <?php
 /*
 -----------------
-Language Translation File for HOMEWEATHERSTATION Template
+Language Translation File for Weather34 MB SMART 
 Language: Dutch
-Translated by: Piet Kampen
-Developed By: Lightmaster/Brian Underdown/Erik M Madsen
-April 5th 2017
-Revised: Aug - 2019
+Translated by: Your Name Here
+Developed By: Brian Underdown/Erik M Madsen
+October/November 2016
+Revised: August 2019
 -----------------
 */
 # -----------------------------------------------------
@@ -268,6 +268,7 @@ $lang['uvalert']                = 'Let op Hoge UV';
 $lang['Max']                    = 'Max';
 $lang['Min']                    = 'Min';
 $lang['Almanac'] 				= 'Almanak';
+$lang['Weather Data Provided By']='Weather Data Provided By';
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Micro-aardbeving';
 $lang['MinorE']                  = 'Kleine aardbeving';

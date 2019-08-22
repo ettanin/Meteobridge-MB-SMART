@@ -290,7 +290,7 @@ if ($weatherhardware== "Davis Vantage Vue") {
   <div class=footertext>
   <div class="weather34-mbsmartlogo"><a class="weather34tipfooter" href="https://weather34.com/homeweatherstation/" data-weather34tipfooter="WEATHER34 MB-SMART" target="_blank"><img src="img/weather34-logo.svg" width="47em" height="45em"> <span>weather<ored>34</ored> designed</span></a>
   </div>
-  <?php echo $info?>&nbsp;Weather Data Provided By:&nbsp;<?php echo $stationlocation?> Home Weather Station </div>
+  <?php echo $info?>&nbsp;<?php echo $lang['Weather Data Provided By']?>&nbsp;<?php echo $stationlocation?> Home Weather Station </div>
   <div class="weather34refresh"><a href="<?php $_SERVER['PHP_SELF']; ?>"> <?php echo $weather34refreshicon;?></a></div></div>
   </main>
  </body><?php include_once('updater.php');include_once('menu.php');?><div id=lightningalert></div>
