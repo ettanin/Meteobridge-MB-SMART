@@ -168,6 +168,9 @@ $lang['Rainbow']                = 'Rainbow';
 $lang['Windy']                  = 'Windy';
 $lang['Last Hour']				= 'Ultima ora';
 $lang['Last-Twenty-Four-Hour']  = 'Ultime 24 ore';
+$lang['Snow Accumulation']		= 'Accumulo Neve';
+$lang['Rain Accumulation']		= 'Accumulo Pioggia';
+$lang['Thunderstorm']			= 'Temporale';
 //sun -moon-daylight-darkness
 $lang['Sun']                    = 'Sole';
 $lang['Moon']                   = 'Luna';

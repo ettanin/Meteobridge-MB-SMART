@@ -168,6 +168,9 @@ $lang['Rainbow']                 = 'Rainbow';
 $lang['Windy']                   = 'Windy';
 $lang['Last Hour']				 = 'Last Hour';
 $lang['Last-Twenty-Four-Hour']   = 'Last 24Hrs';
+$lang['Snow Accumulation']		 = 'Snow Accumulation';
+$lang['Rain Accumulation']		 = 'Rain Accumulation';
+$lang['Thunderstorm']			 = 'Thunderstorm';
 //sun -moon-daylight-darkness
 $lang['Sun']                     = 'Sun';
 $lang['Moon']                    = 'Moon';
@@ -216,6 +219,7 @@ $lang['Stayinshade']             = 'Stay in the shade near midday when the <colo
 $lang['Reducetime']              = 'Reduce time in the <color>sun</color> between 10am-4pm ';
 $lang['Minimize']                = 'Minimize <color>sun</color> exposure between 10am-4pm ';
 $lang['Trytoavoid']              = 'Try to avoid <color>sun</color> exposure between 10am-4pm ';
+
 //solar
 $lang['Poor']                    = 'Poor<color> <br>Radiation</color>';
 $lang['Low']                     = 'Low <br><color>Radiation</color>';

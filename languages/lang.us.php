@@ -163,7 +163,11 @@ $lang['Precip'] = 'precip'; // must be short name do not use full precipatation 
 $lang['Rain'] = 'Rain';
 $lang['Heavyrain'] = 'Heavy Rain';
 $lang['Flooding'] = 'Flooding Possible';
-
+$lang['Last Hour']				 = 'Last Hour';
+$lang['Last-Twenty-Four-Hour']   = 'Last 24Hrs';
+$lang['Snow Accumulation']		 = 'Snow Accumulation';
+$lang['Rain Accumulation']		 = 'Rain Accumulation';
+$lang['Thunderstorm']			 = 'Thunderstorm';
 
 //sun -moon-daylight-darkness
 $lang['Sun'] = 'Sun';

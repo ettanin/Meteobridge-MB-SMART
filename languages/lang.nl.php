@@ -167,6 +167,9 @@ $lang['Rainbow']                = 'Regenboog';
 $lang['Windy']                  = 'Winderig';
 $lang['Last Hour']				= 'Laatste uur';
 $lang['Last-Twenty-Four-Hour']	= 'Laatste 24uur';
+$lang['Snow Accumulation']		= 'Sneeuw Accumulatie';
+$lang['Rain Accumulation']		= 'Regen Accumulatie';
+$lang['Thunderstorm']			= 'Onweersbui';
 //sun -moon-daylight-darkness
 $lang['Sun']                    = 'Zon';
 $lang['Moon']                   = 'Maan';

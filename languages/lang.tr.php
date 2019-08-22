@@ -93,6 +93,8 @@ $lang['Blowing']                = 'Rüzgar';
 $lang['Wind Run']               = 'Rüzgar Run';
 $lang['AvgSpeedToday']			='Avg Hızı Bugün';
 $lang['10 minutes']				= '10 dk';
+
+
 // Wind phrases for Beaufort scale for windspeed area
 $lang['Calm']                   = 'Sakin';
 $lang['Lightair']               = 'Çok hafif Rüzgarlı';
@@ -167,6 +169,10 @@ $lang['Rainbow']                = 'Gökkuşağı';
 $lang['Windy']                  = 'Çok Ruzgar';
 $lang['Last Hour']				= 'Son Saat';
 $lang['Last-Twenty-Four-Hour']  = 'Son 24 Saat';
+$lang['Last Hour']				 = 'Last Hour';
+$lang['Snow Accumulation']		 = 'Kar Accum';
+$lang['Rain Accumulation']		 = 'Yağmur Accum';
+$lang['Thunderstorm']			 = 'Simsek';
 //sun -moon-daylight-darkness
 $lang['Sun']                    = 'Güneş';
 $lang['Moon']                   = 'Ay';

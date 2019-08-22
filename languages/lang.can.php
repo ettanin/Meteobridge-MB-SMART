@@ -164,7 +164,11 @@ $lang['Heavyrain'] = 'Heavy Rain';
 $lang['Flooding'] = 'Flooding Possible';
 $lang['Rainbow'] = 'Rainbow';
 $lang['Windy'] = 'Windy';
-
+$lang['Last Hour']				 = 'Last Hour';
+$lang['Last-Twenty-Four-Hour']   = 'Last 24Hrs';
+$lang['Snow Accumulation']		 = 'Snow Accumulation';
+$lang['Rain Accumulation']		 = 'Rain Accumulation';
+$lang['Thunderstorm']			 = 'Thunderstorm';
 
 //sun -moon-daylight-darkness
 $lang['Sun'] = 'Sun';

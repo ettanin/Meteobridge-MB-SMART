@@ -169,6 +169,9 @@ $lang['Rainbow']                = 'Arc en ciel';
 $lang['Windy']                  = 'Venteux';
 $lang['Last Hour']				= 'Dernier Hora';
 $lang['Last-Twenty-Four-Hour']  = 'Dernier 24h';
+$lang['Snow Accumulation']		 = 'Accumulation Neige';
+$lang['Rain Accumulation']		 = 'Accumulation Pluie';
+$lang['Thunderstorm']			 = 'Orage';
 //sun -moon-daylight-darkness
 $lang['Sun']                    = 'Soleil';
 $lang['Moon']                   = 'Lune';
