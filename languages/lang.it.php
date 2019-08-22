@@ -91,7 +91,9 @@ $lang['Gusting']                = 'Raffica';
 $lang['Blowing']                = 'Soffia';
 $lang['Wind']                   = 'Velocità';
 $lang['Wind Run']               = 'Velocità Run';
-$lang['AvgSpeedToday']			 ='Avg Vento Oggi';
+$lang['AvgSpeedToday']			='Media Oggi';
+$lang['Avg Wind']			    ='Media Vento';
+$lang['10 minutes']				 = '10 min';
 // Wind phrases for Beaufort scale for windspeed area
 $lang['Calm']                   = 'Calma';
 $lang['Lightair']               = 'Bava di Vento';
@@ -164,6 +166,8 @@ $lang['Heavyrain']              = 'Pioggia forte';
 $lang['Flooding']               = 'Possibili Inondazioni';
 $lang['Rainbow']                = 'Rainbow';
 $lang['Windy']                  = 'Windy';
+$lang['Last Hour']				= 'Ultima ora';
+$lang['Last-Twenty-Four-Hour']  = 'Ultime 24 ore';
 //sun -moon-daylight-darkness
 $lang['Sun']                    = 'Sole';
 $lang['Moon']                   = 'Luna';

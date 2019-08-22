@@ -92,7 +92,10 @@ $lang['Gusting']                = 'in Böeen';
 $lang['Blowing']                = 'Wehen';
 $lang['Wind']                   = 'Wind';
 $lang['Wind Run']               = 'Wehen Run';
-$lang['AvgSpeedToday']			 ='Avg Speed Heute';
+$lang['AvgSpeedToday']			 ='Durchschn Heute';
+$lang['Avg Wind']			    = 'Durchschn';
+$lang['10 minutes']				 = '10 min';
+
 // Wind phrases for Beaufort scale for windspeed area
 $lang['Calm']                   = 'Windstill';
 $lang['Lightair']               = 'Nahezu Windstill';
@@ -165,6 +168,8 @@ $lang['Heavyrain']              = 'Starker Regen';
 $lang['Flooding']               = 'Überschwemmung möglich';
 $lang['Rainbow']                = 'Rainbow';
 $lang['Windy']                  = 'Windy';
+$lang['Last Hour']				= 'Letzte Stunde';
+$lang['Last-Twenty-Four-Hour']	= 'Letzte 24h';
 //sun -moon-daylight-darkness
 $lang['Sun']                    = 'Sonne';
 $lang['Moon']                   = 'Mond';
@@ -257,7 +262,7 @@ $lang['WindGust']               = 'Windspeed | Böen';
 $lang['Hourlyforecast']         = 'Stündliche Prognose ';
 $lang['Significantearthquake']  = 'Bedeutende Erdbeben';
 $lang['Regionalearthquake']     = 'Regionale Erdbeben';
-$lang['Average']                = 'Durchschnitt';
+$lang['Average']                = 'Mittlere';
 $lang['Notifications']          = 'Benachrichtigungen';
 $lang['Indoor']                 = 'Innen';
 $lang['Today']                  = 'Heute';

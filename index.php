@@ -122,9 +122,12 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 
   <weather34module> <!-- Weather34 Main Module 6 Sky-->
  <div class=actualt><?php echo $lang['SunPosition']; ?></div>
- <div class=weather34chartlinks>
- 	<a class="weather34tiplink" data-weather34tiplink="Moon Phase Data" href=mooninfo.php data-lity><chartinfocolor><?php echo $chartinfo?></chartinfocolor> <?php echo $lang['Moon']?> Data</a>&nbsp;&nbsp;
-	<a class="weather34tiplink" data-weather34tiplink="Meteor Shower Data" href=meteorshowers.php data-lity><chartinfocolor><?php echo $chartinfo?></chartinfocolor> <?php echo $lang['Meteor']?></a></div>
+ <div class=weather34chartlinks> 	
+    <?php if ($positionlastmodule=='moonphase.php') 
+	{ echo '<a class="weather34tiplink" data-weather34tiplink="Meteor Shower Data" href=meteorshowers.php data-lity><chartinfocolor>'.$chartinfo.'</chartinfocolor> '.$lang['Meteor'].' </a>&nbsp;&nbsp;</span>';}	
+	else echo'&nbsp;
+	<a class="weather34tiplink" data-weather34tiplink="Moon Phase Data" href="mooninfo.php" data-lity>'. $chartinfo. ' '.$lang['Moon'].' Data </a>&nbsp;&nbsp;</span>
+	<a class="weather34tiplink" data-weather34tiplink="Meteor Shower Data" href=meteorshowers.php data-lity><chartinfocolor>'.$chartinfo.'</chartinfocolor> '.$lang['Meteor'];?></a></div>
  <div id=moonphase></div></weather34module>
 
 
@@ -139,11 +142,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   <weather34module> <!-- Weather34 Main Module 8 Optional-->
   <div class=actualt><?php echo $position12title?></div>
   <div class=weather34chartlinks>
- 	<?php if ($position12=='webcamsmall.php' or $position12=='indoortemperature.php' or $position12=='moonphase.php') {
-    echo'&nbsp;<a class="weather34tiplink" data-weather34tiplink="Webcam" href="cam.php" data-lity>'. $webcamicon. ' Live Webcam </a></span>
-  &nbsp; <a class="weather34tiplink" data-weather34tiplink="Indoor Data" href="homeindoor.php" data-lity>'. $chartinfo. ' Indoor Guide </a></span>
-  &nbsp; <a class="weather34tiplink" data-weather34tiplink="Moon Phase Data" href="mooninfo.php" data-lity>'. $chartinfo. ''.$lang['Moon']. " Data </a></span>";
-}
+ 	<?php if ($position12=='webcamsmall.php' ){echo '&nbsp;<a class="weather34tiplink" data-weather34tiplink="Webcam" href="cam.php" data-lity>'. $webcamicon. ' Live Webcam </a></span>';}
 if ($position12=='airqualitymodule.php') {
     echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Air Quality Data" href="purpleair.php" data-lity>'. $chartinfo. " ".$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";
 }
@@ -174,10 +173,13 @@ if ($position12=='eq.php') {
   <weather34module>   <!-- Weather34 Main Module 9 Optional-->
   <div class=actualt><?php echo $positionlastmoduletitle?></div>
   <div class=weather34chartlinks>
- 	<?php if ($positionlastmodule=='webcamsmall.php' or $positionlastmodule=='indoortemperature.php' or $positionlastmodule=='moonphase.php') {
-    echo'&nbsp;<a class="weather34tiplink" data-weather34tiplink="Webcam" href="cam.php" data-lity>'. $webcamicon. ' Live Webcam </a></span>
-  &nbsp; <a class="weather34tiplink" data-weather34tiplink="Indoor Data" href="homeindoor.php" data-lity>'. $chartinfo. ' Indoor Guide </a></span>
-  &nbsp; <a class="weather34tiplink" data-weather34tiplink="Moon Phase Data" href="mooninfo.php" data-lity>'. $chartinfo. ' Moon Info </a></span>';
+ 	<?php if ($positionlastmodule=='webcamsmall.php') {
+    echo'&nbsp;<a class="weather34tiplink" data-weather34tiplink="Webcam" href="cam.php" data-lity>'. $webcamicon. ' Live Webcam </a></span> 
+    ';
+}
+
+if ($positionlastmodule=='moonphase.php') {
+    echo'&nbsp; <a class="weather34tiplink" data-weather34tiplink="Moon Phase Data" href="mooninfo.php" data-lity>'. $chartinfo. ' '.$lang['Moon'].' Data</a></span>';
 }
 if ($positionlastmodule=='airqualitymodule.php') {
     echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Air Quality Data" href="purpleair.php" data-lity>'. $chartinfo. " ".$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";

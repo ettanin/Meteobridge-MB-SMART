@@ -91,7 +91,9 @@ $lang['Gusting']                = 'Racheado a';
 $lang['Blowing']                = 'Soplando a';
 $lang['Wind']                   = 'Viento';
 $lang['Wind Run']               = 'Viento Run';
-$lang['AvgSpeedToday']			 ='Avg Velocidad Hoy';
+$lang['AvgSpeedToday']			 ='Promedio Hoy';
+$lang['10 minutes']				= '10 min';
+$lang['Avg Wind']			    = 'Promedio';
 
 // Wind phrases for Beaufort scale for windspeed area
 $lang['Calm']                   = 'Calma';
@@ -165,6 +167,8 @@ $lang['Heavyrain']              = 'Lluvia intensa';
 $lang['Flooding']               = 'Posible inundación';
 $lang['Rainbow']                = 'Arcoiris';
 $lang['Windy']                  = 'Ventoso';
+$lang['Last Hour']				= 'Ultima Hora';
+$lang['Last-Twenty-Four-Hour']  = 'Ultima 24 Horas';
 //sun -moon-daylight-darkness
 $lang['Sun']                    = 'Sol';
 $lang['Moon']                   = 'Luna';
@@ -247,7 +251,7 @@ $lang['SunPosition']            = 'Sun Position';
 $lang['Location']               = 'Ubicación';
 $lang['Hardware']               = 'Hardware';
 $lang['Rainfalltoday']          = 'Lluvia hoy';
-$lang['Windspeed']              = ' Viento';
+//$lang['Windspeed']              = ' Viento';
 $lang['Winddirection']          = 'Direccion del Viento';
 $lang['Measured']               = 'Medido hoy';
 $lang['Forecast']               = 'Prevision';

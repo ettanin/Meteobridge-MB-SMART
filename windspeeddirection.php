@@ -17,15 +17,15 @@ spancalm{postion:relative;font-family:weathertext,Arial;font-size:26px;}</style>
 
 
 <div class="weather34windspeed">
-<weather34windunitidspeed><?php echo $lang['Average'];?></weather34windunitidspeed>
+<weather34windunitidspeed><?php echo $lang['Avg Wind'];?></weather34windunitidspeed>
 <?php
 //weather34-windaverage speed
 if ($weather["wind_speed"]<10) {
-    echo "&nbsp;",number_format($weather["wind_speed"]*1.010, 2);
+    echo "&nbsp;",number_format($weather["wind_speed"],1);
 } else {
     echo number_format($weather["wind_speed"], 1);
 }?>
-<weather34windunitidunit>10 Min</weather34windunitidunit></div></div>
+<weather34windunitidunit><?php echo $lang['10 minutes'];?></weather34windunitidunit></div></div>
 
 <div class="weather34windgust">
 <weather34windunitidspeed1><?php echo $lang['Windspeed'];?></weather34windunitidspeed1>

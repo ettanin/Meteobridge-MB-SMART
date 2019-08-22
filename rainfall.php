@@ -1,5 +1,5 @@
 <?php  //weather34 rain module 15th Feb 2019 //
-include_once('livedata.php');?><div class="updatedtime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div>  
+include_once('livedata.php');include('common.php')?><div class="updatedtime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div>  
 <div class="weather34i-rairate-bar"><div id="raincontainer"><div id="weather34rainbeaker">
 <div id="weather34rainwater" style="height:<?php if ($weather["rain_units"] =='mm' && $weather["rain_today"]){echo $weather["rain_today"]*2.5+1;}else if ($weather["rain_units"] =='in' && $weather["rain_today"]){echo $weather["rain_today"]*25.4*2.5;}?>px;">      
 </div></div></div></div>  
@@ -16,11 +16,11 @@ echo " &nbsp;&nbsp;&nbsp;<valuetextheading1>".date('F')."</valuetextheading1> <b
 </smallrainunit2></div></div></div></div>
 <div class="heatcircle3"><div class="heatcircle-content">
 <?php  //rain last hour
-echo " &nbsp;&nbsp;<valuetextheading1>Last Hour</valuetextheading1><br><div class=tempconverter1><div class=rainmodulehome><raiblue>".$weather["rain_lasthour"]."</raiblue><smallrainunit2>".$weather["rain_units"];?>
+echo " &nbsp;&nbsp;<valuetextheading1>".$lang['Last Hour']."</valuetextheading1><br><div class=tempconverter1><div class=rainmodulehome><raiblue>".$weather["rain_lasthour"]."</raiblue><smallrainunit2>".$weather["rain_units"];?>
 </smallrainunit2></div></div></div></div>
 <div class="heatcircle4"><div class="heatcircle-content">
 <?php  //rain last 24 hours
-echo " &nbsp;&nbsp;<valuetextheading1>Last 24hr</valuetextheading1><br><div class=tempconverter1><div class=rainmodulehome><raiblue>".$weather["rain_24hrs"]."</raiblue><smallrainunit2>".$weather["rain_units"];?>
+echo " &nbsp;&nbsp;<valuetextheading1>".$lang['Last-Twenty-Four-Hour']."</valuetextheading1><br><div class=tempconverter1><div class=rainmodulehome><raiblue>".$weather["rain_24hrs"]."</raiblue><smallrainunit2>".$weather["rain_units"];?>
 </smallrainunit2></div></div></div></div></div>
 <div class="rainconverter">
 <?php if ($weather["rain_units"] =='in'){echo "<div class=rainconvertercircle>".number_format($weather["rain_today"]*25.400013716,1)."<smallrainunit>mm";}else if ($weather["rain_units"] =='mm'){echo "<div class=rainconvertercircle>".number_format($weather["rain_today"]*0.0393701,2)."<smallrainunit>in";}?></span>

@@ -91,7 +91,9 @@ $lang['Gusting']                 = 'Gusting at';
 $lang['Blowing']                 = 'Blowing at';
 $lang['Wind']                    = 'Wind';
 $lang['Wind Run']                = 'Wind Run';
-$lang['AvgSpeedToday']			 ='Avg Speed Today';
+$lang['AvgSpeedToday']			 = 'Avg Speed Today';
+$lang['10 minutes']				= '10 min';
+$lang['Avg Wind']			    = 'Average';
 // Wind phrases for Beaufort scale for windspeed area
 $lang['Calm']                    = 'Calm';
 $lang['Lightair']                = 'Light Air';
@@ -164,6 +166,8 @@ $lang['Heavyrain']               = 'Heavy Rain';
 $lang['Flooding']                = 'Flooding Possible';
 $lang['Rainbow']                 = 'Rainbow';
 $lang['Windy']                   = 'Windy';
+$lang['Last Hour']				 = 'Last Hour';
+$lang['Last-Twenty-Four-Hour']   = 'Last 24Hrs';
 //sun -moon-daylight-darkness
 $lang['Sun']                     = 'Sun';
 $lang['Moon']                    = 'Moon';
