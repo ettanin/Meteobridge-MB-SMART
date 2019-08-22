@@ -309,10 +309,10 @@ else if ($wuskyrain8>0 )  {echo $infowu.'<blue>'.$lang['Rain'].'</blue> '.$wusky
 else if ($wuskyrain9>0 )  {echo $infowu.'<blue>'.$lang['Rain'].'</blue> '.$wuskydayTime9. '&nbsp;'.$rainfallalert8.'';}
 else if ($wuskyrain10>0 )  {echo $infowu.'<blue>'.$lang['Rain'].'</blue> '.$wuskydayTime10. '&nbsp;'.$rainfallalert8.'';}
 
-else if ($wuskydayTempHigh2>27 ){  echo "<redwuhum>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</redwuhum><nextperiod>", $wuskydayTime2."</nextperiod>";}
-else if ($wuskydayTempHigh2>18 ){  echo "<orangewuhum>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</orangewuhum><nextperiod>", $wuskydayTime2."</nextperiod>";}
-else if ($wuskydayTempHigh2>12.7 ){  echo "<yellowwuhum>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</yellowwuhum><nextperiod>", $wuskydayTime2."</nextperiod>";}
-else if ($wuskydayTempHigh2>10 ){  echo "<greenwuhum>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</greenwuhum><nextperiod>", $wuskydayTime2."</nextperiod>";}
-else if ($wuskydayTempHigh2>-50 ){  echo "<bluewuhum>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</bluewuhum><nextperiod>", $wuskydayTime2."</nextperiod>";}
+else if ($wuskydayTempHigh2>27 ){  echo "<redwunext>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</redwunext><nextperiod>", $wuskydayTime2."</nextperiod>";}
+else if ($wuskydayTempHigh2>18 ){  echo "<orangewunext>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</orangewunext><nextperiod>", $wuskydayTime2."</nextperiod>";}
+else if ($wuskydayTempHigh2>12.7 ){  echo "<yellowwunext>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</yellowwunext><nextperiod>", $wuskydayTime2."</nextperiod>";}
+else if ($wuskydayTempHigh2>10 ){  echo "<greenwunext>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</greenwunext><nextperiod>", $wuskydayTime2."</nextperiod>";}
+else if ($wuskydayTempHigh2>-50 ){  echo "<bluewunext>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</bluewunext><nextperiod>", $wuskydayTime2."</nextperiod>";}
 
 ?></div></div></div></div>

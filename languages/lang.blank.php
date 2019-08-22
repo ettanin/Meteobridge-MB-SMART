@@ -3,10 +3,10 @@
 -----------------
 Language Translation File for Weather34 MB SMART 
 Language: English
-Translated by: <Your Name Here>
 Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
 Revised: August 2019
+
 -----------------
 */
 # -----------------------------------------------------
@@ -91,7 +91,9 @@ $lang['Gusting']                 = 'Gusting at';
 $lang['Blowing']                 = 'Blowing at';
 $lang['Wind']                    = 'Wind';
 $lang['Wind Run']                = 'Wind Run';
-$lang['AvgSpeedToday']			 ='Avg Speed Today';
+$lang['AvgSpeedToday']			 = 'Avg Speed Today';
+$lang['10 minutes']				= '10 min';
+$lang['Avg Wind']			    = 'Average';
 // Wind phrases for Beaufort scale for windspeed area
 $lang['Calm']                    = 'Calm';
 $lang['Lightair']                = 'Light Air';
@@ -164,6 +166,11 @@ $lang['Heavyrain']               = 'Heavy Rain';
 $lang['Flooding']                = 'Flooding Possible';
 $lang['Rainbow']                 = 'Rainbow';
 $lang['Windy']                   = 'Windy';
+$lang['Last Hour']				 = 'Last Hour';
+$lang['Last-Twenty-Four-Hour']   = 'Last 24Hrs';
+$lang['Snow Accumulation']		 = 'Snow Accumulation';
+$lang['Rain Accumulation']		 = 'Rain Accumulation';
+$lang['Thunderstorm']			 = 'Thunder';
 //sun -moon-daylight-darkness
 $lang['Sun']                     = 'Sun';
 $lang['Moon']                    = 'Moon';
@@ -212,6 +219,7 @@ $lang['Stayinshade']             = 'Stay in the shade near midday when the <colo
 $lang['Reducetime']              = 'Reduce time in the <color>sun</color> between 10am-4pm ';
 $lang['Minimize']                = 'Minimize <color>sun</color> exposure between 10am-4pm ';
 $lang['Trytoavoid']              = 'Try to avoid <color>sun</color> exposure between 10am-4pm ';
+
 //solar
 $lang['Poor']                    = 'Poor<color> <br>Radiation</color>';
 $lang['Low']                     = 'Low <br><color>Radiation</color>';
