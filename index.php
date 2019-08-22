@@ -95,7 +95,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   <weather34module> <!-- Weather34 Main Module 3 Current-->
   <div class=actualt><?php echo $lang['Currentsky'];?></div>
   <div class=weather34chartlinks>
-  <a class="weather34tiplink" data-weather34tiplink="Metar Conditions" href="metarnearby.php" data-lity><?php echo $chartinfo?> <?php echo 'Nearby Metar';?> <?php if (filesize('jsondata/metar34.txt')<160) {
+  <a class="weather34tiplink" data-weather34tiplink="Metar Conditions" href="metarnearby.php" data-lity><?php echo $chartinfo?> <?php echo $language['Airport'];?> <?php if (filesize('jsondata/metar34.txt')<160) {
     echo "(<ored>Offline</ored>)";
 } else {
     echo "";

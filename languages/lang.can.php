@@ -298,6 +298,7 @@ $lang['Windy'] = 'Windy';
 $lang['Max'] = 'Max';
 $lang['Min'] = 'Min';
 $lang['Weather Data Provided By']='Weather Data Provided By';
+$language['Airport']='Airport Metar';
 
 //earthquake TOP MODULE 10 July 2017
 $lang['ModerateE'] = 'Moderate Earthquake';

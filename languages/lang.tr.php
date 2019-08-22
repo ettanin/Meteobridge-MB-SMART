@@ -278,6 +278,7 @@ $lang['Max']                    = 'Max';
 $lang['Min']                    = 'Min';
 $lang['Almanac'] 				= 'Almanak';
 $lang['Weather Data Provided By']='Hava Data';
+$language['Airport']='Havalimanı Metar';
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Depremler';
 $lang['MinorE']                  = 'Az  Depremler';

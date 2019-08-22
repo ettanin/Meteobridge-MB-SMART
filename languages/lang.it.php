@@ -277,6 +277,7 @@ $lang['Max']                    = 'Max';
 $lang['Min']                    = 'Min';
 $lang['Almanac'] 				= 'Almanacco';
 $lang['Weather Data Provided By']='Weather Data Provided By';
+$language['Airport']='Aeroporto Metar';
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Micro Earthquake';
 $lang['MinorE']                  = 'Minor Earthquake';

@@ -313,6 +313,7 @@ $lang['Detailed Forecast'] = 'Detailed Forecast';
 $lang['Summary Outlook'] = 'Summary';
 $lang['Almanac'] = 'Almanac';
 $lang['Weather Data Provided By']='Weather Data Provided By';
+$language['Airport']='Airport Metar';
 //Air Quality
 $lang['Hazordous']= 'Hazardous Conditions';
 $lang['VeryUnhealthy']= 'Very Unhealthy';
