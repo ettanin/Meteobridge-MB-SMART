@@ -91,6 +91,7 @@ $lang['Gusting']                 = 'Gusting at';
 $lang['Blowing']                 = 'Blowing at';
 $lang['Wind']                    = 'Wind';
 $lang['Wind Run']                = 'Wind Run';
+$lang['AvgSpeedToday']			 ='Avg Speed Today';
 // Wind phrases for Beaufort scale for windspeed area
 $lang['Calm']                    = 'Calm';
 $lang['Lightair']                = 'Light Air';
@@ -296,6 +297,7 @@ $lang['Unhealthy']               = 'Unhealthy Air Quality';
 $lang['UnhealthyFS']             = 'Unhealthy For Some';
 $lang['Moderate']                = 'Moderate Air Quality ';
 $lang['Good']                    = 'Good Air Quality ';
+$lang['Air Quality']			 = 'Air Quality ';
 #notification additions
 $lang['notifyTitle']             = 'Notifications';
 $lang['notifyAlert']             = "Alert";

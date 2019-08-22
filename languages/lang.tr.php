@@ -91,6 +91,7 @@ $lang['Gusting']                = 'Max Rüzgar ';
 $lang['Blowing']                = 'üfleme ';
 $lang['Blowing']                = 'Rüzgar';
 $lang['Wind Run']               = 'Rüzgar Run';
+$lang['AvgSpeedToday']			 ='Avg Hızı Bugün';
 // Wind phrases for Beaufort scale for windspeed area
 $lang['Calm']                   = 'Sakin';
 $lang['Lightair']               = 'Çok hafif Rüzgarlı';
@@ -275,14 +276,15 @@ $lang['Cloudbase']              = 'Bulutu';
 $lang['uvalert']                = 'Dikkat UVINDEX';
 $lang['Max']                    = 'Max';
 $lang['Min']                    = 'Min';
+$lang['Almanac'] 				= 'Almanak';
 //earthquake TOP MODULE 10 July 2017
-$lang['MicroE']                  = 'Micro Earthquake';
+$lang['MicroE']                  = 'Depremler';
 $lang['MinorE']                  = 'Az  Depremler';
-$lang['LightE']                  = 'Light Earthquake';
+$lang['LightE']                  = 'Hafif Depremler';
 $lang['ModerateE']               = 'Orta  Depremler';
 $lang['StrongE']                 = 'Önemli  Depremler';
-$lang['MajorE']                  = 'Major Earthquake';
-$lang['GreatE']                  = 'Great Earthquake';
+$lang['MajorE']                  = 'Çok Güçlü';
+$lang['GreatE']                  = 'Çok Afet Depremler';
 $lang['RegionalE']              = 'Bölgesel';
 $lang['Conditions']             = 'Kosullari';
 $lang['Cloudbase Height']       = 'Bulutu';
@@ -296,6 +298,7 @@ $lang['Unhealthy']              = 'Sağlıksız Hava Kalitesi Uyarisi';
 $lang['UnhealthyFS']            = 'Sağlıksız Hava Kalitesi Uyarisi';
 $lang['Moderate']               = 'Orta Hava Kalitesi Uyarisi';
 $lang['Good']                   = 'Saglikli Hava Kalitesi ';
+$lang['Air Quality']			= 'Hava Kalitesi';
 #notification additions
 $lang['notifyTitle']            = 'Istasyonu <span>Dikkat</span>';
 $lang['notifyAlert']             = "Alert";

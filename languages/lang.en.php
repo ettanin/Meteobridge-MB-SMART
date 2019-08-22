@@ -84,13 +84,14 @@ $lang['FeelingUncomfortable']    = 'Uncomfortable';
 $lang['FeelingVeryHot']          = 'Very Hot';
 $lang['FeelingExtremelyHot']     = 'Extremely Hot';
 //wind
-$lang['Windspeed']               = 'Wind';
+$lang['Windspeed']               = 'Wind Speed';
 $lang['Gust']                    = 'Gust';
 $lang['Direction']               = 'Direction';
 $lang['Gusting']                 = 'Gusting at';
 $lang['Blowing']                 = 'Blowing at';
 $lang['Wind']                    = 'Wind';
 $lang['Wind Run']                = 'Wind Run';
+$lang['AvgSpeedToday']			 ='Avg Speed Today';
 // Wind phrases for Beaufort scale for windspeed area
 $lang['Calm']                    = 'Calm';
 $lang['Lightair']                = 'Light Air';
@@ -245,7 +246,7 @@ $lang['SunPosition']             = 'Sun Position';
 $lang['Location']                = 'Location ';
 $lang['Hardware']                = 'Hardware';
 $lang['Rainfalltoday']           = 'Rainfall Today';
-$lang['Windspeed']               = 'Wind';
+$lang['Windspeed']               = 'Wind Speed';
 $lang['Winddirection']           = 'Wind Direction';
 $lang['Measured']                = 'Measured Today';
 $lang['Forecast']                = 'Forecast';
@@ -275,6 +276,7 @@ $lang['Cloudbase']               = 'Cloudbase';
 $lang['uvalert']                 = 'Caution High UVINDEX';
 $lang['Max']                     = 'Max';
 $lang['Min']                     = 'Min';
+$lang['Almanac'] 				 = 'Almanac';
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Micro Earthquake';
 $lang['MinorE']                  = 'Minor Earthquake';
@@ -296,6 +298,7 @@ $lang['Unhealthy']               = 'Unhealthy Air Quality';
 $lang['UnhealthyFS']             = 'Unhealthy For Some';
 $lang['Moderate']                = 'Moderate Air Quality ';
 $lang['Good']                    = 'Good Air Quality ';
+$lang['Air Quality']			 = 'Air Quality ';
 #notification additions
 $lang['notifyTitle']             = 'Notifications';
 $lang['notifyAlert']             = "Alert";

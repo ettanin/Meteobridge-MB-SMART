@@ -4047,7 +4047,7 @@ indoorred1 {
 
 weather34windrunspan {
   margin-left: 3px;
-  font-size: 0.55rem;
+  font-size: 0.45rem;
   color: #07727d;
 }
 
@@ -4464,9 +4464,13 @@ valuetextstrikes {
   color: #2d3a4b;
 }
 menutextheading1,
-valuetextheading1 {
+{
   font-family: weathertext2;
   font-size: 0.9em;
+}
+valuetextheading1 {
+  font-family: weathertext2;
+  font-size: 9px;
 }
 .tempmodulehome-10-0c,
 .tempmodulehome-50-10c,
@@ -8761,3 +8765,6 @@ boxblue {
   color: #009bab;
   margin-right: 5px;
 }
+windaveragevalue{font-size:.6rem
+}
+

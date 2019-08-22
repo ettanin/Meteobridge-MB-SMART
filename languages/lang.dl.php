@@ -91,6 +91,7 @@ $lang['Gusting']                = 'in Böeen';
 $lang['Blowing']                = 'Wehen';
 $lang['Wind']                   = 'Wind';
 $lang['Wind Run']               = 'Wehen Run';
+$lang['AvgSpeedToday']			 ='Avg Speed Heute';
 // Wind phrases for Beaufort scale for windspeed area
 $lang['Calm']                   = 'Windstill';
 $lang['Lightair']               = 'Nahezu Windstill';
@@ -250,7 +251,7 @@ $lang['Winddirection']          = 'Windrichtung';
 $lang['Measured']               = 'Gemessen heute';
 $lang['Forecast']               = 'Prognose';
 $lang['Forecastahead']          = 'Prognose 10 Tage';
-$lang['Forecastsummary']        = 'Prognose  Heute';
+$lang['Forecastsummary']        = 'Prognose  Text';
 $lang['WindGust']               = 'Windspeed | Böen';
 $lang['Hourlyforecast']         = 'Stündliche Prognose ';
 $lang['Significantearthquake']  = 'Bedeutende Erdbeben';
@@ -275,6 +276,7 @@ $lang['Cloudbase']              = 'Cloudbase';
 $lang['uvalert']                = 'Caution High UVINDEX';
 $lang['Max']                    = 'Max';
 $lang['Min']                    = 'Min';
+$lang['Almanac'] 				= 'Almanach';
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Micro Earthquake';
 $lang['MinorE']                  = 'Minor Earthquake';
@@ -296,6 +298,7 @@ $lang['Unhealthy']              = 'Unhealthy Air Quality';
 $lang['UnhealthyFS']            = 'Unhealthy For Some';
 $lang['Moderate']               = 'Moderate Air Quality ';
 $lang['Good']                   = 'Good Air Quality ';
+$lang['Air Quality']			= 'Air Quality ';
 #notification additions
 $lang['notifyTitle']            = 'Wetter Station Hinweis';
 $lang['notifyAlert']             = "Alert";

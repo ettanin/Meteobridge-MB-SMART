@@ -84,13 +84,14 @@ $lang['FeelingUncomfortable']   = 'Si Sente a Disagio';
 $lang['FeelingVeryHot']         = 'Si Sente molto Caldo';
 $lang['FeelingExtremelyHot']    = 'Si Sente Estremamente Caldo';
 //wind
-$lang['Windspeed']              = 'Velocità vento';
+$lang['Windspeed']              = 'Velocità Vento';
 $lang['Gust']                   = 'Raffica';
 $lang['Direction']              = 'Direzione';
 $lang['Gusting']                = 'Raffica';
 $lang['Blowing']                = 'Soffia';
 $lang['Wind']                   = 'Velocità';
 $lang['Wind Run']               = 'Velocità Run';
+$lang['AvgSpeedToday']			 ='Avg Vento Oggi';
 // Wind phrases for Beaufort scale for windspeed area
 $lang['Calm']                   = 'Calma';
 $lang['Lightair']               = 'Bava di Vento';
@@ -245,7 +246,6 @@ $lang['SunPosition']            = 'Sun Position';
 $lang['Location']               = 'Posizione ';
 $lang['Hardware']               = 'Hardware';
 $lang['Rainfalltoday']          = 'Pioggia Giornaliera';
-$lang['Windspeed']              = 'Vento';
 $lang['Winddirection']          = 'La direzione del vento';
 $lang['Measured']               = 'Giorno Misurato';
 $lang['Forecast']               = 'Previsione';
@@ -275,6 +275,7 @@ $lang['Cloudbase']              = 'Cloudbase';
 $lang['uvalert']                = 'Caution High UVINDEX';
 $lang['Max']                    = 'Max';
 $lang['Min']                    = 'Min';
+$lang['Almanac'] 				= 'Almanacco';
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Micro Earthquake';
 $lang['MinorE']                  = 'Minor Earthquake';
@@ -296,6 +297,7 @@ $lang['Unhealthy']              = 'Unhealthy Air Quality';
 $lang['UnhealthyFS']            = 'Unhealthy For Some';
 $lang['Moderate']               = 'Moderate Air Quality ';
 $lang['Good']                   = 'Good Air Quality ';
+$lang['Air Quality']			= 'Qualità dell Aria';
 #notification additions
 $lang['notifyTitle']            = 'Notifiche';
 $lang['notifyAlert']             = "Alert";

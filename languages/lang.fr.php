@@ -84,13 +84,14 @@ $lang['FeelingUncomfortable']   = 'Ressenti inconfortable';
 $lang['FeelingVeryHot']         = 'Ressenti très chaud';
 $lang['FeelingExtremelyHot']    = 'Ressenti extrèmement chaud';
 //wind
-$lang['Windspeed']              = 'Vitesse du vent';
+$lang['Windspeed']              = 'Vitesse Vent';
 $lang['Gust']                   = 'Rafale';
 $lang['Direction']              = 'Direction';
 $lang['Gusting']                = 'Rafale de';
 $lang['Blowing']                = 'Souffler à';
 $lang['Wind']                   = 'Vitesse';
 $lang['Wind Run']               = 'Vitesse Run';
+$lang['AvgSpeedToday']			 ='Avg Vent Du jour';
 // Wind phrases for Beaufort scale for windspeed area
 $lang['Calm']                   = 'Calme';
 $lang['Lightair']               = 'Calme';
@@ -245,12 +246,11 @@ $lang['SunPosition']            = 'Sun Position';
 $lang['Location']               = 'Location';
 $lang['Hardware']               = 'Hardware';
 $lang['Rainfalltoday']          = 'Précipitations';
-$lang['Windspeed']              = 'Vitesse';
 $lang['Winddirection']          = 'Direction du vent';
 $lang['Measured']               = 'Mesuré ce jour';
 $lang['Forecast']               = 'Prévisions';
 $lang['Forecastahead']          = 'Prévisions à 10 jours ';
-$lang['Forecastsummary']        = 'Prévisions à 2 jours';
+$lang['Forecastsummary']        = 'Prévisions Résumé';
 $lang['WindGust']               = 'Rafale de vent';
 $lang['Hourlyforecast']         = 'Prévisions horaires ';
 $lang['Significantearthquake']  = 'Tremblements de terre importants';
@@ -275,6 +275,7 @@ $lang['Cloudbase']              = 'Base des nuages';
 $lang['uvalert']                = 'Caution UVINDEX Fort';
 $lang['Max']                    = 'Max';
 $lang['Min']                    = 'Min';
+$lang['Almanac'] 				= 'Almanach';
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Micro Earthquake';
 $lang['MinorE']                 = 'Tremblement de terre mineur';
@@ -296,6 +297,7 @@ $lang['Unhealthy']              = 'Unhealthy Air Quality';
 $lang['UnhealthyFS']            = 'Unhealthy For Some';
 $lang['Moderate']               = 'Moderate Air Quality ';
 $lang['Good']                   = 'Good Air Quality ';
+$lang['Air Quality']			= 'Air Quality ';
 #notification additions
 $lang['notifyTitle']             = 'Notifications';
 $lang['notifyAlert']             = "Alert";

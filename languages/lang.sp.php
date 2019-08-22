@@ -91,6 +91,8 @@ $lang['Gusting']                = 'Racheado a';
 $lang['Blowing']                = 'Soplando a';
 $lang['Wind']                   = 'Viento';
 $lang['Wind Run']               = 'Viento Run';
+$lang['AvgSpeedToday']			 ='Avg Velocidad Hoy';
+
 // Wind phrases for Beaufort scale for windspeed area
 $lang['Calm']                   = 'Calma';
 $lang['Lightair']               = 'Viento ligero';
@@ -275,6 +277,7 @@ $lang['Cloudbase']              = 'Base Nubes';
 $lang['uvalert']                = 'Precaucion UVINDEX';
 $lang['Max']                    = 'Max';
 $lang['Min']                    = 'Min';
+$lang['Almanac'] 				= 'Almanaque';
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Micro Earthquake';
 $lang['MinorE']                  = 'pequeño Terremoto';
@@ -296,6 +299,7 @@ $lang['Unhealthy']              = 'Aire Insalubre';
 $lang['UnhealthyFS']            = 'Insalubre';
 $lang['Moderate']               = 'Moderada calidad del Aire ';
 $lang['Good']                   = 'Buena calitat del Aire ';
+$lang['Air Quality']			= 'Calidad del Aire';
 #notification additions
 $lang['notifyTitle']             = 'Notifications';
 $lang['notifyAlert']             = "Alert";

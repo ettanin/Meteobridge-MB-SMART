@@ -91,6 +91,7 @@ $lang['Gusting']                = 'Windvlaag';
 $lang['Blowing']                = 'Wind';
 $lang['Wind']                   = 'Wind';
 $lang['Wind Run']               = 'Wind Run';
+$lang['AvgSpeedToday']			 ='Gem Vandaag';
 // Wind phrases for Beaufort scale for windspeed area
 $lang['Calm']                   = 'Kalm';
 $lang['Lightair']               = 'Zeer zwak ';
@@ -241,7 +242,7 @@ $lang['Winddirection']          = 'Wind Richting';
 $lang['Measured']               = 'Gemeten Vandaag';
 $lang['Forecast']               = 'Voorspelling';
 $lang['Forecastahead']          = 'Voorspelling';
-$lang['Forecastsummary']        = 'Verwachtings Overzicht';
+$lang['Forecastsummary']        = 'Voorspelling Samenvatting';
 $lang['WindGust']               = 'Wind snelheid | Vlaag';
 $lang['Hourlyforecast']         = 'Voorspelling per uur ';
 $lang['Significantearthquake']  = 'Veelzeggende aardbeving';
@@ -266,6 +267,7 @@ $lang['Cloudbase']              = 'Wolkenbasis';
 $lang['uvalert']                = 'Let op Hoge UV';
 $lang['Max']                    = 'Max';
 $lang['Min']                    = 'Min';
+$lang['Almanac'] 				= 'Almanak';
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Micro-aardbeving';
 $lang['MinorE']                  = 'Kleine aardbeving';
@@ -287,6 +289,7 @@ $lang['Unhealthy']              = 'Ongezonde luchtkwaliteit';
 $lang['UnhealthyFS']            = 'Ongezond voor sommigen';
 $lang['Moderate']               = 'Gematigde luchtkwaliteit ';
 $lang['Good']                   = 'Goede luchtkwaliteit ';
+$lang['Air Quality']			 = 'Luchtkwaliteit';
 #notification additions
 $lang['notifyTitle']            = 'Weerstation Meldingen';
 $lang['notifyAlert']             = "Alarm";

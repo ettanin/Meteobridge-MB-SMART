@@ -91,6 +91,7 @@ $lang['Gusting']                = 'Ratxes a';
 $lang['Blowing']                = 'Bufant a';
 $lang['Wind']                   = 'Vel.';
 $lang['Wind Run']               = 'Vel Run';
+$lang['AvgSpeedToday']			 ='Avg Speed Today';
 // Wind phrases for Beaufort scale for windspeed area
 $lang['Calm']                   = 'Calma';
 $lang['Lightair']               = 'Vent lleuger';

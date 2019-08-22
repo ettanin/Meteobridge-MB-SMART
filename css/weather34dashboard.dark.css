@@ -4450,7 +4450,7 @@ valuetextstrikes {
 valuetextheading1 {
   margin-left: 10px;
   font-family: weathertext2;
-  font-size: 0.9em;
+  font-size: 9px;
   color: silver;
 }
 rainratetextheading {
@@ -8722,4 +8722,6 @@ boxred {
 boxblue {
   color: #009bab;
   margin-right: 5px;
+}
+windaveragevalue{font-size:.6rem
 }
