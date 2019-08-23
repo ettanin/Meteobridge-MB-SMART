@@ -8797,7 +8797,8 @@ nextperiod {
 }
 .temperaturenext{margin-left:70px
 }
-
+wuunitstemperaturenext{font-size:.8em
+}
 .barometerpos {
   margin-top: 10px;
 }
