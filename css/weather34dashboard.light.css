@@ -3222,7 +3222,7 @@ smallsup {
 .temptrendphrase {
   z-index: auto;
   position: absolute;
-  margin-top: -15px; 
+  margin-top: -15px;
   margin-left: 0;
   color: #555;
   text-align: center;
@@ -3232,13 +3232,13 @@ smallsup {
 
 
 
-.temptrendx { 
+.temptrendx {
   z-index: auto;
   position: absolute;
-  margin-top: -15px;  
+  margin-top: -15px;
   margin-left: 60%;
   color: #555;
-  text-align: center;  
+  text-align: center;
   font-size: 0;
 }
 
@@ -3255,7 +3255,7 @@ trendmovementsteadyx {
 }
 
 .maxdata {
-  position:absolute; 
+  position:absolute;
   margin: 5px auto auto;
   color: #fff;
   font-family: weathertext2;
@@ -3270,7 +3270,7 @@ trendmovementsteadyx {
   border-radius:2px;
 }
 .hidata {
-  position:absolute; 
+  position:absolute;
   margin: 5px auto auto;
   color: #fff;
   color: rgba(255,255,255,.7);
@@ -3288,7 +3288,7 @@ trendmovementsteadyx {
 }
 
 .mindata {
-  position:absolute; 
+  position:absolute;
   margin: 5px auto auto;
   color: #fff;
   font-family: weathertext2;
@@ -3301,11 +3301,11 @@ trendmovementsteadyx {
   margin-top:7px;
   left:49px;
   border-radius:2px;
-  
+
 }
 .lodata {
-  position:absolute; 
-  margin: 5px auto auto; 
+  position:absolute;
+  margin: 5px auto auto;
   color: rgba(255,255,255,.7);
   font-family: weathertext2;
   font-size: 8px;
@@ -8793,8 +8793,11 @@ greenwunext {
   background: rgba(144, 177, 42, 1);
 }
 nextperiod {
-  margin-left: 45px;
+  position:absolute;left: 65px;
 }
+.temperaturenext{margin-left:70px
+}
+
 .barometerpos {
   margin-top: 10px;
 }
@@ -8808,4 +8811,3 @@ boxblue {
 }
 windaveragevalue{font-size:.6rem
 }
-
