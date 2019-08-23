@@ -5439,7 +5439,7 @@ heatindexwu,
 windchillwu {
   width: 2.35rem;
   font-size: 0.9em;
-  margin-left: 85px;
+  margin-left: 70px;
   top: 0;
   height: 0.9rem;
 }
@@ -8732,7 +8732,7 @@ yellowwuhum {
   -moz-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
-  margin-left: 70px;
+  margin-left: 50px;
   top: 0;
   line-height: 0.9;
 }
@@ -8773,7 +8773,7 @@ yellowwunext {
   -moz-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
-  margin-left: 45px;
+  margin-left: 50px;
   top: 0;
   line-height: 0.9;
 }

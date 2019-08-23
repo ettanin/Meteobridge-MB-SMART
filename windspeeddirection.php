@@ -21,7 +21,7 @@ spancalm{postion:relative;font-family:weathertext,Arial;font-size:26px;}</style>
 <?php
 //weather34-windaverage speed
 if ($weather["wind_speed"]<10) {
-    echo "&nbsp;",number_format($weather["wind_speed"],1);
+    echo "&nbsp;",number_format($weather["wind_speed"]*1.010,2);
 } else {
     echo number_format($weather["wind_speed"], 1);
 }?>

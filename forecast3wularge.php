@@ -236,15 +236,15 @@ else if ($wuskydayPrecipType='rain' && $rainunit=='mm'){echo $lang['Rain Accumul
 //day uvindex wu
 if ($wuskydaynight=='D'){
 echo '<br><div class=wulargeuvindex>UV Index &nbsp;<wuuvicon>&#9788;</wuuvicon>';
-if ($wuskydayUV>=10){echo 	"<purplewuv>".$wuskydayUV. '</purplewuv><wuinfo>'.$wuskydayUVdesc;}
-else  if ($wuskydayUV>7){echo 	"<redwuv>".$wuskydayUV. '</redwuv><wuinfo> '.$wuskydayUVdesc;}
-else if ($wuskydayUV>5){echo 	"<orangewuv>".$wuskydayUV. '</orangewuv><wuinfo> '.$wuskydayUVdesc;}
-else if ($wuskydayUV>2){echo 	"<yellowwuv>".$wuskydayUV. '</yellowwuv><wuinfo> '.$wuskydayUVdesc;}
-else if ($wuskydayUV>0){echo 	"<greenwuv>".$wuskydayUV. '</greenwuv><wuinfo>'.$wuskydayUVdesc;}	
+if ($wuskydayUV>=10){echo "<purplewuv>".$wuskydayUV. '</purplewuv><wuinfo>'.$wuskydayUVdesc;}
+else  if ($wuskydayUV>7){echo "<redwuv>".$wuskydayUV. '</redwuv><wuinfo> '.$wuskydayUVdesc;}
+else if ($wuskydayUV>5){echo  "<orangewuv>".$wuskydayUV. '</orangewuv><wuinfo> '.$wuskydayUVdesc;}
+else if ($wuskydayUV>2){echo  "<yellowwuv>".$wuskydayUV. '</yellowwuv><wuinfo> '.$wuskydayUVdesc;}
+else if ($wuskydayUV>0){echo  "<greenwuv>".$wuskydayUV. '</greenwuv><wuinfo>'.$wuskydayUVdesc;}	
 echo '</div>';}
 //night humidity
 if ($wuskydaynight=='N'){
-echo '<br><div class=wulargeuvindex>'.$lang['Humidity'].'';
+echo '<br><div class=wulargeuvindex>Humidity';
 if ($wuskyhumidity>=70){echo 	"<bluewuhum>".$wuskyhumidity. '%</bluewuhum></div>';}
 else if ($wuskyhumidity>=50){echo 	"<yellowwuhum>".$wuskyhumidity. '%</yellowwuhum></div>';}
 else if ($wuskyhumidity>=40){echo 	"<greenwuhum>".$wuskyhumidity. '%</greenwuhum></div>';}	
@@ -253,9 +253,9 @@ else if ($wuskyhumidity>0){echo 	"<redwuhum>".$wuskyhumidity. '%</redwuhum></div
 ///wuheat index F
 else if ($wuskydaynight=='D'){
 echo "<div class=wulargeheatindex>";
-if ($wuskydaynight=='D' && $tempunit=='F' && $wuskyheatindex>=89){echo $lang['Heatindex']." " .$heatindexwu."<heatindexwu>".number_format($wuskyheatindex,0). '°<wuunits>F&nbsp; </wuunits>'.$heatindexalert8a.'</heatindexwu></div>';}
+if ($wuskydaynight=='D' && $tempunit=='F' && $wuskyheatindex>=89){echo "Heat index " .$heatindexwu."<heatindexwu>".number_format($wuskyheatindex,0). '°<wuunits>F&nbsp; </wuunits>'.$heatindexalert8a.'</heatindexwu></div>';}
 //wu heat index C
-if ($wuskydaynight=='D' && $tempunit=='C' && $wuskyheatindex>=32){echo $lang['Heatindex']." ".$heatindexwu." <heatindexwu>".number_format($wuskyheatindex,0). '°<wuunits>C&nbsp; </wuunits>'.$heatindexalert8a.'</heatindexwu></div>';}
+if ($wuskydaynight=='D' && $tempunit=='C' && $wuskyheatindex>=32){echo "Heat index " .$heatindexwu."<heatindexwu>".number_format($wuskyheatindex,0). '°<wuunits>C&nbsp; </wuunits>'.$heatindexalert8a.'</heatindexwu></div>';}
 
 else if ($wuskyheatindex<89 && $wuskyhumidity>=70 && $tempunit=='F'){echo 	"Humidity <bluewuhum>".$wuskyhumidity. '%</bluewuhum></div>';}
 else if ($wuskyheatindex<89 && $wuskyhumidity>=50 && $tempunit=='F'){echo 	"Humidity <yellowwuhum>".$wuskyhumidity. '%</yellowwuhum></div>';}
