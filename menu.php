@@ -13,7 +13,7 @@
 <div class="weather34admin"><header class="weather34admin__header">
 <weather34toptitle><?php echo $stationName;?>&nbsp;Weather Station</weather34toptitle>
 <div class="weather34toolbar">
-<div class="weather34toolbar__right"><div id="theTime"></div></div>
+<div class="weather34toolbar__right"><weather34thetime> <div id="theTime"></div></div></weather34thetime>
 
 <a href="#">
 <?php if($units!='us'){echo' <a href="./?units=us" class="weather34tipfah"><topbarimperial>&deg;F</topbarimperial></a></div>';}
