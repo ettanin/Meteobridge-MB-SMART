@@ -99,9 +99,14 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather['wind_speed_avg30']=$meteobridgeapi[158];
 	$weather['wind_speed_avgday']=$meteobridgeapi[158];
 	$weather['tempyearavg']=$meteobridgeapi[184];
-	$weather['windspeedyearavg']=$meteobridgeapi[185];	
+	$weather['windspeedyearavg']=$meteobridgeapi[185];		
+	//weather34 windrun based on daily average
+	$windrunhr=date('G');$windrunmin=(($windrunmin=date('i')/60));$windrunformula=$windrunhr=date('G')+$windrunmin;
+	$weather["windrun34"]=$weather['wind_speed_avg30']*number_format($windrunformula,1);
+	
 	//weather34 windrun based on 15 minute average
-	$weather["windrun34"]=$weather["windrun34"]=$meteobridgeapi[72]*0.25;
+	//$weather["windrun34"]=$weather["windrun34"]=$meteobridgeapi[72]*0.25;
+
 	//weather34 meteobridge moon sun data 
     $weather["moonphase"]=$meteobridgeapi[153];$weather["luminance"]=$meteobridgeapi[154];$weather["daylight"]=$meteobridgeapi[155];if ($meteobridgeapi[156]=='--'){$weather["moonrise"]='In Transit';}
 	else $weather["moonrise"]='<moonrisecolor> '.date($timeFormatShort, strtotime($meteobridgeapi[156]));$weather["moonset"]='<moonsetcolor> '.date($timeFormatShort, strtotime($meteobridgeapi[157]));

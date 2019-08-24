@@ -213,9 +213,9 @@ if ($weather["wind_speed_bft"]==0) {
 <div class=weather34avgtoday>
 <?php echo ' &nbsp;<windaveragevalue>',number_format($weather['wind_speed_avg30'],1)."</windaveragevalue><weather34windrunspan>"
  .$weather["wind_units"];?></weather34windrunspan></div>
-<div class=averagetoday1><?php echo $lang['Avg']?> <?php echo $lang['Today']?></div>
+<div class=averagetoday1><?php echo $lang['Avg']." ".$lang['Today']?></div>
 
 <div class=weather34windruntoday1>
 <?php echo ' &nbsp;<windaveragevalue>',number_format($weather["windrun34"],1)."</windaveragevalue><weather34windrunspan>"?>
 <?php if ($weather["wind_units"]=='km/h'){echo 'km';}else echo 'mi';?></weather34windrunspan></div>
-<div class=windruntoday1><?php echo $lang['Wind Run']?> (15 min)</div>
+<div class=windruntoday1><?php echo $lang['Wind Run']." ".$lang['Today'];?></div>
