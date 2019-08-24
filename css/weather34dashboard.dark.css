@@ -4412,11 +4412,11 @@ valuetextstrikes {
 .tempmodulehome40-50c,
 .tempmodulehome5-10c {
   height: 1rem;
-  width: 4rem;
+  width: 4.1rem;
   color: #aeb6bf;
   display: flex;
   overflow: hidden;
-  line-height: 16px;
+  line-height: 1px;
   font-family: weathertext2;
   border: 1px solid rgba(61, 70, 77, 0.5);
   border-left: 0;
@@ -4425,7 +4425,7 @@ valuetextstrikes {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   justify-content: center;
-  font-size:.65rem;
+  font-size:.6rem;
   align-items: center;
 }
 
@@ -4438,9 +4438,9 @@ valuetextstrikes {
   display: flex;
   align-items: center;
   height: 1rem;
-  width: 4rem;
+  width: 4.1rem;
   overflow: hidden;
-  line-height: 16px;
+  line-height: 1;
   font-family: weathertext2;
   color: #aeb6bf;
   border: 1px solid rgba(61, 70, 77, 0.5);
@@ -4450,7 +4450,7 @@ valuetextstrikes {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   justify-content: center;
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   align-items: center;
 }
 
@@ -4527,7 +4527,7 @@ raiblue {
 .rainmodulehome,
 .rainratemodulehome{
   display: flex;
-   width: 4rem;
+   width: 4.1rem;
   height: 1rem;
   color: #aeb6bf;
   overflow: hidden;

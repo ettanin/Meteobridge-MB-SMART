@@ -4499,24 +4499,23 @@ valuetextstrikes {
 .temphumcircle35-60,
 .temphumcircle60-80,
 .temphumcircle80-100 {
-  font-size: 0.65rem;
-  width:4rem;
-  color: #2d3a4b;
-  display: flex;
+ display: flex;
+  width: 4.2rem;
   height: 1rem;
+  color: #2d3a4b;
   overflow: hidden;
-  line-height: 16px;
   font-family: weathertext2;
-  background: 0;
-  
-  border: 1px solid #e6e8ef;
-  border-left: 0;
-   -webkit-border-top-right-radius: 2px;
+  font-size: 0.6rem;
+  line-height: 1;
+  border:1px solid #e6e8ef;
+  align-items: center;
+  font-weight: 400;
+  justify-content: center;
+  -webkit-border-top-right-radius: 2px;
   -webkit-border-bottom-right-radius: 2px;
+  border-left: 0;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-  align-items: center;
-  justify-content: center;
 }
 menutextheading1,
 {
@@ -4538,24 +4537,23 @@ valuetextheading1 {
 .tempmodulehome35-40c,
 .tempmodulehome40-50c,
 .tempmodulehome5-10c {
-  font-size: 0.65rem;
-  color: #2d3a4b;
   display: flex;
-  width:4rem;
+  width: 4.2rem;
   height: 1rem;
+  color: #2d3a4b;
   overflow: hidden;
-  line-height: 16px;
   font-family: weathertext2;
-  background: 0;
-  
-  border: 1px solid #e6e8ef;
-  border-left: 0;
-   -webkit-border-top-right-radius: 2px;
+  font-size: 0.6rem;
+  line-height: 1;
+  border:1px solid #e6e8ef;
+  align-items: center;
+  font-weight: 400;
+  justify-content: center;
+  -webkit-border-top-right-radius: 2px;
   -webkit-border-bottom-right-radius: 2px;
+  border-left: 0;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-  align-items: center;
-  justify-content: center;
 }
 .temphumcircle60-80 {
   box-shadow: inset 3px 0 0 0 #e6a141;
@@ -4625,10 +4623,9 @@ menutextheading1 {
   width:4.2rem;
   height: 1rem;
   overflow: hidden;
-  line-height: 16px;
+  line-height:1;
   font-family: weathertext2;
   background: 0;
-  
   border: 1px solid #e6e8ef;
   border-left: 0;
    -webkit-border-top-right-radius: 2px;
@@ -4677,7 +4674,7 @@ rainratetextheading {
   font-size: 0.6rem;
   color: #2d3a4b;
   display: flex;
-  width:4rem;
+  width:4.1rem;
   height: 1rem;
   overflow: hidden;
   line-height:1;
