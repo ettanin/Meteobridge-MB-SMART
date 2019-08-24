@@ -3989,37 +3989,63 @@ weather34bftspan {
   color: silver;
 }
 
-.weather34windrun {
-  font-size: 0.7rem;
-  margin-top: 114px;
-  margin-left: 230px;
+.weather34avgtoday {
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 4rem;
-  height: 1rem;
+  height: .8rem;
+  margin-top:100px;
+  margin-left:235px;
+  color: silver;
   border: 1px solid rgba(74, 99, 111, 0.2);
   border-radius: 2px;
-  font-family: weathertext2;
   background: 0;
+  align-items: center;
+  font-size: 0.7rem;
+  justify-content: center;
+  font-family: weathertext2;
+}
+.averagetoday1 {
+  width: 6.5rem;
+ color: silver;
+  font-size: 0.55em;
+  margin-left: 215px;
+ margin-top:-24px;
 }
 
+
+.weather34windruntoday1 {
+  display: flex;
+  width: 4rem;
+  height: .8rem;
+  margin-top:17px;
+  margin-left:235px;
+  color: silver;
+  border: 1px solid rgba(74, 99, 111, 0.2);
+  border-radius: 2px;
+  background: 0;
+  align-items: center;
+  font-size: 0.7rem;
+  justify-content: center;
+  font-family: weathertext2;
+}
+.windruntoday1 {
+  width: 6.5rem;
+  color: silver;
+  font-size: 0.55em;
+  margin-left: 215px;
+}
+
+
+
 .beaufort1,
-.windrun1,
 weather34windrunspan {
   color: silver;
   font-family: Arial, Helvetica, system;
 }
-.beaufort1,
-.windrun1 {
+.beaufort1{
   font-size: 0.55rem;
   width: 6.5rem;
   display: flex;
-}
-.windrun1 {
-  position: absolute;
-  margin-left: 210px;
-  margin-top: 130px;
 }
 .beaufort1 {
   position: absolute;
@@ -7503,12 +7529,22 @@ weather34toptitle {
   .homeweathercompass1 {
     margin-left: 80px;
   }
-  .weather34windrun {
-    margin-left: 265px;
-  }
-  .windrun1 {
-    margin-left: 245px;
-  }
+
+  .weather34avgtoday {
+  margin-top:105px;
+  margin-left:275px;
+}
+.averagetoday1 {
+ margin-left: 255px;
+ margin-top:-24px;
+}
+.weather34windruntoday1 {
+  margin-top:15px;
+  margin-left:275px;
+}
+.windruntoday1 {
+  margin-left: 255px;
+}
   .daylightmoduleposition {
     margin-left: 15px;
   }
@@ -7740,12 +7776,7 @@ weather34toptitle {
   .homeweathercompass1 {
     margin-left: 60px;
   }
-  .weather34windrun {
-    margin-left: 235px;
-  }
-  .windrun1 {
-    margin-left: 215px;
-  }
+
   .daylightmoduleposition {
     margin-left: 0;
   }
@@ -7772,6 +7803,22 @@ weather34toptitle {
     right: -50px;
     color: #009bab;
   }
+
+ .weather34avgtoday {
+  margin-top:105px;
+  margin-left:235px;
+}
+.averagetoday1 {
+ margin-left: 215px;
+ margin-top:-24px;
+}
+.weather34windruntoday1 {
+  margin-top:15px;
+  margin-left:235px;
+}
+.windruntoday1 {
+  margin-left: 215px;
+}
 }
 canvas,
 iframe,
@@ -8767,7 +8814,7 @@ boxblue {
   color: #009bab;
   margin-right: 5px;
 }
-windaveragevalue{font-size:.6rem
+windaveragevalue{font-size:.55rem
 }
 wuunitstemperaturenext{font-size:.8em
 }

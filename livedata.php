@@ -100,10 +100,8 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather['wind_speed_avgday']=$meteobridgeapi[158];
 	$weather['tempyearavg']=$meteobridgeapi[184];
 	$weather['windspeedyearavg']=$meteobridgeapi[185];	
-	//weather34 windrun
-	$windrunhr=date('G');$windrunmin=(($windrunmin=date('i')/60));
-	$windrunformula=$windrunhr=date('G')+$windrunmin;
-	$weather["windrun34"]=$weather['wind_speed_avg30']*number_format($windrunformula,1);
+	//weather34 windrun based on 15 minute average
+	$weather["windrun34"]=$weather["windrun34"]=$meteobridgeapi[72]*0.25;
 	//weather34 meteobridge moon sun data 
     $weather["moonphase"]=$meteobridgeapi[153];$weather["luminance"]=$meteobridgeapi[154];$weather["daylight"]=$meteobridgeapi[155];if ($meteobridgeapi[156]=='--'){$weather["moonrise"]='In Transit';}
 	else $weather["moonrise"]='<moonrisecolor> '.date($timeFormatShort, strtotime($meteobridgeapi[156]));$weather["moonset"]='<moonsetcolor> '.date($timeFormatShort, strtotime($meteobridgeapi[157]));
@@ -130,6 +128,7 @@ if ($weather["moonphase"]==0) {$weather["moonphase"]='New Moon';}else if ($weath
 	$weather["lightningmonth"]     = $meteobridgeapi[78];
 	$weather["lightningyear"]      = $meteobridgeapi[79];
 	
+	//temperature
 	$originalDate = $meteobridgeapi[83];
     $tempydmaxtime = date("H:i", strtotime($originalDate));
 	$originalDate1 = $meteobridgeapi[85];
@@ -159,10 +158,6 @@ if ($weather["moonphase"]==0) {$weather["moonphase"]='New Moon';}else if ($weath
     $tempamintime = date("jS M Y", strtotime($originalDatea10));
 	$weather["tempamin"]		    = $meteobridgeapi[127]; //temp alltime
 	$weather["tempamintime"]		= $tempamintime; //seconds
-	
-	
-	
-	
 	$weather["tempydmax"]		    = $meteobridgeapi[82]; //temp max yesterday
 	$weather["tempydmaxtime"]		= $tempydmaxtime; //seconds
 	$weather["tempydmin"]		    = $meteobridgeapi[84]; //temp min yesterday
@@ -188,14 +183,11 @@ if ($weather["moonphase"]==0) {$weather["moonphase"]='New Moon';}else if ($weath
 	$originalDatea11 = $meteobridgeapi[130];
     $dewamaxtime = date("jS M Y", strtotime($originalDatea11));
 	$weather["dewamax"]		    = $meteobridgeapi[129]; //temp alltime
-	$weather["dewamaxtime"]		= $dewamaxtime; //seconds
-	
+	$weather["dewamaxtime"]		= $dewamaxtime; //seconds	
 	$originalDatea12 = $meteobridgeapi[132];
     $dewamintime = date("jS M Y", strtotime($originalDatea12));
 	$weather["dewamin"]		    = $meteobridgeapi[131]; //temp alltime
-	$weather["dewamintime"]		= $dewamintime; //seconds
-	
-	
+	$weather["dewamintime"]		= $dewamintime; //seconds	
 	//dewpoint year
 	$originalDate44 = $meteobridgeapi[55];
     $dewymaxtime = date('jS M', strtotime($originalDate44));	
@@ -232,47 +224,47 @@ if ($weather["moonphase"]==0) {$weather["moonphase"]='New Moon';}else if ($weath
 	$weather["dewydmaxtime"]		= $dewydmaxtime; //seconds	
 	$weather["dewydmin"]		    = $meteobridgeapi[120]; //temp min year
 	$weather["dewydmintime"]		= $dewydmintime; //seconds	
-	
-//humidity almanac	
-//hum max
+		
+	//humidity almanac	
+	//hum max
 $weather["humidity_max"]=number_format($meteobridgeapi[59],0);
 $originalDate734=$meteobridgeapi[60];
 $hummaxtime=date('H:i',strtotime($originalDate734));
 $weather["humidity_maxtime"]=$hummaxtime;
-//hum min
+	//hum min
 $weather["humidity_min"]=number_format($meteobridgeapi[61],0);
 $originalDate774=$meteobridgeapi[62];
 $hummintime=date('H:i',strtotime($originalDate774));
 $weather["humidity_mintime"]=$hummintime;
 
-//hum year max
+	//hum year max
 $weather["humidity_ymax"]=number_format($meteobridgeapi[163],0);
 $originalDate754=$meteobridgeapi[164];
 $humymaxtime=date('jS M',strtotime($originalDate754));
 $weather["humidity_ymaxtime"]=$humymaxtime;
-//hum year min
+	//hum year min
 $weather["humidity_ymin"]=number_format($meteobridgeapi[165],0);
 $originalDate755=$meteobridgeapi[166];
 $humymintime=date('jS M',strtotime($originalDate755));
 $weather["humidity_ymintime"]=$humymintime;
 
-//hum month max
+	//hum month max
 $weather["humidity_mmax"]=number_format($meteobridgeapi[159],0);
 $originalDate756=$meteobridgeapi[160];
 $hummmaxtime=date('jS M',strtotime($originalDate756));
 $weather["humidity_mmaxtime"]=$hummmaxtime;
-//hum month min
+	//hum month min
 $weather["humidity_mmin"]=number_format($meteobridgeapi[161],0);
 $originalDate757=$meteobridgeapi[162];
 $hummmintime=date('jS M',strtotime($originalDate757));
 $weather["humidity_mmintime"]=$hummmintime;
 
-//hum yesterday max
+	//hum yesterday max
 $weather["humidity_ydmax"]=number_format($meteobridgeapi[167],0);
 $originalDate758=$meteobridgeapi[168];
 $humydmaxtime=date('H:i',strtotime($originalDate758));
 $weather["humidity_ydmaxtime"]=$humydmaxtime;
-//hum yesterday min
+	//hum yesterday min
 $weather["humidity_ydmin"]=number_format($meteobridgeapi[169],0);
 $originalDate759=$meteobridgeapi[170];
 $humydmintime=date('H:i',strtotime($originalDate759));
@@ -281,7 +273,7 @@ $weather["humidity_ydmintime"]=$humydmintime;
 
 		
 	
-	//wind gust
+	//wind 
 	$originalDate8 = $meteobridgeapi[95];
     $windydmaxtime = date("H:i", strtotime($originalDate8));	
 	$originalDate9 = $meteobridgeapi[97];
@@ -628,28 +620,28 @@ if ($pressureunit != $weather["barometer_units"]) {
 
 if($windunit!=$weather["wind_units"]){
 	
-if($windunit=='mph'&&$weather["wind_units"]=='kts'){ktsTomph($weather,"wind_speed");ktsTomph($weather,"wind_speed2");ktsTomph($weather,"wind_speed_trend");ktsTomph($weather,"wind_gust_speed");ktsTomph($weather,"wind_gust_speed2");ktsTomph($weather,"wind_gust_speed_trend");ktsTomph($weather,"wind_speed_max");ktsTomph($weather,"wind_gust_speed_max");ktsTomph($weather,"wind_run");ktsTomph($weather,"wind_speed_avg");ktsTomph($weather,"wind_speed_avg15");ktsTomph($weather,"wind_speed_avg30");ktsTomph($weather,"windamax");ktsTomph($weather,"winddmax");ktsTomph($weather,"windydmax");ktsTomph($weather,"windmmax");ktsTomph($weather,"windymax");
-ktsTomph($weather,"windrun34");$weather["wind_units"]=$windunit;}else if($windunit=='mph'&&$weather["wind_units"]=='km/h'){kmhTomph($weather,"wind_speed");kmhTomph($weather,"wind_speed2");kmhTomph($weather,"wind_speed_trend");kmhTomph($weather,"wind_gust_speed");kmhTomph($weather,"wind_gust_speed2");kmhTomph($weather,"wind_gust_speed_trend");kmhTomph($weather,"wind_speed_max");kmhTomph($weather,"wind_gust_speed_max");kmhTomph($weather,"wind_run");kmhTomph($weather,"wind_speed_avg");kmhTomph($weather,"wind_speed_avg15");kmhTomph($weather,"wind_speed_avg30");kmhTomph($weather,"windamax");kmhTomph($weather,"winddmax");kmhTomph($weather,"windydmax");kmhTomph($weather,"windmmax");kmhTomph($weather,"windymax");kmhTomph($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
+if($windunit=='mph'&&$weather["wind_units"]=='kts'){ktsTomph($weather,"wind_speed");ktsTomph($weather,"wind_speed2");ktsTomph($weather,"wind_speed_trend");ktsTomph($weather,"wind_gust_speed");ktsTomph($weather,"wind_gust_speed2");ktsTomph($weather,"wind_gust_speed_trend");ktsTomph($weather,"wind_speed_max");ktsTomph($weather,"wind_gust_speed_max");ktsTomph($weather,"wind_run");ktsTomph($weather,"wind_speed_avg");ktsTomph($weather,"wind_speed_avg15");ktsTomph($weather,"wind_speed_avg30");ktsTomph($weather,"windrun34");ktsTomph($weather,"windamax");ktsTomph($weather,"winddmax");ktsTomph($weather,"windydmax");ktsTomph($weather,"windmmax");ktsTomph($weather,"windymax");
+ktsTomph($weather,"windrun34");$weather["wind_units"]=$windunit;}else if($windunit=='mph'&&$weather["wind_units"]=='km/h'){kmhTomph($weather,"wind_speed");kmhTomph($weather,"wind_speed2");kmhTomph($weather,"wind_speed_trend");kmhTomph($weather,"wind_gust_speed");kmhTomph($weather,"wind_gust_speed2");kmhTomph($weather,"wind_gust_speed_trend");kmhTomph($weather,"wind_speed_max");kmhTomph($weather,"wind_gust_speed_max");kmhTomph($weather,"wind_run");kmhTomph($weather,"wind_speed_avg");kmhTomph($weather,"wind_speed_avg15");kmhTomph($weather,"wind_speed_avg30");kmhTomph($weather,"windamax");kmhTomph($weather,"winddmax");kmhTomph($weather,"windydmax");kmhTomph($weather,"windmmax");kmhTomph($weather,"windrun34");kmhTomph($weather,"windymax");kmhTomph($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
 
-else if($windunit=='mph'&&$weather["wind_units"]=='m/s'){msTomph($weather,"wind_speed");msTomph($weather,"wind_speed2");msTomph($weather,"wind_speed_trend");msTomph($weather,"wind_gust_speed");msTomph($weather,"wind_gust_speed2");msTomph($weather,"wind_gust_speed_trend");msTomph($weather,"wind_speed_max");msTomph($weather,"wind_gust_speed_max");msTomph($weather,"wind_run");msTomph($weather,"wind_speed_avg");msTomph($weather,"wind_speed_avg15");msTomph($weather,"wind_speed_avg30");msTomph($weather,"winddmax");msTomph($weather,"windamax");msTomph($weather,"windydmax");msTomph($weather,"windmmax");msTomph($weather,"windymax");msTomph($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
+else if($windunit=='mph'&&$weather["wind_units"]=='m/s'){msTomph($weather,"wind_speed");msTomph($weather,"wind_speed2");msTomph($weather,"wind_speed_trend");msTomph($weather,"wind_gust_speed");msTomph($weather,"wind_gust_speed2");msTomph($weather,"wind_gust_speed_trend");msTomph($weather,"wind_speed_max");msTomph($weather,"wind_gust_speed_max");msTomph($weather,"wind_run");msTomph($weather,"wind_speed_avg");msTomph($weather,"wind_speed_avg15");msTomph($weather,"wind_speed_avg30");msTomph($weather,"winddmax");msTomph($weather,"windrun34");msTomph($weather,"windamax");msTomph($weather,"windydmax");msTomph($weather,"windmmax");msTomph($weather,"windymax");msTomph($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
 
-else if($windunit=='km/h'&&$weather["wind_units"]=='kts'){ktsTokmh($weather,"wind_speed");ktsTokmh($weather,"wind_speed2");ktsTokmh($weather,"wind_speed_trend");ktsTokmh($weather,"wind_gust_speed");ktsTokmh($weather,"wind_gust_speed2");ktsTokmh($weather,"wind_gust_speed_trend");ktsTokmh($weather,"wind_speed_max");ktsTokmh($weather,"wind_gust_speed_max");ktsTokmh($weather,"wind_run");ktsTokmh($weather,"wind_speed_avg");ktsTokmh($weather,"wind_speed_avg15");ktsTokmh($weather,"wind_speed_avg30");ktsTokmh($weather,"winddmax");ktsTokmh($weather,"windamax");ktsTokmh($weather,"windydmax");ktsTokmh($weather,"windmmax");ktsTokmh($weather,"windymax");ktsTokmh($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
+else if($windunit=='km/h'&&$weather["wind_units"]=='kts'){ktsTokmh($weather,"wind_speed");ktsTokmh($weather,"wind_speed2");ktsTokmh($weather,"wind_speed_trend");ktsTokmh($weather,"wind_gust_speed");ktsTokmh($weather,"wind_gust_speed2");ktsTokmh($weather,"wind_gust_speed_trend");ktsTokmh($weather,"wind_speed_max");ktsTokmh($weather,"wind_gust_speed_max");ktsTokmh($weather,"wind_run");ktsTokmh($weather,"wind_speed_avg");ktsTokmh($weather,"wind_speed_avg15");ktsTokmh($weather,"wind_speed_avg30");ktsTokmh($weather,"winddmax");ktsTokmh($weather,"windrun34");ktsTokmh($weather,"windamax");ktsTokmh($weather,"windydmax");ktsTokmh($weather,"windmmax");ktsTokmh($weather,"windymax");ktsTokmh($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
 
-else if($windunit=='km/h'&&$weather["wind_units"]=='mph'){mphTokmh($weather,"wind_speed");mphTokmh($weather,"wind_speed2");mphTokmh($weather,"wind_speed_trend");mphTokmh($weather,"wind_gust_speed");mphTokmh($weather,"wind_gust_speed2");mphTokmh($weather,"wind_gust_speed_trend");mphTokmh($weather,"wind_speed_max");mphTokmh($weather,"wind_gust_speed_max");mphTokmh($weather,"wind_run");mphTokmh($weather,"wind_speed_avg");mphTokmh($weather,"wind_speed_avg15");mphTokmh($weather,"wind_speed_avg30");mphTokmh($weather,"winddmax");mphTokmh($weather,"windamax");mphTokmh($weather,"windydmax");mphTokmh($weather,"windmmax");mphTokmh($weather,"windymax");mphTokmh($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
+else if($windunit=='km/h'&&$weather["wind_units"]=='mph'){mphTokmh($weather,"wind_speed");mphTokmh($weather,"wind_speed2");mphTokmh($weather,"wind_speed_trend");mphTokmh($weather,"wind_gust_speed");mphTokmh($weather,"wind_gust_speed2");mphTokmh($weather,"wind_gust_speed_trend");mphTokmh($weather,"wind_speed_max");mphTokmh($weather,"wind_gust_speed_max");mphTokmh($weather,"wind_run");mphTokmh($weather,"wind_speed_avg");mphTokmh($weather,"wind_speed_avg15");mphTokmh($weather,"wind_speed_avg30");mphTokmh($weather,"winddmax");mphTokmh($weather,"windrun34");mphTokmh($weather,"windamax");mphTokmh($weather,"windydmax");mphTokmh($weather,"windmmax");mphTokmh($weather,"windymax");mphTokmh($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
 
-else if($windunit=='km/h'&&$weather["wind_units"]=='m/s'){msTokmh($weather,"wind_speed");msTokmh($weather,"wind_speed2");msTokmh($weather,"wind_speed_trend");msTokmh($weather,"wind_gust_speed");msTokmh($weather,"wind_gust_speed2");msTokmh($weather,"wind_gust_speed_trend");msTokmh($weather,"wind_speed_max");msTokmh($weather,"wind_gust_speed_max");msTokmh($weather,"wind_run");msTokmh($weather,"wind_speed_avg");msTokmh($weather,"wind_speed_avg15");msTokmh($weather,"wind_speed_avg30");msTokmh($weather,"winddmax");msTokmh($weather,"windamax");msTokmh($weather,"windydmax");msTokmh($weather,"windmmax");msTokmh($weather,"windymax");msTokmh($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
+else if($windunit=='km/h'&&$weather["wind_units"]=='m/s'){msTokmh($weather,"wind_speed");msTokmh($weather,"wind_speed2");msTokmh($weather,"wind_speed_trend");msTokmh($weather,"wind_gust_speed");msTokmh($weather,"wind_gust_speed2");msTokmh($weather,"wind_gust_speed_trend");msTokmh($weather,"wind_speed_max");msTokmh($weather,"wind_gust_speed_max");msTokmh($weather,"wind_run");msTokmh($weather,"wind_speed_avg");msTokmh($weather,"wind_speed_avg15");msTokmh($weather,"wind_speed_avg30");msTokmh($weather,"winddmax");msTokmh($weather,"windrun34");msTokmh($weather,"windamax");msTokmh($weather,"windydmax");msTokmh($weather,"windmmax");msTokmh($weather,"windymax");msTokmh($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
 
-else if($windunit=='m/s'&&$weather["wind_units"]=='kts'){ktsToms($weather,"wind_speed");ktsToms($weather,"wind_speed2");ktsToms($weather,"wind_speed_trend");ktsToms($weather,"wind_gust_speed");ktsToms($weather,"wind_gust_speed2");ktsToms($weather,"wind_gust_speed_trend");ktsToms($weather,"wind_speed_max");ktsToms($weather,"wind_gust_speed_max");ktsTomph($weather,"wind_gust_speed1");ktsToms($weather,"wind_run");ktsToms($weather,"wind_speed_avg");ktsToms($weather,"wind_speed_avg15");ktsToms($weather,"wind_speed_avg30");ktsToms($weather,"winddmax");ktsToms($weather,"windamax");ktsToms($weather,"windydmax");ktsToms($weather,"windmmax");ktsToms($weather,"windymax");ktsToms($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
+else if($windunit=='m/s'&&$weather["wind_units"]=='kts'){ktsToms($weather,"wind_speed");ktsToms($weather,"wind_speed2");ktsToms($weather,"wind_speed_trend");ktsToms($weather,"wind_gust_speed");ktsToms($weather,"wind_gust_speed2");ktsToms($weather,"wind_gust_speed_trend");ktsToms($weather,"wind_speed_max");ktsToms($weather,"wind_gust_speed_max");ktsTomph($weather,"wind_gust_speed1");ktsToms($weather,"wind_run");ktsToms($weather,"wind_speed_avg");ktsToms($weather,"wind_speed_avg15");ktsToms($weather,"wind_speed_avg30");ktsToms($weather,"winddmax");ktsToms($weather,"windrun34");ktsToms($weather,"windamax");ktsToms($weather,"windydmax");ktsToms($weather,"windmmax");ktsToms($weather,"windymax");ktsToms($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
 
-else if($windunit=='m/s'&&$weather["wind_units"]=='mph'){mphToms($weather,"wind_speed");mphToms($weather,"wind_speed2");mphToms($weather,"wind_speed_trend");mphToms($weather,"wind_gust_speed");mphToms($weather,"wind_gust_speed2");mphToms($weather,"wind_gust_speed_trend");mphToms($weather,"wind_speed_max");mphToms($weather,"wind_gust_speed_max");mphToms($weather,"wind_run");mphToms($weather,"wind_speed_avg");mphTokmh($weather,"wind_speed_avg15");mphTokmh($weather,"wind_speed_avg30");mphTokmh($weather,"winddmax");mphTokmh($weather,"windamax");mphTokmh($weather,"windydmax");mphTokmh($weather,"windmmax");mphTokmh($weather,"windymax");mphToms($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
+else if($windunit=='m/s'&&$weather["wind_units"]=='mph'){mphToms($weather,"wind_speed");mphToms($weather,"wind_speed2");mphToms($weather,"wind_speed_trend");mphToms($weather,"wind_gust_speed");mphToms($weather,"wind_gust_speed2");mphToms($weather,"wind_gust_speed_trend");mphToms($weather,"wind_speed_max");mphToms($weather,"wind_gust_speed_max");mphToms($weather,"wind_run");mphToms($weather,"wind_speed_avg");mphToms($weather,"wind_speed_avg15");mphToms($weather,"wind_speed_avg30");mphToms($weather,"winddmax");mphToms($weather,"windrun34");mphToms($weather,"windamax");mphToms($weather,"windydmax");mphToms($weather,"windmmax");mphTokmh($weather,"windymax");mphToms($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
 
-else if($windunit=='m/s'&&$weather["wind_units"]=='km/h'){kmhToms($weather,"wind_speed");kmhToms($weather,"wind_speed2");kmhToms($weather,"wind_speed_trend");kmhToms($weather,"wind_gust_speed");kmhToms($weather,"wind_gust_speed2");kmhToms($weather,"wind_gust_speed_trend");kmhToms($weather,"wind_speed_max");kmhToms($weather,"wind_gust_speed_max");kmhToms($weather,"wind_run");kmhToms($weather,"wind_speed_avg");kmhTokmh($weather,"wind_speed_avg15");kmhTokmh($weather,"wind_speed_avg30");kmhTokmh($weather,"winddmax");kmhTokmh($weather,"windamax");kmhTokmh($weather,"windydmax");kmhTokmh($weather,"windmmax");kmhTokmh($weather,"windymax");kmhToms($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
+else if($windunit=='m/s'&&$weather["wind_units"]=='km/h'){kmhToms($weather,"wind_speed");kmhToms($weather,"wind_speed2");kmhToms($weather,"wind_speed_trend");kmhToms($weather,"wind_gust_speed");kmhToms($weather,"wind_gust_speed2");kmhToms($weather,"wind_gust_speed_trend");kmhToms($weather,"wind_speed_max");kmhToms($weather,"wind_gust_speed_max");kmhToms($weather,"wind_run");kmhToms($weather,"wind_speed_avg");kmhToms($weather,"wind_speed_avg15");kmhToms($weather,"wind_speed_avg30");kmhToms($weather,"winddmax");kmhToms($weather,"windrun34");kmhToms($weather,"windamax");kmhToms($weather,"windydmax");kmhToms($weather,"windmmax");kmhToms($weather,"windymax");kmhToms($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
 
-else if($windunit=='kts'&&$weather["wind_units"]=='m/s'){msTokts($weather,"wind_speed");msTokts($weather,"wind_speed2");msTokts($weather,"wind_speed_trend");msTokts($weather,"wind_gust_speed");msTokts($weather,"wind_gust_speed2");msTokts($weather,"wind_gust_speed_trend");msTokts($weather,"wind_speed_max");msTokts($weather,"wind_gust_speed_max");msTokts($weather,"wind_run");msTokts($weather,"wind_speed_avg");msTokts($weather,"wind_speed_avg15");msTokts($weather,"wind_speed_avg30");msTokts($weather,"winddmax");msTokts($weather,"windamax");msTokts($weather,"windydmax");msTokts($weather,"windmmax");msTokts($weather,"windymax");msTokts($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
+else if($windunit=='kts'&&$weather["wind_units"]=='m/s'){msTokts($weather,"wind_speed");msTokts($weather,"wind_speed2");msTokts($weather,"wind_speed_trend");msTokts($weather,"wind_gust_speed");msTokts($weather,"wind_gust_speed2");msTokts($weather,"wind_gust_speed_trend");msTokts($weather,"wind_speed_max");msTokts($weather,"wind_gust_speed_max");msTokts($weather,"wind_run");msTokts($weather,"wind_speed_avg");msTokts($weather,"wind_speed_avg15");msTokts($weather,"wind_speed_avg30");msTokts($weather,"winddmax");msTokts($weather,"windrun34");msTokts($weather,"windamax");msTokts($weather,"windydmax");msTokts($weather,"windmmax");msTokts($weather,"windymax");msTokts($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
 
-else if($windunit=='kts'&&$weather["wind_units"]=='mph'){mphTokts($weather,"wind_speed");mphTokts($weather,"wind_speed2");mphTokts($weather,"wind_speed_trend");mphTokts($weather,"wind_gust_speed");mphTokts($weather,"wind_gust_speed2");mphTokts($weather,"wind_gust_speed_trend");mphTokts($weather,"wind_speed_max");mphTokts($weather,"wind_gust_speed_max");mphTokts($weather,"wind_run");mphTokts($weather,"wind_speed_avg");mphTokts($weather,"wind_speed_avg15");mphTokts($weather,"wind_speed_avg30");mphTokts($weather,"winddmax");mphTokts($weather,"windamax");mphTokts($weather,"windydmax");mphTokts($weather,"windmmax");mphTokts($weather,"windymax");mphTokts($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
+else if($windunit=='kts'&&$weather["wind_units"]=='mph'){mphTokts($weather,"wind_speed");mphTokts($weather,"wind_speed2");mphTokts($weather,"wind_speed_trend");mphTokts($weather,"wind_gust_speed");mphTokts($weather,"wind_gust_speed2");mphTokts($weather,"wind_gust_speed_trend");mphTokts($weather,"wind_speed_max");mphTokts($weather,"wind_gust_speed_max");mphTokts($weather,"wind_run");mphTokts($weather,"wind_speed_avg");mphTokts($weather,"wind_speed_avg15");mphTokts($weather,"wind_speed_avg30");mphTokts($weather,"winddmax");mphTokts($weather,"windrun34");mphTokts($weather,"windamax");mphTokts($weather,"windydmax");mphTokts($weather,"windmmax");mphTokts($weather,"windymax");mphTokts($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}
 
-else if($windunit=='kts'&&$weather["wind_units"]=='km/h'){kmhTokts($weather,"wind_speed");kmhTokts($weather,"wind_speed2");kmhTokts($weather,"wind_speed_trend");kmhTokts($weather,"wind_gust_speed");kmhTokts($weather,"wind_gust_speed2");kmhTokts($weather,"wind_gust_speed_trend");kmhTokts($weather,"wind_speed_max");kmhTokts($weather,"wind_gust_speed_max");kmhTokts($weather,"wind_run");kmhTokts($weather,"wind_speed_avg");kmhTokts($weather,"wind_speed_avg15");kmhTokts($weather,"wind_speed_avg30");kmhTokts($weather,"winddmax");kmhTokts($weather,"windamax");kmhTokts($weather,"windydmax");kmhTokts($weather,"windmmax");kmhTokts($weather,"windymax");kmhTokts($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}}
+else if($windunit=='kts'&&$weather["wind_units"]=='km/h'){kmhTokts($weather,"wind_speed");kmhTokts($weather,"wind_speed2");kmhTokts($weather,"wind_speed_trend");kmhTokts($weather,"wind_gust_speed");kmhTokts($weather,"wind_gust_speed2");kmhTokts($weather,"wind_gust_speed_trend");kmhTokts($weather,"wind_speed_max");kmhTokts($weather,"wind_gust_speed_max");kmhTokts($weather,"wind_run");kmhTokts($weather,"wind_speed_avg");kmhTokts($weather,"wind_speed_avg15");kmhTokts($weather,"wind_speed_avg30");kmhTokts($weather,"winddmax");kmhTokts($weather,"windrun34");kmhTokts($weather,"windamax");kmhTokts($weather,"windydmax");kmhTokts($weather,"windmmax");kmhTokts($weather,"windymax");kmhTokts($weather,"windspeedyearavg");$weather["wind_units"]=$windunit;}}
 // Keep track of the conversion factor for windspeed to knots because it is useful in multiple places
 $toKnots = 1;
 if ($weather["wind_units"] == 'mph') {
