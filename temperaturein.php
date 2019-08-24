@@ -191,15 +191,15 @@ else if( $weather["temp_units"]=='C' &&  anyToC($weather["temp"])<100){echo "<di
 <div class="tempindoorextra">
 <a href="homeindoor.php" data-lity title="Home Indoor enviroment">
 <?php  //indoor C
-if ($weather["temp_units"]=='C' && $weather["temp_indoor"]>=25){echo "<div class=intempmodulehome25-30c>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsred><smalltempunit4>" .$weather["temp_units"];}
-else if ($weather["temp_units"]=='C' && $weather["temp_indoor"]>=20){echo "<div class=intempmodulehome20-25c>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsorange><smalltempunit4>" .$weather["temp_units"];}
-else if ($weather["temp_units"]=='C' && $weather["temp_indoor"]>=15){echo "<div class=intempmodulehome15-20c>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsyellow><smalltempunit4>" .$weather["temp_units"];}
-else if ($weather["temp_units"]=='C' && $weather["temp_indoor"]>=10){echo "<div class=intempmodulehome10-15c>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsyellow><smalltempunit4>" .$weather["temp_units"];}
-else if ($weather["temp_units"]=='C' && $weather["temp_indoor"]>0){echo "<div class=intempmodulehome0-5c>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsblue><smalltempunit4>" .$weather["temp_units"];}
+if ($weather["temp_units"]=='C' && $weather["temp_indoor"]>=25){echo "<div class=intempmodulehome25-30c>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsred><smalltempunit2>" .$weather["temp_units"];}
+else if ($weather["temp_units"]=='C' && $weather["temp_indoor"]>=20){echo "<div class=intempmodulehome20-25c>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsorange><smalltempunit2>" .$weather["temp_units"];}
+else if ($weather["temp_units"]=='C' && $weather["temp_indoor"]>=15){echo "<div class=intempmodulehome15-20c>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsyellow><smalltempunit2>" .$weather["temp_units"];}
+else if ($weather["temp_units"]=='C' && $weather["temp_indoor"]>=10){echo "<div class=intempmodulehome10-15c>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsyellow><smalltempunit2>" .$weather["temp_units"];}
+else if ($weather["temp_units"]=='C' && $weather["temp_indoor"]>0){echo "<div class=intempmodulehome0-5c>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsblue><smalltempunit2>" .$weather["temp_units"];}
 //indoor F
-if ($weather["temp_units"]=='F' && $weather["temp_indoor"]>75){echo "<div class=intempmodulehome25-30c><tsred>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsred><smalltempunit4>" .$weather["temp_units"];}
-else if ($weather["temp_units"]=='F' && $weather["temp_indoor"]>66){echo "<div class=intempmodulehome20-25c><tsorange>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsorange><smalltempunit4>" .$weather["temp_units"];}
-else if ($weather["temp_units"]=='F' && $weather["temp_indoor"]>59){echo "<div class=intempmodulehome15-20c><tsyellow>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsyellow><smalltempunit4>" .$weather["temp_units"];}
-else if ($weather["temp_units"]=='F' && $weather["temp_indoor"]>32){echo "<div class=intempmodulehome10-15c><tsblue>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsblue><smalltempunit4>" .$weather["temp_units"];}
+if ($weather["temp_units"]=='F' && $weather["temp_indoor"]>75){echo "<div class=intempmodulehome25-30c><tsred>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsred><smalltempunit2>" .$weather["temp_units"];}
+else if ($weather["temp_units"]=='F' && $weather["temp_indoor"]>66){echo "<div class=intempmodulehome20-25c><tsorange>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsorange><smalltempunit2>" .$weather["temp_units"];}
+else if ($weather["temp_units"]=='F' && $weather["temp_indoor"]>59){echo "<div class=intempmodulehome15-20c><tsyellow>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsyellow><smalltempunit2>" .$weather["temp_units"];}
+else if ($weather["temp_units"]=='F' && $weather["temp_indoor"]>32){echo "<div class=intempmodulehome10-15c><tsblue>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsblue><smalltempunit2>" .$weather["temp_units"];}
 ?>&nbsp;<?php if($weather["temp_indoor_trend"] >0)echo $risingsymbol;else if($weather["temp_indoor_trend"]<0)echo $fallingsymbol;?></div></div></span></a>
 </div></div></div>
