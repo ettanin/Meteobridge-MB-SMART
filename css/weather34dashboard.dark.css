@@ -3173,8 +3173,8 @@ smalltempunit4 {
   align-items: center;
   display: flex;
 }
-.maxdata,
-.windrun1 {
+.maxdata
+{
   justify-content: center;
 }
 .outside0-5,
@@ -3945,9 +3945,7 @@ moonsetcolor {
   -webkit-transform: rotate(360deg);
 }
 
-.beaufort1,
-.weather34windrun,
-.windrun1 {
+.beaufort1{
   height: 1rem;
   position: absolute;
   overflow: hidden;
@@ -3996,13 +3994,17 @@ weather34bftspan {
   margin-top:100px;
   margin-left:235px;
   color: silver;
-  border: 1px solid rgba(74, 99, 111, 0.2);
-  border-radius: 2px;
+  border:solid rgba(74, 99, 111, 0.2);
+  border-width: thin;
   background: 0;
   align-items: center;
   font-size: 0.7rem;
   justify-content: center;
   font-family: weathertext2;
+  border-left: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: inset 2px 0 0 0 #4e95a0;
 }
 .averagetoday1 {
   width: 6.5rem;
@@ -4020,13 +4022,17 @@ weather34bftspan {
   margin-top:17px;
   margin-left:235px;
   color: silver;
-  border: 1px solid rgba(74, 99, 111, 0.2);
-  border-radius: 2px;
+  border:solid rgba(74, 99, 111, 0.2);
+  border-width: thin;
   background: 0;
   align-items: center;
   font-size: 0.7rem;
   justify-content: center;
   font-family: weathertext2;
+  border-left: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: inset 2px 0 0 0 #4e95a0;
 }
 .windruntoday1 {
   width: 6.5rem;
