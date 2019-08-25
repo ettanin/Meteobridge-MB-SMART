@@ -180,35 +180,6 @@ if ($weather["wind_speed_bft"]>=12) {
     echo '<div class=weather34beaufort1-3>'.$beaufort0. "&nbsp; ".$weather["wind_speed_bft"];
 }?>
  <weather34bftspan>BFT</weather34bftspan></div>
-<div class="beaufort1"><?php
-if ($weather["wind_speed_bft"]==0) {
-    echo "Calm";
-} elseif ($weather["wind_speed_bft"]==1) {
-    echo "Light Air";
-} elseif ($weather["wind_speed_bft"]==2) {
-    echo "Light Breeze";
-} elseif ($weather["wind_speed_bft"]==3) {
-    echo "Gentle Breeze";
-} elseif ($weather["wind_speed_bft"]==4) {
-    echo "Moderate Breeze";
-} elseif ($weather["wind_speed_bft"]==5) {
-    echo "Fresh Breeze";
-} elseif ($weather["wind_speed_bft"]==6) {
-    echo "Strong Breeze";
-} elseif ($weather["wind_speed_bft"]==7) {
-    echo "Near Gale ".$alert."";
-} elseif ($weather["wind_speed_bft"]==8) {
-    echo "Gale Force ".$alert."";
-} elseif ($weather["wind_speed_bft"]==9) {
-    echo "Strong Gale ".$alert."";
-} elseif ($weather["wind_speed_bft"]==10) {
-    echo "Storm Force ".$alert."";
-} elseif ($weather["wind_speed_bft"]==11) {
-    echo "Violent Storm ".$alert."";
-} elseif ($weather["wind_speed_bft"]>=12) {
-    echo "Hurricane Force ".$alert."";
-}?></valuetext>
-</div>
 
 <div class=weather34avgtoday>
 <?php echo ' &nbsp;<windaveragevalue>',number_format($weather['wind_speed_avg30'],1)."</windaveragevalue><weather34windrunspan>"

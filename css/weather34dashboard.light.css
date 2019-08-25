@@ -3958,49 +3958,74 @@ moonsetcolor {
 .weather34beaufort3-4,
 .weather34beaufort4-5,
 .weather34beaufort6 {
-  font-size: 0.65rem;
-  position: absolute;
-  margin-top: 115px;
-  margin-left: 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 1rem;
+  position: absolute;
   width: 4rem;
-  border: 2px solid #e6e8ef;
+  height: .7rem;
+  margin-top: 127px;
+  margin-left: 117px;
   overflow: hidden;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  color: #fff;
+  border:1px solid #e6e8ef;
+  border-width:thin;
+  border-radius: 2px;
+  align-items: center;
   font-family: weathertext2;
+  font-size: 0.6rem;
+  justify-content: center;
+  color: #2d3a4b;
+  background:0;
+}
+.weather34beaufort1-3 {
+  color: #90b12a;
+}
+.weather34beaufort3-4 {
+  color: #e6a141;
+}
+.weather34beaufort4-5 {
+  color: #ff7c39;
+}
+.weather34beaufort6 {
+  color: #d35d4e;
+}
+weather34bftspan {
+  margin-left: 3px;
+  color: #777;
+  font-family: Arial,Helvetica,system;
+  font-size: 0.4em;
+}
+indoorred1 {
+  background: #d35d4e;
+}
+.raintoday1,
+.tempmodulehome-10-0c {
+  justify-content: center;
 }
 
 .weather34avgtoday {
   display: flex;
   width: 4rem;
   height: .8rem;
-  margin-top:100px;
-  margin-left:235px;
+  margin-top:120px;
+  margin-left:5px;
   color: #2d3a4b;
-  border:1px solid #e6e8ef;
+  border:1px solid #e6e8ef;  
   background: 0;
   align-items: center;
   font-size: 0.7rem;
   justify-content: center;
   font-family: weathertext2;
-  border-left: 0;
   -webkit-border-top-right-radius: 2px;
   -webkit-border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-  box-shadow: inset 1px 0 0 0 #4e95a0; 
+ 
 }
 .averagetoday1 {
   width: 6.5rem;
   color: #2d3a4b;
   font-size: 0.55em;
-  margin-left: 215px;
- margin-top:-24px;
+  margin-left: -15px;
+  margin-top:-24px;
 }
 
 
@@ -4008,30 +4033,28 @@ moonsetcolor {
   display: flex;
   width: 4rem;
   height: .8rem;
-  margin-top:17px;
+  margin-top:-1px;
   margin-left:235px;
   color: #2d3a4b;
   border:1px solid #e6e8ef;
-  background: 0;
+  background: 0;  
   align-items: center;
   font-size: 0.7rem;
   justify-content: center;
   font-family: weathertext2;
-  border-left: 0;
   -webkit-border-top-right-radius: 2px;
   -webkit-border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-  box-shadow: inset 1px 0 0 0 #4e95a0; 
- 
+  
 }
 .windruntoday1 {
   width: 6.5rem;
   color: #2d3a4b;
   font-size: 0.55em;
   margin-left: 215px;
+  margin-top:-24px;
 }
-
 
 .beaufort1,
 .weather34windrun,
@@ -4041,20 +4064,10 @@ weather34windrunspan {
   font-family: weathertext2;
 }
 weather34bftspan {
-  font-family: Arial, Helvetica, system;
+  font-family:  weathertext2;
   margin-left: 3px;
-  font-size: 0.55rem;
+  font-size: 0.5rem;
 }
-.weather34beaufort1-3 {
-  background: #90b12a;
-}
-.weather34beaufort3-4 {
-  background: #e6a141;
-}
-.weather34beaufort4-5 {
-  background: #d05f2d;
-}
-.weather34beaufort6,
 indoorred1 {
   background: #d35d4e;
 }
@@ -4115,101 +4128,7 @@ weather34windrunspan {
   background: linear-gradient(270deg, #00a4b4, #087883);
 }
 
-.darkskydiv,
-.darkskyforecasthome,
-.darkskyforecastinghome {
-  font-family: weathertext2;
-  color: #07727d;
-}
 
-.darkskyforecasthome {
-  position: absolute;
-  width: 308px;
-  background: 0;
-  margin: -2px auto 0 10px;
-  font-size: 0.65rem;
-  display: block;
-  border-radius: 3px;
-  overflow: hidden;
-}
-.darkskydiv,
-.darkskyforecastinghome {
-  overflow: hidden;
-}
-.darkskyforecasthome darkskytemphihome,
-.darkskyforecasthome darkskytempwindhome span,
-.darkskyforecasthome darkskytempwindhome span2,
-.darkskyweekdayhome {
-  font-family: weathertext2;
-  font-size: 0.65rem;
-  color: #2d3a4b;
-}
-.darkskydiv {
-  width: 310px;
-  height: 181px;
-  margin-top: 5px;
-}
-.darkskyforecastinghome {
-  float: left;
-  display: inline;
-  width: 29%;
-  border-radius: 3px;
-  margin: 0 0 100px 1%;
-  height: 150px;
-  padding: 0;
-  background: 0;
-   border: 1px solid rgba(153, 155, 156, 0.1);
-  color: #2d3a4b;
-}
-.darkskyweekdayhome {
-  position: absolutue;
-  text-align: center;
-  padding: 1px;
-  color: #2d3a4b;
-  margin: 0;
-  background: 0;
-}
-.darkskyforecasthome darkskytemphihome,
-.darkskyforecasthome darkskytemplohome {
-  margin-top: 0;
-  margin-left: 1%;
-  font-weight: 500;
-}
-.darkskyforecasthome darkskytemphihome span {
-  font-size: 0.7rem;
-  color: #d05f2d;
-}
-.darkskyforecasthome darkskytemphihome {
-  font-size: 12px;
-  color: #ff7c39;
-}
-.darkskyforecasthome darkskytempwindhome,
-.darkskyforecasthome darkskytempwindhome span4 {
-  color: #07727d;
-  font-family: weathertext2;
-  font-size: 0.65rem;
-}
-darkskytemplohome uvspan,
-gustorange {
-  color: #d05f2d;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.darkskyforecasthome darkskytemplohome span {
-  font-size: 0.7rem;
-}
-darkskytemplohome uv {
-  font-size: 0.6rem;
-  font-weight: 500;
-}
-.darkskyforecasthome darkskytemplohome,
-darkskytemplohome {
-  font-size: 0.7rem;
-  font-weight: 500;
-}
-darkskytemplohome uvspan {
-  font-weight: 400;
-}
 thunder {
   display: inline-block;
   font-size: 8px;
@@ -7357,12 +7276,6 @@ weather34toptitle {
   .weather34windgust {
     margin-left: 252px;
   }
-  .weather34beaufort1-3,
-  .weather34beaufort3-4,
-  .weather34beaufort4-5,
-  .weather34beaufort6{
-    margin-top: 110px;
-  }
   .beaufort1 {
     margin-top: 125px;
   }
@@ -7370,21 +7283,40 @@ weather34toptitle {
    .weather34windgust {
     margin-left: 242px;
   }
-  .weather34avgtoday {
-  margin-top:97px;
-  margin-left:275px;
+  
+  .weather34beaufort1-3,
+.weather34beaufort3-4,
+.weather34beaufort4-5,
+.weather34beaufort6 {   
+  margin-left: 134px;  
+} 
+
+.weather34avgtoday {
+  margin-top:120px;
+  margin-left:5px;
+  
 }
 .averagetoday1 {
- margin-left: 255px;
- margin-top:-24px;
+ margin-left: -15px;
+  margin-top:-24px;
 }
+
+
 .weather34windruntoday1 {
-  margin-top:15px;
-  margin-left:275px;
+  
+  margin-top:-1px;
+  margin-left:270px;
+  
+  
 }
 .windruntoday1 {
-  margin-left: 255px;
+  margin-left: 250px;
+  margin-top:-24px;
 }
+
+  
+  
+  
 
 }
 
@@ -7577,17 +7509,7 @@ weather34toptitle {
   .weather34windgust {
     margin-left: 212px;
   }
-  .weather34beaufort1-3,
-  .weather34beaufort3-4,
-  .weather34beaufort4-5,
-  .weather34beaufort6{
-    margin-top: 110px;
-  }
-
-  .beaufort1 {
-    margin-top: 125px;
-  }
-  .weather34refresh a {
+   .weather34refresh a {
     float: right;
     position: relative;
     margin-top: -12px;
@@ -7595,21 +7517,36 @@ weather34toptitle {
     color: #009bab;
   }
 
- .weather34avgtoday {
-  margin-top:97px;
-  margin-left:235px;
+ .weather34beaufort1-3,
+.weather34beaufort3-4,
+.weather34beaufort4-5,
+.weather34beaufort6 {   
+  margin-left: 120px;  
+} 
+
+.weather34avgtoday {
+  margin-top:120px;
+  margin-left:5px;
+  
 }
 .averagetoday1 {
- margin-left: 215px;
- margin-top:-24px;
+ margin-left: -15px;
+  margin-top:-24px;
 }
+
+
 .weather34windruntoday1 {
-  margin-top:15px;
-  margin-left:235px;
+  
+  margin-top:-1px;
+  margin-left:232px;
+  
+  
 }
 .windruntoday1 {
   margin-left: 215px;
+  margin-top:-24px;
 }
+
 }
 canvas,
 iframe,
