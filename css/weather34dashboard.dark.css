@@ -2254,7 +2254,7 @@ lightningannual {
   text-align: left;
   color: #aeb6bf;
   border: 1px solid rgba(95, 96, 97, 0.4);
-  
+
 }
 .wfstrikes1 {
   position: absolute;
@@ -2285,7 +2285,7 @@ lorange1 {
   padding: 10px;
   border-radius: 2px;
   border: 1px solid solid;
-  
+
 }
 .orangeclock,
 notifyblue {
@@ -2398,7 +2398,7 @@ uv8 {
   padding-top: 0;
   font-family: weathertext2, Helvetica, system;
   border: 1px solid gray;
-  
+
   font-size: 1.25em;
 }
 uv3 {
@@ -3015,7 +3015,7 @@ redtime {
   display: flex;
   justify-content: center;
   border: 1px solid rgba(61, 70, 77, 0.5);
-  
+
   border-radius: 2px;
   font-size: 0.85em;
   width: 3.2rem;
@@ -4007,7 +4007,7 @@ weather34windrunspan {
   margin-top:120px;
   margin-left:5px;
   color: #aeb6bf;
-  border:1px solid rgba(74, 99, 111, 0.2);  
+  border:1px solid rgba(74, 99, 111, 0.2);
   background: 0;
   align-items: center;
   font-size: 0.7rem;
@@ -4017,7 +4017,7 @@ weather34windrunspan {
   -webkit-border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
- 
+
 }
 .averagetoday1 {
   width: 6.5rem;
@@ -4036,7 +4036,7 @@ weather34windrunspan {
   margin-left:235px;
   color: #aeb6bf;
   border:1px solid rgba(74, 99, 111, 0.2);
-  background: 0;  
+  background: 0;
   align-items: center;
   font-size: 0.7rem;
   justify-content: center;
@@ -4045,7 +4045,7 @@ weather34windrunspan {
   -webkit-border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-  
+
 }
 .windruntoday1 {
   width: 6.5rem;
@@ -4548,7 +4548,7 @@ raiblue {
   overflow: hidden;
   font-family: weathertext2;
   line-height:1;
-  border: 1px solid rgba(61, 70, 77, 0.5);  
+  border: 1px solid rgba(61, 70, 77, 0.5);
   -webkit-border-left: 0;
   -webkit-border-top-right-radius: 2px;
   -webkit-border-bottom-right-radius: 2px;
@@ -4636,7 +4636,7 @@ blueu {
   justify-content: center;
   height: 1rem;
   width: 3.4rem;
-  border: 1px solid rgba(61, 70, 77, 0.5);  
+  border: 1px solid rgba(61, 70, 77, 0.5);
   overflow: hidden;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -4822,12 +4822,12 @@ topbarmetric {
 }
 topbarimperial {
   border: 1px solid #ff7c39;
-  
+
   color: #ff7c39;
 }
 topbarmetric {
   border: 1px solid #009bab;
-  
+
   color: #009bab;
 }
 offlinenew,
@@ -4941,7 +4941,7 @@ pressureunits {
   background: 0;
   color: #aeb6bf;
   border: 1px solid rgba(245, 247, 252, 0.02);
-  
+
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
 }
 .wulargeweekdayhome {
@@ -5450,12 +5450,12 @@ topbarmetricc {
 }
 topbarimperialf {
   border: 1px solid #ff7c39;
-  
+
   color: #ff7c39;
 }
 topbarmetricc {
   border: 1px solid #009bab;
-  
+
   color: #009bab;
 }
 weather34menumarkerblue,
@@ -6004,7 +6004,7 @@ wfstriketoday {
 wfstriketoday {
   background: 0;
   border: 1px solid rgba(245, 247, 252, 0.02);
-  
+
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -6710,7 +6710,7 @@ maxtempgreen {
   top: 6px;
   position: absolute;
   border: 1px solid rgba(245, 247, 252, 0.02);
-  
+
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -6738,7 +6738,7 @@ maxtempgreen {
 }
 .grid > weather34topmodule {
   border: 1px solid rgba(245, 247, 252, 0.02);
-  
+
   border-top: 15px solid rgba(37, 50, 58, 0.3);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -6764,7 +6764,7 @@ maxtempgreen {
   -moz-osx-font-smoothing: grayscale;
   height: 195px;
   border: 1px solid rgba(245, 247, 252, 0.02);
-  
+
   border-bottom: 15px solid rgba(37, 50, 58, 0.3);
   border-top: 15px solid rgba(37, 50, 58, 0.3);
   -webkit-box-sizing: border-box;
@@ -6790,7 +6790,7 @@ maxtempgreen {
 }
 .gridfooter > weather34footer {
   border: 1px solid rgba(245, 247, 252, 0.02);
-  
+
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
@@ -6818,7 +6818,7 @@ maxtempgreen {
   -moz-osx-font-smoothing: grayscale;
   height: 65px;
   border: 1px solid rgba(245, 247, 252, 0.02);
-  
+
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
@@ -7010,7 +7010,7 @@ weather34thetime {
   height: 1rem;
   width: 3.4rem;
   border: 1px solid #333;
-  
+
   overflow: hidden;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -7139,7 +7139,7 @@ weather34toptitle {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     border: 1px solid rgba(245, 247, 252, 0.02);
-	
+
     border-bottom: 15px solid rgba(37, 50, 58, 0.3);
     border-top: 15px solid rgba(37, 50, 58, 0.3);
     -webkit-box-sizing: border-box;
@@ -7187,7 +7187,7 @@ weather34toptitle {
   }
   .gridfooter > weather34footer {
     border: 1px solid rgba(245, 247, 252, 0.02);
-	
+
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
@@ -7395,6 +7395,7 @@ weather34toptitle {
   }
   .homeweathercompass1 {
     margin-left: 80px;
+	margin-top:-25px
   }
 
   .daylightmoduleposition {
@@ -7437,14 +7438,15 @@ weather34toptitle {
    .weather34beaufort1-3,
 .weather34beaufort3-4,
 .weather34beaufort4-5,
-.weather34beaufort6 {   
-  margin-left: 134px;  
-} 
+.weather34beaufort6 {
+  margin-left: 134px;
+  margin-top:133px
+}
 
 .weather34avgtoday {
   margin-top:120px;
   margin-left:5px;
-  
+
 }
 .averagetoday1 {
  margin-left: -15px;
@@ -7453,22 +7455,22 @@ weather34toptitle {
 
 
 .weather34windruntoday1 {
-  
+
   margin-top:-1px;
   margin-left:270px;
-  
-  
+
+
 }
 .windruntoday1 {
   margin-left: 250px;
   margin-top:-24px;
 }
 
-  
 
-  
-  
-  
+
+
+
+
 }
 
 @media screen and (max-width: 640px) {
@@ -7491,7 +7493,7 @@ weather34toptitle {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     border: 1px solid rgba(245, 247, 252, 0.02);
-	
+
     border-bottom: 15px solid rgba(37, 50, 58, 0.3);
     border-top: 15px solid rgba(37, 50, 58, 0.3);
     -webkit-box-sizing: border-box;
@@ -7525,7 +7527,7 @@ weather34toptitle {
   }
   .gridfooter > weather34footer {
     border: 1px solid rgba(245, 247, 252, 0.02);
-	
+
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
@@ -7696,14 +7698,14 @@ weather34toptitle {
  .weather34beaufort1-3,
 .weather34beaufort3-4,
 .weather34beaufort4-5,
-.weather34beaufort6 {   
-  margin-left: 120px;  
-} 
+.weather34beaufort6 {
+  margin-left: 115px;
+}
 
 .weather34avgtoday {
   margin-top:120px;
   margin-left:5px;
-  
+
 }
 .averagetoday1 {
  margin-left: -15px;
@@ -7712,11 +7714,11 @@ weather34toptitle {
 
 
 .weather34windruntoday1 {
-  
+
   margin-top:-1px;
   margin-left:232px;
-  
-  
+
+
 }
 .windruntoday1 {
   margin-left: 215px;
