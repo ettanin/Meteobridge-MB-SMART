@@ -1,4 +1,6 @@
-<?php require_once('livedata.php');require_once('common.php');?>
+<?php require_once('livedata.php');require_once('common.php');
+//weather34 mb-smart wind speed - direction release August 2019//
+?>
 <meta http-equiv="Content-Type: text/html; charset=UTF-8" />
 <style>
 .thearrow2{-webkit-transform:rotate(<?php echo $weather["wind_direction"];?>deg);-moz-transform:rotate(<?php echo $weather["wind_direction"];?>deg);-o-transform:rotate(<?php echo $weather["wind_direction"];?>deg);-ms-transform:rotate(<?php echo $weather["wind_direction"];?>deg);transform:rotate(<?php echo $weather["wind_direction"];?>deg);position:absolute;z-index:200;top:0;left:50%;margin-left:-5px;width:10px;height:50%;-webkit-transform-origin:50% 100%;-moz-transform-origin:50% 100%;-o-transform-origin:50% 100%;-ms-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transition-duration:3s;-moz-transition-duration:3s;-o-transition-duration:3s;-ms-transition-duration:3s;transition-duration:3s}
@@ -14,8 +16,6 @@ spancalm{postion:relative;font-family:weathertext,Arial;font-size:26px;}</style>
 } else {
     echo "<onlinenew></onlinenew> ".$weather["time"];
 }?></div><br />
-
-
 <div class="weather34windspeed">
 <weather34windunitidspeed><?php echo $lang['Avg Wind'];?></weather34windunitidspeed>
 <?php
@@ -71,9 +71,6 @@ elseif ($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]*$toKnots>=2
 } elseif ($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]*$toKnots<16.1987) {
     echo "<div class=windconvertercirclegreen1><tgreen>".number_format($weather["wind_gust_speed"]*1.609343502101025, 1)." </tgreen><smallrainunit>kmh</smallrainunit>";
 }
-
-
-
 ?></div></div>
 <div class="homeweathercompass1"><div class="homeweathercompass-line1"><div class="thearrow2"></div><div class="thearrow1"></div></div>
 <div class="text1"><div class="windvalue1" id="windvalue"><?php echo $weather["wind_direction"],"&deg;";?></div></div>
@@ -180,7 +177,6 @@ if ($weather["wind_speed_bft"]>=12) {
     echo '<div class=weather34beaufort1-3>'.$beaufort0. "&nbsp; ".$weather["wind_speed_bft"];
 }?>
  <weather34bftspan>BFT</weather34bftspan></div>
-
 <div class=weather34avgtoday>
 <?php echo ' &nbsp;<windaveragevalue>',number_format($weather['wind_speed_avg30'],1)."</windaveragevalue><weather34windrunspan>"
  .$weather["wind_units"];?></weather34windrunspan></div>
