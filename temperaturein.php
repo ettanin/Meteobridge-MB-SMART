@@ -91,7 +91,7 @@ else if($weather["temp_units"]=='F' && $weather["realfeel"]>=32 ){ echo "<valuet
 else if($weather["temp_units"]=='F' && $weather["realfeel"]>14 ){ echo "<valuetextheading1>",$lang['Feelslike']."</valuetextheading1><br><div class=tempconverter1><div class=tempmodulehome-10-0c>".$weather['realfeel']."&deg;<smalltempunit2>".$weather["temp_units"];}
 else if($weather["temp_units"]=='F' && $weather["realfeel"]>-50 ){ echo "<valuetextheading1>",$lang['Feelslike']."</valuetextheading1><br><div class=tempconverter1><div class=tempmodulehome-50-10c>".$weather['realfeel']."&deg;<smalltempunit2>".$weather["temp_units"];}
 ?><smalltempunit2></div></div></div>
-<div class="heatcircle2"><div class="heatcircle-content"><valuetextheading1>Avg <?php echo $lang['Today']?></valuetextheading1>
+<div class="heatcircle2"><div class="heatcircle-content"><valuetextheading1><?php echo $lang['Avg'] ." ".$lang['Today']?></valuetextheading1>
 <?php //avg today
 if ($weather["temp_units"]=='C' &&  $weather["temp_avgtoday"]>=40){echo "<div class=tempconverter1><div class=tempmodulehome40-50c>". $weather["temp_avgtoday"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 else if ($weather["temp_units"]=='C' &&  $weather["temp_avgtoday"]>=35){echo "<div class=tempconverter1><div class=tempmodulehome35-40c>". $weather["temp_avgtoday"]."&deg;<smalltempunit2>".$weather["temp_units"];}
