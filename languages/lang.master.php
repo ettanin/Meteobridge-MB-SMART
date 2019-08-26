@@ -1,8 +1,9 @@
 <?php
 /*
 -----------------
-Language Translation File for Weather34 MB SMART 
-Language: English
+Language Master Translation File for Weather34 MB SMART 
+Language:
+Translated By:
 Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
 Revised: August 2019
