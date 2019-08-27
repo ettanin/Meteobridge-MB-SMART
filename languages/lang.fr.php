@@ -186,9 +186,11 @@ $lang['Nextnewmoon']            = 'Nouvelle lune';
 $lang['Nextfullmoon']           = 'Pleine lune';
 $lang['Luminance']              = 'Luminance';
 $lang['Moonphase']              = 'Ephémérides';
-$lang['Estimated']              = 'Luminosité';
+$lang['Estimated']              = '&nbsp;&nbsp;Estimé';
 $lang['Daylight']               = 'Du Jour';
 $lang['Darkness']               = 'Restant';
+$lang['Darkness1']              = '&nbsp;&nbsp;Restant';
+$lang['Daylight1']              = '&nbsp;&nbsp;Du Jour';
 $lang['Daysold']                = 'Jours précedents';
 $lang['First Light']			= 'Prem Lum';
 $lang['Last Light']				= 'La Dern Lum';
@@ -209,6 +211,9 @@ $lang['Fullmoon']               = 'Pleine lune';
 $lang['Waninggibbous']          = 'Gibbeuse Décroissante';
 $lang['Lastquarter']            = 'Dernier quartier';
 $lang['Waningcrescent']         = 'Descendante';
+$lang['Set']        			= 'Coucher';
+$lang['Rise']        		    = 'Lever';
+
 //trends
 $lang['Falling']                = 'Chute';
 $lang['Rising']                 = 'Hausse';
