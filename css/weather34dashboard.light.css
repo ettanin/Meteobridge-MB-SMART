@@ -6620,6 +6620,7 @@ airdescription {
   display: flex;
   top: 15px;
   left: 15px;
+  text-transform:capitalize
 }
 .windmaxthisyear {
   font-size: 0.5em;
@@ -6629,6 +6630,7 @@ airdescription {
   display: flex;
   top: 15px;
   left: 145px;
+  text-transform:capitalize
 }
 .tempminthisyear {
   font-size: 0.5em;
@@ -6638,6 +6640,7 @@ airdescription {
   display: flex;
   top: 15px;
   left: 15px;
+  text-transform:capitalize
 }
 .tempmaxthisyear {
   font-size: 0.5em;
@@ -6646,7 +6649,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 15px;
-  left: 155px;
+  left: 155px;text-transform:capitalize
 }
 .tempavgthisyear {
   font-size: 0.5em;
@@ -6655,7 +6658,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 15px;
-  left: 85px;
+  left: 85px;text-transform:capitalize
 }
 .rainavgthisyear {
   font-size: 0.5em;
@@ -6664,7 +6667,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 15px;
-  left: 80px;
+  left: 80px;text-transform:capitalize
 }
 .rainmaxthismonth {
   font-size: 0.5em;
@@ -6673,7 +6676,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 15px;
-  left: 15px;
+  left: 15px;text-transform:capitalize
 }
 .rainmaxthisyear {
   font-size: 0.5em;
@@ -6682,7 +6685,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 15px;
-  left: 150px;
+  left: 150px;text-transform:capitalize
 }
 .wmonthmax {
   font-size: 0.3em;
@@ -6691,7 +6694,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 5px;
-  left: 15px;
+  left: 15px;text-transform:capitalize
 }
 .wyearmax {
   font-size: 0.3em;
@@ -6700,7 +6703,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 5px;
-  left: 150px;
+  left: 150px;text-transform:capitalize
 }
 .tmonthmax {
   font-size: 0.3em;
@@ -6709,7 +6712,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 5px;
-  left: 20px;
+  left: 20px;text-transform:capitalize
 }
 .tyearmax {
   font-size: 0.3em;
@@ -6718,7 +6721,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 5px;
-  left: 150px;
+  left: 150px;text-transform:capitalize
 }
 .tyearconv {
   font-size: 0.3em;
@@ -6727,7 +6730,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 33px;
-  left: 155px;
+  left: 155px;text-transform:capitalize
 }
 .tmonthconv {
   font-size: 0.3em;
@@ -6736,7 +6739,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 33px;
-  left: 20px;
+  left: 20px;text-transform:capitalize
 }
 .wyearconv {
   font-size: 0.3em;
@@ -6745,7 +6748,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 33px;
-  left: 150px;
+  left: 150px;text-transform:capitalize
 }
 .wmonthconv {
   font-size: 0.3em;
@@ -6754,7 +6757,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 33px;
-  left: 15px;
+  left: 15px;text-transform:capitalize
 }
 .tyearavg {
   font-size: 0.3em;
@@ -6763,7 +6766,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 5px;
-  left: 75px;
+  left: 75px;text-transform:capitalize
 }
 .tavgconv {
   font-size: 0.3em;
@@ -6772,7 +6775,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 33px;
-  left: 85px;
+  left: 85px;text-transform:capitalize
 }
 .ryearavg {
   font-size: 0.3em;
@@ -6781,7 +6784,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 5px;
-  left: 80px;
+  left: 80px;text-transform:capitalize
 }
 
 tunit {

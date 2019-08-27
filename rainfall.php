@@ -1,5 +1,5 @@
 <?php  //weather34 rain module 15th Feb 2019 //
-include_once('livedata.php');include('common.php')?><div class="updatedtime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div>  
+include_once('livedata.php');include('common.php');?><div class="updatedtime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div>  
 <div class="weather34i-rairate-bar"><div id="raincontainer"><div id="weather34rainbeaker">
 <div id="weather34rainwater" style="height:<?php if ($weather["rain_units"] =='mm' && $weather["rain_today"]){echo $weather["rain_today"]*2.5+1;}else if ($weather["rain_units"] =='in' && $weather["rain_today"]){echo $weather["rain_today"]*25.4*2.5;}?>px;">      
 </div></div></div></div>  
@@ -13,6 +13,7 @@ echo " &nbsp;<valuetextheading1>".date('Y')."</valuetextheading1> <br><div class
 <div class="heatcircle2"><div class="heatcircle-content">
 <?php  //rain month
 echo " &nbsp;&nbsp;&nbsp;<valuetextheading1 style='text-transform:capitalize'>".strftime('%B',time())."</valuetextheading1> <br><div class=tempconverter1><div class=rainmodulehome><raiblue>".$weather["rain_month"]."</raiblue><smallrainunit2>".$weather["rain_units"];?>
+
 </smallrainunit2></div></div></div></div>
 <div class="heatcircle3"><div class="heatcircle-content">
 <?php  //rain last hour

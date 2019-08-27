@@ -18,7 +18,7 @@ else  echo "<maxtempblue>".$weather["rainmmax"]  ;echo "</maxtempblue><wunit>".$
 ?>
 </div></wunit>
 
-<div class="wmonthmax"><?php echo date('M Y')?></div>
+<div class="wmonthmax"><?php echo strftime('%B',time());?></div>
 <div class="tmonthconv"><?php 
 if ($weather["rain_units"] =='mm'){ echo number_format($weather["rainmmax"]*0.0393701,2)."in";}
 else if ($weather["rain_units"] =='in'){echo number_format($weather["rainmmax"]*25.400013716,1)."mm";}
@@ -33,7 +33,7 @@ else if ($weather["rainlastmonth"]>0){echo "<maxtempblue>".$weather["rainlastmon
 ?>
 </div></wunit>
 
-<div class="ryearavg"><?php $lastMonth = date("M Y", mktime() - 31*3600*24);echo $lastMonth?></div>
+<div class="ryearavg"><?php $lastMonth = strftime('%B',time()- 31*3600*24);echo $lastMonth?></div>
 <div class="tavgconv"><?php 
 if ($weather["rain_units"] =='mm'){ echo number_format($weather["rainlastmonth"]*0.0393701,2)."in";}
 else if ($weather["rain_units"] =='in'){echo number_format($weather["rainlastmonth"]*25.400013716,1)."mm";}
