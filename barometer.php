@@ -34,12 +34,12 @@ valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 <?php echo '<valuetext>Min ('.$weather["thb0seapressmintime"].')<br><minblue>',$weather["barometer_min"],'&nbsp;</minblue><pressureunits>',$weather["barometer_units"],' </pressureunits></valuetext></div>';?></a>
 </div>
 <div class="trendpressure">
-<?php  echo "<valuetexttr>&nbsp;Tendency (hr)<valuetexttr>";
-if ($weather["barometer_trend"] < 0) {echo '<fall> '.$fallingsymbol.'&nbsp;</fall><valuetextba>';
+<?php  echo "<valuetexttr>".$lang['Last Hour']."<valuetexttr>";
+if ($weather["barometer_trend"] < 0) {echo '<br><fall> '.$fallingsymbol.'</fall>&nbsp;<valuetextba>';
 echo number_format($weather["barometer_trend"],2), '</valuetextba><pressureunits>';}
 else if ($weather["barometer_trend"] > 0) {
-echo '<rising><rise> '.$risingsymbol.'&nbsp;</rise>+<valuetextba> ';echo number_format($weather["barometer_trend"],2), ' </valuetextba>';}
-else echo '<ogreen> '.$steadysymbol.'</ogreen><valuetextba>'.number_format($weather["barometer_trend"],2).'</valuetextba></div>';?></valuetext>
+echo '<br><rising><rise> '.$risingsymbol.'&nbsp;</rise>+<valuetextba> ';echo number_format($weather["barometer_trend"],2), ' </valuetextba>';}
+else echo '<br><ogreen> '.$steadysymbol.'</ogreen><valuetextba>'.number_format($weather["barometer_trend"],2).'</valuetextba></div>';?></valuetext>
 </div>
 <div class="barometerconverter">
 <?php echo "";
@@ -67,6 +67,9 @@ else echo '<div class="pressuretext"> <ogreen>'.$lang['Steady'].'</ogreen> </div
 <div class="barometerlimits"><div class='weather34-barometerruler'>
 <?php if ($weather["barometer_units"]=='mb' OR $weather["barometer_units"]=="hPa"){echo "<weather34-barometerlimitmin><value>950</weather34-barometerlimitmin><weather34-barometerlimitmax><value>1050</weather34-barometerlimitmax>";}
 else echo "<weather34-barometerlimitminf><value>28</barometerlimitminf><weather34-barometerlimitmaxf><value>31</weather34-barometerlimitmaxf>";?></div></div></div>
+
+
+
 <?php //WEATHER34 pure css UV-Index above 8  pop up alert 
  if ($notifications=='yes' && $weather["uv"]>=8){?><div id="weather34lightningdialog-notify">  <div class="weather34lightningdialog-box">
 <div class="weather34lightningbackground-alert"></div><div class="header"> <div class="weather34lightningbackground-alert"></div>
