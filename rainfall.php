@@ -12,7 +12,7 @@ echo " &nbsp;<valuetextheading1>".date('Y')."</valuetextheading1> <br><div class
 <smallrainunit2></div></div></div>
 <div class="heatcircle2"><div class="heatcircle-content">
 <?php  //rain month
-echo " &nbsp;&nbsp;&nbsp;<valuetextheading1>".date('F')."</valuetextheading1> <br><div class=tempconverter1><div class=rainmodulehome><raiblue>".$weather["rain_month"]."</raiblue><smallrainunit2>".$weather["rain_units"];?>
+echo " &nbsp;&nbsp;&nbsp;<valuetextheading1 style='text-transform:capitalize'>".strftime('%B',time())."</valuetextheading1> <br><div class=tempconverter1><div class=rainmodulehome><raiblue>".$weather["rain_month"]."</raiblue><smallrainunit2>".$weather["rain_units"];?>
 </smallrainunit2></div></div></div></div>
 <div class="heatcircle3"><div class="heatcircle-content">
 <?php  //rain last hour
