@@ -7191,14 +7191,14 @@ weather34toptitle {
   .barometerlimits {
     margin-left: 45px;
   }
-  .weather34sunsetday {
-    margin-left: 232px;
-  }
   .weather34sundarkday {
     margin-left: 255px;
   }
+  .weather34sunsetday {
+    margin-left: 220px;
+  }
   .weather34sunriseday {
-    margin-left: -33px;
+    margin-left: -35px;
   }
   .homeweathercompass1 {
     margin-left: 80px;
@@ -7214,6 +7214,16 @@ weather34toptitle {
   }
   .weather34sunlightday {
     margin-left: -30px;
+  }
+  .newmoon1 {
+    margin-left: 140px;
+  }
+  .fullmoon1 {
+    margin-left: 145px;
+  }
+  .weather34luminancem2
+  {
+    margin-left: 40px;
   }
   .logoweather34,
   .weather34-mbsmartlogo {
@@ -7428,7 +7438,7 @@ weather34toptitle {
     margin-left: 15px;
   }
   .weather34sunsetday {
-    margin-left: 200px;
+    margin-left: 195px;
   }
   .weather34sundarkday {
     margin-left: 220px;
@@ -7453,6 +7463,17 @@ weather34toptitle {
   .weather34sunlightday {
     margin-left: -10px;
   }
+  .newmoon1 {
+    margin-left: 115px;
+  }
+  .fullmoon1 {
+    margin-left: 120px;
+  }
+  .weather34luminancem2
+  {
+    margin-left: 15px;
+  }
+
   .logoweather34,
   .weather34-mbsmartlogo {
     display: none;
