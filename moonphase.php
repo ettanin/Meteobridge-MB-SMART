@@ -144,15 +144,15 @@ foreach ($meteor_events as $meteor_check) {
 if ($meteobridgeapi[153]==0) {echo '<img src="css/moonphases/NEW-MOON.svg" width="110px"></img>';}
 else if ($meteobridgeapi[153]==2 ) {echo '<img src="css/moonphases/FIRST-QUARTER.svg" width="110px"></img>';}
 else if ($meteobridgeapi[153]==4 ) {echo '<img src="css/moonphases/FULL-MOON.svg" width="110px"></img>';}
-else if ($meteobridgeapi[153]==6) {echo '<img src="css/moonphases/LAST-QUARTER.svg" width="110px"></img>';}
+else if ($meteobridgeapi[153]==6 && $weather['luminance']<55 && $weather['luminance']>45) {echo '<img src="css/moonphases/LAST-QUARTER.svg" width="110px"></img>';}
 else {echo '
 	<svg id="weather34 simple moonphase"><circle cx="50" cy="50" r="49.5" fill="rgba(86, 95, 103, 1)"/><path id="weather34shape" fill="rgba(230, 232, 239, .3)"/></svg>
 <script> //simple moonphase for weather34
-weather34Moon();function weather34Moon() {var day = Date.now() / 86400000;var referenceweather34Moon = Date.UTC(1980, 0, 18, 0, 0, 0, 0);
+weather34Moon();function weather34Moon() {var day = Date.now() / 86400000;var referenceweather34Moon = Date.UTC(2018, 0, 15, 0, 0, 0, 0);
 var refweather34Day = referenceweather34Moon / 86400000;var phase = (day - refweather34Day) % 29.53058868;var s=String;
 switch (Math.round(phase / 3.75)){}document.getElementById("weather34moonphases");
 var weather34moonCurve;var lf=Math.min(3-4*(phase/30),1);var lc=Math.abs(lf*50);	var lb=(lf<0) ? "0" : "1";
-var rf=Math.min(3+4*((phase-30)/30*0.86666),1);	var rc=Math.abs(rf*50);	var rb=(rf<0) ? "0" : "1";weather34moonCurve="M 50,0 "+ "a "+s(lc)+",50 0 0 "+lb+" 0,100 "+ "a "+s(rc)+",50 0 0 "+rb+" 0,-100";
+var rf=Math.min(3+4*((phase-30)/30),1);	var rc=Math.abs(rf*50);	var rb=(rf<0) ? "0" : "1";weather34moonCurve="M 50,0 "+ "a "+s(lc)+",50 0 0 "+lb+" 0,100 "+ "a "+s(rc)+",50 0 0 "+rb+" 0,-100";
 document.getElementById("weather34shape").setAttribute("d",weather34moonCurve);}</script>';}
 ?>
      </div></div></div>

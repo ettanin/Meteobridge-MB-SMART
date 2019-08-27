@@ -1,6 +1,4 @@
 <?php include('livedata.php');include('common.php');date_default_timezone_set($TZ);$json_string=file_get_contents('jsondata/eqnotification.txt');$parsed_json=json_decode($json_string,true);
-$software    = 'Cumulus <span>Software</span>';
-$designedfor    = '<br>For Cumulus';
 $magnitude=number_format($parsed_json{0}{'magnitude'},1);
 $eqtitle=$parsed_json{0}['location'];
 $time=$parsed_json{0}['date_time'];
@@ -35,7 +33,7 @@ $eventime3=date($timeFormatShort,strtotime("$time3"));?>
  <?php
 // CALCULATE THE DISTANCE OF LATEST EARTHQUAKE //
 // FROM LOCATION OF HOMEWEATHER STATION //
-// Brian Underdown July 28th 2016 updated May 25th 2017//
+// Brian Underdown July 28th 2016 updatedAugust 2019//
 $eqdist;
 if ($weather["wind_units"] == 'mph') {
 	$eqdist = round(distance($lat, $lon, $lati, $longi) * 0.621371) . " mi";} else {$eqdist = round(distance($lat, $lon, $lati, $longi)) . " km";}

@@ -7008,6 +7008,13 @@ weather34toptitle {
   right: 10px;
   color: #009bab;
 }
+.eqdistconverter {
+  font-size: 12px;
+  position: absolute;
+  margin-left: 245px;
+  margin-top: -15px;
+}
+
 @media screen and (max-width: 960px) {
   .grid1 {
     display: grid;
@@ -7254,7 +7261,10 @@ weather34toptitle {
   margin-top:-24px;
 }
 
-
+.eqdistconverter {
+  margin-left: 270px;
+ 
+}
 
 
 
@@ -7487,7 +7497,10 @@ weather34toptitle {
   margin-left: 215px;
   margin-top:-24px;
 }
-
+.eqdistconverter {
+  margin-left: 240px;
+ 
+}
 }
 canvas,
 iframe,

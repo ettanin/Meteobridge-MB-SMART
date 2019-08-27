@@ -19,7 +19,7 @@ $shorttime=date( $timeFormatShort, strtotime("$time1") );
 <?php
 // CALCULATE THE DISTANCE OF LATEST EARTHQUAKE //
 // de LOCATION OF HOMEWEATHER STATION //
-// Brian Underdown July 28th 2016 //
+// Brian Underdown July 28th 2016 revised August 2019//
 $eqdist;if ($weather["wind_units"] == 'mph') {$eqdist = round(distance($lat, $lon, $lati, $longi) * 0.621371) ."mi";} else {$eqdist = round(distance($lat, $lon, $lati, $longi)) ."km";}
 $eqdista;if ($weather["wind_units"] == 'mph') {$eqdista = round(distance($lat, $lon, $lati, $longi) * 0.621371) ."<smallrainunit>mi";} else {$eqdista = round(distance($lat, $lon, $lati, $longi)) ."<smallrainunit>km";} ?>  
 <div class="updatedtime">
@@ -28,7 +28,7 @@ $updated=filemtime('jsondata/eqnotification.txt');
 echo  $online, " ",date($timeFormat, $updated);?></span>
  </div>
 <br />
-<div class="tempindoorconverter">
+<div class="eqdistconverter">
 <?php //chuck
 if($eqdista <= 200){echo "<div class=tempconvertercirclered>".$eqdista ;}
 else if($eqdista <= 500){echo "<div class=tempconvertercircleorange>".$eqdista ;}
