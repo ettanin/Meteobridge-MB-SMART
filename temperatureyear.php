@@ -1,4 +1,4 @@
-<?php include('livedata.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
+<?php include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
 <div class="topframe">
 
 <div class="tempminthisyear">
@@ -47,15 +47,11 @@ else if ($weather["temp_units"]=='F'){echo anyToC($weather["tempymin"])."&deg;C"
  else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>-50){ echo "<maxtempblue>", $weather["tempyearavg"]  ;echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"] ; }
  ?></div></tunit>
 
-<div class="tyearavg">Average <?php echo date('Y')?></div>
+<div class="tyearavg"><?php echo $lang['Average']. "  ".date('Y')?></div>
 <div class="tavgconv"><?php 
 if ($weather["temp_units"]=='C'){ echo anyToF($weather["tempyearavg"])."&deg;F";}
 else if ($weather["temp_units"]=='F'){echo anyToC($weather["tempyearavg"])."&deg;C";}
 ?></div>
-
-
-
-
 
 <div class="yearwordtempbig">Temperature</div>
 <div class="tempmaxthisyear">

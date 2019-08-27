@@ -9,7 +9,7 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 
-include('livedata.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
+include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
 <div class="topframe">
 <div class="windmaxthismonth">
 <?php //wind max month
@@ -60,7 +60,7 @@ else if ($weather["wind_units"] =='m/s'){echo number_format($weather["windmmax"]
 
 
  ;?></div></wunit>
-<div class="tyearavg">Average <?php echo date('Y')?></div>
+<div class="tyearavg"><?php echo $lang['Average']. "  ".date('Y')?></div>
 <div class="tavgconv"><?php 
 if ($weather["wind_units"] =='mph'){ echo number_format($weather["windspeedyearavg"]*1.60934,1)." km/h";}
 else if ($weather["wind_units"] =='km/h'){echo number_format($weather["windspeedyearavg"]*0.621371,1)." mph";}

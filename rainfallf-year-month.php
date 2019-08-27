@@ -9,7 +9,7 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 
-include('livedata.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
+include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
 <div class="topframe">
 <div class="rainmaxthismonth">
 <?php //rain month 
@@ -49,7 +49,7 @@ if($weather["rainymax"]>=1000){ echo "<maxtempblue>".round($weather["rainymax"],
 else  echo "<maxtempblue>".$weather["rainymax"]  ;echo "</maxtempblue><wunit>".$weather["rain_units"];
 ?>
 </div></wunit>
-<div class="wyearmax">Total <?php echo date('Y')?></div>
+<div class="wyearmax"><?php echo $lang['Rain']."  ".date('Y')?></div>
 <div class="tyearconv"><?php 
 if ($weather["rain_units"] =='mm'){ echo number_format($weather["rainymax"]*0.0393701,2)."in";}
 else if ($weather["rain_units"] =='in'){echo number_format($weather["rainymax"]*25.400013716,1)."mm";}
