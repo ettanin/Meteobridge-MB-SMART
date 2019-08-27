@@ -40,10 +40,10 @@ $darkhours = 23 - $lighthours; $darkminutes = 60 - $lightmins;if ($darkminutes<1
 <?php if($elev>=0){$elev1=$_SunPos->elevation."&deg;<div class=sunaboveweather34>&nbsp;</div>";}else if($elev<0){$elev1=$_SunPos->elevation."&deg;<div class=sunbelowweather34>&nbsp;</div>";}?>
 <div class="moduleupdatetime"><?php echo $online.' '.date($timeFormat);?></div><div class="daylightmoduleposition" > 
 <?php echo '
-<div class="weather34sunlightday"><weather34daylightdaycircle></weather34daylightdaycircle> '.$daylight.' hrs<br>Daylight</div>
-<div class="weather34sundarkday">'.$darkhours,":".$darkminutes.' hrs <weather34darkdaycircle></weather34darkdaycircle><br>Darkness</div>
-<div class="weather34sunriseday">'.$sunuphalf.' Sunrise<br>'.$nextrisetxt.' '.$nextrise.'<br>First Light (<blueu>'.$nextfirstlight.'</blueu>)</div>
-<div class="weather34sunsetday">'.$sundownhalf.' Sunset<br>'.$nextsettxt.' '.$nextset.'<br>Last Light (<blueu>'.$nextlastlight.'</blueu>)</div>
+<div class="weather34sunlightday"><weather34daylightdaycircle></weather34daylightdaycircle> '.$daylight.' hrs<br>'.$lang['Daylight'].'</div>
+<div class="weather34sundarkday">'.$darkhours,":".$darkminutes.' hrs <weather34darkdaycircle></weather34darkdaycircle><br>'.$lang['Darkness'].'</div>
+<div class="weather34sunriseday">'.$sunuphalf.' '.$lang['Sunrise'].'<br>'.$nextrisetxt.' '.$nextrise.'<br>'.$lang['First Light'].' (<blueu>'.$nextfirstlight.'</blueu>)</div>
+<div class="weather34sunsetday">'.$sundownhalf.' '.$lang['Sunset'].'<br>'.$nextsettxt.' '.$nextset.'<br>'.$lang['Last Light'].' (<blueu>'.$nextlastlight.'</blueu>)</div>
 <div class="daylightword"><value>Daylight</value></div>
 <div class="circleborder"></div><div class="circleborder2"></div>
 <div class="sundialcontainerdiv2" ><div id="sundialcontainer" class=sundialcontainer >

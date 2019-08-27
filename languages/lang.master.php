@@ -1,9 +1,8 @@
 <?php
 /*
 -----------------
-Language Master Translation File for Weather34 MB SMART 
-Language:
-Translated By:
+Language Translation File for Weather34 MB SMART 
+Language: English
 Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
 Revised: August 2019
@@ -198,6 +197,8 @@ $lang['Hrs']                     = ' hrs';
 $lang['Min']                     = ' min';
 $lang['TotalDarkness']           = 'Total Darkness';
 $lang['TotalDaylight']           = 'Total Daylight';
+$lang['First Light']			= 'First Light';
+$lang['Last Light']				= 'Last Light';
 $lang['Below']                   = 'is below the horizon';
 $lang['Newmoon']                 = 'New Moon';
 $lang['Waxingcrescent']          = 'Waxing Crescent';

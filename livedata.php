@@ -656,121 +656,21 @@ if ($weather["wind_units"] == 'mph') {
 } else if ($weather["wind_units"] == 'm/s') {
 	$toKnots = 1.943844;
 }
-
-
-
-// darksky api forecast and current script for HOMEWEATHERSTATION gets data from jsondata/darksky.json Friday 2nd December 2016 //
-//$units = 'auto';  // Read the API docs for full details // default is auto
-date_default_timezone_set($TZ);
-$json = 'jsondata/darksky.txt'; 
-$json = file_get_contents($json); 
-$response = json_decode($json, true);       
-if ($response != null) {
-  //darksky api Current SKY Conditions
-  $darkskycurTime = $response['currently']['time'];
-  $darkskycurSummary = $response['currently']['summary'];
-  $darkskycurIcon = $response['currently']['icon'];
-  $darkskycurTemp = round($response['currently']['temperature']);
-  $darkskycurCover = $response['currently']['cloudCover']*100;   
-  //darksky api Hourly Forecast
-  $darkskyhourlySummary = $response['hourly']['summary'];
-  $darkskyhourlyIcon = $response['hourly']['icon'];
-  $darkskyhourlyUV = $response['hourly']['uvIndex'];
-  $darkskyhourlyCond= array();
-    foreach ($response['hourly']['data'] as $td) {
-      $darkskyhourlyCond[] = $td;
-    }
-  //darksky api Daily Forecast
-  $darkskydaySummary = $response['daily']['summary'];
-  $darkskydayIcon = $response['daily']['icon'];
-  $darkskydayCond= array();
-    foreach ($response['daily']['data'] as $d) {
-      $darkskydayCond[] = $d;
-    }}
-//end darksky api and convert winspeed below
-
-
-
 $o='Designed by weather34.com';
 $designedby='Designed by weather34.com';
 ?>
 <?php 
-date_default_timezone_set($TZ);
-// meteor shower alternative by betejuice cumulus forum
-$meteor_default="No Meteor";
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 1, 3),"event_title"=>"Quadrantids Meteor","event_end"=>mktime(23, 59, 59, 1, 4),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 1, 5),"event_title"=>"Quadrantids Meteor","event_end"=>mktime(23, 59, 59, 1, 12),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 12, 28,2019),"event_title"=>"Quadrantids Meteor","event_end"=>mktime(23, 59, 59, 1, 2,2020),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 12, 28,2020),"event_title"=>"Quadrantids Meteor","event_end"=>mktime(23, 59, 59, 1, 2,2021),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 12, 28,2021),"event_title"=>"Quadrantids Meteor","event_end"=>mktime(23, 59, 59, 1, 2,2022),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 12, 28,2022),"event_title"=>"Quadrantids Meteor","event_end"=>mktime(23, 59, 59, 1, 2,2023),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 12, 28,2023),"event_title"=>"Quadrantids Meteor","event_end"=>mktime(23, 59, 59, 1, 2,2024),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 12, 28,2024),"event_title"=>"Quadrantids Meteor","event_end"=>mktime(23, 59, 59, 1, 2,2025),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 4, 9),"event_title"=>"Lyrids Meteor","event_end"=>mktime(20, 59, 59, 4, 20),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 4, 21),"event_title"=>"Lyrids Meteor","event_end"=>mktime(23, 59, 59, 4, 22),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 5, 5),"event_title"=>"ETA Aquarids","event_end"=>mktime(23, 59, 59, 5, 6),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 7, 20),"event_title"=>"Delta Aquarids","event_end"=>mktime(23, 59, 59, 7, 28),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 7, 29),"event_title"=>"Delta Aquarids","event_end"=>mktime(23, 59, 59, 7, 30),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 8, 1),"event_title"=>"Perseids Meteor","event_end"=>mktime(23, 59, 59, 8, 10),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 8, 11),"event_title"=>"Perseids Meteor <br><peak>".$info." For Next Two Days Peak Viewing Period</peak>","event_end"=>mktime(23, 59, 59, 8, 13),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 8, 14),"event_title"=>"Perseids Meteor","event_end"=>mktime(23, 59, 59, 8, 18),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 10, 6),"event_title"=>"Draconids","event_end"=>mktime(23, 59, 59, 10, 7),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 10, 20),"event_title"=>"Orionids Meteor","event_end"=>mktime(23, 59, 59, 10, 21),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 11, 4),"event_title"=>"South Taurids","event_end"=>mktime(23, 59, 59, 11, 5),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 11, 11),"event_title"=>"North Taurids","event_end"=>mktime(23, 59, 59, 11, 11),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 11, 13),"event_title"=>"Leonids Meteor","event_end"=>mktime(23, 59, 59, 11, 16),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 11, 17),"event_title"=>"Leonids Meteor","event_end"=>mktime(23, 59, 59, 11, 18),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 11, 19),"event_title"=>"Leonids Meteor","event_end"=>mktime(23, 59, 59, 11, 29),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 11, 30),"event_title"=>"Geminids Meteor","event_end"=>mktime(23, 59, 59, 12, 12),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 12, 13),"event_title"=>"Geminids Meteor","event_end"=>mktime(23, 59, 59, 12, 14),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 12, 16),"event_title"=>"Ursids Meteor","event_end"=>mktime(23, 59, 59, 12, 20),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 12, 21),"event_title"=>"Ursids Meteor","event_end"=>mktime(23, 59, 59, 12, 22),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 12, 23),"event_title"=>"Ursids Meteor","event_end"=>mktime(23, 59, 59, 12, 25),);
-$meteorNow=time();
-$meteorOP=false;
-foreach ($meteor_events as $meteor_check) {if ($meteor_check["event_start"]<=$meteorNow&&$meteorNow<=$meteor_check["event_end"]) {$meteorOP=true;$meteor_default=$meteor_check["event_title"];}};
-//end meteor
 $uptime=$weather["uptime"];function convert_uptime($uptime) {$dt1 = new DateTime("@0");$dt2 = new DateTime("@$uptime");  return $dt1->diff($dt2)->format('%a day(s) %h hrs %i min');}
-//lunar and solar eclipse /meteor shpwers advisory 2018-2019-2020
-$eclipse_default=" <noalert>No Current Weather <spanyellow><ored>Alerts ".$alert."</ored></spanyellow></noalert>";
-//2 jul solar 2019
-$eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 7, 2, 2019),"event_title"=>"<div style ='margin-top:5px;'>".$solareclipsesvg." <alert>Total Solar <spanyellow>Eclipse</spanyellow></alert>  </div>
-","event_end"=>mktime(23, 59, 59, 7, 2, 2019),);
-//16/17 jul solar 2019
-$eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 7, 16, 2019),"event_title"=>"<div style ='margin-top:5px;'>".$solareclipsesvg."  <alert>Partial Lunar <spanyellow>Eclipse</spanyellow></alert>  </div>
-","event_end"=>mktime(23, 59, 59, 7, 17, 2019),);
-//persieds 2019
-$eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 8, 12 , 2019),"event_title"=>"<div style ='margin-top:5px;'>".$meteorsvg." <alert>Perseids <spanyellow>Meteor Shower</spanyellow></alert>  </div>
-","event_end"=>mktime(23, 59, 59, 8, 13, 2019),);
-//leonids 2019
-$eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 11, 17 , 2019),"event_title"=>"<div style ='margin-top:5px;'>".$meteorsvg." <alert>Leonids <spanyellow>Meteor Shower</spanyellow></alert>  </div>
-","event_end"=>mktime(23, 59, 59, 11, 18, 2018),);
-//geminids 2019
-$eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 12, 13 , 2019),"event_title"=>"<div style ='margin-top:5px;'>".$meteorsvg." <alert>Geminids <spanyellow>Meteor Shower</spanyellow></alert>  </div>
-","event_end"=>mktime(23, 59, 59, 12, 14, 2019),);
-//5/6 dec solar 2019
-$eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 12, 26, 2019),"event_title"=>"<div style ='margin-top:5px;'>".$solareclipsesvg."  <alert>Annular Solar <spanyellow>Eclipse</spanyellow></alert>  </div>
-","event_end"=>mktime(23, 59, 59, 12, 26, 2019),);
-//Quadrantids 2020
-$eclipse_events[]=array("event_start"=>mktime(0, 0, 0, 1, 3 , 2020),"event_title"=>"<div style ='margin-top:5px;'>".$meteorsvg."  <alert>Quadrantids <spanyellow>Meteor Shower</spanyellow></alert>  </div>
-","event_end"=>mktime(23, 59, 59, 1, 4, 2020),);
-//output eclipse events
-$eclipseNow=time();$eclipseOP=false;foreach ($eclipse_events as $eclipse_check) {if ($eclipse_check["event_start"]<=$eclipseNow&&$eclipseNow<=$eclipse_check["event_end"]) {$eclipseOP=true;$eclipse_default=$eclipse_check["event_title"];}};	
-//end lunar and solar eclipse /meteor shpwers advisory 2018-2019-2020
-?>
-<?php // firerisk based on cumulus forum thread http://sandaysoft.com/forum/viewtopic.php?f=14&t=2789&sid=77ffab8f6f2359e09e6c58d8b13a0c3c&start=30
-$firerisk = number_format((((110 - 1.373 * $weather["humidity"] ) - 0.54 * (10.20 - $weather["temp"] )) * (124 * pow(10,(-0.0142 * $weather["humidity"] ))))/60,0);?>
-<?php //wetbulb
+// firerisk based on cumulus forum thread http://sandaysoft.com/forum/viewtopic.php?f=14&t=2789&sid=77ffab8f6f2359e09e6c58d8b13a0c3c&start=30
+$firerisk = number_format((((110 - 1.373 * $weather["humidity"] ) - 0.54 * (10.20 - $weather["temp"] )) * (124 * pow(10,(-0.0142 * $weather["humidity"] ))))/60,0);
+//wetbulb
 $Tc =($weather['temp']);$P = $weather['barometer'];$RH = $weather['humidity'];
 $Tdc = (($Tc - (14.55 + 0.114 * $Tc) * (1 - (0.01 * $RH)) - pow((2.5 + 0.007 * $Tc) * (1 - (0.01 * $RH)) , 3) - (15.9 + 0.117 * $Tc) * pow(1 - (0.01 * $RH),  14)));
 $E = (6.11 * pow(10 , (7.5 * $Tdc / (237.7 + $Tdc))));
 $wetbulbcalc = (((0.00066 * $P) * $Tc) + ((4098 * $E) / pow(($Tdc + 237.7) , 2) * $Tdc)) / ((0.00066 * $P) + (4098 * $E) / pow(($Tdc + 237.7) , 2));
 $wetbulbx =number_format($wetbulbcalc,1);
-
 $weather['wetbulb']=$wetbulbx;
-
-$weather["cloudbase"]          = round(($weather["temp"] - $weather["dewpoint"] )*1000 /2.4444,1) ; 
-
+$weather["cloudbase"] = round(($weather["temp"] - $weather["dewpoint"] )*1000 /2.4444,1) ; 
 # Convert Start times for Pro and Nano SD, Other MBs unforunately don't provide this data
 if (is_numeric($meteobridgeapi[186]) && $meteobridgeapi[186] != '--') {
 	$weather['tempStartTime']	= date('M jS Y', strtotime($meteobridgeapi[186]));
@@ -784,15 +684,10 @@ if (is_numeric($meteobridgeapi[186]) && $meteobridgeapi[186] != '--') {
 	$weather['pressStartTime']	= 'All Time';
 	$weather['rainStartTime']	= 'All Time';
 }
-
 //battery
 	$weather['indoorbattery']=$meteobridgeapi[171];
 	$weather['outdoorbattery']=$meteobridgeapi[172];
 if ($weather['outdoorbattery']<1){$weather['outdoorbattery']="<oblue>Good</oblue>";}
 else $weather['outdoorbattery']="<ored>Poor</ored>";
 if ($weather['indoorbattery']<1){$weather['indoorbattery']="<oblue>Good</oblue>";}
-else $weather['indoorbattery']="<ored>Poor</ored>";
-
-// K-INDEX & SOLAR DATA FOR WEATHER34 HOMEWEATHERSTATION TEMPLATE RADIO HAMS REJOICE :-) //
-$str = file_get_contents('jsondata/kindex.txt');$json = array_reverse(json_decode($str,false));$kp =  $json[1][1];?>
-<?php $file = $_SERVER["SCRIPT_NAME"];$break = Explode('/', $file);$mod34file = $break[count($break) - 1];?>
+else $weather['indoorbattery']="<ored>Poor</ored>";?>
