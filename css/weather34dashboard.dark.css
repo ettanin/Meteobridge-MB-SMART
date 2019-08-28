@@ -6015,7 +6015,7 @@ wfstriketoday {
 wfstriketoday {
   background: 0;
   border: 1px solid rgba(245, 247, 252, 0.02);
-  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);  
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
   width: 4.6rem;
   height: 3rem;
   font-size: 0.9rem;
@@ -6353,7 +6353,7 @@ wfstriketoday {
   display: flex;
   top: 15px;
   left: 15px;
-  text-transform:capitalize
+
 }
 .windmaxthisyear {
   font-size: 0.5em;
@@ -6363,7 +6363,7 @@ wfstriketoday {
   display: flex;
   top: 15px;
   left: 150px;
-  text-transform:capitalize
+
 }
 .tempminthisyear {
   font-size: 0.5em;
@@ -6373,7 +6373,7 @@ wfstriketoday {
   display: flex;
   top: 15px;
   left: 15px;
-  text-transform:capitalize
+
 }
 .tempmaxthisyear {
   font-size: 0.5em;
@@ -6383,7 +6383,7 @@ wfstriketoday {
   display: flex;
   top: 15px;
   left: 155px;
-  text-transform:capitalize
+
 }
 .tempavgthisyear {
   font-size: 0.5em;
@@ -6393,7 +6393,7 @@ wfstriketoday {
   display: flex;
   top: 15px;
   left: 85px;
-  text-transform:capitalize
+
 }
 .rainavgthisyear {
   font-size: 0.5em;
@@ -6432,8 +6432,8 @@ wfstriketoday {
   font-family: weathertext2;
   display: flex;
   top: 5px;
-  left: 15px;
-  text-transform:capitalize
+  left: 15px;text-transform:capitalize
+
 }
 .wyearmax {
   font-size: 0.3em;
@@ -6443,7 +6443,7 @@ wfstriketoday {
   display: flex;
   top: 5px;
   left: 150px;
-  text-transform:capitalize
+
 }
 .tmonthmax {
   font-size: 0.3em;
@@ -6452,8 +6452,8 @@ wfstriketoday {
   font-family: weathertext2;
   display: flex;
   top: 5px;
-  left: 20px;
-  text-transform:capitalize
+  left: 15px;
+
 }
 .tyearmax {
   font-size: 0.3em;
@@ -6463,7 +6463,7 @@ wfstriketoday {
   display: flex;
   top: 5px;
   left: 150px;
-  text-transform:capitalize
+
 }
 .tyearconv {
   font-size: 0.3em;
@@ -6482,7 +6482,7 @@ wfstriketoday {
   display: flex;
   top: 33px;
   left: 20px;
-  text-transform:capitalize
+
 }
 .wyearconv {
   font-size: 0.3em;
@@ -6492,7 +6492,7 @@ wfstriketoday {
   display: flex;
   top: 33px;
   left: 150px;
-  text-transform:capitalize
+
 }
 .wmonthconv {
   font-size: 0.3em;
@@ -6502,7 +6502,7 @@ wfstriketoday {
   display: flex;
   top: 33px;
   left: 15px;
-  text-transform:capitalize
+
 }
 .tyearavg {
   font-size: 0.3em;
@@ -6512,7 +6512,7 @@ wfstriketoday {
   display: flex;
   top: 5px;
   left: 75px;
-  text-transform:capitalize
+
 }
 .tavgconv {
   font-size: 0.3em;
@@ -6522,7 +6522,7 @@ wfstriketoday {
   display: flex;
   top: 33px;
   left: 85px;
-  text-transform:capitalize
+
 }
 .ryearavg {
   font-size: 0.3em;
