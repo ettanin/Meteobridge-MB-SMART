@@ -337,6 +337,6 @@ $lang['notifyFreezing']          = "Below Freezing";
 #weatherflow lightning
 $lang['Last Three Hours']        = "Letzte 3 Stunde";
 $lang['Distance']          		 = "Entfernung";
-$lang['Detected']          		 = "&nbsp;Erkannt";
-$lang['Strikes']           		 = "Streiks";
+$lang['Detected']          		 = "Letzte Erkannt";
+$lang['Strikes']           		 = "&nbsp;&nbsp;Streiks";
 ?>

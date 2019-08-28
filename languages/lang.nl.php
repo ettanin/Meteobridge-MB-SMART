@@ -3,10 +3,10 @@
 -----------------
 Language Translation File for Weather34 MB SMART 
 Language: Dutch
-Translated by: Your Name Here
+Translated by: Piet Kampen
 Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
-Revised: August 2019
+Revised: 28 August 2019
 -----------------
 */
 # -----------------------------------------------------
@@ -170,7 +170,7 @@ $lang['Last-Twenty-Four-Hour']	= 'Laatste 24uur';
 $lang['Last-Ten-Minutes']  		= 'Laatste 10 minuten';
 $lang['Snow Accumulation']		= 'Sneeuw Accumulatie';
 $lang['Rain Accumulation']		= 'Regen Accumulatie';
-$lang['Thunderstorm']			= 'Donder';
+$lang['Thunderstorm']			= 'Onweer';
 //sun -moon-daylight-darkness
 $lang['Sun']                    = 'Zon';
 $lang['Moon']                   = 'Maan';
@@ -209,8 +209,8 @@ $lang['Fullmoon']               = 'Volle maan';
 $lang['Waninggibbous']          = 'Afnemende maan';
 $lang['Lastquarter']            = 'Laatste kwartier';
 $lang['Waningcrescent']         = 'Afnemende maan';
-$lang['Set']        			= 'Set';
-$lang['Rise']        		    = 'Stijgen';
+$lang['Set']        			= 'Ondergang';
+$lang['Rise']        		    = 'Opkomst';
 //trends
 $lang['Falling']                = ' Dalend';
 $lang['Rising']                 = ' Stijgend';
@@ -247,7 +247,7 @@ $lang['Barometer']              = 'Barometer';
 $lang['UVSOLAR']                = 'UV-Solar';
 $lang['Earthquake']             = 'Aardbevings data';
 $lang['Daynight']               = 'Dag & Nacht Info';
-$lang['SunPosition']            = 'Sun Position';
+$lang['SunPosition']            = 'Positie van de Zon';
 $lang['Location']               = 'Locatie ';
 $lang['Hardware']               = 'Hardware';
 $lang['Rainfalltoday']          = 'Neerslag Vandaag';
@@ -283,7 +283,7 @@ $lang['Max']                    = 'Max';
 $lang['Min']                    = 'Min';
 $lang['Almanac'] 				= 'Almanak';
 $lang['Weather Data Provided By']='Weather Data Provided By';
-$language['Airport']='Luchthaven Metar';
+$language['Airport']			='Luchthaven Metar';
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Micro-aardbeving';
 $lang['MinorE']                  = 'Kleine aardbeving';
@@ -305,9 +305,9 @@ $lang['Unhealthy']              = 'Ongezonde luchtkwaliteit';
 $lang['UnhealthyFS']            = 'Ongezond voor sommigen';
 $lang['Moderate']               = 'Gematigde luchtkwaliteit ';
 $lang['Good']                   = 'Goede luchtkwaliteit ';
-$lang['Air Quality']			 = 'Luchtkwaliteit';
+$lang['Air Quality']			= 'Luchtkwaliteit';
 #notification additions
-$lang['notifyTitle']            = 'Weerstation Meldingen';
+$lang['notifyTitle']             = 'Weerstation Meldingen';
 $lang['notifyAlert']             = "Alarm";
 $lang['notifyLowBatteryAlert']   = "Batterij bijna leeg";
 $lang['notifyConsoleLowBattery'] = "De batterij van de console is bijna leeg";
@@ -325,6 +325,6 @@ $lang['notifyFreezing']          = "Onder het vriespunt";
 #weatherflow lightning
 $lang['Last Three Hours']        = "Laatste 3 uur";
 $lang['Distance']          		 = "Afstand";
-$lang['Detected']          		 = "&nbsp;Bliksem";
-$lang['Strikes']           		 = "Bliksem";
+$lang['Detected']          		 = "&nbsp;&nbsp;Laatste Aantal";
+$lang['Strikes']           		 = "&nbsp;&nbsp;&nbsp;Aantal";
 ?>

@@ -16,7 +16,7 @@ $weatherflow['lightning']  = $item['lightning_strike_count'];   $weatherflow['li
 <?php //weather34 wf lightning
  echo "<wfstriketoday>",$weatherflow["lightning3hr"]  ;?></wfstriketoday></div>
  
-<div class="strikes-today"><?php echo $lang['Detected'];?></div></div>
+<div class="strikes-today"><?php echo $lang['Strikes'];?></div></div>
 <div class="last-three-hrs"><?php echo $lang['Last Three Hours'];?></div>
 <div class="yearwordlightningbig">Lightning Strikes</div> 
 
