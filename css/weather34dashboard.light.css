@@ -6346,12 +6346,9 @@ wfstriketoday {
 
 wfstriketoday {
   background: 0;
-   border: 1px solid rgba(245, 247, 252, 0.5);
-  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -o-border-radius: 3px;
-  width: 3.8rem;
+  border: 1px solid rgba(245, 247, 252, 0.5);
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2); 
+  width: 4.6rem;
   height: 2.9rem;
   font-size: 0.9rem;
   padding-top: 12px;
@@ -6359,7 +6356,8 @@ wfstriketoday {
   border-bottom: 0;
   align-items: center;
   justify-content: center;
-  border-radius: 3px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
   margin-left: 7px;
   top: 3px;
 }
@@ -6389,7 +6387,7 @@ wfstriketoday {
   color: #555;
   align-items: center;
   justify-content: center;
-  width: 3.4rem;
+  width: 4.2rem;
   margin-left: 12px;
 }
 

@@ -334,4 +334,9 @@ $lang['notifyHighWindWarning']   = "High Wind Warning";
 $lang['notifySustainedAvg']      = "Sustained avg";
 $lang['notifyWindAdvisory']      = "Wind Advisory";
 $lang['notifyFreezing']          = "Below Freezing";
+#weatherflow lightning
+$lang['Last Three Hours']        = "Letzte 3 Stunde";
+$lang['Distance']          		 = "Entfernung";
+$lang['Detected']          		 = "&nbsp;Erkannt";
+$lang['Strikes']           		 = "Streiks";
 ?>

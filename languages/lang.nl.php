@@ -322,4 +322,9 @@ $lang['notifyHighWindWarning']   = "Waarschuwing harde wind";
 $lang['notifySustainedAvg']      = "Aanhoudende gem";
 $lang['notifyWindAdvisory']      = "Windadvies";
 $lang['notifyFreezing']          = "Onder het vriespunt";
+#weatherflow lightning
+$lang['Last Three Hours']        = "Laatste 3 uur";
+$lang['Distance']          		 = "Afstand";
+$lang['Detected']          		 = "&nbsp;Bliksem";
+$lang['Strikes']           		 = "Bliksem";
 ?>

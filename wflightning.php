@@ -1,4 +1,4 @@
-<?php include('livedata.php');date_default_timezone_set($TZ);header('Content-type: text/html; charset=utf-8');error_reporting(0);?>
+<?php include('livedata.php');include('common.php');date_default_timezone_set($TZ);header('Content-type: text/html; charset=utf-8');error_reporting(0);?>
 <body>
 <?php 
  //weather34 weatherflow air lightning API only
@@ -15,14 +15,17 @@ $weatherflow['lightning']  = $item['lightning_strike_count'];   $weatherflow['li
 <div class="wfstrike">
 <?php //weather34 wf lightning
  echo "<wfstriketoday>",$weatherflow["lightning3hr"]  ;?></wfstriketoday></div>
-<div class="strikes-today">Strikes</div></div>
-<div class="last-three-hrs">Last 3 Hrs</div>
+ 
+<div class="strikes-today"><?php echo $lang['Detected'];?></div></div>
+<div class="last-three-hrs"><?php echo $lang['Last Three Hours'];?></div>
 <div class="yearwordlightningbig">Lightning Strikes</div> 
+
 <div class='wflaststrike'>
 <?php 
-if ($windunit == 'mph'){echo "<spanfeelstitle>Last Distance At:<orange> " .number_format($weatherflow['lightningdistance']*0.621371,1). "  </orange>mi";}else  echo "<spanfeelstitle>Last Distance At:<orange> " .$weatherflow['lightningdistance']. "  </orange>km";?>
+if ($windunit == 'mph'){echo "<spanfeelstitle>".$lang['Distance']."<orange> " .number_format($weatherflow['lightningdistance']*0.621371,1). "  </orange>mi";}else  echo "<spanfeelstitle>".$lang['Distance']."<orange> " .$weatherflow['lightningdistance']. "  </orange>km";?>
 <br>
 <?php
+	echo "<spanfeelstitle>".$lang['Detected']."<orange> ";
  	//Revised August 2019 now shows time passed since last strike for weathrflow AIR 
 	$weather34timeago=date('Y-m-d H:i:s',$weatherflow['lastlightningtime']);
 	$weather34timepassed = timeAgo($weather34timeago); //$weather34timeago is in timestamp (Y-m-d H:i:s)
@@ -33,8 +36,7 @@ if ($windunit == 'mph'){echo "<spanfeelstitle>Last Distance At:<orange> " .numbe
     $days = round($weather34timepassed / 86400 );$weeks = round($weather34timepassed / 604800);
     $months = round($weather34timepassed / 2600640 );$years = round($weather34timepassed / 31207680 );
     // Strike Seconds Just Now	
-	echo "<spanfeelstitle>Last Detected: <orange> ";
-    if($seconds <= 60){return "Just Now!";}
+	if($seconds <= 60){return "Just Now!";}
     // Strike Minutes
     else if($minutes <=60){if($minutes==1){return "1 min ago";}else{echo "$minutes mins $minutesago";}}
     //Strike Hours
