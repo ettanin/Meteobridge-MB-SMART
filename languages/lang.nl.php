@@ -121,7 +121,8 @@ $lang['StrongGaleattimes']      = 'Soms een sterke stormachtige wind';
 $lang['StormConditions']        = 'Stormachtige Condities';
 $lang['ViolentStormConditions'] = 'Orkaanachtig Condities';
 $lang['HurricaneConditions']    = 'Orkaan Condities';
-$lang['Avg']                    = '<span2> Gem </span2>';
+$lang['Avg']                    = 'Gem';
+$lang['Avg-Dir']                = 'Gem';//used for compass
 //wind direction compass
 $lang['Northdir']               = 'Pal <span>Noord<br></span>';
 $lang['NNEdir']                 = 'Noord Noord <br><span>Oost</span>';

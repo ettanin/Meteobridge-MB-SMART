@@ -122,7 +122,8 @@ $lang['StrongGaleattimes']      = 'Vent fort par moment';
 $lang['StormConditions']        = 'Conditions météorologiques violentes';
 $lang['ViolentStormConditions'] = 'Conditions de violente tempête';
 $lang['HurricaneConditions']    = 'Conditions pour un ouragan';
-$lang['Avg']                    = '<span2> Moy. </span2>';
+$lang['Avg']                    = 'Moy';
+$lang['Avg-Dir']                = 'Moy';//used for compass
 //wind direction compass
 $lang['Northdir']               = 'Dir <span>Nord<br></span>';
 $lang['NNEdir']                 = 'Nord Nord <br><span>Est</span>';

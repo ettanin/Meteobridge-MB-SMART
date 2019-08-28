@@ -121,7 +121,9 @@ $lang['StrongGaleattimes']      = 'Burrasca';
 $lang['StormConditions']        = 'Tempesta';
 $lang['ViolentStormConditions'] = 'Tempesta Violenta';
 $lang['HurricaneConditions']    = 'Uragano';
-$lang['Avg']                    = '<span2> Avg </span2>';
+$lang['Avg']                    = 'Media';
+$lang['Avg-Dir']                = 'Media';//used for compass
+
 //wind direction compass
 $lang['Northdir']               = 'Da <span>Nord<br></span>';
 $lang['NNEdir']                 = 'Nord Nord <br><span>Est</span>';

@@ -122,6 +122,8 @@ $lang['StormConditions']         = 'Stormy Conditions';
 $lang['ViolentStormConditions']  = 'Violent Storm Conditions';
 $lang['HurricaneConditions']     = 'Hurricane Conditions';
 $lang['Avg']                     = 'Average';
+$lang['Avg-Dir']                 = 'Average';//used for compass
+
 //wind direction compass
 $lang['Northdir']                = 'Due <span>North<br></span>';
 $lang['NNEdir']                  = 'North North <br><span>East</span>';

@@ -111,7 +111,7 @@ if ($weather["wind_direction"]<=11.25) {
 } else {
     echo $lang['Northdir'];
 }?></div>
-<averwordwindword><?php echo $lang['Avg']." "; if ($weather["wind_direction_avg"]<=11.25) {
+<averwordwindword><?php echo $lang['Avg-Dir']." "; if ($weather["wind_direction_avg"]<=11.25) {
     echo $lang['North'];
 } elseif ($weather["wind_direction_avg"]<=33.75) {
     echo $lang['NNE'];
