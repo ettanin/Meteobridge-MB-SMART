@@ -118,14 +118,8 @@ body{font-size:12px;font-family:Arial,Helvetica,sans-serif;color:#777;background
 box-shadow: 4px 7px 20px -5px rgba(0,0,0,0.75);}.weatheroptions{margin:5px;padding:10px;border-radius:4px;border:1px solid #e9ebf1;border-bottom:18px solid #e9ebf1;width:75%}.weatheroptionssidebar{margin:1px;margin-top:-5px;margin-bottom:-5px;margin-left:-5px;padding:5px;border-radius:4px;border:1px solid #e9ebf1;border-bottom:18px solid #f6f8fc;width:200px;position:relative;float:right;margin:5px;color:#777}.weatheroptionssidebarbottom{margin:1px;margin-top:-145px;margin-left:200px;padding:5px;border-radius:4px;border:1px solid #e9ebf1;border-bottom:18px solid #f6f8fc;width:200px;position:relative;float:right;color:#777}.weatherbottominfo{position:absolute;font-size:12px;color:#777;padding:3px;margin-top:3px}.weatherbottomwarning{position:absolute;font-size:12px;color:#777;padding:3px;margin-top:7px}.weatheroptions .button{background:rgba(240,94,64,1);border-radius:4px;padding:5px;font-size:16px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;-webkit-appearance:none}.weatheroptions .choose{background:rgba(7, 114, 125, 1.000);border-radius:4px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:160px;max-width:400px;outline:0;-webkit-appearance:none;text-align:left}.weatheroptions .choose1{background:rgba(7, 114, 125, 1.000);border-radius:3px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:130px;outline:0;-webkit-appearance:none}.weatheroptions .choose2{background:rgba(86, 95, 103, 1.000);border-radius:3px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:100px;outline:0;-webkit-appearance:none}.weatheroptions .chooseapi{background:rgba(7, 114, 125, 1.000);border-radius:4px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:300px;outline:0;-webkit-appearance:none;text-align:left}.weatheroptions .personal{background:rgba(7, 114, 125, 1.000);border-radius:4px;padding:5px;padding-right:10px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;width:99%;outline:0;-webkit-appearance:none;text-align:left}.weatheroptions .stationvalue{background:rgba(86, 95, 103, 1.000);border-radius:3px;padding:5px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;display:inline-block;-webkit-appearance:none}.weatheroptions .stationvalue1{background:#777;border-radius:3px;padding:5px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;display:inline-block;-webkit-appearance:none}.weathersectiontitle{background:#777;border-radius:4px;padding:5px;font-size:14px;color:#fff;font-family:Arial,Helvetica,sans-serif;border:0;outline:0;margin:5px;display:inline-block;-webkit-appearance:none}.weatheroptions a{font-size:14px;color:rgba(86, 95, 103, 1.000);font-family:Arial,Helvetica,sans-serif;border:0;text-transform:none;outline:0;-webkit-appearance:none}a{font-size:14px;color:rgba(86, 95, 103, 1.000);font-family:Arial,Helvetica,sans-serif;border:0;text-transform:none;outline:0;-webkit-appearance:none}#weatherpopupcontainer{width:960px;margin:auto;padding:30px}p{margin-bottom:20px;line-height:24px}#hover{position:fixed;background:white;width:100%;height:100%;opacity:.6}#weatherpopup{position:fixed;width:600px;height:320px;background:white;left:50%;top:25%;border-radius:5px;padding:60px 0;margin-left:-320px;margin-top:-100px;text-align:center;border:1px solid #e9ebf1;border-bottom:23px solid rgba(40,39,39,0.7);color:#fff;padding:10px}.weatherpopupbottom{margin-top:55px;padding:10px;float:left;color:#fff;position:absolute;font-size:11px}#close{position:absolute;background:white;color:#fff;right:-10px;top:-10px;border-radius:50%;width:30px;height:30px;line-height:30px;text-align:center;font-size:14px;font-weight:bold;font-family:'Arial',Arial,sans-serif;cursor:pointer}body{background:white}.seperator{width:700px;border-top:1px #ddd dotted;margin-top:5px;padding:10px}*{box-sizing:border-box}*:focus{outline:0}.login{margin:0 auto;width:300px;background-color:none}a{font-size:12px;text-transform:none;text-decoration:none;color:#2095a7}a:hover{color:#7bbb28}.login-screen{background-color:none;padding:20px;border-radius:5px;margin:0 auto}.app-title{text-align:center;color:#ccc;background-color:none}.login-form{text-align:center;background-color:none}.control-group{margin-bottom:10px}input{text-align:center;background-color:#777;border:2px solid transparent;border-radius:3px;font-size:16px;font-weight:200;padding:10px 0;width:250px;transition:border .5s;color:#fff;border:2px solid rgba(86, 95, 103, 1.000);box-shadow:none;margin:0 auto;margin-top:10px}input:focus{border:2px solid rgba(86, 95, 103, 1.000);box-shadow:none}.btn{border:2px solid transparent;background:rgba(86, 95, 103, 1.000);color:#fff;font-size:16px;line-height:25px;padding:10px 0;text-decoration:none;text-shadow:none;border-radius:3px;box-shadow:none;transition:.25s;display:block;width:150px;margin:10px;text-align:center;-webkit-appearance:none}.btn:hover{background-color:rgba(86, 95, 103, 1.000)}.login-link{font-size:12px;color:#444;display:block;margin-top:12px}.loginformarea{margin:0 auto;text-align:center}orange{color:rgba(236, 87, 27, 1.000)}green{color:rgba(67, 58, 80, 1.000)}blue{color:rgba(67, 58, 80, 1.000)}img{border-radius:4px;}white{color:#fff}.input-button,.modal-button{font-size:18px;padding:10px 40px}.input-block input,.input-button,.modal-button{font-family:Arial,sans-serif;border:1px solid #ccc;}.icon-button,.input-block input,.input-button,.modal-button{outline:0;cursor:pointer}.modal-button{color:#7d695e;border-radius:5px;background:rgba(230, 232, 239, 1.000);width:120px;text-align:center}.modal-button:hover{border-color:rgba(255,255,255,.2);background:rgba(144,177,42,1);color:#f8f8f8}.input-button{color:#7d695e;border-radius:5px;background:#fff}.input-button:hover{background:rgba(144,177,42,1);color:#fff}.input-label{font-size:11px;text-transform:uppercase;font-family:Arial,sans-serif;font-weight:600;letter-spacing:.7px;color:#8c7569;}.input-block{display:flex;flex-direction:column;padding:10px 10px 8px;border:1px solid #ddd;border-radius:4px;margin-bottom:20px;}.input-block input{color:#fff;font-size:18px;padding:10px 40px;border-radius:5px;background:rgba(144,177,42,1)}.input-block input::-webkit-input-placeholder{color:#ccc;opacity:1}.input-block input:-ms-input-placeholder{color:#ccc;opacity:1}.input-block input::-ms-input-placeholder{color:#ccc;opacity:1}.input-block input::placeholder{color:#ccc;opacity:1}.input-block:focus-within{border-color:#8c7569}.input-block:focus-within .input-label{color:rgba(140,117,105,.8)}.icon-button{position:absolute;right:10px;top:12px;width:32px;height:32px;background:0;padding:0}
 
 </style>
-<script src="js/jquery.js"></script>
-
- </head>
-        
+ </head>        
     <body>
-       
-    
-       
 <div class="loginformarea">
 <?php 
 	//lets secure the homeweatherstation easy setup ///
@@ -141,17 +135,10 @@ function showForm($error="LOGIN"){
      </center>
       <?php echo "2015-" ;?><?php echo date('Y');?> &copy;</a> WEATHER34 MB-<orange>SMART</orange></span></span></span>
       <br><br>
-        
-
-  
-
-      
 <?php    
 } 
 ?>
 </div>
-
-
   <div span style="width:auto;margin:0 auto;text-align:center;color:#fff;background:0;font-family:arial;padding:20px;border-radius:4px;"> 
 <?php 
 $Password = $password; 
@@ -287,22 +274,13 @@ Choose the default Language to display and use..</div>
        <label name="defaultlanguage"></label>
         <select id="defaultlanguage" name="defaultlanguage" class="choose1">           
            <option><?php echo $defaultlanguage ;?></option>
-            <option>en</option>
+           <option>en</option>
            <option>can</option>  
-           <option>cat</option>             
-           <option>dk</option>
            <option>dl</option>
-           <option>fi</option>  
-           <option>fr</option>             
-           <option>gr</option>
-           <option>hu</option>
+           <option>fr</option>
            <option>it</option> 
-           <option>nl</option> 
-           <option>pl</option> 
-           <option>sk</option>
-           <option>sp</option>                        
-           <option>sw</option> 
-           <option>tr</option> 
+           <option>nl</option>            
+           <option>sp</option>
            <option>us</option>   
         </select>
         <br><br>
@@ -330,17 +308,13 @@ Choose the default Language to display and use..</div>
            <option>dk</option>
            <option>dl</option>
            <option>fi</option>  
-           <option>fr</option>             
-           <option>gr</option>
-           <option>hu</option>
+           <option>fr</option> 
            <option>iom</option>
            <option>ire</option>
-           <option>it</option> 
-           <option>mi</option>           
+           <option>it</option>                       
            <option>nl</option>
            <option>no</option>
-           <option>nz</option>  
-           <option>pl</option> 
+           <option>nz</option>
            <option>sa</option>
            <option>scot</option>
            <option>singapore</option>
@@ -1816,8 +1790,6 @@ Check<b>WX</b> Metar API KEY you need to sign up here for free API key <a href="
         
     
     <p> 
-      
-       
        
        <div class="seperator"></div>
 <span style="color:#F75C46;"><svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -1849,38 +1821,17 @@ Check<b>WX</b> Metar API KEY you need to sign up here for free API key <a href="
     <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg> *options select your regular Weather Station Hardware Supplier choose none if not shown or do not wish to show in menu<br><br></span>
   
    <p>      
-    <div class="seperator"></div> 
-       
-       
-       </div> 
-       
-       
-       
-       
-       
-       
+    <div class="seperator"></div>         </div>      
    
 <div class="weatheroptions">
-
-
 <br><br>
   <strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="0" stroke="#F75C46" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg></strong><span style="color:#777;"> ** see file in download and important read file called nomysqlsetup.txt  </span><br>
  <br>
-
-
-
     <input type="submit" name="Submit" value="Save Configuration" class="button"><p><span style="color:#777;font-size:12px;padding:5px;line-height:16px;">
   <svg id="i-alert" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M16 3 L30 29 2 29 Z M16 11 L16 19 M16 23 L16 25" /> </svg> Click "save configuration" if everything looks ok and dont forget to set the password.</span>
-  
-
-
-
-
-
-  </div>
-  
+ </div> 
   
  
    <p>
