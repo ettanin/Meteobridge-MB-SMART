@@ -42,7 +42,7 @@ if ($windunit == 'mph'){echo "<spanfeelstitle>".$lang['Distance']."<orange> " .n
     //Strike Hours
     else if($hours <=24){if($hours==1){return "1 hr ago";}else{echo "$hours hrs ago";}}
     //Strike Days
-    else if($days <= 7){if($days==1){return "Yesterday";}else{echo "$days days ago";}}}
+    else if($days <= 1000){if($days==1){return "Yesterday";}else{echo "$days days ago";}}}
 	//weather34 weather34 last detected ago
 	echo " </orange>";
 	//echo $weatherflow['lastlightningtime'];
