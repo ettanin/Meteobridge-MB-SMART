@@ -122,7 +122,7 @@ $lang['StormConditions']         = 'Stormy Conditions';
 $lang['ViolentStormConditions']  = 'Violent Storm Conditions';
 $lang['HurricaneConditions']     = 'Hurricane Conditions';
 $lang['Avg']                     = 'Average';
-$lang['Avg-Dir']                 = 'Average';//used for compass
+$lang['Avg-Dir']                 = 'Avg';//used for compass
 
 //wind direction compass
 $lang['Northdir']                = 'Due <span>North<br></span>';
@@ -339,5 +339,9 @@ $lang['notifyFreezing']          = "Below Freezing";
 $lang['Last Three Hours']        = "Last 3 Hours";
 $lang['Distance']          		 = "Distance";
 $lang['Detected']          		 = "Last Detected";
-$lang['Strikes']           		 = "&nbsp;&nbsp;&nbsp;Strikes";
+$lang['Strikes']           		 = "&nbsp;Strikes";
+$lang['Strikes Recorded']        = "Strikes Recorded";
+$lang['Total']        			 = "Total";
+$lang['Last Strike Detected']   = "Last Strike Detected ";
+$lang['Lightning Today']        = "&nbsp;&nbsp;Today";//today
 ?>

@@ -339,5 +339,11 @@ $lang['notifyFreezing']          = "Below Freezing";
 $lang['Last Three Hours']        = "Last 3 Hours";
 $lang['Distance']          		 = "Distance";
 $lang['Detected']          		 = "Last Detected";
-$lang['Strikes']           		 = "&nbsp;&nbsp;&nbsp;Strikes";
+$lang['Strikes']           		 = "&nbsp;Strikes";
+$lang['Strikes Recorded']        = "Strikes Recorded";
+$lang['Total']        			 = "Total";
+$lang['Last Strike Detected']   = "Last Strike Detected ";
+$lang['Lightning Today']        = "&nbsp;&nbsp;Today";//today
+$lang['Quiet']        			= "Quiet";
+$lang['Active']        			= "Active";
 ?>

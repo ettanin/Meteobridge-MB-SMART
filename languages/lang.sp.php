@@ -338,4 +338,10 @@ $lang['Last Three Hours']        = "Últimas 3 horas";
 $lang['Distance']          		 = "Distancia";
 $lang['Detected']          		 = "Últimas Detectado";
 $lang['Strikes']           		 = "Detectado";
+$lang['Strikes Recorded']        = "Rayo Grabado";
+$lang['Total']        			 = "Total";
+$lang['Last Strike Detected']   = " Últimas Detectado";
+$lang['Lightning Today']        = "&nbsp;&nbsp;&nbsp;Hoy";//today
+$lang['Quiet']        			= "Tranquil";
+$lang['Active']        			= "Active";
 ?>

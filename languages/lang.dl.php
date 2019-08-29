@@ -341,4 +341,10 @@ $lang['Last Three Hours']        = "Letzte 3 Stunde";
 $lang['Distance']          		 = "Entfernung";
 $lang['Detected']          		 = "Letzte Erkannt";
 $lang['Strikes']           		 = "&nbsp;&nbsp;Streiks";
+$lang['Strikes Recorded']        = "Streiks Erkannt";
+$lang['Total']        			 = "Total";
+$lang['Last Strike Detected']   = "Letzte Streik Erkannt";
+$lang['Lightning Today']        = "&nbsp;&nbsp;Heute";//today
+$lang['Quiet']        			= "Still";
+$lang['Active']        			= "Active";
 ?>

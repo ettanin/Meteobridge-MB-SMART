@@ -188,6 +188,12 @@ if ($positionlastmodule=='airqualitymodule.php') {
 if ($positionlastmodule=='airqualityluftdaten.php') {
     echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Air Quality Data" href="luftdaten.php" data-lity>'. $chartinfo. " Luftdaten ".$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";
 }
+if ($positionlastmodule=='lightning34.php') {
+    echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Air Quality Data" href="luftdaten.php" data-lity>'. $chartinfo. " Luftdaten ".$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";
+}
+if ($positionlastmodule=='lightning34.php') {
+    echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Recent World Wide Earthquakes" href="eqlist.php" data-lity>'. $chartinfo." ".$lang['Worldwideearthquakes']. "</a>&nbsp;&nbsp;</span>";
+}
 if ($positionlastmodule=='weather34uvsolar.php') {
     echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="UV Index Guide" href="uvindex.php" data-lity>'. $chartinfo. " UV Guide  </a></span>";
 }

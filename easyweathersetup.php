@@ -1171,6 +1171,7 @@ your nearly there :-) keep going
             <option>weather34uvsolar.php</option>              
             <option>solaruvwu.php</option>  
             <option>eq.php</option>  
+            <option>lightning34.php</option>  
             
                      </select>
                
@@ -1805,7 +1806,7 @@ Check<b>WX</b> Metar API KEY you need to sign up here for free API key <a href="
 </svg>
        <label name="suppliers"></label>
         <select id="suppliers" name="suppliers" class="choose">  
-          <option><?php echo $suppliers ;?></option> 
+            <option><?php echo $suppliers ;?></option> 
             <option>Weather Spares UK</option>        
             <option>Prodata Weather Systems UK</option>
             <option>Weerspecialist Netherlands</option>

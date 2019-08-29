@@ -327,5 +327,11 @@ $lang['notifyFreezing']          = "Onder het vriespunt";
 $lang['Last Three Hours']        = "Laatste 3 uur";
 $lang['Distance']          		 = "Afstand";
 $lang['Detected']          		 = "Laatste";
-$lang['Strikes']           		 = "&nbsp;&nbsp;&nbsp;Aantal";
+$lang['Strikes']           		 = "&nbsp;Aantal";
+$lang['Strikes Recorded']        = "Inslagen Gemeten";
+$lang['Total']        			 = "Totaal";
+$lang['Last Strike Detected']   = "Laatste Inslag Waargenomen";
+$lang['Lightning Today']        = "Vandaag";//today
+$lang['Quiet']        			= "Stil";
+$lang['Active']        			= "Active";
 ?>

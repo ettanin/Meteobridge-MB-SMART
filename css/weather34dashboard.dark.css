@@ -714,6 +714,31 @@ uv0 {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+.weather34north,.weather34east,.weather34west,.weather34south {
+	font-size: .6em;
+	font-family: 'weathertext2';
+	color:rgba(174, 182, 191,.4);
+	position: absolute;
+	position: absolute;
+	left: 85px;
+	top: 40px;
+}
+
+.weather34east {
+	left: 120px;
+	top: 82px;
+}
+
+.weather34west {
+	left: 40px;
+	top: 82px;
+}
+
+.weather34south {
+	left: 80px;
+	top: 125px;
+}
+
 .rainvalue span {
   font-size: 0.6em;
 }
@@ -2283,12 +2308,12 @@ lorange1 {
 }
 .lightninginfo {
   margin-top: 47px;
-  width: 140px;
+  width: 170px;text-transform: capitalize;
 }
 .lightningbox {
   padding: 10px;
   border-radius: 2px;
-  border: 1px solid solid;
+  border: 1px solid solid;text-transform: capitalize;
 
 }
 .orangeclock,
@@ -2302,7 +2327,7 @@ lightningannualx1 {
   left: 0;
   display: block;
   color: #aeb6bf;
-  font-family: weathertext2;
+  font-family: weathertext2;text-transform: capitalize;
 }
 lorange1 {
   font-weight: 100;
@@ -3069,6 +3094,12 @@ smallrainunit {
   margin-left: 290px;
   margin-top: -12px;
 }
+.lightningdistconverter {
+  font-size: 12px;
+  position: absolute;
+  margin-left: 290px;
+  margin-top: 6px;
+}
 
 .tempavg60 {
   margin-left: 0;
@@ -3495,12 +3526,13 @@ topyellow1 {
 .simsekdata,
 .simsektoday {
   position: absolute;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 .simsektoday {
   margin-top: -15px;
-  margin-left: 1.65rem;
-  text-align: center;
+  margin-left: 1.4rem;
+  align-items: center;
+  justify-content: center;
   z-index: auto;
   color: #aeb6bf;
   font-family: Arial, system;
@@ -6792,7 +6824,6 @@ maxtempgreen {
   -moz-osx-font-smoothing: grayscale;
   height: 195px;
   border: 1px solid rgba(245, 247, 252, 0.02);
-
   border-bottom: 15px solid rgba(37, 50, 58, 0.3);
   border-top: 15px solid rgba(37, 50, 58, 0.3);
   -webkit-box-sizing: border-box;
@@ -7512,7 +7543,12 @@ weather34toptitle {
   margin-top: -12px;
 }
 
-
+.lightningdistconverter {
+  font-size: 12px;
+  position: absolute;
+  margin-left: 330px;
+  margin-top: 10px;
+}
 
 
 }
@@ -7786,6 +7822,13 @@ weather34toptitle {
 .eqdistconverter {
   margin-left: 290px;
   margin-top: -12px;
+}
+
+.lightningdistconverter {
+  font-size: 12px;
+  position: absolute;
+  margin-left: 290px;
+  margin-top: 7px;
 }
 
 }

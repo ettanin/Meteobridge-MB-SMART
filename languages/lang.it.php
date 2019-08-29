@@ -337,5 +337,11 @@ $lang['notifyFreezing']          = "Below Freezing";
 $lang['Last Three Hours']        = "Ultime 3 Ore";
 $lang['Distance']          		 = "Distanza";
 $lang['Detected']          		 = "Ultime Rilevato";
-$lang['Strikes']           		 = "&nbsp;&nbsp;Rilevato";
+$lang['Strikes']           		 = "&nbsp;&nbsp;Fulmini";
+$lang['Strikes Recorded']        = "Fulmini Totale";
+$lang['Total']        			 = "Totale";
+$lang['Last Strike Detected']   = "Ultime Fulmini Rilevato ";
+$lang['Lightning Today']        = "&nbsp;&nbsp;Oggi";//today
+$lang['Quiet']        			= "Silenzioso";
+$lang['Active']        			= "Active";
 ?>
