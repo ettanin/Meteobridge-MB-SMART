@@ -26,6 +26,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 <meta content=INDEX,FOLLOW name=robots>
 <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
 <meta name="mobile-web-app-capable" content="yes">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
