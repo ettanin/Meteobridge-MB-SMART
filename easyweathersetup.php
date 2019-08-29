@@ -101,6 +101,7 @@ $flag   = "'.$_POST["flag"]. '";
 $wulanguage    = "'.$_POST['wulanguage']. '";
 $manifestShortName = "'.$_POST["manifestShortName"].'";
 $weatherflowID = "'. $_POST["wfid"]. '";
+$suppliers   = "'. $_POST["suppliers"]. '";
 ';
  
 $fp = FOPEN("settings1.php", "w") or die("Unable to open settings1.php file check file permissions !");
@@ -1156,7 +1157,7 @@ your nearly there :-) keep going
             <option>airqualityluftdaten.php</option>  
             <option>webcamsmall.php</option> 
             <option>moonphase.php</option>  
-            <option>weather34uvsolar.php</option>             
+            <option>weather34uvsolar.php</option>                     
             <option>solaruvwu.php</option>
             <option>eq.php</option>  
             
@@ -1193,7 +1194,7 @@ your nearly there :-) keep going
             <option>airqualityluftdaten.php</option>  
             <option>webcamsmall.php</option> 
             <option>moonphase.php</option>  
-            <option>weather34uvsolar.php</option>            
+            <option>weather34uvsolar.php</option>              
             <option>solaruvwu.php</option>  
             <option>eq.php</option>  
             
@@ -1644,7 +1645,7 @@ Choose the Weather Underground Forecast Language ..</div>
   <p>
    
     
-          <div class="seperator"></div>
+        
     
  
 
@@ -1815,7 +1816,49 @@ Check<b>WX</b> Metar API KEY you need to sign up here for free API key <a href="
         
     
     <p> 
-       </div>
+      
+       
+       
+       <div class="seperator"></div>
+<span style="color:#F75C46;"><svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M16 14 L16 23 M16 8 L16 10" />
+    <circle cx="16" cy="16" r="14" />
+</svg>
+</svg> Weather Station Suppliers  <span style="color:#777;"> <br>   
+       <div class= "stationvalue"> Options </div>
+       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M30 12 L16 24 2 12" />
+</svg>
+       <label name="suppliers"></label>
+        <select id="suppliers" name="suppliers" class="choose">  
+          <option><?php echo $suppliers ;?></option> 
+            <option>Weather Spares UK</option>        
+            <option>Prodata Weather Systems UK</option>
+            <option>Weerspecialist Netherlands</option>
+            <option>Weerhuisje Netherlands</option>
+            <option>Soluzionimeteo Italy</option>
+            <option>Ambient Weather USA</option>
+            <option>Scaled Instruments USA</option>
+            <option>None</option>
+           </select>
+           <br></span>
+           <span style="color:#777;">
+            <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg> *options select your regular Weather Station Hardware Supplier choose none if not shown or do not wish to show in menu<br><br></span>
+  
+   <p>      
+    <div class="seperator"></div> 
+       
+       
+       </div> 
+       
+       
+       
+       
+       
+       
    
 <div class="weatheroptions">
 
@@ -1867,6 +1910,7 @@ now check the weather
     <span style="font-size:12px;color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M16 14 L16 23 M16 8 L16 10" />
     <circle cx="16" cy="16" r="14" />
-</svg> Meteobridge DASHBOARD EASY SETUP &copy; 2015-<?php echo date('Y');?> Dashboard MB-SMART</span><br>
+</svg> Meteobridge DASHBOARD EASY SETUP &copy; 2015-<?php echo date('Y');?> Dashboard MB-SMART </span><br>
 <center><a href="http://www.meteobridge.com/wiki/index.php/Home" title="http://www.meteobridge.com/wiki/index.php/Home" target="_blank"><img src="img/meteobridge.svg" width="120" /></a></center><br>
+ 
 </p></form></p></div></div>
