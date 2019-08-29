@@ -72,13 +72,13 @@ else echo '<svg id="weather34 locked" viewBox="0 0 32 32" width="12" height="12"
    <br> '?>
       <!---credits | download info please do not remove credits if so no support is given it is not much to ask---> 
 <?php  //suppliers
-if ($suppliers =='Weather Spares UK'){echo '<li><a href="https://weatherspares.co.uk" title="https://weatherspares.co.uk" target="_blank"><weather34menumarkerred></weather34menumarkerred> '.$suppliers.'';}
-if ($suppliers =='Prodata Weather Systems UK'){echo '<li><a href="https://shop.weatherstations.co.uk" target="_blank"><weather34menumarkerred></weather34menumarkerred> '.$suppliers.'';}
-if ($suppliers =='Weerspecialist Netherlands'){echo '<li><a href="https://www.weerstationkopen.nl" title="https://www.weerstationkopen.nl" target="_blank"><weather34menumarkerred></weather34menumarkerred> '.$suppliers.'';}
-if ($suppliers =='Weerhuisje Netherlands'){echo '<li><a href="https://weerhuisje.nl" title="https://weerhuisje.nl" target="_blank"><weather34menumarkerred></weather34menumarkerred> '.$suppliers.'';}
-if ($suppliers =='Soluzionimeteo Italy'){echo '<li><a href="https://www.soluzionimeteo.it/content/category/1-home" title="https://www.soluzionimeteo.it/content/category/1-home" target="_blank"><weather34menumarkerred></weather34menumarkerred> '.$suppliers.'';}
-if ($suppliers =='Scaled Instruments USA'){echo '<li><a href="https://www.scaledinstruments.com" title="https://www.scaledinstruments.com" target="_blank"><weather34menumarkerred></weather34menumarkerred> '.$suppliers.'';}
-if ($suppliers =='Ambient Weather USA'){echo '<li><a href="https://www.ambientweather.com" title="https://www.ambientweather.com" target="_blank"><weather34menumarkerred></weather34menumarkerred> '.$suppliers.'';}
+if ($suppliers =='Weather Spares UK'){echo '<li><a href="https://weatherspares.co.uk" title="https://weatherspares.co.uk" target="_blank"><weather34menumarkeryellow></weather34menumarkeryellow> '.$suppliers.'';}
+if ($suppliers =='Prodata Weather Systems UK'){echo '<li><a href="https://shop.weatherstations.co.uk" target="_blank"><weather34menumarkeryellow></weather34menumarkeryellow> '.$suppliers.'';}
+if ($suppliers =='Weerspecialist Netherlands'){echo '<li><a href="https://www.weerstationkopen.nl" title="https://www.weerstationkopen.nl" target="_blank"><weather34menumarkeryellow></weather34menumarkeryellow> '.$suppliers.'';}
+if ($suppliers =='Weerhuisje Netherlands'){echo '<li><a href="https://weerhuisje.nl" title="https://weerhuisje.nl" target="_blank"><weather34menumarkeryellow></weather34menumarkeryellow> '.$suppliers.'';}
+if ($suppliers =='Soluzionimeteo Italy'){echo '<li><a href="https://www.soluzionimeteo.it/content/category/1-home" title="https://www.soluzionimeteo.it/content/category/1-home" target="_blank"><weather34menumarkeryellow></weather34menumarkeryellow> '.$suppliers.'';}
+if ($suppliers =='Scaled Instruments USA'){echo '<li><a href="https://www.scaledinstruments.com" title="https://www.scaledinstruments.com" target="_blank"><weather34menumarkeryellow></weather34menumarkeryellow> '.$suppliers.'';}
+if ($suppliers =='Ambient Weather USA'){echo '<li><a href="https://www.ambientweather.com" title="https://www.ambientweather.com" target="_blank"><weather34menumarkeryellow></weather34menumarkeryellow> '.$suppliers.'';}
 if ($suppliers =='None'){echo '';}?></a></li> 
 <li><!--hardware info---> <a href="licence.php" data-lity title="Weather34 MB-SMART Licence Info and Download"> <weather34menumarkerred></weather34menumarkerred> Download MB-SMART(<?php echo $mbsmartversion?>)</a></li> 
 <li><a href="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" data-title="Weather34 MB-Smart Version" target="_blank"><weather34menumarkerblue></weather34menumarkerblue> Designed by weather34.com</a></li>    
