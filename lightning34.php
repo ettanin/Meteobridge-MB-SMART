@@ -1,5 +1,4 @@
 <?php include('livedata.php');include('common.php');date_default_timezone_set($TZ);?>
-<div class="moduleupdatetime"><span><?php if(file_exists($livedata2)&&time()- filemtime($livedata2)>300)echo '<offlinenew></offlinenew> Offline';else echo "<onlinenew></onlinenew> ".$weather["time"];?></div>  
 <?php 
 $livedata2 = 'weatherflow/weatherflow.txt';
 $livedataFormat2=='meteobridge-wf';
@@ -32,6 +31,7 @@ else if($minutes >=0){$weather34timeago .= "$minutes minute ";}
 
 ?>
 <body>
+<div class="moduleupdatetime"><span><?php if(file_exists($livedata2)&&time()- filemtime($livedata2)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div>  
 <div class="lightningdistconverter">
 <?php
 //distance
