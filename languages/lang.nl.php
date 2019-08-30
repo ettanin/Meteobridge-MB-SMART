@@ -175,8 +175,8 @@ $lang['Thunderstorm']			= 'Onweer';
 //sun -moon-daylight-darkness
 $lang['Sun']                    = 'Zon';
 $lang['Moon']                   = 'Maan';
-$lang['Sunrise']                = 'Zonsopkomst';
-$lang['Sunset']                 = 'Zonsondergang';
+$lang['Sunrise']                = '&nbsp;Zonsopkomst';
+$lang['Sunset']                 = '&nbsp;Zonsondergang';
 $lang['Moonrise']               = 'Maanopkomst ';
 $lang['Moonset']                = 'Maanondergang';
 $lang['Night']                  = 'Nacht ';
@@ -212,6 +212,8 @@ $lang['Lastquarter']            = 'Laatste kwartier';
 $lang['Waningcrescent']         = 'Afnemende maan';
 $lang['Set']        			= 'Ondergang';
 $lang['Rise']        		    = 'Opkomst';
+$lang['Daylight Left'] 			= '&nbsp;&nbsp;Daglicht Over';
+$lang['Darkness Left'] 			= '&nbsp;&nbsp;&nbsp;Donker Over';
 //trends
 $lang['Falling']                = ' Dalend';
 $lang['Rising']                 = ' Stijgend';

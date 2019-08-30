@@ -214,7 +214,8 @@ $lang['Lastquarter']            = 'Dernier quartier';
 $lang['Waningcrescent']         = 'Descendante';
 $lang['Set']        			= 'Coucher';
 $lang['Rise']        		    = 'Lever';
-
+$lang['Daylight Left'] 			= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Au Soleil';
+$lang['Darkness Left'] 			= '&nbsp;&nbsp;Lever du Soleil';
 //trends
 $lang['Falling']                = 'Chute';
 $lang['Rising']                 = 'Hausse';

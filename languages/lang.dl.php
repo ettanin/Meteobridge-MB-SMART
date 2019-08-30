@@ -217,6 +217,8 @@ $lang['Lastquarter']            = 'Letztes Viertel';
 $lang['Waningcrescent']         = 'abnehmender Mond';
 $lang['Set']        			= 'Gesetzt';
 $lang['Rise']        		    = 'Steigen';
+$lang['Daylight Left'] 			= 'Tageslicht übrig';
+$lang['Darkness Left'] 			= 'Dunkelheit übrig';
 //trends
 $lang['Falling']                = 'fallend';
 $lang['Rising']                 = 'steigend';

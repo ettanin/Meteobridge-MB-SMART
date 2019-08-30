@@ -214,6 +214,8 @@ $lang['Lastquarter']             = 'Last Quarter';
 $lang['Waningcrescent']          = 'Waning Crescent';
 $lang['Set']        			 = 'Set';
 $lang['Rise']        		     = 'Rise';
+$lang['Daylight Left'] 			= '&nbsp;&nbsp;&nbsp;Daylight Left';
+$lang['Darkness Left'] 			= '&nbsp;&nbsp;&nbsp;Darkness Left';
 
 //trends
 $lang['Falling']                 = 'Falling';
