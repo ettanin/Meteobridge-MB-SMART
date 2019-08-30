@@ -8578,3 +8578,4 @@ boxblue {
 }
 windaveragevalue{font-size:.55rem
 }
+sunsetvalue{position:relative;font-size:.5rem;line-height:1;left:0;display:flex;margin-top:-12px}

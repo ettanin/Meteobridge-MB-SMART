@@ -8840,3 +8840,4 @@ windaveragevalue{font-size:.55rem
 }
 wuunitstemperaturenext{font-size:.8em
 }
+sunsetvalue{position:relative;font-size:.5rem;line-height:1;left:-4px;display:flex;margin-top:-15px;width:200px}
