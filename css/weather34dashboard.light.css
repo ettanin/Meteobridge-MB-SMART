@@ -2722,13 +2722,13 @@ chartinfocolor {
 }
 daylightestimated {
   position: absolute;
-  display: block;
+  display: flex;
   top: -30px;
-  left: 47px;
+  left: 48px;
   letter-spacing: normal;
   border: 0;
   font-family: weathertext2;
-  font-size: .6rem;
+  font-size: .55rem;
 }
 
 notifyblue,
