@@ -2345,9 +2345,7 @@ timeago {
   display: block;
   font-size: 0.65rem;
 }
-agolightning {
-  color: #8c2c2b;
-}
+
 .orangeclock {
   position: relative;
   background: rgba(245, 247, 252, 1);
@@ -3294,11 +3292,16 @@ smalltempunit4 {
 .raintoday1 {
   background: #44a6b5;
 }
-.simsek,
+
 .uvtoday4-5,
 topyellow1 {
   background: #e6a141;
 }
+.simsek
+{
+ background:rgba(208, 95, 45, 0.9)
+}
+
 smalluvunit {
   font-size: 0.55rem;
   font-family: weathertext2;

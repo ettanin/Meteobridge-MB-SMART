@@ -334,4 +334,6 @@ $lang['Last Strike Detected']   = "Laatste Inslag Waargenomen";
 $lang['Lightning Today']        = "Vandaag";//today
 $lang['Quiet']        			= "Stil";
 $lang['Active']        			= "Active";
+$lang['Ago']        			= "Geleden";
+$lang['Now']        			= "Nu";
 ?>

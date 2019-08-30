@@ -2275,14 +2275,19 @@ lightningannual {
 }
 .homeindoorfeels1,
 .lightninginfo {
-  border-radius: 2px;
   font-family: weathertext2;
   position: absolute;
+  text-align: left; 
+  margin-top: 55px;
   margin-left: 125px;
   padding: 5px;
-  text-align: left;
   color: #aeb6bf;
-  border: 1px solid rgba(95, 96, 97, 0.4);
+  border:1px solid rgba(95, 96, 97, 0.1);
+  border-width:thin;
+  border-radius: 2px;
+  background: 0;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.5);
+  text-align: left;
 
 }
 .wfstrikes1 {
@@ -2297,11 +2302,12 @@ agolightning,
 timeago {
   font-size: 0.6rem;
 }
-agolightning,
+
 lorange,
 lorange1 {
   color: #ff7c39;
 }
+lbue{color:#44a6b5}
 .homeindoorfeels1 {
   margin-top: 25px;
   width: 170px;
@@ -3493,9 +3499,13 @@ smalluvunit {
 .uvtoday11 {
   background: rgba(204, 135, 248, 0.7);
 }
-.simsek,
 topyellow1 {
   background: #e6a141;
+}
+lblue{color:#44a6b5;}
+.simsek
+{
+  background: rgba(255, 124, 57, 0.8);
 }
 .uvcaution {
   margin-left: 33px;
