@@ -348,4 +348,33 @@ $lang['Quiet']        			= "Silenzioso";
 $lang['Active']        			= "Active";
 $lang['Ago']        			= "Fa";
 $lang['Now']        			= "Adesso";
+#metar conditions
+$lang['Snow-Metar']					= "Neve";
+$lang['Light Rain-Metar']				= "Pioggia Leggera";
+$lang['Heavy Rain-Metar']				= "Pioggia Forte";
+$lang['Moderate Rain-Metar']			= "Pioggia Moderata";
+$lang['Light Snow-Metar']				= "Neve Leggera";
+$lang['Moderate Snow-Metar']			= "Neve Moderata";
+$lang['Snow Grains-Metar']			= "Grani Di Neve";
+$lang['Sleet-Metar']					= "Nevischio";
+$lang['Foggy-Metar']					= "Nebbioso";
+$lang['Misty-Metar']					= "Nebbioso";
+$lang['Hail and Rain-Metar']			= "Ave e Pioggia";
+$lang['Ice Crystals-Metar']			= "Cristalli di Ghiaccio";
+$lang['Ice Pellets-Metar']			= "Cristalli di Ghiaccio";
+$lang['Thunderstorm-Metar']			= "Tuono";
+$lang['Sand Storm-Metar']				= "Tempesta di Sabbia";
+$lang['Volcanic Ash-Metar']			= "Cenere Vulcanica";
+$lang['Tornado-Metar']			    = "Tornado";
+$lang['Water Sprout-Metar']			= "Tornado";
+$lang['Clear-Metar']					= "Cielo Sereno";
+$lang['Mostly Clear-Metar']			= "Cielo Sereno";
+$lang['Partly Cloudy-Metar']			= "Parzialmente Nuvoloso";
+$lang['Mostly Scattered-Metar']		= "Sparpagliato";
+$lang['Mostly Cloudy-Metar']			= "Prevalentemente Nuvoloso";
+$lang['Overcast-Metar']			    = "Nuvoloso";
+$lang['Clouds-Metar']			  		= "Nuvoloso";
+$lang['Conditions-Metar']			    = "Condizioni";
+$lang['Showers-Metar']			    = "";
+
 ?>

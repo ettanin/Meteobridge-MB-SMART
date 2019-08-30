@@ -10,7 +10,7 @@
 	####################################################################################################
 
 //weather34 original metarnearby script 2018-2019 checkwx attribution must be in tact//
-include('settings.php');include('livedata.php');error_reporting(0); 
+include('settings.php');include('livedata.php');include('common.php');error_reporting(0); 
 $result = date_sun_info(time(), $lat, $lon);
 $sunr=date_sunrise(time(), SUNFUNCS_RET_STRING, $lat, $lon, $rise_zenith, $UTC);
 $suns=date_sunset(time(), SUNFUNCS_RET_STRING, $lat, $lon, $set_zenith, $UTC);
@@ -59,149 +59,147 @@ if($metar34conditions1=='SN' || $metar34conditions1 =='-RASN' || $metar34conditi
 if ($now >$suns2 ){$sky_icon='nt_snow.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_snow.svg';} 
 else $sky_icon='snow.svg'; 
-$sky_desc='Snow Showers <br>';
+$sky_desc=$lang['Snow-Metar'].'<br>'.$lang['Showers-Metar'].'';
 }
-
-
 //LIGHT RAIN
 else if($metar34conditions =='-SHRA' || $metar34conditions =='SHRA' || $metar34conditions=='-RA'){
 if ($now >$suns2 ){$sky_icon='nt_rain.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_rain.svg';} 
 else $sky_icon='rain.svg'; 
-$sky_desc='Light Rain <br>Showers';
+$sky_desc=$lang['Light Rain-Metar'].'<br>'.$lang['Showers-Metar'].'';
 }
 //rain heavy
 else if($metar34conditions =='+SHRA'){
 if ($now >$suns2 ){$sky_icon='nt_rain.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_rain.svg';} 
 else $sky_icon='rain.svg'; 
-$sky_desc='Heavy Rain <br>Showers';
+$sky_desc=$lang['Heavy Rain-Metar'].'<br>'.$lang['Showers-Metar'].'';
 }
 //rain moderate
 else if($metar34conditions=='+RA'){
 if ($now >$suns2 ){$sky_icon='nt_rain.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_rain.svg';} 
 else $sky_icon='rain.svg'; 
-$sky_desc='Moderate Rain <br>Showers';
+$sky_desc=$lang['Moderate Rain-Metar'].'<br>'.$lang['Showers-Metar'].'';
 }
 //rain
 else if($metar34conditions=='RA' || $metar34conditions=='SQ'){
 if ($now >$suns2 ){$sky_icon='nt_rain.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_rain.svg';} 
 else $sky_icon='rain.svg'; 
-$sky_desc='Rain <br>Showers';
+$sky_desc=$lang['Rain-Metar'].'<br>'.$lang['Showers-Metar'].'';
 }
 //snow light
 else if($metar34conditions=='-SN'){
 if ($now >$suns2 ){$sky_icon='snow.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='snow.svg';} 
 else $sky_icon='snow.svg'; 
-$sky_desc='Light Snow <br>Showers';
+$sky_desc=$lang['Light Snow-Metar'].'<br>'.$lang['Showers-Metar'].'';
 }
 //snow moderate
 else if($metar34conditions=='+SN'){
 if ($now >$suns2 ){$sky_icon='nt_snow.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_snow.svg';} 
 else $sky_icon='snow.svg'; 
-$sky_desc='Moderate Snow <br>Showers';
+$sky_desc=$lang['Moderate Snow-Metar'].'<br>'.$lang['Showers-Metar'].'';
 }
 //snow
 else if($metar34conditions=='SN'){
 if ($now >$suns2 ){$sky_icon='nt_snow.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_snow.svg';} 
 else $sky_icon='snow.svg'; 
-$sky_desc='Snow Showers <br>';
+$sky_desc=$lang['Snow-Metar'].'<br>'.$lang['Showers-Metar'].'';
 }
 //snow
 else if($metar34conditions1=='SN'){
 if ($now >$suns2 ){$sky_icon='nt_snow.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_snow.svg';} 
 else $sky_icon='snow.svg'; 
-$sky_desc='Snow Showers <br>';
+$sky_desc=$lang['Snow-Metar'].'<br>'.$lang['Showers-Metar'].'';
 }
 //snow grains
 else if($metar34conditions=='SG'){
 if ($now >$suns2 ){$sky_icon='snow.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='snow.svg';} 
 else $sky_icon='snow.svg'; 
-$sky_desc='Snow Grains <br>';
+$sky_desc=$lang['Snow Grains-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 //snow grains
 else if($metar34conditions=='SNINCR'){
 if ($now >$suns2 ){$sky_icon='nt_snow.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_snow.svg';} 
 else $sky_icon='snow.svg'; 
-$sky_desc='Snow Showers <br>';
+$sky_desc=$lang['Snow-Metar'].'<br>'.$lang['Showers-Metar'].'';
 }
 //sleet
 else if($metar34conditions=='IP' || $metar34conditions =='-RASN'){
 if ($now >$suns2 ){$sky_icon='nt_sleet.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_sleet.svg';} 
 else $sky_icon='sleet.svg'; 
-$sky_desc='Sleet Showers';
+$sky_desc=$lang['Sleet-Metar'].'<br>'.$lang['Showers-Metar'].'';
 }
 //Haze
 else if($metar34conditions=='HZ'){
 if ($now >$suns2 ){$sky_icon='nt_haze.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_haze.svg';} 
 else $sky_icon='haze.svg'; 
-$sky_desc='Hazy <br>Conditions';
+$sky_desc=$lang['Hazy-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 //Batches Fog
 else if($metar34conditions=='FG' || $metar34conditions=='NFG' || $metar34conditions=='BCFG'){
 if ($now >$suns2 ){$sky_icon='nt_fog.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_fog.svg';} 
 else $sky_icon='fog.svg'; 
-$sky_desc='Foggy <br>Conditions';
+$sky_desc=$lang['Foggy-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 //Mist
 else if($metar34conditions=='BR' || $metar34conditions=='NBR'){
 if ($now >$suns2 ){$sky_icon='nt_fog.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_fog.svg';} 
 else $sky_icon='fog.svg'; 
-$sky_desc='Misty <br>Conditions';
+$sky_desc=$lang['Misty-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 //Hail
 else if($metar34conditions=='GR' || $metar34conditions=='GS'){
 if ($now >$suns2 ){$sky_icon='nt_hail.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_hail.svg';} 
 else $sky_icon='hail.svg'; 
-$sky_desc='Hail and Rain <br>Conditions';
+$sky_desc=$lang['Hail and Rain-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 //ICE CYSTALS
 else if($metar34conditions=='IC'){
 if ($now >$suns2 ){$sky_icon='nt_hail.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_hail.svg';} 
 else $sky_icon='hail.svg'; 
-$sky_desc='Ice Crystals';
+$sky_desc=$lang['Ice Crystals-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 //ICE PELLETS
 else if($metar34conditions=='PL'){
 if ($now >$suns2 ){$sky_icon='nt_hail.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_hail.svg';} 
 else $sky_icon='hail.svg'; 
-$sky_desc='Ice Pellets <br>';
+$sky_desc=$lang['Ice Pellets-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 //Thunderstorms
 else if($metar34conditions=='TS' || $metar34conditions=='-TS' || $metar34conditions=='+TS' || $metar34conditions=='TSRA' || $metar34conditions=='SCTTSRA' || $metar34conditions=='NTSRA'){
 if ($now >$suns2 ){$sky_icon='nt_tstorm.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_tstorm.svg';} 
 else $sky_icon='tstorm.svg'; 
-$sky_desc='Thunderstorm <br>Conditions';
+$sky_desc=$lang['Thunderstorm-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 //Dust-Sand
 else if($metar34conditions=='DS' || $metar34conditions=='DU' || $metar34conditions=='PO' || $metar34conditions=='SA' || $metar34conditions=='SS'){
 if ($now >$suns2 ){$sky_icon='nt_dust.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_dust.svg';} 
 else $sky_icon='dust.svg'; 
-$sky_desc='Sand Storm <br>Conditions';
+$sky_desc=$lang['Sand Storm-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 //Volcanic Ash
 else if($metar34conditions=='VA'){
 if ($now >$suns2 ){$sky_icon='volcanoe.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='volcanoe.svg';} 
 else $sky_icon='volcanoe.svg'; 
-$sky_desc='Volcanic Ash <br>Conditions';
+$sky_desc=$lang['Volcanic Ash-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 //+FC
 else if($metar34conditions=='+FC'){
@@ -214,7 +212,7 @@ else if($metar34conditions=='NSC'){
 if ($now >$suns2 ){$sky_icon='nt_clear.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_clear.svg';} 
 else $sky_icon='clear.svg'; 
-$sky_desc='Clear <br>Conditions';
+$sky_desc=$lang['Clear-Metar'].'<br>'.$lang['Conditions'].'';
 }
 //2nd part clouds
 //clear
@@ -223,48 +221,49 @@ else if($metar34clouds=='SKC' || $metar34clouds=='CLR' || $metar34clouds=='NSC')
 if ($now >$suns2 ){$sky_icon='nt_clear.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_clear.svg';} 
 else $sky_icon='clear.svg'; 
-$sky_desc='Clear <br>Conditions';
+$sky_desc=$lang['Clear-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 else if($metar34clouds=='CAVOK'){
 if ($now >$suns2 ){$sky_icon='clear-night.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='clear-night.svg';} 
 else $sky_icon='clear-day.svg'; 
-$sky_desc='Mostly Clear <br>Conditions';
+$sky_desc=$lang['Mostly Clear-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 //few
 else if($metar34clouds=='FEW'){
 if ($now >$suns2 ){$sky_icon='nt_partlycloudy.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_partlycloudy.svg';} 
 else $sky_icon='partlysunny.svg'; 
-$sky_desc='Partly Cloudy <br>Conditions';
+$sky_desc=$lang['Partly Cloudy-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 //scattered clouds
 else if($metar34clouds=='SCT'){
 if ($now >$suns2 ){$sky_icon='nt_scatteredclouds.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_scatteredclouds.svg';} 
 else $sky_icon='scatteredclouds.svg'; 	
-$sky_desc='Mostly Scattered <br>Clouds';
+$sky_desc=$lang['Mostly Scattered-Metar'].'<br>'.$lang['Clouds-Metar'].'';
 }
 //mostly cloudy
 else if($metar34clouds=='BKN'){		
 if ($now >$suns2 ){$sky_icon='nt_mostlycloudy.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_mostlycloudy.svg';} 
 else $sky_icon='mostlycloudy.svg'; 	
-$sky_desc='Mostly Cloudy <br>Conditions';
+$sky_desc==$lang['Mostly Cloudy-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 //overcast
 else if($metar34clouds=='OVC'){
 if ($now >$suns2 ){$sky_icon='nt_overcast.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_overcast.svg';} 
 else $sky_icon='overcast.svg'; 
-$sky_desc='Overcast <br>Conditions';
+$sky_desc==$lang['Overcast-Metar'].'<br>'.$lang['Conditions-Metar'].'';
+
 }
 //overcast
 else if($metar34clouds=='OVX'){
 if ($now >$suns2 ){$sky_icon='nt_overcast.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_overcast.svg';} 
 else $sky_icon='overcast.svg'; 
-$sky_desc='Overcast Conditions';
+$sky_desc=$lang['Overcast-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 //offline
 else{

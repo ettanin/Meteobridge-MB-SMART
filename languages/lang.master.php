@@ -350,5 +350,36 @@ $lang['Quiet']        			= "Quiet";
 $lang['Active']        			= "Active";
 $lang['Ago']        			= "Ago";
 $lang['Now']        			= "Now";
+#metar conditions
+$lang['Snow-Metar']					= "Snow";
+$lang['Light Rain-Metar']				= "Light Rain";
+$lang['Heavy Rain-Metar']				= "Heavy Rain";
+$lang['Moderate Rain-Metar']			= "Moderate Rain";
+$lang['Light Snow-Metar']				= "Light Snow";
+$lang['Moderate Snow-Metar']			= "Moderate Snow";
+$lang['Snow Grains-Metar']			= "Snow Grains";
+$lang['Sleet-Metar']					= "Sleet";
+$lang['Foggy-Metar']					= "Foggy";
+$lang['Misty-Metar']					= "Misty";
+$lang['Hail and Rain-Metar']			= "Hail and Rain";
+$lang['Ice Crystals-Metar']			= "Ice Crystals";
+$lang['Ice Pellets-Metar']			= "Ice Pellets";
+$lang['Thunderstorm-Metar']			= "Thunder";
+$lang['Sand Storm-Metar']				= "Sand Storm";
+$lang['Volcanic Ash-Metar']			= "Volcanic Ash";
+$lang['Tornado-Metar']			    = "Tornado";
+$lang['Water Sprout-Metar']			= "Water Sprout";
+$lang['Clear-Metar']					= "Clear";
+$lang['Mostly Clear-Metar']			= "Mostly Clear";
+$lang['Partly Cloudy-Metar']			= "Partly Cloudy";
+$lang['Mostly Scattered-Metar']		= "Mostly Scattered";
+$lang['Mostly Cloudy-Metar']			= "Mostly Cloudy";
+$lang['Overcast-Metar']			    = "Overcast";
+$lang['Clouds-Metar']			  		= "Clouds";
+$lang['Conditions-Metar']			    = "Conditions";
+$lang['Showers-Metar']			    = "Showers";
+
+
+
 
 ?>

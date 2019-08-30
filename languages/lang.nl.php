@@ -338,4 +338,33 @@ $lang['Quiet']        			= "Stil";
 $lang['Active']        			= "Active";
 $lang['Ago']        			= "Geleden";
 $lang['Now']        			= "Nu";
+#metar conditions
+$lang['Snow-Metar']						= "Sneeuw";
+$lang['Light Rain-Metar']				= "Lichte Regen";
+$lang['Heavy Rain-Metar']				= "Zware Regen";
+$lang['Moderate Rain-Metar']			= "Regelmatige Regen";
+$lang['Light Snow-Metar']				= "Lichte Sneeuw";
+$lang['Moderate Snow-Metar']			= "Regelmatige Sneeuw";
+$lang['Snow Grains-Metar']				= "Sneeuwkorrels";
+$lang['Sleet-Metar']					= "Sneeuw en Regen";
+$lang['Foggy-Metar']					= "Mistig";
+$lang['Misty-Metar']					= "Mistig";
+$lang['Hail and Rain-Metar']			= "Hagel en Regen";
+$lang['Ice Crystals-Metar']				= "Ijspellets";
+$lang['Ice Pellets-Metar']				= "Ijspellets";
+$lang['Thunderstorm-Metar']				= "Donder";
+$lang['Sand Storm-Metar']				= "Zandstorm";
+$lang['Volcanic Ash-Metar']				= "Vulkaan";
+$lang['Tornado-Metar']			   		= "Tornado";
+$lang['Water Sprout-Metar']				= "Water Sprout";
+$lang['Clear-Metar']					= "Heldere Lucht";
+$lang['Mostly Clear-Metar']				= "Voornamelijk Helder";
+$lang['Partly Cloudy-Metar']			= "Gedeeltelijk Bewolkt";
+$lang['Mostly Scattered-Metar']		    = "Verspreide Bewolking";
+$lang['Mostly Cloudy-Metar']			= "Voornamelijk Bewolkt";
+$lang['Overcast-Metar']			        = "Bewolking";
+$lang['Clouds-Metar']			  		= "Colken";
+$lang['Conditions-Metar']			    = "Voorwaarden";
+$lang['Showers-Metar']			        = "Bui";
+
 ?>
