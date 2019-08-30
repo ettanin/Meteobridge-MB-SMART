@@ -1,8 +1,5 @@
 <?php
 include('settings1.php');
-
-
-
 	####################################################################################################
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
@@ -11,13 +8,10 @@ include('settings1.php');
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
-
-
-
- // HOMEWEATHERSTATION EASY SETUP AUGUST 2016 //
+ // FIRST RELEASE HOMEWEATHERSTATION EASY SETUP AUGUST 2016 //
  // SIMPLE EASY PHP BASED AND CSS //
  // DEVELOPED BY BRIAN UNDERDOWN //
- // RELEASED NOVEMBER 2019 //
+ // REVISED RELEASED AUGUST 2019 //
  // Meteobridge SMART//
  //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 
@@ -156,7 +150,7 @@ if (isset($_POST['submit_pwd'])){    $pass = isset($_POST['passwd']) ? $_POST['p
 
 </div>
 <div span style="width:450px;margin:0 auto;margin-top:10px;text-align:center;color:#4a636f;background:0;font-family:arial;padding:20px;border-radius:4px;border:1px solid rgba(74, 99, 111, 0.4);"> 
-<img src='img/MB-smart-easyweathersetupweather34.svg' width='420px'>
+<img src='img/weather34logo.svg' width='80px' style="float:left">
 
 <br>
 
@@ -1856,13 +1850,9 @@ now check the weather
 </div>
 
    <br><br>
-  <strong><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="0" stroke="#F75C46" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg></strong><span style="color:#777;"> ** see file in download and important read file called nomysqlsetup.txt  </span><br>
- <br>
-    <span style="font-size:12px;color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M16 14 L16 23 M16 8 L16 10" />
-    <circle cx="16" cy="16" r="14" />
-</svg> Meteobridge DASHBOARD EASY SETUP &copy; 2015-<?php echo date('Y');?> Dashboard MB-SMART </span><br>
-<center><a href="http://www.meteobridge.com/wiki/index.php/Home" title="http://www.meteobridge.com/wiki/index.php/Home" target="_blank"><img src="img/meteobridge.svg" width="120" /></a></center><br>
- 
+  
+ <br><br>
+<a href="https://weather34.com/homeweatherstation/" title="https://weather34.com/homeweatherstation/" target="_blank"><img src='img/weather34logo.svg' width='50' style="float:left;margin-top:-20px"></a>
+<a href="http://www.meteobridge.com/wiki/index.php/Home" title="http://www.meteobridge.com/wiki/index.php/Home" target="_blank"><img src="img/meteobridge.svg" width="120"  style="float:right;margin-top:-10px"/></a><br><br><span style="font-size:12px;color:#777;">
+ <center><?php echo "2015-" ;?><?php echo date('Y');?> &copy;WEATHER34 MB-<orange>SMART</orange> Weather Template</center></span>
 </p></form></p></div></div>

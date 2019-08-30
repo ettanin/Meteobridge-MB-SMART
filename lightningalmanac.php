@@ -124,7 +124,7 @@ orange{color:#ff7c39;}
  <main class="grid1">
   <articlegraph> 
   <div class=actualg>Strikes Today Per 10 minutes</div>  
-  <iframe  src="ws1001charts/todaystrikes.php" frameborder="0" scrolling="no" width="100%" height="245px"></iframe>
+  <iframe  src="weather34charts/todaystrikes.php" frameborder="0" scrolling="no" width="100%" height="245px"></iframe>
    
   </articlegraph> 
   
