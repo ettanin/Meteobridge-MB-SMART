@@ -70,6 +70,7 @@ if ($positionlastmodule == 'webcamsmall.php') {
 //current 3dy forecast
 var refreshId;$(document).ready(function(){currentfore()});function currentfore(){$.ajax({cache:false,success:function(a){$("#currentfore").html(a);setTimeout(currentfore,360000)},type:"GET",url:"<?php echo $position6?>"})};</script>
 <script>
+//simple javascript clock
 var clockID;
 var yourTimeZoneFrom=<?php echo $UTC?>;
 var d=new Date();

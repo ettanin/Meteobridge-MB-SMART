@@ -48,7 +48,6 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
  <div class="weather34box">
  <div class="weather34title2"><?php echo $info?> &nbsp;<?php echo $position1title ;?></div>
  <div id="position1"></div></div></weather34topmodule>
-
   <weather34topmodule> <!-- Weather34 Module 2 -->
   <div class="weather34box">
   <div class="weather34title2"><?php echo $info?>  &nbsp;<?php echo $position2title ;?></div>
@@ -96,7 +95,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   <weather34module> <!-- Weather34 Main Module 3 Current-->
   <div class=actualt><?php echo $lang['Currentsky'];?></div>
   <div class=weather34chartlinks>
-  <a class="weather34tiplink" data-weather34tiplink="Metar Conditions" href="metarnearby.php" data-lity><?php echo $chartinfo?> <?php echo $language['Airport'];?> <?php if (filesize('jsondata/metar34.txt')<160) {
+  <a class="weather34tiplink" data-weather34tiplink="Metar Conditions" href="metarnearby.php" data-lity><?php echo $chartinfo?> <?php echo $language['Airport'];?> (<blue><?php echo $icao1?></blue>) <?php if (filesize('jsondata/metar34.txt')<160) {
     echo "(<ored>Offline</ored>)";
 } else {
     echo "";
