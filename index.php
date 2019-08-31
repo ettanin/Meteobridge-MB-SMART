@@ -229,8 +229,8 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <div class=hardwareimg1>
   <a href="https://www.meteobridge.com/wiki/index.php/Home" alt="https://www.meteobridge.com/wiki/index.php/Home" title="https://www.meteobridge.com/wiki/index.php/Home" class=hardwareimg1>Meteobridge</a> </div>
 
-  <div class=mbtype> <?php echo $info?>&nbsp;<?php echo $mbplatform?>: <?php echo $weather["mbplatform"]?></div>
-  <div class=mbfirmware> <?php echo $info?>&nbsp;Firmware Rev:<oblue><?php echo $weather["swversion"];echo "-",$weather["build"]?><oblue></div>
+  <div class=mbtype><weather34menumarkerblue></weather34menumarkerblue>&nbsp;<?php echo $mbplatform?>: <?php echo $weather["mbplatform"]?></div>
+  <div class=mbfirmware><weather34menumarkerorange></weather34menumarkerorange>&nbsp;Firmware Rev:<oblue><?php echo $weather["swversion"];echo "-",$weather["build"]?><oblue></div>
 <?php //meteobridge device uptime
 $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime)
 {
@@ -258,23 +258,23 @@ $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime)
     }
     return $weather34nanotimeago;
 }?>
-  <div class=nanouptime> <?php echo $info?>&nbsp;Interface Uptime:<oblue> <?php echo convert($nanosduptime)?></oblue></div>
+  <div class=nanouptime><weather34menumarkerred></weather34menumarkerred>&nbsp;Interface Uptime:<oblue> <?php echo convert($nanosduptime)?></oblue></div>
   </weather34infoboxes>
 
   <weather34infoboxes>
   <div class=hardwareimg2><a href="https://www.davisinstruments.com/solution/vantage-pro2/" title="https://www.davisinstruments.com/solution/vantage-pro2/" target="_blank" class=hardwareimg2>Davis Vantage&reg;</a></div>
-  <div class=hardware><?php echo $info?>&nbsp;<?php echo $weatherhardware;?></div>
-  <div class=hardwareinfo><?php echo $info?>&nbsp;Installed: <?php echo $hardwareinstalled;?></div>
-  <div class=hardwareuptime><?php echo $info?>&nbsp;Power Console:<?php echo $weather['indoorbattery']?> <?php echo $info?>ISS:<?php echo $weather['outdoorbattery']?></div>
+  <div class=hardware><weather34menumarkerorange></weather34menumarkerorange>&nbsp;<?php echo $weatherhardware;?></div>
+  <div class=hardwareinfo><weather34menumarkerblue></weather34menumarkerblue>&nbsp;Installed: <?php echo $hardwareinstalled;?></div>
+  <div class=hardwareuptime><weather34menumarkerred></weather34menumarkerred>&nbsp;Power Console:<?php echo $weather['indoorbattery']?> <?php echo $info?>ISS:<?php echo $weather['outdoorbattery']?></div>
   </weather34infoboxes>
 
   <weather34infoboxes>
   <div class=hardwareimg2><a href="https://weather34.com/homeweatherstation/" data-weather34tipfooter="WEATHER34 MB-SMART" target="_blank" class=hardwareimg3>Information</a></div>
-  <div class=hardware><?php echo $info?>&nbsp;Operational Since:<?php echo $since;?></div>
-  <div class=hardwareinfo><?php echo $info?>&nbsp;<?php echo $stationlocation?>
+  <div class=hardware><weather34menumarkerorange></weather34menumarkerorange>&nbsp;Operational Since:<?php echo $since;?></div>
+  <div class=hardwareinfo><weather34menumarkerblue></weather34menumarkerblue>&nbsp;<?php echo $stationlocation?>
   <img src="img/flags/<?php echo $flag ;?>.svg" width="15px" height="15px" alt="<?php echo $stationlocation?>" title="<?php echo $stationlocation?>">
   </div>
-  <div class=hardwareuptime><?php echo $info?>&nbsp;<?php echo $designedby;?>&nbsp;&copy;2015-<?php echo date('Y');?></div>
+  <div class=hardwareuptime><weather34menumarkerred></weather34menumarkerred>&nbsp;<?php echo $designedby;?>&nbsp;&copy;2015-<?php echo date('Y');?></div>
   </weather34infoboxes></div></div>
   <div class="footercontainer">
   <main class="gridfooter">
@@ -282,7 +282,7 @@ $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime)
   <div class=footertext>
   <div class="weather34-mbsmartlogo"><a class="weather34tipfooter" href="https://weather34.com/homeweatherstation/" data-weather34tipfooter="WEATHER34 MB-SMART" target="_blank"><img src="img/weather34-logo.svg" width="47em" height="45em"> <span>weather<ored>34</ored> designed</span></a>
   </div>
-  <?php echo $info?>&nbsp;<?php echo $lang['Weather Data Provided By']?>&nbsp;<?php echo $stationlocation?> Home Weather Station </div>
+  <weather34menumarkerbluegrey></weather34menumarkerbluegrey>&nbsp;<?php echo $lang['Weather Data Provided By']?>&nbsp;<?php echo $stationlocation?> Home Weather Station </div>
   <div class="weather34refresh"><a href="<?php $_SERVER['PHP_SELF']; ?>"> <?php echo $weather34refreshicon;?></a></div></div>
   </main>
  </body><?php include_once('updater.php');include_once('menu.php');?><div id=lightningalert></div>
