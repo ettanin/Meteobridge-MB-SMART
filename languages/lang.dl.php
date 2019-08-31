@@ -7,6 +7,7 @@ Translated by: <Your Name Here>
 Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
 Revised: August 2019
+
 -----------------
 */
 # -----------------------------------------------------
@@ -385,5 +386,5 @@ $lang['Overcast-Metar']			    = "Bewölkt";
 $lang['Clouds-Metar']			  		= "Bewölkt";
 $lang['Conditions-Metar']			    = "Bedingungen";
 $lang['Showers-Metar']			    = "Schauer";
-
+$lang['Rain-Metar']					= "Regen";
 ?>

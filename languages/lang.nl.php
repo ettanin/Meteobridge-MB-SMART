@@ -6,7 +6,7 @@ Language: Dutch
 Translated by: Piet Kampen
 Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
-Revised: 28 August 2019 
+Revised: 28 August 2019
 -----------------
 */
 # -----------------------------------------------------
@@ -374,5 +374,6 @@ $lang['Overcast-Metar']			        = "Bewolking";
 $lang['Clouds-Metar']			  		= "Colken";
 $lang['Conditions-Metar']			    = "Voorwaarden";
 $lang['Showers-Metar']			        = "Bui";
+$lang['Rain-Metar']						= "Regen";
 
 ?>

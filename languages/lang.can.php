@@ -6,6 +6,7 @@ Language: English
 Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
 Revised: August 2019
+
 -----------------
 */
 # -----------------------------------------------------
@@ -383,7 +384,7 @@ $lang['Overcast-Metar']			    = "Overcast";
 $lang['Clouds-Metar']			  		= "Clouds";
 $lang['Conditions-Metar']			    = "Conditions";
 $lang['Showers-Metar']			    = "Showers";
-
+$lang['Rain-Metar']					= "Rain";
 
 
 
