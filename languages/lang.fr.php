@@ -298,6 +298,10 @@ $lang['Weather Data Provided By']='Weather Data Provided By';
 $language['Airport']='Aéroport Metar';
 $lang['Weather Station'] ='Station Météo';
 $lang['Information'] ='Information';
+$lang['Operational Since'] ='Opérationnel Depuis';
+$lang['Battery'] ='Batterie';
+$lang['Installed']='Installé';
+$lang['Interface Uptime']='La durée de fonctionnent';
 
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Micro Earthquake';
