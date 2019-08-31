@@ -28,15 +28,19 @@ if ($weather["wind_speed"]<10) {
 <weather34windunitidunit><?php echo $lang['10 minutes'];?></weather34windunitidunit></div></div>
 
 <div class="weather34windgust">
-<weather34windunitidspeed1><?php echo $lang['Windspeed'];?></weather34windunitidspeed1>
+<weather34windunitidspeed1>
+<?php 
+//weather34-wind speed-windgust
+if ($weather["wind_gust_speed"]*$toKnots>=21.5983){echo $lang['Gust'];}else echo $lang['Windspeed']?></weather34windunitidspeed1>
+
 <?php
 //weather34-windgust
 if ($weather["wind_gust_speed"]*$toKnots>=26.9978) {
-    echo "<windred>",number_format($weather["wind_gust_speed"], 1),"</span>";
+    echo "<windred>",number_format($weather["wind_gust_speed"], 1),"</windred>";
 } elseif ($weather["wind_gust_speed"]*$toKnots>=21.5983) {
-    echo "<windorange>",number_format($weather["wind_gust_speed"], 1),"</span>";
+    echo "<windorange>",number_format($weather["wind_gust_speed"], 1),"</windorange>";
 } elseif ($weather["wind_gust_speed"]*$toKnots>=16.1987) {
-    echo "<windgreen>",number_format($weather["wind_gust_speed"], 1),"</span>";
+    echo "<windgreen>",number_format($weather["wind_gust_speed"], 1),"</windgreen>";
 } elseif ($weather["wind_gust_speed"]*$toKnots<16.1987 && $weather["wind_gust_speed"]*$toKnots>=5.39957) {
     echo "",number_format($weather["wind_gust_speed"], 1);
 } elseif ($weather["wind_gust_speed"]<=10) {

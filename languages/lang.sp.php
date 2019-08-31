@@ -85,7 +85,7 @@ $lang['FeelingVeryHot']         = 'Calor elevado';
 $lang['FeelingExtremelyHot']    = 'Calor extremo';
 //wind
 $lang['Windspeed']              = 'Velocidad';
-$lang['Gust']                   = 'Ráfaga';
+$lang['Gust']                   = '&nbsp;&nbsp;&nbsp;Ráfaga';
 $lang['Direction']              = 'Direccion';
 $lang['Gusting']                = 'Racheado a';
 $lang['Blowing']                = 'Soplando a';

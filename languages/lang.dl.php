@@ -85,8 +85,8 @@ $lang['FeelingUncomfortable']   = 'Gefühlt unkomfortabel';
 $lang['FeelingVeryHot']         = 'Gefühlt sehr heiss';
 $lang['FeelingExtremelyHot']    = 'Gefühlt extrem heiss';
 //wind
-$lang['Windspeed']              = 'Windspeed';
-$lang['Gust']                   = 'Böeen';
+$lang['Windspeed']              = 'Wind Speed';
+$lang['Gust']                   = 'Wind Böeen';
 $lang['Direction']              = 'Richtung';
 $lang['Gusting']                = 'in Böeen';
 $lang['Blowing']                = 'Wehen';
