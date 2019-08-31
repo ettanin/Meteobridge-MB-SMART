@@ -227,16 +227,7 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <main class="gridhardware">
   <weather34infoboxes>
   <div class=hardwareimg1>
-  <a href="https://www.meteobridge.com/wiki/index.php/Home" alt="https://www.meteobridge.com/wiki/index.php/Home" title="https://www.meteobridge.com/wiki/index.php/Home">
-<?php
-if ($mbplatform== "Meteobridge Pro") {
-    echo '<img src="img/MeteobridgePRO.svg" alt="Meteobridge Pro" title="Meteobridge Pro"  width="60px" height="45px">';
-} elseif ($mbplatform== "Meteobridge Nano") {
-    echo '<img src="img/nano.svg" alt="Meteobridge TP-LINK" title="Meteobridge Nano"   width="60px" height="45px">';
-} elseif ($mbplatform== "Meteobridge NanoSD") {
-    echo '<img src="img/nano.svg" alt="Meteobridge D-LINK" title="Meteobridge NanoSD"   width="60px" height="45px">';
-}
-?></a> </div>
+  <a href="https://www.meteobridge.com/wiki/index.php/Home" alt="https://www.meteobridge.com/wiki/index.php/Home" title="https://www.meteobridge.com/wiki/index.php/Home" class=hardwareimg1>Meteobridge</a> </div>
 
   <div class=mbtype> <?php echo $info?>&nbsp;<?php echo $mbplatform?>: <?php echo $weather["mbplatform"]?></div>
   <div class=mbfirmware> <?php echo $info?>&nbsp;Firmware Rev:<oblue><?php echo $weather["swversion"];echo "-",$weather["build"]?><oblue></div>
@@ -271,26 +262,19 @@ $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime)
   </weather34infoboxes>
 
   <weather34infoboxes>
-  <div class=hardwareimg2>
-  <?php
-if ($weatherhardware== "Davis Vantage Vue") {
-    echo '<img src="img/davisvue.svg" alt="Davis Instruments Vantage Vue" title="Davis Instruments Vantage Vue" width="100px" height="50px" style="margin-top:15px">';
-} elseif ($weatherhardware== "Davis Envoy8x") {
-    echo '<img src="img/designedfordavisenvoy8x.svg" alt="Davis Instruments Envoy8x" title="Davis Instruments Envoy8x" width="100px" height="50px" style="margin-top:15px">';
-} elseif ($davis=="Yes") {
-    echo '<img src="img/weather34-davis-vp2.svg" alt="Davis Instruments Vantage Pro 2" title="Davis Instruments Vantage Pro 2" width="80px" height="80px">';
-}?></div>
+  <div class=hardwareimg2><a href="https://www.davisinstruments.com/solution/vantage-pro2/" title="https://www.davisinstruments.com/solution/vantage-pro2/" target="_blank" class=hardwareimg2>Davis Vantage&reg;</a></div>
   <div class=hardware><?php echo $info?>&nbsp;<?php echo $weatherhardware;?></div>
   <div class=hardwareinfo><?php echo $info?>&nbsp;Installed: <?php echo $hardwareinstalled;?></div>
   <div class=hardwareuptime><?php echo $info?>&nbsp;Power Console:<?php echo $weather['indoorbattery']?> <?php echo $info?>ISS:<?php echo $weather['outdoorbattery']?></div>
   </weather34infoboxes>
 
   <weather34infoboxes>
-  <div class=locinfo><?php echo $info?>&nbsp;Operational Since:<?php echo $since;?></div>
-  <div class=locinfo2><?php echo $info?>&nbsp;<?php echo $stationlocation?>
+  <div class=hardwareimg2><a href="https://weather34.com/homeweatherstation/" data-weather34tipfooter="WEATHER34 MB-SMART" target="_blank" class=hardwareimg3>Information</a></div>
+  <div class=hardware><?php echo $info?>&nbsp;Operational Since:<?php echo $since;?></div>
+  <div class=hardwareinfo><?php echo $info?>&nbsp;<?php echo $stationlocation?>
   <img src="img/flags/<?php echo $flag ;?>.svg" width="15px" height="15px" alt="<?php echo $stationlocation?>" title="<?php echo $stationlocation?>">
   </div>
-  <div class=locinfo3><?php echo $info?>&nbsp;<?php echo $designedby;?>&nbsp;&copy;2015-<?php echo date('Y');?></div>
+  <div class=hardwareuptime><?php echo $info?>&nbsp;<?php echo $designedby;?>&nbsp;&copy;2015-<?php echo date('Y');?></div>
   </weather34infoboxes></div></div>
   <div class="footercontainer">
   <main class="gridfooter">
