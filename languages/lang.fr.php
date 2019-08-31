@@ -7,7 +7,6 @@ Translated by: <Your Name Here>
 Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
 Revised: August 2019
-
 -----------------
 */
 # -----------------------------------------------------
