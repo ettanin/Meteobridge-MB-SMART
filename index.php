@@ -262,14 +262,15 @@ $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime)
   </weather34infoboxes>
 
   <weather34infoboxes>
-  <div class=hardwareimg2><a href="https://www.davisinstruments.com/solution/vantage-pro2/" title="https://www.davisinstruments.com/solution/vantage-pro2/" target="_blank" class=hardwareimg2>Davis Vantage<supdavis>&reg;</supdavis></a></div>
+  <div class=hardwareimg2><a href="https://www.davisinstruments.com/solution/vantage-pro2/" title="https://www.davisinstruments.com/solution/vantage-pro2/" target="_blank" class=hardwareimg2>
+  <?php echo $lang['Weather Station'];?></a></div>
   <div class=hardware><weather34menumarkerorange></weather34menumarkerorange>&nbsp;<?php echo $weatherhardware;?></div>
   <div class=hardwareinfo><weather34menumarkerblue></weather34menumarkerblue>&nbsp;Installed: <?php echo $hardwareinstalled;?></div>
   <div class=hardwareuptime><weather34menumarkerred></weather34menumarkerred>&nbsp;Power Console:<?php echo $weather['indoorbattery']?> <?php echo $info?>ISS:<?php echo $weather['outdoorbattery']?></div>
   </weather34infoboxes>
 
   <weather34infoboxes>
-  <div class=hardwareimg2><a href="https://weather34.com/homeweatherstation/" data-weather34tipfooter="WEATHER34 MB-SMART" target="_blank" class=hardwareimg3>Information</a></div>
+  <div class=hardwareimg2><a href="https://weather34.com/homeweatherstation/" data-weather34tipfooter="WEATHER34 MB-SMART" target="_blank" class=hardwareimg3><?php echo $lang['Information']?></a></div>
   <div class=hardware><weather34menumarkerorange></weather34menumarkerorange>&nbsp;Operational Since:<?php echo $since;?></div>
   <div class=hardwareinfo><weather34menumarkerblue></weather34menumarkerblue>&nbsp;<?php echo $stationlocation?>
   <img src="img/flags/<?php echo $flag ;?>.svg" width="15px" height="15px" alt="<?php echo $stationlocation?>" title="<?php echo $stationlocation?>">

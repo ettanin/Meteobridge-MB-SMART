@@ -287,6 +287,8 @@ $lang['Min']                    = 'Min';
 $lang['Almanac'] 				= 'Almanak';
 $lang['Weather Data Provided By']='Weather Data Provided By';
 $language['Airport']			='Luchthaven Metar';
+$lang['Weather Station'] ='Weerstation';
+$lang['Information'] ='Informatie';
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Micro-aardbeving';
 $lang['MinorE']                  = 'Kleine aardbeving';
