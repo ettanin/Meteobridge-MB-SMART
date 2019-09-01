@@ -3,7 +3,7 @@
     #	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
     # https://weather34.com/homeweatherstation/index.html 											   #
     # 	                                                                                               #
-    # 	Release: August 2019						  	                                               #
+    # 	Release: Revised September 2019						  	                                       #
     # 	                                                                                               #
     #   https://www.weather34.com 	                                                                   #
     ####################################################################################################
@@ -44,10 +44,11 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 <!-- Weather34 top moudles begin -->
 <div class="maincontainer">
  <main class="grid">
- <weather34topmodule> <!-- Weather34 Module 1 -->
- <div class="weather34box">
- <div class="weather34title2"><?php echo $info?> &nbsp;<?php if ($toptitles=='default'){echo $lang['Temperature']." ". $lang['Almanac'];} else echo $position1title ;?></div>
- <div id="position1"></div></div></weather34topmodule>
+  <weather34topmodule> <!-- Weather34 Module 1 -->
+  <div class="weather34box">
+  <div class="weather34title2"><?php echo $info?> &nbsp;<?php if ($toptitles=='default'){echo $lang['Temperature']." ". $lang['Almanac'];} else echo $position1title ;?></div>
+  <div id="position1"></div></div></weather34topmodule>
+ 
   <weather34topmodule> <!-- Weather34 Module 2 -->
   <div class="weather34box">
   <div class="weather34title2"><?php echo $info?>  &nbsp;<?php if ($toptitles=='default'){echo $lang['Windspeed']." ". $lang['Almanac'];} else echo $position2title ;?></div>
