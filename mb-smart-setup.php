@@ -4,7 +4,7 @@ include('settings1.php');
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	Release: August 2019						  	                                               #
+	# 	Release: September 2019						  	                                               #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
@@ -1047,7 +1047,7 @@ your nearly there :-) keep going
         <br>
         
         
-        <div class= "stationvalue"> Position 4 *Fixed</div>
+        <div class= "stationvalue"> Position 4 </div>
        <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -1056,22 +1056,21 @@ your nearly there :-) keep going
         <label name="position4"></label>
         <select id="position4" name="position4" class="choose">  
             <option><?php echo $position4 ;?></option>                      
-            <option>davisconsoleoutlook.php</option>   
+            <option>davisconsoleoutlook.php</option>  
+            <option>barometer-year-month.php</option> 
            
                      </select>
                
         
         
-        <div class= "stationvalue"> Position 4 Title *FIXED</div>
+        <div class= "stationvalue"> Position 4 Title </div>
        <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
 </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M30 12 L16 24 2 12" />
 </svg>   
         <label name="position4title"></label>
-       <input name="position4title" type="text" id="position4title" value="&nbsp;<oblue>Davis VP2</oblue><oorange><supdavis>&reg;</supdavis></oorange>&nbsp;Console Forecast" class="choose"> 
-           
-            
+       <input name="position4title" type="text" id="position4title" value="<?php echo $position4title;?>" class="choose"> 
         </select>
         <br>
         
@@ -1205,7 +1204,9 @@ your nearly there :-) keep going
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> temperatureyear.php</span> *English only<span style="color:rgba(7, 114, 125, 1.000)"> Current Monthly / Yearly Temperature </span>  <br>
          
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> davisconsoleoutlook.php <span style="color:rgba(7, 114, 125, 1.000)">Davis Hardware Console users only</span> <br></span>
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> davisconsoleoutlook.php <span style="color:rgba(7, 114, 125, 1.000)">Davis Hardware Console users English only</span> <br></span>
+     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> barometer-year-month.php <span style="color:rgba(7, 114, 125, 1.000)">Barometer month year data</span> <br></span>
        
       <br></span></span>
          <strong> <span style="color:rgba(86, 95, 103, 1.000);">options Positions 6 and 12 + last module</span></strong><br>

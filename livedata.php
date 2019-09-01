@@ -346,9 +346,9 @@ $weather["humidity_ydmintime"]=$humydmintime;
 	
 	//month
 	$baromaxoriginalDateb2 = $meteobridgeapi[140];
-    $baromaxtimemonth = date("jS F", strtotime($baromaxoriginalDateb2));	
+    $baromaxtimemonth = date("j-m-y", strtotime($baromaxoriginalDateb2));	
 	$barominoriginalDateb3 = $meteobridgeapi[142];
-    $baromintimemonth = date("jS F", strtotime($barominoriginalDateb3));		
+    $baromintimemonth = date("j-m-y", strtotime($barominoriginalDateb3));		
 	$weather["thb0seapressmonthmaxtime"]	= $baromaxtimemonth; //seconds	
 	$weather["thb0seapressmonthmintime"]	= $baromintimemonth; //seconds
 	$weather["thb0seapressmmax"]	= $meteobridgeapi[139]; //max month
@@ -356,9 +356,9 @@ $weather["humidity_ydmintime"]=$humydmintime;
 	
 	//year
 	$baromaxoriginalDateb4 = $meteobridgeapi[144];
-    $baromaxtimeyear = date("jS F", strtotime($baromaxoriginalDateb4));	
+    $baromaxtimeyear = date("j-m-Y", strtotime($baromaxoriginalDateb4));	
 	$barominoriginalDateb5 = $meteobridgeapi[146];
-    $baromintimeyear = date("jS F", strtotime($barominoriginalDateb5));		
+    $baromintimeyear = date("j-m-Y", strtotime($barominoriginalDateb5));		
 	$weather["thb0seapressyearmaxtime"]	= $baromaxtimeyear; //seconds	
 	$weather["thb0seapressyearmintime"]	= $baromintimeyear; //seconds
 	$weather["thb0seapressymax"]	= $meteobridgeapi[143]; //max year
@@ -366,9 +366,9 @@ $weather["humidity_ydmintime"]=$humydmintime;
 	
 	//all time
 	$baromaxoriginalDateb6 = $meteobridgeapi[148];
-    $baromaxtimeall = date("jS M Y", strtotime($baromaxoriginalDateb6));	
+    $baromaxtimeall = date("j-m-Y", strtotime($baromaxoriginalDateb6));	
 	$barominoriginalDateb7 = $meteobridgeapi[150];
-    $baromintimeall = date("jS M Y", strtotime($barominoriginalDateb7));		
+    $baromintimeall = date("j-m-Y", strtotime($barominoriginalDateb7));		
 	$weather["thb0seapressamaxtime"]	= $baromaxtimeall; //seconds	
 	$weather["thb0seapressamintime"]	= $baromintimeall; //seconds
 	$weather["thb0seapressamax"]	= $meteobridgeapi[147]; //max all time
