@@ -46,22 +46,22 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
  <main class="grid">
  <weather34topmodule> <!-- Weather34 Module 1 -->
  <div class="weather34box">
- <div class="weather34title2"><?php echo $info?> &nbsp;<?php echo $position1title ;?></div>
+ <div class="weather34title2"><?php echo $info?> &nbsp;<?php if ($toptitles=='default'){echo $lang['Temperature']." ". $lang['Almanac'];} else echo $position1title ;?></div>
  <div id="position1"></div></div></weather34topmodule>
   <weather34topmodule> <!-- Weather34 Module 2 -->
   <div class="weather34box">
-  <div class="weather34title2"><?php echo $info?>  &nbsp;<?php echo $position2title ;?></div>
+  <div class="weather34title2"><?php echo $info?>  &nbsp;<?php if ($toptitles=='default'){echo $lang['Windspeed']." ". $lang['Almanac'];} else echo $position2title ;?></div>
   <div id="position2"></div></div></weather34topmodule>
 
   <weather34topmodule> <!-- Weather34 Module 3 -->
   <div class="weather34box">
-  <div class="weather34title2"><?php echo $info?>  &nbsp;<?php echo $position3title ;?></div>
+  <div class="weather34title2"><?php echo $info?>  &nbsp;<?php if ($toptitles=='default'){echo $lang['Rain']." ". $lang['Almanac'];} else echo $position3title ;?></div>
   <div id="position3"></div></div>
   </weather34topmodule>
 
  <weather34topmodule> <!-- Weather34 Module 3 -->
   <div class="weather34box">
-  <div class="weather34title2"><?php echo $info?>  &nbsp;<?php echo $position4title ;?></div>
+  <div class="weather34title2"><?php echo $info?>  &nbsp;<?php if ($position4=='davisconsoleoutlook.php'){echo "Console " .$lang['Forecast'];} else echo $lang['Barometer']." ". $lang['Almanac'] ;?></div>
   <div id="position4"></div></div>
   </weather34topmodule>
   </main>
