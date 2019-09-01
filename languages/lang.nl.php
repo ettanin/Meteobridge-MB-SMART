@@ -375,5 +375,7 @@ $lang['Clouds-Metar']			  		= "Colken";
 $lang['Conditions-Metar']			    = "Voorwaarden";
 $lang['Showers-Metar']			        = "Bui";
 $lang['Rain-Metar']						= "Regen";
+$lang['Lowest']							='&nbsp;&nbsp;Laag';
+$lang['Highest']						='&nbsp;&nbsp;Hoog';
 
 ?>

@@ -16,7 +16,7 @@ include('livedata.php');include('common.php');header('Content-type: text/html; c
 </div></wunit>
 
 <div class="wmonthmax"><?php echo strftime('%b',time());echo " ".date ('Y');?></div>
-<div class="tmonthconv" style="left:15px;">Lo&nbsp; <?php echo "<maxtempblue>".$weather["thb0seapressmmin"];echo "</maxtempblue><wunit>".$weather["barometer_units"];?>
+<div class="tmonthconv" style="left:10px;"><?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue>".$weather["thb0seapressmmin"];echo "</maxtempblue>";?>
 </div>
 
 
@@ -26,7 +26,7 @@ echo "<maxtempblue>".$weather["thb0seapressymin"];echo "</maxtempblue><wunit>".$
 ?>
 </div></wunit>
 <div class="ryearavg"><?php echo $weather["thb0seapressyearmintime"] ?></div>
-<div class="tavgconv">Lowest</div>
+<div class="tavgconv"><?php echo $lang['Lowest']?></div>
 
 
 
@@ -38,4 +38,4 @@ echo "<maxtemporange>".$weather["thb0seapressymax"];echo "</maxtemporange><wunit
 ?>
 </div></wunit>
 <div class="wyearmax"><?php echo $weather["thb0seapressyearmaxtime"] ?></div>
-<div class="tyearconv">Highest</div>
+<div class="tyearconv"><?php echo $lang['Highest']?></div>

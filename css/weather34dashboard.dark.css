@@ -6583,13 +6583,15 @@ tunit {
   vertical-align: middle;
   top: 5px;
   color: #aeb6bf;
+  text-transform:none
 }
 wunit {
   position: relative;
-  font-size: 0.4em;
+  font-size: 0.5em;
   vertical-align: middle;
   top: 5px;
   color: #aeb6bf;
+  text-transform:none
 }
 wiunit {
   position: relative;
@@ -6597,6 +6599,7 @@ wiunit {
   vertical-align: middle;
   top: 0;
   color: #aeb6bf;
+  text-transform:none
 }
 maxtempred {
   color: #d35d4e;

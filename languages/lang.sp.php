@@ -384,4 +384,6 @@ $lang['Clouds-Metar']			  		= "Nublado";
 $lang['Conditions-Metar']			    = "Condiciones";
 $lang['Showers-Metar']			    = "";
 $lang['Rain-Metar']						= "Lluvia";
+$lang['Lowest']						='&nbsp;&nbsp;Bajo';
+$lang['Highest']					='&nbsp;&nbsp;Alto';
 ?>
