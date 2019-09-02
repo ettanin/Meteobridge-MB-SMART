@@ -160,7 +160,7 @@ $lang['NW']                      = 'NW';
 $lang['NNW']                     = 'NNW';
 //rain
 $lang['raintoday']               = 'Rainfall Today';
-$lang['Rate']                    = 'Rate';
+$lang['Rate']                    = 'Rain Rate';
 $lang['Rainfall']                = 'Rainfall';
 $lang['Precip']                  = 'precip'; // must be short name do not use full precipatation !!!! ///
 $lang['Rain']                    = 'Rain';
