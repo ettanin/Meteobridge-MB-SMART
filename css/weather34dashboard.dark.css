@@ -4332,11 +4332,54 @@ rainu {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
+.rainratetextheading {
+  color: #aeb6bf;
+  font-family: weathertext2;
+  font-size: 0.6em;
+  margin-top:5px
+}
+.rainratetextheading ratevalue{color:rgba(61, 139, 150, 1.000)}
+
 .rainrateextra {
   position: absolute;
+  margin-top: 115px;
   margin-left: 227px;
-  margin-top: 130px;
+  color: #aeb6bf;
 }
+.rainratebar {
+  display: flex;
+  width: 4.2rem;
+  height: 1rem;
+  color: #aeb6bf;
+  overflow: hidden;
+  box-shadow: inset 3px 0 0 0 #3b9cac;
+  font-family: weathertext2;
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-border-left: 0;
+  -webkit-border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border: 1px solid rgba(61, 70, 77, 0.5);
+  border-width:thin;
+  border-left: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  
+}
+.weather34ratebar{
+	height:1rem;
+	background:rgba(61, 139, 150, .7);
+	color: #aeb6bf;
+	font-size: 0.6rem;	
+	}
+smallrainrateunit {
+  color: #aeb6bf;
+  font-family: Arial, Helvetica, system;
+  font-size: 0.4rem;
+  vertical-align: text-top
+  
+}	
 .rainratecirclehome {
   line-height: 17px;
   justify-content: left;
@@ -4546,11 +4589,7 @@ valuetextheading1 {
   font-size: 9px;
   color: #aeb6bf;
 }
-rainratetextheading {
-  font-family: weathertext2;
-  color: #aeb6bf;
-  font-size: 0.75em;
-}
+
 .tempmodulehome-50-10c {
   box-shadow: inset 3px 0 0 0 #8781bd;
 
@@ -7141,6 +7180,11 @@ weather34toptitle {
   right: 10px;
   color: #009bab;
 }
+.moonphaseing{position:absolute;left:100px; top:20px; width:120px;}
+.weather34moonphasesvg{position:absolute; left:100px; top:35px; width:120px;}
+.weather34moonforeground { fill:rgba(230, 232, 239, .3); stroke:rgba(86, 95, 103, .8); stroke-width:0;max-height:100px }
+.weather34moonbackground{ fill:rgba(86, 95, 103, .8);stroke:rgba(230, 232, 239, .3);stroke-width:0; }
+
 @media screen and (max-width: 960px) {
   .grid1 {
     display: grid;
@@ -7473,7 +7517,7 @@ weather34toptitle {
   margin-left: 330px;
   margin-top: 10px;
 }
-
+.weather34moonphasesvg{position:absolute; left:125px; top:35px; width:120px;}
 
 }
 
@@ -7754,7 +7798,7 @@ weather34toptitle {
   margin-left: 290px;
   margin-top: 7px;
 }
-
+.weather34moonphasesvg{position:absolute; left:125px; top:35px; width:120px;}
 }
 canvas,
 iframe,
