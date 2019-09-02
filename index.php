@@ -92,7 +92,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 }?>
 
 <?php if ($position4=='barometer-year-month.php') {
-    echo ' <a class="weather34tiplink" data-weather34tiplink="Forecast Summary" href="davisconsole.php" data-lity>'. $chartinfo. " Console ".$lang['Forecast']." </a>&nbsp;";
+    echo ' <a class="weather34tiplink" data-weather34tiplink="Forecast Summary" href="davisconsole.php" data-lity>'. $chartinfo. " Console 24-48hr " .$lang['Forecast']." </a>&nbsp;";
 }?>
 </span></div>
  <div id=currentfore></div></weather34module>
