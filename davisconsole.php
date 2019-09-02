@@ -50,7 +50,50 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
 .weather34darkbrowser{position:relative;background:0;width:100%;max-height:30px;margin:auto;margin-top:-15px;margin-left:0px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:45px;background-image:radial-gradient(circle,#EB7061 6px,transparent 8px),radial-gradient(circle,#F5D160 6px,transparent 8px),radial-gradient(circle,#81D982 6px,transparent 8px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),linear-gradient(to bottom,rgba(59,60,63,0.4) 40px,transparent 0);background-position:left top,left top,left top,right top,right top,right top,0 0;background-size:50px 45px,90px 45px,130px 45px,50px 30px,50px 45px,50px 60px,100%;background-repeat:no-repeat,no-repeat}.weather34darkbrowser[url]:after{content:attr(url);color:#aaa;font-size:10px;position:absolute;left:0;right:0;top:0;padding:4px 15px;margin:11px 50px 0 90px;border-radius:3px;background:rgba(97, 106, 114, 0.3);height:20px;box-sizing:border-box}
  blue{color:#01a4b4}orange{color:#009bb4}.actualt{position:relative;left:0px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:320px;height:0.85em;font-size:0.8rem;padding-top:1px;color:#aaa;align-items:center;justify-content:center;margin-bottom:10px;top:0}           
-.mbsmartlogo{position:relative;float:right;top:-20px;}.forecastimg{width:90px;float:right;margin-top:-20px;}.davishardwareimg{position:absolute;display:block;width:160px;float:right;margin-top:10px;right:10px}
+.mbsmartlogo{position:relative;float:right;top:-20px;}
+
+
+.forecastimg{
+ position:absolute;
+ display:flex;
+  width:20%;float:right;margin-top:30px;right:30px;
+  background: 0; 
+  align-items:center;justify-content:center;
+  
+  }
+  
+  
+  .davishardwareimg{position:absolute;display:block;width:100px;float:right;margin-top:170px;right:30px;border: 1px solid rgba(245, 247, 252, 0.02);
+  border-width: thin;
+  border-radius: 2px;
+  background: 0;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;}
+  
+  
+   @media screen and (max-width: 960px) {	
+   
+   .forecastimg{
+ 
+  width:15%;float:right;margin-top:30px;right:30px;
+  
+  
+  }  
+	
+  .davishardwareimg{display:none}
+  } 
+  
+  
+  @media screen and (max-width: 640px) {	  
+	.forecastimg{
+     margin-top:80px;right:20px; }
+  .davishardwareimg{display:none}
+  } 
+  
+  
+  
+  
 </style>
 <div class="weather34darkbrowser" url="Davis VP2 Console Forecast"></div>
   
