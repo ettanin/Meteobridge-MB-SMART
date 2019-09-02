@@ -143,8 +143,6 @@ else if (preg_match("/Partly/i", $weather["vpforecasttext"])) {echo '<img rel="p
 else if (preg_match("/Mostly cloudy/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/mostlycloudy.svg" class="forecastimg">';} 
 else if (preg_match("/Scattered/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="css/icons/scatteredclouds.svg" class="forecastimg">';} 
 echo $weather["vpforecasttext"]	; ?>
-<img src="img/weather34-davis-vp2.svg" class="davishardwareimg"/>
-
 </div></div>
 </article>
 </main>

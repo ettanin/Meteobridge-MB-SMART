@@ -6,7 +6,7 @@ Language: Dutch
 Translated by: Piet Kampen
 Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
-Revised: 28 August 2019
+Revised: 02 September 2019
 -----------------
 */
 # -----------------------------------------------------
@@ -259,7 +259,7 @@ $lang['Winddirection']          = 'Wind Richting';
 $lang['Measured']               = 'Gemeten Vandaag';
 $lang['Forecast']               = 'Voorspelling';
 $lang['Forecastahead']          = 'Voorspelling';
-$lang['Forecastsummary']        = 'Voorspelling Samenvatting';
+$lang['Forecastsummary']        = 'Samenvatting';
 $lang['WindGust']               = 'Wind snelheid | Vlaag';
 $lang['Hourlyforecast']         = 'Voorspelling per uur ';
 $lang['Significantearthquake']  = 'Veelzeggende aardbeving';
@@ -353,14 +353,14 @@ $lang['Heavy Rain-Metar']				= "Zware Regen";
 $lang['Moderate Rain-Metar']			= "Regelmatige Regen";
 $lang['Light Snow-Metar']				= "Lichte Sneeuw";
 $lang['Moderate Snow-Metar']			= "Regelmatige Sneeuw";
-$lang['Snow Grains-Metar']				= "Sneeuwkorrels";
+$lang['Snow Grains-Metar']				= "Hagel";
 $lang['Sleet-Metar']					= "Sneeuw en Regen";
 $lang['Foggy-Metar']					= "Mistig";
 $lang['Misty-Metar']					= "Mistig";
 $lang['Hail and Rain-Metar']			= "Hagel en Regen";
-$lang['Ice Crystals-Metar']				= "Ijspellets";
-$lang['Ice Pellets-Metar']				= "Ijspellets";
-$lang['Thunderstorm-Metar']				= "Donder";
+$lang['Ice Crystals-Metar']				= "Ijzel";
+$lang['Ice Pellets-Metar']				= "Ijzel";
+$lang['Thunderstorm-Metar']				= "Onweer";
 $lang['Sand Storm-Metar']				= "Zandstorm";
 $lang['Volcanic Ash-Metar']				= "Vulkaan";
 $lang['Tornado-Metar']			   		= "Tornado";
@@ -371,8 +371,8 @@ $lang['Partly Cloudy-Metar']			= "Gedeeltelijk Bewolkt";
 $lang['Mostly Scattered-Metar']		    = "Verspreide Bewolking";
 $lang['Mostly Cloudy-Metar']			= "Voornamelijk Bewolkt";
 $lang['Overcast-Metar']			        = "Bewolking";
-$lang['Clouds-Metar']			  		= "Colken";
-$lang['Conditions-Metar']			    = "Voorwaarden";
+$lang['Clouds-Metar']			  		= "Wolken";
+$lang['Conditions-Metar']			    = "";
 $lang['Showers-Metar']			        = "Bui";
 $lang['Rain-Metar']						= "Regen";
 $lang['Lowest']							='&nbsp;&nbsp;Laag';
