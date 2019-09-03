@@ -31,7 +31,7 @@ include('livedata.php');include('common.php');header('Content-type: text/html; c
  else if ($weather["temp_units"]=='F' && $weather["tempymin"]>-50){ echo "<maxtempblue>", $weather["tempymin"]  ;echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"] ; }
  ?></div></tunit1></a>
 <div class="tmonthmax" style="margin-left:-5px;"><?php echo $weather["tempymintime2"]?></div>
-<div class="tmonthconv"><?php echo $lang['Lowest']?></div>
+<div class="tmonthconv" style="margin-left:-3px;"><?php echo $lang['Lowest']?></div>
 
 
 
