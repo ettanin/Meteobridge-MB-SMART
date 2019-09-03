@@ -1,4 +1,14 @@
-<?php include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
+<?php 
+	####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: September 2019						  	                                               #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
 <div class="topframe">
 
 <div class="tempminthisyear">
@@ -20,15 +30,13 @@
  else if ($weather["temp_units"]=='F' && $weather["tempymin"]>=42.8){ echo "<maxtempgreen>", $weather["tempymin"]  ;echo "</maxtempgreen><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='F' && $weather["tempymin"]>-50){ echo "<maxtempblue>", $weather["tempymin"]  ;echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"] ; }
  ?></div></tunit1></a>
-<div class="tmonthmax"><?php echo $weather["tempymintime2"]?></div>
-<div class="tmonthconv"><?php 
-if ($weather["temp_units"]=='C'){ echo anyToF($weather["tempymin"])."&deg;F";}
-else if ($weather["temp_units"]=='F'){echo anyToC($weather["tempymin"])."&deg;C";}
-?></div>
+<div class="tmonthmax" style="margin-left:-5px;"><?php echo $weather["tempymintime2"]?></div>
+<div class="tmonthconv"><?php echo $lang['Lowest']?></div>
 
 
 
-<div class="tempavgthisyear">
+<div class="tempavgthisyear" >
+<a class="weather34tipavg1" data-weather34tipavg1="Max:<?php echo $weather["tempmmax"]."&deg;   Min: ".$weather["tempmmin"]."&deg;"?>">
 <?php //temperture min year
  if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>30){echo "<maxtempred>",$weather["tempyearavg"]  ;echo "</maxtempred><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='C' && $weather["tempyearavg"]>24){echo "<maxtemporange>",$weather["tempyearavg"]  ;echo "</maxtemporange><tunit1>&deg;".$weather["temp_units"] ; }
@@ -45,13 +53,14 @@ else if ($weather["temp_units"]=='F'){echo anyToC($weather["tempymin"])."&deg;C"
  else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>53.6){echo "<maxtempyellow>",$weather["tempyearavg"]  ;echo "</maxtempyellow><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>=42.8){ echo "<maxtempgreen>", $weather["tempyearavg"]  ;echo "</maxtempgreen><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='F' && $weather["tempyearavg"]>-50){ echo "<maxtempblue>", $weather["tempyearavg"]  ;echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"] ; }
- ?></div></tunit>
+ ?></div></tunit></a>
 
-<div class="tyearavg"><?php echo $lang['Average']. "  ".date('Y')?></div>
-<div class="tavgconv"><?php 
-if ($weather["temp_units"]=='C'){ echo anyToF($weather["tempyearavg"])."&deg;F";}
-else if ($weather["temp_units"]=='F'){echo anyToC($weather["tempyearavg"])."&deg;C";}
-?></div>
+<div class="tyearavg">&nbsp;<?php echo strftime('%B',time());?></div>
+<div class="tavgconv" style="margin-left:-3px;"><?php echo $lang['Average']?></div>
+
+
+
+
 
 <div class="yearwordtempbig">Temperature</div>
 <div class="tempmaxthisyear">
@@ -75,7 +84,4 @@ else if ($weather["temp_units"]=='F'){echo anyToC($weather["tempyearavg"])."&deg
  ?>
 </div></tunit1></a>
 <div class="tyearmax">&nbsp;<?php echo $weather["tempymaxtime2"]?></div>
-<div class="tyearconv"><?php 
-if ($weather["temp_units"]=='C'){ echo anyToF($weather["tempymax"])."&deg;F";}
-else if ($weather["temp_units"]=='F'){echo anyToC($weather["tempymax"])."&deg;C";}
-?></div>
+<div class="tyearconv"><?php echo $lang['Highest']?></div>

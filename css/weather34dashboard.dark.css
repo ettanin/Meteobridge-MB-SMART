@@ -6593,6 +6593,7 @@ wfstriketoday {
   display: flex;
   top: 5px;
   left: 75px;
+  text-transform: capitalize
 
 }
 .tavgconv {

@@ -12,21 +12,24 @@
 include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
 <div class="topframe">
 <div class="rainmaxthismonth">
-<?php echo "<maxtemporange>".$weather["thb0seapressmmax"];echo "</maxtemporange><wunit>".$weather["barometer_units"];?>
-</div></wunit>
-
-<div class="wmonthmax"><?php echo strftime('%b',time());echo " ".date ('Y');?></div>
-<div class="tmonthconv" style="left:10px;"><?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue>".$weather["thb0seapressmmin"];echo "</maxtempblue>";?>
-</div>
-
-
-<div class="rainavgthisyear">
 <?php // min
 echo "<maxtempblue>".$weather["thb0seapressymin"];echo "</maxtempblue><wunit>".$weather["barometer_units"];
 ?>
 </div></wunit>
-<div class="ryearavg"><?php echo $weather["thb0seapressyearmintime"] ?></div>
-<div class="tavgconv"><?php echo $lang['Lowest']?></div>
+<div class="wmonthmax"><?php echo $weather["thb0seapressyearmintime"] ?></div>
+<div class="tmonthconv">&nbsp;<?php echo $lang['Lowest']?></div>
+
+
+<div class="rainavgthisyear">
+
+
+<?php echo "<maxtemporange>".$weather["thb0seapressmmax"];echo "</maxtemporange><wunit>".$weather["barometer_units"];?>
+</div></wunit>
+
+<div class="ryearavg">&nbsp;<?php echo strftime('%B',time());?></div>
+<div class="tavgconv" style="margin-left:-12px;">&nbsp;<?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue>".$weather["thb0seapressmmin"];echo "</maxtempblue>";?>
+</div>
+
 
 
 
@@ -38,4 +41,4 @@ echo "<maxtemporange>".$weather["thb0seapressymax"];echo "</maxtemporange><wunit
 ?>
 </div></wunit>
 <div class="wyearmax"><?php echo $weather["thb0seapressyearmaxtime"] ?></div>
-<div class="tyearconv"><?php echo $lang['Highest']?></div>
+<div class="tyearconv">&nbsp;<?php echo $lang['Highest']?></div>

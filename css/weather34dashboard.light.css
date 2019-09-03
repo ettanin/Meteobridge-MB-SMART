@@ -6761,6 +6761,7 @@ airdescription {
   display: flex;
   top: 5px;
   left: 75px;
+  text-transform:capitalize
 }
 .tavgconv {
   font-size: 0.3em;

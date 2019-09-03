@@ -175,6 +175,7 @@ $lang['Last-Twenty-Four-Hour']	= 'Letzte 24h';
 $lang['Last-Ten-Minutes']  		= 'Letzte 10 min';
 $lang['Snow Accumulation']		 = 'Schnee Ansammlung';
 $lang['Rain Accumulation']		 = 'Regen Ansammlung';
+$lang['Accumulation']		 	= 'Ansammlung';
 $lang['Thunderstorm']			 = 'Donner';
 
 //sun -moon-daylight-darkness
