@@ -196,12 +196,16 @@ if ($weather["moonphase"]==0) {$weather["moonphase"]='New Moon';}else if ($weath
 	//dewpoint year
 	$originalDate44 = $meteobridgeapi[55];
     $dewymaxtime = date('jS M', strtotime($originalDate44));	
+	$dewymaxtime2 = date('j-m-Y', strtotime($originalDate44));	
 	$originalDate45 = $meteobridgeapi[57];
-    $dewymintime =  date('jS M', strtotime($originalDate45));	
+    $dewymintime =  date('jS M', strtotime($originalDate45));
+	$dewymintime2 = date('j-m-Y', strtotime($originalDate45));		
 	$weather["dewymax"]		    = $meteobridgeapi[54]; //temp max year
-	$weather["dewymaxtime"]		= $dewymaxtime; //seconds	
+	$weather["dewymaxtime"]		= $dewymaxtime; //seconds
+	$weather["dewymaxtime2"]	= $dewymaxtime2; //seconds	
 	$weather["dewymin"]		    = $meteobridgeapi[56]; //temp min year
 	$weather["dewymintime"]		= $dewymintime; //seconds	
+	$weather["dewymintime2"]	= $dewymintime2; //seconds	
 	//dewpoint today
 	$originalDate46 = $meteobridgeapi[64];
     $dewmaxtime = date('H:i', strtotime($originalDate46));	
@@ -684,6 +688,8 @@ if (is_numeric($meteobridgeapi[186]) && $meteobridgeapi[186] != '--') {
 	$weather['pressStartTime']	= 'All Time';
 	$weather['rainStartTime']	= 'All Time';
 }
+
+
 //battery
 	$weather['indoorbattery']=$meteobridgeapi[171];
 	$weather['outdoorbattery']=$meteobridgeapi[172];

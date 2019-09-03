@@ -1083,6 +1083,7 @@ your nearly there :-) keep going
             <option><?php echo $position4 ;?></option> 
             <option>davisconsoleoutlook.php</option>
             <option>barometer-year-month.php</option>
+            <option>dewpoint-year-month.php</option>
              </select>
                
         
