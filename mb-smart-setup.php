@@ -981,15 +981,6 @@ your nearly there :-) keep going
         </select>
         <br>
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
          <div class= "stationvalue"> *Position 12</div>
        <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
@@ -998,8 +989,7 @@ your nearly there :-) keep going
 </svg>
         <label name="position12"></label>
         <select id="position12" name="position12" class="choose">  
-            <option><?php echo $position12 ;?></option> 
-            <option>indoortemperature.php</option> 
+            <option><?php echo $position12 ;?></option>             
             <option>airqualitymodule.php</option>  
             <option>airqualityluftdaten.php</option>  
             <option>webcamsmall.php</option> 
@@ -1034,8 +1024,7 @@ your nearly there :-) keep going
 </svg>
         <label name="positionlastmodule"></label>
         <select id="positionlastmodule" name="positionlastmodule" class="choose">  
-            <option><?php echo $positionlastmodule ;?></option> 
-            <option>indoortemperature.php</option> 
+            <option><?php echo $positionlastmodule ;?></option>             
             <option>airqualitymodule.php</option> 
             <option>airqualityluftdaten.php</option>  
             <option>webcamsmall.php</option> 
@@ -1063,9 +1052,7 @@ your nearly there :-) keep going
      
       
       <br></span></span>
-         <strong> <span style="color:rgba(86, 95, 103, 1.000);">options Positions 6 and 12 + last module</span></strong><br>
-        <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> indoortemperature.php <orange>display indoor temperature</orange><br></span>
+         <strong> <span style="color:rgba(86, 95, 103, 1.000);">options Positions 6 and 12 + last module</span></strong><br>        
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> airqualitymodule.php <orange>display airquality</orange><br></span>
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
@@ -1077,13 +1064,8 @@ your nearly there :-) keep going
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> weather34uvsolar.php</span> <orange>display uv and solar radiation if you have hardware</orange> <br></span>
      
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> solaruvwu.php</span> <orange>display Weather Underground Day UV forecast and if you have only solar radiation </orange> <br></span>
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> eq.php</span> <orange>display last earthquake from earthquakereport.com</orange>   <br>     
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> solaruvwu.php</span> <orange>display Weather Underground Day UV forecast and if you have only solar radiation </orange> <br></span>      
      </span>
-     
-     
-        
      </span>
         
         <br>
