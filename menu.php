@@ -50,10 +50,10 @@ else echo '<svg id="weather34 locked" viewBox="0 0 32 32" width="12" height="12"
 ?>
 
 <li><a href="#">EXTRAS</a></li>
-<li>
-<?php if(!empty($webcamurl) && $webcamurl != ' ' && $webcamurl != 'Null' && $webcamurl != 'null'){?>
-<li><!---webcam---> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weather34menumarkeryellow></weather34menumarkeryellow> Web Cam </a></li>  
-<?php };?>
+<!--webcam--->
+<?php if($webcamurl==''){;} 
+else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weather34menumarkeryellow></weather34menumarkeryellow> Web Cam </a></li>';?>
+
 <li><!--contact info---> <a href="bio.php" data-lity title="Weather Station Owner Contact Card Info"> <weather34menumarkerorange></weather34menumarkerorange> Contact Card</a></li> 
 <li><!--hardware info---> <a href="stationinfo.php" data-lity title="Hardware Weather Station Hardware Info"> <weather34menumarkerred></weather34menumarkerred> Hardware Info</a></li>  
 
