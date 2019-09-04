@@ -17,8 +17,8 @@ include('weather34skydata.php');include('common.php');header('Content-type: text
 <!---simple svg moonphase-->
 <?php 
 if ($meteobridgeapi[153]==0 && $weather['luminance']<=2.5){echo '<img src="css/moonphases/NEW-MOON.svg" class="moonphaseing">';}
-else if ($meteobridgeapi[153]==2 ) {echo '<img src="css/moonphases/FIRST-QUARTER.svg" class="moonphaseing">';}
-else if ($meteobridgeapi[153]==4 ) {echo '<img src="css/moonphases/FULL-MOON.svg" class="moonphaseing">';}
+else if ($meteobridgeapi[153]==2 && $weather['luminance']<55 && $weather['luminance']>45) {echo '<img src="css/moonphases/FIRST-QUARTER.svg" class="moonphaseing">';}
+else if ($meteobridgeapi[153]==4 && $weather['luminance']<=2.5) {echo '<img src="css/moonphases/FULL-MOON.svg" class="moonphaseing">';}
 else if ($meteobridgeapi[153]==6 && $weather['luminance']<55 && $weather['luminance']>45) {echo '<img src="css/moonphases/LAST-QUARTER.svg" class="moonphaseing">';}
 else {echo '<div class="weather34moonphasesvg"><svg id="weather34moonphase" viewBox="0 0 200 200" version="1.1"/></svg></div>
 <script>

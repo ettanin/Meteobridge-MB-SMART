@@ -62,8 +62,8 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 <?php echo $info;?> Current Moon Phase<br><br>  
 <?php 
 if ($meteobridgeapi[153]==0 && $weather['luminance']<=2.5){echo '<img src="css/moonphases/NEW-MOON.svg" class="moonphaseing">';}
-else if ($meteobridgeapi[153]==2 ) {echo '<img src="css/moonphases/FIRST-QUARTER.svg" class="moonphaseing">';}
-else if ($meteobridgeapi[153]==4 ) {echo '<img src="css/moonphases/FULL-MOON.svg" class="moonphaseing">';}
+else if ($meteobridgeapi[153]==2 && $weather['luminance']<55 && $weather['luminance']>45) {echo '<img src="css/moonphases/FIRST-QUARTER.svg" class="moonphaseing">';}
+else if ($meteobridgeapi[153]==4 && $weather['luminance']<=2.5) {echo '<img src="css/moonphases/FULL-MOON.svg" class="moonphaseing">';}
 else if ($meteobridgeapi[153]==6 && $weather['luminance']<55 && $weather['luminance']>45) {echo '<img src="css/moonphases/LAST-QUARTER.svg" class="moonphaseing">';}
 else {echo '<div class="weather34moonphasesvg">
 <svg id="weather34moonphase" viewBox="0 0 200 200" version="1.1"/></svg></div>
