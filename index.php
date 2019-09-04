@@ -44,33 +44,26 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 <!-- Weather34 top moudles begin -->
 <div class="maincontainer">
  <main class="grid">
-  <weather34topmodule> <!-- Weather34 Module 1 -->
-  <div class="weather34box">
-  <div class="weather34title2"><?php echo $info?> &nbsp;<?php if ($toptitles=='default'){echo $lang['Temperature']." ". $lang['Almanac'];} else echo $position1title ;?></div>
-  <div id="position1"></div></div></weather34topmodule>
- 
-  <weather34topmodule> <!-- Weather34 Module 2 -->
-  <div class="weather34box">
-  <div class="weather34title2"><?php echo $info?>  &nbsp;<?php if ($toptitles=='default'){echo $lang['Windspeed']." ". $lang['Almanac'];} else echo $position2title ;?></div>
-  <div id="position2"></div></div></weather34topmodule>
+  <weather34topmodule>
+ <div class="weather34box">
+ <div class="weather34title2"><?php echo $info?> &nbsp;<?php echo $lang['Temperature']." ". $lang['Almanac'];?></div>
+ <div id=temperature-year></div></div></weather34topmodule>
 
-  <weather34topmodule> <!-- Weather34 Module 3 -->
+  <weather34topmodule>
   <div class="weather34box">
-  <div class="weather34title2"><?php echo $info?>  &nbsp;<?php if ($toptitles=='default'){echo $lang['Rain']." ". $lang['Almanac'];} else echo $position3title ;?></div>
-  <div id="position3"></div></div>
+  <div class="weather34title2"><?php echo $info?> &nbsp;<?php echo $lang['Windspeed']." ". $lang['Almanac'];?></div>
+  <div id=windspeed-year></div></div></weather34topmodule>
+
+  <weather34topmodule>
+  <div class="weather34box">
+  <div class="weather34title2"><?php echo $info?> &nbsp;<?php echo $lang['Rain']." ". $lang['Almanac'];?></div>
+  <div id=rainfall-year></div></div>
   </weather34topmodule>
 
- <weather34topmodule> <!-- Weather34 Module 3 -->
-  <div class="weather34box">
-  <div class="weather34title2"><?php echo $info?>  &nbsp;<?php 
-  if ($position4=='davisconsoleoutlook.php'){echo "Console " .$lang['Forecast'];} 
-  else if ($position4=='barometer-year-month.php'){echo $lang['Barometer']." ". $lang['Almanac'] ;}  
-  else echo $lang['Dewpoint']." ". $lang['Almanac'] ;  
-  ?>
-  
-  
-  </div>
-  <div id="position4"></div></div>
+  <weather34topmodule>
+   <div class="weather34box">
+   <div class="weather34title2"><?php echo $info?> &nbsp;<?php echo $lang['Dewpoint']." ". $lang['Almanac'];?></div>
+  <div id=dewpoint-year></div></div>
   </weather34topmodule>
   </main>
 

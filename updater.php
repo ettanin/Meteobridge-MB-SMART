@@ -2,31 +2,7 @@
 <script src="js/jquery.js"></script>
 <script Defer>
 //update the modules
-//update the modules position 1
-var refreshId;$(document).ready(function(){position1()});function position1(){$.ajax({cache:false,success:function(a){$("#position1").html(a);<?php if ($indoorRefresh > 0) {
-	echo 'setTimeout(position1,' . 160000*$indoorRefresh.')';
-} ?>},
-  contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
-  type:"GET",url:"<?php echo $position1 ;?>"})};  
   
-//update the modules position 2
-var refreshId;$(document).ready(function(){indoor()});function indoor(){$.ajax({cache:false,success:function(a){$("#position2").html(a);<?php if ($indoorRefresh > 0) {
-	echo 'setTimeout(indoor,' . 60000*$indoorRefresh.')';
-} ?>},
-  contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
-  type:"GET",url:"<?php echo $position2 ;?>"})};  
-  
- // position 3
-var refreshId;$(document).ready(function(){earthquake()});function earthquake(){$.ajax({cache:false,success:function(a){$("#position3").html(a);<?php if ($eqRefresh > 0) {
-    echo 'setTimeout(earthquake,' . 1000*$eqRefresh.')';
-} ?>},type:"GET",url:"<?php echo $position3 ?>"})}; 
-  
-  
-// position 4
-var refreshId;$(document).ready(function(){notification()});function notification(){$.ajax({cache:false,success:function(a){$("#position4").html(a);<?php if ($advisoryRefresh > 0) {
-    echo 'setTimeout(notification,' . 1000*$advisoryRefresh.')';
-} ?>},type:"GET",url:"<?php echo $position4 ;?>"})};
-
 // outdoor temp
 var refreshId;$(document).ready(function(){temperature()});function temperature(){$.ajax({cache:false,success:function(a){$("#temperature").html(a);<?php if ($tempRefresh > 0) {
     echo 'setTimeout(temperature,' . 1000*$tempRefresh.')';
@@ -67,7 +43,13 @@ if ($positionlastmodule == 'webcamsmall.php') {
     echo 'setTimeout(dldata,' . 1000*$p13Refresh.')';
 } ?>}, type:"GET",url:"<?php echo $positionlastmodule?>"})};
 
-//extra 4 small modules
+//extra modules fixed
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#temperature-year").show()}});var c=a("#temperature-year");c.load("temperatureyear.php");var b=setInterval(function(){c.load("temperatureyear.php")},380000)})})(jQuery);
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#rainfall-year").show()}});var c=a("#rainfall-year");c.load("rainfallf-year-month.php");var b=setInterval(function(){c.load("rainfallf-year-month.php")},380000)})})(jQuery);
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#windspeed-year").show()}});var c=a("#windspeed-year");c.load("windgustyear.php");var b=setInterval(function(){c.load("windgustyear.php")},380000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#dewpoint-year").show()}});var c=a("#dewpoint-year");c.load("dewpoint-year-month.php");var b=setInterval(function(){c.load("dewpoint-year-month.php")},380000)})})(jQuery);
 
@@ -77,10 +59,9 @@ if ($positionlastmodule == 'webcamsmall.php') {
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#heatchill-year").show()}});var c=a("#heatchill-year");c.load("barometer-year-month.php");var b=setInterval(function(){c.load("barometer-year-month.php")},380000)})})(jQuery);
 
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#consoledavis").show()}});var c=a("#consoledavis");c.load("consoleoutlook.php");var b=setInterval(function(){c.load("consoleoutlook.php")},380000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#earthquake").show()}});var c=a("#earthquake");c.load("eq.php");var b=setInterval(function(){c.load("eq.php")},380000)})})(jQuery);
-
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#consoledavis").show()}});var c=a("#consoledavis");c.load("consoleoutlook.php");var b=setInterval(function(){c.load("consoleoutlook.php")},380000)})})(jQuery);
 
 
 //current 3dy forecast
