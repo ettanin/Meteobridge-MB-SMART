@@ -55,6 +55,8 @@ $timeFormatShort    = "'. $_POST["timeFormatShort"]. '";
 $clockformat    = "'. $_POST["clockformat"]. '";
 $showDate = '. $_POST["showDate"]. ';
 $temperaturemodule   = "'. $_POST["temperaturemodule"]. '";
+$position6title   = "'. $_POST["position6title"]. '";
+$position6   = "'. $_POST["position6"]. '";
 $position12title   = "'. $_POST["position12title"]. '";
 $position12   = "'. $_POST["position12"]. '";
 $positionlastmoduletitle   = "'. $_POST["positionlastmoduletitle"]. '";
@@ -951,16 +953,37 @@ your nearly there :-) keep going
   
   
   
-            
         
-        <div class= "weathersectiontitle"> 
-   <svg id="i-settings" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
-    <circle cx="16" cy="16" r="4" />
+         <div class= "stationvalue"> *Position 6 *Fixed</div>
+       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M30 12 L16 24 2 12" />
 </svg>
-  Select larger module to use in last 2 main module position
-    </div>
-    <br><br>
+        <label name="position6"></label>
+        <select id="position6" name="position6" class="choose">  
+            <option><?php echo $position6 ;?></option>  
+            <option>forecast3wularge.php</option>  
+                     </select>
+               
+      
+        
+        <div class= "stationvalue"> Position 6 Title</div>
+       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M30 12 L16 24 2 12" />
+</svg>   
+        <label name="position6title"></label>
+       <input name="position6title" type="text" id="position6title" value="<?php echo $position6title;?>" class="choose"> 
+           
+            
+        </select>
+        <br>
+        
+        
+        
+        
         
         
         
