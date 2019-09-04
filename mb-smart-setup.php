@@ -55,17 +55,6 @@ $timeFormatShort    = "'. $_POST["timeFormatShort"]. '";
 $clockformat    = "'. $_POST["clockformat"]. '";
 $showDate = '. $_POST["showDate"]. ';
 $temperaturemodule   = "'. $_POST["temperaturemodule"]. '";
-$toptitles   = "'. $_POST["toptitles"]. '";
-$position1   = "'. $_POST["position1"]. '";
-$position2   = "'. $_POST["position2"]. '";
-$position3   = "'. $_POST["position3"]. '";
-$position4   = "'. $_POST["position4"]. '";
-$position1title   = "'. $_POST["position1title"]. '";
-$position2title   = "'. $_POST["position2title"]. '";
-$position3title   = "'. $_POST["position3title"]. '";
-$position4title   = "'. $_POST["position4title"]. '";
-$position6title   = "'. $_POST["position6title"]. '";
-$position6   = "'. $_POST["position6"]. '";
 $position12title   = "'. $_POST["position12title"]. '";
 $position12   = "'. $_POST["position12"]. '";
 $positionlastmoduletitle   = "'. $_POST["positionlastmoduletitle"]. '";
@@ -961,174 +950,17 @@ your nearly there :-) keep going
   <div class="seperator"></div>
   
   
-  <span style="color:#F75C46;"><svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M16 14 L16 23 M16 8 L16 10" />
-    <circle cx="16" cy="16" r="14" />
-</svg>
-</svg> Options for Top Row 4 Modules + *new Position 6 and 12 module &amp; + Last module
-<br></span><span style="color:#777;">
-*please note top 4 options + position 6 will become fixed and options removed before <br>December 2019.reduces translations complexity.
- <br>  <br> 
-
-
-
- <div class= "stationvalue"> Optional Top Tiltles use default translated or custom </div>
-       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>
-       <label name="toptitles"></label>
-        <select id="toptitles" name="toptitles" class="choose">  
-          <option><?php echo $toptitles ;?></option>    
-          <option>default</option> 
-          <option>custom</option>           
-            </select>
-        
-           
-           <br></span>
-           <span style="color:#777;">
-            <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg> *default uses the built pre translated titles or use custom and type your own<br><br></span>
   
-   <p>      
-
-<div class="seperator"></div>
-
-
- 
-       <div class= "stationvalue"> Position 1 *Fixed</div>
-       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>
-       <label name="position1"></label>
-        <select id="position1" name="position1" class="choose">  
-          <option><?php echo $position1 ;?></option> 
-            <option>temperatureyear.php</option>            
-            </select>
-        
-        <div class= "stationvalue"> Position 1 Title</div>
-       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>   
-        <label name="position1title"></label>
-        <input name="position1title" type="text" id="position1title" value="<?php echo $position1title ;?>" class="choose"> 
-        
-        
-        
-        <br>
-        
-        <div class= "stationvalue"> Position 2 *Fixed</div>
-       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>
-        <label name="position2"></label>
-        <select id="position2" name="position2" class="choose">  
-            <option><?php echo $position2 ;?></option>             
-            <option>windgustyear.php</option>                                       
-           </select>
-        
-        
-        <div class= "stationvalue"> Position 2 Title</div>
-       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>   
-        <label name="position2title"></label>
-       <input name="position2title" type="text" id="position2title" value="<?php echo $position2title ;?>" class="choose"> 
-              
-        <br>
-        
-        <div class= "stationvalue"> Position 3 *Fixed</div>
-       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>
-        
-        <label name="position3"></label>
-        <select id="position3" name="position3" class="choose">  
-            <option><?php echo $position3 ;?></option> 
-            <option>rainfallf-year-month.php</option>           
-                       
             
-            </select>
-     <div class= "stationvalue"> Position 3 Title</div>
-       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>   
-        <label name="position3title"></label>
-        <input name="position3title" type="text" id="position3title" value="<?php echo $position3title ;?>" class="choose"> 
         
-        <br>
-        
-        
-        <div class= "stationvalue"> Position 4 *Fixed</div>
-       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
+        <div class= "weathersectiontitle"> 
+   <svg id="i-settings" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
+    <circle cx="16" cy="16" r="4" />
 </svg>
-        <label name="position4"></label>
-        <select id="position4" name="position4" class="choose">  
-            <option><?php echo $position4 ;?></option> 
-            <option>davisconsoleoutlook.php</option>
-            <option>barometer-year-month.php</option>
-            <option>dewpoint-year-month.php</option>
-             </select>
-               
-        
-        
-        <div class= "stationvalue"> Position 4 Title </div>
-       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>   
-        <label name="position4title"></label>
-       <input name="position4title" type="text" id="position4title" value="<?php echo $position4title;?>" class="choose"> 
-        </select>
-        <br>
-        
-         <div class= "stationvalue"> *Position 6 *Fixed</div>
-       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>
-        <label name="position6"></label>
-        <select id="position6" name="position6" class="choose">  
-            <option><?php echo $position6 ;?></option>  
-            <option>forecast3wularge.php</option>  
-                     </select>
-               
-      
-        
-        <div class= "stationvalue"> Position 6 Title</div>
-       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>   
-        <label name="position6title"></label>
-       <input name="position6title" type="text" id="position6title" value="<?php echo $position6title;?>" class="choose"> 
-           
-            
-        </select>
-        <br>
-        
-        
-        
-        
+  Select larger module to use in last 2 main module position
+    </div>
+    <br><br>
         
         
         
@@ -1150,8 +982,7 @@ your nearly there :-) keep going
             <option>webcamsmall.php</option> 
             <option>moonphase.php</option>  
             <option>weather34uvsolar.php</option>                     
-            <option>solaruvwu.php</option>
-            <option>eq.php</option>  
+            <option>solaruvwu.php</option>            
             
                      </select>
                
@@ -1187,8 +1018,7 @@ your nearly there :-) keep going
             <option>webcamsmall.php</option> 
             <option>moonphase.php</option>  
             <option>weather34uvsolar.php</option>              
-            <option>solaruvwu.php</option>  
-            <option>eq.php</option>  
+            <option>solaruvwu.php</option>              
             <option>lightning34.php</option>  
             
                      </select>
@@ -1207,32 +1037,8 @@ your nearly there :-) keep going
             
         </select>
         <br>
-        
-        
-        
-        
-            
      
-     
-      <strong> <span style="color:rgba(86, 95, 103, 1.000);">options Top 4 positions</span></strong><br>
-       
-       <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> rainfallf-year-month.php</span> Totals <span style="color:rgba(7, 114, 125, 1.000)">YEARLY-MONTHLY</span> Rainfall<br></span>
-     
-        
-        
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> windgustyear.php</span> *English only<span style="color:rgba(7, 114, 125, 1.000)"> Current Monthly / Yearly max Gust </span> <br>
-              
-           
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> temperatureyear.php</span> *English only<span style="color:rgba(7, 114, 125, 1.000)"> Current Monthly / Yearly Temperature </span>  <br>
-         
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> davisconsoleoutlook.php <span style="color:rgba(7, 114, 125, 1.000)">Davis Hardware Console users English only</span> <br></span>
-     <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> barometer-year-month.php <span style="color:rgba(7, 114, 125, 1.000)">Barometer month year data</span> <br></span>
-       
+      
       <br></span></span>
          <strong> <span style="color:rgba(86, 95, 103, 1.000);">options Positions 6 and 12 + last module</span></strong><br>
         <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
