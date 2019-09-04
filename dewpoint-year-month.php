@@ -71,5 +71,5 @@
  else if ($weather["temp_units"]=='F' && $weather["dewymax"]>-50){ echo "<maxtempblue>", $weather["dewymax"]  ;echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"] ; }
  ?>
 </div></tunit1>
-<div class="tyearmax" style="margin-left:5px;"><?php echo $weather["dewymaxtime2"]?></div>
-<div class="tyearconv"><?php echo $lang['Highest']?></div>
+<div class="tyearmax" style="margin-left:0px;"><?php echo $weather["dewymaxtime2"]?></div>
+<div class="tyearconv" style="margin-left:3px;"><?php echo $lang['Highest']?></div>

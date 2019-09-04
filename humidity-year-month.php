@@ -43,4 +43,4 @@
  ?>
 </div></tunit1>
 <div class="tyearmax" style="margin-left:-5px;"><?php echo $weather["humidity_ymaxtime2"]?></div>
-<div class="tyearconv"><?php echo $lang['Highest']?></div>
+<div class="tyearconv" style="margin-left:-5px;"><?php echo $lang['Highest']?></div>
