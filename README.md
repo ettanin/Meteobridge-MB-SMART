@@ -1,24 +1,24 @@
 # This GITHUB repository is for Meteobridge-Weather34-Smart (Beta) Version *NO MYSQL KNOWLEDGE REQUIRED 
-(7th beta Version Released August 14th 2019)
+(10th beta Version Released September 4th 2019)
 
 *starts the process of cleaning out unwanted code and prepare for languages 
+
+*adds additional 8 modules with 7 of them based on NANOSD generated data
 	
 # Contributors Live Running Demo(s)
 https://singaporeweather.info 
 
 https://www.paulwilman.com/pw4/
 
-http://seremange-meteolive.franceserv.com/pws/
-
 https://www.weerstation-sauwerd.nl/pwsmbms/
 
 
 
-# IMPORTANT THIS TEMPLATE IS NOT EXPECTED TO BE COMPLETE UNTIL LATE DECEMBER 2019
+# IMPORTANT THIS TEMPLATE IS NOT EXPECTED TO BE COMPLETE UNTIL LATE NOVEMBER early DECEMBER 2019
 
- NEXT PHASE FOR SEPTEMBER THIS WILL BE LANGUAGES AND ONLY 6 LANGUAGES 
+ NEXT PHASE FOR SEPTEMBER THIS WILL BE LANGUAGES AND ONLY 6 LANGUAGES this is now 80% done
  
- NEXT PHASE FOR OCTOBER THIS WILL BE CSS REMOVAL OF UNUSED
+ NEXT PHASE FOR OCTOBER THIS WILL BE CSS REMOVAL OF UNUSED and REDUCE CSS to a target size of 100K
 
 # IMPORTANT THIS TEMPLATE IS FOR METEOBRIDGE NANOSD AND DAVIS HARDWARE USERS ONLY !!
 # IT IS NOT COMPATIBLE WITH TP-LINK TYPE METEOBRIDGE HUBS
