@@ -67,6 +67,22 @@ if ($positionlastmodule == 'webcamsmall.php') {
     echo 'setTimeout(dldata,' . 1000*$p13Refresh.')';
 } ?>}, type:"GET",url:"<?php echo $positionlastmodule?>"})};
 
+//extra 4 small modules
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#dewpoint-year").show()}});var c=a("#dewpoint-year");c.load("dewpoint-year-month.php");var b=setInterval(function(){c.load("dewpoint-year-month.php")},380000)})})(jQuery);
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#barometer-year").show()}});var c=a("#barometer-year");c.load("barometer-year-month.php");var b=setInterval(function(){c.load("barometer-year-month.php")},380000)})})(jQuery);
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#humidity-year").show()}});var c=a("#humidity-year");c.load("humidity-year-month.php");var b=setInterval(function(){c.load("humidity-year-month.php")},380000)})})(jQuery);
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#heatchill-year").show()}});var c=a("#heatchill-year");c.load("barometer-year-month.php");var b=setInterval(function(){c.load("barometer-year-month.php")},380000)})})(jQuery);
+
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#earthquake").show()}});var c=a("#earthquake");c.load("eq.php");var b=setInterval(function(){c.load("eq.php")},380000)})})(jQuery);
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#consoledavis").show()}});var c=a("#consoledavis");c.load("consoleoutlook.php");var b=setInterval(function(){c.load("consoleoutlook.php")},380000)})})(jQuery);
+
+
 //current 3dy forecast
 var refreshId;$(document).ready(function(){currentfore()});function currentfore(){$.ajax({cache:false,success:function(a){$("#currentfore").html(a);setTimeout(currentfore,360000)},type:"GET",url:"<?php echo $position6?>"})};</script>
 <script>

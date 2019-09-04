@@ -251,11 +251,15 @@ $weather["humidity_ymax"]=number_format($meteobridgeapi[163],0);
 $originalDate754=$meteobridgeapi[164];
 $humymaxtime=date('jS M',strtotime($originalDate754));
 $weather["humidity_ymaxtime"]=$humymaxtime;
+$humymaxtime2=date('j-m-Y',strtotime($originalDate754));
+$weather["humidity_ymaxtime2"]=$humymaxtime2;
 	//hum year min
 $weather["humidity_ymin"]=number_format($meteobridgeapi[165],0);
 $originalDate755=$meteobridgeapi[166];
 $humymintime=date('jS M',strtotime($originalDate755));
 $weather["humidity_ymintime"]=$humymintime;
+$humymintime2=date('j-m-Y',strtotime($originalDate755));
+$weather["humidity_ymintime2"]=$humymintime2;
 
 	//hum month max
 $weather["humidity_mmax"]=number_format($meteobridgeapi[159],0);

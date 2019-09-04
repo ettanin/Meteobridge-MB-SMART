@@ -62,7 +62,14 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 
  <weather34topmodule> <!-- Weather34 Module 3 -->
   <div class="weather34box">
-  <div class="weather34title2"><?php echo $info?>  &nbsp;<?php if ($position4=='davisconsoleoutlook.php'){echo "Console " .$lang['Forecast'];} else echo $lang['Barometer']." ". $lang['Almanac'] ;?></div>
+  <div class="weather34title2"><?php echo $info?>  &nbsp;<?php 
+  if ($position4=='davisconsoleoutlook.php'){echo "Console " .$lang['Forecast'];} 
+  else if ($position4=='barometer-year-month.php'){echo $lang['Barometer']." ". $lang['Almanac'] ;}  
+  else echo $lang['Dewpoint']." ". $lang['Almanac'] ;  
+  ?>
+  
+  
+  </div>
   <div id="position4"></div></div>
   </weather34topmodule>
   </main>
@@ -225,6 +232,34 @@ if ($positionlastmodule=='airqualitymodule.php') {
 }?>
 	</div>
  <div id=dldata></div></weather34module>
+ 
+  </main>
+ 
+ <main class="grid3">
+ <weather34topmodule>
+ <div class="weather34box">
+ <div class="weather34title2"><?php echo $info?>&nbsp;<?php echo $lang['Barometer']?>&nbsp;<?php echo $lang['Almanac']?> <?php echo date('Y')?></div>
+ <div id=barometer-year></div></div></weather34topmodule>
+
+  <weather34topmodule>
+  <div class="weather34box">
+  <div class="weather34title2"><?php echo $info?>&nbsp;<?php echo $lang['Humidity']?>&nbsp;<?php echo $lang['Almanac']?> <?php echo date('Y')?></div>
+  <div id=humidity-year></div></div></weather34topmodule>
+
+  <weather34topmodule>
+   <div class="weather34box">
+   <div class="weather34title2"><?php echo $info?>&nbsp;Davis Console&nbsp;<?php echo $lang['Forecast']?> </div>
+  <div id=consoledavis></div></div></weather34topmodule>
+  
+  
+  <weather34topmodule>
+  <div class="weather34box">
+  <div class="weather34title2"><?php echo $info?>&nbsp;<?php echo $lang['Earthquake']?></div>
+  <div id=earthquake></div></div>
+  </weather34topmodule>
+ 
+ 
+ 
   <!-- Weather34 main moudles end -->
 
    <!-- Weather34 Footer -->
