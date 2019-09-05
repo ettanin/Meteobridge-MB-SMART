@@ -22,7 +22,7 @@ var refreshId;$(document).ready(function(){barometer()});function barometer(){$.
 // moonphase
 var refreshId;$(document).ready(function(){moonphase()});function moonphase(){$.ajax({cache:false,success:function(a){$("#moonphase").html(a);<?php if ($moonRefresh > 0) {
     echo 'setTimeout(moonphase,' . 1000*$moonRefresh .')';
-} ?>},type:"GET",url:"<?php echo $sunoption?>"})};
+} ?>},type:"GET",url:"sun3.php"})};
 // rainfall
 var refreshId;$(document).ready(function(){rainfall()});function rainfall(){$.ajax({cache:false,success:function(a){$("#rainfall").html(a);<?php if ($rainRefresh > 0) {
     echo 'setTimeout(rainfall,' . 1000*$rainRefresh.')';

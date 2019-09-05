@@ -73,8 +73,6 @@ $db_user    = "'. $_POST["db_user"]. '";
 $db_pass  = "'. $_POST["db_pass"]. '";
 $db_name   = "'. $_POST["db_name"]. '";
 $notifications = "'. $_POST["notifications"]. '";
-$sunoption = "'. $_POST["sunoption"]. '";
-$hemisphere   = "'. $_POST["hemisphere"]. '";
 $metar   = "'. $_POST["metar"]. '";
 $icao1   = "'. $_POST["icao1"]. '";
 $airport1   = "'. $_POST["airport1"]. '";
@@ -944,7 +942,7 @@ your nearly there :-) keep going
 <svg id="i-code" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
 </svg>
-*Choose which module to display in 2 main modules useful for those with NO uv sensor </strong><br>
+*Choose which module to display in last 2 main larger modules useful for those with NO uv sensor </strong><br>
 </div><p>
   
         
@@ -1069,42 +1067,8 @@ your nearly there :-) keep going
 <br>
         <strong> <span style="color:rgba(86, 95, 103, 1.000);">adjust the moonrise/set to your location in hours </span></strong><br><br>
         
-   <div class= "stationvalue">   
-   Reverse the moonphase for southern hemisphere (i.e. Australia etc..)</div> 
-   <svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>
-<select id="hemisphere" name="hemisphere" class="choose1">
-         <option><?php echo $hemisphere ;?></option>
-            <option>0</option>
-            <option>180</option>
-                 
-            
-        </select>
-<br><br>
-        <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> <strong> <span style="color:#F75C46;">set to 0 for Northern hemisphere</span></strong><br>
-         <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> <strong> <span style="color:rgba(86, 95, 103, 1.000);">set to 180 for Southern hemisphere (180 degrees reversed)</span></strong><br>
-    
+   
      
-     <div class= "stationvalue">   
-   Sun Position Module Fixed</div> 
-   <svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="rgba(86, 95, 103, 1.000)" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>
-<select id="sunoption" name="sunoption" class="choose1">
-         <option><?php echo $sunoption ;?></option>
-            <option>sun3.php</option>           
-            
-                 
-            
-        </select>
-        <br>
-        <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> <strong>sun3.php only no options..</strong><br>
-
-<br> 
     
 <p>
       
