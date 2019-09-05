@@ -6,7 +6,7 @@ Language: Dutch
 Translated by: Piet Kampen
 Developed By: Brian Underdown/Erik M Madsen
 October/November 2016
-Revised: 02 September 2019
+Revised: 05 September 2019
 -----------------
 */
 # -----------------------------------------------------
@@ -63,7 +63,7 @@ $lang['December']               = 'December';
 $lang['Temperature']            = 'Temperatuur';
 $lang['Feelslike']              = 'Voelt als';
 $lang['Humidity']               = 'Vochtigheid';
-$lang['Dewpoint']               = 'Dauw punt';
+$lang['Dewpoint']               = 'Dauwpunt';
 $lang['Trend']                  = 'trend ';
 $lang['Heatindex']              = 'Warmte Index';
 $lang['Windchill']              = 'Windchill ';
@@ -184,7 +184,7 @@ $lang['Night']                  = 'Nacht ';
 $lang['Day']                    = 'Dag';
 $lang['Nextnewmoon']            = 'Nieuwe maan';
 $lang['Nextfullmoon']           = 'Volle maan';
-$lang['Luminance']              = 'Verlicht';
+$lang['Luminance']              = 'Helderheid';
 $lang['Moonphase']              = 'Maanfase';
 $lang['Estimated']              = 'Geschatte';
 $lang['Daylight']               = 'Daglicht';
@@ -213,8 +213,8 @@ $lang['Lastquarter']            = 'Laatste kwartier';
 $lang['Waningcrescent']         = 'Afnemende maan';
 $lang['Set']        			= 'Ondergang';
 $lang['Rise']        		    = 'Opkomst';
-$lang['Daylight Left'] 			= '&nbsp;&nbsp;Daglicht Over';
-$lang['Darkness Left'] 			= '&nbsp;&nbsp;&nbsp;Donker Over';
+$lang['Daylight Left'] 			= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nog licht';
+$lang['Darkness Left'] 			= '&nbsp;&nbsp;&nbsp;Nog donker';
 //trends
 $lang['Falling']                = ' Dalend';
 $lang['Rising']                 = ' Stijgend';
@@ -286,14 +286,14 @@ $lang['uvalert']                = 'Let op Hoge UV';
 $lang['Max']                    = 'Max';
 $lang['Min']                    = 'Min';
 $lang['Almanac'] 				= 'Almanak';
-$lang['Weather Data Provided By']='Weather Data Provided By';
+$lang['Weather Data Provided By']='Weersgegevens geleverd door Weerstation -';
 $lang['Airport']			='Luchthaven Metar';
 $lang['Weather Station'] ='Weerstation';
 $lang['Information'] ='Informatie';
 $lang['Operational Since'] ='Operationeel Sinds';
-$lang['Battery'] ='Accu';
+$lang['Battery'] ='Batterij';
 $lang['Installed']='Geïnstalleerd';
-$lang['Interface Uptime']='Op tijd';
+$lang['Interface Uptime']='Aantal dagen geleden';
 
 
 //earthquake TOP MODULE 10 July 2017

@@ -231,7 +231,12 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <!-- Weather34 moonphase or earthquake -->
   <weather34topmodule>
   <div class="weather34box">
-  <div class="weather34title2"><?php echo $info?>&nbsp;<?php if ($positionmooneq=='eq.php'){echo $lang['Earthquake'];}if ($positionmooneq=='luftdaten-small.php'){echo $lang['Air Quality'];}  else echo $lang['Moonphase'];?></div>
+  <div class="weather34title2"><?php echo $info?>&nbsp;
+  <?php 
+  if ($positionmooneq=='eq.php'){echo $lang['Earthquake'];}
+  if ($positionmooneq=='luftdaten-small.php'){echo $lang['Air Quality'];}
+  if ($positionmooneq=='weather34moonphase.php'){echo $lang['Moonphase'];}
+  ?></div>
   <div id=earthquake></div></div>
   </weather34topmodule>  
   <!-- Weather34 bottom small moudles end -->
