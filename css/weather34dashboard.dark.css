@@ -8820,3 +8820,35 @@ windaveragevalue{font-size:.55rem
 wuunitstemperaturenext{font-size:.8em
 }
 sunsetvalue{position:relative;font-size:.5rem;line-height:1;left:-4px;display:flex;margin-top:-15px;width:200px}
+
+.moonphaseing{position:absolute;left:10px; top:0px; width:50px;}
+.weather34moonphasesvg{position:absolute; left:10px; top:5px; width:60px;}
+.weather34moonforeground { fill:rgba(226, 228, 237, .3); stroke:rgba(86, 95, 103, .3); stroke-width:0;max-height:100px }
+.weather34moonbackground{ fill:rgba(120, 138, 146,.5);stroke:rgba(230, 232, 239, .1);stroke-width:0; }
+.moonrise2{position:relative;margin-left:40px;top:15px;font-size:.65rem;width:200px;line-height:1;color: #aeb6bf;}
+.moonset2{position:relative;margin-left:40px;font-size:.65rem;top:15px;width:200px;line-height:1;color: #aeb6bf;}
+.phase2{position:relative;margin-left:40px;top:20px;font-size:.65rem;width:200px;line-height:.8;color: #aeb6bf;}
+.luminance2{position:relative;margin-left:40px;font-size:.65rem;top:20px;width:200px;line-height:1;color: #aeb6bf;}
+weather34moonrisecircle {
+ position: absolute;
+ top: 2px;
+  left: 50px;
+ width: 0; 
+  height: 0; 
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;  
+  border-bottom: 5px solid #009bab;
+  opacity:.7
+}
+weather34moonsetcircle {
+  position: absolute;
+ top: 2px;
+  left: 50px;
+ width: 0; 
+  height: 0; 
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;  
+  border-top: 5px solid rgba(211, 93, 78, 1);
+  opacity:.7
+  
+}
