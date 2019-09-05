@@ -6196,7 +6196,7 @@ wfstriketoday {
   color: #90b12a;
 }
 .eqtoday4-5 {
-  color: #e6a141;
+ color: rgba(231, 150, 59, .8);
 }
 .eqtoday6-8 {
   color: #d05f2d;

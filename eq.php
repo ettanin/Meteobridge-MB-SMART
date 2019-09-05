@@ -3,12 +3,14 @@
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	Release: July 2016						  	                                                   #
-	# 	Revised September 2019                                                                         #
+	# 	                                                                                               #
+	# 	Release: September 2019								                     					   #
+	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //current eq
 date_default_timezone_set($TZ);
+//$json_string=file_get_contents('http://earthquake-report.com/feeds/recent-eq?json');
 $json_string=file_get_contents('jsondata/eqnotification.txt');$parsed_json=json_decode($json_string,true);$magnitude1=$parsed_json{0}{'magnitude'};$magnitude=number_format($magnitude1,1);$title=$parsed_json{0}['title'];$eqtitle=$parsed_json{0}['location'];$depth=$parsed_json{0}['depth'];$time1=$parsed_json{0}['date_time'];$lati=$parsed_json{0}['latitude'];$longi=$parsed_json{0}['longitude'];$eventime=date( $dateFormat . " " . $timeFormatShort, strtotime("$time1") );$shorttime=date( $timeFormatShort, strtotime("$time1") );?>
 <?php
 // CALCULATE THE DISTANCE OF LATEST EARTHQUAKE //
@@ -19,32 +21,30 @@ $eqdista;if ($weather["wind_units"] == 'mph') {$eqdista = round(distance($lat, $
 <div class="topframe">
 <div class="yearwordtempbig">Earthquakes</div>
 <div class='eqcontainer1' >
-<!-- EQ homeweather station earthquakes now with value values 27th July 2016 Revised September 2019--> 
+<!-- EQ homeweather station earthquakes now with value values 27th July 2016--> 
 <?php
 // EQ Latest earthquake 
 if ($magnitude <= 0) {
     echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday1-3>${magnitude}</div>	
-	<div class=\"eqtext\"><value>  $eqtitle <br><value>$eventime</value><br>	Epicenter: <value><grey>$eqdist <valueearthquake>from<br> $stationlocation</valueearthquake></value></div>";
+	<div class=\"eqtext\"><value>  <blue> $eqtitle </blue> <br><value>$eventime</value><br>	Epicenter: <value><grey>$eqdist <valueearthquake>from<br> $stationlocation</valueearthquake></value></div>";
 	
 } else if ($magnitude <= 4.2) {
     echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>${magnitude}</div>	
-	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minor</div></div><div class=\"eqtext\"><value> $eqtitle <br><value>$eventime<br>
+	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minor</div></div><div class=\"eqtext\"><value><blue> $eqtitle </blue><br><value>$eventime<br>
 	Epicenter: <value><maxred>$eqdist</maxred>  <valueearthquake>from<br> $stationlocation</valueearthquake></value></div>";
 } else if ($magnitude <= 5) {
     echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>${magnitude}</div>	
 	
-	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;Moderate</div></div><div class=\"eqtext\"><value> $eqtitle <br><value>$eventime<br>
+	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;Moderate</div></div><div class=\"eqtext\"><value> <blue> $eqtitle </blue> <br><value>$eventime<br>
 	Epicenter: <value><maxred>$eqdist</maxred>  <valueearthquake>from<br> $stationlocation</valueearthquake></value></div>";
 } else if ($magnitude<= 6) {
     echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday6-8>${magnitude}</div>	
 	
-	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strong</div></div><div class=\"eqtext\"><value> $eqtitle <br><value>$eventime<br>
+	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strong</div></div><div class=\"eqtext\"><value> <blue> $eqtitle </blue> <br><value>$eventime<br>
 	<value><maxred>$eqdist</maxred> <valueearthquake>from<br> $stationlocation</valueearthquake></value></div>";
 } else if ($magnitude <= 10) {
     echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday9-10>${magnitude}</div>	
-	
-	<div class='eqt'>&nbsp;&nbsp;Very Strong</div></div><div class=\"eqtext\"><value> $eqtitle <br><value>$eventime<br><depth>depth:$depth km</depth><br>
+	<div class='eqt'>&nbsp;&nbsp;Very Strong</div></div><div class=\"eqtext\"><value> <blue> $eqtitle </blue> <br><value>$eventime<br><depth>depth:$depth km</depth><br>
 	Epicenter: <value><maxred>$eqdist</maxred></maxred> <valueearthquake>from<br> $stationlocation</valueearthquake></value></div>";
 }
-?></div>
-</div>
+?></div></div>
