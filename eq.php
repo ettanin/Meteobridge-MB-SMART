@@ -3,7 +3,7 @@
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
+	# 	Release: July 2016						  	                                                   #
 	# 	Revised September 2019                                                                         #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
@@ -19,7 +19,7 @@ $eqdista;if ($weather["wind_units"] == 'mph') {$eqdista = round(distance($lat, $
 <div class="topframe">
 <div class="yearwordtempbig">Earthquakes</div>
 <div class='eqcontainer1' >
-<!-- EQ homeweather station earthquakes now with value values 27th July 2016--> 
+<!-- EQ homeweather station earthquakes now with value values 27th July 2016 Revised September 2019--> 
 <?php
 // EQ Latest earthquake 
 if ($magnitude <= 0) {

@@ -3,7 +3,7 @@
 	####################################################################################################
 	#	METEOBRIDGE WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2016-17-18-19                          #
 	#	CREATED FOR MB-SMART TEMPLATE at https://weather34.com/homeweatherstation/  				    # 
-	# 	LARGE DAY WU WEATHER FORECAST:  original MAR 2019	updated JUL 2019                           #
+	# 	LARGE DAY WU WEATHER FORECAST:  original MAR 2019	updated September 2019          #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //start the wu output
@@ -113,7 +113,8 @@ $parsed_weather34wujson = json_decode($weather34wuurl,false);
 	 $wuskydayTempHigh2=$parsed_weather34wujson->{'daypart'}[0]->{'temperature'}[2];
 	 
 	 }?>
-<div class="moduleupdatetime"><?php $forecastime=filemtime('jsondata/wuforecast.txt');$weather34wuurl = file_get_contents("jsondata/wuforecast.txt");if(filesize('jsondata/wuforecast.txt')<1){echo "<offlinenew></offlinenew> Offline<br>";}else echo "<onlinenew></onlinenew> ",	date($timeFormat,$forecastime);	?></div> 
+<div class="moduleupdatetime"><?php $forecastime=filemtime('jsondata/wuforecast.txt');$weather34wuurl = file_get_contents("jsondata/wuforecast.txt");if(filesize('jsondata/wuforecast.txt')<1){echo $offline." Offline<br>";}else echo $online. " ".date($timeFormat,$forecastime);?></div> 
+
 <div class="wulargeforecasthome"><div class="wulargediv">
 <?php //begin wu stuff 
 //convert lightning index

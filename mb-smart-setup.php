@@ -55,8 +55,6 @@ $timeFormatShort    = "'. $_POST["timeFormatShort"]. '";
 $clockformat    = "'. $_POST["clockformat"]. '";
 $showDate = '. $_POST["showDate"]. ';
 $temperaturemodule   = "'. $_POST["temperaturemodule"]. '";
-$position6title   = "'. $_POST["position6title"]. '";
-$position6   = "'. $_POST["position6"]. '";
 $position12title   = "'. $_POST["position12title"]. '";
 $position12   = "'. $_POST["position12"]. '";
 $positionlastmoduletitle   = "'. $_POST["positionlastmoduletitle"]. '";
@@ -883,13 +881,9 @@ double check again
 </svg>
         <select id="distanceunit" name="distanceunit" class="choose1">
         <option><?php echo $distanceunit ;?></option>
-            <option>mi</option>
-            <option>km</option>
-            
+        <option>mi</option>
+        <option>km</option>            
         </select>
-        
-        
-        
     </div>
     
     
@@ -903,7 +897,6 @@ General template settings with options to choose which type of module to display
 <svg id="i-checkmark" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M2 20 L12 28 30 4" />
 </svg>
-
 your nearly there :-) keep going
 </div>
 
@@ -922,10 +915,6 @@ your nearly there :-) keep going
     </div>
     
     <p>
-     
-    
-   
-
 
     <div class= "stationvalue">Email</div> 
     
@@ -951,36 +940,15 @@ your nearly there :-) keep going
 
   <div class="seperator"></div>
   
-  
-  
-        
-         <div class= "stationvalue"> *Position 6 *Fixed</div>
-       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
+  <div class= "weathersectiontitle">
+<svg id="i-code" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
 </svg>
-        <label name="position6"></label>
-        <select id="position6" name="position6" class="choose">  
-            <option><?php echo $position6 ;?></option>  
-            <option>forecast3wularge.php</option>  
-                     </select>
-               
-      
+*Choose which module to display in 2 main modules useful for those with NO uv sensor </strong><br>
+</div><p>
+  
         
-        <div class= "stationvalue"> Position 6 Title</div>
-       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M12 30 L24 16 12 2" />
-</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>   
-        <label name="position6title"></label>
-       <input name="position6title" type="text" id="position6title" value="<?php echo $position6title;?>" class="choose"> 
-           
-            
-        </select>
-        <br>
-        
+         
          <div class= "stationvalue"> *Position 12</div>
        <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
@@ -1008,10 +976,8 @@ your nearly there :-) keep going
     <path d="M30 12 L16 24 2 12" />
 </svg>   
         <label name="position12title"></label>
-       <input name="position12title" type="text" id="position12title" value="<?php echo $position12title ;?>" class="choose"> 
-           
-            
-        </select>
+       <input name="position12title" type="text" id="position12title" value="<?php echo $position12title ;?>" class="choose">      
+          </select>
         <br>
         
         
@@ -1024,7 +990,7 @@ your nearly there :-) keep going
 </svg>
         <label name="positionlastmodule"></label>
         <select id="positionlastmodule" name="positionlastmodule" class="choose">  
-            <option><?php echo $positionlastmodule ;?></option>             
+            <option><?php echo $positionlastmodule ;?></option>              
             <option>airqualitymodule.php</option> 
             <option>airqualityluftdaten.php</option>  
             <option>webcamsmall.php</option> 
@@ -1032,8 +998,7 @@ your nearly there :-) keep going
             <option>weather34uvsolar.php</option>              
             <option>solaruvwu.php</option>              
             <option>lightning34.php</option>  
-            
-                     </select>
+            </select>
                
         
         
@@ -1052,7 +1017,8 @@ your nearly there :-) keep going
      
       
       <br></span></span>
-         <strong> <span style="color:rgba(86, 95, 103, 1.000);">options Positions 6 and 12 + last module</span></strong><br>        
+         <strong> <span style="color:rgba(86, 95, 103, 1.000);">options Positions 6 and 12 + last module</span></strong><br>
+        
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> airqualitymodule.php <orange>display airquality</orange><br></span>
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
@@ -1064,8 +1030,12 @@ your nearly there :-) keep going
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> weather34uvsolar.php</span> <orange>display uv and solar radiation if you have hardware</orange> <br></span>
      
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> solaruvwu.php</span> <orange>display Weather Underground Day UV forecast and if you have only solar radiation </orange> <br></span>      
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> solaruvwu.php</span> <orange>display Weather Underground Day UV forecast and if you have only solar radiation </orange> <br></span>
+       
      </span>
+     
+     
+        
      </span>
         
         <br>
