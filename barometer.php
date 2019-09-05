@@ -27,7 +27,7 @@ if ($weather["barometer_units"]=='mb' OR $weather["barometer_units"]=="hPa" ){ec
 transform:rotate(<?php if ($weather["barometer_units"]=='mb' OR $weather["barometer_units"]=="hPa" ){echo $weather["barometer_max"]*0.02953*50.6;}else if ($weather["barometer_units"]=='inHg'){echo $weather["barometer_max"]*50.6;}?>deg);z-index:9}
 valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 </style>
-<div class="moduleupdatetime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo '<offlinenew></offlinenew> Offline';else echo "<onlinenew></onlinenew> ".$weather["time"];?></div> 
+<div class="moduleupdatetime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div>
 <div class='maxpressure'><a class="weather34tipmax" data-weather34tipmax="<?php echo "Max ".$weather["thb0seapressymax"]." ".$weather["barometer_units"]."&nbsp; ".$weather["thb0seapressyearmaxtime"]?>">
 <?php echo '<valuetext>Max ('.$weather["thb0seapressmaxtime"].')<br><maxred>',$weather["barometer_max"],'&nbsp;</maxred><pressureunits>',$weather["barometer_units"],' </pressureunits></supmb></valuetext></div>';?></a></div>
 <div class='minpressure'><a class="weather34tipmin" data-weather34tipmin="<?php echo "Min ".$weather["thb0seapressymin"]." ".$weather["barometer_units"]."&nbsp; ".$weather["thb0seapressyearmintime"]?>">

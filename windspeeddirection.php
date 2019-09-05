@@ -11,11 +11,7 @@
 .thearrow1:after{content:'';position:absolute;text-align:left;left:50%;top:0;width:0;height:0;-webkit-border-radius:0;border-radius:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:12px solid #06a2b1;border-bottom:0;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transition-duration:3s;-moz-transition-duration:3s;-o-transition-duration:3s;-ms-transition-duration:3s;transition-duration:3s;background:0;z-index:90;}
 .thearrow1:before{content:'Avg';width:5px;height:5px;position:absolute;z-index:90;left:-2px;top:-18px;border:0;-webkit-border-radius:100%;-moz-border-radius:100%;-o-border-radius:100%;-ms-border-radius:100%;border-radius:100%}
 spancalm{postion:relative;font-family:weathertext,Arial;font-size:26px;}</style>
-<div class="moduleupdatetime"><span><?php if (file_exists($livedata)&&time()- filemtime($livedata)>300) {
-    echo '<offlinenew></offlinenew> Offline';
-} else {
-    echo "<onlinenew></onlinenew> ".$weather["time"];
-}?></div><br />
+<div class="moduleupdatetime"><span><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div>  <br />
 <div class="weather34windspeed">
 <weather34windunitidspeed><?php echo $lang['Avg Wind'];?></weather34windunitidspeed>
 <?php
