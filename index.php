@@ -166,12 +166,7 @@ if ($position12=='solaruvwu.php') {
 if ($position12=='solaruvwu.php') {
     echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar ".$lang['Almanac']. "</a>&nbsp;&nbsp;</span>";
 }
-if ($position12=='weather34uvcalc.php') {
-    echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar ".$lang['Almanac']. "</a>&nbsp;&nbsp;</span>";
-}
-if ($position12=='eq.php') {
-    echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Recent World Wide Earthquakes" href="eqlist.php" data-lity>'. $chartinfo.  " ".$lang['Worldwideearthquakes']. "</a>&nbsp;&nbsp;</span>";
-}?>
+?>
 	</div>
  <div id=solar></div></weather34module>
 
@@ -213,13 +208,6 @@ if ($positionlastmodule=='solaruvwu.php') {
 if ($positionlastmodule=='solaruvwu.php') {
     echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar ".$lang['Almanac']. "</a>&nbsp;&nbsp;</span>";
 }
-
-if ($positionlastmodule=='weather34uvcalc.php') {
-    echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Solar Almanac" href="solaralmanac.php" data-lity>'. $chartinfo. " Solar ".$lang['Almanac']. "</a>&nbsp;&nbsp;</span>";
-}
-if ($positionlastmodule=='eq.php') {
-    echo ' &nbsp;<a class="weather34tiplink" data-weather34tiplink="Recent World Wide Earthquakes" href="eqlist.php" data-lity>'. $chartinfo." ".$lang['Worldwideearthquakes']. "</a>&nbsp;&nbsp;</span>";
-}
 if ($positionlastmodule=='airqualitymodule.php') {
     echo '&nbsp;<a class="weather34tiplink" data-weather34tiplink="Recent World Wide Earthquakes" href="eqlist.php" data-lity>'. $chartinfo. " ".$lang['Worldwideearthquakes']. "</a>&nbsp;&nbsp;</span>";
 }?>
@@ -227,34 +215,34 @@ if ($positionlastmodule=='airqualitymodule.php') {
  <div id=dldata></div></weather34module>
  
   </main>
- 
+  
+ <!-- Weather34 Barometer small module -->
  <main class="grid3">
  <weather34topmodule>
  <div class="weather34box">
  <div class="weather34title2"><?php echo $info?>&nbsp;<?php echo $lang['Barometer']?>&nbsp;<?php echo $lang['Almanac']?> <?php echo date('Y')?></div>
  <div id=barometer-year></div></div></weather34topmodule>
-
+ 
+  <!-- Weather34 Humidity small module -->
   <weather34topmodule>
   <div class="weather34box">
   <div class="weather34title2"><?php echo $info?>&nbsp;<?php echo $lang['Humidity']?>&nbsp;<?php echo $lang['Almanac']?> <?php echo date('Y')?></div>
   <div id=humidity-year></div></div></weather34topmodule>
-
+  
+  <!-- Weather34 Console Forecast -->
   <weather34topmodule>
    <div class="weather34box">
    <div class="weather34title2"><?php echo $info?>&nbsp;Davis Console&nbsp;<?php echo $lang['Forecast']?> </div>
   <div id=consoledavis></div></div></weather34topmodule>
   
-  
+  <!-- Weather34 moonphase or earthquake -->
   <weather34topmodule>
   <div class="weather34box">
   <div class="weather34title2"><?php echo $info?>&nbsp;<?php if ($positionmooneq=='eq.php'){echo $lang['Earthquake'];}  else echo $lang['Moonphase'];?></div>
   <div id=earthquake></div></div>
-  </weather34topmodule>
- 
- 
- 
-  <!-- Weather34 main moudles end -->
-
+  </weather34topmodule>  
+  <!-- Weather34 bottom small moudles end -->
+  
    <!-- Weather34 Footer -->
 
   <main class="gridhardware">
