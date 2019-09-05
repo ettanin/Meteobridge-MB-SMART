@@ -75,7 +75,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[7] >-50)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[15]*<?php echo $conv ;?>)});
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[15])});
 				
 			}
 			drawChart(dataPoints1 , dataPoints2 );
@@ -187,22 +187,7 @@
 			dataPoints: dataPoints1,
 			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
 			
-		},
-		{
-			type: "spline",
-			lineDashType: "dash",
-			color:"#d35d4e",
-			markerSize:0,
-			showInLegend:false,
-			legendMarkerType: "circle",
-			lineThickness: 1,
-			markerType: "circle",
-			name:" Real Feel",
-			dataPoints: dataPoints2,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
-			
 		}
-		
 
 		]
 		});

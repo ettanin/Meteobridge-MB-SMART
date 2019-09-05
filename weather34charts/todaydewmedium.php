@@ -75,7 +75,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[7] >-50)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[16]*<?php echo $conv ;?>)});
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[16])});
 				
 			}
 			drawChart(dataPoints1 , dataPoints2 );
@@ -173,20 +173,7 @@
 		
 		
 		data: [
-		{
-			type: "spline",
-			lineDashType: "dash",
-			color:"rgba(241, 107, 79, 1)",
-			markerSize:0,
-			showInLegend:false,
-			legendMarkerType: "circle",
-			lineThickness: 1,
-			markerType: "circle",
-			name:" Wetbulb",
-			dataPoints: dataPoints2,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
-			
-		},
+		
 		{
 			
 			type: "splineArea",
