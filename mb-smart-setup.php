@@ -59,6 +59,7 @@ $position12title   = "'. $_POST["position12title"]. '";
 $position12   = "'. $_POST["position12"]. '";
 $positionlastmoduletitle   = "'. $_POST["positionlastmoduletitle"]. '";
 $positionlastmodule   = "'. $_POST["positionlastmodule"]. '";
+$positionmooneq   = "'. $_POST["positionmooneq"]. '";
 $webcamurl   = "'. $_POST["webcamurl"]. '";
 $email    = "'. $_POST["email"]. '";
 $twitter   = "'. $_POST["twitter"]. '";
@@ -1011,10 +1012,8 @@ your nearly there :-) keep going
            
             
         </select>
-        <br>
-     
-      
-      <br></span></span>
+        
+      <br> <br></span></span>
          <strong> <span style="color:rgba(86, 95, 103, 1.000);">options Positions 6 and 12 + last module</span></strong><br>
         
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
@@ -1028,12 +1027,35 @@ your nearly there :-) keep going
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> weather34uvsolar.php</span> <orange>display uv and solar radiation if you have hardware</orange> <br></span>
      
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> solaruvwu.php</span> <orange>display Weather Underground Day UV forecast and if you have only solar radiation </orange> <br></span>
-       
-     </span>
-     
-     
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> solaruvwu.php</span> <orange>display Weather Underground Day UV forecast and if you have only solar radiation </orange> <br></span> 
         
+        
+        
+        
+         <br>
+     <br>
+      <div class= "stationvalue"> *Position Last small module 2 options moonphase or earthquake<br>
+      * important (do not choose moonphase if moonphase option is selected in position12 or last main module )</div>
+       <br> <br>
+       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M30 12 L16 24 2 12" />
+</svg>
+        <label name="positionmooneq"></label>
+        <select id="positionmooneq" name="positionmooneq" class="choose">  
+            <option><?php echo $positionmooneq ;?></option>             
+            <option>weather34-moonphase.php</option>  
+            <option>eq.php</option>                       
+            
+                     </select>
+               
+     
+      <br> <br>
+     
+     
+      
+              
      </span>
         
         <br>

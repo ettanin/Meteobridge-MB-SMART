@@ -59,7 +59,7 @@ if ($positionlastmodule == 'webcamsmall.php') {
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#consoledavis").show()}});var c=a("#consoledavis");c.load("consoleoutlook.php");var b=setInterval(function(){c.load("consoleoutlook.php")},380000)})})(jQuery);
 
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#earthquake").show()}});var c=a("#earthquake");c.load("eq.php");var b=setInterval(function(){c.load("eq.php")},380000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#earthquake").show()}});var c=a("#earthquake");c.load("<?php echo $positionmooneq?>");var b=setInterval(function(){c.load("<?php echo $positionmooneq?>")},380000)})})(jQuery);
 
 
 //current day-night forecast
