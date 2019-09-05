@@ -8820,7 +8820,8 @@ windaveragevalue{font-size:.55rem
 wuunitstemperaturenext{font-size:.8em
 }
 sunsetvalue{position:relative;font-size:.5rem;line-height:1;left:-4px;display:flex;margin-top:-15px;width:200px}
-
+.moonphaseing1{position:absolute;left:105px; top:25px; width:110px;}
+.weather34moonphasesvg1{position:absolute; left:100px; top:30px; width:120px;}
 .moonphaseing{position:absolute;left:10px; top:0px; width:50px;}
 .weather34moonphasesvg{position:absolute; left:10px; top:5px; width:60px;}
 .weather34moonforeground { fill:rgba(226, 228, 237, .3); stroke:rgba(86, 95, 103, .3); stroke-width:0;max-height:100px }
