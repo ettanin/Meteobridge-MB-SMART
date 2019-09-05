@@ -23,7 +23,7 @@ html,body{font-size:13px;font-family: "weathertext", Helvetica, Arial, sans-seri
   border: 1px solid rgba(245, 247, 252,.02);
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);
   padding:5px;
-  font-size:0.8em;
+  font-size:0.75em;
   -webkit-border-radius:4px;
   border-radius:4px;
   background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
@@ -60,18 +60,12 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 
 
 <?php echo $info;?> Current Moon Phase<br><br>  
-<?php 
-if ($meteobridgeapi[153]==0 && $weather['luminance']<=2.5){echo '<img src="css/moonphases/NEW-MOON.svg" class="moonphaseing">';}
-else if ($meteobridgeapi[153]==2 && $weather['luminance']<55 && $weather['luminance']>45) {echo '<img src="css/moonphases/FIRST-QUARTER.svg" class="moonphaseing">';}
-else if ($meteobridgeapi[153]==4 && $weather['luminance']<=2.5) {echo '<img src="css/moonphases/FULL-MOON.svg" class="moonphaseing">';}
-else if ($meteobridgeapi[153]==6 && $weather['luminance']<55 && $weather['luminance']>45) {echo '<img src="css/moonphases/LAST-QUARTER.svg" class="moonphaseing">';}
-else {echo '<div class="weather34moonphasesvg">
+<!---simple svg moonphase 6.1 or 7.5-->
+<div class="weather34moonphasesvg">
 <svg id="weather34moonphase" viewBox="0 0 200 200" version="1.1"/></svg></div>
 <script>
-Date.prototype.getJulian=function(){return((this/86400000)-(this.getTimezoneOffset()/1440)+2440586.1)};function moon_day(u){var h=function(v){return(v-Math.floor(v))};var l=u.getJulian();var m=u.getFullYear();var c=3.14159265/180;var o,g,q,p,d,t,f,e,k,s;o=Math.floor((m-1900)*12.3685);g=(m-1899.5)/100;q=g*g;p=g*g*g;d=2415020+29*o;t=0.0001178*q-1.55e-7*p+(0.75933+0.53058868*o)-(0.000837*g+0.000335*q);f=360*(h(o*0.08084821133))+359.2242-0.0000333*q-0.00000347*p;e=360*(h(o*0.07171366128))+306.0253+0.0107306*q+0.00001236*p;k=360*(h(o*0.08519585128))+21.2964-(0.0016528*q)-(0.00000239*p);var i=0;var r=0;while(r<l){var n=t+1.530588*i;var b=(f+i*29.10535608)*c;var a=(e+i*385.81691806)*c;var j=(k+i*390.67050646)*c;n-=0.4068*Math.sin(a)+(0.1734-0.000393*g)*Math.sin(b);n+=0.0161*Math.sin(2*a)+0.0104*Math.sin(2*j);n-=0.0074*Math.sin(b-a)-0.0051*Math.sin(b+a);n+=0.0021*Math.sin(2*b)+0.001*Math.sin(2*j-a);n+=0.5/1440;s=r;r=d+28*i+Math.floor(n);i++}return(((l-s)/29.53059))}function phase_junk(h){var i=[];var c;if(h<=0.25){i=[1,0];c=20-20*h*4}else{if(h<=0.5){i=[0,0];c=20*(h-0.25)*4}else{if(h<=0.75){i=[1,1];c=20-20*(h-0.5)*4}else{if(h<=1){i=[0,1];c=20*(h-0.75)*4}else{exit}}}}var k;document.title=document.title+" "+k;var e=document.getElementById("weather34moonphase");if(e!=false&&e!=null){function f(){return !!document.createElementNS&&!!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect}if(f()){var g="m100,0 ";g=g+"a"+c+",20 0 1,"+i[0]+" 0,150 ";g=g+"a20,20 0 1,"+i[1]+" 0,-150";var a="http://www.w3.org/2000/svg";var j=document.createElementNS(a,"path");var b=document.createElementNS(a,"path");b.setAttribute("class","weather34moonbackground");b.setAttribute("d","m100,0 a20,20 0 1,1 0,150 a20,20 0 1,1 0,-150");j.setAttribute("class","weather34moonforeground");j.setAttribute("d",g);e.appendChild(b);e.appendChild(j)}}}phase_junk(moon_day(new Date()));</script>
-';}?>
+function moon_day(e){var t,a,n,r,o,i,h,s,u,c,l=function(e){return e-Math.floor(e)},m=(new Date).getJulian(),d=e.getFullYear(),f=3.14159265/180;o=2415020+29*(t=Math.floor(12.3685*(d-1900))),i=1178e-7*(n=(a=(d-1899.5)/100)*a)-1.55e-7*(r=a*a*a)+(.75933+.53058868*t)-(837e-6*a+335e-6*n),h=360*l(.08084821133*t)+359.2242-333e-7*n-347e-8*r,s=360*l(.07171366128*t)+306.0253+.0107306*n+1236e-8*r,u=360*l(.08519585128*t)+21.2964-.0016528*n-239e-8*r;for(var p=0,w=0;w<m;){var g=i+1.530588*p,M=(h+29.10535608*p)*f,v=(s+385.81691806*p)*f,b=(u+390.67050646*p)*f;g-=.4068*Math.sin(v)+(.1734-393e-6*a)*Math.sin(M),g+=.0161*Math.sin(2*v)+.0104*Math.sin(2*b),g-=.0074*Math.sin(M-v)-.0051*Math.sin(M+v),g+=.0021*Math.sin(2*M)+.001*Math.sin(2*b-v),g+=.5/1440,c=w,w=o+28*p+Math.floor(g),p++}return(m-c)/29.53059}function phase_junk(e){var t,a=[];e<=.25?(a=[1,0],t=20-20*e*4):e<=.5?(a=[0,0],t=20*(e-.25)*4):e<=.75?(a=[1,1],t=20-20*(e-.5)*4):e<=1?(a=[0,1],t=20*(e-.75)*4):exit;var n=document.getElementById("weather34moonphase");if(0!=n&&null!=n){if(document.createElementNS&&document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect){var r="m100,0 ";r=(r=r+"a"+t+",20 0 1,"+a[0]+" 0,150 ")+"a20,20 0 1,"+a[1]+" 0,-150";var o="http://www.w3.org/2000/svg",i=document.createElementNS(o,"path"),h=document.createElementNS(o,"path");h.setAttribute("class","weather34moonbackground"),h.setAttribute("d","m100,0 a20,20 0 1,1 0,150 a20,20 0 1,1 0,-150"),i.setAttribute("class","weather34moonforeground"),i.setAttribute("d",r),n.appendChild(h),n.appendChild(i)}}}Date.prototype.getJulian=function(){return this/864e5-this.getTimezoneOffset()/1440+2440587.5},phase_junk(moon_day(new Date));</script>
 </article>
-
 <div class=moonphasetext>    
 <?php echo " ";{$day = date('l jS F Y');if($day===date("l jS F Y",strtotime('2019-7-2'))){echo 'Solar <orange>Eclipse</orange>';}else if($day===date("l jS F Y",strtotime('2019-7-16'))){echo 'Lunar <orange>Eclipse</orange>';}else if($day===date("l jS F Y",strtotime('2019-7-17'))){echo 'Lunar <orange>Eclipse</orange>';}else if($day===date("l jS F Y",strtotime('2019-12-26'))){echo 'Solar <orange>Eclipse</orange>';}		
 // weather34 moonphase no scraping its calculated from the livedata !

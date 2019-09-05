@@ -235,7 +235,7 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <?php 
   if ($positionmooneq=='eq.php'){echo $lang['Earthquake'];}
   if ($positionmooneq=='luftdaten-small.php'){echo $lang['Air Quality'];}
-  if ($positionmooneq=='weather34moonphase.php'){echo $lang['Moonphase'];}
+  if ($positionmooneq=='weather34-moonphase.php'){echo $lang['Moonphase'];}
   ?></div>
   <div id=earthquake></div></div>
   </weather34topmodule>  
