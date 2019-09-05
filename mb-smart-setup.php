@@ -1034,7 +1034,7 @@ your nearly there :-) keep going
         
          <br>
      <br>
-      <div class= "stationvalue"> *Position Last small module 2 options moonphase or earthquake<br>
+      <div class= "stationvalue"> *Position Last small module 3 options moonphase or earthquake or luftdaten air quality<br>
       * important (do not choose moonphase if moonphase option is selected in position12 or last main module )</div>
        <br> <br>
        <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -1046,7 +1046,8 @@ your nearly there :-) keep going
         <select id="positionmooneq" name="positionmooneq" class="choose">  
             <option><?php echo $positionmooneq ;?></option>             
             <option>weather34-moonphase.php</option>  
-            <option>eq.php</option>                       
+            <option>eq.php</option> 
+            <option>luftdaten-small.php</option>                       
             
                      </select>
                

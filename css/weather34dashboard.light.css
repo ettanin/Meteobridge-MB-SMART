@@ -8641,3 +8641,55 @@ weather34moonsetcircle {
   opacity:.7
   
 }
+.luftairqualitymoduleposition{position:absolute;margin-top:0;left:10px;}
+.luftairvalueaq{position:absolute;margin-top:10px;left:100px;font-size:.9em;font-family:weathertext2;}
+luftairvalueaqpm{font-size:.35em;font-family:weathertext2;color:rgba(61, 70, 77, 1.000)}
+.luftairvalue{position:relative;margin-top:40px;left:30px;font-size:.55rem;font-family:weathertext2;color:rgba(61, 70, 77, 1.000);}
+luftgreen{color:rgba(144, 177, 42, 1);}
+luftyellow{color: #e6a141;}
+luftorange{color:#d05f2d;}
+luftred{color:rgba(211, 93, 78, 1);}
+luftpurple{color:rgba(164, 117, 203, 1.000);}
+
+
+greenluft,
+orangeluft,
+purpleluft,
+redluft,
+yellowluft {
+  position: absolute;
+  font-family: weathertext2;
+  width: 3rem;
+  height: 2.5rem;
+  font-size: 0.9em;
+  padding-top: -5px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  margin-left: 0px;
+  top: 8px;
+  line-height:1;
+  border-bottom:8px solid rgba(230, 232, 239, 1.000);
+}
+orangeluft {
+  background: #d05f2d;
+}
+yellowluft{
+  background: #e6a141;
+}
+redluft{
+  background: rgba(211, 93, 78, 1);
+}
+greenluft {
+  background: rgba(144, 177, 42, 1);
+  opacity:.7
+}
+
+purpleluft {
+  background:rgba(164, 117, 203, 1.000);
+}
+

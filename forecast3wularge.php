@@ -224,9 +224,9 @@ echo '</a><br>';
 
 //wind wu
 //gusts shown if wind greater than 25kmh
-if($weather["temp_units"]=='F' && $wuskydayWindGust>=15){echo "<div class='wulargewindspeedicon'> ".$lang['Gusts']." <blueu>";echo $wuskydayWinddircardinal; 
+if($weather["temp_units"]=='F' && $wuskydayWindGust>=15){echo "<div class='wulargewindspeedicon'> ".$lang['Gust']." <blueu>";echo $wuskydayWinddircardinal; 
 echo " </blueu>at ".$windalert2." <div class=wuwindspeed> ".number_format($wuskydayWindGust*1.625,0),"&nbsp;<wuunits>".$windunit;echo  '</wuunits></div></div>';'<br><br>';echo "<div class='wulargerain'>";}
-else if ($wuskydayWindGust>=25){echo "<div class='wulargewindspeedicon'> ".$lang['Gusts']."  <blueu>";echo $wuskydayWinddircardinal; 
+else if ($wuskydayWindGust>=25){echo "<div class='wulargewindspeedicon'> ".$lang['Gust']."  <blueu>";echo $wuskydayWinddircardinal; 
 echo " </blueu>at ".$windalert2." <div class=wuwindspeed> ".number_format($wuskydayWindGust*1.625,0),"&nbsp;<wuunits>".$windunit;echo  '</wuunits></div></div>';'<br><br>';echo "<div class='wulargerain'>";}
 //wind shown if wind less 25kmh
 else {echo "<div class='wulargewindspeedicon'>".$lang['Wind']." <blueu>";echo $wuskydayWinddircardinal; 
