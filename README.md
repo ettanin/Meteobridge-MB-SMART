@@ -1,16 +1,21 @@
 # This GITHUB repository is for Meteobridge-Weather34-Smart (Beta) Version *NO MYSQL KNOWLEDGE REQUIRED 
-(10th beta Version Released September 4th 2019)
+(10th beta Version Released September 6th 2019)
 
 *starts the process of cleaning out unwanted code and prepare for languages 
 
 *adds additional 8 modules with 7 of them based on NANOSD generated data
+
+*theme switcher simple css 
 	
 # Contributors Live Running Demo(s)
-https://singaporeweather.info 
 
-https://www.paulwilman.com/pw4/
+https://singaporeweather.info (Singapore)
 
-https://www.weerstation-sauwerd.nl/pwsmbms/
+https://www.paulwilman.com/pw4/ (England)
+
+https://www.weerstation-sauwerd.nl/pwsmbms/ (Holland)
+
+https://beaumaris-weather.com/pwsMB/ (Tasmania)
 
 
 
