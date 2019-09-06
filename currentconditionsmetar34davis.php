@@ -10,7 +10,7 @@ uppercase{ text-transform:capitalize;}
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	Release: August 2019						  	                                               #
+	# 	Release: August 2019	revised September 2019					  	                           #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
@@ -40,7 +40,7 @@ else if ($weather['temp_units']=='F' && $weather["cloudbase3"]*0.3048<609){echo 
 <?php 
 //homeweatherstation weather34 current conditions using hardware values
 //rain-weather34
-if($weather["rain_rate"]>0 && $weather["wind_speed_avg"]>15){echo "<img rel='prefetch' src='css/icons/windyrain.svg' width='60px' height='55px' alt='weather34 windy rain icon'>";}
+if($weather["rain_rate"]>0 && $weather["wind_speed_avg"]>15){echo "<img rel='prefetch' src='css/icons/windyrain.svg' width='50' height='50' alt='weather34 windy rain icon'>";}
 else if($weather["rain_rate"]>10){echo "<img rel='prefetch' src='css/icons/rain.svg' width='60' height='50' alt='weather34 heavy rain icon'>";}
 else if($weather["rain_rate"]>0){echo "<img rel='prefetch' src='css/icons/rain.svg' width='60' height='50' alt='weather34 rain icon'>";}
 else if($weather["rain_rate2"]>10){echo "<img rel='prefetch' src='css/icons/rain.svg' width='60' height='50' alt='weather34 heavy rain icon'>";}
@@ -66,24 +66,17 @@ else echo "<img rel='prefetch' src='css/icons/".$sky_icon."' width='60' height='
 <?php echo '';
 
 //rain-weather34
-if($weather["rain_rate"]>0 && $weather["wind_speed_avg"]>15){echo "Rain Showers"; echo '<br>';echo "Windy Conditions";}
-else if($weather["rain_rate"]>=20){echo "Heavy Rain"; echo '<br>';echo "Flooding Possible";}
-else if($weather["rain_rate"]>=10){echo "Heavy Rain"; echo '<br>Showers';}
-else if($weather["rain_rate"]>=5){echo "Moderate Rain"; echo '<br>Showers';}
-else if($weather["rain_rate"]>=1){echo "Steady Rain";echo '<br>Showers';}
-else if($weather["rain_rate"]>0){echo "Light Rain";echo '<br>Showers';}
+if($weather["rain_rate"]>0 && $weather["wind_speed_avg"]>15){echo $lang['Wind']." & ". $lang['Rain']; echo '<br>';echo $lang['Showers-Metar'];}
+else if($weather["rain_rate"]>=10){echo $lang['Heavy Rain-Metar']; echo '<br>';echo $lang['Showers-Metar'];}
+else if($weather["rain_rate"]>=5){echo $lang['Moderate Rain-Metar']; echo '<br>';echo $lang['Showers-Metar'];}
+else if($weather["rain_rate"]>0){echo $lang['Light Rain-Metar']; echo '<br>';echo $lang['Showers-Metar'];}
 //fog-weather34
-else if($weather["temp"] -$weather["dewpoint"] <0.5  && $now >$suns2 && $weather["temp"]>5){echo "Misty Fog<br>Conditions ".$alert."";}
-else if($weather["temp"] -$weather["dewpoint"] <0.5  && $now <$sunr2 && $weather["temp"]>5) {echo "Misty Fog<br>Conditions ".$alert."";}
-else if($weather["temp"] -$weather["dewpoint"] <0.5  && $weather["temp"]>5){echo "Misty Fog<br>Conditions ".$alert."";}
-//misty-weather34
-else if($weather["temp"] -$weather["dewpoint"] <0.8  && $now >$suns2 && $weather["temp"]>5){echo "Fog Hazy<br>Conditions";}
-else if($weather["temp"] -$weather["dewpoint"] <0.8  && $now <$sunr2 && $weather["temp"]>5) {echo " Misty Hazy<br>Conditions";}
-else if($weather["temp"] -$weather["dewpoint"] <0.8  && $weather["temp"]>5){echo "Misty Hazy<br>Conditions";}
+else if($weather["temp"] -$weather["dewpoint"] <0.5  && $now >$suns2 && $weather["temp"]>5){echo $lang['Fog'].'<br>'.$lang['Conditions']. ".$alert.";}
+else if($weather["temp"] -$weather["dewpoint"] <0.5  && $now <$sunr2 && $weather["temp"]>5) {echo $lang['Fog'].'<br>'.$lang['Conditions']. ".$alert.";}
+else if($weather["temp"] -$weather["dewpoint"] <0.5  && $weather["temp"]>5){echo $lang['Fog'].'<br>'.$lang['Conditions']. ".$alert.";}
 //windy-weather34
-else if($weather["wind_speed_avg"]>=40){echo "Strong Wind ".$alert."<br>Conditions" ;}
-else if($weather["wind_speed_avg"]>=30){echo "Very Windy ".$alert."<br>Conditions";}
-else if($weather["wind_speed_avg"]>=22){echo "Moderate Wind <br>Conditions";}
+else if($weather["wind_speed_avg"]>=45){echo $lang['Neargale'].'<br>'.$lang['Conditions']. ".$alert.";}
+else if($weather["wind_speed_avg"]>=22){echo $lang['Windy'].'<br>'.$lang['Conditions']. ".$alert.";}
 else if($weather["wind_speed_avg"]>=15){echo "Breezy <br>Conditions";}
 else if(filesize('jsondata/metar34.txt')<160){echo "<uppercase>Conditions<br>Not Available</uppercase>";} 
 //metar conditions-weather34
