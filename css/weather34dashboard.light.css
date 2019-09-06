@@ -8699,13 +8699,13 @@ purpleluft {
   width: 55px;
   font-size:10px;
   color:#fff ;
-  top:5px
+  top:4px
 }
-.weather34-theme-switch a{  
- color:#f8f8f8 
+.weather34-theme-switch a{
+ color:#f8f8f8
 }
-.weather34-theme-switch a :hover{  
- color:#fff 
+.weather34-theme-switch a :hover{
+ color:#fff
 }
 
 .weather34-theme-switch input {
@@ -8713,30 +8713,25 @@ purpleluft {
 }
 
 .weather34-slider {
-  background-color:rgba(61, 139, 150, 1.000);
+  background-color:rgba(120, 138, 146, 1.000);
   bottom: 0;
   cursor: pointer;
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
-  color:#fff  
-}
-
-.weather34-slider:before {
-  background-color:rgba(61, 70, 77, 1.000);
-  bottom: 3px;
-  content: "";
-  height: 8px;
-  left: 7px;
-  position: absolute;  
-  width: 8px;
-}
-
-.weather34-slider.round {
+  color:#fff;
   border-radius: 25px;
 }
 
-.weather34-slider.round:before {
+.weather34-slider:before {
+  background-color:rgba(77, 90, 102, 1.000);
+  bottom: 1px;
+  content: "";
+  height: 12px;
+  left: 1px;
+  position: absolute;
+  width: 12px;
   border-radius: 50%;
+  
 }

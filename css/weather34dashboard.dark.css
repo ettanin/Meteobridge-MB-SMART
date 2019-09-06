@@ -8903,7 +8903,6 @@ greenluft {
 purpleluft {
   background:rgba(164, 117, 203, 1.000);
 }
-
 .weather34-theme-switch {
   display: inline-block;
   height: 14px;
@@ -8911,13 +8910,13 @@ purpleluft {
   width: 55px;
   font-size:10px;
   color:#f8f8f8;
-  top:5px
+  top:4px
 }
-.weather34-theme-switch a{  
-  color:#f8f8f8; 
+.weather34-theme-switch a{
+  color:#f8f8f8;
 }
-.weather34-theme-switch a :hover{  
-  color:#f8f8f8; 
+.weather34-theme-switch a :hover{
+  color:#f8f8f8;
 }
 
 
@@ -8932,29 +8931,29 @@ purpleluft {
   left: 0;
   position: absolute;
   right: 0;
-  top: 0; 
+  top: 0;
   color:#fff;
   font-weight:500
-  
+
 }
 .weather34-slider a{
   color:#fff;
   font-weight:500
-  
+
 }
 .weather34-slider a:hover{
   color:#fff
-  
+
 }
 
 .weather34-slider:before {
   background-color: rgba(230, 232, 239, 1.000);
-  bottom: 3px;
+  bottom: 1px;
   content: "";
-  height: 8px;
-  left: 43px;
-  position: absolute;  
-  width: 8px;
+  height: 12px;
+  left: 42px;
+  position: absolute;
+  width: 12px;
 }
 
 .weather34-slider.round {
@@ -8963,5 +8962,5 @@ purpleluft {
 
 .weather34-slider.round:before {
   border-radius: 50%;
-}
-
+   border:1px solid rgba(61, 139, 150, 1.000);
+  }
