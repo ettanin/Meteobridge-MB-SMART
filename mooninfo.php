@@ -49,16 +49,20 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .moonphaseing{width:110px;padding-bottom:50px;margin-top:-10px}
-.weather34moonphasesvg{position:absolute; left:25px; top:70px; width:120px;}
-.weather34moonforeground { fill:rgba(230, 232, 239, .3); stroke:rgba(86, 95, 103, .8); stroke-width:0;max-height:100px }
+.weather34moonphasesvg{position:absolute; left:25px;width:120px;}
+.weather34moonforeground { fill:rgba(230, 232, 239, .3); stroke:rgba(86, 95, 103, .8); stroke-width:0;}
 .weather34moonbackground{ fill:rgba(86, 95, 103, .8);stroke:rgba(230, 232, 239, .3);stroke-width:0; }
 </style>
+<?php // lets rotate for Tony (Beaumaris-Weather) down under
+if ($hemisphere==0){echo '<style>.weather34moonphasesvg{-webkit-transform: rotate('.$hemisphere.'deg);transform: rotate('.$hemisphere.'deg); top:70px;}
+</style>';}
+if ($hemisphere==180){echo '<style>.weather34moonphasesvg{-webkit-transform: rotate('.$hemisphere.'deg);transform: rotate('.$hemisphere.'deg); top:40px;}
+</style>';}
+?>
 <div class="weather34darkbrowser" url="Moon Phase Information"></div>
   
 <main class="grid">
-  <article>       
-
-
+  <article> 
 <?php echo $info;?> Current Moon Phase<br><br>  
 <!---simple svg moonphase 6.1 or 7.5-->
 <div class="weather34moonphasesvg">

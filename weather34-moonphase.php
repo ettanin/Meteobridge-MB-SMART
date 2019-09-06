@@ -10,6 +10,13 @@
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 include('livedata.php');header('Content-type: text/html; charset=utf-8');	?>
 
+
+<?php // lets rotate for Tony (Beaumaris-Weather) down under
+if ($hemisphere==0){echo '<style>.weather34moonphasesvg{position:absolute;width:55px;height:55px;-webkit-transform: rotate('.$hemisphere.'deg);transform: rotate('.$hemisphere.'deg);}
+</style>';}
+if ($hemisphere==180){echo '<style>.weather34moonphasesvg{position:absolute;width:55px;height:55px;top:-8px;-webkit-transform: rotate('.$hemisphere.'deg);transform: rotate('.$hemisphere.'deg);}
+</style>';}
+?>
 <div class="topframe">
 <!---simple svg moonphase 6.1 or 7.5-->
 <div class="weather34moonphasesvg"><svg id="weather34moonphase" viewBox="0 0 200 200" version="1.1"/></svg></div>

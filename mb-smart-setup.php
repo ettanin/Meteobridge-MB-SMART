@@ -75,6 +75,7 @@ $db_pass  = "'. $_POST["db_pass"]. '";
 $db_name   = "'. $_POST["db_name"]. '";
 $notifications = "'. $_POST["notifications"]. '";
 $metar   = "'. $_POST["metar"]. '";
+$hemisphere   = "'. $_POST["hemisphere"]. '";
 $icao1   = "'. $_POST["icao1"]. '";
 $airport1   = "'. $_POST["airport1"]. '";
 $airport1dist   = "'. $_POST["airport1dist"]. '";
@@ -1574,6 +1575,16 @@ Check<b>WX</b> Metar API KEY you need to sign up here for free API key <a href="
         
     
     <p> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
        
        <div class="seperator"></div>
 <span style="color:#F75C46;"><svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -1604,8 +1615,40 @@ Check<b>WX</b> Metar API KEY you need to sign up here for free API key <a href="
             <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg> *options select your regular Weather Station Hardware Supplier choose none if not shown or do not wish to show in menu<br><br></span>
   
-   <p>      
-    <div class="seperator"></div>         </div>      
+   <p>   
+   
+   
+      
+         <div class="seperator"></div>         
+         
+         
+         
+         
+         
+        
+   <div class= "stationvalue">   
+   Reverse the moonphase for southern hemisphere (i.e. Australia etc..)</div> 
+   <svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M30 12 L16 24 2 12" />
+</svg>
+<select id="hemisphere" name="hemisphere" class="choose1">
+         <option><?php echo $hemisphere ;?></option>
+            <option>0</option>
+            <option>180</option>
+                 
+            
+        </select>
+<br><br>
+         
+         
+         
+         
+         
+         </div>   
+         
+         
+            
+    
    
 <div class="weatheroptions">
 <br><br>
