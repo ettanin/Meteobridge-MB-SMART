@@ -8692,3 +8692,51 @@ purpleluft {
   background:rgba(164, 117, 203, 1.000);
 }
 
+.weather34-theme-switch {
+  display: inline-block;
+  height: 14px;
+  position: relative;
+  width: 55px;
+  font-size:10px;
+  color:#fff ;
+  top:5px
+}
+.weather34-theme-switch a{  
+ color:#f8f8f8 
+}
+.weather34-theme-switch a :hover{  
+ color:#fff 
+}
+
+.weather34-theme-switch input {
+  display: none;
+}
+
+.weather34-slider {
+  background-color:rgba(61, 139, 150, 1.000);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color:#fff  
+}
+
+.weather34-slider:before {
+  background-color:rgba(61, 70, 77, 1.000);
+  bottom: 3px;
+  content: "";
+  height: 8px;
+  left: 7px;
+  position: absolute;  
+  width: 8px;
+}
+
+.weather34-slider.round {
+  border-radius: 25px;
+}
+
+.weather34-slider.round:before {
+  border-radius: 50%;
+}

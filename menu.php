@@ -14,12 +14,9 @@
 <weather34toptitle><?php echo $stationName;?>&nbsp;Weather Station</weather34toptitle>
 <div class="weather34toolbar">
 <div class="weather34toolbar__right"><weather34thetime> <div id="theTime"></div></div></weather34thetime>
-
-<a href="#">
-<?php if($units!='us'){echo' <a href="./?units=us" class="weather34tipfah"><topbarimperial>&deg;F</topbarimperial></a></div>';}
-else if($units!='metric'){echo' <a  class="weather34tipcelsius"  href="./?units=metric"><topbarmetric>&deg;C</topbarmetric></a></div>';}
-else echo' <div class="menucolor"><a href="./?units=metric">Units</a></div>';?>
-</a></div></div>
+ <div class="weather34-theme-switch-wrapper"><div class="weather34-theme-switch">
+  <a class="weather34-slider round" href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>><?php if($theme=='dark'){echo 'Light';}else{echo ' &nbsp;Dark';}?> </a>
+  </div></div></div></div></div>
 
 
  <input type="checkbox" class="openweather34sidebarMenu" id="openweather34sidebarMenu">
