@@ -248,14 +248,14 @@ else if($metar34clouds=='BKN'){
 if ($now >$suns2 ){$sky_icon='nt_mostlycloudy.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_mostlycloudy.svg';} 
 else $sky_icon='mostlycloudy.svg'; 	
-$sky_desc==$lang['Mostly Cloudy-Metar'].'<br>'.$lang['Conditions-Metar'].'';
+$sky_desc=$lang['Mostly Cloudy-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 }
 //overcast
 else if($metar34clouds=='OVC'){
 if ($now >$suns2 ){$sky_icon='nt_overcast.svg';} 
 else if ($now <$sunrs2 ){$sky_icon='nt_overcast.svg';} 
 else $sky_icon='overcast.svg'; 
-$sky_desc==$lang['Overcast-Metar'].'<br>'.$lang['Conditions-Metar'].'';
+$sky_desc=$lang['Overcast-Metar'].'<br>'.$lang['Conditions-Metar'].'';
 
 }
 //overcast
