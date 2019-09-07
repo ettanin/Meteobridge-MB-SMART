@@ -16,18 +16,14 @@
 	
 	include('preload.php');
 	$conv = 1;
-	if ($tempunit=='C' && $windunit == 'mph') {$conv= '1';}
-	else if ($windunit == 'mph') {$conv= '(1.8) +32';}
-	else if ($windunit == 'm/s') {$conv= '1';}
-	else if ($windunit == 'km/h'){$conv= '1';}
-	$max = 40;
-	if ($windunit == 'mph') {$max= '120';}
-	else if ($units == 'uk' && $windunit == 'mph') {$max= '40';}
-	else $max= '40';
-	
+	if ($weather["temp_units"]='C'  && $windunit == 'mph') {$conv= '1';}
+	if ($weather["temp_units"]='F'  && $windunit == 'mph') {$conv= '(1.8) +32';}
+	if ($weather["temp_units"]='F'  ) {$conv2= '1';}
+	if ($weather["temp_units"]='C'  ) {$conv2= '1';}
+	$max = 40;if ($weather["temp_units"]='F') {$max= '120';}	
 	$interval = 5;
-	if ($windunit == 'mph') {$interval= '10';}
-	else $interval= '5';
+	if ($weather["temp_units"]='F') {$interval= '10';}
+	
 	
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -75,7 +71,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[7] >-50)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[15])});
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[15]*<?php echo $conv2 ;?>)});
 				
 			}
 			drawChart(dataPoints1 , dataPoints2 );
@@ -187,7 +183,22 @@
 			dataPoints: dataPoints1,
 			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
 			
+		},
+		{
+			type: "spline",
+			lineDashType: "dash",
+			color:"#d35d4e",
+			markerSize:0,
+			showInLegend:false,
+			legendMarkerType: "circle",
+			lineThickness: 1,
+			markerType: "circle",
+			name:" Real Feel",
+			dataPoints: dataPoints2,
+			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			
 		}
+		
 
 		]
 		});

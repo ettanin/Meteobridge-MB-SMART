@@ -109,7 +109,8 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   <articlegraph> 
   <div class=actualt>Today 
   <temp>Temp <?php echo "Max ",$weather["temp_today_high"]."&deg;"?> </temp> 
-  <dewpoint>Temp <?php echo "Min ",$weather["temp_today_low"]."&deg;"?> </dewpoint>       
+  <dewpoint>Temp <?php echo "Min ",$weather["temp_today_low"]."&deg;"?> </dewpoint>
+  <feel>Feels ---</feel>     
   </div>  
   <iframe  src="weather34charts/todaytempmedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
@@ -117,7 +118,8 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   <articlegraph> 
   <div class=actualt>Today 
   <temp>Dewpoint <?php echo "Max ",$weather["dewmax"]."&deg;"?> </temp> 
-  <dewpoint>Dewpoint <?php echo "Min ",$weather["dewmin"]."&deg;"?> </dewpoint>  
+  <dewpoint>Dewpoint <?php echo "Min ",$weather["dewmin"]."&deg;"?> </dewpoint> 
+  <wetbulb>Wetbulb ---</wetbulb> 
   </span></blue></div>  
   <iframe  src="weather34charts/todaydewmedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
