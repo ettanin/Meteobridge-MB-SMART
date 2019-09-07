@@ -4338,7 +4338,7 @@ rainu {
   font-size: 0.6em;
   margin-top:5px
 }
-.rainratetextheading ratevalue{color:rgba(61, 139, 150, 1.000)}
+.rainratetextheading ratevalue{color:rgba(61, 139, 150, 1)}
 
 .rainrateextra {
   position: absolute;
@@ -5756,52 +5756,53 @@ uptimesup {
 }
 .lity-close {
   z-index: 9994;
-  width: 100px;
-  height: 65px;
-  position: absolute;
-  float: left;
-  margin-left: 20px;
-  top: 18px;
   -webkit-appearance: none;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
+  position:absolute;
+  top:3px;
+  width:auto; 
+  float:right;
+  right: 30px;
   padding: 0;
-  color: rgba(86, 95, 103, 0);
-  font-style: normal;
-  font-size: 35px;
-  font-family: Arial;
-  line-height: 35px;
+  color: #fff;
   border: 0;
   background: 0 0;
   outline: 0;
-  -webkit-box-shadow: none;
   box-shadow: none;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 25px;
+  font-style: normal;
+  line-height: 25px;
+  cursor: pointer;
+  background:rgba(208, 95, 45, 1.000);
+  border-radius:3px
 }
 .lity-close::-moz-focus-inner {
-  border: 0;
   padding: 0;
+  border: 0;
 }
 .lity-close:active,
 .lity-close:focus,
 .lity-close:hover,
 .lity-close:visited {
-  text-decoration: none;
-  text-align: center;
   padding: 0;
-  color: rgba(86, 95, 103, 0);
-  font-style: normal;
-  font-size: 35px;
-  font-family: Arial;
-  line-height: 35px;
+  color: #fff;
   border: 0;
   background: 0 0;
   outline: 0;
-  -webkit-box-shadow: none;
   box-shadow: none;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 25px;
+  font-style: normal;
+  line-height: 25px;
+  background:rgba(61, 139, 150, 1.000);
+  border-radius:3px
 }
 .lity-close:active {
-  color: rgba(86, 95, 103, 0);
+  color: rgba(86, 95, 103, 1);
 }
 .lity-image img {
   max-width: 100%;
@@ -8861,7 +8862,7 @@ luftgreen{color:rgba(144, 177, 42, 1);}
 luftyellow{color: #e6a141;}
 luftorange{color:#d05f2d;}
 luftred{color:rgba(211, 93, 78, 1);}
-luftpurple{color:rgba(164, 117, 203, 1.000);}
+luftpurple{color:rgba(164, 117, 203, 1);}
 
 
 greenluft,
@@ -8901,7 +8902,7 @@ greenluft {
   opacity:.6
 }
 purpleluft {
-  background:rgba(164, 117, 203, 1.000);
+  background:rgba(164, 117, 203, 1);
 }
 .weather34-theme-switch {
   display: inline-block;
@@ -8925,7 +8926,7 @@ purpleluft {
 }
 
 .weather34-slider {
-  background-color: rgba(120, 138, 146, 1.000);
+  background-color: rgba(120, 138, 146, 1);
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -8947,7 +8948,7 @@ purpleluft {
 }
 
 .weather34-slider:before {
-  background-color: rgba(230, 232, 239, 1.000);
+  background-color: rgba(230, 232, 239, 1);
   bottom: 1px;
   content: "";
   height: 12px;
@@ -8962,5 +8963,5 @@ purpleluft {
 
 .weather34-slider.round:before {
   border-radius: 50%;
-   border:1px solid rgba(61, 139, 150, 1.000);
+   border:1px solid rgba(61, 139, 150, 1);
   }
