@@ -33,8 +33,12 @@ html,body{font-size:13px;font-family: "weathertext", Helvetica, Arial, sans-seri
   max-width: 50%;
   max-height:100px
 } 
- .weather34chart-btn.close:after,.weather34chart-btn.close:before{color:#ccc;position:absolute;font-size:14px;font-family:Arial,Helvetica,sans-serif;font-weight:600}.weather34browser-header{flex-basis:auto;height:35px;background:#ebebeb;background:0;border-bottom:0;display:flex;margin-top:-20px;width:100%;-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;border-top-left-radius:5px;border-top-right-radius:5px}.weather34browser-footer{flex-basis:auto;height:35px;background:#ebebeb;background:rgba(56,56,60,1);border-bottom:0;display:flex;bottom:-20px;width:97.4%;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-bottomleft:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px}.weather34chart-btns{position:absolute;height:35px;display:inline-block;padding:0 10px;line-height:38px;width:55px;flex-basis:auto;top:5px}.weather34chart-btn{width:14px;height:14px;border:1px solid rgba(0,0,0,.15);border-radius:6px;display:inline-block;margin:1px}.weather34chart-btn.close{background-color: rgba(255, 124, 57, 1.000)}.weather34chart-btn.close:before{content:"x";margin-top:-14px;margin-left:2px}.weather34chart-btn.close:after{content:"close window";margin-top:-13px;margin-left:15px;width:300px}a{color:#aaa;text-decoration:none}
-.weather34darkbrowser{position:relative;background:0;width:100%;max-height:30px;margin:auto;margin-top:-15px;margin-left:0px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:45px;background-image:radial-gradient(circle,#EB7061 6px,transparent 8px),radial-gradient(circle,#F5D160 6px,transparent 8px),radial-gradient(circle,#81D982 6px,transparent 8px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),linear-gradient(to bottom,rgba(59,60,63,0.4) 40px,transparent 0);background-position:left top,left top,left top,right top,right top,right top,0 0;background-size:50px 45px,90px 45px,130px 45px,50px 30px,50px 45px,50px 60px,100%;background-repeat:no-repeat,no-repeat}.weather34darkbrowser[url]:after{content:attr(url);color:#aaa;font-size:10px;position:absolute;left:0;right:0;top:0;padding:4px 15px;margin:11px 50px 0 90px;border-radius:3px;background:rgba(97, 106, 114, 0.3);height:20px;box-sizing:border-box}
+ 
+  a{color:#aaa;text-decoration:none} 
+.weather34darkbrowser{position:relative;background:0;width:96%;height:30px;margin:auto;margin-top:-5px;margin-left:0px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:10px;}
+.weather34darkbrowser[url]:after{content:attr(url);color:#aaa;font-size:10px;position:absolute;left:0;right:0;top:0;padding:4px 15px;margin:11px 10px 0 auto;border-radius:3px;background:rgba(97, 106, 114, 0.3);height:20px;box-sizing:border-box}
+ 
+ 
  blue{color:#01a4b4}orange{color:#009bb4}orange1{position:relative;color:#009bb4;margin:0 auto;text-align:center;margin-left:5%;font-size:1.1rem}green{color:#aaa}red{color:#f37867}red6{color:#d65b4a}value{color:#fff}yellow{color:#CC0}purple{color:#916392}
  meteotextshowertext{font-size:1.2rem;color:#009bb4}
  meteorsvgicon{color:#f5f7fc}  
@@ -49,37 +53,30 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .moonphaseing{width:110px;padding-bottom:50px;margin-top:-10px}
-.weather34moonphasesvg{position:absolute; left:25px;width:120px;}
-.weather34moonforeground { fill:rgba(230, 232, 239, .3); stroke:rgba(86, 95, 103, .8); stroke-width:0;}
+.weather34moonphasesvg{position:absolute; left:25px; top:70px; width:120px;}
+.weather34moonforeground { fill:rgba(230, 232, 239, .3); stroke:rgba(86, 95, 103, .8); stroke-width:0;max-height:100px }
 .weather34moonbackground{ fill:rgba(86, 95, 103, .8);stroke:rgba(230, 232, 239, .3);stroke-width:0; }
 </style>
-<?php // lets rotate for Tony (Beaumaris-Weather) down under
-if ($hemisphere==0){echo '<style>.weather34moonphasesvg{-webkit-transform: rotate('.$hemisphere.'deg);transform: rotate('.$hemisphere.'deg); top:70px;}
-</style>';}
-if ($hemisphere==180){echo '<style>.weather34moonphasesvg{-webkit-transform: rotate('.$hemisphere.'deg);transform: rotate('.$hemisphere.'deg); top:40px;}
-</style>';}
-?>
 <div class="weather34darkbrowser" url="Moon Phase Information"></div>
   
 <main class="grid">
-  <article> 
+  <article>       
+
+
 <?php echo $info;?> Current Moon Phase<br><br>  
 <!---simple svg moonphase 6.1 or 7.5-->
-<div class="weather34moonphasesvg">
-<svg id="weather34moonphase" viewBox="0 0 200 200" version="1.1"/></svg></div>
+<div class="weather34moonphasesvg"><svg id="weather34moonphase" viewBox="0 0 200 200" version="1.1"/></svg></div>
 <script>
 function moon_day(e){var t,a,n,r,o,i,h,s,u,c,l=function(e){return e-Math.floor(e)},m=(new Date).getJulian(),d=e.getFullYear(),f=3.14159265/180;o=2415020+29*(t=Math.floor(12.3685*(d-1900))),i=1178e-7*(n=(a=(d-1899.5)/100)*a)-1.55e-7*(r=a*a*a)+(.75933+.53058868*t)-(837e-6*a+335e-6*n),h=360*l(.08084821133*t)+359.2242-333e-7*n-347e-8*r,s=360*l(.07171366128*t)+306.0253+.0107306*n+1236e-8*r,u=360*l(.08519585128*t)+21.2964-.0016528*n-239e-8*r;for(var p=0,w=0;w<m;){var g=i+1.530588*p,M=(h+29.10535608*p)*f,v=(s+385.81691806*p)*f,b=(u+390.67050646*p)*f;g-=.4068*Math.sin(v)+(.1734-393e-6*a)*Math.sin(M),g+=.0161*Math.sin(2*v)+.0104*Math.sin(2*b),g-=.0074*Math.sin(M-v)-.0051*Math.sin(M+v),g+=.0021*Math.sin(2*M)+.001*Math.sin(2*b-v),g+=.5/1440,c=w,w=o+28*p+Math.floor(g),p++}return(m-c)/29.53059}function phase_junk(e){var t,a=[];e<=.25?(a=[1,0],t=20-20*e*4):e<=.5?(a=[0,0],t=20*(e-.25)*4):e<=.75?(a=[1,1],t=20-20*(e-.5)*4):e<=1?(a=[0,1],t=20*(e-.75)*4):exit;var n=document.getElementById("weather34moonphase");if(0!=n&&null!=n){if(document.createElementNS&&document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect){var r="m100,0 ";r=(r=r+"a"+t+",20 0 1,"+a[0]+" 0,150 ")+"a20,20 0 1,"+a[1]+" 0,-150";var o="http://www.w3.org/2000/svg",i=document.createElementNS(o,"path"),h=document.createElementNS(o,"path");h.setAttribute("class","weather34moonbackground"),h.setAttribute("d","m100,0 a20,20 0 1,1 0,150 a20,20 0 1,1 0,-150"),i.setAttribute("class","weather34moonforeground"),i.setAttribute("d",r),n.appendChild(h),n.appendChild(i)}}}Date.prototype.getJulian=function(){return this/864e5-this.getTimezoneOffset()/1440+2440587.5},phase_junk(moon_day(new Date));</script>
 </article>
+
 <div class=moonphasetext>    
 <?php echo " ";{$day = date('l jS F Y');if($day===date("l jS F Y",strtotime('2019-7-2'))){echo 'Solar <orange>Eclipse</orange>';}else if($day===date("l jS F Y",strtotime('2019-7-16'))){echo 'Lunar <orange>Eclipse</orange>';}else if($day===date("l jS F Y",strtotime('2019-7-17'))){echo 'Lunar <orange>Eclipse</orange>';}else if($day===date("l jS F Y",strtotime('2019-12-26'))){echo 'Solar <orange>Eclipse</orange>';}		
 // weather34 moonphase no scraping its calculated from the livedata !
 	else echo "<aqivalue1>".$weather['moonphase']." </aqivalue1>";}?>             
 <br>
 <?php echo" Luminance <orange>" .$weather['luminance']."</orange>%";?>            
-</div>    
-
-
-  
+</div>  
 </article>  
   
   <article>
@@ -158,9 +155,7 @@ $moon = new MoonPhase();$moonage =round($moon->age(),2);echo "Current Moon cycle
   
   <article>
    <?php echo $info ;?> Radio Ham Guide (<orange>EME</orange>)<br><br>
-   Earth–Moon–Earth communication (<orange>EME</orange>), also known as Moon bounce, is a radio communications technique that relies on the propagation of radio waves from an Earth-based transmitter directed via reflection from the surface of the Moon back to an Earth-based receiver using VHF and UHF amateur radio bands.
- 
-              
+   Earth–Moon–Earth communication (<orange>EME</orange>), also known as Moon bounce, is a radio communications technique that relies on the propagation of radio waves from an Earth-based transmitter directed via reflection from the surface of the Moon back to an Earth-based receiver using VHF and UHF amateur radio bands.              
   </article> 
   <article>
    <div class=actualt>&nbsp;&nbsp &copy; Information</div>  

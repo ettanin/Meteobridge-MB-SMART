@@ -5649,10 +5649,10 @@ uptimesup {
   z-index: 9994;
   -webkit-appearance: none;
   position:absolute;
-  top:2px;
-  width:auto; 
+  top:12px;
+  width:20px;
   float:right;
-  right: 30px;
+  right: 43px;
   padding: 0;
   color: #fff;
   border: 0;
@@ -5662,9 +5662,9 @@ uptimesup {
   text-align: center;
   text-decoration: none;
   font-family: Arial;
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
-  line-height: 25px;
+  line-height: 20px;
   cursor: pointer;
   background:rgba(208, 95, 45, 1.000);
   border-radius:3px

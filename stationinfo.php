@@ -35,8 +35,9 @@ include('settings.php');$url = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://
  .card .card\:content ul li .collection svg.ghost{height:calc(70px - 2rem)}
  .card .card\:content ul li:last-of-type{border-bottom:0;padding:calc(1rem + .5px) 1.5rem}
  a{text-decoration:none;color:rgba(61, 70, 77, 1.000);font-size:.75rem;font-weight:500;}a:hover{color:rgba(208, 95, 45, 1.000);}
- .weather34darkbrowser{position:relative;background:0;width:100%;max-height:30px;margin:auto;margin-top:-7px;margin-left:-0px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:45px;background-image:radial-gradient(circle,#EB7061 6px,transparent 8px),radial-gradient(circle,#F5D160 6px,transparent 8px),radial-gradient(circle,#81D982 6px,transparent 8px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),linear-gradient(to bottom,rgba(59,60,63,0.4) 40px,transparent 0);background-position:left top,left top,left top,right top,right top,right top,0 0;background-size:50px 45px,90px 45px,130px 45px,50px 30px,50px 45px,50px 60px,100%;background-repeat:no-repeat,no-repeat;margin-bottom:-20px;}
- .weather34darkbrowser[url]:after{content:attr(url);color:#aaa;font-size:12px;position:absolute;left:0;right:0;top:0;padding:4px 15px;margin:11px 50px 0 90px;border-radius:3px;background:rgba(97, 106, 114, 0.3);height:20px;box-sizing:border-box}orange{color:#d35d4e}blue{color:#44a6b5}
+ a{color:#aaa;text-decoration:none} 
+.weather34darkbrowser{position:relative;background:0;width:94%;height:30px;margin:auto;margin-top:3px;margin-left:10px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:10px;}
+.weather34darkbrowser[url]:after{content:attr(url);color:#aaa;font-size:10px;position:absolute;left:0;right:0;top:0;padding:4px 15px;margin:11px 10px 0 auto;border-radius:3px;background:rgba(97, 106, 114, 0.3);height:20px;box-sizing:border-box}orange{color:#d35d4e}blue{color:#44a6b5}
 .davishardwaresvg{position:absolute;margin-left:240px;}.nanohardwaresvg{position:absolute;margin-left:270px;}body{text-shadow:1px 1px 3px rgba(61,70,77,.2)}
 </style>
 </head>
