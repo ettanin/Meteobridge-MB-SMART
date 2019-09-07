@@ -1,4 +1,13 @@
 <?php 
+	####################################################################################################
+	#	HOME WEATHER STATION MB SMART TEMPLATE by BRIAN UNDERDOWN 2015-19                              #
+	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at https://weather34.com/homeweatherstation/index.html # 
+	# 	                                                                                               #
+	# 	                                                                                               #
+	# 	Moon: 25TH JANUARY 2018  						                                               #
+	# 	   revised September 2019                                                                      #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 include('livedata.php');
 //get moon rise/set updated 29th July
@@ -56,6 +65,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .weather34moonphasesvg{position:absolute; left:25px; top:70px; width:120px;}
 .weather34moonforeground { fill:rgba(230, 232, 239, .3); stroke:rgba(86, 95, 103, .8); stroke-width:0;max-height:100px }
 .weather34moonbackground{ fill:rgba(86, 95, 103, .8);stroke:rgba(230, 232, 239, .3);stroke-width:0; }
+.mbsmartlogo{position:relative;float:right;left:10px;top:70px;}
 </style>
 <div class="weather34darkbrowser" url="Moon Phase Information"></div>
   
@@ -159,5 +169,8 @@ $moon = new MoonPhase();$moonage =round($moon->age(),2);echo "Current Moon cycle
   </article> 
   <article>
    <div class=actualt>&nbsp;&nbsp &copy; Information</div>  
-  <?php echo $info?> CSS/SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:9px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?></span></article> 
+  <?php echo $info?> CSS/SVG/PHP scripts were developed by <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:9px;">weather34.com</a>  for use in the weather34 template &copy; 2015-<?php echo date('Y');?></span>
+  
+  <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="60px"></div>
+  </article> 
 </main>
