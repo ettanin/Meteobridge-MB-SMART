@@ -5,7 +5,7 @@
 
 *adds additional 8 modules with 7 of them based on NANOSD generated data
 
-*theme switcher simple css 
+*theme switcher simple css toggle button
 	
 # Contributors Live Running Demo(s)
 
@@ -16,6 +16,8 @@ https://www.paulwilman.com/pw4/ (England)
 https://www.weerstation-sauwerd.nl/pwsmbms/ (Holland)
 
 https://beaumaris-weather.com/pwsMB/ (Tasmania)
+
+https://weather.k1ttc.com (USA)
 
 
 
