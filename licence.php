@@ -9,8 +9,7 @@ include('livedata.php');
   <title>Weather34 MB-SMART Licence & Download</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-@font-face{font-family:weathertext2;src:url(css/fonts/verbatim-regular.woff) format("woff"),url(fonts/verbatim-regular.woff2) format("woff2"),url(fonts/verbatim-regular.ttf) format("truetype")}
-html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-serif;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;}
+html,body{font-size:14px;font-family: Helvetica, Arial, sans-serif;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;}
 .grid { 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
@@ -44,7 +43,7 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
    border: 1px solid rgba(245, 247, 252,.02);
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);
   padding:5px;
-  font-size:0.8em;
+  font-size:.9em;
   -webkit-border-radius:4px;
   border-radius:4px;
   background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
@@ -52,11 +51,15 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
    
 }
  a{color:#aaa;text-decoration:none} 
-.weather34darkbrowser{position:relative;background:0;width:96%;height:30px;margin:auto;margin-top:-5px;margin-left:0px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:10px;}
+.weather34darkbrowser{position:relative;background:0;width:97%;height:30px;margin:auto;margin-top:-5px;margin-left:0px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:10px;}
 .weather34darkbrowser[url]:after{content:attr(url);color:#aaa;font-size:10px;position:absolute;left:0;right:0;top:0;padding:4px 15px;margin:11px 10px 0 auto;border-radius:3px;background:rgba(97, 106, 114, 0.3);height:20px;box-sizing:border-box}
- 
- 
- blue{color:#01a4b4}orange{color:#009bb4}orange1{position:relative;color:#009bb4;margin:0 auto;text-align:center;margin-left:5%;font-size:1.1rem}green{color:#aaa}red{color:#f37867}red6{color:#d65b4a}value{color:#fff}yellow{color:#CC0}purple{color:#916392}
+ blue{color:#01a4b4}
+ orange{color:#009bb4}
+ orange1{position:relative;color:#009bb4;margin:0 auto;text-align:center;margin-left:5%;font-size:1.1rem}
+ green{color:#aaa}red{color:#f37867}red6{color:#d65b4a}
+ value{color:#fff}
+ yellow{color:#CC0}
+ purple{color:#916392}
 .actualt{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:220px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
@@ -69,9 +72,10 @@ border:solid 2px #4b545c;border-bottom:solid 5px #4b545c;-webkit-border-radius:3
 border:solid 2px #4b545c;border-bottom:solid 15px #4b545c;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;padding-right:3px;opacity:.8}
 .weather34logo{float:right;width:60px;}
 a{color:#009bb4}
+date{color:#aaa;font-size:.65em;margin-top:10px}
 
 </style>
-<div class="weather34darkbrowser" url="Weather34 MB-SMART Licence"></div>
+<div class="weather34darkbrowser" url="Weather34 MB-SMART Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License"></div>
   
 <main class="grid">
   <article>  
@@ -87,7 +91,14 @@ a{color:#009bb4}
     This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">http://creativecommons.org/licenses/by-nc-nd/4.0/</a><br><br>
    Copyright &copy; 2015-<?php echo date('Y')?> by Brian Underdown * <a href="https://weather34.com/homeweatherstation/" title="https://weather34.com/homeweatherstation/" target="_blank">https://weather34.com</a> 
 <br><br>
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Template”), to deal in the Template without restriction, including without limitation the rights to, can use, can not copy, can modify for personal use,can use and publish for personal use ,can not distribute template,can not distribute any design or code, can not sublicense, and can not sell copies of the Template, and subject to the following conditions:
+
+
+<strong>Under the following terms:</strong><br>
+<red>Attribution</red> — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.<br>
+<red>NonCommercial</red> — You may not use the material for commercial purposes.<br>
+<red>NoDerivatives</red> — If you remix, transform, or build upon the material, <strong><red>you may not distribute</red></strong> the modified material.<br>
+<red>No additional restrictions</red> — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.<br>
+
 <br><br>
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Template.
 <br><br>
@@ -103,4 +114,5 @@ THE TEMPLATE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <svg id="download" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="#ff793a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M28 22 L28 30 4 30 4 22 M16 4 L16 24 M8 16 L16 24 24 16" /></svg> https://github.com/weather34/Meteobridge-MB-SMART</a>
 
 </article> 
+<date>*Revised September 2019</date>
    </main>

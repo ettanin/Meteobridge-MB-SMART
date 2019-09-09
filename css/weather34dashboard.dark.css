@@ -1262,40 +1262,6 @@ suptemp3 {
 .blank {
   display: none;
 }
-.lightningrain,
-.rainaverage {
-  position: absolute;
-  font-size: 10px;
-  line-height: 12px;
-  font-weight: 700;
-}
-.lightningrain {
-  color: #aeb6bf;
-  margin-top: 142px;
-  margin-left: 0;
-}
-.lightningrain span {
-  color: #ff7c39;
-  font-weight: 700;
-}
-.rainaverage {
-  margin-top: 143px;
-  width: 100px;
-  color: #aeb6bf;
-  margin-left: 200px;
-}
-lightningrain {
-  color: #ff7c39;
-  font-size: 18px;
-  line-height: 17px;
-  display: block;
-  font-family: weathertext2;
-  font-weight: 500;
-}
-.weather34box-toparea {
-  margin: 0 0 -10px;
-  width: 100%;
-}
 spanm {
   font-size: 12px;
 }
@@ -5032,7 +4998,7 @@ pressureunits {
   padding: 0;
   background: 0;
   color: #aeb6bf;
-  border: 1px solid rgba(245, 247, 252, 0.02);
+  border: 1px solid rgba(37, 50, 58, 0.1);
 
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
 }
@@ -6096,7 +6062,7 @@ wfstriketoday {
 
 wfstriketoday {
   background: 0;
-  border: 1px solid rgba(245, 247, 252, 0.02);
+  border: 1px solid rgba(37, 50, 58, 0.1);
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
   width: 4.6rem;
   height: 3rem;
@@ -6179,59 +6145,69 @@ wfstriketoday {
 }
 .eqtoday1,
 .eqtoday1-3,
-.eqtoday11,
 .eqtoday4-5,
 .eqtoday6-8,
-.eqtoday9-10 {
+.eqtoday9-10,
+.eqtoday11 {
   font-family: weathertext2, Helvetica, system;
-  display: flex;  
-  font-size: 1rem;   
-  justify-content:left;  
+  display: flex;
+  font-size: 1rem;
+  justify-content: left;
   padding-top: 10px;
+  padding-left: 3px;
 }
 .eqcaution,
 .eqt {
-  font-family: Arial, Helvetica, system;
+  font-family: weathertext2;
 }
 .eqtoday1-3 {
   color: #90b12a;
 }
 .eqtoday4-5 {
- color: rgba(231, 150, 59, .8);
+  color: rgba(231, 150, 59, 0.8);
 }
 .eqtoday6-8 {
   color: #d05f2d;
 }
 .eqtoday11 {
-  color: rgba(204, 135, 248,1);
+  color: #cc87f8;
 }
 .eqcaution {
-  position: absolute;
   margin-left: -5px;
-  margin-top: 0px;
+  margin-top: 0;
+}
+.eqcaution,
+.eqt {
+  position: absolute;
   color: #aeb6bf;
   font-size: 0.55rem;
 }
 .eqt {
-  position: absolute;
   margin-left: -14px;
   margin-top: -3px;
-  color: #aeb6bf;
-  font-size: 0.55rem;
 }
 .eqtext {
   float: left;
-  width: 130px;
-  margin-left: 80px;
+  width: 140px;
+  margin-left: 70px;
   margin-top: -30px;
-  font-size: 0.6rem;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height:.8;
+  font-size:.55rem;
+  line-height:.9;
   color: #aeb6bf;
+  font-family: weathertext2;
 }
-.eqtext color,
-.eqtext depth {
-  color: #90b12a;
+.eqtext2 {
+  float: left;
+  width: 140px;
+  margin-left: 70px;
+  margin-top: -30px;
+  font-size:.55rem;
+  line-height:.9;
+  color: #aeb6bf;
+  font-family: weathertext2;
+}
+regionalred {
+  color: #d35d4e;
 }
 .moonphasemoduleposition {
   position: relative;
@@ -6764,8 +6740,7 @@ maxtempgreen {
 .topframe {
   top: 6px;
   position: absolute;
-  border: 1px solid rgba(245, 247, 252, 0.02);
-
+  border: 1px solid rgba(37, 50, 58, 0.1);
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -6792,7 +6767,7 @@ maxtempgreen {
   margin-bottom: 4px;
 }
 .grid > weather34topmodule {
-  border: 1px solid rgba(245, 247, 252, 0.02);
+  border: 1px solid rgba(37, 50, 58, 0.3);
 
   border-top: 15px solid rgba(37, 50, 58, 0.3);
   -webkit-box-sizing: border-box;
@@ -6816,7 +6791,7 @@ maxtempgreen {
   grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
 }
 .grid3 > weather34topmodule {
-  border: 1px solid rgba(245, 247, 252, 0.02);
+  border: 1px solid rgba(37, 50, 58, 0.3);
 
   border-top: 15px solid rgba(37, 50, 58, 0.3);
   -webkit-box-sizing: border-box;
@@ -6842,7 +6817,7 @@ maxtempgreen {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 195px;
-  border: 1px solid rgba(245, 247, 252, 0.02);
+  border: 1px solid rgba(37, 50, 58, 0.3);
   border-bottom: 15px solid rgba(37, 50, 58, 0.3);
   border-top: 15px solid rgba(37, 50, 58, 0.3);
   -webkit-box-sizing: border-box;
@@ -6867,7 +6842,7 @@ maxtempgreen {
   color: rgba(47, 54, 63, 1);
 }
 .gridfooter > weather34footer {
-  border: 1px solid rgba(245, 247, 252, 0.02);
+  border: 1px solid rgba(37, 50, 58, 0.3);
 
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -6895,7 +6870,7 @@ maxtempgreen {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 65px;
-  border: 1px solid rgba(245, 247, 252, 0.02);
+  border: 1px solid rgba(37, 50, 58, 0.3);
 
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -7221,7 +7196,7 @@ weather34toptitle {
     background: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    border: 1px solid rgba(245, 247, 252, 0.02);
+    border: 1px solid rgba(37, 50, 58, 0.3);
 
     border-bottom: 15px solid rgba(37, 50, 58, 0.3);
     border-top: 15px solid rgba(37, 50, 58, 0.3);
@@ -7272,7 +7247,7 @@ weather34toptitle {
     color: rgba(47, 54, 63, 1);
   }
   .gridfooter > weather34footer {
-    border: 1px solid rgba(245, 247, 252, 0.02);
+    border: 1px solid rgba(37, 50, 58, 0.3);
 
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -7562,7 +7537,7 @@ weather34toptitle {
     background: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    border: 1px solid rgba(245, 247, 252, 0.02);
+    border: 1px solid rgba(37, 50, 58, 0.3);
 
     border-bottom: 15px solid rgba(37, 50, 58, 0.3);
     border-top: 15px solid rgba(37, 50, 58, 0.3);
@@ -7596,7 +7571,7 @@ weather34toptitle {
     color: rgba(47, 54, 63, 1);
   }
   .gridfooter > weather34footer {
-    border: 1px solid rgba(245, 247, 252, 0.02);
+    border: 1px solid rgba(37, 50, 58, 0.3);
 
     -webkit-box-sizing: border-box;
     box-sizing: border-box;

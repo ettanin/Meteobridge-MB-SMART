@@ -6098,14 +6098,11 @@ hardwarelogo3 {
 .eqtoday6-8,
 .eqtoday9-10 {
   font-family: weathertext2, Helvetica, system;
-  display: flex;  
-  font-size: 1rem;   
-  justify-content:left;  
+  display: flex;
+  font-size: 1rem;
+  justify-content:left;
   padding-top: 10px;
-}
-.eqcaution,
-.eqt {
-  font-family: Arial, Helvetica, system;
+
 }
 .eqtoday1-3 {
   color: #90b12a;
@@ -6123,30 +6120,38 @@ hardwarelogo3 {
   position: absolute;
   margin-left: -5px;
   margin-top: 0px;
-  color: #777;
+  color: #555;
   font-size: 0.55rem;
 }
 .eqt {
   position: absolute;
-  margin-left: -14px;
+  margin-left: -17px;
   margin-top: -3px;
-  color: #777;
-  font-size: 0.55rem;
+  color: #555;
+  font-size: 0.6rem;
 }
 .eqtext {
   float: left;
-  width: 120px;
-  margin-left: 80px;
+  width: 140px;
+  margin-left: 70px;
   margin-top: -30px;
-  font-size: 0.55rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size:.55rem;
   line-height:.9;
-  color: #555;
+  color: #2d2d2d;
+  font-family: weathertext2;
 }
-.eqtext color,
-.eqtext depth {
-  color: #90b12a;
+
+.eqtext2 {
+  float: left;
+  width: 140px;
+  margin-left: 70px;
+  margin-top: -35px;
+  font-size:.55rem;
+  line-height:.9;
+  color: #2d2d2d;
+  font-family: weathertext2;
 }
+regionalred{ color:#8c2c2b;}
 .moonphasemoduleposition {
   position: relative;
   left: 100px;
