@@ -14,7 +14,7 @@
 
 <div class="tempavgthisyear" >
 <?php //humidity max month
- if ($weather["humidity_mmax"]>70){echo "<maxtempblue>",$weather["humidity_mmax"]  ;echo "</maxtempvlue><tunit1>%"; }
+ if ($weather["humidity_mmax"]>70){echo "<maxtempblue>",$weather["humidity_mmax"]  ;echo "</maxtempblue><tunit1>%"; }
  else if ($weather["humidity_mmax"]>60){echo "<maxtempyellow>",$weather["humidity_mmax"]  ;echo "</maxtempyellow><tunit1>%"; }
  else if ($weather["humidity_mmax"]>40){echo "<maxtempgreen>",$weather["humidity_mmax"]  ;echo "</maxtempgreen><tunit1>%"; }
  else if ($weather["humidity_mmax"]>0){echo "<maxtempred>",$weather["humidity_mmax"]  ;echo "</maxtempred><tunit1>%"; }
