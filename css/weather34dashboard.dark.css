@@ -6914,7 +6914,7 @@ weather34thetime {
   display:flex;
   right: 100px;
   top: 10px;
-  color:rgba(230, 232, 239, 1.000);
+  color: #aeb6bf;
   font-size: 12px;
   font-family: clock;  
   background:0;  
@@ -6923,17 +6923,13 @@ weather34thetime {
   padding-top:6px;
   align-items: center;
   justify-content: center;  
-  list-style:none;
-  -webkit-border-left: 0;
-  -webkit-border-top-right-radius: 2px;
-  -webkit-border-bottom-right-radius: 2px;
+  list-style:none;  
+  -webkit-border-radius: 2px;   
+  border-radius: 2px;  
+  width:205px;
   border: 1px solid rgba(61, 70, 77, 0.5);
   border-width:thin;
-  border-left: 0;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  box-shadow: inset 3px 0 0 0 #3b9cac;
-  width:205px
+ 
 }
 .weather34chartlinks {
   font-size: 0.65em;
