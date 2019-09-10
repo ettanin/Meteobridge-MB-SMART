@@ -772,10 +772,6 @@ sup {
   line-height: 0;
   vertical-align: baseline;
 }
-.main-menu .nav-text,
-.text2 span {
-  vertical-align: middle;
-}
 sub {
   bottom: -0.25em;
 }
@@ -1300,7 +1296,6 @@ spanm2 {
   opacity: 0.5;
 }
 .circlelightning3,
-.main-menu,
 .solarpoor,
 spanrain {
   position: absolute;
@@ -5339,14 +5334,9 @@ weather34mbuptime {
 }
 #weather34sidebarMenu,
 .weather34sidebarMenuInner li {
-  background: rgba(30, 33, 36, 1);
+  background: #202127;
   width: 15rem;
   float: left;
-}
-.alertcircle,
-civil {
-  font-family: weathertext2, helvetica;
-  font-weight: 500;
 }
 #weather34sidebarMenu {
   position: absolute;
@@ -6879,18 +6869,17 @@ weather34thetime {
   display:flex;
   right: 100px;
   top: 10px;
-  color: #aeb6bf;
+  color: #fff;
   font-size: 12px;
   font-family: clock;  
-  background:0;  
+  background:rgba(120, 138, 146, .2);  
   line-height:1;
-  padding:4px;
+  padding:3px;
   padding-top:6px;
   align-items: center;
   justify-content: center;  
   list-style:none;  
-  -webkit-border-radius: 2px;  
-  border: 1px solid rgba(226, 228, 237, .1);  
+  -webkit-border-radius: 2px;    
   border-radius: 2px;  
   width:205px
 }
@@ -6994,7 +6983,7 @@ weather34toptitle {
   margin-left: 37%;
   margin-top: 15px;
   line-height: 1;
-  color: silver;
+  color: #e2e4ed;
 }
 .weather34refresh a {
   float: right;
