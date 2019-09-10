@@ -915,7 +915,7 @@ suptemp {
 .windvalue1 {
   font-family: weathertext2;
   font-size: 1.45rem;
-  color: #e2e4ed;
+ color: #aeb6bf;
 }
 .windvalue1 {
   margin-left: 5px;
@@ -932,12 +932,12 @@ suptemp {
   text-align: center;
   margin-top: -30px;
   margin-left: 60px;
-  z-index: 1;
+  z-index: 1;color: #aeb6bf;
 }
 .text1 {
   z-index: 10;
   text-align: center;
-  margin: 60px 0 auto;
+  margin: 60px 0 auto;color: #aeb6bf;
 }
 
 .weather34windspeed {
@@ -953,7 +953,7 @@ suptemp {
   overflow: hidden;
   border-radius: 2px;
   font-family: "weathertext2";
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-weight: 200;
   width: 5em;
   letter-spacing: 0.05em;
@@ -992,7 +992,7 @@ suptemp {
   overflow: hidden;
   border-radius: 2px;
   font-family: "weathertext2";
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-weight: 200;
   width: 5em;
   letter-spacing: 0.05em;
@@ -1082,7 +1082,7 @@ suptemp {
 .homeweathercompass1 > .windirectiontext1 {
   display: block;
   text-align: center;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: Arial, system;
   font-weight: 500;
   line-height: 12px;
@@ -1856,7 +1856,7 @@ convtext {
   line-height: 20px;
   width: 100px;
   position: absolute;
-  color: #e2e4ed;
+  color: #aeb6bf;
   border: 0;
 }
 .daylightvalue {
@@ -1866,11 +1866,11 @@ convtext {
 }
 .daylightvalue minutes {
   left: 40px;
-  z-index: auto;
+  z-index: auto;color: #aeb6bf;
 }
 .daylightvalue span {
   position: absolute;
-  color: #e2e4ed;
+ color: #aeb6bf;
   font-size: 3px;
   left: 67px;
   top: 0;
@@ -1898,7 +1898,7 @@ convtext {
 .daylightvalue hrs,
 .daylightvalue min {
   position: absolute;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-size: 9px;
   top: -17px;
   letter-spacing: normal;
@@ -1978,7 +1978,7 @@ convtext {
   font-size: 1.25rem;
 }
 .daylightvalue1 minutes {
-  left: 40px;
+  left: 40px;color: #aeb6bf;
 }
 .daylightvalue1 period,
 {
@@ -2453,7 +2453,7 @@ supunit {
   display: block;
 }
 darkgrey {
-  color: #e2e4ed;
+ color: #aeb6bf;
 }
 supmb {
   font-size: 0.8em;
@@ -2775,7 +2775,7 @@ chartinfocolor {
 }
 .daylightvalue1 hours {
   position: relative;
-  left: -5px;
+  left: -5px;color: #aeb6bf;
 }
 .daylightvalue1 period {
   position: absolute;
@@ -2784,7 +2784,7 @@ chartinfocolor {
   top: 18px;
   left: 42px;
   letter-spacing: normal;
-  color: #e2e4ed;
+ color: #aeb6bf;
 }
 .daylightvalue1 hrs {
   margin-left: 0;
@@ -2910,10 +2910,10 @@ alertadvisory {
   width: 100px;
   border: 0;
   position: absolute;
-  color: #e6e8ef;
+  color: #aeb6bf;
 }
 .daylightvalue34 minutes {
-  left: 40px;
+  left: 40px;color: #aeb6bf;
 }
 .daylightvalue34 period,
 .daylightvalue34:before {
@@ -2932,7 +2932,7 @@ alertadvisory {
 .daylightvalue34 min {
   font-size: 9px;
   top: -17px;
-  color: #e6e8ef;
+ color: #aeb6bf;
   letter-spacing: normal;
   position: absolute;
 }
