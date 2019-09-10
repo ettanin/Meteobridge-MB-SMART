@@ -13,7 +13,7 @@
 <div class="weather34admin"><header class="weather34admin__header">
 <weather34toptitle><?php echo $stationName;?>&nbsp;Weather Station</weather34toptitle>
 <div class="weather34toolbar">
-<div class="weather34toolbar__right"><weather34thetime> <div id="theTime"></div></div></weather34thetime>
+<div class="weather34toolbar__right"><weather34thetime><?php echo $menuclocksvg;?>&nbsp; <div id="theTime"></weather34thetime></div></div>
  <div class="weather34-theme-switch-wrapper"><div class="weather34-theme-switch">
   <a class="weather34-slider round" href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>><?php if($theme=='dark'){echo 'Light';}else{echo ' &nbsp;Dark';}?> </a>
   </div></div></div></div></div>

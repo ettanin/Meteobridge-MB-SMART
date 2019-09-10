@@ -2321,7 +2321,7 @@ timeago {
   text-align: center;
   margin-left: 40px;
   margin-top: 3px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: clock;
 }
 .azimuth,
@@ -6909,27 +6909,30 @@ maxtempgreen {
   margin-bottom: 10px;
   width: 75px;
 }
-.weatherclock34 {
-  position: absolute;
-  margin: 0 auto 0;
-  left: 20px;
-  font-size: 0.7rem;
-  color: #aeb6bf;
-  font-family: weathertext2;
-  text-align: center;
-  width: 200px;
-  padding: 5px;
-  line-height: 18px;
-}
 weather34thetime {
   position: absolute;
-  display: inline;
-  right: 75px;
-  top: 15px;
-  color: #aeb6bf;
-  font-size: 0.8em;
-  font-family: clock;
-  width: 15rem;
+  display:flex;
+  right: 100px;
+  top: 10px;
+  color:rgba(230, 232, 239, 1.000);
+  font-size: 12px;
+  font-family: clock;  
+  background:0;  
+  line-height:1;
+  padding:4px;
+  align-items: center;
+  justify-content: center;  
+  list-style:none;
+  -webkit-border-left: 0;
+  -webkit-border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border: 1px solid rgba(61, 70, 77, 0.5);
+  border-width:thin;
+  border-left: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: inset 3px 0 0 0 #3b9cac;
+  width:205px
 }
 .weather34chartlinks {
   font-size: 0.65em;
@@ -8834,7 +8837,7 @@ weather34moonsetcircle {
 .luftairvalueaq{position:absolute;margin-top:10px;left:100px;font-size:.9em;font-family:weathertext2;}
 luftairvalueaqpm{font-size:.35em;font-family:weathertext2;color:#aeb6bf;}
 .luftairvalue{position:relative;margin-top:40px;left:30px;font-size:.55rem;font-family:weathertext2;color:#aeb6bf;}
-luftgreen{color:rgba(144, 177, 42, 1);}
+luftgreen{color:#90b12a;}
 luftyellow{color: #e6a141;}
 luftorange{color:#d05f2d;}
 luftred{color:rgba(211, 93, 78, 1);}
@@ -8875,7 +8878,7 @@ redluft{
 }
 greenluft {
   background: rgba(144, 177, 42, 1);
-  opacity:.6
+  opacity:.8
 }
 purpleluft {
   background:rgba(164, 117, 203, 1);

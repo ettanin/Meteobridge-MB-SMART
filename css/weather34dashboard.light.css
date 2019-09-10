@@ -6874,55 +6874,30 @@ maxtempgreen {
   font-family: weathertext2;
   text-shadow: none;
 }
-.weatherclock34 {
-  position: absolute;
-  margin: 0 auto 0;
-  left: 20px;
-  font-size: 0.7rem;
-  font-family: weathertext2;
-  text-align: center;
-  width: 200px;
-  padding: 5px;
-  line-height: 18px;
-}
-.weatherclock34 {
-  position: absolute;
-  margin: 0 auto 0;
-  left: 20px;
-  font-size: 0.7rem;
-  font-family: weathertext2;
-  text-align: center;
-  width: 200px;
-  padding: 5px;
-  line-height: 18px;
-}
-.calendar34 {
-  position: absolute;
-  left: 10px;
-  top: 0;
-  color: #e6e8ef;
-}
-.weatherclock34 {
-  position: absolute;
-  margin: 0 auto 0;
-  left: 20px;
-  font-size: 0.7rem;
-  color: silver;
-  font-family: weathertext2;
-  text-align: center;
-  width: 200px;
-  padding: 5px;
-  line-height: 18px;
-}
 weather34thetime {
   position: absolute;
-  display: inline;
-  right: 75px;
-  top: 15px;
-  color: silver;
-  font-size: 0.8em;
-  font-family: clock;
-  width: 15rem;
+  display:flex;
+  right: 100px;
+  top: 10px;
+  color:rgba(230, 232, 239, 1.000);
+  font-size: 12px;
+  font-family: clock;  
+  background:0;  
+  line-height:1;
+  padding:4px;
+  align-items: center;
+  justify-content: center;  
+  list-style:none;
+  -webkit-border-left: 0;
+  -webkit-border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border: 1px solid rgba(226, 228, 237, .1);
+  
+  border-left: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: inset 3px 0 0 0 rgba(231, 150, 59, 1.000);
+  width:205px
 }
 .topframe {
   top: 24px;
