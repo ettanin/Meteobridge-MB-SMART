@@ -5,7 +5,7 @@
 <?php //humidity min year 
  if ($weather["humidity_ymin"]>70){echo "<maxtempblue>",$weather["humidity_ymin"]  ;echo "</maxtempred><tunit1>%"; }
  else if ($weather["humidity_ymin"]>60){echo "<maxtempyellow>",$weather["humidity_ymin"]  ;echo "</maxtemporange><tunit1>%"; }
- else if ($weather["humidity_ymin"]>40){echo "<maxtempgreen>",$weather["humidity_ymin"]  ;echo "</maxtemporange><tunit1>%"; }
+ else if ($weather["humidity_ymin"]>40){echo "<maxtempgreen>",$weather["humidity_ymin"]  ;echo "</maxtempgreen><tunit1>%"; }
  else if ($weather["humidity_ymin"]>0){echo "<maxtempred>",$weather["humidity_ymin"]  ;echo "</maxtempred><tunit1>%"; } 
  ?></div></tunit1>
 <div class="tmonthmax" style="margin-left:0px;"><?php echo $weather["humidity_ymintime2"]?></div>
@@ -33,7 +33,7 @@
 <?php //temperture min year
  if ($weather["humidity_ymax"]>70){echo "<maxtempblue>",$weather["humidity_ymax"]  ;echo "</maxtempblue><tunit1>%"; }
  else if ($weather["humidity_ymax"]>60){echo "<maxtempyellow>",$weather["humidity_ymax"]  ;echo "</maxtemporange><tunit1>%"; }
- else if ($weather["humidity_ymax"]>40){echo "<maxtempgreen>",$weather["humidity_ymax"]  ;echo "</maxtemporange><tunit1>%"; }
+ else if ($weather["humidity_ymax"]>40){echo "<maxtempgreen>",$weather["humidity_ymax"]  ;echo "</maxtempgreen><tunit1>%"; }
  else if ($weather["humidity_ymax"]>0){echo "<maxtempred>",$weather["humidity_ymax"]  ;echo "</maxtempred><tunit1>%"; }
  ?>
 </div></tunit1>
