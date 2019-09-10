@@ -72,7 +72,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   cursor: url(mouse/weather34bluecursor.png), n-resize;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 body,
 header {
@@ -125,7 +125,7 @@ h4 .small,
 h5 .small,
 h6 .small {
   line-height: 1;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .h1,
 .h2,
@@ -157,11 +157,11 @@ wm2 {
   vertical-align: middle;
 }
 .barometertrend steady {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .barometertrend {
   position: relative;
-  color: #e2e4ed;
+  color: #aeb6bf;
   text-align: center;
   z-index: 1;
   font: 12px Arial, system;
@@ -221,7 +221,7 @@ suptempindoor {
 .heading1,
 supmb,
 supunit {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .heading1 {
   font: 1em/15px arial, system;
@@ -259,7 +259,7 @@ eq {
   -ms-clip-path: polygon(100%0, 100%100%, 100%100%, 0100%, 0);
 }
 .heatcircle-content {
-  color: #e2e4ed;
+  color: #aeb6bf;
   float: left;
   margin-left: -4px;
   padding: 0;
@@ -311,7 +311,7 @@ supraindropw {
 }
 .humidity,
 a {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 suprain,
 suprain1,
@@ -342,7 +342,7 @@ humiditycolor {
   font-weight: 700;
 }
 .windgustheading {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font: 1em weathertext2;
 }
 .iconsize {
@@ -399,7 +399,7 @@ mb {
   font: 0.65em arial, system;
 }
 .daylight {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: arial, system;
   top: 50px;
   margin-left: 360px;
@@ -435,7 +435,7 @@ wm2 {
 }
 .feels,
 .feels1 {
-  color: #e2e4ed;
+  color: #aeb6bf;
   margin-left: auto;
 }
 .feels {
@@ -465,20 +465,20 @@ supdavis {
   margin-right: auto;
 }
 .outlooktitle span {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: arial, system;
 }
 #day,
 #dayaftertomo,
 #night,
 #tomo {
-  color: #e2e4ed;
+  color: #aeb6bf;
   padding: 5px;
   border-bottom: 0 solid #e9ebf1;
   text-align: left;
 }
 .beaufortconditions {
-  color: #e2e4ed;
+  color: #aeb6bf;
   width: 140px;
 }
 .updatedtime,
@@ -490,12 +490,12 @@ supdavis {
   text-align: center;
 }
 .updatedtimeuv span {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .updatedtimealert {
   margin-top: 5px;
   margin-left: 215px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font: 700 10px arial, system;
   line-height: 10px;
 }
@@ -503,7 +503,7 @@ supdavis {
   margin-top: -25px;
   margin-left: 135px;
   position: absolute;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font: 10px arial, system;
   line-height: 10px;
   padding: 3px;
@@ -514,13 +514,13 @@ supdavis {
   margin-left: 10px;
   margin-top: 120px;
   text-align: left;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font: 0.68em weathertext2;
   line-height: 9px;
 }
 .barometertrend1 hourtrend {
   font: 500 10px arial, system;
-  color: #e2e4ed;
+  color: #aeb6bf;
   line-height: 9px;
   text-align: left;
   margin-left: 15px;
@@ -533,11 +533,11 @@ supdavis {
   text-align: center;
 }
 barometerinfo {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .barometermax {
   margin-top: 10px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font: 10px arial, system;
   line-height: 9px;
 }
@@ -553,12 +553,12 @@ barometerinfo {
 }
 .barometermax unit {
   font: 500 10px arial, system;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .barometermin {
   margin-left: 240px;
   width: 50px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font: 10px arial, system;
   line-height: 9px;
 }
@@ -571,7 +571,7 @@ barometerinfo {
   color: #90b12a;
 }
 .barometermin unit {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .barometertrend falling,
 .barometertrend rising,
@@ -588,7 +588,7 @@ suptemp {
 .averagedir1 span,
 .averagedir1 span2 {
   margin-bottom: 0;
-  color: #e2e4ed;
+  color: #aeb6bf;
   -moz-font-smoothing: antialiased;
   font-family: arial, system;
 }
@@ -619,7 +619,7 @@ sup {
 .text,
 .windvalue {
   font-size: 26px;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 sub {
   bottom: -0.25em;
@@ -751,7 +751,7 @@ uv0 {
   font-family: Arial, system;
 }
 .raintext1 span {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-size: 1em;
 }
 .sunimage {
@@ -771,7 +771,7 @@ uv0 {
 .sunrisehome period,
 .sunsethome,
 .sunsethome period {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .thearrow1:after,
 .thearrow1:before,
@@ -812,7 +812,7 @@ supraindrop,
 supsolar,
 suptemp1,
 suptempindoor {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .outlook,
 .updatedtime {
@@ -897,7 +897,7 @@ suptemp {
 .updatedtimecurrent span,
 .updatedtimedir span {
   margin-bottom: 0;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: weathertext2;
   text-rendering: optimizeLegibility;
 }
@@ -905,7 +905,7 @@ suptemp {
 .temperatureindoor span {
   margin-bottom: 0;
   font-size: 0.4em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: weathertext2;
 }
 .windseparator {
@@ -1106,7 +1106,7 @@ suptemp {
   animation-iteration-count: infinite;
 }
 .windunits {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .beaufort {
   position: absolute;
@@ -1116,7 +1116,7 @@ suptemp {
 }
 .gustspeedtrend1,
 .gustspeedtrend1 span {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font: 10px arial, system;
 }
 .gustspeedtrend1,
@@ -1136,7 +1136,7 @@ suptemp {
 }
 .windspeedtrend1,
 .windspeedtrend1 span {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font: 10px arial, system;
   line-height: 9px;
 }
@@ -1168,7 +1168,7 @@ suptemp {
 }
 suptemp1,
 suptemp3 {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .Circle1 {
   z-index: 100;
@@ -1224,7 +1224,7 @@ suptemp3 {
 }
 .footertext,
 .online {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-size: 12px;
 }
 .feelstemp,
@@ -1368,7 +1368,7 @@ ogreenh1 {
 }
 infogrey,
 ogreyh1 {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 hiti,
 oorangeh1,
@@ -1408,7 +1408,7 @@ greenuv {
 }
 greyuv,
 solartrend {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 purpleuv {
   color: #a475cb;
@@ -1462,14 +1462,14 @@ yellow1 {
   color: #ddb549;
 }
 .tempgreen {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .tempgreen span {
   font-weight: 600;
   color: #90b12a;
 }
 .temporange {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .temporange span {
   font-weight: 600;
@@ -1480,7 +1480,7 @@ tempyellow {
   color: #ddb549;
 }
 .tempred {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .tempred span {
   font-weight: 600;
@@ -1488,7 +1488,7 @@ tempyellow {
 }
 .tempblue,
 .tempgreenfeels {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .tempblue span {
   font-weight: 600;
@@ -1497,7 +1497,7 @@ tempyellow {
 .tempgreendew,
 .temporangedew,
 .tempreddew {
-  color: #e2e4ed;
+  color: #aeb6bf;
   margin-top: -5px;
   float: left;
   width: 60px;
@@ -1520,21 +1520,21 @@ tempyellow {
   color: #90b12a;
 }
 .temporangefeels {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .temporangefeels span {
   font-weight: 600;
   color: #ff7c39;
 }
 .tempredfeels {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .tempredfeels span {
   font-weight: 600;
   color: #ff5c41;
 }
 .tempbluefeels {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .tempbluefeels span {
   font-weight: 600;
@@ -1558,7 +1558,7 @@ tempyellow {
 .barometerorange {
   position: absolute;
   background: rgba(97, 106, 114, 0);
-  color: #e2e4ed;
+  color: #aeb6bf;
   width: 60px;
   border-radius: 2px;
   padding: 1px;
@@ -1616,7 +1616,7 @@ tempyellow {
 .daylightgreen span,
 .daylightred,
 .daylightred span {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .daylightblue,
 .daylightred {
@@ -1634,7 +1634,7 @@ tempyellow {
   font-size: 12px;
 }
 .rainrateblue span {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-size: 10px;
 }
 .raintodayblue {
@@ -1650,7 +1650,7 @@ tempyellow {
 .homeweathercompass2,
 .raintodayblue span,
 todayrain {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-size: 12px;
 }
 trising {
@@ -1709,7 +1709,7 @@ tsteady {
 .pressuretextfast {
   position: absolute;
   font-size: 0.7rem;
-  color: #e2e4ed;
+  color: #aeb6bf;
   margin-top: -18px;
   margin-left: 30px;
   width: 90px;
@@ -1722,7 +1722,7 @@ tsteady {
 .text2 span,
 .text3 {
   font-size: 11px;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .thearrow4 {
   position: absolute;
@@ -1753,7 +1753,7 @@ tsteady {
 }
 .barometertrend2 {
   position: absolute;
-  color: #e2e4ed;
+  color: #aeb6bf;
   padding: 1px;
   border-radius: 2px;
   margin-top: 129px;
@@ -1784,7 +1784,7 @@ tsteady {
 }
 .barometerconv span,
 convtext {
-  color: #e2e4ed;
+  color: #aeb6bf;
   display: block;
   font-weight: 500;
 }
@@ -1846,7 +1846,7 @@ convtext {
 .hoursgoneby {
   top: 40px;
   left: 27px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   border: 0;
 }
 .daylightvalue,
@@ -1888,7 +1888,7 @@ convtext {
 }
 .daylightvalue dayperiod {
   position: absolute;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-size: 10px;
   left: 15px;
   top: 20px;
@@ -1964,7 +1964,7 @@ convtext {
 .sunsetday {
   width: 100px;
   position: absolute;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .daylightvalue1,
 .daylightvalue1 minutes {
@@ -2010,7 +2010,7 @@ daylightestimated {
 .daylightvalue1 min {
   font-size: 9px;
   top: -17px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   letter-spacing: normal;
   position: absolute;
 }
@@ -2064,14 +2064,14 @@ daylightestimated {
   left: 80px;
 }
 aurora {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .weather34todayraintext {
   -o-border-radius: 50%;
   -ms-border-radius: 50%;
 }
 .uvimax span {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font: 10px arial, system;
 }
 .weather34todayraintext {
@@ -2108,7 +2108,7 @@ uptime {
 .wfstrikes {
   font-size: 9px;
   top: -12px;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .daylightmoduleposition {
   position: relative;
@@ -2118,12 +2118,12 @@ uptime {
 highestrecorded {
   margin-top: -25px;
   display: block;
-  color: #e2e4ed;
+  color: #aeb6bf;
   margin-left: 10px;
 }
 .averagetemp {
   font-size: 0.6em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   display: block;
   top: 8px;
   width: 30px;
@@ -2144,14 +2144,14 @@ tempred {
   color: #ee7159;
 }
 suplight {
-  color: #e2e4ed;
+  color: #aeb6bf;
   left: 3px;
   font-size: 0.7em;
 }
 
 
 heatindex {
-  color: #e2e4ed;
+  color: #aeb6bf;
   margin-top: -25px;
   display: block;
   font-size: 12px;
@@ -2218,7 +2218,7 @@ lightningannual {
   top: 5px;
   left: -15px;
   display: block;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .smallf {
   font-size: 0.5em;
@@ -2247,7 +2247,7 @@ lightningannual {
   margin-top: 55px;
   margin-left: 125px;
   padding: 5px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   border:1px solid rgba(95, 96, 97, 0.1);
   border-width:thin;
   border-radius: 2px;
@@ -2261,7 +2261,7 @@ lightningannual {
   font-size: 9px;
   top: -12px;
   left: 12px;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .lightninginfo,
 agolightning,
@@ -2298,7 +2298,7 @@ lightningannualx1 {
   top: 0;
   left: 0;
   display: block;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: weathertext2;text-transform: capitalize;
 }
 lorange1 {
@@ -2306,7 +2306,7 @@ lorange1 {
 }
 timeago {
   display: block;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .orangeclock {
   position: relative;
@@ -2833,7 +2833,7 @@ notifyorange {
   height: 4.1rem;
   width: 7.4rem;
   overflow: hidden;
-  color: #e2e4ed;
+  color: #aeb6bf;
   line-height: 8px;
   font-size: 0.65em;
   margin-top: 65px;
@@ -2854,7 +2854,7 @@ notifyorange {
   justify-content: center;
   align-items: center;
   position: relative;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-size: 0.42em;
   margin-top: 0.5rem;
   line-height: 1em;
@@ -2985,7 +2985,7 @@ redtime {
   font-size: 14px;
   font-weight: lighter;
   padding: 0 3px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   float: left;
   top: 30px;
   display: block;
@@ -3000,7 +3000,7 @@ redtime {
   display: flex;
   align-items: center;
   width: 3.2rem;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: weathertext2;
   height: 1rem;
   line-height: 16px;
@@ -3022,7 +3022,7 @@ redtime {
   width: 3.2rem;
   height: 1rem;
   overflow: hidden;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: weathertext2;
 }
 smallrainunit {
@@ -3082,7 +3082,7 @@ smallrainunit {
   margin-top: 130px;
 }
 smallsup {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-size: 0.5rem;
   font-family: Arial, Helvetica, system;
 }
@@ -3143,7 +3143,7 @@ smallsup {
   line-height: 16px;
   font-family: weathertext2;
   font-size: 0.85em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   background: 0;
 }
 smalltempunit {
@@ -3164,7 +3164,7 @@ smalltempunit4 {
   border: 1px solid rgba(61, 70, 77, 0.5);
   overflow: hidden;
   border-radius: 2px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   line-height: 16px;
   font-family: weathertext2, Helvetica, system;
   font-size: 0.85em;
@@ -3294,7 +3294,7 @@ offlinenew {
   position: absolute;
   margin-top: -15px;
   margin-left: 0;
-  color: #e2e4ed;
+  color: #aeb6bf;
   text-align: center;
   font-family: "weathertext2",Arial, system;
   font-size:9px;
@@ -3307,7 +3307,7 @@ offlinenew {
   position: absolute;
   margin-top: -15px;
   margin-left: 60%;
-  color: #e2e4ed;
+  color: #aeb6bf;
   text-align: center;
   font-size: 0;
 }
@@ -3319,7 +3319,7 @@ trendmovementrisingx {
 }
 
 trendmovementsteadyx {
- color: #e2e4ed;
+ color: #aeb6bf;
  font-size:9px;
  margin-left:20px
 }
@@ -3510,7 +3510,7 @@ lblue{color:#44a6b5;}
   align-items: center;
   justify-content: center;
   z-index: auto;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: Arial, system;
 }
 .simsekdata {
@@ -3609,17 +3609,17 @@ smallwindunit {
 .windunitgust,
 .windunitspeed {
   position: absolute;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .windunitidspeed {
-  color: #e2e4ed;
+  color: #aeb6bf;
   margin-top: -35px;
   font-size: 10px;
   position: absolute;
   width: 50px;
 }
 .windunitidgust {
-  color: #e2e4ed;
+  color: #aeb6bf;
   margin-top: -35px;
   font-size: 10px;
   position: absolute;
@@ -3852,7 +3852,7 @@ canvas {
   justify-content: center;
   border-radius: 2px;
   margin-top: 5px;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .uvcautionbig span {
   color: #ff7c39;
@@ -4006,13 +4006,13 @@ moonsetcolor {
 }
 weather34bftspan {
   margin-left: 3px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: weathertext2;
   font-size: 7px;
 }
 .beaufort1,
 weather34windrunspan {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 weather34windrunspan {
   margin-left: 3px;
@@ -4025,7 +4025,7 @@ weather34windrunspan {
   height: .8rem;
   margin-top:120px;
   margin-left:5px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   border:1px solid rgba(74, 99, 111, 0.2);
   background: 0;
   align-items: center;
@@ -4040,7 +4040,7 @@ weather34windrunspan {
 }
 .averagetoday1 {
   width: 6.5rem;
- color: #e2e4ed;
+ color: #aeb6bf;
   font-size: 0.55em;
   margin-left: -15px;
  margin-top:-24px;
@@ -4053,7 +4053,7 @@ weather34windrunspan {
   height: .8rem;
   margin-top:-1px;
   margin-left:235px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   border:1px solid rgba(74, 99, 111, 0.2);
   background: 0;
   align-items: center;
@@ -4068,7 +4068,7 @@ weather34windrunspan {
 }
 .windruntoday1 {
   width: 6.5rem;
- color: #e2e4ed;
+ color: #aeb6bf;
   font-size: 0.55em;
   margin-left: 215px;
   margin-top:-24px;
@@ -4086,7 +4086,7 @@ weather34windrunspan {
 
 .beaufort1,
 weather34windrunspan {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: Arial, Helvetica, system;
 }
 .beaufort1{
@@ -4168,7 +4168,7 @@ topblue1 {
   overflow: hidden;
 }
 .feelslikebig span {
-  color: #e2e4ed;
+  color: #aeb6bf;
   padding-right: 3px;
 }
 darkskytemplohome uvspan,
@@ -4196,14 +4196,14 @@ tblue {
 }
 darkskytemplohome uv {
   font-size: 0.6rem;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 #weather34rainbeaker:before {
   left: -10px;
 }
 rainu {
   font-size: 10px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   left: 3px;
 }
 .weather34i-rairate-bar {
@@ -4299,7 +4299,7 @@ rainu {
   border-radius: 2px;
 }
 .rainratetextheading {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: weathertext2;
   font-size: 0.6em;
   margin-top:5px
@@ -4310,13 +4310,13 @@ rainu {
   position: absolute;
   margin-top: 115px;
   margin-left: 227px;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .rainratebar {
   display: flex;
   width: 4.2rem;
   height: 1rem;
-  color: #e2e4ed;
+  color: #aeb6bf;
   overflow: hidden;
   box-shadow: inset 3px 0 0 0 #3b9cac;
   font-family: weathertext2;
@@ -4336,11 +4336,11 @@ rainu {
 .weather34ratebar{
 	height:1rem;
 	background:rgba(61, 139, 150, .7);
-	color: #e2e4ed;
+	color: #aeb6bf;
 	font-size: 0.6rem;	
 	}
 smallrainrateunit {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: Arial, Helvetica, system;
   font-size: 0.4rem;
   vertical-align: text-top
@@ -4360,18 +4360,18 @@ smallrainrateunit {
 .rainratesmall {
   position: absolute;
   top: 1px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-size: 9px;
   line-height: 12px;
   left: 40px;
 }
 smallrainunit {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 smallrainunit2,
 smallrainunit3 {
   font-size: 0.5rem;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: Arial, Helvetica, system;
 }
 .rainconvertercircleblue1,
@@ -4446,7 +4446,7 @@ minblue {
   color: #3b9cac;
 }
 units {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 valuetext1 {
   font-size: 0.95em;
@@ -4490,7 +4490,7 @@ valuetextstrikes {
 .tempmodulehome5-10c {
   height: 1rem;
   width: 4.1rem;
-  color: #e2e4ed;
+  color: #aeb6bf;
   display: flex;
   overflow: hidden;
   line-height: 1px;
@@ -4519,7 +4519,7 @@ valuetextstrikes {
   overflow: hidden;
   line-height: 1;
   font-family: weathertext2;
-  color: #e2e4ed;
+  color: #aeb6bf;
   border: 1px solid rgba(61, 70, 77, 0.5);
   border-left: 0;
   -webkit-border-top-right-radius: 2px;
@@ -4553,7 +4553,7 @@ valuetextheading1 {
   margin-left: 10px;
   font-family: weathertext2;
   font-size: 9px;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 
 .tempmodulehome-50-10c {
@@ -4602,7 +4602,7 @@ raiblue {
   display: flex;
    width: 4.1rem;
   height: 1rem;
-  color: #e2e4ed;
+  color: #aeb6bf;
   overflow: hidden;
   font-family: weathertext2;
   line-height:1;
@@ -4647,7 +4647,7 @@ valuetitleunit {
 greyu {
   font-size: 0.55rem;
   font-family: weathertext2;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 orangeu {
   color: #d05f2d;
@@ -4698,7 +4698,7 @@ blueu {
   overflow: hidden;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   line-height: 16px;
   font-family: weathertext2;
   font-size: 0.85em;
@@ -4760,7 +4760,7 @@ valuesun {
 .weather34sunlightday,
 .weather34sunriseday,
 .weather34sunsetday {
-  color: #e2e4ed;
+  color: #aeb6bf;
   line-height: 1;
   font-size: 8px;
   overflow: hidden;
@@ -4959,7 +4959,7 @@ pressureunits {
 .wulargeforecasthome,
 .wulargeforecastinghome {
   font-family: weathertext2;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .wulargeforecasthome {
   position: absolute;
@@ -4981,7 +4981,7 @@ pressureunits {
 .wulargeweekdayhome {
   font-family: weathertext2;
   font-size: 0.65rem;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .wulargediv {
   width: 310px;
@@ -4997,7 +4997,7 @@ pressureunits {
   height: 145px;
   padding: 0;
   background: 0;
-  color: #e2e4ed;
+  color: #aeb6bf;
   border: 1px solid rgba(37, 50, 58, 0.1);
 
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
@@ -5006,7 +5006,7 @@ pressureunits {
   position: absolutue;
   text-align: left;
   padding: 1px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   margin: 0 0 0 5px;
   background: 0;
 }
@@ -5055,7 +5055,7 @@ wulargetemplohome uvspan {
   width: 8.5rem;
   height: 1rem;
   font-size: 10px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   justify-content: center;
   margin-left: 140px;
   margin-top: 27px;
@@ -5329,7 +5329,7 @@ wuthunder2 {
   width: 8.5em;
   height: 1rem;
   font-size: 10px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   justify-content: center;
   margin-top: -18px;
   line-height: 10px;
@@ -5348,7 +5348,7 @@ weather34mbuptime {
   display: inline;
   right: 115px;
   top: 13px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-size: 0.75em;
   font-family: weathertext2;
 }
@@ -5411,7 +5411,7 @@ input[type="checkbox"] {
 }
 .weather34sidebarMenuInner li {
   list-style: none;
-  color: #e2e4ed;
+  color: #aeb6bf;
   padding: 5px 5px 5px 10px;
   cursor: pointer;
   border-bottom: 0;
@@ -5421,13 +5421,13 @@ input[type="checkbox"] {
 .weather34sidebarMenuInner li span {
   display: block;
   font-size: 12px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   float: left;
   width: 240px;
   font-weight: 500;
 }
 .weather34sidebarMenuInner li a {
-  color: #e2e4ed;
+  color: #aeb6bf;
   cursor: pointer;
   text-decoration: none;
   float: left;
@@ -5461,7 +5461,7 @@ input[type="checkbox"] {
   position: absolute;
   height: 3px;
   width: 100%;
-  background-color: #e2e4ed;
+  background-color: #aeb6bf;
 }
 .weather34cross.part-1,
 .weather34cross.part-2,
@@ -5535,7 +5535,7 @@ weather34menumarkeryellow {
   align-items: center;
   justify-content: center;
   border: 0;
-  color: #e2e4ed;
+  color: #aeb6bf;
   line-height: 12px;
 }
 weather34menumarkerblue {
@@ -5818,7 +5818,7 @@ uptimesup {
   display: none;
 }
 .weather34box {
-  color: #e2e4ed;
+  color: #aeb6bf;
   float: left;
   position: relative;
   margin-top: -10px;
@@ -5827,7 +5827,7 @@ uptimesup {
 .weather34box .value {
   position: absolute;
   float: left;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .weather34box .title {
   font-family: arial, helvetica;
@@ -5846,7 +5846,7 @@ spanm2 {
   top: 0;
 }
 .weather34box.indoor span {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-weight: 500;
 }
 .weather34box.indoor titlespan {
@@ -5859,7 +5859,7 @@ spanm2 {
   color: #fff;
 }
 .weather34box.clock span {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-weight: 500;
 }
 .weather34box.clock titlespan {
@@ -5882,7 +5882,7 @@ spanm,
 spanm2,
 spanm4,
 spanm5 {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .barometerconverter {
   margin-left: 238px;
@@ -6053,7 +6053,7 @@ wfstriketoday {
   font-size: 0.55rem;
   width: 140px;
   border: 0;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .wfstrike {
   margin-top: 0;
@@ -6081,7 +6081,7 @@ wfstriketoday {
 .minwordl {
   margin-top: 5px;
   font-size: 0.55rem;
-  color: #e2e4ed;
+  color: #aeb6bf;
   z-index: 1;
   position: absolute;
   margin-left: 25px;
@@ -6101,7 +6101,7 @@ wfstriketoday {
 .strikes-today {
   margin-top: 5px;
   font-size: 0.55rem;
-  color: #e2e4ed;
+  color: #aeb6bf;
   z-index: 1;
   position: absolute;
   margin-left: 25px;
@@ -6111,7 +6111,7 @@ wfstriketoday {
   margin-top: 45px;
   font-size: 0.5rem;
   z-index: 1;
-  color: #e2e4ed;
+  color: #aeb6bf;
   align-items: center;
   justify-content: center;
   width: 4.2rem;
@@ -6126,7 +6126,7 @@ wfstriketoday {
   margin-top: 45px;
   font-size: 0.5rem;
   z-index: 1;
-  color: #e2e4ed;
+  color: #aeb6bf;
   align-items: center;
   justify-content: center;
   width: 3.4rem;
@@ -6179,7 +6179,7 @@ wfstriketoday {
 .eqcaution,
 .eqt {
   position: absolute;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-size: 0.55rem;
 }
 .eqt {
@@ -6193,7 +6193,7 @@ wfstriketoday {
   margin-top: -30px;
   font-size:.55rem;
   line-height:.9;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: weathertext2;
 }
 .eqtext2 {
@@ -6203,7 +6203,7 @@ wfstriketoday {
   margin-top: -30px;
   font-size:.55rem;
   line-height:.9;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: weathertext2;
 }
 regionalred {
@@ -6244,7 +6244,7 @@ regionalred {
 }
 .mooncircle1,
 .mooncircle1:after {
-  color: #e2e4ed;
+  color: #aeb6bf;
   margin-left: 0;
   padding-top: 40px;
   padding-bottom: 10px;
@@ -6277,13 +6277,13 @@ regionalred {
   position: absolute;
   font-size: 0.65rem;
   margin-top: -17px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   display: block;
   text-align: center;
   margin-left: 25px;
 }
 .mooncircle1 span {
-  color: #e2e4ed;
+  color: #aeb6bf;
   text-align: center;
   display: block;
   margin-left: 0;
@@ -6300,7 +6300,7 @@ regionalred {
 }
 .moonphase,
 .moonrise1 {
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .moonphase {
   font-size: 9px;
@@ -6345,22 +6345,22 @@ regionalred {
   margin-left: -105px;
 }
 .moonrise1 span {
-  color: #e2e4ed;
+  color: #aeb6bf;
   margin-left: 25px;
 }
 .moonset1 {
   margin-top: 130px;
   margin-left: -105px;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .moonset1 span {
-  color: #e2e4ed;
+  color: #aeb6bf;
   margin-left: 15px;
 }
 .fullmoon1,
 .meteorshower,
 .newmoon1 {
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: weathertext2;
 }
 .fullmoon1 {
@@ -6398,7 +6398,7 @@ regionalred {
 
 .windmaxthismonth {
   font-size: 0.5em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6408,7 +6408,7 @@ regionalred {
 }
 .windmaxthisyear {
   font-size: 0.5em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6418,7 +6418,7 @@ regionalred {
 }
 .tempminthisyear {
   font-size: 0.5em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6428,7 +6428,7 @@ regionalred {
 }
 .tempmaxthisyear {
   font-size: 0.5em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6438,7 +6438,7 @@ regionalred {
 }
 .tempavgthisyear {
   font-size: 0.5em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6448,7 +6448,7 @@ regionalred {
 }
 .rainavgthisyear {
   font-size: 0.5em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6458,7 +6458,7 @@ regionalred {
 }
 .rainmaxthismonth {
   font-size: 0.5em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6468,7 +6468,7 @@ regionalred {
 }
 .rainmaxthisyear {
   font-size: 0.5em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6478,7 +6478,7 @@ regionalred {
 }
 .wmonthmax {
   font-size: 0.3em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6488,7 +6488,7 @@ regionalred {
 }
 .wyearmax {
   font-size: 0.3em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6498,7 +6498,7 @@ regionalred {
 }
 .tmonthmax {
   font-size: 0.3em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6508,7 +6508,7 @@ regionalred {
 }
 .tyearmax {
   font-size: 0.3em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6518,7 +6518,7 @@ regionalred {
 }
 .tyearconv {
   font-size: 0.3em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6527,7 +6527,7 @@ regionalred {
 }
 .tmonthconv {
   font-size: 0.3em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6537,7 +6537,7 @@ regionalred {
 }
 .wyearconv {
   font-size: 0.3em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6547,7 +6547,7 @@ regionalred {
 }
 .wmonthconv {
   font-size: 0.3em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6557,7 +6557,7 @@ regionalred {
 }
 .tyearavg {
   font-size: 0.3em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6568,7 +6568,7 @@ regionalred {
 }
 .tavgconv {
   font-size: 0.3em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6578,7 +6578,7 @@ regionalred {
 }
 .ryearavg {
   font-size: 0.3em;
-  color: #e2e4ed;
+  color: #aeb6bf;
   position: absolute;
   font-family: weathertext2;
   display: flex;
@@ -6592,7 +6592,7 @@ tunit {
   font-size: 0.45em;
   vertical-align: middle;
   top: 5px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   text-transform:none
 }
 wunit {
@@ -6600,7 +6600,7 @@ wunit {
   font-size: 0.5em;
   vertical-align: middle;
   top: 5px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   text-transform:none
 }
 wiunit {
@@ -6608,7 +6608,7 @@ wiunit {
   font-size: 0.9em;
   vertical-align: middle;
   top: 0;
-  color: #e2e4ed;
+  color: #aeb6bf;
   text-transform:none
 }
 maxtempred {
@@ -6657,7 +6657,7 @@ maxtempgreen {
 .updatedtimecurrent {
   margin-top: -38px;
   margin-left: 220px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font: 0.68em weathertext2;
   line-height: 10px;
   border-radius: 2px;
@@ -6685,7 +6685,7 @@ maxtempgreen {
   justify-content:center;
   align-items:center;
   width:125px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   line-height:1.4;
   font-weight:500;
 }
@@ -6835,7 +6835,7 @@ maxtempgreen {
   grid-column-gap: 5px;
   align-items: stretch;
   margin: 0 auto;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .gridhardware > weather34infoboxes {
   padding: 7px;
@@ -6860,7 +6860,7 @@ maxtempgreen {
   height: 1.5em;
   font-size: 0.6rem;
   top: -22px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   align-items: left;
   justify-content: left;
   margin: 0 auto;
@@ -6874,7 +6874,7 @@ maxtempgreen {
   margin-left: 235px;
   padding: 0;
   margin-top: -34px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   line-height: 10px;
 }
 .updatedtime1 {
@@ -6886,7 +6886,7 @@ weather34thetime {
   display:flex;
   right: 100px;
   top: 10px;
-  color: #fff;
+  color: #aeb6bf;
   font-size: 12px;
   font-family: clock;  
   background:rgba(120, 138, 146, .2);  
@@ -6912,7 +6912,7 @@ weather34thetime {
   display: flex;
   position: absolute;
   float: left;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: weathertext2, arial, helvetica;
   font-size: 9px;
   margin-top: -10px;
@@ -6924,7 +6924,7 @@ weather34thetime {
   dislpay: flex;
   position: absolute;
   float: left;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-family: weathertext2, arial, helvetica;
   font-size: 9px;
   margin-top: 15px;
@@ -6957,7 +6957,7 @@ weather34thetime {
   height: 1.5em;
   font-size: 0.65rem;
   top: 5px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   align-items: left;
   justify-content: left;
   margin: 0 auto;
@@ -7002,7 +7002,7 @@ weather34thetime {
   top: 1px;
 }
 .weather34btn--primary {
-  color: #e2e4ed;
+  color: #aeb6bf;
   background-color: rgba(86, 95, 103, 0);
   max-height: 22px;
   font-family: Arial, Helvetica, sans-serif;
@@ -7013,7 +7013,7 @@ weather34thetime {
 }
 .weather34btn--primary a {
   position: relative;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-size: 0.85em;
   font-weight: 500;
   left: 65px;
@@ -7056,7 +7056,7 @@ weather34thetime {
   margin-left: 230px;
   padding: 0;
   margin-top: -33px;
-  color: #e2e4ed;
+  color: #aeb6bf;
   line-height: 10px;
   margin-bottom: 0;
 }
@@ -7087,7 +7087,7 @@ weather34thetime {
   margin-top: 10px;
   margin-left: 125px;
   max-width: 120px;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .averagestext {
   font-size: 10px;
@@ -7097,7 +7097,7 @@ weather34thetime {
   width: 240px;
   line-height: 1;
   font-family: arial, helvetica, system;
-  color: #e2e4ed;
+  color: #aeb6bf;
 }
 .wulargediv {
   width: 310px;
@@ -7123,7 +7123,7 @@ weather34toptitle {
   margin-left: 37%;
   margin-top: 15px;
   line-height: 1;
-  color: #e2e4ed;
+  color: #aeb6bf;
  
 }
 .weather34tipcelsius {
@@ -7158,7 +7158,7 @@ weather34toptitle {
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     align-items: stretch;
-    color: #e2e4ed;
+    color: #aeb6bf;
     margin: 0 auto;
     margin-top: 45px;
   }
@@ -7253,7 +7253,7 @@ weather34toptitle {
     height: 1.5em;
     font-size: 0.6rem;
     top: -3px;
-    color: #e2e4ed;
+    color: #aeb6bf;
     align-items: left;
     justify-content: left;
     margin: 0 auto;
@@ -7275,7 +7275,7 @@ weather34toptitle {
   }
   .weather34btn--primary a {
     position: relative;
-    color: #e2e4ed;
+    color: #aeb6bf;
     font-size: 0.85em;
     font-weight: 500;
     left: 55px;
@@ -7308,7 +7308,7 @@ weather34toptitle {
     height: 1.5em;
     font-size: 0.6rem;
     top: -20px;
-    color: #e2e4ed;
+    color: #aeb6bf;
     align-items: left;
     justify-content: left;
     margin: 0 auto;
@@ -7322,7 +7322,7 @@ weather34toptitle {
     margin-left: 235px;
     padding: 0;
     margin-top: -32px;
-    color: #e2e4ed;
+    color: #aeb6bf;
     line-height: 10px;
   }
   .updatedtime1 {
@@ -7433,7 +7433,7 @@ weather34toptitle {
     margin-left: 17%;
     margin-top: 15px;
     line-height: 1;
-    color: #e2e4ed;
+    color: #aeb6bf;
   }
   .wulargediv {
     width: 360px;
@@ -7596,7 +7596,7 @@ weather34toptitle {
     height: 1.5em;
     font-size: 0.6rem;
     top: -20px;
-    color: #e2e4ed;
+    color: #aeb6bf;
     align-items: left;
     justify-content: left;
     margin: 0 auto;
@@ -7610,7 +7610,7 @@ weather34toptitle {
     margin-left: 235px;
     padding: 0;
     margin-top: -32px;
-    color: #e2e4ed;
+    color: #aeb6bf;
     line-height: 10px;
   }
   .updatedtime1 {
@@ -8649,7 +8649,7 @@ tunit1 {
 }
 .consoleoutlook {
   position: relative;
-  color: #e2e4ed;
+  color: #aeb6bf;
   font-size: 10px;
   margin-top: 0.2rem;
   line-height: 1;
@@ -8773,10 +8773,10 @@ sunsetvalue{position:relative;font-size:.5rem;line-height:1;left:-4px;display:fl
 .weather34moonphasesvg{position:absolute; left:10px; top:5px; width:60px;}
 .weather34moonforeground { fill:rgba(226, 228, 237, .3); stroke:rgba(86, 95, 103, .3); stroke-width:0;max-height:100px }
 .weather34moonbackground{ fill:rgba(120, 138, 146,.5);stroke:rgba(230, 232, 239, .1);stroke-width:0; }
-.moonrise2{position:relative;margin-left:40px;top:15px;font-size:.65rem;width:200px;line-height:1;color: #e2e4ed;}
-.moonset2{position:relative;margin-left:40px;font-size:.65rem;top:15px;width:200px;line-height:1;color: #e2e4ed;}
-.phase2{position:relative;margin-left:40px;top:20px;font-size:.65rem;width:200px;line-height:.8;color: #e2e4ed;}
-.luminance2{position:relative;margin-left:40px;font-size:.65rem;top:20px;width:200px;line-height:1;color: #e2e4ed;}
+.moonrise2{position:relative;margin-left:40px;top:15px;font-size:.65rem;width:200px;line-height:1;color: #aeb6bf;}
+.moonset2{position:relative;margin-left:40px;font-size:.65rem;top:15px;width:200px;line-height:1;color: #aeb6bf;}
+.phase2{position:relative;margin-left:40px;top:20px;font-size:.65rem;width:200px;line-height:.8;color: #aeb6bf;}
+.luminance2{position:relative;margin-left:40px;font-size:.65rem;top:20px;width:200px;line-height:1;color: #aeb6bf;}
 weather34moonrisecircle {
  position: absolute;
  top: 2px;
@@ -8802,8 +8802,8 @@ weather34moonsetcircle {
 }
 .luftairqualitymoduleposition{position:absolute;margin-top:0;left:10px;}
 .luftairvalueaq{position:absolute;margin-top:10px;left:100px;font-size:.9em;font-family:weathertext2;}
-luftairvalueaqpm{font-size:.35em;font-family:weathertext2;color:#e2e4ed;}
-.luftairvalue{position:relative;margin-top:40px;left:30px;font-size:.55rem;font-family:weathertext2;color:#e2e4ed;}
+luftairvalueaqpm{font-size:.35em;font-family:weathertext2;color:#aeb6bf;}
+.luftairvalue{position:relative;margin-top:40px;left:30px;font-size:.55rem;font-family:weathertext2;color:#aeb6bf;}
 luftgreen{color:#90b12a;}
 luftyellow{color: #e6a141;}
 luftorange{color:#d05f2d;}
@@ -8911,4 +8911,4 @@ purpleluft {
   border-radius: 50%;
    border:1px solid rgba(61, 139, 150, 1);
   }
-lastrain{color: #e2e4ed;font-size:.75em}
+lastrain{color: #aeb6bf;font-size:.75em}
