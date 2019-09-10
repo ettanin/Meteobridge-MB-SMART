@@ -6885,14 +6885,14 @@ weather34thetime {
   background:0;  
   line-height:1;
   padding:4px;
+  padding-top:6px;
   align-items: center;
   justify-content: center;  
   list-style:none;
   -webkit-border-left: 0;
   -webkit-border-top-right-radius: 2px;
   -webkit-border-bottom-right-radius: 2px;
-  border: 1px solid rgba(226, 228, 237, .1);
-  
+  border: 1px solid rgba(226, 228, 237, .1);  
   border-left: 0;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;

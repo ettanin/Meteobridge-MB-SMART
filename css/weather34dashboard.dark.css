@@ -6920,6 +6920,7 @@ weather34thetime {
   background:0;  
   line-height:1;
   padding:4px;
+  padding-top:6px;
   align-items: center;
   justify-content: center;  
   list-style:none;
