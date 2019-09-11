@@ -23,14 +23,14 @@ else  echo "<maxtempblue>".$weather["rainmmax"]  ;echo "</maxtempblue><wunit>".$
 <maxtempblue style="font-size:.9em">
 <?php //weather34 last rainfall simple standard php method
 if($meteobridgeapi[124]=='--'){echo "<ored>No Data</ored>";}
-else if ($seconds_ago >= 31536000) { echo intval($seconds_ago / 31536000) . " <lastrain>".$lang['Year']."</lastrain>";} 
-else if ($seconds_ago >= 4838400) {echo intval($seconds_ago / 2419200) . " <lastrain>".$lang['Months']."</lastrain>";}
-else if ($seconds_ago >= 2419200) {echo intval($seconds_ago / 2419200) . " <lastrain>".$lang['Month']."</lastrain>";}
-else if ($seconds_ago >= 172800) {echo intval($seconds_ago / 86400) . " <lastrain>&nbsp;&nbsp;&nbsp;".$lang['Days']."</lastrain>";}
-else if ($seconds_ago >= 86400) {echo intval($seconds_ago / 86400) . " <lastrain>&nbsp;&nbsp;&nbsp;".$lang['Day']."</lastrain>";}
-else if ($seconds_ago >= 7200) {echo intval($seconds_ago / 3600) . " <lastrain>".$lang['Hours']."</lastrain>";}
-else if ($seconds_ago >= 3600) {echo intval($seconds_ago / 3600) . " <lastrain>&nbsp;".$lang['Hour']."</lastrain>";}
-else if ($seconds_ago >= 60) {echo intval($seconds_ago / 60) . " <lastrain>".$lang['Minutes']."</lastrain>";
+else if ($seconds_ago >= 31536000) { echo "&nbsp;".intval($seconds_ago / 31536000) . " <lastrain>".$lang['Year']."</lastrain>";} 
+else if ($seconds_ago >= 4838400) {echo "&nbsp;".intval($seconds_ago / 2419200) . " <lastrain>".$lang['Months']."</lastrain>";}
+else if ($seconds_ago >= 2419200) {echo "&nbsp;".intval($seconds_ago / 2419200) . " <lastrain>".$lang['Month']."</lastrain>";}
+else if ($seconds_ago >= 172800) {echo "&nbsp;".intval($seconds_ago / 86400) . " <lastrain>&nbsp;&nbsp;".$lang['Days']."</lastrain>";}
+else if ($seconds_ago >= 86400) {echo "&nbsp;".intval($seconds_ago / 86400) . " <lastrain>&nbsp;&nbsp;&nbsp;".$lang['Day']."</lastrain>";}
+else if ($seconds_ago >= 7200) {echo "&nbsp;".intval($seconds_ago / 3600) . " <lastrain>".$lang['Hours']."</lastrain>";}
+else if ($seconds_ago >= 3600) {echo "&nbsp;".intval($seconds_ago / 3600) . " <lastrain>&nbsp;".$lang['Hour']."</lastrain>";}
+else if ($seconds_ago >= 60) {echo "&nbsp;".intval($seconds_ago / 60) . " <lastrain>".$lang['Minutes']."</lastrain>";
 }?>
 </maxtempblue></div></wunit>
 <div class="ryearavg">Last Rainfall</div>
