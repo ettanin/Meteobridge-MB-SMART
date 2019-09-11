@@ -399,4 +399,5 @@ $lang['Day']='Tag';
 $lang['Days']='Tage';
 $lang['Minute']='Minute';
 $lang['Minutes']='Minute';
+$lang['Last Rainfall']='Letzte Regen';
 ?>
