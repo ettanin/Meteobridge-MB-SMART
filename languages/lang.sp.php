@@ -387,4 +387,13 @@ $lang['Showers-Metar']			    = "";
 $lang['Rain-Metar']						= "Lluvia";
 $lang['Lowest']						='&nbsp;&nbsp;Bajo';
 $lang['Highest']					='&nbsp;&nbsp;Alto';
+//time ago 
+$lang['Years']='Años';
+$lang['Year']='Ano';
+$lang['Months']='Meses';
+$lang['Month']='Mes';
+$lang['Day']='Dia';
+$lang['Days']='Dias';
+$lang['Minute']='Minutos';
+$lang['Minutes']='Minutos';
 ?>
