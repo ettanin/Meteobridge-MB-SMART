@@ -4222,21 +4222,21 @@ rainu {
   border-left: 0;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-  
+
 }
 .weather34ratebar{
 	height:1rem;
 	background:rgba(61, 139, 150, .7);
 	color: #2d3a4b;
-	font-size: 0.6rem;	
+	font-size: 0.6rem;
 	}
-	
+
 	smallrainrateunit {
   color: #2d3a4b;
   font-family: Arial, Helvetica, system;
   font-size: 0.45rem;
   vertical-align: text-top
-  
+
 }
 .rainratecirclehome {
   align-items: center;
@@ -5750,6 +5750,12 @@ alertadvisory {
   left: 160px;
   position: absolute;
 }
+@media screen and (min-width: 960px) {
+	.grid1 > weather34module2 {
+ display:none;
+}
+}
+
 .maincontainer {
   margin: 0 auto;
   max-width: 960px;
@@ -5820,6 +5826,25 @@ alertadvisory {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+
+  .grid1 > weather34module2 {
+  border: 1px solid rgba(230, 232, 239, 0.7);
+  border-top: 0;
+  padding: 5px;
+  background: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 198px;
+  border-bottom: 18px solid rgba(230, 232, 239, 0.5);
+  -webkit-box-shadow: inset 0 20px rgba(230, 232, 239, 0.5);
+  box-shadow: inset 0 20px rgba(230, 232, 239, 0.5);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+  .nanoimg{position:absolute;float:right;margin-left:230px;}
+  .davisimg{position:absolute;float:right;margin-left:200px;margin-top:-10px}
+  .nanoinfo{margin-top:20px;}
 
 .footercontainer {
   margin: 0 auto;
@@ -6801,7 +6826,7 @@ tunit {
   top: 5px;
   color: #555;
   text-transform:none
-  
+
 }
 wunit {
   position: relative;
@@ -6871,16 +6896,16 @@ weather34thetime {
   top: 10px;
   color: #fff;
   font-size: 12px;
-  font-family: clock;  
-  background:rgba(120, 138, 146, .2);  
+  font-family: clock;
+  background:rgba(120, 138, 146, .2);
   line-height:1;
   padding:3px;
   padding-top:6px;
   align-items: center;
-  justify-content: center;  
-  list-style:none;  
-  -webkit-border-radius: 2px;    
-  border-radius: 2px;  
+  justify-content: center;
+  list-style:none;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
   width:205px
 }
 .topframe {
@@ -7346,6 +7371,9 @@ weather34toptitle {
     height: 40px;
     margin-bottom: 5px;
   }
+  
+  .nanoimg{position:absolute;float:right;margin-left:230px;}
+  .davisimg{position:absolute;float:right;margin-left:190px;}
   .footertext {
     position: relative;
     left: -5px;
@@ -8588,10 +8616,10 @@ weather34moonrisecircle {
  position: absolute;
  top: 2px;
   left: 50px;
- width: 0; 
-  height: 0; 
+ width: 0;
+  height: 0;
   border-left: 3px solid transparent;
-  border-right: 3px solid transparent;  
+  border-right: 3px solid transparent;
   border-bottom: 5px solid #009bab;
   opacity:.7
 }
@@ -8599,13 +8627,13 @@ weather34moonsetcircle {
   position: absolute;
  top: 2px;
   left: 50px;
- width: 0; 
-  height: 0; 
+ width: 0;
+  height: 0;
   border-left: 3px solid transparent;
-  border-right: 3px solid transparent;  
+  border-right: 3px solid transparent;
   border-top: 5px solid rgba(211, 93, 78, 1);
   opacity:.7
-  
+
 }
 .luftairqualitymoduleposition{position:absolute;margin-top:0;left:10px;}
 .luftairvalueaq{position:absolute;margin-top:10px;left:100px;font-size:.9em;font-family:weathertext2;}
@@ -8626,8 +8654,8 @@ yellowluft {
   position: absolute;
   font-family: weathertext2;
   width: 3rem;
-  height: 2.5rem;  
-  padding-top:0;  
+  height: 2.5rem;
+  padding-top:0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8636,14 +8664,14 @@ yellowluft {
   -o-border-radius: 2px;
   border-radius: 2px;
   margin-left: 0px;
-  top: 8px;  
+  top: 8px;
   border-bottom:8px solid rgba(230, 232, 239, 1);
 }
 orangeluft {
   background: #d05f2d;
 }
 yellowluft{
-  background: #e6a141;  
+  background: #e6a141;
 }
 redluft{
   background: rgba(211, 93, 78, 1);
@@ -8697,6 +8725,6 @@ purpleluft {
   left: 1px;
   position: absolute;
   width: 12px;
-  border-radius: 50%;  
+  border-radius: 50%;
 }
 lastrain{color: #555;font-size:.75em}

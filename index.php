@@ -207,6 +207,9 @@ if ($positionlastmodule=='airqualitymodule.php') {
 	</div>
  <div id=dldata></div></weather34module>
  
+ <weather34module2><div class=actualt><?php echo $lang['Weather Station']." ".$lang['Information']?></div>
+ <div id=logo></div></weather34module>
+ 
   </main>
   
  <!-- Weather34 Barometer small module -->
