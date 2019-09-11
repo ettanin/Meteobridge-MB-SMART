@@ -324,7 +324,10 @@ $weather["humidity_ydmintime"]=$humydmintime;
 	$originalDate13 = $meteobridgeapi[104];
     $rainymaxtime = date("jS F Y", strtotime($originalDate13));	
 	$originalDate124 = $meteobridgeapi[124];
-    $rainlasttime = date("jS F Y ", strtotime($originalDate124));		
+    $rainlasttime=date("jS F Y ",strtotime($originalDate124));
+	$rainlasttime1=date("jS M ",strtotime($originalDate124));
+	$rainlasttime2=date("Y",strtotime($originalDate124));
+			
 	$originalDate25 = $meteobridgeapi[124];
     $rainlastmonth = date("F", strtotime($originalDate25));		
 	$originalDate26 = $meteobridgeapi[124];
