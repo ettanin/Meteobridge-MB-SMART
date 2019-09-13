@@ -9,7 +9,10 @@
     ####################################################################################################
 ?>
 
-<div class="nanoimg"><img src=img/nano.svg width="50rem"/></div>
+<div class="nanoimg">
+<?php if ($mbplatform== "Meteobridge Nano" || $mbplatform== "Meteobridge NanoSD"){echo '<img src=img/nano.svg width="50rem">';}if ($mbplatform== "Meteobridge Pro"){echo '<img src=img/MeteobridgePRO.svg width="70rem">';}?>
+</div>
+
 <div class="nanoinfo">
 <div class=hardwareimg1>
   <a href="https://www.meteobridge.com/wiki/index.php/Home" alt="https://www.meteobridge.com/wiki/index.php/Home" title="https://www.meteobridge.com/wiki/index.php/Home" class=hardwareimg1>Meteobridge</a> </div>

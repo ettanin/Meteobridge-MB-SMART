@@ -22,7 +22,7 @@ if ($magnitude <= 0) {
 
 else if ($magnitude <= 4.2 && $eqdist<800) {
     echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>${magnitude}</div>	
-	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minor</div></div>
+	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minor</div></div>
 	<div class='eqtext2'><regionalred>Regional Alert $heatindexalert8 </regionalred><br><blue> $eqtitle </blue><br>$eventime<br>
 	Epicenter: <maxred>$eqdist</maxred>from<br> $stationlocation</div>";
 } 
@@ -31,7 +31,7 @@ else if ($magnitude <= 4.2 && $eqdist<800) {
 
 else if ($magnitude <= 4.2 ) {
     echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>${magnitude}</div>	
-	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minor</div></div>
+	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minor</div></div>
 	<div class='eqtext'><blue>$eqtitle </blue><br>$eventime<br>
 	Epicenter: <maxred>$eqdist</maxred>  from<br> $stationlocation</div>";
 } 

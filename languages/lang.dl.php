@@ -221,10 +221,10 @@ $lang['Rise']        		    = 'Steigen';
 $lang['Daylight Left'] 			= 'Tageslicht übrig';
 $lang['Darkness Left'] 			= 'Dunkelheit übrig';
 //trends
-$lang['Falling']                = 'fallend';
-$lang['Rising']                 = 'steigend';
-$lang['Steady']                 = '0';
-$lang['Rapidly']                = 'schnell';
+$lang['Falling']                = 'Fallend';
+$lang['Rising']                 = 'Steigend';
+$lang['Steady']                 = 'Stetig';
+$lang['Rapidly']                = 'Schnell';
 $lang['Temp']                   = 'Temp';
 //Solar-UV
 //uv

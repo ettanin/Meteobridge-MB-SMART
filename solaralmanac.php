@@ -41,12 +41,14 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
 .grid1 > articlegraph {
    border: 1px solid rgba(245, 247, 252,.02);
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);
-  padding:5px;
-  font-size:0.8em;
+  padding-top:5px;
+  padding-right:5px;
+  padding-left:5px;
+  font-size:0.75em;
   -webkit-border-radius:4px;
   border-radius:4px;
   background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
-  height:250px  
+  height:255px  
 }
   
   
@@ -77,7 +79,7 @@ align-items:center;justify-content:center;margin-bottom:0px;top:-15px}
 .actualw{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0px}
-.mbsmartlogo{position:relative;float:right;top:-20px;}
+.mbsmartlogo{position:relative;float:right;top:-18px;}
 </style>
 <div class="weather34darkbrowser" url="Solar Almanac"></div>
   
@@ -191,15 +193,14 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0px}
    
   </articlegraph> 
   
-  <articlegraph style="height:30px">  
+  <articlegraph style="height:20px">  
   <div class="lotemp">
   <?php echo $info?> 
-<a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank" style="font-size:8px;"> Charts rendered and compiled using <?php echo $creditschart ;?> </a></span>
-  </div>
-  <div class="lotemp">
-  <?php echo $info?> <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">CSS/SVG/PHP scripts were developed by weather34.com  for use in the weather34 template &copy; 2015-<?php echo date('Y');?>
+<a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank" style="font-size:8px;"> Charts <?php echo $creditschart ;?> </a></span>
+  
+  <?php echo $info?> <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">CSS/SVG/PHP scripts were developed by weather34.com &copy; 2015-<?php echo date('Y');?>
   </a></div>
-   <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="30px"></div>
+   <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="25px"></div>
   </articlegraph> 
   
 </main>

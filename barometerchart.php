@@ -55,7 +55,7 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
   -webkit-border-radius:4px;
   border-radius:4px;
   background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
-  height:150px  
+  height:160px  
 }
   
  a{color:#aaa;text-decoration:none} 
@@ -82,7 +82,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actual{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:95%;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
-.mbsmartlogo{position:relative;float:right;top:-20px;}
+.mbsmartlogo{position:relative;float:right;top:-5px;}
 </style>
 <div class="weather34darkbrowser" url="Barometer Charts <?php echo $pressureunit ;?>"></div>
 <main class="grid1">
@@ -127,17 +127,17 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   </articlegraph> 
   
  
-   <articlegraph style="height:25px">  
+   <articlegraph style="height:15px;">  
   <div class="lotemp">
   <?php echo $info?> 
-<a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank" style="font-size:9px;"> Charts rendered and compiled using <?php echo $creditschart ;?> </a></span>
+<a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank" style="font-size:7px;"> Charts <?php echo $creditschart ;?> </a></span>
   </div>
   </articlegraph> 
-  <articlegraph style="height:25px">   
+  <articlegraph style="height:15px;"   
   <div class="lotemp">
-  <?php echo $info?> <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:9px;">CSS/SVG/PHP scripts were developed by weather34.com  for use in the weather34 template &copy; 2015-<?php echo date('Y');?>
+  <?php echo $info?> <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:7px;">CSS/SVG/PHP scripts developed by weather34.com &copy; 2015-<?php echo date('Y');?>
   </a>  </div>
-   <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="30px"></div>
+   <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="24px"></div>
   </articlegraph> 
   
   
