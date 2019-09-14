@@ -8,7 +8,7 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');
+include('livedata.php');include('common.php');
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -87,20 +87,20 @@ padding:5px;font-family:Arial, Helvetica, sans-serif;width:95%;height:0.8em;font
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .mbsmartlogo{position:relative;float:right;top:-20px;}
 </style>
-<div class="weather34darkbrowser" url="Windspeed Charts <?php echo $weather["wind_units"]?>"></div>
+<div class="weather34darkbrowser" url="<?php echo $lang['Windspeed']." ".$weather["wind_units"]?>"></div>
   
  <main class="grid1">
   <articlegraph> 
-  <div class=actualt>Today 
+  <div class=actualt><?php echo $lang['Today']?>
   <temp>Wind <?php echo "Max ",$weather["winddmax"]." <smalluvunit>".$weather["wind_units"]?> </smalluvunit></temp> 
-  <dewpoint>Wind <?php echo "Average ",$weather['wind_speed_avg30']." <smalluvunit>".$weather["wind_units"]?> </smalluvunit></dewpoint></div>  
+  <dewpoint>Wind <?php echo $lang['Average']. $weather['wind_speed_avg30']." <smalluvunit>".$weather["wind_units"]?> </smalluvunit></dewpoint></div>  
   <iframe  src="weather34charts/todaywindspeedsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   
   <articlegraph> 
-  <div class=actualt>Today 
-  <dewpoint><?php echo "Wind Direction Bearing &deg;";?> </dewpoint> 
+  <div class=actualt><?php echo $lang['Today']?>
+  <dewpoint><?php echo $lang['Direction']."&deg;";?> </dewpoint> 
   
   </smalluvunit></span> </blue></div>  
   <iframe  src="weather34charts/todaywinddirectionsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>

@@ -8,7 +8,7 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');
+include('livedata.php');include('common.php');
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,7 +74,7 @@ smalluvunit{font-size:.6rem;font-family:Arial,Helvetica,system;}
 margin-top:-20px;margin-left:92px;padding-left:3px;line-height:11px;font-size:10px}
 .actualt{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:300px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
-align-items:center;justify-content:center;margin-bottom:10px;top:0}
+align-items:center;justify-content:center;margin-bottom:10px;top:0;text-transform:capitalize}
 .actualt temp{background:rgba(208, 95, 45, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-right:5px}
 .actualt feel{background:rgba(211, 93, 78, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
 .actualt dewpoint{background:rgba(6, 162, 177, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff}
@@ -87,7 +87,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 <div class="weather34darkbrowser" url="Barometer Charts <?php echo $pressureunit ;?>"></div>
 <main class="grid1">
   <articlegraph> 
-  <div class=actualt>Today <blue>Barometer</blue>
+  <div class=actualt><?php echo $lang['Barometer']." ".$lang['Today']?>
   
   <temp><?php echo "Max ",$weather["barometer_max"]." <smalluvunit>".$pressureunit?> </smalluvunit></temp> 
   <dewpoint><?php echo "Min ",$weather["barometer_min"]." <smalluvunit>".$pressureunit?> </smalluvunit></dewpoint>
@@ -100,7 +100,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   
   
   <articlegraph> 
-  <div class=actualt><?php echo date('M Y');?> <blue>Barometer </blue>
+  <div class=actualt><?php echo $lang['Barometer']." ".strftime('%B',time());?>
   
   <temp><?php echo "Max ",$weather["thb0seapressmmax"]." <smalluvunit>".$pressureunit?></smalluvunit> </temp> 
   <dewpoint><?php echo "Min ",$weather["thb0seapressmmin"]." <smalluvunit>".$pressureunit?> </smalluvunit></dewpoint>
@@ -112,7 +112,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   </articlegraph> 
   
   <articlegraph> 
-  <div class=actualt><?php echo date('Y');?> <blue>Barometer </blue>
+  <div class=actualt><?php echo date('Y');?> <?php echo $lang['Barometer']?> 
   <temp><?php echo "Max ",$weather["thb0seapressymax"]." <smalluvunit>".$pressureunit?> </smalluvunit></temp> 
   <dewpoint><?php echo "Min ",$weather["thb0seapressymin"]." <smalluvunit>".$pressureunit?> </smalluvunit></dewpoint>
   
@@ -121,7 +121,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
    
   </articlegraph> 
    <articlegraph> 
-  <div class=actualt><?php echo date('Y', strtotime('last year'));?> <blue>Barometer <?php echo "<smalluvunit>",$pressureunit ;?></smalluvunit></blue></div>  
+  <div class=actualt><?php echo date('Y', strtotime('last year'));?> <?php echo $lang['Barometer']?> <?php echo "<smalluvunit>",$pressureunit ;?></smalluvunit></blue></div>  
   <iframe  src="weather34charts/yearlybarometerprevious.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 

@@ -1,6 +1,6 @@
 <?php 
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');
+include('livedata.php');include('common.php');
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -77,18 +77,18 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actualg wetbulb{background:rgba(241, 107, 79, .8);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
 .mbsmartlogo{position:relative;float:right;top:-15px;}
 </style>
-<div class="weather34darkbrowser" url="Today Rainfall <?php echo $rainunit ;?>"></div>
+<div class="weather34darkbrowser" url="<?php echo $lang['Rainfall']." ".$lang['Today']." ".$weather["rain_units"]?>"></div>
 <main class="grid1">
   <articlegraph> 
- <div class=actualg>Today Rainfall
-  <dewpoint><?php echo "Total ",$weather["rain_today"]." " .$weather["rain_units"]?> </dewpoint></div>
+ <div class=actualg><?php echo $lang['Rainfall']." ".$lang['Today']?>
+  <dewpoint><?php echo $lang['Total']." ".$weather["rain_today"]." " .$weather["rain_units"]?> </dewpoint></div>
   <iframe  src="weather34charts/todayrainfallmedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   
   
   <articlegraph> 
-  <div class=actualw>Today <blue>Rainrate</blue> <?php echo "<smalluvunit>",$rainunit ;?></smalluvunit></blue></div>  
+  <div class=actualw><?php echo $lang['Rate']." ".$lang['Today']?> <?php echo "<smalluvunit>",$rainunit ;?></smalluvunit></blue></div>  
   <iframe  src="weather34charts/todayrainratemedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 

@@ -8,7 +8,7 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');
+include('livedata.php');include('common.php');
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -94,8 +94,8 @@ smalluvunit{font-size:.7rem;font-family:weathertext2,Arial,Helvetica,system;}
 .hitempy{position:relative;background:rgba(61, 64, 66, 0.5);color:#aaa;width:90px;padding:1px;-webit-border-radius:2px;border-radius:2px;
 margin-top:-20px;margin-left:92px;padding-left:3px;line-height:11px;font-size:9px}
 .actualt{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
-padding:5px;font-family:Arial, Helvetica, sans-serif;width:300px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
-align-items:center;justify-content:center;margin-bottom:10px;top:0}
+padding:5px;font-family:Arial, Helvetica, sans-serif;width:360px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
+align-items:center;justify-content:center;margin-bottom:10px;top:0;text-transform:capitalize}
 .actualt temp{background:rgba(208, 95, 45, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-right:5px}
 .actualt feel{background:rgba(211, 93, 78, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
 .actualt dewpoint{background:rgba(6, 162, 177, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff}
@@ -105,23 +105,23 @@ padding:5px;font-family:Arial, Helvetica, sans-serif;width:95%;height:0.8em;font
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .mbsmartlogo{position:relative;float:right;top:-15px;}
 </style>
-<div class="weather34darkbrowser" url="Temperature Charts <?php echo "&deg;",$weather["temp_units"]?>"></div>
+<div class="weather34darkbrowser" url="<?php echo $lang['Temperature']." ".$lang['Today']?> <?php echo "&deg;",$weather["temp_units"]?>"></div>
   <main class="grid1">
   
   <articlegraph> 
-  <div class=actualt>Today 
-  <temp>Temp <?php echo "Max ",$weather["temp_today_high"]."&deg;"?> </temp> 
-  <dewpoint>Temp <?php echo "Min ",$weather["temp_today_low"]."&deg;"?> </dewpoint>
-  <feel>Feels ---</feel>     
+  <div class=actualt>
+  <temp><?php echo "Max ",$weather["temp_today_high"]."&deg;"?> </temp> 
+  <dewpoint><?php echo "Min ",$weather["temp_today_low"]."&deg;"?> </dewpoint>
+  <feel>Feels--</feel>     
   </div>  
   <iframe  src="weather34charts/todaytempmedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   <articlegraph> 
-  <div class=actualt>Today 
-  <temp>Dewpoint <?php echo "Max ",$weather["dewmax"]."&deg;"?> </temp> 
-  <dewpoint>Dewpoint <?php echo "Min ",$weather["dewmin"]."&deg;"?> </dewpoint> 
-  <wetbulb>Wetbulb ---</wetbulb> 
+  <div class=actualt>
+  <temp><?php echo $lang['Dewpoint']?> <?php echo "Max ",$weather["dewmax"]."&deg;"?> </temp> 
+  <dewpoint><?php echo $lang['Dewpoint']?> <?php echo "Min ",$weather["dewmin"]."&deg;"?> </dewpoint> 
+  <wetbulb><?php echo $lang['Wetbulb']?>--</wetbulb> 
   </span></blue></div>  
   <iframe  src="weather34charts/todaydewmedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
@@ -129,10 +129,10 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   
     
   <articlegraph> 
-  <div class=actualt>Today</span>
+  <div class=actualt></span>
   
-  <temp>Humidity <?php echo "Max ",$weather["humidity_max"]."%"?> </temp> 
-  <dewpoint>Humidity <?php echo "Min ",$weather["humidity_min"]."%"?> </dewpoint> 
+  <temp><?php echo $lang['Humidity']?> <?php echo "Max ",$weather["humidity_max"]."%"?> </temp> 
+  <dewpoint><?php echo $lang['Humidity']?> <?php echo "Min ",$weather["humidity_min"]."%"?> </dewpoint> 
   
   </div>  
   <iframe  src="weather34charts/todayhumiditymedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
@@ -140,7 +140,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   </articlegraph> 
   
    <articlegraph> 
-  <div class=actualt>Today <dewpoint>Cloudbase</dewpoint> ft</smalluvunit></span></div>  
+  <div class=actualt><dewpoint><?php echo $lang['Cloudbase']?></dewpoint> ft</smalluvunit></span></div>  
   <iframe  src="weather34charts/todaycloudbasemedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
