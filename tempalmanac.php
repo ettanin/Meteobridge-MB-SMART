@@ -11,7 +11,7 @@
 
 
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');
+include('livedata.php');include('common.php');
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -93,24 +93,26 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
 .temperaturetoday31-35{background:#d86858;background:-webkit-linear-gradient(90deg,#d86858,rgba(211,93,78,.7));background:linear-gradient(90deg,#d86858,rgba(211,93,78,.7))}
 .temperaturetoday36-40{background:#fd7641;background:-webkit-linear-gradient(90deg,#fd7641,#637ff6);background:linear-gradient(90deg,#fd7641,#637ff6)}
 .temperaturetoday41-45{background:#de2c52;background:-webkit-linear-gradient(90deg,#de2c52,#637ff6);background:linear-gradient(90deg,#de2c52,#637ff6)}
-.temperaturetrend{margin-left:10px;margin-top:-18px;z-index:1;color:#fff;font-size:.6rem;}
-.temperaturetrend1{margin-left:7px;margin-top:-18px;z-index:1;color:#fff;font-size:.6rem;}
+.temperaturetrend{margin-left:10px;margin-top:-19px;z-index:1;color:#fff;font-size:.6rem;}
+.temperaturetrend1{margin-left:3px;margin-top:-19px;z-index:1;color:#fff;font-size:.6rem;}
 .temperaturetrend2{margin-left:0px;margin-top:-20px;z-index:1;color:#fff;font-size:.5rem;position:absolute}
 smalluvunit{font-size:.7rem;font-family:weathertext2,Arial,Helvetica,system;}
+
 .w34convertrain{position:relative;font-size:.5em;top:10px;color:#c0c0c0;margin-left:5px}
 .hitempy{position:relative;background:rgba(61, 64, 66, 0.5);color:#aaa;width:90px;padding:1px;-webit-border-radius:2px;border-radius:2px;
 margin-top:10px;margin-left:98px;padding-left:3px;line-height:11px;font-size:9px}
 .actualt{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:140px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
-align-items:center;justify-content:center;margin-bottom:10px;top:0}
+align-items:center;justify-content:center;margin-bottom:10px;top:0;
+text-transform:capitalize}
 .actualw{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;border-bottom:2px solid rgba(56,56,60,1);
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actual{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:95%;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
-.dewpointword{position:absolute;font-size:.8em;margin-left:65px;margin-top:-20px;color:#c0c0c0}
-.humidityword{position:absolute;font-size:.8em;margin-left:65px;margin-top:20px;color:#c0c0c0}
+.dewpointword{position:absolute;font-size:.8em;margin-left:35px;margin-top:-20px;color:#c0c0c0;width:100px}
+.humidityword{position:absolute;font-size:.8em;margin-left:35px;margin-top:20px;color:#c0c0c0}
 .highestword{position:absolute;font-size:.8em;margin-left:45px;margin-top:-15px;color:#c0c0c0;width:100px}
 .lowestword{position:absolute;font-size:.8em;margin-left:45px;margin-top:28px;color:#c0c0c0;width:100px}
 orange{color:#ff832f}
@@ -125,11 +127,11 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 
 
 </style>
-<div class="weather34darkbrowser" url="Temperature Almanac <?php echo "&deg;",$weather["temp_units"]?>"></div>
+<div class="weather34darkbrowser" url="<?php echo $lang['Temperature']." ".$lang['Almanac'];?><?php echo "&deg;",$weather["temp_units"]?>"></div>
   
 <main class="grid">
   <article>  
-   <div class=actualt>Temperature Today </div>        
+   <div class=actualt><?php echo $lang['Temperature']." ".$lang['Today'];?></div>        
    <div class="temperaturecontainer">
 	 <?php	
 	//temp max today
@@ -247,13 +249,13 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
     <div class="temperaturetrend"><?php echo $weather["tempdmintime"];?></span></div>	
     
 <div class=hitempypos>
-<div class="dewpointword"> Dewpoint</div>
+<div class="dewpointword"> <?php echo $lang['Dewpoint'];?></div>
  <div class="hitempd" style="width:100px;">Max<orange><?php echo "&nbsp;".$weather["dewmax"],"</orange>&deg;",$weather["temp_units"]," ",$weather["dewmaxtime"];?></span><br></div>
  <div class="hitempd" style="margin-top:5px;width:100px;">Min<blue><?php echo "&nbsp;".$weather["dewmin"],"</blue>&deg;",$weather["temp_units"]," ",$weather["dewmintime"];?></span><br></div>
 </div>
  
  <div class=hitempypos> 
- <div class="humidityword"> Humidity</div>
+ <div class="humidityword"> <?php echo $lang['Humidity'];?></div>
 <div class="hitempd1" style="margin-top:30px;width:100px;">Max<orange><?php echo "&nbsp;".$weather["humidity_max"],"</orange>%  ",$weather["humidity_maxtime"];?></span><br></div><br>
 <div class="hitempd1" style="margin-top:33px;width:100px;">Min<blue><?php echo "&nbsp;".$weather["humidity_min"],"</blue>%  ",$weather["humidity_mintime"];?></span><br></div><br>
 </div>    
@@ -261,7 +263,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 </article> 
 
 <article>  
-   <div class=actualt>Temperature Yesterday </div>        
+   <div class=actualt><?php echo $lang['Temperature']." ".$lang['Yesterday']?> </div>        
    <div class="temperaturecontainer">
 	 <?php	
 	//temp max yesterday
@@ -379,13 +381,13 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
     <div class="temperaturetrend"><?php echo $weather["tempydmintime"];?></span></div>	
      
 <div class=hitempypos> 
-<div class="dewpointword"> Dewpoint</div>
+<div class="dewpointword"> <?php echo $lang['Dewpoint'];?></div>
  <div class="hitempd" style="width:100px;">Max<orange><?php echo "&nbsp;".$weather["dewydmax"],"</orange>&deg;",$weather["temp_units"]," ",$weather["dewydmaxtime"];?></span><br></div>
  <div class="hitempd" style="margin-top:5px;width:100px;">Min<blue><?php echo "&nbsp;".$weather["dewydmin"],"</blue>&deg;",$weather["temp_units"]," ",$weather["dewydmintime"];?></span><br></div>
 </div>
 
  <div class=hitempypos> 
- <div class="humidityword"> Humidity</div>
+ <div class="humidityword"> <?php echo $lang['Humidity'];?></div>
 <div class="hitempd1" style="margin-top:30px;width:100px;">Max<orange><?php echo "&nbsp;".$weather["humidity_ydmax"],"</orange>%  ",$weather["humidity_ydmaxtime"];?></span><br></div><br>
 <div class="hitempd1" style="margin-top:33px;width:100px;">Min<blue><?php echo "&nbsp;".$weather["humidity_ydmin"],"</blue>%  ",$weather["humidity_ydmintime"];?></span><br></div><br>
 </div>    
@@ -395,7 +397,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
  
   
   <article> 
-  <div class=actualt>Temperature <?php echo date(' F Y')?> </div>        
+  <div class=actualt><?php echo $lang['Temperature'];?> <?php echo strftime('%B',time());?> </div>        
    <div class="temperaturecontainer">
 	 <?php	
 	//temp max month
@@ -513,15 +515,15 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
     <div class="temperaturetrend1"><?php echo $weather["tempmmintime"];?></span></div>	
      
 <div class=hitempypos > 
-<div class="dewpointword"> Dewpoint</div>
- <div class="hitempd" >Dew Max<orange><?php echo "&nbsp;".$weather["dewmmax"],"</orange>&deg;",$weather["temp_units"]," ",$weather["dewmmaxtime"];?></span><br></div>
- <div class="hitempd" style="margin-top:5px;">Dew Min<blue><?php echo "&nbsp;".$weather["dewmmin"],"</blue>&deg;",$weather["temp_units"]," ",$weather["dewmmintime"];?></span><br></div>
+<div class="dewpointword"> <?php echo $lang['Dewpoint'];?></div>
+ <div class="hitempd" >Max<orange><?php echo "&nbsp;".$weather["dewmmax"],"</orange>&deg;",$weather["temp_units"]," ",$weather["dewmmaxtime"];?></span><br></div>
+ <div class="hitempd" style="margin-top:5px;">Min<blue><?php echo "&nbsp;".$weather["dewmmin"],"</blue>&deg;",$weather["temp_units"]," ",$weather["dewmmintime"];?></span><br></div>
 </div>
 
  <div class=hitempypos> 
- <div class="humidityword"> Humidity</div>
-<div class="hitempd1" style="margin-top:30px;">Hum Max<orange><?php echo "&nbsp;".$weather["humidity_mmax"],"</orange>%  ",$weather["humidity_mmaxtime"];?></span><br></div><br>
-<div class="hitempd1" style="margin-top:33px;">Hum Min<blue><?php echo "&nbsp;".$weather["humidity_mmin"],"</blue>%  ",$weather["humidity_mmintime"];?></span><br></div><br>
+ <div class="humidityword"> <?php echo $lang['Humidity'];?></div>
+<div class="hitempd1" style="margin-top:30px;">Max<orange><?php echo "&nbsp;".$weather["humidity_mmax"],"</orange>%  ",$weather["humidity_mmaxtime"];?></span><br></div><br>
+<div class="hitempd1" style="margin-top:33px;">Min<blue><?php echo "&nbsp;".$weather["humidity_mmin"],"</blue>%  ",$weather["humidity_mmintime"];?></span><br></div><br>
 </div>    
 </article>  
   
@@ -645,13 +647,13 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
     <div class="temperaturetrend1"><?php echo $weather["tempymintime"];?></span></div>	
      
  <div class=hitempypos> 
- <div class="dewpointword"> Dewpoint</div>
+ <div class="dewpointword"> <?php echo $lang['Dewpoint'];?></div>
  <div class="hitempd" >Max<orange><?php echo "&nbsp;".$weather["dewymax"],"</orange>&deg;",$weather["temp_units"]," ",$weather["dewymaxtime"];?></span><br></div>
  <div class="hitempd" style="margin-top:5px;">Min<blue><?php echo "&nbsp;".$weather["dewymin"],"</blue>&deg;",$weather["temp_units"]," ",$weather["dewymintime"];?></span><br></div>
 </div>
 
  <div class=hitempypos> 
- <div class="humidityword"> Humidity</div>
+ <div class="humidityword"> <?php echo $lang['Humidity'];?></div>
 <div class="hitempd1" style="margin-top:30px;">Max<orange><?php echo "&nbsp;".$weather["humidity_ymax"],"</orange>%  ",$weather["humidity_ymaxtime"];?></span><br></div><br>
 <div class="hitempd1" style="margin-top:33px;">Min<blue><?php echo "&nbsp;".$weather["humidity_ymin"],"</blue>%  ",$weather["humidity_ymintime"];?></span><br></div><br>
 </div>    
@@ -663,7 +665,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 
   
  <article  style="height:105px;">  
-  <div class=actualt>Temperature All-Time </div>        
+  <div class=actualt><?php echo $lang['Temperature'];?> All-Time </div>        
    <div class="temperaturecontainer">
 	 <?php	
 	//temp max year
@@ -781,16 +783,16 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
    
      
   <div class=hitempypos> 
-  <div class="highestword"> Highest Recorded</div> 
+  <div class="highestword"> <?php echo $lang['Highest']?></div> 
  <div class="hitempd2" style="margin-top:-3px;"><?php echo $weather["tempamaxtime"];?></span><br></div>
-  <div class="lowestword"> Lowest Recorded</div> 
+  <div class="lowestword"> <?php echo $lang['Lowest']?></div> 
  <div class="hitempd2" style="margin-top:40px;"><?php echo $weather["tempamintime"];?></div>
 </div>
 
 </article> 
 
 <article  style="height:105px;">  
-  <div class=actualt>Dewpoint All-Time </div>        
+  <div class=actualt><?php echo $lang['Dewpoint'];?> All-Time </div>        
    <div class="temperaturecontainer">
 	 <?php	
 	//temp max year
@@ -907,10 +909,10 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 	echo "<smalluvunit>".$weather["temp_units"]."</smalluvunit>"
 	?>	</div></div>
    <div class=hitempypos>
-  <div class="highestword"> Highest Recorded</div> 
+  <div class="highestword"> <?php echo $lang['Highest']?></div> 
  <div class="hitempd2" style="margin-top:-3px;"><?php echo $weather["dewamaxtime"];?></span><br></div>
  
- <div class="lowestword"> Lowest Recorded</div> 
+ <div class="lowestword"> <?php echo $lang['Lowest']?></div> 
  <div class="hitempd2" style="margin-top:40px;"><?php echo $weather["dewamintime"];?></div>
 </div>
 

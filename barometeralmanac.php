@@ -13,8 +13,7 @@
 
 
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');
- ?>
+include('livedata.php');include('common.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,7 +80,7 @@ smalluvunit{font-size:.65rem;font-family:Arial,Helvetica,system;}
 margin-top:-40px;margin-left:130px;padding-left:3px;line-height:11px;font-size:8px}
 .actualt{position:relative;left:0px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:130px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
-align-items:center;justify-content:center;margin-bottom:10px;top:0}
+align-items:center;justify-content:center;margin-bottom:10px;top:0;text-transform:capitalize}
 
 .actualg{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:300px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
@@ -92,11 +91,11 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actualg wetbulb{background:rgba(241, 107, 79, .8);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
 .mbsmartlogo{position:relative;float:right;top:-20px;}
 </style>
-<div class="weather34darkbrowser" url="Barometer Almanac"></div>
+<div class="weather34darkbrowser" url="<?php echo $lang['Barometer']." ".$lang['Almanac'];?> (<?php echo $weather["barometer_units"];?>)"></div>
   
 <main class="grid">
   <article>  
-   <div class=actualt>&nbsp;Barometer Today </div>        
+   <div class=actualt>&nbsp;<?php echo $lang['Barometer']." ".$lang['Today'];?></div>        
    <div class="temperaturecontainer1">
 			  
 			  <?php
@@ -120,7 +119,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 </article>  
 
  <article>  
-   <div class=actualt>&nbsp;Barometer Yesterday </div>        
+   <div class=actualt>&nbsp;<?php echo $lang['Barometer']." ".$lang['Yesterday'];?> </div>        
    <div class="temperaturecontainer1">
 			  
 			  <?php
@@ -149,7 +148,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 
   
   <article> 
-  <div class=actualt>&nbsp;Barometer <?php echo date('F Y')?> </div>        
+  <div class=actualt>&nbsp;<?php echo $lang['Barometer']." ".strftime('%B',time());?></div>        
    <div class="temperaturecontainer1">			  
   <?php
 	////pressure max month
@@ -173,7 +172,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   
    
    <article> 
-   <div class=actualt>&nbsp;Barometer <?php echo date('Y')?> </div>        
+   <div class=actualt>&nbsp;<?php echo $lang['Barometer']." ".date('Y')?> </div>        
    <div class="temperaturecontainer1">
 			  
 			  <?php
@@ -201,7 +200,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 
 
 <article> 
-   <div class=actualt>&nbsp;Barometer All-Time </div>        
+   <div class=actualt>&nbsp;<?php echo $lang['Barometer']?>All-Time </div>        
    <div class="temperaturecontainer1">
 			  
 			  <?php
@@ -229,7 +228,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   </main>
   <main class="grid1">
   <articlegraph> 
-  <div class=actualg><?php echo date('Y');?> Barometer
+  <div class=actualg><?php echo date('Y');?> <?php echo $lang['Barometer']?>
   <temp><?php echo "Max ",$weather["thb0seapressymax"]." ".$weather["barometer_units"]?> </temp><dewpoint><?php echo "Min ",$weather["thb0seapressymin"]." ".$weather["barometer_units"]?> </dewpoint>  </div>  
   
   <iframe  src="weather34charts/yearlybarometermedium.php" frameborder="0" scrolling="no" width="100%" height="205px"></iframe>

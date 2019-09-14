@@ -393,6 +393,7 @@ $lang['Showers-Metar']			    = "Showers";
 $lang['Rain-Metar']					= "Rain";
 $lang['Lowest']						='Lowest';
 $lang['Highest']					='Highest';
+$lang['Yesterday']				    ='Yesterday';
 //time ago 
 $lang['Years']='Years';
 $lang['Year']='Year';

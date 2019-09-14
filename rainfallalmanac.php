@@ -8,8 +8,7 @@
 #   https://www.weather34.com 	                                                     #
 ######################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');
- ?>
+include('livedata.php');include('common.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,7 +67,7 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
 
 .actualt{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:120px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
-align-items:center;justify-content:center;margin-bottom:10px;top:0}
+align-items:center;justify-content:center;margin-bottom:10px;top:0;text-transform:capitalize}
 .actual{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:95%;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
@@ -84,7 +83,7 @@ smalluvunit{font-size:.6rem;font-family:Arial,Helvetica,system;}
 metricsblue{color:#44a6b5;font-family:"weathertext2",Helvetica, Arial, sans-serif;background:rgba(86, 95, 103, 0.5);-webkit-border-radius:2px;border-radius:2px;align-items:center;justify-content:center;font-size:.9em;left:10px;padding:0 3px 0 3px;}
 .w34convertrain{position:relative;font-size:.65em;top:5px;color:#c0c0c0;margin-left:3px}
 .hitempy{position:relative;background:rgba(61, 64, 66, 0.5);color:#aaa;width:70px;padding:1px;-webit-border-radius:2px;border-radius:2px;
-margin-top:-33px;margin-left:56px;padding-left:3px;line-height:11px;font-size:9px}
+margin-top:-33px;margin-left:56px;padding-left:3px;line-height:11px;font-size:9px;text-transform:capitalize}
 
 .actualg{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:300px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
@@ -95,11 +94,11 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actualg wetbulb{background:rgba(241, 107, 79, .8);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
 .mbsmartlogo{position:relative;float:right;top:-15px;}
 </style>
-<div class="weather34darkbrowser" url="Rainfall Almanac <?php echo $rainunit ;?>"></div>
+<div class="weather34darkbrowser" url="<?php echo $lang['Rainfall']." ".$lang['Almanac'];?> <?php echo $rainunit ;?>"></div>
 
 <main class="grid">
   <article>
-   <div class=actualt>Rainfall Today </div>
+   <div class=actualt><?php echo $lang['Rainfall']." ".$lang['Today'];?></div>
   <?php // rain today
 echo "<div class='rainfalltoday1'>",$weather["rain_today"] . "</value>";echo "<smalluvunit>".$weather["rain_units"]."</smalluvunit>"?>
 <div class='w34convertrain'>
@@ -109,11 +108,13 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rain_today"]*25.
 ?>
 <div></div>
 
-<div class="hitempy"><?php echo $raininfo . "Last Hour<blue> ", $weather["rain_lasthour"]."</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>"?></div>
+<div class="hitempy">
+<?php echo $lang['Last Hour']?><br><blue>
+<?php echo $weather["rain_lasthour"]."</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>"?></div>
 </article>
 
  <article>
-    <div class=actualt>Rainfall Yesterday </div>
+    <div class=actualt><?php echo $lang['Rainfall']." ".$lang['Yesterday']?></div>
   <?php // rain yesterday
 echo "<div class='rainfalltoday1'>",$weather["rainydmax"] . "</value>";echo "<smalluvunit>".$weather["rain_units"]."</smalluvunit>"?>
 <div class='w34convertrain'>
@@ -123,12 +124,14 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rainydmax"]*25.4
 ?>
 <div></div>
 
-<div class="hitempy"><?php echo $raininfo . "Last 24 Hours<blue> ", $weather["rain_24hrs"]."</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>"?></div>
+<div class="hitempy">
+<?php echo $lang['Last-Twenty-Four-Hour']?><br><blue>
+<?php echo $weather["rain_24hrs"]."</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>"?></div>
 </article>
 
 
   <article>
-  <div class=actualt>Rainfall <?php echo date('M Y')?> </div>
+  <div class=actualt><?php echo $lang['Rainfall']." ".strftime('%B',time());?></div>
   <?php // rain month
 echo "<div class='rainfalltoday1'>",$weather["rain_month"] . "</value>";echo "<smalluvunit>".$weather["rain_units"]."</smalluvunit>"?>
 <div class='w34convertrain'>
@@ -141,7 +144,7 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rain_month"]*25.
 <div class="hitempy">
     <?php echo $raininfo;?>
     <?php if ($meteobridgeapi[179]='--'){
-        echo " <blue>Rainfall</blue> <br>Last Month <br><blue>".$weather['rainlastmonth'],"</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>";
+        echo " <blue>".$lang['Rainfall']."</blue> <br>".$lastMonth = strftime('%B',time()- 31*3600*24) .$lastMonth." <br><blue>".$weather['rainlastmonth'],"</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>";
     } else if ($rainlasttime == date("M jS Y ")) {
         echo 'Last <blue>Rainfall</blue><br>Today';
     } else {
@@ -152,7 +155,7 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rain_month"]*25.
 
 
    <article>
-   <div class=actualt>Rainfall <?php echo date("Y");?> </div>
+   <div class=actualt><?php echo $lang['Rainfall'];?> <?php echo date("Y");?> </div>
   <?php // rain year
 echo "<div class='rainfalltoday1'>",$weather["rain_year"] . "</value>";echo "<smalluvunit>".$weather["rain_units"]."</smalluvunit>"?>
 <div class='w34convertrain'>
@@ -163,36 +166,18 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rain_year"]*25.4
 <div></div>
 
 <div class="hitempy">
-<?php echo $raininfo,"<blue>Rainfall</blue> Previous Year <blue>".$weather['rainlastyear']."</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>";?></div></div>
+<?php echo $raininfo,"<blue>".$lang['Rainfall']."</blue> "
+.$weather34lastyear = date('Y', strtotime('-1 year'))."<br>
+<blue>".$weather['rainlastyear']."</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>";?></div></div>
 </article>
-
-<article>
- <div class=actualt>&nbsp;Rainfall All-Time </div>
-  <?php
-  if ($weather["rain_alltime"]==''){echo "<div class='rainfalltoday1'>N/A</value>";}
- // rain alltime
-else {echo "<div class='rainfalltoday1'>",$weather["rain_alltime"] . "</value>";
-echo "<smalluvunit>".$weather["rain_units"]."</smalluvunit>";}?>
-<div class='w34convertrain'>
-<?php //convert rain
-if ($weather["rain_alltime"]==''){echo '';}
-else{
-if($weather["rain_units"] =='mm'){ echo number_format($weather["rain_alltime"]*0.0393701,2)." <smalluvunit>in</smalluvunit>";}
-if($weather["rain_units"] =='in'){ echo number_format($weather["rain_alltime"]*25.400013716,2,'.','')."<smalluvunit>mm</smalluvunit>";}
-}
-?>
-<div></div>
-
-<div class="hitempy"><?php echo $raininfo;?> <blue>Rainfall</blue> Since<br>
-<?php echo $weather['rainStartTime'];?> </div>
-                                        </article> </main>
+</main>
 
 
 
  <main class="grid1">
     <articlegraph>
-  <div class=actualg><?php echo date('Y');?> Rainfall
-  <dewpoint><?php echo "Total ",$weather["rain_year"]." " .$weather["rain_units"]?> </dewpoint></div>
+  <div class=actualg><?php echo date('Y')." ". $lang['Rainfall']?>
+  <dewpoint><?php echo $lang['Total']." ".$weather["rain_year"]." " .$weather["rain_units"]?> </dewpoint></div>
   <iframe  src="weather34charts/yearlyrainfallmedium.php" frameborder="0" scrolling="no" width="100%"  height="225px"></iframe>
 
   </articlegraph>

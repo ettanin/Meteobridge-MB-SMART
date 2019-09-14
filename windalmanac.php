@@ -9,10 +9,8 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 
-
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');
- ?>
+include('livedata.php');include('common.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,11 +81,11 @@ metricsblue{color:#44a6b5;font-family:"weathertext2",Helvetica, Arial, sans-seri
 .w34convertrain{position:relative;font-size:.7em;top:4px;color:#c0c0c0;margin-left:5px}
 .lotemp{color:#aaa;font-size:0.65rem;}
 .hitempy{position:relative;background:rgba(61, 64, 66, 0.5);color:#aaa;width:70px;padding:1px;-webit-border-radius:2px;border-radius:2px;
-margin-top:-34px;margin-left:52px;padding-left:3px;line-height:11px;font-size:9px}
+margin-top:-34px;margin-left:62px;padding-left:3px;line-height:11px;font-size:9px}
 
 .actualt{position:relative;left:0px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:130px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
-align-items:center;justify-content:center;margin-bottom:10px;top:0}
+align-items:center;justify-content:center;margin-bottom:10px;top:0;text-transform:capitalize}
 .actualw{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:120px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
@@ -105,11 +103,11 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actualg wetbulb{background:rgba(241, 107, 79, .8);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
 .mbsmartlogo{position:relative;float:right;top:-20px;}
 </style>
-<div class="weather34darkbrowser" url="Windspeed Almanac"></div>
+<div class="weather34darkbrowser" url="<?php echo $lang['Wind']." ".$lang['Almanac'];?> (<?php echo $weather["wind_units"];?>)"></div>
   
 <main class="grid">
   <article>  
-   <div class=actualt>Max Today </div>        
+   <div class=actualt>Max <?php echo $lang['Today'];?></div>        
    <?php
 	// wind day km/h
 	if ($weather["wind_units"]=='km/h' && $weather["winddmax"]>=60)  {
@@ -161,12 +159,12 @@ if($weather["wind_units"] =='kts'){ echo number_format($weather["winddmax"]*1.85
 </div>
 
 <div class="hitempy">
-Max Recorded <blue><?php echo $weather["winddmaxtime"];?></blue></div>
+Max<blue><br><?php echo $weather["winddmaxtime"];?></blue></div>
 </smalluvunit>
 </article>  
 
  <article>  
-   <div class=actualt>Max Yesterday </div>        
+   <div class=actualt>Max <?php echo $lang['Yesterday']?></div>        
    <?php
 	// wind yesterday km/h
 	if ($weather["wind_units"]=='km/h' && $weather["windydmax"]>=60)  {
@@ -217,14 +215,14 @@ if($weather["wind_units"] =='kts'){ echo number_format($weather["windydmax"]*1.8
 </div>
 
 <div class="hitempy">
-Max Recorded <br><blue><?php echo $weather["windydmaxtime"];?></blue></div>
+Max <br><blue><?php echo $weather["windydmaxtime"];?></blue></div>
 
 </article>  
 
 
   
   <article> 
-  <div class=actualt>Max <?php echo date('F Y')?> </div>        
+  <div class=actualt>Max <?php echo strftime('%B',time());?></div>        
     <?php
 	// wind month km/h
 	if ($weather["wind_units"]=='km/h' && $weather["windmmax"]>=60)  {
@@ -275,7 +273,7 @@ if($weather["wind_units"] =='kts'){ echo number_format($weather["windmmax"]*1.85
 </div>
 
 <div class="hitempy">
-Max Recorded <br><blue><?php echo $weather["windmmaxtime"];?></blue></div>
+Max <br><blue><?php echo $weather["windmmaxtime"];?></blue></div>
 
 </article>  
   
@@ -332,7 +330,7 @@ if($weather["wind_units"] =='kts'){ echo number_format($weather["windymax"]*1.85
 </div>
 
 <div class="hitempy">
-Max Recorded <br><blue><?php echo $weather["windymaxtime"];?></blue></div>
+Max <br><blue><?php echo $weather["windymaxtime"];?></blue></div>
 
 </article>  
 
@@ -390,7 +388,7 @@ if($weather["wind_units"] =='kts'){ echo number_format($weather["windamax"]*1.85
 </div>
 
 <div class="hitempy">
-Max Recorded <br><blue><?php echo $weather["windamaxtime"];?></blue></div>
+Max <br><blue><?php echo $weather["windamaxtime"];?></blue></div>
 
 </article>  
 
@@ -400,7 +398,7 @@ Max Recorded <br><blue><?php echo $weather["windamaxtime"];?></blue></div>
  <main class="grid1">
     
   <articlegraph> 
- <div class=actualg><?php echo date('Y');?> Wind Speed
+ <div class=actualg><?php echo date('Y');?> <?php echo $lang['Windspeed']?>
   <temp><?php echo "Max ",$weather["windymax"]." ".$weather["wind_units"]?> </temp></div>  
   <iframe  src="weather34charts/yearlywindspeedmedium.php" frameborder="0" scrolling="no" width="100%" height="210px"></iframe>
    
