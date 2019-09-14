@@ -395,10 +395,9 @@ $lang['Months']='Months';
 $lang['Month']='Month';
 $lang['Day']='Day';
 $lang['Days']='Days';
+$lang['Hours']='Hours';
+$lang['Hour']='Hour';
 $lang['Minute']='Minute';
 $lang['Minutes']='Minutes';
 $lang['Last Rainfall']='Last Rainfall';
-
-
-
 ?>
