@@ -1,11 +1,14 @@
 # This GITHUB repository is for Meteobridge-Weather34-Smart (Beta) Version *NO MYSQL KNOWLEDGE REQUIRED 
-(10th beta Version Released September 6th 2019)
+(11th beta Version Released September 14th 2019) still looking at end of year before all translations are complete
+other than that it is fully working in the english language and translations are done for main display but require more
+to be done on popup screens.
 
 *starts the process of cleaning out unwanted code and prepare for languages 
 
 *adds additional 8 modules with 7 of them based on NANOSD generated data
 
 *theme switcher simple css toggle button
+
 	
 # Contributors Live Running Demo(s)
 
