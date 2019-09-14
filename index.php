@@ -140,19 +140,15 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
   <weather34module> <!-- Weather34 Main Module 8 Optional-->
   <div class=actualt><?php echo $position12title?></div>
   <div class=weather34chartlinks>
- 	<?php if ($position12=='webcamsmall.php' ){echo '&nbsp;<a href="cam.php" data-lity><weather34homepagelinks></weather34homepagelinks> Live Webcam </a></span>';}
-if ($position12=='airqualitymodule.php') {
-    echo ' <a href="purpleair.php" data-lity><weather34homepagelinks></weather34homepagelinks> '.$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";}
-if ($position12=='airqualityluftdaten.php') {
-    echo ' <a href="luftdaten.php" data-lity><weather34homepagelinks></weather34homepagelinks>  Luftdaten '.$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";}
-if ($position12=='weather34uvsolar.php') {
-    echo ' <a href="uvalmanac.php" data-lity><weather34homepagelinks></weather34homepagelinks>  UV '.$lang['Almanac']. "</a>&nbsp;&nbsp;</span>";}
-if ($position12=='weather34uvsolar.php') {
-    echo '&nbsp;<a href="solaralmanac.php" data-lity><weather34homepagelinks></weather34homepagelinks> Solar '.$lang['Almanac']. "</a>&nbsp;&nbsp;</span>";}
-if ($position12=='solaruvwu.php') {
-    echo '<a href="uvindexwu.php" data-lity><weather34homepagelinks></weather34homepagelinks> UV Guide </a></span>';}
-if ($position12=='solaruvwu.php') {
-    echo ' &nbsp;<a href="solaralmanac.php" data-lity><weather34homepagelinks></weather34homepagelinks> Solar '.$lang['Almanac']. "</a>&nbsp;&nbsp;</span>";}
+ 	<?php 
+if ($position12=='moonphase.php') { echo'<a href="mooninfo.php" data-lity><weather34homepagelinks></weather34homepagelinks> '.$lang['Moon'].' Data</a></span>';}	
+if ($position12=='webcamsmall.php' ){echo '&nbsp;<a href="cam.php" data-lity><weather34homepagelinks></weather34homepagelinks> Live Webcam </a></span>';}
+if ($position12=='airqualitymodule.php') {echo ' <a href="purpleair.php" data-lity><weather34homepagelinks></weather34homepagelinks> '.$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";}
+if ($position12=='airqualityluftdaten.php') {echo ' <a href="luftdaten.php" data-lity><weather34homepagelinks></weather34homepagelinks>  Luftdaten '.$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";}
+if ($position12=='weather34uvsolar.php') { echo ' <a href="uvalmanac.php" data-lity><weather34homepagelinks></weather34homepagelinks>  UV '.$lang['Almanac']. "</a>&nbsp;&nbsp;</span>";}
+if ($position12=='weather34uvsolar.php') {echo '&nbsp;<a href="solaralmanac.php" data-lity><weather34homepagelinks></weather34homepagelinks> Solar '.$lang['Almanac']. "</a>&nbsp;&nbsp;</span>";}
+if ($position12=='solaruvwu.php') { echo '<a href="uvindexwu.php" data-lity><weather34homepagelinks></weather34homepagelinks> UV Guide </a></span>';}
+if ($position12=='solaruvwu.php') { echo ' &nbsp;<a href="solaralmanac.php" data-lity><weather34homepagelinks></weather34homepagelinks> Solar '.$lang['Almanac']. "</a>&nbsp;&nbsp;</span>";}
 ?>
 	</div>
  <div id=solar></div></weather34module>
@@ -160,31 +156,18 @@ if ($position12=='solaruvwu.php') {
   <weather34module>   <!-- Weather34 Main Module 9 Optional-->
   <div class=actualt><?php echo $positionlastmoduletitle?></div>
   <div class=weather34chartlinks>
- 	<?php if ($positionlastmodule=='webcamsmall.php') {
-    echo'<a href="cam.php" data-lity><weather34homepagelinks></weather34homepagelinks> Live Webcam </a></span> ';}
-
-if ($positionlastmodule=='moonphase.php') {
-    echo'<a href="mooninfo.php" data-lity><weather34homepagelinks></weather34homepagelinks> '.$lang['Moon'].' Data</a></span>';}
-if ($positionlastmodule=='airqualitymodule.php') {
-    echo ' <a href="purpleair.php" data-lity><weather34homepagelinks></weather34homepagelinks>  '.$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";}
-if ($positionlastmodule=='airqualityluftdaten.php') {
-    echo ' <a href="luftdaten.php" data-lity><weather34homepagelinks></weather34homepagelinks>  Luftdaten '.$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";}
-if ($positionlastmodule=='lightning34.php') {
-    echo ' <a href="luftdaten.php" data-lity><weather34homepagelinks></weather34homepagelinks>  Luftdaten '.$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";}
-if ($positionlastmodule=='lightning34.php') {
-    echo ' <a href="eqlist.php" data-lity><weather34homepagelinks></weather34homepagelinks>  '.$lang['Worldwideearthquakes']. "</a>&nbsp;&nbsp;</span>";}
-if ($positionlastmodule=='weather34uvsolar.php') {
-    echo ' <a href="uvindex.php" data-lity><weather34homepagelinks></weather34homepagelinks>  UV Guide  </a></span>';}
-if ($positionlastmodule=='weather34uvsolar.php') {
-    echo ' <a href="uvalmanac.php" data-lity>&nbsp;<weather34homepagelinks></weather34homepagelinks>  UV '.$lang['Almanac']. " </a>&nbsp;&nbsp;</span>";}
-if ($positionlastmodule=='weather34uvsolar.php') {
-    echo '<a href="solaralmanac.phpdata-lity><weather34homepagelinks></weather34homepagelinks>  Solar '.$lang['Almanac']. " </a>&nbsp;&nbsp;</span>";}
-if ($positionlastmodule=='solaruvwu.php') {
-    echo ' <a href="uvindexwu.php" data-lity><weather34homepagelinks></weather34homepagelinks> UV Guide </a></span>';}
-if ($positionlastmodule=='solaruvwu.php') {
-    echo ' <a href="solaralmanac.php" data-lity><weather34homepagelinks></weather34homepagelinks>  Solar '.$lang['Almanac']. "</a>&nbsp;&nbsp;</span>";}
-if ($positionlastmodule=='airqualitymodule.php') {
-    echo '<a href="eqlist.php" data-lity><weather34homepagelinks></weather34homepagelinks>  '.$lang['Worldwideearthquakes']. "</a>&nbsp;&nbsp;</span>";}?>
+ 	<?php 
+if ($positionlastmodule=='webcamsmall.php') { echo'<a href="cam.php" data-lity><weather34homepagelinks></weather34homepagelinks> Live Webcam </a></span> ';}
+if ($positionlastmodule=='moonphase.php') { echo'<a href="mooninfo.php" data-lity><weather34homepagelinks></weather34homepagelinks> '.$lang['Moon'].' Data</a></span>';}
+if ($positionlastmodule=='airqualitymodule.php') {echo ' <a href="purpleair.php" data-lity><weather34homepagelinks></weather34homepagelinks>  '.$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";}
+if ($positionlastmodule=='airqualityluftdaten.php') {echo ' <a href="luftdaten.php" data-lity><weather34homepagelinks></weather34homepagelinks>  Luftdaten '.$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";}
+if ($positionlastmodule=='lightning34.php') {echo ' <a href="luftdaten.php" data-lity><weather34homepagelinks></weather34homepagelinks>  Luftdaten '.$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";}
+if ($positionlastmodule=='lightning34.php') { echo ' <a href="eqlist.php" data-lity><weather34homepagelinks></weather34homepagelinks>  '.$lang['Worldwideearthquakes']. "</a>&nbsp;&nbsp;</span>";}	
+if ($positionlastmodule=='weather34uvsolar.php') { echo ' <a href="uvalmanac.php" data-lity><weather34homepagelinks></weather34homepagelinks>   UV '.$lang['Almanac']. '  </a></span>&nbsp;&nbsp;';}
+if ($positionlastmodule=='weather34uvsolar.php') { echo ' <a href="solaralmanac.php" data-lity><weather34homepagelinks></weather34homepagelinks>  Solar '.$lang['Almanac']. '  </a></span>';}
+if ($positionlastmodule=='solaruvwu.php') { echo ' <a href="uvindexwu.php" data-lity><weather34homepagelinks></weather34homepagelinks> UV Guide </a></span>';}
+if ($positionlastmodule=='solaruvwu.php') { echo ' <a href="solaralmanac.php" data-lity><weather34homepagelinks></weather34homepagelinks>  Solar '.$lang['Almanac']. "</a>&nbsp;&nbsp;</span>";}
+if ($positionlastmodule=='airqualitymodule.php') {echo '<a href="eqlist.php" data-lity><weather34homepagelinks></weather34homepagelinks>  '.$lang['Worldwideearthquakes']. "</a>&nbsp;&nbsp;</span>";}?>
 	</div>
  <div id=dldata></div></weather34module>
  
