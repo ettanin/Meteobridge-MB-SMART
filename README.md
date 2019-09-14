@@ -9,6 +9,8 @@ to be done on popup screens.
 
 *theme switcher simple css toggle button
 
+*adds last rainfall display minutes,hours,days ago 
+
 	
 # Contributors Live Running Demo(s)
 
