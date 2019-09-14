@@ -99,7 +99,8 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather['wind_speed_avg30']=$meteobridgeapi[158];
 	$weather['wind_speed_avgday']=$meteobridgeapi[158];
 	$weather['tempyearavg']=$meteobridgeapi[184];
-	$weather['windspeedyearavg']=$meteobridgeapi[185];		
+	$weather['windspeedyearavg']=$meteobridgeapi[185];
+	$weather['wind_direction_avgmonth']=$meteobridgeapi[191];		
 	//weather34 windrun based on daily average
 	$windrunhr=date('G');$windrunmin=(($windrunmin=date('i')/60));$windrunformula=$windrunhr=date('G')+$windrunmin;
 	$weather["windrun34"]=$weather['wind_speed_avg30']*number_format($windrunformula,1);
