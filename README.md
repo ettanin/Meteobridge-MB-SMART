@@ -3,7 +3,7 @@
 other than that it is fully working in the english language and translations are done for main display but require more
 to be done on popup screens.
 
-*adds monthly wind direction average(*Requires NANOSD Reboot)
+*adds monthly wind direction average(*Requires NANOSD Reboot as of 14th September)
 
 *adds additional 8 modules with 7 of them based on NANOSD generated data
 
