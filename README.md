@@ -1,7 +1,9 @@
 # This GITHUB repository is for Meteobridge-Weather34-Smart (Beta) Version *NO MYSQL KNOWLEDGE REQUIRED 
-(11th beta Version Released September 14th 2019) still looking at end of year before all translations are complete
-other than that it is fully working in the english language and translations are done for main display but require more
-to be done on popup screens.
+(11th beta Version Released September 14th 2019)
+
+*adds almanac,charts translations to popups (90% done thanks Graham very fast)
+
+*faster translation and metric to no metric and vice versa switching
 
 *adds monthly wind direction average(*Requires NANOSD Reboot as of 14th September not a firmware update so if you dont reboot it will always show North)
 
@@ -10,6 +12,8 @@ to be done on popup screens.
 *theme switcher simple css toggle button
 
 *adds last rainfall display minutes,hours,days ago 
+
+
 
 	
 # Contributors Live Running Demo(s)
