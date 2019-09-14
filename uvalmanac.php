@@ -1,7 +1,6 @@
 <?php 
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');
- ?>
+include('livedata.php');include('common.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,17 +90,17 @@ sup{font-size:1em}supwm2{font-size:0.7em;vertical-align:super}
 margin-top:-20px;margin-left:92px;padding-left:3px;line-height:11px;font-size:9px}
 .actualt{position:relative;left:0;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
-align-items:center;justify-content:center;margin-bottom:0px;top:-15px}
+align-items:center;justify-content:center;margin-bottom:0px;top:-15px;text-transform:capitalize}
 .actualw{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0px}
 .mbsmartlogo{position:relative;float:right;top:-18px;}
 </style>
-<div class="weather34darkbrowser" url="UV-INDEX Almanac"></div>
+<div class="weather34darkbrowser" url="<?php echo "UV ".$lang['Almanac'];?> "></div>
   
 <main class="grid">
   <article>  
-   <div class=actualt>Today </div>        
+   <div class=actualt><?php echo $lang['Today'];?> </div>        
    <div class="temperaturecontainer">
 	
              <?php
@@ -121,14 +120,14 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0px}
 
 </div>
 
-<div class="higust">Maximum Recorded<br><blue><?php echo $weather["uvdmaxtime"];?></blue></div>
+<div class="higust">Max<br><blue><?php echo $weather["uvdmaxtime"];?></blue></div>
 
 
 
 </article> 
 
  <article> 
-  <div class=actualt>Yesterday </div>        
+  <div class=actualt><?php echo $lang['Yesterday'];?> </div>        
    <div class="temperaturecontainer">
 	
             <?php
@@ -148,7 +147,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0px}
 
 </div>
 
-<div class="higust">Maximum Recorded<br><blue><?php echo $weather["uvydmaxtime"];?></blue></div>
+<div class="higust">Max<br><blue><?php echo $weather["uvydmaxtime"];?></blue></div>
 
 
 
@@ -157,7 +156,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0px}
  
   
   <article> 
-  <div class=actualt><?php echo date('M Y')?> </div>        
+  <div class=actualt><?php echo strftime('%B',time());?> </div>        
    <div class="temperaturecontainer">
 	
             <?php
@@ -177,7 +176,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0px}
 
 </div>
 
-<div class="higust">Maximum Recorded <br><blue><?php echo $weather["uvmmaxtime"];?></blue></div>
+<div class="higust">Max<br><blue><?php echo $weather["uvmmaxtime"];?></blue></div>
 
 
 
@@ -185,7 +184,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0px}
   
   
     <article> 
-  <div class=actualt><?php echo 'Current Year ', date('Y')?> </div>        
+  <div class=actualt><?php echo date('Y')?> </div>        
    <div class="temperaturecontainer">
 	
             <?php
@@ -205,7 +204,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0px}
 
 </div>
 
-<div class="higust">Maximum Recorded <br><blue><?php echo $weather["uvymaxtime"];?></blue></div>
+<div class="higust">Max<br><blue><?php echo $weather["uvymaxtime"];?></blue></div>
 
 
 </article>  
@@ -213,7 +212,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0px}
 
  <main class="grid1">
   <articlegraph> 
-  <div class=actualw>Today <span style="color:#ff9350">UV-INDEX</div>  
+  <div class=actualw><?php echo $lang['Today'];?> <span style="color:#ff9350">UV-INDEX</div>  
   <iframe  src="weather34charts/todayuvmedium.php" frameborder="0" scrolling="no"  width="100%" height="245px"></iframe>
    
   </articlegraph> 
