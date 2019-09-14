@@ -160,6 +160,12 @@ $lang['West']                   = 'West';
 $lang['WNW']                    = 'WNW';
 $lang['NW']                     = 'NW';
 $lang['NNW']                    = 'NNW';
+// extra wind direction average top module
+$lang['NEdirs']                   = 'Nord Ost';
+$lang['SEdirs']                   = 'Süd Ost';
+$lang['SWdirs']                   = 'Süd West';
+$lang['NWdirs']                   = 'Nord West';
+
 //rain
 $lang['raintoday']              = 'Regen Heute';
 $lang['Rate']                   = 'Rate';
@@ -278,7 +284,7 @@ $lang['WindGust']               = 'Windspeed | Böen';
 $lang['Hourlyforecast']         = 'Stündliche Prognose ';
 $lang['Significantearthquake']  = 'Bedeutende Erdbeben';
 $lang['Regionalearthquake']     = 'Regionale Erdbeben';
-$lang['Average']                = 'Mittlere';
+$lang['Average']                = 'Schnitt';
 $lang['Notifications']          = 'Benachrichtigungen';
 $lang['Indoor']                 = 'Innen';
 $lang['Today']                  = 'Heute';

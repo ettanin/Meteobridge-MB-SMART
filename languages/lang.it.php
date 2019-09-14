@@ -158,6 +158,11 @@ $lang['West']                   = 'Ovest';
 $lang['WNW']                    = 'ONO';
 $lang['NW']                     = 'NO';
 $lang['NNW']                    = 'NNO';
+// extra wind direction average top module
+$lang['NEdirs']                   = 'Nord Est';
+$lang['SEdirs']                   = 'Sud Est';
+$lang['SWdirs']                   = 'Sud Ovest';
+$lang['NWdirs']                   = 'Nord Ovest';
 //rain
 $lang['raintoday']              = 'Precipitazioni Oggi';
 $lang['Rate']                   = 'Tasso';

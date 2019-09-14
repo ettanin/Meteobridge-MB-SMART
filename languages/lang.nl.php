@@ -157,6 +157,11 @@ $lang['West']                   = 'West';
 $lang['WNW']                    = 'WNW';
 $lang['NW']                     = 'NW';
 $lang['NNW']                    = 'NNW';
+// extra wind direction average top module
+$lang['NEdirs']                   = 'Noord Oost';
+$lang['SEdirs']                   = 'Zuid Oost';
+$lang['SWdirs']                   = 'Zuid West';
+$lang['NWdirs']                   = 'Noord West';
 //rain
 $lang['raintoday']              = 'Regen vandaag';
 $lang['Rate']                   = 'Intensiteit';

@@ -32,44 +32,44 @@ if ($weather["wind_units"]=='km/h' && $weather["windmmax"]>60){echo "<maxtempred
 <wind-dir-avgmonth>
 <?php //month direction average
 if ($weather['wind_direction_avgmonth']<=11.25) {
-    echo $lang['North'];
+    echo "&nbsp;&nbsp;&nbsp;".$lang['North'];
 } elseif ($weather['wind_direction_avgmonth']<=33.75) {
     echo $lang['NNE'];
 } elseif ($weather['wind_direction_avgmonth']<=56.25) {
-    echo "&nbsp;&nbsp;".$lang['NE'];
+    echo $lang['NEdirs'];
 } elseif ($weather['wind_direction_avgmonth']<=78.75) {
-    echo "&nbsp;".$lang['ENE'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['ENE'];
 } elseif ($weather['wind_direction_avgmonth']<=101.25) {
-    echo $lang['East'];
+    echo "&nbsp;&nbsp;&nbsp;".$lang['East'];
 } elseif ($weather['wind_direction_avgmonth']<=123.75) {
-    echo "&nbsp;".$lang['ESE'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['ESE'];
 } elseif ($weather['wind_direction_avgmonth']<=146.25) {
-    echo "&nbsp;&nbsp;".$lang['SE'];
+    echo $lang['SEdirs'];
 } elseif ($weather['wind_direction_avgmonth']<=168.75) {
-    echo "&nbsp;".$lang['SSE'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['SSE'];
 } elseif ($weather['wind_direction_avgmonth']<=191.25) {
-    echo $lang['South'];
+    echo "&nbsp;&nbsp;&nbsp;".$lang['South'];
 } elseif ($weather['wind_direction_avgmonth']<=213.75) {
-    echo "&nbsp;".$lang['SSW'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['SSW'];
 } elseif ($weather['wind_direction_avgmonth']<=236.25) {
-    echo "&nbsp;&nbsp;".$lang['SW'];
+    echo $lang['SWdirs'];
 } elseif ($weather['wind_direction_avgmonth']<=258.75) {
-    echo "&nbsp;".$lang['WSW'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['WSW'];
 } elseif ($weather['wind_direction_avgmonth']<=281.25) {
-    echo $lang['West'];
+    echo "&nbsp;&nbsp;&nbsp;".$lang['West'];
 } elseif ($weather['wind_direction_avgmonth']<=303.75) {
-    echo "&nbsp;".$lang['WNW'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['WNW'];
 } elseif ($weather['wind_direction_avgmonth']<=326.25) {
-    echo "&nbsp;&nbsp;".$lang['NW'];
+    echo $lang['NWdirs'];
 } elseif ($weather['wind_direction_avgmonth']<=348.75) {
-    echo "&nbsp;".$lang['NNW'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['NNW'];
 } elseif ($weather['wind_direction_avgmonth']<=360) {
     echo $lang['North'];
 }"&deg;"?></wind-dir-avgmonth></div>
 <div class="tyearavg" style="margin-left:5px;">&nbsp;<?php echo strftime('%B',time());?></div>
-<div class="tavgconv" style="margin-left:0px;"><?php echo $lang['Average']?></div>
+<div class="tavgconv" style="margin-left:-10px;"><?php echo $lang['Avg-Dir']." " .$lang['Direction']?></div>
 
-<div class="yearwordwindbig">Wind Speed</div>
+<div class="yearwordwindbig">Wind Data</div>
 <div class="windmaxthisyear">
 <?php //wind max year
 if ($weather["wind_units"]=='km/h' && $weather["windymax"]>60){echo "<maxtempred>",$weather["windymax"]."</maxtempred><wunit>".$weather["wind_units"] ; }
