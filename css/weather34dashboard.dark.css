@@ -11,8 +11,7 @@ img {
 }
 @font-face {
   font-family: clock;
-  src: url(fonts/clock3-webfont.woff) format("woff"),
-    url(fonts/clock3.ttf) format("truetype");
+  src: url(fonts/clock3-webfont.woff) format("woff")   
 }
 @font-face {
   font-family: weathertext2;
@@ -8604,3 +8603,5 @@ lastrain{color: #aeb6bf;font-size:.75em}
 weather34homepagetop{
   margin-top:3px
   }
+wind-dir-avgmonth{margin-left:2px;font-size:.65rem;margin-top:2px;color:#44a6b5;}
+
