@@ -3,7 +3,7 @@
 
 *adds almanac,charts translations to popups (90% done thanks Graham very fast)
 
-*faster translation and metric to no metric and vice versa switching
+*faster translation and metric to non metric and vice versa switching
 
 *adds monthly wind direction average(*Requires NANOSD Reboot as of 14th September not a firmware update so if you dont reboot it will always show North)
 
