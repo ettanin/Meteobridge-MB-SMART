@@ -26,20 +26,13 @@ img {
   content: "";
 }
 @font-face {
-  font-family: system;
-  font-style: normal;
-  src: local("Arial");
+  font-family: system;font-style: normal;src: local("Arial");
 }
 @font-face {
-  font-family: clock;
-  src: url(fonts/clock3-webfont.woff) format("woff"),
-    url(fonts/clock3.ttf) format("truetype");
+  font-family: clock; src: url(fonts/clock3-webfont.woff) format("woff");    
 }
 @font-face {
-  font-family: weathertext2;
-  src: url(fonts/verbatim-regular.woff) format("woff"),
-    url(fonts/verbatim-regular.woff2) format("woff2"),
-    url(fonts/verbatim-regular.ttf) format("truetype");
+  font-family: weathertext2;src: url(fonts/verbatim-regular.woff) format("woff");    
 }
 #day span,
 #dayaftertomo span,
@@ -5845,6 +5838,8 @@ alertadvisory {
   .nanoimg{position:absolute;float:right;margin-left:230px;}
   .davisimg{position:absolute;float:right;margin-left:200px;margin-top:-10px}
   .nanoinfo{margin-top:20px;}
+  .nanoimg1{position:absolute;float:right;margin-left:220px;margin-top:5px;}
+  .davisimg1{position:absolute;float:right;margin-left:190px;margin-top:-2px;}
 
 .footercontainer {
   margin: 0 auto;
@@ -6114,7 +6109,7 @@ hardwarelogo3 {
 .eqtoday9-10 {
   font-family: weathertext2, Helvetica, system;
   display: flex;
-  font-size: 1rem;
+  font-size: .9rem;
   justify-content:left;
   padding-top: 10px;
 
@@ -6125,25 +6120,25 @@ hardwarelogo3 {
 .eqtoday4-5 {
   color: #e6a141;
 }
-.eqtoday6-8 {
+.eqtoday6-8{
   color: #d05f2d;
 }
-.eqtoday11 {
-  color: rgba(204, 135, 248,1);
+.eqtoday9-10 {
+  color: #d35d4e;
 }
 .eqcaution {
   position: absolute;
-  margin-left: -5px;
+  margin-left: -10px;
   margin-top: 0px;
   color: #555;
   font-size: 0.55rem;
 }
 .eqt {
   position: absolute;
-  margin-left: -17px;
+  margin-left: -20px;
   margin-top: -3px;
   color: #555;
-  font-size: 0.6rem;
+  font-size: 0.55rem;
 }
 .eqtext {
   float: left;
@@ -6894,7 +6889,7 @@ weather34thetime {
   display:flex;
   right: 100px;
   top: 10px;
-  color: #fff;
+  color:#ecedf3;
   font-size: 12px;
   font-family: clock;
   background:rgba(120, 138, 146, .2);
@@ -8728,3 +8723,17 @@ purpleluft {
   border-radius: 50%;
 }
 lastrain{color: #555;font-size:.75em}
+weather34homepagelinks,weather34homepagetop{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background:#565f67;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin-top:0;
+  opacity:.7;
+
+  }
+weather34homepagetop{
+  margin-top:3px;  
+  }

@@ -47,7 +47,7 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
   -webkit-border-radius:4px;
   border-radius:4px;
   background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
-  height:150px  
+  height:160px  
 }
 
 a{color:#aaa;text-decoration:none} 
@@ -80,7 +80,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actualg feel{background:rgba(211, 93, 78, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
 .actualg dewpoint{background:rgba(6, 162, 177, 1.000);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff}
 .actualg wetbulb{background:rgba(241, 107, 79, .8);padding:2px;webkit-border-radius:3px;border-radius:3px;color:#fff;margin-left:5px}
-.mbsmartlogo{position:relative;float:right;top:-20px;}
+.mbsmartlogo{position:relative;float:right;top:-15px;}
 </style>
 <div class="weather34darkbrowser" url="Dewpoint Charts <?php echo "&deg;",$weather["temp_units"]?>"></div>
   <main class="grid1">
@@ -99,14 +99,12 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   
   
   
-   <articlegraph style="height:30px">  
+   <articlegraph style="height:20px">  
   <div class="lotemp">
   <?php echo $info?> 
-<a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank" style="font-size:8px;"> Charts rendered and compiled using <?php echo $creditschart ;?> </a></span>
-  </div>
-  
-  <div class="lotemp">
-  <?php echo $info?> <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">CSS/SVG/PHP scripts were developed by weather34.com  for use in the weather34 template &copy; 2015-<?php echo date('Y');?>
+<a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank" style="font-size:8px;"> Charts <?php echo $creditschart ;?> </a></span>
+ 
+  <?php echo $info?> <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">CSS/SVG/PHP scripts were developed by weather34.com &copy; 2015-<?php echo date('Y');?>
   </a></div>
     <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="30px"></div>
   </articlegraph> 

@@ -236,13 +236,12 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
    
   </articlegraph> 
   
-  <articlegraph style="height:30px">  
+  <articlegraph style="height:20px">  
   <div class="lotemp">
   <?php echo $info?> 
-<a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank" style="font-size:8px;"> Charts rendered and compiled using <?php echo $creditschart ;?> </a></span>
-  </div>
-  <div class="lotemp">
-  <?php echo $info?> <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">CSS/SVG/PHP scripts were developed by weather34.com  for use in the weather34 template &copy; 2015-<?php echo date('Y');?>
+<a href="https://canvasjs.com" title="https://canvasjs.com" target="_blank" style="font-size:8px;"> Charts <?php echo $creditschart ;?> </a></span>&nbsp;
+  
+  <?php echo $info?> <a href="https://weather34.com" title="weather34.com" target="_blank" style="font-size:8px;">CSS/SVG/PHP scripts were developed by weather34.com  2015-<?php echo date('Y');?>
   </a></div>
    <div class="mbsmartlogo"><img src="img/weather34-mbsmart-logo.svg" alt="weather34 mb-smart" title="weather34 mb-smart" width="30px"></div>
   </articlegraph> 

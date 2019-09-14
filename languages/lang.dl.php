@@ -221,10 +221,10 @@ $lang['Rise']        		    = 'Steigen';
 $lang['Daylight Left'] 			= 'Tageslicht übrig';
 $lang['Darkness Left'] 			= 'Dunkelheit übrig';
 //trends
-$lang['Falling']                = 'fallend';
-$lang['Rising']                 = 'steigend';
-$lang['Steady']                 = '0';
-$lang['Rapidly']                = 'schnell';
+$lang['Falling']                = 'Fallend';
+$lang['Rising']                 = 'Steigend';
+$lang['Steady']                 = 'Stetig';
+$lang['Rapidly']                = 'Schnell';
 $lang['Temp']                   = 'Temp';
 //Solar-UV
 //uv
@@ -397,6 +397,8 @@ $lang['Months']='Monate';
 $lang['Month']='Monat';
 $lang['Day']='Tag';
 $lang['Days']='Tage';
+$lang['Hours']='Std';
+$lang['Hour']='Std';
 $lang['Minute']='Minute';
 $lang['Minutes']='Minute';
 $lang['Last Rainfall']='Letzte Regen';

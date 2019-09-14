@@ -8,7 +8,7 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 
-include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
+include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);$raintimeago=$originalDate124;$seconds_ago = (time() - strtotime($raintimeago));?>
 <div class="topframe">
 <div class="rainmaxthismonth">
 <?php //rain month 
@@ -22,16 +22,23 @@ else  echo "<maxtempblue>".$weather["rainmmax"]  ;echo "</maxtempblue><wunit>".$
 
 
 <div class="rainavgthisyear">
-<?php //rain last month
-if($weather["rainlastmonth"]>=1000){ echo "<maxtempblue>".round($weather["rainlastmonth"],0)  ;}
-else  echo "<maxtempblue>".$weather["rainlastmonth"]  ;echo "</maxtempblue><wunit>".$weather["rain_units"];
-?>
-</div></wunit>
-
-<div class="ryearavg">&nbsp;<?php $lastMonth = strftime('%B',time()- 31*3600*24);echo $lastMonth; ?></div>
-<div class="tavgconv" style="margin-left:-10px;"><?php echo $lang['Accumulation']?></div>
-
-
+<maxtempblue style="font-size:.9em">
+<?php 
+//weather34 last month
+if($meteobridgeapi[124]=='--'){	
+echo "<maxtempblue>".$weather["rainlastmonth"]."</maxtempblue><wunit style='top:0'>".$weather["rain_units"].'</div></wunit>';
+echo ' <div class="ryearavg">&nbsp;'.$lastMonth = strftime('%B',time()- 31*3600*24) .$lastMonth; 
+echo '</div><div class="tavgconv" style="margin-left:-12px;">'.$lang['Accumulation'].'</div>';}
+//weather34 last rainfall simple standard php method
+else if ($seconds_ago >= 31536000) { echo '&nbsp;'.intval($seconds_ago / 31536000) . ' <lastrain>'.$lang['Year'].'</lastrain></maxtempblue></div></wunit><div class="ryearavg">'.$lang['Last Rainfall'].'</div><div class="tavgconv">&nbsp;&nbsp;&nbsp;Ago</div>';}
+else if ($seconds_ago >= 4838400) {echo '&nbsp;'.intval($seconds_ago / 2419200) . ' <lastrain>'.$lang['Months'].'</lastrain></maxtempblue></div></wunit><div class="ryearavg">'.$lang['Last Rainfall'].'</div><div class="tavgconv">&nbsp;&nbsp;&nbsp;Ago</div>';}
+else if ($seconds_ago >= 2419200) {echo '&nbsp;'.intval($seconds_ago / 2419200) . ' <lastrain>'.$lang['Month'].'</lastrain></maxtempblue></div></wunit><div class="ryearavg">'.$lang['Last Rainfall'].'</div><div class="tavgconv">&nbsp;&nbsp;&nbsp;Ago</div>';}
+else if ($seconds_ago >= 172800) {echo '&nbsp;'.intval($seconds_ago / 86400) . '<lastrain>&nbsp;&nbsp;&nbsp;'.$lang['Days'].'</lastrain></maxtempblue></div></wunit><div class="ryearavg">'.$lang['Last Rainfall'].'</div><div class="tavgconv">&nbsp;&nbsp;&nbsp;Ago</div>';}
+else if ($seconds_ago >= 86400) {echo '&nbsp;'.intval($seconds_ago / 86400) . ' <lastrain>&nbsp;&nbsp;&nbsp;'.$lang['Day'].'</lastrain></maxtempblue></div></wunit><div class="ryearavg">'.$lang['Last Rainfall'].'</div><div class="tavgconv">&nbsp;&nbsp;&nbsp;Ago</div>';}
+else if ($seconds_ago >= 7200) {echo '&nbsp;'.intval($seconds_ago / 3600) . ' <lastrain>&nbsp;'.$lang['Hourss'].'</lastrain></maxtempblue></div></wunit><div class="ryearavg">'.$lang['Last Rainfall'].'</div><div class="tavgconv">&nbsp;&nbsp;&nbsp;Ago</div>';}
+else if ($seconds_ago >= 3600) {echo '&nbsp;'.intval($seconds_ago / 3600) . ' <lastrain>&nbsp;&nbsp;'.$lang['Hour'].'</lastrain></maxtempblue></div></wunit><div class="ryearavg">'.$lang['Last Rainfall'].'</div><div class="tavgconv">&nbsp;&nbsp;&nbsp;Ago</div>';}
+else if ($seconds_ago >= 60) {echo '&nbsp;'.intval($seconds_ago / 60) . ' <lastrain>'.$lang['Minutes'].'</lastrain></maxtempblue></div></wunit><div class="ryearavg">Last Rainfall</div><div class="tavgconv">&nbsp;&nbsp;&nbsp;Ago</div>';
+} ?>
 
 
 <div class="yearwordwindbig">Rainfall</div>
