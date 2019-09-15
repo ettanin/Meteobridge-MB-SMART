@@ -17,17 +17,20 @@
 	$weatherfile = date('F');
 	$conv = 1;
 	if ($pressureunit == 'inHg') {$conv= '0.02953';}	
-	else if ($pressureunit == 'hPa'){$conv= '1';}	
+	else if ($pressureunit == 'hPa'){$conv= '1';}
+	else if ($pressureunit == 'mb'){$conv= '1';}	
 	$int = 1;
 	if ($pressureunit == 'hPa') {$int= '5';}
 	else if ($pressureunit == 'inHg') {$int= '0.25';}	
+	else if ($pressureunit == 'mb') {$int= '5';}
 	$ymax = 1;
 	if ($pressureunit == 'hPa') {$ymax= '1045';}
-	else if ($pressureunit == 'inHg') {$ymax= '31.6';}		
+	else if ($pressureunit == 'inHg') {$ymax= '31.6';}	
+	else if ($pressureunit == 'mb') {$ymax= '1045';}	
 	$limit = '0';
 	if ($pressureunit == 'inHg') {$limit= '20';}
 	else if ($pressureunit == 'hPa') {$limit= '930';}
-	
+	else if ($pressureunit == 'mb') {$limit= '930';}	
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -135,8 +138,7 @@
 		margin: 5,
 		lineThickness: 1,		
 		gridThickness: 1,
-		gridDashType: "dot",
-		
+		gridDashType: "dot",		
 		interval:<?php echo $int;?>,	
         includeZero: false,
 		gridColor: "#333",	
@@ -145,7 +147,7 @@
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",		
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(<?php if ($pressureunit == 'hPa'){echo '0';} else echo '1';?>) ;
+        return e.value .toFixed(<?php if ($pressureunit == 'hPa' || $pressureunit == 'mb' ){echo '0';} else echo '1';?>) ;
          },		
 		crosshair: {
 			enabled: true,

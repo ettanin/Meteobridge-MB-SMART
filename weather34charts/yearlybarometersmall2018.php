@@ -16,18 +16,22 @@
 	
 	include('preload.php');
 	$weatherfile = 2018;
-	$conv = 1;
+	$conv = 1;	
 	if ($pressureunit == 'inHg') {$conv= '0.02953';}	
-	else if ($pressureunit == 'hPa'){$conv= '1';}	
+	else if ($pressureunit == 'hPa'){$conv= '1';}
+	else if ($pressureunit == 'mb'){$conv= '1';}	
 	$int = 1;
 	if ($pressureunit == 'hPa') {$int= '5';}
-	else if ($pressureunit == 'inHg') {$int= '0.25';}	
+	else if ($pressureunit == 'inHg') {$int= '1.5';}	
+	else if ($pressureunit == 'mb') {$int= '5';}
 	$ymax = 1;
 	if ($pressureunit == 'hPa') {$ymax= '1045';}
-	else if ($pressureunit == 'inHg') {$ymax= '31.6';}		
+	else if ($pressureunit == 'inHg') {$ymax= '31.6';}	
+	else if ($pressureunit == 'mb') {$ymax= '1045';}	
 	$limit = '0';
 	if ($pressureunit == 'inHg') {$limit= '20';}
 	else if ($pressureunit == 'hPa') {$limit= '930';}
+	else if ($pressureunit == 'mb') {$limit= '930';}	
 	
 	
 	
