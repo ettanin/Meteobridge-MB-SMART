@@ -1,5 +1,5 @@
 <?php include_once('livedata.php');include_once('common.php');
- 
+ date_default_timezone_set($TZ);
 
 	####################################################################################################
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
