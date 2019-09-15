@@ -1,6 +1,6 @@
 <body>
 <?php  include('shared.php');include('common.php');
-
+date_default_timezone_set($TZ);
 	####################################################################################################
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
