@@ -27,7 +27,7 @@ $nextset = $result['sunset']; if ($now > $nextset) {
 $nextset = $result['sunset']; if ($now > $nextset) {
     $nextset = date('H:i', $result2['sunset']);
 }?>
-<div class="updatedtime"><span><?php if (file_exists($livedata2)&&time()- filemtime($livedata2)>300) {
+<div class="moduleupdatetime"><span><?php if (file_exists($livedata2)&&time()- filemtime($livedata2)>300) {
     echo $offline. '<offline> Offline </offline>';
 } else {
     echo $online." ".$weather["time"];
