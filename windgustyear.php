@@ -64,7 +64,7 @@ if ($weather['wind_direction_avgmonth']<=11.25) {
 } elseif ($weather['wind_direction_avgmonth']<=348.75) {
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['NNW'];
 } elseif ($weather['wind_direction_avgmonth']<=360) {
-    echo $lang['North'];
+    echo "&nbsp;&nbsp;&nbsp;".$lang['North'];
 }"&deg;"?></wind-dir-avgmonth></div>
 <div class="tyearavg" style="margin-left:5px;">&nbsp;<?php echo strftime('%B',time());?></div>
 <div class="tavgconv" style="margin-left:-10px;"><?php echo $lang['Avg-Dir']." " .$lang['Direction']?></div>
