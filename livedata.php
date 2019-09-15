@@ -10,7 +10,7 @@
 	####################################################################################################
  //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
  include('settings.php');include('shared.php');error_reporting(0); 
- 	
+ 	date_default_timezone_set($TZ);
 	
 //meteobridge - api October 1st 2017
 
