@@ -1,4 +1,4 @@
-<?php include('settings1.php');error_reporting(0); 
+<?php include('settings.php');error_reporting(0); 
 
 //translations for HOMEWEATHERSTATION TEMPLATE UPDATED 2nd November added set locale
 mb_internal_encoding('UTF-8');
