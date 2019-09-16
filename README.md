@@ -1,7 +1,7 @@
-# This GITHUB repository is for Meteobridge-Weather34-Smart (Beta) Version *NO MYSQL KNOWLEDGE REQUIRED 
-(11th beta Version Released September 14th 2019)
+# This GITHUB repository is for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
+(Public Version Released September 14th 2019)
 
-*adds almanac,charts translations to popups (90% done thanks Graham very fast)
+*adds almanac,charts translations to popups (95% done thanks Graham very fast)
 
 *faster translation and metric to non metric and vice versa switching
 
@@ -13,26 +13,23 @@
 
 *adds last rainfall display minutes,hours,days ago 
 
-
-
 	
 # Contributors Live Running Demo(s)
 
-https://singaporeweather.info (Singapore)
+https://singaporeweather.info (Singapore - NANOSD)
 
-https://www.paulwilman.com/pw4/ (England)
+https://www.paulwilman.com/pw4/ (England -  NANOSD)
 
-https://www.weerstation-sauwerd.nl/pwsmbms/ (Holland)
+https://www.weerstation-sauwerd.nl/pwsmbms/ (Holland - NANOSD)
 
-https://beaumaris-weather.com/pwsMB/ (Tasmania)
+https://weather.k1ttc.com (USA - NANOSD)
 
-https://weather.k1ttc.com (USA)
+https://beaumaris-weather.com/pwsMB/ (Tasmania - Meteobridge Pro)
 
 
+# To be done non critical 
 
-# IMPORTANT THIS TEMPLATE IS NOT EXPECTED TO BE COMPLETE UNTIL LATE NOVEMBER early DECEMBER 2019
-
- NEXT PHASE FOR SEPTEMBER THIS WILL BE LANGUAGES AND ONLY 6 LANGUAGES this is now 80% done
+ NEXT PHASE THIS WILL BE LANGUAGES AND ONLY 6 LANGUAGES this is now 95% done
  
  NEXT PHASE FOR OCTOBER THIS WILL BE CSS REMOVAL OF UNUSED and REDUCE CSS to a target size of 100K
 
@@ -45,6 +42,18 @@ https://weather.k1ttc.com (USA)
 # More info
 
 https://weather34.com/homeweatherstation/meteobridge-mb-smart.html
+
+# New basic setup Install template ..
+Step guide to install template 
+
+https://weather34.com/homeweatherstation/setupguidemb.html
+
+
+# New setup how to use NANOSD meteobridge data ..
+Uploading NANOSD data to the template 
+
+https://weather34.com/homeweatherstation/setupguidembsmart-nanosd.html
+
 
 # New No mysql setup use meteobridge data instead..
 How to use this non mysql database version with ease.
@@ -181,23 +190,11 @@ to create a working enviroment to exchange ideas without creating unwanted noise
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1563168802/mbsmart_khhdjg.png" width="550" title="weather34 meteobridge beta template "> 
 </p>
 
-
-# Basic Setup guide 
-https://weather34.com/homeweatherstation/setupguidemb.html
-
-# Chart Non Mysql setup 
-https://weather34.com/homeweatherstation/meteobridge-mb-smart-chartsetup.html
-
-
-# Weather34 Historic Timeline of design 2014-2019 
-https://weather34.com/homeweatherstation/weather34timeline/weather34timeline.html
-
-
-</p>
-
 # Thanks to Lars 
 Lars at  https://singaporeweather.info for access to test ideas realtime in a different climate.
 
+# Thanks to Graham Hughes (translations)
+Graham Hughes contribution to the tedious task of getting translations into place.
 
 # This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. http://creativecommons.org/licenses/by-nc-nd/4.0/
 *This work means CSS/SVG/PHP .
