@@ -187,7 +187,7 @@ to create a working enviroment to exchange ideas without creating unwanted noise
 *This work means CSS/SVG/PHP .
 
 <p align="center">
-  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1563168802/mbsmart_khhdjg.png" width="550" title="weather34 meteobridge beta template "> 
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1568620387/MBSMART_tdyrqc.png" width="550" title="weather34 Meteobridge MB-SMART template "> 
 </p>
 
 # Thanks to Lars 
