@@ -388,7 +388,7 @@ METEOBRIDGE Software Path to Data file</div><p>
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> getting the path correct is essential for live realtime data display (mbridge/MBrealtimeupload.txt)</strong></span>
 <p>
 
-
+<div class="seperator"></div>     
 
 <div class= "weathersectiontitle">
 <svg id="i-code" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -409,10 +409,10 @@ Meteobridge Chart Data (Now uses direct data from meteobridge)</div><p>
            
         </select>
            
+        <p>
+      <div class="seperator"></div>     
         
-        </p>
         
-         <p>
          
          
          <div class= "weathersectiontitle">
@@ -436,13 +436,7 @@ Davis Hardware</div><p>
           
           </select>
         <br><br>
-    
-
-<br>
-         
-         
-         
-         
+   <div class="seperator"></div>          
          
   <div class= "weathersectiontitle">
 <svg id="i-code" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -469,7 +463,7 @@ Your Weather Station Hardware</div><p>
         <br><br>
     
 
-<br>
+<div class="seperator"></div>     
   
   
   <div class= "weathersectiontitle">
@@ -494,10 +488,7 @@ Which Meteobridge Platform</div><p>
            <option>Meteobridge Pro</option>             
         </select>
         <br><br>
-    
-
-<br> 
-
+    <div class="seperator"></div>     
  <div class= "weathersectiontitle">
 <svg id="i-code" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
@@ -518,54 +509,29 @@ When Did You Install Your Hardware Currently in Use </div><p>
            
         </select>
         <br><br>
-    
-
-<br> 
-        
-        
-
   </div>
   
   
   
   <div class="weatheroptions">
-  
- <br><br>
+
   <div class= "weathersectiontitle">
 <svg id="i-code" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
 </svg>
-*New Davis Forecast Console text English Only,Metar option for current ICON weather conditions, or use Darksky Option</strong><br>
-</div><p>
-    
-       <div class= "stationvalue"><strong>Options</strong></div> 
+*Fixed Current Conditions</strong><br>
+</div><p>    
+       <div class= "stationvalue"><strong>Fixed</strong></div> 
     <svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M30 12 L16 24 2 12" /></svg>
       
       <label name="currentconditions"></label>
         <select id="currentconditions" name="currentconditions" class="chooseapi">
-           <option ><?php echo $currentconditions ;?></option>  
-                   
-                     <option>currentconditionsmetar34davis.php</option>  
-                     <option>currentconditionsmetar34.php</option>   
-                    
-             
+           <option ><?php echo $currentconditions ;?></option>                    
+           <option>currentconditionsmetar34davis.php</option> 
         </select>
-      <br>          
-      <br>     
+          </span></span>
     
-     <span style="color:#777">
-     
-     <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#01a4b4" stroke="#01a4b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> *New for Davis owners English Only <span style="color:rgba(86, 95, 103, 1.000);">currentconditionsmetar34davis.php</span> Outputs Davis forecast console text also  uses Nearby Metar Aviation Weather Options must get API key and insert into option near bottom of this setup screen.*requires meteobridge reboot <BR>
-     <br>
-    
-     <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#01a4b4" stroke="#01a4b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> <span style="color:rgba(86, 95, 103, 1.000);">currentconditionsmetar34.php</span> uses Nearby Metar Aviation Weather Options must get API key and insert into option near bottom of this setup screen<BR>
-     </span></span>
-     
-<p>
-  
 <p>
   </div>
   <div class="weatheroptionssidebar"> try and keep these short dont include full country try a short code
@@ -628,7 +594,7 @@ Location Details and Station Name</div><p>
    
    
    </div>
-   <p>  
+  
    
 <div class="weatheroptions">
 <div class= "stationvalue">TIMEZONE</div>
@@ -646,10 +612,6 @@ Location Details and Station Name</div><p>
 </svg>
 
 <input name="UTC" type="text" id="UTC" value="<?php echo $UTC ;?>" class="choose">
-    
- 
- 
-    
 <p>
 	<div class= "stationvalue">Latitude</div>
     <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -671,12 +633,9 @@ Location Details and Station Name</div><p>
 </svg>
     <input name="elevation" type="text" id="elevation" value="<?php echo $elevation ;?>" class="choose"> 
     
-   
-    
-    
 </div>
 
-  <p>
+
   
    <p><br>
    <div class="weatheroptionssidebar"><svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -691,10 +650,8 @@ Location Details and Station Name</div><p>
 
 check unit(s)
 </div>
-   
    </div>
-   <p>       
- 
+  
 <div class="weatheroptions">
   
   <div class= "weathersectiontitle">
@@ -766,8 +723,7 @@ check unit(s)
         <span style="color:rgba(86, 95, 103, 1.000);">
         <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(102, 188, 199, 1.000)" stroke="rgba(102, 188, 199, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%"><path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> <strong> yes to show notifications 
 	 <svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#FF793A" stroke="#FF793A" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%"><path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> no to disable</strong><br>
-<br><br> 
-     
+<br>  
   
      </div>
     
@@ -808,8 +764,8 @@ double check again
     <path d="M30 12 L16 24 2 12" />
 </svg>
         <select id="windunit" name="windunit" class="choose1">
-       <option><?php echo $windunit ;?></option>
-           <option>km/h</option>
+       		<option><?php echo $windunit ;?></option>
+            <option>km/h</option>
             <option>mph</option>            
             <option>m/s</option>
             <option>kts</option>
@@ -823,7 +779,7 @@ double check again
     <path d="M30 12 L16 24 2 12" />
 </svg>
         <select id="tempunit" name="tempunit" class="choose1">
-        <option><?php echo $tempunit ;?></option>
+            <option><?php echo $tempunit ;?></option>
             <option>C</option>
             <option>F</option>
             
@@ -836,7 +792,7 @@ double check again
     <path d="M30 12 L16 24 2 12" />
 </svg>
         <select id="rainunit" name="rainunit" class="choose1">
-         <option><?php echo $rainunit ;?></option>
+            <option><?php echo $rainunit ;?></option>
             <option>mm</option>
             <option>in</option>
             
@@ -851,7 +807,7 @@ double check again
     <path d="M30 12 L16 24 2 12" />
 </svg>
         <select id="rainrate" name="rainrate" class="choose1">
-        <option><?php echo $rainrate ;?></option>
+            <option><?php echo $rainrate ;?></option>
             <option>/h</option>
             <option>/m</option>
             
@@ -864,7 +820,7 @@ double check again
     <path d="M30 12 L16 24 2 12" />
 </svg>
         <select id="pressureunit" name="pressureunit" class="choose1">
-         <option><?php echo $pressureunit ;?></option>
+            <option><?php echo $pressureunit ;?></option>
             <option>mb</option>
             <option>hPa</option>
             <option>inHg</option>
@@ -1090,10 +1046,7 @@ your nearly there :-) keep going
 <input name="moonadj" type="text" id="moonadj" value="<?php echo $moonadj ;?>" class="choose"> 
 <br>
         <strong> <span style="color:rgba(86, 95, 103, 1.000);">adjust the moonrise/set to your location in hours </span></strong><br><br>
-        
-   
-     
-    
+
 <p>
       
            
@@ -1116,9 +1069,9 @@ your nearly there :-) keep going
          <option><?php echo $minmag ;?></option>
             <option>3</option>
             <option>4</option>
-             <option>5</option>
-              <option>6</option>
-               <option>7</option>            
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>            
             
         </select>
      <br><br>
@@ -1200,17 +1153,14 @@ your nearly there :-) keep going
         
          &nbsp;<br><br>
         
-        
-        
         <span style="color:#777;font-weight:600;">Date format<br></span>
         <span style="color:rgba(86, 95, 103, 1.000);font-weight:normal;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> d-m-Y <span style="color:#777;">for DAY MONTH YEAR format (12-03-2017)</span></span><br> 
         <span style="color:rgba(86, 95, 103, 1.000);"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#FF793A" stroke="#FF793A" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> m-d-Y <span style="color:#777;">for MONTH DAY YEAR format (03-12-2017)</span></span><br> 
      <span style="color:rgba(86, 95, 103, 1.000);"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="#FF793A" stroke="#FF793A" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> m-d-Y <span style="color:#777;">for YEAR MONTH DAY format (2017-12-03)</span></span><br> 
-     <br>
-         
+      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg> Y-m-d <span style="color:#777;">for YEAR MONTH DAY format (2017-12-03)</span></span><br> 
+     <br>        
      
      <span style="color:#777;font-weight:600;">Main Clock format<br></span>
         <span style="color:rgba(86, 95, 103, 1.000);font-weight:normal;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
@@ -1638,6 +1588,12 @@ Check<b>WX</b> Metar API KEY you need to sign up here for free API key <a href="
                  
             
         </select>
+        <br><span style="color:#777;">
+	<svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg> 0 for northern hemisphere <br>
+    <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg> 180 for southern hemisphere   </span>
+        
 <br><br>
          
          
