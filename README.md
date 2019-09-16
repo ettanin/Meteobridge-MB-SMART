@@ -1,18 +1,9 @@
 # This GITHUB repository is for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
 (Public Version Released September 14th 2019)
 
-*adds almanac,charts translations to popups (95% done thanks Graham very fast)
-
-*faster translation and metric to non metric and vice versa switching
-
-*adds monthly wind direction average(*Requires NANOSD Reboot as of 14th September not a firmware update so if you dont reboot it will always show North)
-
-*adds additional 8 modules with 7 of them based on NANOSD generated data
-
-*theme switcher simple css toggle button
-
-*adds last rainfall display minutes,hours,days ago 
-
+<p align="center">
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1568620387/MBSMART_tdyrqc.png" width="550" title="weather34 Meteobridge MB-SMART template "> 
+</p>
 	
 # Contributors Live Running Demo(s)
 
@@ -185,10 +176,6 @@ to create a working enviroment to exchange ideas without creating unwanted noise
 *THIS VERSION HAS NO MYSQL DEPENDANCY 
 
 *This work means CSS/SVG/PHP .
-
-<p align="center">
-  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1568620387/MBSMART_tdyrqc.png" width="550" title="weather34 Meteobridge MB-SMART template "> 
-</p>
 
 # Thanks to Lars 
 Lars at  https://singaporeweather.info for access to test ideas realtime in a different climate.
