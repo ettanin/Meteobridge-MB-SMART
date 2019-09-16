@@ -891,7 +891,7 @@ your nearly there :-) keep going
 <input name="since" type="text" id="since" value="<?php echo $since ;?>" class="choose">
    
     
-        <br>
+        <br><br>
     
 
   <div class="seperator"></div>
@@ -969,7 +969,7 @@ your nearly there :-) keep going
            
             
         </select>
-        
+      
       <br> <br></span></span>
          <strong> <span style="color:rgba(86, 95, 103, 1.000);">options Positions 6 and 12 + last module</span></strong><br>
         
@@ -985,12 +985,11 @@ your nearly there :-) keep going
      
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> solaruvwu.php</span> <orange>display Weather Underground Day UV forecast and if you have only solar radiation </orange> <br></span> 
-        
-        
-        
-        
-         <br>
+   
+         
      <br>
+     
+      <div class="seperator"></div>   
       <div class= "stationvalue"> *Position Last small module 3 options moonphase or earthquake or luftdaten air quality<br>
       * important (do not choose moonphase if moonphase option is selected in position12 or last main module )</div>
        <br> <br>
@@ -1011,7 +1010,7 @@ your nearly there :-) keep going
      
       <br> <br>
      
-     
+     <div class="seperator"></div>   
       
               
      </span>
@@ -1025,8 +1024,7 @@ your nearly there :-) keep going
   
   <br><br>
         
-        <br>
-     
+ 
      <div class="seperator"></div>
      
       
