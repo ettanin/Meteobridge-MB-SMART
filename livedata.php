@@ -81,7 +81,7 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather["maxsolar"]           = number_format($meteobridgeapi[80],0);
 	$weather["maxuv"]              = $meteobridgeapi[58];	
 	$weather["sunny"]          	   = $meteobridgeapi[57];
-	$weather["lux"] 			   = number_format($meteobridgeapi[45]/0.00809399477,0, '.', '');
+	$weather["lux"] 			   = number_format($meteobridgeapi[45]*126.7,0, '.', '');
 	$weather["maxtemptime"]        = date($timeFormatShort, $meteobridgeapi[27]);
 	$weather["lowtemptime"]        = date($timeFormatShort, $meteobridgeapi[29]);
 	$weather["maxwindtime"]        = date($timeFormatShort, $meteobridgeapi[31]);
