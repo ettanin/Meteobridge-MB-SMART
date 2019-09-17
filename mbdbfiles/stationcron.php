@@ -44,19 +44,6 @@ curl_exec($ch1);
 curl_close($ch1);
 fclose($fp1);
 ?>
-<?php //k-index curl based
-$url2a = 'https://services.swpc.noaa.gov/products/geospace/planetary-k-index-dst.json';
-$ch2a = curl_init($url2a);
-$filename2a = '../jsondata/kindex.txt';
-$complete_save_loc2a = $filename2a;
-$fp2a = fopen($complete_save_loc2a, 'wb');
-curl_setopt($ch2a, CURLOPT_FILE, $fp2a);
-curl_setopt($ch2a, CURLOPT_HEADER, 0);
-curl_exec($ch2a);
-curl_close($ch2a);
-fclose($fp2a);
-?>
-
 <?php // weather34 purple air quality  curl based
 if($purpleairhardware=='yes'){
 $url4 = 'https://www.purpleair.com/json?show='.$purpleairID.'';
