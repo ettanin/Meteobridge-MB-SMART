@@ -212,22 +212,22 @@ if ($positionlastmodule=='airqualitymodule.php') {echo '<a href="eqlist.php" dat
   <main class="grid4">
   <weather34topmodule>
   <div class="weather34box">
-  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;Recent Earthquake</div>
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Earthquake']?></div>
   <div id=earthquake></div></div></weather34topmodule> 
  
   <weather34topmodule>
   <div class="weather34box">
-  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;Current Moonphase</div>
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Moonphase']?></div>
   <div id=moonphase2></div></div></weather34topmodule>  
  
    <weather34topmodule>
    <div class="weather34box">
-   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;Meteobridge Interface </div>
+   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;Meteobridge <?php echo $lang['Inteface']?> </div>
    <div id=interface></div></div></weather34topmodule>    
     
    <weather34topmodule>
   <div class="weather34box">
-  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;Hardware Info</div>
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Weather Station']?> Info</div>
   <div id=hardwareinfo2></div></div></weather34topmodule>   
 
  
