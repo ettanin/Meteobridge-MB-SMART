@@ -100,7 +100,8 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather['wind_speed_avgday']=$meteobridgeapi[158];
 	$weather['tempyearavg']=$meteobridgeapi[184];
 	$weather['windspeedyearavg']=$meteobridgeapi[185];
-	$weather['wind_direction_avgmonth']=$meteobridgeapi[191];		
+	$weather['wind_direction_avgmonth']=$meteobridgeapi[191];
+			
 	//weather34 windrun based on daily average
 	$windrunhr=date('G');$windrunmin=(($windrunmin=date('i')/60));$windrunformula=$windrunhr=date('G')+$windrunmin;
 	$weather["windrun34"]=$weather['wind_speed_avg30']*number_format($windrunformula,1);
@@ -113,6 +114,9 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	else $weather["moonrise"]='<moonrisecolor> '.date($timeFormatShort, strtotime($meteobridgeapi[156]));$weather["moonset"]='<moonsetcolor> '.date($timeFormatShort, strtotime($meteobridgeapi[157]));
 	//weather34 meteobridge real feel 02-08-2018 based on cumulus forum formula (THW)
 	$weather['realfeel'] = round(($weather['temp'] + 0.33*($weather['humidity']/100)*6.105*exp(17.27*$weather['temp']/(237.7+$weather['temp']))- 0.70*$weather["wind_speed"] - 4.00),1);
+	//ken true version from cumulus version
+	//$weather["realfeel"]=apparent_temperature($weather['temp'],$weather['humidity'],$weather['wind_speed']);
+	
 	//uptimealt
 	$convertuptimemb34 = $weather["uptime"];$uptimedays = floor($convertuptimemb34 / 86400);$uptimehours = floor(($convertuptimemb34 -($uptimedays*86400)) / 3600);
 	//amusing indoor real feel
@@ -285,7 +289,22 @@ $humydmintime=date('H:i',strtotime($originalDate759));
 $weather["humidity_ydmintime"]=$humydmintime;
 
 
-		
+//heat index
+$weather["heat_indexymax"]=$meteobridgeapi[192];
+$weather["heat_indexymaxtime"]=$meteobridgeapi[193];
+$originalDateheat=$meteobridgeapi[193];
+$heatindindexmaxtime=date("jS M Y",strtotime($originalDateheat));
+$heatindindexmaxtime2=date("jS F",strtotime($originalDateheat));
+
+	//windchill
+
+
+$weather["windchillymin"]=$meteobridgeapi[194];
+$weather["windchillymintime"]=$meteobridgeapi[195];
+$originalDatechill=$meteobridgeapi[195];
+$windchillmintime=date("jS M Y",strtotime($originalDatechill));
+$windchillmintime2=date("jS F",strtotime($originalDatechill));
+	
 	
 	//wind 
 	$originalDate8 = $meteobridgeapi[95];
@@ -465,8 +484,10 @@ if ($tempunit != $weather["temp_units"]) {
 		fToC($weather, "temp");	
 		fToC($weather, "temp2");
 		fToC($weather, "temp_avg");				
-		fToC($weather, "windchill");		
-		fToC($weather, "heat_index");		
+		fToC($weather, "windchill");
+		fToC($weather, "windchillymin");		
+		fToC($weather, "heat_index");
+		fToC($weather, "heat_indexymax");		
 		fToC($weather, "dewpoint");
 		fToC($weather, "temp_indoor_feel");
 		fToC($weather, "temp_indoor_feel2");
@@ -510,8 +531,10 @@ if ($tempunit != $weather["temp_units"]) {
 		cToF($weather, "temp_avg");	
 		cToF($weather, "temp_indoormax");
 		cToF($weather, "temp_indoormin");				
-		cToF($weather, "windchill");		
-		cToF($weather, "heat_index");		
+		cToF($weather, "windchill");
+		cToF($weather, "windchillymin");		
+		cToF($weather, "heat_index");
+		cToF($weather, "heat_indexymax");			
 		cToF($weather, "dewpoint");		
 		cToF($weather, "temp_indoor_feel");
 		cToF($weather, "temp_indoor_feel2");

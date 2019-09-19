@@ -62,7 +62,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 
   <weather34topmodule>
    <div class="weather34box">
-   <div class="weather34title2"><weather34homepagetop></weather34homepagetop> &nbsp;<?php echo $lang['Dewpoint']." ". $lang['Almanac'];?></div>
+   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;Davis Console&nbsp;<?php echo $lang['Forecast']?> </div>
   <div id=dewpoint-year></div></div>
   </weather34topmodule>
   </main>
@@ -191,8 +191,8 @@ if ($positionlastmodule=='airqualitymodule.php') {echo '<a href="eqlist.php" dat
   
   <!-- Weather34 Console Forecast -->
   <weather34topmodule>
-   <div class="weather34box">
-   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;Davis Console&nbsp;<?php echo $lang['Forecast']?> </div>
+  <div class="weather34box">
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Dewpoint']?>&nbsp;<?php echo $lang['Almanac']?> <?php echo date('Y')?></div>
   <div id=consoledavis></div></div></weather34topmodule>
   
   <!-- Weather34 moonphase or earthquake -->
@@ -200,48 +200,44 @@ if ($positionlastmodule=='airqualitymodule.php') {echo '<a href="eqlist.php" dat
   <div class="weather34box">
   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;
   <?php 
-  if ($positionmooneq=='eq.php'){echo $lang['Earthquake'];}
-  if ($positionmooneq=='luftdaten-small.php'){echo $lang['Air Quality'];}
-  if ($positionmooneq=='weather34-moonphase.php'){echo $lang['Moonphase'];}
-  ?></div>
-  <div id=earthquake></div></div>
-  </weather34topmodule>  
+  if ($positionmooneq=='battery.php'){echo $lang['Weather Station']." ".$lang['Battery'];}
+  else if ($positionmooneq=='luftdaten-small.php'){echo $lang['Air Quality'];}
+  else if ($positionmooneq=='heat-chill-year-month.php'){echo $lang['Heatindex']."|".$lang['Windchill']." ".date('Y');}
+  ?> 
+  </div>
+  <div id=option></div></div>
+  </weather34topmodule> 
+  </main>
+  
+  <main class="grid4">
+  <weather34topmodule>
+  <div class="weather34box">
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;Recent Earthquake</div>
+  <div id=earthquake></div></div></weather34topmodule> 
+ 
+  <weather34topmodule>
+  <div class="weather34box">
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;Current Moonphase</div>
+  <div id=moonphase2></div></div></weather34topmodule>  
+ 
+   <weather34topmodule>
+   <div class="weather34box">
+   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;Meteobridge Interface </div>
+   <div id=interface></div></div></weather34topmodule>    
+    
+   <weather34topmodule>
+  <div class="weather34box">
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;Hardware Info</div>
+  <div id=hardwareinfo2></div></div></weather34topmodule>   
+
+ 
+  
+  
   <!-- Weather34 bottom small moudles end -->
   
    <!-- Weather34 Footer -->
 
-  <main class="gridhardware">
-  <weather34infoboxes>
-  <div class="nanoimg1">
-  <?php if ($mbplatform== "Meteobridge Nano" || $mbplatform== "Meteobridge NanoSD"){echo '<img src=img/nano.svg width="40rem">';}if ($mbplatform== "Meteobridge Pro"){echo '<img src=img/MeteobridgePRO.svg width="70rem">';}?>
-  </div>
-  <div class=hardwareimg1>
-  <a href="https://www.meteobridge.com/wiki/index.php/Home" alt="https://www.meteobridge.com/wiki/index.php/Home" title="https://www.meteobridge.com/wiki/index.php/Home" class=hardwareimg1>Meteobridge</a> </div>
-  <div class=mbtype><weather34menumarkerblue></weather34menumarkerblue>&nbsp;<?php echo $mbplatform?>: <?php echo $weather["mbplatform"]?></div>
-  <div class=mbfirmware><weather34menumarkerorange></weather34menumarkerorange>&nbsp;Firmware Rev:<oblue><?php echo $weather["swversion"];echo "-",$weather["build"]?><oblue></div>
-<?php //meteobridge device uptime
-$nanosduptime = $meteobridgeapi[81];function convert($nanosduptime){$weather34nanotimeago = "";$days1 = intval(intval($nanosduptime) / (3600*24));$hours1 = (intval($nanosduptime) / 3600) % 24;$minutes1 = (intval($nanosduptime) / 60) % 60;$seconds1 = (intval($nanosduptime)) % 60;if($days1> 1){$weather34nanotimeago .= "$days1 Days ";}else {if($days1>0){$weather34nanotimeago .= "$days1 Day ";}if($hours1 > 1){$weather34nanotimeago .= "$hours1 hrs ";}else if($hours1 >=0){$weather34nanotimeago .= "$hours1 hr ";}if($minutes1 > 1){$weather34nanotimeago .= "$minutes1 mins ";}else if($minutes1 >=0){$weather34nanotimeago .= "$minutes1 min ";}}return $weather34nanotimeago;}?>
-  <div class=nanouptime><weather34menumarkerred></weather34menumarkerred>&nbsp;<?php echo $lang['Interface Uptime']?>:<oblue> <?php echo convert($nanosduptime)?></oblue></div>
-  </weather34infoboxes>
-
-  <weather34infoboxes>
-  <div class="davisimg1"><img src=img/weather34-davis-vp2.svg width="110rem" alt="Davis Vantage Pro2 Plus" title="Davis Vantage Pro2 Plus"></div>
-  <div class=hardwareimg2><a href="https://www.davisinstruments.com/solution/vantage-pro2/" title="https://www.davisinstruments.com/solution/vantage-pro2/" target="_blank" class=hardwareimg2>
-  <?php echo $lang['Weather Station'];?></a></div>
-  <div class=hardware><weather34menumarkerblue></weather34menumarkerblue>&nbsp;<?php echo $weatherhardware;?></div>
-  <div class=hardwareinfo><weather34menumarkerorange></weather34menumarkerorange>&nbsp;<?php echo $lang['Installed']?>: <?php echo $hardwareinstalled;?></div>
-  <div class=hardwareuptime><weather34menumarkerred></weather34menumarkerred>&nbsp;<?php echo $lang['Battery']?>:<?php echo $weather['indoorbattery']?> ISS:<?php echo $weather['outdoorbattery']?></div>
-  </weather34infoboxes>
-
-  <weather34infoboxes>
-  <div class=hardwareimg2><a href="https://weather34.com/homeweatherstation/" data-weather34tipfooter="WEATHER34 MB-SMART" target="_blank" class=hardwareimg3><?php echo $lang['Information']?></a></div>
-  <div class=hardware><weather34menumarkerblue></weather34menumarkerblue>&nbsp;<?php echo $lang['Operational Since']?>:<?php echo $since;?></div>
-  <div class=hardwareinfo><weather34menumarkerorange></weather34menumarkerorange>&nbsp;<?php echo $stationlocation?>
-  <img src="img/flags/<?php echo $flag ;?>.svg" width="15px" height="15px" alt="<?php echo $stationlocation?>" title="<?php echo $stationlocation?>">
-  </div>
-  <div class=hardwareuptime><weather34menumarkerred></weather34menumarkerred>&nbsp;<?php echo $designedby;?>&nbsp;&copy;2015-<?php echo date('Y');?></div>
-  </weather34infoboxes></div></div>
-  <div class="footercontainer">
+  
   <main class="gridfooter">
   <weather34footer>
   <div class=footertext>

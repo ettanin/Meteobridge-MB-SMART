@@ -5780,7 +5780,7 @@ alertadvisory {
 .grid3 {
   display: grid;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   align-items: stretch;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
@@ -5788,6 +5788,26 @@ alertadvisory {
 }
 .grid3 > weather34topmodule {
    box-sizing: border-box;
+  height: 80px;
+  padding: 5px;
+  border: 1px solid rgba(230, 232, 239, 0.5);
+  border-top: 0;
+  background: 0;
+  box-shadow: inset 0 15px rgba(230, 232, 239, 0.5);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.grid4 {
+  display: grid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: stretch;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+}
+.grid4 > weather34topmodule {
+  box-sizing: border-box;
   height: 80px;
   padding: 5px;
   border: 1px solid rgba(230, 232, 239, 0.5);
@@ -5837,6 +5857,9 @@ alertadvisory {
 }
   .nanoimg{position:absolute;float:right;margin-left:230px;}
   .davisimg{position:absolute;float:right;margin-left:200px;margin-top:-10px}
+  .davisimg2{position:absolute;float:right;margin-left:130px;margin-top:0}
+  .nanoimg2{position:absolute;float:right;margin-left:165px;margin-top:0}
+  .proimg2{position:absolute;float:right;margin-left:145px;margin-top:0}
   .nanoinfo{margin-top:20px;}
   .nanoimg1{position:absolute;float:right;margin-left:220px;margin-top:5px;}
   .davisimg1{position:absolute;float:right;margin-left:190px;margin-top:-2px;}
@@ -5941,6 +5964,34 @@ alertadvisory {
   font-family: weathertext2, arial, helvetica;
   font-size: 10px;
 }
+.mbfirmware2,.mbtype2,.nanouptime2,.hardware2,.hardwareinfo2 {position: absolute;
+  float: left;
+  margin-left: 5px;
+  font-family: weathertext2, arial, helvetica;
+  font-size: 9px;
+  width:200px;
+  color:#555;
+  text-align:left}
+.mbtype2 {
+  margin-top: 7px;
+}
+.mbfirmware2 {
+  margin-top: 17px;
+}
+.nanouptime2 {  
+  margin-top: 17px;  
+}
+
+.hardware2 {  
+  margin-top: 27px;  
+}
+
+.hardwareinfo2 {  
+  margin-top: 37px;  
+}
+.davisbattery{position:absolute;top:10px;left:45px;opacity:.7}
+
+
 .actualt {
   position: relative;
   left: 2px;
@@ -5974,7 +6025,7 @@ alertadvisory {
   margin-top: 6px;
   padding: 1px 5px 0;
   left: 0;
-  width: 10.2rem;
+  width: 11rem;
 }
 .weather34title2console {
   dislpay: flex;
@@ -7080,6 +7131,14 @@ weather34toptitle {
   .grid > weather34topmodule {
     display: none;
   }
+  
+  .grid4 {
+    display: none;
+  }
+  .grid4 > weather34topmodule {
+    display: none;
+  }
+  
   .grid3 > weather34topmodule {
     display: none;
   }

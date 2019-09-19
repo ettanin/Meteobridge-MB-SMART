@@ -51,19 +51,27 @@ if ($positionlastmodule == 'webcamsmall.php') {
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#windspeed-year").show()}});var c=a("#windspeed-year");c.load("windgustyear.php");var b=setInterval(function(){c.load("windgustyear.php")},380000)})})(jQuery);
 
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#dewpoint-year").show()}});var c=a("#dewpoint-year");c.load("dewpoint-year-month.php");var b=setInterval(function(){c.load("dewpoint-year-month.php")},680000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#dewpoint-year").show()}});var c=a("#dewpoint-year");c.load("consoleoutlook.php");var b=setInterval(function(){c.load("consoleoutlook.php")},680000)})})(jQuery);
 
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#barometer-year").show()}});var c=a("#barometer-year");c.load("barometer-year-month.php");var b=setInterval(function(){c.load("barometer-year-month.php")},380000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#barometer-year").show()}});var c=a("#barometer-year");c.load("barometer-year-month.php");var b=setInterval(function(){c.load("barometer-year-month.php")},680000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#humidity-year").show()}});var c=a("#humidity-year");c.load("humidity-year-month.php");var b=setInterval(function(){c.load("humidity-year-month.php")},680000)})})(jQuery);
 
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#consoledavis").show()}});var c=a("#consoledavis");c.load("consoleoutlook.php");var b=setInterval(function(){c.load("consoleoutlook.php")},380000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#consoledavis").show()}});var c=a("#consoledavis");c.load("dewpoint-year-month.php");var b=setInterval(function(){c.load("dewpoint-year-month.php")},380000)})})(jQuery);
 
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#earthquake").show()}});var c=a("#earthquake");c.load("<?php echo $positionmooneq?>");var b=setInterval(function(){c.load("<?php echo $positionmooneq?>")},380000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#option").show()}});var c=a("#option");c.load("<?php echo $positionmooneq?>");var b=setInterval(function(){c.load("<?php echo $positionmooneq?>")},380000)})})(jQuery);
 
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#earthquake").show()}});var c=a("#earthquake");c.load("<?php echo $positionmooneq?>");var b=setInterval(function(){c.load("<?php echo $positionmooneq?>")},380000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#earthquake").show()}});var c=a("#earthquake");c.load("eq.php");var b=setInterval(function(){c.load("eq.php")},380000)})})(jQuery);
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#moonphase2").show()}});var c=a("#moonphase2");c.load("weather34-moonphase.php");var b=setInterval(function(){c.load("weather34-moonphase.php")},380000)})})(jQuery);
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#interface").show()}});var c=a("#interface");c.load("interface.php");var b=setInterval(function(){c.load("interface.php")},22380000)})})(jQuery);
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#hardwareinfo2").show()}});var c=a("#hardwareinfo2");c.load("hardware.php");var b=setInterval(function(){c.load("hardware.php")},22380000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#logo").show()}});var c=a("#logo");c.load("logo.php");var b=setInterval(function(){c.load("logo.php")},22380000)})})(jQuery);
+
+
 
 
 //current day-night forecast

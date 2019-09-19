@@ -308,6 +308,9 @@ $lang['Operational Since'] ='Opérationnel Depuis';
 $lang['Battery'] ='Batterie';
 $lang['Installed']='Installé';
 $lang['Interface Uptime']='La durée de fonctionnent';
+$lang['GoodBattery']             = '&nbsp;Bien';
+$lang['ReplaceBattery']          = 'Replacer';
+$lang['ConditionBattery']		 = '&nbsp;&nbsp;&nbsp;&nbsp;État';
 
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Micro Earthquake';

@@ -456,7 +456,7 @@ Your Weather Station Hardware</div><p>
         <select id="weatherhardware" name="weatherhardware" class="chooseapi">           
            <option><?php echo $weatherhardware ;?></option>
            <option>Davis Vantage Pro2</option>   
-           <option>Davis Vantage Pro2 Plus</option>        
+           <option>Davis Vantage Pro2+</option>        
            <option>Davis Vantage Vue</option>
            <option>Davis Envoy8x</option>             
         </select>
@@ -483,9 +483,9 @@ Which Meteobridge Platform</div><p>
        <label name="mbplatform"></label>
         <select id="mbplatform" name="mbplatform" class="chooseapi">           
            <option><?php echo $mbplatform ;?></option>
-           <option>Meteobridge Nano</option>
-           <option>Meteobridge NanoSD</option>
-           <option>Meteobridge Pro</option>             
+           <option>Nano</option>
+           <option>NanoSD</option>
+           <option>Pro</option>             
         </select>
         <br><br>
     <div class="seperator"></div>     
@@ -990,8 +990,8 @@ your nearly there :-) keep going
      <br>
      
       <div class="seperator"></div>   
-      <div class= "stationvalue"> *Position Last small module 3 options moonphase or earthquake or luftdaten air quality<br>
-      * important (do not choose moonphase if moonphase option is selected in position12 or last main module )</div>
+      <div class= "stationvalue"> *Position Last small module 3 options luftdaten air quality or heat index almanac<br>
+      </div>
        <br> <br>
        <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
     <path d="M12 30 L24 16 12 2" />
@@ -1000,9 +1000,9 @@ your nearly there :-) keep going
 </svg>
         <label name="positionmooneq"></label>
         <select id="positionmooneq" name="positionmooneq" class="choose">  
-            <option><?php echo $positionmooneq ;?></option>             
-            <option>weather34-moonphase.php</option>  
-            <option>eq.php</option> 
+            <option><?php echo $positionmooneq ;?></option> 
+            <option>heat-chill-year-month.php</option>
+            <option>battery.php</option>  
             <option>luftdaten-small.php</option>                       
             
                      </select>

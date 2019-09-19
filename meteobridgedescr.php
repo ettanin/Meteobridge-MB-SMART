@@ -189,7 +189,10 @@
 189 [rain0total-starttime:--] 
 190 [rain0total-ymintime:--] 
 191 [wind0dir-mavg:--]
-
+192 [th0heatindex-ymax:--] 
+193 [th0heatindex-ymaxtime:--] 
+194 [wind0chill-ymin:--] 
+195 [wind0chill-ymintime:--]
 
 
 1 _[forecast-text:] *this string must always be last due to it outputs text with spaces betwen each word 

@@ -6357,6 +6357,34 @@ maxtempgreen {
 .mbfirmware,.hardwareinfo,.hardwareinfo2  {
   margin-top: 25px;
 }
+
+
+.mbfirmware2,.mbtype2,.nanouptime2,.hardware2,.hardwareinfo2 {position: absolute;
+  float: left;
+  margin-left: 5px;
+  font-family: weathertext2, arial, helvetica;
+  font-size: 9px;
+  width:200px;
+  color: #aeb6bf;
+  text-align:left}
+.mbtype2 {
+  margin-top: 7px;
+}
+.mbfirmware2 {
+  margin-top: 17px;
+}
+.nanouptime2 {  
+  margin-top: 17px;  
+}
+
+.hardware2 {  
+  margin-top: 27px;  
+}
+
+.hardwareinfo2 {  
+  margin-top: 37px;  
+}
+
 .nanouptime,.hardwareuptime,.hardwareuptime2 {
   position: absolute;
   float: left;
@@ -6418,7 +6446,7 @@ maxtempgreen {
 .grid3 {
   display: grid;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   align-items: stretch;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
@@ -6435,6 +6463,27 @@ maxtempgreen {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 80px;
+}
+.grid4 {
+  display: grid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: stretch;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+}
+.grid4 > weather34topmodule {
+  box-sizing: border-box;
+  height: 80px;
+  padding: 7px;
+  border: 1px solid rgba(45, 48, 58, .3);
+  border-width: thin;
+  border-top: 15px solid rgba(45, 48, 58, .6);
+  background: 0;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .grid1 {
@@ -6472,10 +6521,14 @@ maxtempgreen {
 .nanoinfo{margin-top:0;}
 .nanoimg1{position:absolute;float:right;margin-left:220px;margin-top:0;}
 .davisimg1{position:absolute;float:right;margin-left:190px;margin-top:-5px;}
+ .davisimg2{position:absolute;float:right;margin-left:130px;margin-top:0}
+ .nanoimg2{position:absolute;float:right;margin-left:165px;margin-top:5px}
+ .proimg2{position:absolute;float:right;margin-left:145px;margin-top:0}
 .footercontainer {
   margin: 0 auto;
   width: 959px;
 }
+.davisbattery{position:absolute;top:10px;left:45px;opacity:.7}
 
 .gridfooter {
   display: grid;
@@ -6592,7 +6645,7 @@ weather34thetime {
   margin-top: -10px;
   padding: 1px 5px 0;
   left: 0;
-  width: 10.2rem;
+  width: 11rem;
 }
 .weather34title2console {
   dislpay: flex;
@@ -6861,6 +6914,12 @@ weather34toptitle {
   .grid3 > weather34topmodule {
     display: none;
   }
+  .grid4 {
+  display:none;
+}
+.grid4 > weather34topmodule {
+  display:none;
+}
   .gridhardware {
     display: grid;
     grid-template-columns: 359px;
@@ -6917,6 +6976,34 @@ weather34toptitle {
 .nanouptime,.hardwareuptime,.hardwareuptime2 {
   margin-top: 40px;
 }
+
+.mbfirmware2,.mbtype2,.nanouptime2,.hardware2,.hardwareinfo2 {position: absolute;
+  float: left;
+  margin-left: 5px;
+  font-family: weathertext2, arial, helvetica;
+  font-size: 9px;
+  width:200px;
+  color: #aeb6bf;
+  text-align:left}
+.mbtype2 {
+  margin-top: 7px;
+}
+.mbfirmware2 {
+  margin-top: 17px;
+}
+.nanouptime2 {  
+  margin-top: 17px;  
+}
+
+.hardware2 {  
+  margin-top: 27px;  
+}
+
+.hardwareinfo2 {  
+  margin-top: 37px;  
+}
+
+
   .actualhardware {
     position: relative;
     left: 2px;
@@ -7231,6 +7318,8 @@ weather34toptitle {
  
   .nanoimg{position:absolute;float:right;margin-left:230px;}
   .davisimg{position:absolute;float:right;margin-left:190px;margin-top:-10px}
+   .davisimg2{position:absolute;float:right;margin-left:145px;margin-top:0}
+ .nanoimg2{position:absolute;float:right;margin-left:155px;margin-top:0}
 
 
   .footertext {

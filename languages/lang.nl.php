@@ -299,6 +299,9 @@ $lang['Operational Since'] ='Operationeel Sinds';
 $lang['Battery'] ='Batterij';
 $lang['Installed']='Geïnstalleerd';
 $lang['Interface Uptime']='Aantal dagen geleden';
+$lang['GoodBattery']             = 'Goed';
+$lang['ReplaceBattery']          = 'Vervang';
+$lang['ConditionBattery']		 = '&nbsp;&nbsp;Staat';
 
 
 //earthquake TOP MODULE 10 July 2017
