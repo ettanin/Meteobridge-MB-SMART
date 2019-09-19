@@ -3,7 +3,7 @@
 
 <div class="tempminthisyear" style="margin-left:10px;">
 <?php //battery console
- if ($weather['indoorbattery']==1){echo "<maxtempred>".$lang['ReplaceBattery']."</maxtempred>";}else if ($weather['indoorbattery']==0){echo "<maxtempblue>".$lang['GoodBattery']."</maxtempblue>";}?></div>
+ if ($weather['indoorbattery']==1){echo "<maxtempred style='margin-left:-5px;font-size:.75rem'>".$lang['ReplaceBattery']."</maxtempred>";}else if ($weather['indoorbattery']==0){echo "<maxtempblue>".$lang['GoodBattery']."</maxtempblue>";}?></div>
 <div class="tmonthmax" style="margin-left:0px;">Console <?php echo $lang['Battery']?></div>
 <div class="tmonthconv" style="margin-left:5px;"><?php echo $lang['ConditionBattery']?></div>
 <div class="davisbattery">
@@ -14,10 +14,10 @@
 <path fill="#e5e6e7" stroke="#e5e6e7" stroke-width="0.09375" opacity="1.00" d=" M 409.30 147.06 C 409.43 138.21 409.09 129.35 409.48 120.52 C 414.29 120.65 419.10 120.52 423.91 120.62 C 423.93 129.44 423.90 138.25 423.93 147.07 C 432.74 147.10 441.56 147.07 450.37 147.08 C 450.45 151.69 450.45 156.30 450.38 160.91 C 441.56 160.94 432.75 160.90 423.93 160.93 C 423.90 169.62 423.92 178.31 423.92 187.00 C 419.04 186.98 414.15 187.07 409.27 186.95 C 409.35 178.28 409.30 169.61 409.30 160.94 C 400.41 160.88 391.52 160.93 382.63 160.92 C 382.54 156.31 382.55 151.70 382.62 147.09 C 391.51 147.06 400.41 147.12 409.30 147.06 Z" />
 </svg></div>
 
-<div class="yearwordtempbig">Battery</div>
+<div class="yearwordtempbig" style="margin-left:8px;">Battery</div>
 <div class="tempmaxthisyear" style="margin-left:0;">
 <?php //battery ISS
- if ($weather['outdoorbattery']==1){echo "<maxtempred>".$lang['ReplaceBattery']."</maxtempred>";} else if ($weather['outdoorbattery']==0){echo "<maxtempblue>".$lang['GoodBattery']."</maxtempblue>";} ?>
+ if ($weather['outdoorbattery']==1){echo "<maxtempred style='margin-left:-5px;font-size:.75rem'>".$lang['ReplaceBattery']."</maxtempred>";} else if ($weather['outdoorbattery']==0){echo "<maxtempblue>".$lang['GoodBattery']."</maxtempblue>";} ?>
 </div>
 <div class="tyearmax" style="margin-left:0px;">ISS <?php echo $lang['Battery']?></div>
 <div class="tyearconv" style="margin-left:0;"><?php echo $lang['ConditionBattery']?></div>

@@ -722,12 +722,7 @@ if (is_numeric($meteobridgeapi[186]) && $meteobridgeapi[186] != '--') {
 	$weather['pressStartTime']	= 'All Time';
 	$weather['rainStartTime']	= 'All Time';
 }
-
-
 //battery
 	$weather['indoorbattery']=$meteobridgeapi[171];
 	$weather['outdoorbattery']=$meteobridgeapi[172];
-if ($weather['outdoorbattery']<1){$weather['outdoorbattery']="<oblue>Good</oblue>";}
-else $weather['outdoorbattery']="<ored>Poor</ored>";
-if ($weather['indoorbattery']<1){$weather['indoorbattery']="<oblue>Good</oblue>";}
-else $weather['indoorbattery']="<ored>Poor</ored>";?>
+?>
