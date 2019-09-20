@@ -217,7 +217,7 @@ if ($positionlastmodule=='airqualitymodule.php') {echo '<a href="eqlist.php" dat
  
   <weather34topmodule>
   <div class="weather34box">
-  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Weather Station'] ." ".$lang['Battery']?></div>
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Weather Station'] ." Power";?></div>
   <div id=battery></div></div></weather34topmodule>  
  
    <weather34topmodule>
