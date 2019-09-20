@@ -17,29 +17,38 @@ include('livedata.php'); //WEATHER34 Davis Console Forecast Outlook/Icon ?>
 <div class="yearwordtempbig">Console Forecast</div>
 <div class="consoleoutlook">
 <?php  //weather34 script Davis forecast outlook
-$weather["vpforecasttext"]	=str_replace('with little', '<ogreen>No Significant </ogreen>', $weather["vpforecasttext"]);
-$weather["vpforecasttext"]	=str_replace('and warmer.', 'turning <oorange>Warmer </oorange>.', $weather["vpforecasttext"]);
-$weather["vpforecasttext"]	=str_replace('and cooler.', 'turning <oblue>Cooler </oblue>.', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('within', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('ending', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('likely', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('with', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('possible', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('and warmer.', '<oorange>Warmer </oorange>period expected .<br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('and cooler.', '<oblue>Cooler </oblue>period expected.<br>', $weather["vpforecasttext"]);
 $weather["vpforecasttext"]	=str_replace('and ending', 'for', $weather["vpforecasttext"]);
 $weather["vpforecasttext"]	=str_replace('to the', '', $weather["vpforecasttext"]);
-$weather["vpforecasttext"]	=str_replace('shift', 'shifting', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('shift', 'becoming', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('wind shifting', 'shifting', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('wind becoming', 'becoming', $weather["vpforecasttext"]);
 $weather["vpforecasttext"]	=str_replace('Windy', '<oorange>Windy</oorange>', $weather["vpforecasttext"]);
-if (anyToC($weather["temp"])<-1){$weather["vpforecasttext"]	=str_replace('Precipitation',  '<oblue><br>Snow</oblue>', $weather["vpforecasttext"]);}
-else if (anyToC($weather["temp"])<1){$weather["vpforecasttext"]	=str_replace('Precipitation',  '<oblue><br>Rain</oblue> & <oblue>Sleet</oblue>', $weather["vpforecasttext"]);}
-$weather["vpforecasttext"]	=str_replace('Precipitation',  '<oblue><br>Rain</oblue>', $weather["vpforecasttext"]);
-$weather["vpforecasttext"]	=str_replace('Increasing clouds', '<oblue>Increasing Clouds</oblue><br> ', $weather["vpforecasttext"]);
-$weather["vpforecasttext"]	=str_replace('and windy', 'with <oorange>Winds strengthening</oorange> at times', $weather["vpforecasttext"]);
-$weather["vpforecasttext"]	=str_replace('Mostly clear', '<oorange>Mostly Clear</oorange><br>', $weather["vpforecasttext"]);
-$weather["vpforecasttext"]	=str_replace('Partly cloudy', '<oblue>Partly Cloudy</oblue><br>', $weather["vpforecasttext"]);
-$weather["vpforecasttext"]	=str_replace('Mostly cloudy', '<oblue>Mostly Cloudy</oblue><br>', $weather["vpforecasttext"]);
-$weather["vpforecasttext"]	=str_replace('within 24 to 48 hours', 'next 24-48 hours', $weather["vpforecasttext"]);
-$weather["vpforecasttext"]	=str_replace('within 6 to 12 hours', 'next 6-12 hours', $weather["vpforecasttext"]); 
-$weather["vpforecasttext"]	=str_replace('within 12 to 24 hours', 'next 12-24 hours', $weather["vpforecasttext"]);  
-$weather["vpforecasttext"]	=str_replace('within 48 to 72 hours', 'next 48-72 hours', $weather["vpforecasttext"]); 
-$weather["vpforecasttext"]	=str_replace('within 12 hours', 'next 12 hours', $weather["vpforecasttext"]); 
-$weather["vpforecasttext"]	=str_replace('within 6 hours', 'next 6 hours', $weather["vpforecasttext"]);
+if (anyToC($weather["temp"])<-1){$weather["vpforecasttext"]	=str_replace('Precipitation',  'Risk of <oblue>Snow</oblue> Showers', $weather["vpforecasttext"]);}
+else if (anyToC($weather["temp"])<1){$weather["vpforecasttext"]	=str_replace('Precipitation',  'Chance of <oblue>Rain</oblue> & <oblue>Sleet</oblue>', $weather["vpforecasttext"]);}
+$weather["vpforecasttext"]	=str_replace('Precipitation',  'Chance of <oblue>Rain</oblue> Showers', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('Increasing clouds', 'Periods of <oblue>Scattered</oblue> Clouds<br> ', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('and windy', '<oorange>Windy</oorange>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('Mostly clear', 'Becoming or remaining <oorange>Mostly Clear</oorange><br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('Partly cloudy', 'Becoming or remaining <oblue>Partly</oblue> Cloudy</oblue><br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('Mostly cloudy', 'Becoming or remaining <oblue>Mostly Cloudy</oblue> <br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('24 to 48 hours', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('6 to 12 hours', '', $weather["vpforecasttext"]); 
+$weather["vpforecasttext"]	=str_replace('12 to 24 hours', '', $weather["vpforecasttext"]);  
+$weather["vpforecasttext"]	=str_replace('48 to 72 hours', '', $weather["vpforecasttext"]); 
+$weather["vpforecasttext"]	=str_replace('12 hours', '', $weather["vpforecasttext"]); 
+$weather["vpforecasttext"]	=str_replace('6 hours', '', $weather["vpforecasttext"]);
 $weather["vpforecasttext"]	=str_replace('South West', 'SW', $weather["vpforecasttext"]);
 $weather["vpforecasttext"]	=str_replace('South East', 'SE', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('W, NW, or N', 'W, NW to North', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('little temperature change.', 'No <oorange>Significant </oorange> change in temperature<br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace(', possibly heavy at times', '', $weather["vpforecasttext"]);
 //vp2 Davis forecast icon
 if (preg_match("/Snow/i", $weather["vpforecasttext"]) && anyToC($weather["temp"])<-1)  {echo '<img rel="prefetch" src="css/icons/snow.svg" class="consoleicon">';} 
 else if (preg_match("/Sleet/i", $weather["vpforecasttext"]) && anyToC($weather["temp"])<1)  {echo '<img rel="prefetch" src="css/icons/sleet.svg" class="consoleicon">';} 
