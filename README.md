@@ -1,5 +1,15 @@
 # This GITHUB repository is for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
-(Public Version Released September 14th 2019)
+(Public Version Released September 20th 2019)
+
+* thanks to Piet and Lars for the air quality idea and testing
+
+* chartstoday.php updated for air quality
+
+* luftdaten.php and purpleair.php updated added charts
+
+* 2 new files for weather34charts folder todayqi.php ,todayluftdatenaqi.php
+
+* consoleoutlook.php updated minor rewording
 
 <p align="center">
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1568620387/MBSMART_tdyrqc.png" width="550" title="weather34 Meteobridge MB-SMART template "> 
