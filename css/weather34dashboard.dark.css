@@ -5822,7 +5822,7 @@ wfstriketoday {
   color: rgba(231, 150, 59, 0.8);
 }
 .eqtoday6-8{
-  color: #cc87f8;
+  color: #d05f2d;
 }
 .eqtoday9-10 {
   color: #d35d4e;
@@ -5847,7 +5847,7 @@ wfstriketoday {
   margin-left: 70px;
   margin-top: -30px;
   font-size:.55rem;
-  line-height:.9;
+  line-height:1;
   color: #aeb6bf;
   font-family: weathertext2;
 }

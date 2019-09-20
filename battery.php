@@ -3,8 +3,8 @@
 
 <div class="tempminthisyear" style="margin-left:10px;">
 <?php //battery console
- if ($weather['indoorbattery']==1){echo "<maxtempred style='margin-left:-5px;font-size:.75rem'>".$lang['ReplaceBattery']."</maxtempred>";}else if ($weather['indoorbattery']==0){echo "<maxtempblue>".$lang['GoodBattery']."</maxtempblue>";}?></div>
-<div class="tmonthmax" style="margin-left:0px;">Console <?php echo $lang['Battery']?></div>
+ if ($weather['indoorbattery']==1){echo "<maxtempred style='margin-left:2px;font-size:.7rem;margin-top:3px'>".$lang['ReplaceBattery']."</maxtempred>";}else if ($weather['indoorbattery']==0){echo "<maxtempblue style='margin-left:2px;font-size:.7rem;margin-top:3px'>".$lang['GoodBattery']."</maxtempblue>";}?></div>
+<div class="tmonthmax" style="margin-left:0px;">Console Power</div>
 <div class="tmonthconv" style="margin-left:5px;"><?php echo $lang['ConditionBattery']?></div>
 <div class="davisbattery">
 <svg id="weather34 davis console battery" width="100pt" height="25pt" viewBox="0 0 537 303" version="1.1">
@@ -17,7 +17,7 @@
 <div class="yearwordtempbig" style="margin-left:8px;">Battery</div>
 <div class="tempmaxthisyear" style="margin-left:0;">
 <?php //battery ISS
- if ($weather['outdoorbattery']==1){echo "<maxtempred style='margin-left:-5px;font-size:.75rem'>".$lang['ReplaceBattery']."</maxtempred>";} else if ($weather['outdoorbattery']==0){echo "<maxtempblue>".$lang['GoodBattery']."</maxtempblue>";} ?>
+ if ($weather['outdoorbattery']==1){echo "<maxtempred style='margin-left:2px;font-size:.7rem;margin-top:3px'>".$lang['ReplaceBattery']."</maxtempred>";} else if ($weather['outdoorbattery']==0){echo "<maxtempblue style='margin-left:2px;font-size:.7rem;margin-top:3px'>".$lang['GoodBattery']."</maxtempblue>";} ?>
 </div>
 <div class="tyearmax" style="margin-left:0px;">ISS <?php echo $lang['Battery']?></div>
 <div class="tyearconv" style="margin-left:0;"><?php echo $lang['ConditionBattery']?></div>
