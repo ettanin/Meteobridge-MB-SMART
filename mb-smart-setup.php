@@ -1002,7 +1002,7 @@ your nearly there :-) keep going
         <select id="positionmooneq" name="positionmooneq" class="choose">  
             <option><?php echo $positionmooneq ;?></option> 
             <option>heat-chill-year-month.php</option>
-            <option>battery.php</option>  
+            <option>weather34-moonphase.php</option>  
             <option>luftdaten-small.php</option>                       
             
                      </select>

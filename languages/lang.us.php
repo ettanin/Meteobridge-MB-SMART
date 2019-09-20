@@ -311,6 +311,7 @@ $lang['Operational Since'] ='Operational Since';
 $lang['Battery'] ='Battery';
 $lang['Installed']='Installed';
 $lang['Interface Uptime']='Interface Uptime';
+$lang['Meteobridge Interface']='Meteobridge Interface';
 //earthquake TOP MODULE 10 July 2017
 $lang['MicroE']                  = 'Micro Earthquake';
 $lang['MinorE']                  = 'Minor Earthquake';

@@ -63,7 +63,7 @@ if ($positionlastmodule == 'webcamsmall.php') {
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#earthquake").show()}});var c=a("#earthquake");c.load("eq.php");var b=setInterval(function(){c.load("eq.php")},380000)})})(jQuery);
 
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#moonphase2").show()}});var c=a("#moonphase2");c.load("weather34-moonphase.php");var b=setInterval(function(){c.load("weather34-moonphase.php")},380000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#battery").show()}});var c=a("#battery");c.load("battery.php");var b=setInterval(function(){c.load("battery.php")},380000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#interface").show()}});var c=a("#interface");c.load("interface.php");var b=setInterval(function(){c.load("interface.php")},22380000)})})(jQuery);
 

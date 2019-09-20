@@ -200,7 +200,7 @@ if ($positionlastmodule=='airqualitymodule.php') {echo '<a href="eqlist.php" dat
   <div class="weather34box">
   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;
   <?php 
-  if ($positionmooneq=='battery.php'){echo $lang['Weather Station']." ".$lang['Battery'];}
+  if ($positionmooneq=='weather34-moonphase.php'){echo $lang['Moonphase'];}
   else if ($positionmooneq=='luftdaten-small.php'){echo $lang['Air Quality'];}
   else if ($positionmooneq=='heat-chill-year-month.php'){echo $lang['Heatindex']."|".$lang['Windchill']." ".date('Y');}
   ?> 
@@ -217,12 +217,12 @@ if ($positionlastmodule=='airqualitymodule.php') {echo '<a href="eqlist.php" dat
  
   <weather34topmodule>
   <div class="weather34box">
-  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Moonphase']?></div>
-  <div id=moonphase2></div></div></weather34topmodule>  
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Weather Station'] ." ".$lang['Battery']?></div>
+  <div id=battery></div></div></weather34topmodule>  
  
    <weather34topmodule>
    <div class="weather34box">
-   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;Meteobridge <?php echo $lang['Inteface']?> </div>
+   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Meteobridge Interface']?> </div>
    <div id=interface></div></div></weather34topmodule>    
     
    <weather34topmodule>

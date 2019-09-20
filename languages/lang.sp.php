@@ -309,6 +309,7 @@ $lang['Operational Since'] ='Operacional Desde';
 $lang['Battery'] ='Batería';
 $lang['Installed']='Instalado';
 $lang['Interface Uptime']='Tiempo de actividad';
+$lang['Meteobridge Interface']='Meteobridge Interfaz';
 $lang['GoodBattery']             = 'Bueno';
 $lang['ReplaceBattery']          = 'Cambio';
 $lang['ConditionBattery']		 = 'Condición';
