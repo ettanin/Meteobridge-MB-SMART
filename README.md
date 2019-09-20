@@ -1,5 +1,5 @@
 # This GITHUB repository is for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
-(Public Version Released September 20th 2019)
+(Public Version September 20th 2019)
 
 * thanks to Piet and Lars for the air quality idea and testing
 
