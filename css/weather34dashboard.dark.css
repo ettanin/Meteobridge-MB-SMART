@@ -4518,21 +4518,6 @@ weather34darkdaycircle {
   border-radius: 45px;
   background: #565f67;
 }
-topbarimperial,
-topbarmetric {
-  display: flex;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  width: 1.7em;
-  height: 1.7em;
-  padding: 1px;
-  background: 0;
-  font-weight: 500;
-  font-family: weathertext2;
-  font-size: 0.9em;
-  align-items: center;
-  justify-content: center;
-}
 .maxpressure,
 .maxwindgust,
 .minpressure,
@@ -4541,16 +4526,6 @@ topbarmetric {
   font-size: 10px;
   line-height: 1;
   font-family: weathertext2;
-}
-topbarimperial {
-  border: 1px solid #ff7c39;
-
-  color: #ff7c39;
-}
-topbarmetric {
-  border: 1px solid #009bab;
-
-  color: #009bab;
 }
 offlinenew,
 onlinenew {
@@ -5158,27 +5133,19 @@ input[type="checkbox"]:checked
 topbarimperialf,
 topbarmetricc {
   display: inline;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
   width: 2em;
   height: 1em;
-  padding: 1px 3px 1px 3px;
+  padding: 1px 3px;
+  border-radius: 2px;
   background: 0;
-  font-weight: 500;
+  align-items: center;
   font-family: weathertext2;
   font-size: 0.7em;
-  align-items: center;
+  font-weight: 400;
   justify-content: center;
-}
-topbarimperialf {
-  border: 1px solid #ff7c39;
-
-  color: #ff7c39;
-}
-topbarmetricc {
-  border: 1px solid #009bab;
-
-  color: #009bab;
+  color: #aeb6bf;
+  border: .01em solid #aeb6bf;
+  opacity:.8  
 }
 weather34menumarkerblue,
 weather34menumarkerbluegrey,
@@ -7064,10 +7031,6 @@ background:0;
     font-size: 1.2em;
     right: 0;
   }
-  topbarimperial,
-  topbarmetric {
-    margin-right: 5px;
-  }
   .actualt {
     position: relative;
     left: 2px;
@@ -7256,7 +7219,7 @@ background:0;
   margin-top: 10px;
 }
 .weather34moonphasesvg{position:absolute; left:125px; top:35px; width:120px;}
-
+.weather34topbarmail{display:none;}
 }
 
 @media screen and (max-width: 640px) {
@@ -8702,3 +8665,5 @@ weather34homepagetop{
   margin-top:3px
   }
 wind-dir-avgmonth{margin-left:-8px;font-size:.6rem;margin-top:2px;color:#44a6b5;}
+metricgrey{color:#aeb6bf;font-weight:500;font-size:9px}
+ 
