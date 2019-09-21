@@ -7,5 +7,25 @@
   <?php  if ($weather['indoorbattery']<1){echo "OK";}else echo "<ored>Poor</ored>";?></blue> 
 	ISS:<blue>
   <?php  if ($weather['outdoorbattery']<1){echo "OK";}else echo "<ored>Poor</ored>";?></blue></div>  
-  <div class="davisimg2"><img src=img/weather34-davis-vp2.svg width="85rem" alt="Davis Vantage Pro2" title="Davis Vantage Pro2"/></div>  
+  <div class="davisimg2">
+  <?php  
+  if ($weather['$weatherhardware']='Davis Vantage Pro2+' || $weather['$weatherhardware']='Davis Vantage Pro2'){echo ' 
+  <img src=img/weather34-davis-vp2.svg width="85rem" alt="Davis Vantage Pro2" title="Davis Vantage Pro2"/>';}
+  
+  
+  else if ($weather['$weatherhardware']='Davis Vantage Vue' ){echo ' 
+  <img src=img/davisvue.svg width="80rem" alt="Davis Vantage Vue" title="Davis Vantage Vue" style="margin-top:5px;"/>';}
+  
+  
+  else if ($weather['$weatherhardware']='Davis Envoy8x' ){echo ' 
+  <img src=img/designedfordavisenvoy8x.svg width="90rem" alt="Davis Envoy8x" title="Davis Envoy8x" style="margin-top:5px;"/>';}
+  
+  
+  
+  
+  
+  ?>
+  
+  
+  </div>  
   </div>
