@@ -77,9 +77,9 @@ include('settings.php');$url = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://
                                         <img src="img/<?php 
 										if($weatherhardware=='Davis Vantage Vue'){echo 'davisvue';}
 										else if($weatherhardware=='Davis Vantage Pro2'){echo 'weather34-davis-vp2';}
-										else if($weatherhardware=='Davis Vantage Pro2 Plus'){echo 'weather34-davis-vp2';}
+										else if($weatherhardware=='Davis Vantage Pro2+'){echo 'weather34-davis-vp2';}
 										else if($weatherhardware=='Davis Envoy8x'){echo 'designedfordavisenvoy8x';}
-										else echo 'davisw34';?>.svg" width="80px" height="80px" alt="Davis Instruments" title="Davis Instruments" class="davishardwaresvg" >
+										else echo 'weather34-davis-vp2';?>.svg" width="80px" height="80px" alt="Davis Instruments" title="Davis Instruments" class="davishardwaresvg" >
                                     </div>
                                 </div>
                             </a>
