@@ -23,7 +23,6 @@ c0-38.881,31.519-70.4,70.4-70.4c38.881,0,70.4,31.519,70.4,70.4s-31.519,70.4-70.4
 <?php //metric/non-metric/uk
 if($units!='us'){echo '<a  href="./?units=us"> <metricgrey>US</metricgrey> <topbarimperialf>&deg;F</topbarimperialf>&nbsp;&nbsp;</a> ';}
 if($units!='metric'){echo '<a  href="./?units=metric"> <metricgrey>KM/H</metricgrey> <topbarmetricc>&deg;C</topbarmetricc>&nbsp;&nbsp;</a>';}
-if($units!='uk'){echo '<a  href="./?units=uk">  <metricgrey>MPH</metricgrey> <topbarmetricc>&deg;C</topbarmetricc>&nbsp;&nbsp;</a>';}
 ?>
 </div>
 
