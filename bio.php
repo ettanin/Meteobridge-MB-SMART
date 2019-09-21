@@ -65,7 +65,7 @@
                                     
                                     <div class="collection:data">
                                         <h3><orange>@</orange>Mail</h3>
-                                        <span><a href="mailto:@@<?php echo $email;?>?Subject=Weather Station"onmouseover="this.href=this.href.replace('@@','')">Contact Us</a></span>
+                                        <span><a href="mailto:@@<?php echo $email;?>?Subject=Weather Station"onmouseover="this.href=this.href.replace('@@','')">Send an @email</a></span>
                                     </div>
                                 </div>
                             </a>
