@@ -1,4 +1,4 @@
-<?php include('settings.php');$url = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://').$_SERVER['SERVER_NAME'];?>
+<?php include('settings1.php');$url = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://').$_SERVER['SERVER_NAME'];?>
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -42,7 +42,8 @@
             <div class="card" style="margin-top:50px;overflow:hidden;max-height:370px;">
                 <div class="card:header">
                     <div class="card:info">
-                        <h3><?php echo $stationlocation ;?></h3>
+                        <h3><?php echo $stationlocation?> <?php echo "<img src=img/flags/".$flag.".svg width='25em' height='20em'>"?>
+  </h3>
                         <p>Weather Station Information</p>
                     </div>
                     <div class="card:image">
@@ -63,8 +64,8 @@
                                     
                                     
                                     <div class="collection:data">
-                                        <h3>Mail <orange>Offline</orange></h3>
-                                        <span><?php echo "N/A";?> </span>
+                                        <h3>Mail <orange></orange></h3>
+                                        <span><?php echo $email;?> </span>
                                     </div>
                                 </div>
                             </a>
@@ -79,7 +80,7 @@
                                     </div>
                                     <div class="collection:data">
                                         <h3>Twitter</h3>
-                                        <a href="https://twitter.com/<?php echo $twitter;?>" target="_blank" alt="weather34 twitter" title="weather34 twitter">https://twitter.com/<?php echo $twitter;?></a>
+                                        <a href="https://twitter.com/<?php echo $twitter;?>" target="_blank" alt="twitter" title="weather34 twitter">https://twitter.com/<?php echo $twitter;?></a>
                                     </div>
                                 </div>
                             </a>
