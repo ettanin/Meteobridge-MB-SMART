@@ -1,10 +1,10 @@
 <?php include('livedata.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
 <div class="topframe">
 
-<div class="tempminthisyear" style="margin-left:10px;font-size:.8rem">
+<div class="tempminthisyear" style="margin-left:10px;font-size:.8rem;color:#555">
 <?php //battery console
- if ($weather['indoorbattery']==1){echo "<maxtempred style='margin-left:-15px;font-size:.7rem;margin-top:3px'>No Power</maxtempred>";}else if ($weather['indoorbattery']==0){echo "<maxtempblue style='margin-left:-5px;font-size:.7rem;margin-top:3px'>5V AC</maxtempblue>";}?></div>
-<div class="tmonthmax" style="margin-left:-10px;">Console Power</div>
+ if ($weather['indoorbattery']==1){echo "<maxtempred style='margin-left:-15px;font-size:.7rem;margin-top:3px'>No Power</maxtempred>";}else if ($weather['indoorbattery']==0){echo "<maxtempblue style='margin-left:-4px;font-size:.7rem;margin-top:3px'>5V&nbsp; </maxtempblue> <span style='font-size:.6em;margin-top:5px'> DC</span>";}?></div>
+<div class="tmonthmax" style="margin-left:-5px;">Console Power</div>
 <div class="tmonthconv" style="margin-left:3px;"><?php //power console
  if ($weather['indoorbattery']==1){echo "Check";} else echo"Stable"?></div>
 <div class="davisbattery" style="margin-left:18px;">
