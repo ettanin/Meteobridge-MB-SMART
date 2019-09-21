@@ -65,7 +65,7 @@
                                     
                                     <div class="collection:data">
                                         <h3>Mail <orange></orange></h3>
-                                        <span><?php echo $email;?> </span>
+                                        <span><a href="mailto:<?php echo $email;?>?Subject=Weather Station"><?php echo $email;?></a></span>
                                     </div>
                                 </div>
                             </a>
