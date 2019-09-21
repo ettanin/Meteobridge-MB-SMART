@@ -1,4 +1,4 @@
-<?php include('settings1.php');$url = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://').$_SERVER['SERVER_NAME'];?>
+<?php include('settings1.php');include('common.php');$url = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://').$_SERVER['SERVER_NAME'];?>
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -65,7 +65,7 @@
                                     
                                     <div class="collection:data">
                                         <h3><orange>@</orange>Mail</h3>
-                                        <span><a href="mailto:@@<?php echo $email;?>?Subject=Weather Station"onmouseover="this.href=this.href.replace('@@','')">Send an @email</a></span>
+                                        <span><a href="mailto:@@<?php echo $email;?>?Subject=Weather Station"onmouseover="this.href=this.href.replace('@@','')"><?php echo $lang['Contact']?> via <orange>@</orange>email</a>
                                     </div>
                                 </div>
                             </a>
