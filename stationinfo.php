@@ -38,7 +38,7 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
   -webkit-border-radius:4px;
   border-radius:4px;
   background:0;-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;
-  height:245px ;
+  height:275px ;
   overflow:hidden
 }
  a{color:#aaa;text-decoration:none} 
@@ -78,6 +78,13 @@ border:solid 2px #4b545c;border-bottom:solid 15px #4b545c;-webkit-border-radius:
   else if ($weatherhardware=='Davis Envoy8x' ){echo ' 
   <img src=img/designedfordavisenvoy8x.svg width="260rem" alt="Davis Envoy8x" title="Davis Envoy8x" style="margin-top:5px;"/>';}
   ?>
+ 
+  
+  <div style="position:relative;float:left;margin-left:0;top:25px">
+ <?php echo $info?> Davis&reg; Vantage&#8482; <a href="https://www.davisinstruments.com/product/wireless-vantage-pro2-plus-including-uv-solar-radiation-sensors/" title="https://www.davisinstruments.com/product/wireless-vantage-pro2-plus-including-uv-solar-radiation-sensors/" target="_blank"> <?php echo $chartinfo?> Information</a>.<br> 
+ <?php echo $info?> Davis&reg; <a href="https://www.davisinstruments.com" title="https://www.davisinstruments.com" target="_blank"> <?php echo $chartinfo?> Information</a>.
+ </span></div>
+  
 </article> 
 
 
@@ -96,6 +103,11 @@ $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime){$weather34na
   if ($mbplatform=='NanoSD' || $mbplatform=='Nano'){echo '<div class="nanoimg2"><img src=img/nano.svg width="120rem" alt="Meteobridge NANO(SD)" title="Meteobridge NANO(SD)"/></div>';}
   if ($mbplatform=='Pro' ){echo '<div class="proimg2"><img src=img/MeteobridgePRO.svg width="180rem" alt="Meteobridge Pro" title="Meteobridge Pro2"/></div>';}
   ?>  </div> </div> 
+  
+  <div style="position:relative;float:left;margin-left:0;top:165px">
+ <?php echo $info?> NANOSD <?php echo $chartinfo?> <a href="https://www.meteobridge.com/wiki/index.php/Meteobridge_NANO_SD" title="https://www.meteobridge.com/wiki/index.php/Meteobridge_NANO_SD" target="_blank">Information</a>.<br> 
+ <?php echo $info?> Meteobridge <?php echo $chartinfo?> <a href="https://www.meteobridge.com" title="https://www.meteobridge.com" target="_blank">Information</a>.
+ </span></div>
   </article> 
 <article>  
    <div class=actualt>Hardware Power</div> 
@@ -151,6 +163,12 @@ else echo '<span style="margin-left:-20px">
 </svg>';?>
 <div style="margin-left:-20px;margin-top:5px;font-size:.8rem"><?php //power console
  if ($weather['outdoorbattery']==1){echo "<red style='margin-left:0;font-size:.85rem;margin-top:6px'>Check Battery";} else echo"<blue style='margin-left:32px;'>Condition"?></div>
+ 
+ </div></div></div>
+ <div style="position:relative;float:left;margin-left:0;top:200px">
+ <?php echo $info?> Source is a <a href="https://www.davisinstruments.com/product/power-adapter-for-vantage-family-consoles/" title="https://www.davisinstruments.com/product/power-adapter-for-vantage-family-consoles/" target="_blank"> <?php echo $chartinfo?> 240V AC TO 5V DC adapter</a>.<br> 
+ <?php echo $info?> ISS solar charged 3V <a href="https://www.davisinstruments.com/product/lithium-battery-3-volt/" title="https://www.davisinstruments.com/product/lithium-battery-3-volt/" target="_blank"><?php echo $chartinfo?> CR123 Lithium</a>.
+ </span></div>
  
  
  </article> 
