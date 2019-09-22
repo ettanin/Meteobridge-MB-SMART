@@ -13,7 +13,6 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	
 	include('preload.php');
 	$conv = 1;
 	if ($rainunit == 'in') {$conv= '0.0393701';}	
@@ -128,7 +127,8 @@
         titleWrap: false,
 		margin: 3,
 		lineThickness: 1,	
-		interval:'<?php if ($rainunit == 'mm'){echo "auto";}else echo "0.15"?>',	
+		interval:'auto',	
+		
 		gridThickness: 1,	
 		gridDashType: "dot",	
         includeZero:true,
@@ -166,15 +166,7 @@
 		},
 		{
 			type: "column",
-			indexLabelLineThickness: 0, 
-			indexLabelLineThickness: 0,       
-       		indexLabel: "{y}",
-	   		indexLabelFontSize: 8,
-	   		indexLabelFontColor: "#aaa",	  
-	   		indexLabelMaxWidth: 30,
-	   		indexLabelFontWeight: "bold",
-       		indexLabelWrap: true,
-	   		indexLabelPlacement: "auto",       
+			
 			color:"#009bab",
 			markerSize:0,
 			showInLegend:false,
