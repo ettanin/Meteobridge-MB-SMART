@@ -93,7 +93,7 @@ $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime){$weather34na
     Firmware:<blue><?php echo $weather["swversion"]."-" .$weather["build"]?></blue><br>
     <div style="position:absolute;display:inline-block;margin-left:45px;margin-top:15px;">
     <?php 
-  if ($mbplatform=='NanoSD' || $mbplatform=='Nano'){echo '<div class="nanoimg2"><img src=img/nano.svg width="120rem" alt="Davis Vantage Pro2" title="Davis Vantage Pro2"/></div>';}
+  if ($mbplatform=='NanoSD' || $mbplatform=='Nano'){echo '<div class="nanoimg2"><img src=img/nano.svg width="120rem" alt="Meteobridge NANO(SD)" title="Meteobridge NANO(SD)"/></div>';}
   if ($mbplatform=='Pro' ){echo '<div class="proimg2"><img src=img/MeteobridgePRO.svg width="180rem" alt="Meteobridge Pro" title="Meteobridge Pro2"/></div>';}
   ?>  </div> </div> 
   </article> 
