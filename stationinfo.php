@@ -98,7 +98,7 @@ $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime){$weather34na
     Interface:Meteobridge <blue><?php echo $mbplatform?> </blue><?php echo $weather["mbplatform"]?><br>
     Interface Uptime :<blue><?php echo convert($nanosduptime)?></blue><br>
     Firmware:<blue><?php echo $weather["swversion"]."-" .$weather["build"]?></blue><br>
-    <div style="margin-top:15px;">
+    <div style="margin-top:15px;margin-left:60px">
     <?php 
   if ($mbplatform=='NanoSD' || $mbplatform=='Nano'){echo '<div class="nanoimg2"><img src=img/nano.svg width="100rem" alt="Meteobridge NANO(SD)" title="Meteobridge NANO(SD)"/></div>';}
   if ($mbplatform=='Pro' ){echo '<div class="proimg2"><img src=img/MeteobridgePRO.svg width="100rem" alt="Meteobridge Pro" title="Meteobridge Pro2"/></div>';}
