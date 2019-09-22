@@ -58,7 +58,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 border:solid 2px #4b545c;border-bottom:solid 5px #4b545c;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;}
 .hardwareimageaq{position:relative;display:flex;margin:0 auto;margin-top:10px;
 border:solid 2px #4b545c;border-bottom:solid 15px #4b545c;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;padding-right:3px;opacity:.8}
-
+.batterypower{position:absolute;margin-left:103px;top:75px}
 
 </style>
 <div class="weather34darkbrowser" url="<?php echo $stationlocation?> Weather Station Hardware Info"></div>
@@ -98,13 +98,13 @@ $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime){$weather34na
     Interface:Meteobridge <blue><?php echo $mbplatform?> </blue><?php echo $weather["mbplatform"]?><br>
     Interface Uptime :<blue><?php echo convert($nanosduptime)?></blue><br>
     Firmware:<blue><?php echo $weather["swversion"]."-" .$weather["build"]?></blue><br>
-    <div style="position:absolute;display:inline-block;margin-left:45px;margin-top:15px;">
+    <div style="margin-top:15px;">
     <?php 
-  if ($mbplatform=='NanoSD' || $mbplatform=='Nano'){echo '<div class="nanoimg2"><img src=img/nano.svg width="120rem" alt="Meteobridge NANO(SD)" title="Meteobridge NANO(SD)"/></div>';}
-  if ($mbplatform=='Pro' ){echo '<div class="proimg2"><img src=img/MeteobridgePRO.svg width="180rem" alt="Meteobridge Pro" title="Meteobridge Pro2"/></div>';}
+  if ($mbplatform=='NanoSD' || $mbplatform=='Nano'){echo '<div class="nanoimg2"><img src=img/nano.svg width="100rem" alt="Meteobridge NANO(SD)" title="Meteobridge NANO(SD)"/></div>';}
+  if ($mbplatform=='Pro' ){echo '<div class="proimg2"><img src=img/MeteobridgePRO.svg width="100rem" alt="Meteobridge Pro" title="Meteobridge Pro2"/></div>';}
   ?>  </div> </div> 
   
-  <div style="position:relative;float:left;margin-left:0;top:165px">
+  <div style="position:relative;float:left;margin-left:0;top:30px">
  <?php echo $info?> NANOSD <?php echo $chartinfo?> <a href="https://www.meteobridge.com/wiki/index.php/Meteobridge_NANO_SD" title="https://www.meteobridge.com/wiki/index.php/Meteobridge_NANO_SD" target="_blank">Information</a>.<br> 
  <?php echo $info?> Meteobridge <?php echo $chartinfo?> <a href="https://www.meteobridge.com" title="https://www.meteobridge.com" target="_blank">Information</a>.
  </span></div>
@@ -113,9 +113,9 @@ $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime){$weather34na
    <div class=actualt>Hardware Power</div> 
    
    
-   <div style="position:absolute;display:inline;margin-left:15px;">
+   <div style="margin-left:15px;">
    
-    <div style="position:absolute;display:inline;margin-left:15px;width:100px">Console Power</div>
+    <div style="width:100px">Console Power</div>
     
     <?php //battery console
  if ($weather['indoorbattery']==1){echo "<div style='margin-left:10px;font-size:1rem;margin-top:23px'><red>&nbsp;&nbsp;&nbsp;No Power !!";}
@@ -131,9 +131,9 @@ $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime){$weather34na
  if ($weather['indoorbattery']==1){echo "<red style='font-size:.85rem;margin-left:-15px;margin-top:35px;'>Check Power";} else echo"<blue>Stable"?></div></div></div></div>
  
  
- <div style="position:absolute;display:inline;margin-left:115px;">
+ <div class="batterypower">
  
-  <div style="position:absolute;display:inline;margin-left:30px;width:100px">ISS Power</div>
+  ISS Power
     
     <?php //battery console
  if ($weather['outdoorbattery']==1){echo "<div style='margin-left:25px;font-size:1rem;margin-top:23px'><red>No Power";}
@@ -165,8 +165,8 @@ else echo '<span style="margin-left:-20px">
  if ($weather['outdoorbattery']==1){echo "<red style='margin-left:0;font-size:.85rem;margin-top:6px'>Check Battery";} else echo"<blue style='margin-left:32px;'>Condition"?></div>
  
  </div></div></div>
- <div style="position:relative;float:left;margin-left:0;top:200px">
- <?php echo $info?> Source is a <a href="https://www.davisinstruments.com/product/power-adapter-for-vantage-family-consoles/" title="https://www.davisinstruments.com/product/power-adapter-for-vantage-family-consoles/" target="_blank"> <?php echo $chartinfo?> 120/240V AC TO 5V DC adapter</a>.<br> 
+ <div style="position:relative;float:left;margin-left:0;top:25px">
+ <?php echo $info?> Source is a <a href="https://www.davisinstruments.com/product/power-adapter-for-vantage-family-consoles/" title="https://www.davisinstruments.com/product/power-adapter-for-vantage-family-consoles/" target="_blank"> <?php echo $chartinfo?> 120/240V AC TO 5V DC</a>.<br> 
  <?php echo $info?> ISS solar charged 3V <a href="https://www.davisinstruments.com/product/lithium-battery-3-volt/" title="https://www.davisinstruments.com/product/lithium-battery-3-volt/" target="_blank"><?php echo $chartinfo?> CR123 Lithium</a>.
  </span></div>
  
