@@ -80,7 +80,7 @@ border:solid 2px #4b545c;border-bottom:solid 15px #4b545c;-webkit-border-radius:
   ?>
  
   
-  <div style="position:relative;float:left;margin-left:0;top:25px">
+  <div style="position:relative;float:left;margin-left:0;top:40px">
  <?php echo $info?> Davis&reg; Vantage&#8482; <a href="https://www.davisinstruments.com/product/wireless-vantage-pro2-plus-including-uv-solar-radiation-sensors/" title="https://www.davisinstruments.com/product/wireless-vantage-pro2-plus-including-uv-solar-radiation-sensors/" target="_blank"> <?php echo $chartinfo?> Information</a>.<br> 
  <?php echo $info?> Davis&reg; <a href="https://www.davisinstruments.com" title="https://www.davisinstruments.com" target="_blank"> <?php echo $chartinfo?> Information</a>.
  </span></div>
