@@ -58,7 +58,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 border:solid 2px #4b545c;border-bottom:solid 5px #4b545c;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;}
 .hardwareimageaq{position:relative;display:flex;margin:0 auto;margin-top:10px;
 border:solid 2px #4b545c;border-bottom:solid 15px #4b545c;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;padding-right:3px;opacity:.8}
-.batterypower{position:absolute;margin-left:103px;top:75px}
+.batterypower{position:absolute;margin-left:103px;top:74px}
 
 </style>
 <div class="weather34darkbrowser" url="<?php echo $stationlocation?> Weather Station Hardware Info"></div>
@@ -115,7 +115,7 @@ $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime){$weather34na
    
    <div style="margin-left:15px;">
    
-    <div style="width:100px">Console Power</div>
+    <div style="width:100px">&nbsp;&nbsp;&nbsp;&nbsp;Console Power</div>
     
     <?php //battery console
  if ($weather['indoorbattery']==1){echo "<div style='margin-left:10px;font-size:1rem;margin-top:23px'><red>&nbsp;&nbsp;&nbsp;No Power !!";}
@@ -127,13 +127,13 @@ $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime){$weather34na
 <g><g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)"><path fill="#3e4a57" d="M4482.4,4879.1c-850.3-87.4-1743.2-444.1-2440-970.8c-255.1-193.7-666.1-595.2-866.9-845.6C266.1,1919.5-90.5,452.7,197.6-976.4C469.3-2325.1,1307.8-3506.1,2503-4217.1c394.5-233.8,956.6-467.7,1124.3-467.7c269.3,2.4,510.2,281.1,463,538.5c-37.8,210.2-139.4,307.1-451.2,427.5c-569.2,222-999.1,496-1403,899.9C1650.3-2240,1298.3-1604.7,1130.6-829.9c-337.8,1570.7,323.6,3210,1662.9,4112.3c1993.6,1344,4707.5,611.8,5765.7-1554.2c689.7-1414.9,472.4-3115.5-550.3-4298.9C7560.1-3088,6759.4-3574.6,6353.1-3574.6c-522,0-843.3,571.6-895.2,1594.4l-14.2,283.4l210.2,40.2c326,61.4,566.9,191.3,812.5,441.7c151.2,151.2,224.4,248,288.2,380.3C6905.8-530,6915.2-452,6915.2,495.2v843.3H5002H3088.8V495.2c0-944.8,9.4-1025.1,155.9-1320.4c203.1-413.3,581.1-708.6,1046.4-819.6l207.9-49.6l14.2-321.2c61.4-1313.3,529.1-2154.2,1351.1-2425.8c264.6-87.4,689.7-92.1,968.4-11.8c503.1,144.1,1247.2,600,1677,1032.2c1443.2,1438.5,1807,3748.5,883.4,5595.6C8471.8,4017,6525.5,5087,4482.4,4879.1z"/>
 <path fill="#2f9dac" d="M3851.7,2944.6c-40.1-23.6-87.4-66.1-99.2-92.1c-16.5-28.3-26-262.2-26-625.9v-581.1H4069h342.5v585.8c0,640.1-2.4,654.3-141.7,725.1C4170.6,3008.4,3943.8,3001.3,3851.7,2944.6z"/>
 <path fill="#2f9dac" d="M5717.7,2944.6c-40.2-23.6-87.4-66.1-99.2-92.1c-16.5-28.3-26-262.2-26-625.9v-581.1H5935h342.5v585.8c0,640.1-2.4,654.3-141.7,725.1C6036.6,3008.4,5809.8,3001.3,5717.7,2944.6z"/></g></g></svg>
-<div style="margin-left:23px;margin-top:10px"><?php //power console
+<div style="margin-left:23px;margin-top:8px"><?php //power console
  if ($weather['indoorbattery']==1){echo "<red style='font-size:.85rem;margin-left:-15px;margin-top:35px;'>Check Power";} else echo"<blue>Stable"?></div></div></div></div>
  
  
- <div class="batterypower">
  
-  ISS Power
+ 
+ <div class="batterypower">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ISS Power
     
     <?php //battery console
  if ($weather['outdoorbattery']==1){echo "<div style='margin-left:25px;font-size:1rem;margin-top:23px'><red>No Power";}
