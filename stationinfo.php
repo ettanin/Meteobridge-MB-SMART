@@ -166,7 +166,7 @@ else echo '<span style="margin-left:-20px">
  
  </div></div></div>
  <div style="position:relative;float:left;margin-left:0;top:200px">
- <?php echo $info?> Source is a <a href="https://www.davisinstruments.com/product/power-adapter-for-vantage-family-consoles/" title="https://www.davisinstruments.com/product/power-adapter-for-vantage-family-consoles/" target="_blank"> <?php echo $chartinfo?> 240V AC TO 5V DC adapter</a>.<br> 
+ <?php echo $info?> Source is a <a href="https://www.davisinstruments.com/product/power-adapter-for-vantage-family-consoles/" title="https://www.davisinstruments.com/product/power-adapter-for-vantage-family-consoles/" target="_blank"> <?php echo $chartinfo?> 120/240V AC TO 5V DC adapter</a>.<br> 
  <?php echo $info?> ISS solar charged 3V <a href="https://www.davisinstruments.com/product/lithium-battery-3-volt/" title="https://www.davisinstruments.com/product/lithium-battery-3-volt/" target="_blank"><?php echo $chartinfo?> CR123 Lithium</a>.
  </span></div>
  
