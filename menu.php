@@ -12,9 +12,8 @@
 ?>
 <div class="weather34admin"><header class="weather34admin__header">
 <div class="weather34topbarmail">
-<a href="stationinfo.php" data-lity title="WEATHERSTATION Info"><svg id="info icon weather34" version="0.1"  width="20" height="18" stroke-width="1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000"><g><path fill="#2f9dac" stroke="#2f9dac" stroke-width="1" d="M499.6,389.3c-36.7,0-66.4,29.7-66.4,66.4v200.9c0,36.7,29.7,66.4,66.4,66.4c36.7,0,66.4-29.7,66.4-66.4V455.7C566,419,536.2,389.3,499.6,389.3z"/>
-<path fill="#2f9dac" stroke="#2f9dac" stroke-width="1" d="M435.1,255.6c0,36.1,29.3,65.4,65.4,65.4c36.1,0,65.4-29.3,65.4-65.4c0-36.1-29.3-65.4-65.4-65.4C464.4,190.2,435.1,219.5,435.1,255.6z"/><path fill="#aeb6bf" stroke="#aeb6bf" stroke-width="1" d="M945.4,334c-0.6-18-15.3-32.4-33.5-32.4c-18.6,0-33.6,15.1-33.6,33.6c0,1.6,0.3,3,0.5,4.5v327.7c0,79.9-65,144.8-144.8,144.8H585l-84.8,104.4l-86.1-104.4H266c-79.9,0-144.8-65-144.8-144.8V221.7c0-79.9,65-144.8,144.8-144.8h468c71,0,131.9,52.5,142.7,122.5c0,0.3-0.1,0.6-0.1,0.9c0,18.7,15.2,33.9,33.9,33.9c18.7,0,33.9-15.2,33.9-33.9c0-2.7-0.4-5.4-1-7.9h0.1C929,88.4,838.9,10,734,10H266C149.3,10,54.3,105,54.3,221.7v445.7c0,116.7,95,211.7,211.7,211.7h116.6l71.2,86.2c3.1,4.1,19.9,24.5,46.7,24.7c0.1,0,0.3,0,0.4,0c12.2,0,29.9-4.2,45.2-23.8l70.8-87.2h117c116.7,0,211.7-95,211.7-211.7V334H945.4z"/></g>
-</svg></a>&nbsp;&nbsp;&nbsp;
+<div class="topbar34-circle1"><div class="topbar34-circle2"></div></div>
+<a href="stationinfo.php" data-lity title="WEATHERSTATION Info"><topbarimperialf>&nbsp;Info&nbsp;</topbarimperialf></a>&nbsp;&nbsp;&nbsp;
 <a href="bio.php" data-lity title="Contact WEATHERSTATION Info"><svg version="1.1" id="email icon weather34" width="24" height="24"  x="0px" y="0px" viewBox="0 0 419.284 419.284" stroke-width="1"><g>
 	<g><path fill="#aeb6bf" stroke="#aeb6bf" stroke-width="1" d="M363.284,126.616h-199.28c-6.352-45.063-48.032-76.444-93.095-70.092s-76.444,48.032-70.092,93.095
 c4.303,30.527,25.287,56.099,54.387,66.278v91.68c0,27.04,14.72,56,56,56h252.08c27.04,0,56-14.72,56-56v-125.04 C419.204,141.256,390.324,126.616,363.284,126.616z M165.044,138.456h198.24c9.825-0.036,19.446,2.8,27.68,8.16l-153.76,99.6 l-36.4-24c-0.643-0.586-1.408-1.023-2.24-1.28l-50.64-32.8C158.931,173.906,164.947,156.447,165.044,138.456z M12.004,138.136
