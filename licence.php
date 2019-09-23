@@ -76,10 +76,10 @@ date{color:#aaa;font-size:.65em;margin-top:10px}
 <red>No additional restrictions</red> — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 <br>
 em>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Template.</em>
-<br><strong>Be smart and be ethical</strong>
+<br><br><strong>Be smart and be ethical</strong>
 <br>
-<em>You do not have the right to <strong>resell, sublicense or redistribute (even for free)</strong> files yourself or as a separate application from any of your work. If you have any questions about the License, feel free to <strong><a href="mailto:info@weather34.com">weather34</a></strong> for clarification.</em>
-
+<em>You do not have the right to <strong>resell, sublicense or redistribute (even for free)</strong> files yourself or as a separate application from any of your work. If you have any questions about the License, feel free to contact <strong><a href="mailto:info@weather34.com?subject=weather34 template">weather34</a></strong> for clarification.</em>
+<br>
 <br><a href="https://github.com/weather34/Meteobridge-MB-SMART" title="https://github.com/weather34/Meteobridge-MB-SMART" target="_blank">
 <svg id="github" viewBox="0 0 64 64" width="15" height="15"><path stroke-width="0" fill="#009bab" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" /></svg></a>
 *download MB-SMART version via github <a href="https://github.com/weather34/Meteobridge-MB-SMART" title="https://github.com/weather34/Meteobridge-MB-SMART" target="_blank">
