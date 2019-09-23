@@ -75,7 +75,7 @@ date{color:#aaa;font-size:.65em;margin-top:10px}
 <red>NoDerivatives</red> — If you remix, transform, or build upon the material, <strong><red>you may not distribute</red></strong> the modified material.<br>
 <red>No additional restrictions</red> — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 <br>
-em>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Template.</em>
+<em>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Template.</em>
 <br><br><strong>Be smart and be ethical</strong>
 <br>
 <em>You do not have the right to <strong>resell, sublicense or redistribute (even for free)</strong> files yourself or as a separate application from any of your work. If you have any questions about the License, feel free to contact <strong><a href="mailto:info@weather34.com?subject=weather34 template">weather34</a></strong> for clarification.</em>
