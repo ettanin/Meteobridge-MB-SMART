@@ -7071,7 +7071,7 @@ weather34toptitle {
 .weather34moonphasesvg{position:absolute; left:100px; top:35px; width:120px;}
 .weather34moonforeground { fill:rgba(226, 228, 237, .5); stroke:rgba(86, 95, 103, .8); stroke-width:0;max-height:100px }
 .weather34moonbackground{ fill:rgba(120, 138, 146, 1);stroke:rgba(230, 232, 239, .3);stroke-width:0; }
-.weather34topbarmail{display: flex;position:absolute;top:7px;margin-left:75px;align-items: center;justify-content: center;color: #aeb6bf;
+.weather34topbarmail{display: flex;position:absolute;top:7px;margin-left:60px;align-items: center;justify-content: center;color: #aeb6bf;
 background:0;
   line-height:1;
   padding:3px;
