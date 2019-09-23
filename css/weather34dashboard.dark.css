@@ -1,29 +1,36 @@
 ogreyh1 {
   align-items: center;
 }
+
 img {
   image-rendering: auto;
 }
+
 @font-face {
   font-family: system;
   font-style: normal;
   src: local("Arial");
 }
+
 @font-face {
   font-family: clock;
-  src: url(fonts/clock3-webfont.woff) format("woff")   
+  src: url(fonts/clock3-webfont.woff) format("woff");
 }
+
 @font-face {
   font-family: weathertext2;
   src: url(fonts/verbatim-regular.woff) format("woff");
 }
+
 body,
 h1 {
   font-weight: 500;
 }
+
 a {
   text-decoration: none;
 }
+
 *,
 :after,
 :before,
@@ -31,18 +38,21 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+
 *,
 :after,
 :before,
 hr {
   -o-box-sizing: border-box;
 }
+
 *,
 :after,
 :before {
   -ms-box-sizing: border-box;
   box-sizing: inherit;
 }
+
 body {
   background: #131417;
   clear: both;
@@ -51,10 +61,12 @@ body {
   cursor: url(mouse/weather34bluecursor.png), n-resize;
   color: #aeb6bf;
 }
+
 body,
 header {
   text-align: center;
 }
+
 header {
   background: rgba(45, 48, 58, .6);
   border: 0;
@@ -69,10 +81,12 @@ header {
   z-index: 4;
   margin-bottom: -10px;
 }
+
 h1 {
   font-size: 0.9rem;
   top: 10px;
 }
+
 .h2,
 .h3,
 .h4,
@@ -89,6 +103,7 @@ h6 {
   color: inherit;
   font-smoothing: antialiased;
 }
+
 .h1 .small,
 .h2 .small,
 .h3 .small,
@@ -104,6 +119,7 @@ h6 .small {
   line-height: 1;
   color: #aeb6bf;
 }
+
 .h1,
 .h2,
 .h3,
@@ -113,6 +129,7 @@ h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
 .h4,
 .h5,
 .h6,
@@ -122,18 +139,22 @@ h6 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 a,
 body {
   text-transform: none;
   font-family: system;
 }
+
 img,
 wm2 {
   vertical-align: middle;
 }
+
 .barometertrend steady {
   color: #aeb6bf;
 }
+
 .barometertrend {
   position: relative;
   color: #aeb6bf;
@@ -142,6 +163,7 @@ wm2 {
   font: 12px Arial, system;
   margin: -58px auto auto;
 }
+
 .temptrend {
   position: absolute;
   margin-top: 33px;
@@ -152,6 +174,7 @@ wm2 {
   color: #fff;
   font-family: Arial, system;
 }
+
 trendmovementfalling,
 trendmovementrising {
   color: #fff;
@@ -159,25 +182,29 @@ trendmovementrising {
   margin-left: 15px;
   font-family: weathertext2;
 }
+
 trendmovementsteady {
   color: #fff;
   font-size: 12px;
   margin-left: 10px;
 }
+
 h3 {
   font: 4em weathertext2;
 }
+
 a:visited {
   border: 0;
 }
+
 .daylightcompass2 > .daylightcompass-line2,
 .homeweathercompass1 > .homeweathercompass-line1,
-.homeweathercompass2 > .homeweathercompass-line2
-{
+.homeweathercompass2 > .homeweathercompass-line2 {
   right: 25px;
   -webkit-clip-path: polygon(100%0, 100%100%, 100%100%, 0100%, 0);
   -ms-clip-path: polygon(100%0, 100%100%, 100%100%, 0100%, 0);
 }
+
 .heatcircle-content {
   color: #aeb6bf;
   float: left;
@@ -189,6 +216,7 @@ a:visited {
   display: block;
   line-height: 15px;
 }
+
 .baromcircle-content {
   float: left;
   line-height: 1;
@@ -200,10 +228,12 @@ a:visited {
   font-family: arial, system;
   font-weight: 900;
 }
+
 a {
   font-family: arial, system;
   z-index: 20;
 }
+
 .baromcircle {
   border-radius: 50%;
   height: 70px;
@@ -224,23 +254,28 @@ a {
   font-weight: 600;
   font-size: 1em;
 }
+
 .humidity {
   padding-top: 35px;
   font: 500 4em arial, system;
 }
+
 humiditycolor {
   color: #9aba2f;
   font-weight: 700;
 }
+
 .windgustheading {
   color: #aeb6bf;
   font: 1em weathertext2;
 }
+
 .line {
   margin-top: 5px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: 5px;
 }
+
 .solar {
   padding-left: 25px;
   font: 2.8em weathertext2;
@@ -251,19 +286,23 @@ humiditycolor {
   margin-left: 0;
   font-size: 12px;
 }
+
 .moonset {
   margin-top: -32px;
   margin-left: 80px;
 }
+
 .fullmoon {
   margin-top: -6px;
   margin-left: 0;
   font-size: 12px;
 }
+
 in,
 mb {
   font: 0.65em arial, system;
 }
+
 .daylight {
   color: #aeb6bf;
   font-family: arial, system;
@@ -271,25 +310,31 @@ mb {
   margin-left: 360px;
   border: 0;
 }
+
 sup,
 supdavis {
   top: -0.5em;
 }
+
 .symbol {
   font-size: 10px;
 }
+
 .whitespace {
   height: 45px;
 }
+
 supdavis {
   font-size: 0.5em;
   vertical-align: top;
 }
+
 .updatedtime,
 .updatedtimeuv {
   width: 75px;
   text-align: center;
 }
+
 .barometertrend1 {
   width: 100px;
   position: absolute;
@@ -300,6 +345,7 @@ supdavis {
   font: 0.68em weathertext2;
   line-height: 9px;
 }
+
 .barometertrend1 hourtrend {
   font: 500 10px arial, system;
   color: #aeb6bf;
@@ -307,6 +353,7 @@ supdavis {
   text-align: left;
   margin-left: 15px;
 }
+
 .barometeravg,
 .barometermax {
   margin-left: 10px;
@@ -314,29 +361,35 @@ supdavis {
   position: absolute;
   text-align: center;
 }
+
 barometerinfo {
   color: #aeb6bf;
 }
+
 .barometermax {
   margin-top: 10px;
   color: #aeb6bf;
   font: 10px arial, system;
   line-height: 9px;
 }
+
 .averagedir,
 .barometermin {
   margin-top: 124px;
   position: absolute;
   text-align: center;
 }
+
 .barometermax span {
   font: 500 10px arial, system;
   color: #90b12a;
 }
+
 .barometermax unit {
   font: 500 10px arial, system;
   color: #aeb6bf;
 }
+
 .barometermin {
   margin-left: 240px;
   width: 50px;
@@ -344,17 +397,21 @@ barometerinfo {
   font: 10px arial, system;
   line-height: 9px;
 }
+
 .averagedir,
 .barometermin span,
 .barometermin unit {
   font: 500 10px arial, system;
 }
+
 .barometermin span {
   color: #90b12a;
 }
+
 .barometermin unit {
   color: #aeb6bf;
 }
+
 .barometertrend falling,
 .barometertrend rising,
 .barometertrend steady,
@@ -367,6 +424,7 @@ suprain2,
 suptemp {
   -webkit-font-smoothing: antialiased;
 }
+
 .averagedir1 span,
 .averagedir1 span2 {
   margin-bottom: 0;
@@ -374,9 +432,11 @@ suptemp {
   -moz-font-smoothing: antialiased;
   font-family: arial, system;
 }
+
 .feelstemp {
   font: 500 10px arial, system;
 }
+
 .max,
 .raintext1,
 .rainvalue,
@@ -385,19 +445,22 @@ suprain2,
 suptemp {
   -moz-font-smoothing: antialiased;
 }
+
 img {
   border: 0;
 }
-body
-{
+
+body {
   margin: 0;
 }
+
 sub,
 sup {
   position: relative;
   line-height: 0;
   vertical-align: baseline;
 }
+
 .thearrow,
 .thearrow3,
 .thearrow:after {
@@ -405,6 +468,7 @@ sup {
   left: 50%;
   position: absolute;
 }
+
 .thearrow,
 .thearrow3 {
   z-index: 200;
@@ -412,6 +476,7 @@ sup {
   -webkit-transform-origin: 50% 100%;
   -ms-transform-origin: 50% 100%;
 }
+
 .thearrow {
   width: 10px;
   height: 50%;
@@ -422,6 +487,7 @@ sup {
   -o-animation: rotate 1.5s both linear;
   -ms-animation: rotate 1.5s both linear;
 }
+
 .animated .thearrow,
 .thearrow1 {
   animation: rotate 1.5s both linear;
@@ -430,6 +496,7 @@ sup {
   -o-animation: rotate 1.5s both linear;
   -ms-animation: rotate 1.5s both linear;
 }
+
 .thearrow:after {
   height: 15px;
   width: 15px;
@@ -441,10 +508,12 @@ sup {
   transform: translate(-50%, -50%);
   background: #ff7c39;
 }
+
 ::scrollbar-thumb,
 uv0 {
   background-color: #90b12a;
 }
+
 .thearrow3 {
   width: 10px;
   height: 50%;
@@ -452,10 +521,12 @@ uv0 {
   -o-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
 }
+
 .thearrow1:after,
 .thearrow3:after {
   -webkit-transform: translate(-50%, -50%);
 }
+
 .thearrow:before {
   width: 6px;
   height: 6px;
@@ -470,9 +541,11 @@ uv0 {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+
 .rainvalue span {
   font-size: 0.6em;
 }
+
 .raintext1 {
   font-size: 10px;
   color: #00adbc;
@@ -481,10 +554,12 @@ uv0 {
   line-height: 10px;
   font-family: Arial, system;
 }
+
 .raintext1 span {
   color: #aeb6bf;
   font-size: 1em;
 }
+
 .sunimage {
   left: 55px;
   color: #f8f8f8;
@@ -494,6 +569,7 @@ uv0 {
   font-size: 10px;
   top: 4px;
 }
+
 .hrstillsunset,
 .hrstillsunset period,
 .hrswassunrise,
@@ -504,6 +580,7 @@ uv0 {
 .sunsethome period {
   color: #aeb6bf;
 }
+
 .thearrow1:after,
 .thearrow1:before,
 .thearrow3:after,
@@ -512,19 +589,24 @@ uv0 {
 .weather34barometerarrowactual:after {
   content: "";
 }
+
 .moduletitle {
   font-size: 0.8em;
   float: none;
 }
+
 .windvalue {
   font-family: weathertext2;
 }
+
 a:hover {
-  color:#44a6b5;
+  color: #44a6b5;
 }
+
 .updatedtime {
   position: absolute;
 }
+
 .barometertrend falling,
 .barometertrend rising,
 .barometertrend steady,
@@ -532,69 +614,88 @@ html {
   font-family: arial, system;
   -moz-font-smoothing: antialiased;
 }
+
 .magnitude:first-child {
   display: block;
 }
+
 ::-webkit-scrollbar {
   width: 12px;
 }
+
 ::-webkit-scrollbar-track {
   background-color: #eaeaea;
   border-left: 1px solid silver;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #90b12a;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background-color: #00adbc;
 }
+
 ::-moz-scrollbar {
   width: 12px;
 }
+
 ::-moz-scrollbar-track {
   background-color: #eaeaea;
   border-left: 1px solid silver;
 }
+
 ::-moz-scrollbar-thumb {
   background-color: #90b12a;
 }
+
 ::-moz-scrollbar-thumb:hover {
   background-color: #00adbc;
 }
+
 ::-o-scrollbar {
   width: 12px;
 }
+
 ::-o-scrollbar-track {
   background-color: #eaeaea;
   border-left: 1px solid silver;
 }
+
 ::-o-scrollbar-thumb {
   background-color: #90b12a;
 }
+
 ::-o-scrollbar-thumb:hover {
   background-color: #00adbc;
 }
+
 ::scrollbar {
   width: 12px;
 }
+
 ::scrollbar-track {
   background-color: #eaeaea;
   border-left: 1px solid silver;
 }
+
 ::scrollbar-thumb:hover {
   background-color: #00adbc;
 }
+
 .max,
 lo,
 suptemp {
   color: #fff;
 }
+
 .windgustmphcircle-content,
 .windmphcircle-content {
   margin-top: -0.9em;
   padding-top: 40%;
   width: 100%;
 }
+
 .average span,
 .averagedir span,
 .averageindoor span,
@@ -608,6 +709,7 @@ suptemp {
   font-family: weathertext2;
   text-rendering: optimizeLegibility;
 }
+
 .humidityindoor span,
 .temperatureindoor span {
   margin-bottom: 0;
@@ -615,15 +717,18 @@ suptemp {
   color: #aeb6bf;
   font-family: weathertext2;
 }
+
 .text1,
 .windvalue1 {
   font-family: weathertext2;
   font-size: 1.45rem;
- color: #aeb6bf;
+  color: #aeb6bf;
 }
+
 .windvalue1 {
   margin-left: 5px;
 }
+
 .windirection1 {
   width: 100%;
   margin: 110px 0 0 85px;
@@ -636,12 +741,15 @@ suptemp {
   text-align: center;
   margin-top: -30px;
   margin-left: 60px;
-  z-index: 1;color: #aeb6bf;
+  z-index: 1;
+  color: #aeb6bf;
 }
+
 .text1 {
   z-index: 10;
   text-align: center;
-  margin: 60px 0 auto;color: #aeb6bf;
+  margin: 60px 0 auto;
+  color: #aeb6bf;
 }
 
 .weather34windspeed {
@@ -662,6 +770,7 @@ suptemp {
   width: 5em;
   letter-spacing: 0.05em;
 }
+
 .weather34windspeed > weather34windunitidspeed {
   position: absolute;
   font-size: 0.35em;
@@ -672,6 +781,7 @@ suptemp {
   left: 45px;
   letter-spacing: 0;
 }
+
 .weather34windspeed > weather34windunitidunit {
   position: absolute;
   font-size: 0.35em;
@@ -701,6 +811,7 @@ suptemp {
   width: 5em;
   letter-spacing: 0.05em;
 }
+
 .weather34windgust weather34windunitidspeed1 {
   position: absolute;
   font-size: 0.35em;
@@ -711,6 +822,7 @@ suptemp {
   left: 37px;
   letter-spacing: 0;
 }
+
 .weather34windgust weather34windunitidunit1 {
   position: absolute;
   font-size: 0.35em;
@@ -735,15 +847,18 @@ suptemp {
   border-bottom: 8px solid #3d464d;
   margin: auto;
 }
+
 .rainblue1 {
   bottom: 5px;
 }
+
 .thearrow1,
 .thearrow1:after {
   left: 50%;
   top: 0;
   position: absolute;
 }
+
 .thearrow1 {
   z-index: 200;
   margin-left: -5px;
@@ -755,6 +870,7 @@ suptemp {
   -ms-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
 }
+
 .thearrow1:after {
   height: 15px;
   width: 15px;
@@ -769,6 +885,7 @@ suptemp {
   transform: translate(-50%, -50%);
   background: #ff9350;
 }
+
 .thearrow1:before {
   width: 6px;
   height: 6px;
@@ -783,6 +900,7 @@ suptemp {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+
 .homeweathercompass1 > .windirectiontext1 {
   display: block;
   text-align: center;
@@ -794,9 +912,11 @@ suptemp {
   z-index: 10;
   margin: 0 0 auto;
 }
+
 .windirectiontext1 span {
   color: #8497a7;
 }
+
 .animated1 .thearrow1 {
   animation: rotate 1.5s both linear;
   -webkit-animation: rotate 1.5s both linear;
@@ -804,25 +924,30 @@ suptemp {
   -o-animation: rotate 1.5s both linear;
   -ms-animation: rotate 1.5s both linear;
 }
+
 .Circle1,
 .Circle2 {
   animation: enlarge;
   animation-iteration-count: infinite;
 }
+
 .windunits {
   color: #aeb6bf;
 }
+
 .beaufort {
   position: absolute;
   margin-top: 55px;
   margin-left: 50px;
   font-size: 12px;
 }
+
 .gustspeedtrend1,
 .gustspeedtrend1 span {
   color: #aeb6bf;
   font: 10px arial, system;
 }
+
 .gustspeedtrend1,
 .windspeedtrend1 {
   margin-top: -14px;
@@ -832,33 +957,41 @@ suptemp {
   float: left;
   line-height: 9px;
 }
+
 .feels1 {
   text-align: center;
 }
+
 .gustspeedtrend1 {
   margin-left: 235px;
 }
+
 .windspeedtrend1,
 .windspeedtrend1 span {
   color: #aeb6bf;
   font: 10px arial, system;
   line-height: 9px;
 }
+
 .windspeedtrend1 {
   margin-left: 10px;
 }
+
 .gustspeedtrend1 max,
 .windspeedtrend1 max {
   color: #ff9350;
 }
+
 .windseparator1 {
   color: #3d464d;
 }
+
 .meteorshower {
   margin: 122px auto;
   font-size: 9px;
   width: 130px;
 }
+
 .Circle1 {
   z-index: 100;
   height: 80px;
@@ -869,11 +1002,13 @@ suptemp {
   background-color: rgba(241, 125, 45, 0.9);
   animation-duration: 5s;
 }
+
 .Circle2,
 .Circle3 {
   right: -50px;
   border-radius: 50%;
 }
+
 .Circle2 {
   z-index: 80;
   height: 150px;
@@ -882,6 +1017,7 @@ suptemp {
   background-color: rgba(241, 125, 45, 0.8);
   animation-duration: 7s;
 }
+
 .Circle3 {
   z-index: 50;
   height: 200px;
@@ -896,19 +1032,23 @@ suptemp {
 suptemp3 {
   font-size: 0.5em;
 }
+
 @keyframes enlarge {
   50% {
     transform: scale(1.2);
   }
 }
+
 .online {
   color: #aeb6bf;
   font-size: 12px;
 }
+
 .online span {
   color: #90b12a;
   font-weight: 600;
 }
+
 .weatheroffline {
   border-radius: 60px;
   border: 0 solid #777;
@@ -924,6 +1064,7 @@ suptemp3 {
   color: #777;
   font-size: 10px;
 }
+
 .weatheroffline:after,
 .weatheroffline:before {
   content: "";
@@ -932,38 +1073,47 @@ suptemp3 {
   border-radius: 5px;
   position: absolute;
 }
+
 .blank {
   display: none;
 }
+
 spanm {
   font-size: 12px;
 }
+
 spanm2 {
   font-size: 14px;
   margin-top: 40px;
   line-height: 15px;
 }
+
 .hoursago,
 spanm5 {
   font-size: 12px;
 }
+
 .hoursago,
 raingrey {
   font-weight: 500;
 }
+
 .hoursago {
   width: 200px;
   position: absolute;
 }
+
 .hoursago {
   margin-top: -30px;
   margin-left: 30px;
 }
+
 .windgrey1,
 .windsvg {
   top: 3px;
   left: 0;
 }
+
 .windgrey1,
 oorange,
 orange,
@@ -973,19 +1123,23 @@ red,
 rise {
   color: #ff7c39;
 }
+
 .rainblue1,
 .windgrey1,
 grey,
 rainblue1 {
   font-size: 10px;
 }
+
 rainblue {
   font-size: 12px;
 }
+
 .windsvg {
   margin-right: 5px;
   padding: 3px;
 }
+
 .oblueh1,
 ogreenh1,
 ogrey,
@@ -993,20 +1147,24 @@ oorangeh1,
 oredh1 {
   font-family: weathertext2, Helvetica;
 }
+
 .metricsymbol,
 solartrend,
 uvtrend {
   position: absolute;
 }
+
 .no-touch .scrollable.hover {
   overflow-y: hidden;
   display: none;
 }
+
 .no-touch .scrollable.hover:hover {
   overflow-y: auto;
   overflow: visible;
   display: none;
 }
+
 ogreyh1,
 uv0,
 uv10,
@@ -1016,6 +1174,7 @@ uv8 {
   display: flex;
   overflow: hidden;
 }
+
 nav li,
 nav ul {
   outline: 0;
@@ -1025,23 +1184,28 @@ nav ul {
   float: left;
   text-align: left;
 }
+
 greenfi,
 ogreen,
 ogreenh1 {
   color: #90b12a;
 }
+
 infogrey,
 ogreyh1 {
   color: #aeb6bf;
 }
+
 hiti,
 oorangeh1,
 orangefi {
   color: #ff7c39;
 }
+
 oredh1 {
   color: #ff5c41;
 }
+
 ogreyh1 {
   margin: -5px auto 0;
   justify-content: center;
@@ -1054,47 +1218,59 @@ ogreyh1 {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
+
 ogrey {
   color: #bbb;
   font-size: 1.1em;
 }
+
 spanunit {
   font-size: 0.6rem;
 }
+
 adv {
   display: block;
   left: 40px;
   margin-top: 5px;
 }
+
 greenf,
 greenuv {
   color: #90b12a;
 }
+
 greyuv,
 solartrend {
   color: #aeb6bf;
 }
+
 purpleuv {
   color: #a475cb;
 }
+
 reduv {
   color: rgba(215, 64, 73, 1);
 }
+
 orangeuv {
   color: #ff7c39;
 }
+
 .rainrateblue,
 .raintodayblue {
   font-family: weathertext2;
 }
+
 uppercase {
   text-transform: capitalize;
 }
+
 greenf {
   font-size: 12px;
   padding: 2px;
   font-weight: 700;
 }
+
 .tempblue,
 .tempgreen,
 .temporange,
@@ -1104,10 +1280,12 @@ greenf {
   float: left;
   width: 60px;
 }
+
 .metricsymbol {
   top: 15px;
   left: 81px;
 }
+
 .tempblue,
 .tempbluedew,
 .tempgreen,
@@ -1121,42 +1299,53 @@ greenf {
   border-radius: 2px;
   margin-left: 35px;
 }
+
 yellow,
 yellow1 {
   color: #ddb549;
 }
+
 .tempgreen {
   color: #aeb6bf;
 }
+
 .tempgreen span {
   font-weight: 600;
   color: #90b12a;
 }
+
 .temporange {
   color: #aeb6bf;
 }
+
 .temporange span {
   font-weight: 600;
   color: #ff7c39;
 }
+
 tempyellow {
   font-weight: 600;
   color: #ddb549;
 }
+
 .tempred {
   color: #aeb6bf;
 }
+
 .tempred span {
   font-weight: 600;
   color: #ff5c41;
 }
+
 .tempblue,
 .tempgreenfeels {
   color: #aeb6bf;
 }
+
 .tempblue span {
   font-weight: 600;
 }
+
 .tempbluedew,
 .tempgreendew,
 .temporangedew,
@@ -1166,6 +1355,7 @@ tempyellow {
   float: left;
   width: 60px;
 }
+
 .tempbluefeels,
 .tempgreenfeels,
 .temporangefeels,
@@ -1179,45 +1369,57 @@ tempyellow {
   margin-bottom: 8px;
   margin-top: 0;
 }
+
 .tempgreenfeels span {
   font-weight: 600;
   color: #90b12a;
 }
+
 .temporangefeels {
   color: #aeb6bf;
 }
+
 .temporangefeels span {
   font-weight: 600;
   color: #ff7c39;
 }
+
 .tempredfeels {
   color: #aeb6bf;
 }
+
 .tempredfeels span {
   font-weight: 600;
   color: #ff5c41;
 }
+
 .tempbluefeels {
   color: #aeb6bf;
 }
+
 .tempbluefeels span {
   font-weight: 600;
 }
+
 .tempgreendew span {
   font-weight: 600;
   color: #90b12a;
 }
+
 .temporangedew span {
   font-weight: 600;
   color: #ff7c39;
 }
+
 .tempreddew span {
   font-weight: 600;
   color: #ff5c41;
 }
+
 .tempbluedew span {
   font-weight: 600;
 }
+
 .barometerblue,
 .barometerorange {
   position: absolute;
@@ -1229,13 +1431,16 @@ tempyellow {
   float: left;
   line-height: 10px;
 }
+
 .barometerblue {
   margin-top: 5px;
 }
+
 .barometerorange {
   margin-top: -5px;
   margin-left: 0;
 }
+
 .barometergreen,
 .daylightblue,
 .daylightred,
@@ -1248,22 +1453,27 @@ tempyellow {
   padding: 1px;
   float: left;
 }
+
 .barometerblue {
   margin-left: 5px;
 }
+
 .barometerorange span {
   font-weight: 600;
   color: #ff7c39;
 }
+
 .barometerblue span {
   font-weight: 600;
 }
+
 .barometergreen {
   color: #fff;
   background: #90b12a;
   margin-left: 120px;
   width: 60px;
 }
+
 .daylightblue,
 .daylightred,
 .moonrisered,
@@ -1271,36 +1481,43 @@ tempyellow {
   width: 65px;
   line-height: 10px;
 }
+
 .barometergreen span,
 .barometergreen supunit {
   font-weight: 600;
   color: #fff;
 }
+
 .daylightblue,
 .daylightgreen span,
 .daylightred,
 .daylightred span {
   color: #aeb6bf;
 }
+
 .daylightblue,
 .daylightred {
   margin-left: 20px;
 }
+
 .moonrisered,
 .moonrisered span,
 .moonsetblue {
   font-weight: 600;
   color: #fff;
 }
+
 .rainrateblue {
   margin-left: -5px;
   width: 45px;
   font-size: 12px;
 }
+
 .rainrateblue span {
   color: #aeb6bf;
   font-size: 10px;
 }
+
 .raintodayblue {
   position: relative;
   padding: 1px;
@@ -1311,18 +1528,22 @@ tempyellow {
   width: 55px;
   font-size: 14px;
 }
+
 .homeweathercompass2,
 .raintodayblue span,
 todayrain {
   color: #aeb6bf;
   font-size: 12px;
 }
+
 trising {
   color: #ff7c39;
 }
+
 tsteady {
   color: #90b12a;
 }
+
 .homeweathercompass2 {
   position: absolute;
   width: 175px;
@@ -1330,6 +1551,7 @@ tsteady {
   margin-top: -30px;
   margin-left: 60px;
 }
+
 .homeweathercompass2 > .homeweathercompass-line2 {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1349,6 +1571,7 @@ tsteady {
   transform: rotate(-45deg);
   margin: auto;
 }
+
 .homeweathercompass2 {
   display: block;
   text-align: center;
@@ -1358,17 +1581,20 @@ tsteady {
   z-index: 10;
   margin: 25px 0 auto 40px;
 }
+
 .text2,
 .text3 {
   font-family: weathertext2;
   font-weight: 500;
 }
+
 .text2 {
   font-size: 18px;
   margin-left: 35px;
   margin-top: 75px;
   color: #ff7c39;
 }
+
 .pressuretext,
 .pressuretextfast {
   position: absolute;
@@ -1380,14 +1606,17 @@ tsteady {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif, system;
 }
+
 .pressuretextfast {
   color: #d05f2d;
 }
+
 .text2 span,
 .text3 {
   font-size: 11px;
   color: #aeb6bf;
 }
+
 .thearrow4 {
   position: absolute;
   z-index: 200;
@@ -1402,6 +1631,7 @@ tsteady {
   -ms-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
 }
+
 .thearrow3:after,
 .thearrow4:after {
   background-color: 0;
@@ -1409,12 +1639,14 @@ tsteady {
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
 .text3 {
   position: relative;
   margin-left: 5px;
   margin-top: 45px;
   float: left;
 }
+
 .barometertrend2 {
   position: absolute;
   color: #aeb6bf;
@@ -1427,10 +1659,12 @@ tsteady {
   line-height: 10px;
   font-size: 10px;
 }
+
 .barometertrend2 span {
   font-weight: 600;
   color: #90b12a;
 }
+
 .barometerconv {
   width: 70px;
   font: 10px arial, system;
@@ -1441,17 +1675,20 @@ tsteady {
   color: #90b12a;
   font-weight: 600;
 }
+
 .barometerlimits,
 .hoursgoneby {
   position: absolute;
   font-size: 12px;
 }
+
 .barometerconv span,
 convtext {
   color: #aeb6bf;
   display: block;
   font-weight: 500;
 }
+
 .barometerlimits {
   margin-top: 57px;
   margin-left: 16px;
@@ -1459,6 +1696,7 @@ convtext {
   color: #777;
   font-family: Helvetica, Arial;
 }
+
 .thearrow3:after {
   position: absolute;
   left: 50%;
@@ -1470,6 +1708,7 @@ convtext {
   border-color: rgba(255, 121, 58, 1) transparent transparent;
   transform: translate(-50%, -50%);
 }
+
 .thearrow3:before {
   width: 6px;
   height: 6px;
@@ -1489,6 +1728,7 @@ convtext {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
 }
+
 .thearrow4:after {
   position: absolute;
   border-style: solid;
@@ -1498,21 +1738,26 @@ convtext {
   -ms-border-radius: 50%;
   border-color: #90b12a;
 }
+
 convtext {
   font-weight: 500;
 }
+
 .daylightbox {
   border: 0;
 }
+
 #daylight {
   border: 6px solid rgba(95, 96, 97, 0.5);
 }
+
 .hoursgoneby {
   top: 40px;
   left: 27px;
   color: #aeb6bf;
   border: 0;
 }
+
 .daylightvalue,
 .daylightvalue minutes {
   font-family: weathertext2;
@@ -1523,23 +1768,28 @@ convtext {
   color: #aeb6bf;
   border: 0;
 }
+
 .daylightvalue {
   left: -7px;
   top: 55px;
   z-index: 1;
 }
+
 .daylightvalue minutes {
   left: 40px;
-  z-index: auto;color: #aeb6bf;
+  z-index: auto;
+  color: #aeb6bf;
 }
+
 .daylightvalue span {
   position: absolute;
- color: #aeb6bf;
+  color: #aeb6bf;
   font-size: 3px;
   left: 67px;
   top: 0;
   border: 0;
 }
+
 .daylightvalue period {
   position: absolute;
   font-size: 12px;
@@ -1550,6 +1800,7 @@ convtext {
   border: 0;
   color: #ff7c39;
 }
+
 .daylightvalue dayperiod {
   position: absolute;
   color: #aeb6bf;
@@ -1559,6 +1810,7 @@ convtext {
   width: 100px;
   border: 0;
 }
+
 .daylightvalue hrs,
 .daylightvalue min {
   position: absolute;
@@ -1567,12 +1819,15 @@ convtext {
   top: -17px;
   letter-spacing: normal;
 }
+
 .daylightvalue min {
   left: 85px;
 }
+
 .daylightvalue hrs {
   left: 40px;
 }
+
 .hrstillsunset,
 .hrswassunrise {
   width: 100px;
@@ -1580,17 +1835,21 @@ convtext {
   font-size: 10px;
   margin-left: 120px;
 }
+
 .daylightvalue:before {
   color: #90b12a;
 }
+
 .hrswassunrise {
   margin-top: -120px;
   line-height: 12px;
 }
+
 .hrstillsunset {
   margin-top: -20px;
   line-height: 12px;
 }
+
 .sunrisehome,
 .sunsethome {
   width: 100px;
@@ -1599,12 +1858,15 @@ convtext {
   line-height: 12px;
   position: absolute;
 }
+
 .sunrisehome {
   margin-top: -120px;
 }
+
 .sunsethome {
   margin-top: -20px;
 }
+
 @media screen and (max-width: 768px) {
   header {
     display: block;
@@ -1617,8 +1879,8 @@ convtext {
     display: block;
     height: 0;
   }
-
 }
+
 .daylightvalue1,
 .daylightvalue1 dayperiod,
 .daylightvalue1 minutes,
@@ -1630,22 +1892,26 @@ convtext {
   position: absolute;
   color: #aeb6bf;
 }
+
 .daylightvalue1,
 .daylightvalue1 minutes {
   font-family: weathertext2;
   line-height: 20px;
   border: 0;
 }
+
 .daylightvalue1 {
   left: 21px;
   margin-top: 10px;
   font-size: 1.25rem;
 }
+
 .daylightvalue1 minutes {
-  left: 40px;color: #aeb6bf;
+  left: 40px;
+  color: #aeb6bf;
 }
-.daylightvalue1 period,
-{
+
+.daylightvalue1 period, {
   font-family: weathertext2;
 }
 
@@ -1660,16 +1926,17 @@ daylightestimated {
   font-size: .55rem;
 }
 
-
 .daylightvalue1 span {
   border: 0;
 }
+
 .daylightvalue1 dayperiod {
   border: 0;
   font-size: 10px;
   left: 15px;
   top: 20px;
 }
+
 .daylightvalue1 hrs,
 .daylightvalue1 min {
   font-size: 9px;
@@ -1678,34 +1945,42 @@ daylightestimated {
   letter-spacing: normal;
   position: absolute;
 }
+
 .daylightvalue1 min {
   left: 83px;
 }
+
 .daylightvalue1 hrs {
   left: 43px;
 }
+
 .sunlightday {
   line-height: 9px;
   margin-top: 0;
 }
+
 .sundarkday,
 .sunriseday {
   font: 0.6rem weathertext2;
 }
+
 .sunriseday {
   margin-top: 118px;
   line-height: 9px;
   margin-left: 5px;
 }
+
 .sundarkday,
 .sunsetday {
   margin-left: 210px;
   text-align: center;
 }
+
 .sundarkday {
   line-height: 9px;
   margin-top: 0;
 }
+
 .sunsetday {
   margin-top: 118px;
   font: 0.6rem weathertext2;
@@ -1727,23 +2002,29 @@ daylightestimated {
   height: 15px;
   left: 80px;
 }
+
 aurora {
   color: #aeb6bf;
 }
+
 .weather34todayraintext {
   -o-border-radius: 50%;
   -ms-border-radius: 50%;
 }
+
 .uvimax span {
   color: #aeb6bf;
   font: 10px arial, system;
 }
+
 .weather34todayraintext {
   font-family: weathertext2;
 }
+
 whiteuv {
   color: #ccc;
 }
+
 tempblue,
 tempgreen,
 temporange,
@@ -1756,6 +2037,7 @@ gustorange {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .alertcircle,
 .lightningstrikes,
 .maxyesterday,
@@ -1763,28 +2045,33 @@ gustorange {
 uptime {
   position: absolute;
 }
+
 .lightningstrikes {
   margin-left: 9px;
   margin-top: 50px;
   width: 15px;
   font-size: 0.3em;
 }
+
 .wfstrikes {
   font-size: 9px;
   top: -12px;
   color: #aeb6bf;
 }
+
 .daylightmoduleposition {
   position: relative;
   left: -3px;
   margin-top: 10px;
 }
+
 highestrecorded {
   margin-top: -25px;
   display: block;
   color: #aeb6bf;
   margin-left: 10px;
 }
+
 .averagetemp {
   font-size: 0.6em;
   color: #aeb6bf;
@@ -1793,26 +2080,30 @@ highestrecorded {
   width: 30px;
   left: 6px;
 }
+
 .hometemperatureindoortrend1 {
   margin-left: 18px;
   margin-top: 125px;
   width: 15px;
 }
+
 temporange {
   color: #ff7c39;
 }
+
 tempgreen {
   color: #90b12a;
 }
+
 tempred {
   color: #ee7159;
 }
+
 suplight {
   color: #aeb6bf;
   left: 3px;
   font-size: 0.7em;
 }
-
 
 heatindex {
   color: #aeb6bf;
@@ -1820,6 +2111,7 @@ heatindex {
   display: block;
   font-size: 12px;
 }
+
 .orangealerticonheatindex {
   margin-top: -30px;
   margin-left: 165px;
@@ -1827,6 +2119,7 @@ heatindex {
   line-height: 20px;
   position: relative;
 }
+
 indoorblue,
 indoorgreen,
 indoororange,
@@ -1834,6 +2127,7 @@ indoorred,
 indooryellow {
   font-family: weathertext2;
 }
+
 #weather34lightningdialog-notify,
 .bottomfooter a,
 .consoleoutlook,
@@ -1849,18 +2143,23 @@ spanewind,
 spanewind2 {
   font-family: Arial, Helvetica, system;
 }
+
 indoorred {
   color: #d35d4e;
 }
+
 indoororange {
   color: #ff7c39;
 }
+
 indoorgreen {
   color: #90b12a;
 }
+
 indooryellow {
   color: #e6a141;
 }
+
 .lightningalerticon,
 .rainalerticon {
   margin-top: -55px;
@@ -1868,15 +2167,19 @@ indooryellow {
   line-height: 20px;
   position: relative;
 }
+
 .homeweatheralert {
   top: 40px;
 }
+
 .rainalerticon {
   margin-left: 150px;
 }
+
 .lightningalerticon {
   margin-left: 165px;
 }
+
 lightningannual {
   position: relative;
   top: 5px;
@@ -1884,9 +2187,11 @@ lightningannual {
   display: block;
   color: #aeb6bf;
 }
+
 .smallf {
   font-size: 0.5em;
 }
+
 .smallhr {
   position: absolute;
   top: 20px;
@@ -1895,6 +2200,7 @@ lightningannual {
   line-height: 13px;
   left: 16px;
 }
+
 .lightningstrikes1 {
   position: absolute;
   font-size: 0.6.5rem;
@@ -1903,6 +2209,7 @@ lightningannual {
   width: 15px;
   font-family: weathertext2;
 }
+
 .homeindoorfeels1,
 .lightninginfo {
   font-family: weathertext2;
@@ -1912,14 +2219,14 @@ lightningannual {
   margin-left: 125px;
   padding: 5px;
   color: #aeb6bf;
-  border:1px solid rgba(95, 96, 97, 0.1);
-  border-width:thin;
+  border: 1px solid rgba(95, 96, 97, 0.1);
+  border-width: thin;
   border-radius: 2px;
   background: 0;
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.5);
   text-align: left;
-
 }
+
 .wfstrikes1 {
   position: absolute;
   font-size: 9px;
@@ -1927,6 +2234,7 @@ lightningannual {
   left: 12px;
   color: #aeb6bf;
 }
+
 .lightninginfo,
 agolightning,
 timeago {
@@ -1937,25 +2245,34 @@ lorange,
 lorange1 {
   color: #ff7c39;
 }
-lbue{color:#44a6b5}
+
+lbue {
+  color: #44a6b5;
+}
+
 .homeindoorfeels1 {
   margin-top: 25px;
   width: 170px;
 }
+
 .lightninginfo {
   margin-top: 47px;
-  width: 170px;text-transform: capitalize;
+  width: 170px;
+  text-transform: capitalize;
 }
+
 .lightningbox {
   padding: 10px;
   border-radius: 2px;
-  border: 1px solid solid;text-transform: capitalize;
-
+  border: 1px solid solid;
+  text-transform: capitalize;
 }
+
 .orangeclock,
 notifyblue {
   -webkit-border-radius: 2px;
 }
+
 lightningannualx,
 lightningannualx1 {
   position: relative;
@@ -1963,15 +2280,19 @@ lightningannualx1 {
   left: 0;
   display: block;
   color: #aeb6bf;
-  font-family: weathertext2;text-transform: capitalize;
+  font-family: weathertext2;
+  text-transform: capitalize;
 }
+
 lorange1 {
   font-weight: 100;
 }
+
 timeago {
   display: block;
   color: #aeb6bf;
 }
+
 .orangeclock {
   position: relative;
   background: rgba(205, 82, 69, 0.8);
@@ -1988,6 +2309,7 @@ timeago {
   font-size: 1rem;
   font-family: clock;
 }
+
 .azimuth,
 .elevation,
 .luxratedark,
@@ -1997,22 +2319,26 @@ timeago {
 nosun1 {
   position: absolute;
 }
+
 .bottomfooter {
   height: 3.8em;
   background: rgba(30, 31, 35, 1);
   width: 100%;
   margin-top: 5px;
 }
+
 .bottomfooter a {
   color: #bbb;
   padding: 5px 15px 5px 5px;
   float: right;
   font-size: 14px;
 }
+
 .azimuth,
 .elevation {
   color: #bbb;
 }
+
 .weather34uvslux {
   color: #f5650a;
   margin-left: 230px;
@@ -2023,14 +2349,17 @@ nosun1 {
   line-height: 10px;
   text-align: center;
 }
+
 .weather34uvsluxrate {
   color: #f5650a;
   font-size: 10px;
   padding-left: 2px;
 }
+
 .weather34uvsluxrate span {
   color: gray;
 }
+
 .weather34uvs {
   color: #fff;
   margin-left: 130px;
@@ -2042,12 +2371,14 @@ nosun1 {
   padding-top: 13px;
   border: 0;
 }
+
 .weather34uvs span {
   color: gray;
   font-family: arial, system;
   font-size: 8px;
   font-weight: 500;
 }
+
 uv0,
 uv10,
 uv3,
@@ -2063,28 +2394,33 @@ uv8 {
   padding-top: 0;
   font-family: weathertext2, Helvetica, system;
   border: 1px solid gray;
-
   font-size: 1.25em;
 }
+
 uv3 {
   background: #e6a141;
 }
+
 uv5 {
   background-color: #f5650a;
 }
+
 uv8 {
   background-color: #ef5350;
 }
+
 uv10 {
   background-color: #a475cb;
   font-size: 1.2em;
 }
+
 talert {
   top: 25px;
   margin-left: 40px;
   font-size: 14px;
   line-height: 16px;
 }
+
 .uvspan {
   font-size: 10px;
   line-height: 0;
@@ -2092,16 +2428,19 @@ talert {
   margin-top: 145px;
   color: #777;
 }
+
 .weather34luxrate,
 .weather34solarvalue {
   line-height: 10px;
 }
+
 .azimuth,
 .elevation,
 .homeweatheralert2 spanbold,
 supunit {
   font-weight: 500;
 }
+
 .weather34luxrate {
   color: #f5650a;
   margin-left: 250px;
@@ -2111,25 +2450,31 @@ supunit {
   max-height: 100px;
   text-align: center;
 }
+
 .weather34luxrate span {
   color: rgba(2, 29, 62, 0.8);
   font-size: 12px;
   display: block;
 }
+
 darkgrey {
- color: #aeb6bf;
+  color: #aeb6bf;
 }
+
 supmb {
   font-size: 0.8em;
 }
+
 supunit {
   font-size: 0.7em;
   color: rgba(18, 109, 193, 1);
 }
+
 verticalline {
   border-right: thin solid #ccc;
   margin-right: 10px;
 }
+
 .thearrow4:after {
   left: 50%;
   top: 0;
@@ -2143,12 +2488,14 @@ verticalline {
   border-radius: 0;
   border-bottom: 5px solid rgba(102, 188, 199, 0.7);
 }
+
 .weather34barometerarrowactual:after,
 .weather34barometerarrowmin:after {
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
 .weather34luxvalue {
   margin-left: 251px;
   margin-top: 5px;
@@ -2158,38 +2505,46 @@ verticalline {
   max-width: 20px;
   z-index: 1;
 }
+
 .weather34luxvalue span {
   font-size: 10px;
   display: block;
   z-index: 1;
 }
+
 solarluxvalue {
   font-size: 13px;
 }
+
 .luxratedark,
 .luxratedark span {
   text-align: center;
   font-size: 11px;
 }
+
 .weather34barometerarrowactual,
 .weather34barometerarrowmin {
   z-index: 200;
   -o-transform-origin: 50% 100%;
   -ms-transform-origin: 50% 100%;
 }
+
 .luxratedark {
   color: #f5650a;
   display: inline-block;
   left: -5px;
 }
+
 .luxratedark span {
   color: rgba(236, 87, 27, 1);
   display: block;
 }
+
 .weather34uvposition {
   position: relative;
   margin-top: -5px;
 }
+
 .weather34barometerarrowactual {
   position: absolute;
   top: 0;
@@ -2201,6 +2556,7 @@ solarluxvalue {
   -moz-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
 }
+
 .weather34barometerarrowactual:after {
   background-color: 0;
   -o-transform: translate(-50%, -50%);
@@ -2214,6 +2570,7 @@ solarluxvalue {
   border-color: #d05f2d transparent transparent;
   transform: translate(-50%, -50%);
 }
+
 .weather34barometerarrowactual:before {
   content: "o o o";
   width: 0;
@@ -2225,6 +2582,7 @@ solarluxvalue {
   font-size: 5px;
   font-family: Arial, Helvetica, system;
 }
+
 .weather34barometerarrowmax:after,
 .weather34barometerarrowmax:before,
 .weather34barometerarrowmin:after,
@@ -2232,6 +2590,7 @@ solarluxvalue {
   content: "";
   position: absolute;
 }
+
 .weather34barometerarrowmin {
   position: absolute;
   top: 0;
@@ -2243,6 +2602,7 @@ solarluxvalue {
   -moz-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
 }
+
 .weather34barometerarrowmin:after {
   background-color: 0;
   -o-transform: translate(-50%, -50%);
@@ -2257,6 +2617,7 @@ solarluxvalue {
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
+
 .weather34barometerarrowmin:before {
   width: 0;
   left: 2px;
@@ -2265,6 +2626,7 @@ solarluxvalue {
   color: rgba(102, 188, 199, 0.6);
   font-size: 5px;
 }
+
 .weather34barometerarrowmax {
   position: absolute;
   top: 0;
@@ -2278,6 +2640,7 @@ solarluxvalue {
   -ms-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
 }
+
 .weather34barometerarrowmax:after {
   -webkit-transform: translate(-50%, -50%);
   background-color: 0;
@@ -2295,6 +2658,7 @@ solarluxvalue {
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
+
 .weather34barometerarrowmax:before {
   width: 0;
   left: 2px;
@@ -2303,6 +2667,7 @@ solarluxvalue {
   color: rgba(255, 121, 58, 0.6);
   font-size: 5px;
 }
+
 .weather34-barometerruler {
   position: absolute;
   width: 135px;
@@ -2311,6 +2676,7 @@ solarluxvalue {
   margin-left: 65px;
   margin-top: 62px;
 }
+
 weather34-barometerlimitmax,
 weather34-barometerlimitmin,
 weather34-barometerlimitminf {
@@ -2318,18 +2684,22 @@ weather34-barometerlimitminf {
   position: absolute;
   font-size: 11px;
 }
+
 weather34-barometerlimitmin {
   left: -27px;
   color: rgba(77, 175, 189, 1);
 }
+
 weather34-barometerlimitmax {
   left: 140px;
   color: #ff7c39;
 }
+
 weather34-barometerlimitminf {
   left: -20px;
   color: rgba(77, 175, 189, 1);
 }
+
 weather34-barometerlimitmaxf {
   position: absolute;
   margin-top: 0;
@@ -2337,9 +2707,11 @@ weather34-barometerlimitmaxf {
   font-size: 11px;
   color: #ff7c39;
 }
+
 chartinfocolor {
   color: rgba(68, 166, 181, 1);
 }
+
 #weather34lightningdialog-notify {
   width: 200px;
   max-height: 250px;
@@ -2354,28 +2726,35 @@ chartinfocolor {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
+
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 2;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
+
 @keyframes fadeOut {
   0% {
     opacity: 2;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
+
 .weather34lightningdialog-box {
   position: relative;
   min-height: 80px;
@@ -2386,6 +2765,7 @@ chartinfocolor {
   overflow: hidden;
   background: #616a72;
 }
+
 .weather34lightningdialog-box .header {
   height: 25px;
   position: relative;
@@ -2395,18 +2775,21 @@ chartinfocolor {
   border-radius: 5px;
   font-size: 0.8em;
 }
+
 .weather34lightningbackground-alert {
   height: 100%;
   width: 100%;
   background-color: rgba(61, 64, 66, 0);
   position: absolute;
 }
+
 .weather34lightningcontents {
   z-index: 100;
   position: inherit;
   font-size: 14px;
   text-align: center;
 }
+
 .weather34lightningmain-content {
   padding: 8px 20px 10px 10px;
   height: content-max;
@@ -2416,31 +2799,38 @@ chartinfocolor {
   text-align: center;
   font-size: 0.9em;
 }
+
 .left,
 .right {
   width: content-max;
   font-size: 0.85em;
   font-family: weathertext2;
 }
+
 .left {
   float: left;
   text-align: left;
   padding: 3px 0 0 10px;
 }
+
 .right {
   float: right;
   text-align: right;
   padding: 3px 10px 0 0;
 }
+
 .daylightvalue1 {
   position: absolute;
   margin-left: 68px;
   top: 45px;
 }
+
 .daylightvalue1 hours {
   position: relative;
-  left: -5px;color: #aeb6bf;
+  left: -5px;
+  color: #aeb6bf;
 }
+
 .daylightvalue1 period {
   position: absolute;
   font-size: 11px;
@@ -2448,11 +2838,13 @@ chartinfocolor {
   top: 18px;
   left: 42px;
   letter-spacing: normal;
- color: #aeb6bf;
+  color: #aeb6bf;
 }
+
 .daylightvalue1 hrs {
   margin-left: 0;
 }
+
 .daylightvalue1 span {
   position: relative;
   left: 42px;
@@ -2461,6 +2853,7 @@ chartinfocolor {
   font-size: 26px;
   margin-right: 7px;
 }
+
 notifyblue,
 notifyorange {
   color: #fff;
@@ -2468,29 +2861,35 @@ notifyorange {
   font-weight: 500;
   font-family: weathertext2;
 }
+
 .sundialcontainerdiv {
   position: relative;
   top: 10px;
   margin-left: -5px;
 }
+
 notifyblue {
   background: #44a6b5;
   border-radius: 2px;
 }
+
 notifyorange {
   background: #ff7c39;
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
+
 .weather34moonmodule svg {
   width: auto;
   color: rgba(230, 232, 239, 0.7);
 }
+
 .weather34moonmodulepos {
   position: absolute;
   top: 30px;
   left: 110px;
 }
+
 .weather34luminancem2,
 .weather34moonphasem2 {
   position: absolute;
@@ -2503,16 +2902,19 @@ notifyorange {
   margin-top: 65px;
   font-family: weathertext2;
 }
+
 .weather34moonphasem2 {
   align-items: center;
   justify-content: center;
   left: -110px;
 }
+
 .weather34luminancem2 {
   align-items: center;
   justify-content: center;
   left: 100px;
 }
+
 .advisorycontainer {
   display: flex;
   justify-content: center;
@@ -2525,16 +2927,19 @@ notifyorange {
   margin-left: 0;
   width: 200px;
 }
+
 alertadvisory {
   top: 15px;
   left: 160px;
   position: absolute;
 }
+
 .vp2container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .weather34sunclock {
   width: 120px;
   height: 120px;
@@ -2546,6 +2951,7 @@ alertadvisory {
   -moz-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
+
 .weather34sunclock div {
   position: absolute;
   -webkit-transform-origin: 49.6% 49.5%;
@@ -2555,10 +2961,12 @@ alertadvisory {
   transform-origin: 49.6% 49.5%;
   transform: rotate(0);
 }
+
 .rainconverter {
   position: absolute;
   font-size: 12px;
 }
+
 .consoleicon {
   position: absolute;
   left: 170px;
@@ -2566,6 +2974,7 @@ alertadvisory {
   width: 26px;
   height: 26px;
 }
+
 .daylightvalue34,
 .daylightvalue34 minutes {
   font-family: weathertext2;
@@ -2576,13 +2985,17 @@ alertadvisory {
   position: absolute;
   color: #aeb6bf;
 }
+
 .daylightvalue34 minutes {
-  left: 40px;color: #aeb6bf;
+  left: 40px;
+  color: #aeb6bf;
 }
+
 .daylightvalue34 period,
 .daylightvalue34:before {
   font-family: Arial;
 }
+
 .daylightvalue34 dayperiod {
   color: #fff;
   border: 0;
@@ -2592,20 +3005,24 @@ alertadvisory {
   top: 25px;
   width: 100px;
 }
+
 .daylightvalue34 hrs,
 .daylightvalue34 min {
   font-size: 9px;
   top: -17px;
- color: #aeb6bf;
+  color: #aeb6bf;
   letter-spacing: normal;
   position: absolute;
 }
+
 .daylightvalue34 min {
   left: 85px;
 }
+
 .daylightvalue34 hrs {
   left: 40px;
 }
+
 .daylightvalue34 {
   position: absolute;
   margin-left: 68px;
@@ -2613,10 +3030,12 @@ alertadvisory {
   font-family: weathertext2;
   left: 17px;
 }
+
 .daylightvalue34 hours {
   position: relative;
   left: -5px;
 }
+
 .daylightvalue34 period {
   position: absolute;
   font-size: 11px;
@@ -2626,9 +3045,11 @@ alertadvisory {
   letter-spacing: normal;
   color: #e6e8ef;
 }
+
 .daylightvalue34 hrs {
   margin-left: 0;
 }
+
 .daylightvalue34 span {
   border: 0;
   position: relative;
@@ -2638,12 +3059,15 @@ alertadvisory {
   font-size: 26px;
   margin-right: 7px;
 }
+
 .daylightoutput {
   border: 4px solid rgba(86, 95, 103, 1);
 }
+
 redtime {
   color: #d35d4e;
 }
+
 .weather34box .value1 {
   position: absolute;
   font-size: 14px;
@@ -2655,6 +3079,7 @@ redtime {
   display: block;
   text-align: left;
 }
+
 .tempconvertercircleblue,
 .tempconvertercirclegreen,
 .tempconvertercircleorange,
@@ -2671,16 +3096,17 @@ redtime {
   overflow: hidden;
   right: 0;
 }
+
 .rainconverter {
   position: absolute;
   font-size: 12px;
   display: flex;
 }
+
 .rainconvertercircle {
   display: flex;
   justify-content: center;
   border: 1px solid rgba(61, 70, 77, 0.5);
-
   border-radius: 2px;
   font-size: 0.85em;
   width: 3.2rem;
@@ -2689,13 +3115,16 @@ redtime {
   color: #aeb6bf;
   font-family: weathertext2;
 }
+
 smallrainunit {
   font-size: 0.7em;
 }
+
 .tempconverter {
   position: absolute;
   font-size: 12px;
 }
+
 .tempconvertercircleblue,
 .tempconvertercirclegreen,
 .tempconvertercircleorange,
@@ -2707,6 +3136,7 @@ smallrainunit {
   border-radius: 2px;
   font-size: 0.85em;
 }
+
 .barometerconverter,
 .barometertrendx,
 .tempavg60,
@@ -2714,22 +3144,27 @@ smallrainunit {
   font-size: 12px;
   position: absolute;
 }
+
 .uvtoday1-3 {
   background: #90b12a;
 }
+
 .uvtodaydark {
   background: #4a636f;
 }
+
 .tempindoorconverter {
   margin-left: 290px;
   margin-top: -12px;
 }
+
 .eqdistconverter {
   font-size: 12px;
   position: absolute;
   margin-left: 290px;
   margin-top: -12px;
 }
+
 .lightningdistconverter {
   font-size: 12px;
   position: absolute;
@@ -2741,24 +3176,29 @@ smallrainunit {
   margin-left: 0;
   margin-top: 105px;
 }
+
 .barometertrendx {
   margin-left: 260px;
   margin-top: 130px;
 }
+
 smallsup {
   color: #aeb6bf;
   font-size: 0.5rem;
   font-family: Arial, Helvetica, system;
 }
+
 .tempconverter1,
 .windconverter {
   font-size: 12px;
   position: absolute;
 }
+
 .tempconverter1 {
   margin-left: 53px;
   margin-top: 0;
 }
+
 .heatcircle,
 .heatcircle2,
 .heatcircle3,
@@ -2769,28 +3209,35 @@ smallsup {
   position: absolute;
   float: left;
 }
+
 .heatcircle {
   margin-top: 40px;
   margin-left: 100px;
 }
+
 .heatcircle2 {
   margin-top: 0;
   margin-left: 75px;
 }
+
 .heatcircle3,
 .heatcircle4 {
   margin-top: 40px;
 }
+
 .heatcircle3 {
   margin-left: 0;
 }
+
 .heatcircle4 {
   margin-left: 75px;
 }
+
 .heatcircle5 {
   margin-top: 120px;
   margin-left: 100px;
 }
+
 .windconvertercircleblue1,
 .windconvertercirclegreen1,
 .windconvertercircleorange1,
@@ -2810,15 +3257,19 @@ smallsup {
   color: #aeb6bf;
   background: 0;
 }
+
 smalltempunit {
   font-size: 0.5em;
 }
+
 smalltempunit2 {
   font-size: 0.5rem;
 }
+
 smalltempunit4 {
   font-size: 0.45rem;
 }
+
 .barometerconvertercircleblue {
   display: flex;
   align-items: center;
@@ -2835,6 +3286,7 @@ smalltempunit4 {
   right: 10px;
   background: 0;
 }
+
 .tempcontainer {
   float: left;
   font-family: weathertext2;
@@ -2845,20 +3297,23 @@ smalltempunit4 {
   left: -5px;
   top: -4px;
 }
+
 .tempcontainerx {
   position: relative;
   left: -20px;
   top: -11px;
 }
+
 .maxdata,
 .raintoday1 {
   align-items: center;
   display: flex;
 }
-.maxdata
-{
+
+.maxdata {
   justify-content: center;
 }
+
 .outside0-5,
 .outside11-15,
 .outside16-20,
@@ -2888,71 +3343,85 @@ smalltempunit4 {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
+
 .outsideminus10 {
   background: #3369e7;
   background: -webkit-linear-gradient(90deg, #ab49de, #3369e7);
   background: linear-gradient(90deg, #ab49de, #3369e7);
 }
+
 .outsideminus5 {
   background: #3b9cac;
   background: -webkit-linear-gradient(90deg, #ab49de, #3b9cac);
   background: linear-gradient(90deg, #ab49de, #3b9cac);
 }
+
 .outsideminus,
 .outsidezero {
   background: #00a4b4;
   background: -webkit-linear-gradient(90deg, #00a4b4, rgba(80, 69, 188, 1));
   background: linear-gradient(90deg, #00a4b4, rgba(80, 69, 188, 1));
 }
+
 .outside0-5 {
   background: #00a4b4;
   background: -webkit-linear-gradient(90deg, #00a4b4, #087883);
   background: linear-gradient(90deg, #00a4b4, #087883);
 }
+
 .outside6-10 {
   background: #88b04b;
   background: -webkit-linear-gradient(90deg, #00a4b4, #88b04b);
   background: linear-gradient(90deg, #00a4b4, #88b04b);
 }
+
 .outside11-15 {
   background: #e6a141;
   background: -webkit-linear-gradient(90deg, #90b12a, #e6a141);
   background: linear-gradient(90deg, #90b12a, #e6a141);
 }
+
 .outside16-20,
 offlinenew {
   background: #ff7c39;
 }
+
 .outside16-20 {
   background: -webkit-linear-gradient(90deg, #90b12a, #ff7c39);
   background: linear-gradient(90deg, #90b12a, #ff7c39);
 }
+
 .outside21-25 {
   background: #efa80f;
   background: -webkit-linear-gradient(90deg, #efa80f, #d86858);
   background: linear-gradient(90deg, #efa80f, #d86858);
 }
+
 .outside26-30 {
   background: #d05f2d;
   background: -webkit-linear-gradient(90deg, #d05f2d, rgba(236, 102, 21, 1));
   background: linear-gradient(90deg, #d05f2d, rgba(236, 102, 21, 1));
 }
+
 .outside31-35 {
   background: #d86858;
   background: -webkit-linear-gradient(90deg, #d86858, rgba(211, 93, 78, 0.7));
   background: linear-gradient(90deg, #d86858, rgba(211, 93, 78, 0.7));
 }
+
 .outside36-40 {
   background: #fd7641;
   background: -webkit-linear-gradient(90deg, #fd7641, #637ff6);
   background: linear-gradient(90deg, #fd7641, #637ff6);
 }
+
 .outside41-45,
 .outside50 {
   background: #de2c52;
   background: -webkit-linear-gradient(90deg, #de2c52, #637ff6);
   background: linear-gradient(90deg, #de2c52, #637ff6);
 }
+
 .temptrendphrase {
   z-index: auto;
   position: absolute;
@@ -2961,10 +3430,8 @@ offlinenew {
   color: #aeb6bf;
   text-align: center;
   font-family: "weathertext2",Arial, system;
-  font-size:9px;
+  font-size: 9px;
 }
-
-
 
 .temptrendx {
   z-index: auto;
@@ -2978,14 +3445,14 @@ offlinenew {
 
 trendmovementfallingx,
 trendmovementrisingx {
- font-family: "weathertext2",Arial, system;
- font-size:9px;
+  font-family: "weathertext2",Arial, system;
+  font-size: 9px;
 }
 
 trendmovementsteadyx {
- color: #aeb6bf;
- font-size:9px;
- margin-left:20px
+  color: #aeb6bf;
+  font-size: 9px;
+  margin-left: 20px;
 }
 
 .maxdata,
@@ -2993,75 +3460,79 @@ trendmovementsteadyx {
 smalluvunit {
   font-family: weathertext2;
 }
+
 trendmovementsteadyx {
   color: #bbb;
   font-size: 0.7rem;
 }
+
 .maxdata {
-  position:absolute;
+  position: absolute;
   margin: 5px auto auto;
   color: #fff;
   font-family: weathertext2;
   font-size: 10px;
-  font-weight:normal;
-  width:50px;
-  background:0;
-  display:inline;
-  padding:1px;
-  margin-top:7px;
-  left:-2px;
-  border-radius:2px;
+  font-weight: normal;
+  width: 50px;
+  background: 0;
+  display: inline;
+  padding: 1px;
+  margin-top: 7px;
+  left: -2px;
+  border-radius: 2px;
 }
+
 .hidata {
-  position:absolute;
+  position: absolute;
   margin: 5px auto auto;
   color: #fff;
   color: rgba(255,255,255,.7);
   font-family: weathertext2;
   font-size: 8px;
-  font-weight:500;
-  width:40px;
-  background:0;
-  display:inline;
-  padding:2px;
-  margin-top:0px;
-  left:2px;
-  border-radius:2px;
-  line-height:1;
+  font-weight: 500;
+  width: 40px;
+  background: 0;
+  display: inline;
+  padding: 2px;
+  margin-top: 0px;
+  left: 2px;
+  border-radius: 2px;
+  line-height: 1;
 }
 
 .mindata {
-  position:absolute;
+  position: absolute;
   margin: 5px auto auto;
   color: #fff;
   font-family: weathertext2;
   font-size: 10px;
-  font-weight:normal;
-  width:50px;
-  background:0;
-  display:inline;
-  padding:1px;
-  margin-top:7px;
-  left:49px;
-  border-radius:2px;
-
+  font-weight: normal;
+  width: 50px;
+  background: 0;
+  display: inline;
+  padding: 1px;
+  margin-top: 7px;
+  left: 49px;
+  border-radius: 2px;
 }
+
 .lodata {
-  position:absolute;
+  position: absolute;
   margin: 5px auto auto;
   color: rgba(255,255,255,.7);
   font-family: weathertext2;
   font-size: 8px;
-  font-weight:500;
-  width:40px;
-  background:0;
-  display:inline;
-  padding:2px;
-  margin-top:0px;
-  left:53px;
-  border-radius:2px;
-  line-height:1;
+  font-weight: 500;
+  width: 40px;
+  background: 0;
+  display: inline;
+  padding: 2px;
+  margin-top: 0px;
+  left: 53px;
+  border-radius: 2px;
+  line-height: 1;
 }
+
 .simsekcontainer,
 .uvcontainer1 {
   right: 0;
@@ -3069,15 +3540,18 @@ trendmovementsteadyx {
   float: left;
   bottom: 0;
 }
+
 .uvcontainer1 {
   position: relative;
   margin: 40px 10px 10px 40px;
   top: 15px;
 }
+
 smalluvunit {
   font-size: 0.55rem;
   font-weight: 400;
 }
+
 .simsek,
 .uvtoday1,
 .uvtoday1-3,
@@ -3094,6 +3568,7 @@ smalluvunit {
   -o-border-radius: 2px;
   display: flex;
 }
+
 .uvtoday1,
 .uvtoday1-3,
 .uvtoday11,
@@ -3109,51 +3584,65 @@ smalluvunit {
   justify-content: center;
   border-radius: 2px;
 }
+
 .uvcaution,
 .uvtrend {
   position: absolute;
   font-size: 0.65rem;
 }
+
 .uvcaution time {
   font-size: 0.55rem;
 }
+
 .uvtoday4-5 {
   background: #e6a141;
 }
+
 .uvtoday6-8 {
   background: rgba(255, 124, 57, 0.8);
 }
+
 .uvtoday9-10 {
   background: rgba(211, 93, 78, 0.8);
 }
+
 .uvtoday11 {
   background: rgba(204, 135, 248, 0.7);
 }
+
 topyellow1 {
   background: #e6a141;
 }
-lblue{color:#44a6b5;}
-.simsek
-{
+
+lblue {
+  color: #44a6b5;
+}
+
+.simsek {
   background: rgba(255, 124, 57, 0.8);
 }
+
 .uvcaution {
   margin-left: 33px;
   margin-top: 112px;
   font-family: Arial, Helvetica, system;
 }
+
 .uvtrend {
   margin-left: 47px;
   margin-top: 60px;
   z-index: 1;
   color: #fff;
 }
+
 .simsekcontainer {
   font-family: weathertext2;
   position: relative;
   margin: 40px 10px 10px 40px;
   top: 13px;
 }
+
 .simsek {
   font-size: 1.45rem;
   padding-top: 12px;
@@ -3163,11 +3652,13 @@ lblue{color:#44a6b5;}
   justify-content: center;
   border-radius: 2px;
 }
+
 .simsekdata,
 .simsektoday {
   position: absolute;
   font-size: 0.6rem;
 }
+
 .simsektoday {
   margin-top: -15px;
   margin-left: 1.4rem;
@@ -3177,6 +3668,7 @@ lblue{color:#44a6b5;}
   color: #aeb6bf;
   font-family: Arial, system;
 }
+
 .simsekdata {
   font-family: Arial, Helvetica, system;
   color: #fff;
@@ -3186,6 +3678,7 @@ lblue{color:#44a6b5;}
   margin: 4px auto auto;
   left: 28.1%;
 }
+
 topblue1,
 topgreen1,
 toporange1,
@@ -3211,6 +3704,7 @@ topyellow2 {
   margin-left: 133px;
   top: -5px;
 }
+
 .topmax,
 .topmin {
   position: absolute;
@@ -3219,27 +3713,35 @@ topyellow2 {
   padding-right: 2px;
   padding-left: 0;
 }
+
 topred1 {
   background: #d35d4e;
 }
+
 toporange2 {
   background: #d05f2d;
 }
+
 toporange1 {
   background: #fa9133;
 }
+
 topgreen1 {
   background: #90b12a;
 }
+
 topyellow2 {
   background: rgba(233, 171, 74, 0.8);
 }
+
 .topmin {
   left: -100px;
 }
+
 .topmax {
   left: 7px;
 }
+
 .maxword,
 .minword {
   position: absolute;
@@ -3248,17 +3750,21 @@ topyellow2 {
   z-index: 1;
   color: #fff;
 }
+
 .maxword {
   margin-left: 155px;
 }
+
 .minword {
   margin-left: 50px;
 }
+
 smallwindunit {
   font-size: 0.45rem;
   font-family: Arial, Helvetica, system;
   padding-left: 2px;
 }
+
 .yearwordbig {
   position: absolute;
   margin-left: 10px;
@@ -3268,6 +3774,7 @@ smallwindunit {
   width: 200px;
   font-family: weathertext2;
 }
+
 .daylightword,
 .elevationword,
 .windunitgust,
@@ -3275,6 +3782,7 @@ smallwindunit {
   position: absolute;
   color: #aeb6bf;
 }
+
 .windunitidspeed {
   color: #aeb6bf;
   margin-top: -35px;
@@ -3282,6 +3790,7 @@ smallwindunit {
   position: absolute;
   width: 50px;
 }
+
 .windunitidgust {
   color: #aeb6bf;
   margin-top: -35px;
@@ -3290,50 +3799,61 @@ smallwindunit {
   width: 85px;
   left: -16px;
 }
+
 .windunitspeed {
   margin-top: 7px;
   font-size: 9px;
   margin-left: 10px;
 }
+
 .windunitgust {
   margin-top: 7px;
   font-size: 9px;
   margin-left: 15px;
 }
+
 .davisfooterlogo {
   margin-top: 5px;
 }
+
 img {
   shape-rendering: auto;
 }
+
 .sundialcontainerdiv2,
 canvas {
   image-rendering: high-quality;
 }
+
 .daylightword {
   left: 137px;
   top: 0px;
   font-size: 0.6rem;
 }
+
 .elevationword {
   left: 112px;
   top: 131px;
   font-family: weathertext2, Helvetica, sans-serif;
   font-size: 0.6em;
 }
+
 .elevationword span {
   color: #ff7c39;
 }
+
 .sundialcontainerdiv2 {
   position: relative;
   top: 15px;
   margin-left: -5px;
 }
+
 canvas {
   image-rendering: -moz-high-quality;
   image-rendering: -webkit-high-quality;
   -ms-interpolation-mode: nearest-neighbor;
 }
+
 .circleborder {
   width: 109px;
   height: 109px;
@@ -3344,6 +3864,7 @@ canvas {
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
+
 .circleborder2 {
   width: 95px;
   height: 95px;
@@ -3355,6 +3876,7 @@ canvas {
   border-radius: 100%;
   background: 0;
 }
+
 .suncanvasstyle {
   margin: 4px 10px 10px;
   left: 95px;
@@ -3373,16 +3895,19 @@ canvas {
   margin-left: 106px;
   top: 27px;
 }
+
 .sunelevation span {
   font-family: weathertext2, Arial, Helvetica, sans-serif;
   font-size: 0.65rem;
   margin-left: 1px;
   color: rgba(68, 166, 181, 1);
 }
+
 .daylightvalue1:before {
   font-size: 0.6rem;
   line-height: 20px;
 }
+
 .luxtoday,
 .luxtodaydark,
 .solarluxtoday,
@@ -3392,11 +3917,13 @@ canvas {
   border-bottom: 11px solid #3d464d;
   font-family: weathertext2;
 }
+
 .solartodaycontainer1 {
   position: relative;
   left: 110px;
   top: 70px;
 }
+
 .solarluxtoday,
 .solarluxtodaydark {
   width: 3.15rem;
@@ -3411,12 +3938,14 @@ canvas {
   border-radius: 2px;
   background: rgba(255, 124, 57, 0.8);
 }
+
 .luxtoday,
 .luxtodaydark,
 .solarluxtodaydark {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
 }
+
 .solarluxtodayword {
   margin-left: 133px;
   margin-top: 110px;
@@ -3426,11 +3955,13 @@ canvas {
   z-index: 10;
   padding: 2px;
 }
+
 .luxtodaycontainer1 {
   position: relative;
   left: -26px;
   top: 70px;
 }
+
 .luxtoday,
 .luxtodaydark {
   width: 3.17rem;
@@ -3443,6 +3974,7 @@ canvas {
   border-radius: 2px;
   background: rgba(255, 124, 57, 0.8);
 }
+
 .luxtodayword,
 .weather34luxword,
 .weather34solarword {
@@ -3451,19 +3983,23 @@ canvas {
   position: absolute;
   z-index: 10;
 }
+
 .luxtodayword {
   margin-left: 228px;
   margin-top: 110px;
   padding: 2px;
 }
+
 .luxtodaydark,
 .solarluxtodaydark {
   background: #4a636f;
 }
+
 .weather34luxword,
 .weather34solarword {
   margin-top: 92px;
 }
+
 .weather34solarvalue {
   margin-left: 30px;
   margin-top: 5px;
@@ -3472,17 +4008,21 @@ canvas {
   max-width: 20px;
   z-index: 1;
 }
+
 .weather34solarvalue span {
   font-size: 10px;
   display: block;
   z-index: 1;
 }
+
 .weather34luxword {
   margin-left: 242px;
 }
+
 .weather34solarword {
   margin-left: 155px;
 }
+
 .luxwrap,
 .solarwrap {
   position: absolute;
@@ -3495,12 +4035,15 @@ canvas {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
+
 .solarwrap {
   margin-left: 136px;
 }
+
 .luxwrap {
   margin-left: 221px;
 }
+
 .uvcautionbig {
   display: flex;
   height: 1rem;
@@ -3518,15 +4061,18 @@ canvas {
   margin-top: 5px;
   color: #aeb6bf;
 }
+
 .uvcautionbig span {
   color: #ff7c39;
   padding-right: 3px;
 }
+
 currentmoonrise,
 currentmoonset {
   font-size: 0.55rem;
   position: absolute;
 }
+
 .percent0,
 .percent10,
 .percent100,
@@ -3550,36 +4096,47 @@ currentmoonset {
   margin-top: 3px;
   margin-left: 3px;
 }
+
 .percent90 {
   background: rgba(230, 161, 65, 0.9);
 }
+
 .percent80 {
   background: #e6a141;
 }
+
 .percent70 {
   background: rgba(230, 161, 65, 0.7);
 }
+
 .percent60 {
   background: rgba(230, 161, 65, 0.6);
 }
+
 .percent50 {
   background: rgba(230, 161, 65, 0.5);
 }
+
 .percent40 {
   background: rgba(230, 161, 65, 0.4);
 }
+
 .percent30 {
   background: rgba(230, 161, 65, 0.3);
 }
+
 .percent20 {
   background: rgba(230, 161, 65, 0.2);
 }
+
 .percent10 {
   background: rgba(230, 161, 65, 0.1);
 }
+
 .percent0 {
   background: rgba(230, 161, 65, 0);
 }
+
 currentdarkness,
 currentdaylight {
   position: absolute;
@@ -3590,24 +4147,30 @@ currentdaylight {
   width: 6px;
   display: inline;
 }
+
 currentdaylight {
   background: rgba(68, 166, 181, 1);
 }
+
 currentdarkness {
   background: #4a636f;
 }
+
 currentmoonrise {
   left: 25px;
   top: 22px;
 }
+
 moonrisecolor {
   color: #44a6b5;
 }
+
 currentmoonset {
   left: -43px;
   top: 6px;
   width: 60px;
 }
+
 .sunaboveweather34,
 .sunbelowweather34 {
   width: 0;
@@ -3618,25 +4181,29 @@ currentmoonset {
   margin-left: 2px;
   position: absolute;
 }
+
 moonsetcolor {
   color: #ff7c39;
 }
+
 .sunaboveweather34 {
   border-width: 0 3px 6px;
   border-color: transparent transparent rgba(208, 95, 45, 0.7);
   -webkit-transform: rotate(360deg);
 }
+
 .sunbelowweather34 {
   border-width: 6px 3px 0;
   border-color: rgba(74, 99, 111, 0.8) transparent transparent;
   -webkit-transform: rotate(360deg);
 }
 
-.beaufort1{
+.beaufort1 {
   height: 1rem;
   position: absolute;
   overflow: hidden;
 }
+
 .weather34beaufort1-3,
 .weather34beaufort3-4,
 .weather34beaufort4-5,
@@ -3648,36 +4215,43 @@ moonsetcolor {
   margin-top: 128px;
   margin-left: 118px;
   overflow: hidden;
-  border:1px solid rgba(74, 99, 111, 0.2);
-  border-width:thin;
+  border: 1px solid rgba(74, 99, 111, 0.2);
+  border-width: thin;
   border-radius: 2px;
   align-items: center;
   font-family: weathertext2;
   font-size: 0.6rem;
   justify-content: center;
 }
+
 .weather34beaufort1-3 {
   color: #90b12a;
 }
+
 .weather34beaufort3-4 {
   color: #e6a141;
 }
+
 .weather34beaufort4-5 {
   color: #ff7c39;
 }
+
 .weather34beaufort6 {
   color: #d35d4e;
 }
+
 weather34bftspan {
   margin-left: 3px;
   color: #aeb6bf;
   font-family: weathertext2;
   font-size: 7px;
 }
+
 .beaufort1,
 weather34windrunspan {
   color: #aeb6bf;
 }
+
 weather34windrunspan {
   margin-left: 3px;
   font-size: 0.45rem;
@@ -3687,10 +4261,10 @@ weather34windrunspan {
   display: flex;
   width: 4rem;
   height: .8rem;
-  margin-top:120px;
-  margin-left:5px;
+  margin-top: 120px;
+  margin-left: 5px;
   color: #aeb6bf;
-  border:1px solid rgba(74, 99, 111, 0.2);
+  border: 1px solid rgba(74, 99, 111, 0.2);
   background: 0;
   align-items: center;
   font-size: 0.7rem;
@@ -3700,25 +4274,24 @@ weather34windrunspan {
   -webkit-border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-
 }
+
 .averagetoday1 {
   width: 6.5rem;
- color: #aeb6bf;
+  color: #aeb6bf;
   font-size: 0.55em;
   margin-left: -15px;
- margin-top:-24px;
+  margin-top: -24px;
 }
-
 
 .weather34windruntoday1 {
   display: flex;
   width: 4rem;
   height: .8rem;
-  margin-top:-1px;
-  margin-left:235px;
+  margin-top: -1px;
+  margin-left: 235px;
   color: #aeb6bf;
-  border:1px solid rgba(74, 99, 111, 0.2);
+  border: 1px solid rgba(74, 99, 111, 0.2);
   background: 0;
   align-items: center;
   font-size: 0.7rem;
@@ -3728,20 +4301,22 @@ weather34windrunspan {
   -webkit-border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-
 }
+
 .windruntoday1 {
   width: 6.5rem;
- color: #aeb6bf;
+  color: #aeb6bf;
   font-size: 0.55em;
   margin-left: 215px;
-  margin-top:-24px;
+  margin-top: -24px;
 }
+
 .beaufort1 {
   margin-top: 130px;
   margin-left: -10px;
 }
-.beaufort1{
+
+.beaufort1 {
   display: flex;
   width: 6.5rem;
   font-family: weathertext2;
@@ -3753,17 +4328,20 @@ weather34windrunspan {
   color: #aeb6bf;
   font-family: Arial, Helvetica, system;
 }
-.beaufort1{
+
+.beaufort1 {
   font-size: 0.55rem;
   width: 6.5rem;
   display: flex;
 }
+
 .beaufort1 {
   position: absolute;
   margin-left: 5px;
   margin-top: 130px;
   margin-left: 0;
 }
+
 .beaufort1,
 .raintoday1 {
   justify-content: center;
@@ -3775,6 +4353,7 @@ weather34windrunspan {
 .raintoday1 {
   font-family: weathertext2;
 }
+
 weather34windrunspan {
   margin-left: 3px;
   font-size: 0.5rem;
@@ -3809,11 +4388,13 @@ wfblue,
 windchill {
   color: #3b9cac;
 }
+
 .raintoday1,
 .suncircleblue,
 topblue1 {
   background: #3b9cac;
 }
+
 .feelslikebig {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -3825,51 +4406,63 @@ topblue1 {
   margin-top: 40px;
   color: #ff7c39;
 }
+
 .rainconvertercircleblue1,
 .rainratecirclehome {
   align-items: center;
   display: flex;
   overflow: hidden;
 }
+
 .feelslikebig span {
   color: #aeb6bf;
   padding-right: 3px;
 }
+
 darkskytemplohome uvspan,
 gustorange,
 torange {
   color: #ff7c39;
 }
+
 tred {
   color: #d35d4e;
 }
+
 tyellow {
   color: #e6a141;
 }
+
 tgreen {
   color: #90b12a;
 }
+
 oblue,
 tblue {
   color: #3b9cac;
 }
+
 .tempindoorextra {
   position: absolute;
   margin-left: 230px;
   margin-top: 130px;
 }
+
 darkskytemplohome uv {
   font-size: 0.6rem;
   color: #aeb6bf;
 }
+
 #weather34rainbeaker:before {
   left: -10px;
 }
+
 rainu {
   font-size: 10px;
   color: #aeb6bf;
   left: 3px;
 }
+
 .weather34i-rairate-bar {
   position: absolute;
   height: 100px;
@@ -3877,6 +4470,7 @@ rainu {
   margin-left: 35px;
   margin-top: 40px;
 }
+
 #raincontainer {
   height: 170px;
   overflow: hidden;
@@ -3885,9 +4479,11 @@ rainu {
   margin-top: -70px;
   left: -20px;
 }
+
 #raincontainer div {
   position: absolute;
 }
+
 #weather34rainbeaker {
   border: 4px solid #3d464d;
   border-top: 0;
@@ -3902,6 +4498,7 @@ rainu {
   width: 100px;
   background: url(rain/weather34rainbeakerruler.svg) center no-repeat;
 }
+
 #weather34rainbeaker:after,
 #weather34rainbeaker:before {
   border: 5px solid #3d464d;
@@ -3917,19 +4514,23 @@ rainu {
   top: 0;
   width: 10px;
 }
+
 .wfstrikes,
 .wftemp {
   left: 12px;
   position: absolute;
 }
+
 .maxwindgust,
 .raincontainer1 {
   position: relative;
   float: left;
 }
+
 #weather34rainbeaker:after {
   right: -10px;
 }
+
 #weather34rainwater {
   background-color: rgba(0, 154, 171, 0.6);
   border: 0;
@@ -3943,6 +4544,7 @@ rainu {
   overflow: hidden;
   width: 92px;
 }
+
 .raincontainer1 {
   margin: 40px 10px 10px 40px;
   bottom: 0;
@@ -3950,6 +4552,7 @@ rainu {
   left: 15px;
   top: 47px;
 }
+
 .raintoday1 {
   width: 3.1rem;
   height: 2.5rem;
@@ -3962,13 +4565,17 @@ rainu {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
+
 .rainratetextheading {
   color: #aeb6bf;
   font-family: weathertext2;
   font-size: 0.6em;
-  margin-top:5px
+  margin-top: 5px;
 }
-.rainratetextheading ratevalue{color:rgba(61, 139, 150, 1)}
+
+.rainratetextheading ratevalue {
+  color: rgba(61, 139, 150, 1);
+}
 
 .rainrateextra {
   position: absolute;
@@ -3976,6 +4583,7 @@ rainu {
   margin-left: 227px;
   color: #aeb6bf;
 }
+
 .rainratebar {
   display: flex;
   width: 4.2rem;
@@ -3991,25 +4599,26 @@ rainu {
   -webkit-border-top-right-radius: 2px;
   -webkit-border-bottom-right-radius: 2px;
   border: 1px solid rgba(61, 70, 77, 0.5);
-  border-width:thin;
+  border-width: thin;
   border-left: 0;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-
 }
-.weather34ratebar{
-	height:1rem;
-	background:rgba(61, 139, 150, .7);
-	color: #aeb6bf;
-	font-size: 0.6rem;
-	}
+
+.weather34ratebar {
+  height: 1rem;
+  background: rgba(61, 139, 150, .7);
+  color: #aeb6bf;
+  font-size: 0.6rem;
+}
+
 smallrainrateunit {
   color: #aeb6bf;
   font-family: Arial, Helvetica, system;
   font-size: 0.4rem;
-  vertical-align: text-top
-
+  vertical-align: text-top;
 }
+
 .rainratecirclehome {
   line-height: 17px;
   justify-content: left;
@@ -4021,6 +4630,7 @@ smallrainrateunit {
   color: #4a636f;
   padding-top: 5px;
 }
+
 .rainratesmall {
   position: absolute;
   top: 1px;
@@ -4029,15 +4639,18 @@ smallrainrateunit {
   line-height: 12px;
   left: 40px;
 }
+
 smallrainunit {
   color: #aeb6bf;
 }
+
 smallrainunit2,
 smallrainunit3 {
   font-size: 0.5rem;
   color: #aeb6bf;
   font-family: Arial, Helvetica, system;
 }
+
 .rainconvertercircleblue1,
 value,
 valuetext,
@@ -4046,10 +4659,12 @@ valuetextheading,
 valuetextstrikes {
   font-family: weathertext2;
 }
+
 smallrainunita {
   color: #fff;
   font-size: 0.45rem;
 }
+
 .rainconvertercircleblue1 {
   justify-content: center;
   height: 1rem;
@@ -4061,6 +4676,7 @@ smallrainunita {
   color: #3b9cac;
   background: 0;
 }
+
 .cloudconvertercircle,
 .cloudconvertercircle2000 {
   width: 4.8rem;
@@ -4070,6 +4686,7 @@ smallrainunita {
   overflow: hidden;
   padding-top: 0;
 }
+
 .sundown34,
 .sunup34 {
   height: 4px;
@@ -4077,6 +4694,7 @@ smallrainunita {
   top: 3px;
   position: absolute;
 }
+
 .cloudconvertercircle {
   align-items: center;
   border: 1px solid rgba(61, 70, 77, 0.5);
@@ -4084,12 +4702,14 @@ smallrainunita {
   border-radius: 2px;
   font-size: 0.57rem;
 }
+
 .cloudconverter {
   position: absolute;
   font-size: 12px;
   margin-top: -3px;
   margin-left: 230px;
 }
+
 .cloudconvertercircle2000 {
   align-items: center;
   border: 1px solid rgba(61, 70, 77, 0.5);
@@ -4097,43 +4717,52 @@ smallrainunita {
   border-radius: 2px;
   font-size: 0.57rem;
 }
+
 value,
 valuetext,
 valuetextheading {
   font-size: 0.9em;
   font-weight: 500;
 }
+
 maxred {
   color: #ff7c39;
 }
+
 minblue {
   color: #3b9cac;
 }
+
 units {
   color: #aeb6bf;
 }
+
 valuetext1 {
   font-size: 0.95em;
   font-weight: 500;
   color: #bbb;
 }
+
 valuetextstrikes {
   font-size: 0.9em;
   font-weight: 500;
   color: #fff;
 }
+
 .sunup34 {
   border-top-left-radius: 90px;
   border-top-right-radius: 90px;
   background: rgba(230, 161, 65, 0.8);
   left: 23px;
 }
+
 .sundown34 {
   border-bottom-left-radius: 90px;
   border-bottom-right-radius: 90px;
   background: rgba(211, 93, 78, 0.8);
   left: 68px;
 }
+
 .intempmodulehome0-5c,
 .intempmodulehome10-15c,
 .intempmodulehome15-20c,
@@ -4166,7 +4795,7 @@ valuetextstrikes {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   justify-content: center;
-  font-size:.6rem;
+  font-size: .6rem;
   align-items: center;
 }
 
@@ -4198,21 +4827,23 @@ valuetextstrikes {
 .temphumcircle60-80 {
   box-shadow: inset 3px 0 0 0 #e6a141;
 }
+
 .temphumcircle25-35 {
   box-shadow: inset 3px 0 0 0 #d05f2d;
+}
 
-}
 .temphumcircle35-60 {
-   box-shadow: inset 3px 0 0 0 #90b12a;
+  box-shadow: inset 3px 0 0 0 #90b12a;
 }
+
 .temphumcircle80-100 {
   box-shadow: inset 3px 0 0 0 #4e95a0;
-
 }
+
 .temphumcircle0-25 {
   box-shadow: inset 3px 0 0 0 #d35d4e;
-
 }
+
 valuetextheading1 {
   margin-left: 10px;
   font-family: weathertext2;
@@ -4222,16 +4853,16 @@ valuetextheading1 {
 
 .tempmodulehome-50-10c {
   box-shadow: inset 3px 0 0 0 #8781bd;
-
 }
+
 .tempmodulehome-10-0c {
   box-shadow: inset 3px 0 0 0 #487ea9;
-
 }
 
 .tempmodulehome0-5c {
   box-shadow: inset 3px 0 0 0 #3b9cac;
 }
+
 .tempmodulehome5-10c {
   box-shadow: inset 3px 0 0 0 #9aba2f;
 }
@@ -4239,8 +4870,8 @@ valuetextheading1 {
 .tempmodulehome10-15c,
 .tempmodulehome15-20c {
   box-shadow: inset 3px 0 0 0 #e6a141;
-
 }
+
 .tempmodulehome20-25c {
   box-shadow: inset 3px 0 0 0 #ec5a34;
 }
@@ -4248,28 +4879,32 @@ valuetextheading1 {
 .tempmodulehome25-30c {
   box-shadow: inset 3px 0 0 0 #d05f2d;
 }
+
 .tempmodulehome30-35c {
   box-shadow: inset 3px 0 0 0 #d65b4a;
 }
+
 .tempmodulehome35-40c {
   box-shadow: inset 3px 0 0 0 #dc4953;
 }
+
 .tempmodulehome40-50c {
   box-shadow: inset 3px 0 0 0 #e26870;
 }
+
 raiblue {
   color: #3b9cac;
 }
 
 .rainmodulehome,
-.rainratemodulehome{
+.rainratemodulehome {
   display: flex;
-   width: 4.1rem;
+  width: 4.1rem;
   height: 1rem;
   color: #aeb6bf;
   overflow: hidden;
   font-family: weathertext2;
-  line-height:1;
+  line-height: 1;
   border: 1px solid rgba(61, 70, 77, 0.5);
   -webkit-border-left: 0;
   -webkit-border-top-right-radius: 2px;
@@ -4282,7 +4917,12 @@ raiblue {
   align-items: center;
   box-shadow: inset 2px 0 0 0 #3b9cac;
 }
-.rainratemodulehome{ width: 4.2rem; font-size: .55rem;}
+
+.rainratemodulehome {
+  width: 4.2rem;
+  font-size: .55rem;
+}
+
 .intempmodulehome0-5c {
   box-shadow: inset 3px 0 0 0 #3b9cac;
 }
@@ -4295,42 +4935,54 @@ raiblue {
 .intempmodulehome15-20c {
   box-shadow: inset 3px 0 0 0 #e6a141;
 }
+
 .intempmodulehome20-25c {
   box-shadow: inset 3px 0 0 0 #ec5a34;
 }
+
 .intempmodulehome25-30c {
   box-shadow: inset 3px 0 0 0 #cd5245;
 }
+
 valuewindunit {
   font-size: 0.55rem;
 }
+
 valuetitleunit {
   font-size: 0.8em;
   font-family: weathertext2;
 }
+
 greyu {
   font-size: 0.55rem;
   font-family: weathertext2;
   color: #aeb6bf;
 }
+
 orangeu {
   color: #d05f2d;
 }
+
 greenu {
   color: #90b12a;
 }
+
 yellowu {
   color: #e6a141;
 }
+
 redu {
   color: #cd5245;
 }
+
 purpleu {
   color: #b600b0;
 }
+
 blueu {
   color: #44a6b5;
 }
+
 .uvsolarwordbig {
   position: absolute;
   margin-left: 110px;
@@ -4340,6 +4992,7 @@ blueu {
   width: 200px;
   font-family: weathertext2;
 }
+
 .tempconvertercircle0-5,
 .tempconvertercircle11-15,
 .tempconvertercircle16-20,
@@ -4368,24 +5021,31 @@ blueu {
   font-size: 0.85em;
   background: 0;
 }
+
 bluet {
   color: #01a4b5;
 }
+
 yellowt {
   color: #e6a141;
 }
+
 oranget {
   color: #d05f2d;
 }
+
 greent {
   color: #90b12a;
 }
+
 redt {
   color: #d86858;
 }
+
 purplet {
   color: #de7b6e;
 }
+
 bluetds,
 greentds,
 orangetds,
@@ -4399,25 +5059,32 @@ yellowtds {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
+
 bluetds {
   background: #01a4b5;
 }
+
 yellowtds {
   background: #e6a141;
 }
+
 orangetds {
   background: #d05f2d;
 }
+
 redtds {
   background: #d86858;
 }
+
 purpletds {
   background: #de7b6e;
 }
+
 valuesun {
   font-size: 0.95em;
   font-family: weathertext2;
 }
+
 .weather34luminancem,
 .weather34moonphasem,
 .weather34sundarkday,
@@ -4430,6 +5097,7 @@ valuesun {
   overflow: hidden;
   font-family: weathertext2;
 }
+
 .weather34sundarkday,
 .weather34sunlightday {
   position: absolute;
@@ -4438,14 +5106,17 @@ valuesun {
   width: 6.4rem;
   margin-top: 0;
 }
+
 .weather34sunlightday {
   justify-content: center;
   margin-left: -15px;
 }
+
 .weather34sundarkday {
   justify-content: center;
   margin-left: 215px;
 }
+
 .weather34sunriseday,
 .weather34sunsetday {
   height: 5.1rem;
@@ -4454,32 +5125,38 @@ valuesun {
   position: absolute;
   align-items: center;
 }
+
 .weather34sunriseday {
   justify-content: center;
   margin-left: -25px;
 }
+
 .weather34sunsetday {
   justify-content: center;
   margin-left: 195px;
 }
+
 .weather34luminancem,
 .weather34moonphasem {
   height: 4.1rem;
   width: 7.4rem;
   margin-top: 45px;
 }
+
 .weather34moonphasem {
   position: absolute;
   align-items: center;
   justify-content: center;
   left: -15px;
 }
+
 .weather34luminancem {
   position: absolute;
   align-items: center;
   justify-content: center;
   left: 210px;
 }
+
 offlinenew,
 onlinenew,
 weather34darkdaycircle,
@@ -4488,6 +5165,7 @@ weather34daylightdaycircle {
   height: 5px;
   width: 5px;
 }
+
 weather34sunupcircle {
   top: 1px;
   left: 38px;
@@ -4497,6 +5175,7 @@ weather34sunupcircle {
   border-radius: 10px 10px 0 0;
   background: #ff7c39;
 }
+
 weather34sundowncircle {
   top: 2px;
   left: 83px;
@@ -4506,18 +5185,21 @@ weather34sundowncircle {
   border-radius: 0 0 10px 10px;
   background: #d35d4e;
 }
+
 weather34daylightdaycircle {
   top: 2px;
   left: 25px;
   border-radius: 45px;
   background: #00a4b4;
 }
+
 weather34darkdaycircle {
   top: 2px;
   left: 71px;
   border-radius: 45px;
   background: #565f67;
 }
+
 .maxpressure,
 .maxwindgust,
 .minpressure,
@@ -4527,6 +5209,7 @@ weather34darkdaycircle {
   line-height: 1;
   font-family: weathertext2;
 }
+
 offlinenew,
 onlinenew {
   overflow: hidden;
@@ -4536,18 +5219,23 @@ onlinenew {
   margin-top: 2px;
   margin-left: -7px;
 }
+
 windorange {
   color: #d05f2d;
 }
+
 windred {
   color: #d35d4e;
 }
+
 windgreen {
   color: #9aba2f;
 }
+
 windblue {
   color: #a0a5a9;
 }
+
 .maxwindgust {
   top: -12px;
   left: 0;
@@ -4555,24 +5243,28 @@ windblue {
   justify-content: center;
   width: 70px;
 }
+
 .maxpressure,
 .minpressure {
   align-items: center;
   width: 70px;
   position: relative;
 }
+
 .maxpressure {
   top: 7px;
   left: 0;
   justify-content: center;
   float: left;
 }
+
 .minpressure {
   top: 138px;
   right: 5px;
   justify-content: center;
   float: right;
 }
+
 .trendpressure {
   position: relative;
   top: 138px;
@@ -4584,9 +5276,11 @@ windblue {
   font-size: 9px;
   line-height: 1;
 }
+
 pressureunits {
   font-size: 8px;
 }
+
 .darkskytempdesc {
   display: flex;
   align-items: center;
@@ -4594,12 +5288,14 @@ pressureunits {
   font-size: 10px;
   margin-bottom: -28px;
 }
+
 .wulargediv,
 .wulargeforecasthome,
 .wulargeforecastinghome {
   font-family: weathertext2;
   color: #aeb6bf;
 }
+
 .wulargeforecasthome {
   position: absolute;
   width: 328px;
@@ -4610,10 +5306,12 @@ pressureunits {
   border-radius: 3px;
   overflow: hidden;
 }
+
 .wulargediv,
 .wulargeforecastinghome {
   overflow: hidden;
 }
+
 .wulargeforecasthome wulargetemphihome,
 .wulargeforecasthome wulargetempwindhome span,
 .wulargeforecasthome wulargetempwindhome span2,
@@ -4622,11 +5320,13 @@ pressureunits {
   font-size: 0.65rem;
   color: #aeb6bf;
 }
+
 .wulargediv {
   width: 310px;
   height: 180px;
   margin-top: 5px;
 }
+
 .wulargeforecastinghome {
   float: left;
   display: inline;
@@ -4638,9 +5338,9 @@ pressureunits {
   background: 0;
   color: #aeb6bf;
   border: 1px solid rgba(37, 50, 58, 0.1);
-
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
 }
+
 .wulargeweekdayhome {
   position: absolutue;
   text-align: left;
@@ -4649,26 +5349,31 @@ pressureunits {
   margin: 0 0 0 5px;
   background: 0;
 }
+
 .wuhumidity,
 .wuthunder {
   padding-top: 0;
   display: flex;
   align-items: center;
 }
+
 .wulargeforecasthome wulargetemphihome,
 .wulargeforecasthome wulargetemplohome {
   margin-top: 0;
   margin-left: 1%;
   font-weight: 500;
 }
+
 .wulargeforecasthome wulargetemphihome span {
   font-size: 0.7rem;
   color: #ff7c39;
 }
+
 .wulargeforecasthome wulargetemphihome {
   font-size: 12px;
   color: #ff7c39;
 }
+
 .wulargeforecasthome wulargetempwindhome,
 .wulargeforecasthome wulargetempwindhome span4 {
   position: absolute;
@@ -4677,17 +5382,21 @@ pressureunits {
   font-size: 0.7rem;
   float: left;
 }
+
 wulargetemplohome uv {
   font-weight: 500;
 }
+
 wulargeforecasthome wulargetemplohome,
 wulargetemplohome {
   font-size: 0.7rem;
   font-weight: 500;
 }
+
 wulargetemplohome uvspan {
   font-weight: 400;
 }
+
 .wuthunder {
   position: absolute;
   font-family: weathertext2;
@@ -4699,32 +5408,38 @@ wulargetemplohome uvspan {
   margin-left: 140px;
   margin-top: 27px;
 }
+
 .wulargerain,
 .wulargewindspeedicon {
   display: block;
   font-family: Arial, Helvetica, sans-serif;
   position: absolute;
 }
+
 .wulargewindspeedicon,
 wulargetempdesc {
   margin-top: 5px;
   float: left;
   font-size: 11px;
 }
+
 .wulargehomeicons {
   margin-bottom: -5px;
   float: left;
   margin-left: 10px;
 }
+
 .wulargewindspeedicon {
   margin-left: 10px;
 }
+
 .wulargerain {
   float: left;
   margin-left: 10px;
   margin-top: 30px;
   font-size: 11px;
 }
+
 .wuhumidity {
   position: absolute;
   font-family: weathertext2;
@@ -4741,6 +5456,7 @@ wulargetempdesc {
   top: -32px;
   background: #01a4b5;
 }
+
 .wurainfall,
 .wuwindspeed {
   font-size: 0.7rem;
@@ -4754,6 +5470,7 @@ wulargetempdesc {
   -moz-border-radius: 2px;
   -o-border-radius: 2px;
 }
+
 .wurainfall {
   position: absolute;
   width: 3.3rem;
@@ -4763,6 +5480,7 @@ wulargetempdesc {
   top: 0;
   background: #01a4b5;
 }
+
 .wuwindspeed {
   position: absolute;
   width: 3.3rem;
@@ -4772,11 +5490,13 @@ wulargetempdesc {
   top: 2px;
   background: rgba(208, 95, 45, 1);
 }
+
 heatindexwu,
 redwu,
 redwuv {
   background: #d86858;
 }
+
 wuhumidityword {
   font-size: 9px;
   position: absolute;
@@ -4785,6 +5505,7 @@ wuhumidityword {
   color: #2d3a4b;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .wulargeheatindex,
 .wulargeuvindex {
   font-size: 0.7rem;
@@ -4792,9 +5513,11 @@ wuhumidityword {
   font-family: Arial, Helvetica, sans-serif;
   position: absolute;
 }
+
 .wulargeuvindex {
   margin-top: 5px;
 }
+
 .wulargeuvindex wuinfo {
   position: absolute;
   display: inline;
@@ -4803,21 +5526,25 @@ wuhumidityword {
   width: 8rem;
   top: 0;
 }
+
 .wulargeheatindex {
   margin-top: 27px;
 }
+
 .wulargeheatindex wuinfo {
   position: absolute;
   display: inline;
   left: 5px;
   width: 6em;
 }
+
 .wulargealert {
   position: absolute;
   margin-top: 27px;
   margin-left: 98px;
   width: 16em;
 }
+
 .wulargehumidity {
   position: absolute;
   margin-top: 0;
@@ -4836,6 +5563,7 @@ windchillwu {
   top: 0;
   height: 0.9rem;
 }
+
 feelswu,
 feelswugreen,
 feelswuorange,
@@ -4853,6 +5581,7 @@ heatindexwu {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
+
 bluewu,
 greenwu,
 orangewu,
@@ -4870,11 +5599,13 @@ yellowwu {
   color: #fff;
   display: flex;
 }
+
 windchillwu {
   justify-content: center;
   border-radius: 2px;
   background: #009bab;
 }
+
 bluewu,
 greenwu,
 orangewu,
@@ -4889,29 +5620,35 @@ yellowwu {
   margin-left: 220px;
   top: 23px;
 }
+
 bluewu,
 bluewuv {
   background: #01a4b5;
 }
+
 feelswuyellow,
 yellowwu,
 yellowwuv {
   background: #e6a141;
 }
+
 feelswuorange,
 orangewu,
 orangewuv {
   background: #d05f2d;
 }
+
 feelswugreen,
 greenwu,
 greenwuv {
   background: #90b12a;
 }
+
 purplewu,
 purplewuv {
   background: #c282c5;
 }
+
 bluewuv,
 greenwuv,
 greywuv,
@@ -4937,15 +5674,19 @@ yellowwuv {
   top: 0;
   line-height: 0.9;
 }
+
 greywuv {
   background: #565f67;
 }
+
 wuunits {
   font-size: 0.65em;
 }
+
 displaynone {
   display: none;
 }
+
 wuuvicon {
   width: 3.3rem;
   height: 1.1rem;
@@ -4959,6 +5700,7 @@ wuuvicon {
   padding-left: 2px;
   padding-right: 2px;
 }
+
 wuthunder2 {
   padding-top: 0;
   display: flex;
@@ -4974,14 +5716,17 @@ wuthunder2 {
   line-height: 10px;
   left: 12px;
 }
+
 wustormalert {
   position: relative;
   top: -15px;
   left: 1px;
 }
+
 wuheatindex {
   color: #d35d4e;
 }
+
 weather34mbuptime {
   position: absolute;
   display: inline;
@@ -4991,6 +5736,7 @@ weather34mbuptime {
   font-size: 0.75em;
   font-family: weathertext2;
 }
+
 .weather34themeicon {
   position: absolute;
   margin: 0;
@@ -4998,16 +5744,19 @@ weather34mbuptime {
   top: 15px;
   max-height: 12px;
 }
+
 .weather34thememonitor {
   width: 15px;
   height: 11px;
   background: #ff832f;
   border-radius: 2px;
 }
+
 .weather34thememonitor li {
   position: absolute;
   list-style: none;
 }
+
 .weather34thememonitor .weather34themefirst {
   width: 13px;
   height: 8px;
@@ -5016,12 +5765,14 @@ weather34mbuptime {
   left: 1px;
   z-index: 3;
 }
+
 #weather34sidebarMenu,
 .weather34sidebarMenuInner li {
   background: #202127;
   width: 15rem;
   float: left;
 }
+
 #weather34sidebarMenu {
   position: absolute;
   left: 0;
@@ -5030,12 +5781,14 @@ weather34mbuptime {
   height: 100%;
   z-index: 30;
 }
+
 .weather34sidebarIconToggle,
 .weather34spinner,
 input[type="checkbox"] {
   transition: all 0.3s;
   box-sizing: border-box;
 }
+
 .weather34sidebarMenuInner {
   margin: 0;
   padding: 0;
@@ -5044,10 +5797,12 @@ input[type="checkbox"] {
   float: left;
   font-weight: 500;
 }
+
 .weather34cross.part-2,
 .weather34horizontal {
   margin-top: 3px;
 }
+
 .weather34sidebarMenuInner li {
   list-style: none;
   color: #aeb6bf;
@@ -5057,6 +5812,7 @@ input[type="checkbox"] {
   font-size: 12px;
   font-weight: 500;
 }
+
 .weather34sidebarMenuInner li span {
   display: block;
   font-size: 12px;
@@ -5065,6 +5821,7 @@ input[type="checkbox"] {
   width: 240px;
   font-weight: 500;
 }
+
 .weather34sidebarMenuInner li a {
   color: #aeb6bf;
   cursor: pointer;
@@ -5073,6 +5830,7 @@ input[type="checkbox"] {
   font-size: 12px;
   font-weight: 500;
 }
+
 .weather34sidebarMenuInner li a:hover {
   color: #ff7c39;
   cursor: pointer;
@@ -5081,12 +5839,15 @@ input[type="checkbox"] {
   font-size: 12px;
   font-weight: 500;
 }
+
 input[type="checkbox"]:checked ~ #weather34sidebarMenu {
   transform: translateX(0);
 }
+
 input[type="checkbox"] {
   display: none;
 }
+
 .weather34sidebarIconToggle {
   cursor: pointer;
   position: absolute;
@@ -5096,12 +5857,14 @@ input[type="checkbox"] {
   height: 22px;
   width: 22px;
 }
+
 .weather34spinner {
   position: absolute;
   height: 3px;
   width: 100%;
   background-color: #aeb6bf;
 }
+
 .weather34cross.part-1,
 .weather34cross.part-2,
 .weather34horizontal {
@@ -5109,12 +5872,14 @@ input[type="checkbox"] {
   box-sizing: border-box;
   float: left;
 }
+
 input[type="checkbox"]:checked
   ~ .weather34sidebarIconToggle
   > .weather34horizontal {
   box-sizing: border-box;
   opacity: 0;
 }
+
 input[type="checkbox"]:checked
   ~ .weather34sidebarIconToggle
   > .weather34cross.part-1 {
@@ -5123,6 +5888,7 @@ input[type="checkbox"]:checked
   transform: rotate(135deg);
   margin-top: 8px;
 }
+
 input[type="checkbox"]:checked
   ~ .weather34sidebarIconToggle
   > .weather34cross.part-2 {
@@ -5130,6 +5896,7 @@ input[type="checkbox"]:checked
   transform: rotate(-135deg);
   margin-top: -9px;
 }
+
 topbarimperialf,
 topbarmetricc {
   display: inline;
@@ -5145,27 +5912,30 @@ topbarmetricc {
   justify-content: center;
   color: #aeb6bf;
   border: 1px solid #aeb6bf;
-  opacity:.8  
+  opacity: .8;
 }
+
 .topbar34-circle1 {
-   background:#2f9dac;
-   border:1px solid #aeb6bf;
-   border-radius:50%;
-   height: 8px;
-   width: 8px;
-   position: relative;
-   left:5px;
-   top:-5px;
-   z-index:50  
- }
- .topbar34-circle2 {
-   position: absolute;
-   background:#2f9dac;
-   border-radius: 50%;
-   height: 6px;
-   width: 6px;  
-   margin:0 auto;  
- } 
+  background: #2f9dac;
+  border: 1px solid #aeb6bf;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  position: relative;
+  left: 5px;
+  top: -5px;
+  z-index: 50;
+}
+
+.topbar34-circle2 {
+  position: absolute;
+  background: #2f9dac;
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+  margin: 0 auto;
+}
+
 weather34menumarkerblue,
 weather34menumarkerbluegrey,
 weather34menumarkergreen,
@@ -5188,27 +5958,35 @@ weather34menumarkeryellow {
   color: #aeb6bf;
   line-height: 12px;
 }
+
 weather34menumarkerblue {
   background: #44a6b5;
 }
+
 weather34menumarkerorange {
   background: #ff832f;
 }
+
 weather34menumarkeryellow {
   background: #e6a141;
 }
+
 weather34menumarkergreen {
   background: #90b12a;
 }
+
 weather34menumarkerbluegrey {
   background: #565f67;
 }
+
 weather34menumarkerred {
   background: #d35d4e;
 }
+
 weather34menumarkerlight {
   background: #b5b9c1;
 }
+
 weather34menumarkeruptime {
   display: inline-block;
   -webkit-border-radius: 2px;
@@ -5222,22 +6000,27 @@ weather34menumarkeruptime {
   line-height: 15px;
   background: #ff832f;
 }
+
 uptimesup {
   font-size: 7px;
   vertical-align: top;
 }
+
 @media screen and (max-width: 820px) {
   weather34toptitle {
     font: 500 0.9em system;
     margin-left: 70px;
   }
+
   weather34mbuptime {
     display: none;
   }
+
   .weather-item {
     margin-top: 32px;
     margin-bottom: -28px;
   }
+
   .weather34themeicon {
     position: absolute;
     margin: 0;
@@ -5245,16 +6028,19 @@ uptimesup {
     top: 10px;
     max-height: 12px;
   }
+
   .weather34thememonitor {
     width: 15px;
     height: 11px;
     background: #ff832f;
     border-radius: 2px;
   }
+
   .weather34thememonitor li {
     position: absolute;
     list-style: none;
   }
+
   .weather34thememonitor .weather34themefirst {
     width: 13px;
     height: 8px;
@@ -5263,6 +6049,7 @@ uptimesup {
     left: 1px;
     z-index: 3;
   }
+
   .weather34sidebarIconToggle {
     cursor: pointer;
     position: absolute;
@@ -5273,6 +6060,7 @@ uptimesup {
     width: 20px;
   }
 }
+
 .lity {
   z-index: 9990;
   position: fixed;
@@ -5286,17 +6074,21 @@ uptimesup {
   opacity: 0;
   margin: 0 auto;
 }
+
 .lity.lity-opened {
   opacity: 1;
 }
+
 .lity.lity-closed {
   opacity: 0;
 }
+
 .lity * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .lity-wrap {
   z-index: 9990;
   position: fixed;
@@ -5308,6 +6100,7 @@ uptimesup {
   outline: 0 !important;
   margin: 0 auto;
 }
+
 .lity-wrap:before {
   content: "";
   display: inline-block;
@@ -5315,6 +6108,7 @@ uptimesup {
   vertical-align: middle;
   margin-right: -0.25em;
 }
+
 .lity-loader {
   z-index: 9991;
   color: #fff;
@@ -5327,9 +6121,11 @@ uptimesup {
   font-family: Arial, Helvetica, sans-serif;
   opacity: 0;
 }
+
 .lity-loading .lity-loader {
   opacity: 1;
 }
+
 .lity-container {
   z-index: 9992;
   position: relative;
@@ -5342,13 +6138,14 @@ uptimesup {
   outline: 0 !important;
   margin: 0 auto;
 }
+
 .lity-content {
   z-index: 9993;
   width: 100%;
   max-width: 820px;
   max-height: 820px;
-  
 }
+
 .lity-content:after {
   content: "";
   position: absolute;
@@ -5361,13 +6158,14 @@ uptimesup {
   height: auto;
   z-index: -1;
 }
+
 .lity-close {
   z-index: 9994;
   -webkit-appearance: none;
-  position:absolute;
-  top:12px;
-  width:20px;
-  float:right;
+  position: absolute;
+  top: 12px;
+  width: 20px;
+  float: right;
   right: 43px;
   padding: 0;
   color: #fff;
@@ -5382,13 +6180,15 @@ uptimesup {
   font-style: normal;
   line-height: 20px;
   cursor: pointer;
-  background:rgba(208, 95, 45, 1.000);
-  border-radius:3px
+  background: rgba(208, 95, 45, 1.000);
+  border-radius: 3px;
 }
+
 .lity-close::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
+
 .lity-close:active,
 .lity-close:focus,
 .lity-close:hover,
@@ -5405,23 +6205,27 @@ uptimesup {
   font-size: 25px;
   font-style: normal;
   line-height: 25px;
-  background:rgba(61, 139, 150, 1.000);
-  border-radius:3px
+  background: rgba(61, 139, 150, 1.000);
+  border-radius: 3px;
 }
+
 .lity-close:active {
   color: rgba(86, 95, 103, 1);
 }
+
 .lity-image img {
   max-width: 100%;
   display: block;
   line-height: 0;
   border: 0;
 }
+
 .lity-iframe .lity-container {
   width: 100%;
   max-width: 820px;
   margin: 0 auto;
 }
+
 .lity-iframe-container {
   display: flex;
   width: 98%;
@@ -5438,6 +6242,7 @@ uptimesup {
   text-align: center;
   margin: 0 auto;
 }
+
 .lity-iframe-container iframe {
   display: flex;
   position: absolute;
@@ -5455,67 +6260,81 @@ uptimesup {
   text-align: center;
   margin: 0 auto;
 }
+
 .lity-hide {
   display: none;
 }
+
 .weather34box {
   color: #aeb6bf;
   float: left;
   position: relative;
   margin-top: -10px;
 }
+
 .weather34box .title,
 .weather34box .value {
   position: absolute;
   float: left;
   color: #aeb6bf;
 }
+
 .weather34box .title {
   font-family: arial, helvetica;
   font-size: 9px;
   top: 0;
   padding: 1px 5px 0;
 }
+
 .hoursago,
 spanm,
 spanm2 {
   font-family: Arial, Helvetica, system;
 }
+
 .weather34box {
   font-size: 26px;
   padding: 0 3px;
   top: 0;
 }
+
 .weather34box.indoor span {
   color: #aeb6bf;
   font-weight: 500;
 }
+
 .weather34box.indoor titlespan {
   color: #90b12a;
   font-weight: 500;
 }
+
 .weather34box.clock {
   background-repeat: no-repeat;
   background-position: left 10px bottom 18px;
   color: #fff;
 }
+
 .weather34box.clock span {
   color: #aeb6bf;
   font-weight: 500;
 }
+
 .weather34box.clock titlespan {
   color: #90b12a;
   font-weight: 500;
 }
+
 .weather34box.alert span,
 .weather34box.earthquake span {
   color: #ff7c39;
   font-weight: 500;
   margin-top: -10px;
 }
+
 .weather34box.alert {
   margin-top: -35px;
 }
+
 .clockiconsvg,
 grey,
 raingrey,
@@ -5525,52 +6344,63 @@ spanm4,
 spanm5 {
   color: #aeb6bf;
 }
+
 .barometerconverter {
   margin-left: 238px;
   margin-top: 7px;
 }
+
 .tempconverter {
   margin-left: 238px;
   margin-top: 7px;
 }
+
 .windconverter {
   margin-left: 238px;
   margin-top: -12px;
 }
+
 .rainconverter {
   margin-left: 238px;
   margin-top: 7px;
 }
+
 .uvcautionbig {
   margin-left: 208px;
   margin-top: 7px;
 }
+
 .tempconverter2 {
   margin-left: 285px;
   position: absolute;
   margin-top: 7px;
   font-size: 12px;
 }
+
 .lightningcoverter {
   margin-left: 285px;
   position: absolute;
   margin-top: 7px;
   font-size: 12px;
 }
+
 .airqualitymoduleposition {
   position: relative;
   left: 75px;
   top: 18px;
 }
+
 .airhouse {
   margin-top: -10px;
   margin-left: 7px;
   background: 0;
 }
+
 .airsvg {
   margin-top: -12px;
   left: 20px;
 }
+
 .dottedcirclegreen,
 .dottedcircleorange,
 .dottedcirclepurple,
@@ -5587,6 +6417,7 @@ spanm5 {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
+
 .air0,
 .air100,
 .air150,
@@ -5597,6 +6428,7 @@ airdescription {
   font-family: weathertext2, Helvetica, system;
   display: flex;
 }
+
 .airvalue {
   position: relative;
   margin-top: 75px;
@@ -5604,6 +6436,7 @@ airdescription {
   top: 5px;
   font-size: 0.9rem;
 }
+
 airdescription {
   width: 300px;
   align-items: center;
@@ -5613,6 +6446,7 @@ airdescription {
   line-height: 26px;
   margin-top: 0;
 }
+
 .air0,
 .air100,
 .air150,
@@ -5632,23 +6466,29 @@ airdescription {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
+
 .air0 {
   background: #90b12a;
 }
+
 .air50 {
   background: #e6a141;
 }
+
 .air100 {
   background: #d05f2d;
 }
+
 .air150 {
   background: #d35d4e;
 }
+
 .air200,
 .air250,
 .air300 {
   background: #a475cb;
 }
+
 .airhouse,
 .airsvg,
 .indoorhomemax,
@@ -5657,11 +6497,13 @@ airdescription {
 airdescription {
   position: absolute;
 }
+
 .airwarning {
   position: absolute;
   margin-left: 150px;
   margin-top: 45px;
 }
+
 .airqualitywordbig,
 .uvsolarwordbig {
   position: absolute;
@@ -5670,10 +6512,12 @@ airdescription {
   width: 200px;
   font-family: weathertext2;
 }
+
 .uvsolarwordbig {
   margin-left: 110px;
   margin-top: 35px;
 }
+
 .airqualitywordbig {
   margin-left: 50px;
   margin-top: 15px;
@@ -5684,10 +6528,12 @@ airdescription {
 wfstriketoday {
   position: absolute;
 }
+
 .eqcontainer1,
 wfstriketoday {
   font-family: weathertext2, system;
 }
+
 .wflaststrike {
   margin-left: 75px;
   margin-top: 25px;
@@ -5696,6 +6542,7 @@ wfstriketoday {
   border: 0;
   color: #aeb6bf;
 }
+
 .wfstrike {
   margin-top: 0;
   font-size: 0;
@@ -5727,6 +6574,7 @@ wfstriketoday {
   position: absolute;
   margin-left: 25px;
 }
+
 .lastthree {
   position: absolute;
   margin-top: 48px;
@@ -5747,6 +6595,7 @@ wfstriketoday {
   position: absolute;
   margin-left: 25px;
 }
+
 .last-three-hrs {
   position: absolute;
   margin-top: 45px;
@@ -5758,8 +6607,6 @@ wfstriketoday {
   width: 4.2rem;
   margin-left: 12px;
 }
-
-
 
 .maxtimedate,
 .mintimedate {
@@ -5773,9 +6620,11 @@ wfstriketoday {
   width: 3.4rem;
   line-height: 1;
 }
+
 .maxtimedate {
   margin-left: 155px;
 }
+
 .mintimedate {
   margin-left: 12px;
 }
@@ -5784,6 +6633,7 @@ wfstriketoday {
   margin-left: 20px;
   margin-top: 5px;
 }
+
 .eqtoday1,
 .eqtoday1-3,
 .eqtoday4-5,
@@ -5797,80 +6647,96 @@ wfstriketoday {
   padding-top: 10px;
   padding-left: 3px;
 }
+
 .eqcaution,
 .eqt {
   font-family: weathertext2;
 }
+
 .eqtoday1-3 {
   color: #90b12a;
 }
+
 .eqtoday4-5 {
   color: rgba(231, 150, 59, 0.8);
 }
-.eqtoday6-8{
+
+.eqtoday6-8 {
   color: #d05f2d;
 }
+
 .eqtoday9-10 {
   color: #d35d4e;
 }
+
 .eqcaution {
   margin-left: -5px;
   margin-top: 0;
 }
+
 .eqcaution,
 .eqt {
   position: absolute;
   color: #aeb6bf;
   font-size: 0.55rem;
 }
+
 .eqt {
   margin-left: -16px;
   margin-top: -3px;
 }
+
 .eqtext {
   float: left;
   width: 140px;
   margin-left: 70px;
   margin-top: -30px;
-  font-size:.55rem;
-  line-height:1;
+  font-size: .55rem;
+  line-height: 1;
   color: #aeb6bf;
   font-family: weathertext2;
 }
+
 .eqtext2 {
   float: left;
   width: 140px;
   margin-left: 70px;
   margin-top: -30px;
-  font-size:.55rem;
-  line-height:.9;
+  font-size: .55rem;
+  line-height: .9;
   color: #aeb6bf;
   font-family: weathertext2;
 }
+
 regionalred {
   color: #d35d4e;
 }
+
 .moonphasemoduleposition {
   position: relative;
   left: 100px;
   margin-top: 3px;
   font-family: weathertext2;
 }
+
 .mooninfo img,
 .sun img {
   margin-bottom: 3px;
 }
+
 .moon,
 .moon1 {
   color: #7c7e80;
   font: 400 0.9em/.95em weathertext2;
 }
+
 .moon1:before,
 .moon:before {
   content: "";
   color: #00adbc;
   font: 0.9em weathertext2;
 }
+
 .fullmoon1,
 .mooncircle1,
 .mooncircle1 moonhead1,
@@ -5883,6 +6749,7 @@ regionalred {
 .moonset1 span {
   font-family: weathertext2;
 }
+
 .mooncircle1,
 .mooncircle1:after {
   color: #aeb6bf;
@@ -5892,12 +6759,14 @@ regionalred {
   font-size: 1.3rem;
   background: 0;
 }
+
 .mooncircle1 moonhead1,
 .moonrise1,
 .moonset1 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
 .mooncircle1 {
   position: absolute;
   border-radius: 50%;
@@ -5905,6 +6774,7 @@ regionalred {
   height: 112px;
   border: 4px solid rgba(59, 60, 63, 1);
 }
+
 .mooncircle1:after {
   position: absolute;
   -moz-border-radius: 50%;
@@ -5914,6 +6784,7 @@ regionalred {
   height: 90px;
   border: 4px solid rgba(59, 60, 63, 1);
 }
+
 .mooncircle1 luminance1 {
   position: absolute;
   font-size: 0.65rem;
@@ -5923,6 +6794,7 @@ regionalred {
   text-align: center;
   margin-left: 25px;
 }
+
 .mooncircle1 span {
   color: #aeb6bf;
   text-align: center;
@@ -5930,6 +6802,7 @@ regionalred {
   margin-left: 0;
   margin-top: -5px;
 }
+
 .mooncircle1 moonhead1 {
   position: absolute;
   color: rgba(255, 112, 50, 1);
@@ -5939,10 +6812,12 @@ regionalred {
   margin-top: 25px;
   margin-left: -45px;
 }
+
 .moonphase,
 .moonrise1 {
   color: #aeb6bf;
 }
+
 .moonphase {
   font-size: 9px;
   margin: -5px auto 0;
@@ -5950,15 +6825,18 @@ regionalred {
   padding-top: 5px;
   line-height: 14px;
 }
+
 .moonphasebox {
   width: 100%;
   margin: 10px 0 0 85px;
 }
+
 .moonposition {
   font-size: 15px;
   line-height: 20px;
   padding-top: 2px;
 }
+
 .fullmoon1,
 .meteorshower,
 .moonrise1,
@@ -5969,64 +6847,78 @@ regionalred {
   line-height: 10px;
   text-align: center;
 }
+
 .moonrise1,
 .moonset1 {
   width: 95px;
   font-size: 0.55rem;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .fullmoon1,
 .meteorshower,
 .newmoon1 {
   font-size: 0.55rem;
   width: 120px;
 }
+
 .moonrise1 {
   top: 0;
   margin-left: -105px;
 }
+
 .moonrise1 span {
   color: #aeb6bf;
   margin-left: 25px;
 }
+
 .moonset1 {
   margin-top: 130px;
   margin-left: -105px;
   color: #aeb6bf;
 }
+
 .moonset1 span {
   color: #aeb6bf;
   margin-left: 15px;
 }
+
 .fullmoon1,
 .meteorshower,
 .newmoon1 {
   color: #aeb6bf;
   font-family: weathertext2;
 }
+
 .fullmoon1 {
   top: 0;
   margin-left: 105px;
 }
+
 .fullmoon1 span {
   margin-left: 8px;
 }
+
 .newmoon1 {
   margin-top: 130px;
   margin-left: 105px;
 }
+
 .newmoon1 span {
   margin-left: 5px;
 }
+
 .meteorshower {
   margin: 130px auto 110px -5px;
 }
+
 .luminance1 {
   padding-top: 0;
   margin-top: 0;
   font: 0.9em weathertext2;
   width: 300px;
 }
+
 .luminance1:before {
   content: "";
   font-family: arial, system;
@@ -6045,8 +6937,8 @@ regionalred {
   display: flex;
   top: 15px;
   left: 15px;
-
 }
+
 .windmaxthisyear {
   font-size: 0.5em;
   color: #aeb6bf;
@@ -6055,8 +6947,8 @@ regionalred {
   display: flex;
   top: 15px;
   left: 150px;
-
 }
+
 .tempminthisyear {
   font-size: 0.5em;
   color: #aeb6bf;
@@ -6065,8 +6957,8 @@ regionalred {
   display: flex;
   top: 15px;
   left: 15px;
-
 }
+
 .tempmaxthisyear {
   font-size: 0.5em;
   color: #aeb6bf;
@@ -6075,8 +6967,8 @@ regionalred {
   display: flex;
   top: 15px;
   left: 155px;
-
 }
+
 .tempavgthisyear {
   font-size: 0.5em;
   color: #aeb6bf;
@@ -6085,8 +6977,8 @@ regionalred {
   display: flex;
   top: 15px;
   left: 85px;
-
 }
+
 .rainavgthisyear {
   font-size: 0.5em;
   color: #aeb6bf;
@@ -6095,8 +6987,9 @@ regionalred {
   display: flex;
   top: 15px;
   left: 80px;
-  text-transform:capitalize
+  text-transform: capitalize;
 }
+
 .rainmaxthismonth {
   font-size: 0.5em;
   color: #aeb6bf;
@@ -6105,8 +6998,9 @@ regionalred {
   display: flex;
   top: 15px;
   left: 15px;
-  text-transform:capitalize
+  text-transform: capitalize;
 }
+
 .rainmaxthisyear {
   font-size: 0.5em;
   color: #aeb6bf;
@@ -6115,8 +7009,9 @@ regionalred {
   display: flex;
   top: 15px;
   left: 150px;
-  text-transform:capitalize
+  text-transform: capitalize;
 }
+
 .wmonthmax {
   font-size: 0.3em;
   color: #aeb6bf;
@@ -6124,9 +7019,10 @@ regionalred {
   font-family: weathertext2;
   display: flex;
   top: 5px;
-  left: 15px;text-transform:capitalize
-
+  left: 15px;
+  text-transform: capitalize;
 }
+
 .wyearmax {
   font-size: 0.3em;
   color: #aeb6bf;
@@ -6135,8 +7031,8 @@ regionalred {
   display: flex;
   top: 5px;
   left: 150px;
-
 }
+
 .tmonthmax {
   font-size: 0.3em;
   color: #aeb6bf;
@@ -6145,8 +7041,8 @@ regionalred {
   display: flex;
   top: 5px;
   left: 15px;
-
 }
+
 .tyearmax {
   font-size: 0.3em;
   color: #aeb6bf;
@@ -6155,8 +7051,8 @@ regionalred {
   display: flex;
   top: 5px;
   left: 150px;
-
 }
+
 .tyearconv {
   font-size: 0.3em;
   color: #aeb6bf;
@@ -6166,6 +7062,7 @@ regionalred {
   top: 33px;
   left: 155px;
 }
+
 .tmonthconv {
   font-size: 0.3em;
   color: #aeb6bf;
@@ -6174,8 +7071,8 @@ regionalred {
   display: flex;
   top: 33px;
   left: 20px;
-
 }
+
 .wyearconv {
   font-size: 0.3em;
   color: #aeb6bf;
@@ -6184,8 +7081,8 @@ regionalred {
   display: flex;
   top: 33px;
   left: 150px;
-
 }
+
 .wmonthconv {
   font-size: 0.3em;
   color: #aeb6bf;
@@ -6194,8 +7091,8 @@ regionalred {
   display: flex;
   top: 33px;
   left: 15px;
-
 }
+
 .tyearavg {
   font-size: 0.3em;
   color: #aeb6bf;
@@ -6204,9 +7101,9 @@ regionalred {
   display: flex;
   top: 5px;
   left: 75px;
-  text-transform: capitalize
-
+  text-transform: capitalize;
 }
+
 .tavgconv {
   font-size: 0.3em;
   color: #aeb6bf;
@@ -6215,8 +7112,8 @@ regionalred {
   display: flex;
   top: 33px;
   left: 85px;
-
 }
+
 .ryearavg {
   font-size: 0.3em;
   color: #aeb6bf;
@@ -6225,7 +7122,7 @@ regionalred {
   display: flex;
   top: 5px;
   left: 80px;
-  text-transform:capitalize
+  text-transform: capitalize;
 }
 
 tunit {
@@ -6234,39 +7131,47 @@ tunit {
   vertical-align: middle;
   top: 5px;
   color: #aeb6bf;
-  text-transform:none
+  text-transform: none;
 }
+
 wunit {
   position: relative;
   font-size: 0.5em;
   vertical-align: middle;
   top: 5px;
   color: #aeb6bf;
-  text-transform:none
+  text-transform: none;
 }
+
 wiunit {
   position: relative;
   font-size: 0.9em;
   vertical-align: middle;
   top: 0;
   color: #aeb6bf;
-  text-transform:none
+  text-transform: none;
 }
+
 maxtempred {
   color: #d35d4e;
 }
+
 maxtempblue {
   color: #44a6b5;
 }
+
 maxtemporange {
   color: #d05f2d;
 }
+
 maxtempyellow {
   color: #ff832f;
 }
+
 maxtempgreen {
   color: #90b12a;
 }
+
 .yearwordwindbig {
   position: absolute;
   margin-left: 0;
@@ -6276,6 +7181,7 @@ maxtempgreen {
   width: 200px;
   font-family: weathertext2;
 }
+
 .yearwordtempbig {
   position: absolute;
   margin-left: 0;
@@ -6285,6 +7191,7 @@ maxtempgreen {
   width: 200px;
   font-family: weathertext2;
 }
+
 .yearwordlightningbig {
   position: absolute;
   margin-left: 27px;
@@ -6304,32 +7211,35 @@ maxtempgreen {
   border-radius: 2px;
   padding: 3px;
 }
+
 .calendar34 {
   position: absolute;
   left: 10px;
   top: 0;
   color: rgba(230, 232, 239, 0.2);
 }
+
 .hardwareimg1,.hardwareimg2,.hardwareimg3 {
   position: absolute;
-  display:flex;
+  display: flex;
   float: left;
   margin: 0;
   margin-left: 0;
   padding: 0;
-  background:rgba(45, 48, 58, .6);
-  border-radius:2px;
-  -webkit-border-radius:2px;
-  font-size:.8em;
+  background: rgba(45, 48, 58, .6);
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  font-size: .8em;
   margin-top: 2px;
   margin-left: 5px;
-  justify-content:center;
-  align-items:center;
-  width:125px;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
   color: #aeb6bf;
-  line-height:1.4;
-  font-weight:500;
+  line-height: 1.4;
+  font-weight: 500;
 }
+
 .mbfirmware,.mbtype,.hardware,.hardwareinfo,.hardware2,.hardwareinfo2 {
   position: absolute;
   float: left;
@@ -6337,38 +7247,44 @@ maxtempgreen {
   font-family: weathertext2, arial, helvetica;
   font-size: 10px;
 }
+
 .mbtype,.hardware,.hardware2 {
   margin-top: 12px;
 }
-.mbfirmware,.hardwareinfo,.hardwareinfo2  {
+
+.mbfirmware,.hardwareinfo,.hardwareinfo2 {
   margin-top: 25px;
 }
 
-
-.mbfirmware2,.mbtype2,.nanouptime2,.hardware2,.hardwareinfo2 {position: absolute;
+.mbfirmware2,.mbtype2,.nanouptime2,.hardware2,.hardwareinfo2 {
+  position: absolute;
   float: left;
   margin-left: 5px;
   font-family: weathertext2, arial, helvetica;
   font-size: 9px;
-  width:200px;
+  width: 200px;
   color: #aeb6bf;
-  text-align:left}
+  text-align: left;
+}
+
 .mbtype2 {
   margin-top: 7px;
 }
+
 .mbfirmware2 {
   margin-top: 17px;
 }
-.nanouptime2 {  
-  margin-top: 17px;  
+
+.nanouptime2 {
+  margin-top: 17px;
 }
 
-.hardware2 {  
-  margin-top: 27px;  
+.hardware2 {
+  margin-top: 27px;
 }
 
-.hardwareinfo2 {  
-  margin-top: 37px;  
+.hardwareinfo2 {
+  margin-top: 37px;
 }
 
 .nanouptime,.hardwareuptime,.hardwareuptime2 {
@@ -6379,6 +7295,7 @@ maxtempgreen {
   font-family: weathertext2, arial, helvetica;
   font-size: 10px;
 }
+
 .topframe {
   top: 6px;
   position: absolute;
@@ -6394,9 +7311,9 @@ maxtempgreen {
 }
 
 @media screen and (min-width: 960px) {
-	.grid1 > weather34module2 {
- display:none;
-}
+  .grid1 > weather34module2 {
+    display: none;
+  }
 }
 
 .maincontainer {
@@ -6414,9 +7331,9 @@ maxtempgreen {
   margin-top: 45px;
   margin-bottom: 4px;
 }
+
 .grid > weather34topmodule {
   border: 1px solid rgba(45, 48, 58, .3);
-
   border-top: 15px solid rgba(45, 48, 58, .6);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -6428,7 +7345,6 @@ maxtempgreen {
   height: 80px;
 }
 
-
 .grid3 {
   display: grid;
   margin-top: 5px;
@@ -6438,6 +7354,7 @@ maxtempgreen {
   grid-row-gap: 5px;
   grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
 }
+
 .grid3 > weather34topmodule {
   border: 1px solid rgba(45, 48, 58, .3);
   border-top: 15px solid rgba(45, 48, 58, .6);
@@ -6450,6 +7367,7 @@ maxtempgreen {
   -moz-osx-font-smoothing: grayscale;
   height: 80px;
 }
+
 .grid4 {
   display: grid;
   margin-top: 5px;
@@ -6459,6 +7377,7 @@ maxtempgreen {
   grid-row-gap: 5px;
   grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
 }
+
 .grid4 > weather34topmodule {
   box-sizing: border-box;
   height: 80px;
@@ -6479,6 +7398,7 @@ maxtempgreen {
   grid-row-gap: 5px;
   align-items: stretch;
 }
+
 .grid1 > weather34module {
   padding: 7px;
   background: 0;
@@ -6502,19 +7422,70 @@ maxtempgreen {
   box-sizing: border-box;
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
 }
-.nanoimg{position:absolute;float:right;margin-left:230px;}
-.davisimg{position:absolute;float:right;margin-left:200px;margin-top:-10px}
-.nanoinfo{margin-top:0;}
-.nanoimg1{position:absolute;float:right;margin-left:220px;margin-top:0;}
-.davisimg1{position:absolute;float:right;margin-left:190px;margin-top:-5px;}
- .davisimg2{position:absolute;float:right;margin-left:130px;margin-top:0}
- .nanoimg2{position:absolute;float:right;margin-left:175px;margin-top:5px}
- .proimg2{position:absolute;float:right;margin-left:145px;margin-top:0}
+
+.nanoimg {
+  position: absolute;
+  float: right;
+  margin-left: 230px;
+}
+
+.davisimg {
+  position: absolute;
+  float: right;
+  margin-left: 200px;
+  margin-top: -10px;
+}
+
+.nanoinfo {
+  margin-top: 0;
+}
+
+.nanoimg1 {
+  position: absolute;
+  float: right;
+  margin-left: 220px;
+  margin-top: 0;
+}
+
+.davisimg1 {
+  position: absolute;
+  float: right;
+  margin-left: 190px;
+  margin-top: -5px;
+}
+
+.davisimg2 {
+  position: absolute;
+  float: right;
+  margin-left: 130px;
+  margin-top: 0;
+}
+
+.nanoimg2 {
+  position: absolute;
+  float: right;
+  margin-left: 175px;
+  margin-top: 5px;
+}
+
+.proimg2 {
+  position: absolute;
+  float: right;
+  margin-left: 145px;
+  margin-top: 0;
+}
+
 .footercontainer {
   margin: 0 auto;
   width: 959px;
 }
-.davisbattery{position:absolute;top:10px;left:45px;opacity:.7}
+
+.davisbattery {
+  position: absolute;
+  top: 10px;
+  left: 45px;
+  opacity: .7;
+}
 
 .gridfooter {
   display: grid;
@@ -6527,9 +7498,9 @@ maxtempgreen {
   margin-top: 5px;
   color: rgba(47, 54, 63, 1);
 }
+
 .gridfooter > weather34footer {
   border: 1px solid rgba(45, 48, 58, .3);
-
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
@@ -6550,6 +7521,7 @@ maxtempgreen {
   margin: 0 auto;
   color: #aeb6bf;
 }
+
 .gridhardware > weather34infoboxes {
   padding: 7px;
   background: 0;
@@ -6557,7 +7529,6 @@ maxtempgreen {
   -moz-osx-font-smoothing: grayscale;
   height: 65px;
   border: 1px solid rgba(45, 48, 58, .3);
-
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
@@ -6579,6 +7550,7 @@ maxtempgreen {
   margin: 0 auto;
   background: 0;
 }
+
 .updatedtime,
 .updatedtime1,
 .updatedtimeuv {
@@ -6590,29 +7562,32 @@ maxtempgreen {
   color: #aeb6bf;
   line-height: 10px;
 }
+
 .updatedtime1 {
   margin-bottom: 10px;
   width: 75px;
 }
+
 weather34thetime {
   position: absolute;
-  display:flex;
+  display: flex;
   right: 100px;
-  top: 10px;
+  top: 12px;
   color: #aeb6bf;
-  font-size: 12px;
+  font-size: 11px;
   font-family: clock;
-  background:rgba(120, 138, 146, .2);
-  line-height:1;
-  padding:3px;
-  padding-top:6px;
+  background: rgba(120, 138, 146, .2);
+  line-height: 1;
+  padding: 3px;
+  padding-top: 4px;
   align-items: center;
   justify-content: center;
-  list-style:none;
+  list-style: none;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  width:205px
+  width: 205px;
 }
+
 .weather34chartlinks {
   font-size: 0.65em;
   position: absolute;
@@ -6621,6 +7596,7 @@ weather34thetime {
   z-index: 20;
   font-family: weathertext2;
 }
+
 .weather34title2 {
   display: flex;
   position: absolute;
@@ -6633,6 +7609,7 @@ weather34thetime {
   left: 0;
   width: 11rem;
 }
+
 .weather34title2console {
   dislpay: flex;
   position: absolute;
@@ -6645,16 +7622,19 @@ weather34thetime {
   left: 0;
   width: 10.2rem;
 }
+
 .grid1 a {
   font-size: 0.9em;
   font-family: weathertext2;
   font-weight: 500;
 }
+
 .hardwarelogo1 {
   margin: 0;
   padding: 0;
   float: left;
 }
+
 .hardwarelogo2 {
   position: absolute;
   padding: 0;
@@ -6662,6 +7642,7 @@ weather34thetime {
   margin-top: 0;
   margin-left: 800px;
 }
+
 .footertext {
   position: relative;
   left: 2px;
@@ -6685,6 +7666,7 @@ weather34thetime {
   font-family: weathertext2, Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
+
 .weather34admin__header {
   display: flex;
   flex-basis: 100%;
@@ -6694,6 +7676,7 @@ weather34thetime {
   position: absolute;
   font-size: 12px;
 }
+
 .weather34toolbar {
   display: flex;
   flex: 1;
@@ -6702,9 +7685,11 @@ weather34thetime {
   padding: 0 var(--spacing);
   font-size: 1.15em;
 }
+
 .weather34toolbar right {
   font-size: 1.2em;
 }
+
 .weather34btn {
   display: inline-block;
   border-radius: 2px;
@@ -6714,6 +7699,7 @@ weather34thetime {
   font-family: Arial, Helvetica, sans-serif;
   top: 1px;
 }
+
 .weather34btn--primary {
   color: #aeb6bf;
   background-color: rgba(86, 95, 103, 0);
@@ -6724,6 +7710,7 @@ weather34thetime {
   margin: 0 auto;
   margin-left: 0;
 }
+
 .weather34btn--primary a {
   position: relative;
   color: #aeb6bf;
@@ -6732,6 +7719,7 @@ weather34thetime {
   left: 65px;
   background: 0;
 }
+
 .weather34btn--primary svg {
   width: 10px;
   color: rgba(230, 232, 239, 1);
@@ -6746,7 +7734,6 @@ weather34thetime {
   height: 1rem;
   width: 3.4rem;
   border: 1px solid #333;
-
   overflow: hidden;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -6756,9 +7743,11 @@ weather34thetime {
   right: -45px;
   background: 0;
 }
+
 .lightningactive {
   color: rgba(255, 124, 57, 1);
 }
+
 .lightningquiet {
   color: #009bab;
 }
@@ -6773,16 +7762,19 @@ weather34thetime {
   line-height: 10px;
   margin-bottom: 0;
 }
+
 .cloudconverter {
   margin-left: 220px;
   margin-top: 5px;
 }
+
 .earthquakedistance {
   position: absolute;
   margin-left: 288px;
   margin-top: 7px;
   font-size: 12px;
 }
+
 .cwxiconcurrent {
   position: relative;
   margin-top: 10px;
@@ -6790,6 +7782,7 @@ weather34thetime {
   margin-left: 35px;
   float: left;
 }
+
 .cwxiconsummary {
   position: absolute;
   font-family: weathertext2;
@@ -6802,6 +7795,7 @@ weather34thetime {
   max-width: 120px;
   color: #aeb6bf;
 }
+
 .averagestext {
   font-size: 10px;
   position: relative;
@@ -6812,11 +7806,13 @@ weather34thetime {
   font-family: arial, helvetica, system;
   color: #aeb6bf;
 }
+
 .wulargediv {
   width: 310px;
   height: 180px;
   margin-top: 5px;
 }
+
 .weather34-mbsmartlogo {
   position: absolute;
   left: -125px;
@@ -6824,11 +7820,13 @@ weather34thetime {
   top: -8px;
   image-rendering: auto;
 }
+
 .weather34-mbsmartlogo span {
   line-height: 0.5;
   width: 16px;
   font-size: 0.8em;
 }
+
 weather34toptitle {
   display: flex;
   justify-content: center;
@@ -6837,20 +7835,22 @@ weather34toptitle {
   margin-top: 15px;
   line-height: 1;
   color: #aeb6bf;
-
 }
+
 .weather34tipcelsius {
   position: absolute;
   box-sizing: border-box;
   right: 50px;
   top: 10px;
 }
+
 .weather34tipfah {
   position: absolute;
   box-sizing: border-box;
   right: 50px;
   top: 10px;
 }
+
 .weather34refresh a {
   float: right;
   position: relative;
@@ -6858,19 +7858,51 @@ weather34toptitle {
   right: 10px;
   color: #009bab;
 }
-.moonphaseing{position:absolute;left:100px; top:20px; width:120px;}
-.weather34moonphasesvg{position:absolute; left:100px; top:35px; width:120px;}
-.weather34moonforeground { fill:rgba(230, 232, 239, .3); stroke:rgba(86, 95, 103, .8); stroke-width:0;max-height:100px }
-.weather34moonbackground{ fill:rgba(86, 95, 103, .8);stroke:rgba(230, 232, 239, .3);stroke-width:0; }
-.weather34topbarmail{display: flex;position:absolute;top:7px;margin-left:60px;align-items: center;justify-content: center;color: #aeb6bf;
-background:0;
-  line-height:1;
-  padding:3px;
-  padding-left:12px;
-  padding-top:2px;
+
+.moonphaseing {
+  position: absolute;
+  left: 100px;
+  top: 20px;
+  width: 120px;
+}
+
+.weather34moonphasesvg {
+  position: absolute;
+  left: 100px;
+  top: 35px;
+  width: 120px;
+}
+
+.weather34moonforeground {
+  fill: rgba(230, 232, 239, .3);
+  stroke: rgba(86, 95, 103, .8);
+  stroke-width: 0;
+  max-height: 100px;
+}
+
+.weather34moonbackground {
+  fill: rgba(86, 95, 103, .8);
+  stroke: rgba(230, 232, 239, .3);
+  stroke-width: 0;
+}
+
+.weather34topbarmail {
+  display: flex;
+  position: absolute;
+  top: 7px;
+  margin-left: 60px;
+  align-items: center;
+  justify-content: center;
+  color: #aeb6bf;
+  background: 0;
+  line-height: 1;
+  padding: 3px;
+  padding-left: 12px;
+  padding-top: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  width:auto}
+  width: auto;
+}
 
 @media screen and (max-width: 960px) {
   .grid1 {
@@ -6884,13 +7916,13 @@ background:0;
     margin: 0 auto;
     margin-top: 45px;
   }
+
   .grid1 > weather34module {
     padding: 5px;
     background: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     border: 1px solid rgba(45, 48, 58, .3);
-
     border-bottom: 15px solid rgba(45, 48, 58, .6);
     border-top: 15px solid rgba(45, 48, 58, .6);
     -webkit-box-sizing: border-box;
@@ -6900,21 +7932,27 @@ background:0;
     box-sizing: border-box;
     height: 198px;
   }
-  .grid ,.grid3{
+
+  .grid ,.grid3 {
     display: none;
   }
+
   .grid > weather34topmodule {
     display: none;
   }
+
   .grid3 > weather34topmodule {
     display: none;
   }
+
   .grid4 {
-  display:none;
-}
-.grid4 > weather34topmodule {
-  display:none;
-}
+    display: none;
+  }
+
+  .grid4 > weather34topmodule {
+    display: none;
+  }
+
   .gridhardware {
     display: grid;
     grid-template-columns: 359px;
@@ -6924,6 +7962,7 @@ background:0;
     margin: 0 auto;
     margin-top: 0;
   }
+
   .gridhardware > weather34infoboxes {
     padding: 5px;
     background: 0;
@@ -6931,10 +7970,12 @@ background:0;
     -moz-osx-font-smoothing: grayscale;
     height: 64px;
   }
+
   .footercontainer {
     margin: 0 auto;
     width: 720px;
   }
+
   .gridfooter {
     display: grid;
     grid-template-columns: 720px;
@@ -6945,9 +7986,9 @@ background:0;
     margin-top: 5px;
     color: rgba(47, 54, 63, 1);
   }
+
   .gridfooter > weather34footer {
     border: 1px solid rgba(45, 48, 58, .3);
-
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
@@ -6958,46 +7999,54 @@ background:0;
     height: 50px;
     margin-bottom: 5px;
   }
+
   .hardwareimg1,.hardwareimg2,.hardwareimg3 {
     margin-top: 2px;
     margin-left: 5px;
   }
-.mbtype,.hardware,.hardware2 {
-  margin-top: 12px;
-}
-.mbfirmware,.hardwareinfo,.hardwareinfo2  {
-  margin-top: 26px;
-}
-.nanouptime,.hardwareuptime,.hardwareuptime2 {
-  margin-top: 40px;
-}
 
-.mbfirmware2,.mbtype2,.nanouptime2,.hardware2,.hardwareinfo2 {position: absolute;
-  float: left;
-  margin-left: 5px;
-  font-family: weathertext2, arial, helvetica;
-  font-size: 9px;
-  width:200px;
-  color: #aeb6bf;
-  text-align:left}
-.mbtype2 {
-  margin-top: 7px;
-}
-.mbfirmware2 {
-  margin-top: 17px;
-}
-.nanouptime2 {  
-  margin-top: 17px;  
-}
+  .mbtype,.hardware,.hardware2 {
+    margin-top: 12px;
+  }
 
-.hardware2 {  
-  margin-top: 27px;  
-}
+  .mbfirmware,.hardwareinfo,.hardwareinfo2 {
+    margin-top: 26px;
+  }
 
-.hardwareinfo2 {  
-  margin-top: 37px;  
-}
+  .nanouptime,.hardwareuptime,.hardwareuptime2 {
+    margin-top: 40px;
+  }
 
+  .mbfirmware2,.mbtype2,.nanouptime2,.hardware2,.hardwareinfo2 {
+    position: absolute;
+    float: left;
+    margin-left: 5px;
+    font-family: weathertext2, arial, helvetica;
+    font-size: 9px;
+    width: 200px;
+    color: #aeb6bf;
+    text-align: left;
+  }
+
+  .mbtype2 {
+    margin-top: 7px;
+  }
+
+  .mbfirmware2 {
+    margin-top: 17px;
+  }
+
+  .nanouptime2 {
+    margin-top: 17px;
+  }
+
+  .hardware2 {
+    margin-top: 27px;
+  }
+
+  .hardwareinfo2 {
+    margin-top: 37px;
+  }
 
   .actualhardware {
     position: relative;
@@ -7014,12 +8063,14 @@ background:0;
     justify-content: left;
     margin: 0 auto;
   }
+
   .maincontainer {
     display: flex;
     max-width: 99%;
     margin: 0 auto;
     text-align: center;
   }
+
   .weather34admin__header {
     display: flex;
     flex-basis: 95%;
@@ -7029,6 +8080,7 @@ background:0;
     position: absolute;
     font-size: 12px;
   }
+
   .weather34btn--primary a {
     position: relative;
     color: #aeb6bf;
@@ -7037,6 +8089,7 @@ background:0;
     left: 55px;
     background: 0;
   }
+
   .weather34toolbar {
     display: flex;
     flex: 2;
@@ -7046,10 +8099,12 @@ background:0;
     font-size: 1em;
     right: 20px;
   }
+
   .weather34toolbar right {
     font-size: 1.2em;
     right: 0;
   }
+
   .actualt {
     position: relative;
     left: 2px;
@@ -7066,6 +8121,7 @@ background:0;
     margin: 0 auto;
     background: 0;
   }
+
   .updatedtime,
   .updatedtime1,
   .updatedtimeuv {
@@ -7077,10 +8133,12 @@ background:0;
     color: #aeb6bf;
     line-height: 10px;
   }
+
   .updatedtime1 {
     margin-bottom: 10px;
     width: 75px;
   }
+
   .weather34chartlinks {
     font-size: 0.65em;
     position: absolute;
@@ -7089,6 +8147,7 @@ background:0;
     z-index: 20;
     font-family: weathertext2;
   }
+
   .wulargeforecasthome {
     position: absolute;
     width: 328px;
@@ -7099,77 +8158,98 @@ background:0;
     border-radius: 3px;
     overflow: hidden;
   }
+
   .barometerconverter {
     margin-left: 278px;
   }
+
   .tempconverter {
     margin-left: 278px;
   }
+
   .windconverter {
     margin-left: 278px;
   }
+
   .rainconverter {
     margin-left: 278px;
   }
+
   .uvcautionbig {
     margin-left: 238px;
   }
+
   .cloudconverter {
     margin-left: 258px;
   }
+
   .tempconverter2 {
     margin-left: 330px;
   }
+
   .lightningcoverter {
     margin-left: 330px;
   }
+
   .windconverter {
     position: absolute;
     margin-left: 278px;
     margin-top: -13px;
   }
+
   .barometerpos {
     margin-left: 30px;
   }
+
   .barometerlimits {
     margin-left: 45px;
   }
+
   .weather34sunsetday {
     margin-left: 220px;
   }
+
   .weather34sunriseday {
     margin-left: -30px;
   }
+
   .weather34sundarkday {
     margin-left: 255px;
   }
+
   .newmoon1 {
     margin-left: 140px;
   }
+
   .fullmoon1 {
     margin-left: 145px;
   }
-  .weather34luminancem2
-  {
+
+  .weather34luminancem2 {
     margin-left: 40px;
   }
+
   .homeweathercompass1 {
     margin-left: 80px;
-	margin-top:-25px
+    margin-top: -25px;
   }
 
   .daylightmoduleposition {
     margin-left: 15px;
   }
+
   .weather34moonphasem {
     margin-left: -12px;
   }
+
   .weather34luminancem {
     margin-left: 30px;
   }
+
   .weather34sunlightday {
     margin-left: -30px;
   }
+
   .logoweather34,
   .weather34-mbsmartlogo {
     position: absolute;
@@ -7178,6 +8258,7 @@ background:0;
     float: left;
     top: -8px;
   }
+
   weather34toptitle {
     display: flex;
     justify-content: center;
@@ -7187,64 +8268,74 @@ background:0;
     line-height: 1;
     color: #aeb6bf;
   }
+
   .wulargediv {
     width: 360px;
     height: 180px;
     margin-top: 10px;
   }
+
   .weather34windgust {
     margin-left: 252px;
   }
-   .weather34beaufort1-3,
+
+  .weather34beaufort1-3,
 .weather34beaufort3-4,
 .weather34beaufort4-5,
 .weather34beaufort6 {
-  margin-left: 134px;
-  margin-top:133px
-}
+    margin-left: 134px;
+    margin-top: 133px;
+  }
 
-.weather34avgtoday {
-  margin-top:120px;
-  margin-left:5px;
+  .weather34avgtoday {
+    margin-top: 120px;
+    margin-left: 5px;
+  }
 
-}
-.averagetoday1 {
- margin-left: -15px;
-  margin-top:-24px;
-}
+  .averagetoday1 {
+    margin-left: -15px;
+    margin-top: -24px;
+  }
 
+  .weather34windruntoday1 {
+    margin-top: -1px;
+    margin-left: 270px;
+  }
 
-.weather34windruntoday1 {
+  .windruntoday1 {
+    margin-left: 250px;
+    margin-top: -24px;
+  }
 
-  margin-top:-1px;
-  margin-left:270px;
+  .eqdistconverter {
+    margin-left: 330px;
+    margin-top: -12px;
+  }
 
+  .lightningdistconverter {
+    font-size: 12px;
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 10px;
+  }
 
-}
-.windruntoday1 {
-  margin-left: 250px;
-  margin-top:-24px;
-}
+  .weather34moonphasesvg {
+    position: absolute;
+    left: 125px;
+    top: 35px;
+    width: 120px;
+  }
 
-.eqdistconverter {
-  margin-left: 330px;
-  margin-top: -12px;
-}
-
-.lightningdistconverter {
-  font-size: 12px;
-  position: absolute;
-  margin-left: 330px;
-  margin-top: 10px;
-}
-.weather34moonphasesvg{position:absolute; left:125px; top:35px; width:120px;}
-.weather34topbarmail{display:none;}
+  .weather34topbarmail {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 640px) {
   .maincontainer {
     max-width: 100%;
   }
+
   .grid1 {
     display: grid;
     grid-template-columns: 320px;
@@ -7255,13 +8346,13 @@ background:0;
     margin: 0 auto;
     margin-top: 45px;
   }
+
   .grid1 > weather34module {
     padding: 5px;
     background: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     border: 1px solid rgba(45, 48, 58, .3);
-
     border-bottom: 15px solid rgba(45, 48, 58, .6);
     border-top: 15px solid rgba(45, 48, 58, .6);
     -webkit-box-sizing: border-box;
@@ -7269,19 +8360,24 @@ background:0;
     box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
     height: 195px;
   }
+
   .grid {
     display: none;
   }
+
   .grid > weather34topmodule {
     display: none;
   }
+
   .gridhardware {
     display: none;
   }
+
   .footercontainer {
     margin: 0 auto;
     width: 320px;
   }
+
   .gridfooter {
     display: grid;
     grid-template-columns: 320px;
@@ -7293,9 +8389,9 @@ background:0;
     margin-top: 5px;
     color: rgba(47, 54, 63, 1);
   }
+
   .gridfooter > weather34footer {
     border: 1px solid rgba(45, 48, 58, .3);
-
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.6);
@@ -7306,12 +8402,33 @@ background:0;
     height: 40px;
     margin-bottom: 5px;
   }
- 
-  .nanoimg{position:absolute;float:right;margin-left:230px;}
-  .davisimg{position:absolute;float:right;margin-left:190px;margin-top:-10px}
-   .davisimg2{position:absolute;float:right;margin-left:145px;margin-top:0}
- .nanoimg2{position:absolute;float:right;margin-left:175px;margin-top:0}
 
+  .nanoimg {
+    position: absolute;
+    float: right;
+    margin-left: 230px;
+  }
+
+  .davisimg {
+    position: absolute;
+    float: right;
+    margin-left: 190px;
+    margin-top: -10px;
+  }
+
+  .davisimg2 {
+    position: absolute;
+    float: right;
+    margin-left: 145px;
+    margin-top: 0;
+  }
+
+  .nanoimg2 {
+    position: absolute;
+    float: right;
+    margin-left: 175px;
+    margin-top: 0;
+  }
 
   .footertext {
     position: relative;
@@ -7326,12 +8443,14 @@ background:0;
     margin: 0 auto;
     padding: 0;
   }
+
   .maincontainer {
     display: flex;
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
   }
+
   .weather34admin__header {
     display: flex;
     flex-basis: 99%;
@@ -7341,10 +8460,12 @@ background:0;
     position: absolute;
     font-size: 12px;
   }
+
   weather34mbuptime,
   weather34toptitle {
     display: none;
   }
+
   .actualt {
     position: relative;
     left: 2px;
@@ -7361,6 +8482,7 @@ background:0;
     margin: 0 auto;
     background: 0;
   }
+
   .updatedtime,
   .updatedtime1,
   .updatedtimeuv {
@@ -7372,10 +8494,12 @@ background:0;
     color: #aeb6bf;
     line-height: 10px;
   }
+
   .updatedtime1 {
     margin-bottom: 10px;
     width: 75px;
   }
+
   .weather34chartlinks {
     font-size: 0.65em;
     position: absolute;
@@ -7384,6 +8508,7 @@ background:0;
     z-index: 20;
     font-family: weathertext2;
   }
+
   .wulargeforecasthome {
     position: absolute;
     width: 328px;
@@ -7394,51 +8519,66 @@ background:0;
     border-radius: 3px;
     overflow: hidden;
   }
+
   .barometerconverter {
     margin-left: 238px;
   }
+
   .tempconverter {
     margin-left: 238px;
   }
+
   .windconverter {
     margin-left: 238px;
   }
+
   .rainconverter {
     margin-left: 238px;
   }
+
   .uvcautionbig {
     margin-left: 218px;
   }
+
   .cloudconverter {
     margin-left: 228px;
     margin-top: 8px;
   }
+
   .tempconverter2 {
     margin-left: 288px;
   }
+
   .lightningcoverter {
     margin-left: 288px;
   }
+
   .windconverter {
     position: absolute;
     margin-left: 248px;
     margin-top: -10px;
   }
+
   .barometerpos {
     margin-left: 0px;
   }
+
   .barometerlimits {
     margin-left: 15px;
   }
+
   .weather34sunsetday {
     margin-left: 200px;
   }
+
   .weather34sundarkday {
     margin-left: 220px;
   }
+
   .weather34sunriseday {
     margin-left: -23px;
   }
+
   .homeweathercompass1 {
     margin-left: 60px;
   }
@@ -7446,36 +8586,40 @@ background:0;
   .daylightmoduleposition {
     margin-left: 0;
   }
+
   .weather34moonphasem {
     margin-left: 3px;
   }
+
   .weather34luminancem {
     margin-left: 5px;
   }
+
   .weather34sunlightday {
     margin-left: -10px;
   }
 
-
   .newmoon1 {
     margin-left: 115px;
   }
+
   .fullmoon1 {
     margin-left: 120px;
   }
-  .weather34luminancem2
-  {
+
+  .weather34luminancem2 {
     margin-left: 15px;
   }
-
 
   .logoweather34,
   .weather34-mbsmartlogo {
     display: none;
   }
+
   .weather34windgust {
     margin-left: 212px;
   }
+
   .weather34refresh a {
     float: right;
     position: relative;
@@ -7484,49 +8628,53 @@ background:0;
     color: #009bab;
   }
 
- .weather34beaufort1-3,
+  .weather34beaufort1-3,
 .weather34beaufort3-4,
 .weather34beaufort4-5,
 .weather34beaufort6 {
-  margin-left: 115px;
+    margin-left: 115px;
+  }
+
+  .weather34avgtoday {
+    margin-top: 120px;
+    margin-left: 5px;
+  }
+
+  .averagetoday1 {
+    margin-left: -15px;
+    margin-top: -24px;
+  }
+
+  .weather34windruntoday1 {
+    margin-top: -1px;
+    margin-left: 232px;
+  }
+
+  .windruntoday1 {
+    margin-left: 215px;
+    margin-top: -24px;
+  }
+
+  .eqdistconverter {
+    margin-left: 290px;
+    margin-top: -12px;
+  }
+
+  .lightningdistconverter {
+    font-size: 12px;
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 7px;
+  }
+
+  .weather34moonphasesvg {
+    position: absolute;
+    left: 125px;
+    top: 35px;
+    width: 120px;
+  }
 }
 
-.weather34avgtoday {
-  margin-top:120px;
-  margin-left:5px;
-
-}
-.averagetoday1 {
- margin-left: -15px;
-  margin-top:-24px;
-}
-
-
-.weather34windruntoday1 {
-
-  margin-top:-1px;
-  margin-left:232px;
-
-
-}
-.windruntoday1 {
-  margin-left: 215px;
-  margin-top:-24px;
-}
-
-.eqdistconverter {
-  margin-left: 290px;
-  margin-top: -12px;
-}
-
-.lightningdistconverter {
-  font-size: 12px;
-  position: absolute;
-  margin-left: 290px;
-  margin-top: 7px;
-}
-.weather34moonphasesvg{position:absolute; left:125px; top:35px; width:120px;}
-}
 canvas,
 iframe,
 img,
@@ -7534,21 +8682,25 @@ svg {
   aspect-ratio: attr(width px)/attr(height px);
   image-rendering: auto;
 }
+
 averwordwindword {
   position: relative;
   top: -3px;
   font-size: 0.7em;
   color: rgba(236, 237, 243, 0.6);
 }
+
 .weather34tip {
   position: absolute;
   box-sizing: border-box;
 }
+
 valuetextheading1a {
   margin-left: 10px;
   font-family: weathertext2;
   font-size: 1em;
 }
+
 .weather34tip:after,
 .weather34tip:before {
   visibility: hidden;
@@ -7556,6 +8708,7 @@ valuetextheading1a {
   position: absolute;
   box-sizing: border-box;
 }
+
 .weather34tip:after {
   content: attr(data-weather34tip);
   background: rgba(255, 108, 52, 1);
@@ -7618,6 +8771,7 @@ valuetextheading1a {
   z-index: 9999999;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .weather34tip:hover:after,
 .weather34tip:hover:before {
   transition: all 0.4s ease 0.2s;
@@ -7625,9 +8779,11 @@ valuetextheading1a {
   z-index: 100;
   opacity: 1;
 }
+
 .weather34tip:hover:after {
   margin-top: -30px;
 }
+
 .weather34tip:hover:before {
   margin-top: 0;
 }
@@ -7636,6 +8792,7 @@ valuetextheading1a {
   position: absolute;
   box-sizing: border-box;
 }
+
 .weather34tipr:after,
 .weather34tipr:before {
   visibility: hidden;
@@ -7644,6 +8801,7 @@ valuetextheading1a {
   left: 50%;
   box-sizing: border-box;
 }
+
 .weather34tipr:after {
   content: attr(data-weather34tipr);
   background: rgba(6, 162, 177, 1);
@@ -7661,23 +8819,28 @@ valuetextheading1a {
   z-index: 9999999;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .weather34tipr:hover:after,
 .weather34tipr:hover:before {
   transition: all 0.4s ease 0.2s;
   visibility: visible;
   opacity: 1;
 }
+
 .weather34tipr:hover:after {
   margin-top: -17px;
 }
+
 .weather34tipr:hover:before {
   margin-top: 0;
 }
+
 valuetextheading1r {
   font-family: weathertext2;
   font-size: 1em;
   margin-left: -10px;
 }
+
 valuetextsolar {
   font-size: 1em;
   margin-left: 0;
@@ -7687,6 +8850,7 @@ valuetextsolar {
   position: absolute;
   box-sizing: border-box;
 }
+
 .weather34tiph:after,
 .weather34tiph:before {
   visibility: hidden;
@@ -7695,6 +8859,7 @@ valuetextsolar {
   left: 50%;
   box-sizing: border-box;
 }
+
 .weather34tiph:after {
   content: attr(data-weather34tiph);
   background: rgba(6, 162, 177, 1);
@@ -7712,15 +8877,18 @@ valuetextsolar {
   z-index: 9999999;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .weather34tiph:hover:after,
 .weather34tiph:hover:before {
   transition: all 0.4s ease 0.2s;
   visibility: visible;
   opacity: 1;
 }
+
 .weather34tiph:hover:after {
   margin-top: -15px;
 }
+
 .weather34tiph:hover:before {
   margin-top: 0;
 }
@@ -7730,6 +8898,7 @@ valuetextsolar {
   box-sizing: border-box;
   left: 0;
 }
+
 .weather34tipl:after,
 .weather34tipl:before {
   visibility: hidden;
@@ -7738,6 +8907,7 @@ valuetextsolar {
   left: 10%;
   box-sizing: border-box;
 }
+
 .weather34tipl:after {
   content: attr(data-weather34tipl);
   background: #d05f2d;
@@ -7755,15 +8925,18 @@ valuetextsolar {
   z-index: 9999999;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .weather34tipl:hover:after,
 .weather34tipl:hover:before {
   transition: all 0.4s ease 0.2s;
   visibility: visible;
   opacity: 1;
 }
+
 .weather34tipl:hover:after {
   margin-top: -25px;
 }
+
 .weather34tipl:hover:before {
   margin-top: 0;
 }
@@ -7773,6 +8946,7 @@ valuetextsolar {
   box-sizing: border-box;
   left: 0;
 }
+
 .weather34tipsol:after,
 .weather34tipsol:before {
   visibility: hidden;
@@ -7781,6 +8955,7 @@ valuetextsolar {
   left: 10%;
   box-sizing: border-box;
 }
+
 .weather34tipsol:after {
   content: attr(data-weather34tipsol);
   background: #d05f2d;
@@ -7798,16 +8973,19 @@ valuetextsolar {
   z-index: 9999999;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .weather34tipsol:hover:after,
 .weather34tipsol:hover:before {
   transition: all 0.4s ease 0.2s;
   visibility: visible;
   opacity: 1;
 }
+
 .weather34tipsol:hover:after {
   margin-top: -45px;
   z-index: 9999999;
 }
+
 .weather34tipsol:hover:before {
   margin-top: 0;
 }
@@ -7816,11 +8994,13 @@ valuetextsolar {
   position: relative;
   box-sizing: border-box;
 }
+
 valuetextheading1a {
   margin-left: 10px;
   font-family: weathertext2;
   font-size: 1em;
 }
+
 .weather34tiplink:after,
 .weather34tiplink:before {
   visibility: hidden;
@@ -7829,6 +9009,7 @@ valuetextheading1a {
   left: 50%;
   box-sizing: border-box;
 }
+
 .weather34tiplink:after {
   content: attr(data-weather34tiplink);
   background: #06a2b1;
@@ -7846,6 +9027,7 @@ valuetextheading1a {
   z-index: 9999999;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .weather34tiplink:hover:after,
 .weather34tiplink:hover:before {
   transition: all 0.4s ease 0.2s;
@@ -7853,10 +9035,12 @@ valuetextheading1a {
   z-index: 9999999;
   opacity: 1;
 }
+
 .weather34tiplink:hover:after {
   margin-top: -28px;
   z-index: 9999999;
 }
+
 .weather34tiplink:hover:before {
   margin-top: 0;
 }
@@ -7868,6 +9052,7 @@ valuetextheading1a {
   font-size: 0.5rem;
   font-family: weathertext2;
 }
+
 .weather34tipty:after,
 .weather34tipty:before {
   visibility: hidden;
@@ -7876,6 +9061,7 @@ valuetextheading1a {
   left: 50%;
   box-sizing: border-box;
 }
+
 .weather34tipty:after {
   content: attr(data-weather34tipty);
   background: rgba(255, 108, 52, 1);
@@ -7938,6 +9124,7 @@ valuetextheading1a {
   z-index: 9999999;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .weather34tipty:hover:after,
 .weather34tipty:hover:before {
   transition: all 0.4s ease 0.2s;
@@ -7945,10 +9132,12 @@ valuetextheading1a {
   z-index: 9999999;
   opacity: 1;
 }
+
 .weather34tipty:hover:after {
   margin-top: -10px;
   z-index: 9999999;
 }
+
 .weather34tipty:hover:before a {
   margin-top: 0;
   font-size: 12px;
@@ -7958,6 +9147,7 @@ valuetextheading1a {
   position: relative;
   box-sizing: border-box;
 }
+
 .weather34tipfooter:after,
 .weather34tipfooter:before {
   visibility: hidden;
@@ -7966,6 +9156,7 @@ valuetextheading1a {
   left: 50%;
   box-sizing: border-box;
 }
+
 .weather34tipfooter:after {
   content: attr(data-weather34tipfooter);
   background: #06a2b1;
@@ -7983,6 +9174,7 @@ valuetextheading1a {
   z-index: 9999999;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .weather34tipfooter:hover:after,
 .weather34tipfooter:hover:before {
   transition: all 0.4s ease 0.2s;
@@ -7990,10 +9182,12 @@ valuetextheading1a {
   z-index: 9999999;
   opacity: 1;
 }
+
 .weather34tipfooter:hover:after {
   margin-top: -38px;
   z-index: 9999999;
 }
+
 .weather34tipfooter:hover:before {
   margin-top: 0;
 }
@@ -8002,6 +9196,7 @@ valuetextheading1a {
   position: relative;
   box-sizing: border-box;
 }
+
 .weather34tipmax:after,
 .weather34tipmax:before {
   visibility: hidden;
@@ -8010,6 +9205,7 @@ valuetextheading1a {
   left: 50%;
   box-sizing: border-box;
 }
+
 .weather34tipmax:after {
   content: attr(data-weather34tipmax);
   background: #ff6c34;
@@ -8027,6 +9223,7 @@ valuetextheading1a {
   z-index: 9999999;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .weather34tipmax:hover:after,
 .weather34tipmax:hover:before {
   transition: all 0.4s ease 0.2s;
@@ -8034,10 +9231,12 @@ valuetextheading1a {
   z-index: 9999999;
   opacity: 1;
 }
+
 .weather34tipmax:hover:after {
   margin-top: -28px;
   z-index: 9999999;
 }
+
 .weather34tipmax:hover:before {
   margin-top: 0;
 }
@@ -8046,6 +9245,7 @@ valuetextheading1a {
   position: relative;
   box-sizing: border-box;
 }
+
 .weather34tipmin:after,
 .weather34tipmin:before {
   visibility: hidden;
@@ -8054,6 +9254,7 @@ valuetextheading1a {
   left: 50%;
   box-sizing: border-box;
 }
+
 .weather34tipmin:after {
   content: attr(data-weather34tipmin);
   background: #06a2b1;
@@ -8071,6 +9272,7 @@ valuetextheading1a {
   z-index: 9999999;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .weather34tipmin:hover:after,
 .weather34tipmin:hover:before {
   transition: all 0.4s ease 0.2s;
@@ -8078,10 +9280,12 @@ valuetextheading1a {
   z-index: 9999999;
   opacity: 1;
 }
+
 .weather34tipmin:hover:after {
   margin-top: -28px;
   z-index: 9999999;
 }
+
 .weather34tipmin:hover:before {
   margin-top: 0;
 }
@@ -8091,6 +9295,7 @@ valuetextheading1a {
   box-sizing: border-box;
   left: 0;
 }
+
 .weather34tiptemp:after,
 .weather34tiptemp:before {
   visibility: hidden;
@@ -8099,6 +9304,7 @@ valuetextheading1a {
   left: 10%;
   box-sizing: border-box;
 }
+
 .weather34tiptemp:after {
   content: attr(data-weather34tiptemp);
   background: rgba(255, 108, 52, 1);
@@ -8161,15 +9367,18 @@ valuetextheading1a {
   z-index: 9999999;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .weather34tiptemp:hover:after,
 .weather34tiptemp:hover:before {
   transition: all 0.4s ease 0.2s;
   visibility: visible;
   opacity: 1;
 }
+
 .weather34tiptemp:hover:after {
   margin-top: -25px;
 }
+
 .weather34tiptemp:hover:before {
   margin-top: 0;
 }
@@ -8181,6 +9390,7 @@ valuetextheading1a {
   font-family: weathertext2;
   font-weight: 400;
 }
+
 .weather34tipdewm:after,
 .weather34tipdewm:before {
   visibility: hidden;
@@ -8189,6 +9399,7 @@ valuetextheading1a {
   left: 10%;
   box-sizing: border-box;
 }
+
 .weather34tipdewm:after {
   content: attr(data-weather34tipdewm);
   background: #06a2b1;
@@ -8206,15 +9417,18 @@ valuetextheading1a {
   z-index: 9999999;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .weather34tipdewm:hover:after,
 .weather34tipdewm:hover:before {
   transition: all 0.4s ease 0.2s;
   visibility: visible;
   opacity: 1;
 }
+
 .weather34tipdewm:hover:after {
   margin-top: -26px;
 }
+
 .weather34tipdewm:hover:before {
   margin-top: 0;
 }
@@ -8226,6 +9440,7 @@ valuetextheading1a {
   font-family: weathertext2;
   font-weight: 400;
 }
+
 .weather34tipdewh:after,
 .weather34tipdewh:before {
   visibility: hidden;
@@ -8234,6 +9449,7 @@ valuetextheading1a {
   left: 10%;
   box-sizing: border-box;
 }
+
 .weather34tipdewh:after {
   content: attr(data-weather34tipdewh);
   background: #d05f2d;
@@ -8251,15 +9467,18 @@ valuetextheading1a {
   z-index: 9999999;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .weather34tipdewh:hover:after,
 .weather34tipdewh:hover:before {
   transition: all 0.4s ease 0.2s;
   visibility: visible;
   opacity: 1;
 }
+
 .weather34tipdewh:hover:after {
   margin-top: -26px;
 }
+
 .weather34tipdewh:hover:before {
   margin-top: 0;
 }
@@ -8271,6 +9490,7 @@ valuetextheading1a {
   font-family: weathertext2;
   font-weight: 400;
 }
+
 .weather34tipavg1:after,
 .weather34tipavg1:before {
   visibility: hidden;
@@ -8279,6 +9499,7 @@ valuetextheading1a {
   left: 10%;
   box-sizing: border-box;
 }
+
 .weather34tipavg1:after {
   content: attr(data-weather34tipavg1);
   background: #d05f2d;
@@ -8341,15 +9562,18 @@ valuetextheading1a {
   z-index: 9999999;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .weather34tipavg1:hover:after,
 .weather34tipavg1:hover:before {
   transition: all 0.4s ease 0.2s;
   visibility: visible;
   opacity: 1;
 }
+
 .weather34tipavg1:hover:after {
   margin-top: -26px;
 }
+
 .weather34tipavg1:hover:before {
   margin-top: 0;
 }
@@ -8361,6 +9585,7 @@ valuetextheading1a {
   top: 0;
   margin-bottom: 5px;
 }
+
 .weather34tipforecast:after,
 .weather34tipforecast:before {
   visibility: hidden;
@@ -8369,6 +9594,7 @@ valuetextheading1a {
   left: 10%;
   box-sizing: border-box;
 }
+
 .weather34tipforecast:after {
   content: attr(data-weather34tipforecast);
   background: #06a2b1;
@@ -8386,15 +9612,18 @@ valuetextheading1a {
   z-index: 9999999;
   font-family: weathertext2;
 }
+
 .weather34tipforecast:hover:after,
 .weather34tipforecast:hover:before {
   visibility: visible;
   opacity: 1;
 }
+
 .weather34tipforecast:hover:after {
   margin-top: 23px;
   left: 210px;
 }
+
 .weather34tipforecast:hover:before {
   margin-top: 0;
   margin-bottom: 10px;
@@ -8406,6 +9635,7 @@ tunit1 {
   vertical-align: top;
   top: 5px;
 }
+
 .consoleoutlook {
   position: relative;
   color: #aeb6bf;
@@ -8416,6 +9646,7 @@ tunit1 {
   width: 185px;
   text-align: left;
 }
+
 .consoleicon {
   position: absolute;
   left: 175px;
@@ -8423,6 +9654,7 @@ tunit1 {
   width: 26px;
   height: 26px;
 }
+
 bluewuhum,
 greenwuhum,
 greywuhum,
@@ -8448,18 +9680,23 @@ yellowwuhum {
   top: 0;
   line-height: 0.9;
 }
+
 bluewuhum {
   background: #009bab;
 }
+
 orangewuhum {
   background: #d05f2d;
 }
+
 yellowwuhum {
   background: #e6a141;
 }
+
 redwuhum {
   background: rgba(211, 93, 78, 1);
 }
+
 greenwuhum {
   background: rgba(144, 177, 42, 1);
 }
@@ -8489,86 +9726,221 @@ yellowwunext {
   top: 0;
   line-height: 0.9;
 }
+
 bluewunext {
   background: #009bab;
 }
+
 orangewunext {
   background: #d05f2d;
 }
-yellowwunext{
+
+yellowwunext {
   background: #e6a141;
 }
-redwunext{
+
+redwunext {
   background: rgba(211, 93, 78, 1);
 }
+
 greenwunext {
   background: rgba(144, 177, 42, 1);
 }
+
 nextperiod {
-  position:absolute;left: 65px;
+  position: absolute;
+  left: 65px;
 }
-.temperaturenext{margin-left:70px
+
+.temperaturenext {
+  margin-left: 70px;
 }
 
 .barometerpos {
   margin-top: 5px;
 }
+
 boxred {
   color: rgba(211, 93, 78, 1);
   margin-right: 5px;
 }
+
 boxblue {
   color: #009bab;
   margin-right: 5px;
 }
-windaveragevalue{font-size:.55rem
+
+windaveragevalue {
+  font-size: .55rem;
 }
-wuunitstemperaturenext{font-size:.8em
+
+wuunitstemperaturenext {
+  font-size: .8em;
 }
-sunsetvalue{position:relative;font-size:.5rem;line-height:1;left:-4px;display:flex;margin-top:-15px;width:200px}
-.moonphaseing1{position:absolute;left:105px; top:25px; width:110px;}
-.weather34moonphasesvg1{position:absolute; left:100px; top:30px; width:120px;}
-.moonphaseing{position:absolute;left:10px; top:0px; width:50px;}
-.weather34moonphasesvg{position:absolute; left:10px; top:5px; width:60px;}
-.weather34moonforeground { fill:rgba(226, 228, 237, .3); stroke:rgba(86, 95, 103, .3); stroke-width:0;max-height:100px }
-.weather34moonbackground{ fill:rgba(120, 138, 146,.5);stroke:rgba(230, 232, 239, .1);stroke-width:0; }
-.moonrise2{position:relative;margin-left:40px;top:15px;font-size:.65rem;width:200px;line-height:1;color: #aeb6bf;}
-.moonset2{position:relative;margin-left:40px;font-size:.65rem;top:15px;width:200px;line-height:1;color: #aeb6bf;}
-.phase2{position:relative;margin-left:40px;top:20px;font-size:.65rem;width:200px;line-height:.8;color: #aeb6bf;}
-.luminance2{position:relative;margin-left:40px;font-size:.65rem;top:20px;width:200px;line-height:1;color: #aeb6bf;}
+
+sunsetvalue {
+  position: relative;
+  font-size: .5rem;
+  line-height: 1;
+  left: -4px;
+  display: flex;
+  margin-top: -15px;
+  width: 200px;
+}
+
+.moonphaseing1 {
+  position: absolute;
+  left: 105px;
+  top: 25px;
+  width: 110px;
+}
+
+.weather34moonphasesvg1 {
+  position: absolute;
+  left: 100px;
+  top: 30px;
+  width: 120px;
+}
+
+.moonphaseing {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  width: 50px;
+}
+
+.weather34moonphasesvg {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  width: 60px;
+}
+
+.weather34moonforeground {
+  fill: rgba(226, 228, 237, .3);
+  stroke: rgba(86, 95, 103, .3);
+  stroke-width: 0;
+  max-height: 100px;
+}
+
+.weather34moonbackground {
+  fill: rgba(120, 138, 146,.5);
+  stroke: rgba(230, 232, 239, .1);
+  stroke-width: 0;
+}
+
+.moonrise2 {
+  position: relative;
+  margin-left: 40px;
+  top: 15px;
+  font-size: .65rem;
+  width: 200px;
+  line-height: 1;
+  color: #aeb6bf;
+}
+
+.moonset2 {
+  position: relative;
+  margin-left: 40px;
+  font-size: .65rem;
+  top: 15px;
+  width: 200px;
+  line-height: 1;
+  color: #aeb6bf;
+}
+
+.phase2 {
+  position: relative;
+  margin-left: 40px;
+  top: 20px;
+  font-size: .65rem;
+  width: 200px;
+  line-height: .8;
+  color: #aeb6bf;
+}
+
+.luminance2 {
+  position: relative;
+  margin-left: 40px;
+  font-size: .65rem;
+  top: 20px;
+  width: 200px;
+  line-height: 1;
+  color: #aeb6bf;
+}
+
 weather34moonrisecircle {
- position: absolute;
- top: 2px;
+  position: absolute;
+  top: 2px;
   left: 50px;
- width: 0;
+  width: 0;
   height: 0;
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
   border-bottom: 5px solid #009bab;
-  opacity:.7
+  opacity: .7;
 }
+
 weather34moonsetcircle {
   position: absolute;
- top: 2px;
+  top: 2px;
   left: 50px;
- width: 0;
+  width: 0;
   height: 0;
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
   border-top: 5px solid rgba(211, 93, 78, 1);
-  opacity:.7
-
+  opacity: .7;
 }
-.luftairqualitymoduleposition{position:absolute;margin-top:0;left:10px;}
-.luftairvalueaq{position:absolute;margin-top:10px;left:100px;font-size:.9em;font-family:weathertext2;}
-luftairvalueaqpm{font-size:.35em;font-family:weathertext2;color:#aeb6bf;}
-.luftairvalue{position:relative;margin-top:40px;left:30px;font-size:.55rem;font-family:weathertext2;color:#aeb6bf;}
-luftgreen{color:#90b12a;}
-luftyellow{color: #e6a141;}
-luftorange{color:#d05f2d;}
-luftred{color:rgba(211, 93, 78, 1);}
-luftpurple{color:rgba(164, 117, 203, 1);}
 
+.luftairqualitymoduleposition {
+  position: absolute;
+  margin-top: 0;
+  left: 10px;
+}
+
+.luftairvalueaq {
+  position: absolute;
+  margin-top: 10px;
+  left: 100px;
+  font-size: .9em;
+  font-family: weathertext2;
+}
+
+luftairvalueaqpm {
+  font-size: .35em;
+  font-family: weathertext2;
+  color: #aeb6bf;
+}
+
+.luftairvalue {
+  position: relative;
+  margin-top: 40px;
+  left: 30px;
+  font-size: .55rem;
+  font-family: weathertext2;
+  color: #aeb6bf;
+}
+
+luftgreen {
+  color: #90b12a;
+}
+
+luftyellow {
+  color: #e6a141;
+}
+
+luftorange {
+  color: #d05f2d;
+}
+
+luftred {
+  color: rgba(211, 93, 78, 1);
+}
+
+luftpurple {
+  color: rgba(164, 117, 203, 1);
+}
 
 greenluft,
 orangeluft,
@@ -8590,41 +9962,48 @@ yellowluft {
   border-radius: 2px;
   margin-left: 0px;
   top: 8px;
-  line-height:1;
-  border-bottom:8px solid #3d464d;
+  line-height: 1;
+  border-bottom: 8px solid #3d464d;
 }
+
 orangeluft {
   background: #d05f2d;
 }
-yellowluft{
+
+yellowluft {
   background: #e6a141;
 }
-redluft{
+
+redluft {
   background: rgba(211, 93, 78, 1);
 }
+
 greenluft {
   background: rgba(144, 177, 42, 1);
-  opacity:.8
+  opacity: .8;
 }
+
 purpleluft {
-  background:rgba(164, 117, 203, 1);
+  background: rgba(164, 117, 203, 1);
 }
+
 .weather34-theme-switch {
   display: inline-block;
   height: 14px;
   position: relative;
   width: 55px;
-  font-size:10px;
-  color:#f8f8f8;
-  top:4px
-}
-.weather34-theme-switch a{
-  color:#f8f8f8;
-}
-.weather34-theme-switch a :hover{
-  color:#f8f8f8;
+  font-size: 10px;
+  color: #f8f8f8;
+  top: 4px;
 }
 
+.weather34-theme-switch a {
+  color: #f8f8f8;
+}
+
+.weather34-theme-switch a :hover {
+  color: #f8f8f8;
+}
 
 .weather34-theme-switch input {
   display: none;
@@ -8638,18 +10017,17 @@ purpleluft {
   position: absolute;
   right: 0;
   top: 0;
-  color:#fff;
-  font-weight:500
-
+  color: #fff;
+  font-weight: 500;
 }
-.weather34-slider a{
-  color:#fff;
-  font-weight:500
 
+.weather34-slider a {
+  color: #fff;
+  font-weight: 500;
 }
-.weather34-slider a:hover{
-  color:#fff
 
+.weather34-slider a:hover {
+  color: #fff;
 }
 
 .weather34-slider:before {
@@ -8668,21 +10046,37 @@ purpleluft {
 
 .weather34-slider.round:before {
   border-radius: 50%;
-   border:1px solid rgba(61, 139, 150, 1);
-  }
-lastrain{color: #aeb6bf;font-size:.75em}
- weather34homepagelinks,weather34homepagetop{
+  border: 1px solid rgba(61, 139, 150, 1);
+}
+
+lastrain {
+  color: #aeb6bf;
+  font-size: .75em;
+}
+
+weather34homepagelinks,weather34homepagetop {
   display: inline-block;
   width: 5px;
   height: 5px;
-  background:#565f67;
+  background: #565f67;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  margin-top:0
-  }
-weather34homepagetop{
-  margin-top:3px
-  }
-wind-dir-avgmonth{margin-left:-8px;font-size:.6rem;margin-top:2px;color:#44a6b5;}
-metricgrey{color:#aeb6bf;font-weight:500;font-size:9px}
- 
+  margin-top: 0;
+}
+
+weather34homepagetop {
+  margin-top: 3px;
+}
+
+wind-dir-avgmonth {
+  margin-left: -8px;
+  font-size: .6rem;
+  margin-top: 2px;
+  color: #44a6b5;
+}
+
+metricgrey {
+  color: #aeb6bf;
+  font-weight: 500;
+  font-size: 9px;
+}
