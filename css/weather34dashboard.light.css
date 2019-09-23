@@ -5439,7 +5439,7 @@ topbarmetricc {
   font-weight: 400;
   justify-content: center;
   color: #aeb6bf;
-  border: .01em solid #aeb6bf;
+  border: 1px solid #aeb6bf;
   opacity:.8
   
 }
