@@ -293,19 +293,15 @@ $weather["humidity_ydmintime"]=$humydmintime;
 $weather["heat_indexymax"]=$meteobridgeapi[192];
 $weather["heat_indexymaxtime"]=$meteobridgeapi[193];
 $originalDateheat=$meteobridgeapi[193];
-$heatindindexmaxtime=date("jS M Y",strtotime($originalDateheat));
-$heatindindexmaxtime2=date("jS F",strtotime($originalDateheat));
+$heatindindexmaxtime=date($dateFormat,strtotime($originalDateheat));
+$heatindindexmaxtime2=date($dateFormat,strtotime($originalDateheat));
 
-	//windchill
-
-
+//windchill
 $weather["windchillymin"]=$meteobridgeapi[194];
 $weather["windchillymintime"]=$meteobridgeapi[195];
 $originalDatechill=$meteobridgeapi[195];
-$windchillmintime=date("jS M Y",strtotime($originalDatechill));
-$windchillmintime2=date("jS F",strtotime($originalDatechill));
-	
-	
+$windchillmintime=date($dateFormat,strtotime($originalDatechill));
+$windchillmintime2=date($dateFormat,strtotime($originalDatechill));
 	//wind 
 	$originalDate8 = $meteobridgeapi[95];
     $windydmaxtime = date("H:i", strtotime($originalDate8));	
@@ -323,9 +319,7 @@ $windchillmintime2=date("jS F",strtotime($originalDatechill));
 	$originalDate8a = $meteobridgeapi[134];
     $windamaxtime = date($dateFormat, strtotime($originalDate8a));	
 	$weather["windamax"]		    = $meteobridgeapi[133]; //wind max yesterday
-	$weather["windamaxtime"]		= $windamaxtime; //seconds	
-	
-		
+	$weather["windamaxtime"]		= $windamaxtime; //seconds			
 	$weather["windavgdmaxtime"]		= $windavgdmaxtime; //seconds		
 	$weather["windydmax"]		    = $meteobridgeapi[94]; //wind max yesterday
 	$weather["windydmaxtime"]		= $windydmaxtime; //seconds	
@@ -361,8 +355,7 @@ $windchillmintime2=date("jS F",strtotime($originalDatechill));
 	$weather["rainmmax"]		    = $meteobridgeapi[101]; //wind max month
 	$weather["rainmmaxtime"]		= $rainmmaxtime; //seconds	
 	$weather["rainymax"]		    = $meteobridgeapi[103]; //wind max year
-	$weather["rainymaxtime"]		= $rainymaxtime; //seconds
-	
+	$weather["rainymaxtime"]		= $rainymaxtime; //seconds	
 	$weather['rainlastmonth']=$meteobridgeapi[173];
 	$weather['rainlastyear']=$meteobridgeapi[174];
 	

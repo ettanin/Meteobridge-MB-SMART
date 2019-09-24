@@ -202,7 +202,7 @@ if ($positionlastmodule=='airqualitymodule.php') {echo '<a href="eqlist.php" dat
   <?php 
   if ($positionmooneq=='weather34-moonphase.php'){echo $lang['Moonphase'];}
   else if ($positionmooneq=='luftdaten-small.php'){echo $lang['Air Quality'];}
-  else if ($positionmooneq=='heat-chill-year-month.php'){echo $lang['Heatindex']."|".$lang['Windchill']." ".date('Y');}
+  else if ($positionmooneq=='heat-chill-year-month.php'){echo $lang['Heatindex']." | ".$lang['Windchill']." ".date('Y');}
   ?> 
   </div>
   <div id=option></div></div>
