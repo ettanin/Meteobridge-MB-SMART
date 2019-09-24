@@ -42,7 +42,7 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
   overflow:hidden
 }
  a{color:#aaa;text-decoration:none} 
-.weather34darkbrowser{position:relative;background:0;width:97%;height:30px;margin:auto;margin-top:-5px;margin-left:0px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:10px;}
+.weather34darkbrowser{position:relative;background:0;width:96%;height:30px;margin:auto;margin-top:-5px;margin-left:0px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:10px;}
 .weather34darkbrowser[url]:after{content:attr(url);color:#aaa;font-size:10px;position:absolute;left:0;right:0;top:0;padding:4px 15px;margin:11px 10px 0 auto;border-radius:3px;background:rgba(97, 106, 114, 0.3);height:20px;box-sizing:border-box}
  
   
@@ -65,22 +65,29 @@ border:solid 2px #4b545c;border-bottom:solid 15px #4b545c;-webkit-border-radius:
   
 <main class="grid">
   <article>  
-   <div class=actualt>Main Hardware</div> 
-    Station Hardware:<blue><?php echo $weatherhardware?></blue><br>
-    Installed Since:<blue><?php echo $hardwareinstalled?></blue><br>
+   <div class=actualt>Davis Vantage&#8482; Hardware</div> 
+    <?php echo $info?> Station Hardware:<blue><?php echo $weatherhardware?></blue><br>
+    <?php if($davisextras=="None"){echo "";}
+	else echo $info. "Additional:<blue>".$davisextras."</blue><br>";?>
+    <?php if($davisextras2=="None"){echo "";}
+	else echo $info. "Additional:<blue>".$davisextras2."</blue><br>";?>
+    <?php if($davisextras3=="None"){echo "";}
+	else echo $info. "Additional:<blue>".$davisextras3."</blue><br>";?>
+	
+    <?php echo $info?> Installed Since:<blue><?php echo $hardwareinstalled?></blue><br>
     <?php  
   if ($weatherhardware=='Davis Vantage Pro2+'){echo ' 
-  <img src=img/weather34-davis-vp2.svg width="265rem" alt="Davis Vantage Pro2" title="Davis Vantage Pro2"/>';}  
+  <img src=img/weather34-davis-vp2.svg width="220px" alt="Davis Vantage Pro2" title="Davis Vantage Pro2"/>';}  
   else if ($weatherhardware=='Davis Vantage Pro2'){echo ' 
-  <img src=img/weather34-davis-vp2.svg width="265rem" alt="Davis Vantage Pro2" title="Davis Vantage Pro2"/>';}  
+  <img src=img/weather34-davis-vp2.svg width="220px" alt="Davis Vantage Pro2" title="Davis Vantage Pro2"/>';}  
   else if ($weatherhardware=='Davis Vantage Vue' ){echo ' 
-  <img src=img/davisvue.svg width="260rem" alt="Davis Vantage Vue" title="Davis Vantage Vue" style="margin-top:5px;"/>';}  
+  <img src=img/davisvue.svg width="220px" alt="Davis Vantage Vue" title="Davis Vantage Vue" style="margin-top:5px;"/>';}  
   else if ($weatherhardware=='Davis Envoy8x' ){echo ' 
-  <img src=img/designedfordavisenvoy8x.svg width="260rem" alt="Davis Envoy8x" title="Davis Envoy8x" style="margin-top:5px;"/>';}
+  <img src=img/designedfordavisenvoy8x.svg width="220px" alt="Davis Envoy8x" title="Davis Envoy8x" style="margin-top:5px;"/>';}
   ?>
  
   
-  <div style="position:relative;float:left;margin-left:0;top:40px">
+  <div style="position:relative;float:left;margin-left:0;top:27px">
  <?php echo $info?> Davis&reg; Vantage&#8482; <a href="https://www.davisinstruments.com/product/wireless-vantage-pro2-plus-including-uv-solar-radiation-sensors/" title="https://www.davisinstruments.com/product/wireless-vantage-pro2-plus-including-uv-solar-radiation-sensors/" target="_blank"> <?php echo $chartinfo?> Information</a>.<br> 
  <?php echo $info?> Davis&reg; <a href="https://www.davisinstruments.com" title="https://www.davisinstruments.com" target="_blank"> <?php echo $chartinfo?> Information</a>.
  </span></div>
@@ -95,13 +102,13 @@ border:solid 2px #4b545c;border-bottom:solid 15px #4b545c;-webkit-border-radius:
   <?php //meteobridge and station hardware 
 $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime){$weather34nanotimeago = "";$days1 = intval(intval($nanosduptime) / (3600*24));$hours1 = (intval($nanosduptime) / 3600) % 24;$minutes1 = (intval($nanosduptime) / 60) % 60;$seconds1 = (intval($nanosduptime)) % 60;if($days1> 1){$weather34nanotimeago .= "$days1 Days ";}else {if($days1>0){$weather34nanotimeago .= "$days1 Day ";}if($hours1 > 1){$weather34nanotimeago .= "$hours1 hrs ";}else if($hours1 >=0){$weather34nanotimeago .= "$hours1 hr ";}if($minutes1 > 1){$weather34nanotimeago .= "$minutes1 mins ";}else if($minutes1 >=0){$weather34nanotimeago .= "$minutes1 min ";}}return $weather34nanotimeago;}?>
   
-    Interface:Meteobridge <blue><?php echo $mbplatform?> </blue><?php echo $weather["mbplatform"]?><br>
-    Interface Uptime :<blue><?php echo convert($nanosduptime)?></blue><br>
-    Firmware:<blue><?php echo $weather["swversion"]."-" .$weather["build"]?></blue><br>
+    <?php echo $info?> Interface:Meteobridge <blue><?php echo $mbplatform?> </blue><?php echo $weather["mbplatform"]?><br>
+    <?php echo $info?> Interface Uptime :<blue><?php echo convert($nanosduptime)?></blue><br>
+    <?php echo $info?> Firmware:<blue><?php echo $weather["swversion"]."-" .$weather["build"]?></blue><br>
     <div style="margin-top:15px;margin-left:60px">
     <?php 
-  if ($mbplatform=='NanoSD' || $mbplatform=='Nano'){echo '<div class="nanoimg2"><img src=img/nano.svg width="100rem" alt="Meteobridge NANO(SD)" title="Meteobridge NANO(SD)"/></div>';}
-  if ($mbplatform=='Pro' ){echo '<div class="proimg2"><img src=img/MeteobridgePRO.svg width="100rem" alt="Meteobridge Pro" title="Meteobridge Pro2"/></div>';}
+  if ($mbplatform=='NanoSD' || $mbplatform=='Nano'){echo '<div class="nanoimg2"><img src=img/nano.svg width="100px" alt="Meteobridge NANO(SD)" title="Meteobridge NANO(SD)"/></div>';}
+  if ($mbplatform=='Pro' ){echo '<div class="proimg2"><img src=img/MeteobridgePRO.svg width="100px" alt="Meteobridge Pro" title="Meteobridge Pro2"/></div>';}
   ?>  </div> </div> 
   
   <div style="position:relative;float:left;margin-left:0;top:30px">

@@ -86,6 +86,9 @@ $wulanguage    = "'.$_POST['wulanguage']. '";
 $manifestShortName = "'.$_POST["manifestShortName"].'";
 $weatherflowID = "'. $_POST["wfid"]. '";
 $suppliers   = "'. $_POST["suppliers"]. '";
+$davisextras   = "'.$_POST["davisextras"]. '";
+$davisextras2   = "'.$_POST["davisextras2"]. '";
+$davisextras3   = "'.$_POST["davisextras3"]. '";
 ';
  
 $fp = FOPEN("settings1.php", "w") or die("Unable to open settings1.php file check file permissions !");
@@ -461,6 +464,56 @@ Your Weather Station Hardware</div><p>
            <option>Davis Envoy8x</option>             
         </select>
         <br><br>
+        
+        
+         <div class= "stationvalue"> 
+    Davis Options Installed</div><br><br>
+      <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M30 12 L16 24 2 12" />
+</svg>
+      
+       <label name="davisextras"></label>
+        <select id="davisextras" name="davisextras" class="chooseapi">           
+           <option><?php echo $davisextras ;?></option>
+           <option>FARS Daytime</option>   
+           <option>FARS 24/7</option>        
+           <option>None</option>                       
+        </select>
+        
+        <br><br>
+        <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M30 12 L16 24 2 12" />
+</svg>
+        <label name="davisextras2"></label>
+        <select id="davisextras2" name="davisextras2" class="chooseapi">           
+           <option><?php echo $davisextras2 ;?></option>
+           <option>Leaf Sensor</option>   
+           <option>UV Sensor + Solar Sensor</option>        
+           <option>None</option>                       
+        </select>
+        
+        <br><br>
+        <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M30 12 L16 24 2 12" />
+</svg>
+        <label name="davisextras3"></label>
+        <select id="davisextras3" name="davisextras3" class="chooseapi">           
+           <option><?php echo $davisextras3 ;?></option>
+           <option>Rain Single Spoon(0.2mm)</option>   
+           <option>Rain Single Spoon(0.1in)</option>         
+           <option>None</option>                       
+        </select>
+        
+        
+        
+        <br><br>
+        
     
 
 <div class="seperator"></div>     
