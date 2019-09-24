@@ -491,8 +491,8 @@ Your Weather Station Hardware</div><p>
         <label name="davisextras2"></label>
         <select id="davisextras2" name="davisextras2" class="chooseapi">           
            <option><?php echo $davisextras2 ;?></option>
-           <option>Leaf Sensor</option>   
-           <option>UV Sensor + Solar Sensor</option>        
+           <option>UV Sensor + Solar Sensor</option>
+           <option>Solar Sensor</option>          
            <option>None</option>                       
         </select>
         
@@ -506,7 +506,8 @@ Your Weather Station Hardware</div><p>
         <select id="davisextras3" name="davisextras3" class="chooseapi">           
            <option><?php echo $davisextras3 ;?></option>
            <option>Rain Single Spoon(0.2mm)</option>   
-           <option>Rain Single Spoon(0.1in)</option>         
+           <option>Rain Single Spoon(0.1in)</option> 
+           <option>Leaf Sensor</option>         
            <option>None</option>                       
         </select>
         
