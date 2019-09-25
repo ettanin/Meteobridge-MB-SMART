@@ -4856,6 +4856,12 @@ rainu {
   color: #2d3a4b;
   font-size: 0.6rem;
 }
+.weather34ratebar-red {
+  height: 1rem;
+  background: rgba(154, 74, 76, 0.9);
+  color: #2d3a4b;
+  font-size: 0.6rem;
+}
 
 smallrainrateunit {
   color: #2d3a4b;

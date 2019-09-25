@@ -29,7 +29,18 @@ echo " &nbsp;&nbsp;<valuetextheading1>".$lang['Last-Twenty-Four-Hour']."</valuet
 </div></div></div></div>
 
 <div class="rainrateextra">
-<div class="rainratetextheading"><?php echo $lang['Rate']?> <?php if ($weather["rain_rate"]>0)echo "<ratevalue>".$weather["rain_rate"]."</ratevalue><smallrainrateunit>".$weather["rain_units"]?></smallrainrateunit></div><div class=rainratebar>
-<div class="weather34ratebar" style="width:<?php if ($weather["rain_units"] =='in'){ echo $weather["rain_rate"]*40;}else if ($weather["rain_units"] =='mm'){ echo $weather["rain_rate"]*1.75;}?>px;">
+<div class="rainratetextheading">
+<?php //weather34 lets make the rain rate bar and shift to red when at a certain rate
+echo $lang['Rate']?> <?php if ($weather["rain_rate"]>0)echo "<ratevalue>".$weather["rain_rate"]."</ratevalue><smallrainrateunit>".$weather["rain_units"]?></smallrainrateunit>
+</div>
+<div class=rainratebar>
+<?php if($weather["rain_units"] =='in' && $weather["rain_rate"]>=1.25 ){;?> <div class="weather34ratebar-red" style="width:<?php if ($weather["rain_units"] =='in'){ echo $weather["rain_rate"]*40;}else if ($weather["rain_units"] =='mm'){ echo $weather["rain_rate"]*1.75;}?>px;">
+<?php }?>
+<?php if ($weather["rain_rate"]>=32){;?> <div class="weather34ratebar-red" style="width:<?php if ($weather["rain_units"] =='in'){ echo $weather["rain_rate"]*40;}else if ($weather["rain_units"] =='mm'){ echo $weather["rain_rate"]*1.75;}?>px;">
+<?php }?>
+<?php if ( $weather["rain_units"] =='in' && $weather["rain_rate"]<1.25){;?> <div class="weather34ratebar" style="width:<?php if ($weather["rain_units"] =='in'){ echo $weather["rain_rate"]*40;}else if ($weather["rain_units"] =='mm'){ echo $weather["rain_rate"]*1.75;}?>px;">
+<?php }?>
+<?php if ( $weather["rain_units"] =='mm' && $weather["rain_rate"]<32){;?> <div class="weather34ratebar" style="width:<?php if ($weather["rain_units"] =='in'){ echo $weather["rain_rate"]*40;}else if ($weather["rain_units"] =='mm'){ echo $weather["rain_rate"]*1.75;}?>px;">
+<?php }?>
 <?php if ($weather["rain_rate"]==0)echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$weather["rain_rate"]."<smallrainrateunit>".$weather["rain_units"]?></smallrainrateunit></div></div>
 </div></div></div></div>
