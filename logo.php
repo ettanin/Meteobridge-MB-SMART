@@ -36,4 +36,6 @@ $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime){$weather34na
   <?php echo $lang['Weather Station'];?></a></div>
   <div class=hardware><weather34menumarkerblue></weather34menumarkerblue>&nbsp;<?php echo $weatherhardware;?></div>
   <div class=hardwareinfo><weather34menumarkerorange></weather34menumarkerorange>&nbsp;<?php echo $lang['Installed']?>: <?php echo $hardwareinstalled;?></div>
-  <div class=hardwareuptime><weather34menumarkerred></weather34menumarkerred>&nbsp;<?php echo $lang['Battery']?>:<?php echo $weather['indoorbattery']?> ISS:<?php echo $weather['outdoorbattery']?></div>
+  <div class=hardwareuptime><weather34menumarkerred></weather34menumarkerred>&nbsp;
+  <?php if($weather['indoorbattery']==0){ echo "<blue>OK</blue>";}else echo "<red>Replace";?> ISS:
+  <?php if($weather['outdoorbattery']==0){ echo "<blue>OK</blue>";}else echo "<red>Replace</red>";?></div>
