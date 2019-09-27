@@ -1,15 +1,9 @@
-# This GITHUB repository is for Meteobridge-Weather34-Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
-(Public Version September 20th 2019)
+# This GITHUB repository is for Meteobridge Weather34 MB Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
+(Public Version 1.03 September 24th 2019)
 
-* thanks to Piet and Lars for the air quality idea and testing
+# Project now archived until early 2020 you may download as normal above using the green button.
+* todo CSS clean (January 2020)
 
-* chartstoday.php updated for air quality
-
-* luftdaten.php and purpleair.php updated added charts
-
-* 2 new files for weather34charts folder todayqi.php ,todayluftdatenaqi.php
-
-* consoleoutlook.php updated minor rewording
 
 <p align="center">
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1568620387/MBSMART_tdyrqc.png" width="550" title="weather34 Meteobridge MB-SMART template "> 
@@ -30,9 +24,7 @@ https://beaumaris-weather.com/pwsMB/ (Tasmania - Meteobridge Pro)
 
 # To be done non critical 
 
- NEXT PHASE THIS WILL BE LANGUAGES AND ONLY 6 LANGUAGES this is now 95% done
- 
- NEXT PHASE FOR OCTOBER THIS WILL BE CSS REMOVAL OF UNUSED and REDUCE CSS to a target size of 100K
+NEXT PHASE FOR OCTOBER THIS WILL BE CSS REMOVAL OF UNUSED and REDUCE CSS to a target size of 100K
 
 # IMPORTANT THIS TEMPLATE IS FOR METEOBRIDGE NANOSD AND DAVIS HARDWARE USERS ONLY !!
 # IT IS NOT COMPATIBLE WITH TP-LINK TYPE METEOBRIDGE HUBS
@@ -183,15 +175,16 @@ fully compatible due to the requirement of being able to retrieve historical val
 *This work requires credits to be left intact where work is used ,it has no legal binding warrant but it is ethical
 to create a working enviroment to exchange ideas without creating unwanted noise, the community is smaller than you may think..
 
-*THIS VERSION HAS NO MYSQL DEPENDANCY 
+*If you have any questions about the License, feel free to contact weather34 for clarification. 
 
 *This work means CSS/SVG/PHP .
+
 
 # Thanks to Lars 
 Lars at  https://singaporeweather.info for access to test ideas realtime in a different climate.
 
-# Thanks to Graham Hughes (translations)
-Graham Hughes contribution to the tedious task of getting translations into place.
+# Thanks to Graham Hughes
+Graham Hughes huge contribution to the tedious task of getting many translations into place.
 
 # This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. http://creativecommons.org/licenses/by-nc-nd/4.0/
 *This work means CSS/SVG/PHP .
