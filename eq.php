@@ -27,7 +27,7 @@ $eqdista;if ($weather["wind_units"] == 'mph') {$eqdista = round(distance($lat, $
 // EQ Latest earthquake 
 
 if ($magnitude <= 4.2 && $eqdist<150) {
-    echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>${magnitude}</div>	
+    echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>".number_format($magnitude,1)."</div>	
 	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minor</div></div>
 	<div class='eqtext2'><regionalred>Local Alert $heatindexalert8 </regionalred><br><blue> $eqtitle </blue><br>$eventime<br>
 	Epicenter: <maxred>$eqdist</maxred> from<br> $stationlocation</div>";
@@ -36,7 +36,7 @@ if ($magnitude <= 4.2 && $eqdist<150) {
 
 
 else if ($magnitude <= 4.2 && $eqdist<150) {
-    echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>${magnitude}</div>	
+    echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>".number_format($magnitude,1)."</div>	
 	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minor</div></div>
 	<div class='eqtext2'><regionalred>Awareness Alert $heatindexalert8 </regionalred><br><blue> $eqtitle </blue><br>$eventime<br>
 	Epicenter: <maxred>$eqdist</maxred> from<br> $stationlocation</div>";
@@ -45,28 +45,28 @@ else if ($magnitude <= 4.2 && $eqdist<150) {
 
 
 else if ($magnitude <= 4.2 ) {
-    echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>${magnitude}</div>	
+    echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>".number_format($magnitude,1)."</div>	
 	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minor</div></div>
 	<div class='eqtext'><blue>$eqtitle </blue><br>$eventime<br>
 	Epicenter: <maxred>$eqdist</maxred>  from<br> $stationlocation</div>";
 } 
 
 else if ($magnitude <= 5 && $eqdist<150) {
-    echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>${magnitude}</div>	
+    echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>".number_format($magnitude,1)."</div>	
 	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;Moderate</div></div>
 	<div class='eqtext2'><regionalred>Local High Alert $heatindexalert8 </regionalred><br><blue> $eqtitle </blue> <br>$eventime<br>
 	Epicenter: <maxred>$eqdist</maxred>  from<br> $stationlocation</div>";	
 }
 
 else if ($magnitude <= 5) {
-    echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>${magnitude}</div>	
+    echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>".number_format($magnitude,1)."</div>	
 	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;Moderate</div></div>
 	<div class='eqtext'> <blue>$eqtitle </blue> <br>$eventime<br>
 	Epicenter: <maxred>$eqdist</maxred>  from<br> $stationlocation</div>";	
 } 
 
 else if ($magnitude<= 6 && $eqdist<150) {
-    echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday6-8>${magnitude}</div>	
+    echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday6-8>".number_format($magnitude,1)."</div>	
 	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strong</div></div>
 	<div class='eqtext2'><regionalred>Local Dangerous Alert<br> $heatindexalert8 </regionalred><blue> $eqtitle </blue> <br>$eventime<br>
 	<maxred>$eqdist</maxred> from<br> $stationlocation</div>";

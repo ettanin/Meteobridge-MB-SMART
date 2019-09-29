@@ -13,7 +13,7 @@ error_reporting(0);
 
 ?>
 <?php //current eqlist
-$heatindexalert8='<svg id="weather34 heatindex alert" width="7pt" height="7pt" fill="#ff552e" viewBox="0 0 20 20"><path d="M19.64 16.36L11.53 2.3A1.85 1.85 0 0 0 10 1.21 1.85 1.85 0 0 0 8.48 2.3L.36 16.36C-.48 17.81.21 19 1.88 19h16.24c1.67 0 2.36-1.19 1.52-2.64zM11 16H9v-2h2zm0-4H9V6h2z"/></svg>';
+$heatindexalert8='<svg id="weather34 heatindex alert" width="7pt" height="7pt" fill="#ff552e" viewBox="0 0 20 20"><path d="M19.64 16.36L11.53 2.3A1.85 1.85 0 0 0 10 1.21 1.85 1.85 0 0 0 8.48 2.3L.36 16.36C-.48 17.81.21 19 1.88 19h16.24c1.67 0 2.36-1.19 1.52-2.64zM11 16H9v-2h2zm0-4H9V6h2z"/></svg><br>';
 
 date_default_timezone_set($TZ);
 //$json_string=file_get_contents('https://www.seismicportal.eu/fdsnws/event/1/query?limit=15&lat=41&lon=28&maxradius=10&format=json&minmag=2');
@@ -214,11 +214,11 @@ orange1{color:rgba(255, 131, 47, 1.000);}
   <article>  
    <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
     <?php 
-				if($magnitude>=7){echo "<div class=mag9-10>",$magnitude,"";}
-				else if($magnitude>=5.8){echo "<div class=mag9-10>",$magnitude,"";}
-				else if($magnitude>=5){echo "<div class=mag6-8>",$magnitude,"";}
-				else if($magnitude>3){echo "<div class=mag4-5>",$magnitude,"";}
-				else if($magnitude<=3){echo "<div class=mag1-3>",$magnitude,"";}	
+				if($magnitude>=7){echo "<div class=mag9-10>",number_format($magnitude,1),"";}
+				else if($magnitude>=5.8){echo "<div class=mag9-10>",number_format($magnitude,1),"";}
+				else if($magnitude>=5){echo "<div class=mag6-8>",number_format($magnitude,1),"";}
+				else if($magnitude>3){echo "<div class=mag4-5>",number_format($magnitude,1),"";}
+				else if($magnitude<=3){echo "<div class=mag1-3>",number_format($magnitude,1),"";}
 					
 						
 				?>
@@ -295,11 +295,11 @@ else if ($windunit == 'mph') {
  <article>  
    <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
     <?php  //1
-				if($magnitude1>=7){echo "<div class=mag9-10>",$magnitude1,"";}
-				else if($magnitude1>=5.8){echo "<div class=mag9-10>",$magnitude1,"";}
-				else if($magnitude1>=5){echo "<div class=mag6-8>",$magnitude1,"";}
-				else if($magnitude1>3){echo "<div class=mag4-5>",$magnitude1,"";}				
-				else if($magnitude1<=3){echo "<div class=mag1-3>",$magnitude1,"";}	
+				if($magnitude1>=7){echo "<div class=mag9-10>",number_format($magnitude1,1),"";}
+				else if($magnitude1>=5.8){echo "<div class=mag9-10>",number_format($magnitude1,1),"";}
+				else if($magnitude1>=5){echo "<div class=mag6-8>",number_format($magnitude1,1),"";}
+				else if($magnitude1>3){echo "<div class=mag4-5>",number_format($magnitude1,1),"";}
+				else if($magnitude1<=3){echo "<div class=mag1-3>",number_format($magnitude1,1),"";}
 						
 				?>
 <div></div>
@@ -376,11 +376,11 @@ else if ($windunit == 'mph') {
    <article>  
    <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
     <?php //2
-				if($magnitude2>=7){echo "<div class=mag9-10>",$magnitude2,"";}
-				else if($magnitude2>=5.8){echo "<div class=mag9-10>",$magnitude2,"";}
-				else if($magnitude2>=5){echo "<div class=mag6-8>",$magnitude2,"";}
-				else if($magnitude2>3){echo "<div class=mag4-5>",$magnitude2,"";}				
-				else if($magnitude2<=3){echo "<div class=mag1-3>",$magnitude2,"";}	
+				if($magnitude2>=7){echo "<div class=mag9-10>",number_format($magnitude2,1),"";}
+				else if($magnitude2>=5.8){echo "<div class=mag9-10>",number_format($magnitude2,1),"";}
+				else if($magnitude2>=5){echo "<div class=mag6-8>",number_format($magnitude2,1),"";}
+				else if($magnitude2>3){echo "<div class=mag4-5>",number_format($magnitude2,1),"";}		
+				else if($magnitude2<=3){echo "<div class=mag1-3>",number_format($magnitude2,1),"";}
 						
 				?>
 <div></div>
@@ -457,11 +457,11 @@ else if ($windunit == 'mph') {
    <article>  
    <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
     <?php //3
-				if($magnitude3>=7){echo "<div class=mag9-10>",$magnitude3,"";}
-				else if($magnitude3>=5.8){echo "<div class=mag9-10>",$magnitude3,"";}
-				else if($magnitude3>=5){echo "<div class=mag6-8>",$magnitude3,"";}
-				else if($magnitude3>3){echo "<div class=mag4-5>",$magnitude3,"";}				
-				else if($magnitude3<=3){echo "<div class=mag1-3>",$magnitude3,"";}	
+				if($magnitude3>=7){echo "<div class=mag9-10>",number_format($magnitude3,1),"";}
+				else if($magnitude3>=5.8){echo "<div class=mag9-10>",number_format($magnitude3,1),"";}
+				else if($magnitude3>=5){echo "<div class=mag6-8>",number_format($magnitude3,1),"";}
+				else if($magnitude3>3){echo "<div class=mag4-5>",number_format($magnitude3,1),"";}
+				else if($magnitude3<=3){echo "<div class=mag1-3>",number_format($magnitude3,1),"";}
 						
 				?>
 <div></div>
@@ -538,11 +538,11 @@ else if ($windunit == 'mph') {
  <article>  
    <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
     <?php //4
-				if($magnitude4>=7){echo "<div class=mag9-10>",$magnitude4,"";}
-				else if($magnitude4>=5.8){echo "<div class=mag9-10>",$magnitude4,"";}
-				else if($magnitude4>=5){echo "<div class=mag6-8>",$magnitude4,"";}
-				else if($magnitude4>3){echo "<div class=mag4-5>",$magnitude4,"";}				
-				else if($magnitude4<=3){echo "<div class=mag1-3>",$magnitude4,"";}	
+				if($magnitude4>=7){echo "<div class=mag9-10>",number_format($magnitude4,1),"";}
+				else if($magnitude4>=5.8){echo "<div class=mag9-10>",number_format($magnitude4,1),"";}
+				else if($magnitude4>=5){echo "<div class=mag6-8>",number_format($magnitude4,1),"";}
+				else if($magnitude4>3){echo "<div class=mag4-5>",number_format($magnitude4,1),"";}
+				else if($magnitude4<=3){echo "<div class=mag1-3>",number_format($magnitude4,1),"";}
 						
 				?>
 <div></div>
@@ -619,11 +619,11 @@ else if ($windunit == 'mph') {
  <article>  
    <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
     <?php //5
-				if($magnitude5>=7){echo "<div class=mag9-10>",$magnitude5,"";}
-				else if($magnitude5>=5.8){echo "<div class=mag9-10>",$magnitude5,"";}
-				else if($magnitude5>=5){echo "<div class=mag6-8>",$magnitude5,"";}
-				else if($magnitude5>3){echo "<div class=mag4-5>",$magnitude5,"";}				
-				else if($magnitude5<=3){echo "<div class=mag1-3>",$magnitude5,"";}	
+				if($magnitude5>=7){echo "<div class=mag9-10>",number_format($magnitude5,1),"";}
+				else if($magnitude5>=5.8){echo "<div class=mag9-10>",number_format($magnitude5,1),"";}
+				else if($magnitude5>=5){echo "<div class=mag6-8>",number_format($magnitude5,1),"";}
+				else if($magnitude5>3){echo "<div class=mag4-5>",number_format($magnitude5,1),"";}
+				else if($magnitude5<=3){echo "<div class=mag1-3>",number_format($magnitude5,1),"";}
 					
 						
 				?>
@@ -702,11 +702,11 @@ else if ($windunit == 'mph') {
 <article>  
    <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
     <?php //6
-				if($magnitude6>=7){echo "<div class=mag9-10>",$magnitude6,"";}
-				else if($magnitude6>=5.8){echo "<div class=mag9-10>",$magnitude6,"";}
-				else if($magnitude6>=5){echo "<div class=mag6-8>",$magnitude6,"";}
-				else if($magnitude6>3){echo "<div class=mag4-5>",$magnitude6,"";}				
-				else if($magnitude6<=3){echo "<div class=mag1-3>",$magnitude6,"";}		
+				if($magnitude6>=7){echo "<div class=mag9-10>",number_format($magnitude6,1),"";}
+				else if($magnitude6>=5.8){echo "<div class=mag9-10>",number_format($magnitude6,1),"";}
+				else if($magnitude6>=5){echo "<div class=mag6-8>",number_format($magnitude6,1),"";}
+				else if($magnitude6>3){echo "<div class=mag4-5>",number_format($magnitude6,1),"";}		
+				else if($magnitude6<=3){echo "<div class=mag1-3>",number_format($magnitude6,1),"";}
 						
 				?>
 <div></div>
@@ -784,11 +784,11 @@ else if ($windunit == 'mph') {
 <article>  
    <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
     <?php //7
-				if($magnitude7>=7){echo "<div class=mag9-10>",$magnitude7,"";}
-				else if($magnitude7>=5.8){echo "<div class=mag9-10>",$magnitude7,"";}
-				else if($magnitude7>=5){echo "<div class=mag6-8>",$magnitude7,"";}
-				else if($magnitude7>3){echo "<div class=mag4-5>",$magnitude7,"";}				
-				else if($magnitude7<=3){echo "<div class=mag1-3>",$magnitude7,"";}		
+				if($magnitude7>=7){echo "<div class=mag9-10>",number_format($magnitude7,1),"";}
+				else if($magnitude7>=5.8){echo "<div class=mag9-10>",number_format($magnitude7,1),"";}
+				else if($magnitude7>=5){echo "<div class=mag6-8>",number_format($magnitude7,1),"";}
+				else if($magnitude7>3){echo "<div class=mag4-5>",number_format($magnitude7,1),"";}
+				else if($magnitude7<=3){echo "<div class=mag1-3>",number_format($magnitude7,1),"";}
 						
 				?>
 <div></div>
@@ -867,11 +867,11 @@ else if ($windunit == 'mph') {
 <article>  
    <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
     <?php //7
-				if($magnitude8>=7){echo "<div class=mag9-10>",$magnitude8,"";}
-				else if($magnitude8>=5.8){echo "<div class=mag9-10>",$magnitude8,"";}
-				else if($magnitude8>=5){echo "<div class=mag6-8>",$magnitude8,"";}
-				else if($magnitude8>3){echo "<div class=mag4-5>",$magnitude8,"";}				
-				else if($magnitude8<=3){echo "<div class=mag1-3>",$magnitude8,"";}	
+				if($magnitude8>=7){echo "<div class=mag9-10>",number_format($magnitude8,1),"";}
+				else if($magnitude8>=5.8){echo "<div class=mag9-10>",number_format($magnitude8,1),"";}
+				else if($magnitude8>=5){echo "<div class=mag6-8>",number_format($magnitude8,1),"";}
+				else if($magnitude8>3){echo "<div class=mag4-5>",number_format($magnitude8,1),"";}
+				else if($magnitude8<=3){echo "<div class=mag1-3>",number_format($magnitude8,1),"";}
 						
 				?>
 <div></div>

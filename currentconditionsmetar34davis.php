@@ -71,12 +71,16 @@ else if($weather["rain_rate"]>=10){echo $lang['Heavy Rain-Metar']; echo '<br>';e
 else if($weather["rain_rate"]>=5){echo $lang['Moderate Rain-Metar']; echo '<br>';echo $lang['Showers-Metar'];}
 else if($weather["rain_rate"]>0){echo $lang['Light Rain-Metar']; echo '<br>';echo $lang['Showers-Metar'];}
 //fog-weather34
-else if($weather["temp"] -$weather["dewpoint"] <0.8  && $now >$suns2 && $weather["temp"]>5){echo $lang['Fog'].'<br>'.$lang['Conditions']. ".$alert.";}
-else if($weather["temp"] -$weather["dewpoint"] <0.8  && $now <$sunr2 && $weather["temp"]>5) {echo $lang['Fog'].'<br>'.$lang['Conditions']. ".$alert.";}
-else if($weather["temp"] -$weather["dewpoint"] <0.8  && $weather["temp"]>5){echo $lang['Fog'].'<br>'.$lang['Conditions']. ".$alert.";}
+else if($weather["temp"] - $weather["dewpoint"] <0.5  && $now >$suns2 && $weather["temp"]>5){echo $lang['Foggy-Metar'].'<br>'.$lang['Conditions']. " $alert";}
+else if($weather["temp"] - $weather["dewpoint"] <0.5  && $now <$sunr2 && $weather["temp"]>5) {echo $lang['Foggy-Metar'].'<br>'.$lang['Conditions']. " $alert";}
+else if($weather["temp"] - $weather["dewpoint"] <0.5  && $weather["temp"]>5){echo $lang['Foggy-Metar'].'<br>'.$lang['Conditions']. " $alert";}
+
+else if($weather["temp"] - $weather["dewpoint"] <0.8  && $now >$suns2 && $weather["temp"]>5){echo $lang['Misty-Metar'].'<br>'.$lang['Conditions']. " $alert";}
+else if($weather["temp"] - $weather["dewpoint"] <0.8  && $now <$sunr2 && $weather["temp"]>5) {echo $lang['Misty-Metar'].'<br>'.$lang['Conditions']. " $alert";}
+else if($weather["temp"] - $weather["dewpoint"] <0.8  && $weather["temp"]>5){echo $lang['Misty-Metar'].'<br>'.$lang['Conditions']. " $alert";}
 //windy-weather34
-else if($weather["wind_speed_avg"]>=45){echo $lang['Neargale'].'<br>'.$lang['Conditions']. ".$alert.";}
-else if($weather["wind_speed_avg"]>=22){echo $lang['Windy'].'<br>'.$lang['Conditions']. ".$alert.";}
+else if($weather["wind_speed_avg"]>=45){echo $lang['Neargale'].'<br>'.$lang['Conditions']. " $alert";}
+else if($weather["wind_speed_avg"]>=22){echo $lang['Windy'].'<br>'.$lang['Conditions']. " $alert";}
 else if($weather["wind_speed_avg"]>=15){echo "Breezy <br>Conditions";}
 else if(filesize('jsondata/metar34.txt')<160){echo "<uppercase>Conditions<br>Not Available</uppercase>";} 
 //metar conditions-weather34
