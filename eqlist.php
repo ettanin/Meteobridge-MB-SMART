@@ -6,8 +6,7 @@ error_reporting(0);
 	#	CREATED FOR HOMEWEATHERSTATION TEMPLATE at https://weather34.com/homeweatherstation/index.html # 
 	# 	                                                                                               #
 	# 	                                                                                               #
-	# 	WEATHER34 EARTHQUAKES LISTING: 7th Feb 2018 												   #
-	#   Revised September 2019 (for regional and localized earthquakes)         					   #
+	# 	WEATHER34 EARTHQUAKES LISTING: 7th Feb 2018   	                                               #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
@@ -28,8 +27,7 @@ $depth = $data['features'][0]['properties']['depth'];
 $time = $data['features'][0]['properties']['time'];
 $lati = $data['features'][0]['properties']['lat'];
 $longi = $data['features'][0]['properties']['lon'];
-//$eventime =$data['features'][0]['properties']['time'];
-$eventime=date('M,D H:i',strtotime($time) );
+$eventime=date('jS M D H:i',strtotime($time) );
 $eqdist= round(distance($lat, $lon, $lati, $longi)) ;
 
 
@@ -40,7 +38,7 @@ $depth1 = $data['features'][1]['properties']['depth'];
 $time1 = $data['features'][1]['properties']['time'];
 $lati1 = $data['features'][1]['properties']['lat'];
 $longi1 = $data['features'][1]['properties']['lon'];
-$eventime1=date('M,D H:i',strtotime($time1) );
+$eventime1=date('jS M D H:i',strtotime($time1) );
 $eqdist1= round(distance($lat, $lon, $lati1, $longi1)) ;
 
 
@@ -51,7 +49,7 @@ $depth2 = $data['features'][2]['properties']['depth'];
 $time2 = $data['features'][2]['properties']['time'];
 $lati2 = $data['features'][2]['properties']['lat'];
 $longi2 = $data['features'][2]['properties']['lon'];
-$eventime2=date('M,D H:i',strtotime($time2) );
+$eventime2=date('jS M D H:i',strtotime($time2) );
 $eqdist2= round(distance($lat, $lon, $lati2, $longi2)) ;
 
 
@@ -61,7 +59,7 @@ $depth3 = $data['features'][3]['properties']['depth'];
 $time3 = $data['features'][3]['properties']['time'];
 $lati3 = $data['features'][3]['properties']['lat'];
 $longi3 = $data['features'][3]['properties']['lon'];
-$eventime3=date('M,D H:i',strtotime($time3) );
+$eventime3=date('jS M D H:i',strtotime($time3) );
 $eqdist3= round(distance($lat, $lon, $lati3, $longi3)) ;
 
 
@@ -72,7 +70,7 @@ $depth4 = $data['features'][4]['properties']['depth'];
 $time4 = $data['features'][4]['properties']['time'];
 $lati4 = $data['features'][4]['properties']['lat'];
 $longi4 = $data['features'][4]['properties']['lon'];
-$eventime4=date('M,D H:i',strtotime($time4) );
+$eventime4=date('jS M D H:i',strtotime($time4) );
 $eqdist4= round(distance($lat, $lon, $lati4, $longi4)) ;
 
 $magnitude5 = $data['features'][5]['properties']['mag'];
@@ -81,7 +79,7 @@ $depth5 = $data['features'][5]['properties']['depth'];
 $time5 = $data['features'][5]['properties']['time'];
 $lati5 = $data['features'][5]['properties']['lat'];
 $longi5 = $data['features'][5]['properties']['lon'];
-$eventime5=date('M,D H:i',strtotime($time5) );
+$eventime5=date('jS M D H:i',strtotime($time5) );
 $eqdist5= round(distance($lat, $lon, $lati5, $longi5)) ;
 
 $magnitude6 = $data['features'][6]['properties']['mag'];
@@ -90,7 +88,7 @@ $depth6 = $data['features'][6]['properties']['depth'];
 $time6 = $data['features'][6]['properties']['time'];
 $lati6 = $data['features'][6]['properties']['lat'];
 $longi6 = $data['features'][6]['properties']['lon'];
-$eventime6=date('M,D H:i',strtotime($time6) );
+$eventime6=date('jS M D H:i',strtotime($time6) );
 $eqdist6= round(distance($lat, $lon, $lati6, $longi6)) ;
 
 $magnitude7 = $data['features'][7]['properties']['mag'];
@@ -99,7 +97,7 @@ $depth7 = $data['features'][7]['properties']['depth'];
 $time7 = $data['features'][7]['properties']['time'];
 $lati7 = $data['features'][7]['properties']['lat'];
 $longi7 = $data['features'][7]['properties']['lon'];
-$eventime7=date('M,D H:i',strtotime($time7) );
+$eventime7=date('jS M D H:i',strtotime($time7) );
 $eqdist7= round(distance($lat, $lon, $lati7, $longi7)) ;
 
 
@@ -109,7 +107,7 @@ $depth8 = $data['features'][8]['properties']['depth'];
 $time8 = $data['features'][8]['properties']['time'];
 $lati8 = $data['features'][8]['properties']['lat'];
 $longi8 = $data['features'][8]['properties']['lon'];
-$eventime8=date('M,D H:i', strtotime($time8) );
+$eventime8=date('jS M D H:i', strtotime($time8) );
 $eqdist8= round(distance($lat, $lon, $lati8, $longi8)) ;
 
 
@@ -210,7 +208,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .svgimage{background:rgba(0, 155, 171, 1.000);-webit-border-radius:2px;border-radius:2px;}
 orange1{color:rgba(255, 131, 47, 1.000);}
 </style>
-<div class="weather34darkbrowser" url=" <?php echo $stationlocation?> Regional Recent Earthquakes "></div>
+<div class="weather34darkbrowser" url="Turkey & Regional Recent Earthquakes "></div>
   
 <main class="grid">
   <article>  
