@@ -162,12 +162,12 @@ if ($positionlastmodule=='moonphase.php') { echo'<a href="mooninfo.php" data-lit
 if ($positionlastmodule=='airqualitymodule.php') {echo ' <a href="purpleair.php" data-lity><weather34homepagelinks></weather34homepagelinks>  '.$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";}
 if ($positionlastmodule=='airqualityluftdaten.php') {echo ' <a href="luftdaten.php" data-lity><weather34homepagelinks></weather34homepagelinks>  Luftdaten '.$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";}
 if ($positionlastmodule=='lightning34.php') {echo ' <a href="luftdaten.php" data-lity><weather34homepagelinks></weather34homepagelinks>  Luftdaten '.$lang['Air Quality']. " </a>&nbsp;&nbsp;</span>";}
-if ($positionlastmodule=='lightning34.php') { echo ' <a href="eqlist.php" data-lity><weather34homepagelinks></weather34homepagelinks>  '.$lang['Worldwideearthquakes']. "</a>&nbsp;&nbsp;</span>";}	
+if ($positionlastmodule=='lightning34.php') { echo ' <a href="eqlist.php" data-lity><weather34homepagelinks></weather34homepagelinks> Regional '.$lang['Earthquake']."</a>&nbsp;&nbsp;</span>";}	
 if ($positionlastmodule=='weather34uvsolar.php') { echo ' <a href="uvalmanac.php" data-lity><weather34homepagelinks></weather34homepagelinks>   UV '.$lang['Almanac']. '  </a></span>&nbsp;&nbsp;';}
 if ($positionlastmodule=='weather34uvsolar.php') { echo ' <a href="solaralmanac.php" data-lity><weather34homepagelinks></weather34homepagelinks>  Solar '.$lang['Almanac']. '  </a></span>';}
 if ($positionlastmodule=='solaruvwu.php') { echo ' <a href="uvindexwu.php" data-lity><weather34homepagelinks></weather34homepagelinks> UV Guide </a></span>';}
 if ($positionlastmodule=='solaruvwu.php') { echo ' <a href="solaralmanac.php" data-lity><weather34homepagelinks></weather34homepagelinks>  Solar '.$lang['Almanac']. "</a>&nbsp;&nbsp;</span>";}
-if ($positionlastmodule=='airqualitymodule.php') {echo '<a href="eqlist.php" data-lity><weather34homepagelinks></weather34homepagelinks>  '.$lang['Worldwideearthquakes']. "</a>&nbsp;&nbsp;</span>";}?>
+if ($positionlastmodule=='airqualitymodule.php') {echo '<a href="eqlist.php" data-lity><weather34homepagelinks></weather34homepagelinks> Regional '.$lang['Earthquakes']. "</a>&nbsp;&nbsp;</span>";}?>
 	</div>
  <div id=dldata></div></weather34module>
  
@@ -212,7 +212,7 @@ if ($positionlastmodule=='airqualitymodule.php') {echo '<a href="eqlist.php" dat
   <main class="grid4">
   <weather34topmodule>
   <div class="weather34box">
-  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Earthquake']?></div>
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp; Recent Regional <?php echo $lang['Earthquake']?></div>
   <div id=earthquake></div></div></weather34topmodule> 
  
   <weather34topmodule>

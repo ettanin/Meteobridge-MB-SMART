@@ -9,7 +9,7 @@ include_once('livedata.php');include('common.php');?>
 ?></sup></smallrainunita></div></div>
 <div class="heatcircle"><div class="heatcircle-content">
 <?php  //rain year
-echo " &nbsp;<valuetextheading1>".date('Y')."</valuetextheading1> <br><div class=tempconverter1><div class=rainmodulehome><raiblue>";if($weather["rain_year"]>=1000){echo round($weather["rain_year"],0);}else if($weather["rain_year"]<1000){echo $weather["rain_year"];}echo "</raiblue><smallrainunit2>".$weather["rain_units"];?>
+echo " &nbsp;<valuetextheading1>".date('Y')."</valuetextheading1> <br><div class=tempconverter1><div class=rainmodulehome><raiblue>";if($weather["rain_year"]>=1000){echo number_format($weather["rainymax"],1,'.','');}else if($weather["rain_year"]<1000){echo $weather["rain_year"];}echo "</raiblue><smallrainunit2>".$weather["rain_units"];?>
 <smallrainunit2></div></div></div>
 <div class="heatcircle2"><div class="heatcircle-content">
 <?php  //rain month
