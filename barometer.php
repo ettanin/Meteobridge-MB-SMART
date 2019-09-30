@@ -67,9 +67,6 @@ else echo '<div class="pressuretext"> <ogreen>'.$lang['Steady'].'</ogreen> </div
 <div class="barometerlimits"><div class='weather34-barometerruler'>
 <?php if ($weather["barometer_units"]=='mb' OR $weather["barometer_units"]=="hPa"){echo "<weather34-barometerlimitmin><value>950</weather34-barometerlimitmin><weather34-barometerlimitmax><value>1050</weather34-barometerlimitmax>";}
 else echo "<weather34-barometerlimitminf><value>28</barometerlimitminf><weather34-barometerlimitmaxf><value>31</weather34-barometerlimitmaxf>";?></div></div></div>
-
-
-
 <?php //WEATHER34 pure css UV-Index above 8  pop up alert 
  if ($notifications=='yes' && $weather["uv"]>=8){?><div id="weather34lightningdialog-notify">  <div class="weather34lightningdialog-box">
 <div class="weather34lightningbackground-alert"></div><div class="header"> <div class="weather34lightningbackground-alert"></div>
@@ -112,70 +109,3 @@ else echo "Wind Gusts Becoming Strong Caution Required <notifyorange>" .$weather
 <div class="right"><?php echo date ("D H:i")?></div></div></div>
 <div class="weather34lightningcontents weather34lightningmain-content"><?php echo $freezing."Dewpoint Caution<br>Below Freezing <notifyblue>" .$weather["dewpoint"],"&deg;",$weather["temp_units"]?>
 <?php ;}?></notifyblue></div></div>
-
-
-<?php //earthquakes magnitude 6+
-date_default_timezone_set($TZ);
-$json_string=file_get_contents('jsondata/eqnotification.txt');
-$parsed_json=json_decode($json_string,true);$magnitude = array();$eqtitle = array();$depth = array();$time = array();$lati = array();$longi = array();$eventime = array();
-for ($i = 0; $i < 100; $i++) {
-$magnitude[$i]=$parsed_json{$i}{'magnitude'};$eqtitle[$i]=$parsed_json{$i}['title'];$depth[$i]=$parsed_json{$i}['depth'];$time[$i]=$parsed_json{$i}['date_time'];
-$lati[$i]=$parsed_json{$i}['latitude'];$longi[$i]=$parsed_json{$i}['longitude'];$eventime[$i]=date($timeFormatShort, strtotime($time[$i]) );$eqdist[$i] = round(distance($lat, $lon, $lati[$i], $longi[$i])) ;
-}
-//WEATHER34 pure css earthquake >6.5 pop up alert 
- if($notifications=='yes' && $magnitude[0]>6.5){?><div id="weather34lightningdialog-notify">  <div class="weather34lightningdialog-box">
-<div class="weather34lightningbackground-alert"></div><div class="header"> <div class="weather34lightningbackground-alert"></div>
-<div class="weather34lightningcontents"><div class="left"><?php echo $notification ?> Notification</div>
-<div class="right"><?php echo date ("D H:i")?></div></div></div>
-<div class="weather34lightningcontents weather34lightningmain-content">     
-<?php echo "Earthquake <br>Strong  <notifyorange>" .$magnitude[0],"</notifyorange> ", $eqtitle[0]," ",$eventime[0];?>
-<?php ;}?>
-<?php
-if($notifications=='yes' && $magnitude[1]>6.5){?><div id="weather34lightningdialog-notify">  <div class="weather34lightningdialog-box">
-<div class="weather34lightningbackground-alert"></div><div class="header"> <div class="weather34lightningbackground-alert"></div>
-<div class="weather34lightningcontents"><div class="left"><?php echo $notification ?> Notification</div>
-<div class="right"><?php echo date ("D H:i")?></div></div></div>
-<div class="weather34lightningcontents weather34lightningmain-content">     
-<?php echo "Earthquake <br>Strong  <notifyorange>" .$magnitude[1],"</notifyorange> ", $eqtitle[1]," ",$eventime[1];?>
-<?php ;}?>
-<?php
-if($notifications=='yes' && $magnitude[2]>6.5){?><div id="weather34lightningdialog-notify">  <div class="weather34lightningdialog-box">
-<div class="weather34lightningbackground-alert"></div><div class="header"> <div class="weather34lightningbackground-alert"></div>
-<div class="weather34lightningcontents"><div class="left"><?php echo $notification ?> Notification</div>
-<div class="right"><?php echo date ("D H:i")?></div></div></div>
-<div class="weather34lightningcontents weather34lightningmain-content">     
-<?php echo "Earthquake <br>Strong  <notifyorange>" .$magnitude[2],"</notifyorange> ", $eqtitle[2]," ",$eventime[2];?>
-<?php ;}?>
-<?php
-if($notifications=='yes' && $magnitude[3]>6.5){?><div id="weather34lightningdialog-notify">  <div class="weather34lightningdialog-box">
-<div class="weather34lightningbackground-alert"></div><div class="header"> <div class="weather34lightningbackground-alert"></div>
-<div class="weather34lightningcontents"><div class="left"><?php echo $notification ?> Notification</div>
-<div class="right"><?php echo date ("D H:i")?></div></div></div>
-<div class="weather34lightningcontents weather34lightningmain-content">     
-<?php echo "Earthquake <br>Strong  <notifyorange>" .$magnitude[3],"</notifyorange> ", $eqtitle[3]," ",$eventime[3];?>
-<?php ;}?>
-<?php
-if($notifications=='yes' && $magnitude[4]>6.5){?><div id="weather34lightningdialog-notify">  <div class="weather34lightningdialog-box">
-<div class="weather34lightningbackground-alert"></div><div class="header"> <div class="weather34lightningbackground-alert"></div>
-<div class="weather34lightningcontents"><div class="left"><?php echo $notification ?> Notification</div>
-<div class="right"><?php echo date ("D H:i")?></div></div></div>
-<div class="weather34lightningcontents weather34lightningmain-content">     
-<?php echo "Earthquake <br>Strong  <notifyorange>" .$magnitude[4],"</notifyorange> ", $eqtitle[4]," ",$eventime[4];?>
-<?php ;}?>
-<?php
-if($notifications=='yes' && $magnitude[5]>6.5){?><div id="weather34lightningdialog-notify">  <div class="weather34lightningdialog-box">
-<div class="weather34lightningbackground-alert"></div><div class="header"> <div class="weather34lightningbackground-alert"></div>
-<div class="weather34lightningcontents"><div class="left"><?php echo $notification ?> Notification</div>
-<div class="right"><?php echo date ("D H:i")?></div></div></div>
-<div class="weather34lightningcontents weather34lightningmain-content">     
-<?php echo "Earthquake <br>Strong  <notifyorange>" .$magnitude[5],"</notifyorange> ", $eqtitle[5];?>
-<?php ;}?>
-<?php
-if($notifications=='yes' && $magnitude[6]>6.5){?><div id="weather34lightningdialog-notify">  <div class="weather34lightningdialog-box">
-<div class="weather34lightningbackground-alert"></div><div class="header"> <div class="weather34lightningbackground-alert"></div>
-<div class="weather34lightningcontents"><div class="left"><?php echo $notification ?> Notification</div>
-<div class="right"><?php echo date ("D H:i")?></div></div></div>
-<div class="weather34lightningcontents weather34lightningmain-content">     
-<?php echo "Earthquake <br>Strong  <notifyorange>" .$magnitude[6],"</notifyorange> ", $eqtitle[6]," ",$eventime[6];?>
-<?php ;}?>
-</div></div>

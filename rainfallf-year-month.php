@@ -11,9 +11,8 @@
 include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);$raintimeago=$originalDate124;$seconds_ago = (time() - strtotime($raintimeago));?>
 <div class="topframe">
 <div class="rainmaxthismonth">
-<?php //rain month 
-if($weather["rainmmax"]>=1000 && $weather["rain_units"] =='mm'){ echo "<maxtempblue>".round($weather["rainmmax"],0,'.','');}
-else  echo "<maxtempblue>".$weather["rainmmax"]  ;echo "</maxtempblue><wunit>".$weather["rain_units"];
+<?php //rain year 
+if($weather["rainmmax"]>=0 && $weather["rain_units"] =='mm'){ echo "<maxtempblue>".number_format($weather["rainmmax"],1,'.','');echo "</maxtempblue><wunit>".$weather["rain_units"];}if ($weather["rain_units"] =='in'){echo "<maxtempblue>&nbsp;&nbsp;".$weather["rainmmax"]  ;echo "</maxtempblue><wunit>".$weather["rain_units"];}
 ?>
 </div></wunit>
 
@@ -44,11 +43,7 @@ else if ($seconds_ago >= 60) {echo '&nbsp;'.intval($seconds_ago / 60) . ' <lastr
 <div class="yearwordwindbig">Rainfall</div>
 <div class="rainmaxthisyear">
 <?php //rain year 
-if($weather["rainymax"]>=0 && $weather["rain_units"] =='mm'){ echo "<maxtempblue>".number_format($weather["rainymax"],1,'.','');echo "</maxtempblue><wunit>".$weather["rain_units"];}
-//if($weather["rainymax"]<1000 && $weather["rain_units"] =='mm'){ echo "<maxtempblue>".round($weather["rainymax"],0,'.','');}
-
-if ($weather["rain_units"] =='in'){echo "<maxtempblue>&nbsp;&nbsp;".$weather["rainymax"]  ;echo "</maxtempblue><wunit>".$weather["rain_units"];}
-//else  echo "<maxtempblue>".$weather["rainymax"]  ;echo "</maxtempblue><wunit>".$weather["rain_units"];
+if($weather["rainymax"]>=0 && $weather["rain_units"] =='mm'){ echo "<maxtempblue>".number_format($weather["rainymax"],1,'.','');echo "</maxtempblue><wunit>".$weather["rain_units"];}if ($weather["rain_units"] =='in'){echo "<maxtempblue>&nbsp;&nbsp;".$weather["rainymax"]  ;echo "</maxtempblue><wunit>".$weather["rain_units"];}
 ?>
 </div></wunit>
 <div class="wyearmax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo date('Y')?></div>
