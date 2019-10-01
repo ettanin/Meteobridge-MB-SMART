@@ -92,8 +92,8 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
  <main class="grid1">
   <articlegraph> 
   <div class=actualt><?php echo $lang['Today']?>
-  <temp>Wind <?php echo "Max ",$weather["winddmax"]." <smalluvunit>".$weather["wind_units"]?> </smalluvunit></temp> 
-  <dewpoint>Wind <?php echo $lang['Average']. $weather['wind_speed_avg30']." <smalluvunit>".$weather["wind_units"]?> </smalluvunit></dewpoint></div>  
+  <temp><?php echo $lang['Wind']?> <?php echo "Max ",$weather["winddmax"]." <smalluvunit>".$weather["wind_units"]?> </smalluvunit></temp> 
+  <dewpoint><?php echo $lang['Wind']?> <?php echo $lang['Average']. " ".$weather['wind_speed_avg30']." <smalluvunit>".$weather["wind_units"]?> </smalluvunit></dewpoint></div>  
   <iframe  src="weather34charts/todaywindspeedsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
