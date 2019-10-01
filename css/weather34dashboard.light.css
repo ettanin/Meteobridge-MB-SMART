@@ -7858,7 +7858,7 @@ airdescription {
   font-family: weathertext2;
   display: flex;
   top: 5px;
-  left: 75px;
+  left: 85px;
   text-transform: capitalize;
 }
 

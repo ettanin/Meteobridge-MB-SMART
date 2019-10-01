@@ -44,8 +44,8 @@
  else if ($weather["temp_units"]=='F' && $weather["dewmmax"]>-50){ echo "<maxtempblue>", $weather["dewmmax"]  ;echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"] ; }
  ?></div></tunit>
 
-<div class="tyearavg">&nbsp;<?php echo strftime('%B',time());?></div>
-<div class="tavgconv" style="margin-left:-9px;"><?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue>".$weather["dewmmin"]."</maxtempblue>&deg";?>
+<div class="tyearavg"><?php echo strftime('%B',time());?></div>
+<div class="tavgconv" style="margin-left:-5px;"><?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue>".$weather["dewmmin"]."</maxtempblue>&deg";?>
 </div>
 
 

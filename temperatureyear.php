@@ -32,10 +32,7 @@ include('livedata.php');include('common.php');header('Content-type: text/html; c
 <div class="tmonthmax" style="margin-left:-5px;"><?php echo $weather["tempymintime2"]?></div>
 <div class="tmonthconv" style="margin-left:-3px;"><?php echo $lang['Lowest']?></div>
 
-
-
 <div class="tempavgthisyear" >
-
 <?php //temperture max current month
  if ($weather["temp_units"]=='C' && $weather["tempmmax"]>30){echo "<maxtempred>",$weather["tempmmax"]  ;echo "</maxtempred><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='C' && $weather["tempmmax"]>24){echo "<maxtemporange>",$weather["tempmmax"]  ;echo "</maxtemporange><tunit1>&deg;".$weather["temp_units"] ; }
@@ -54,13 +51,9 @@ include('livedata.php');include('common.php');header('Content-type: text/html; c
  else if ($weather["temp_units"]=='F' && $weather["tempmmax"]>-50){ echo "<maxtempblue>", $weather["tempmmax"]  ;echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"] ; }
  ?></div></tunit>
 
-<div class="tyearavg">&nbsp;<?php echo strftime('%B',time());?></div>
+<div class="tyearavg"><?php echo strftime('%B',time());?></div>
 <div class="tavgconv" style="margin-left:-9px;"><?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue>".$weather["tempmmin"]."</maxtempblue>&deg";?>
 </div>
-
-
-
-
 
 <div class="yearwordtempbig">Temperature</div>
 <div class="tempmaxthisyear">

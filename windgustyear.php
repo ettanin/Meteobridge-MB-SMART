@@ -26,7 +26,7 @@ if ($weather["wind_units"]=='km/h' && $weather["windmmax"]>60){echo "<maxtempred
 
  ;?></div></wunit>
 <div class="wmonthmax"> <?php echo strftime('%B',time());?></div>
-<div class="wmonthconv">&nbsp;&nbsp;<?php echo $lang['Highest']?></div>
+<div class="wmonthconv"><?php echo $lang['Highest']?></div>
 
 <div class="tempavgthisyear">
 <wind-dir-avgmonth>
@@ -66,7 +66,7 @@ if ($weather['wind_direction_avgmonth']<=11.25) {
 } elseif ($weather['wind_direction_avgmonth']<=360) {
     echo "&nbsp;&nbsp;&nbsp;".$lang['North'];
 }"&deg;"?></wind-dir-avgmonth></div>
-<div class="tyearavg" style="margin-left:5px;">&nbsp;<?php echo strftime('%B',time());?></div>
+<div class="tyearavg" >&nbsp;<?php echo strftime('%B',time());?></div>
 <div class="tavgconv" style="margin-left:-10px;"><?php echo $lang['Avg-Dir']." " .$lang['Direction']?></div>
 
 <div class="yearwordwindbig">Wind Data</div>
@@ -85,6 +85,6 @@ if ($weather["wind_units"]=='km/h' && $weather["windymax"]>60){echo "<maxtempred
  else if ($weather["wind_units"]=='mph' && $weather["windymax"]>-50){ echo "<maxtempblue>", $weather["windymax"]."</maxtempblue><wunit>".$weather["wind_units"] ; }
 
  ;?></div></wuunit>
-<div class="wyearmax"style="margin-left:2px;"><?php echo $weather["windymaxtime2"]?></div>
-<div class="wyearconv" style="margin-left:5px;"><?php echo $lang['Highest']?></div>
+<div class="wyearmax"><?php echo $weather["windymaxtime2"]?></div>
+<div class="wyearconv"><?php echo $lang['Highest']?></div>
 
