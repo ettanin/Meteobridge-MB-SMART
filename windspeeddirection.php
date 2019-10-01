@@ -71,6 +71,21 @@ elseif ($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]*$toKnots>=2
 } elseif ($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]*$toKnots<16.1987) {
     echo "<div class=windconvertercirclegreen1><tgreen>".number_format($weather["wind_gust_speed"]*1.609343502101025, 1)." </tgreen><smallrainunit>kmh</smallrainunit>";
 }
+
+//weather34-convert mph to kmh
+elseif ($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]*$toKnots>=26.9978) {
+    echo "<div class=windconvertercirclered1><tred>".number_format($weather["wind_gust_speed"]*1.609343502101025, 1)." </tred><smallrainunit>kmh</smallrainunit>";
+} elseif ($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]*$toKnots>=21.5983) {
+    echo "<div class=windconvertercircleorange1><torange>".number_format($weather["wind_gust_speed"]*1.609343502101025, 1)." </torange><smallrainunit>kmh</smallrainunit>";
+} elseif ($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]*$toKnots>=16.1987) {
+    echo "<div class=windconvertercircleblue1>".number_format($weather["wind_gust_speed"]*1.609343502101025, 1)." <smallrainunit>kmh</smallrainunit>";
+} elseif ($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]*$toKnots<16.1987) {
+    echo "<div class=windconvertercirclegreen1><tgreen>".number_format($weather["wind_gust_speed"]*1.609343502101025, 1)." </tgreen><smallrainunit>kmh</smallrainunit>";
+}
+
+
+
+
 ?></div></div>
 <div class="homeweathercompass1"><div class="homeweathercompass-line1"><div class="thearrow2"></div><div class="thearrow1"></div></div>
 <div class="text1"><div class="windvalue1" id="windvalue"><?php echo $weather["wind_direction"],"&deg;";?></div></div>

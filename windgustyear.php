@@ -23,6 +23,14 @@ if ($weather["wind_units"]=='km/h' && $weather["windmmax"]>60){echo "<maxtempred
  else if ($weather["wind_units"]=='mph' && $weather["windmmax"]>18){echo "<maxtempyellow>",$weather["windmmax"]."</maxtempyellow><wunit>".$weather["wind_units"] ; }
  else if ($weather["wind_units"]=='mph' && $weather["windmmax"]>6){ echo "<maxtempgreen>", $weather["windmmax"]."</maxtempgreen><wunit>".$weather["wind_units"] ; }
  else if ($weather["wind_units"]=='mph' && $weather["windmmax"]>-50){ echo "<maxtempblue>", $weather["windmmax"]."</maxtempblue><wunit>".$weather["wind_units"] ; }
+ 
+ 
+ if ($weather["wind_units"]=='m/s' && $weather["windmmax"]>16.6){echo "<maxtempred>",$weather["windmmax"]."</maxtempred><wunit>".$weather["wind_units"] ; }
+ else if ($weather["wind_units"]=='m/s' && $weather["windmmax"]>11.1){echo "<maxtemporange>",$weather["windmmax"]."</maxtemporange><wunit>".$weather["wind_units"] ; }
+ else if ($weather["wind_units"]=='m/s' && $weather["windmmax"]>8.3){echo "<maxtempyellow>",$weather["windmmax"]."</maxtempyellow><wunit>".$weather["wind_units"] ; }
+ else if ($weather["wind_units"]=='m/s' && $weather["windmmax"]>2.7){ echo "<maxtempgreen>", $weather["windmmax"]."</maxtempgreen><wunit>".$weather["wind_units"] ; }
+ else if ($weather["wind_units"]=='m/s' && $weather["windmmax"]>-50){ echo "<maxtempblue>", $weather["windmmax"]."</maxtempblue><wunit>".$weather["wind_units"] ; }
+ 
 
  ;?></div></wunit>
 <div class="wmonthmax"> <?php echo strftime('%b',time())." ".date('Y');?></div>
@@ -83,6 +91,13 @@ if ($weather["wind_units"]=='km/h' && $weather["windymax"]>60){echo "<maxtempred
  else if ($weather["wind_units"]=='mph' && $weather["windymax"]>18){echo "<maxtempyellow>",$weather["windymax"]."</maxtempyellow><wunit>".$weather["wind_units"] ; }
  else if ($weather["wind_units"]=='mph' && $weather["windymax"]>6){ echo "<maxtempgreen>", $weather["windymax"]."</maxtempgreen><wunit>".$weather["wind_units"] ; }
  else if ($weather["wind_units"]=='mph' && $weather["windymax"]>-50){ echo "<maxtempblue>", $weather["windymax"]."</maxtempblue><wunit>".$weather["wind_units"] ; }
+ 
+ if ($weather["wind_units"]=='m/s' && $weather["windymax"]>16.6){echo "<maxtempred>",$weather["windymax"]."</maxtempred><wunit>".$weather["wind_units"] ; }
+ else if ($weather["wind_units"]=='m/s' && $weather["windymax"]>11.1){echo "<maxtemporange>",$weather["windymax"]."</maxtemporange><wunit>".$weather["wind_units"] ; }
+ else if ($weather["wind_units"]=='m/s' && $weather["windymax"]>8.3){echo "<maxtempyellow>",$weather["windymax"]."</maxtempyellow><wunit>".$weather["wind_units"] ; }
+ else if ($weather["wind_units"]=='m/s' && $weather["windymax"]>2.7){ echo "<maxtempgreen>", $weather["windymax"]."</maxtempgreen><wunit>".$weather["wind_units"] ; }
+ else if ($weather["wind_units"]=='m/s' && $weather["windymax"]>-50){ echo "<maxtempblue>", $weather["windymax"]."</maxtempblue><wunit>".$weather["wind_units"] ; }
+
 
  ;?></div></wuunit>
 <div class="wyearmax"><?php echo $weather["windymaxtime2"]?></div>
