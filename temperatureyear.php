@@ -51,7 +51,7 @@ include('livedata.php');include('common.php');header('Content-type: text/html; c
  else if ($weather["temp_units"]=='F' && $weather["tempmmax"]>-50){ echo "<maxtempblue>", $weather["tempmmax"]  ;echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"] ; }
  ?></div></tunit>
 
-<div class="tyearavg"><?php echo strftime('%B',time());?></div>
+<div class="tyearavg"><?php echo strftime('%b',time())." ".date('Y')?></div>
 <div class="tavgconv" style="margin-left:-9px;"><?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue>".$weather["tempmmin"]."</maxtempblue>&deg";?>
 </div>
 

@@ -28,25 +28,15 @@ $eqdista;if ($weather["wind_units"] == 'mph') {$eqdista = round(distance($lat, $
 
 if ($magnitude <= 4.2 && $eqdist<150) {
     echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>".number_format($magnitude,1)."</div>	
-	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minor</div></div>
+	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minor</div></div>
 	<div class='eqtext2'><regionalred>Local Alert $heatindexalert8 </regionalred><br><blue> $eqtitle </blue><br>$eventime<br>
 	Epicenter: <maxred>$eqdist</maxred> from<br> $stationlocation</div>";
 } 
 
 
-
-else if ($magnitude <= 4.2 && $eqdist<150) {
-    echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>".number_format($magnitude,1)."</div>	
-	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minor</div></div>
-	<div class='eqtext2'><regionalred>Awareness Alert $heatindexalert8 </regionalred><br><blue> $eqtitle </blue><br>$eventime<br>
-	Epicenter: <maxred>$eqdist</maxred> from<br> $stationlocation</div>";
-} 
-
-
-
 else if ($magnitude <= 4.2 ) {
     echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>".number_format($magnitude,1)."</div>	
-	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minor</div></div>
+	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minor</div></div>
 	<div class='eqtext'><blue>$eqtitle </blue><br>$eventime<br>
 	Epicenter: <maxred>$eqdist</maxred>  from<br> $stationlocation</div>";
 } 

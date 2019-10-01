@@ -26,7 +26,7 @@ echo "<maxtempblue>".$weather["thb0seapressymin"];echo "</maxtempblue><wunit>".$
 <?php echo "<maxtemporange>".$weather["thb0seapressmmax"];echo "</maxtemporange><wunit>".$weather["barometer_units"];?>
 </div></wunit>
 
-<div class="ryearavg">&nbsp;<?php echo strftime('%B',time());?></div>
+<div class="ryearavg">&nbsp;&nbsp;<?php echo strftime('%b',time())." ".date('Y');?></div>
 <div class="tavgconv" style="margin-left:-12px;">&nbsp;<?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue>".$weather["thb0seapressmmin"];echo "</maxtempblue>";?>
 </div>
 

@@ -20,7 +20,7 @@
  else if ($weather["humidity_mmax"]>0){echo "<maxtempred>",$weather["humidity_mmax"]  ;echo "</maxtempred><tunit1>%"; }
  ?></div></tunit1>
 
-<div class="tyearavg" style="margin-left:-4px;"><?php echo strftime('%B',time());?></div>
+<div class="tyearavg" style="margin-left:-4px;"><?php echo strftime('%b',time())." ".date('Y');?></div>
 
 <div class="tavgconv" style="margin-left:-12px;"><?php echo $lang['Lowest']?>&nbsp; 
 <?php 

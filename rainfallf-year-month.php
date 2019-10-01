@@ -18,7 +18,7 @@ if ($weather["rain_units"] =='in'){echo "<maxtempblue>".$weather["rainmmax"]  ;e
 ?>
 </div></wunit>
 
-<div class="wmonthmax" ><?php echo strftime('%B',time());?></div>
+<div class="wmonthmax" > <?php echo strftime('%b',time())." ".date('Y');?></div>
 <div class="tmonthconv" style="margin-left:-12px;"><?php echo $lang['Accumulation']?></div>
 
 
@@ -28,7 +28,7 @@ if ($weather["rain_units"] =='in'){echo "<maxtempblue>".$weather["rainmmax"]  ;e
 //weather34 last month
 if($meteobridgeapi[124]=='--'){	
 echo "<maxtempblue>".$weather["rainlastmonth"]."</maxtempblue><wunit style='top:0'>".$weather["rain_units"].'</div></wunit>';
-echo ' <div class="ryearavg">'.$lastMonth = strftime('%B',strtotime("-1 month")) .$lastMonth; 
+echo ' <div class="ryearavg">'.$lastMonth = strftime('%b',strtotime("-1 month"))." ".date('Y') .$lastMonth; 
 echo '</div><div class="tavgconv" style="margin-left:-12px;">'.$lang['Accumulation'].'</div>';}
 //weather34 last rainfall simple standard php method
 else if ($seconds_ago >= 31536000) { echo '&nbsp;'.intval($seconds_ago / 31536000) . ' <lastrain>'.$lang['Year'].'</lastrain></maxtempblue></div></wunit><div class="ryearavg">'.$lang['Last Rainfall'].'</div><div class="tavgconv">&nbsp;&nbsp;&nbsp;'.$lang['Ago'].'</div>';}
