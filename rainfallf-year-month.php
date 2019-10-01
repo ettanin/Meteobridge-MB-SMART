@@ -11,7 +11,7 @@
 include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);$raintimeago=$originalDate124;$seconds_ago = (time() - strtotime($raintimeago));?>
 <div class="topframe">
 <div class="rainmaxthismonth">
-<?php //rain year 
+<?php //rain month
 if($weather["rainmmax"]>=0 && $weather["rain_units"] =='mm'){ echo "<maxtempblue>".number_format($weather["rainmmax"],1,'.','');echo "</maxtempblue><wunit>".$weather["rain_units"];}if ($weather["rain_units"] =='in'){echo "<maxtempblue>&nbsp;&nbsp;".$weather["rainmmax"]  ;echo "</maxtempblue><wunit>".$weather["rain_units"];}
 ?>
 </div></wunit>
@@ -26,7 +26,7 @@ if($weather["rainmmax"]>=0 && $weather["rain_units"] =='mm'){ echo "<maxtempblue
 //weather34 last month
 if($meteobridgeapi[124]=='--'){	
 echo "<maxtempblue>".$weather["rainlastmonth"]."</maxtempblue><wunit style='top:0'>".$weather["rain_units"].'</div></wunit>';
-echo ' <div class="ryearavg">&nbsp;'.$lastMonth = strftime('%B',time()- 31*3600*24) .$lastMonth; 
+echo ' <div class="ryearavg">'.$lastMonth = strftime('%B',strtotime("-1 month")) .$lastMonth; 
 echo '</div><div class="tavgconv" style="margin-left:-12px;">'.$lang['Accumulation'].'</div>';}
 //weather34 last rainfall simple standard php method
 else if ($seconds_ago >= 31536000) { echo '&nbsp;'.intval($seconds_ago / 31536000) . ' <lastrain>'.$lang['Year'].'</lastrain></maxtempblue></div></wunit><div class="ryearavg">'.$lang['Last Rainfall'].'</div><div class="tavgconv">&nbsp;&nbsp;&nbsp;'.$lang['Ago'].'</div>';}
