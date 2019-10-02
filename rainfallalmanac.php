@@ -21,7 +21,7 @@ html,body{font-size:13px;font-family: "weathertext2", Helvetica, Arial, sans-ser
 	-moz-osx-font-smoothing: grayscale;}
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 2fr));
   grid-gap: 5px;
   align-items: stretch;
   color:#f5f7fc;
@@ -82,8 +82,8 @@ smalluvunit{font-size:.6rem;font-family:Arial,Helvetica,system;}
 .almanac{font-size:1.25em;margin-top:30px;color:rgba(56, 56, 60, 1.000);width:12em}
 metricsblue{color:#44a6b5;font-family:"weathertext2",Helvetica, Arial, sans-serif;background:rgba(86, 95, 103, 0.5);-webkit-border-radius:2px;border-radius:2px;align-items:center;justify-content:center;font-size:.9em;left:10px;padding:0 3px 0 3px;}
 .w34convertrain{position:relative;font-size:.65em;top:5px;color:#c0c0c0;margin-left:3px}
-.hitempy{position:relative;background:rgba(61, 64, 66, 0.5);color:#aaa;width:70px;padding:1px;-webit-border-radius:2px;border-radius:2px;
-margin-top:-33px;margin-left:56px;padding-left:3px;line-height:11px;font-size:9px;text-transform:capitalize}
+.hitempy{position:relative;background:rgba(61, 64, 66, 0.5);color:#aaa;width:100px;padding:1px;-webit-border-radius:2px;border-radius:2px;
+margin-top:-33px;margin-left:66px;padding-left:3px;line-height:11px;font-size:9px;text-transform:capitalize}
 
 .actualg{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:300px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
@@ -144,7 +144,7 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rain_month"]*25.
 <div class="hitempy">
     <?php echo $raininfo;?>
     <?php if ($meteobridgeapi[179]='--'){
-        echo " <blue>".$lang['Rainfall']."</blue> <br>".$lastMonth = strftime('%B',time()- 31*3600*24) .$lastMonth." <br><blue>".$weather['rainlastmonth'],"</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>";
+        echo " <blue>".$lang['Rainfall']."</blue> <br>".$lastMonth = strftime('%B',strtotime("-1 month")).$lastMonth." <blue>".$weather['rainlastmonth'],"</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>";
     } else if ($rainlasttime == date("M jS Y ")) {
         echo 'Last <blue>Rainfall</blue><br>Today';
     } else {
