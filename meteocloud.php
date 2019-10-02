@@ -47,10 +47,14 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .hardwareimagewf{position:relative;display:flex;margin:0 auto;margin-top:10px;opacity:.8}
 
 
-.hardwareimagembpro{position:relative;display:flex;margin:0 auto;margin-top:5px;margin-left:80px;width:160px;display:inline}
-.hardwareimagenano{position:relative;display:flex;margin:0 auto;margin-top:5px;margin-left:140px;width:80px;display:inline}
+.hardwareimagembpro{position:relative;display:flex;margin:0 auto;margin-top:5px;margin-left:40px;width:120px;display:inline}
+.hardwareimagenano{position:relative;display:flex;margin:0 auto;margin-top:5px;margin-left:40px;width:60px;display:inline}
 .meteocloudimg2{position:relative;display:flex;margin:0 auto;top:0px;width:220px;display:inline;}
-
+.to-meteocloudimg{position:relative;display:flex;margin:0 auto;top:-10px;width:200px;margin-left:20px;display:inline;}
+.frame{padding:5px;border-radius:2px;margin-top:10px;border: 1px solid rgba(245, 247, 252,.02);
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);}
+  .frame1{padding:5px;border-radius:2px;margin-top:5px;border: 1px solid rgba(245, 247, 252,.02);
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);}
 
 .meteocloudimg{width:80%;margin:0 auto;float:none;display:block}
 .weather34logo{position:relative;display:flex;margin-left:5%;bottom:0;margin-top:10px}
@@ -63,21 +67,25 @@ date{color:#aaa;font-size:.65em;margin-top:10px}
 <main class="grid">
   <article>  
    <div class=actualt>See the enthusiasts weather network Meteocloud</div> 
+    <div class="frame1">
     <a href="https://www.meteomap.cloud" title="https://www.meteomap.cloud" target="_blank">
    <img src="img/meteocloud-logo.png" class="meteocloudimg">   
     </a><br>
     
-    <?php echo $info;?> <a href="https://www.meteomap.cloud/register" title="https://www.meteomap.cloud/register" target="_blank"><strong>Sign up today</strong></a> and send data via Meteobridge network services or just click <a href="https://www.meteomap.cloud" title="https://www.meteomap.cloud" target="_blank"><b>here to view</b></a> the Meteobridge enthusiasts weather data map.  
-    <br> 
+    <?php echo $info;?> <a href="https://www.meteomap.cloud/register" title="https://www.meteomap.cloud/register" target="_blank"><strong>Sign up today</strong></a> and send data via Meteobridge network services or just click <a href="https://www.meteomap.cloud" title="https://www.meteomap.cloud" target="_blank"><b>here to view</b></a> the Meteobridge enthusiasts weather data map. <br> 
     *<em>As a weather station operator, you send data via MeteoBridge or WeatherBoxx to this cloud database</em>. 
+    </div>
+    
     <br>
+    <div class="frame">
     <a href="https://swisswetter.shop/" title="https://swisswetter.shop/" target="_blank"><img src="img/davis.png" class="meteocloudimg2"> </a>  
     
     
     <a href="https://swisswetter.shop/weatherBoxx-PRO" title="https://swisswetter.shop/weatherBoxx-PRO" target="_blank"><img src="img/MeteobridgePRO.svg" class="hardwareimagembpro"></a>  
     
     <a href="https://swisswetter.shop/weatherBoxx-NANO" title="https://swisswetter.shop/weatherBoxx-NANO" target="_blank"><img src="img/nano.svg" class="hardwareimagenano"></a>
-   
+   <a href="https://swisswetter.shop/weatherBoxx-NANO" title="https://swisswetter.shop/weatherBoxx-NANO" target="_blank"><img src="img/to-meteocloud.png" class="to-meteocloudimg"></a>
+   </div>
 
 </article> 
    </main>
