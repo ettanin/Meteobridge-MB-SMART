@@ -33,10 +33,10 @@ valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 <div class="trendpressure">
 <?php  echo "<valuetexttr>".$lang['Last Hour']."<valuetexttr>";
 if ($weather["barometer_trend"] < 0) {echo '<br><fall> '.$fallingsymbol.'</fall>&nbsp;<valuetextba>';
-echo number_format($weather["barometer_trend"],2), '</valuetextba><pressureunits>';}
+echo number_format($weather["barometer_trend"],3), '</valuetextba><pressureunits>';}
 else if ($weather["barometer_trend"] > 0) {
-echo '<br><rising><rise> '.$risingsymbol.'&nbsp;</rise>+<valuetextba> ';echo number_format($weather["barometer_trend"],2), ' </valuetextba>';}
-else echo '<br><ogreen> '.$steadysymbol.'</ogreen><valuetextba>'.number_format($weather["barometer_trend"],2).'</valuetextba></div>';?></valuetext>
+echo '<br><rising><rise> '.$risingsymbol.'&nbsp;</rise>+<valuetextba> ';echo number_format($weather["barometer_trend"],3), ' </valuetextba>';}
+else echo '<br><ogreen> '.$steadysymbol.'</ogreen><valuetextba>'.number_format($weather["barometer_trend"],3).'</valuetextba></div>';?></valuetext>
 </div>
 <div class="barometerconverter">
 <?php echo "";
