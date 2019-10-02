@@ -40,7 +40,7 @@ else echo '<br><ogreen> '.$steadysymbol.'</ogreen><valuetextba>'.number_format($
 </div>
 <div class="barometerconverter">
 <?php echo "";
-if ($weather["temp_units"]=='C'){echo "<div class=barometerconvertercircleblue>" .number_format($weather["barometer"]*0.029529983071445,2),"<smallrainunit>inHg</smallrainunit>";}
+if ($weather["temp_units"]=='C'){echo "<div class=barometerconvertercircleblue>" .number_format($weather["barometer"]*0.029529983071445,3),"<smallrainunit>inHg</smallrainunit>";}
 else if ($weather["temp_units"]=='F'){echo "<div class=barometerconvertercircleblue>".round($weather["barometer"]*33.863886666667,1),"<smallrainunit>hPa</smallrainunit>";}
 ?></div></div>
 <div class=barometerpos>
