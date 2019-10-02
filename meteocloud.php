@@ -84,7 +84,7 @@ date{color:#aaa;font-size:.65em;margin-top:10px}
     <a href="https://swisswetter.shop/weatherBoxx-PRO" title="https://swisswetter.shop/weatherBoxx-PRO" target="_blank"><img src="img/MeteobridgePRO.svg" class="hardwareimagembpro"></a>  
     
     <a href="https://swisswetter.shop/weatherBoxx-NANO" title="https://swisswetter.shop/weatherBoxx-NANO" target="_blank"><img src="img/nano.svg" class="hardwareimagenano"></a>
-   <a href="https://swisswetter.shop/weatherBoxx-NANO" title="https://swisswetter.shop/weatherBoxx-NANO" target="_blank"><img src="img/to-meteocloud.png" class="to-meteocloudimg"></a>
+   <a href="https://www.meteomap.cloud" title="https://www.meteomap.cloud" target="_blank"><img src="img/to-meteocloud.png" class="to-meteocloudimg"></a>
    </div>
 
 </article> 
