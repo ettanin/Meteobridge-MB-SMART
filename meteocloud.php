@@ -47,12 +47,12 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .hardwareimagewf{position:relative;display:flex;margin:0 auto;margin-top:10px;opacity:.8}
 
 
-.hardwareimagembpro{position:relative;display:flex;margin:0 auto;margin-top:5px;width:160px;display:inline}
+.hardwareimagembpro{position:relative;display:flex;margin:0 auto;margin-top:5px;margin-left:80px;width:160px;display:inline}
 .hardwareimagenano{position:relative;display:flex;margin:0 auto;margin-top:5px;margin-left:140px;width:80px;display:inline}
-.meteocloudimg2{position:relative;display:flex;margin:0 auto;top:-50px;margin-left:140px;width:160px;display:inline;opacity:.7}
+.meteocloudimg2{position:relative;display:flex;margin:0 auto;top:0px;width:220px;display:inline;}
 
 
-.meteocloudimg{width:60%;margin:0 auto;float:none;display:block}
+.meteocloudimg{width:80%;margin:0 auto;float:none;display:block}
 .weather34logo{position:relative;display:flex;margin-left:5%;bottom:0;margin-top:10px}
 a{color:#009bb4;display:inline;}
 date{color:#aaa;font-size:.65em;margin-top:10px}
@@ -71,10 +71,13 @@ date{color:#aaa;font-size:.65em;margin-top:10px}
     <br> 
     *<em>As a weather station operator, you send data via MeteoBridge or WeatherBoxx to this cloud database</em>. 
     <br>
+    <a href="https://swisswetter.shop/" title="https://swisswetter.shop/" target="_blank"><img src="img/davis.png" class="meteocloudimg2"> </a>  
+    
+    
     <a href="https://swisswetter.shop/weatherBoxx-PRO" title="https://swisswetter.shop/weatherBoxx-PRO" target="_blank"><img src="img/MeteobridgePRO.svg" class="hardwareimagembpro"></a>  
     
     <a href="https://swisswetter.shop/weatherBoxx-NANO" title="https://swisswetter.shop/weatherBoxx-NANO" target="_blank"><img src="img/nano.svg" class="hardwareimagenano"></a>
    
-<a href="https://www.meteomap.cloud" title="https://www.meteomap.cloud" target="_blank"><img src="img/meteocloud-logo.png" class="meteocloudimg2"> </a>  
+
 </article> 
    </main>
