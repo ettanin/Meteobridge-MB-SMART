@@ -5,47 +5,47 @@ $copyYear = 2015;$curYear = date('Y');$copyrightcredit='&copy; weather34.com ori
 // Speed
 function ktsTokmh(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(1.852*$weather[$field],2);
+	$weather[$field] = number_format(1.852*$weather[$field],1);
 }
 
 function ktsTomph(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(1.150779*$weather[$field],2);
+	$weather[$field] = number_format(1.150779*$weather[$field],1);
 }
 
 function ktsToms(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(0.514444*$weather[$field],2);
+	$weather[$field] = number_format(0.514444*$weather[$field],1);
 }
 
 function mphTokmh(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(1.609344*$weather[$field],2);
+	$weather[$field] = number_format(1.609344*$weather[$field],1);
 }
 
 function mphTokts(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(0.868976*$weather[$field],2);
+	$weather[$field] = number_format(0.868976*$weather[$field],1);
 }
 
 function mphToms(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(0.44704*$weather[$field],2);
+	$weather[$field] = number_format(0.44704*$weather[$field],1);
 }
 
 function kmhTokts(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(0.5399568*$weather[$field],2);
+	$weather[$field] = number_format(0.5399568*$weather[$field],1);
 }
 
 function kmhTomph(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(0.621371*$weather[$field],2);
+	$weather[$field] = number_format(0.621371*$weather[$field],1);
 }
 
 function kmhToms(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(0.2777778*$weather[$field],2);
+	$weather[$field] = number_format(0.2777778*$weather[$field],1);
 }
 
 function msTokmh(&$weather, $field){
