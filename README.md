@@ -1,8 +1,10 @@
 # This GITHUB repository is for Meteobridge Weather34 MB Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
-(Public Version 1.03 September 24th 2019)
+(Public Version 1.04 October 1st 2019)
 
 # Project now archived until early 2020 you may download as normal above using the green button.
-* todo CSS clean (January 2020)
+* no significant changes expected until January 2020
+* minor changes may occur periodically based on user feedback/ideas 
+* todo significant CSS clean (January 2020)
 
 
 <p align="center">
