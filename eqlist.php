@@ -208,7 +208,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .svgimage{background:rgba(0, 155, 171, 1.000);-webit-border-radius:2px;border-radius:2px;}
 orange1{color:rgba(255, 131, 47, 1.000);}
 </style>
-<div class="weather34darkbrowser" url="Turkey & Regional Recent Earthquakes "></div>
+<div class="weather34darkbrowser" url="Regional Recent Earthquakes "></div>
   
 <main class="grid">
   <article>  

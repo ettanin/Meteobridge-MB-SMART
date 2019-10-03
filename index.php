@@ -167,7 +167,7 @@ if ($positionlastmodule=='weather34uvsolar.php') { echo ' <a href="uvalmanac.php
 if ($positionlastmodule=='weather34uvsolar.php') { echo ' <a href="solaralmanac.php" data-lity><weather34homepagelinks></weather34homepagelinks>  Solar '.$lang['Almanac']. '  </a></span>';}
 if ($positionlastmodule=='solaruvwu.php') { echo ' <a href="uvindexwu.php" data-lity><weather34homepagelinks></weather34homepagelinks> UV Guide </a></span>';}
 if ($positionlastmodule=='solaruvwu.php') { echo ' <a href="solaralmanac.php" data-lity><weather34homepagelinks></weather34homepagelinks>  Solar '.$lang['Almanac']. "</a>&nbsp;&nbsp;</span>";}
-if ($positionlastmodule=='airqualitymodule.php') {echo '<a href="eqlist.php" data-lity><weather34homepagelinks></weather34homepagelinks> Regional '.$lang['Earthquakes']. "</a>&nbsp;&nbsp;</span>";}?>
+if ($positionlastmodule=='airqualitymodule.php') {echo '<a href="eqlist.php" data-lity><weather34homepagelinks></weather34homepagelinks> Regional '.$lang['Earthquake']. "</a>&nbsp;&nbsp;</span>";}?>
 	</div>
  <div id=dldata></div></weather34module>
  
