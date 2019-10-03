@@ -5581,9 +5581,9 @@ windblue {
   top: 140px;
   left: -60px;
   align-items: center;
-  justify-content: center;
+  justify-content:left;
   float: left;
-  width: 60px;
+  width: 80px;
   font-size: 9px;
   line-height: 1;
 }

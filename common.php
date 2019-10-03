@@ -125,6 +125,14 @@ switch ($lang) {
   break;
   
   
+ //swedish
+  case 'sw':
+  $lang_file = 'lang.sw.php';
+  $lang_flag = 'sw';
+  $lang_option = 'sw';
+  setlocale(LC_TIME, "sv_SE.UTF-8");
+  break;  
+  
   //catalan 
   case 'cat':
   $lang_file = 'lang.cat.php';

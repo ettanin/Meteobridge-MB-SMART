@@ -268,6 +268,7 @@ Choose the default Language to display and use..</div>
            <option>it</option> 
            <option>nl</option>            
            <option>sp</option>
+           <option>sw</option>
            <option>us</option>   
         </select>
         <br><br>
@@ -1396,7 +1397,7 @@ Choose the Weather Underground Forecast Language ..</div>
            <option>nl-NL</option>
            <option>no-NO</option>            
            <option>pl-PL</option>
-           <option>sv-SE-</option> 
+           <option>sv-SE</option> 
            <option>tr-TR</option>                      
         </select> <br>
         
