@@ -10201,10 +10201,11 @@ weather34homepagetop {
 }
 
 wind-dir-avgmonth {
-  margin-left: -8px;
-  font-size: .6rem;
+  margin-left:-8px;
+  font-size: 7.5pt;
   margin-top: 2px;
   color: #44a6b5;
+  text-align:center;
 }
 
 metricgrey {

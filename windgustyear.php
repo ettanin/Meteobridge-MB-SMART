@@ -43,39 +43,39 @@ if ($weather["wind_units"]=='km/h' && $weather["windmmax"]>60){echo "<maxtempred
 <wind-dir-avgmonth>
 <?php //month direction average
 if ($weather['wind_direction_avgmonth']<=11.25) {
-    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['North'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;".$lang['North']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=33.75) {
-    echo $lang['NNE'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['NNE']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=56.25) {
     echo $lang['NEdirs'];
 } elseif ($weather['wind_direction_avgmonth']<=78.75) {
-    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['ENE'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['ENE']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=101.25) {
-    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['East'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['East']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=123.75) {
-    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['ESE'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['ESE']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=146.25) {
     echo $lang['SEdirs'];
 } elseif ($weather['wind_direction_avgmonth']<=168.75) {
-    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['SSE'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['SSE']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=191.25) {
-    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['South'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;".$lang['South']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=213.75) {
-    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['SSW'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['SSW']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=236.25) {
-    echo "&nbsp;".$lang['SWdirs'];
+    echo "&nbsp;".$lang['SWdirs']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=258.75) {
-    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['WSW'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['WSW']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=281.25) {
-    echo "&nbsp;&nbsp;&nbsp;".$lang['West'];
+    echo "&nbsp;&nbsp;&nbsp;".$lang['West']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=303.75) {
-    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['WNW'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['WNW']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=326.25) {
-    echo $lang['NWdirs'];
+    echo "".$lang['NWdirs']."";
 } elseif ($weather['wind_direction_avgmonth']<=348.75) {
-    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['NNW'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['NNW']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=360) {
-    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['North'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;".$lang['North']."&nbsp;";
 }"&deg;"?>
 <div class="weather34-rotate"><?php echo $windicon;?></div>
 </wind-dir-avgmonth>
