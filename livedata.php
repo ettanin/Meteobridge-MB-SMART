@@ -36,8 +36,7 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather["barometer"]          = $meteobridgeapi[10];
 	$weather["barometer_max"]      = $meteobridgeapi[34];
 	$weather["barometer_min"]      = $meteobridgeapi[36];
-	$weather["barometer_units"]    = $meteobridgeapi[15]; // mb or hPa or in
-	//$weather["barometer_units"]    = 'mmHg'; // mmHg
+	$weather["barometer_units"]    = $meteobridgeapi[15]; // mb or hPa or in	
 	$weather["barometer_trend"]    = $meteobridgeapi[10] - $meteobridgeapi[18];
 	$weather["temp_units"]         = 'C'; // C
 	$weather["temp_indoor"]        = $meteobridgeapi[22];
@@ -86,7 +85,7 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather["lowtemptime"]        = date($timeFormatShort, $meteobridgeapi[29]);
 	$weather["maxwindtime"]        = date($timeFormatShort, $meteobridgeapi[31]);
 	$weather["maxgusttime"]        = date($timeFormatShort, $meteobridgeapi[33]);
-	//$weather["cloudbase"]          = round(($weather["temp"] - $weather["dewpoint"] ) *1000/4.4,1) ; 
+	$weather["cloudbase"]          = round(($weather["temp"] - $weather["dewpoint"] ) *400,1) ; 
 	$weather["cloudbase_units"]    = 'ft' ;	
 	$weather["wind_run"]           = number_format($weather["wind_speed"]/24,3); //10 minute wind run
 	$weather["swversion"]		   = $meteobridgeapi[38];
@@ -103,12 +102,8 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather['wind_direction_avgmonth']=$meteobridgeapi[191];
 			
 	//weather34 windrun based on daily average
-	$windrunhr=date('G');$windrunmin=(($windrunmin=date('i')/60));$windrunformula=$windrunhr=date('G')+$windrunmin;
+    $windrunhr=date('G');$windrunmin=(($windrunmin=date('i')/60));$windrunformula=$windrunhr=date('G')+$windrunmin;
 	$weather["windrun34"]=$weather['wind_speed_avg30']*number_format($windrunformula,1);
-	
-	//weather34 windrun based on 15 minute average
-	//$weather["windrun34"]=$weather["windrun34"]=$meteobridgeapi[72]*0.25;
-
 	//weather34 meteobridge moon sun data 
     $weather["moonphase"]=$meteobridgeapi[153];$weather["luminance"]=$meteobridgeapi[154];$weather["daylight"]=$meteobridgeapi[155];if ($meteobridgeapi[156]=='--'){$weather["moonrise"]='In Transit';}
 	else $weather["moonrise"]='<moonrisecolor> '.date($timeFormatShort, strtotime($meteobridgeapi[156]));$weather["moonset"]='<moonsetcolor> '.date($timeFormatShort, strtotime($meteobridgeapi[157]));
@@ -250,7 +245,6 @@ $weather["humidity_min"]=number_format($meteobridgeapi[61],0);
 $originalDate774=$meteobridgeapi[62];
 $hummintime=date('H:i',strtotime($originalDate774));
 $weather["humidity_mintime"]=$hummintime;
-
 	//hum year max
 $weather["humidity_ymax"]=number_format($meteobridgeapi[163],0);
 $originalDate754=$meteobridgeapi[164];
@@ -265,7 +259,6 @@ $humymintime=date($dateFormat,strtotime($originalDate755));
 $weather["humidity_ymintime"]=$humymintime;
 $humymintime2=date($dateFormat,strtotime($originalDate755));
 $weather["humidity_ymintime2"]=$humymintime2;
-
 	//hum month max
 $weather["humidity_mmax"]=number_format($meteobridgeapi[159],0);
 $originalDate756=$meteobridgeapi[160];
@@ -276,7 +269,6 @@ $weather["humidity_mmin"]=number_format($meteobridgeapi[161],0);
 $originalDate757=$meteobridgeapi[162];
 $hummmintime=date($dateFormat,strtotime($originalDate757));
 $weather["humidity_mmintime"]=$hummmintime;
-
 	//hum yesterday max
 $weather["humidity_ydmax"]=number_format($meteobridgeapi[167],0);
 $originalDate758=$meteobridgeapi[168];
@@ -287,7 +279,6 @@ $weather["humidity_ydmin"]=number_format($meteobridgeapi[169],0);
 $originalDate759=$meteobridgeapi[170];
 $humydmintime=date('H:i',strtotime($originalDate759));
 $weather["humidity_ydmintime"]=$humydmintime;
-
 
 //heat index
 $weather["heat_indexymax"]=$meteobridgeapi[192];
@@ -334,9 +325,9 @@ $windchillmintime2=date($dateFormat,strtotime($originalDatechill));
 	
 	//rain
 	$originalDate12 = $meteobridgeapi[102];
-    $rainmmaxtime = date("jS F", strtotime($originalDate12));	
+    $rainmmaxtime = date($dateFormat, strtotime($originalDate12));	
 	$originalDate13 = $meteobridgeapi[104];
-    $rainymaxtime = date("jS F Y", strtotime($originalDate13));	
+    $rainymaxtime = date($dateFormat, strtotime($originalDate13));	
 	
 	$originalDate124 = $meteobridgeapi[124];
     $rainlasttime=date($dateFormat,strtotime($originalDate124));
@@ -414,11 +405,11 @@ $windchillmintime2=date($dateFormat,strtotime($originalDatechill));
 	$solaroriginalDate = $meteobridgeapi[108];
     $solarydmaxtime = date("H:i", strtotime($solaroriginalDate));	
 	$solaroriginalDate2 = $meteobridgeapi[110];
-    $solarmmaxtime = date('jS M H:i', strtotime($solaroriginalDate2));	
+    $solarmmaxtime = date($dateFormat, strtotime($solaroriginalDate2));	
 	$solaroriginalDate4 = $meteobridgeapi[112];
-    $solarymaxtime = date('jS M H:i', strtotime($solaroriginalDate4));	
+    $solarymaxtime = date($dateFormat, strtotime($solaroriginalDate4));	
 	$solaroriginalDate6 = $meteobridgeapi[106];
-    $solardmaxtime = date('H:i', strtotime($solaroriginalDate6));	
+    $solardmaxtime = date($dateFormat, strtotime($solaroriginalDate6));	
 	
 	$weather["solarydmax"]		    = number_format($meteobridgeapi[107],0, '.', ''); //temp max yesterday
 	$weather["solarydmaxtime"]		= $solarydmaxtime; //seconds	
@@ -435,9 +426,9 @@ $windchillmintime2=date($dateFormat,strtotime($originalDatechill));
 	$uvoriginalDate = $meteobridgeapi[115];
     $uvydmaxtime = date("H:i", strtotime($uvoriginalDate));	
 	$uvoriginalDate2 = $meteobridgeapi[117];
-    $uvmmaxtime = date('jS M H:i', strtotime($uvoriginalDate2));	
+    $uvmmaxtime = date($dateFormat, strtotime($uvoriginalDate2));	
 	$uvoriginalDate4 = $meteobridgeapi[119];
-    $uvymaxtime = date('jS M H:i', strtotime($uvoriginalDate4));	
+    $uvymaxtime = date($dateFormat, strtotime($uvoriginalDate4));	
 	$uvoriginalDate6 = $meteobridgeapi[113];
     $uvdmaxtime = date('H:i', strtotime($uvoriginalDate6));	
 	
@@ -701,7 +692,6 @@ $E = (6.11 * pow(10 , (7.5 * $Tdc / (237.7 + $Tdc))));
 $wetbulbcalc = (((0.00066 * $P) * $Tc) + ((4098 * $E) / pow(($Tdc + 237.7) , 2) * $Tdc)) / ((0.00066 * $P) + (4098 * $E) / pow(($Tdc + 237.7) , 2));
 $wetbulbx =number_format($wetbulbcalc,1);
 $weather['wetbulb']=$wetbulbx;
-$weather["cloudbase"] = round(($weather["temp"] - $weather["dewpoint"] )*1000 /2.4444,1) ; 
 # Convert Start times for Pro and Nano SD, Other MBs unforunately don't provide this data
 if (is_numeric($meteobridgeapi[186]) && $meteobridgeapi[186] != '--') {
 	$weather['tempStartTime']	= date('M jS Y', strtotime($meteobridgeapi[186]));

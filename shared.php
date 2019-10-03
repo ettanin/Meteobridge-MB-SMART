@@ -5,12 +5,12 @@ $copyYear = 2015;$curYear = date('Y');$copyrightcredit='&copy; weather34.com ori
 // Speed
 function ktsTokmh(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(1.852*$weather[$field],1);
+	$weather[$field] = number_format(1.852*$weather[$field],2);
 }
 
 function ktsTomph(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(1.150779*$weather[$field],1);
+	$weather[$field] = number_format(1.150779*$weather[$field],2);
 }
 
 function ktsToms(&$weather, $field){
@@ -20,37 +20,37 @@ function ktsToms(&$weather, $field){
 
 function mphTokmh(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(1.609344*$weather[$field],1);
+	$weather[$field] = number_format(1.609344*$weather[$field],2);
 }
 
 function mphTokts(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(0.868976*$weather[$field],1);
+	$weather[$field] = number_format(0.868976*$weather[$field],2);
 }
 
 function mphToms(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(0.44704*$weather[$field],1);
+	$weather[$field] = number_format(0.44704*$weather[$field],2);
 }
 
 function kmhTokts(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(0.5399568*$weather[$field],1);
+	$weather[$field] = number_format(0.5399568*$weather[$field],2);
 }
 
 function kmhTomph(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(0.621371*$weather[$field],1);
+	$weather[$field] = number_format(0.621371*$weather[$field],2);
 }
 
 function kmhToms(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(0.2777778*$weather[$field],1);
+	$weather[$field] = number_format(0.2777778*$weather[$field],2);
 }
 
 function msTokmh(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(3.6*$weather[$field],1);
+	$weather[$field] = number_format(3.6*$weather[$field],2);
 }
 
 function msTokts(&$weather, $field){
@@ -60,7 +60,7 @@ function msTokts(&$weather, $field){
 
 function msTomph(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = number_format(2.236936*$weather[$field], 1);
+	$weather[$field] = number_format(2.236936*$weather[$field], 2);
 }
 
 // Temperature

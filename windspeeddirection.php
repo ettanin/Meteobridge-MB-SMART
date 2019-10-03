@@ -16,38 +16,29 @@ spancalm{postion:relative;font-family:weathertext,Arial;font-size:26px;}</style>
 <weather34windunitidspeed><?php echo $lang['Avg Wind'];?></weather34windunitidspeed>
 <?php
 //weather34-windaverage speed
-if ($weather["wind_speed"]<10) {
-    echo "&nbsp;",number_format($weather["wind_speed"]*1.010,2);
-} else {
-    echo number_format($weather["wind_speed"], 1);
-}?>
+if ($weather["wind_speed"]<10) {echo "&nbsp;". number_format($weather["wind_speed"],2);} else { echo "&nbsp;".number_format($weather["wind_speed"],1);}?>
 <weather34windunitidunit><?php echo $lang['10 minutes'];?></weather34windunitidunit></div></div>
 
 <div class="weather34windgust">
 <weather34windunitidspeed1>
 <?php 
 //weather34-wind speed-windgust
-if ($weather["wind_gust_speed"]*$toKnots>=21.5983){echo $lang['Gust'];}else echo $lang['Windspeed']?></weather34windunitidspeed1>
+if ($weather["wind_gust_speed"]*$toKnots>=21.5983){echo $lang['Gust'];}else echo $lang['Windspeed']?>
+</weather34windunitidspeed1>
 
 <?php
 //weather34-windgust
-if ($weather["wind_gust_speed"]*$toKnots>=26.9978) {
-    echo "<windred>",number_format($weather["wind_gust_speed"], 1),"</windred>";
-} elseif ($weather["wind_gust_speed"]*$toKnots>=21.5983) {
-    echo "<windorange>",number_format($weather["wind_gust_speed"], 1),"</windorange>";
-} elseif ($weather["wind_gust_speed"]*$toKnots>=16.1987) {
-    echo "<windgreen>",number_format($weather["wind_gust_speed"], 1),"</windgreen>";
-} elseif ($weather["wind_gust_speed"]*$toKnots<16.1987 && $weather["wind_gust_speed"]*$toKnots>=5.39957) {
-    echo "",number_format($weather["wind_gust_speed"], 1);
-} elseif ($weather["wind_gust_speed"]<=10) {
-    echo"&nbsp;". number_format($weather["wind_gust_speed"]*1.010, 2);
-} elseif ($weather["wind_gust_speed"]<=1) {
-    echo"&nbsp;". number_format($weather["wind_gust_speed"], 1);
+if ($weather["wind_gust_speed"]*$toKnots>=26.9978) {echo "<windred>",number_format($weather["wind_gust_speed"], 1),"</windred>";} 
+elseif ($weather["wind_gust_speed"]*$toKnots>=21.5983) { echo "<windorange>",number_format($weather["wind_gust_speed"], 1),"</windorange>";} 
+elseif ($weather["wind_gust_speed"]*$toKnots>=16.1987) { echo "<windgreen>",number_format($weather["wind_gust_speed"], 1),"</windgreen>";} 
+elseif ($weather["wind_gust_speed"]*$toKnots<16.1987 && $weather["wind_gust_speed"]*$toKnots>=5.39957) {echo "",number_format($weather["wind_gust_speed"], 1);} 
+elseif ($weather["wind_gust_speed"]<=10) {echo"&nbsp;". number_format($weather["wind_gust_speed"]*1.010, 2);} 
+elseif ($weather["wind_gust_speed"]<=1) { echo"&nbsp;". number_format($weather["wind_gust_speed"], 1);
 }?>
 <weather34windunitidunit1><?php echo $weather["wind_units"];?></weather34windunitidunit1></div></div>
 
 <div class="maxwindgust"><a class="weather34tipmax" data-weather34tipmax="<?php echo "Max ".$weather["windymax"]." ".$weather["wind_units"]."&nbsp; &nbsp;".$weather["windymaxtime"]?>">
-<?php echo "<valuetext>Max (".$weather["winddmaxtime"].")<br>"."<maxred>".number_format($weather["wind_gust_speed_max"], 1)."</maxred> ".$weather["wind_units"];?></a></div>
+<?php echo "<valuetext>Max (".$weather["winddmaxtime"].")<br>"."<maxred>".number_format($weather["wind_gust_speed_max"],1)."</maxred> ".$weather["wind_units"];?></a></div>
 
 <div class="windconverter"><?php
 //weather34-convert kmh to mph
@@ -72,7 +63,7 @@ elseif ($weather["wind_units"]=="mph" && $weather["wind_gust_speed"]*$toKnots>=2
     echo "<div class=windconvertercirclegreen1><tgreen>".number_format($weather["wind_gust_speed"]*1.609343502101025, 1)." </tgreen><smallrainunit>kmh</smallrainunit>";
 }
 
-//weather34-convert mph to kmh
+//weather34-convert ms
 elseif ($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]*$toKnots>=26.9978) {
     echo "<div class=windconvertercirclered1><tred>".number_format($weather["wind_gust_speed"]*1.609343502101025, 1)." </tred><smallrainunit>kmh</smallrainunit>";
 } elseif ($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]*$toKnots>=21.5983) {
@@ -82,9 +73,6 @@ elseif ($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]*$toKnots>=2
 } elseif ($weather["wind_units"]=="m/s" && $weather["wind_gust_speed"]*$toKnots<16.1987) {
     echo "<div class=windconvertercirclegreen1><tgreen>".number_format($weather["wind_gust_speed"]*1.609343502101025, 1)." </tgreen><smallrainunit>kmh</smallrainunit>";
 }
-
-
-
 
 ?></div></div>
 <div class="homeweathercompass1"><div class="homeweathercompass-line1"><div class="thearrow2"></div><div class="thearrow1"></div></div>
@@ -180,11 +168,13 @@ else if($weather["wind_speed_bft"]>=0){echo '<div class=weather34beaufort1-3>'.$
  <weather34bftspan>BFT</weather34bftspan></div>
  
 <div class=weather34avgtoday>
-<?php echo ' &nbsp;<windaveragevalue>',number_format($weather['wind_speed_avg30'],1)."</windaveragevalue><weather34windrunspan>"
+<?php echo ' &nbsp;<windaveragevalue>'.$weather['wind_speed_avg30']."</windaveragevalue><weather34windrunspan>"
  .$weather["wind_units"];?></weather34windrunspan></div>
 <div class=averagetoday1><?php echo $lang['Avg']." ".$lang['Today']?></div>
 
 <div class=weather34windruntoday1>
-<?php echo ' &nbsp;<windaveragevalue>',number_format($weather["windrun34"],1)."</windaveragevalue><weather34windrunspan>"?>
-<?php if ($weather["wind_units"]=='km/h'){echo 'km';}else echo 'mi';?></weather34windrunspan></div>
+<?php 
+if ($weather["wind_units"]=='m/s'){echo ' &nbsp;<windaveragevalue>',$weather["windrun34"]*3.6."</windaveragevalue><weather34windrunspan>";}
+else echo ' &nbsp;<windaveragevalue>'.$weather["windrun34"]."</windaveragevalue><weather34windrunspan>";
+;?><?php if (($weather["wind_units"]=='km/h') || ($weather["wind_units"]=='m/s')){echo 'km';}else echo 'mi';?></weather34windrunspan></div>
 <div class=windruntoday1><?php echo $lang['Wind Run']." ".$lang['Today'];?></div>
