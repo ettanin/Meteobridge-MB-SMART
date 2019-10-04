@@ -96,17 +96,17 @@ else if($weather["temp_avg"]<=10){echo "<oblue>" .$weather["temp_avg"]."</oblue>
 else if($weather["temp_avg"]<20){echo "<ogreen>" .$weather["temp_avg"]."</ogreen>°<valuetext>".$tempunit;}echo "</valuetext><br>";
 
 echo  "Max <oblue>".$lang['Windspeed']."</oblue> ";
-if($weather["wind_speed_max"]>=50){echo "<ored>" .$weather["wind_speed_max"]."</ored> ".$windunit;}
-else if($weather["wind_speed_max"]>=30){echo "<oorange>" .$weather["wind_speed_max"]."</oorange><valuetext> ".$windunit;}
-else if($weather["wind_speed_max"]>=0){echo "<ogreen>" .$weather["wind_speed_max"]."</ogreen><valuetext> ".$windunit;}
+if($weather["wind_speed_max"]>=50){echo "<ored>" .number_format($weather["wind_speed_max"],1)."</ored> ".$windunit;}
+else if($weather["wind_speed_max"]>=30){echo "<oorange>" .number_format($weather["wind_speed_max"],1)."</oorange><valuetext> ".$windunit;}
+else if($weather["wind_speed_max"]>=0){echo "<ogreen>" .number_format($weather["wind_speed_max"],1)."</ogreen><valuetext> ".$windunit;}
 
 echo " </valuetext>".$lang['Last-Ten-Minutes']."";
 
 
 echo  " <br>".$lang['Average']." <oblue>".$lang['Windspeed']." </oblue> ".$lang['Last Hour']." ";
-if($weather["wind_speed_avg"]>=30){echo "<ored>" .$weather["wind_speed_avg"]."</ored> ".$windunit;}
-else if($weather["wind_speed_avg"]>=20){echo "<oorange>" .$weather["wind_speed_avg"]."</oorange><valuetext> ".$windunit;}
-else if($weather["wind_speed_avg"]>=0){echo "<ogreen>" .$weather["wind_speed_avg"]."</ogreen><valuetext> ".$windunit;}
+if($weather["wind_speed_avg"]>=30){echo "<ored>" .number_format($weather["wind_speed_avg"],1)."</ored> ".$windunit;}
+else if($weather["wind_speed_avg"]>=20){echo "<oorange>" .number_format($weather["wind_speed_avg"],1)."</oorange><valuetext> ".$windunit;}
+else if($weather["wind_speed_avg"]>=0){echo "<ogreen>" .number_format($weather["wind_speed_avg"],1)."</ogreen><valuetext> ".$windunit;}
 
 
 echo  "</valuetext><br>".$lang['Average']." ".$lang['Direction']." <oorange>";
