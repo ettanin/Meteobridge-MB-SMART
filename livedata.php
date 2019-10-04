@@ -71,7 +71,7 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather["wind_speed"]         = number_format($meteobridgeapi[5]);
 	$weather["wind_gust_speed"]    = $meteobridgeapi[6];
 	$weather["wind_speed_bft"]     = $meteobridgeapi[12];
-	$weather["wind_speed_max"]     = $meteobridgeapi[30];	
+	$weather["wind_speed_max"]     = $meteobridgeapi[40];	
 	$weather["wind_gust_speed_max"]= $meteobridgeapi[32];	
 	$weather["wind_units"]         = 'm/s'; // m/s or mph or km/h or kts
 	$weather["wind_speed_avg15"]   = $meteobridgeapi[72];
@@ -95,7 +95,7 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	$weather["uptime"]		       = $meteobridgeapi[81];//uptime in seconds
 	$weather["vpforecasttext"]	   = $meteobridgeapi1[1];//davis console forecast text
 	$weather["temp_avgtoday"]=$meteobridgeapi[152];
-	$weather['wind_speed_avg30']=$meteobridgeapi[158];
+	//$weather['wind_speed_avg30']=$meteobridgeapi[158];
 	$weather['wind_speed_avgday']=$meteobridgeapi[158];
 	$weather['tempyearavg']=$meteobridgeapi[184];
 	$weather['windspeedyearavg']=$meteobridgeapi[185];
