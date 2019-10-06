@@ -8,7 +8,7 @@
 
 
 <p align="center">
-  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1568620387/MBSMART_tdyrqc.png" width="550" title="weather34 Meteobridge MB-SMART template "> 
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1570359213/Screenshot_2019-10-06_Sinanoba_Istanbul_Home_Weather_Station_xty2ei.png" width="550" title="weather34 Meteobridge MB-SMART template "> 
 </p>
 	
 # Contributors Live Running Demo(s)
@@ -26,7 +26,7 @@ https://beaumaris-weather.com/pwsMB/ (Tasmania - Meteobridge Pro)
 
 # To be done non critical 
 
-NEXT PHASE FOR OCTOBER THIS WILL BE CSS REMOVAL OF UNUSED and REDUCE CSS to a target size of 100K
+NEXT PHASE FOR 2020 THIS WILL BE CSS REMOVAL OF UNUSED and REDUCE CSS to a target size of 100K
 
 # IMPORTANT THIS TEMPLATE IS FOR METEOBRIDGE NANOSD AND DAVIS HARDWARE USERS ONLY !!
 # IT IS NOT COMPATIBLE WITH TP-LINK TYPE METEOBRIDGE HUBS
