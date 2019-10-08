@@ -46,13 +46,13 @@ if($units!='uk'){echo '<a  href="./?units=uk">  <metricgrey>UK</metricgrey> <top
 <div class=weather34thinborder>--</div>
 <li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> TOOLS</a></li>
 <li><a href="mb-smart-setup.php" target="_blank" title="Weather34 MB SMART Setup Screen"><?php echo " <weather34menumarkerbluegrey></weather34menumarkerbluegrey> ",$lang['Settings']; ?> 
-<?php if ($password==""){echo ' <svg id="weather34 unlocked"  viewBox="0 0 32 32"  width="12" height="12" fill="none" stroke="#f16b4f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 7 9 3 16 3 23 3 23 8 23 9 M16 20 L16 23" /><circle cx="16" cy="24" r="1" /></svg> <menuimperial>Password Not Set</menubarimperial>';}
-else echo ' <svg id="weather34 locked" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#06a2b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 9 9 5 16 5 23 5 23 9 23 15 M16 20 L16 23" /><circle cx="16" cy="24" r="1" /></svg> <menuimperial>Locked</menubarimperial>';
+<?php if ($password==""){echo ' <svg id="weather34 unlocked"  viewBox="0 0 32 32"  width="12" height="12" fill="none" stroke="#f16b4f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 7 9 3 16 3 23 3 23 8 23 9 M16 20 L16 23" /><circle cx="16" cy="24" r="1" /></svg> <menuinfobox>Password Not Set</menuinfobox>';}
+else echo ' <svg id="weather34 locked" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#06a2b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 9 9 5 16 5 23 5 23 9 23 15 M16 20 L16 23" /><circle cx="16" cy="24" r="1" /></svg> <menuinfobox>Locked</menuinfobox>';
 ?> </a></li><p>
 <div class=weather34thinborder>--</div>
 <li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> UI THEME</a></li>
 <li><a href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>>
-<?php if($theme=='dark'){echo' <weather34menumarkerlight></weather34menumarkerlight> Light <menuimperial>Mode</menubarimperial>';}else{echo'<weather34menumarkerbluegrey></weather34menumarkerbluegrey> Dark <menuimperial>Mode</menubarimperial>';}?></a></li>
+<?php if($theme=='dark'){echo' <weather34menumarkerlight></weather34menumarkerlight> Light <menuinfobox>Mode</menuinfobox>';}else{echo'<weather34menumarkerbluegrey></weather34menumarkerbluegrey> Dark <menuinfobox>Mode</menuinfobox>';}?></a></li>
 <p><div class=weather34thinborder>--</div>
 <li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> UNITS</a></li>
 <?php 
@@ -103,7 +103,7 @@ if ($suppliers =='Ambient Weather USA'){echo '<li><a href="https://www.ambientwe
 if ($suppliers =='None'){echo '';}?></a></li> 
 
 <li><!--hardware info---> <a href="licence.php" data-lity title="Weather34 MB-SMART Licence Info and Download"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Download MB-SMART <menuinfobox><?php echo $mbsmartversion?></menuinfobox></a></li> 
-<li><!--hardware info---> <a href="meteocloud.php" data-lity title="View the Meteocloud Network"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Meteocloud (Network)</a></li> 
+<li><!--hardware info---> <a href="meteocloud.php" data-lity title="View the Meteocloud Network"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Meteocloud <menuinfobox>Network</menuinfobox></a></li> 
 <li><a href="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" data-title="Weather34 MB-Smart Version" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> Weather34 Designed <menuinfobox>&copy;2015-<?php echo date('Y');?></menuinfobox></a></li>    
 <p><div class=weather34thinborder>--</div>
 </div></div></header>  
