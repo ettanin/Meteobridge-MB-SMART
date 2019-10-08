@@ -56,10 +56,12 @@ else echo ' <svg id="weather34 locked" viewBox="0 0 32 32" width="12" height="12
 <p><div class=weather34thinborder>--</div>
 <li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> UNITS</a></li>
 <?php 
-  if($units!='us'){echo '<li> <a  href="./?units=us"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey>  Imperial  <menuimperial>&deg;F</menuimperial> </a><br />  ';}
-  if($units!='metric'){echo '<li> <a  href="./?units=metric"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Metric <menumetric>&deg;C</menumetric></a><br />  ';}
-  if($units!='uk'){echo '<li> <a  href="./?units=uk">  <weather34menumarkerbluegrey></weather34menumarkerbluegrey> UK ( MPH)  <menumetric>&deg;C</menumetric></a><br /> ';}
-  if($units!='scandinavia'){echo '<li> <a  href="./?units=scandinavia"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> M/S  <menumetric>&deg;C</menumetric></a>';}
+  if($units!='us'){echo '<li> <a  href="./?units=us"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey>  Imperial  <menuinfobox>MPH</menuinfobox> 
+  <menuinfobox>&deg;F</menuinfobox> </a><br />  ';}
+  if($units!='metric'){echo '<li> <a  href="./?units=metric"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Metric <menuinfobox>KM/H</menuinfobox> <menuinfobox>&deg;C</menuinfobox></a><br />  ';}
+  if($units!='uk'){echo '<li> <a  href="./?units=uk">  <weather34menumarkerbluegrey></weather34menumarkerbluegrey> UK <menuinfobox>MPH</menuinfobox>  
+  <menuinfobox>&deg;C</menuinfobox></a><br /> ';}
+  if($units!='scandinavia'){echo '<li> <a  href="./?units=scandinavia"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Scandinavia <menuinfobox>M/S</menuinfobox> <menuinfobox>&deg;C</menuinfobox></a>';}
 ?></li></p>
 <div class=weather34thinborder>--</div>
 
