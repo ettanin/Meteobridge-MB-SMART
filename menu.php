@@ -68,10 +68,10 @@ else echo ' <svg id="weather34 locked" viewBox="0 0 32 32" width="12" height="12
 <li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> EXTRAS</a></li>
 <!--webcam--->
 <?php if($webcamurl==''){;} 
-else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Web Cam </a></li>';?>
+else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Web Cam <menuinfobox>Stream</menuinfobox></a></li>';?>
 
-<li><!--contact info---> <a href="bio.php" data-lity title="Weather Station Owner Contact Card Info"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Contact Card</a></li> 
-<li><!--hardware info---> <a href="stationinfo.php" data-lity title="Hardware Weather Station Hardware Info"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Hardware Info</a></li>  
+<li><!--contact info---> <a href="bio.php" data-lity title="Weather Station Owner Contact Card Info"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Contact <menuinfobox>Info</menuinfobox> </a></li> 
+<li><!--hardware info---> <a href="stationinfo.php" data-lity title="Hardware Weather Station Hardware Info"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Hardware <menuinfobox>Info</menuinfobox></a></li>  
 <p>
 <!---languages---> 
    <?php if($languages=="yes") echo '
@@ -95,13 +95,13 @@ else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weat
   <li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> CREDITS & INFO</a></li> 
       <!---credits | download info please do not remove credits if so no support is given it is not much to ask---> 
 <?php  //suppliers
-if ($suppliers =='Weather Spares UK'){echo '<li><a href="https://weatherspares.co.uk" title="https://weatherspares.co.uk" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.'';}
-if ($suppliers =='Prodata Weather Systems UK'){echo '<li><a href="https://shop.weatherstations.co.uk" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.'';}
-if ($suppliers =='Weerspecialist Netherlands'){echo '<li><a href="https://www.weerstationkopen.nl" title="https://www.weerstationkopen.nl" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.'';}
-if ($suppliers =='Weerhuisje Netherlands'){echo '<li><a href="https://weerhuisje.nl" title="https://weerhuisje.nl" target="_blank"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.'';}
-if ($suppliers =='Soluzionimeteo Italy'){echo '<li><a href="https://www.soluzionimeteo.it/content/category/1-home" title="https://www.soluzionimeteo.it/content/category/1-home" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.'';}
-if ($suppliers =='Scaled Instruments USA'){echo '<li><a href="https://www.scaledinstruments.com" title="https://www.scaledinstruments.com" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.'';}
-if ($suppliers =='Ambient Weather USA'){echo '<li><a href="https://www.ambientweather.com" title="https://www.ambientweather.com" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.'';}
+if ($suppliers =='Weather Spares'){echo '<li><a href="https://weatherspares.co.uk" title="https://weatherspares.co.uk" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.' <menuinfobox>UK</menuinfobox>';}
+if ($suppliers =='Prodata Weather Systems'){echo '<li><a href="https://shop.weatherstations.co.uk" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.' <menuinfobox>UK</menuinfobox>';}
+if ($suppliers =='Weerspecialist'){echo '<li><a href="https://www.weerstationkopen.nl" title="https://www.weerstationkopen.nl" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.' <menuinfobox>Netherlands</menuinfobox>';}
+if ($suppliers =='Weerhuisje'){echo '<li><a href="https://weerhuisje.nl" title="https://weerhuisje.nl" target="_blank"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.' <menuinfobox>Netherlands</menuinfobox>';}
+if ($suppliers =='Soluzionimeteo'){echo '<li><a href="https://www.soluzionimeteo.it/content/category/1-home" title="https://www.soluzionimeteo.it/content/category/1-home" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.' <menuinfobox>Italy</menuinfobox>';}
+if ($suppliers =='Scaled Instruments'){echo '<li><a href="https://www.scaledinstruments.com" title="https://www.scaledinstruments.com" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.' <menuinfobox>USA</menuinfobox>';}
+if ($suppliers =='Ambient Weather'){echo '<li><a href="https://www.ambientweather.com" title="https://www.ambientweather.com" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.' <menuinfobox>USA</menuinfobox>';}
 if ($suppliers =='None'){echo '';}?></a></li> 
 
 <li><!--hardware info---> <a href="licence.php" data-lity title="Weather34 MB-SMART Licence Info and Download"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Download MB-SMART <menuinfobox><?php echo $mbsmartversion?></menuinfobox></a></li> 

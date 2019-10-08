@@ -1604,13 +1604,13 @@ Check<b>WX</b> Metar API KEY you need to sign up here for free API key <a href="
        <label name="suppliers"></label>
         <select id="suppliers" name="suppliers" class="choose">  
             <option><?php echo $suppliers ;?></option> 
-            <option>Weather Spares UK</option>        
-            <option>Prodata Weather Systems UK</option>
-            <option>Weerspecialist Netherlands</option>
-            <option>Weerhuisje Netherlands</option>
-            <option>Soluzionimeteo Italy</option>
-            <option>Ambient Weather USA</option>
-            <option>Scaled Instruments USA</option>
+            <option>Weather Spares</option>        
+            <option>Prodata Weather Systems</option>
+            <option>Weerspecialist</option>
+            <option>Weerhuisje</option>
+            <option>Soluzionimeteo</option>
+            <option>Ambient Weather</option>
+            <option>Scaled Instruments</option>
             <option>None</option>
            </select>
            <br></span>
