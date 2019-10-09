@@ -40,9 +40,8 @@ if($units!='uk'){echo '<a  href="./?units=uk">  <metricgrey>UK</metricgrey> <top
     <div class="weather34spinner weather34horizontal"></div>
     <div class="weather34spinner weather34cross part-2"></div>    
   </label>
- <div id="weather34sidebarMenu">
-<ul class="weather34sidebarMenuInner">
-<br /><p>
+<div id="weather34sidebarMenu"><ul class="weather34sidebarMenuInner">
+<themenu>MENU OPTIONS</themenu><p>
 <div class=weather34thinborder>--</div>
 <li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> TOOLS</a></li>
 <li><a href="mb-smart-setup.php" target="_blank" title="Weather34 MB SMART Setup Screen"><?php echo " <weather34menumarkerdot></weather34menumarkerdot> ",$lang['Settings']; ?> 
