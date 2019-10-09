@@ -1174,17 +1174,6 @@ uv8 {
   display: flex;
   overflow: hidden;
 }
-
-nav li,
-nav ul {
-  outline: 0;
-  margin: 0;
-  padding: 0;
-  text-transform: none;
-  float: left;
-  text-align: left;
-}
-
 greenfi,
 ogreen,
 ogreenh1 {
@@ -5893,14 +5882,14 @@ input[type="checkbox"]:checked
     background: 0;
     background-color:0;
     border: 1px solid hsla(200, 1%, 61%, 0.4);
-    border-radius: 50%; /* one half of ( (border * 2) + height + padding ) */
-    color: 0;
+    border-radius: 50%; 
     font: "weathertext2";
     height: 26px; 
     min-width: 26px;
     padding: 2px;
     text-align: center;
-	margin-top:-8px
+	margin-top:-8px;
+	margin-left:180px
 }
 input[type="checkbox"]:checked
   ~ .weather34sidebarIconToggle
@@ -5942,7 +5931,7 @@ topbarmetricc {
   border: 1px solid hsla(200, 1%, 61%, 0.4);
   opacity: .8;
 }
-.weather34thinborder{width:15rem;font-size:0.1rem;border-bottom: 1px solid hsla(200, 1%, 61%, 0.2);}
+.weather34thinborder{width:15rem;font-size:0.1rem;border-bottom: 1px solid hsla(200, 1%, 61%, 0.2);color:#23252d}
 topbarinfo {
   display: inline;
   width: 2em;

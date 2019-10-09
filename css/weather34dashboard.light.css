@@ -185,24 +185,6 @@ body {
   clear: both;
   cursor: url(mouse/weather34bluecursor.png), n-resize;
 }
-
-#navigation {
-  display: none;
-}
-
-.menu li a {
-  color: gray;
-}
-
-.indoordate,
-.sidebar {
-  color: #2d2d2d;
-}
-
-.indoordate {
-  top: -25px;
-}
-
 body,
 header {
   text-align: center;
@@ -1578,13 +1560,6 @@ oredh1 {
   font-size: 1.1em;
 }
 
-.settings {
-  height: 73px;
-  float: right;
-  margin: 0;
-  font-size: 20px;
-}
-
 .no-touch .scrollable.hover {
   overflow-y: hidden;
   display: none;
@@ -1599,23 +1574,6 @@ oredh1 {
 ogreyh1 {
   display: flex;
   overflow: hidden;
-}
-
-nav {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  color: gray;
-}
-
-.active a.area {
-  float: left;
-  background-color: #2a2e33;
-  width: 100%;
-  height: 100%;
-  color: gray;
 }
 
 ogreenh1 {
@@ -1673,27 +1631,6 @@ uvtrend {
 oblueh1 {
   color: #07727d;
 }
-
-.menucolor a {
-  align-items: center;
-  height: 1rem;
-  width: 5.5rem;
-  line-height: 16px;
-  font-family: weathertext2;
-  color: silver;
-  justify-content: center;
-  font-size: 0.85em;
-  border: 1px solid #393d40;
-  border-left: 0;
-  box-shadow: inset 3px 0 0 0 #ff832f;
-  -webkit-border-top-right-radius: 2px;
-  -webkit-border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  font-weight: 500;
-  padding-left: 2px;
-}
-
 spanunit {
   font-size: 0.6rem;
 }
@@ -5066,11 +5003,6 @@ valuetextstrikes {
   border-bottom-right-radius: 2px;
 }
 
-menutextheading1, {
-  font-family: weathertext2;
-  font-size: 0.9em;
-}
-
 valuetextheading1 {
   font-family: weathertext2;
   font-size: 9px;
@@ -5130,11 +5062,6 @@ valuetextheading1 {
   margin-left: 10px;
   color: #2d3a4b;
 }
-
-menutextheading1 {
-  color: #aaa;
-}
-
 .tempmodulehome-10-0c,
 .tempmodulehome-50-10c,
 .tempmodulehome0-5c {
@@ -6216,14 +6143,14 @@ input[type="checkbox"]:checked
     background: 0;
     background-color:0;
     border: 1px solid hsla(200, 1%, 61%, 0.4);
-    border-radius: 50%; /* one half of ( (border * 2) + height + padding ) */
-    color: 0;
+    border-radius: 50%; 
     font: "weathertext2";
     height: 26px; 
     min-width: 26px;
     padding: 2px;
     text-align: center;
-	margin-top:-8px
+	margin-top:-8px;
+	margin-left:180px
 }
 input[type="checkbox"]:checked
   ~ .weather34sidebarIconToggle
@@ -6261,7 +6188,7 @@ topbarmetricc {
   border: 1px solid hsla(200, 1%, 61%, 0.4);
   opacity: .8;
 }
-.weather34thinborder{width:15rem;font-size:0.1rem;border-bottom: 1px solid hsla(200, 1%, 61%, 0.2);}
+.weather34thinborder{width:15rem;font-size:0.1rem;border-bottom: 1px solid hsla(200, 1%, 61%, 0.2);color:#23252d}
 topbarinfo {
   display: inline;
   width: 2em;
