@@ -6168,19 +6168,6 @@ input[type="checkbox"] {
   color: #ff7c39;
 }
 
-.weather34sidebarMenuInner li a,
-.weather34sidebarMenuInner li a:hover {
-  float: left;
-  text-decoration: none;
-  font-size: 11px;
-  font-weight: 400;
-  cursor: pointer;
-}
-
-.weather34sidebarMenuInner li a:hover {
-  color: #ff7c39;
-}
-
 input[type="checkbox"]:checked ~ #weather34sidebarMenu {
   transform: translateX(0);
 }
@@ -6212,7 +6199,7 @@ input[type="checkbox"] {
   box-sizing: border-box;
   position: relative;
   float: left;
-  transition: all 0.3s;
+  
 }
 
 input[type="checkbox"]:checked
@@ -6220,24 +6207,32 @@ input[type="checkbox"]:checked
   > .weather34horizontal {
   box-sizing: border-box;
   opacity: 0;
-  transition: all 0.3s;
+  
 }
 
 input[type="checkbox"]:checked
   ~ .weather34sidebarIconToggle
   > .weather34cross.part-1 {
-  box-sizing: border-box;
-  margin-top: 8px;
-  transform: rotate(135deg);
-  background-color:#01a4b5
+    background: 0;
+    background-color:0;
+    border: 1px solid hsla(200, 1%, 61%, 0.4);
+    border-radius: 50%; /* one half of ( (border * 2) + height + padding ) */
+    color: 0;
+    font: "weathertext2";
+    height: 26px; 
+    min-width: 26px;
+    padding: 2px;
+    text-align: center;
+	margin-top:-8px
 }
+input[type="checkbox"]:checked
+  ~ .weather34sidebarIconToggle
+  > .weather34cross.part-1:after{content:"X";color:#01a4b5;font-size:1em}
 
 input[type="checkbox"]:checked
   ~ .weather34sidebarIconToggle
-  > .weather34cross.part-2 {
-  box-sizing: border-box;
-  margin-top: -9px;
-  transform: rotate(-135deg); background-color:#01a4b5
+  > .weather34cross.part-2 { 
+  display:none;
 }
 
 topbarimperialf,
@@ -6253,7 +6248,6 @@ topbarmetricc {
   font-size: 0.7em;
   font-weight: 400;
   justify-content: center;  
-  border: 1px solid hsla(200, 1%, 61%, 0.4);
 }
 
 topbarimperialf {
@@ -6267,9 +6261,7 @@ topbarmetricc {
   border: 1px solid hsla(200, 1%, 61%, 0.4);
   opacity: .8;
 }
-.weather34thinborder {
-  width:15rem;font-size:0.1rem;border-bottom: 1px solid hsla(200, 1%, 61%, 0.1);
-	}
+.weather34thinborder{width:15rem;font-size:0.1rem;border-bottom: 1px solid hsla(200, 1%, 61%, 0.1);}
 topbarinfo {
   display: inline;
   width: 2em;
@@ -6309,26 +6301,7 @@ topbarinfo {
   margin: 0 auto;
   opacity: 1;
 }
-
-weather34menumarkerlightb {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  padding: 1px 3px;
-  color: silver;
-  border: 0;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  align-items: center;
-  font-family: weathertext2;
-  font-size: 12px;
-  font-weight: 400;
-  justify-content: center;
-  line-height: 12px;
-   background: #44a6b5;  
-}
-
-weather34menumarkermode,weather34menumarkerdot {
+weather34menumarkermode,weather34menumarkerdot,weather34menumarkerdotmode{
   display: inline-block;
   width: 10px;
   height: 8px;
@@ -6343,11 +6316,38 @@ weather34menumarkermode,weather34menumarkerdot {
   font-weight: 400;
   justify-content: center;
   line-height: 12px;
-  background:#f3f4f7;
+  background:#788a92;
   border: 1px solid #aeb6bf;
-  opacity:.2
+  opacity:.2  
+}
+weather34menumarkerdotmode{  
+  background:#fff;
+  opacity:.5
+}
+weather34menumarkerdotmode{  
+  background:#eee;
+}
+
+weather34menumarkerlightb
+{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding: 1px 3px;
+  color: silver;
+  border: 0;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  align-items: center;
+  font-family: weathertext2;
+  font-size: 12px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 12px;
+   background: #44a6b5;
   
 }
+
 menuimperial,
 menumetric {
   display: inline;
@@ -6362,6 +6362,7 @@ menumetric {
   font-weight: 400;
   justify-content: center;
   border: 1px solid hsla(200, 1%, 61%, 0.2);
+  
 }
 
 menuimperial {
@@ -6369,7 +6370,7 @@ menuimperial {
 }
 
 menumetric {
-  color:  #e2752c;  
+  color:  #e2752c; 
 }
 
 menuinfobox{
@@ -6388,7 +6389,6 @@ menuinfobox{
   border: 1px solid hsla(200, 1%, 61%, 0.2);
   opacity: .8;
 }
-
 weather34menumarkerblue,
 weather34menumarkerbluegrey,
 weather34menumarkergreen,
@@ -7240,7 +7240,7 @@ hardwarelogo3 {
   width: 140px;
   margin-left: 70px;
   margin-top: -30px;
-  font-size: .55rem;
+  font-size: .5rem;
   line-height: 1;
   color: #2d2d2d;
   font-family: weathertext2;
@@ -7251,7 +7251,7 @@ hardwarelogo3 {
   width: 140px;
   margin-left: 70px;
   margin-top: -35px;
-  font-size: .55rem;
+  font-size: .5rem;
   line-height: .9;
   color: #2d2d2d;
   font-family: weathertext2;
@@ -10333,64 +10333,4 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-}
-.weather34thinborder{width:15rem;font-size:0.1rem;border-bottom: 1px solid hsla(200, 1%, 61%, 0.1);}
-
-weather34menumarkerlightc{
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  padding: 3px;
-  color: silver;
-  border: 0;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  align-items: center;
-  font-family: weathertext2;
-  font-size: 12px;
-  font-weight: 400;
-  justify-content: center;
-  line-height: 12px;
-  background:#788a92;
-  border:2px solid #ccc;
-  
-}
-weather34menumarkerlightd{
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  padding: 3px;
-  color: silver;
-  border: 0;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  align-items: center;
-  font-family: weathertext2;
-  font-size: 12px;
-  font-weight: 400;
-  justify-content: center;
-  line-height: 12px;
-  background:#788a92;
-  border:2px solid #ccc;
-}
-
-
-weather34menumarkerlightb
-{
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  padding: 1px 3px;
-  color: silver;
-  border: 0;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  align-items: center;
-  font-family: weathertext2;
-  font-size: 12px;
-  font-weight: 400;
-  justify-content: center;
-  line-height: 12px;
-   background: #44a6b5;
-  
 }

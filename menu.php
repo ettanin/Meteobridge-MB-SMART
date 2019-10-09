@@ -45,33 +45,35 @@ if($units!='uk'){echo '<a  href="./?units=uk">  <metricgrey>UK</metricgrey> <top
 <br /><p>
 <div class=weather34thinborder>--</div>
 <li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> TOOLS</a></li>
-<li><a href="mb-smart-setup.php" target="_blank" title="Weather34 MB SMART Setup Screen"><?php echo " <weather34menumarkerbluegrey></weather34menumarkerbluegrey> ",$lang['Settings']; ?> 
+<li><a href="mb-smart-setup.php" target="_blank" title="Weather34 MB SMART Setup Screen"><?php echo " <weather34menumarkerdot></weather34menumarkerdot> ",$lang['Settings']; ?> 
 <?php if ($password==""){echo ' <svg id="weather34 unlocked"  viewBox="0 0 32 32"  width="12" height="12" fill="none" stroke="#f16b4f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 7 9 3 16 3 23 3 23 8 23 9 M16 20 L16 23" /><circle cx="16" cy="24" r="1" /></svg> <menuinfobox>Password Not Set</menuinfobox>';}
 else echo ' <svg id="weather34 locked" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#06a2b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 9 9 5 16 5 23 5 23 9 23 15 M16 20 L16 23" /><circle cx="16" cy="24" r="1" /></svg> <menuinfobox>Locked</menuinfobox>';
 ?> </a></li><p>
 <div class=weather34thinborder>--</div>
 <li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> UI THEME</a></li>
 <li><a href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>>
-<?php if($theme=='dark'){echo' <weather34menumarkerlight></weather34menumarkerlight> Light <menuinfobox>Mode</menuinfobox>';}else{echo'<weather34menumarkerbluegrey></weather34menumarkerbluegrey> Dark <menuinfobox>Mode</menuinfobox>';}?></a></li>
+<?php 
+if($theme=='dark'){echo' <weather34menumarkerdotmode></weather34menumarkerdotmode> Light <menuinfobox>Mode</menuinfobox>';}
+else{echo'<weather34menumarkerdot></weather34menumarkerdot> Dark <menuinfobox>Mode</menuinfobox>';}?></a></li>
 <p><div class=weather34thinborder>--</div>
 <li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> UNITS</a></li>
 <?php 
-  if($units!='us'){echo '<li> <a  href="./?units=us"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey>  Imperial  <menuinfobox>MPH</menuinfobox> 
+  if($units!='us'){echo '<li> <a  href="./?units=us"> <weather34menumarkerdot></weather34menumarkerdot>  Imperial  <menuinfobox>MPH</menuinfobox> 
   <menuinfobox>&deg;F</menuinfobox> </a><br />  ';}
-  if($units!='metric'){echo '<li> <a  href="./?units=metric"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Metric <menuinfobox>KM/H</menuinfobox> <menuinfobox>&deg;C</menuinfobox></a><br />  ';}
-  if($units!='uk'){echo '<li> <a  href="./?units=uk">  <weather34menumarkerbluegrey></weather34menumarkerbluegrey> UK <menuinfobox>MPH</menuinfobox>  
+  if($units!='metric'){echo '<li> <a  href="./?units=metric"> <weather34menumarkerdot></weather34menumarkerdot> Metric <menuinfobox>KM/H</menuinfobox> <menuinfobox>&deg;C</menuinfobox></a><br />  ';}
+  if($units!='uk'){echo '<li> <a  href="./?units=uk">  <weather34menumarkerdot></weather34menumarkerdot> UK <menuinfobox>MPH</menuinfobox>  
   <menuinfobox>&deg;C</menuinfobox></a><br /> ';}
-  if($units!='scandinavia'){echo '<li> <a  href="./?units=scandinavia"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Scandinavia <menuinfobox>M/S</menuinfobox> <menuinfobox>&deg;C</menuinfobox></a>';}
+  if($units!='scandinavia'){echo '<li> <a  href="./?units=scandinavia"> <weather34menumarkerdot></weather34menumarkerdot> Scandinavia <menuinfobox>M/S</menuinfobox> <menuinfobox>&deg;C</menuinfobox></a>';}
 ?></li></p>
 <div class=weather34thinborder>--</div>
 
 <li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> EXTRAS</a></li>
 <!--webcam--->
 <?php if($webcamurl==''){;} 
-else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Web Cam <menuinfobox>Stream</menuinfobox></a></li>';?>
+else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weather34menumarkerdot></weather34menumarkerdot> Web Cam <menuinfobox>Stream</menuinfobox></a></li>';?>
 
-<li><!--contact info---> <a href="bio.php" data-lity title="Weather Station Owner Contact Card Info"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Contact <menuinfobox>Info</menuinfobox> </a></li> 
-<li><!--hardware info---> <a href="stationinfo.php" data-lity title="Hardware Weather Station Hardware Info"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Hardware <menuinfobox>Info</menuinfobox></a></li>  
+<li><!--contact info---> <a href="bio.php" data-lity title="Weather Station Owner Contact Card Info"> <weather34menumarkerdot></weather34menumarkerdot> Contact <menuinfobox>Info</menuinfobox> </a></li> 
+<li><!--hardware info---> <a href="stationinfo.php" data-lity title="Hardware Weather Station Hardware Info"> <weather34menumarkerdot></weather34menumarkerdot> Hardware <menuinfobox>Info</menuinfobox></a></li>  
 <p>
 <!---languages---> 
    <?php if($languages=="yes") echo '
@@ -95,17 +97,17 @@ else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weat
   <li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> CREDITS & INFO</a></li> 
       <!---credits | download info please do not remove credits if so no support is given it is not much to ask---> 
 <?php  //suppliers
-if ($suppliers =='Weather Spares'){echo '<li><a href="https://weatherspares.co.uk" title="https://weatherspares.co.uk" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.' <menuinfobox>UK</menuinfobox>';}
-if ($suppliers =='Prodata Weather Systems'){echo '<li><a href="https://shop.weatherstations.co.uk" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.' <menuinfobox>UK</menuinfobox>';}
-if ($suppliers =='Weerspecialist'){echo '<li><a href="https://www.weerstationkopen.nl" title="https://www.weerstationkopen.nl" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.' <menuinfobox>Netherlands</menuinfobox>';}
-if ($suppliers =='Weerhuisje'){echo '<li><a href="https://weerhuisje.nl" title="https://weerhuisje.nl" target="_blank"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.' <menuinfobox>Netherlands</menuinfobox>';}
-if ($suppliers =='Soluzionimeteo'){echo '<li><a href="https://www.soluzionimeteo.it/content/category/1-home" title="https://www.soluzionimeteo.it/content/category/1-home" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.' <menuinfobox>Italy</menuinfobox>';}
-if ($suppliers =='Scaled Instruments'){echo '<li><a href="https://www.scaledinstruments.com" title="https://www.scaledinstruments.com" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.' <menuinfobox>USA</menuinfobox>';}
-if ($suppliers =='Ambient Weather'){echo '<li><a href="https://www.ambientweather.com" title="https://www.ambientweather.com" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> '.$suppliers.' <menuinfobox>USA</menuinfobox>';}
+if ($suppliers =='Weather Spares'){echo '<li><a href="https://weatherspares.co.uk" title="https://weatherspares.co.uk" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>UK</menuinfobox>';}
+if ($suppliers =='Prodata Weather Systems'){echo '<li><a href="https://shop.weatherstations.co.uk" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>UK</menuinfobox>';}
+if ($suppliers =='Weerspecialist'){echo '<li><a href="https://www.weerstationkopen.nl" title="https://www.weerstationkopen.nl" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>Netherlands</menuinfobox>';}
+if ($suppliers =='Weerhuisje'){echo '<li><a href="https://weerhuisje.nl" title="https://weerhuisje.nl" target="_blank"> <weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>Netherlands</menuinfobox>';}
+if ($suppliers =='Soluzionimeteo'){echo '<li><a href="https://www.soluzionimeteo.it/content/category/1-home" title="https://www.soluzionimeteo.it/content/category/1-home" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>Italy</menuinfobox>';}
+if ($suppliers =='Scaled Instruments'){echo '<li><a href="https://www.scaledinstruments.com" title="https://www.scaledinstruments.com" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>USA</menuinfobox>';}
+if ($suppliers =='Ambient Weather'){echo '<li><a href="https://www.ambientweather.com" title="https://www.ambientweather.com" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>USA</menuinfobox>';}
 if ($suppliers =='None'){echo '';}?></a></li> 
 
-<li><!--hardware info---> <a href="licence.php" data-lity title="Weather34 MB-SMART Licence Info and Download"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Download MB-SMART <menuinfobox><?php echo $mbsmartversion?></menuinfobox></a></li> 
-<li><!--hardware info---> <a href="meteocloud.php" data-lity title="View the Meteocloud Network"> <weather34menumarkerbluegrey></weather34menumarkerbluegrey> Meteocloud <menuinfobox>Network</menuinfobox></a></li> 
-<li><a href="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" data-title="Weather34 MB-Smart Version" target="_blank"><weather34menumarkerbluegrey></weather34menumarkerbluegrey> Weather34 Designed <menuinfobox>&copy;2015-<?php echo date('Y');?></menuinfobox></a></li>    
+<li><!--hardware info---> <a href="licence.php" data-lity title="Weather34 MB-SMART Licence Info and Download"> <weather34menumarkerdot></weather34menumarkerdot> Download MB-SMART <menuinfobox><?php echo $mbsmartversion?></menuinfobox></a></li> 
+<li><!--hardware info---> <a href="meteocloud.php" data-lity title="View the Meteocloud Network"> <weather34menumarkerdot></weather34menumarkerdot> Meteocloud <menuinfobox>Network</menuinfobox></a></li> 
+<li><a href="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" data-title="Weather34 MB-Smart Version" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> Weather34 Designed <menuinfobox>&copy;2015-<?php echo date('Y');?></menuinfobox></a></li>    
 <p><div class=weather34thinborder>--</div>
 </div></div></header>  
