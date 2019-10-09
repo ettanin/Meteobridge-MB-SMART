@@ -45,9 +45,9 @@ curl_close($ch4);
 fclose($fp4);}
 ?>
 
-<?php // weather34 luftdaten air quality  curl based
+<?php // weather34 luftdaten air quality  curl based updated 9th October new url https://data.sensor.community/airrohr/v1/sensor/
 if($luftdatenhardware=='yes'){
-$url9 = 'https://api.luftdaten.info/v1/sensor/'.$luftdatenID.'/';
+$url9 = 'https://data.sensor.community/airrohr/v1/sensor/'.$luftdatenID.'/';
 $ch9 = curl_init($url9);
 $filename9 = '../jsondata/luftdaten.txt';
 $complete_save_loc9 = $filename9;
