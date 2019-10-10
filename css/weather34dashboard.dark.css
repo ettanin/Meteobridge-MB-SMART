@@ -5880,20 +5880,20 @@ input[type="checkbox"]:checked
   ~ .weather34sidebarIconToggle
   > .weather34cross.part-1 {
     background: 0;
-    background-color:0;
-    border: 1px solid hsla(200, 1%, 61%, 0.4);
-    border-radius: 50%; 
+    background-color:#b83603;
+    border: 0px solid hsla(200, 1%, 61%, 0.4);
+    border-radius: 3px; 
     font: "weathertext2";
-    height: 26px; 
+    height: 24px; 
     min-width: 26px;
     padding: 2px;
     text-align: center;
 	margin-top:-8px;
-	margin-left:180px
+	margin-left:180px;
 }
 input[type="checkbox"]:checked
   ~ .weather34sidebarIconToggle
-  > .weather34cross.part-1:after{content:"X";color:#01a4b5;font-size:1em}
+  > .weather34cross.part-1:after{content:"X";color:#fff;font-size:1em;}
 
 
 input[type="checkbox"]:checked
@@ -5975,7 +5975,7 @@ weather34menumarkermode,weather34menumarkerdot,weather34menumarkerdotmode{
   display: inline-block;
   width: 10px;
   height: 8px;
-  padding: 1px 3px;
+  padding: 1px 2px;
   color: silver;
   border: 0;
   -webkit-border-radius: 2px;
@@ -5986,9 +5986,10 @@ weather34menumarkermode,weather34menumarkerdot,weather34menumarkerdotmode{
   font-weight: 400;
   justify-content: center;
   line-height: 12px;
-  background:#788a92;
-  border: 1px solid hsla(200, 1%, 61%,.8);
-  opacity:.8
+  background:0;
+  border: 1px solid hsla(200, 1%, 61%,.6);
+  opacity:.8;  
+  border-right-width: 5px;
   
 }
 weather34menumarkerdotmode{  
@@ -10217,4 +10218,19 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
-themenu{position:relative;font-family:weathertext2;font-size:.8em;opacity:.6;color: #aeb6bf;line-height:1;top:10px;display:flex;padding:5px}
+themenu{position:relative;font-family:weathertext2;font-size:.8em;opacity:.6;color: #aeb6bf;line-height:1;top:10px;display:flex;padding:5px;text-transform:uppercase}
+themenusection{
+  display: inline;
+  width: 2em;
+  height: 1em;
+  padding: 1px 3px;
+  border-radius: 2px;
+  background: rgba(62,62,77,.5);
+  align-items: center;
+  font-family: arial,helvetica,system;
+  font-size: 0.9em;
+  font-weight: 400;
+  justify-content: center;  
+  color: #aeb6bf;
+  border: 0;  text-transform:uppercase
+}

@@ -41,21 +41,21 @@ if($units!='uk'){echo '<a  href="./?units=uk">  <metricgrey>UK</metricgrey> <top
     <div class="weather34spinner weather34cross part-2"></div>    
   </label>
 <div id="weather34sidebarMenu"><ul class="weather34sidebarMenuInner">
-<themenu>MENU OPTIONS</themenu><p>
+<themenu><?php echo $lang['Menu Options'];?></themenu><p>
 <div class=weather34thinborder>--</div>
-<li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> TOOLS</a></li>
+<li><a href="#"><themenusection> TOOLS</themenusection></a></li>
 <li><a href="mb-smart-setup.php" target="_blank" title="Weather34 MB SMART Setup Screen"><?php echo " <weather34menumarkerdot></weather34menumarkerdot> ",$lang['Settings']; ?> 
 <?php if ($password==""){echo ' <svg id="weather34 unlocked"  viewBox="0 0 32 32"  width="12" height="12" fill="none" stroke="#f16b4f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 7 9 3 16 3 23 3 23 8 23 9 M16 20 L16 23" /><circle cx="16" cy="24" r="1" /></svg> <menuinfobox>Password Not Set</menuinfobox>';}
 else echo ' <svg id="weather34 locked" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#06a2b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 9 9 5 16 5 23 5 23 9 23 15 M16 20 L16 23" /><circle cx="16" cy="24" r="1" /></svg> <menuinfobox>Locked</menuinfobox>';
 ?> </a></li><p>
 <div class=weather34thinborder>--</div>
-<li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> UI THEME</a></li>
+<li><a href="#"><themenusection> UI THEME</themenusection></a></li>
 <li><a href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>>
 <?php 
 if($theme=='dark'){echo' <weather34menumarkerdotmode></weather34menumarkerdotmode> Light <menuinfobox>Mode</menuinfobox>';}
 else{echo'<weather34menumarkerdot></weather34menumarkerdot> Dark <menuinfobox>Mode</menuinfobox>';}?></a></li>
 <p><div class=weather34thinborder>--</div>
-<li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> UNITS</a></li>
+<li><a href="#"><themenusection> UNITS</themenusection></a></li>
 <?php 
   if($units!='us'){echo '<li> <a  href="./?units=us"> <weather34menumarkerdot></weather34menumarkerdot>  Imperial  <menuinfobox>MPH</menuinfobox> 
   <menuinfobox>&deg;F</menuinfobox> </a><br />  ';}
@@ -66,7 +66,7 @@ else{echo'<weather34menumarkerdot></weather34menumarkerdot> Dark <menuinfobox>Mo
 ?></li></p>
 <div class=weather34thinborder>--</div>
 
-<li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> EXTRAS</a></li>
+<li><a href="#"><themenusection> EXTRAS</themenusection></a></li>
 <!--webcam--->
 <?php if($webcamurl==''){;} 
 else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weather34menumarkerdot></weather34menumarkerdot> Web Cam <menuinfobox>Stream</menuinfobox></a></li>';?>
@@ -80,7 +80,7 @@ else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weat
    
    <li><a href="">
    
-   <weather34menumarkerlightb></weather34menumarkerlightb>  '.$lang["language"], '</a></li>','
+   <themenusection>'.$lang["language"], '</themenusection>  </a></li>','
      <br>
   <div class="languages34">
   <a href="index.php?lang=en"><img src="img/flags/en.svg"  title="English" width="20px" height="20px"></a>&nbsp;
@@ -93,7 +93,7 @@ else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weat
    '?>
    </p>
  <div class=weather34thinborder>--</div>  
-  <li><a href="#"><weather34menumarkerlightb></weather34menumarkerlightb> CREDITS & INFO</a></li> 
+  <li><a href="#"><themenusection> CREDITS & INFO</themenusection></a></li> 
       <!---credits | download info please do not remove credits if so no support is given it is not much to ask---> 
 <?php  //suppliers
 if ($suppliers =='Weather Spares'){echo '<li><a href="https://weatherspares.co.uk" title="https://weatherspares.co.uk" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>UK</menuinfobox>';}

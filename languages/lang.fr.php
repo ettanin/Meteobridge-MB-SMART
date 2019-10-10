@@ -31,6 +31,7 @@ $lang['Nonmetric']              = 'Affichage température en (F) ';
 $lang['Metric']                 = 'Affichage température en (C)';
 $lang['UKmetric']               = 'Affichage du vent en MPH ';
 $lang['Scandinavia']            = 'Affichage du vent en M/S';
+$lang['Menu Options']            = 'Options de Menu';
 $lang['Worldwideearthquakes']   = 'Tremblement de terre';
 $lang['Toggle']                 = 'Basculer en plein écran ';
 $lang['Contactinfo']            = 'Informations de contact';

@@ -31,6 +31,7 @@ $lang['Nonmetric']               = 'US (F) ';
 $lang['Metric']                  = 'Metriskt (C)';
 $lang['UKmetric']                = 'BG (MPH - Metriskt) ';
 $lang['Scandinavia']             = 'Scandinavien(M/S)';
+$lang['Menu Options']            = 'Menyalternativ';
 $lang['Worldwideearthquakes']    = 'Jordbävningar';
 $lang['Toggle']                  = 'Fullskärm';
 $lang['Contactinfo']             = 'Station- & kontaktinfo';

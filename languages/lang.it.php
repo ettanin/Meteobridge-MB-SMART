@@ -30,6 +30,7 @@ $lang['Nonmetric']              = 'US (F) ';
 $lang['Metric']                 = 'Metrico (C)';
 $lang['UKmetric']               = 'UK (MPH - Metrico) ';
 $lang['Scandinavia']            = 'Scandinavia(M/S)';
+$lang['Menu Options']            = 'Opzioni del Menu';
 $lang['Worldwideearthquakes']   = 'Terremoti Mondo';
 $lang['Toggle']                 = 'Schermo intero';
 $lang['Contactinfo']            = 'Stazione & Informazioni';
