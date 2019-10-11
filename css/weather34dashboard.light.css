@@ -6719,10 +6719,11 @@ hardwarelogo3 {
 
 .eqt {
   position: absolute;
-  margin-left: -20px;
-  margin-top: -3px;
+  margin-left: -18px;
+  margin-top: -2px;
   color: #555;
-  font-size: 0.55rem;
+  font-size: 0.5rem;
+  font-family: weathertext2;
 }
 
 .eqtext {

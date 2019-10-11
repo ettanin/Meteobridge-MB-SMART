@@ -6501,15 +6501,19 @@ wfstriketoday {
   margin-top: 0;
 }
 
-.eqcaution, .eqt {
+.eqcaution {
   position: absolute;
   color: #aeb6bf;
-  font-size: 0.55rem;
+  font-size: 0.5rem;
 }
 
 .eqt {
-  margin-left: -16px;
-  margin-top: -3px;
+  position: absolute;
+  margin-left: -14px;
+  margin-top: -1px;
+  color: #aeb6bf;
+  font-size: 0.5rem;
+  font-family: weathertext2;
 }
 
 .eqtext {
