@@ -42,5 +42,5 @@ echo $lang['Rate']?> <?php if ($weather["rain_rate"]>0)echo "<ratevalue>".$weath
 <?php }?>
 <?php if ( $weather["rain_units"] =='mm' && $weather["rain_rate"]<32){;?> <div class="weather34ratebar" style="width:<?php if ($weather["rain_units"] =='in'){ echo $weather["rain_rate"]*40;}else if ($weather["rain_units"] =='mm'){ echo $weather["rain_rate"]*1.75;}?>px;">
 <?php }?>
-<?php if ($weather["rain_rate"]==0)echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$weather["rain_rate"]."<smallrainrateunit>".$weather["rain_units"]?></smallrainrateunit></div></div>
+<?php if ($weather["rain_rate"]==0)echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<raiblue>".$weather["rain_rate"]."</raiblue><smallrainrateunit>".$weather["rain_units"]?></smallrainrateunit></div></div>
 </div></div></div></div>
