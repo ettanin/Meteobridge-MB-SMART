@@ -410,4 +410,21 @@ $lang['Hour']='Hour';
 $lang['Minute']='Minute';
 $lang['Minutes']='Minutes';
 $lang['Last Rainfall']='Last Rainfall';
+$lang['Particle Info']          = 'Particle Info';
+$lang['Guide']                  = 'Guide';
+$lang['GOOD']                   = 'GOOD';
+$lang['MODERATE']               = 'MODERATE';
+$lang['Unhealthy for Sensitive Groups'] = 'Unhealthy for Sensitive Groups';
+$lang['Unhealthy'] = 'Unhealthy';
+$lang['(Precautions Required)'] = '(Precautions Required)';
+$lang['Very Unhealthy'] ='Very Unhealthy';
+$lang['(Critical Conditions)'] ='(Critical Conditions)';
+$lang['Hazardous'] = 'Hazardous';
+$lang['(Life Threatening)'] = '(Life Threatening)';
+$lang['from'] = 'from';
+$lang['*Regional'] = '*Regional';
+$lang['*Warning Nearby'] = '*Warning Nearby';
+$lang['Recent Earthquake'] = 'Recent Earthquake';
+$lang['Regional Recent Earthquakes'] = 'Regional Recent Earthquakes';
+
 ?>

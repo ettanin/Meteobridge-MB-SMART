@@ -30,9 +30,9 @@ $lang['Nonmetric']              = 'US (F) ';
 $lang['Metric']                 = 'Metric (C)';
 $lang['UKmetric']               = 'UK (MPH - Metric) ';
 $lang['Scandinavia']            = 'Scandinavië(M/S)';
-$lang['Menu Options']            = 'Menu Opties';
 $lang['Worldwideearthquakes']   = 'Aarbevingen wereld wijd';
 $lang['Toggle']                 = 'Volledig scherm activeren ';
+$lang['Menu Options']           = 'Menu Opties';
 $lang['Contactinfo']            = 'Station & Contact Info';
 $lang['Templateinfo']           = 'Medewerkers';
 $lang['language']               = 'Selecteer Taal';
@@ -252,6 +252,7 @@ $lang['Rainratealert']          = 'per/hr<span> neerslag ';
 $lang['Regional']               = 'Regionale aardbeving';
 $lang['Significant']            = 'Betekenisvolle aardbevingen';
 $lang['Nosignificant']          = 'Geen betekenisvolle aardbevingen';
+
 //Main page
 $lang['Barometer']              = 'Barometer';
 $lang['UVSOLAR']                = 'UV-Solar';
@@ -301,8 +302,8 @@ $lang['Battery'] ='Batterij';
 $lang['Installed']='Geïnstalleerd';
 $lang['Interface Uptime']='Aantal dagen geleden';
 $lang['Meteobridge Interface']='Meteobridge Interface';
-$lang['GoodBattery']             = 'Goed';
-$lang['ReplaceBattery']          = 'Vervang';
+$lang['GoodBattery']             = 'In goede';
+$lang['ReplaceBattery']          = 'Vervangen';
 $lang['ConditionBattery']		 = '&nbsp;&nbsp;Staat';
 
 
@@ -321,13 +322,23 @@ $lang['Station']                = 'Station';
 $lang['Detailed Forecast']      = 'Gedetailleerde voorspelling';
 $lang['Summary Outlook']        = 'Samenvatting';
 //Air Quality
-$lang['Hazordous']              = 'Gevaarlijke omstandigheden';
-$lang['VeryUnhealthy']          = 'Heel ongezond';
-$lang['Unhealthy']              = 'Ongezonde luchtkwaliteit';
+$lang['Hazardous']              = 'Gevaarlijk';
+$lang['Very Unhealthy']          = 'Heel ongezond';
 $lang['UnhealthyFS']            = 'Ongezond voor sommigen';
 $lang['Moderate']               = 'Gematigde luchtkwaliteit ';
 $lang['Good']                   = 'Goede luchtkwaliteit ';
-$lang['Air Quality']			= 'Luchtkwaliteit';
+$lang['Air Quality']	       	= 'Luchtkwaliteit';
+$lang['Particle Info']          = 'Info';
+$lang['Guide']                  = 'Gids';
+$lang['GOOD']                   = 'Goed';
+$lang['MODERATE']               = 'Gematigd';
+$lang['Unhealthy for Sensitive Groups'] = 'Ongezond voor gevoelige groepen';
+$lang['Unhealthy']              = 'Ongezond';
+$lang['(Precautions Required)'] = '(Voorzichtigheid vereist)';
+$lang['(Critical Conditions)'] = '(Kritieke situatie)';
+$lang['(Life Threatening)'] = '(Levensbedreigend)';
+
+
 #notification additions
 $lang['notifyTitle']             = 'Weerstation Meldingen';
 $lang['notifyAlert']             = "Alarm";
@@ -391,15 +402,27 @@ $lang['Highest']						='&nbsp;&nbsp;Hoog';
 $lang['Yesterday']				        ='Gisteren';
 //time ago 
 $lang['Years']='Jaren';
-$lang['Year']='Jaar';
-$lang['Months']='Maanden';
-$lang['Month']='Maand';
-$lang['Day']='Dag';
-$lang['Days']='Dagen';
-$lang['Hours']='Uren';
-$lang['Hour']='Uur';
-$lang['Minute']='Minuut';
-$lang['Minutes']='Minuut';
+$lang['Year']=' Jaar';
+$lang['Months']=' Maanden';
+$lang['Month']=' Maand';
+$lang['Day']=' Dag';
+$lang['Days']=' Dagen';
+$lang['Hours']=' Uur';
+$lang['Hour']=' Uur';
+$lang['Minute']=' Minuut';
+$lang['Minutes']=' Minuten';
 $lang['Last Rainfall']='Laatste Regen';
+
+//Diversen
+$lang['Pressure']='Barometer';
+$lang['Console Forecast']='Console voorspelling';
+$lang['Wind Data'] ='Wind data';
+$lang['Battery'] = 'Batterij';
+$lang['from'] = 'van';
+$lang['*Regional'] = '*Regionaal';
+$lang['*Warning Nearby'] = '*Waarschuwing in de buurt';
+$lang['Recent Earthquake'] = 'Recente aardbeving';
+$lang['Regional Recent Earthquakes'] = 'Recente regionale aardbevingen';
+
 
 ?>

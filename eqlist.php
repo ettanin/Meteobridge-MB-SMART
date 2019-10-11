@@ -1,5 +1,5 @@
 <?php include('settings.php');include('livedata.php');include
-error_reporting(0); 
+error_reporting(0);include('common.php'); 
 
 	####################################################################################################
 	#	HOME WEATHER STATION TEMPLATE by BRIAN UNDERDOWN 2015-18                                       #
@@ -200,7 +200,7 @@ metricsblue{color:#44a6b5;font-family:"weathertext2",Helvetica, Arial, sans-seri
 margin-top:-48px;margin-left:72px;padding:5px;line-height:10px;font-size:9px}
 
 .actualt{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
-padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
+padding:5px;font-family:Arial, Helvetica, sans-serif;width:110px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:-15px}
 .actualw{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;border-bottom:2px solid rgba(56,56,60,1);
@@ -208,12 +208,12 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .svgimage{background:rgba(0, 155, 171, 1.000);-webit-border-radius:2px;border-radius:2px;}
 orange1{color:rgba(255, 131, 47, 1.000);}
 </style>
-<div class="weather34darkbrowser" url="Regional Recent Earthquakes "></div>
+<div class="weather34darkbrowser" url="<?php echo $lang['Regional Recent Earthquakes'];?> "></div>
   
 <main class="grid">
-  <article>  
-   <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
-    <?php 
+  <article>
+   <div class=actualt>&nbsp;&nbsp <?php echo $lang['Recent Earthquake'];?> </div>
+    <?php
 				if($magnitude>=7){echo "<div class=mag9-10>",number_format($magnitude,1),"";}
 				else if($magnitude>=5.8){echo "<div class=mag9-10>",number_format($magnitude,1),"";}
 				else if($magnitude>=5){echo "<div class=mag6-8>",number_format($magnitude,1),"";}
@@ -233,39 +233,39 @@ for ($i = 0; $i < 1; $i++) {
 	// EQ Latest earthquake 
 	
 	if ($eqdist<150)  {
-	echo "<div class='time'><red>*Warning Nearby</red> <span> ".$heatindexalert8."  ".$eventime."</div></span>";
+	echo "<div class='time'><red>".$lang['*Warning Nearby']."</red> <span> ".$heatindexalert8."  ".$eventime."</div></span>";
 	echo $eqtitle;
-	} 
+	}
 	else if ($magnitude>7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime ,"</div></span>";
 	echo $eqtitle ;
-	} 
-	
-	
+	}
+
+
 	else if ($magnitude>5.7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']."<br></orange1><span>",$eventime ,"</div></span>";
 	echo $eqtitle ;
-	} 
-	
-	
+	}
+
+
 	else if ($magnitude>5.2)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime ,"</div></span>";
 	echo $eqtitle ;
-	} 
-	
+	}
+
 	else if ($magnitude>4)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime ,"</div></span>";
 	echo $eqtitle ;
-	} 
-	
-	
+	}
+
+
 	else if ($magnitude>3)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime ,"</div></span>";
 	echo $eqtitle ;
-	} 
-	
+	}
+
 	else if ($magnitude>1)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime ,"</div></span>";
 	echo $eqtitle ;
 	} 
 }
@@ -273,17 +273,17 @@ for ($i = 0; $i < 1; $i++) {
 ?><br>
 <?php
  if ($windunit == 'mph' && $eqdist<=100) {
-		 echo "<red>".round($eqdist  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo "<red>".round($eqdist  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	}
 	
 else if ($windunit == 'km/h' && $eqdist<150) {
-		 echo "<red>".round($eqdist) ."</red> Km from<br> $stationlocation";
-	}			
+		 echo "<red>".round($eqdist) ."</red> Km ".$lang['from']."<br> $stationlocation";
+	}
 
 else if ($windunit == 'mph') {
-		 echo round($eqdist  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo round($eqdist  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	} else {
-		 echo $eqdist ." Km from<br> $stationlocation" ;
+		 echo $eqdist ." Km ".$lang['from']."<br> $stationlocation" ;
 	}
 	echo "";
 	?>
@@ -293,7 +293,7 @@ else if ($windunit == 'mph') {
 </article>  
   
  <article>  
-   <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
+   <div class=actualt>&nbsp;&nbsp <?php echo $lang['Recent Earthquake'];?> </div>
     <?php  //1
 				if($magnitude1>=7){echo "<div class=mag9-10>",number_format($magnitude1,1),"";}
 				else if($magnitude1>=5.8){echo "<div class=mag9-10>",number_format($magnitude1,1),"";}
@@ -313,39 +313,39 @@ for ($i = 0; $i < 1; $i++) {
 	// EQ Latest earthquake 
 	
 	if ($eqdist1<100)  {
-	echo "<div class='time'><red>*Warning Nearby</red> ".$heatindexalert8." <span> ".$eventime1."</div></span>";
+	echo "<div class='time'><red>".$lang['*Warning Nearby']."</red> ".$heatindexalert8." <span> ".$eventime1."</div></span>";
 	echo $eqtitle1;
 	} 
 	else if ($magnitude1>7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime1 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime1 ,"</div></span>";
 	echo $eqtitle1 ;
 	} 
 	
 	
 	else if ($magnitude1>5.7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime1 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime1 ,"</div></span>";
 	echo $eqtitle1 ;
 	} 
 	
-	
+
 	else if ($magnitude1>5.2)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime1 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime1 ,"</div></span>";
 	echo $eqtitle1 ;
-	} 
-	
+	}
+
 	else if ($magnitude1>4)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime1 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime1 ,"</div></span>";
 	echo $eqtitle1 ;
 	} 
 	
 	
 	else if ($magnitude1>3)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime1 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime1 ,"</div></span>";
 	echo $eqtitle1 ;
 	} 
 	
 	else if ($magnitude1>1)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime1 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime1 ,"</div></span>";
 	echo $eqtitle1 ;
 	} 
 }
@@ -354,17 +354,17 @@ for ($i = 0; $i < 1; $i++) {
 <?php
 			
 if ($windunit == 'mph' && $eqdist1<=100) {
-		 echo "<red>".round($eqdist1  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo "<red>".round($eqdist1  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	}
 	
 else if ($windunit == 'km/h' && $eqdist1<150) {
-		 echo "<red>".round($eqdist1) ."</red> Km from<br> $stationlocation";
-	}			
+		 echo "<red>".round($eqdist1) ."</red> Km ".$lang['from']."<br> $stationlocation";
+	}
 
 else if ($windunit == 'mph') {
-		 echo round($eqdist1  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo round($eqdist1  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	} else {
-		 echo $eqdist1 ." Km from<br> $stationlocation" ;
+		 echo $eqdist1 ." Km ".$lang['from']."<br> $stationlocation" ;
 	}
 	echo "";
 	?>
@@ -373,8 +373,8 @@ else if ($windunit == 'mph') {
 </smalluvunit>
 </article>  
   
-   <article>  
-   <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
+   <article>
+   <div class=actualt>&nbsp;&nbsp <?php echo $lang['Recent Earthquake'];?> </div>
     <?php //2
 				if($magnitude2>=7){echo "<div class=mag9-10>",number_format($magnitude2,1),"";}
 				else if($magnitude2>=5.8){echo "<div class=mag9-10>",number_format($magnitude2,1),"";}
@@ -394,39 +394,39 @@ for ($i = 0; $i < 1; $i++) {
 	// EQ Latest earthquake 
 	
 	if ($eqdist2<150)  {
-	echo "<div class='time'><red>*Warning Nearby</red> <span> ".$heatindexalert8."  ".$eventime2."</div></span>";
+	echo "<div class='time'><red>".$lang['*Warning Nearby']."</red> <span> ".$heatindexalert8."  ".$eventime2."</div></span>";
 	echo $eqtitle2;
 	} 
 	else if ($magnitude2>7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime2,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime2,"</div></span>";
 	echo $eqtitle2 ;
 	} 
 	
 	
 	else if ($magnitude2>5.7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime2,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime2,"</div></span>";
 	echo $eqtitle2 ;
 	} 
 	
 	
 	else if ($magnitude2>5.2)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime2,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime2,"</div></span>";
 	echo $eqtitle2 ;
 	} 
 	
 	else if ($magnitude2>4)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime2,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime2,"</div></span>";
 	echo $eqtitle2 ;
 	} 
 	
 	
 	else if ($magnitude2>3)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime2,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime2,"</div></span>";
 	echo $eqtitle2 ;
 	} 
 	
 	else if ($magnitude2>1)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime2,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime2,"</div></span>";
 	echo $eqtitle2 ;
 	} 
 }
@@ -435,17 +435,17 @@ for ($i = 0; $i < 1; $i++) {
 <?php
 			
 if ($windunit == 'mph' && $eqdist2<=100) {
-		 echo "<red>".round($eqdist2  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo "<red>".round($eqdist2  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	}
 	
 else if ($windunit == 'km/h' && $eqdist2<150) {
-		 echo "<red>".round($eqdist2) ."</red> Km from<br> $stationlocation";
+		 echo "<red>".round($eqdist2) ."</red> Km ".$lang['from']."<br> $stationlocation";
 	}			
 
 else if ($windunit == 'mph') {
-		 echo round($eqdist2  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo round($eqdist2  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	} else {
-		 echo $eqdist2 ." Km from<br> $stationlocation" ;
+		 echo $eqdist2 ." Km ".$lang['from']."<br> $stationlocation" ;
 	}
 	echo "";
 	?>
@@ -455,7 +455,7 @@ else if ($windunit == 'mph') {
 </article>  
   
    <article>  
-   <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
+   <div class=actualt>&nbsp;&nbsp <?php echo $lang['Recent Earthquake'];?> </div>
     <?php //3
 				if($magnitude3>=7){echo "<div class=mag9-10>",number_format($magnitude3,1),"";}
 				else if($magnitude3>=5.8){echo "<div class=mag9-10>",number_format($magnitude3,1),"";}
@@ -475,39 +475,39 @@ for ($i = 0; $i < 1; $i++) {
 	// EQ Latest earthquake 
 	
 	if ($eqdist3<100)  {
-	echo "<div class='time'><red>*Warning Nearby</red> <span> ".$heatindexalert8."  ".$eventime3."</div></span>";
+	echo "<div class='time'><red>".$lang['*Warning Nearby']."</red> <span> ".$heatindexalert8."  ".$eventime3."</div></span>";
 	echo $eqtitle3;
 	} 
 	else if ($magnitude3>7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime3 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime3 ,"</div></span>";
 	echo $eqtitle3 ;
 	} 
 	
 	
 	else if ($magnitude3>5.7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime3 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime3 ,"</div></span>";
 	echo $eqtitle3 ;
 	} 
 	
 	
 	else if ($magnitude3>5.2)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime3 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime3 ,"</div></span>";
 	echo $eqtitle3 ;
 	} 
 	
 	else if ($magnitude3>4)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime3 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime3 ,"</div></span>";
 	echo $eqtitle3 ;
 	} 
 	
 	
 	else if ($magnitude3>3)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime3 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime3 ,"</div></span>";
 	echo $eqtitle3 ;
 	} 
 	
 	else if ($magnitude3>1)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime3 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime3 ,"</div></span>";
 	echo $eqtitle3 ;
 	} 
 }
@@ -516,17 +516,17 @@ for ($i = 0; $i < 1; $i++) {
 <?php
 			
 if ($windunit == 'mph' && $eqdist3<=100) {
-		 echo "<red>".round($eqdist3  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo "<red>".round($eqdist3  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	}
 	
 else if ($windunit == 'km/h' && $eqdist3<150) {
-		 echo "<red>".round($eqdist3) ."</red> Km from<br> $stationlocation";
+		 echo "<red>".round($eqdist3) ."</red> ".$lang['Km from']."<br> $stationlocation";
 	}			
 
 else if ($windunit == 'mph') {
-		 echo round($eqdist3  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo round($eqdist3  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	} else {
-		 echo $eqdist3 ." Km from<br> $stationlocation" ;
+		 echo $eqdist3 ." Km ".$lang['from']."<br> $stationlocation" ;
 	}
 	echo "";
 	?>
@@ -536,7 +536,7 @@ else if ($windunit == 'mph') {
 </article>  
 
  <article>  
-   <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
+   <div class=actualt>&nbsp;&nbsp <?php echo $lang['Recent Earthquake'];?> </div>
     <?php //4
 				if($magnitude4>=7){echo "<div class=mag9-10>",number_format($magnitude4,1),"";}
 				else if($magnitude4>=5.8){echo "<div class=mag9-10>",number_format($magnitude4,1),"";}
@@ -556,39 +556,39 @@ for ($i = 0; $i < 1; $i++) {
 	// EQ Latest earthquake 
 	
 	if ($eqdist4<100)  {
-	echo "<div class='time'><red>*Warning Nearby</red> <span> ".$heatindexalert8."  ".$eventime4."</div></span>";
+	echo "<div class='time'><red>".$lang['*Warning Nearby']."</red> <span> ".$heatindexalert8."  ".$eventime4."</div></span>";
 	echo $eqtitle4;
 	} 
 	else if ($magnitude4>7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime4 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime4 ,"</div></span>";
 	echo $eqtitle4 ;
 	} 
 	
 	
 	else if ($magnitude4>5.7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime4 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime4 ,"</div></span>";
 	echo $eqtitle4 ;
 	} 
 	
 	
 	else if ($magnitude4>5.2)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime4 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime4 ,"</div></span>";
 	echo $eqtitle4 ;
 	} 
 	
 	else if ($magnitude4>4)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime4 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime4 ,"</div></span>";
 	echo $eqtitle4 ;
 	} 
 	
 	
 	else if ($magnitude4>3)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime4 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime4 ,"</div></span>";
 	echo $eqtitle4 ;
 	} 
 	
 	else if ($magnitude4>1)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime4 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime4 ,"</div></span>";
 	echo $eqtitle4 ;
 	} 
 }
@@ -597,17 +597,17 @@ for ($i = 0; $i < 1; $i++) {
 <?php
 			
 if ($windunit == 'mph' && $eqdist4<=100) {
-		 echo "<red>".round($eqdist4  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo "<red>".round($eqdist4  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	}
 	
 else if ($windunit == 'km/h' && $eqdist4<150) {
-		 echo "<red>".round($eqdist4) ."</red> Km from<br> $stationlocation";
+		 echo "<red>".round($eqdist4) ."</red> Km ".$lang['from']."<br> $stationlocation";
 	}			
 
 else if ($windunit == 'mph') {
-		 echo round($eqdist4  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo round($eqdist4  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	} else {
-		 echo $eqdist4 ." Km from<br> $stationlocation" ;
+		 echo $eqdist4 ." Km ".$lang['from']."<br> $stationlocation" ;
 	}
 	echo "";
 	?>
@@ -617,7 +617,7 @@ else if ($windunit == 'mph') {
 </article>  
   
  <article>  
-   <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
+   <div class=actualt>&nbsp;&nbsp <?php echo $lang['Recent Earthquake'];?> </div>
     <?php //5
 				if($magnitude5>=7){echo "<div class=mag9-10>",number_format($magnitude5,1),"";}
 				else if($magnitude5>=5.8){echo "<div class=mag9-10>",number_format($magnitude5,1),"";}
@@ -638,39 +638,39 @@ for ($i = 0; $i < 1; $i++) {
 	// EQ Latest earthquake 
 	
 	if ($eqdist5<100)  {
-	echo "<div class='time'><red>*Warning Nearby</red> <span> ".$heatindexalert8."  ".$eventime5."</div></span>";
+	echo "<div class='time'><red>".$lang['*Warning Nearby']."</red> <span> ".$heatindexalert8."  ".$eventime5."</div></span>";
 	echo $eqtitle5;
 	} 
 	else if ($magnitude5>7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime5 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime5 ,"</div></span>";
 	echo $eqtitle ;
 	} 
 	
-	
+
 	else if ($magnitude5>5.7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime5 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime5 ,"</div></span>";
 	echo $eqtitle5 ;
 	} 
 	
 	
 	else if ($magnitude5>5.2)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime5 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime5 ,"</div></span>";
 	echo $eqtitle5 ;
 	} 
 	
 	else if ($magnitude5>4)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime5 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime5 ,"</div></span>";
 	echo $eqtitle5 ;
 	} 
 	
-	
+
 	else if ($magnitude5>3)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime5 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime5 ,"</div></span>";
 	echo $eqtitle5 ;
 	} 
-	
+
 	else if ($magnitude5>1)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime5 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime5 ,"</div></span>";
 	echo $eqtitle5 ;
 	} 
 }
@@ -679,17 +679,17 @@ for ($i = 0; $i < 1; $i++) {
 <?php
 			
 if ($windunit == 'mph' && $eqdist5<=100) {
-		 echo "<red>".round($eqdist5  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo "<red>".round($eqdist5  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	}
 	
 else if ($windunit == 'km/h' && $eqdist5<150) {
-		 echo "<red>".round($eqdist5) ."</red> Km from<br> $stationlocation";
+		 echo "<red>".round($eqdist5) ."</red> Km ".$lang['from']."<br> $stationlocation";
 	}			
 
 else if ($windunit == 'mph') {
-		 echo round($eqdist5  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo round($eqdist5  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	} else {
-		 echo $eqdist5 ." Km from<br> $stationlocation" ;
+		 echo $eqdist5 ." Km ".$lang['from']."<br> $stationlocation" ;
 	}
 	echo "";
 	?>
@@ -700,7 +700,7 @@ else if ($windunit == 'mph') {
 
 
 <article>  
-   <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
+   <div class=actualt>&nbsp;&nbsp <?php echo $lang['Recent Earthquake'];?> </div>
     <?php //6
 				if($magnitude6>=7){echo "<div class=mag9-10>",number_format($magnitude6,1),"";}
 				else if($magnitude6>=5.8){echo "<div class=mag9-10>",number_format($magnitude6,1),"";}
@@ -720,39 +720,39 @@ for ($i = 0; $i < 1; $i++) {
 	// EQ Latest earthquake 
 	
 	if ($eqdist6<100)  {
-	echo "<div class='time'><red>*Warning Nearby</red> <span> ".$heatindexalert8."  ".$eventime6."</div></span>";
+	echo "<div class='time'><red>".$lang['*Warning Nearby']."</red> <span> ".$heatindexalert8."  ".$eventime6."</div></span>";
 	echo $eqtitle6;
 	} 
 	else if ($magnitude6>7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime6 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime6 ,"</div></span>";
 	echo $eqtitle6 ;
 	} 
 	
 	
 	else if ($magnitude6>5.7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime6 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime6 ,"</div></span>";
 	echo $eqtitle6 ;
 	} 
 	
 	
 	else if ($magnitude6>5.2)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime6 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime6 ,"</div></span>";
 	echo $eqtitle6 ;
 	} 
 	
 	else if ($magnitude6>4)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime6 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime6 ,"</div></span>";
 	echo $eqtitle6 ;
 	} 
 	
 	
 	else if ($magnitude6>3)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime6 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime6 ,"</div></span>";
 	echo $eqtitle6 ;
 	} 
 	
 	else if ($magnitude6>1)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime6 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime6 ,"</div></span>";
 	echo $eqtitle6 ;
 	} 
 }
@@ -762,17 +762,17 @@ for ($i = 0; $i < 1; $i++) {
 
 
 if ($windunit == 'mph' && $eqdist6<=100) {
-		 echo "<red>".round($eqdist6  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo "<red>".round($eqdist6  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	}
 	
 else if ($windunit == 'km/h' && $eqdist6<150) {
-		 echo "<red>".round($eqdist6) ."</red> Km from<br> $stationlocation";
+		 echo "<red>".round($eqdist6) ."</red> Km ".$lang['from']."<br> $stationlocation";
 	}			
 
 else if ($windunit == 'mph') {
-		 echo round($eqdist6  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo round($eqdist6  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	} else {
-		 echo $eqdist6 ." Km from<br> $stationlocation" ;
+		 echo $eqdist6 ." Km ".$lang['from']."<br> $stationlocation" ;
 	}
 	echo "";
 	?>
@@ -782,7 +782,7 @@ else if ($windunit == 'mph') {
 </article>  
 
 <article>  
-   <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
+   <div class=actualt>&nbsp;&nbsp <?php echo $lang['Recent Earthquake'];?> </div>
     <?php //7
 				if($magnitude7>=7){echo "<div class=mag9-10>",number_format($magnitude7,1),"";}
 				else if($magnitude7>=5.8){echo "<div class=mag9-10>",number_format($magnitude7,1),"";}
@@ -802,39 +802,39 @@ for ($i = 0; $i < 1; $i++) {
 	// EQ Latest earthquake 
 	
 	if ($eqdist7<100)  {
-	echo "<div class='time'><red>*Warning Nearby</red> <span> ".$heatindexalert8."  ".$eventime7."</div></span>";
+	echo "<div class='time'><red>".$lang['*Warning Nearby']."</red> <span> ".$heatindexalert8."  ".$eventime7."</div></span>";
 	echo $eqtitle7;
 	} 
 	else if ($magnitude7>7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime7 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime7 ,"</div></span>";
 	echo $eqtitle7 ;
 	} 
 	
 	
 	else if ($magnitude7>5.7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime7 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime7 ,"</div></span>";
 	echo $eqtitle7 ;
 	} 
 	
 	
 	else if ($magnitude7>5.2)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime7 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime7 ,"</div></span>";
 	echo $eqtitle7 ;
 	} 
 	
 	else if ($magnitude7>4)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime7 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime7 ,"</div></span>";
 	echo $eqtitle7 ;
 	} 
 	
 	
 	else if ($magnitude7>3)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime7 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime7 ,"</div></span>";
 	echo $eqtitle7 ;
 	} 
 	
 	else if ($magnitude7>1)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime7 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime7 ,"</div></span>";
 	echo $eqtitle7 ;
 	} 
 }
@@ -843,17 +843,17 @@ for ($i = 0; $i < 1; $i++) {
 <?php
 			
 if ($windunit == 'mph' && $eqdist7<=100) {
-		 echo "<red>".round($eqdist7  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo "<red>".round($eqdist7  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	}
 	
 else if ($windunit == 'km/h' && $eqdist7<150) {
-		 echo "<red>".round($eqdist7) ."</red> Km from<br> $stationlocation";
+		 echo "<red>".round($eqdist7) ."</red> Km ".$lang['from']."<br> $stationlocation";
 	}			
 
 else if ($windunit == 'mph') {
-		 echo round($eqdist7  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo round($eqdist7  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	} else {
-		 echo $eqdist7 ." Km from<br> $stationlocation" ;
+		 echo $eqdist7 ." Km ".$lang['from']."<br> $stationlocation" ;
 	}
 	echo "";
 	?>
@@ -865,7 +865,7 @@ else if ($windunit == 'mph') {
 
 
 <article>  
-   <div class=actualt>&nbsp;&nbsp Recent Earthquake </div>        
+   <div class=actualt>&nbsp;&nbsp <?php echo $lang['Recent Earthquake'];?> </div>
     <?php //7
 				if($magnitude8>=7){echo "<div class=mag9-10>",number_format($magnitude8,1),"";}
 				else if($magnitude8>=5.8){echo "<div class=mag9-10>",number_format($magnitude8,1),"";}
@@ -885,39 +885,39 @@ for ($i = 0; $i < 1; $i++) {
 	// EQ Latest earthquake 
 	
 	if ($eqdist8<100)  {
-	echo "<div class='time'><red>*Warning Nearby</red> ".$heatindexalert8." <span> ".$eventime8."</div></span>";
+	echo "<div class='time'><red>".$lang['*Warning Nearby']."</red> ".$heatindexalert8." <span> ".$eventime8."</div></span>";
 	echo $eqtitle8;
 	} 
 	else if ($magnitude8>7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime8 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime8 ,"</div></span>";
 	echo $eqtitle8 ;
 	} 
 	
 	
 	else if ($magnitude8>5.7)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime8 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime8 ,"</div></span>";
 	echo $eqtitle8 ;
 	} 
 	
 	
 	else if ($magnitude8>5.2)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime8 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime8 ,"</div></span>";
 	echo $eqtitle8 ;
 	} 
 	
 	else if ($magnitude8>4)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime8 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime8 ,"</div></span>";
 	echo $eqtitle8 ;
 	} 
 	
 	
 	else if ($magnitude8>3)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime8 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime8 ,"</div></span>";
 	echo $eqtitle8 ;
 	} 
 	
 	else if ($magnitude8>1)  {
-	echo "<div class='time'><orange1>*Regional <br></orange1><span>",$eventime8 ,"</div></span>";
+	echo "<div class='time'><orange1>".$lang['*Regional']." <br></orange1><span>",$eventime8 ,"</div></span>";
 	echo $eqtitle8 ;
 	} 
 }
@@ -926,17 +926,17 @@ for ($i = 0; $i < 1; $i++) {
 <?php
 			
 if ($windunit == 'mph' && $eqdist8<=100) {
-		 echo "<red>".round($eqdist8  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo "<red>".round($eqdist8  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	}
 	
 else if ($windunit == 'km/h' && $eqdist8<150) {
-		 echo "<red>".round($eqdist8) ."</red> Km from<br> $stationlocation";
+		 echo "<red>".round($eqdist8) ."</red> Km ".$lang['from']."<br> $stationlocation";
 	}			
 
 else if ($windunit == 'mph') {
-		 echo round($eqdist8  * 0.621371) ." Miles from<br> $stationlocation";
+		 echo round($eqdist8  * 0.621371) ." Miles ".$lang['from']."<br> $stationlocation";
 	} else {
-		 echo $eqdist8 ." Km from<br> $stationlocation" ;
+		 echo $eqdist8 ." Km ".$lang['from']."<br> $stationlocation" ;
 	}
 	echo "";
 	?>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 	####################################################################################################
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
@@ -35,7 +35,7 @@ $aqiweather["updatedtime"]=$weather34luftdatenaqi['timestamp'];
 $aqitime=$weather34luftdatenaqi['timestamp'];
 //weather34 convert the UTC to local for Luftdaten timestamp 
 $weather34aqitime = strtotime($aqitime .' UTC');
-$weather34localtime = date("Y-m-d H:i:s", $weather34aqitime);
+$weather34localtime = date("d-m-Y H:i:s", $weather34aqitime);
 $aqiupdatetime= $weather34localtime;
 
 $heatindexwu='<svg "weather34 heatindex icon" width="10px" height="10px" viewBox="0 0 250 250" version="3.4.2019" >
@@ -108,7 +108,7 @@ blue{color:#01a4b4}orange{color:#009bb4}orange1{position:relative;color:#009bb4;
 .airpm25{position:relative;font-family:weathertext2,Arial,Helvetica,system;width:6.5rem;height:6.5rem;font-size:1.35rem;padding-top:0;color:#fff;border:10px solid rgba(56,56,60,1);display:flex;align-items:center;justify-content:center;-webkit-border-radius:50%;border-radius:50%;background:#00a4b4;left:49px}
 pm25{position:relative;font-family:weathertext2,Arial,Helvetica,system;font-size:.5rem;vertical-align:super}
 
-.actualt{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74,99,111,.1);padding:5px;font-family:Arial,Helvetica,sans-serif;width:100px;height:.8em;font-size:.8rem;padding-top:2px;color:#aaa;border-bottom:2px solid rgba(56,56,60,1);align-items:center;justify-content:center;margin-bottom:10px;top:0}
+.actualt{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74,99,111,.1);padding:5px;font-family:Arial,Helvetica,sans-serif;width:120px;height:.8em;font-size:.8rem;padding-top:2px;color:#aaa;border-bottom:2px solid rgba(56,56,60,1);align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .actualw{position:relative;left:5px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74,99,111,.1);padding:5px;font-family:Arial,Helvetica,sans-serif;width:200px;height:.8em;font-size:.8rem;padding-top:2px;color:#aaa;border-bottom:2px solid rgba(56,56,60,1);align-items:center;justify-content:center;margin-bottom:10px;top:0}
 aqred{color:#d35d4e}aqpurple{color:rgba(151, 88, 190, 1.000)}aqorange{color:#d05f2d}aqyellow{color:#e6a141}aqgreen{color:#90b12a}
 
@@ -182,22 +182,22 @@ aqred{color:#d35d4e}aqpurple{color:rgba(151, 88, 190, 1.000)}aqorange{color:#d05
 
 
 </style>
-<div class="weather34darkbrowser" url="Luftdaten Air Quality"></div>
+<div class="weather34darkbrowser" url="Luftdaten <?php echo $lang['Air Quality'];?>&nbsp;<?php echo $stationName;?>"></div>
   
 <main class="grid">
 <article>
-<div class=actualt>Luftdaten Air Quality </div> 
+<div class=actualt>Luftdaten <?php echo $lang['Air Quality'];?> </div>
   <div class=indoorsvgnest> 
  <div class="output">
            <small><?php 
-if($aqiweather["aqi"] >300)echo "Hazardous";
-else if($aqiweather["aqi"] >200)echo "Very Unhealthy";
-else if($aqiweather["aqi"] >150)echo "Unhealthy";
-else if($aqiweather["aqi"] >100)echo "Unhealthy<br>For Some";
-else if($aqiweather["aqi"] >50)echo "Moderate ";
-else if($aqiweather["aqi"] >=0)echo "Good ";
-?> </small>           
-        </div>      
+if($aqiweather["aqi"] >300)echo $lang['Hazardous'];
+else if($aqiweather["aqi"] >200)echo $lang['Very Unhealthy'];
+else if($aqiweather["aqi"] >150)echo $lang['Unhealthy'];
+else if($aqiweather["aqi"] >100)echo $lang['Unhealthy For Some'];
+else if($aqiweather["aqi"] >50)echo $lang['Moderate'];
+else if($aqiweather["aqi"] >=0)echo $lang['Good'];
+?> </small>
+        </div>
 <svg id="indoor air quality weather34" width="120px" height="120px" viewBox="0 0 600 600" version="1.1" >
 <path fill="#4b545c" opacity="1.00" d=" M 277.33 44.31 C 278.81 43.77 280.41 44.04 281.96 43.97 C 292.95 44.05 303.94 43.96 314.93 44.00 C 316.43 43.98 317.71 44.94 319.14 45.28 C 370.84 48.81 421.06 69.16 461.23 101.80 C 484.64 121.11 504.91 144.32 520.29 170.51 C 529.82 187.64 538.71 205.33 544.10 224.25 C 549.63 241.34 553.03 259.10 554.58 276.97 C 554.34 279.46 556.30 281.50 556.02 284.00 C 555.96 294.97 556.03 305.95 556.00 316.92 C 556.01 318.75 554.62 320.26 554.65 322.09 C 553.77 334.85 551.54 347.48 548.62 359.93 C 544.55 375.59 539.76 391.16 532.66 405.74 C 529.53 413.86 524.89 421.23 520.80 428.87 C 497.75 467.88 464.45 500.92 424.85 523.03 C 393.09 540.82 357.49 551.88 321.18 554.73 C 319.46 555.22 317.85 556.22 316.00 556.02 C 305.03 555.96 294.05 556.03 283.08 556.00 C 281.24 556.01 279.73 554.61 277.90 554.63 C 220.65 549.93 165.37 524.80 123.95 485.05 C 99.37 461.65 79.41 433.39 65.94 402.23 C 56.79 382.45 51.18 361.22 47.48 339.80 C 46.82 333.22 45.44 326.71 45.37 320.08 C 45.43 318.24 43.96 316.76 44.00 314.93 C 43.99 302.98 44.00 291.03 44.00 279.08 C 46.47 268.72 46.73 257.91 49.38 247.55 C 61.60 188.21 95.92 133.80 144.07 97.05 C 178.88 70.12 220.79 52.43 264.41 46.46 C 268.71 45.70 273.16 45.68 277.33 44.31 M 276.43 80.50 C 242.35 84.05 209.20 95.83 180.44 114.44 C 132.01 145.51 96.52 196.15 84.41 252.45 C 78.65 278.28 77.90 305.16 81.43 331.36 C 86.10 364.11 98.21 395.82 116.76 423.22 C 129.29 441.93 144.79 458.60 162.32 472.70 C 198.21 501.45 243.29 518.62 289.27 520.58 C 332.32 522.81 375.94 512.08 412.93 489.90 C 444.45 471.19 471.17 444.45 489.90 412.94 C 510.51 378.44 521.45 338.21 520.78 298.01 C 520.70 252.89 505.95 207.98 479.55 171.43 C 448.08 127.28 399.81 95.37 346.72 84.21 C 323.71 79.09 299.85 78.21 276.43 80.50 Z" />
 <path fill="#1f1f1f" opacity="1.00" d=" M 276.43 80.50 C 299.85 78.21 323.71 79.09 346.72 84.21 C 399.81 95.37 448.08 127.28 479.55 171.43 C 505.95 207.98 520.70 252.89 520.78 298.01 C 521.45 338.21 510.51 378.44 489.90 412.94 C 471.17 444.45 444.45 471.19 412.93 489.90 C 375.94 512.08 332.32 522.81 289.27 520.58 C 243.29 518.62 198.21 501.45 162.32 472.70 C 144.79 458.60 129.29 441.93 116.76 423.22 C 98.21 395.82 86.10 364.11 81.43 331.36 C 77.90 305.16 78.65 278.28 84.41 252.45 C 96.52 196.15 132.01 145.51 180.44 114.44 C 209.20 95.83 242.35 84.05 276.43 80.50 M 286.41 150.46 C 242.51 154.25 200.72 178.50 176.17 215.17 C 162.81 234.07 154.66 256.34 151.24 279.17 C 147.21 309.14 152.07 340.35 165.68 367.40 C 176.33 388.48 191.81 407.16 210.97 421.04 C 249.80 450.25 303.35 458.22 349.12 442.07 C 379.21 431.96 405.62 411.69 423.60 385.58 C 448.45 350.20 456.72 303.60 445.26 261.87 C 442.59 251.03 438.74 240.45 433.33 230.67 C 425.90 216.47 416.41 203.29 404.75 192.24 C 373.92 161.88 329.44 146.38 286.41 150.46 Z" />
@@ -277,7 +277,7 @@ else if ($aqiweather["aqi"]>=0) echo "#90b12a";
 
   </article> 
   <article>
-  <div class=actualt>&nbsp;&nbsp Particle Info</div>
+  <div class=actualt>&nbsp;&nbsp <?php echo $lang['Particle Info'];?></div>
   <div class=indoorsvgnest> 
 <svg id="indoor air quality weather34" width="120px" height="120px" viewBox="0 0 600 600" version="1.1" >
 <path fill="#4b545c" opacity="1.00" d=" M 277.33 44.31 C 278.81 43.77 280.41 44.04 281.96 43.97 C 292.95 44.05 303.94 43.96 314.93 44.00 C 316.43 43.98 317.71 44.94 319.14 45.28 C 370.84 48.81 421.06 69.16 461.23 101.80 C 484.64 121.11 504.91 144.32 520.29 170.51 C 529.82 187.64 538.71 205.33 544.10 224.25 C 549.63 241.34 553.03 259.10 554.58 276.97 C 554.34 279.46 556.30 281.50 556.02 284.00 C 555.96 294.97 556.03 305.95 556.00 316.92 C 556.01 318.75 554.62 320.26 554.65 322.09 C 553.77 334.85 551.54 347.48 548.62 359.93 C 544.55 375.59 539.76 391.16 532.66 405.74 C 529.53 413.86 524.89 421.23 520.80 428.87 C 497.75 467.88 464.45 500.92 424.85 523.03 C 393.09 540.82 357.49 551.88 321.18 554.73 C 319.46 555.22 317.85 556.22 316.00 556.02 C 305.03 555.96 294.05 556.03 283.08 556.00 C 281.24 556.01 279.73 554.61 277.90 554.63 C 220.65 549.93 165.37 524.80 123.95 485.05 C 99.37 461.65 79.41 433.39 65.94 402.23 C 56.79 382.45 51.18 361.22 47.48 339.80 C 46.82 333.22 45.44 326.71 45.37 320.08 C 45.43 318.24 43.96 316.76 44.00 314.93 C 43.99 302.98 44.00 291.03 44.00 279.08 C 46.47 268.72 46.73 257.91 49.38 247.55 C 61.60 188.21 95.92 133.80 144.07 97.05 C 178.88 70.12 220.79 52.43 264.41 46.46 C 268.71 45.70 273.16 45.68 277.33 44.31 M 276.43 80.50 C 242.35 84.05 209.20 95.83 180.44 114.44 C 132.01 145.51 96.52 196.15 84.41 252.45 C 78.65 278.28 77.90 305.16 81.43 331.36 C 86.10 364.11 98.21 395.82 116.76 423.22 C 129.29 441.93 144.79 458.60 162.32 472.70 C 198.21 501.45 243.29 518.62 289.27 520.58 C 332.32 522.81 375.94 512.08 412.93 489.90 C 444.45 471.19 471.17 444.45 489.90 412.94 C 510.51 378.44 521.45 338.21 520.78 298.01 C 520.70 252.89 505.95 207.98 479.55 171.43 C 448.08 127.28 399.81 95.37 346.72 84.21 C 323.71 79.09 299.85 78.21 276.43 80.50 Z" />
@@ -295,20 +295,20 @@ else if ($aqiweather["aqi"]>=0) echo "#90b12a";
 </div></div>
   </article>
    <article>
-   <div class=actualt>&nbsp;&nbsp Guide</div>   
-   <li><green>0-50 GOOD</green></li>
-           <li><yellow>50+ MODERATE</yellow></li>
-           <li><orange>100+ Unhealthy for Sensitive Groups</orange></li>
-           <li><red>150+ Unhealthy </red>(Precautions Required)</li>
-           <li><purple>200+ Very Unhealthy</purple> (Critical Conditions)</purple></li>
-           <li><maroon>300+ Hazardous</maroon> (Life Threatening)</maroon></li>
-   
+   <div class=actualt>&nbsp;&nbsp <?php echo $lang['Guide'];?></div>
+   <li><green>0-50 <?php echo $lang['GOOD'];?></green></li>
+           <li><yellow>50+ <?php echo $lang['MODERATE'];?></yellow></li>
+           <li><orange>100+ <?php echo $lang['Unhealthy for Sensitive Groups'];?></orange></li>
+           <li><red>150+ <?php echo $lang['Unhealthy'];?> </red><?php echo $lang['(Precautions Required)'];?></li>
+           <li><purple>200+ <?php echo $lang['Very Unhealthy'];?></purple> <?php echo $lang['(Critical Conditions)'];?></purple></li>
+           <li><maroon>300+ <?php echo $lang['Hazardous'];?></maroon> <?php echo $lang['(Life Threatening)'];?></maroon></li>
+
   </article> 
   </main>
 
  <main class="grid1">
   <articlegraph> 
-  <div class=actualw><?php echo $lang['Today'];?> <blue>Air Quality <?php echo $aqiweather["pm"]?></blue></div>  
+  <div class=actualw><?php echo $lang['Today'];?> <blue><?php echo $lang['Air Quality'];?> <?php echo $aqiweather["pm"]?></blue></div>
   <iframe  src="weather34charts/todayluftdatenaqi.php" frameborder="0" scrolling="no"  width="100%"></iframe>
    
   </articlegraph> 
