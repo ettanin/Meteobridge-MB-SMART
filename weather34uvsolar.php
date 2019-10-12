@@ -51,7 +51,7 @@ else if ($weather["uv"]>=0) {echo '<div class=uvtoday1-3>'.number_format($weathe
 <?php //weather34 lets make the solar bar
 if ($weather["solar"]>=0)echo "<smallrainrateunit> wm/2";?></smallrainrateunit></div>
 <div class=solarbar>
-<div class="weather34solarbar" style="width:<?php echo $weather["solar"]/15;?>px;background: rgba(208, 95, 45, 0.9);">
+<div class="weather34solarbar" style="width:<?php echo $weather["solar"]/12;?>px;background: rgba(208, 95, 45, 0.9);">
 </div></div><solarbox><?php echo $weather["solar"]?></solarbox></div></div>
 
 <div class="rainrateextra" style="margin-top:90px;margin-left:125px">
