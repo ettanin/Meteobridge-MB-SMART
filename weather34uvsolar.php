@@ -32,59 +32,28 @@ $nextset = $result['sunset']; if ($now > $nextset) {
 } else {
     echo $online." ".$weather["time"];
 }?></div>
-<div class="weather34solarword"><valuetext>W/m&sup2 </valuetext> </div><div class="weather34solarvalue">
-<div class="solartodaycontainer1"><?php
-if ($weather["solar"]==0) {
-    echo "<div class=solarluxtodaydark>".$weather["solar"];
-} elseif ($weather["solar"]>0) {
-    echo "<div class=solarluxtoday>".$weather["solar"];
-}?></div></div></div>
-<div class="solarluxtodayword"><valuetext><?php echo $lang['Solarradiation'];?></valuetext></div><div class="solarwrap"></div>
-<div class="uvsolarwordbig"></div>
+<div class="uvcontainer1"><?php 
+if ($weather["uv"]>10) {echo '<div class=uvtoday11>'.number_format($weather["uv"],1)."<smalluvunit> &nbsp;UVI";}
+else if ($weather["uv"]>8) {echo '<div class=uvtoday9-10>'.number_format($weather["uv"],1)."<smalluvunit> &nbsp;UVI";}
+else if ($weather["uv"]>5) {echo '<div class=uvtoday6-8>'.number_format($weather["uv"],1)."<smalluvunit> &nbsp;UVI";}
+else if ($weather["uv"]>=3) {echo '<div class=uvtoday4-5>'.number_format($weather["uv"],1)."<smalluvunit> &nbsp;UVI";}
+else if ($weather["uv"]>=0) {echo '<div class=uvtoday1-3>'.number_format($weather["uv"],1)."<smalluvunit> &nbsp;UVI";}?></smallrainunit></div></div>
+<div class="uvtrend"><?php echo "UV INDEX"?></div>  
+<div class="uvcaution"><?php echo "&nbsp;<valuetext>Max " .$weather["uvdmax"]." <time><value> (".$weather["uvdmaxtime"]?></value>)</valuetext></time></div>
 
-<div class="uvcontainer1"><?php if ($weather["uv"]>10) {
-    echo '<div class=uvtoday11>'.number_format($weather["uv"], 1)."<smalluvunit> &nbsp;UVI";
-} elseif ($weather["uv"]>8) {
-    echo '<div class=uvtoday9-10>'.number_format($weather["uv"], 1)."<smalluvunit> &nbsp;UVI";
-} elseif ($weather["uv"]>5) {
-    echo '<div class=uvtoday6-8>'.number_format($weather["uv"], 1)."<smalluvunit> &nbsp;UVI";
-} elseif ($weather["uv"]>3) {
-    echo '<div class=uvtoday4-5>'.number_format($weather["uv"], 1)."<smalluvunit> &nbsp;UVI";
-} elseif (date('Hi')>$sunset && $weather["uv"]==0) {
-    echo '<div class=uvtodaydark>'.number_format($weather["uv"], 1)."<smalluvunit> &nbsp;UVI";
-} elseif (date('Gi')<$sunrise && $weather["uv"]==0) {
-    echo '<div class=uvtodaydark>'.number_format($weather["uv"], 1)."<smalluvunit> &nbsp;UVI";
-} elseif ($weather["uv"]>=0) {
-    echo '<div class=uvtoday1-3>'.number_format($weather["uv"], 1)."<smalluvunit> &nbsp;UVI";
-}?></smallrainunit></div></div>
-<div class="uvtrend"><?php echo "UV INDEX"?></div>
-<div class="uvcaution"><?php echo "&nbsp;<valuetext>Max ".$weather["uvdmax"]." <time><value>(".$weather["uvdmaxtime"]?></value>)</valuetext></time></div>
+<div class="solarextra">
+<div class="rainratetextheading">Solar Radiation
+<?php //weather34 lets make the solar bar
+if ($weather["solar"]>=0)echo "<smallrainrateunit> wm/2";?></smallrainrateunit></div>
+<div class=solarbar>
+<div class="weather34solarbar" style="width:<?php echo $weather["solar"]/15;?>px;background: rgba(208, 95, 45, 0.9);">
+</div></div><solarbox><?php echo $weather["solar"]?></solarbox></div></div>
 
-
-<div class="weather34luxword"><valuetext>Lux</valuetext></div> <div class="weather34luxvalue"><div class="luxtodaycontainer1">
-<?php
-if ($weather["lux"]>99999) {
-    echo "<div class=luxtoday>".number_format($weather["lux"]/1000, 0). "K";
-} elseif ($weather["lux"]==0) {
-    echo "<div class=luxtodaydark>".$weather["lux"];
-} else {
-    echo "<div class=luxtoday>".$weather["lux"];
-}?>
-</div></div></div><div class="luxtodayword"><valuetext><?php echo $lang['Luminance'];?><valuetext></div><div class="luxwrap"></div>
-<div class="uvcautionbig"><?php if ($weather["uv"]>=10) {
-    echo $uviclear.'<span>UVI</span> Extreme';
-} elseif ($weather["uv"]>=8) {
-    echo $uviclear.'<span>UVI</span> Very High';
-} elseif ($weather["uv"]>=6) {
-    echo $uviclear.'<span>UVI</span> High';
-} elseif ($weather["uv"]>=3) {
-    echo $uviclear.'<span>UVI</span> Moderate';
-} elseif (date('Hi')>$sunset && $weather["uv"]>=0) {
-    echo $uviclear,"Below Horizon";
-} elseif (date('Gi')<$sunrise && $weather["uv"]>=0) {
-    echo $uviclear,"Below Horizon";
-} elseif ($weather["uv"]>=0) {
-    echo $uviclear,'<span>UVI</span> Low';
-} elseif ($weather["uv"]>=0) {
-    echo $uviclear,'<span>UVI</span> Very Low';
-}?></div>
+<div class="rainrateextra" style="margin-top:90px;margin-left:125px">
+<div class="rainratetextheading"><?php echo $lang['Luminance']?>
+<?php //weather34 lets make the lux bar
+if ($weather["lux"]>=0)echo "<smallrainrateunit> Lux";?></smallrainrateunit></div>
+<div class=rainratebar style="width:6rem">
+<div class="weather34ratebar" style="width:<?php echo $weather["lux"]/1400;?>px;background:rgba(1, 164, 181, .9)">
+</div></div>
+<luxbox><?php echo $weather["lux"]?></luxbox></div></div>

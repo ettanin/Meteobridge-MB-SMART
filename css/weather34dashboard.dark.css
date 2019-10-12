@@ -3804,6 +3804,92 @@ canvas {
   padding-right: 3px;
 }
 
+solarbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;  
+  height: 0.95rem;  
+  padding-top: 0;
+  color: #fff;
+  border-radius: 2px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: weathertext2;
+  font-size: 0.9em;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 0.9;
+  background: rgba(208, 95, 45, 0.9);
+  margin-left:100px;margin-top:16px;font-size:.6rem;width:3rem
+}
+
+luxbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;  
+  height: 0.95rem;  
+  padding-top: 0;
+  color: #fff;
+  border-radius: 2px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: weathertext2;
+  font-size: 0.9em;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 0.9;
+  background: #009bab;
+  margin-left:100px;margin-top:16px;font-size:.6rem;width:3rem
+}
+
+.solarextra {
+  position: absolute;
+  margin-top:50px;
+  margin-left:125px;
+  color: #aeb6bf;
+}
+
+.solarbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width:6rem;
+  overflow: hidden;
+  -webkit-box-shadow: inset 3px 0 0 0 rgba(208, 95, 45, 1);
+  box-shadow: inset 3px 0 0 0 rgba(208, 95, 45, 1);
+  font-family: weathertext2;
+  font-weight: 400;
+  line-height: 1.4;
+  -webkit-border-left: 0;
+  -webkit-border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border: 1px solid rgba(61, 70, 77, 0.5);
+  border-width: thin;
+  border-left: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.solarbar, .weather34solarbar{
+  height: 1rem;
+  color: #aeb6bf;
+  font-size: 0.6rem;
+}
+
+.weather34solarbar {
+  background: rgba(61, 139, 150, 0.7);
+}
+
+
+
 currentmoonrise, currentmoonset {
   font-size: 0.55rem;
   position: absolute;

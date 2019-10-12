@@ -19,11 +19,6 @@ $nextrise = $result['sunrise']; $now = time(); if ($now > $nextrise) { $nextrise
 $nextset = $result['sunset']; if ($now > $nextset) { $nextset = date('H:i',$result2['sunset']);} else {$nextset = date('H:i',$nextset);} $firstrise = $result['sunrise']; $secondrise = $result2['sunrise']; $firstset = $result ['sunset']; if ($now < $firstrise) { $time = $firstrise - $now; $hrs = gmdate ('G',$time); $min = gmdate ('i',$time);;} elseif ($now < $firstset) { $time = $firstset - $now; $hrs = gmdate ('G',$time); $min = gmdate ('i',$time); } else { $time = $secondrise - $now; $hrs = gmdate ('G',$time); $min = gmdate ('i',$time);}$sunset=date('Hi',$firstset);$sunrise=date('Gi',$firstrise);
 $nextset = $result['sunset']; if ($now > $nextset) { $nextset = date('H:i',$result2['sunset']);}?>
 <div class="moduleupdatetime"><span><?php if(file_exists($livedata2)&&time()- filemtime($livedata2)>300)echo $offline. '<offline> Offline </offline>';else echo $online." ".$weather["time"];?></div>  
-<div class="weather34solarword"><valuetext>W/m&sup2 </valuetext> </div><div class="weather34solarvalue">
-<div class="solartodaycontainer1"><?php 
-if ($weather["solar"]==0){echo "<div class=solarluxtodaydark>".$weather["solar"];}
-else if ($weather["solar"]>0){echo "<div class=solarluxtoday>".$weather["solar"];}?></div></div></div>
-<div class="solarluxtodayword"><valuetext>Solar Radiation</valuetext></div><div class="solarwrap"></div>
 <?php
 $json='jsondata/wuforecast.txt';
 $weather34wuurl=file_get_contents($json);
@@ -48,14 +43,26 @@ else if (date('Hi')>$sunset && $wuskydayUV==0) {echo '<div class=uvtodaydark>'.n
 else if (date('Gi')<$sunrise && $wuskydayUV==0) {echo '<div class=uvtodaydark>'.number_format($wuskydayUV,0)."<smalluvunit> &nbsp;UVI";}
 else if ($wuskydayUV>=0) {echo '<div class=uvtoday1-3>'.number_format($wuskydayUV,0)."<smalluvunit> &nbsp;UVI";}?></smallrainunit></div></div>
 <div class="uvtrend"><?php echo "UV INDEX"?></div>  
-<div class="uvcaution"><value>&nbsp;&nbsp;<?php echo "UVI ",$lang['Forecast'];?><value></div>
+<div class="uvcaution" style="font-size:.6rem;"><value>&nbsp;&nbsp;<?php echo "UVI ",$lang['Forecast'];?><value></div>
 
-<div class="weather34luxword"><valuetext>Lux</valuetext></div> <div class="weather34luxvalue"><div class="luxtodaycontainer1">
-<?php 
-if ($weather["lux"]>99999) {echo "<div class=luxtoday>".number_format($weather["lux"]/1000,0). "K";}
-else if($weather["lux"]==0) echo "<div class=luxtodaydark>".$weather["lux"];
-else echo "<div class=luxtoday>".$weather["lux"];?> 
-</div></div></div><div class="luxtodayword"><valuetext>Brightness<valuetext></div><div class="luxwrap"></div>
+
 
 <div class="uvcautionbig"><?php if ($wuskydayUV>=10) {echo $uviclear.'<span>UVI</span> Extreme';}else if ($wuskydayUV>=8) {echo $uviclear.'<span>UVI</span> Very High';}else if ($wuskydayUV>=6) {echo $uviclear.'<span>UVI</span> High';}else if ($wuskydayUV>=3) {echo $uviclear.'<span>UVI</span> Moderate';}
 else if (date('Hi')>$sunset && $wuskydayUV>=0 ) {echo $uviclear,"Below Horizon";}else if (date('Gi')<$sunrise && $wuskydayUV>=0 ) {echo $uviclear,"Below Horizon";}else if ($wuskydayUV>=0 ) {echo $uviclear,'<span>UVI</span> Low';}else if ($wuskydayUV>=0 ) {echo $uviclear,'<span>UVI</span> Very Low';}?></div>
+
+<div class="solarextra">
+<div class="rainratetextheading">Solar Radiation
+<?php //weather34 lets make the solar bar
+if ($weather["solar"]>=0)echo "<smallrainrateunit> wm/2";?></smallrainrateunit></div>
+<div class=solarbar>
+<div class="weather34solarbar" style="width:<?php echo $weather["solar"]/15;?>px;background: rgba(208, 95, 45, 0.9);">
+</div></div><solarbox><?php echo $weather["solar"]?></solarbox></div></div>
+
+<div class="rainrateextra" style="margin-top:90px;margin-left:125px">
+<div class="rainratetextheading"><?php echo $lang['Luminance']?>
+<?php //weather34 lets make the lux bar
+if ($weather["lux"]>=0)echo "<smallrainrateunit> Lux";?></smallrainrateunit></div>
+<div class=rainratebar style="width:6rem">
+<div class="weather34ratebar" style="width:<?php echo $weather["lux"]/1400;?>px;background:rgba(1, 164, 181, .9)">
+</div></div>
+<luxbox><?php echo $weather["lux"]?></luxbox></div></div>
