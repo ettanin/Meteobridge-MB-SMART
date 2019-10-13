@@ -4,13 +4,10 @@
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
+	# 	Release: July 2019	revised : October 2019 	                                                   #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
-
-
-//original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 //weather34 solar and uvindex module 27th Jan 2017 //
 include_once('livedata.php');include('common.php');
 $hi = 0;foreach ($darkskyhourlyCond as $cond) {$darkskyhourlyuv = $cond['uvIndex']; if ($hi++ == 0) break; }$weather["uv3"]=$darkskyhourlyuv ;

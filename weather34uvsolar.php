@@ -1,32 +1,20 @@
-<?php //weather34 solar and uvindex module 27th Jan 2017 //
+<?php 
+    ####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: July 2019	revised : October 2019 	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
+
+
+//original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
 include_once('livedata.php');include('common.php');
-$result = date_sun_info(time(), $lat, $lon); '<pre>'.time().print_r($result, true); $nextday = time() + 24*60*60; $result2 = date_sun_info($nextday, $lat, $lon); '<pre>'.print_r($result2, true);
-$nextrise = $result['sunrise']; $now = time(); if ($now > $nextrise) {
-    $nextrise = date('H:i', $result2['sunrise']);
-} else {
-    $nextrise = date('H:i', $nextrise);
-}
-$nextset = $result['sunset']; if ($now > $nextset) {
-    $nextset = date('H:i', $result2['sunset']);
-} else {
-    $nextset = date('H:i', $nextset);
-} $firstrise = $result['sunrise']; $secondrise = $result2['sunrise']; $firstset = $result ['sunset']; if ($now < $firstrise) {
-    $time = $firstrise - $now;
-    $hrs = gmdate('G', $time);
-    $min = gmdate('i', $time);
-    ;
-} elseif ($now < $firstset) {
-    $time = $firstset - $now;
-    $hrs = gmdate('G', $time);
-    $min = gmdate('i', $time);
-} else {
-    $time = $secondrise - $now;
-    $hrs = gmdate('G', $time);
-    $min = gmdate('i', $time);
-}$sunset=date('Hi', $firstset);$sunrise=date('Gi', $firstrise);
-$nextset = $result['sunset']; if ($now > $nextset) {
-    $nextset = date('H:i', $result2['sunset']);
-}?>
+$result = date_sun_info(time(), $lat, $lon); '<pre>'.time().print_r($result,true); $nextday = time() + 24*60*60; $result2 = date_sun_info($nextday,$lat, $lon); '<pre>'.print_r($result2,true); 
+$nextrise = $result['sunrise']; $now = time(); if ($now > $nextrise) { $nextrise = date('H:i',$result2['sunrise']);} else {$nextrise = date('H:i',$nextrise);} 
+$nextset = $result['sunset']; if ($now > $nextset) { $nextset = date('H:i',$result2['sunset']);} else {$nextset = date('H:i',$nextset);} $firstrise = $result['sunrise']; $secondrise = $result2['sunrise']; $firstset = $result ['sunset']; if ($now < $firstrise) { $time = $firstrise - $now; $hrs = gmdate ('G',$time); $min = gmdate ('i',$time);;} elseif ($now < $firstset) { $time = $firstset - $now; $hrs = gmdate ('G',$time); $min = gmdate ('i',$time); } else { $time = $secondrise - $now; $hrs = gmdate ('G',$time); $min = gmdate ('i',$time);}$sunset=date('Hi',$firstset);$sunrise=date('Gi',$firstrise);
+$nextset = $result['sunset']; if ($now > $nextset) { $nextset = date('H:i',$result2['sunset']);}?>
 <div class="moduleupdatetime"><span><?php if (file_exists($livedata2)&&time()- filemtime($livedata2)>300) {
     echo $offline. '<offline> Offline </offline>';
 } else {
@@ -51,7 +39,7 @@ else if ($weather["uv"]>=0) {echo '<div class=uvtoday1-3>'.number_format($weathe
 <?php //weather34 lets make the solar bar
 if ($weather["solar"]>=0)echo "<smallrainrateunit> wm/2";?></smallrainrateunit></div>
 <div class=solarbar>
-<div class="weather34solarbar" style="width:<?php echo $weather["solar"]/12;?>px;background: rgba(208, 95, 45, 0.9);">
+<div class="weather34solarbar" style="width:<?php echo $weather["solar"]/14;?>px;background: rgba(208, 95, 45, 0.9);">
 </div></div><solarbox><?php echo $weather["solar"]?></solarbox></div></div>
 
 <div class="rainrateextra" style="margin-top:90px;margin-left:125px">
