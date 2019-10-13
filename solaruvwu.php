@@ -48,7 +48,7 @@ else if ($wuskydayUV>=0) {echo '<div class=uvtoday1-3>'.number_format($wuskydayU
 else if (date('Hi')>$sunset && $wuskydayUV>=0 ) {echo $uviclear,"Below Horizon";}else if (date('Gi')<$sunrise && $wuskydayUV>=0 ) {echo $uviclear,"Below Horizon";}else if ($wuskydayUV>=0 ) {echo $uviclear,'<span>UVI</span> Low';}else if ($wuskydayUV>=0 ) {echo $uviclear,'<span>UVI</span> Very Low';}?></div>
 
 <div class="solarextra">
-<div class="rainratetextheading">Solar Radiation W/m2</div>
+<div class="rainratetextheading">Solar Radiation W/m²</div>
 <div class=solarbar>
 <div class="weather34solarbar" style="width:<?php echo $weather["solar"]/12;?>px;background: rgba(208, 95, 45, 0.9);">
 </div></div><solarbox><?php echo $weather["solar"]?></solarbox></div></div>
