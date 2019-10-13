@@ -48,17 +48,13 @@ else if ($wuskydayUV>=0) {echo '<div class=uvtoday1-3>'.number_format($wuskydayU
 else if (date('Hi')>$sunset && $wuskydayUV>=0 ) {echo $uviclear,"Below Horizon";}else if (date('Gi')<$sunrise && $wuskydayUV>=0 ) {echo $uviclear,"Below Horizon";}else if ($wuskydayUV>=0 ) {echo $uviclear,'<span>UVI</span> Low';}else if ($wuskydayUV>=0 ) {echo $uviclear,'<span>UVI</span> Very Low';}?></div>
 
 <div class="solarextra">
-<div class="rainratetextheading">Solar Radiation
-<?php //weather34 lets make the solar bar
-if ($weather["solar"]>=0)echo "<smallrainrateunit> wm/2";?></smallrainrateunit></div>
+<div class="rainratetextheading">Solar Radiation W/m2</div>
 <div class=solarbar>
 <div class="weather34solarbar" style="width:<?php echo $weather["solar"]/12;?>px;background: rgba(208, 95, 45, 0.9);">
 </div></div><solarbox><?php echo $weather["solar"]?></solarbox></div></div>
 
 <div class="rainrateextra" style="margin-top:90px;margin-left:125px">
-<div class="rainratetextheading"><?php echo $lang['Luminance']?>
-<?php //weather34 lets make the lux bar
-if ($weather["lux"]>=0)echo "<smallrainrateunit> Lux";?></smallrainrateunit></div>
+<div class="rainratetextheading"><?php echo $lang['Luminance']?> Lux</div>
 <div class=rainratebar style="width:6rem">
 <div class="weather34ratebar" style="width:<?php echo $weather["lux"]/1400;?>px;background:rgba(1, 164, 181, .9)">
 </div></div>
