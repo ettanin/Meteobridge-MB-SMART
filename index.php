@@ -46,17 +46,17 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
  <main class="grid">
   <weather34topmodule>
  <div class="weather34box">
- <div class="weather34title2"><weather34homepagetop></weather34homepagetop> &nbsp;<?php echo $lang['Temperature']." ". $lang['Almanac'];?></div>
+ <div class="weather34title2"><weather34homepagetop></weather34homepagetop> &nbsp;<?php echo $lang['Temperature']." ". $lang['Almanac'];?> <?php echo date('Y')?></div>
  <div id=temperature-year></div></div></weather34topmodule>
 
   <weather34topmodule>
   <div class="weather34box">
-  <div class="weather34title2"><weather34homepagetop></weather34homepagetop> &nbsp;<?php echo $lang['Windspeed']." ". $lang['Almanac'];?></div>
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop> &nbsp;<?php echo $lang['Windspeed']." ". $lang['Almanac'];?> <?php echo date('Y')?></div>
   <div id=windspeed-year></div></div></weather34topmodule>
 
   <weather34topmodule>
   <div class="weather34box">
-  <div class="weather34title2"><weather34homepagetop></weather34homepagetop> &nbsp;<?php echo $lang['Rain']." ". $lang['Almanac'];?></div>
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop> &nbsp;<?php echo $lang['Rain']." ". $lang['Almanac'];?> <?php echo date('Y')?></div>
   <div id=rainfall-year></div></div>
   </weather34topmodule>
 
