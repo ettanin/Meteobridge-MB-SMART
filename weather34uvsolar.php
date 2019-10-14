@@ -33,7 +33,7 @@ else if ($weather["uv"]>=0) {echo '<div class=uvtoday1-3>'.number_format($weathe
 <div class="uvcaution"><?php echo "&nbsp;<valuetext>Max " .$weather["uvdmax"]." <time><value> (".$weather["uvdmaxtime"]?></value>)</valuetext></time></div>
 
 <div class="solarextra">
-<div class="rainratetextheading"><?php echo$lang['Solarradiation']?> W/m²</div>
+<div class="rainratetextheading"><?php echo$lang['Solarradiation']?> W/m<sup>2</sup></div>
 <div class=solarbar>
 <div class="weather34solarbar" style="width:<?php echo $weather["solar"]/14;?>px;background: rgba(208, 95, 45, 0.9);">
 </div></div><solarbox><?php echo $weather["solar"]?></solarbox></div></div>

@@ -375,11 +375,14 @@ img {
 body {
   margin: 0;
 }
-
 sub, sup {
-  position: relative;
+  position: relative;  
   line-height: 0;
   vertical-align: baseline;
+}
+sub, sup {
+  top: -0.5em;
+  font-size: 0.8em;  
 }
 
 .thearrow, .thearrow3, .thearrow:after {
@@ -3016,7 +3019,12 @@ smalltempunit {
 }
 
 smalltempunit2 {
-  font-size: 0.5rem;
+  font-size: 7px;
+  margin-top: -0.3em;
+}
+smalltempunit3 {
+  font-size: 7px;
+  margin-top: -0.3em;
 }
 
 smalltempunit4 {
