@@ -25,7 +25,7 @@ $weather34chartdata   = date('j M').",".$meteobridgeapi[26].",".$meteobridgeapi[
 //$output=$weatherchartfilemonth;
 $fp = fopen($weatherchartfilemonth, 'a'); 
 fwrite($fp,$weather34chartdata); 
-fclose($weatherchartfilemonth);
+fclose($fp);
 
 //create the year file example folder/file path = weathercharts/2019.csv
 //(date month-year-0)),MAX(Temp-1),MIN(Temp-2),MAX(Dewpoint-3),MIN(Dewpoint-4),TOTAL(Raintoday-5),MAX(Windspeed-6),AVG(Day WindSpeed-7),AVG(Temp-8),MAX(Barometer-9),MIN(Barometer-10)
@@ -35,7 +35,7 @@ $weather34chartdata1   = date('j M').",".$meteobridgeapi[26].",".$meteobridgeapi
 //$output1=$weatherchartfileyear;
 $fp1 = fopen($weatherchartfileyear, 'a'); 
 fwrite($fp1,$weather34chartdata1); 
-fclose($weatherchartfileyear);
+fclose($fp1);
 ?>
 
 

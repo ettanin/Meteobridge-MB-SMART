@@ -22,7 +22,7 @@ $weather34chartdata   = $id.",".date('H:i').",".$meteobridgeapi[2].",".$meteobri
 $output=$weatherchartfile;
 $fp = fopen($weatherchartfile, 'a'); 
 fwrite($fp,$weather34chartdata); 
-fclose($weatherchartfile);
+fclose($fp);
 ?>
 
 
@@ -71,7 +71,7 @@ $airchartdata   = $id.",".date('H:i').",".$aqiweather["aqi"].""."\r\n";
 $output=$airchartfile;
 $fp2 = fopen($airchartfile, 'a'); 
 fwrite($fp2,$airchartdata); 
-fclose($airchartfile);
+fclose($fp2);
 }
 else "do nothing";
 ?>
@@ -91,7 +91,7 @@ $airchartdata1   = $id.",".date('H:i').",".$aqiweather1["aqi"].""."\r\n";
 $output=$airchartfile1;
 $fp3 = fopen($airchartfile1, 'a'); 
 fwrite($fp3,$airchartdata1); 
-fclose($airchartfile1);
+fclose($fp3);
 }
 else "do nothing";
 ?>
