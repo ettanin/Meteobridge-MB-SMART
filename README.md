@@ -1,33 +1,16 @@
 # This GITHUB repository is for Meteobridge Weather34 MB Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
 (Public Version 1.04 October 1st 2019)
 
-# Project now archived until early 2020 you may download as normal above using the green button.
-* no significant changes expected until January 2020
-* minor changes may occur periodically based on user feedback/ideas 
+# Project now archived until early 2020 .
+# Please note this archive will close to Private status for at least two months as of Wednesday October 16th
 * todo significant CSS clean (January 2020)
+* no significant changes expected until January 2020
 
 
 <p align="center">
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1570359213/Screenshot_2019-10-06_Sinanoba_Istanbul_Home_Weather_Station_xty2ei.png" width="550" title="weather34 Meteobridge MB-SMART template "> 
 </p>
 	
-# Contributors Live Running Demo(s)
-
-https://singaporeweather.info (Singapore - NANOSD)
-
-https://www.paulwilman.com/pw4/ (England -  NANOSD)
-
-https://www.weerstation-sauwerd.nl/pwsmbms/ (Holland - NANOSD)
-
-https://weather.k1ttc.com (USA - NANOSD)
-
-https://beaumaris-weather.com/pwsMB/ (Tasmania - Meteobridge Pro)
-
-
-# To be done non critical 
-
-NEXT PHASE FOR 2020 THIS WILL BE CSS REMOVAL OF UNUSED and REDUCE CSS to a target size of 100K
-
 # IMPORTANT THIS TEMPLATE IS FOR METEOBRIDGE NANOSD AND DAVIS HARDWARE USERS ONLY !!
 # IT IS NOT COMPATIBLE WITH TP-LINK TYPE METEOBRIDGE HUBS
 	
