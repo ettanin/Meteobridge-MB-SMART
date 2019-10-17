@@ -26,7 +26,7 @@ if (isset($_POST['dounzip'])) {
 }
 if (isset($_POST['dozip'])) {
   $zippath = !empty($_POST['zippath']) ? strip_tags($_POST['zippath']) : '.';
-  // Resulting zipfile e.g. zipper--2016-07-23--11-55.zip.
+  // Resulting zipfile e.g. MB-SMART-BACKUP-201910171155.zip.
   $zipfile = 'MB-SMART-BACKUP-' . date("YmdHi") . '.zip';
   Zipper::zipDir($zippath, $zipfile);
 }
@@ -384,17 +384,23 @@ class Zipper {
 	blue1{color:#fff;width:30px;background:#b83603;padding:3px;-webkit-border-radius:2px;border-radius:2px;}
 	
    .weather34-box {
-  position: absolute; 
-  transform: translate(-50%, -50%); 
-  margin-top:35px;
-  margin-left:205px
+ display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top:15px;
 }
-
 .weather34-box select {
   background-color: #b83603;
   color: white;
   padding: 12px;
-  width: 400px;
+  width:450px;
   border: none;
   font-size: 14px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
@@ -472,7 +478,7 @@ class Zipper {
 <div class="weather34-box">
    
     <select name="zipfile" size="1" class="select" value="mb-smart-updater.zip">
-      <?php foreach ($unzipper->zipfiles as $zip) {echo "<option>$zip</option>";}?>      
+      <?php foreach ($unzipper->zipfiles as $zip) {echo "<option>".date ("M jS", filemtime($zip)).": $zip</option>";}?>      
     </select>
     
     </div>
