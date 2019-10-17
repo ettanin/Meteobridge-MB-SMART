@@ -13,10 +13,11 @@
  // Original developed by Andreas Tasch found at https://github.com/ndeet/
  // SMART UPDATER & BACK FOR Meteobridge SMART//
  
- 
-define('VERSION', '1.05 October 2019');
+define('VERSION', '1.05');
+
 $timestart = microtime(TRUE);
 $GLOBALS['status'] = array();
+
 $unzipper = new Unzipper;
 if (isset($_POST['dounzip'])) {
   // Check if an archive was selected for unzipping.
@@ -24,20 +25,24 @@ if (isset($_POST['dounzip'])) {
   $destination = isset($_POST['extpath']) ? strip_tags($_POST['extpath']) : '';
   $unzipper->prepareExtraction($archive, $destination);
 }
+
 if (isset($_POST['dozip'])) {
   $zippath = !empty($_POST['zippath']) ? strip_tags($_POST['zippath']) : '.';
-  // Resulting zipfile e.g. MB-SMART-BACKUP-201910171155.zip.
-  $zipfile = 'MB-SMART-BACKUP-' . date("YmdHi") . '.zip';
+  // Resulting zipfile e.g. MB-SMART-BACKUP-2016-07-23.zip.
+  $zipfile = 'MB-SMART-BACKUP-' . date("Ymdhi") . '.zip';
   Zipper::zipDir($zippath, $zipfile);
 }
+
 $timeend = microtime(TRUE);
 $time = round($timeend - $timestart, 4);
+
 /**
  * Class Unzipper
  */
 class Unzipper {
   public $localdir = '.';
   public $zipfiles = array();
+
   public function __construct() {
     // Read directory and pick .zip, .rar and .gz files.
     if ($dh = opendir($this->localdir)) {
@@ -50,14 +55,16 @@ class Unzipper {
         }
       }
       closedir($dh);
+
       if (!empty($this->zipfiles)) {
-        $GLOBALS['status'] = array('info' => '<b>Success !</b> mb-smart-update.zip file or mb-smart backup <b>found</b>, select file for updating below');
+        $GLOBALS['status'] = array('info' => '.zip or .gz or .rar files found, ready for extraction');
       }
       else {
-        $GLOBALS['status'] = array('info' => '<b>Sorry No !</b> mb-smart-update.zip or mb-smart back up file <b>found</b>.');
+        $GLOBALS['status'] = array('info' => 'No .zip or .gz or rar files found. So only zipping functionality available.');
       }
     }
   }
+
   /**
    * Prepare and check zipfile for extraction.
    *
@@ -83,6 +90,7 @@ class Unzipper {
       self::extract($archive, $extpath);
     }
   }
+
   /**
    * Checks file extension and calls suitable extractor functions.
    *
@@ -104,7 +112,9 @@ class Unzipper {
         self::extractRarArchive($archive, $destination);
         break;
     }
+
   }
+
   /**
    * Decompress/extract a zip archive using ZipArchive.
    *
@@ -117,14 +127,16 @@ class Unzipper {
       $GLOBALS['status'] = array('error' => 'Error: Your PHP version does not support unzip functionality.');
       return;
     }
+
     $zip = new ZipArchive;
+
     // Check if archive is readable.
     if ($zip->open($archive) === TRUE) {
       // Check if destination is writable
       if (is_writeable($destination . '/')) {
         $zip->extractTo($destination);
         $zip->close();
-        $GLOBALS['status'] = array('success' => 'MB SMART updated successfully');
+        $GLOBALS['status'] = array('success' => 'MB-SMART update file successfully');
       }
       else {
         $GLOBALS['status'] = array('error' => 'Error: Directory not writeable by webserver.');
@@ -134,6 +146,7 @@ class Unzipper {
       $GLOBALS['status'] = array('error' => 'Error: Cannot read .zip archive.');
     }
   }
+
   /**
    * Decompress a .gz File.
    *
@@ -148,17 +161,21 @@ class Unzipper {
       $GLOBALS['status'] = array('error' => 'Error: Your PHP has no zlib support enabled.');
       return;
     }
+
     $filename = pathinfo($archive, PATHINFO_FILENAME);
     $gzipped = gzopen($archive, "rb");
     $file = fopen($destination . '/' . $filename, "w");
+
     while ($string = gzread($gzipped, 4096)) {
       fwrite($file, $string, strlen($string));
     }
     gzclose($gzipped);
     fclose($file);
+
     // Check if file was extracted.
     if (file_exists($destination . '/' . $filename)) {
-      $GLOBALS['status'] = array('success' => 'File unzipped successfully.');
+      $GLOBALS['status'] = array('success' => 'MB-SMART update file successfully.');
+
       // If we had a tar.gz file, let's extract that tar file.
       if (pathinfo($destination . '/' . $filename, PATHINFO_EXTENSION) == 'tar') {
         $phar = new PharData($destination . '/' . $filename);
@@ -172,7 +189,9 @@ class Unzipper {
     else {
       $GLOBALS['status'] = array('error' => 'Error unzipping file.');
     }
+
   }
+
   /**
    * Decompress/extract a Rar archive using RarArchive.
    *
@@ -196,7 +215,7 @@ class Unzipper {
           $entry->extract($destination);
         }
         $rar->close();
-        $GLOBALS['status'] = array('success' => 'Files extracted successfully.');
+        $GLOBALS['status'] = array('success' => 'MB-SMART update file updated successfully.');
       }
       else {
         $GLOBALS['status'] = array('error' => 'Error: Directory not writeable by webserver.');
@@ -206,7 +225,9 @@ class Unzipper {
       $GLOBALS['status'] = array('error' => 'Error: Cannot read .rar archive.');
     }
   }
+
 }
+
 /**
  * Class Zipper
  *
@@ -228,12 +249,14 @@ class Zipper {
    */
   private static function folderToZip($folder, &$zipFile, $exclusiveLength) {
     $handle = opendir($folder);
+
     while (FALSE !== $f = readdir($handle)) {
       // Check for local/parent path or zipping file itself and skip.
       if ($f != '.' && $f != '..' && $f != basename(__FILE__)) {
         $filePath = "$folder/$f";
         // Remove prefix from file path before add to zip.
         $localPath = substr($filePath, $exclusiveLength);
+
         if (is_file($filePath)) {
           $zipFile->addFile($filePath, $localPath);
         }
@@ -246,6 +269,7 @@ class Zipper {
     }
     closedir($handle);
   }
+
   /**
    * Zip a folder (including itself).
    *
@@ -262,6 +286,7 @@ class Zipper {
     $pathInfo = pathinfo($sourcePath);
     $parentPath = $pathInfo['dirname'];
     $dirName = $pathInfo['basename'];
+
     $z = new ZipArchive();
     $z->open($outZipPath, ZipArchive::CREATE);
     $z->addEmptyDir($dirName);
@@ -272,7 +297,8 @@ class Zipper {
       self::folderToZip($sourcePath, $z, strlen("$parentPath/"));
     }
     $z->close();
-    $GLOBALS['status'] = array('success' => 'MB-SMART Successfully backed up and created ' . $outZipPath);
+
+    $GLOBALS['status'] = array('success' => 'Successfully created archive ' . $outZipPath);
   }
 }
 ?>
@@ -280,9 +306,8 @@ class Zipper {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Weather34 MB SMART Updater & Backup</title>
+  <title>MB-SMART UPDATER/BACKUP/RESTORE</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
   <style type="text/css">
     <!--
     body {
@@ -354,6 +379,7 @@ class Zipper {
 	   -webkit-appearance: none;
 	  -webkit-border-radius:3px;
 		border-radius:3px;
+		display:none;
 	  
     }
     .info {
@@ -411,8 +437,8 @@ class Zipper {
 }
 
 .weather34-box::before {
-  content: "\f13a  Select";
-  font-family: FontAwesome;
+  content: "Select";
+  font-family: Arial, Helvetica, sans-serif;
   position: absolute;
   top: 0;
   right: 0;
@@ -453,11 +479,7 @@ class Zipper {
   </style>
 </head>
 <body>
-
 <p class="status status--<?php echo strtoupper(key($GLOBALS['status'])); ?>">
-  
-  <svg id="i-info" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg> 
   Status: <?php echo reset($GLOBALS['status']); ?><br/>
   <span class="small">Processing Time: <?php echo $time; ?> seconds</span>
 </p>
@@ -466,55 +488,42 @@ class Zipper {
 
 <form action="" method="POST">
   <fieldset>
-  
-    <h1>Weather<orange>34</orange> MB SMART Quick updater </h1>
-    <label for="zipfile">
-    Select mb-smart-updater.zip if no mb-smart-update.zip found or not automaticlly found check you have uploaded mb-smart-update.zip to this directory on your/this server.*note a bonus if you have a backup zip it will automatically locate it .i.e MB-SMART-BACKUP-201910151123.zip </label>
-    
-    *click and select file from dropdown list below if found <svg id="i-chevron-bottom" viewBox="0 0 32 32" width="12" height="12" fill="#01a4b5" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="0%">
-    <path d="M30 12 L16 24 2 12" />
-</svg>
-<br>
-<div class="weather34-box">
-   
-    <select name="zipfile" size="1" class="select" value="mb-smart-updater.zip">
-      <?php foreach ($unzipper->zipfiles as $zip) {echo "<option>".date ("M jS", filemtime($zip)).": $zip</option>";}?>      
-    </select>
-    
-    </div>
-   <br> <br><br>
-    
-    <label for="extpath">
-    <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg>  
-    MB SMART Update path is automatic:</label>
-    
-    <p class="info">* The update file will extract the file selected and update the current template directory .</p>
-    <svg id="i-chevron-right" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"><path d="M12 30 L24 16 12 2" /></svg><svg id="i-chevron-right" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"><path d="M12 30 L24 16 12 2" /></svg>    
-    <input type="submit" name="dounzip" class="submit" value="Update MB-SMART Version"/>
+    <h1>MB SMART UPDATER/RESTORE</h1>
+    <label for="zipfile">Select MB-SMART-UPDATE.zip or Backup  file you want to update or restore:</label>
+    <div class="weather34-box">
+    <select name="zipfile" size="1" class="select">
+      <?php foreach ($unzipper->zipfiles as $zip) {
+        echo "<option>$zip</option>";
+      }
+      ?>
+    </select></div>
+    <label for="extpath"></label>
+    <input type="text" name="extpath" class="form-field" />
+    <p class="info"></p><br><br>
+    <svg id="i-chevron-right" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"><path d="M12 30 L24 16 12 2" /></svg> 
+    <svg id="i-chevron-right" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"><path d="M12 30 L24 16 12 2" /></svg> 
+    <input type="submit" name="dounzip" class="submit" value="UPDATE MB-SMART"/>
   </fieldset>
-  
-  <fieldset>  
-    <h1>Weather<orange>34</orange> MB SMART Back up </h1>
-    <label for="zippath">
-    <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg> 
-    MB SMART BACKUP path is automatic:</label>
-       
-    <p class="info">* The current template directory will be used and a backup zip will be created of this template installed on your server.</p>
-    <svg id="i-chevron-right" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"><path d="M12 30 L24 16 12 2" /></svg><svg id="i-chevron-right" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"><path d="M12 30 L24 16 12 2" /></svg>
-    
-    <input type="submit" name="dozip" class="submit" value="Back up current MB SMART installation"/>
-    <p class="info">
-    <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M16 14 L16 23 M16 8 L16 10" />    <circle cx="16" cy="16" r="14" /></svg>  
-    
-     Important do not refresh the browser after updating or backing up it will repeat the update or backup all over again.<br>
+
+  <fieldset>
+    <h1>MB-SMART BACUP</h1>
+    <label for="zippath"></label>
+    <input type="text" name="zippath" class="form-field" />
+    <p class="info">The current MB-SMART install directory will be used.</p>
+    <svg id="i-chevron-right" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"><path d="M12 30 L24 16 12 2" /></svg> 
+    <svg id="i-chevron-right" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"><path d="M12 30 L24 16 12 2" /></svg> 
+    <input type="submit" name="dozip" class="submit" value="BACKUP MB-SMART"/>
+    <br>
+    *Important do not refresh the browser after updating or backing up it will repeat again.<br>
      Always access this page from the setup screen <a href="mb-smart-setup.php" target="_self" alt="setup screen" title="setup screen">
      <svg id="i-chevron-right" viewBox="0 0 32 32" width="10" height="10" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"><path d="M12 30 L24 16 12 2" /></svg>     
      <blue1>Here</blue1></a></p>
     
   </fieldset>
+  
+  
+  
+  
 </form>
 <p class="version"><a href="https://weather34.com/homeweatherstation/" title="https://weather34.com/homeweatherstation/" target="_blank">Weather<orange>34</orange></a> MB-SMART Updater/Backup Version: <blue><?php echo VERSION; ?></blue> *Based on Original code by <a href="https://github.com/ndeet/" title="https://github.com/ndeet/" target="_blank"><blue>Andreas Tasch</blue></a> </p>
 </body>
