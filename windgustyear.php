@@ -47,7 +47,7 @@ if ($weather['wind_direction_avgmonth']<=11.25) {
 } elseif ($weather['wind_direction_avgmonth']<=33.75) {
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['NNE']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=56.25) {
-    echo $lang['NEdirs'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['NE']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=78.75) {
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['ENE']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=101.25) {
@@ -55,7 +55,7 @@ if ($weather['wind_direction_avgmonth']<=11.25) {
 } elseif ($weather['wind_direction_avgmonth']<=123.75) {
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['ESE']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=146.25) {
-    echo $lang['SEdirs'];
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['SE']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=168.75) {
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['SSE']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=191.25) {
@@ -63,7 +63,7 @@ if ($weather['wind_direction_avgmonth']<=11.25) {
 } elseif ($weather['wind_direction_avgmonth']<=213.75) {
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['SSW']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=236.25) {
-    echo "&nbsp;".$lang['SWdirs']."&nbsp;";
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['SW']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=258.75) {
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['WSW']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=281.25) {
@@ -71,7 +71,7 @@ if ($weather['wind_direction_avgmonth']<=11.25) {
 } elseif ($weather['wind_direction_avgmonth']<=303.75) {
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['WNW']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=326.25) {
-    echo "".$lang['NWdirs']."";
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['NWdirs']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=348.75) {
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['NNW']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=360) {

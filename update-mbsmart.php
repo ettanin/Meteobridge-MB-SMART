@@ -57,10 +57,10 @@ class Unzipper {
       closedir($dh);
 
       if (!empty($this->zipfiles)) {
-        $GLOBALS['status'] = array('info' => '.zip or .gz or .rar files found, ready for extraction');
+        $GLOBALS['status'] = array('info' => 'MB-SMART-UPDATE.zip or MB-SMART BACKUP.zip files found, ready for use');
       }
       else {
-        $GLOBALS['status'] = array('info' => 'No .zip or .gz or rar files found. So only zipping functionality available.');
+        $GLOBALS['status'] = array('info' => 'MB-SMART-UPDATE.zip or MB-SMART-BACKUP NOT found. So only MB-SMART Backing up functionality available at this stage.');
       }
     }
   }
@@ -82,7 +82,7 @@ class Unzipper {
       $extpath = $this->localdir . '/' . $destination;
       // Todo: move this to extraction function.
       if (!is_dir($extpath)) {
-        mkdir($extpath);
+       
       }
     }
     // Only local existing archives are allowed to be extracted.
@@ -191,6 +191,11 @@ class Unzipper {
     }
 
   }
+  
+  
+  
+  
+  
 
   /**
    * Decompress/extract a Rar archive using RarArchive.
@@ -298,7 +303,7 @@ class Zipper {
     }
     $z->close();
 
-    $GLOBALS['status'] = array('success' => 'Successfully created archive ' . $outZipPath);
+    $GLOBALS['status'] = array('success' => 'Successfully created MB-SMART-BACKUP ' . $outZipPath);
   }
 }
 ?>
