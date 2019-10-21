@@ -86,8 +86,8 @@ date{color:#aaa;font-size:.65em;margin-top:10px}
 <svg id="download" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="#ff793a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M28 22 L28 30 4 30 4 22 M16 4 L16 24 M8 16 L16 24 24 16" /></svg> weather34.com</a>
 <br><br>
 <em>Credit Acknowledgements<em><br>
-Lars (Singapore),Paul Wilman(UK),Graham(Guernsey),Ron(USA K1TTC),Piet(Netherlands),Tony(Tasmania)..
-<em>*Revised September 2019</em>
+Lars (Singapore),Paul Wilman(UK),Graham(Guernsey),Ron(USA K1TTC),Tony(Tasmania)..
+<em>*Revised October 2019</em>
 
 <br>
 <a href="https://weather34.com/homeweatherstation/" alt="https://weather34.com/homeweatherstation/" title="https://weather34.com/homeweatherstation/" target="_blank">

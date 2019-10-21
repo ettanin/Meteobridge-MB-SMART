@@ -20,7 +20,7 @@ if ($meteobridgeapi[43]=='--'){$meteobridgeapi[43]=0;}
 if ($meteobridgeapi[45]=='--'){$meteobridgeapi[45]=0;}
 $weather34chartdata   = $id.",".date('H:i').",".$meteobridgeapi[2].",".$meteobridgeapi[10].",". $meteobridgeapi[9].",".$meteobridgeapi[43].",".$meteobridgeapi[40].",".$meteobridgeapi[17].",".$meteobridgeapi[45].",".$meteobridgeapi[4].",".$meteobridgeapi[8].",".$meteobridgeapi[7].",".$meteobridgeapi[22].",".$meteobridgeapi[23].",".date('j M').",".$weather['realfeel'].",".$weather['wetbulb'].",".$weather["humidity"].",".$weather['cloudbase'].""."\r\n";
 $output=$weatherchartfile;
-$fp = fopen($weatherchartfile, 'a'); 
+$fp = fopen($weatherchartfile, 'a+'); 
 fwrite($fp,$weather34chartdata); 
 fclose($fp);
 ?>
@@ -69,7 +69,7 @@ $aqiweather["aqi"]       = number_format(pm25_to_aqi(($parsed_json->{'results'}[
 $airchartfile = "weather34charts/".date('Y')."/".date('jMY')."airquality.csv";
 $airchartdata   = $id.",".date('H:i').",".$aqiweather["aqi"].""."\r\n";
 $output=$airchartfile;
-$fp2 = fopen($airchartfile, 'a'); 
+$fp2 = fopen($airchartfile, 'a+'); 
 fwrite($fp2,$airchartdata); 
 fclose($fp2);
 }
@@ -89,7 +89,7 @@ $aqiweather1["aqi"]       = $weather34luftdatenaqi['sensordatavalues'][0]['value
 $airchartfile1 = "weather34charts/".date('Y')."/".date('jMY')."luftdaten.csv";
 $airchartdata1   = $id.",".date('H:i').",".$aqiweather1["aqi"].""."\r\n";
 $output=$airchartfile1;
-$fp3 = fopen($airchartfile1, 'a'); 
+$fp3 = fopen($airchartfile1, 'a+'); 
 fwrite($fp3,$airchartdata1); 
 fclose($fp3);
 }

@@ -23,7 +23,7 @@ error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);ini_set("display_errors","off
 $weatherchartfilemonth ="weather34charts/".$year."/".date('F').".csv";
 $weather34chartdata   = date('j M').",".$meteobridgeapi[26].",".$meteobridgeapi[28].",".$meteobridgeapi[63].",".$meteobridgeapi[65].",".$meteobridgeapi[9].",".$meteobridgeapi[32].",".$meteobridgeapi[158].",".$meteobridgeapi[123].",".$meteobridgeapi[34].",".$meteobridgeapi[36].""."\r\n";
 //$output=$weatherchartfilemonth;
-$fp = fopen($weatherchartfilemonth, 'a'); 
+$fp = fopen($weatherchartfilemonth, 'a+'); 
 fwrite($fp,$weather34chartdata); 
 fclose($fp);
 
@@ -33,7 +33,7 @@ fclose($fp);
 $weatherchartfileyear = "weather34charts/".date('Y').".csv";
 $weather34chartdata1   = date('j M').",".$meteobridgeapi[26].",".$meteobridgeapi[28].",".$meteobridgeapi[63].",".$meteobridgeapi[65].",".$meteobridgeapi[9].",".$meteobridgeapi[32].",".$meteobridgeapi[158].",".$meteobridgeapi[123].",".$meteobridgeapi[34].",".$meteobridgeapi[36].""."\r\n";
 //$output1=$weatherchartfileyear;
-$fp1 = fopen($weatherchartfileyear, 'a'); 
+$fp1 = fopen($weatherchartfileyear, 'a+'); 
 fwrite($fp1,$weather34chartdata1); 
 fclose($fp1);
 ?>
