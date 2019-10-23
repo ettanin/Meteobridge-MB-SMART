@@ -27,7 +27,8 @@ changes for Version 1.05 during the month of october it means you were not a par
 released for the Meteobridge NANOSD product.
 
 # Please do not request personal modifications  
-* sorry your requests must be of beneficial to everyone "its a one design to suit fit the most common Davis and meteobridge NANOSD setups". 
+* Sorry your requests must be of benefit to everyone "its a one design to suit fit the most common Davis and Meteobridge NANOSD setups". 
+* Scraping data and using unofficial iframes is not a part of this project.Official API sources are required for anything to be considered for use outside the Meteobridge NANOSD upload.All API sources carry some risk of downtime and 99% of the problems can not be resolved without some form of communication from the original API source.
 * Leaf and additional sensors will be added when I actually get around to ordering one and installing.
 
 # ONCE AGAIN IMPORTANT PLEASE READ THIS "IT IS NOT COMPATIBLE WITH CUMULUS,WEEWX,WIFILOGGER" IT IS DESIGNED FOR METOBERIDGE NANOSD(100% Compatibility) and MBPRO Products(MBPRO 90% compatibility )
