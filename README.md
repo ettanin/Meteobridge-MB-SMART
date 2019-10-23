@@ -1,11 +1,30 @@
 # This GITHUB repository is for Meteobridge Weather34 MB Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
-(Public Version 1.04 October 1st 2019)
+(Version 1.05 October 22nd 2019)
 
-# Project now archived until early 2020 .
-# Please note this archive will close to Private status for at least two months as of Wednesday October 16th
-* todo significant CSS clean (January 2020)
-* no significant changes expected until January 2020
+# IMPORTANT PLEASE READ THIS "IT IS NOT COMPATIBLE WITH CUMULUS,WEEWX,WIFILOGGER" IT IS DESIGND FOR METOBERIDGE NANOSD(100% Compatibility) and MBPRO Products(MBPRO 90% compatibility )
 
+# New mb-smart update and backup/restore feature .
+* allows features/fixes to be added with ease by simply using a zip file containing neccessary files to be updated or added.
+* this feature is for version 1.05 onwards do not try and use it with version 1.04 or previous.
+* update files will be release via https://weather34.com/homeweatherstation/ and each update will be dated 
+example MB-SMART-UPDATE-23102019
+* Version 1.05 requires a fresh install and thereafter you simply use the updater method to update and apply fixes .No more fresh installs are required thereafter.
+* The updater and backup is password a protected screen .
+* simple guide to use new updater and backup https://weather34.com/homeweatherstation/smartupdate.html#setup
+
+
+# When upgrading from version 1.04 or earlier please keep a copy of you weather34charts folder !!! 
+* this contains all your yearly and monthly charts data from 2019 if you have been following the beta path.
+* simply keep a copy on your desktop and copy it to your server where this version 1.05 is installed.
+
+# All beta testers do not need to update with a fresh install you are presently uptodate as of 23rd October.
+* beta testers are a small group of 10 users and collaborated via email .if you did not recieve an email with 
+changes during the month of october it means you did not collaborate and share your findings ,issues.
+
+# Project expected to finally finish early 2020 .
+* todo significant minor CSS clean (January 2020)
+* there are no plans for further development or features unless there is a significant change or enhancement
+released for the meteobridge NANOSD product.
 
 <p align="center">
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1570359213/Screenshot_2019-10-06_Sinanoba_Istanbul_Home_Weather_Station_xty2ei.png" width="550" title="weather34 Meteobridge MB-SMART template "> 
@@ -143,27 +162,6 @@ id,time,temp,barometer,rainfall,maxwind_last10,avgwind_last10,dewpoint,rainfall_
 <p align="center">
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1563167987/stationcron_js0fmg.png" width="550" title="weather34 stationcron.php "> 
 </p>
-
-
-
-# Meteobridge-Weather34 MB-Smart Version
-*The aim is to create the cleanest and most friendly approach to displaying your personal
-weather data for your personal use and reap the full potential of meteobridge nanosd.
-
-*This template is primed for use with meteobridge NANOSD AND DAVIS hardware unfortunately the smaller TP-LINK is not
-fully compatible due to the requirement of being able to retrieve historical values realtime .
-
-*This work is for use only it is for meteobridge NANOSD.
-
-*This work is not to be used without prior permission other versions , please clearly outline on how you want to use this work.
-
-*This work requires credits to be left intact where work is used ,it has no legal binding warrant but it is ethical
-to create a working enviroment to exchange ideas without creating unwanted noise, the community is smaller than you may think..
-
-*If you have any questions about the License, feel free to contact weather34 for clarification. 
-
-*This work means CSS/SVG/PHP .
-
 
 # Thanks to Lars 
 Lars at  https://singaporeweather.info for access to test ideas realtime in a different climate.
