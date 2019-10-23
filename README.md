@@ -1,7 +1,7 @@
 # This GITHUB repository is for Meteobridge Weather34 MB Smart Version *NO MYSQL KNOWLEDGE REQUIRED 
 (Version 1.05 October 22nd 2019)
 
-# IMPORTANT PLEASE READ THIS "IT IS NOT COMPATIBLE WITH CUMULUS,WEEWX,WIFILOGGER" IT IS DESIGND FOR METOBERIDGE NANOSD(100% Compatibility) and MBPRO Products(MBPRO 90% compatibility )
+# IMPORTANT PLEASE READ THIS "IT IS NOT COMPATIBLE WITH CUMULUS,WEEWX,WIFILOGGER" IT IS DESIGNED FOR METOBERIDGE NANOSD(100% Compatibility) and MBPRO Products(MBPRO 90% compatibility )
 
 # New mb-smart update and backup/restore feature .
 * allows features/fixes to be added with ease by simply using a zip file containing neccessary files to be updated or added.
