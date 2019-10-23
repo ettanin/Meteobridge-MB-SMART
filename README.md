@@ -19,15 +19,18 @@ example MB-SMART-UPDATE-23102019
 
 # All beta testers do not need to update with a fresh install you are presently upto date as of 23rd October.
 * beta testers are a small group of 10 users and collaborated via email .if you did not recieve an email with 
-changes during the month of october it means you did not collaborate and share your findings ,issues.
+changes for Version 1.05 during the month of october it means you were not a part of this beta group therefore a fresh install will be required.
 
 # Project expected to finally finish early 2020 .
-* todo significant minor CSS clean (January 2020)
-* there are no plans for further development or features unless there is a significant change or enhancement
-released for the meteobridge NANOSD product.
+* todo minor CSS clean (January 2020)
+* there are no plans for further development or features thereafter unless there is a significant change or enhancement
+released for the Meteobridge NANOSD product.
 
 # Please do not request personal modifications  
-* sorry your request will be ignored "its a one design for all approach ". 
+* sorry your requests must be of beneficial to everyone "its a one design to suit fit the most common Davis and meteobridge NANOSD setups". 
+* Leaf and additional sensors will be added when I actually get around to ordering one and installing.
+
+# ONCE AGAIN IMPORTANT PLEASE READ THIS "IT IS NOT COMPATIBLE WITH CUMULUS,WEEWX,WIFILOGGER" IT IS DESIGNED FOR METOBERIDGE NANOSD(100% Compatibility) and MBPRO Products(MBPRO 90% compatibility )
 
 <p align="center">
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1570359213/Screenshot_2019-10-06_Sinanoba_Istanbul_Home_Weather_Station_xty2ei.png" width="550" title="weather34 Meteobridge MB-SMART template "> 
