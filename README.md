@@ -17,7 +17,7 @@ example MB-SMART-UPDATE-23102019
 * this contains all your yearly and monthly charts data from 2019 if you have been following the beta path.
 * simply keep a copy on your desktop and copy it to your server where this version 1.05 is installed.
 
-# All beta testers do not need to update with a fresh install you are presently uptodate as of 23rd October.
+# All beta testers do not need to update with a fresh install you are presently upto date as of 23rd October.
 * beta testers are a small group of 10 users and collaborated via email .if you did not recieve an email with 
 changes during the month of october it means you did not collaborate and share your findings ,issues.
 
@@ -25,6 +25,9 @@ changes during the month of october it means you did not collaborate and share y
 * todo significant minor CSS clean (January 2020)
 * there are no plans for further development or features unless there is a significant change or enhancement
 released for the meteobridge NANOSD product.
+
+# Please do not request personal modifications  
+* sorry your request will be ignored "its a one design for all approach ". 
 
 <p align="center">
   <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1570359213/Screenshot_2019-10-06_Sinanoba_Istanbul_Home_Weather_Station_xty2ei.png" width="550" title="weather34 Meteobridge MB-SMART template "> 
