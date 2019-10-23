@@ -40,8 +40,7 @@ released for the Meteobridge NANOSD product.
 </p>
 
 <p align="center">
-  <img src="
-https://res.cloudinary.com/brian-underdown/image/upload/v1571827253/Screenshot_at_Oct_211324_c9lg6s.png"> 
+  <img src="https://res.cloudinary.com/brian-underdown/image/upload/v1571827253/Screenshot_at_Oct_211324_c9lg6s.png" width="550" title="weather34 Meteobridge MB-SMART Updater "> > 
 </p>	
 
 # This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. http://creativecommons.org/licenses/by-nc-nd/4.0/
