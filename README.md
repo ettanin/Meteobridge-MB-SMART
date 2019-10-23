@@ -3,7 +3,7 @@
 
 # IMPORTANT PLEASE READ THIS "IT IS NOT COMPATIBLE WITH CUMULUS,WEEWX,WIFILOGGER" IT IS DESIGNED FOR METOBERIDGE NANOSD(100% Compatibility) and MBPRO Products(MBPRO 90% compatibility )
 
-# New mb-smart update and backup/restore feature .
+# Version 1.05 has New mb-smart update and backup/restore feature .
 * allows features/fixes to be added with ease by simply using a zip file containing neccessary files to be updated or added.
 * this feature is for version 1.05 onwards do not try and use it with version 1.04 or previous.
 * update files will be release via https://weather34.com/homeweatherstation/ and each update will be dated 
