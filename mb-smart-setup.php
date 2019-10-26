@@ -60,6 +60,7 @@ $position12   = "'. $_POST["position12"]. '";
 $positionlastmoduletitle   = "'. $_POST["positionlastmoduletitle"]. '";
 $positionlastmodule   = "'. $_POST["positionlastmodule"]. '";
 $positionmooneq   = "'. $_POST["positionmooneq"]. '";
+$positionconsole   = "'. $_POST["positionconsole"]. '";
 $webcamurl   = "'. $_POST["webcamurl"]. '";
 $email    = "'. $_POST["email"]. '";
 $twitter   = "'. $_POST["twitter"]. '";
@@ -1059,6 +1060,28 @@ your nearly there :-) keep going
             <option>heat-chill-year-month.php</option>
             <option>weather34-moonphase.php</option>  
             <option>luftdaten-small.php</option>                       
+            
+                     </select>
+               
+     
+      <br> <br>
+      
+      
+      
+      <div class= "stationvalue"> *Position 4th top right module show Davis Console Forecast or small wu forecast for tomorrow<br>
+      </div>
+       <br> <br>
+       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M30 12 L16 24 2 12" />
+</svg>
+        <label name="positionconsole"></label>
+        <select id="positionconsole" name="positionconsole" class="choose">  
+            <option><?php echo $positionconsole ;?></option> 
+            <option>consoleoutlook.php</option>
+            <option>forecast-small.php</option>  
+                          
             
                      </select>
                

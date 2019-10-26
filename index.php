@@ -62,7 +62,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 
   <weather34topmodule>
    <div class="weather34box">
-   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;Davis Console&nbsp;<?php echo $lang['Forecast']?> </div>
+   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php if ($positionconsole=='forecast-small.php'){echo $lang['Forecast'];} else echo "Davis Console ".$lang['Forecastsummary'];?> </div>
   <div id=dewpoint-year></div></div>
   </weather34topmodule>
   </main>

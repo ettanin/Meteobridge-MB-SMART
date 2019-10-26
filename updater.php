@@ -35,7 +35,6 @@ if ($position12 == 'webcamsmall.php') {
     echo 'setTimeout(solar,'. 1000*$p12Refresh.')';
 } ?>},type:"GET",url:'<?php echo $position12?>'})};
 
-//last module
 var refreshId;$(document).ready(function(){dldata()});function dldata(){$.ajax({cache:false,success:function(a){$("#dldata").html(a);<?php
 if ($positionlastmodule == 'webcamsmall.php') {
     echo 'setTimeout(dldata,'. 1000*$camRefresh.')';
@@ -43,22 +42,21 @@ if ($positionlastmodule == 'webcamsmall.php') {
     echo 'setTimeout(dldata,' . 1000*$p13Refresh.')';
 } ?>}, type:"GET",url:"<?php echo $positionlastmodule?>"})};
 
-//extra modules fixed
-
+//extra modules some are fixed
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#temperature-year").show()}});var c=a("#temperature-year");c.load("temperatureyear.php");var b=setInterval(function(){c.load("temperatureyear.php")},380000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#rainfall-year").show()}});var c=a("#rainfall-year");c.load("rainfallf-year-month.php");var b=setInterval(function(){c.load("rainfallf-year-month.php")},380000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#windspeed-year").show()}});var c=a("#windspeed-year");c.load("windgustyear.php");var b=setInterval(function(){c.load("windgustyear.php")},380000)})})(jQuery);
-
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#dewpoint-year").show()}});var c=a("#dewpoint-year");c.load("consoleoutlook.php");var b=setInterval(function(){c.load("consoleoutlook.php")},680000)})})(jQuery);
+//option
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#dewpoint-year").show()}});var c=a("#dewpoint-year");c.load("<?php echo $positionconsole?>");var b=setInterval(function(){c.load("<?php echo $positionconsole?>")},380000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#barometer-year").show()}});var c=a("#barometer-year");c.load("barometer-year-month.php");var b=setInterval(function(){c.load("barometer-year-month.php")},680000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#humidity-year").show()}});var c=a("#humidity-year");c.load("humidity-year-month.php");var b=setInterval(function(){c.load("humidity-year-month.php")},680000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#consoledavis").show()}});var c=a("#consoledavis");c.load("dewpoint-year-month.php");var b=setInterval(function(){c.load("dewpoint-year-month.php")},380000)})})(jQuery);
-
+//option 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#option").show()}});var c=a("#option");c.load("<?php echo $positionmooneq?>");var b=setInterval(function(){c.load("<?php echo $positionmooneq?>")},380000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#earthquake").show()}});var c=a("#earthquake");c.load("eq.php");var b=setInterval(function(){c.load("eq.php")},380000)})})(jQuery);

@@ -9678,3 +9678,6 @@ themenusection {
   border: 0;
   text-transform: uppercase
 }
+
+.summarydesc1{position:absolute;margin-left:5px;margin-top:25px;font-size:10px;width:200px;line-height:1;text-align:left;}
+.iconpos1{position:absolute;margin-left:180px;margin-top:55px;}
