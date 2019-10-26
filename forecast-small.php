@@ -105,7 +105,7 @@ else {
 	  
 }//end weather34 weather underground summary forecast stuff
 ?>
-
+<div class="topframe">
     <?php //summary	
 	echo '<div class=summarydesc1><darkgrey>';echo "<blue>".$wuskydayTime2."</blue>";
 	 echo "<br>".$wusummary2.'<darkgrey></div>';
@@ -114,4 +114,4 @@ else {
 	 if ($wuskydaynight2=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon2.'.svg" width="30" class="iconpos"></img></div>';}	
 	 //thunder	
 	 
-	 ?>  
+	 ?>  </div>
