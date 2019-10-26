@@ -116,11 +116,19 @@ if ($units == 'metric' && $windunit=='kts') {
   $windconv         = "1";
   $rainfallconv     = '10';
   $pressureinterval = "0.5";
-  $rainfallconvmm   = '10';  
-  
+  $rainfallconvmm   = '10';    
 }
 
-
+if ($units == 'uk' && $windunit=='kts') {
+  $windunit         = 'kts';
+  $tempunit         = 'C';
+  $rainunit         = 'mm';
+  $pressureunit     = "mb";
+  $windconv         = "1";
+  $rainfallconv     = '10';
+  $pressureinterval = "0.5";
+  $rainfallconvmm   = '10';    
+}
 else if ($units == 'uk' && $windunit=='mph') {
   $windunit         = 'mph';
   $tempunit         = 'C';
@@ -129,11 +137,9 @@ else if ($units == 'uk' && $windunit=='mph') {
   $windconv         = "0.621371";
   $rainfallconv     = '10';
   $pressureinterval = "0.5";
-  $rainfallconvmm   = '10';
-  
-  
-  
-} else if ($units == 'scandinavia') {
+  $rainfallconvmm   = '10';    
+} 
+else if ($units == 'scandinavia') {
   $windunit         = 'm/s';
   $tempunit         = 'C';
   $rainunit         = 'mm';
@@ -142,7 +148,8 @@ else if ($units == 'uk' && $windunit=='mph') {
   $rainfallconv     = '10';
   $pressureinterval = "0.5";
   $rainfallconvmm   = '10';
-} else if ($units == 'metric') {
+} 
+else if ($units == 'metric') {
   $windunit         = 'km/h';
   $tempunit         = 'C';
   $rainunit         = 'mm';
@@ -151,7 +158,19 @@ else if ($units == 'uk' && $windunit=='mph') {
   $rainfallconv     = '10';
   $pressureinterval = "0.5";
   $rainfallconvmm   = '10';
-} else if ($units == 'us') {
+} 
+else if ($units == 'us' && $windunit=='kts') {
+  $windunit         = 'kts';
+  $tempunit         = 'F';
+  $rainunit         = 'in';
+  $pressureunit     = "inHg";
+  $windconv         = "1";
+  $rainfallconv     = '1';
+  $pressureinterval = "0.5";
+  $rainfallconvmm   = '1';
+}
+
+else if ($units == 'us') {
   $windunit         = 'mph';
   $tempunit         = 'F';
   $rainunit         = 'in';
