@@ -108,7 +108,20 @@ if (array_key_exists('units', $_GET) && ($_GET['units'] == 'default' || $_GET['u
   SetCookie('units', $_GET['units'], time() + 15552000);
   $units = $_GET['units'];
 }
-if ($units == 'uk') {
+if ($units == 'metric' && $windunit=='kts') {
+  $windunit         = 'kts';
+  $tempunit         = 'C';
+  $rainunit         = 'mm';
+  $pressureunit     = "mb";
+  $windconv         = "1";
+  $rainfallconv     = '10';
+  $pressureinterval = "0.5";
+  $rainfallconvmm   = '10';  
+  
+}
+
+
+else if ($units == 'uk' && $windunit=='mph') {
   $windunit         = 'mph';
   $tempunit         = 'C';
   $rainunit         = 'mm';
@@ -117,6 +130,9 @@ if ($units == 'uk') {
   $rainfallconv     = '10';
   $pressureinterval = "0.5";
   $rainfallconvmm   = '10';
+  
+  
+  
 } else if ($units == 'scandinavia') {
   $windunit         = 'm/s';
   $tempunit         = 'C';

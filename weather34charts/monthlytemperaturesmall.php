@@ -49,7 +49,7 @@
 	
 	function processData1(allText) {
 		var allLinesArray = allText.split('\n');
-		if(allLinesArray.length>0){
+		if(allLinesArray.length>-50){
 			//hi
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
@@ -61,7 +61,7 @@
 
 	function processData2(allText) {
 		var allLinesArray = allText.split('\n');
-		if(allLinesArray.length>0){
+		if(allLinesArray.length>-50){
 			//lo
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');

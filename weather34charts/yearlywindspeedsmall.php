@@ -19,6 +19,7 @@
 	$conv = 1;
 	if ($windunit == 'mph') {$conv= '2.23694';}
 	else if ($windunit == 'm/s') {$conv= '1';}
+	else if ($windunit == 'kts') {$conv= '1.94384';}
 	else if ($windunit == 'km/h'){$conv= '3.6';}
 	
 	//echo $conv;

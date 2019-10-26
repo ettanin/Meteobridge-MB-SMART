@@ -19,6 +19,7 @@
 	$conv = 1;
 	if ($windunit == 'mph') {$conv= '2.23694';}
 	else if ($windunit == 'm/s') {$conv= '1';}
+	else if ($windunit == 'kts') {$conv= '1.94384';}
 	else if ($windunit == 'km/h'){$conv= '3.6';}
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">

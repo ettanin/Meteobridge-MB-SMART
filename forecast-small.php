@@ -107,11 +107,11 @@ else {
 ?>
 <div class="topframe">
     <?php //summary	
-	echo '<div class=summarydesc1><darkgrey>';echo "<blue>".$wuskydayTime2."</blue>";
-	 echo "<br>".$wusummary2.'<darkgrey></div>';
+	echo '<div class=summarydesc1><darkgrey>';echo "<blue>".$wuskydayTime1."</blue>";
+	 echo "<br>".$wusummary1.'<darkgrey></div>';
 	 echo"<div class=iconpos1> ";      		  			  
-	 if ($wuskydaynight2=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon2.'.svg" width="30" class="iconpos"></img></div>';}
-	 if ($wuskydaynight2=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon2.'.svg" width="30" class="iconpos"></img></div>';}	
+	 if ($wuskydaynight1=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon1.'.svg" width="30" class="iconpos"></img></div>';}
+	 if ($wuskydaynight1=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon1.'.svg" width="30" class="iconpos"></img></div>';}	
 	 //thunder	
 	 
 	 ?>  </div>
