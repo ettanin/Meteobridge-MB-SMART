@@ -70,7 +70,6 @@ else echo '<div class="pressuretext"> <ogreen>'.$lang['Steady'].'</ogreen> </div
 <div class="barometerlimits"><div class='weather34-barometerruler'>
 <?php if ($weather["barometer_units"]=='mb' OR $weather["barometer_units"]=="hPa"){echo "<weather34-barometerlimitmin><value>950</weather34-barometerlimitmin><weather34-barometerlimitmax><value>1050</weather34-barometerlimitmax>";}
 else echo "<weather34-barometerlimitminf><value>28</barometerlimitminf><weather34-barometerlimitmaxf><value>31</weather34-barometerlimitmaxf>";?></div></div></div>
-
 <?php //WEATHER34 pure css UV-Index above 8  pop up alert 
  if ($notifications=='yes' && $weather["uv"]>=8){?><div id="weather34lightningdialog-notify">  <div class="weather34lightningdialog-box">
 <div class="weather34lightningbackground-alert"></div><div class="header"> <div class="weather34lightningbackground-alert"></div>
@@ -112,12 +111,4 @@ else echo "Wind Gusts Becoming Strong Caution Required <notifyorange>" .$weather
 <div class="weather34lightningcontents"><div class="left"><?php echo $notification ?> Notification</div>
 <div class="right"><?php echo date ("D H:i")?></div></div></div>
 <div class="weather34lightningcontents weather34lightningmain-content"><?php echo $freezing."Dewpoint Caution<br>Below Freezing <notifyblue>" .$weather["dewpoint"],"&deg;",$weather["temp_units"]?>
-<?php ;}?>
-
-</div></div></div>
-</notifyblue></div></div>
-<?php //WEATHER34 pop up alert 
-  if ($weather["mbplatform"]=="VOCORE2" || $weather["mbplatform"]=="CARAMBOLA2"){echo "";}
-  else if ($weather["mbplatform"]="  "){?>  
-<div style=";position:absolute;font-size:.8em;color:white;margin-left:0px;z-index:9999999;text-align:left;width:180px;top:420px;background:#01a4b5;border-radius:3px;padding:5px;"> THE HARDWARE LOGGER DEVICE/SOFTWARE IS NOT COMPATIBLE WITH THIS TEMPLATE </div>
-<?php ;}?>
+<?php ;}?></notifyblue></div></div>

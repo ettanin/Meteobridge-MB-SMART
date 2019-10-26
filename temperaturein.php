@@ -203,9 +203,3 @@ else if ($weather["temp_units"]=='F' && $weather["temp_indoor"]>59){echo "<div c
 else if ($weather["temp_units"]=='F' && $weather["temp_indoor"]>32){echo "<div class=intempmodulehome10-15c><tsblue>&nbsp;".$hometemp."&nbsp;".$weather["temp_indoor"]. "&deg;</tsblue><smalltempunit3>" .$weather["temp_units"];}
 ?>&nbsp;<?php if($weather["temp_indoor_trend"] >0)echo $risingsymbol;else if($weather["temp_indoor_trend"]<0)echo $fallingsymbol;?></div></div></span></a>
 </div></div></div>
-
-<?php //WEATHER34 pop up alert 
-  if ($weather["mbplatform"]=="VOCORE2" || $weather["mbplatform"]=="CARAMBOLA2"){echo "";}
-  else if ($weather["mbplatform"]="  "){?>  
-<div style=";position:absolute;font-size:.8em;color:white;margin-left:0px;z-index:9999999;text-align:left;width:180px;top:90px;background:#01a4b5;border-radius:3px;padding:5px;"> THE HARDWARE LOGGER DEVICE/SOFTWARE IS NOT COMPATIBLE WITH THIS TEMPLATE </div>
-<?php ;}?>
