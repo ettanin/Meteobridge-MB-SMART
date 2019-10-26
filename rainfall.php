@@ -44,3 +44,9 @@ echo $lang['Rate']?> <?php if ($weather["rain_rate"]>0)echo "<ratevalue>".$weath
 <?php }?>
 <?php if ($weather["rain_rate"]==0)echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<raiblue>".$weather["rain_rate"]."</raiblue><smallrainrateunit>".$weather["rain_units"]?></smallrainrateunit></div></div>
 </div></div></div></div>
+
+<?php //WEATHER34 pop up alert 
+  if ($weather["mbplatform"]=="VOCORE2" || $weather["mbplatform"]=="CARAMBOLA2"){echo "";}
+  else if ($weather["mbplatform"]="  "){?>  
+<div style=";position:absolute;font-size:.8em;color:white;margin-left:0px;z-index:9999999;text-align:left;width:180px;top:580px;background:#01a4b5;border-radius:3px;padding:5px;"> THE HARDWARE LOGGER DEVICE/SOFTWARE IS NOT COMPATIBLE WITH THIS TEMPLATE </div>
+<?php ;}?>

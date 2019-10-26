@@ -13,8 +13,7 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	
-	include('preload.php');
+	include('preload.php');	
 	$conv = 1;
 	if ($tempunit=='C' && $windunit == 'mph') {$conv= '1';}
 	else if ($windunit == 'mph') {$conv= '(1.8) +32';}
@@ -35,7 +34,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>OUTDOOR TEMPERATURE DATABASE CHART</title>	
+		<title>Dewpoint MB-SMART Small Chart</title>	
 		<script src=../js/jquery.js></script>
 		
 		
@@ -62,8 +61,8 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[9] >-50)
-					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[9]*<?php echo $conv ;?>)});
+				if ( rowData[2] >-50)
+					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[2]*<?php echo $conv ;?>)});
 			}
 		}
 		requestTempCsv();}function requestTempCsv(){}
@@ -74,8 +73,8 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[9] >-50)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[9]*<?php echo $conv ;?>)});
+				if ( rowData[7] >-50)
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[7]*<?php echo $conv ;?>)});
 				
 			}
 			drawChart(dataPoints1 , dataPoints2 );
@@ -179,7 +178,7 @@
 		{
 			
 			color:"#00A4B4",
-			type: "spline",			
+			type: "splineArea",			
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "triangle",

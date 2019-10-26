@@ -13,8 +13,8 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	
-	include('chartslivedata.php');;header('Content-type: text/html; charset=utf-8');
+	include('chartslivedata.php');header('Content-type: text/html; charset=utf-8');
+	include('preload.php');	
 	$conv = 1;
 	if ($tempunit=='C' && $windunit == 'mph') {$conv= '1';}
 	else if ($windunit == 'mph') {$conv= '(1.8) +32';}
@@ -28,6 +28,7 @@
 	$interval = 5;
 	if ($windunit == 'mph') {$interval= '10';}
 	else $interval= '5';
+	
 	
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">

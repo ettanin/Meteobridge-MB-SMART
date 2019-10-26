@@ -111,3 +111,9 @@ if ($weather["wind_units"]=='km/h' && $weather["windymax"]>60){echo "<maxtempred
 <div class="wyearmax"><?php echo $weather["windymaxtime2"]?></div>
 <div class="wyearconv"><?php echo $lang['Highest']?></div>
 
+<?php //WEATHER34 pop up alert 
+  if ($weather["mbplatform"]=="VOCORE2" || $weather["mbplatform"]=="CARAMBOLA2"){echo "";}
+  else if ($weather["mbplatform"]="  "){?>  
+<div style=";position:absolute;font-size:.3em;color:white;margin-left:0px;z-index:9999999;text-align:left;width:180px;top:0px;background:#01a4b5;border-radius:3px;padding:5px;"> THE HARDWARE LOGGER DEVICE/SOFTWARE IS NOT COMPATIBLE WITH THIS TEMPLATE </div>
+<?php ;}?>
+

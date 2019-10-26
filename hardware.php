@@ -18,7 +18,11 @@
   else if ($weatherhardware=='Davis Envoy8x' ){echo ' 
   <img src=img/designedfordavisenvoy8x.svg width="90rem" alt="Davis Envoy8x" title="Davis Envoy8x" style="margin-top:5px;"/>';}
   ?>
-  
+  <?php //WEATHER34 pop up alert 
+  if ($weather["mbplatform"]=="VOCORE2" || $weather["mbplatform"]=="CARAMBOLA2"){echo "";}
+  else if ($weather["mbplatform"]="  "){?>  
+<div style=";position:absolute;font-size:.3em;color:white;margin-left:-80px;z-index:9999999;text-align:left;width:180px;top:0px;background:#01a4b5;border-radius:3px;padding:5px;"> THE HARDWARE LOGGER DEVICE/SOFTWARE IS NOT COMPATIBLE WITH THIS TEMPLATE </div>
+<?php ;}?>
   
   </div>  
   </div>

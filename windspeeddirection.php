@@ -178,3 +178,10 @@ if ($weather["wind_units"]=='m/s'){echo ' &nbsp;<windaveragevalue>',$weather["wi
 else echo ' &nbsp;<windaveragevalue>'.$weather["windrun34"]."</windaveragevalue><weather34windrunspan>";
 ;?><?php if (($weather["wind_units"]=='km/h') || ($weather["wind_units"]=='m/s')){echo 'km';}else echo 'mi';?></weather34windrunspan></div>
 <div class=windruntoday1><?php echo $lang['Wind Run']." ".$lang['Today'];?></div>
+
+
+<?php //WEATHER34 pop up alert 
+  if ($weather["mbplatform"]=="VOCORE2" || $weather["mbplatform"]=="CARAMBOLA2"){echo "";}
+  else if ($weather["mbplatform"]="  "){?>  
+<div style=";position:absolute;font-size:.8em;color:white;margin-left:0px;z-index:9999999;text-align:left;width:180px;top:420px;background:#01a4b5;border-radius:3px;padding:5px;"> THE HARDWARE LOGGER DEVICE/SOFTWARE IS NOT COMPATIBLE WITH THIS TEMPLATE </div>
+<?php ;}?>
