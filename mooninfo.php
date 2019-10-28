@@ -17,42 +17,39 @@ class Moon{ public static function calculateMoonTimes($month,$day,$year,$lat,$lo
 //weather34 next lunar event..
 $lunar_nextevent="No Lunar Event<br>s";
 $lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 1, 1),"event_title"=>"<br><large>Annular Solar <blue>Eclipse</large></blue>
-<div class=date>Visible December 26th 2019<br>
+<div class=date>Lunar Event Visible <br><blue>December 26th 2019
 </div></div>","event_end"=>mktime(23, 59, 59, 12, 26, 19),);
-$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 12, 26,19),"event_title"=>"<br>Penumbral Lunar <blue>Eclipse</blue>
-<div class=date><br>Visible January 10-11th 2020<br>
+$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 12, 26,19),"event_title"=>"<br><large>Penumbral Lunar <blue>Eclipse</large></blue>
+<div class=date>Lunar Event Visible <br> <blue>January 10-11th 2020<br>
 </div></div>","event_end"=>mktime(23, 59, 59, 1, 11, 20),);
-$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 1, 11, 20),"event_title"=>"<br>Penumbral Lunar <blue>Eclipse</blue>
-<div class=date><br>Visible June 5-6th 2020<br>
+$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 1, 11, 20),"event_title"=>"<br><large>Penumbral Lunar <blue>Eclipse</large></blue>
+<div class=date><br>Lunar Event Visible <br><blue> June 5-6th 2020<br>
 </div></div>","event_end"=>mktime(23, 59, 59, 6, 6, 20),);
-$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 6, 6, 20),"event_title"=>"<br>Annular Solar <blue>Eclipse</blue>
-<div class=date><br>Visible June 21st 2020<br>
+$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 6, 6, 20),"event_title"=>"<br><large>Annular Solar <blue>Eclipse</large></blue>
+<div class=date>Lunar Event Visible <br><blue> June 21st 2020<br>
 </div></div>","event_end"=>mktime(23, 59, 59, 6, 21, 20),);
-$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 6, 21, 20),"event_title"=>"<br>Penumbral Lunar <blue>Eclipse</blue>
-<div class=date><br>Visible July 4-5th 2020<br>
+$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 6, 21, 20),"event_title"=>"<br><large>Penumbral Lunar <blue>Eclipse</large></blue>
+<div class=date>Lunar Event Visible <br><blue> July 4-5th 2020<br>
 </div></div>","event_end"=>mktime(23, 59, 59, 7, 5, 20),);
-$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 7, 5, 20),"event_title"=>"<br>Penumbral Lunar <blue>Eclipse</blue>
-<div class=date><br>Visible November 29-30th 2020<br>
+$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 7, 5, 20),"event_title"=>"<br><large>Penumbral Lunar <blue>Eclipse</large></blue>
+<div class=date>Lunar Event Visible <br><blue> November 29-30th 2020<br>
 </div></div>","event_end"=>mktime(23, 59, 59, 11, 30, 20),);
-$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 11, 30, 20),"event_title"=>"<br>Total Solar<blue>Eclipse</blue>
-<div class=date><br>Visible December 14th 2020<br>
+$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 11, 30, 20),"event_title"=>"<br><large>Total Solar<blue>Eclipse</large></blue>
+<div class=date>Lunar Event Visible <br><blue> December 14th 2020<br>
 </div></div>","event_end"=>mktime(23, 59, 59, 12, 14, 20),);
 //2021
-$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 12, 14, 20),"event_title"=>"<br>Lunar Total<blue>Eclipse</blue>
-<div class=date><br>Visible May 26th 2021<br>
+$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 12, 14, 20),"event_title"=>"<br><large>Lunar Total<blue>Eclipse</large></blue>
+<div class=date>Lunar Event Visible <br><blue> May 26th 2021<br>
 </div></div>","event_end"=>mktime(23, 59, 59, 5, 26, 21),);
-$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 5, 26, 21),"event_title"=>"<br>Annular Solar<blue>Eclipse</blue>
-<div class=date><br>Visible June 10th 2020<br>
+$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 5, 26, 21),"event_title"=>"<br><large>Annular Solar<blue>Eclipse</large></blue>
+<div class=date>Lunar Event Visible <br><blue> June 10th 2020<br>
 </div></div>","event_end"=>mktime(23, 59, 59, 6, 10, 21),);
-$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 6, 10, 21),"event_title"=>"<br>Partial Lunar<blue>Eclipse</blue>
-<div class=date><br>Visible November 18-19th 2021<br>
+$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 6, 10, 21),"event_title"=>"<br><large>Partial Lunar<blue>Eclipse</large></blue>
+<div class=date>Lunar Event Visible <br><blue> November 18-19th 2021<br>
 </div></div>","event_end"=>mktime(23, 59, 59, 11, 19, 21),);
-$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 112, 19, 21),"event_title"=>"<br>Total Solar<blue>Eclipse</blue>
-<div class=date><br>Visible December 4th 2021<br>
+$lunar_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 112, 19, 21),"event_title"=>"<br><large>Total Solar<blue>Eclipse</large></blue>
+<div class=date>Lunar Event Visible <br><blue> December 4th 2021</blue><br>
 </div></div>","event_end"=>mktime(23, 59, 59, 12, 4, 21),);
-
-
-
 $lunarNext=time();$lunarOP=false;
 foreach ($lunar_eventsnext as $lunar_check) {if ($lunar_check["event_start"]<=$lunarNext&&$lunarNext<=$lunar_check["event_end"]) {$lunarOP=true;$lunar_nextevent=$lunar_check["event_title"];}};
 //end meteor nevt event
@@ -114,7 +111,8 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .weather34moonbackground{ fill:rgba(86, 95, 103, .8);stroke:rgba(230, 232, 239, .3);stroke-width:0; }
 .mbsmartlogo{position:relative;float:right;left:10px;top:70px;}
 small{font-size:8px;}
-large{font-size:16px;}
+large{position:relative;top:-5px;left:60px;font-size:13px;width:120px}
+.date{position:relative;top:-5px;left:60px;font-size:11px;width:180px}
 </style>
 <div class="weather34darkbrowser" url="Moon Phase Information"></div>
   
@@ -182,7 +180,7 @@ $moon = new MoonPhase();$moonage =round($moon->age(),2);echo "Current Moon cycle
    
    <article>
   
-  <?php if ($lunar_nextevent)  {echo $lunarinfo3 ," <br>Next Lunar Event", $lunar_nextevent ;} ?>    
+  <?php if ($lunar_nextevent)  {echo $lunarinfo3 ,$lunar_nextevent ;} ?>    
   </article>  
    
  <article>
