@@ -289,17 +289,17 @@ else if ($wuskythunder8>0 )  {echo $infowu.'<ored>'.$lang['Thunderstorm'].' </or
 else if ($wuskythunder9>0 )  {echo $infowu.'<ored>'.$lang['Thunderstorm'].' </ored> '.$wuskydayTime9. '&nbsp;'.$lightningalert8.'';}
 else if ($wuskythunder10>0 )  {echo $infowu.'<ored>'.$lang['Thunderstorm'].' </ored> '.$wuskydayTime10. '&nbsp;'.$lightningalert8.'';}
 //snowfall wu
-else if ($wuskysnow>0 )  {echo $infowu.'<blue>'.$lang['Snow'].'</blue> '.$wuskydayTime. '&nbsp;'.$freezing.'';}
-else if ($wuskysnow1>0 )  {echo $infowu.'<blue>'.$lang['Snow'].'</blue> '.$wuskydayTime1. '&nbsp;'.$freezing.'';}
-else if ($wuskysnow2>0 )  {echo $infowu.'<blue>'.$lang['Snow'].'</blue> '.$wuskydayTime2. '&nbsp;'.$freezing.'';}
-else if ($wuskysnow3>0 )  {echo $infowu.'<blue>'.$lang['Snow'].'</blue> '.$wuskydayTime3. '&nbsp;'.$freezing.'';}
-else if ($wuskysnow4>0 )  {echo $infowu.'<blue>'.$lang['Snow'].'</blue> '.$wuskydayTime4. '&nbsp;'.$freezing.'';}
-else if ($wuskysnow5>0 )  {echo $infowu.'<blue>'.$lang['Snow'].'</blue> '.$wuskydayTime5. '&nbsp;'.$freezing.'';}
-else if ($wuskysnow6>0 )  {echo $infowu.'<blue>'.$lang['Snow'].'</blue> '.$wuskydayTime6. '&nbsp;'.$freezing.'';}
-else if ($wuskysnow7>0 )  {echo $infowu.'<blue>'.$lang['Snow'].'</blue> '.$wuskydayTime7. '&nbsp;'.$freezing.'';}
-else if ($wuskysnow8>0 )  {echo $infowu.'<blue>'.$lang['Snow'].'</blue> '.$wuskydayTime8. '&nbsp;'.$freezing.'';}
-else if ($wuskysnow9>0 )  {echo $infowu.'<blue>'.$lang['Snow'].'</blue> '.$wuskydayTime9. '&nbsp;'.$freezing.'';}
-else if ($wuskysnow10>0 )  {echo $infowu.'<blue>'.$lang['Snow'].'</blue> '.$wuskydayTime10. '&nbsp;'.$freezing.'';}
+else if ($wuskysnow>0 )  {echo $infowu.'<blue>'.$lang['Snow-Metar'].'</blue> '.$wuskydayTime. '&nbsp;'.$freezing.'';}
+else if ($wuskysnow1>0 )  {echo $infowu.'<blue>'.$lang['Snow-Metar'].'</blue> '.$wuskydayTime1. '&nbsp;'.$freezing.'';}
+else if ($wuskysnow2>0 )  {echo $infowu.'<blue>'.$lang['Snow-Metar'].'</blue> '.$wuskydayTime2. '&nbsp;'.$freezing.'';}
+else if ($wuskysnow3>0 )  {echo $infowu.'<blue>'.$lang['Snow-Metar'].'</blue> '.$wuskydayTime3. '&nbsp;'.$freezing.'';}
+else if ($wuskysnow4>0 )  {echo $infowu.'<blue>'.$lang['Snow-Metar'].'</blue> '.$wuskydayTime4. '&nbsp;'.$freezing.'';}
+else if ($wuskysnow5>0 )  {echo $infowu.'<blue>'.$lang['Snow-Metar'].'</blue> '.$wuskydayTime5. '&nbsp;'.$freezing.'';}
+else if ($wuskysnow6>0 )  {echo $infowu.'<blue>'.$lang['Snow-Metar'].'</blue> '.$wuskydayTime6. '&nbsp;'.$freezing.'';}
+else if ($wuskysnow7>0 )  {echo $infowu.'<blue>'.$lang['Snow-Metar'].'</blue> '.$wuskydayTime7. '&nbsp;'.$freezing.'';}
+else if ($wuskysnow8>0 )  {echo $infowu.'<blue>'.$lang['Snow-Metar'].'</blue> '.$wuskydayTime8. '&nbsp;'.$freezing.'';}
+else if ($wuskysnow9>0 )  {echo $infowu.'<blue>'.$lang['Snow-Metar'].'</blue> '.$wuskydayTime9. '&nbsp;'.$freezing.'';}
+else if ($wuskysnow10>0 )  {echo $infowu.'<blue>'.$lang['Snow-Metar'].'</blue> '.$wuskydayTime10. '&nbsp;'.$freezing.'';}
 //rainfall wu
 else if ($wuskyrain>0 )  {echo $infowu.'<blue>'.$lang['Rain'].'</blue> '.$wuskydayTime. '&nbsp;'.$rainfallalert8.'';}
 else if ($wuskyrain1>0 )  {echo $infowu.'<blue>'.$lang['Rain'].'</blue> '.$wuskydayTime1.'&nbsp;'.$rainfallalert8.'';}

@@ -110,8 +110,8 @@ else {
 	echo '<div class=summarydesc1><darkgrey>';echo "<blue>".$wuskydayTime1."</blue>";
 	 echo "<br>".$wusummary1.'<darkgrey></div>';
 	 echo"<div class=iconpos1> ";      		  			  
-	 if ($wuskydaynight1=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon1.'.svg" width="30" class="iconpos"></img></div>';}
-	 if ($wuskydaynight1=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon1.'.svg" width="30" class="iconpos"></img></div>';}	
+	 if ($wuskydaynight1=='D'){echo '<img src="css/wuicons/'.$wuskydayIcon1.'.svg" width="20" class="iconpos"></img></div>';}
+	 if ($wuskydaynight1=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon1.'.svg" width="20" class="iconpos"></img></div>';}	
 	 //thunder	
 	 
 	 ?>  </div>
