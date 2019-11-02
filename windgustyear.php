@@ -82,7 +82,7 @@ if ($weather['wind_direction_avgmonth']<=11.25) {
 } elseif ($weather['wind_direction_avgmonth']<=303.75) {
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['WNW']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=326.25) {
-    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['NWdirs']."&nbsp;";
+    echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['NW']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=348.75) {
     echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$lang['NNW']."&nbsp;";
 } elseif ($weather['wind_direction_avgmonth']<=360) {
