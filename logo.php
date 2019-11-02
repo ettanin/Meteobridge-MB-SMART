@@ -10,7 +10,7 @@
 ?>
 
 <div class="nanoimg">
-<?php if ($mbplatform== "Meteobridge Nano" || $mbplatform== "Meteobridge NanoSD"){echo '<img src=img/nano.svg width="50rem">';}if ($mbplatform== "Meteobridge Pro"){echo '<img src=img/MeteobridgePRO.svg width="70rem">';}?>
+<?php if ($mbplatform== "Nano" || $mbplatform== "NanoSD"){echo '<img src=img/nano.svg width="50rem">';}if ($mbplatform=="Pro"){echo '<img src=img/MeteobridgePRO.svg width="70rem">';}?>
 </div>
 
 <div class="nanoinfo">
