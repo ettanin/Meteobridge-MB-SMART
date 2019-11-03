@@ -106,7 +106,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 padding:5px;font-family:Arial, Helvetica, sans-serif;width:100px;height:0.8em;font-size:0.8rem;padding-top:2px;color:#aaa;
 align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .moonphaseing{width:110px;padding-bottom:50px;margin-top:-10px}
-.weather34moonphasesvg{position:absolute; left:25px; top:70px; width:120px;}
+.weather34moonphasesvg{position:absolute;width:120px;}
 .weather34moonforeground { fill:rgba(230, 232, 239, .3); stroke:rgba(86, 95, 103, .8); stroke-width:0;max-height:100px }
 .weather34moonbackground{ fill:rgba(86, 95, 103, .8);stroke:rgba(230, 232, 239, .3);stroke-width:0; }
 .mbsmartlogo{position:relative;float:right;left:10px;top:70px;}
@@ -114,6 +114,12 @@ small{font-size:8px;}
 large{position:relative;top:-5px;left:60px;font-size:13px;width:120px}
 .date{position:relative;top:-5px;left:60px;font-size:11px;width:180px}
 </style>
+<?php // lets rotate for Tony (Beaumaris-Weather) down under
+if ($hemisphere==0){echo '<style>.weather34moonphasesvg{-webkit-transform: rotate('.$hemisphere.'deg);transform: rotate('.$hemisphere.'deg);left:25px; top:70px;}
+</style>';}
+if ($hemisphere==180){echo '<style>.weather34moonphasesvg{-webkit-transform: rotate('.$hemisphere.'deg);transform: rotate('.$hemisphere.'deg);left:15px; top:30px;}
+</style>';}
+?>
 <div class="weather34darkbrowser" url="Moon Phase Information"></div>
   
 <main class="grid">
@@ -121,10 +127,13 @@ large{position:relative;top:-5px;left:60px;font-size:13px;width:120px}
 
 
 <?php echo $info;?> Current Moon Phase<br><br>  
-<!---simple svg moonphase 6.1 or 7.5-->
-<div class="weather34moonphasesvg"><svg id="weather34moonphase" viewBox="0 0 200 200" version="1.1"/></svg></div>
+
+<!---simple weather34 svg moonphase -->
+<div class="weather34moonphasesvg"><p id="weather34moonphase"></p>
+<svg>
+	<circle cx="50" cy="50" r="49.5" fill="rgba(86,95,103,.8)"/><path id="weather34themoon" fill="rgba(230, 232, 239, .3)"/></svg>
 <script>
-function moon_day(e){var t,a,n,r,o,i,h,s,u,c,l=function(e){return e-Math.floor(e)},m=(new Date).getJulian(),d=e.getFullYear(),f=3.14159265/180;o=2415020+29*(t=Math.floor(12.3685*(d-1900))),i=1178e-7*(n=(a=(d-1899.5)/100)*a)-1.55e-7*(r=a*a*a)+(.75933+.53058868*t)-(837e-6*a+335e-6*n),h=360*l(.08084821133*t)+359.2242-333e-7*n-347e-8*r,s=360*l(.07171366128*t)+306.0253+.0107306*n+1236e-8*r,u=360*l(.08519585128*t)+21.2964-.0016528*n-239e-8*r;for(var p=0,w=0;w<m;){var g=i+1.530588*p,M=(h+29.53058868*p)*f,v=(s+385.81691806*p)*f,b=(u+390.67050646*p)*f;g-=.4068*Math.sin(v)+(.1734-393e-6*a)*Math.sin(M),g+=.0161*Math.sin(2*v)+.0104*Math.sin(2*b),g-=.0074*Math.sin(M-v)-.0051*Math.sin(M+v),g+=.0021*Math.sin(2*M)+.001*Math.sin(2*b-v),g+=.5/1440,c=w,w=o+28*p+Math.floor(g),p++}return(m-c)/29.53058868}function phase_junk(e){var t,a=[];e<=.25?(a=[1,0],t=20-20*e*4):e<=.5?(a=[0,0],t=20*(e-.25)*4):e<=.75?(a=[1,1],t=20-20*(e-.5)*4):e<=1?(a=[0,1],t=20*(e-.75)*4):exit;var n=document.getElementById("weather34moonphase");if(0!=n&&null!=n){if(document.createElementNS&&document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect){var r="m100,0 ";r=(r=r+"a"+t+",20 0 1,"+a[0]+" 0,150 ")+"a20,20 0 1,"+a[1]+" 0,-150";var o="http://www.w3.org/2000/svg",i=document.createElementNS(o,"path"),h=document.createElementNS(o,"path");h.setAttribute("class","weather34moonbackground"),h.setAttribute("d","m100,0 a20,20 0 1,1 0,150 a20,20 0 1,1 0,-150"),i.setAttribute("class","weather34moonforeground"),i.setAttribute("d",r),n.appendChild(h),n.appendChild(i)}}}Date.prototype.getJulian = function() { return (this / 86400000) - (this.getTimezoneOffset() / 1440) + 2440586.75555;},phase_junk(moon_day(new Date));</script>
+function showMoon(){var t=(Date.now()/864e5-Date.UTC(2018,0,17,2,17,0,0)/864e5)%29.530588853,e=String;document.getElementById("weather34moonphase");var a,n=Math.min(3-t/30*4,1),o=Math.abs(50*n),h=n<0?"0":"1",m=Math.min(3+(t-30)/30*4,1),M=Math.abs(50*m),r=m<0?"0":"1";a="M 50,0 a "+e(o)+",50 0 0 "+h+" 0,100 a "+e(M)+",50 0 0 "+r+" 0,-100",document.getElementById("weather34themoon").setAttribute("d",a)}showMoon();</script>
 </article>
 
 <div class=moonphasetext>    
