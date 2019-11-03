@@ -9570,42 +9570,50 @@ sunsetvalue {
 
 .moonrise2 {
   position: relative;
-  margin-left: 40px;
+  margin-left: 80px;
   top: 15px;
-  font-size: .65rem;
+  font-size: .55rem;
   width: 200px;
   line-height: 1;
   color: #aeb6bf;
+  font-family:weathertext2;
+  text-align:left;
 }
 
 .moonset2 {
   position: relative;
-  margin-left: 40px;
-  font-size: .65rem;
+  margin-left: 80px;
+  font-size: .55rem;
   top: 15px;
   width: 200px;
   line-height: 1;
   color: #aeb6bf;
+  font-family:weathertext2;
+  text-align:left;
 }
 
 .phase2 {
   position: relative;
-  margin-left: 40px;
+  margin-left: 80px;
   top: 20px;
-  font-size: .65rem;
+  font-size: .55rem;
   width: 200px;
   line-height: .8;
   color: #aeb6bf;
+  font-family:weathertext2;
+  text-align:left;
 }
 
 .luminance2 {
   position: relative;
-  margin-left: 40px;
-  font-size: .65rem;
+  margin-left: 80px;
+  font-size: .55rem;
   top: 20px;
   width: 200px;
   line-height: 1;
   color: #aeb6bf;
+  font-family:weathertext2;
+  text-align:left;
 }
 
 weather34moonrisecircle {
