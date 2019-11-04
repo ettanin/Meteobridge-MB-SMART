@@ -24,10 +24,10 @@
 
 <div class="tavgconv" style="margin-left:-12px;"><?php echo $lang['Lowest']?>&nbsp; 
 <?php 
- if ($weather["humidity_mmin"]>70){echo "<maxtempblue>",$weather["humidity_mmin"]  ;echo "</maxtempblue>%"; }
- else if ($weather["humidity_mmin"]>60){echo "<maxtempyellow>",$weather["humidity_mmin"]  ;echo "</maxtempyellow>%"; }
- else if ($weather["humidity_mmin"]>40){echo "<maxtempgreen>",$weather["humidity_mmin"]  ;echo "</maxtempgreen>%"; }
- else if ($weather["humidity_mmin"]>0){echo "<maxtempred>",$weather["humidity_mmin"]  ;echo "</maxtempred>%"; }?>
+ if ($weather["humidity_mmin"]>70){echo "<maxtempblue style='margin-top:-3px;font-size:1.3em;'>",$weather["humidity_mmin"]  ;echo "</maxtempblue>%"; }
+ else if ($weather["humidity_mmin"]>60){echo "<maxtempyellow style='margin-top:-3px;font-size:1.3em;'>",$weather["humidity_mmin"]  ;echo "</maxtempyellow>%"; }
+ else if ($weather["humidity_mmin"]>40){echo "<maxtempgreen style='margin-top:-3px;font-size:1.3em;'>",$weather["humidity_mmin"]  ;echo "</maxtempgreen>%"; }
+ else if ($weather["humidity_mmin"]>0){echo "<maxtempred style='margin-top:-3px;font-size:1.3em;'>",$weather["humidity_mmin"]  ;echo "</maxtempred>%"; }?>
 </div>
 
 <div class="yearwordtempbig">Humidity</div>
@@ -41,9 +41,3 @@
 </div></tunit1>
 <div class="tyearmax" style="margin-left:-5px;"><?php echo $weather["humidity_ymaxtime2"]?></div>
 <div class="tyearconv" style="margin-left:-5px;"><?php echo $lang['Highest']?></div>
-
-<?php //WEATHER34 pop up alert 
-  if ($weather["mbplatform"]=="VOCORE2" || $weather["mbplatform"]=="CARAMBOLA2"){echo "";}
-  else if ($weather["mbplatform"]="  "){?>  
-<div style=";position:absolute;font-size:.3em;color:white;margin-left:0px;z-index:9999999;text-align:left;width:180px;top:0px;background:#01a4b5;border-radius:3px;padding:5px;"> THE HARDWARE LOGGER DEVICE/SOFTWARE IS NOT COMPATIBLE WITH THIS TEMPLATE </div>
-<?php ;}?>

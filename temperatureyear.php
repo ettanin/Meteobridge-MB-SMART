@@ -52,7 +52,7 @@ include('livedata.php');include('common.php');header('Content-type: text/html; c
  ?></div></tunit>
 
 <div class="tyearavg"><?php echo strftime('%b',time())." ".date('Y')?></div>
-<div class="tavgconv" style="margin-left:-9px;"><?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue>".$weather["tempmmin"]."</maxtempblue>&deg";?>
+<div class="tavgconv" style="margin-left:-9px;"><?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue style='margin-top:-3px;font-size:1.3em;'>".$weather["tempmmin"]."</maxtempblue>&deg";?>
 </div>
 
 <div class="yearwordtempbig">Temperature</div>
