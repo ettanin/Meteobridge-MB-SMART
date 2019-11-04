@@ -45,7 +45,7 @@
  ?></div></tunit>
 
 <div class="tyearavg"><?php echo strftime('%b',time())." ".date('Y');?></div>
-<div class="tavgconv" style="margin-left:-5px;"><?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue style='margin-top:-3px;font-size:1.3em;'>".$weather["dewmmin"]."</maxtempblue>&deg";?>
+<div class="tavgconv" style="margin-left:-5px;"><?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue style='margin-top:-2px;font-size:1.3em;'>".$weather["dewmmin"]."</maxtempblue>&deg";?>
 </div>
 
 

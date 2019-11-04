@@ -24,10 +24,10 @@
 
 <div class="tavgconv" style="margin-left:-12px;"><?php echo $lang['Lowest']?>&nbsp; 
 <?php 
- if ($weather["humidity_mmin"]>70){echo "<maxtempblue style='margin-top:-3px;font-size:1.3em;'>",$weather["humidity_mmin"]  ;echo "</maxtempblue>%"; }
- else if ($weather["humidity_mmin"]>60){echo "<maxtempyellow style='margin-top:-3px;font-size:1.3em;'>",$weather["humidity_mmin"]  ;echo "</maxtempyellow>%"; }
- else if ($weather["humidity_mmin"]>40){echo "<maxtempgreen style='margin-top:-3px;font-size:1.3em;'>",$weather["humidity_mmin"]  ;echo "</maxtempgreen>%"; }
- else if ($weather["humidity_mmin"]>0){echo "<maxtempred style='margin-top:-3px;font-size:1.3em;'>",$weather["humidity_mmin"]  ;echo "</maxtempred>%"; }?>
+ if ($weather["humidity_mmin"]>70){echo "<maxtempblue style='margin-top:-2px;font-size:1.3em;'>",$weather["humidity_mmin"]  ;echo "</maxtempblue>%"; }
+ else if ($weather["humidity_mmin"]>60){echo "<maxtempyellow style='margin-top:-2px;font-size:1.3em;'>",$weather["humidity_mmin"]  ;echo "</maxtempyellow>%"; }
+ else if ($weather["humidity_mmin"]>40){echo "<maxtempgreen style='margin-top:-2px;font-size:1.3em;'>",$weather["humidity_mmin"]  ;echo "</maxtempgreen>%"; }
+ else if ($weather["humidity_mmin"]>0){echo "<maxtempred style='margin-top:-2px;font-size:1.3em;'>",$weather["humidity_mmin"]  ;echo "</maxtempred>%"; }?>
 </div>
 
 <div class="yearwordtempbig">Humidity</div>
