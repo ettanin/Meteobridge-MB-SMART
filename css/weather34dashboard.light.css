@@ -5604,10 +5604,14 @@ weather34mbuptime {
   z-index: 3;
 }
 
-#weather34sidebarMenu, .weather34sidebarMenuInner li {
-  width: 240px;
+#weather34sidebarMenu,
+.weather34sidebarMenuInner li {
+  width: 15rem;
   float: left;
-  background: #23252d;
+  background: #fff;
+  border-right:1px solid hsla(200, 1%, 61%, 0.2);
+  border-bottom:1px solid hsla(200, 1%, 61%, 0.5);
+  
 }
 
 #weather34sidebarMenu {
@@ -5640,7 +5644,7 @@ weather34mbuptime {
 
 .weather34sidebarMenuInner li {
   padding: 5px 5px 5px 10px;
-  color: silver;
+  color:#262830;
   border-bottom: 0;
   font-size: 12px;
   font-weight: 400;
@@ -5653,14 +5657,14 @@ weather34mbuptime {
   display: block;
   width: 240px;
   float: left;
-  color: silver;
+  color: #262830;
   font-size: 12px;
   font-weight: 400;
   font-size: 0.7em;
 }
 
 .weather34sidebarMenuInner li a {
-  color: silver;
+  color:#262830;
   font-size: 0.7em;
 }
 
@@ -5820,7 +5824,7 @@ topbarinfo {
 }
 
 weather34menumarkermode, weather34menumarkerdot, weather34menumarkerdotmode {
-  display: inline-block;
+   display: inline-block;
   width: 10px;
   height: 8px;
   padding: 1px 2px;
@@ -5838,7 +5842,7 @@ weather34menumarkermode, weather34menumarkerdot, weather34menumarkerdotmode {
   justify-content: center;
   line-height: 12px;
   background: 0;
-  border: 1px solid hsla(200, 1%, 61%, .6);
+  border: 1px solid #0f3137;
   opacity: .8;
   border-right-width: 5px;
 }
@@ -5909,9 +5913,9 @@ menuinfobox {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #aeb6bf;
-  border: 1px solid hsla(200, 1%, 61%, 0.2);
-  opacity: .8;
+  color: #262830;
+  border: 1px solid hsla(200, 1%, 61%, 0.7);
+  
 }
 
 weather34menumarkerblue, weather34menumarkerbluegrey, weather34menumarkergreen, weather34menumarkerlight, weather34menumarkerorange, weather34menumarkerred, weather34menumarkeryellow {
@@ -9653,17 +9657,17 @@ body {
 }
 
 themenu {
-  position: relative;
+   position: relative;
   font-family: weathertext2;
-  font-size: .8em;
-  opacity: .6;
-  color: #aeb6bf;
-  line-height: 1;
+  font-size: .8em;  
+  color: #262830;
+  line-height: .5;
   top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5px;
+  padding-top: 10px;
+  padding-left:5px;
   text-transform: uppercase
 }
 
@@ -9672,7 +9676,7 @@ themenusection {
   height: 1em;
   padding: 1px 3px;
   border-radius: 2px;
-  background: rgba(62, 62, 77, .5);
+  background:#b83603;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -9682,10 +9686,12 @@ themenusection {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #aeb6bf;
+  color: #fff;
   border: 0;
   text-transform: uppercase
 }
+iconweather34menu{position:relative;top:-10px;display:inline;line-height:.1;color:#01a4b5;margin-bottom:-15px}
+iconweather34toggle{position:relative;top:3px;display:inline;line-height:.1;color:silver;margin-bottom:-15px;margin-top:-15px}
 
 .summarydesc1{position:absolute;margin-left:5px;margin-top:0px;font-size:10px;width:200px;line-height:1;text-align:left;}
 .iconpos1{position:absolute;margin-left:185px;margin-top:27px;}

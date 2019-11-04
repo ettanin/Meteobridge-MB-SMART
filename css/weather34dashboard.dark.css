@@ -9837,8 +9837,7 @@ body {
 themenu {
   position: relative;
   font-family: weathertext2;
-  font-size: .8em;
-  opacity: .6;
+  font-size: .8em;  
   color: #aeb6bf;
   line-height: 1;
   top: 10px;
@@ -9868,6 +9867,7 @@ themenusection {
   border: 0;
   text-transform: uppercase
 }
-
+iconweather34menu{position:relative;top:-7px;display:inline;line-height:.1;color:#b83603;margin-bottom:-15px}
+iconweather34toggle{position:relative;top:3px;display:inline;line-height:.1;color:silver;margin-bottom:-15px;margin-top:-15px}
 .summarydesc1{position:absolute;margin-left:5px;margin-top:2px;font-size:10px;width:200px;line-height:1;text-align:left;}
 .iconpos1{position:absolute;margin-left:185px;margin-top:30px;}
