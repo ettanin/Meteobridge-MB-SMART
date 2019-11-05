@@ -75,7 +75,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[7] >-50)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[16]*<?php echo $conv ;?>)});
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[16])});
 				
 			}
 			drawChart(dataPoints1 , dataPoints2 );
