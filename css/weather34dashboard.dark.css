@@ -9853,19 +9853,20 @@ themenusection {
   height: 1em;
   padding: 1px 3px;
   border-radius: 2px;
-  background: #41474f;
+  background:#41474f;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   font-family: arial, helvetica, system;
-  font-size: 0.9em;
-  font-weight: 400;
+  font-size: 10px;
+  font-weight: 500;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   color: #aeb6bf;
   border: 0;
-  text-transform: uppercase
+  text-transform: uppercase; 
+  text-shadow:none 
 }
 iconweather34menu{position:relative;top:-7px;display:inline;line-height:.1;color:#01a4b5;margin-bottom:-15px}
 iconweather34toggle{position:relative;top:3px;display:inline;line-height:.1;color:silver;margin-bottom:-15px;margin-top:-15px}
