@@ -1,3 +1,15 @@
+@font-face {
+  font-family: clock;
+  src: url(fonts/clock3-webfont.woff) format("woff");
+}
+@font-face {
+  font-family: weathertext2;
+  src: url(fonts/verbatim-regular.woff) format("woff");
+}
+@font-face {  
+  font-family:system;
+  src: url(fonts/SFUIDisplay-Medium.woff2) format("woff2");  
+}
 ogreyh1 {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -6,22 +18,6 @@ ogreyh1 {
 
 img {
   image-rendering: auto;
-}
-
-@font-face {
-  font-family: system;
-  font-style: normal;
-  src: local("Arial");
-}
-
-@font-face {
-  font-family: clock;
-  src: url(fonts/clock3-webfont.woff) format("woff");
-}
-
-@font-face {
-  font-family: weathertext2;
-  src: url(fonts/verbatim-regular.woff) format("woff");
 }
 
 body, h1 {
@@ -5597,38 +5593,20 @@ weather34mbuptime {
   margin-top: 3px;
 }
 
-.weather34sidebarMenuInner li {
-  padding: 5px 5px 5px 10px;
-  color: silver;
-  border-bottom: 0;
-  font-size: 12px;
-  font-weight: 400;
+.weather34sidebarMenuInner li ,
+.weather34sidebarMenuInner li a,
+.weather34sidebarMenuInner li a:hover {	
+  padding: 3px 0 3px 5px;
+  color: #aeb6bf;
+  border-bottom: 0; 
   list-style: none;
-  cursor: pointer;
-  font-size: 0.7em;
-}
-
-.weather34sidebarMenuInner li span {
-  display: block;
-  width: 240px;
-  float: left;
-  color: silver;
-  font-size: 12px;
-  font-weight: 400;
-  font-size: 0.7em;
-}
-
-.weather34sidebarMenuInner li a {
-  color: silver;
-  font-size: 0.7em;
-}
-
-.weather34sidebarMenuInner li a, .weather34sidebarMenuInner li a:hover {
   float: left;
   text-decoration: none;
   font-size: 11px;
-  font-weight: 400;
+  font-weight:500;
   cursor: pointer;
+  font-family:system;
+  text-shadow:none
 }
 
 .weather34sidebarMenuInner li a:hover {
@@ -9836,7 +9814,7 @@ body {
 
 themenu {
   position: relative;
-  font-family: weathertext2;
+  font-family:system;
   font-size: .8em;  
   color: #aeb6bf;
   line-height: 1;
@@ -9857,7 +9835,7 @@ themenusection {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: arial, helvetica, system;
+  font-family:system;
   font-size: 10px;
   font-weight: 500;
   -webkit-box-pack: center;
