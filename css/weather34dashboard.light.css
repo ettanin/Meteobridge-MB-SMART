@@ -5642,42 +5642,23 @@ weather34mbuptime {
   margin-top: 3px;
 }
 
-.weather34sidebarMenuInner li {
-  padding: 5px 5px 5px 10px;
+.weather34sidebarMenuInner li ,
+.weather34sidebarMenuInner li a,
+.weather34sidebarMenuInner li a:hover {	
+  padding: 3px 0 3px 5px;
   color:#262830;
-  border-bottom: 0;
-  font-size: 12px;
-  font-weight: 400;
+  border-bottom: 0; 
   list-style: none;
-  cursor: pointer;
-  font-size: 0.7em;
-}
-
-.weather34sidebarMenuInner li span {
-  display: block;
-  width: 240px;
-  float: left;
-  color: #262830;
-  font-size: 12px;
-  font-weight: 400;
-  font-size: 0.7em;
-}
-
-.weather34sidebarMenuInner li a {
-  color:#262830;
-  font-size: 0.7em;
-}
-
-.weather34sidebarMenuInner li a, .weather34sidebarMenuInner li a:hover {
   float: left;
   text-decoration: none;
   font-size: 11px;
-  font-weight: 400;
+  font-weight:500;
   cursor: pointer;
+  font-family:Arial, Helvetica, sans-serif;
+  text-shadow:none
 }
-
 .weather34sidebarMenuInner li a:hover {
-  color: #ff7c39;
+  color: #01a4b5;
 }
 
 input[type="checkbox"]:checked~#weather34sidebarMenu {
@@ -9668,7 +9649,8 @@ themenu {
   display: flex;
   padding-top: 10px;
   padding-left:5px;
-  text-transform: uppercase
+  text-transform: uppercase;
+  font-weight:500;
 }
 
 themenusection {
@@ -9676,7 +9658,7 @@ themenusection {
   height: 1em;
   padding: 1px 3px;
   border-radius: 2px;
-  background:#b83603;
+  background:#01a4b5;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
