@@ -9819,7 +9819,7 @@ weather34themenu {
   margin-top:7px;
   width:200px;
 }
-weather34themenuicon{position:relative;color:#b83603;top:10px;left:15px;}
+weather34themenuicon{position:relative;color:#b83603;top:10px;left:15px;height:4em}
 .weather34themenuicon2{position:absolute;color:#b83603;top:10px;left:45px;line-height:1;}
 weather34themenusection {
   width: 2em;
@@ -9841,7 +9841,7 @@ weather34themenusection {
   text-transform: uppercase; 
   text-shadow:none  
 }
-iconweather34menu{position:relative;top:-7px;display:inline;line-height:.1;color:#b83603;margin-bottom:-15px}
+iconweather34menu{position:relative;top:-7px;display:inline;line-height:1;color:#b83603;margin-bottom:-15px}
 iconweather34toggle{position:relative;top:3px;display:inline;line-height:.1;color:silver;margin-bottom:-15px;margin-top:-15px}
 .summarydesc1{position:absolute;margin-left:5px;margin-top:2px;font-size:10px;width:200px;line-height:1;text-align:left;}
 .iconpos1{position:absolute;margin-left:180px;margin-top:27px;}
@@ -9850,7 +9850,7 @@ weather34menunav {
   top: 0;
   left: 0;
   width: 2.5rem;
-  height: 5%;
+  height: 10%;
   background-color:0;
   transition: all 100ms ease;
   overflow: hidden;
@@ -9862,7 +9862,7 @@ weather34menunav:hover {
   width: 18rem;
   left:-40px;
   background-color: #21252d;
-  height: 100%;
+  height: 75%;
 }
 weather34menunav * {
   -webkit-user-select: none;
@@ -9876,11 +9876,11 @@ weather34menunav > ul {
   font-size:11px; 
   line-height:2;  
   list-style:none;
-  margin-top:35px  
+  margin-top:35px 
 }
 weather34menunav > ul > li {
   display:block;  
   cursor: pointer;
   margin-left:20px;
-  color: #aeb6bf  
+  color: #aeb6bf;  
 }

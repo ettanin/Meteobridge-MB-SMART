@@ -9646,7 +9646,6 @@ weather34themenu {
 }
 weather34themenuicon{position:relative;color:#01a4b5;top:10px;left:15px;}
 .weather34themenuicon2{position:absolute;color:#01a4b5;top:10px;left:45px;line-height:1;margin-bottom:55px}
-
 weather34themenusection {
   width: 2em;
   height: 1em;
@@ -9676,7 +9675,7 @@ weather34menunav {
   top: 0;
   left: 0;
   width: 2.5rem;
-  height: 5%;
+  height: 10%;
   background-color:0;  
   transition: all 100ms ease;
   overflow: hidden;
@@ -9691,7 +9690,7 @@ weather34menunav:hover {
   border-right:1px solid rgba(45, 48, 58,.1);
   border-bottom:1px solid rgba(45, 48, 58,.1);
   background-color: #fff;
-  height: 100%;
+  height: 75%;
 }
 weather34menunav * {
   -webkit-user-select: none;
@@ -9712,5 +9711,5 @@ weather34menunav > ul > li a{
   display:block;  
   cursor: pointer;
   margin-left:20px;
-  color:#555 
+  color:#555  
 }
