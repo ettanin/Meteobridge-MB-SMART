@@ -121,20 +121,10 @@ stationid{font-size:1.4em;font-family:weathertext2;color:#009bb4}
 
  <article>
   <div class=actualt>&nbsp;&nbsp Current Conditions </div>
-  <div class="iconcondition"><?php echo "<img rel='prefetch' src='css/icons/".$sky_icon."' width='60px'>";?></div>
+  <div class="iconcondition"><?php echo "<img rel='prefetch' src='css/icons/".$sky_icon."' width='55px'>";?></div>
   <div class="icontext"><?php  echo $sky_desc; ?> </div>
 <br><br><br>
 <div class="pressure">
-
-
-<blue>Rainfall</blue><br>
-<?php
-if ($tempunits ='C') {
-	echo $metar34rainmm  ," (mm) - ";
-	echo $metar34rainin," (in)";
-}
-?> 
-
 <br>
 <blue>Pressure</blue> <br>
 <?php
