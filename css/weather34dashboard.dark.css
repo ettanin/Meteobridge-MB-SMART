@@ -9804,34 +9804,29 @@ metricgrey {
   font-size: 9px;
 }
 
-/* Set body defaults */
+/* Set Menu and body defaults */
 
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 }
-
-themenu {
-  position: relative;
-  font-family:system;
-  font-size: .8em;  
+weather34themenu {  
   color: #aeb6bf;
-  line-height: 1;
-  top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 5px;
-  text-transform: uppercase
+  position:absolute;  
+  font-family:system;
+  font-size: 11px;   
+  margin-top:7px;
+  width:200px;
 }
-
-themenusection {
+weather34themenuicon{position:relative;color:#b83603;top:10px;left:15px;}
+.weather34themenuicon2{position:absolute;color:#b83603;top:10px;left:45px;line-height:1;}
+weather34themenusection {
   width: 2em;
   height: 1em;
   padding: 1px 3px;
   border-radius: 2px;
-  background:#41474f;
+  background:rgba(102,102,102,.5);
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -9842,11 +9837,55 @@ themenusection {
   -ms-flex-pack: center;
   justify-content: center;
   color: #aeb6bf;
-  border: 0;
+  border:0;
   text-transform: uppercase; 
-  text-shadow:none 
+  text-shadow:none  
 }
-iconweather34menu{position:relative;top:-7px;display:inline;line-height:.1;color:#01a4b5;margin-bottom:-15px}
+iconweather34menu{position:relative;top:-7px;display:inline;line-height:.1;color:#b83603;margin-bottom:-15px}
 iconweather34toggle{position:relative;top:3px;display:inline;line-height:.1;color:silver;margin-bottom:-15px;margin-top:-15px}
 .summarydesc1{position:absolute;margin-left:5px;margin-top:2px;font-size:10px;width:200px;line-height:1;text-align:left;}
-.iconpos1{position:absolute;margin-left:185px;margin-top:30px;}
+.iconpos1{position:absolute;margin-left:180px;margin-top:27px;}
+weather34menunav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 5%;
+  background-color:0;
+  transition: all 100ms ease;
+  overflow: hidden;
+  z-index: 100; 
+  text-align:left;
+}
+weather34menunav:hover >weather34themenuicon{display:none}
+weather34menunav:hover {
+  width: 18rem;
+  left:-40px;
+  background-color: #21252d;
+  height: 100%;
+}
+weather34menunav * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+weather34menunav > ul {
+  display:block;
+  width: 16rem;
+  font-size:11px; 
+  line-height:2;  
+  list-style:none;
+  margin-top:35px  
+}
+weather34menunav > ul > li {
+  display:block;  
+  cursor: pointer;
+  margin-left:20px;
+  color: #aeb6bf;  
+}
+weather34menunav > ul > li:hover {
+  background:0;
+}
+weather34menunav > ul > li:active {
+  background:0;}
