@@ -73,17 +73,13 @@ else{echo'<weather34menumarkerdot></weather34menumarkerdot> Dark <menuinfobox>Mo
 else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weather34menumarkerdot></weather34menumarkerdot> Web Cam <menuinfobox>Stream</menuinfobox></a></li>';?>
 
 <li><!--contact info---> <a href="bio.php" data-lity title="Weather Station Owner Contact Card Info"> <weather34menumarkerdot></weather34menumarkerdot> Contact <menuinfobox>Info</menuinfobox> </a></li> 
-<li><!--hardware info---> <a href="stationinfo.php" data-lity title="Hardware Weather Station Hardware Info"> <weather34menumarkerdot></weather34menumarkerdot> Hardware <menuinfobox>Info</menuinfobox></a></li> </div>
- 
+<li><!--hardware info---> <a href="stationinfo.php" data-lity title="Hardware Weather Station Hardware Info"> <weather34menumarkerdot></weather34menumarkerdot> Hardware <menuinfobox>Info</menuinfobox></a></li> </div> 
 
 <!---languages---> 
    <?php if($languages=="yes") echo '
-   <div class=weather34thinborder>--</div>
-   
-   <li><a href="">
-   
-   <weather34themenusection>'.$lang["language"], '</weather34themenusection>  </a></li>','
-    
+   <div class=weather34thinborder>--</div>   
+   <li><a href="">   
+   <weather34themenusection>'.$lang["language"], '</weather34themenusection>  </a></li>','    
   <center>
   <a href="index.php?lang=en"><img src="img/flags/en.svg"  title="English" width="20px" height="20px"></a>&nbsp;
   <a href="index.php?lang=fr"><img src="img/flags/fr.svg"  title="French" width="20px" height="20px"></a>&nbsp; 
@@ -92,13 +88,11 @@ else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weat
   <a href="index.php?lang=it"><img src="img/flags/it.svg"  title="Italian" width="20px" height="20px"></a>&nbsp;  
   <a href="index.php?lang=sp"><img src="img/flags/sp.svg"  title="Spanish" width="20px" height="20px"></a>&nbsp; 
   <a href="index.php?lang=sw"><img src="img/flags/sw.svg"  title="Swedish" width="20px" height="20px"></a>&nbsp;  
-   '?></center>
-   
+   '?></center>   
    
  <div class=weather34thinborder>--</div> </div>
-  
-  <li><a href="#"><weather34themenusection> CREDITS & INFO</weather34themenusection></a></li> 
-      <!---credits | download info please do not remove credits if so no support is given it is not much to ask---> 
+ <!---credits | download info please do not remove credits if so no support is given it is not much to ask--->   
+<li><a href="#"><weather34themenusection> CREDITS & INFO</weather34themenusection></a></li> 
 <?php  //suppliers
 if ($suppliers =='Weather Spares'){echo '<li><a href="https://weatherspares.co.uk" title="https://weatherspares.co.uk" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>UK</menuinfobox>';}
 if ($suppliers =='Prodata Weather Systems'){echo '<li><a href="https://shop.weatherstations.co.uk" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>UK</menuinfobox>';}
