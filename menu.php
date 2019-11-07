@@ -31,7 +31,7 @@ if($units!='uk'){echo '<a  href="./?units=uk">  <metricgrey>UK</metricgrey> <top
 <div class="weather34toolbar">
 <div class="weather34toolbar__right"><weather34thetime><?php echo $menuclocksvg;?>&nbsp; <div id="theTime"></weather34thetime></div></div>
  <div class="weather34-theme-switch-wrapper"><div class="weather34-theme-switch">
-  <a class="weather34-slider round" href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>><?php if($theme=='dark'){echo 'Light';}else{echo ' &nbsp;Dark';}?> </a>
+  <a class="weather34-slider round" href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>><?php if($theme=='dark'){echo 'Light Mode';}else{echo ' &nbsp;Dark Mode';}?> </a>
   </div></div></div></div></div>
 <!-- start the weather34 pure css menu-->
 <weather34menunav><weather34themenuicon>

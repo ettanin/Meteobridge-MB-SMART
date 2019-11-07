@@ -9552,50 +9552,46 @@ purpleluft {
 }
 
 .weather34-theme-switch {
-  display: inline-block;
+  display: flex;
   height: 14px;
   position: relative;
-  width: 55px;
-  font-size: 10px;
-  color: #fff;
-  top: 4px;
+  width: 75px;
+  font-size: 9px;  
+  top: 3px;
+  line-height:.9;
+  font-family:system;
 }
-
 .weather34-theme-switch a {
-  color: #f8f8f8;
+ color: #aeb6bf;font-family:system;
 }
-
-.weather34-theme-switch a :hover {
-  color: #fff;
-}
-
 .weather34-theme-switch input {
   display: none;
 }
 
 .weather34-slider {
-  background-color: rgba(120, 138, 146, 1);
+  background-color:0;
   bottom: 0;
   cursor: pointer;
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
-  color: #fff;
+  color: rgba(77, 90, 102, .4);
   border-radius: 25px;
+  border:1px solid rgba(77, 90, 102, .2);
+  padding:2px
 }
 
 .weather34-slider:before {
-  background-color: rgba(77, 90, 102, 1);
-  bottom: 1px;
+  background-color: rgba(77, 90, 102, 1.000);
+  bottom: 0px;
   content: "";
   height: 12px;
-  left: 1px;
+  left: 0;
   position: absolute;
   width: 12px;
   border-radius: 50%;
 }
-
 lastrain {
   color: #555;
   font-size: 8.5px;

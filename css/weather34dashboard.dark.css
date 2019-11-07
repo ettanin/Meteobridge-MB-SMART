@@ -9712,21 +9712,17 @@ purpleluft {
 }
 
 .weather34-theme-switch {
-  display: inline-block;
+  display: flex;
   height: 14px;
   position: relative;
-  width: 55px;
-  font-size: 10px;
-  color: #f8f8f8;
-  top: 4px;
+  width: 77px;
+  font-size: 9px;  
+  top: 3px;
+  line-height:.9;
+  font-family:system;
 }
-
-.weather34-theme-switch a {
-  color: #f8f8f8;
-}
-
-.weather34-theme-switch a :hover {
-  color: #f8f8f8;
+.weather34-theme-switch a{
+  color: #aeb6bf;font-family:system;
 }
 
 .weather34-theme-switch input {
@@ -9734,32 +9730,34 @@ purpleluft {
 }
 
 .weather34-slider {
-  background-color: rgba(120, 138, 146, 1);
+  background-color:0;
   bottom: 0;
   cursor: pointer;
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
-  color: #fff;
-  font-weight: 500;
+  color: rgba(77, 90, 102, .4);
+  border-radius: 25px;
+  border:1px solid rgba(77, 90, 102, .2);
+  padding:2px
 }
 
-.weather34-slider a {
+.weather34-slider, .weather34-slider a {
   color: #fff;
   font-weight: 500;
 }
 
 .weather34-slider a:hover {
-  color: #fff;
+  color:#01A4B5;
 }
 
 .weather34-slider:before {
-  background-color: rgba(230, 232, 239, 1);
-  bottom: 1px;
+  background-color: #aaa;
+  bottom: 0;
   content: "";
   height: 12px;
-  left: 42px;
+  left: 63px;
   position: absolute;
   width: 12px;
 }
@@ -9770,7 +9768,7 @@ purpleluft {
 
 .weather34-slider.round:before {
   border-radius: 50%;
-  border: 1px solid rgba(61, 139, 150, 1);
+  border: 0;
 }
 
 lastrain {
