@@ -9862,7 +9862,7 @@ weather34menunav:hover {
   width: 18rem;
   left:-40px;
   background-color: #21252d;
-  height: 75%;
+  height:auto;
 }
 weather34menunav * {
   -webkit-user-select: none;

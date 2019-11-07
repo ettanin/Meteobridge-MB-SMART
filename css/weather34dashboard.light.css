@@ -9690,7 +9690,7 @@ weather34menunav:hover {
   border-right:1px solid rgba(45, 48, 58,.1);
   border-bottom:1px solid rgba(45, 48, 58,.1);
   background-color: #fff;
-  height: 75%;
+  height: auto;
 }
 weather34menunav * {
   -webkit-user-select: none;
