@@ -9882,10 +9882,5 @@ weather34menunav > ul > li {
   display:block;  
   cursor: pointer;
   margin-left:20px;
-  color: #aeb6bf;  
+  color: #aeb6bf  
 }
-weather34menunav > ul > li:hover {
-  background:0;
-}
-weather34menunav > ul > li:active {
-  background:0;}

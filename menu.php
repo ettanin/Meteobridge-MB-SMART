@@ -82,7 +82,7 @@ else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weat
    
    <li><a href="">
    
-   <themenusection>'.$lang["language"], '</themenusection>  </a></li>','
+   <weather34themenusection>'.$lang["language"], '</weather34themenusection>  </a></li>','
     
   <center>
   <a href="index.php?lang=en"><img src="img/flags/en.svg"  title="English" width="20px" height="20px"></a>&nbsp;
