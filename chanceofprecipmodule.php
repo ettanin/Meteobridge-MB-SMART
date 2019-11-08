@@ -95,7 +95,7 @@ if($wuskydayPrecipProb>=0){echo '<div class=simsek style="background:RGBA(1,164,
 
 <?php  //weatherflow air lightning output
 if ($wuskydaysnow>0){ echo 'Possible <blue>Snowfall</blue>';}
- else if ($wuskydaysnow>0){ echo 'Possible <blue>Rainfall</blue>';}
+ else if ($wuskydayPrecipProb>0){ echo 'Possible <blue>Rainfall</blue>';}
  else echo 'No <blue>Precipitation</blue> expected'; ?><br>
 <?php 
 if ($wuskydayPrecipProb>=70){echo "High <blue>Probability</blue>";}
