@@ -11,7 +11,8 @@
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
-	
 
-
-include('../settings.php');?><script rel="preload" src='canvasJs.js' as="script"></script>
+include('../settings.php');
+date_default_timezone_set($TZ);
+?>
+<script rel="preload" src='canvasJs.js' as="script"></script>
