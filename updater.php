@@ -59,7 +59,7 @@ if ($positionlastmodule == 'webcamsmall.php') {
 //option 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#option").show()}});var c=a("#option");c.load("<?php echo $positionmooneq?>");var b=setInterval(function(){c.load("<?php echo $positionmooneq?>")},380000)})})(jQuery);
 
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#precip").show()}});var c=a("#precip");c.load("precipchancesmall.php");var b=setInterval(function(){c.load("precipchancesmall.php")},380000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#precip").show()}});var c=a("#precip");c.load("<?php echo $positionprecip?>");var b=setInterval(function(){c.load("<?php echo $positionprecip?>")},380000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#battery").show()}});var c=a("#battery");c.load("battery.php");var b=setInterval(function(){c.load("battery.php")},380000)})})(jQuery);
 

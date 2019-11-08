@@ -61,6 +61,7 @@ $positionlastmoduletitle   = "'. $_POST["positionlastmoduletitle"]. '";
 $positionlastmodule   = "'. $_POST["positionlastmodule"]. '";
 $positionmooneq   = "'. $_POST["positionmooneq"]. '";
 $positionconsole   = "'. $_POST["positionconsole"]. '";
+$positionprecip   = "'. $_POST["positionprecip"]. '";
 $webcamurl   = "'. $_POST["webcamurl"]. '";
 $email    = "'. $_POST["email"]. '";
 $twitter   = "'. $_POST["twitter"]. '";
@@ -1079,6 +1080,28 @@ your nearly there :-) keep going
             <option><?php echo $positionconsole ;?></option> 
             <option>consoleoutlook.php</option>
             <option>forecast-small.php</option>  
+                          
+            
+                     </select>
+               
+     
+      <br> <br>
+     
+     <div class="seperator"></div>  
+     
+     <div class= "stationvalue"> *Position bottom left module show Recent Earthquake or Precipitation Small Module<br>
+      </div>
+       <br> <br>
+       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M30 12 L16 24 2 12" />
+</svg>
+        <label name="positionprecip"></label>
+        <select id="positionprecip" name="positionprecip" class="choose">  
+            <option><?php echo $positionprecip ;?></option> 
+            <option>eq.php</option>
+            <option>precipchancesmall.php</option>  
                           
             
                      </select>

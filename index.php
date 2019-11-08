@@ -278,7 +278,12 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <main class="grid5">
   <weather34topmodule>
   <div class="weather34box">
-  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp; Precipitation Probability</div>
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp; <?php // 3 options  
+  if ($positionprecip=='precipchancesmall.php') {
+      echo "Precipitation Probability";
+  } else if ($positionprecip=='eq.php') {
+      echo "Recent Regional ".$lang['Earthquake'];}?>
+  </div>
   <div id=precip></div></div></weather34topmodule>
   
   <weather34topmodule>
