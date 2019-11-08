@@ -253,23 +253,23 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <main class="grid4">
   <weather34topmodule>
   <div class="weather34box">
-  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp; <?php echo $lang['Today']?> <?php echo $lang['Temperature']?></div>
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp; <?php echo $lang['Today']?> <?php echo $lang['Temperature']?> (&deg;<?php echo $weather["temp_units"] ;?>)</div>
   <div id=temp1></div></div></weather34topmodule>
   
   <weather34topmodule>
    <div class="weather34box">
-   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Today']?> <?php echo $lang['Windspeed']?></div>
+   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Today']?> <?php echo $lang['Windspeed']?> (<?php echo $weather["wind_units"] ;?>)</div>
    <div id=wind1></div></div></weather34topmodule>  
    
 
   <weather34topmodule>
   <div class="weather34box">
-  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Today']?> <?php echo $lang['Rainfall']?></div>
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Today']?> <?php echo $lang['Rainfall']?> (<?php echo $weather["rain_units"] ;?>)</div>
   <div id=rain1></div></div></weather34topmodule>  
 
    <weather34topmodule>
   <div class="weather34box">
-  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Today']?> <?php echo $lang['Humidity']?></div>
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Today']?> <?php echo $lang['Humidity']?> (%)</div>
   <div id=humidity1></div></div></weather34topmodule>
   </main>
 

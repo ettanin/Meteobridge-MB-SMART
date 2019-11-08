@@ -150,7 +150,7 @@
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0) + "°" ;  
+        return e.value .toFixed(0);  
          },	
 		crosshair: {
 			enabled: true,

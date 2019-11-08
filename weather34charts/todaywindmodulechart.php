@@ -140,7 +140,7 @@
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0) + "<?php echo $windunit ;?>" ;  
+        return e.value .toFixed(0);  
          },	
 		crosshair: {
 			enabled: true,
@@ -165,8 +165,8 @@
 		data: [
 		{
 			//wind speed
-			type: "line",
-            lineDashType: "dash",
+			type: "spline",
+            //lineDashType: "dash",
 			color:"#d35d4e",
 			markerSize:0,
 			showInLegend:false,

@@ -18,7 +18,7 @@
 	if ($rainunit == 'in') {$conv= '0.0393701';}	
 	else if ($rainunit == 'mm'){$conv= '1';}
 	$interval = 1;
-	if ($rainunit == 'in') {$interval= '0.5';}	
+	if ($rainunit == 'in') {$interval= '1';}	
 	else if ($rainunit == 'mm'){$interval= '10';}
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -140,7 +140,7 @@
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0) + "<?php echo $rainunit ;?>" ;  
+        return e.value .toFixed(0);  
          },	
 		crosshair: {
 			enabled: true,
