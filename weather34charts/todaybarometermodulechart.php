@@ -15,26 +15,39 @@
 	
 	
 	include('preload.php');
-	echo '
+	$conv = 1;
+	if ($pressureunit  == "hPa"){$conv= '1';}
+	else if ($pressureunit == 'inHg') {$conv= '0.02953';}	
+	$int = 1;
+	if ($pressureunit == 'hPa') {$int= 10;}
+	else if ($pressureunit == 'inHg') {$int= 0.25;}
+	else if ($pressureunit == 'mb') {$int= 10;}
+	$ymax = 1;
+	if ($pressureunit == 'hPa') {$ymax= '1045';}
+	else if ($pressureunit == 'inHg') {$ymax= '31.6';}		
+	$limit = '0';
+	if ($pressureunit == 'inHg') {$limit= '20';}
+	else if ($pressureunit  == "hPa") {$limit= '930';}
+    echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>OUTDOOR TEMPERATURE DATABASE CHART</title>	
+		<title>OUTDOOR Barometer CHART</title>	
 		<script src=../js/jquery.js></script>
 		
-		
 	';
+	date_default_timezone_set($TZ);
+	$weatherfile =date('Y')."/".date('jMY');?>
 	
-	$date= date('D jS Y');$weatherfile =date('Y')."/".date('jMY');?>
-    <br>
-    	<script type="text/javascript">
-		// today temperature
+    <br>	
+	<script type="text/javascript">
+	// today barometer
         $(document).ready(function () {
-		var dataPoints1 = [];
-		var dataPoints2 = [];
-		$.ajax({
+
+	var dataPoints1 = [];
+	var dataPoints2 = [];
+	$.ajax({
 			type: "GET",
 			url: "<?php echo $weatherfile?>.csv",
 			dataType: "text",
@@ -48,41 +61,37 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[2] >-50)
-					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[17])});
-			}
+				if ( rowData[3] ><?php echo $limit;?>)
+					dataPoints1.push({label:rowData[1],y:parseFloat(rowData[3]*<?php echo $conv;?>)});		}
 		}
 		requestTempCsv();}function requestTempCsv(){}
 
-	function processData2(allText) {
+		function processData2(allText) {
 		var allLinesArray = allText.split('\n');
 		if(allLinesArray.length>0){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[7] >-50)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[17])});
+				if ( rowData[3] ><?php echo $limit;?>)
+					dataPoints2.push({label:rowData[1],y:parseFloat(rowData[3]*<?php echo $conv;?>)});
 				
 			}
-			drawChart(dataPoints1 , dataPoints2 );
+			drawChart(dataPoints1 );
 		}
 	}
 
-		function drawChart( dataPoints1 , dataPoints2 ) {
+	
+	function drawChart( dataPoints1) {
 		var chart = new CanvasJS.Chart("chartContainer2", {
-		 backgroundColor: "rgba(40, 45, 52,.0)",
-		 animationEnabled: false,
-		 margin: 0,
-		
+		backgroundColor: "rgba(40, 45, 52,0)",
+		animationEnabled: false,
+		 
 		title: {
-            text: "",
+            text: " ",
 			fontSize: 0,
-			fontColor:' #555',
+			fontColor:' #aaa',
 			fontFamily: "arial",
-			margin: 0,
         },
-		zoomEnabled: true,
-		dataPointWidth: 1,
 		toolTip:{
 			   fontStyle: "normal",
 			   cornerRadius: 4,
@@ -119,8 +128,8 @@
 			
 		axisY:{
 		margin: 0,
-		interval:20,
-		maximum:100,		
+		interval: <?php echo $int ;?>,	
+		//maximum:100,		
 		lineThickness: 1,		
 		gridThickness: 0,	
 		gridDashType: "dot",	
@@ -131,7 +140,7 @@
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0) + "%" ;  
+        return e.value .toFixed(<?php if ($pressureunit=='inHg'){echo '1';} else echo '0';?>); 
          },		 
 		crosshair: {
 			enabled: true,
@@ -141,7 +150,7 @@
 			labelFontSize:8,
 			labelBackgroundColor: "#44a6b5",
 			labelMaxWidth: 60,
-			valueFormatString: "# '%'",
+			valueFormatString: "#",
 		}	 
       },
 	  
@@ -159,24 +168,26 @@
 			color:"#44a6b5",
 			markerSize:0,
 			showInLegend:false,
-			legendMarkerType: "circle",
+			legendMarkerType: "triangle",
 			lineThickness: 1,
 			markerType: "circle",
-			name:" Humidity",
+			name:"Barometer",
 			dataPoints: dataPoints1,
-			yValueFormatString: "# '%'",
+			yValueFormatString:"#0.# °",
+			markerBorderColor: 'red',
+			dataPoints: dataPoints1,
 			
+			yValueFormatString: "##.## <?php echo $pressureunit ;?>",
 		},
 		{
-			
-			
-			
+			//not using in daily barometer
 		}
 
 		]
 		});
 
 		chart.render();
+		
 	}
 });</script>
 <body>

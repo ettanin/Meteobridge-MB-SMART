@@ -86,7 +86,7 @@ if ($wuskydayPrecipProb>=0) {
 	<div class=eqtoday4-5><blue>".$wuskydayPrecipProb."%</blue></div>";}	
     echo "</div><div style='position:absolute;margin-left:12px;width:50px;margin-top:-3px;font-size:.35em;color:#777;'>";
 	if ($wuskydaysnow>0){ echo $wuskydaysnow ." cm</div>";}
- 	else if ($wuskydayprecipIntensity>20){ echo $wuskydayprecipIntensity ." ".$rainunit."</div>";} 
+ 	else if ($wuskydayprecipIntensity>0){ echo $wuskydayprecipIntensity ." ".$rainunit."</div>";} 
  	else echo "None</div>";		
  	echo "<div style='position:absolute;width:130px;margin-left:90px;margin-top:-25px;font-size:.45em;color:#777;'>";	
  	if ($wuskydaysnow>0){echo " Possible Snow ". $precipsnow;}
