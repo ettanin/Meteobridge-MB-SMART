@@ -85,7 +85,7 @@ $parsed_weather34wujson = json_decode($weather34wuurl,false);
 
 <div class="simsekdata" style="width:50px;margin-left:-8px">Probability</div>
 <?php //weather34 sez lets make nice 
-if($wuskydayPrecipProb>0){echo '<div class=simsek style="background:RGBA(1,164,181,1.00)">'.$wuskydayPrecipProb.'%';}
+if($wuskydayPrecipProb>=0){echo '<div class=simsek style="background:RGBA(1,164,181,1.00)">'.$wuskydayPrecipProb.'%';}
 ?>
 </smalltempunit></div>
 <div class="simsektoday"><valuetext>
