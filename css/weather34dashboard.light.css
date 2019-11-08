@@ -3363,7 +3363,15 @@ smalluvunit {
   margin: 4px auto auto;
   left: 28.1%;
 }
-
+.rainprob{
+  z-index: auto;
+  margin-top: -15px;
+  margin-left:0;
+  color: #555;
+  text-align: center;
+  font-family: weathertext2;
+  font-size: 0.6rem;
+  }
 topblue1, topgreen1, toporange1, toporange2, topred1, topyellow1, topyellow2 {
   font-family: weathertext2;
   width: 3.3rem;

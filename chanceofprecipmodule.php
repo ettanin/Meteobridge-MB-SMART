@@ -88,7 +88,7 @@ $parsed_weather34wujson = json_decode($weather34wuurl,false);
 if($wuskydayPrecipProb>=0){echo '<div class=simsek style="background:RGBA(1,164,181,1.00)">'.$wuskydayPrecipProb.'%';}
 ?>
 </smalltempunit></div>
-<div class="simsektoday"><valuetext>
+<div class="rainprob" > <?php echo $wuskydayTime?><valuetext>
 </valuetext></div></div></div></div></div>
 
 <div class="lightninginfo">
