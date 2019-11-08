@@ -88,8 +88,8 @@ if ($wuskydayPrecipProb>=0) {
 	if ($wuskydaysnow>0){ echo $wuskydaysnow ." cm</div>";}
  	else if ($wuskydayprecipIntensity>0){ echo $wuskydayprecipIntensity ." ".$rainunit."</div>";} 
  	else echo "None</div>";		
- 	echo "<div style='position:absolute;width:130px;margin-left:90px;margin-top:-25px;font-size:.45em;color:#777;'>";	
- 	if ($wuskydaysnow>0){echo " Possible Snow ". $precipsnow;}
- 	else if ($wuskydayPrecipProb>20){echo " Possible Rain ".$preciprain;}
-	else if ($wuskydayPrecipProb>=0){echo " No Rain ".$preciprain;}?>
+ 	echo "<div style='position:absolute;width:110px;margin-left:90px;margin-top:-30px;font-size:.4em;color:#777;'>";	
+ 	if ($wuskydaysnow>0){echo $wuskydayTime." Chance of Snow". $precipsnow;}
+ 	else if ($wuskydayPrecipProb>20){echo $wuskydayTime." Chance of Rain".$preciprain;}
+	else if ($wuskydayPrecipProb>=0){echo $wuskydayTime." Low Probability ".$preciprain;}?>
 </div></div>
