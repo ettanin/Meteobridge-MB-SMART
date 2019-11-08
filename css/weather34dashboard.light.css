@@ -9614,9 +9614,7 @@ metricgrey {
   font-weight: 500;
   font-size: 9px;
 }
-
 /* Set Menu and body defaults */
-
 body {
   min-height: 100vh;
   scroll-behavior: smooth;

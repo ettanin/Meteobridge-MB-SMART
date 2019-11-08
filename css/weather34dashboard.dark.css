@@ -9801,7 +9801,6 @@ metricgrey {
 }
 
 /* Set Menu and body defaults */
-
 body {
   min-height: 100vh;
   scroll-behavior: smooth;

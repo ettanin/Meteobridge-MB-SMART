@@ -80,7 +80,7 @@ $parsed_weather34wujson = json_decode($weather34wuurl,false);
 	 
 	 }?>
 <body>
-<div class="moduleupdatetime"><span><?php if(file_exists($livedata2)&&time()- filemtime($livedata2)>300)echo '<offlinenew></offlinenew> Offline';else echo "<onlinenew></onlinenew> ".$weather["time"];?></div>   
+<div class="moduleupdatetime"><?php $forecastime=filemtime('jsondata/wuforecast.txt');$weather34wuurl = file_get_contents("jsondata/wuforecast.txt");if(filesize('jsondata/wuforecast.txt')<1){echo $offline." Offline<br>";}else echo $online. " ".date($timeFormat,$forecastime);?></div>  
 <div class="simsekcontainer">
 
 <div class="simsekdata" style="width:50px;margin-left:-8px">Probability</div>
