@@ -119,7 +119,7 @@
 			
 		axisY:{
 		margin: 0,
-		interval:10,
+		interval:20,
 		maximum:100,		
 		lineThickness: 1,		
 		gridThickness: 0,	
