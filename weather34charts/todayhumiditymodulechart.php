@@ -118,10 +118,6 @@
 			},
 			
 		axisY:{
-		title: "",
-		titleFontColor: "#777",
-		titleFontSize: 8,
-        titleWrap: false,
 		margin: 0,
 		interval:10,
 		maximum:100,		
@@ -131,9 +127,9 @@
         includeZero: false,
 		gridColor: "#333",
 		labelFontSize: 8,
-		labelFontColor:' #777',
-		titleFontFamily: "arial",
-		labelFontFamily: "arial",
+		labelFontColor:' #888',
+		labelFontFamily: "Arial",
+		labelFontWeight: "bold",
 		labelFormatter: function ( e ) {
         return e.value .toFixed(0) + "%" ;  
          },		 

@@ -123,10 +123,6 @@
 			},
 			
 		axisY:{
-		title: "",
-		titleFontColor: "#777",
-		titleFontSize: 0,
-        titleWrap: false,
 		margin: 0,
 		interval:'auto',
 		//maximum: <?php echo $max ;?>,		
@@ -135,10 +131,10 @@
 		gridDashType: "dot",	
         includeZero: false,
 		gridColor: "#555",
-		labelFontSize: 9,
-		labelFontColor:' #777',
-		titleFontFamily: "arial",
-		labelFontFamily: "arial",
+		labelFontSize: 8,
+		labelFontColor:' #888',
+		labelFontFamily: "Arial",
+		labelFontWeight: "bold",
 		labelFormatter: function ( e ) {
         return e.value .toFixed(0);  
          },	

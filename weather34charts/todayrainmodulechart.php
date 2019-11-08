@@ -19,7 +19,7 @@
 	else if ($rainunit == 'mm'){$conv= '1';}
 	$interval = 1;
 	if ($rainunit == 'in') {$interval= '1';}	
-	else if ($rainunit == 'mm'){$interval= '10';}
+	else if ($rainunit == 'mm'){$interval= '5';}
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
@@ -123,10 +123,6 @@
 			},
 			
 		axisY:{
-		title: "",
-		titleFontColor: "#777",
-		titleFontSize: 0,
-        titleWrap: false,
 		margin: 0,
 		interval:<?php echo $interval ;?>,
 		//maximum: <?php echo $max ;?>,		
@@ -135,10 +131,10 @@
 		gridDashType: "dot",	
         includeZero: false,
 		gridColor: "#555",
-		labelFontSize: 9,
-		labelFontColor:' #777',
-		titleFontFamily: "arial",
-		labelFontFamily: "arial",
+		labelFontSize: 8,
+		labelFontColor:' #888',
+		labelFontFamily: "Arial",
+		labelFontWeight: "bold",
 		labelFormatter: function ( e ) {
         return e.value .toFixed(0);  
          },	
