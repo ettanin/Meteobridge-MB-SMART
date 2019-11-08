@@ -232,8 +232,8 @@ echo " </blueu>at ".$windalert2." <div class=wuwindspeed> ".number_format($wusky
 else {echo "<div class='wulargewindspeedicon'>".$lang['Wind']." <blueu>";echo $wuskydayWinddircardinal; 
 echo " </blueu>at ".$windalert2." <div class=wuwindspeed> ".number_format($wuskydayWindGust,0),"&nbsp;<wuunits>".$windunit;echo  '</wuunits></div></div>';'<br><br>';echo "<div class='wulargerain'>";}
 //snow wu
-if ( $wuskydaysnow>0 && $rainunit=='in'){ echo $lang['Snow Accumulation'] .$snowflakesvg.'&nbsp;<wulargetempwindhome><oblue>&nbsp;'.$wuskydaysnow.'</oblue><wuunits> in</wuunits>';}
-else if ( $wuskydaysnow>0 && $rainunit=='mm'){ echo $lang['Snow Accumulation'] .$snowflakesvg.'&nbsp;<wulargetempwindhome><oblue>&nbsp;'.$wuskydaysnow.'</oblue><wuunits> cm</wuunits>';}
+if ( $wuskydaysnow>0 && $rainunit=='in'){ echo $lang['Snow Accumulation'] .$snowflakesvg.'&nbsp;<div class=wurainfall>&nbsp;'.$wuskydaysnow.'<wuunits> in</wuunits></div>';}
+else if ( $wuskydaysnow>0 && $rainunit=='mm'){ echo $lang['Snow Accumulation'] .$snowflakesvg.'&nbsp;<div class=wurainfall>&nbsp;'.$wuskydaysnow.'<wuunits> cm</wuunits></div>';}
 //rain wu
 else if ($wuskydayPrecipType='rain' && $rainunit=='in'){echo $lang['Rain Accumulation'] .$rainsvg.'&nbsp;<div class=wurainfall>'. number_format($wuskydayprecipIntensity,2).'&nbsp;<wuunits>'.$rainunit.'</wuunits></div>';}
 else if ($wuskydayPrecipType='rain' && $rainunit=='mm'){echo $lang['Rain Accumulation'] .$rainsvg.'&nbsp;<div class=wurainfall>'. number_format($wuskydayprecipIntensity,1).'&nbsp;<wuunits>'.$rainunit.'</wuunits></div>';}

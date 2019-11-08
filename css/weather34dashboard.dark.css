@@ -7320,6 +7320,34 @@ maxtempgreen {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.grid5 {
+  display: grid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+}
+
+.grid5>weather34topmodule {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 80px;
+  padding: 7px;
+  border: 1px solid rgba(45, 48, 58, .3);
+  border-width: thin;
+  border-top: 15px solid rgba(45, 48, 58, .6);
+  background: 0;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.20), 0 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.20), 0 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
 .grid1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
@@ -9882,3 +9910,9 @@ weather34menunav > ul > li {
   margin-left:20px;
   color: #aeb6bf;  
 }
+.charttempmodule{  
+position:relative;display:flex;margin-top:-20px;
+
+ 
+width:220px;background:RGBA(243,244,247,.0);
+padding:0}

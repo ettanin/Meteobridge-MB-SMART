@@ -20,7 +20,7 @@ var refreshId;$(document).ready(function(){barometer()});function barometer(){$.
     echo 'setTimeout(barometer,' . 1000*$baroRefresh.')';
 } ?>},type:"GET",url:"barometer.php"})};
 // moonphase
-var refreshId;$(document).ready(function(){moonphase()});function moonphase(){$.ajax({cache:false,success:function(a){$("#moonphase").html(a);<?php if ($moonRefresh > 0) {
+var refreshId;$(document).ready(function(){moonphase()});function moonphase(){$.ajax({cache:false,success:function(a){$("#sun").html(a);<?php if ($moonRefresh > 0) {
     echo 'setTimeout(moonphase,' . 1000*$moonRefresh .')';
 } ?>},type:"GET",url:"sun3.php"})};
 // rainfall
@@ -63,11 +63,19 @@ if ($positionlastmodule == 'webcamsmall.php') {
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#battery").show()}});var c=a("#battery");c.load("battery.php");var b=setInterval(function(){c.load("battery.php")},380000)})})(jQuery);
 
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#interface").show()}});var c=a("#interface");c.load("interface.php");var b=setInterval(function(){c.load("interface.php")},22380000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#moon").show()}});var c=a("#moon");c.load("weather34-moonphase.php");var b=setInterval(function(){c.load("weather34-moonphase.php")},2360000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#hardwareinfo2").show()}});var c=a("#hardwareinfo2");c.load("hardware.php");var b=setInterval(function(){c.load("hardware.php")},22380000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#logo").show()}});var c=a("#logo");c.load("logo.php");var b=setInterval(function(){c.load("logo.php")},22380000)})})(jQuery);
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#temp1").show()}});var c=a("#temp1");c.load("todaytempmodule.php");var b=setInterval(function(){c.load("todaytempmodule.php")},1360000)})})(jQuery);
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#wind1").show()}});var c=a("#wind1");c.load("todaywindmodule.php");var b=setInterval(function(){c.load("todaywindmodule.php")},1360000)})})(jQuery);
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#rain1").show()}});var c=a("#rain1");c.load("todayrainmodule.php");var b=setInterval(function(){c.load("todayrainmodule.php")},1360000)})})(jQuery);
+
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#humidity1").show()}});var c=a("#humidity1");c.load("todayhumiditymodule.php");var b=setInterval(function(){c.load("todayhumiditymodule.php")},1360000)})})(jQuery);
 
 
 

@@ -972,11 +972,9 @@ your nearly there :-) keep going
             <option><?php echo $position12 ;?></option>             
             <option>airqualitymodule.php</option>  
             <option>airqualityluftdaten.php</option>  
-            <option>webcamsmall.php</option> 
-            <option>moonphase.php</option>  
+            <option>webcamsmall.php</option>              
             <option>weather34uvsolar.php</option>                     
-            <option>solaruvwu.php</option>            
-            
+            <option>solaruvwu.php</option>    
                      </select>
                
         
@@ -1005,11 +1003,11 @@ your nearly there :-) keep going
             <option><?php echo $positionlastmodule ;?></option>              
             <option>airqualitymodule.php</option> 
             <option>airqualityluftdaten.php</option>  
-            <option>webcamsmall.php</option> 
-            <option>moonphase.php</option>  
+            <option>webcamsmall.php</option>             
             <option>weather34uvsolar.php</option>              
             <option>solaruvwu.php</option>              
-            <option>lightning34.php</option>  
+            <option>lightning34.php</option> 
+            <option>chanceofprecipmodule.php</option>  
             </select>
                
         
@@ -1035,7 +1033,8 @@ your nearly there :-) keep going
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> webcamsmall.php</span> <orange>display webcam</orange>.*
      add your url/path to wecam image using option below <br></span>
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
-     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> mooonphase.php</span> <orange>display moonphase</orange><br></span>
+     <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> chanceofprecip.php</span> <orange>display probability of precipitation either snow or rain </orange><br></span>
+     
      <span style="color:#777;"><svg id="i-info" viewBox="0 0 32 32" width="10" height="10" fill="rgba(7, 114, 125, 1.000)" stroke="rgba(7, 114, 125, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.25%">
      <path d="M16 14 L16 23 M16 8 L16 10" /><circle cx="16" cy="16" r="14" /></svg><span style="color:#777;"> weather34uvsolar.php</span> <orange>display uv and solar radiation if you have hardware</orange> <br></span>
      
@@ -1046,7 +1045,7 @@ your nearly there :-) keep going
      <br>
      
       <div class="seperator"></div>   
-      <div class= "stationvalue"> *Position Last small module 3 options luftdaten air quality or heat index almanac<br>
+      <div class= "stationvalue"> *Position Last small module 2 options luftdaten air quality or heat index almanac<br>
       </div>
        <br> <br>
        <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -1057,8 +1056,7 @@ your nearly there :-) keep going
         <label name="positionmooneq"></label>
         <select id="positionmooneq" name="positionmooneq" class="choose">  
             <option><?php echo $positionmooneq ;?></option> 
-            <option>heat-chill-year-month.php</option>
-            <option>weather34-moonphase.php</option>  
+            <option>heat-chill-year-month.php</option>            
             <option>luftdaten-small.php</option>                       
             
                      </select>

@@ -128,7 +128,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 	<a href="mooninfo.php" data-lity><weather34homepagelinks></weather34homepagelinks> '.$lang['Moon'].' Data </a>&nbsp;&nbsp;</span>
 	<a href=meteorshowers.php data-lity><chartinfocolor><weather34homepagelinks></weather34homepagelinks></chartinfocolor> '.$lang['Meteor'];
 }?></a></div>
- <div id=moonphase></div></weather34module>
+ <div id=sun></div></weather34module>
 
 
   <weather34module> <!-- Weather34 Main Module 7 Rainfall-->
@@ -238,10 +238,8 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <weather34topmodule>
   <div class="weather34box">
   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;
-  <?php // 3 options
-  if ($positionmooneq=='weather34-moonphase.php') {
-      echo $lang['Moonphase'];
-  } elseif ($positionmooneq=='luftdaten-small.php') {
+  <?php // 3 options  
+  if ($positionmooneq=='luftdaten-small.php') {
       echo $lang['Air Quality'];
   } elseif ($positionmooneq=='heat-chill-year-month.php') {
       echo $lang['Heatindex']." | ".$lang['Windchill']." ".date('Y');
@@ -250,27 +248,58 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <div id=option></div></div>
   </weather34topmodule>
   </main>
-
+  
+  
   <main class="grid4">
+  <weather34topmodule>
+  <div class="weather34box">
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp; <?php echo $lang['Today']?> <?php echo $lang['Temperature']?></div>
+  <div id=temp1></div></div></weather34topmodule>
+  
+  <weather34topmodule>
+   <div class="weather34box">
+   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Today']?> <?php echo $lang['Windspeed']?></div>
+   <div id=wind1></div></div></weather34topmodule>  
+   
+
+  <weather34topmodule>
+  <div class="weather34box">
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Today']?> <?php echo $lang['Rainfall']?></div>
+  <div id=rain1></div></div></weather34topmodule>  
+
+   <weather34topmodule>
+  <div class="weather34box">
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Today']?> <?php echo $lang['Humidity']?></div>
+  <div id=humidity1></div></div></weather34topmodule>
+  </main>
+
+   
+  
+  <main class="grid5">
   <weather34topmodule>
   <div class="weather34box">
   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp; Recent Regional <?php echo $lang['Earthquake']?></div>
   <div id=earthquake></div></div></weather34topmodule>
+  
+  <weather34topmodule>
+   <div class="weather34box">
+   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Moonphase']?> </div>
+   <div id=moon></div></div></weather34topmodule>  
 
   <weather34topmodule>
   <div class="weather34box">
   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Weather Station'] ." Power";?></div>
-  <div id=battery></div></div></weather34topmodule>
-
-   <weather34topmodule>
-   <div class="weather34box">
-   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Meteobridge Interface']?> </div>
-   <div id=interface></div></div></weather34topmodule>
+  <div id=battery></div></div></weather34topmodule>  
 
    <weather34topmodule>
   <div class="weather34box">
   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Weather Station']?> Info</div>
   <div id=hardwareinfo2></div></div></weather34topmodule>
+  </main>
+  
+  
+
+  
 
   <!-- Weather34 bottom small moudles end -->
    <!-- Weather34 Footer -->
