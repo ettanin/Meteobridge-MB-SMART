@@ -9911,8 +9911,6 @@ weather34menunav > ul > li {
   color: #aeb6bf;  
 }
 .charttempmodule{  
-position:relative;display:flex;margin-top:-20px;
-
- 
+position:relative;display:flex;margin-top:-20px; 
 width:220px;background:RGBA(243,244,247,.0);
 padding:0}
