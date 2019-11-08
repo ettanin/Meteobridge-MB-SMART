@@ -26,7 +26,14 @@ $eqdista;if ($weather["wind_units"] == 'mph') {$eqdista = round(distance($lat, $
 <?php
 // EQ Latest earthquake 
 
-if ($magnitude <= 4.2 && $eqdist<150) {
+if ($magnitude <2) {
+    echo "<div class='eqcaution'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No</div><div class=eqtoday4-5><ored>DATA</ored></div>	
+	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</div></div>
+	<div class='eqtext2'><br><br><regionalred>API Data $heatindexalert8 Offline</regionalred></div>";
+} 
+
+
+else if ($magnitude <= 4.2 && $eqdist<150) {
     echo "<div class='eqcaution'>Magnitude</div><div class=eqtoday4-5>".number_format($magnitude,1)."</div>	
 	<div class='eqt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minor</div></div>
 	<div class='eqtext2'><regionalred>Local Alert $heatindexalert8 </regionalred><br><blue> $eqtitle </blue><br>$eventime<br>
