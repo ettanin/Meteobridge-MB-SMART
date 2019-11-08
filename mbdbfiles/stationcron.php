@@ -33,20 +33,6 @@ curl_exec($ch4c);
 curl_close($ch4c);
 fclose($fp4c);?>
 
-
-<?php // weather34 earthquakes curl based
-$url1 = 'https://www.seismicportal.eu/fdsnws/event/1/query?limit=10&lat='.$lat.'&lon='.$lon.'&maxradius=10&format=json&minmag=2';
-$ch1 = curl_init($url1);
-$filename1 = '../jsondata/eqnotification.txt';
-$complete_save_loc1 = $filename1;
-$fp1 = fopen($complete_save_loc1, 'wb');
-curl_setopt($ch1, CURLOPT_FILE, $fp1);
-curl_setopt($ch1, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch1, CURLOPT_HEADER, 0);
-curl_exec($ch1);
-curl_close($ch1);
-fclose($fp1);
-?>
 <?php // weather34 purple air quality  curl based
 if($purpleairhardware=='yes'){
 $url4 = 'https://www.purpleair.com/json?show='.$purpleairID.'';
