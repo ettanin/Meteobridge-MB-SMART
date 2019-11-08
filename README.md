@@ -11,16 +11,12 @@
 * update files will be release via https://weather34.com/homeweatherstation/ and each update will be dated 
 example MB-SMART-UPDATE-23102019
 * Version 1.05 requires a fresh install and thereafter you simply use the updater method to update and apply fixes .No more fresh installs are required thereafter.
-* simple guide to use new updater and backup https://weather34.com/homeweatherstation/smartupdate.html#setup
+* simple guide to use new updater in public releases  and backup https://weather34.com/homeweatherstation/smartupdate.html#setup
 
 
-# When upgrading from version 1.05 or earlier please keep a copy of you weather34charts folder !!! 
+# When upgrading or testing the beta from version 1.05 or earlier please keep a copy of you weather34charts folder !!! 
 * this contains all your yearly and monthly charts data from 2019 if you have been following the beta path.
-* simply keep a copy on your desktop and copy it to your server where this version 1.05 is installed.
-
-# All beta testers do not need to update with a fresh install you are presently upto date as of 23rd October.
-* beta testers are a small group of 10 users and collaborated via email .if you did not recieve an email with 
-changes for Version 1.05 during the month of october it means you were not a part of this beta group therefore a fresh install will be required.
+* simply keep a copy on your desktop and copy it to your server where this version 1.05 
 
 # Project expected to finally finish early 2020 .
 * todo minor CSS clean (January 2020)
