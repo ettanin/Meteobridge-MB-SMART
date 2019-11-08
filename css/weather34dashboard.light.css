@@ -7945,10 +7945,13 @@ weather34toptitle {
   .grid>weather34topmodule {
     display: none;
   }
-  .grid4 {
+  .grid4,.grid5 {
     display: none;
   }
   .grid4>weather34topmodule {
+    display: none;
+  }
+  .grid5>weather34topmodule {
     display: none;
   }
   .grid3>weather34topmodule {
@@ -7961,31 +7964,6 @@ weather34toptitle {
   .footercontainer {
     margin: 0 auto;
     width: 720px;
-  }
-  .gridfooter {
-    display: grid;
-    grid-template-columns: 720px;
-    grid-template-rows: 1fr;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    margin-top: 5px;
-    color: rgba(47, 54, 63, 1);
-  }
-  .gridfooter>weather34footer {
-    border: 1px solid rgba(230, 232, 239, 0.5);
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-box-shadow: 0;
-    box-shadow: 0;
-    padding: 5px;
-    background: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    height: 50px;
-    margin-bottom: 5px;
   }
   .maincontainer {
     display: -webkit-box;
@@ -8166,6 +8144,12 @@ weather34toptitle {
     top: 35px;
     width: 120px;
   }
+  .gridfooter {
+    display: none
+  }
+  .gridfooter>weather34footer {
+    border: none
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -8211,30 +8195,10 @@ weather34toptitle {
     width: 320px;
   }
   .gridfooter {
-    display: grid;
-    grid-template-columns: 320px;
-    grid-template-rows: 1fr;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    margin: 0 auto;
-    margin-top: 5px;
-    color: rgba(47, 54, 63, 1);
+    display: none
   }
   .gridfooter>weather34footer {
-    border: 1px solid rgba(230, 232, 239, 0.5);
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-box-shadow: 0;
-    box-shadow: 0;
-    padding: 5px;
-    background: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    height: 40px;
-    margin-bottom: 5px;
+    border: none
   }
   .nanoimg {
     position: absolute;

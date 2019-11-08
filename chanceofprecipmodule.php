@@ -102,7 +102,6 @@ if ($wuskydayPrecipProb>=70){echo "High <blue>Probability</blue>";}
  else if ($wuskydayPrecipProb>=40){echo "Medium <blue>Probability</blue>";}
  else if ($wuskydayPrecipProb>=20){echo "Possible <blue>Probability</blue>";}
  else if ($wuskydayPrecipProb>=0){echo "Low <blue>Probability</blue>";}
-
 ?><br> 
 Total expected<blue>
 <?php 
@@ -114,9 +113,7 @@ Total expected<blue>
  <?php 
  if ($wuskydaysnow>0){echo $precipsnow;}
  else if ($wuskydayPrecipProb>0){echo $preciprain;}?>
- </span>
- 
- 
+ </span> 
 </div>
 <div class="rainconverter">
 <?php
