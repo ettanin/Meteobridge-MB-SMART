@@ -1,4 +1,4 @@
-# This GITHUB repository is for the Meteobridge Weather34 MB Smart Version 1.06 *NO MYSQL KNOWLEDGE REQUIRED 
+# This GITHUB repository is for the Meteobridge Weather34 MB Smart Version 1.06 Beta *NO MYSQL KNOWLEDGE REQUIRED 
 (Version 1.06 November 7th 2019)
 
 # Many new features , addtional modules , newer options , newer menu structure see screenshot below
