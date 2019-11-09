@@ -23,6 +23,7 @@
 		<script src=../js/jquery.js></script>
 		
 	';
+	
 	$date= date('D jS Y');$weatherfile =date('Y')."/".date('jMY');?>
     <br>
     	<script type="text/javascript">
@@ -44,7 +45,7 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[9] >1)
+				if ( rowData[11] >-51)
 					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[11])});
 					
 					
@@ -58,7 +59,7 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[9] >1)
+				if ( rowData[11] >-51)
 					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[11])});
 					//parseFloat(rowData[13])});
 				
