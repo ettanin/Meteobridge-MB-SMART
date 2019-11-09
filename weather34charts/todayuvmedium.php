@@ -14,20 +14,14 @@
 	####################################################################################################
 	
 	
-	include('preload.php');
-	$conv = 1;
-	if ($rainunit == 'in') {$conv= '0.0393701';}	
-	else if ($rainunit == 'mm'){$conv= '1';}
-	$interval = 1;
-	if ($rainunit == 'in') {$interval= '0.5';}	
-	else if ($rainunit == 'mm'){$interval= '5';}
+	include('preload.php');	
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>OUTDOOR TEMPERATURE DATABASE CHART</title>	
+		<title>OUTDOOR UV CHART</title>	
 		<script src=../js/jquery.js></script>
 		
 		
@@ -54,7 +48,7 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[2]>=0)
+				if ( rowData[3]>0)
 					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[5])});
 			}
 		}
@@ -62,11 +56,11 @@
 
 	function processData2(allText) {
 		var allLinesArray = allText.split('\n');
-		if(allLinesArray.length>=0){
+		if(allLinesArray.length>-50){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[2]>=0)
+				if ( rowData[3]>0)
 					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[5])});
 				
 			}
