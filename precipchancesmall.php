@@ -79,17 +79,23 @@ $parsed_weather34wujson = json_decode($weather34wuurl,false);
 	 }?>
 <div class="topframe">
 <div class='eqcontainer1' >
-<!-- probability--> 
+<!-- weather34 precipitation probability--> 
 <?php
 if ($wuskydayPrecipProb>=0) {
-    echo "<div class='eqcaution'> &nbsp;Probability</div>
-	<div class=eqtoday4-5><blue>".$wuskydayPrecipProb."%</blue></div>";}	
-    echo "</div><div style='position:absolute;margin-left:12px;width:50px;margin-top:-3px;font-size:.35em;color:#777;'>";
+    echo "<div class='eqcaution'> &nbsp;&nbsp;Probability</div>
+	<div class=eqtoday4-5><blue>".$wuskydayPrecipProb."%</blue></div>";}
+		
+    echo "	
+	<div class='probabilityamount'>";
 	if ($wuskydaysnow>0){ echo $wuskydaysnow ." cm</div>";}
  	else if ($wuskydayprecipIntensity>0){ echo $wuskydayprecipIntensity ." ".$rainunit."</div>";} 
- 	else echo "None</div>";		
- 	echo "<div style='position:absolute;width:110px;margin-left:90px;margin-top:-30px;font-size:.4em;color:#777;'>";	
- 	if ($wuskydaysnow>0){echo $wuskydayTime." Chance of Snow". $precipsnow;}
- 	else if ($wuskydayPrecipProb>20){echo $wuskydayTime." Chance of Rain".$preciprain;}
-	else if ($wuskydayPrecipProb>=0){echo $wuskydayTime." Low Probability ".$preciprain;}?>
+ 	else echo "</div>";	
+	
+		
+ 	echo "<div class='probabilityrain'>";	
+ 	if ($wuskydaysnow>0){echo $wuskydayTime." Expect <blue>Snow Showers</blue></div><probabilityicon>". $precipsnow."</probabilityicon>";}
+	else if ($wuskydayPrecipProb>50){echo $wuskydayTime." Expect <blue>Rain Showers</blue></div><probabilityicon>".$preciprain."</probabilityicon>";}
+ 	else if ($wuskydayPrecipProb>20){echo $wuskydayTime." Possible <blue>Rain Showers</blue></div><probabilityicon>".$preciprain."</probabilityicon>";}
+	else if ($wuskydayPrecipProb>10){echo $wuskydayTime." Low Probability </div><probabilityicon> ".$preciprain."</probabilityicon>";}
+	else if ($wuskydayPrecipProb>0){echo $wuskydayTime." Very Low Probability </div><probabilityicon> ".$preciprain."</probabilityicon>";}?>
 </div></div>

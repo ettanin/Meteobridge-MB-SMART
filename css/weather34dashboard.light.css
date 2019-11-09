@@ -9708,3 +9708,6 @@ weather34menunav > ul > li a{
 .charttempmodule{  position:relative;display:flex;margin-top:-3px; 
 width:220px;background:RGBA(243,244,247,.0);
 padding:0}
+.probabilityrain{font-family:weathertext2;position:absolute;width:80px;margin-left:-25px;margin-top:-20px;font-size:.35em;color:#555;display:inline;line-height:.9}
+.probabilityamount{position:absolute;margin-left:0;margin-top:-3px;font-size:.35em;color:#555;}
+probabilityicon{position:absolute;margin-left:53px;margin-top:-23px;font-size:.35em;}

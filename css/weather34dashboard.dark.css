@@ -9892,3 +9892,6 @@ weather34menunav > ul > li {
 position:relative;display:flex;margin-top:-20px; 
 width:220px;background:RGBA(243,244,247,.0);
 padding:0}
+.probabilityrain{font-family:weathertext2;position:absolute;width:80px;margin-left:-25px;margin-top:-20px;font-size:.35em;color:#aeb6bf;display:inline;line-height:.9}
+.probabilityamount{position:absolute;margin-left:3px;margin-top:-3px;font-size:.35em;color:#aeb6bf;}
+probabilityicon{position:absolute;margin-left:53px;margin-top:-23px;font-size:.35em;}
