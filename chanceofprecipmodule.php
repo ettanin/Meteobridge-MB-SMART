@@ -91,8 +91,7 @@ if($wuskydayPrecipProb>=0){echo '<div class=simsek style="background:RGBA(1,164,
 <div class="rainprob" > <?php echo $wuskydayTime?><valuetext>
 </valuetext></div></div></div></div></div>
 
-<div class="lightninginfo">
-
+<div class="precipinfo">
 <?php  //weatherflow air lightning output
 if ($wuskydaysnow>0){ echo 'Possible <blue>Snowfall</blue>';}
  else if ($wuskydayPrecipProb>0){ echo 'Possible <blue>Rainfall</blue>';}
@@ -103,19 +102,20 @@ if ($wuskydayPrecipProb>=70){echo "High <blue>Probability</blue>";}
  else if ($wuskydayPrecipProb>=20){echo "Possible <blue>Probability</blue>";}
  else if ($wuskydayPrecipProb>=0){echo "Low <blue>Probability</blue>";}
 ?><br> 
-Total expected<blue>
+Accumulation<blue>
 <?php 
  if ($wuskydaysnow>0){ echo $wuskydaysnow ." cm";}
  else if ($wuskydayprecipIntensity>0){ echo $wuskydayprecipIntensity ." ".$rainunit;} 
- else echo "None";
+ else echo "0 ".$rainunit;
  ?></blue> 
  <br><span style="float:right;margin-top:-25px;">
  <?php 
  if ($wuskydaysnow>0){echo $precipsnow;}
- else if ($wuskydayPrecipProb>0){echo $preciprain;}?>
+ else if ($wuskydayPrecipProb>0){echo $preciprain;}
+ else echo $preciprain;?>
  </span> 
 </div>
-<div class="rainconverter">
+<div class="rainconverter" style="text-transform:uppercase">
 <?php
 //active-quiet
 if($wuskydayPrecipProb>0){echo "<div class=rainconvertercircle>".$wuskydayPrecipType ;}else echo "<div class=rainconvertercircle>No Risk";?></div>

@@ -9895,3 +9895,21 @@ padding:0}
 .probabilityrain{font-family:weathertext2;position:absolute;width:80px;margin-left:-25px;margin-top:-20px;font-size:.35em;color:#aeb6bf;display:inline;line-height:.9}
 .probabilityamount{position:absolute;margin-left:3px;margin-top:-3px;font-size:.35em;color:#aeb6bf;}
 probabilityicon{position:absolute;margin-left:53px;margin-top:-23px;font-size:.35em;}
+.precipinfo {
+  width: 170px;
+  margin-top: 60px;
+  color: #aeb6bf;
+  border: 1px solid rgba(95, 96, 97, 0.1);
+  border-width: thin;
+  border-radius: 2px;
+  background: 0;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.20), 0 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.20), 0 4px 4px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  border-radius: 2px;
+  font-size: 0.55rem;
+  font-family: weathertext2;
+  position: absolute;
+  margin-left: 125px;
+  padding: 5px;
+  text-align: left;}

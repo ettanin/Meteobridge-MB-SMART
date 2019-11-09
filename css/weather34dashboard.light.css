@@ -9711,3 +9711,14 @@ padding:0}
 .probabilityrain{font-family:weathertext2;position:absolute;width:80px;margin-left:-25px;margin-top:-20px;font-size:.35em;color:#555;display:inline;line-height:.9}
 .probabilityamount{position:absolute;margin-left:0;margin-top:-3px;font-size:.35em;color:#555;}
 probabilityicon{position:absolute;margin-left:53px;margin-top:-23px;font-size:.35em;}
+.precipinfo {
+  width: 170px;
+  margin-top: 60px;
+  border: 1px solid rgba(95, 96, 97, 0.2);
+  border-radius: 2px;
+  font-size: 0.55rem;
+  font-family: weathertext2;
+  position: absolute;
+  margin-left: 125px;
+  padding: 5px;
+  text-align: left;}
