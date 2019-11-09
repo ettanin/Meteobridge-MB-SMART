@@ -8189,7 +8189,7 @@ weather34toptitle {
     box-sizing: border-box;
     height: 198px;
   }
-  .grid {
+  .grid,weather34thetime {
     display: none;
   }
   .grid>weather34topmodule {
@@ -9674,6 +9674,8 @@ weather34menunav {
   z-index: 100; 
   text-align:left;
   color:#555;
+  cursor: pointer;
+  pointer-events:auto;
 }
 weather34menunav:hover >weather34themenuicon{display:none}
 weather34menunav:hover {
