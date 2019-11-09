@@ -248,8 +248,8 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <div id=option></div></div>
   </weather34topmodule>
   </main>
-  
-  
+  <!-- optional chart grid layout on main page-->
+  <?php if($gridchart=='yes'){?>
   <main class="grid4">
   <weather34topmodule>
   <div class="weather34box">
@@ -259,8 +259,7 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <weather34topmodule>
    <div class="weather34box">
    <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Today']?> <?php echo $lang['Windspeed']?> (<?php echo $weather["wind_units"] ;?>)</div>
-   <div id=wind1></div></div></weather34topmodule>  
-   
+   <div id=wind1></div></div></weather34topmodule>   
 
   <weather34topmodule>
   <div class="weather34box">
@@ -272,8 +271,7 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Today']?> <?php echo $lang['Humidity']?> (%)</div>
   <div id=humidity1></div></div></weather34topmodule>
   </main>
-
-   
+<?php ;}?>
   
   <main class="grid5">
   <weather34topmodule>

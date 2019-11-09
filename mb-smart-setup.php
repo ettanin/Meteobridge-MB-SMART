@@ -62,6 +62,7 @@ $positionlastmodule   = "'. $_POST["positionlastmodule"]. '";
 $positionmooneq   = "'. $_POST["positionmooneq"]. '";
 $positionconsole   = "'. $_POST["positionconsole"]. '";
 $positionprecip   = "'. $_POST["positionprecip"]. '";
+$gridchart   = "'. $_POST["gridchart"]. '";
 $webcamurl   = "'. $_POST["webcamurl"]. '";
 $email    = "'. $_POST["email"]. '";
 $twitter   = "'. $_POST["twitter"]. '";
@@ -1109,7 +1110,29 @@ your nearly there :-) keep going
      
       <br> <br>
      
+     <div class="seperator"></div>  
+     
+     <div class= "stationvalue"> *Display chart grid row on main page (use with caution has charts may impact load performance)<br>
+      </div>
+       <br> <br>
+       <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M12 30 L24 16 12 2" />
+</svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+    <path d="M30 12 L16 24 2 12" />
+</svg>
+        <label name="gridchart"></label>
+        <select id="gridchart" name="gridchart" class="choose">  
+            <option><?php echo $gridchart ;?></option> 
+            <option>yes</option>
+            <option>no</option> 
+            
+                     </select>
+               
+     
+      <br> <br>
+     
      <div class="seperator"></div>   
+     
       
               
      </span>
