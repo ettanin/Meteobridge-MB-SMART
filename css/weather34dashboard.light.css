@@ -9722,3 +9722,7 @@ probabilityicon{position:absolute;margin-left:53px;margin-top:-23px;font-size:.3
   margin-left: 125px;
   padding: 5px;
   text-align: left;}
+.meteotextshowertext{font-family: weathertext2;postion:absolute;margin-left:30px;margin-top:10px;font-size:.35em;color:#555;text-align:left;line-height:.9;width:220px}
+.meteorsvgicon{position:absolute;color:#f5f7fc;padding-right :5px;top:0} 
+peak{color:#01A4B5;display:block;width:200px}
+.nextmeteotextshowertext{font-family: weathertext2;postion:absolute;margin-left:30px;margin-top:-5px;font-size:.35em;color:#555;text-align:left;line-height:.9;width:220px}

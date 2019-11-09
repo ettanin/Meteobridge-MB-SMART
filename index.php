@@ -277,10 +277,12 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <weather34topmodule>
   <div class="weather34box">
   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp; <?php // 3 options  
-  if ($positionprecip=='precipchancesmall.php') {
-      echo "Precipitation Probability";
-  } else if ($positionprecip=='eq.php') {
-      echo "Recent Regional ".$lang['Earthquake'];}?>
+   if ($positionprecip=='precipchancesmall.php') {
+      echo "Precipitation Probability";} 
+	  else if ($positionprecip=='eq.php') {
+      echo "Recent Regional ".$lang['Earthquake'];}	  
+	  else if ($positionprecip=='meteorshower-small.php') {
+      echo "Meteor Shower Data ";} ?>
   </div>
   <div id=precip></div></div></weather34topmodule>
   
