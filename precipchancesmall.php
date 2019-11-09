@@ -94,8 +94,8 @@ if ($wuskydayPrecipProb>=0) {
 		
  	echo "<div class='probabilityrain'>";	
  	if ($wuskydaysnow>0){echo $wuskydayTime." Expect <blue>Snow Showers</blue></div><probabilityicon>". $precipsnow."</probabilityicon>";}
-	else if ($wuskydayPrecipProb>50){echo $wuskydayTime." Expect <blue>Rain Showers</blue></div><probabilityicon>".$preciprain."</probabilityicon>";}
- 	else if ($wuskydayPrecipProb>20){echo $wuskydayTime." Possible <blue>Rain Showers</blue></div><probabilityicon>".$preciprain."</probabilityicon>";}
-	else if ($wuskydayPrecipProb>10){echo $wuskydayTime." Low Probability </div><probabilityicon> ".$preciprain."</probabilityicon>";}
-	else if ($wuskydayPrecipProb>0){echo $wuskydayTime." Very Low Probability </div><probabilityicon> ".$preciprain."</probabilityicon>";}?>
+	else if ($wuskydayPrecipProb>=50){echo $wuskydayTime." Expect <blue>Rain Showers</blue></div><probabilityicon>".$preciprain."</probabilityicon>";}
+ 	else if ($wuskydayPrecipProb>=20){echo $wuskydayTime." Possible <blue>Rain Showers</blue></div><probabilityicon>".$preciprain."</probabilityicon>";}
+	else if ($wuskydayPrecipProb>=10){echo $wuskydayTime." Low Probability </div><probabilityicon> ".$preciprain."</probabilityicon>";}
+	else if ($wuskydayPrecipProb>=0){echo $wuskydayTime." Very Low Probability </div><probabilityicon> ".$preciprain."</probabilityicon>";}?>
 </div></div>
