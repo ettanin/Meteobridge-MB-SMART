@@ -118,4 +118,4 @@ Accumulation<blue>
 <div class="rainconverter" style="text-transform:uppercase">
 <?php
 //active-quiet
-if($wuskydayPrecipProb>0){echo "<div class=rainconvertercircle>".$wuskydayPrecipType ;}else echo "<div class=rainconvertercircle>No Risk";?></div>
+if($wuskydayPrecipProb>0){echo "<div class=rainconvertercircle>".$wuskydayPrecipType ;}else echo "<div class=rainconvertercircle>Low";?></div>
