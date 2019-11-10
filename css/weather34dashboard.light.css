@@ -10623,17 +10623,17 @@ weather34menunav>ul>li a {
 .probabilityrain {
   font-family: weathertext2;
   position: absolute;
-  width: 80px;
-  margin-left: 65px;
-  margin-top: -20px;
+  margin-left: 60px;
   font-size: .35em;
-  color: #555;
-  line-height: .9
+  color: #555;  
+  line-height: .9;
+  width:80px;
+  margin-top:-20px;
 }
 
 .probabilityamount {
   position: absolute;
-  margin-left: 2px;
+  margin-left: 0;
   margin-top: -3px;
   font-size: .35em;
   color: #555;
@@ -10679,7 +10679,7 @@ probabilityicon {
 }
 
 peak {
-  color: #01A4B5;
+  color: #07727d;
   display: block;
   width: 200px
 }
@@ -10688,7 +10688,7 @@ peak {
   font-family: weathertext2;
   position: absolute;
   margin-left: 30px;
-  margin-top: -5px;
+  margin-top: 15px;
   font-size: .35em;
   color: #555;
   text-align: left;

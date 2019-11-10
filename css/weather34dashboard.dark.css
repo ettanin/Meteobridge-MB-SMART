@@ -10798,19 +10798,19 @@ weather34menunav>ul>li {
 }
 
 .probabilityrain {
-  font-family: weathertext2;
+font-family: weathertext2;
   position: absolute;
-  width: 80px;
-  margin-left: 65px;
-  margin-top: -20px;
+  margin-left: 60px;
   font-size: .35em;
   color: #aeb6bf;
-  line-height: .9
+  line-height: .9;
+  width: 80px;
+  margin-top: -20px;
 }
 
 .probabilityamount {
   position: absolute;
-  margin-left: 4px;
+  margin-left: 3px;
   margin-top: -3px;
   font-size: .35em;
   color: #aeb6bf;
@@ -10826,7 +10826,14 @@ probabilityicon {
 .precipinfo {
   width: 170px;
   margin-top: 60px;
-  border: 1px solid rgba(95, 96, 97, 0.2);
+  color: #aeb6bf;
+  border: 1px solid rgba(95, 96, 97, 0.1);
+  border-width: thin;
+  border-radius: 2px;
+  background: 0;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.20), 0 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.20), 0 4px 4px rgba(0, 0, 0, 0.15);
+  text-align: left;
   border-radius: 2px;
   font-size: 0.55rem;
   font-family: weathertext2;
@@ -10865,7 +10872,7 @@ peak {
   font-family: weathertext2;
   position: absolute;
   margin-left: 30px;
-  margin-top: -5px;
+  margin-top: 15px;
   font-size: .35em;
   color: #aeb6bf;
   text-align: left;
