@@ -10628,7 +10628,7 @@ weather34menunav>ul>li a {
   color: #555;  
   line-height: .9;
   width:80px;
-  margin-top:-20px;
+  margin-top:-17px;
 }
 
 .probabilityamount {
@@ -10642,7 +10642,7 @@ weather34menunav>ul>li a {
 probabilityicon {
   position: absolute;
   margin-left: 53px;
-  margin-top: -23px;
+  margin-top: -21px;
   font-size: .35em;
 }
 
