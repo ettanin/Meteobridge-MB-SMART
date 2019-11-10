@@ -92,15 +92,16 @@ if($wuskydayPrecipProb>=0){echo '<div class=simsek style="background:RGBA(1,164,
 </valuetext></div></div></div></div></div>
 
 <div class="precipinfo">
-<?php  //weatherflow air lightning output
+<?php  //weather precip
 if ($wuskydaysnow>0){ echo 'Possible <blue>Snowfall</blue>';}
- else if ($wuskydayPrecipProb>0){ echo 'Possible <blue>Rainfall</blue>';}
+ else if ($wuskydayPrecipProb>20){ echo 'Possible <blue>Rainfall</blue>';}
+ else if ($wuskydayPrecipProb>10){ echo 'Chance of <blue>Rainfall</blue>';}
  else echo 'No <blue>Precipitation</blue> expected'; ?><br>
 <?php 
 if ($wuskydayPrecipProb>=70){echo "High <blue>Probability</blue>";}
  else if ($wuskydayPrecipProb>=40){echo "Medium <blue>Probability</blue>";}
- else if ($wuskydayPrecipProb>=20){echo "Possible <blue>Probability</blue>";}
- else if ($wuskydayPrecipProb>=0){echo "Low <blue>Probability</blue>";}
+ else if ($wuskydayPrecipProb>=10){echo "Low <blue>Probability</blue>";}
+ else if ($wuskydayPrecipProb>=0){echo "No <blue>Probability</blue>";}
 ?><br> 
 Accumulation<blue>
 <?php 

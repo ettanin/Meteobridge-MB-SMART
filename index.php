@@ -62,7 +62,11 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 
   <weather34topmodule>
    <div class="weather34box">
-   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php if ($positionconsole=='forecast-small.php'){echo $lang['Forecast'];} else echo "Davis Console ".$lang['Forecastsummary'];?> </div>
+   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php if ($positionconsole=='forecast-small.php') {
+    echo $lang['Forecast'];
+} else {
+    echo "Davis Console ".$lang['Forecastsummary'];
+}?> </div>
   <div id=dewpoint-year></div></div>
   </weather34topmodule>
   </main>
@@ -238,7 +242,7 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <weather34topmodule>
   <div class="weather34box">
   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;
-  <?php // 3 options  
+  <?php // 3 options
   if ($positionmooneq=='luftdaten-small.php') {
       echo $lang['Air Quality'];
   } elseif ($positionmooneq=='heat-chill-year-month.php') {
@@ -249,7 +253,7 @@ if ($positionlastmodule=='airqualitymodule.php') {
   </weather34topmodule>
   </main>
   <!-- optional chart grid layout on main page-->
-  <?php if($gridchart=='yes'){?>
+  <?php if ($gridchart=='yes') {?>
   <main class="grid4">
   <weather34topmodule>
   <div class="weather34box">
@@ -276,13 +280,14 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <main class="grid5">
   <weather34topmodule>
   <div class="weather34box">
-  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp; <?php // 3 options  
+  <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp; <?php // 3 options
    if ($positionprecip=='precipchancesmall.php') {
-      echo "Precipitation Probability";} 
-	  else if ($positionprecip=='eq.php') {
-      echo "Recent Regional ".$lang['Earthquake'];}	  
-	  else if ($positionprecip=='meteorshower-small.php') {
-      echo "Meteor Shower Data ";} ?>
+       echo "Precipitation Probability";
+   } elseif ($positionprecip=='eq.php') {
+          echo "Recent Regional ".$lang['Earthquake'];
+      } elseif ($positionprecip=='meteorshower-small.php') {
+          echo "Meteor Shower Data ";
+      } ?>
   </div>
   <div id=precip></div></div></weather34topmodule>
   
@@ -301,10 +306,6 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <div class="weather34title2"><weather34homepagetop></weather34homepagetop>&nbsp;<?php echo $lang['Weather Station']?> Info</div>
   <div id=hardwareinfo2></div></div></weather34topmodule>
   </main>
-  
-  
-
-  
 
   <!-- Weather34 bottom small moudles end -->
    <!-- Weather34 Footer -->
