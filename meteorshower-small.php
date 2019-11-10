@@ -71,9 +71,9 @@ $meteorinfo3="<svg width='22px' height='22px' viewBox='0 0 16 16'><path fill='#0
 
  <div class="topframe">
  <div class="meteorsvgicon"> <?php echo $meteorinfo3?></div>
-<div class=meteotextshowertext>
+<div class=meteotextshowertext><blue>
 <?php if ($meteor_default)  {	echo $meteor_default;} 
-?> Shower Currently Visible   
+?></blue> Shower Visible   
 </div>
 <div class=nextmeteotextshowertext>
   <?php if ($meteor_nextevent)  {echo " <br>Next Meteor Shower<peak>",$meteor_nextevent ;} ?>    
