@@ -46,8 +46,8 @@ clear: both;
     text-shadow: 1px 1px 3px rgba(61, 70, 77, 0.2);
 }
 .cnt223 p a{
-color: #d91900;
-font-weight: bold;
+color: #01a4b4;
+font-weight: normal;
 }
 .cnt223 .x{
 float: right;
@@ -99,7 +99,11 @@ return false;
 Sorry your hardware or software interface is not compatible with this Weather34 designed template MB-SMART.
 <br/>
 <br/>
-<span class='close'>Supports only Meteobridge NANO(SD) or Meteobridge Pro <br><img src="img/weather34logo.svg" width='60px' alt="weather34 logo"></span>
+<span class='close'>Supports only Meteobridge 
+<a href="https://www.meteobridge.com/wiki/index.php/Meteobridge_NANO_SD" target="_blank" title="https://www.meteobridge.com/wiki/index.php/Meteobridge_NANO_SD">NANO(SD)</a> 
+or 
+<a href="https://www.meteobridge.com/wiki/index.php/Meteobridge_PRO" target="_blank" title="https://www.meteobridge.com/wiki/index.php/Meteobridge_PRO">Meteobridge Pro</a>
+<br><img src="img/weather34logo.svg" width='60px' alt="weather34 logo"></span>
 </p>
 </div>
 </div>
