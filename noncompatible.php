@@ -21,7 +21,7 @@ text-decoration: none;
 margin:0 auto;
 display: none;
 position: fixed;
-top:30px;
+top:25%;
 z-index: 101;
 }
 .cnt223{
