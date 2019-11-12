@@ -25,12 +25,12 @@ $meteor_events[]=array("event_start"=>mktime(0, 0, 0, 5, 5),"event_title"=>"ETA 
 $meteor_events[]=array("event_start"=>mktime(0, 0, 0, 7, 20),"event_title"=>"Delta Aquarids","event_end"=>mktime(23, 59, 59, 7, 28),);
 $meteor_events[]=array("event_start"=>mktime(0, 0, 0, 7, 29),"event_title"=>"Delta Aquarids","event_end"=>mktime(23, 59, 59, 7, 30),);
 $meteor_events[]=array("event_start"=>mktime(0, 0, 0, 8, 1),"event_title"=>"Perseids Meteor","event_end"=>mktime(23, 59, 59, 8, 10),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 8, 11),"event_title"=>"Perseids Meteor <br><peak>".$info." For Next Two Days Peak Viewing Period</peak>","event_end"=>mktime(23, 59, 59, 8, 13),);
+$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 8, 11),"event_title"=>"Perseids Meteor","event_end"=>mktime(23, 59, 59, 8, 13),);
 $meteor_events[]=array("event_start"=>mktime(0, 0, 0, 8, 14),"event_title"=>"Perseids Meteor","event_end"=>mktime(23, 59, 59, 8, 18),);
 $meteor_events[]=array("event_start"=>mktime(0, 0, 0, 10, 6),"event_title"=>"Draconids","event_end"=>mktime(23, 59, 59, 10, 7),);
 $meteor_events[]=array("event_start"=>mktime(0, 0, 0, 10, 20),"event_title"=>"Orionids Meteor","event_end"=>mktime(23, 59, 59, 10, 21),);
 $meteor_events[]=array("event_start"=>mktime(0, 0, 0, 11, 4),"event_title"=>"South Taurids","event_end"=>mktime(23, 59, 59, 11, 5),);
-$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 11, 11),"event_title"=>"North Taurids","event_end"=>mktime(23, 59, 59, 11, 13),);
+$meteor_events[]=array("event_start"=>mktime(0, 0, 0, 11, 11),"event_title"=>"North Taurids","event_end"=>mktime(23, 59, 59, 11, 12),);
 $meteor_events[]=array("event_start"=>mktime(0, 0, 0, 11, 13),"event_title"=>"Leonids Meteor","event_end"=>mktime(23, 59, 59, 11, 16),);
 $meteor_events[]=array("event_start"=>mktime(0, 0, 0, 11, 17),"event_title"=>"Leonids Meteor","event_end"=>mktime(23, 59, 59, 11, 18),);
 $meteor_events[]=array("event_start"=>mktime(0, 0, 0, 11, 19),"event_title"=>"Leonids Meteor","event_end"=>mktime(23, 59, 59, 11, 29),);
@@ -57,10 +57,11 @@ $meteor_eventsnext[]=array("event_start"=>mktime(0, 0, 0, 8, 11),"event_title"=>
 $meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 8, 13),"event_title"=>" Draconids October <ored>6th-10th</ored>","event_end"=>mktime(23, 59, 59, 10, 7),);
 $meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 10, 7),"event_title"=>" Orionids Oct <ored>21st-Oct 22nd</ored>","event_end"=>mktime(23, 59, 59, 10, 21),);
 $meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 10, 21),"event_title"=>" South Taurids <ored>Nov 4th- Nov 5th</ored>","event_end"=>mktime(23, 59, 59, 11, 5),);
-$meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 11, 5),"event_title"=>" North Taurids <ored>Nov 11th</ored>","event_end"=>mktime(23, 59, 59, 11, 13),);
-$meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 11, 13),"event_title"=>" Leonids Nov <ored>5th-Dec 3rd</ored>","event_end"=>mktime(23, 59, 59, 11, 18),);
-$meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 11, 18),"event_title"=>" Geminids Nov <ored>30th-Dec 17th</ored>","event_end"=>mktime(23, 59, 59, 12, 16),);
-$meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 12, 15),"event_title"=>" Ursids Dec <ored>17th-Dec 24th</ored>","event_end"=>mktime(23, 59, 59, 12, 18),);
+$meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 11, 5),"event_title"=>" North Taurids <ored>Nov 11th-12th</ored>","event_end"=>mktime(23, 59, 59, 11, 12),);
+$meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 11, 12),"event_title"=>" Leonids <ored>Nov 13th-Dec 3rd</ored>","event_end"=>mktime(23, 59, 59, 11, 16),);
+$meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 11, 16),"event_title"=>" Leonids Peaks <ored>Tonight</ored>","event_end"=>mktime(23, 59, 59, 11, 18),);
+$meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 11, 18),"event_title"=>" Geminids <ored>Nov 30th-Dec 17th</ored>","event_end"=>mktime(23, 59, 59, 12, 16),);
+$meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 12, 15),"event_title"=>" Ursids <ored>Dec 17th-Dec 24th</ored>","event_end"=>mktime(23, 59, 59, 12, 18),);
 $meteorNext=time();$meteorOP=false;
 foreach ($meteor_eventsnext as $meteor_check) {if ($meteor_check["event_start"]<=$meteorNext&&$meteorNext<=$meteor_check["event_end"]) {$meteorOP=true;$meteor_nextevent=$meteor_check["event_title"];}};
 //end meteor nevt event
