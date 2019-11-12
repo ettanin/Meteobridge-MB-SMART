@@ -104,3 +104,6 @@ if ($weather["temp_units"]=='C') {
 } else {
     echo "<weather34-barometerlimitminf><value>28</barometerlimitminf><weather34-barometerlimitmaxf><value>31</weather34-barometerlimitmaxf>";
 }?></div></div></div>
+<?php 
+if ($weather['mbplatform']=="VOCORE2" OR $weather['mbplatform']=="CARAMBOLA2"){;}
+else include('noncompatible.php');?>

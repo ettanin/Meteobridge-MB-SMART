@@ -82,7 +82,9 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 	<a href=dewpointchart.php data-lity><weather34homepagelinks></weather34homepagelinks> <?php echo $lang['Dewpoint'];?></a>&nbsp;&nbsp;
 	<a href=todaytemperaturechart.php data-lity><weather34homepagelinks></weather34homepagelinks> <?php echo $lang['Today']; ?> </a></div>
   <div id=temperature></div></weather34module>
-
+  <?php 
+if ($weather['mbplatform']=="VOCORE2" OR $weather['mbplatform']=="CARAMBOLA2"){;}
+else include('noncompatible.php');?>
 
   <weather34module> <!-- Main Module 2 Forecast-->
   <div class=actualt><?php echo $lang['Forecast'] ;?>  (<valuetitleunit>&deg;<?php echo $weather["temp_units"] ;?></valuetitleunit>) </div>
