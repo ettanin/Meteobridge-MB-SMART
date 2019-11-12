@@ -157,4 +157,7 @@ if ($suppliers =='None') {
 <li><!--hardware info---> <a href="meteocloud.php" data-lity title="View the Meteocloud Network"> <weather34menumarkerdot></weather34menumarkerdot> Meteocloud <menuinfobox>Network</menuinfobox></a></li> 
 
 <li><a href="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" data-title="Weather34 MB-Smart Version" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> Weather34 Designed <menuinfobox>&copy;2015-<?php echo date('Y');?></menuinfobox></a></li> 
-</div></div></ul></header>  
+</div></div></ul>
+<div style="position:absolute;margin-left:60px;bottom:10px;display:inline;font-size:.7em;opacity:.1">
+Weather34 &copy; 2015-<?php echo date('Y');?> MB-SMART <?php echo $mbsmartversion?>
+</header>  
