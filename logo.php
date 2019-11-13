@@ -31,9 +31,26 @@ $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime){$weather34na
 		return $weather34nanotimeago;}?>
   <div class=nanouptime><weather34menumarkerred></weather34menumarkerred>&nbsp;<?php echo $lang['Interface Uptime']?>:<oblue> <?php echo convert($nanosduptime)?></oblue></div></div>
   <br /><br /><br /><br /> 
-  <div class="davisimg"><img src=img/weather34-davis-vp2.svg width="110rem"/></div>
-  <div class=hardwareimg2><a href="https://www.davisinstruments.com/solution/vantage-pro2/" title="https://www.davisinstruments.com/solution/vantage-pro2/" target="_blank" class=hardwareimg2>
+  <div class="davisimg">
+  <?php  
+  if ($weatherhardware=='Davis Vantage Pro2+'){echo ' 
+  <img src=img/weather34-davis-vp2.svg width="90rem" alt="Davis Vantage Pro2" title="Davis Vantage Pro2"/>';}  
+  else if ($weatherhardware=='Davis Vantage Pro2'){echo ' 
+  <img src=img/weather34-davis-vp2.svg width="90rem" alt="Davis Vantage Pro2" title="Davis Vantage Pro2"/>';}  
+  else if ($weatherhardware=='Davis Vantage Vue' ){echo ' 
+  <img src=img/davisvue.svg width="90rem" alt="Davis Vantage Vue" title="Davis Vantage Vue" style="margin-top:5px;"/>';}  
+  else if ($weatherhardware=='Davis Envoy8x' ){echo ' 
+  <img src=img/designedfordavisenvoy8x.svg width="85rem" alt="Davis Envoy8x" title="Davis Envoy8x" style="margin-top:5px;"/>';}
+  ?>
+  
+  
+  </div>
+  <div class=hardwareimg2>
+  <a href="https://www.davisinstruments.com/solution/vantage-pro2/" title="https://www.davisinstruments.com/solution/vantage-pro2/" target="_blank" class=hardwareimg2>
   <?php echo $lang['Weather Station'];?></a></div>
+
+
+  
   <div class=hardware><weather34menumarkerblue></weather34menumarkerblue>&nbsp;<?php echo $weatherhardware;?></div>
   <div class=hardwareinfo><weather34menumarkerorange></weather34menumarkerorange>&nbsp;<?php echo $lang['Installed']?>: <?php echo $hardwareinstalled;?></div>
   <div class=hardwareuptime><weather34menumarkerred></weather34menumarkerred>&nbsp;<?php echo $lang['Battery']?>:
