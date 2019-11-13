@@ -44,7 +44,7 @@ if($units!='metric'){echo '<a  href="./?units=metric"> <metricgrey>KM/H</metricg
     <svg id="weather34 options icon" width="24" height="24" viewBox="0 0 24 24">
     <path fill="currentcolor" d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z"/>
     <path d="M0 0h24v24H0z" fill="none"/></svg><weather34themenu><?php echo $lang['Menu Options'];?></weather34themenu></div>
-<div class=weather34thinborder>--</div>
+<div class=weather34thinborder></div>
 
 <!--tools-->
 <li><a href="#"><weather34themenusection> TOOLS</weather34themenusection></a></li>
@@ -54,7 +54,7 @@ if($units!='metric'){echo '<a  href="./?units=metric"> <metricgrey>KM/H</metricg
 } else {
     echo ' <svg id="weather34 locked" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="#06a2b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 9 9 5 16 5 23 5 23 9 23 15 M16 20 L16 23" /><circle cx="16" cy="24" r="1" /></svg> <menuinfobox>Locked</menuinfobox>';
 }?> </a></li>
-<div class=weather34thinborder>--</div>
+<div class=weather34thinborder></div>
 
 <!-- theme-->
 <li><a href="#"><weather34themenusection> UI THEME</weather34themenusection></a></li>
@@ -63,7 +63,7 @@ if($units!='metric'){echo '<a  href="./?units=metric"> <metricgrey>KM/H</metricg
 if($theme=='dark'){echo' <weather34menumarkerdotmode></weather34menumarkerdotmode> Light <menuinfobox>Mode</menuinfobox>';}
 else{echo'<weather34menumarkerdot></weather34menumarkerdot> Dark <menuinfobox>Mode</menuinfobox>';}?></a></li>
 </a></li>
-<div class=weather34thinborder>--</div>
+<div class=weather34thinborder></div>
 <li><a href="#"><weather34themenusection> UNITS</weather34themenusection></a></li>
 
 <!-- units -->
@@ -74,7 +74,7 @@ if($units!='metric'){echo '<li> <a  href="./?units=metric"> <weather34menumarker
 <menuinfobox>&deg;C</menuinfobox></a> ';}
 if($units!='uk'){echo '<li> <a  href="./?units=uk">  <weather34menumarkerdot></weather34menumarkerdot> UK <menuinfobox>MPH</menuinfobox> <menuinfobox>&deg;C</menuinfobox></a>';}?>
 </li>
-<div class=weather34thinborder>--</div>
+<div class=weather34thinborder></div>
 
 <li><a href="#"><themenusection> EXTRAS</themenusection></a></li>
 <!--webcam--->
@@ -83,11 +83,11 @@ else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weat
 
 <li><!--contact info---> <a href="bio.php" data-lity title="Weather Station Owner Contact Card Info"> <weather34menumarkerdot></weather34menumarkerdot> Contact <menuinfobox>Info</menuinfobox> </a></li> 
 <li><!--hardware info---> <a href="stationinfo.php" data-lity title="Hardware Weather Station Hardware Info"> <weather34menumarkerdot></weather34menumarkerdot> Hardware <menuinfobox>Info</menuinfobox></a></li>  
-<p>
+
 <!---languages---> 
    <?php if ($languages=="yes") {
     echo '
-   <div class=weather34thinborder>--</div>   
+   <div class=weather34thinborder></div>   
    <li><a href="">   
    <weather34themenusection>'.$lang["language"], '</weather34themenusection>  </a></li>','    
   <center>
@@ -101,7 +101,7 @@ else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weat
    ';
 }?></center>   
    
- <div class=weather34thinborder>--</div> </div>
+ <div class=weather34thinborder></div> </div>
  <!---credits | download info please do not remove credits if so no support is given it is not much to ask--->   
 <li><a href="#"><weather34themenusection> CREDITS & INFO</weather34themenusection></a></li> 
 <?php  //suppliers
