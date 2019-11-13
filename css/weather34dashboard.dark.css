@@ -10514,7 +10514,7 @@
         .weather34themenuicon2 {
             position: absolute;
             color: #b83603;
-            top: 7px;
+            top: 17px;
             left: 115px;
             line-height: 1;
         }
@@ -10726,6 +10726,6 @@
         
         nav>.iconcolor {
             color: #B83603;
-            margin-top: 4px;
-            margin-left: 5px;
+            margin-top: 5px;
+            margin-left: 10px;
         }

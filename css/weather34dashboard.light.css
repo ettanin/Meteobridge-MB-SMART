@@ -10348,7 +10348,7 @@ weather34themenu {
 .weather34themenuicon2 {
     position: absolute;
     color: #01a4b5;
-    top: 7px;
+    top: 17px;
     left: 115px;
     line-height: 1;
 }
@@ -10547,11 +10547,11 @@ nav li a {
     padding: 5px 5px;
     font-size: 11px;
     font-family: system;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 nav>.iconcolor {
     color: #28A4B5;
-    margin-top: 4px;
-    margin-left: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
 }
