@@ -84,11 +84,10 @@ Contact <menuinfobox>Info</menuinfobox></a></li>
 <li><!--hardware info--> <a href="weather34stationhardware.php" data-lity title="Hardware WEATHERSTATION Info">
 <weather34menumarkerdot></weather34menumarkerdot> 
 Hardware <menuinfobox>Info</menuinfobox></a></li>
-<div class=weather34thinborder>--</div>
-
 <!---languages---> 
-<?php if ($languages=="yes") {
-    echo '   
+   <?php if ($languages=="yes") {
+    echo '
+   <div class=weather34thinborder>--</div>   
    <li><a href="">   
    <weather34themenusection>'.$lang["language"], '</weather34themenusection>  </a></li>','    
   <center>
@@ -100,14 +99,40 @@ Hardware <menuinfobox>Info</menuinfobox></a></li>
   <a href="index.php?lang=sp"><img src="img/flags/sp.svg"  title="Spanish" width="20px" height="20px"></a>&nbsp; 
   <a href="index.php?lang=sw"><img src="img/flags/sw.svg"  title="Swedish" width="20px" height="20px"></a>&nbsp;  
    ';
-}?></center>      
+}?></center>   
+   
  <div class=weather34thinborder>--</div> </div>
+ <!---credits | download info please do not remove credits if so no support is given it is not much to ask--->   
+<li><a href="#"><weather34themenusection> CREDITS & INFO</weather34themenusection></a></li> 
+<?php  //suppliers
+if ($suppliers =='Weather Spares') {
+    echo '<li><a href="https://weatherspares.co.uk" title="https://weatherspares.co.uk" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>UK</menuinfobox>';
+}
+if ($suppliers =='Prodata Weather Systems') {
+    echo '<li><a href="https://shop.weatherstations.co.uk" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>UK</menuinfobox>';
+}
+if ($suppliers =='Weerspecialist') {
+    echo '<li><a href="https://www.weerstationkopen.nl" title="https://www.weerstationkopen.nl" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>Netherlands</menuinfobox>';
+}
+if ($suppliers =='Weerhuisje') {
+    echo '<li><a href="https://weerhuisje.nl" title="https://weerhuisje.nl" target="_blank"> <weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>Netherlands</menuinfobox>';
+}
+if ($suppliers =='Soluzionimeteo') {
+    echo '<li><a href="https://www.soluzionimeteo.it/content/category/1-home" title="https://www.soluzionimeteo.it/content/category/1-home" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>Italy</menuinfobox>';
+}
+if ($suppliers =='Scaled Instruments') {
+    echo '<li><a href="https://www.scaledinstruments.com" title="https://www.scaledinstruments.com" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>USA</menuinfobox>';
+}
+if ($suppliers =='Ambient Weather') {
+    echo '<li><a href="https://www.ambientweather.com" title="https://www.ambientweather.com" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>USA</menuinfobox>';
+}
+if ($suppliers =='None') {
+    echo '';
+}?></a></li> 
 
-<!-- credits-->
-<li><a href="#"><weather34themenusection> CREDITS & INFO</weather34themenusection></a></li>
-<!---credits | download info--> 
-<?php // please do not remove this and if so no support is given it is not much to ask //?>
-<li><!--supplier info--> <a href="https://weatherspares.co.uk" title="Weatherspares UK" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> Weatherspares <menuinfobox>UK</menuinfobox></a></li>
-<li><!--Licence Info--> <a href="licence.php" data-lity title="Licence & Download Info"><weather34menumarkerdot></weather34menumarkerdot> Licence & Download <menuinfobox>Rev 1.05</menuinfobox></a></li> 
-<li><!--copyright--> <a href="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" title="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> Weather34 Designed <menuinfobox>&copy;2015-<?php echo date('Y');?></menuinfobox></a></li>
+<li><!--hardware info---> <a href="licence.php" data-lity title="Weather34 MB-SMART Licence Info and Download"> <weather34menumarkerdot></weather34menumarkerdot> Download MB-SMART <menuinfobox><?php echo $mbsmartversion?></menuinfobox></a></li> 
+<li><!--hardware info---> <a href="meteocloud.php" data-lity title="View the Meteocloud Network"> <weather34menumarkerdot></weather34menumarkerdot> Meteocloud <menuinfobox>Network</menuinfobox></a></li> 
+
+<li><a href="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" data-title="Weather34 MB-Smart Version" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> Weather34 Designed <menuinfobox>&copy;2015-<?php echo date('Y');?></menuinfobox></a></li> 
+</div></div>
 </ul></nav></header>
