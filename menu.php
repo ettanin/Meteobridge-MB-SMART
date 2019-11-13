@@ -86,8 +86,7 @@ Hardware <menuinfobox>Info</menuinfobox></a></li>
   <a href="index.php?lang=sp"><img src="img/flags/sp.svg"  title="Spanish" width="20px" height="20px"></a>&nbsp; 
   <a href="index.php?lang=sw"><img src="img/flags/sw.svg"  title="Swedish" width="20px" height="20px"></a>&nbsp;  
    ';
-}?></center>   
-   
+}?></center>      
  <div class=weather34thinborder>--</div> </div>
 
 <!-- credits-->

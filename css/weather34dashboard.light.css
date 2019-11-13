@@ -10553,5 +10553,6 @@ nav li a {
 
 nav>.iconcolor {
     color: #28A4B5;
-    margin-top: 4px
+    margin-top: 4px;
+    margin-left: 5px;
 }
