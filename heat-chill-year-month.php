@@ -50,7 +50,7 @@ include('livedata.php');header('Content-type: text/html; charset=utf-8');date_de
 <div class="tmonthmax" style="margin-left:-5px;"><?php echo $heatindindexmaxtime2 ;?></div>
 <div class="tmonthconv" style="margin-left:-10px;">Max Heat Index</div>
 
-<?php if ($weather["uvymax"]>0) {?>
+<?php if ($weather["uvymax"]>0 && $weather["uvymax"]<13) {?>
 <div class="tempavgthisyear" style="margin-left:10px;font-weight:500">
 <?php //max UV year
 if ($weather["uvymax"]>10) {
