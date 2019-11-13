@@ -1,4 +1,17 @@
 
+<?php
+    ####################################################################################################
+	#	MB-SMART TEMPLATE by BRIAN UNDERDOWN 2015-19                                                   #
+    #	CREATED FOR HOMEWEATHERSTATION TEMPLATE at                                                     #
+    #     https://weather34.com/homeweatherstation/index.html                                          # 
+	# 	                                                                                               #
+	# 	                                                                                               #
+	# 	WEATHER34 MENU MB-SMART November 2019      	                                                   #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+    ####################################################################################################
+   ?>
+
 <div class="weather34admin"><header class="weather34admin__header">
 <div class="weather34topbarmail">
 <div class="topbar34-circle1"><div class="topbar34-circle2"></div></div>
