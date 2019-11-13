@@ -26,7 +26,7 @@ if($units!='us'){echo '<a  href="./?units=us"> <metricgrey>US</metricgrey> <topb
 if($units!='metric'){echo '<a  href="./?units=metric"> <metricgrey>KM/H</metricgrey> <topbarmetricc>&deg;C</topbarmetricc>&nbsp;&nbsp;</a>';}
 ?>
 </div>
-<weather34toptitle>Weather34 Private Weather Station</weather34toptitle>
+<weather34toptitle><?php echo $stationName;?>&nbsp;Weather Station</weather34toptitle>
 <div class="weather34toolbar">
 <div class="weather34toolbar__right"><weather34thetime><?php echo $menuclocksvg;?>&nbsp; <div id="theTime"></weather34thetime></div></div>
 <div class="weather34-theme-switch-wrapper"><div class="weather34-theme-switch">
@@ -76,14 +76,14 @@ if($units!='uk'){echo '<li> <a  href="./?units=uk">  <weather34menumarkerdot></w
 </li>
 <div class=weather34thinborder>--</div>
 
-<!-- info-->
-<li><a href="#"><weather34themenusection> STATION INFO</weather34themenusection></a></li>
-<li><!--contact info--> <a href="bio.php" data-lity title="Contact WEATHERSTATION Info">
-<weather34menumarkerdot></weather34menumarkerdot> 
-Contact <menuinfobox>Info</menuinfobox></a></li> 
-<li><!--hardware info--> <a href="weather34stationhardware.php" data-lity title="Hardware WEATHERSTATION Info">
-<weather34menumarkerdot></weather34menumarkerdot> 
-Hardware <menuinfobox>Info</menuinfobox></a></li>
+<li><a href="#"><themenusection> EXTRAS</themenusection></a></li>
+<!--webcam--->
+<?php if($webcamurl==''){;} 
+else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weather34menumarkerdot></weather34menumarkerdot> Web Cam <menuinfobox>Stream</menuinfobox></a></li>';?>
+
+<li><!--contact info---> <a href="bio.php" data-lity title="Weather Station Owner Contact Card Info"> <weather34menumarkerdot></weather34menumarkerdot> Contact <menuinfobox>Info</menuinfobox> </a></li> 
+<li><!--hardware info---> <a href="stationinfo.php" data-lity title="Hardware Weather Station Hardware Info"> <weather34menumarkerdot></weather34menumarkerdot> Hardware <menuinfobox>Info</menuinfobox></a></li>  
+<p>
 <!---languages---> 
    <?php if ($languages=="yes") {
     echo '
