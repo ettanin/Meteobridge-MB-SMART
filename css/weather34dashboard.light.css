@@ -10224,7 +10224,7 @@ weather34themenu {
     position: absolute;
     color: #01a4b5;
     top: 17px;
-    left: 115px;
+    left: 15px;
     line-height: 1;
 }
 
@@ -10368,21 +10368,34 @@ peak {
 
 nav {
     position: absolute;
-    width: 15rem;
+    text-align: left;
+    width: 30px;
     top: 5px;
     float: left;
     z-index: 50;
-    text-align: left;
     font-family: system;
     padding: 5px;
     padding-top: 0;
     padding-left: 0;
+    background: 0
 }
 
 nav>a {
     display: inline-block;
     background: 0;
     transition: background .3s ease;
+    -webkit-transition: background .3s ease;
+    -moz-transition: background .3s ease;
+    -ms-transition: background .3s ease;
+    -o-transition: background .3s ease;
+    position: absolute;
+    text-align: left;
+    width: 15rem;
+    z-index: 50;
+    font-family: system;
+    padding: 5px;
+    padding-top: 0;
+    padding-left: 0;
 }
 
 nav:hover>a {
@@ -10397,7 +10410,7 @@ nav>a div {
     position: relative;
     text-align: left;
     width: 40px;
-    height: 40px;
+    height: 40px
 }
 
 nav ul {
@@ -10412,6 +10425,8 @@ nav ul {
     display: none;
     text-align: left;
     height: 100vh;
+    width: 15rem;
+    margin-top: 35px
 }
 
 nav li a {
@@ -10422,11 +10437,14 @@ nav li a {
     padding: 5px 5px;
     font-size: 11px;
     font-family: system;
-    padding-left: 20px;
+    padding-left: 15px
 }
 
 nav>.iconcolor {
-    color: #28A4B5;
+    color: #28a4b5;
     margin-top: 5px;
     margin-left: 10px;
+    max-width: 24px;
+    overflow: hidden;
+    background: 0
 }
