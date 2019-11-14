@@ -87,14 +87,14 @@ if($units!='metric'){echo '<a  href="./?units=metric"> <metricgrey>KM/H</metricg
 <div class=weather34thinborder></div>
 
 <!-- theme-->
-<li><a href="#"><weather34themenusection> UI THEME</weather34themenusection></a></li>
+<li><a href="#"><weather34themenusection><?php echo $smalldots?> UI THEME</weather34themenusection></a></li>
 <li><a href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>>
 <?php //theme
 if($theme=='dark'){echo' <weather34menumarkerdotmode></weather34menumarkerdotmode> Light <menuinfobox>Mode</menuinfobox>';}
 else{echo'<weather34menumarkerdot></weather34menumarkerdot> Dark <menuinfobox>Mode</menuinfobox>';}?></a></li>
 </a></li>
 <div class=weather34thinborder></div>
-<li><a href="#"><weather34themenusection> UNITS</weather34themenusection></a></li>
+<li><a href="#"><weather34themenusection><?php echo $smalldots?> UNITS</weather34themenusection></a></li>
 
 <!-- units -->
 <?php //units
@@ -106,7 +106,7 @@ if($units!='uk'){echo '<li> <a  href="./?units=uk">  <weather34menumarkerdot></w
 </li>
 <div class=weather34thinborder></div>
 
-<li><a href="#"><themenusection> EXTRAS</themenusection></a></li>
+<li><a href="#"><weather34themenusection><?php echo $smalldots?> EXTRAS</weather34themenusection></a></li>
 <!--webcam--->
 <?php if($webcamurl==''){;} 
 else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weather34menumarkerdot></weather34menumarkerdot> Web Cam <menuinfobox>Stream</menuinfobox></a></li>';?>
@@ -133,7 +133,7 @@ else echo '<li> <a href="cam.php" data-lity title="WEATHERSTATION WEBCAM"> <weat
    
  <div class=weather34thinborder></div> </div>
  <!---credits | download info please do not remove credits if so no support is given it is not much to ask--->   
-<li><a href="#"><weather34themenusection> CREDITS & INFO</weather34themenusection></a></li> 
+<li><a href="#"><weather34themenusection><?php echo $smalldots?> CREDITS & INFO</weather34themenusection></a></li> 
 <?php  //suppliers
 if ($suppliers =='Weather Spares') {
     echo '<li><a href="https://weatherspares.co.uk" title="https://weatherspares.co.uk" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> '.$suppliers.' <menuinfobox>UK</menuinfobox>';
@@ -165,4 +165,5 @@ if ($suppliers =='None') {
 
 <li><a href="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" data-title="Weather34 MB-Smart Version" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> Weather34 Designed <menuinfobox>&copy;2015-<?php echo date('Y');?></menuinfobox></a></li> 
 </div></div>
+<div class=weather34thinborder></div>
 </ul></nav></header>
