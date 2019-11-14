@@ -35,7 +35,7 @@ if($units!='metric'){echo '<a  href="./?units=metric"> <metricgrey>KM/H</metricg
 <nav> 
  <!-- weather34 dot menu svg-->      
 <a href="#" class="iconcolor">
-<svg id="weather34 dot menu" width="26pt" viewBox="0 0 720.000000 560.000000" preserveAspectRatio="xMidYMid meet">
+<svg id="weather34 dot menu" width="23pt" viewBox="0 0 720.000000 560.000000" preserveAspectRatio="xMidYMid meet">
 <g transform="translate(0.000000,560.000000) scale(0.100000,-0.100000)" fill="currentcolor" stroke="none">
 <path d="M485 5341 c-255 -73 -435 -312 -435 -576 0 -268 182 -504 445 -581
 80 -23 230 -23 310 0 314 91 500 398 431 709 -50 222 -216 396 -432 451 -83
