@@ -10614,10 +10614,10 @@ nav li a {
 }
 
 nav>.iconcolor {
-    color: #b83603;
-    margin-top: 5px;
+    color: #aeb6bf;
+    margin-top: 2px;
     margin-left: 10px;
-    max-width: 24px;
+    max-width: 42px;
     overflow: hidden;
     background: 0
 }
