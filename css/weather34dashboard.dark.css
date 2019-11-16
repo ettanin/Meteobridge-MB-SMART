@@ -6057,13 +6057,13 @@ topbarmetricc {
 }
 
 topbarimperialf {
-    color: #aeb6bf;
+    color: whitesmoke;
     border: 1px solid hsla(200, 1%, 61%, .4);
     opacity: .8
 }
 
 topbarmetricc {
-    color: #aeb6bf;
+    color: whitesmoke;
     border: 1px solid hsla(200, 1%, 61%, .4);
     opacity: .8
 }
@@ -8157,7 +8157,7 @@ weather34thetime {
 }
 
 .weather34btn--primary {
-    color: #aeb6bf;
+    color: whitesmoke;
     background-color: rgba(86, 95, 103, 0);
     max-height: 22px;
     font-family: Arial, Helvetica, sans-serif;
@@ -8169,7 +8169,7 @@ weather34thetime {
 
 .weather34btn--primary a {
     position: relative;
-    color: #aeb6bf;
+    color: whitesmoke;
     font-size: .85em;
     font-weight: 500;
     left: 65px;
@@ -10254,7 +10254,7 @@ purpleluft {
 }
 
 .weather34-theme-switch a {
-    color: #aeb6bf;
+    color: whitesmoke;
     font-family: system
 }
 
@@ -10332,7 +10332,7 @@ wind-dir-avgmonth {
 }
 
 metricgrey {
-    color: #aeb6bf;
+    color: whitesmoke;
     font-weight: 500;
     font-size: 9px
 }
@@ -10583,10 +10583,19 @@ nav li a {
 }
 
 nav>.iconcolor {
-    color: #aeb6bf;
+    color: silver;
     margin-top: 4px;
     margin-left: 10px;
     max-width: 42px;
     overflow: hidden;
     background: 0
+}
+.closethenav {
+    display: flex;    
+    color: silver;
+    font-size: 0.8em;
+    font-family: system;    
+    float: right;   
+    margin-right:10px;
+    margin-top:20px; 
 }

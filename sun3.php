@@ -49,8 +49,6 @@ $darkhours = 23 - $lighthours; $darkminutes = 60 - $lightmins;if ($darkminutes<1
 <canvas id="sundial" class="suncanvasstyle" width="160" height="160"></canvas>
 
 <div class="weather34sunclock"><div id="poscircircle"></div></div></div>
-<div class="weather34moonphasem">'.$lang['Moonphase'].' <br>'.$weather["moonphase"].'<br>'.$lang['Rise'].''.$weather['moonrise'].'</div>
-<div class="weather34luminancem">'.$lang['Luminance'].' <br> '.$weather["luminance"].'% '.$luminance.'<br>'.$lang['Set'].' '.$weather['moonset'].'</div>
 <div class="daylightvalue1" ><daylightestimated>'.$lang['Estimated'].'</daylightestimated><hrs>hrs</hrs><hours>&nbsp;&nbsp;'.$hrs.'</hours> <minutes>'.$min.'</minutes> <br>&nbsp;<period>'.$txt.'</period><min>min</min></div>
 </div>';
 $d_crcl = 24*60/2;function clc_crcl ($integer){  global $d_crcl ;$h= (int) date ('H',$integer);$m = (int) date ('i',$integer);$calc = $m + $h*60; $calc= (float) 0.5 + ($calc / $d_crcl );if ($calc > 2.0) { $calc = $calc - 2;}return round ($calc,5);}$start  = clc_crcl ($result['sunrise']);$end    = clc_crcl ($result['sunset']);$pos    = clc_crcl ($now);if ($now > $result['sunset'] || $now < $result['sunrise'] ){$sn_clr = 'rgba(86,95,103,0)';}else {$sn_clr = 'rgba(255, 112,50,1)';}echo '

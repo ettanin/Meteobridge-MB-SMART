@@ -6135,13 +6135,13 @@ topbarmetricc {
 }
 
 topbarimperialf {
-    color: #aeb6bf;
+    color: whitesmoke;
     border: 1px solid hsla(200, 1%, 61%, 0.4);
     opacity: .8;
 }
 
 topbarmetricc {
-    color: #aeb6bf;
+    color: whitesmoke;
     border: 1px solid hsla(200, 1%, 61%, 0.4);
     opacity: .8;
 }
@@ -7165,7 +7165,7 @@ hardwarelogo3 {
 }
 
 .weather34btn--primary {
-    color: silver;
+    color:whitesmoke;
     background-color: 0;
     max-height: 22px;
     font-family: Arial, Helvetica, sans-serif;
@@ -7177,7 +7177,7 @@ hardwarelogo3 {
 
 .weather34btn--primary a {
     position: relative;
-    color: silver;
+    color: whitesmoke;
     font-size: 0.85em;
     font-weight: 500;
     left: 65px;
@@ -8364,7 +8364,7 @@ weather34toptitle {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    color: #aeb6bf;
+    color:whitesmoke;
     background: 0;
     line-height: 1;
     padding: 3px;
@@ -10099,7 +10099,7 @@ purpleluft {
 }
 
 .weather34-theme-switch a {
-    color: #aeb6bf;
+    color: whitesmoke;
     font-family: system;
 }
 
@@ -10161,7 +10161,7 @@ wind-dir-avgmonth {
 }
 
 metricgrey {
-    color: #aeb6bf;
+    color: whitesmoke;
     font-weight: 500;
     font-size: 9px;
 }
@@ -10416,4 +10416,13 @@ nav>.iconcolor {
     max-width: 42px;
     overflow: hidden;
     background: 0
+}
+.closethenav {
+    display: flex;    
+    color: #009bab;
+    font-size: 0.8em;
+    font-family: system;    
+    float: right;   
+    margin-right:10px;
+    margin-top:20px; 
 }
