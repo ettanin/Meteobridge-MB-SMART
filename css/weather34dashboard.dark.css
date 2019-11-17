@@ -224,7 +224,11 @@ a {
     border-bottom: .1rem solid rgba(68, 145, 155, .1);
     margin-top: -32px;
     margin-left: 212px;
-    padding: 2px
+    padding: 2px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .humidity,
@@ -489,7 +493,11 @@ sup {
     border-radius: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: #ff7c39
+    background: #ff7c39;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 ::scrollbar-thumb,
@@ -518,7 +526,11 @@ uv0 {
     left: 2px;
     top: -3px;
     border: 2px solid #fff;
-    border-radius: 50%
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .rainvalue span {
@@ -722,7 +734,11 @@ suptemp {
     color: #aeb6bf;
     font-weight: 200;
     width: 5em;
-    letter-spacing: .05em
+    letter-spacing: .05em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .weather34windspeed>weather34windunitidspeed {
@@ -781,7 +797,11 @@ suptemp {
     color: #aeb6bf;
     font-weight: 200;
     width: 5em;
-    letter-spacing: .05em
+    letter-spacing: .05em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .weather34windgust weather34windunitidspeed1 {
@@ -858,7 +878,11 @@ suptemp {
     border-radius: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: #ff9350
+    background: #ff9350;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .thearrow1:before {
@@ -869,7 +893,11 @@ suptemp {
     left: 2px;
     top: -3px;
     border: 2px solid #fff;
-    border-radius: 50%
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .homeweathercompass1>.windirectiontext1 {
@@ -980,7 +1008,11 @@ suptemp {
 .Circle2,
 .Circle3 {
     right: -50px;
-    border-radius: 50%
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .Circle2 {
@@ -1046,7 +1078,11 @@ suptemp3 {
     left: 35%;
     left: calc(50% - 43px);
     color: #777;
-    font-size: 10px
+    font-size: 10px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
 }
 
 .weatheroffline:after,
@@ -1055,7 +1091,11 @@ suptemp3 {
     left: 48%;
     width: 2px;
     border-radius: 5px;
-    position: absolute
+    position: absolute;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .blank {
@@ -1258,7 +1298,11 @@ greenf {
     position: relative;
     padding: 1px;
     border-radius: 2px;
-    margin-left: 35px
+    margin-left: 35px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 yellow,
@@ -1328,7 +1372,11 @@ tempyellow {
     float: left;
     width: 60px;
     margin-bottom: 8px;
-    margin-top: 0
+    margin-top: 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .tempgreenfeels span {
@@ -1412,7 +1460,11 @@ tempyellow {
     position: relative;
     border-radius: 2px;
     padding: 1px;
-    float: left
+    float: left;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .barometerblue {
@@ -1487,7 +1539,11 @@ tempyellow {
     margin-left: 5px;
     float: left;
     width: 55px;
-    font-size: 14px
+    font-size: 14px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .homeweathercompass2,
@@ -1531,7 +1587,8 @@ tsteady {
     border-left-color: transparent;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    margin: auto
+    margin: auto;
+    -o-border-radius: 50%;
 }
 
 .homeweathercompass2 {
@@ -1615,7 +1672,11 @@ tsteady {
     float: left;
     width: 60px;
     line-height: 10px;
-    font-size: 10px
+    font-size: 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .barometertrend2 span {
@@ -1676,7 +1737,11 @@ convtext {
     left: 2px;
     top: -5px;
     border: 2px solid #e0dfdf;
-    border-radius: 50%
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .thearrow4:after {
@@ -1687,7 +1752,11 @@ convtext {
     border-style: solid;
     border-width: 3px;
     border-radius: 50%;
-    border-color: #90b12a
+    border-color: #90b12a;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 convtext {
@@ -2679,9 +2748,11 @@ chartinfocolor {
     0% {
         opacity: 2
     }
+
     50% {
         opacity: 1
     }
+
     100% {
         opacity: 0
     }
@@ -2691,9 +2762,11 @@ chartinfocolor {
     0% {
         opacity: 2
     }
+
     50% {
         opacity: 1
     }
+
     100% {
         opacity: 0
     }
@@ -6300,13 +6373,16 @@ uptimesup {
         font: 500 .9em system;
         margin-left: 70px
     }
+
     weather34mbuptime {
         display: none
     }
+
     .weather-item {
         margin-top: 32px;
         margin-bottom: -28px
     }
+
     .weather34themeicon {
         position: absolute;
         margin: 0;
@@ -6314,16 +6390,19 @@ uptimesup {
         top: 10px;
         max-height: 12px
     }
+
     .weather34thememonitor {
         width: 15px;
         height: 11px;
         background: #ff832f;
         border-radius: 2px
     }
+
     .weather34thememonitor li {
         position: absolute;
         list-style: none
     }
+
     .weather34thememonitor .weather34themefirst {
         width: 13px;
         height: 8px;
@@ -6332,6 +6411,7 @@ uptimesup {
         left: 1px;
         z-index: 3
     }
+
     .weather34sidebarIconToggle {
         cursor: pointer;
         position: absolute;
@@ -8390,6 +8470,7 @@ weather34toptitle {
         margin: 0 auto;
         margin-top: 45px
     }
+
     .grid1>weather34module {
         padding: 5px;
         background: 0;
@@ -8406,22 +8487,28 @@ weather34toptitle {
         box-sizing: border-box;
         height: 198px
     }
+
     .grid,
     .grid3 {
         display: none
     }
+
     .grid>weather34topmodule {
         display: none
     }
+
     .grid3>weather34topmodule {
         display: none
     }
+
     .grid4 {
         display: none
     }
+
     .grid4>weather34topmodule {
         display: none
     }
+
     .gridhardware {
         display: grid;
         grid-template-columns: 359px;
@@ -8433,6 +8520,7 @@ weather34toptitle {
         margin: 0 auto;
         margin-top: 0
     }
+
     .gridhardware>weather34infoboxes {
         padding: 5px;
         background: 0;
@@ -8440,43 +8528,53 @@ weather34toptitle {
         -moz-osx-font-smoothing: grayscale;
         height: 64px
     }
+
     .grid5 {
         display: none
     }
+
     .grid5>weather34topmodule {
         display: none
     }
+
     .footercontainer {
         margin: 0 auto;
         width: 720px
     }
+
     .gridfooter {
         display: none
     }
+
     .gridfooter>weather34footer {
         display: none
     }
+
     .hardwareimg1,
     .hardwareimg2,
     .hardwareimg3 {
         margin-top: 2px;
         margin-left: 5px
     }
+
     .hardware,
     .hardware2,
     .mbtype {
         margin-top: 12px
     }
+
     .hardwareinfo,
     .hardwareinfo2,
     .mbfirmware {
         margin-top: 26px
     }
+
     .hardwareuptime,
     .hardwareuptime2,
     .nanouptime {
         margin-top: 40px
     }
+
     .hardware2,
     .hardwareinfo2,
     .mbfirmware2,
@@ -8491,21 +8589,27 @@ weather34toptitle {
         color: #aeb6bf;
         text-align: left
     }
+
     .mbtype2 {
         margin-top: 7px
     }
+
     .mbfirmware2 {
         margin-top: 17px
     }
+
     .nanouptime2 {
         margin-top: 17px
     }
+
     .hardware2 {
         margin-top: 27px
     }
+
     .hardwareinfo2 {
         margin-top: 37px
     }
+
     .actualhardware {
         position: relative;
         left: 2px;
@@ -8524,6 +8628,7 @@ weather34toptitle {
         justify-content: left;
         margin: 0 auto
     }
+
     .maincontainer {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -8532,6 +8637,7 @@ weather34toptitle {
         margin: 0 auto;
         text-align: center
     }
+
     .weather34admin__header {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -8544,6 +8650,7 @@ weather34toptitle {
         position: absolute;
         font-size: 12px
     }
+
     .weather34btn--primary a {
         position: relative;
         color: #aeb6bf;
@@ -8552,6 +8659,7 @@ weather34toptitle {
         left: 55px;
         background: 0
     }
+
     .weather34toolbar {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -8569,10 +8677,12 @@ weather34toptitle {
         font-size: 1em;
         right: 20px
     }
+
     .weather34toolbar right {
         font-size: 1.2em;
         right: 0
     }
+
     .actualt {
         position: relative;
         left: 2px;
@@ -8592,6 +8702,7 @@ weather34toptitle {
         margin: 0 auto;
         background: 0
     }
+
     .updatedtime,
     .updatedtime1,
     .updatedtimeuv {
@@ -8603,10 +8714,12 @@ weather34toptitle {
         color: #aeb6bf;
         line-height: 10px
     }
+
     .updatedtime1 {
         margin-bottom: 10px;
         width: 75px
     }
+
     .weather34chartlinks {
         font-size: .65em;
         position: absolute;
@@ -8615,6 +8728,7 @@ weather34toptitle {
         z-index: 20;
         font-family: weathertext2
     }
+
     .wulargeforecasthome {
         position: absolute;
         width: 328px;
@@ -8625,75 +8739,98 @@ weather34toptitle {
         border-radius: 3px;
         overflow: hidden
     }
+
     .barometerconverter {
         margin-left: 278px
     }
+
     .tempconverter {
         margin-left: 278px
     }
+
     .windconverter {
         margin-left: 278px
     }
+
     .rainconverter {
         margin-left: 278px
     }
+
     .uvcautionbig {
         margin-left: 238px
     }
+
     .cloudconverter {
         margin-left: 258px
     }
+
     .tempconverter2 {
         margin-left: 330px
     }
+
     .lightningcoverter {
         margin-left: 330px
     }
+
     .windconverter {
         position: absolute;
         margin-left: 278px;
         margin-top: -13px
     }
+
     .barometerpos {
         margin-left: 30px
     }
+
     .barometerlimits {
         margin-left: 45px
     }
+
     .weather34sunsetday {
         margin-left: 220px
     }
+
     .weather34sunriseday {
         margin-left: -30px
     }
+
     .weather34sundarkday {
         margin-left: 255px
     }
+
     .newmoon1 {
         margin-left: 140px
     }
+
     .fullmoon1 {
         margin-left: 145px
     }
+
     .weather34luminancem2 {
         margin-left: 40px
     }
+
     .homeweathercompass1 {
         margin-left: 80px;
         margin-top: -25px
     }
+
     .daylightmoduleposition {
         margin-left: 15px
     }
+
     .weather34moonphasem {
         margin-left: -12px
     }
+
     .weather34luminancem {
         margin-left: 30px
     }
+
     .weather34sunlightday {
         margin-left: -30px
     }
+
     .logoweather34,
     .weather34-mbsmartlogo {
         position: absolute;
@@ -8702,6 +8839,7 @@ weather34toptitle {
         float: left;
         top: -8px
     }
+
     weather34toptitle {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -8715,14 +8853,17 @@ weather34toptitle {
         line-height: 1;
         color: #aeb6bf
     }
+
     .wulargediv {
         width: 360px;
         height: 180px;
         margin-top: 10px
     }
+
     .weather34windgust {
         margin-left: 252px
     }
+
     .weather34beaufort1-3,
     .weather34beaufort3-4,
     .weather34beaufort4-5,
@@ -8730,38 +8871,46 @@ weather34toptitle {
         margin-left: 134px;
         margin-top: 133px
     }
+
     .weather34avgtoday {
         margin-top: 120px;
         margin-left: 5px
     }
+
     .averagetoday1 {
         margin-left: -15px;
         margin-top: -24px
     }
+
     .weather34windruntoday1 {
         margin-top: -1px;
         margin-left: 270px
     }
+
     .windruntoday1 {
         margin-left: 250px;
         margin-top: -24px
     }
+
     .eqdistconverter {
         margin-left: 330px;
         margin-top: -12px
     }
+
     .lightningdistconverter {
         font-size: 12px;
         position: absolute;
         margin-left: 330px;
         margin-top: 10px
     }
+
     .weather34moonphasesvg {
         position: absolute;
         left: 125px;
         top: 35px;
         width: 120px
     }
+
     .weather34topbarmail {
         display: none
     }
@@ -8771,6 +8920,7 @@ weather34toptitle {
     .maincontainer {
         max-width: 100%
     }
+
     .grid1 {
         display: grid;
         grid-template-columns: 320px;
@@ -8783,6 +8933,7 @@ weather34toptitle {
         margin: 0 auto;
         margin-top: 45px
     }
+
     .grid1>weather34module {
         padding: 5px;
         background: 0;
@@ -8797,49 +8948,60 @@ weather34toptitle {
         box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
         height: 195px
     }
+
     .grid,
     weather34thetime {
         display: none
     }
+
     .grid>weather34topmodule {
         display: none
     }
+
     .gridhardware {
         display: none
     }
+
     .footercontainer {
         margin: 0 auto;
         width: 320px
     }
+
     .gridfooter {
         display: none
     }
+
     .gridfooter>weather34footer {
         display: none
     }
+
     .nanoimg {
         position: absolute;
         float: right;
         margin-left: 230px
     }
+
     .davisimg {
         position: absolute;
         float: right;
         margin-left: 190px;
         margin-top: -10px
     }
+
     .davisimg2 {
         position: absolute;
         float: right;
         margin-left: 145px;
         margin-top: 0
     }
+
     .nanoimg2 {
         position: absolute;
         float: right;
         margin-left: 175px;
         margin-top: 0
     }
+
     .footertext {
         position: relative;
         left: -5px;
@@ -8857,6 +9019,7 @@ weather34toptitle {
         margin: 0 auto;
         padding: 0
     }
+
     .maincontainer {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -8865,6 +9028,7 @@ weather34toptitle {
         margin: 0 auto;
         text-align: center
     }
+
     .weather34admin__header {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -8877,10 +9041,12 @@ weather34toptitle {
         position: absolute;
         font-size: 12px
     }
+
     weather34mbuptime,
     weather34toptitle {
         display: none
     }
+
     .actualt {
         position: relative;
         left: 2px;
@@ -8900,6 +9066,7 @@ weather34toptitle {
         margin: 0 auto;
         background: 0
     }
+
     .updatedtime,
     .updatedtime1,
     .updatedtimeuv {
@@ -8911,10 +9078,12 @@ weather34toptitle {
         color: #aeb6bf;
         line-height: 10px
     }
+
     .updatedtime1 {
         margin-bottom: 10px;
         width: 75px
     }
+
     .weather34chartlinks {
         font-size: .65em;
         position: absolute;
@@ -8923,6 +9092,7 @@ weather34toptitle {
         z-index: 20;
         font-family: weathertext2
     }
+
     .wulargeforecasthome {
         position: absolute;
         width: 328px;
@@ -8931,84 +9101,113 @@ weather34toptitle {
         font-size: .65rem;
         display: block;
         border-radius: 3px;
-        overflow: hidden
-    }
+        overflow: hidden    ;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
+
     .barometerconverter {
         margin-left: 238px
     }
+
     .tempconverter {
         margin-left: 238px
     }
+
     .windconverter {
         margin-left: 238px
     }
+
     .rainconverter {
         margin-left: 238px
     }
+
     .uvcautionbig {
         margin-left: 218px
     }
+
     .cloudconverter {
         margin-left: 228px;
         margin-top: 8px
     }
+
     .tempconverter2 {
         margin-left: 288px
     }
+
     .lightningcoverter {
         margin-left: 288px
     }
+
     .windconverter {
         position: absolute;
         margin-left: 248px;
         margin-top: -10px
     }
+
     .barometerpos {
         margin-left: 0
     }
+
     .barometerlimits {
         margin-left: 15px
     }
+
     .weather34sunsetday {
         margin-left: 200px
     }
+
     .weather34sundarkday {
         margin-left: 220px
     }
+
     .weather34sunriseday {
         margin-left: -23px
     }
+
     .homeweathercompass1 {
         margin-left: 60px
     }
+
     .daylightmoduleposition {
         margin-left: 0
     }
+
     .weather34moonphasem {
         margin-left: 3px
     }
+
     .weather34luminancem {
         margin-left: 5px
     }
+
     .weather34sunlightday {
         margin-left: -10px
     }
+
     .newmoon1 {
         margin-left: 115px
     }
+
     .fullmoon1 {
         margin-left: 120px
     }
+
     .weather34luminancem2 {
         margin-left: 15px
     }
+
     .logoweather34,
     .weather34-mbsmartlogo {
         display: none
     }
+
     .weather34windgust {
         margin-left: 212px
     }
+
     .weather34refresh a {
         float: right;
         position: relative;
@@ -9016,38 +9215,46 @@ weather34toptitle {
         right: -50px;
         color: #009bab
     }
+
     .weather34beaufort1-3,
     .weather34beaufort3-4,
     .weather34beaufort4-5,
     .weather34beaufort6 {
         margin-left: 115px
     }
+
     .weather34avgtoday {
         margin-top: 120px;
         margin-left: 5px
     }
+
     .averagetoday1 {
         margin-left: -15px;
         margin-top: -24px
     }
+
     .weather34windruntoday1 {
         margin-top: -1px;
         margin-left: 232px
     }
+
     .windruntoday1 {
         margin-left: 215px;
         margin-top: -24px
     }
+
     .eqdistconverter {
         margin-left: 290px;
         margin-top: -12px
     }
+
     .lightningdistconverter {
         font-size: 12px;
         position: absolute;
         margin-left: 290px;
         margin-top: 7px
     }
+
     .weather34moonphasesvg {
         position: absolute;
         left: 125px;
@@ -9094,7 +9301,7 @@ valuetextheading1a {
 .weather34tip:after {
     content: attr(data-weather34tip);
     background: rgba(255, 108, 52, 1);
-    background: -webkit-gradient(linear, left top, left bottom, from(#d05f2d), color-stop(49%, #d05f2d), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), to(rgba(6, 162, 177, 1)));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d05f2d), color-stop(49%, #d05f2d), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), to(rgba(6, 162, 177, 1)));
     background: linear-gradient(to bottom, #d05f2d 0, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
     top: 100%;
     margin-top: -12px;
@@ -9107,7 +9314,11 @@ valuetextheading1a {
     font-size: 1em;
     font-weight: 700;
     z-index: 9999999;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .weather34tip:hover:after,
@@ -9416,7 +9627,7 @@ valuetextheading1a {
 .weather34tipty:after {
     content: attr(data-weather34tipty);
     background: rgba(255, 108, 52, 1);
-    background: -webkit-gradient(linear, left top, left bottom, from(#d05f2d), color-stop(49%, #d05f2d), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), to(rgba(6, 162, 177, 1)));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d05f2d), color-stop(49%, #d05f2d), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), to(rgba(6, 162, 177, 1)));
     background: linear-gradient(to bottom, #d05f2d 0, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
     top: 100%;
     margin-top: 12px;
@@ -9624,7 +9835,7 @@ valuetextheading1a {
 .weather34tiptemp:after {
     content: attr(data-weather34tiptemp);
     background: rgba(255, 108, 52, 1);
-    background: -webkit-gradient(linear, left top, left bottom, from(#d05f2d), color-stop(49%, #d05f2d), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), to(rgba(6, 162, 177, 1)));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d05f2d), color-stop(49%, #d05f2d), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), to(rgba(6, 162, 177, 1)));
     background: linear-gradient(to bottom, #d05f2d 0, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
     top: 100%;
     margin-top: -12px;
@@ -9782,7 +9993,7 @@ valuetextheading1a {
 .weather34tipavg1:after {
     content: attr(data-weather34tipavg1);
     background: #d05f2d;
-    background: -webkit-gradient(linear, left top, left bottom, from(#d05f2d), color-stop(49%, #d05f2d), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), to(rgba(6, 162, 177, 1)));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d05f2d), color-stop(49%, #d05f2d), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), to(rgba(6, 162, 177, 1)));
     background: linear-gradient(to bottom, #d05f2d 0, #d05f2d 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
     top: 100%;
     margin-top: -12px;
@@ -10218,7 +10429,11 @@ yellowluft {
     margin-left: 0;
     top: 8px;
     line-height: 1;
-    border-bottom: 8px solid #3d464d
+    border-bottom: 8px solid #3d464d;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 orangeluft {
@@ -10243,6 +10458,8 @@ purpleluft {
 }
 
 .weather34-theme-switch {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 14px;
     position: relative;
@@ -10273,7 +10490,11 @@ purpleluft {
     color: rgba(77, 90, 102, .4);
     border-radius: 25px;
     border: 1px solid rgba(77, 90, 102, .2);
-    padding: 2px
+    padding: 2px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 .weather34-slider,
@@ -10317,7 +10538,11 @@ weather34homepagetop {
     height: 5px;
     background: #565f67;
     border-radius: 2px;
-    margin-top: 0
+    margin-top: 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 weather34homepagetop {
@@ -10415,6 +10640,8 @@ iconweather34toggle {
 
 .charttempmodule {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: -20px;
     width: 220px;
@@ -10458,14 +10685,17 @@ probabilityicon {
     background: 0;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
     box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
-    text-align: left;
-    border-radius: 2px;
+    text-align: left;    
     font-size: .55rem;
     font-family: weathertext2;
     position: absolute;
     margin-left: 125px;
     padding: 5px;
-    text-align: left
+    text-align: left;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .meteotextshowertext {
@@ -10590,12 +10820,15 @@ nav>.iconcolor {
     overflow: hidden;
     background: 0
 }
+
 .closethenav {
-    display: flex;    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     color: silver;
     font-size: 0.8em;
-    font-family: system;    
-    float: right;   
-    margin-right:10px;
-    margin-top:20px; 
+    font-family: system;
+    float: right;
+    margin-right: 10px;
+    margin-top: 20px;
 }

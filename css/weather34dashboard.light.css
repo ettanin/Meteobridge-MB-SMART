@@ -403,6 +403,10 @@ supraindropw {
     border-bottom: 0.1rem solid rgba(68, 145, 155, 0.1);
     margin-top: -32px;
     margin-left: 212px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 supraindrop {
@@ -835,6 +839,10 @@ a:hover {
     top: -3px;
     border: 2px solid #fff;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .windirectiontext span {
@@ -938,6 +946,10 @@ a:hover {
     font-weight: 200;
     width: 5em;
     letter-spacing: 0.05em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .weather34windspeed>weather34windunitidspeed {
@@ -997,6 +1009,10 @@ a:hover {
     font-weight: 200;
     width: 5em;
     letter-spacing: 0.05em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .weather34windgust weather34windunitidspeed1 {
@@ -1046,6 +1062,10 @@ a:hover {
     border-right: 8px solid #e6e8ef;
     border-bottom: 8px solid #8497a7;
     margin: auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .thearrow1,
@@ -1076,6 +1096,10 @@ a:hover {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background: #d65b4a;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .thearrow1:before {
@@ -1235,6 +1259,10 @@ body {
     left: calc(50% - 43px);
     color: #2d2d2d;
     font-size: 10px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
 }
 
 .weatheroffline:after,
@@ -1244,6 +1272,10 @@ body {
     width: 2px;
     border-radius: 5px;
     position: absolute;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 *,
@@ -1625,6 +1657,10 @@ yellow1 {
     width: 60px;
     border-radius: 4px;
     line-height: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .barometerblue {
@@ -1691,6 +1727,10 @@ yellow1 {
     color: #2d2d2d;
     border-radius: 4px;
     margin-left: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .daylightblue,
@@ -1700,6 +1740,10 @@ yellow1 {
     border-radius: 4px;
     margin-left: 20px;
     float: left;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .windorange span {
@@ -1759,6 +1803,10 @@ yellow1 {
     margin-left: 2px;
     width: 55px;
     font-size: 12px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .raintodayblue span {
@@ -1863,6 +1911,10 @@ tsteady {
     top: -5px;
     border: 2px solid #fff;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .text2,
@@ -1911,6 +1963,10 @@ tsteady {
     line-height: 9px;
     font-size: 10px;
     background: rgba(245, 247, 252, 0);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .barometertrend2 span {
@@ -2153,6 +2209,7 @@ minutes {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     margin: auto;
+    -o-border-radius: 50%;
 }
 
 .daylightcompass2 {
@@ -2270,6 +2327,10 @@ tempred {
 
 .orangeclock {
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 suplight {
@@ -2428,6 +2489,10 @@ timeago {
     border: 1px solid rgba(95, 96, 97, 0.2);
     width: 170px;
     text-transform: capitalize;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 lorange,
@@ -2451,6 +2516,10 @@ lightningannualx1 {
     border-radius: 2px;
     border: 1px solid rgba(95, 96, 97, 0.6);
     text-transform: capitalize;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 timeago {
@@ -2471,6 +2540,10 @@ timeago {
     margin-top: 3px;
     font-size: 0.9rem;
     font-family: clock;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 #weather34lightningdialog-notify,
@@ -2658,6 +2731,10 @@ headerinfo {
     border-radius: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .weather34barometerarrowmax {
@@ -2682,6 +2759,10 @@ headerinfo {
     border-color: #d35d4e;
     border-radius: 50%;
     transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .weather34-barometerruler {
@@ -2736,6 +2817,10 @@ weather34-barometerlimitmaxf {
     border: 7px solid #e6e8ef;
     margin-left: 30%;
     margin-top: 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .weather34sunicon {
@@ -2750,6 +2835,10 @@ weather34-barometerlimitmaxf {
     margin-top: -5px;
     -webkit-transform: rotate(-45deg) translate(0);
     transform: rotate(-45deg) translate(0);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 chartinfocolor {
@@ -2803,6 +2892,10 @@ chartinfocolor {
     margin-bottom: 8px;
     overflow: hidden;
     background: #616a72;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .weather34lightningdialog-box .header {
@@ -2900,6 +2993,10 @@ notifyblue {
 notifyorange {
     background: #d05f2d;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 grey {
@@ -2971,6 +3068,10 @@ body {
     position: absolute;
     border: 4px solid #e6e8ef;
     transform-origin: 50% 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .weather34sunclock div {
@@ -3131,6 +3232,10 @@ smallrainunit {
     line-height: 16px;
     font-family: weathertext2;
     font-size: 0.85em;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .barometerconverter,
@@ -3222,6 +3327,10 @@ smallsup {
     font-family: weathertext2;
     font-size: 0.85em;
     color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .windconvertercircleyellow1 {
@@ -3270,6 +3379,10 @@ smallsup {
     font-family: weathertext2;
     font-size: 0.85em;
     right: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .raincontainer1,
@@ -3344,6 +3457,10 @@ smallsup {
     -ms-flex-pack: center;
     justify-content: center;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .outsideminus10 {
@@ -3481,6 +3598,10 @@ trendmovementsteadyx {
     left: 2px;
     border-radius: 2px;
     line-height: 1;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .mindata {
@@ -3496,6 +3617,10 @@ trendmovementsteadyx {
     margin-top: 7px;
     left: 49px;
     border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .lodata {
@@ -3512,6 +3637,10 @@ trendmovementsteadyx {
     left: 53px;
     border-radius: 2px;
     line-height: 1;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .raincontainer1,
@@ -3578,6 +3707,10 @@ smalluvunit {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .uvtoday1,
@@ -3598,6 +3731,10 @@ smalluvunit {
     -ms-flex-pack: center;
     justify-content: center;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .uvcaution,
@@ -3655,6 +3792,10 @@ smalluvunit {
     -ms-flex-pack: center;
     justify-content: center;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .simsekdata,
@@ -3725,6 +3866,10 @@ topyellow2 {
     position: absolute;
     margin-left: 133px;
     top: -5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .topmax,
@@ -3895,6 +4040,10 @@ img {
     top: 28px;
     border-radius: 100%;
     background: 0;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
 
 .suncanvasstyle {
@@ -3971,12 +4120,17 @@ img {
     justify-content: center;
     border-radius: 3px;
     background: rgba(208, 95, 45, 0.9);
+    -ms-border-radius: 3px;
 }
 
 .luxtoday,
 .luxtodaydark,
 .solarluxtodaydark {
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .solarluxtodayword {
@@ -4011,6 +4165,9 @@ img {
     justify-content: center;
     border-radius: 3px;
     background: rgba(208, 95, 45, 0.9);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
 }
 
 .luxtodayword,
@@ -4072,6 +4229,10 @@ img {
     height: 30pt;
     margin-top: 70px;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .solarwrap {
@@ -4104,6 +4265,7 @@ img {
     border-radius: 3px;
     margin-top: 5px;
     color: #2d3a4b;
+    -ms-border-radius: 3px;
 }
 
 .uvcautionbig span {
@@ -4134,7 +4296,11 @@ solarbox {
     margin-left: 100px;
     margin-top: 16px;
     font-size: .6rem;
-    width: 3rem
+    width: 3rem;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 luxbox {
@@ -4160,7 +4326,11 @@ luxbox {
     margin-left: 100px;
     margin-top: 16px;
     font-size: .6rem;
-    width: 3rem
+    width: 3rem;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .solarextra {
@@ -4232,6 +4402,10 @@ currentmoonset {
     width: 0.45rem;
     margin-top: 3px;
     margin-left: 3px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .percent90 {
@@ -4284,6 +4458,10 @@ currentdaylight {
     border-radius: 50%;
     height: 6px;
     width: 6px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 currentdarkness {
@@ -4409,6 +4587,10 @@ moonsetcolor {
     line-height: 1;
     padding: 3px;
     background: 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .weather34beaufort1-3 {
@@ -4545,6 +4727,10 @@ indoorred1 {
     border-radius: 3px;
     color: #2d3a4b;
     background: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .raintoday1,
@@ -4635,6 +4821,10 @@ rainu {
     bottom: 0;
     width: 100px;
     background: url(rain/weather34rainbeakerruler.svg) no-repeat;
+    -webkit-border-radius: 0 0 2px 2px;
+    -moz-border-radius: 0 0 2px 2px;
+    -ms-border-radius: 0 0 2px 2px;
+    -o-border-radius: 0 0 2px 2px;
 }
 
 #weather34rainbeaker:after,
@@ -4647,6 +4837,10 @@ rainu {
     position: absolute;
     top: 0;
     width: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .wfstrikes,
@@ -4673,6 +4867,10 @@ rainu {
     max-height: 90px;
     overflow: hidden;
     width: 92px;
+    -webkit-border-radius: 0 0 2px 2px;
+    -moz-border-radius: 0 0 2px 2px;
+    -ms-border-radius: 0 0 2px 2px;
+    -o-border-radius: 0 0 2px 2px;
 }
 
 .raincontainer1 {
@@ -4691,6 +4889,10 @@ rainu {
     color: #fff;
     border-bottom: 8px solid #e9ebf1;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .rainconvertercircle,
@@ -4781,6 +4983,10 @@ smallrainrateunit {
     color: #2d3a4b;
     background: 0;
     padding-top: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .rainratesmall {
@@ -4807,6 +5013,10 @@ smallrainrateunit {
     color: #fff;
     line-height: 16px;
     font-size: 0.85em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .rainconverter {
@@ -4851,6 +5061,10 @@ smallrainunita {
     font-size: 0.85em;
     color: #fff;
     background: #4e95a0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .cloudconvertercircle,
@@ -4887,6 +5101,10 @@ valuetextheading {
     border: 2px solid #e6e8ef;
     border-radius: 4px;
     font-size: 0.57rem;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .cloudconverter {
@@ -4904,6 +5122,10 @@ valuetextheading {
     border: 2px solid #e6e8ef;
     border-radius: 4px;
     font-size: 0.57rem;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 value,
@@ -5262,6 +5484,10 @@ valuetitleunit {
     line-height: 16px;
     font-family: weathertext2;
     font-size: 0.85em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .tempconvertercircleminus10 {
@@ -5459,6 +5685,10 @@ weather34sundowncircle {
     width: 8px;
     border-radius: 0 0 10px 10px;
     background: #d35d4e;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
 }
 
 weather34daylightdaycircle {
@@ -5466,6 +5696,10 @@ weather34daylightdaycircle {
     left: 25px;
     border-radius: 45px;
     background: #00a4b4;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
 }
 
 weather34darkdaycircle {
@@ -5473,6 +5707,10 @@ weather34darkdaycircle {
     left: 71px;
     border-radius: 45px;
     background: #565f67;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
 }
 
 offlinenew,
@@ -5482,6 +5720,10 @@ onlinenew {
     font-family: weathertext2;
     margin-top: 2px;
     margin-left: -7px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 offlinenew {
@@ -5610,6 +5852,10 @@ pressureunits {
     display: block;
     border-radius: 3px;
     overflow: hidden;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .wulargediv,
@@ -5642,6 +5888,10 @@ pressureunits {
     background: 0;
     border: 1px solid rgba(153, 155, 156, 0.1);
     color: #2d3a4b;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .wulargeweekdayhome {
@@ -5774,6 +6024,10 @@ heatindexwu {
     margin-left: 134px;
     top: -32px;
     background: #01a4b5;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .wurainfall,
@@ -5784,6 +6038,10 @@ heatindexwu {
     -ms-flex-align: center;
     align-items: center;
     border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .wurainfall {
@@ -5798,11 +6056,19 @@ heatindexwu {
     border-radius: 2px;
     top: 0;
     background: #01a4b5;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .wuwindspeed,
 heatindexwu {
     border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .wuwindspeed,
@@ -5822,6 +6088,10 @@ orangewuv {
     justify-content: center;
     border-radius: 2px;
     top: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 heatindexwu,
@@ -5914,6 +6184,10 @@ heatindexwu {
     -ms-flex-pack: center;
     justify-content: center;
     border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 bluewu,
@@ -5934,6 +6208,10 @@ yellowwu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 windchillwu {
@@ -5958,6 +6236,10 @@ yellowwu {
     border-radius: 2px;
     margin-left: 220px;
     top: 23px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 bluewu,
@@ -6015,6 +6297,10 @@ yellowwuv {
     margin-left: 70px;
     top: 0;
     line-height: 0.9;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 greywuv {
@@ -6043,6 +6329,10 @@ wuuvicon {
     background: #d05f2d;
     padding-left: 2px;
     padding-right: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 wuthunder2 {
@@ -6100,6 +6390,10 @@ weather34mbuptime {
     height: 11px;
     background: #ff832f;
     border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .weather34thememonitor li {
@@ -6132,6 +6426,10 @@ topbarmetricc {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 topbarimperialf {
@@ -6175,6 +6473,10 @@ topbarinfo {
     color: #aeb6bf;
     border: 1px solid hsla(200, 1%, 61%, 0.4);
     border-width: thin;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .topbar34-circle1 {
@@ -6187,6 +6489,10 @@ topbarinfo {
     left: 5px;
     top: -5px;
     z-index: 50;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .topbar34-circle2 {
@@ -6223,6 +6529,10 @@ weather34menumarkerdotmode {
     border: 1px solid #3c5966;
     opacity: .8;
     border-right-width: 5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 weather34menumarkerdotmode {
@@ -6248,6 +6558,10 @@ weather34menumarkerlightb {
     justify-content: center;
     line-height: 12px;
     background: #44a6b5;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 menuimperial,
@@ -6267,6 +6581,10 @@ menumetric {
     -ms-flex-pack: center;
     justify-content: center;
     border: 1px solid hsla(200, 1%, 61%, 0.2);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 menuimperial {
@@ -6294,6 +6612,10 @@ menuinfobox {
     justify-content: center;
     color: #262830;
     border: 1px solid hsla(200, 1%, 61%, 0.7);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 weather34menumarkerblue,
@@ -6500,6 +6822,10 @@ uptimesup {
     cursor: pointer;
     background: rgba(208, 95, 45, 1.000);
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .lity-close::-moz-focus-inner {
@@ -6526,6 +6852,10 @@ uptimesup {
     line-height: 25px;
     background: rgba(61, 139, 150, 1.000);
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .lity-close:active {
@@ -7007,6 +7337,10 @@ alertadvisory {
     -ms-flex-pack: left;
     justify-content: left;
     margin: 0 auto;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .weather34chartlinks {
@@ -7162,10 +7496,14 @@ hardwarelogo3 {
     white-space: nowrap;
     font-family: Arial, Helvetica, sans-serif;
     top: 1px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .weather34btn--primary {
-    color:whitesmoke;
+    color: whitesmoke;
     background-color: 0;
     max-height: 22px;
     font-family: Arial, Helvetica, sans-serif;
@@ -7332,6 +7670,10 @@ regionalred {
     width: 112px;
     height: 112px;
     border: 4px solid rgba(59, 60, 63, 1);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .mooncircle1:after {
@@ -7340,6 +7682,10 @@ regionalred {
     width: 90px;
     height: 90px;
     border: 4px solid rgba(59, 60, 63, 1);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .mooncircle1 luminance1 {
@@ -7531,6 +7877,10 @@ wfstriketoday {
     border-radius: 2px;
     margin-left: 7px;
     top: 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .minwordl {
@@ -7676,6 +8026,10 @@ alertadvisory {
     font-family: weathertext2;
     font-size: 0.85em;
     right: -45px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .lightningactive {
@@ -7729,6 +8083,10 @@ alertadvisory {
     position: absolute;
     border: 0;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .air0,
@@ -7785,6 +8143,10 @@ airdescription {
     -ms-flex-pack: center;
     justify-content: center;
     border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .air0 {
@@ -8181,6 +8543,10 @@ weather34thetime {
     list-style: none;
     border-radius: 2px;
     width: 205px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .topframe {
@@ -8195,6 +8561,10 @@ weather34thetime {
     -moz-osx-font-smoothing: grayscale;
     width: 218px;
     height: 55px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .weather34tipcelsius {
@@ -8364,7 +8734,7 @@ weather34toptitle {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    color:whitesmoke;
+    color: whitesmoke;
     background: 0;
     line-height: 1;
     padding: 3px;
@@ -8372,6 +8742,10 @@ weather34toptitle {
     padding-top: 2px;
     border-radius: 2px;
     width: auto;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 @media screen and (max-width: 960px) {
@@ -8484,7 +8858,11 @@ weather34toptitle {
         display: block;
         border-radius: 3px;
         overflow: hidden;
-    }
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
     .barometerconverter {
         margin-left: 278px;
     }
@@ -9259,7 +9637,6 @@ valuetextheading1a {
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 108, 52, 1)), color-stop(49%, rgba(255, 108, 52, 1)), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(100%, rgba(6, 162, 177, 1)));
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 108, 52, 1)), color-stop(49%, rgba(255, 108, 52, 1)), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), to(rgba(6, 162, 177, 1)));
     background: linear-gradient(to bottom, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="rgba(255, 108, 52, 1)", endColorstr="rgba(6, 162, 177, 1)", GradientType=0);
     top: 100%;
     margin-top: 12px;
     padding: 0px;
@@ -9272,6 +9649,10 @@ valuetextheading1a {
     font-weight: 700;
     z-index: 9999999;
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;    
 }
 
 .weather34tipty:hover:after,
@@ -9324,6 +9705,10 @@ valuetextheading1a {
     font-weight: 700;
     z-index: 9999999;
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .weather34tipfooter:hover:after,
@@ -9375,6 +9760,10 @@ valuetextheading1a {
     font-weight: 700;
     z-index: 9999999;
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .weather34tipmax:hover:after,
@@ -9426,6 +9815,10 @@ valuetextheading1a {
     font-weight: 700;
     z-index: 9999999;
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .weather34tipmin:hover:after,
@@ -9469,7 +9862,6 @@ valuetextheading1a {
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 108, 52, 1)), color-stop(49%, rgba(255, 108, 52, 1)), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(100%, rgba(6, 162, 177, 1)));
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 108, 52, 1)), color-stop(49%, rgba(255, 108, 52, 1)), color-stop(49%, rgba(6, 162, 177, 1)), color-stop(49%, rgba(6, 162, 177, 1)), to(rgba(6, 162, 177, 1)));
     background: linear-gradient(to bottom, rgba(255, 108, 52, 1) 0%, rgba(255, 108, 52, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 49%, rgba(6, 162, 177, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="rgba(255, 108, 52, 1)", endColorstr="rgba(6, 162, 177, 1)", GradientType=0);
     top: 100%;
     margin-top: -12px;
     padding: 2px;
@@ -9482,6 +9874,10 @@ valuetextheading1a {
     font-weight: 700;
     z-index: 9999999;
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .weather34tiptemp:hover:after,
@@ -9534,6 +9930,10 @@ valuetextheading1a {
     font-weight: 500;
     z-index: 9999999;
     font-family: weathertext2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .weather34tipforecast:hover:after,
@@ -9586,6 +9986,10 @@ valuetextheading1a {
     font-weight: 500;
     z-index: 9999999;
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .weather34tipdewm:hover:after,
@@ -9638,6 +10042,10 @@ valuetextheading1a {
     font-weight: 500;
     z-index: 9999999;
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .weather34tipdewh:hover:after,
@@ -9766,6 +10174,10 @@ yellowwuhum {
     margin-left: 65px;
     top: 0;
     line-height: 0.9;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 bluewuhum {
@@ -9810,11 +10222,15 @@ yellowwunext {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    border-radius: 2px;
+    justify-content: center;    
+    border-radius:2px;
     margin-left: 50px;
     top: 0;
     line-height: 0.9;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -ms-border-radius:2px;
+    -o-border-radius:2px;
 }
 
 bluewunext {
@@ -10060,10 +10476,14 @@ yellowluft {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    border-radius: 2px;
+    border-radius:2px;
     margin-left: 0px;
     top: 8px;
     border-bottom: 8px solid rgba(230, 232, 239, 1);
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -ms-border-radius:2px;
+    -o-border-radius:2px;
 }
 
 orangeluft {
@@ -10088,6 +10508,8 @@ purpleluft {
 }
 
 .weather34-theme-switch {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 14px;
     position: relative;
@@ -10116,9 +10538,13 @@ purpleluft {
     right: 0;
     top: 0;
     color: rgba(77, 90, 102, .4);
-    border-radius: 25px;
+    border-radius:25px;
     border: 1px solid rgba(77, 90, 102, .2);
-    padding: 2px
+    padding: 2px;
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    -ms-border-radius:25px;
+    -o-border-radius:25px;
 }
 
 .weather34-slider:before {
@@ -10129,7 +10555,10 @@ purpleluft {
     left: 0;
     position: absolute;
     width: 12px;
-    border-radius: 50%;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
 }
 
 lastrain {
@@ -10146,6 +10575,10 @@ weather34homepagetop {
     border-radius: 2px;
     margin-top: 0;
     opacity: .7;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 weather34homepagetop {
@@ -10165,7 +10598,6 @@ metricgrey {
     font-weight: 500;
     font-size: 9px;
 }
-
 
 /* Set Menu and body defaults */
 
@@ -10212,6 +10644,10 @@ weather34themenusection {
     border: 0;
     text-transform: uppercase;
     text-shadow: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 iconweather34menu {
@@ -10248,6 +10684,8 @@ iconweather34toggle {
 
 .charttempmodule {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: -3px;
     width: 220px;
@@ -10292,6 +10730,10 @@ probabilityicon {
     margin-left: 125px;
     padding: 5px;
     text-align: left;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .meteotextshowertext {
@@ -10394,8 +10836,9 @@ nav ul {
     margin-top: 35px;
     border-right: 1px solid rgba(245, 247, 252, 0.1);
     border-bottom: 1px solid rgba(245, 247, 252, 0.1);
-    -webkit-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+    border-bottom-right-radius: 4px;
 }
 
 nav li a {
@@ -10417,12 +10860,15 @@ nav>.iconcolor {
     overflow: hidden;
     background: 0
 }
+
 .closethenav {
-    display: flex;    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     color: #009bab;
     font-size: 0.8em;
-    font-family: system;    
-    float: right;   
-    margin-right:10px;
-    margin-top:20px; 
+    font-family: system;
+    float: right;
+    margin-right: 10px;
+    margin-top: 20px;
 }
