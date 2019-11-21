@@ -199,7 +199,7 @@ if ($wuskydaynight=='N'){echo '<img src="css/wuicons/nt_'.$wuskydayIcon.'.svg" w
 
 
 
-echo '</div><wulargetempdesc><value>'.$wuskydesc.'<value></wulargetempdesc><br>';
+echo '</div><wulargetempdesc>'.$wuskydesc.'</wulargetempdesc><br>';
 
 //temp non metric wu
 if ($weather["temp_units"]=='F'){
