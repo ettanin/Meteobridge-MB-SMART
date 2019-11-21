@@ -1,25 +1,24 @@
 @font-face {
+    font-family: system;
+    src: url(fonts/HelveticaNeue-Medium.woff) format("woff");
+}
+
+@font-face {
     font-family: clock;
-    src: url(fonts/clock3-webfont.woff) format("woff")
+    src: url(fonts/clock3-webfont.woff) format("woff");
 }
 
 @font-face {
     font-family: weathertext2;
-    src: url(fonts/verbatim-regular.woff) format("woff")
+    src: url(fonts/verbatim-regular.woff) format("woff");
 }
 
-@font-face {
+body {
     font-family: system;
-    src: url(fonts/SFUIDisplay-Medium.woff2) format("woff2")
 }
 
 img {
     image-rendering: auto
-}
-
-body,
-h1 {
-    font-weight: 500
 }
 
 a {
@@ -138,7 +137,7 @@ wm2 {
     color: #aeb6bf;
     text-align: center;
     z-index: 1;
-    font: 12px Arial, system;
+    font: 12px system;
     margin: -58px auto auto
 }
 
@@ -150,7 +149,7 @@ wm2 {
     z-index: auto;
     font-size: 0;
     color: #fff;
-    font-family: Arial, system
+    font-family: system
 }
 
 trendmovementfalling,
@@ -204,12 +203,12 @@ a:visited {
     text-align: center;
     width: 100%;
     color: #76797c;
-    font-family: arial, system;
+    font-family: system;
     font-weight: 900
 }
 
 a {
-    font-family: arial, system;
+    font-family: system;
     z-index: 20
 }
 
@@ -234,13 +233,13 @@ a {
 .humidity,
 a {
     color: #aeb6bf;
-    font-weight: 600;
+
     font-size: 1em
 }
 
 .humidity {
     padding-top: 35px;
-    font: 500 4em arial, system
+    font: 500 4em system
 }
 
 humiditycolor {
@@ -283,12 +282,12 @@ humiditycolor {
 
 in,
 mb {
-    font: .65em arial, system
+    font: .65em system
 }
 
 .daylight {
     color: #aeb6bf;
-    font-family: arial, system;
+    font-family: system;
     top: 50px;
     margin-left: 360px;
     border: 0
@@ -330,7 +329,7 @@ supdavis {
 }
 
 .barometertrend1 hourtrend {
-    font: 500 10px arial, system;
+    font: 500 10px system;
     color: #aeb6bf;
     line-height: 9px;
     text-align: left;
@@ -352,7 +351,7 @@ barometerinfo {
 .barometermax {
     margin-top: 10px;
     color: #aeb6bf;
-    font: 10px arial, system;
+    font: 10px system;
     line-height: 9px
 }
 
@@ -364,12 +363,12 @@ barometerinfo {
 }
 
 .barometermax span {
-    font: 500 10px arial, system;
+    font: 500 10px system;
     color: #90b12a
 }
 
 .barometermax unit {
-    font: 500 10px arial, system;
+    font: 500 10px system;
     color: #aeb6bf
 }
 
@@ -377,14 +376,14 @@ barometerinfo {
     margin-left: 240px;
     width: 50px;
     color: #aeb6bf;
-    font: 10px arial, system;
+    font: 10px system;
     line-height: 9px
 }
 
 .averagedir,
 .barometermin span,
 .barometermin unit {
-    font: 500 10px arial, system
+    font: 500 10px system
 }
 
 .barometermin span {
@@ -413,11 +412,11 @@ suptemp {
     margin-bottom: 0;
     color: #aeb6bf;
     -moz-font-smoothing: antialiased;
-    font-family: arial, system
+    font-family: system
 }
 
 .feelstemp {
-    font: 500 10px arial, system
+    font: 500 10px system
 }
 
 .max,
@@ -543,7 +542,7 @@ uv0 {
     margin-left: 0;
     margin-top: 1%;
     line-height: 10px;
-    font-family: Arial, system
+    font-family: system
 }
 
 .raintext1 span {
@@ -602,7 +601,7 @@ a:hover {
 .barometertrend rising,
 .barometertrend steady,
 html {
-    font-family: arial, system;
+    font-family: system;
     -moz-font-smoothing: antialiased
 }
 
@@ -743,7 +742,7 @@ suptemp {
 
 .weather34windspeed>weather34windunitidspeed {
     position: absolute;
-    font-size: .35em;
+    font-size: .4em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -755,12 +754,13 @@ suptemp {
     justify-content: center;
     top: 1px;
     left: 45px;
-    letter-spacing: 0
+    letter-spacing: 0;
+    font-family:system;
 }
 
 .weather34windspeed>weather34windunitidunit {
     position: absolute;
-    font-size: .35em;
+    font-size: .45em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -770,9 +770,10 @@ suptemp {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    top: 35px;
+    top: 36px;
     left: 47px;
-    letter-spacing: 0
+    letter-spacing: 0;
+    font-family:system;
 }
 
 .weather34windgust {
@@ -806,7 +807,7 @@ suptemp {
 
 .weather34windgust weather34windunitidspeed1 {
     position: absolute;
-    font-size: .35em;
+    font-size: .4em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -818,12 +819,13 @@ suptemp {
     justify-content: center;
     top: 1px;
     left: 37px;
-    letter-spacing: 0
+    letter-spacing: 0;
+    font-family:system;
 }
 
 .weather34windgust weather34windunitidunit1 {
     position: absolute;
-    font-size: .35em;
+    font-size: .45em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -835,7 +837,8 @@ suptemp {
     justify-content: center;
     top: 35px;
     left: 48px;
-    letter-spacing: 0
+    letter-spacing: 0;
+    font-family:system;
 }
 
 .homeweathercompass1>.homeweathercompass-line1 {
@@ -904,8 +907,8 @@ suptemp {
     display: block;
     text-align: center;
     color: #aeb6bf;
-    font-family: Arial, system;
-    font-weight: 500;
+    font-family: system;
+    ;
     line-height: 12px;
     font-size: 12px;
     z-index: 10;
@@ -946,7 +949,7 @@ suptemp {
 .gustspeedtrend1,
 .gustspeedtrend1 span {
     color: #aeb6bf;
-    font: 10px arial, system
+    font: 10px system
 }
 
 .gustspeedtrend1,
@@ -970,7 +973,7 @@ suptemp {
 .windspeedtrend1,
 .windspeedtrend1 span {
     color: #aeb6bf;
-    font: 10px arial, system;
+    font: 10px system;
     line-height: 9px
 }
 
@@ -1064,7 +1067,7 @@ suptemp3 {
 
 .online span {
     color: #90b12a;
-    font-weight: 600
+
 }
 
 .weatheroffline {
@@ -1115,11 +1118,6 @@ spanm2 {
 .hoursago,
 spanm5 {
     font-size: 12px
-}
-
-.hoursago,
-raingrey {
-    font-weight: 500
 }
 
 .hoursago {
@@ -1315,7 +1313,7 @@ yellow1 {
 }
 
 .tempgreen span {
-    font-weight: 600;
+
     color: #90b12a
 }
 
@@ -1324,12 +1322,12 @@ yellow1 {
 }
 
 .temporange span {
-    font-weight: 600;
+
     color: #ff7c39
 }
 
 tempyellow {
-    font-weight: 600;
+
     color: #ddb549
 }
 
@@ -1338,17 +1336,13 @@ tempyellow {
 }
 
 .tempred span {
-    font-weight: 600;
+
     color: #ff5c41
 }
 
 .tempblue,
 .tempgreenfeels {
     color: #aeb6bf
-}
-
-.tempblue span {
-    font-weight: 600
 }
 
 .tempbluedew,
@@ -1380,7 +1374,7 @@ tempyellow {
 }
 
 .tempgreenfeels span {
-    font-weight: 600;
+
     color: #90b12a
 }
 
@@ -1389,7 +1383,7 @@ tempyellow {
 }
 
 .temporangefeels span {
-    font-weight: 600;
+
     color: #ff7c39
 }
 
@@ -1398,7 +1392,7 @@ tempyellow {
 }
 
 .tempredfeels span {
-    font-weight: 600;
+
     color: #ff5c41
 }
 
@@ -1406,27 +1400,19 @@ tempyellow {
     color: #aeb6bf
 }
 
-.tempbluefeels span {
-    font-weight: 600
-}
-
 .tempgreendew span {
-    font-weight: 600;
+
     color: #90b12a
 }
 
 .temporangedew span {
-    font-weight: 600;
+
     color: #ff7c39
 }
 
 .tempreddew span {
-    font-weight: 600;
-    color: #ff5c41
-}
 
-.tempbluedew span {
-    font-weight: 600
+    color: #ff5c41
 }
 
 .barometerblue,
@@ -1472,12 +1458,8 @@ tempyellow {
 }
 
 .barometerorange span {
-    font-weight: 600;
-    color: #ff7c39
-}
 
-.barometerblue span {
-    font-weight: 600
+    color: #ff7c39
 }
 
 .barometergreen {
@@ -1497,7 +1479,7 @@ tempyellow {
 
 .barometergreen span,
 .barometergreen supunit {
-    font-weight: 600;
+
     color: #fff
 }
 
@@ -1516,7 +1498,7 @@ tempyellow {
 .moonrisered,
 .moonrisered span,
 .moonsetblue {
-    font-weight: 600;
+
     color: #fff
 }
 
@@ -1594,8 +1576,8 @@ tsteady {
 .homeweathercompass2 {
     display: block;
     text-align: center;
-    font-family: Arial, system;
-    font-weight: 600;
+    font-family: system;
+
     line-height: 12px;
     z-index: 10;
     margin: 25px 0 auto 40px
@@ -1604,7 +1586,7 @@ tsteady {
 .text2,
 .text3 {
     font-family: weathertext2;
-    font-weight: 500
+
 }
 
 .text2 {
@@ -1623,7 +1605,7 @@ tsteady {
     margin-left: 30px;
     width: 90px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif, system
+    font-family: system
 }
 
 .pressuretextfast {
@@ -1680,19 +1662,19 @@ tsteady {
 }
 
 .barometertrend2 span {
-    font-weight: 600;
+
     color: #90b12a
 }
 
 .barometerconv {
     width: 70px;
-    font: 10px arial, system;
+    font: 10px system;
     line-height: 10px;
     margin-top: 132px;
     position: absolute;
     text-align: center;
     color: #90b12a;
-    font-weight: 600
+
 }
 
 .barometerlimits,
@@ -1705,7 +1687,7 @@ tsteady {
 convtext {
     color: #aeb6bf;
     display: block;
-    font-weight: 500
+
 }
 
 .barometerlimits {
@@ -1713,7 +1695,7 @@ convtext {
     margin-left: 16px;
     width: 235px;
     color: #777;
-    font-family: Helvetica, Arial
+    font-family: system
 }
 
 .thearrow3:after {
@@ -1757,10 +1739,6 @@ convtext {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-}
-
-convtext {
-    font-weight: 500
 }
 
 .daylightbox {
@@ -1837,7 +1815,8 @@ convtext {
     color: #aeb6bf;
     font-size: 9px;
     top: -17px;
-    letter-spacing: normal
+    letter-spacing: normal;
+    font-family: system;
 }
 
 .daylightvalue min {
@@ -1845,7 +1824,7 @@ convtext {
 }
 
 .daylightvalue hrs {
-    left: 40px
+    left: 40px;    
 }
 
 .hrstillsunset,
@@ -1944,7 +1923,7 @@ daylightestimated {
     left: 48px;
     letter-spacing: normal;
     border: 0;
-    font-family: weathertext2;
+    font-family:system;
     font-size: .55rem
 }
 
@@ -1965,7 +1944,8 @@ daylightestimated {
     top: -17px;
     color: #aeb6bf;
     letter-spacing: normal;
-    position: absolute
+    position: absolute;
+    font-family: system;
 }
 
 .daylightvalue1 min {
@@ -2034,7 +2014,7 @@ aurora {
 
 .uvimax span {
     color: #aeb6bf;
-    font: 10px arial, system
+    font: 10px system
 }
 
 .weather34todayraintext {
@@ -2045,15 +2025,7 @@ whiteuv {
     color: #ccc
 }
 
-tempblue,
-tempgreen,
-temporange,
-tempred {
-    font-weight: 600
-}
-
-body,
-gustorange {
+body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
@@ -2161,7 +2133,7 @@ notifyblue,
 notifyorange,
 spanewind,
 spanewind2 {
-    font-family: Arial, Helvetica, system
+    font-family: system
 }
 
 indoorred {
@@ -2393,9 +2365,9 @@ nosun1 {
 
 .weather34uvs span {
     color: gray;
-    font-family: arial, system;
+    font-family: system;
     font-size: 8px;
-    font-weight: 500
+
 }
 
 uv0,
@@ -2455,13 +2427,6 @@ talert {
 .weather34luxrate,
 .weather34solarvalue {
     line-height: 10px
-}
-
-.azimuth,
-.elevation,
-.homeweatheralert2 spanbold,
-supunit {
-    font-weight: 500
 }
 
 .weather34luxrate {
@@ -2602,7 +2567,7 @@ solarluxvalue {
     border: 0;
     color: #d05f2d;
     font-size: 5px;
-    font-family: Arial, Helvetica, system
+    font-family: system
 }
 
 .weather34barometerarrowmax:after,
@@ -2858,7 +2823,9 @@ chartinfocolor {
 }
 
 .daylightvalue1 hrs {
-    margin-left: 0
+    margin-left: 0;
+    font-family: system;
+
 }
 
 .daylightvalue1 span {
@@ -2874,7 +2841,7 @@ notifyblue,
 notifyorange {
     color: #fff;
     padding: 0 2px;
-    font-weight: 500;
+    ;
     font-family: weathertext2
 }
 
@@ -3026,7 +2993,7 @@ alertadvisory {
 
 .daylightvalue34 period,
 .daylightvalue34:before {
-    font-family: Arial
+    font-family: system
 }
 
 .daylightvalue34 dayperiod {
@@ -3045,7 +3012,8 @@ alertadvisory {
     top: -17px;
     color: #aeb6bf;
     letter-spacing: normal;
-    position: absolute
+    position: absolute;
+    font-family: system;
 }
 
 .daylightvalue34 min {
@@ -3076,7 +3044,8 @@ alertadvisory {
     top: 25px;
     left: 42px;
     letter-spacing: normal;
-    color: #e6e8ef
+    color: #e6e8ef;
+    font-family: system;
 }
 
 .daylightvalue34 hrs {
@@ -3232,7 +3201,7 @@ smallrainunit {
 smallsup {
     color: #aeb6bf;
     font-size: .5rem;
-    font-family: Arial, Helvetica, system
+    font-family: system
 }
 
 .tempconverter1,
@@ -3503,7 +3472,7 @@ offlinenew {
     margin-left: 0;
     color: #aeb6bf;
     text-align: center;
-    font-family: weathertext2, Arial, system;
+    font-family: weathertext2, system;
     font-size: 9px
 }
 
@@ -3519,7 +3488,7 @@ offlinenew {
 
 trendmovementfallingx,
 trendmovementrisingx {
-    font-family: weathertext2, Arial, system;
+    font-family: weathertext2, system;
     font-size: 9px
 }
 
@@ -3546,7 +3515,7 @@ trendmovementsteadyx {
     color: #fff;
     font-family: weathertext2;
     font-size: 10px;
-    font-weight: 400;
+
     width: 50px;
     background: 0;
     padding: 1px;
@@ -3562,7 +3531,7 @@ trendmovementsteadyx {
     color: rgba(255, 255, 255, .7);
     font-family: weathertext2;
     font-size: 8px;
-    font-weight: 500;
+    ;
     width: 40px;
     background: 0;
     padding: 2px;
@@ -3578,7 +3547,7 @@ trendmovementsteadyx {
     color: #fff;
     font-family: weathertext2;
     font-size: 10px;
-    font-weight: 400;
+
     width: 50px;
     background: 0;
     padding: 1px;
@@ -3593,7 +3562,7 @@ trendmovementsteadyx {
     color: rgba(255, 255, 255, .7);
     font-family: weathertext2;
     font-size: 8px;
-    font-weight: 500;
+    ;
     width: 40px;
     background: 0;
     padding: 2px;
@@ -3619,7 +3588,7 @@ trendmovementsteadyx {
 
 smalluvunit {
     font-size: .55rem;
-    font-weight: 400
+
 }
 
 .simsek,
@@ -3700,7 +3669,7 @@ lblue {
 .uvcaution {
     margin-left: 33px;
     margin-top: 112px;
-    font-family: Arial, Helvetica, system
+    font-family: system
 }
 
 .uvtrend {
@@ -3748,11 +3717,11 @@ lblue {
     justify-content: center;
     z-index: auto;
     color: #aeb6bf;
-    font-family: Arial, system
+    font-family: system
 }
 
 .simsekdata {
-    font-family: Arial, Helvetica, system;
+    font-family: system;
     color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3862,7 +3831,7 @@ topyellow2 {
 
 smallwindunit {
     font-size: .45rem;
-    font-family: Arial, Helvetica, system;
+    font-family: system;
     padding-left: 2px
 }
 
@@ -3889,7 +3858,8 @@ smallwindunit {
     margin-top: -35px;
     font-size: 10px;
     position: absolute;
-    width: 50px
+    width: 50px;
+    font-family:system;
 }
 
 .windunitidgust {
@@ -3987,7 +3957,7 @@ canvas {
 
 .sunelevation {
     color: #bbb;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system;
     position: absolute;
     font-size: .55rem;
     width: 110px;
@@ -3996,7 +3966,7 @@ canvas {
 }
 
 .sunelevation span {
-    font-family: weathertext2, Arial, Helvetica, sans-serif;
+    font-family: system;
     font-size: .65rem;
     margin-left: 1px;
     color: rgba(68, 166, 181, 1)
@@ -4248,7 +4218,7 @@ luxbox {
     -webkit-box-shadow: inset 3px 0 0 0 rgba(208, 95, 45, 1);
     box-shadow: inset 3px 0 0 0 rgba(208, 95, 45, 1);
     font-family: weathertext2;
-    font-weight: 400;
+
     line-height: 1.4;
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -4480,7 +4450,7 @@ weather34windrunspan {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    font-family: weathertext2;
+    font-family: system;
     -webkit-border-top-right-radius: 2px;
     -webkit-border-bottom-right-radius: 2px;
     border-top-right-radius: 2px;
@@ -4513,7 +4483,7 @@ weather34windrunspan {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    font-family: weathertext2;
+    font-family: system;
     -webkit-border-top-right-radius: 2px;
     -webkit-border-bottom-right-radius: 2px;
     border-top-right-radius: 2px;
@@ -4545,7 +4515,7 @@ weather34windrunspan {
 .beaufort1,
 weather34windrunspan {
     color: #aeb6bf;
-    font-family: Arial, Helvetica, system
+    font-family: system
 }
 
 .beaufort1 {
@@ -4784,8 +4754,8 @@ rainu {
 
 .rainratetextheading {
     color: #aeb6bf;
-    font-family: weathertext2;
-    font-size: .6em;
+    font-family: system;
+    font-size: .65em;
     margin-top: 5px
 }
 
@@ -4812,7 +4782,7 @@ rainu {
     box-shadow: inset 3px 0 0 0 #3b9cac;
     font-family: weathertext2;
     font-size: .6rem;
-    font-weight: 400;
+
     line-height: 1.4;
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -4840,7 +4810,7 @@ rainu {
 
 smallrainrateunit {
     color: #aeb6bf;
-    font-family: Arial, Helvetica, system;
+    font-family: system;
     font-size: .4rem;
     vertical-align: text-top
 }
@@ -4876,7 +4846,7 @@ smallrainunit2,
 smallrainunit3 {
     font-size: .5rem;
     color: #aeb6bf;
-    font-family: Arial, Helvetica, system
+    font-family: system
 }
 
 .rainconvertercircleblue1,
@@ -4885,7 +4855,7 @@ valuetext,
 valuetext1,
 valuetextheading,
 valuetextstrikes {
-    font-family: weathertext2
+    font-family: system;
 }
 
 smallrainunita {
@@ -4953,8 +4923,9 @@ smallrainunita {
 value,
 valuetext,
 valuetextheading {
-    font-size: .9em;
-    font-weight: 500
+    font-size: .95em;
+    font-family: system;
+
 }
 
 maxred {
@@ -4971,13 +4942,11 @@ units {
 
 valuetext1 {
     font-size: .95em;
-    font-weight: 500;
     color: #bbb
 }
 
 valuetextstrikes {
     font-size: .9em;
-    font-weight: 500;
     color: #fff
 }
 
@@ -5013,15 +4982,14 @@ valuetextstrikes {
 .tempmodulehome35-40c,
 .tempmodulehome40-50c,
 .tempmodulehome5-10c {
-    height: 1rem;
+    height: 1.1rem;
     width: 4.1rem;
     color: #aeb6bf;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    overflow: hidden;
-    line-height: 1px;
-    font-family: weathertext2;
+    overflow: hidden;    
+    font-family: system;
     border: 1px solid rgba(61, 70, 77, .5);
     border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -5034,7 +5002,10 @@ valuetextstrikes {
     font-size: .6rem;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    line-height: 1.6;
+    font-family: system;
+    padding-top:2px;
 }
 
 .temphumcircle0-25,
@@ -5052,8 +5023,8 @@ valuetextstrikes {
     height: 1rem;
     width: 4.1rem;
     overflow: hidden;
-    line-height: 1;
-    font-family: weathertext2;
+    line-height: 1.6;
+    font-family: system;
     color: #aeb6bf;
     border: 1px solid rgba(61, 70, 77, .5);
     border-left: 0;
@@ -5065,7 +5036,8 @@ valuetextstrikes {
     -ms-flex-pack: center;
     justify-content: center;
     font-size: .6rem;
-    align-items: center
+    align-items: center;
+    padding-top:2px;
 }
 
 .temphumcircle60-80 {
@@ -5095,7 +5067,7 @@ valuetextstrikes {
 
 valuetextheading1 {
     margin-left: 10px;
-    font-family: weathertext2;
+    font-family: system;
     font-size: 9px;
     color: #aeb6bf
 }
@@ -5164,8 +5136,8 @@ raiblue {
     height: 1rem;
     color: #aeb6bf;
     overflow: hidden;
-    font-family: weathertext2;
-    line-height: 1;
+    font-family: system;
+    line-height: 1.3;
     border: 1px solid rgba(61, 70, 77, .5);
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -5181,7 +5153,8 @@ raiblue {
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-shadow: inset 2px 0 0 0 #3b9cac;
-    box-shadow: inset 2px 0 0 0 #3b9cac
+    box-shadow: inset 2px 0 0 0 #3b9cac;
+    padding-top:2px;
 }
 
 .rainratemodulehome {
@@ -5221,7 +5194,7 @@ valuewindunit {
 
 valuetitleunit {
     font-size: .8em;
-    font-family: weathertext2
+    font-family: system;
 }
 
 greyu {
@@ -5504,14 +5477,15 @@ weather34darkdaycircle {
     display: flex;
     font-size: 10px;
     line-height: 1;
-    font-family: weathertext2
+    font-family: system
 }
+
 
 offlinenew,
 onlinenew {
     overflow: hidden;
     border-radius: 50%;
-    font-family: weathertext2;
+    font-family: system;
     margin-top: 2px;
     margin-left: -7px
 }
@@ -5584,8 +5558,9 @@ windblue {
     float: left;
     width: 90px;
     font-size: 9px;
-    line-height: 1
+    line-height: 1;
 }
+.trendpressure valuetexttr{font-size:9px;}
 
 pressureunits {
     font-size: 8px
@@ -5681,7 +5656,7 @@ pressureunits {
 .wulargeforecasthome wulargetemplohome {
     margin-top: 0;
     margin-left: 1%;
-    font-weight: 500
+
 }
 
 .wulargeforecasthome wulargetemphihome span {
@@ -5703,18 +5678,10 @@ pressureunits {
     float: left
 }
 
-wulargetemplohome uv {
-    font-weight: 500
-}
-
 wulargeforecasthome wulargetemplohome,
 wulargetemplohome {
     font-size: .7rem;
-    font-weight: 500
-}
 
-wulargetemplohome uvspan {
-    font-weight: 400
 }
 
 .wuthunder {
@@ -5734,7 +5701,7 @@ wulargetemplohome uvspan {
 .wulargerain,
 .wulargewindspeedicon {
     display: block;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system;
     position: absolute
 }
 
@@ -5830,14 +5797,14 @@ wuhumidityword {
     margin-left: 0;
     top: 20px;
     color: #2d3a4b;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: system, Helvetica, sans-serif
 }
 
 .wulargeheatindex,
 .wulargeuvindex {
     font-size: .7rem;
     float: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system;
     position: absolute
 }
 
@@ -6049,7 +6016,7 @@ wuthunder2 {
     -ms-flex-align: center;
     align-items: center;
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system;
     width: 8.5em;
     height: 1rem;
     font-size: 10px;
@@ -6121,9 +6088,9 @@ topbarmetricc {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    font-family: weathertext2;
+    font-family: system;
     font-size: .7em;
-    font-weight: 400;
+
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center
@@ -6162,7 +6129,7 @@ topbarinfo {
     align-items: center;
     font-family: weathertext2;
     font-size: .7em;
-    font-weight: 400;
+
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -6209,7 +6176,7 @@ weather34menumarkermode {
     align-items: center;
     font-family: weathertext2;
     font-size: 12px;
-    font-weight: 400;
+
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -6237,7 +6204,7 @@ weather34menumarkerlightb {
     align-items: center;
     font-family: weathertext2;
     font-size: 12px;
-    font-weight: 400;
+
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -6257,7 +6224,7 @@ menumetric {
     align-items: center;
     font-family: weathertext2;
     font-size: .9em;
-    font-weight: 400;
+
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -6283,7 +6250,7 @@ menuinfobox {
     align-items: center;
     font-family: weathertext2;
     font-size: .7em;
-    font-weight: 400;
+
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -6304,7 +6271,7 @@ weather34menumarkeryellow {
     width: 7px;
     height: 7px;
     padding: 1px 3px 1px 3px;
-    font-weight: 500;
+    ;
     font-family: weathertext2;
     font-size: 12px;
     -webkit-box-align: center;
@@ -6479,7 +6446,7 @@ uptimesup {
     width: 100%;
     text-align: center;
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system;
     opacity: 0
 }
 
@@ -6537,7 +6504,7 @@ uptimesup {
     box-shadow: none;
     text-align: center;
     text-decoration: none;
-    font-family: Arial;
+    font-family: system;
     font-size: 20px;
     font-style: normal;
     line-height: 20px;
@@ -6564,7 +6531,7 @@ uptimesup {
     box-shadow: none;
     text-align: center;
     text-decoration: none;
-    font-family: Arial;
+    font-family: system;
     font-size: 25px;
     font-style: normal;
     line-height: 25px;
@@ -6655,7 +6622,7 @@ uptimesup {
 }
 
 .weather34box .title {
-    font-family: arial, helvetica;
+    font-family: system, helvetica;
     font-size: 9px;
     top: 0;
     padding: 1px 5px 0
@@ -6664,7 +6631,7 @@ uptimesup {
 .hoursago,
 spanm,
 spanm2 {
-    font-family: Arial, Helvetica, system
+    font-family: system
 }
 
 .weather34box {
@@ -6675,12 +6642,12 @@ spanm2 {
 
 .weather34box.indoor span {
     color: #aeb6bf;
-    font-weight: 500
+
 }
 
 .weather34box.indoor titlespan {
     color: #90b12a;
-    font-weight: 500
+
 }
 
 .weather34box.clock {
@@ -6691,18 +6658,18 @@ spanm2 {
 
 .weather34box.clock span {
     color: #aeb6bf;
-    font-weight: 500
+
 }
 
 .weather34box.clock titlespan {
     color: #90b12a;
-    font-weight: 500
+
 }
 
 .weather34box.alert span,
 .weather34box.earthquake span {
     color: #ff7c39;
-    font-weight: 500;
+    ;
     margin-top: -10px
 }
 
@@ -6797,7 +6764,7 @@ spanm5 {
 .air300,
 .air50,
 airdescription {
-    font-family: weathertext2, Helvetica, system;
+    font-family:weathertext2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
@@ -6805,10 +6772,12 @@ airdescription {
 
 .airvalue {
     position: relative;
-    margin-top: 75px;
+    margin-top: 76px;
     left: 5px;
     top: 5px;
-    font-size: .9rem
+    font-size: 0.8rem;
+    font-family:weathertext2;
+    color:silver;
 }
 
 airdescription {
@@ -7049,7 +7018,7 @@ wfstriketoday {
 
 .eqcaution,
 .eqt {
-    font-family: weathertext2
+    font-family:system
 }
 
 .eqtoday1-3 {
@@ -7076,7 +7045,7 @@ wfstriketoday {
 .eqcaution {
     position: absolute;
     color: #aeb6bf;
-    font-size: .5rem
+    font-size: .55rem
 }
 
 .eqt {
@@ -7085,7 +7054,7 @@ wfstriketoday {
     margin-top: -1px;
     color: #aeb6bf;
     font-size: .5rem;
-    font-family: weathertext2
+    font-family:system
 }
 
 .eqtext {
@@ -7321,7 +7290,7 @@ regionalred {
 
 .luminance1:before {
     content: "";
-    font-family: arial, system;
+    font-family: system;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -7330,10 +7299,10 @@ regionalred {
 }
 
 .windmaxthismonth {
-    font-size: .5em;
+    font-size: .55em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7342,10 +7311,10 @@ regionalred {
 }
 
 .windmaxthisyear {
-    font-size: .5em;
+    font-size: .55em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7354,10 +7323,10 @@ regionalred {
 }
 
 .tempminthisyear {
-    font-size: .5em;
+    font-size: .55em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7366,10 +7335,10 @@ regionalred {
 }
 
 .tempmaxthisyear {
-    font-size: .5em;
+    font-size: .55em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7378,10 +7347,10 @@ regionalred {
 }
 
 .tempavgthisyear {
-    font-size: .5em;
+    font-size: .55em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7390,10 +7359,10 @@ regionalred {
 }
 
 .rainavgthisyear {
-    font-size: .5em;
+    font-size: .55em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7403,10 +7372,10 @@ regionalred {
 }
 
 .rainmaxthismonth {
-    font-size: .5em;
+    font-size: .55em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7416,10 +7385,10 @@ regionalred {
 }
 
 .rainmaxthisyear {
-    font-size: .5em;
+    font-size: .55em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7429,10 +7398,10 @@ regionalred {
 }
 
 .wmonthmax {
-    font-size: .3em;
+    font-size: .35em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7442,10 +7411,10 @@ regionalred {
 }
 
 .wyearmax {
-    font-size: .3em;
+    font-size: .35em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7454,10 +7423,10 @@ regionalred {
 }
 
 .tmonthmax {
-    font-size: .3em;
+    font-size: .35em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7466,10 +7435,10 @@ regionalred {
 }
 
 .tyearmax {
-    font-size: .3em;
+    font-size: .35em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7478,10 +7447,10 @@ regionalred {
 }
 
 .tyearconv {
-    font-size: .3em;
+    font-size: .35em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7490,10 +7459,10 @@ regionalred {
 }
 
 .tmonthconv {
-    font-size: .3em;
+    font-size: .35em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7502,10 +7471,10 @@ regionalred {
 }
 
 .wyearconv {
-    font-size: .3em;
+    font-size: .35em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7514,10 +7483,10 @@ regionalred {
 }
 
 .wmonthconv {
-    font-size: .3em;
+    font-size: .35em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7526,10 +7495,10 @@ regionalred {
 }
 
 .tyearavg {
-    font-size: .3em;
+    font-size: .35em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7539,10 +7508,10 @@ regionalred {
 }
 
 .tavgconv {
-    font-size: .3em;
+    font-size: .35em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7551,10 +7520,10 @@ regionalred {
 }
 
 .ryearavg {
-    font-size: .3em;
+    font-size: .35em;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: system;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7617,7 +7586,7 @@ maxtempgreen {
     font-size: .55rem;
     color: rgba(86, 95, 103, .7);
     width: 200px;
-    font-family: weathertext2
+    font-family: system;
 }
 
 .yearwordtempbig {
@@ -7627,7 +7596,7 @@ maxtempgreen {
     font-size: .55rem;
     color: rgba(86, 95, 103, .7);
     width: 200px;
-    font-family: weathertext2
+    font-family: system;
 }
 
 .yearwordlightningbig {
@@ -7637,14 +7606,14 @@ maxtempgreen {
     font-size: .55rem;
     color: rgba(86, 95, 103, .7);
     width: 200px;
-    font-family: weathertext2
+    font-family: system;
 }
 
 .updatedtimecurrent {
     margin-top: -38px;
     margin-left: 220px;
     color: #aeb6bf;
-    font: .68em weathertext2;
+    font: .68em system;
     line-height: 10px;
     border-radius: 2px;
     padding: 3px
@@ -7683,7 +7652,7 @@ maxtempgreen {
     width: 125px;
     color: #aeb6bf;
     line-height: 1.4;
-    font-weight: 500
+
 }
 
 .hardware,
@@ -7695,7 +7664,7 @@ maxtempgreen {
     position: absolute;
     float: left;
     margin-left: 10px;
-    font-family: weathertext2, arial, helvetica;
+    font-family: system;
     font-size: 10px
 }
 
@@ -7719,7 +7688,7 @@ maxtempgreen {
     position: absolute;
     float: left;
     margin-left: 5px;
-    font-family: weathertext2, arial, helvetica;
+    font-family: system;
     font-size: 9px;
     width: 200px;
     color: #aeb6bf;
@@ -7753,7 +7722,7 @@ maxtempgreen {
     float: left;
     margin-top: 39px;
     margin-left: 10px;
-    font-family: weathertext2, arial, helvetica;
+    font-family: system;
     font-size: 10px
 }
 
@@ -8047,11 +8016,11 @@ maxtempgreen {
     position: relative;
     left: 2px;
     border-radius: 2px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system;
     width: 140px;
     height: 1.5em;
     font-size: .6rem;
-    top: -22px;
+    top: -20px;
     color: #aeb6bf;
     -webkit-box-align: left;
     -ms-flex-align: left;
@@ -8087,7 +8056,7 @@ weather34thetime {
     display: flex;
     right: 100px;
     top: 12px;
-    color: #aeb6bf;
+    color: whitesmoke;
     font-size: 11px;
     font-family: clock;
     background: rgba(120, 138, 146, .2);
@@ -8106,12 +8075,12 @@ weather34thetime {
 }
 
 .weather34chartlinks {
-    font-size: .65em;
+    font-size: .7em;
     position: absolute;
     margin-top: 145px;
     margin-left: 5px;
     z-index: 20;
-    font-family: weathertext2
+    font-family: system
 }
 
 .weather34title2 {
@@ -8121,7 +8090,7 @@ weather34thetime {
     position: absolute;
     float: left;
     color: #aeb6bf;
-    font-family: weathertext2, arial, helvetica;
+    font-family: system;
     font-size: 9px;
     margin-top: -11px;
     padding: 1px 5px 0;
@@ -8133,7 +8102,7 @@ weather34thetime {
     position: absolute;
     float: left;
     color: #aeb6bf;
-    font-family: weathertext2, arial, helvetica;
+    font-family: system;
     font-size: 9px;
     margin-top: 15px;
     padding: 1px 5px 0;
@@ -8143,8 +8112,8 @@ weather34thetime {
 
 .grid1 a {
     font-size: .9em;
-    font-family: weathertext2;
-    font-weight: 500
+    font-family: system;
+
 }
 
 .hardwarelogo1 {
@@ -8164,7 +8133,7 @@ weather34thetime {
 .footertext {
     position: relative;
     left: 2px;
-    font-family: weathertext2, Arial, Helvetica, sans-serif;
+    font-family: system;
     width: 640px;
     height: 1.5em;
     font-size: .65rem;
@@ -8188,8 +8157,8 @@ weather34thetime {
     flex-wrap: wrap;
     display: grid;
     grid-template-areas: "header";
-    font-family: weathertext2, Arial, Helvetica, sans-serif;
-    font-weight: 500
+    font-family: system;
+
 }
 
 .weather34admin__header {
@@ -8232,7 +8201,7 @@ weather34thetime {
     border: 0;
     padding: .3rem 1rem;
     white-space: nowrap;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system;
     top: 1px
 }
 
@@ -8240,7 +8209,7 @@ weather34thetime {
     color: whitesmoke;
     background-color: rgba(86, 95, 103, 0);
     max-height: 22px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system;
     font-size: .9em;
     padding: .3rem 1rem .3rem 1.45rem;
     margin: 0 auto;
@@ -8251,7 +8220,7 @@ weather34thetime {
     position: relative;
     color: whitesmoke;
     font-size: .85em;
-    font-weight: 500;
+    ;
     left: 65px;
     background: 0
 }
@@ -8344,7 +8313,7 @@ weather34thetime {
     margin: 65px auto auto;
     width: 240px;
     line-height: 1;
-    font-family: arial, helvetica, system;
+    font-family: system;
     color: #aeb6bf
 }
 
@@ -8583,7 +8552,7 @@ weather34toptitle {
         position: absolute;
         float: left;
         margin-left: 5px;
-        font-family: weathertext2, arial, helvetica;
+        font-family: system;
         font-size: 9px;
         width: 200px;
         color: #aeb6bf;
@@ -8614,7 +8583,7 @@ weather34toptitle {
         position: relative;
         left: 2px;
         border-radius: 2px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: system;
         width: 140px;
         height: 1.5em;
         font-size: .6rem;
@@ -8655,7 +8624,7 @@ weather34toptitle {
         position: relative;
         color: #aeb6bf;
         font-size: .85em;
-        font-weight: 500;
+        ;
         left: 55px;
         background: 0
     }
@@ -8687,11 +8656,11 @@ weather34toptitle {
         position: relative;
         left: 2px;
         border-radius: 2px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: system;
         width: 140px;
         height: 1.5em;
         font-size: .6rem;
-        top: -20px;
+        top: -18px;
         color: #aeb6bf;
         -webkit-box-align: left;
         -ms-flex-align: left;
@@ -8707,7 +8676,7 @@ weather34toptitle {
     .updatedtime1,
     .updatedtimeuv {
         position: relative;
-        font: .65em weathertext2;
+        font: .65em system;
         margin-left: 235px;
         padding: 0;
         margin-top: -32px;
@@ -8721,12 +8690,12 @@ weather34toptitle {
     }
 
     .weather34chartlinks {
-        font-size: .65em;
+        font-size: .7em;
         position: absolute;
         margin-top: 150px;
         margin-left: 5px;
         z-index: 20;
-        font-family: weathertext2
+        font-family: system
     }
 
     .wulargeforecasthome {
@@ -9005,7 +8974,7 @@ weather34toptitle {
     .footertext {
         position: relative;
         left: -5px;
-        font-family: weathertext2, Arial, Helvetica, sans-serif;
+        font-family: system;
         width: 320px;
         height: 1.5em;
         font-size: .65rem;
@@ -9051,11 +9020,11 @@ weather34toptitle {
         position: relative;
         left: 2px;
         border-radius: 2px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: system;
         width: 140px;
         height: 1.5em;
         font-size: .6rem;
-        top: -20px;
+        top: -18px;
         color: #aeb6bf;
         -webkit-box-align: left;
         -ms-flex-align: left;
@@ -9085,12 +9054,12 @@ weather34toptitle {
     }
 
     .weather34chartlinks {
-        font-size: .65em;
+        font-size: .7em;
         position: absolute;
         margin-top: 147px;
         margin-left: 5px;
         z-index: 20;
-        font-family: weathertext2
+        font-family: system
     }
 
     .wulargeforecasthome {
@@ -9101,12 +9070,12 @@ weather34toptitle {
         font-size: .65rem;
         display: block;
         border-radius: 3px;
-        overflow: hidden    ;
+        overflow: hidden;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         -ms-border-radius: 3px;
         -o-border-radius: 3px;
-}
+    }
 
     .barometerconverter {
         margin-left: 238px
@@ -9285,7 +9254,7 @@ averwordwindword {
 
 valuetextheading1a {
     margin-left: 10px;
-    font-family: weathertext2;
+    font-family: system;
     font-size: 1em
 }
 
@@ -9314,7 +9283,7 @@ valuetextheading1a {
     font-size: 1em;
     font-weight: 700;
     z-index: 9999999;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -9368,7 +9337,7 @@ valuetextheading1a {
     font-size: 1em;
     font-weight: 700;
     z-index: 9999999;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: system, Helvetica, sans-serif
 }
 
 .weather34tipr:hover:after,
@@ -9388,7 +9357,7 @@ valuetextheading1a {
 }
 
 valuetextheading1r {
-    font-family: weathertext2;
+    font-family: system;
     font-size: 1em;
     margin-left: -10px
 }
@@ -9428,7 +9397,7 @@ valuetextsolar {
     font-size: .8em;
     font-weight: 700;
     z-index: 9999999;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: system, Helvetica, sans-serif
 }
 
 .weather34tiph:hover:after,
@@ -9478,7 +9447,7 @@ valuetextsolar {
     font-size: .8em;
     font-weight: 700;
     z-index: 9999999;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: system, Helvetica, sans-serif
 }
 
 .weather34tipl:hover:after,
@@ -9528,7 +9497,7 @@ valuetextsolar {
     font-size: .9em;
     font-weight: 700;
     z-index: 9999999;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: system, Helvetica, sans-serif
 }
 
 .weather34tipsol:hover:after,
@@ -9556,7 +9525,7 @@ valuetextsolar {
 
 valuetextheading1a {
     margin-left: 10px;
-    font-family: weathertext2;
+    font-family: system;
     font-size: 1em
 }
 
@@ -9584,7 +9553,7 @@ valuetextheading1a {
     font-size: 1.1em;
     font-weight: 700;
     z-index: 9999999;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: system, Helvetica, sans-serif
 }
 
 .weather34tiplink:hover:after,
@@ -9638,9 +9607,9 @@ valuetextheading1a {
     margin-left: -44px;
     border-radius: 3px;
     font-size: 1.3em;
-    font-weight: 400;
+
     z-index: 9999999;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: system, Helvetica, sans-serif
 }
 
 .weather34tipty:hover:after,
@@ -9692,7 +9661,7 @@ valuetextheading1a {
     font-size: .8em;
     font-weight: 700;
     z-index: 9999999;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: system, Helvetica, sans-serif
 }
 
 .weather34tipfooter:hover:after,
@@ -9743,7 +9712,7 @@ valuetextheading1a {
     font-size: 1em;
     font-weight: 700;
     z-index: 9999999;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: system, Helvetica, sans-serif
 }
 
 .weather34tipmax:hover:after,
@@ -9794,7 +9763,7 @@ valuetextheading1a {
     font-size: 1em;
     font-weight: 700;
     z-index: 9999999;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: system, Helvetica, sans-serif
 }
 
 .weather34tipmin:hover:after,
@@ -9848,7 +9817,7 @@ valuetextheading1a {
     font-size: .8em;
     font-weight: 700;
     z-index: 9999999;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: system, Helvetica, sans-serif
 }
 
 .weather34tiptemp:hover:after,
@@ -9873,7 +9842,7 @@ valuetextheading1a {
     box-sizing: border-box;
     left: 0;
     font-family: weathertext2;
-    font-weight: 400
+
 }
 
 .weather34tipdewm:after,
@@ -9898,9 +9867,9 @@ valuetextheading1a {
     left: -17px;
     border-radius: 3px;
     font-size: .75em;
-    font-weight: 500;
+    ;
     z-index: 9999999;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: system, Helvetica, sans-serif
 }
 
 .weather34tipdewm:hover:after,
@@ -9925,7 +9894,7 @@ valuetextheading1a {
     box-sizing: border-box;
     left: 0;
     font-family: weathertext2;
-    font-weight: 400
+
 }
 
 .weather34tipdewh:after,
@@ -9950,9 +9919,9 @@ valuetextheading1a {
     left: -20px;
     border-radius: 3px;
     font-size: .75em;
-    font-weight: 500;
+    ;
     z-index: 9999999;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: system, Helvetica, sans-serif
 }
 
 .weather34tipdewh:hover:after,
@@ -9977,7 +9946,7 @@ valuetextheading1a {
     box-sizing: border-box;
     left: 0;
     font-family: weathertext2;
-    font-weight: 400
+
 }
 
 .weather34tipavg1:after,
@@ -10004,9 +9973,9 @@ valuetextheading1a {
     left: -17px;
     border-radius: 3px;
     font-size: .75em;
-    font-weight: 500;
+    ;
     z-index: 9999999;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: system, Helvetica, sans-serif
 }
 
 .weather34tipavg1:hover:after,
@@ -10056,7 +10025,7 @@ valuetextheading1a {
     left: 0;
     border-radius: 3px;
     font-size: 1em;
-    font-weight: 500;
+    ;
     z-index: 9999999;
     font-family: weathertext2
 }
@@ -10289,23 +10258,23 @@ sunsetvalue {
     position: relative;
     margin-left: 80px;
     top: 15px;
-    font-size: .55rem;
+    font-size: .6rem;
     width: 200px;
     line-height: 1;
     color: #aeb6bf;
-    font-family: weathertext2;
+    font-family: system;
     text-align: left
 }
 
 .moonset2 {
     position: relative;
     margin-left: 80px;
-    font-size: .55rem;
+    font-size: .6rem;
     top: 15px;
     width: 200px;
     line-height: 1;
     color: #aeb6bf;
-    font-family: weathertext2;
+    font-family: system;
     text-align: left
 }
 
@@ -10313,23 +10282,23 @@ sunsetvalue {
     position: relative;
     margin-left: 80px;
     top: 20px;
-    font-size: .55rem;
+    font-size: .6rem;
     width: 200px;
     line-height: .8;
     color: #aeb6bf;
-    font-family: weathertext2;
+    font-family: system;
     text-align: left
 }
 
 .luminance2 {
     position: relative;
     margin-left: 80px;
-    font-size: .55rem;
+    font-size: .6rem;
     top: 20px;
     width: 200px;
     line-height: 1;
     color: #aeb6bf;
-    font-family: weathertext2;
+    font-family: system;
     text-align: left
 }
 
@@ -10500,7 +10469,7 @@ purpleluft {
 .weather34-slider,
 .weather34-slider a {
     color: #fff;
-    font-weight: 500
+
 }
 
 .weather34-slider a:hover {
@@ -10558,7 +10527,7 @@ wind-dir-avgmonth {
 
 metricgrey {
     color: whitesmoke;
-    font-weight: 500;
+    ;
     font-size: 9px
 }
 
@@ -10596,7 +10565,7 @@ weather34themenusection {
     align-items: center;
     font-family: system;
     font-size: 10px;
-    font-weight: 500;
+    ;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -10650,7 +10619,7 @@ iconweather34toggle {
 }
 
 .probabilityrain {
-    font-family: weathertext2;
+    font-family: system;
     position: absolute;
     margin-left: 60px;
     font-size: .35em;
@@ -10665,7 +10634,8 @@ iconweather34toggle {
     margin-left: 3px;
     margin-top: -3px;
     font-size: .35em;
-    color: #aeb6bf
+    color: #aeb6bf;
+    font-family: system;
 }
 
 probabilityicon {
@@ -10685,9 +10655,9 @@ probabilityicon {
     background: 0;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
     box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
-    text-align: left;    
-    font-size: .55rem;
-    font-family: weathertext2;
+    text-align: left;
+    font-size: .6rem;
+    font-family: system;
     position: absolute;
     margin-left: 125px;
     padding: 5px;
@@ -10699,11 +10669,11 @@ probabilityicon {
 }
 
 .meteotextshowertext {
-    font-family: weathertext2;
+    font-family: system;
     position: absolute;
     margin-left: 30px;
     margin-top: 10px;
-    font-size: .35em;
+    font-size: .4em;
     color: #aeb6bf;
     text-align: left;
     line-height: .9;
@@ -10724,11 +10694,11 @@ peak {
 }
 
 .nextmeteotextshowertext {
-    font-family: weathertext2;
+    font-family: system;
     position: absolute;
     margin-left: 50px;
     margin-top: 15px;
-    font-size: .35em;
+    font-size: .4em;
     color: #aeb6bf;
     text-align: left;
     line-height: .9;
@@ -10808,7 +10778,7 @@ nav li a {
     font-size: 11px;
     font-family: system;
     padding-left: 15px;
-    font-weight: 500;
+    ;
     width: 15rem;
 }
 
