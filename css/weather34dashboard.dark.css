@@ -4952,6 +4952,10 @@
     float: left;
     font-size: 10px;
   }
+  wulargetempdesc {
+    max-width:140px;
+    text-transform:capitalize
+  }
   .wulargehomeicons {
     margin-bottom: -5px;
     float: left;
@@ -8862,7 +8866,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     border-radius: 2px;
-    margin-left: 65px;
+    margin-left: 75px;
     top: 0;
     line-height: 0.9;
   }
