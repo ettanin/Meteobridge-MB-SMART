@@ -8051,12 +8051,13 @@ weather34thetime {
     position: absolute;
     float: left;
     color: #aeb6bf;
+    font-size: 7.5pt;
+    margin-top: 0.2rem;
+    line-height: 1;
+    margin-left: 5px;
+    width: 180px;
+    text-align: left;
     font-family: headingtext;
-    font-size: 9px;
-    margin-top: 15px;
-    padding: 1px 5px 0;
-    left: 0;
-    width: 10.2rem
 }
 
 .grid1 a {
@@ -10398,7 +10399,7 @@ purpleluft {
     bottom: 0;
     content: "";
     height: 12px;
-    left: 63px;
+    left: 65px;
     position: absolute;
     width: 12px
 }
@@ -10506,17 +10507,20 @@ iconweather34toggle {
 .summarydesc1 {
     position: absolute;
     margin-left: 5px;
-    margin-top: 2px;
+    margin-top: 0px;
     font-size: 10px;
     width: 200px;
     line-height: 1;
-    text-align: left
+    text-align: left;
+    font-family:headingtext;
+    font-size:7.5pt;
+    color:silver
 }
 
 .iconpos1 {
     position: absolute;
-    margin-left: 180px;
-    margin-top: 27px
+    margin-left: 185px;
+    margin-top: 25px;
 }
 
 .charttempmodule {

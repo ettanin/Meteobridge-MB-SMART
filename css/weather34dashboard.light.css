@@ -9902,13 +9902,13 @@ tunit1 {
 .consoleoutlook {
     position: relative;
     color: #222;
-    font-size: 9px;
+    font-size: 7.5pt;
     margin-top: 0.2rem;
     line-height: 1;
     margin-left: 5px;
     width: 180px;
     text-align: left;
-    font-family: weathertext2;
+    font-family: headingtext;
 }
 
 .consoleicon {
@@ -10279,7 +10279,7 @@ purpleluft {
 }
 
 .weather34-theme-switch a {
-    color: #222;
+    color: whitesmoke;
     font-family: weathertext2;
 }
 
@@ -10418,12 +10418,15 @@ iconweather34toggle {
     width: 200px;
     line-height: 1;
     text-align: left;
+    font-family:headingtext;
+    font-size:7.5pt;
+    color:#222
 }
 
 .iconpos1 {
     position: absolute;
     margin-left: 185px;
-    margin-top: 27px;
+    margin-top: 25px;
 }
 
 .charttempmodule {
