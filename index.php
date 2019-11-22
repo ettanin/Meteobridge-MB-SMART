@@ -37,9 +37,11 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 <meta name="msapplication-TileColor" content="#f8f8f8">
 <meta name="msapplication-TileImage" content="img/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<link href="css/weather34dashboard.<?php echo $theme?>.min.css?version=<?php echo filemtime('css/weather34dashboard.'.$theme.'.min.css')?>" rel="stylesheet prefetch">
 <link rel="preload" href="css/fonts/clock3-webfont.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="css/fonts/verbatim-regular.woff" as="font" type="font/woff" crossorigin>
-<link href="css/weather34dashboard.<?php echo $theme?>.css?version=<?php echo filemtime('css/weather34dashboard.'.$theme.'.css')?>" rel="stylesheet prefetch">
+<link rel="preload" href="css/fonts/verbatim-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="css/fonts/verbatim-medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="css/fonts/HelveticaNeue-Medium.woff" as="font" type="font/woff" crossorigin>
 </head>
 <!-- Weather34 top moudles begin -->
 <div class="maincontainer">
