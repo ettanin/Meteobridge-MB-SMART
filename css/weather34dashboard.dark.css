@@ -10453,8 +10453,8 @@ body {
 weather34themenu {
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
-    font-size: 11px;
+    font-family: headingtext;
+    font-size: 10px;
     margin-top: 7px;
     width: 200px
 }
@@ -10476,7 +10476,7 @@ weather34themenusection {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    font-family: weathertext2;
+    font-family: headingtext;
     font-size: 10px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -10484,6 +10484,7 @@ weather34themenusection {
     color: #aeb6bf;
     border: 0;
     text-transform: uppercase;
+    padding-top:3px
 }
 
 iconweather34menu {
