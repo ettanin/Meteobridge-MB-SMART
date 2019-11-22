@@ -10565,7 +10565,7 @@ probabilityicon {
     box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
     text-align: left;
     border-radius: 2px;
-    font-size: .55rem;
+    font-size: 10px;
     font-family: headingtext;
     position: absolute;
     margin-left: 125px;
