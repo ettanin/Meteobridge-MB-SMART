@@ -8209,10 +8209,10 @@ weather34thetime {
 
 .moduleupdatetime {
     position: relative;
-    font: 0.65em headingtext;
+    font: 9px weathertext2;
     margin-left: 230px;
     padding: 0;
-    margin-top: -13px;
+    margin-top: -14px;
     color: #222;
     line-height: 10px;
     margin-bottom: 3px;

@@ -8213,10 +8213,10 @@ weather34thetime {
 
 .moduleupdatetime {
     position: relative;
-    font: .6em weathertext2;
+    font: 9px weathertext2;
     margin-left: 230px;
     padding: 0;
-    margin-top: -33px;
+    margin-top: -35px;
     color: #aeb6bf;
     line-height: 10px;
     margin-bottom: 0
@@ -8256,7 +8256,7 @@ weather34thetime {
 }
 
 .averagestext {
-    font-size: 9px;
+    font-size: 10px;
     position: relative;
     text-align: center;
     margin: 65px auto auto;
