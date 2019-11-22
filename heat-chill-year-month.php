@@ -115,5 +115,5 @@ if ($weather["uvymax"]>10) {
  }
  ?>
 </div></tunit1>
-<div class="tyearmax" style="margin-left:-10px;"><?php echo $windchillmintime2;?></div>
+<div class="tyearmax" style="margin-left:-5px;"><?php echo $windchillmintime2;?></div>
 <div class="tyearconv" style="margin-left:-15px;">Min Wind Chill</div>
