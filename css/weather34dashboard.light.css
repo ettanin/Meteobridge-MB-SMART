@@ -5053,7 +5053,7 @@
 
   wulargetempdesc {
     max-width:140px;
-    text-transform:capitalize
+    text-transform:capitalize;
   }
 
   .wulargehomeicons {
@@ -7428,7 +7428,7 @@
     margin-left: 37%;
     margin-top: 15px;
     line-height: 1;
-    color: #222;
+    color: #aeb6bf;
   }
   .weather34refresh a {
     float: right;

@@ -4952,9 +4952,10 @@
     float: left;
     font-size: 10px;
   }
+  
   wulargetempdesc {
     max-width:140px;
-    text-transform:capitalize
+    text-transform:capitalize;
   }
   .wulargehomeicons {
     margin-bottom: -5px;
