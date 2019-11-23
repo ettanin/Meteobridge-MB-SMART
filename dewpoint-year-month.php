@@ -48,10 +48,6 @@
 <div class="tavgconv" style="margin-left:-5px;"><?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue style='font-size:1.1em;'>".$weather["dewmmin"]."</maxtempblue>&deg";?>
 </div>
 
-
-
-
-<div class="yearwordtempbig">Dewpoint</div>
 <div class="tempmaxthisyear">
 <?php //temperture min year
  if ($weather["temp_units"]=='C' && $weather["dewymax"]>30){echo "<maxtempred>",$weather["dewymax"]  ;echo "</maxtempred><tunit1>&deg;".$weather["temp_units"] ; }

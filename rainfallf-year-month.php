@@ -40,7 +40,6 @@ else if ($seconds_ago >= 3600) {echo '&nbsp;&nbsp;'.intval($seconds_ago / 3600) 
 else if ($seconds_ago >= 60) {echo '&nbsp;'.intval($seconds_ago / 60) . ' <lastrain>'.$lang['Minutes'].'</lastrain></maxtempblue></div></wunit><div class="ryearavg">Last Rainfall</div><div class="tavgconv">&nbsp;&nbsp;&nbsp;Ago</div>';
 } ?>
 
-<div class="yearwordwindbig">Rainfall</div>
 <div class="rainmaxthisyear">
 <?php //rain year 
 if($weather["rainymax"]>=0 && $weather["rain_units"] =='mm'){ echo "<maxtempblue>".number_format($weather["rainymax"],1,'.','');echo "</maxtempblue><wunit>".$weather["rain_units"];}if ($weather["rain_units"] =='in'){echo "<maxtempblue>".$weather["rainymax"]  ;echo "</maxtempblue><wunit>".$weather["rain_units"];}

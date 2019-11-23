@@ -68,9 +68,6 @@ if ($weather["uvymax"]>10) {
 <div class="tyearavg" style="margin-left:0;"><?php echo $weather["uvymaxtime"];?></div>
 <div class="tavgconv" style="margin-left:3px;">&nbsp;Max UVI&nbsp;</div>
 <?php ;}?>
-<div class="yearwordtempbig">Heat UVI Wind Chill</div>
-
-
 
 <div class="tempmaxthisyear" style="margin-left:-5px;">
 <?php //wind chill min year

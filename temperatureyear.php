@@ -54,9 +54,7 @@ include('livedata.php');include('common.php');header('Content-type: text/html; c
 <div class="tavgconv" style="margin-left:-9px;"><?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue style='font-size:1.1em;'>".$weather["tempmmin"]."</maxtempblue>&deg";?>
 </div>
 
-<div class="yearwordtempbig">Temperature</div>
 <div class="tempmaxthisyear">
-
 <?php //temperture min year
  if ($weather["temp_units"]=='C' && $weather["tempymax"]>30){echo "<maxtempred>",$weather["tempymax"]  ;echo "</maxtempred><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='C' && $weather["tempymax"]>24){echo "<maxtemporange>",$weather["tempymax"]  ;echo "</maxtemporange><tunit1>&deg;".$weather["temp_units"] ; }

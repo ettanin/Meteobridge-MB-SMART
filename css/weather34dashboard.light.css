@@ -6929,184 +6929,93 @@
     margin-top: 15px;
   }
   .windmaxthismonth {
-    font-size: 0.5em;
-    color: #565f67;
+    font-size: 13px;
+    color: #222;
     position: absolute;
     font-family: weathertext2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 15px;
+    top: 16px;
     left: 15px;
   }
   .windmaxthisyear {
-    font-size: 0.5em;
-    color: #565f67;
+    font-size: 13px;
+    color: #222;
     position: absolute;
     font-family: weathertext2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 15px;
+    top: 16px;
     left: 150px;
   }
   .tempminthisyear {
-    font-size: 0.5em;
-    color: silver;
+    font-size: 13px;
+    color: #222;
     position: absolute;
     font-family: weathertext2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 15px;
+    top: 16px;
     left: 15px;
   }
   .tempmaxthisyear {
-    font-size: 0.5em;
-    color: silver;
+    font-size: 13px;
+    color: #222;
     position: absolute;
     font-family: weathertext2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 15px;
+    top: 16px;
     left: 155px;
   }
   .tempavgthisyear {
-    font-size: 0.5em;
-    color: silver;
+    font-size: 13px;
+    color: #222;
     position: absolute;
     font-family: weathertext2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 15px;
+    top: 16px;
     left: 85px;
   }
   .rainavgthisyear {
-    font-size: 0.5em;
-    color: silver;
+    font-size: 13px;
+    color: #222;
     position: absolute;
     font-family: weathertext2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 15px;
+    top: 16px;
     left: 80px;
     text-transform: capitalize;
   }
   .rainmaxthismonth {
-    font-size: 0.5em;
-    color: silver;
+    font-size: 13px;
+    color: #222;
     position: absolute;
     font-family: weathertext2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 15px;
+    top: 16px;
     left: 15px;
     text-transform: capitalize;
   }
   .rainmaxthisyear {
-    font-size: 0.5em;
-    color: silver;
-    position: absolute;
-    font-family: weathertext2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 15px;
-    left: 150px;
-    text-transform: capitalize;
-  }
-  .windmaxthismonth {
-    font-size: 0.5em;
+    font-size: 13px;
     color: #222;
     position: absolute;
     font-family: weathertext2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 15px;
-    left: 15px;
-  }
-  .windmaxthisyear {
-    font-size: 0.5em;
-    color: #222;
-    position: absolute;
-    font-family: weathertext2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 15px;
-    left: 150px;
-  }
-  .tempminthisyear {
-    font-size: 0.5em;
-    color: #222;
-    position: absolute;
-    font-family: weathertext2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 15px;
-    left: 15px;
-  }
-  .tempmaxthisyear {
-    font-size: 0.5em;
-    color: #222;
-    position: absolute;
-    font-family: weathertext2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 15px;
-    left: 155px;
-  }
-  .tempavgthisyear {
-    font-size: 0.5em;
-    color: #222;
-    position: absolute;
-    font-family: weathertext2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 15px;
-    left: 85px;
-  }
-  .rainavgthisyear {
-    font-size: 0.5em;
-    color: #222;
-    position: absolute;
-    font-family: weathertext2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 15px;
-    left: 80px;
-    text-transform: capitalize;
-  }
-  .rainmaxthismonth {
-    font-size: 0.5em;
-    color: #222;
-    position: absolute;
-    font-family: weathertext2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 15px;
-    left: 15px;
-    text-transform: capitalize;
-  }
-  .rainmaxthisyear {
-    font-size: 0.5em;
-    color: #222;
-    position: absolute;
-    font-family: weathertext2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 15px;
+    top: 16px;
     left: 150px;
     text-transform: capitalize;
   }
@@ -7119,7 +7028,7 @@
     display: -ms-flexbox;
     display: flex;
     top: 5px;
-    left: 15px;
+    left: 16px;
     text-transform: capitalize;
   }
   .wyearmax {
@@ -7273,33 +7182,10 @@
   maxtempgreen {
     color: #90b12a;
   }
-  .yearwordwindbig {
-    position: absolute;
-    margin-left: 0;
-    margin-top: 42px;
-    font-size: 0.55rem;
-    color: rgba(86, 95, 103, 0.2);
-    width: 200px;
-    font-family: weathertext2;
+  .yearwordwindbig,.yearwordtempbig,.yearwordlightningbig {
+    display:none
   }
-  .yearwordtempbig {
-    position: absolute;
-    margin-left: 0;
-    margin-top: 42px;
-    font-size: 0.55rem;
-    color: rgba(86, 95, 103, 0.2);
-    width: 200px;
-    font-family: weathertext2;
-  }
-  .yearwordlightningbig {
-    position: absolute;
-    margin-left: 27px;
-    margin-top: 67px;
-    font-size: 0.55rem;
-    color: rgba(86, 95, 103, 0.2);
-    width: 200px;
-    font-family: weathertext2;
-  }
+  
   weather34thetime {
     position: absolute;
     display: -webkit-box;
@@ -7335,7 +7221,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     width: 218px;
-    height: 55px;
+    height: 55px;    
   }
   .weather34tipcelsius {
     position: absolute;
@@ -9210,11 +9096,12 @@
   weather34themenu {
     position: absolute;
     font-family: headingtext;
-    font-size: 10px;
+    font-size: 11px;
     color: #222;
     margin-top: 7px;
     width: 200px;
     margin-bottom: 55px;
+    text-transform: capitalize;
   }
   .weather34themenuicon2 {
     position: absolute;

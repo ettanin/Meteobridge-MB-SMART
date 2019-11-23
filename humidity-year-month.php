@@ -30,7 +30,6 @@
  else if ($weather["humidity_mmin"]>0){echo "<maxtempred style='font-size:1.1em;'>",$weather["humidity_mmin"]  ;echo "</maxtempred>%"; }?>
 </div>
 
-<div class="yearwordtempbig">Humidity</div>
 <div class="tempmaxthisyear">
 <?php //temperture min year
  if ($weather["humidity_ymax"]>70){echo "<maxtempblue>",$weather["humidity_ymax"]  ;echo "</maxtempblue><tunit1>%"; }

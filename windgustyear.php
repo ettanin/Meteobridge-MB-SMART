@@ -91,7 +91,6 @@ if ($weather['wind_direction_avgmonth']<=11.25) {
 <div class="tyearavg" >&nbsp; <?php echo strftime('%b',time())." ".date('Y');?></div>
 <div class="tavgconv" style="margin-left:7px;"><?php echo $lang['Avg']?></div>
 
-<div class="yearwordwindbig">Wind Data</div>
 <div class="windmaxthisyear">
 <?php //wind max year
 if ($weather["wind_units"]=='km/h' && $weather["windymax"]>60){echo "<maxtempred>",number_format($weather["windymax"],1)."</maxtempred><wunit>".$weather["wind_units"] ; }
