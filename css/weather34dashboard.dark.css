@@ -6438,10 +6438,10 @@
     text-transform: capitalize;
   }
   .wmonthmax {
-    font-size: 0.3em;
+    font-size: 10px;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: headingtext;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6450,10 +6450,10 @@
     text-transform: capitalize;
   }
   .wyearmax {
-    font-size: 0.3em;
+    font-size: 10px;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: headingtext;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6461,10 +6461,10 @@
     left: 150px;
   }
   .tmonthmax {
-    font-size: 0.3em;
+    font-size: 10px;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: headingtext;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6472,10 +6472,10 @@
     left: 15px;
   }
   .tyearmax {
-    font-size: 0.3em;
+    font-size: 10px;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: headingtext;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6483,10 +6483,10 @@
     left: 150px;
   }
   .tyearconv {
-    font-size: 0.3em;
+    font-size: 10px;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: headingtext;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6494,10 +6494,10 @@
     left: 155px;
   }
   .tmonthconv {
-    font-size: 0.3em;
+    font-size: 10px;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: headingtext;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6505,10 +6505,10 @@
     left: 20px;
   }
   .wyearconv {
-    font-size: 0.3em;
+    font-size: 10px;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: headingtext;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6516,10 +6516,10 @@
     left: 150px;
   }
   .wmonthconv {
-    font-size: 0.3em;
+    font-size: 10px;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: headingtext;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6527,10 +6527,10 @@
     left: 15px;
   }
   .tyearavg {
-    font-size: 0.3em;
+    font-size: 10px;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: headingtext;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6539,10 +6539,10 @@
     text-transform: capitalize;
   }
   .tavgconv {
-    font-size: 0.3em;
+    font-size: 10px;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: headingtext;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6550,10 +6550,10 @@
     left: 85px;
   }
   .ryearavg {
-    font-size: 0.3em;
+    font-size: 10px;
     color: #aeb6bf;
     position: absolute;
-    font-family: weathertext2;
+    font-family: headingtext;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

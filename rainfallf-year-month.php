@@ -49,4 +49,4 @@ if($weather["rainymax"]>=0 && $weather["rain_units"] =='mm'){ echo "<maxtempblue
 ?>
 </div></wunit>
 <div class="wyearmax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo date('Y')?></div>
-<div class="tyearconv" style="margin-left:-8px;"><?php echo $lang['Accumulation']?></div>
+<div class="tyearconv" style="margin-left:-12px;"><?php echo $lang['Accumulation']?></div>

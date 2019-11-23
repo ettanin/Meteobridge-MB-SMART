@@ -95,12 +95,12 @@ function cToFDirect($field){
 // Pressure
 function mbToin(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = round((float)(0.02952999*$weather[$field]), 3);
+	$weather[$field] = round((float)(0.02952999*$weather[$field]), 2);
 }
 
 function inTomb(&$weather, $field){
 	if(!isset($weather[$field])) return;
-	$weather[$field] = round((float)(33.86388158*$weather[$field]), 3);
+	$weather[$field] = round((float)(33.86388158*$weather[$field]), 2);
 }
 
 // Depth

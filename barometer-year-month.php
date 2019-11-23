@@ -21,8 +21,6 @@ echo "<maxtempblue>".$weather["thb0seapressymin"];echo "</maxtempblue><wunit>".$
 
 
 <div class="rainavgthisyear">
-
-
 <?php echo "<maxtemporange>".$weather["thb0seapressmmax"];echo "</maxtemporange><wunit>".$weather["barometer_units"];?>
 </div></wunit>
 
@@ -30,12 +28,8 @@ echo "<maxtempblue>".$weather["thb0seapressymin"];echo "</maxtempblue><wunit>".$
 <div class="tavgconv" style="margin-left:-12px;">&nbsp;<?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue style='font-size:1.1em;'>".$weather["thb0seapressmmin"];echo "</maxtempblue>";?>
 </div>
 
-
-
-
-
 <div class="yearwordwindbig">Pressure</div>
-<div class="rainmaxthisyear">
+<div class="rainmaxthisyear" style="margin-left:-5px;">
 <?php // max
 echo "<maxtemporange>".$weather["thb0seapressymax"];echo "</maxtemporange><wunit>".$weather["barometer_units"];
 ?>

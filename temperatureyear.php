@@ -77,4 +77,4 @@ include('livedata.php');include('common.php');header('Content-type: text/html; c
  ?>
 </div></tunit1>
 <div class="tyearmax">&nbsp;<?php echo $weather["tempymaxtime2"]?></div>
-<div class="tyearconv"><?php echo $lang['Highest']?></div>
+<div class="tyearconv">&nbsp;<?php echo $lang['Highest']?></div>
