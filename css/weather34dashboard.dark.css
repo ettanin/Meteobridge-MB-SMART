@@ -4989,7 +4989,7 @@
   .wurainfall,
   .wuwindspeed {
     font-size: 10px;
-    margin-left: 120px;
+    margin-left: 125px;
     font-family: weathertext2;
     padding-top: 0;
     color: #fff;
@@ -5063,8 +5063,8 @@
   }
   .wulargealert {
     position: absolute;
-    margin-top: 27px;
-    margin-left: 98px;
+    margin-top: 29px;
+    margin-left: 105px;
     width: 16em;
   }
   .wulargehumidity {
