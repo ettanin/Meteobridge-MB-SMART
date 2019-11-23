@@ -6007,7 +6007,7 @@
   .davisimg2 {
     position: absolute;
     float: right;
-    margin-left: 130px;
+    margin-left: 140px;
     margin-top: 0;
   }
   .nanoimg2 {
@@ -7375,7 +7375,7 @@
   .cwxiconsummary {
     position: absolute;
     font-family: headingtext;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1;
     height: 35px;
     padding: 5px;
@@ -7385,7 +7385,7 @@
     color: #222;
   }
   .averagestext {
-    font-size: 10px;
+    font-size: 7.5pt;
     position: relative;
     text-align: center;
     margin: 65px auto auto;
@@ -9309,7 +9309,7 @@
     margin-top: 60px;
     border: 1px solid rgba(95, 96, 97, 0.2);
     border-radius: 2px;
-    font-size: 10px;
+    font-size: 11px;
     font-family: headingtext;
     position: absolute;
     margin-left: 125px;

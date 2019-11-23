@@ -6926,7 +6926,7 @@
   .davisimg2 {
     position: absolute;
     float: right;
-    margin-left: 130px;
+    margin-left: 140px;
     margin-top: 0;
   }
   .nanoimg2 {
@@ -7260,7 +7260,7 @@
   .cwxiconsummary {
     position: absolute;
     font-family: weathertext2;
-    font-size: 0.7em;
+    font-size: 7.5pt;
     line-height: 12px;
     height: 35px;
     padding: 5px;
@@ -7270,7 +7270,7 @@
     color: #aeb6bf;
   }
   .averagestext {
-    font-size: 10px;
+    font-size: 7.5pt;
     position: relative;
     text-align: center;
     margin: 65px auto auto;
