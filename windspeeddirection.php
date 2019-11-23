@@ -89,7 +89,7 @@ elseif ($weather["wind_units"]=="kts" && $weather["wind_gust_speed"]*$toKnots>=2
 ?></div></div>
 <div class="homeweathercompass1"><div class="homeweathercompass-line1"><div class="thearrow2"></div><div class="thearrow1"></div></div>
 <div class="text1"><div class="windvalue1" id="windvalue"><?php echo $weather["wind_direction"],"&deg;";?></div></div>
-<div class="windirectiontext1"><windvaluetextheading>
+<div class="windirectiontext1"> 
 <?php  //weather34 wind direction value output
 if ($weather["wind_direction"]<=11.25) {
     echo $lang['Northdir'] ;

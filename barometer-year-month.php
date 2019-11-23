@@ -19,7 +19,6 @@ echo "<maxtempblue>".$weather["thb0seapressymin"];echo "</maxtempblue><wunit>".$
 <div class="wmonthmax"><?php echo $weather["thb0seapressyearmintime"] ?></div>
 <div class="tmonthconv">&nbsp;<?php echo $lang['Lowest']?></div>
 
-
 <div class="rainavgthisyear">
 <?php echo "<maxtemporange>".$weather["thb0seapressmmax"];echo "</maxtemporange><wunit>".$weather["barometer_units"];?>
 </div></wunit>

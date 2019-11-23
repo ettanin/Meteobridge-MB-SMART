@@ -21,7 +21,6 @@ if ($weather["rain_units"] =='in'){echo "<maxtempblue>".$weather["rainmmax"]  ;e
 <div class="wmonthmax" > <?php echo strftime('%b',time())." ".date('Y');?></div>
 <div class="tmonthconv" style="margin-left:-12px;"><?php echo $lang['Accumulation']?></div>
 
-
 <div class="rainavgthisyear">
 <maxtempblue>
 <?php 
@@ -40,7 +39,6 @@ else if ($seconds_ago >= 7200) {echo '&nbsp;'.intval($seconds_ago / 3600) . ' <l
 else if ($seconds_ago >= 3600) {echo '&nbsp;&nbsp;'.intval($seconds_ago / 3600) . ' <lastrain>&nbsp;'.$lang['Hour'].'</lastrain></maxtempblue></div></wunit><div class="ryearavg">'.$lang['Last Rainfall'].'</div><div class="tavgconv">&nbsp;&nbsp;&nbsp;'.$lang['Ago'].'</div>';}
 else if ($seconds_ago >= 60) {echo '&nbsp;'.intval($seconds_ago / 60) . ' <lastrain>'.$lang['Minutes'].'</lastrain></maxtempblue></div></wunit><div class="ryearavg">Last Rainfall</div><div class="tavgconv">&nbsp;&nbsp;&nbsp;Ago</div>';
 } ?>
-
 
 <div class="yearwordwindbig">Rainfall</div>
 <div class="rainmaxthisyear">

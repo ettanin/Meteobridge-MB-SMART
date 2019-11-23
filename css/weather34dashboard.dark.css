@@ -765,7 +765,7 @@
     color: #aeb6bf;
     font-family: headingtext;
     line-height: 12px;
-    font-size: 12px;
+    font-size: 11px;
     z-index: 10;
     margin: 0 0 auto;
   }
@@ -7910,7 +7910,7 @@
       padding: 0;
       margin-top: -32px;
       color: #aeb6bf;
-      line-height: 10px;
+      line-height: 10px; 
     }
     .updatedtime1 {
       margin-bottom: 10px;
