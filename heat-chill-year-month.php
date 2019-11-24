@@ -52,6 +52,7 @@ include('livedata.php');include('common.php');header('Content-type: text/html; c
 <maxlow>Heat Index</maxlow>
 </weather34top>
 
+<?php if ($weather["uvymax"]>20) {?>
 <weather34top> 
 <thedate><?php echo $weather["uvymaxtime"];?></thedate>
 <thevalue>
@@ -75,6 +76,7 @@ else if ($weather["uvymax"]>=0){
 ;?></thevalue>
 <maxlow>Max UVI</maxlow>
 </weather34top>
+<?php ;} else echo "<weather34top> </weather34top>"?>
 
 <weather34top> 
 <thedate><?php echo $windchillmintime2;?></thedate>
