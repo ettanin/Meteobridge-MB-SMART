@@ -1,7 +1,19 @@
-<?php include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
-<div class="topframe">
+<?php 
+    ####################################################################################################
+	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
+	# https://weather34.com/homeweatherstation/index.html 											   # 
+	# 	                                                                                               #
+	# 	Release: September 2019		Revised november 2019                                              #
+	# 	                                                                                               #
+	#   https://www.weather34.com 	                                                                   #
+	####################################################################################################
 
-<div class="tempminthisyear">
+include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
+<div class="topframe">
+<main class="gridhistory"> 
+<weather34top> 
+<thedate><?php echo $dewymintime2 ?></thedate>
+<thevalue>
 <?php //temperture min year
  if ($weather["temp_units"]=='C' && $weather["dewymin"]>30){echo "<maxtempred>",$weather["dewymin"]  ;echo "</maxtempred><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='C' && $weather["dewymin"]>24){echo "<maxtemporange>",$weather["dewymin"]  ;echo "</maxtemporange><tunit1>&deg;".$weather["temp_units"] ; }
@@ -18,14 +30,13 @@
  else if ($weather["temp_units"]=='F' && $weather["dewymin"]>53.6){echo "<maxtempyellow>",$weather["dewymin"]  ;echo "</maxtempyellow><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='F' && $weather["dewymin"]>=42.8){ echo "<maxtempgreen>", $weather["dewymin"]  ;echo "</maxtempgreen><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='F' && $weather["dewymin"]>-50){ echo "<maxtempblue>", $weather["dewymin"]  ;echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"] ; }
- ?></div></tunit1>
-<div class="tmonthmax" style="margin-left:0px;"><?php echo $weather["dewymintime2"]?></div>
-<div class="tmonthconv"><?php echo $lang['Lowest']?></div>
+ ?></tunit1></thevalue>
+<maxlow><?php echo $lang['Lowest']?></maxlow>
+</weather34top>
 
-
-
-<div class="tempavgthisyear" >
-
+<weather34top> 
+<thedate><?php echo strftime('%b',time())." ".date('Y')?></thedate>
+<thevalue>
 <?php //temperture min year
  if ($weather["temp_units"]=='C' && $weather["dewmmax"]>30){echo "<maxtempred>",$weather["dewmmax"]  ;echo "</maxtempred><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='C' && $weather["dewmmax"]>24){echo "<maxtemporange>",$weather["dewmmax"]  ;echo "</maxtemporange><tunit1>&deg;".$weather["temp_units"] ; }
@@ -42,13 +53,13 @@
  else if ($weather["temp_units"]=='F' && $weather["dewmmax"]>53.6){echo "<maxtempyellow>",$weather["dewmmax"]  ;echo "</maxtempyellow><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='F' && $weather["dewmmax"]>=42.8){ echo "<maxtempgreen>", $weather["dewmmax"]  ;echo "</maxtempgreen><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='F' && $weather["dewmmax"]>-50){ echo "<maxtempblue>", $weather["dewmmax"]  ;echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"] ; }
- ?></div></tunit>
+ ?></tunit></thevalue>
+<maxlow><?php echo $lang['Lowest']?> <value1><?php echo "<maxtempblue>".$weather["dewmmin"]."</maxtempblue>&deg";?></value1></maxlow>
+</weather34top>
 
-<div class="tyearavg"><?php echo strftime('%b',time())." ".date('Y');?></div>
-<div class="tavgconv" style="margin-left:-5px;"><?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue style='font-size:1.1em;'>".$weather["dewmmin"]."</maxtempblue>&deg";?>
-</div>
-
-<div class="tempmaxthisyear">
+<weather34top> 
+<thedate><?php echo $dewymaxtime2 ?></thedate>
+<thevalue>
 <?php //temperture min year
  if ($weather["temp_units"]=='C' && $weather["dewymax"]>30){echo "<maxtempred>",$weather["dewymax"]  ;echo "</maxtempred><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='C' && $weather["dewymax"]>24){echo "<maxtemporange>",$weather["dewymax"]  ;echo "</maxtemporange><tunit1>&deg;".$weather["temp_units"] ; }
@@ -66,6 +77,7 @@
  else if ($weather["temp_units"]=='F' && $weather["dewymax"]>=42.8){ echo "<maxtempgreen>", $weather["dewymax"]  ;echo "</maxtempgreen><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='F' && $weather["dewymax"]>-50){ echo "<maxtempblue>", $weather["dewymax"]  ;echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"] ; }
  ?>
-</div></tunit1>
-<div class="tyearmax" style="margin-left:0px;"><?php echo $weather["dewymaxtime2"]?></div>
-<div class="tyearconv" style="margin-left:3px;"><?php echo $lang['Highest']?></div>
+</tunit1></thevalue>
+<maxlow><?php echo $lang['Highest']?></maxlow>
+</weather34top>
+</main>

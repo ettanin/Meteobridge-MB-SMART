@@ -1,36 +1,41 @@
-<?php  
-
-	####################################################################################################
+<?php 
+    ####################################################################################################
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	Release: September 2019						  	                                               #
+	# 	Release: September 2019		Revised november 2019                                              #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 
 include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
-<div class="topframe">
-<div class="rainmaxthismonth">
+<div class="topframe"><main class="gridhistory"> 
+<weather34top> 
+<thedate><?php echo $weather["thb0seapressyearmintime"] ?></thedate>
+<thevalue>
 <?php // min
-echo "<maxtempblue>".$weather["thb0seapressymin"];echo "</maxtempblue><wunit>".$weather["barometer_units"];
+echo "<maxtempblue>".$weather["thb0seapressymin"];echo "</maxtempblue><tunit1>".$weather["barometer_units"];
 ?>
-</div></wunit>
-<div class="wmonthmax"><?php echo $weather["thb0seapressyearmintime"] ?></div>
-<div class="tmonthconv">&nbsp;<?php echo $lang['Lowest']?></div>
+</tunit1></thevalue>
+<maxlow><?php echo $lang['Lowest']?></maxlow>
+</weather34top>
 
-<div class="rainavgthisyear">
-<?php echo "<maxtemporange>".$weather["thb0seapressmmax"];echo "</maxtemporange><wunit>".$weather["barometer_units"];?>
-</div></wunit>
+<weather34top> 
+<thedate><?php echo strftime('%b',time())." ".date('Y');?></thedate></thedate>
+<thevalue>
+<?php echo "<maxtemporange>".$weather["thb0seapressmmax"];echo "</maxtemporange><tunit1>".$weather["barometer_units"];?>
+</tunit1></thevalue>
+<maxlow>Lo <?php echo "<maxtempblue>".$weather["thb0seapressmmin"];echo "</maxtempblue>";?>
+</maxlow>
+</weather34top>
 
-<div class="ryearavg">&nbsp;&nbsp;<?php echo strftime('%b',time())." ".date('Y');?></div>
-<div class="tavgconv" style="margin-left:-12px;">&nbsp;<?php echo $lang['Lowest']?>&nbsp; <?php echo "<maxtempblue style='font-size:1.1em;'>".$weather["thb0seapressmmin"];echo "</maxtempblue>";?>
-</div>
-
-<div class="rainmaxthisyear">
+<weather34top> 
+<thedate><?php echo $weather["thb0seapressyearmaxtime"] ?></thedate>
+<thevalue>
 <?php // max
-echo "<maxtemporange>".$weather["thb0seapressymax"];echo "</maxtemporange><wunit>".$weather["barometer_units"];
+echo "<maxtempred>".$weather["thb0seapressymax"];echo "</maxtempred><tunit1>".$weather["barometer_units"];
 ?>
-</div></wunit>
-<div class="wyearmax"><?php echo $weather["thb0seapressyearmaxtime"] ?></div>
-<div class="tyearconv">&nbsp;<?php echo $lang['Highest']?></div>
+</tunit1></thevalue>
+<maxlow><?php echo $lang['Highest']?></maxlow>
+</weather34top>
+</main>

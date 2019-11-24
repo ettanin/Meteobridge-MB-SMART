@@ -2985,22 +2985,22 @@
     margin-left: 0;
     color: #222;
     text-align: center;
-    font-family: weathertext2, weathertext2;
-    font-size: 9px;
+    font-family: headingtext;
+    font-size: 10px;
   }
   .temptrendx {
     z-index: auto;
     position: absolute;
     margin-top: -15px;
-    margin-left: 60%;
+    margin-left: 55%;
     color: #222;
     text-align: center;
     font-size: 0;
   }
   trendmovementfallingx,
   trendmovementrisingx {
-    font-family: weathertext2, weathertext2;
-    font-size: 9px;
+    font-family: headingtext;
+    font-size: 10px;
   }
   trendmovementsteadyx {
     color: #222;
@@ -3011,56 +3011,54 @@
     position: absolute;
     margin: 5px auto auto;
     color: #fff;
-    font-family: weathertext2;
-    font-size: 10px;
+    font-family: headingtext;
+    font-size: 10.5px;
     width: 50px;
     background: 0;
     padding: 1px;
-    margin-top: 7px;
-    left: -2px;
-    border-radius: 2px;
+    margin-top: 8px;
+    left: -2px;   
   }
   .hidata {
     position: absolute;
     margin: 5px auto auto;
     color: #fff;
-    color: rgba(255, 255, 255, 0.7);
-    font-family: weathertext2;
-    font-size: 8px;
+    font-family: headingtext;
+    font-size: 9px;
     width: 40px;
     background: 0;
     padding: 2px;
     margin-top: 0;
     left: 2px;
     border-radius: 2px;
-    line-height: 1;
+    line-height: 1.2;
   }
   .mindata {
     position: absolute;
     margin: 5px auto auto;
     color: #fff;
-    font-family: weathertext2;
-    font-size: 10px;
+    font-family: headingtext;
+    font-size: 10.5px;
     width: 50px;
     background: 0;
     padding: 1px;
-    margin-top: 7px;
+    margin-top: 8px;
     left: 49px;
-    border-radius: 2px;
+   
   }
   .lodata {
     position: absolute;
     margin: 5px auto auto;
-    color: rgba(255, 255, 255, 0.7);
-    font-family: weathertext2;
-    font-size: 8px;
+    color:#fff;
+    font-family: headingtext;
+    font-size: 9px;
     width: 40px;
     background: 0;
     padding: 2px;
     margin-top: 0;
     left: 53px;
     border-radius: 2px;
-    line-height: 1;
+    line-height: 1.2;
   }
   .raincontainer1,
   .uvcontainer1 {
@@ -7143,6 +7141,61 @@
     left: 80px;
     text-transform: capitalize;
   }
+
+  .gridhistory {
+    display: grid;
+    grid-template-columns: 70px 74px 70px;
+    grid-gap: 1px;
+    background-color:0;
+    color:#222;
+    height:50px;  
+  }
+  
+  .gridhistory > weather34top {
+    background-color:0;  
+    padding: 5px;  
+    line-height:.75;
+    margin-top:-10px;
+    height:50px
+    
+  }
+  thedate {
+    color:#222;
+    font-family: headingtext;
+    font-size: 10px;
+    text-transform: capitalize;
+  }
+  thevalue{  
+    font-family: weathertext2;
+    font-size: 11pt;
+  }
+  maxlow{
+    display:block;
+    position:relative;
+    color:#222;
+    font-family: headingtext;
+    font-size: 10px;  
+    top:6px
+  }
+  value1{  
+    font-family: headingtext;
+  } 
+  value2{  
+    font-size: 13px;
+    font-family: headingtext;
+  } 
+  
+
+
+
+
+
+
+
+
+
+
+
   tunit {
     position: relative;
     font-size: 0.5em;
@@ -7220,8 +7273,9 @@
     background: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    width: 218px;
-    height: 55px;    
+    width: 220px;
+    height: 55px;
+    left:2px;    
   }
   .weather34tipcelsius {
     position: absolute;
@@ -7905,8 +7959,8 @@
   }
   averwordwindword {
     position: relative;
-    top: -3px;
-    font-size: 0.7em;
+    top: -5px;
+    font-size: 9.5px;
     color: #333;
     font-family: headingtext;
   }
@@ -8696,10 +8750,10 @@
   }
   tunit1 {
     position: relative;
-    font-size: 0.5em;
-    vertical-align: top;
-    top: 5px;
+    top: 7px;
     color: #222;
+    vertical-align: top;
+    font-size: 0.5em;
   }
   .consoleoutlook {
     position: relative;

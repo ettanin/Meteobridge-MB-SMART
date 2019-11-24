@@ -1,17 +1,19 @@
 <?php 
-	####################################################################################################
+    ####################################################################################################
 	#	CREATED FOR HOMEWEATHERSTATION MB SMART TEMPLATE 											   #
 	# https://weather34.com/homeweatherstation/index.html 											   # 
 	# 	                                                                                               #
-	# 	Release: September 2019	Revised: November 2019 	                                               #
+	# 	Release: September 2019		Revised november 2019                                              #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 
-include('livedata.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
+include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
 <div class="topframe">
-
-<div class="tempminthisyear" style="margin-left:5px;">
+<main class="gridhistory"> 
+<weather34top> 
+<thedate><?php echo $heatindindexmaxtime2 ;?></thedate>
+<thevalue>
 <?php //heat index year
  if ($weather["temp_units"]=='C' && $weather["heat_indexymax"]> 30) {
      echo "<maxtempred>",$weather["heat_indexymax"]  ;
@@ -46,30 +48,37 @@ include('livedata.php');header('Content-type: text/html; charset=utf-8');date_de
      echo "<maxtempblue>",$weather["heat_indexymax"]  ;
      echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"];
  }
- ?></div></tunit1>
-<div class="tmonthmax" style="margin-left:-5px;"><?php echo $heatindindexmaxtime2 ;?></div>
-<div class="tmonthconv" style="margin-left:-10px;">Max Heat Index</div>
+ ?></tunit1></thevalue>
+<maxlow>Heat Index</maxlow>
+</weather34top>
 
-<?php if ($weather["uvymax"]>0 && $weather["uvymax"]<13) {?>
-<div class="tempavgthisyear" style="margin-left:10px;font-weight:500">
+<weather34top> 
+<thedate><?php echo $weather["uvymaxtime"];?></thedate>
+<thevalue>
 <?php //max UV year
-if ($weather["uvymax"]>10) {
-    echo "<maxtempred style='color:#A074C4'>".$weather["uvymax"]."</maxtempred>";
-} elseif ($weather["uvymax"]>7) {
-    echo "<maxtempred>".$weather["uvymax"]."</maxtempred>";
-} elseif ($weather["uvymax"]>5) {
-    echo "<maxtemporange>".$weather["uvymax"]."</maxtemporange>";
-} elseif ($weather["uvymax"]>3) {
-    echo "<maxyellow>".$weather["uvymax"]."</maxtempyellow>";
-} elseif ($weather["uvymax"]>=0) {
-    echo "<maxtempgreen >".$weather["uvymax"]."</maxtempgreen>";
-}?>
-</div></wunit>
-<div class="tyearavg" style="margin-left:0;"><?php echo $weather["uvymaxtime"];?></div>
-<div class="tavgconv" style="margin-left:3px;">&nbsp;Max UVI&nbsp;</div>
-<?php ;}?>
+if ($weather["uvymax"]>10){
+    echo "<maxtempred>".$weather["uvymax"]."</maxtempred>";echo "<tunit1>UVI</tunit1>";
+}
+else if ($weather["uvymax"]>7){
+    echo "<maxtempred>".$weather["uvymax"]."</maxtempred>";echo "<tunit1>UVI</tunit1>";
+}
 
-<div class="tempmaxthisyear" style="margin-left:-5px;">
+else if ($weather["uvymax"]>5){
+    echo "<maxtemporange>".$weather["uvymax"]."</maxtemporange>";echo "<tunit1>UVI</tunit1>";
+}
+else if ($weather["uvymax"]>3){
+    echo "<maxyellow>".$weather["uvymax"]."</maxtempyellow>";echo "<tunit1>UVI</tunit1>";
+}
+else if ($weather["uvymax"]>=0){
+    echo "<maxtempgreen >".$weather["uvymax"]."</maxtempgreen>";echo "<tunit1>UVI</tunit1>";
+}
+;?></thevalue>
+<maxlow>Max UVI</maxlow>
+</weather34top>
+
+<weather34top> 
+<thedate><?php echo $windchillmintime2;?></thedate>
+<thevalue>
 <?php //wind chill min year
  if ($weather["temp_units"]=='C' && $weather["windchillymin"]> 30) {
      echo "<maxtempred>",$weather["windchillymin"]  ;
@@ -111,6 +120,7 @@ if ($weather["uvymax"]>10) {
      echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"];
  }
  ?>
-</div></tunit1>
-<div class="tyearmax" style="margin-left:-5px;"><?php echo $windchillmintime2;?></div>
-<div class="tyearconv" style="margin-left:-15px;">Min Wind Chill</div>
+</tunit1></thevalue>
+<maxlow><?php echo $lang['Windchill']?></maxlow>
+</weather34top>
+</main>
