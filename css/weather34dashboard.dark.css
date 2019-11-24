@@ -5034,9 +5034,9 @@
   }
   .wulargeheatindex,
   .wulargeuvindex {
-    font-size: 10px;
+    font-size: 0.7rem;
     float: none;
-    font-family: weathertext2;
+    font-family: headingtext;
     position: absolute;
   }
   .wulargeuvindex {
@@ -5075,7 +5075,7 @@
   heatindexwu,
   windchillwu {
     width: 2.35rem;
-    font-size: 0.9em;
+    font-size: 1em;
     margin-left: 70px;
     top: 0;
     height: 0.9rem;
@@ -8875,7 +8875,7 @@
     font-family: weathertext2;
     width: 2.1rem;
     height: 0.95rem;
-    font-size: 0.9em;
+    font-size: 10px;
     padding-top: 0;
     color: #fff;
     display: -webkit-box;
@@ -8955,7 +8955,7 @@
     left: 65px;
   }
   .temperaturenext {
-    margin-left: 70px;
+    margin-left: 50px;
   }
   .barometerpos {
     margin-top: 5px;
