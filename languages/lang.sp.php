@@ -123,7 +123,7 @@ $lang['StrongGaleattimes']      = 'Temporal fuerte';
 $lang['StormConditions']        = 'Temporal duro';
 $lang['ViolentStormConditions'] = 'Temporal muy duro';
 $lang['HurricaneConditions']    = 'Temporal huracanado';
-$lang['Avg']                    = 'Promedio';
+$lang['Avg']                    = 'Medio';
 $lang['Avg-Dir']                = 'Promedio';//used for compass
 //wind direction compass
 $lang['Northdir']               = 'Del <span>Norte<br></span>';
