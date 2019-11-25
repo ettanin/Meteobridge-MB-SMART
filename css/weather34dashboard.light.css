@@ -9222,22 +9222,50 @@
     background: RGBA(243, 244, 247, 0);
     padding: 0;
   }
+
+  .probababilitycontainersmall {
+    margin-left: 20px;
+    margin-top: 8px;
+  }
+
+  .probabilityword{
+    position: absolute;
+    color: #222;
+    font-size: 9px;
+    font-family: headingtext;
+  }
+
+  .probababilityvalue {
+    font-family: weathertext2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 13px;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    padding-top: 10px;
+    padding-left: 5px;
+    color:#01a4b4;
+  }
+
   .probabilityrain {
     font-family: headingtext;
     position: absolute;
     margin-left: 60px;
-    font-size: 0.35em;
+    font-size: 9px;
     color: #222;
-    line-height: 0.9;
+    line-height: 1.2;
     width: 80px;
     margin-top: -17px;
   }
   .probabilityamount {
     position: absolute;
-    margin-left: 0;
-    margin-top: -3px;
-    font-size: 0.35em;
+    margin-left: 4px;
+    margin-top:0;
+    font-size: 9px;
     color: #222;
+    font-family: headingtext;
   }
   probabilityicon {
     position: absolute;

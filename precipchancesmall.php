@@ -78,12 +78,12 @@ $parsed_weather34wujson = json_decode($weather34wuurl,false);
 	 $wuskysnow1 = $parsed_weather34wujson->{'daypart'}[0]->{'qpfSnow'}[1];	 
 	 }?>
 <div class="topframe">
-<div class='eqcontainer1' >
+<div class='probababilitycontainersmall' >
 <!-- weather34 precipitation probability--> 
 <?php
 if ($wuskydayPrecipProb>=0) {
-    echo "<div class='eqcaution'> &nbsp;&nbsp;Probability</div>
-	<div class=eqtoday4-5><blue>".$wuskydayPrecipProb."%</blue></div>";}
+    echo "<div class='probabilityword'>Probability</div>
+	<div class=probababilityvalue>".$wuskydayPrecipProb."%</div>";}
 		
     echo "	
 	<div class='probabilityamount'>";
