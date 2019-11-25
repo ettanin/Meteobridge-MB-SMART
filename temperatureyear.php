@@ -63,7 +63,7 @@ include('livedata.php');include('common.php');header('Content-type: text/html; c
  else if ($weather["temp_units"]=='C' && $weather["tempmmin"]>18){echo "<maxtempyellow>",$weather["tempmmin"];echo "</maxtempyellow>&deg;";}
  else if ($weather["temp_units"]=='C' && $weather["tempmmin"]>12){echo "<maxtempyellow>",$weather["tempmmin"];echo "</maxtempyellow>&deg;";}
  else if ($weather["temp_units"]=='C' && $weather["tempmmin"]>=10){ echo "<maxtempgreen>", $weather["tempmmin"];echo "</maxtempgreen>&deg;";}
- else if ($weather["temp_units"]=='C' && $weather["tempmmin"]>-50){ echo "<maxtempblue>", $weather["tempmmin"];echo "</maxtempblue>&deg;";}
+ else if ($weather["temp_units"]=='C' && $weather["tempmmin"]>-50){ echo "<valuesmall>", $weather["tempmmin"];echo "</valuesmall>&deg;";}
  //non metric
  if ($weather["temp_units"]=='F' && $weather["tempmmin"]>86){echo "<maxtempred>",$weather["tempmmin"];echo "</maxtempred>&deg;";}
  else if ($weather["temp_units"]=='F' && $weather["tempmmin"]>75.2){echo "<maxtemporange>",$weather["tempmmin"];echo "</maxtemporange>&deg;";}
@@ -71,7 +71,7 @@ include('livedata.php');include('common.php');header('Content-type: text/html; c
  else if ($weather["temp_units"]=='F' && $weather["tempmmin"]>64.4){echo "<maxtempyellow>",$weather["tempmmin"];echo "</maxtempyellow>&deg;";}
  else if ($weather["temp_units"]=='F' && $weather["tempmmin"]>53.6){echo "<maxtempyellow>",$weather["tempmmin"];echo "</maxtempyellow>&deg;";}
  else if ($weather["temp_units"]=='F' && $weather["tempmmin"]>=42.8){ echo "<maxtempgreen>", $weather["tempmmin"];echo "</maxtempgreen>&deg;";}
- else if ($weather["temp_units"]=='F' && $weather["tempmmin"]>-50){ echo "<maxtempblue>", $weather["tempmmin"];echo "</maxtempblue>&deg;";}
+ else if ($weather["temp_units"]=='F' && $weather["tempmmin"]>-50){ echo "<valuesmall>", $weather["tempmmin"];echo "</valuesmall>&deg;";}
  ?></tunit1></value1>
 
 

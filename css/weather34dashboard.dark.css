@@ -6596,6 +6596,10 @@
     font-family: headingtext;
   } 
 
+  valuesmall{
+    color: #44a6b5;
+  }
+
   tunit {
     position: relative;
     font-size: 0.45em;

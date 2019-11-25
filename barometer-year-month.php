@@ -25,7 +25,7 @@ echo "<maxtempblue>".$weather["thb0seapressymin"];echo "</maxtempblue><tunit1>".
 <thevalue>
 <?php echo "<maxtemporange>".$weather["thb0seapressmmax"];echo "</maxtemporange><tunit1>".$weather["barometer_units"];?>
 </tunit1></thevalue>
-<maxlow>Lo <?php echo "<maxtempblue>".$weather["thb0seapressmmin"];echo "</maxtempblue>";?>
+<maxlow>Lo <?php echo "<valuesmall>".$weather["thb0seapressmmin"];echo "</valuesmall>";?>
 </maxlow>
 </weather34top>
 

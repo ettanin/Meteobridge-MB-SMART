@@ -3664,7 +3664,7 @@
   }
   blueu,
   moonrisecolor {
-    color: #39739f;
+    color:#07727d;
   }
   currentmoonrise,
   currentmoonset {
@@ -7184,18 +7184,9 @@
     font-size: 13px;
     font-family: headingtext;
   } 
-  
-
-
-
-
-
-
-
-
-
-
-
+  valuesmall{
+    color: #07727d
+  }
   tunit {
     position: relative;
     font-size: 0.5em;

@@ -54,7 +54,7 @@ include('livedata.php');include('common.php');header('Content-type: text/html; c
  else if ($weather["temp_units"]=='F' && $weather["dewmmax"]>=42.8){ echo "<maxtempgreen>", $weather["dewmmax"]  ;echo "</maxtempgreen><tunit1>&deg;".$weather["temp_units"] ; }
  else if ($weather["temp_units"]=='F' && $weather["dewmmax"]>-50){ echo "<maxtempblue>", $weather["dewmmax"]  ;echo "</maxtempblue><tunit1>&deg;".$weather["temp_units"] ; }
  ?></tunit></thevalue>
-<maxlow><?php echo $lang['Lowest']?> <value1><?php echo "<maxtempblue>".$weather["dewmmin"]."</maxtempblue>&deg";?></value1></maxlow>
+<maxlow><?php echo $lang['Lowest']?> <value1><?php echo "<valuesmall>".$weather["dewmmin"]."</valuesmall>&deg";?></value1></maxlow>
 </weather34top>
 
 <weather34top> 

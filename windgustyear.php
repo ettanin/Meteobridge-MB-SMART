@@ -54,7 +54,7 @@ else if( $weather['wind_direction_avgmonth']<=348.75){echo $lang['NNW'];}
 else if( $weather['wind_direction_avgmonth']<=360){echo $lang['North'];}?>
 </value2></maxtempblue>
 </thevalue>
-<maxlow><?php echo $lang['Avg']?><maxtempblue> <?php echo number_format($weather['wind_direction_avgmonth'],0)?></maxtempblue>&deg;</maxlow>
+<maxlow><?php echo $lang['Avg']?><valuesmall> <?php echo number_format($weather['wind_direction_avgmonth'],0)?></valuesmall>&deg;</maxlow>
 </weather34top>
 
 <weather34top>

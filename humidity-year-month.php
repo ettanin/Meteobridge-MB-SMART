@@ -34,7 +34,7 @@ include('livedata.php');include('common.php');header('Content-type: text/html; c
  ?></tunit1></thevalue>
 <maxlow><?php echo $lang['Lowest']?><value1>
 <?php //humidity min current month
- if ($weather["humidity_mmin"]>70){echo "<maxtempblue>",$weather["humidity_mmin"]  ;echo "</maxtempblue>%"; }
+ if ($weather["humidity_mmin"]>70){echo "<valuesmall>",$weather["humidity_mmin"]  ;echo "</valuesmall>%"; }
  else if ($weather["humidity_mmin"]>60){echo "<maxtempyellow>",$weather["humidity_mmin"]  ;echo "</maxtempyellow>%"; }
  else if ($weather["humidity_mmin"]>40){echo "<maxtempgreen >",$weather["humidity_mmin"]  ;echo "</maxtempgreen>%"; }
  else if ($weather["humidity_mmin"]>0){echo "<maxtempred>",$weather["humidity_mmin"]  ;echo "</maxtempred>%"; }?>
