@@ -31,8 +31,8 @@ text-shadow: 1px 1px 3px rgba(61, 70, 77, 0.2);
 .cnt223{
 min-width: 300px;
 max-width: 500px;
-height:180px;
-min-height: 180px;
+height:300px;
+min-height: 300px;
 margin:0 auto;
 background: white;
 position: absolute;
@@ -41,22 +41,20 @@ padding: 15px 15px;
 border-radius: 3px;
 box-shadow: 0 2px 5px #000;
 font-size: 12px;
-color: #333;
-text-shadow: 1px 1px 3px rgba(61, 70, 77, 0.2);
+color: #222;
+font-family: Arial, Helvetica, sans-serif;
 }
 .cnt223 p{
 clear: both;
     color: #333;
     /* text-align: justify; */
     font-size: 12px;
-    font-family: sans-serif;
-    text-shadow: 1px 1px 3px rgba(61, 70, 77, 0.2);
+    font-family: Arial, Helvetica, sans-serif;   
     
 }
 .cnt223 p a{
 color: #01a4b4;
 font-weight: normal;
-text-shadow: 1px 1px 3px rgba(61, 70, 77, 0.2);
 }
 .cnt223 .x{
 float: right;
@@ -65,13 +63,13 @@ left: 22px;
 position: relative;
 top: -25px;
 width: 34px;
-text-shadow: 1px 1px 3px rgba(61, 70, 77, 0.2);
 }
 .cnt223 .x:hover{
 cursor: pointer;
 }
-.close{color:#333;font-size:11px;line-height:1;width:100%;text-shadow: 1px 1px 3px rgba(61, 70, 77, 0.2);padding:3px}
-blue{color:color: #01a4b4;}
+.close{color:#333;font-size:11px;line-height:1;width:100%;text-shadow: 1px 1px 3px rgba(61, 70, 77, 0.2);
+padding:3px}
+blue{color:#01a4b4;}
 .logo{float:right;bottom:0;width:25px;position:relative;}
 </style>
 <script type='text/javascript'>
@@ -108,8 +106,10 @@ return false;
 </g></svg>
 </div>
 
-Sorry your hardware or software interface is not compatible with this Weather34 designed template MB-SMART.
-<br/>
+Sorry your hardware or software interface is not compatible with this Weather34 designed template MB-SMART.<br><br>
+*<b>Warning</b> If you are using a <b>NANO(SD)</b> or <B>Meteobridge Pro</B> and still seeing this screen you may have misconfigured the upload path or
+your Meteobridge or Weather Station hardware may be experiencing issues.
+<br/><br/>
 
 <div class='close'>Supports only 
 <br>Meteobridge 
