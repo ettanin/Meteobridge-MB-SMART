@@ -152,9 +152,10 @@ if ($theme == 'dark') {
    <weather34themenusection>' . $lang["language"], '</weather34themenusection>  </a></li>', '
   <center>
   <a href="index.php?lang=en"><img src="img/flags/en.svg"  title="English" width="20px" height="20px"></a>&nbsp;
-  <a href="index.php?lang=fr"><img src="img/flags/fr.svg"  title="French" width="20px" height="20px"></a>&nbsp;
+  <a href="index.php?lang=dk"><img src="img/flags/dk.svg"  title="Danish" width="20px" height="20px"></a>&nbsp;
   <a href="index.php?lang=dl"><img src="img/flags/dl.svg"  title="German" width="20px" height="20px"></a>&nbsp;
-  <a href="index.php?lang=nl"><img src="img/flags/nl.svg"  title="Dutch" width="20px" height="20px"></a>&nbsp;
+  <a href="index.php?lang=nl"><img src="img/flags/nl.svg"  title="Dutch" width="20px" height="20px"></a>&nbsp;<br>
+  <a href="index.php?lang=fr"><img src="img/flags/fr.svg"  title="French" width="20px" height="20px"></a>&nbsp;
   <a href="index.php?lang=it"><img src="img/flags/it.svg"  title="Italian" width="20px" height="20px"></a>&nbsp;
   <a href="index.php?lang=sp"><img src="img/flags/sp.svg"  title="Spanish" width="20px" height="20px"></a>&nbsp;
   <a href="index.php?lang=sw"><img src="img/flags/sw.svg"  title="Swedish" width="20px" height="20px"></a>&nbsp;

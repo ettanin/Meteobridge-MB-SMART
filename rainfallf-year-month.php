@@ -46,7 +46,7 @@ else if ($seconds_ago > 60) {echo '<maxtempblue>'.intval($seconds_ago / 60) . ' 
     ';}
 else if ($seconds_ago <= 60) {echo '<maxtempblue>'.intval($seconds_ago / 60) . ' </maxtempblue><tunit1>'.$lang['Minutes'].'</tunit1></maxtempblue></thevalue>
     ';}
-echo "<maxlow>Ago</maxlow></weather34top>";
+echo "<maxlow>"; echo $lang['Ago']."</maxlow></weather34top>";
 }
 ?>
 

@@ -556,7 +556,8 @@ $davisextras3   = "' . $_POST["davisextras3"] . '";
 
     .loginformarea {
         margin: 0 auto;
-        text-align: center;font-size:16px
+        text-align: center;
+        font-size: 16px
     }
 
     orange {
@@ -601,7 +602,7 @@ $davisextras3   = "' . $_POST["davisextras3"] . '";
     }
 
     .modal-button {
-        color:whitesmoke;
+        color: whitesmoke;
         border-radius: 5px;
         background: #2095a7;
         width: 120px;
@@ -859,6 +860,7 @@ $davisextras3   = "' . $_POST["davisextras3"] . '";
                                         <option><?php echo $defaultlanguage; ?></option>
                                         <option>en</option>
                                         <option>can</option>
+                                        <option>dk</option>
                                         <option>dl</option>
                                         <option>fr</option>
                                         <option>it</option>
@@ -2100,7 +2102,7 @@ $davisextras3   = "' . $_POST["davisextras3"] . '";
 
                                                                                                                 <option>ca-ES</option>
                                                                                                                 <option>de-DE</option>
-                                                                                                                <option>dk-DK</option>
+                                                                                                                <option>da-DK</option>
                                                                                                                 <option>de-DE</option>
                                                                                                                 <option>el-GR</option>
                                                                                                                 <option>en-GB</option>
