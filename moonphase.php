@@ -25,7 +25,7 @@ if ($hemisphere==180){echo '<style>.weather34moonphasesvg1{-webkit-transform: ro
 <p id="weather34moonphase"></p>
 <svg id="weather34 simple moonphase svg" viewBox="0 0 120 120" width="120px"><circle cx="50" cy="50" r="49.5" fill="rgba(86,95,103,.8)"/><path id="weather34themoon" fill="rgba(230, 232, 239, .3)"/></svg>
 <script>
-function showMoon(){var t=(Date.now()/864e5-Date.UTC(2018,0,17,2,17,0,0)/864e5)%29.530588853+1,e=String;document.getElementById("weather34moonphase");var a,n=Math.min(3-t/30*4,1),o=Math.abs(50*n),h=n<0?"0":"1",m=Math.min(3+(t-30)/30*4,1),M=Math.abs(50*m),r=m<0?"0":"1";a="M 50,0 a "+e(o)+",50 0 0 "+h+" 0,100 a "+e(M)+",50 0 0 "+r+" 0,-100",document.getElementById("weather34themoon").setAttribute("d",a)}showMoon();</script></div></div>
+function showMoon(){var t=(Date.now()/864e5-Date.UTC(2018, 0, 17, 1, 0, 0, 0)/864e5)%29.530588853,e=String;document.getElementById("weather34moonphase");var a,n=Math.min(3-t/30*4,1),o=Math.abs(50*n),h=n<0?"0":"1",m=Math.min(3+(t-30)/30*4,1),M=Math.abs(50*m),r=m<0?"0":"1";a="M 50,0 a "+e(o)+",50 0 0 "+h+" 0,100 a "+e(M)+",50 0 0 "+r+" 0,-100",document.getElementById("weather34themoon").setAttribute("d",a)}showMoon();</script></div></div>
 
 <div class="fullmoon1">
 <svg id="weather34 full moon" viewBox="0 0 32 32" width="6" height="6" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%"><circle cx="16" cy="16" r="14" /><path d="M6 6 L26 26" /></svg>

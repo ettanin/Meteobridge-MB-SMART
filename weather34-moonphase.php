@@ -24,7 +24,7 @@ if ($hemisphere==180){echo '<style>.weather34moonphasesvg{position:relative;-web
 	<circle cx="20" cy="20" r="20" stroke-width="1" fill="rgba(86,95,103,.8)"/><path id="weather34themoon" fill="rgba(230, 232, 239, .3)"/></svg></div>    
 <script>
 // simple weather34 svg moonphase small module//
-function showMoon(){var t=(Date.now()/86400000-Date.UTC(2018,0,17,2,17,0,0)/86400000)%29.530588853+1,e=String;document.getElementById("weather34moonphase");var a,n=Math.min(3-t/30*4,1),o=Math.abs(20*n),h=n<0?"0":"1",m=Math.min(3+(t-30)/30*4,1),M=Math.abs(20*m),r=m<0?"0":"1";a="M 20,0 a "+e(o)+",20 0 0 "+h+" 0,40 a "+e(M)+",20 0 0 "+r+" 0,-40",document.getElementById("weather34themoon").setAttribute("d",a)}showMoon();</script>
+function showMoon(){var t=(Date.now()/86400000-Date.UTC(2018, 0, 17, 1, 0, 0, 0)/86400000)%29.530588853,e=String;document.getElementById("weather34moonphase");var a,n=Math.min(3-t/30*4,1),o=Math.abs(20*n),h=n<0?"0":"1",m=Math.min(3+(t-30)/30*4,1),M=Math.abs(20*m),r=m<0?"0":"1";a="M 20,0 a "+e(o)+",20 0 0 "+h+" 0,40 a "+e(M)+",20 0 0 "+r+" 0,-40",document.getElementById("weather34themoon").setAttribute("d",a)}showMoon();</script>
 </div>
 <div class="moonrise2">
 <?php echo $lang['Moonrise']?>:<blue><?php  echo $weather['moonrise'];?></blue></div>
