@@ -39,7 +39,7 @@ if ($units!='uk') {
 }?>><?php if ($theme == 'dark') {
     echo ' Light Mode';
 } else {
-    echo ' &nbsp;Dark Mode';
+    echo ' &nbsp;&nbsp;Dark Mode';
 }?> </a></div></div></div></div></div>
 <!-- start the weather34 pure css menu-->
 <nav>
