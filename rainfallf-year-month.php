@@ -32,7 +32,7 @@ if($weather["rainmmax"]>=0 && $weather["rain_units"] =='mm'){ echo "<maxtempblue
 </weather34top>
 <?php ;}?>
 
-<?php if($meteobridgeapi[124]>=0){
+<?php if($meteobridgeapi[124]>0){
     echo "<weather34top>";echo "<thedate>".$lang['Rainfall']."</thedate><br><thevalue>";
 if ($seconds_ago >= 172800) {echo '<maxtempblue>'.intval($seconds_ago / 86400) . ' </maxtempblue><tunit1>'.$lang['Days'].'</tunit1></maxtempblue></thevalue>
     ';}
