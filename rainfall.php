@@ -28,19 +28,13 @@ echo " &nbsp;&nbsp;<valuetextheading1>".$lang['Last-Twenty-Four-Hour']."</valuet
 <?php if ($weather["rain_units"] =='in'){echo "<div class=rainconvertercircle>".number_format($weather["rain_today"]*25.400013716,1)."<smallrainunit>mm";}else if ($weather["rain_units"] =='mm'){echo "<div class=rainconvertercircle>".number_format($weather["rain_today"]*0.0393701,2)."<smallrainunit>in";}?></span>
 </div></div></div></div>
 
-<div class="rainrateextra">
-<div class="rainratetextheading">
-<?php //weather34 lets make the rain rate bar and shift to red when at a certain rate
-echo $lang['Rate']?> <?php if ($weather["rain_rate"]>0)echo "<ratevalue>".$weather["rain_rate"]."</ratevalue><smallrainrateunit>".$weather["rain_units"]?></smallrainrateunit>
-</div>
-<div class=rainratebar>
-<?php if($weather["rain_units"] =='in' && $weather["rain_rate"]>=1.25 ){;?> <div class="weather34ratebar-red" style="width:<?php if ($weather["rain_units"] =='in'){ echo $weather["rain_rate"]*40;}else if ($weather["rain_units"] =='mm'){ echo $weather["rain_rate"]*1.75;}?>px;">
-<?php }?>
-<?php if ($weather["rain_rate"]>=32){;?> <div class="weather34ratebar-red" style="width:<?php if ($weather["rain_units"] =='in'){ echo $weather["rain_rate"]*40;}else if ($weather["rain_units"] =='mm'){ echo $weather["rain_rate"]*1.75;}?>px;">
-<?php }?>
-<?php if ( $weather["rain_units"] =='in' && $weather["rain_rate"]<1.25){;?> <div class="weather34ratebar" style="width:<?php if ($weather["rain_units"] =='in'){ echo $weather["rain_rate"]*40;}else if ($weather["rain_units"] =='mm'){ echo $weather["rain_rate"]*1.75;}?>px;">
-<?php }?>
-<?php if ( $weather["rain_units"] =='mm' && $weather["rain_rate"]<32){;?> <div class="weather34ratebar" style="width:<?php if ($weather["rain_units"] =='in'){ echo $weather["rain_rate"]*40;}else if ($weather["rain_units"] =='mm'){ echo $weather["rain_rate"]*1.75;}?>px;">
-<?php }?>
-<?php if ($weather["rain_rate"]==0)echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<raiblue>".$weather["rain_rate"]."</raiblue><smallrainrateunit>".$weather["rain_units"]?></smallrainrateunit></div></div>
-</div></div></div></div>
+<div class="rainrateextra" style="margin-top:110px;margin-left:147px">
+<div class="rainratetextheading"><?php echo $lang['Rate']?> </div>
+<div class=rainratebar style="width:9rem;height:1.58em">
+<div class="weather34ratebar" style="width:
+<?php //weather34 rain rate bar 
+if ($weather["rain_units"] =='mm'){echo $weather["rain_rate"]*5;}
+else if ($weather["rain_units"] =='in'){echo $weather["rain_rate"]*125;}?>px;max-width:80%;background:rgba(1, 164, 181, .9)">
+<span style='margin-left:105px'>
+<?php echo "<raiblue>".$weather["rain_rate"]."</raiblue><smallrainunit2>".$weather["rain_units"]."</smallrainunit2>";?></span>
+</div></div>
