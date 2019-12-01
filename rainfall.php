@@ -33,12 +33,11 @@ echo " &nbsp;&nbsp;<valuetextheading1>".$lang['Last-Twenty-Four-Hour']."</valuet
 <div class=rainratebar>
 <div class="weather34ratebar" style="width:
 <?php //weather34 rain rate bar 
-if ($weather["rain_rate"]>1.1811 && $weather["rain_units"] =='in'){echo 'background: rgb(58,139,156);
-    background: linear-gradient(90deg, rgba(58,139,156,1) 0%, rgba(58,139,156,1) 57%, rgba(238,95,117,0.03632478632478631) 100%);';
-    }
-if ($weather["rain_rate"]>30 && $weather["rain_units"] =='mm'){echo 'background: rgb(58,139,156);
-        background: linear-gradient(90deg, rgba(58,139,156,1) 0%, rgba(58,139,156,1) 57%, rgba(238,95,117,0.03632478632478631) 100%);';}  
-else if ($weather["rain_units"] =='mm'){echo $weather["rain_rate"]*3;}
+if ($weather["rain_rate"]>=0.96999 && $weather["rain_units"] =='in'){echo 'background: rgb(58,139,156);
+background: linear-gradient(90deg, rgba(58,139,156,1) 0%, rgba(58,139,156,1) 57%, rgba(238,95,117,0.03632478632478631) 100%);';}
+if ($weather["rain_rate"]>=25 && $weather["rain_units"] =='mm'){echo 'background: rgb(58,139,156);
+background: linear-gradient(90deg, rgba(58,139,156,1) 0%, rgba(58,139,156,1) 57%, rgba(238,95,117,0.03632478632478631) 100%);';}  
+else if ($weather["rain_units"] =='mm'){echo $weather["rain_rate"]*3.5;}
 else if ($weather["rain_units"] =='in'){echo $weather["rain_rate"]*75;}?>px;">
 <rainratevalue><blue>
 <?php echo $weather["rain_rate"]."</blue><smallrainunit2>".$weather["rain_units"]."</smallrainunit2>";?></rainratevalue>

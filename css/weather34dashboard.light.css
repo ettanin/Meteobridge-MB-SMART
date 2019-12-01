@@ -240,7 +240,7 @@
     color: #d65b4a;
   }
   .barometertrend falling {
-    color: rgba(18, 109, 193, 1);
+    color: #126dc1;
   }
   barometerinfo {
     color: #222;
@@ -296,7 +296,7 @@
   }
   supunit {
     font-size: 0.7em;
-    color: rgba(18, 109, 193, 1);
+    color: #126dc1;
   }
   verticalline {
     border-right: thin solid #ccc;
@@ -354,7 +354,7 @@
     margin-left: 212px;
   }
   supraindrop {
-    color: rgba(18, 109, 193, 1);
+    color: #126dc1;
   }
   supraindropw {
     color: #fff;
@@ -380,7 +380,7 @@
     text-align: center;
   }
   suprain {
-    color: rgba(18, 109, 193, 1);
+    color: #126dc1;
   }
   suprain2 {
     color: #fff;
@@ -448,7 +448,7 @@
     font: 0.65em weathertext2;
   }
   mb {
-    color: rgba(18, 109, 193, 1);
+    color: #126dc1;
     padding-top: 17px;
     margin-left: -60px;
   }
@@ -548,7 +548,7 @@
   }
   .average span {
     margin-bottom: 0;
-    color: rgba(18, 109, 193, 1);
+    color: #126dc1;
     -o-font-smoothing: antialiased;
     font-family: weathertext2;
   }
@@ -578,7 +578,7 @@
     margin-left: 10px;
     position: absolute;
     margin-top: 10px;
-    color: rgba(245, 101, 10, 1);
+    color: #f5650a;
     font: 10px weathertext2;
     line-height: 9px;
   }
@@ -724,7 +724,7 @@
   }
   .raintext1 {
     font-size: 10px;
-    color: rgba(18, 109, 193, 1);
+    color: #126dc1;
     margin-left: 0;
     margin-top: 1%;
     line-height: 10px;
@@ -1411,7 +1411,7 @@
     color: #8c2c2b;
   }
   .barometerblue span {
-    color: rgba(0, 154, 171, 1);
+    color: #009aab;
   }
   .barometergreen {
     color: #fff;
@@ -2084,7 +2084,7 @@
   }
   .orangeclock {
     position: relative;
-    background: rgba(245, 247, 252, 1);
+    background: #f5f7fc;
     padding: 1px;
     color: #d05f2d;
     border-radius: 3px;
@@ -2133,7 +2133,7 @@
   }
   .bottomfooter {
     height: 3.8em;
-    background: rgba(30, 31, 35, 1);
+    background: #1e1f23;
     width: 100%;
     margin-top: 5px;
   }
@@ -2392,7 +2392,7 @@
     height: 25px;
     position: relative;
     color: #fff;
-    background: rgba(86, 95, 103, 1);
+    background: #565f67;
     line-height: 22px;
     border-radius: 5px;
     font-size: 0.8em;
@@ -2412,7 +2412,7 @@
   .weather34lightningmain-content {
     padding: 8px 20px 10px 10px;
     height: content-max;
-    background: rgba(97, 106, 114, 1);
+    background: #616a72;
     color: #fff;
     line-height: 16px;
     text-align: center;
@@ -2679,10 +2679,10 @@
     position: absolute;
   }
   .tempconvertercircleyellow {
-    background: rgba(230, 161, 65, 1);
+    background: #e6a141;
   }
   .tempconvertercircleorange {
-    background: rgba(255, 124, 57, 1);
+    background: #ff7c39;
   }
   .tempconvertercirclered {
     background: #d35d4e;
@@ -2874,9 +2874,9 @@
       right top,
       left top,
       from(#00a4b4),
-      to(rgba(80, 69, 188, 1))
+      to(#5045bc)
     );
-    background: linear-gradient(270deg, #00a4b4, rgba(80, 69, 188, 1));
+    background: linear-gradient(270deg, #00a4b4, #5045bc);
   }
   .outside0-5 {
     background: #00a4b4;
@@ -2940,9 +2940,9 @@
       left top,
       right top,
       from(#d05f2d),
-      to(rgba(236, 102, 21, 1))
+      to(#ec6615)
     );
-    background: linear-gradient(90deg, #d05f2d, rgba(236, 102, 21, 1));
+    background: linear-gradient(90deg, #d05f2d, #ec6615);
   }
   .outside31-35 {
     background: #d86858;
@@ -3148,7 +3148,7 @@
     background: #d35d4e;
   }
   .uvtoday11 {
-    background: rgba(204, 135, 248, 1);
+    background: #cc87f8;
   }
   .uvcaution {
     margin-left: 33px;
@@ -3270,7 +3270,7 @@
     background: #01a4b4;
   }
   topyellow2 {
-    background: rgba(233, 171, 74, 1);
+    background: #e9ab4a;
   }
   .topmin {
     left: -100px;
@@ -3640,8 +3640,8 @@
     display: flex;
     width: 6rem;
     overflow: hidden;
-    -webkit-box-shadow: inset 3px 0 0 0 rgba(208, 95, 45, 1);
-    box-shadow: inset 3px 0 0 0 rgba(208, 95, 45, 1);
+    -webkit-box-shadow: inset 3px 0 0 0 #d05f2d;
+    box-shadow: inset 3px 0 0 0 #d05f2d;
     font-family: weathertext2;
     line-height: 1.4;
     -webkit-border-left: 0;
@@ -3972,7 +3972,7 @@
     color: #07727d;
   }
   .tempconvertercircleblue {
-    background: rgba(0, 164, 180, 1);
+    background: #00a4b4;
     background: -webkit-gradient(
       linear,
       right top,
@@ -4102,7 +4102,7 @@
     margin-top: 5px;
   }
   .rainratetextheading ratevalue {
-    color: rgba(61, 139, 150, 1);
+    color: #3d8b96;
   }
   .rainrateextra {
     position: absolute;
@@ -4602,9 +4602,9 @@
       right top,
       left top,
       from(#00a4b4),
-      to(rgba(80, 69, 188, 1))
+      to(#5045bc)
     );
-    background: linear-gradient(270deg, #00a4b4, rgba(80, 69, 188, 1));
+    background: linear-gradient(270deg, #00a4b4, #5045bc);
   }
   .tempconvertercircle0-5 {
     background: #00a4b4;
@@ -4668,9 +4668,9 @@
       left top,
       right top,
       from(#d05f2d),
-      to(rgba(236, 102, 21, 1))
+      to(#ec6615)
     );
-    background: linear-gradient(90deg, #d05f2d, rgba(236, 102, 21, 1));
+    background: linear-gradient(90deg, #d05f2d, #ec6615);
   }
   .tempconvertercircle31-35 {
     background: #d86858;
@@ -5734,7 +5734,7 @@
     font-style: normal;
     line-height: 20px;
     cursor: pointer;
-    background: rgba(208, 95, 45, 1);
+    background: #d05f2d;
     border-radius: 3px;
   }
   .lity-close::-moz-focus-inner {
@@ -5758,11 +5758,11 @@
     font-size: 25px;
     font-style: normal;
     line-height: 25px;
-    background: rgba(61, 139, 150, 1);
+    background: #3d8b96;
     border-radius: 3px;
   }
   .lity-close:active {
-    color: rgba(86, 95, 103, 1);
+    color: #565f67;
   }
   .lity-image img {
     max-width: 100%;
@@ -5810,7 +5810,7 @@
     height: 98%;
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    background: rgba(30, 33, 36, 1);
+    background: #1e2124;
     background: linear-gradient(135deg, #212428 0, #2f363f 100%);
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -5866,7 +5866,7 @@
     align-items: stretch;
     margin-top: 45px;
     margin-bottom: 4px;
-    color: rgba(47, 54, 63, 1);
+    color: #2f363f;
   }
   .grid > weather34topmodule {
     border: 1px solid rgba(230, 232, 239, 0.5);
@@ -6049,7 +6049,7 @@
     align-items: stretch;
     margin: 0 auto;
     margin-top: 5px;
-    color: rgba(47, 54, 63, 1);
+    color: #2f363f;
   }
   .gridfooter > weather34footer {
     border: 1px solid rgba(230, 232, 239, 0.5);
@@ -6073,7 +6073,7 @@
     -ms-flex-align: stretch;
     align-items: stretch;
     margin: 0 auto;
-    color: rgba(47, 54, 63, 1);
+    color: #2f363f;
   }
   .gridhardware > weather34infoboxes {
     border: 1px solid rgba(230, 232, 239, 0.8);
@@ -6186,7 +6186,7 @@
     height: 1.5em;
     font-size: 10px;
     top: -1px;
-    color: rgba(47, 54, 63, 1);
+    color: #2f363f;
     -webkit-box-align: left;
     -ms-flex-align: left;
     align-items: left;
@@ -6209,7 +6209,7 @@
     display: flex;
     position: absolute;
     float: left;
-    color: rgba(47, 54, 63, 1);
+    color: #2f363f;
     font-family: headingtext;
     font-size: 9px;
     margin-top: 6px;
@@ -6223,7 +6223,7 @@
     display: flex;
     position: absolute;
     float: left;
-    color: rgba(47, 54, 63, 1);
+    color: #2f363f;
     font-family: headingtext;
     font-size: 9px;
     margin-top: 31px;
@@ -6271,7 +6271,7 @@
     height: 1.5em;
     font-size: 0.65rem;
     top: 5px;
-    color: rgba(47, 54, 63, 1);
+    color: #2f363f;
     -webkit-box-align: left;
     -ms-flex-align: left;
     align-items: left;
@@ -6353,7 +6353,7 @@
   }
   .weather34btn--primary svg {
     width: 10px;
-    color: rgba(230, 232, 239, 1);
+    color: #e6e8ef;
   }
   .eqcontainer1 {
     margin-left: 20px;
@@ -6478,14 +6478,14 @@
     border-radius: 50%;
     width: 112px;
     height: 112px;
-    border: 4px solid rgba(59, 60, 63, 1);
+    border: 4px solid #3b3c3f;
   }
   .mooncircle1:after {
     position: absolute;
     border-radius: 50%;
     width: 90px;
     height: 90px;
-    border: 4px solid rgba(59, 60, 63, 1);
+    border: 4px solid #3b3c3f;
   }
   .mooncircle1 luminance1 {
     position: absolute;
@@ -6505,7 +6505,7 @@
   }
   .mooncircle1 moonhead1 {
     position: absolute;
-    color: rgba(255, 112, 50, 1);
+    color: #ff7032;
     text-align: center;
     font-size: 15px;
     -moz-osx-font-smoothing: grayscale;
@@ -6783,7 +6783,7 @@
     right: -45px;
   }
   .lightningactive {
-    background: rgba(255, 124, 57, 1);
+    background: #ff7c39;
   }
   .lightningquiet {
     background: #009bab;
@@ -6870,7 +6870,7 @@
     font-size: 1.4rem;
     padding-top: 0;
     color: #fff;
-    border-bottom: 15px solid rgba(230, 232, 239, 1);
+    border-bottom: 15px solid #e6e8ef;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -7398,7 +7398,7 @@
     max-height: 100px;
   }
   .weather34moonbackground {
-    fill: rgba(120, 138, 146, 1);
+    fill: #788a92;
     stroke: rgba(230, 232, 239, 0.3);
     stroke-width: 0;
   }
@@ -7438,7 +7438,7 @@
       align-items: stretch;
       margin: 0 auto;
       margin-top: 45px;
-      color: rgba(47, 54, 63, 1);
+      color: #2f363f;
     }
     .grid1 > weather34module {
       border: 1px solid rgba(230, 232, 239, 0.5);
@@ -7463,7 +7463,7 @@
       align-items: stretch;
       margin: 0 auto;
       margin-top: 0;
-      color: rgba(47, 54, 63, 1);
+      color:#2f363f;
     }
     .gridhardware > weather34infoboxes {
       border: 1px solid rgba(230, 232, 239, 0.8);
@@ -7705,7 +7705,7 @@
       margin: 0 auto;
       align-items: stretch;
       margin-top: 45px;
-      color: rgba(47, 54, 63, 1);
+      color: #2f363f;
     }
     .grid1 > weather34module {
       border: 1px solid rgba(230, 232, 239, 0.5);
@@ -7974,33 +7974,33 @@
   }
   .weather34tip:after {
     content: attr(data-weather34tip);
-    background: rgba(255, 108, 52, 1);
+    background: #ff6c34;
     background: -webkit-gradient(
       left top,
       left bottom,
-      color-stop(0, rgba(255, 108, 52, 1)),
-      color-stop(49%, rgba(255, 108, 52, 1)),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      color-stop(100%, rgba(6, 162, 177, 1))
+      color-stop(0, #ff6c34),
+      color-stop(49%, #ff6c34),
+      color-stop(49%, r#06a2b1),
+      color-stop(49%, #06a2b1),
+      color-stop(100%, r#06a2b1)
     );
     background: -webkit-gradient(
       linear,
       left top,
       left bottom,
-      from(rgba(255, 108, 52, 1)),
-      color-stop(49%, rgba(255, 108, 52, 1)),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      to(rgba(6, 162, 177, 1))
+      from(#ff6c34),
+      color-stop(49%, #ff6c34),
+      color-stop(49%, r#06a2b1),
+      color-stop(49%, r#06a2b1),
+      to(r#06a2b1)
     );
     background: linear-gradient(
       to bottom,
-      rgba(255, 108, 52, 1) 0,
-      rgba(255, 108, 52, 1) 49%,
-      rgba(6, 162, 177, 1) 49%,
-      rgba(6, 162, 177, 1) 49%,
-      rgba(6, 162, 177, 1) 100%
+      #ff6c34 0,
+      #ff6c34 49%,
+      r#06a2b1 49%,
+      r#06a2b1 49%,
+      r#06a2b1 100%
     );
     top: 100%;
     margin-top: -12px;
@@ -8044,7 +8044,7 @@
   }
   .weather34tipr:after {
     content: attr(data-weather34tipr);
-    background: rgba(6, 162, 177, 1);
+    background: r#06a2b1;
     top: 100%;
     margin-top: 12px;
     padding: 2px;
@@ -8095,7 +8095,7 @@
   }
   .weather34tiph:after {
     content: attr(data-weather34tiph);
-    background: rgba(6, 162, 177, 1);
+    background: r#06a2b1;
     top: 100%;
     margin-top: 12px;
     padding: 2px;
@@ -8276,33 +8276,33 @@
   }
   .weather34tipty:after {
     content: attr(data-weather34tipty);
-    background: rgba(255, 108, 52, 1);
+    background: #ff6c34;
     background: -webkit-gradient(
       left top,
       left bottom,
-      color-stop(0, rgba(255, 108, 52, 1)),
-      color-stop(49%, rgba(255, 108, 52, 1)),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      color-stop(100%, rgba(6, 162, 177, 1))
+      color-stop(0, #ff6c34),
+      color-stop(49%, #ff6c34),
+      color-stop(49%, r#06a2b1),
+      color-stop(49%, r#06a2b1),
+      color-stop(100%, r#06a2b1)
     );
     background: -webkit-gradient(
       linear,
       left top,
       left bottom,
-      from(rgba(255, 108, 52, 1)),
-      color-stop(49%, rgba(255, 108, 52, 1)),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      to(rgba(6, 162, 177, 1))
+      from(#ff6c34),
+      color-stop(49%, #ff6c34),
+      color-stop(49%, r#06a2b1),
+      color-stop(49%, r#06a2b1),
+      to(r#06a2b1)
     );
     background: linear-gradient(
       to bottom,
-      rgba(255, 108, 52, 1) 0,
-      rgba(255, 108, 52, 1) 49%,
-      rgba(6, 162, 177, 1) 49%,
-      rgba(6, 162, 177, 1) 49%,
-      rgba(6, 162, 177, 1) 100%
+      #ff6c34 0,
+      #ff6c34 49%,
+      r#06a2b1 49%,
+      r#06a2b1 49%,
+      r#06a2b1 100%
     );
     top: 100%;
     margin-top: 12px;
@@ -8481,33 +8481,33 @@
   }
   .weather34tiptemp:after {
     content: attr(data-weather34tiptemp);
-    background: rgba(255, 108, 52, 1);
+    background: #ff6c34;
     background: -webkit-gradient(
       left top,
       left bottom,
-      color-stop(0, rgba(255, 108, 52, 1)),
-      color-stop(49%, rgba(255, 108, 52, 1)),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      color-stop(100%, rgba(6, 162, 177, 1))
+      color-stop(0, #ff6c34),
+      color-stop(49%, #ff6c34),
+      color-stop(49%, r#06a2b1),
+      color-stop(49%, r#06a2b1),
+      color-stop(100%, r#06a2b1)
     );
     background: -webkit-gradient(
       linear,
       left top,
       left bottom,
-      from(rgba(255, 108, 52, 1)),
-      color-stop(49%, rgba(255, 108, 52, 1)),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      to(rgba(6, 162, 177, 1))
+      from(#ff6c34),
+      color-stop(49%, #ff6c34),
+      color-stop(49%, r#06a2b1),
+      color-stop(49%, r#06a2b1),
+      to(r#06a2b1)
     );
     background: linear-gradient(
       to bottom,
-      rgba(255, 108, 52, 1) 0,
-      rgba(255, 108, 52, 1) 49%,
-      rgba(6, 162, 177, 1) 49%,
-      rgba(6, 162, 177, 1) 49%,
-      rgba(6, 162, 177, 1) 100%
+      #ff6c34 0,
+      #ff6c34 49%,
+      r#06a2b1 49%,
+      r#06a2b1 49%,
+      r#06a2b1 100%
     );
     top: 100%;
     margin-top: -12px;
@@ -8691,9 +8691,9 @@
       left bottom,
       color-stop(0, #d05f2d),
       color-stop(49%, #d05f2d),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      color-stop(100%, rgba(6, 162, 177, 1))
+      color-stop(49%, r#06a2b1),
+      color-stop(49%, r#06a2b1),
+      color-stop(100%, r#06a2b1)
     );
     background: -webkit-gradient(
       linear,
@@ -8701,17 +8701,17 @@
       left bottom,
       from(#d05f2d),
       color-stop(49%, #d05f2d),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      color-stop(49%, rgba(6, 162, 177, 1)),
-      to(rgba(6, 162, 177, 1))
+      color-stop(49%, r#06a2b1),
+      color-stop(49%, r#06a2b1),
+      to(r#06a2b1)
     );
     background: linear-gradient(
       to bottom,
       #d05f2d 0,
       #d05f2d 49%,
-      rgba(6, 162, 177, 1) 49%,
-      rgba(6, 162, 177, 1) 49%,
-      rgba(6, 162, 177, 1) 100%
+      r#06a2b1 49%,
+      r#06a2b1 49%,
+      r#06a2b1 100%
     );
     top: 100%;
     margin-top: -12px;
@@ -8801,10 +8801,10 @@
     background: #e6a141;
   }
   redwuhum {
-    background: rgba(211, 93, 78, 1);
+    background: #d35d4e;
   }
   greenwuhum {
-    background: rgba(144, 177, 42, 1);
+    background: #90b12a;
   }
   bluewunext,
   greenwunext,
@@ -8844,10 +8844,10 @@
     background: #e6a141;
   }
   redwunext {
-    background: rgba(211, 93, 78, 1);
+    background: #d35d4e;
   }
   greenwunext {
-    background: rgba(144, 177, 42, 1);
+    background: #90b12a;
   }
   nextperiod {
     position: absolute;
@@ -8863,7 +8863,7 @@
     margin-top: 10px;
   }
   boxred {
-    color: rgba(211, 93, 78, 1);
+    color: #d35d4e;
     margin-right: 5px;
   }
   boxblue {
@@ -8909,13 +8909,13 @@
   }
   .weather34moonforeground {
     fill: rgba(226, 228, 237, 0.5);
-    stroke: rgba(86, 95, 103, 1);
+    stroke: #565f67;
     stroke-width: 0;
     max-height: 100px;
   }
   .weather34moonbackground {
-    fill: rgba(120, 138, 146, 1);
-    stroke: rgba(230, 232, 239, 1);
+    fill: #788a92;
+    stroke: #e6e8ef;
     stroke-width: 0;
   }
   .moonrise2 {
@@ -8981,7 +8981,7 @@
     height: 0;
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
-    border-top: 5px solid rgba(211, 93, 78, 1);
+    border-top: 5px solid #d35d4e;
     opacity: 0.7;
   }
   .luftairqualitymoduleposition {
@@ -8999,7 +8999,7 @@
   luftairvalueaqpm {
     font-size: 0.35em;
     font-family: weathertext2;
-    color: rgba(61, 70, 77, 1);
+    color: #3d464d;
   }
   .luftairvalue {
     position: relative;
@@ -9007,10 +9007,10 @@
     left: 30px;
     font-size: 0.55rem;
     font-family: weathertext2;
-    color: rgba(61, 70, 77, 1);
+    color: #3d464d;
   }
   luftgreen {
-    color: rgba(144, 177, 42, 1);
+    color: #90b12a;
   }
   luftyellow {
     color: #e6a141;
@@ -9019,10 +9019,10 @@
     color: #d05f2d;
   }
   luftred {
-    color: rgba(211, 93, 78, 1);
+    color: #d35d4e;
   }
   luftpurple {
-    color: rgba(164, 117, 203, 1);
+    color: #a475cb;
   }
   greenluft,
   orangeluft,
@@ -9046,7 +9046,7 @@
     border-radius: 2px;
     margin-left: 0;
     top: 8px;
-    border-bottom: 8px solid rgba(230, 232, 239, 1);
+    border-bottom: 8px solid #e6e8ef;
   }
   orangeluft {
     background: #d05f2d;
@@ -9055,14 +9055,14 @@
     background: #e6a141;
   }
   redluft {
-    background: rgba(211, 93, 78, 1);
+    background: #d35d4e;
   }
   greenluft {
-    background: rgba(144, 177, 42, 1);
+    background: #90b12a;
     opacity: 0.7;
   }
   purpleluft {
-    background: rgba(164, 117, 203, 1);
+    background: #a475cb;
   }
   .weather34-theme-switch {
     display: flex;
@@ -9095,7 +9095,7 @@
     padding: 2px;
   }
   .weather34-slider:before {
-    background-color: rgba(77, 90, 102, 1);
+    background-color: #4d5a66;
     bottom: 0;
     content: "";
     height: 12px;
