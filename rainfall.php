@@ -28,13 +28,18 @@ echo " &nbsp;&nbsp;<valuetextheading1>".$lang['Last-Twenty-Four-Hour']."</valuet
 <?php if ($weather["rain_units"] =='in'){echo "<div class=rainconvertercircle>".number_format($weather["rain_today"]*25.400013716,1)."<smallrainunit>mm";}else if ($weather["rain_units"] =='mm'){echo "<div class=rainconvertercircle>".number_format($weather["rain_today"]*0.0393701,2)."<smallrainunit>in";}?></span>
 </div></div></div></div>
 
-<div class="rainrateextra" style="margin-top:110px;margin-left:147px">
-<div class="rainratetextheading"><?php echo $lang['Rate']?> </div>
-<div class=rainratebar style="width:9rem;height:1.58em">
+<div class="rainrateextra">
+<div class="rainratetextheading"><?php echo $lang['Rate']?> per/hr</div>
+<div class=rainratebar>
 <div class="weather34ratebar" style="width:
 <?php //weather34 rain rate bar 
-if ($weather["rain_units"] =='mm'){echo $weather["rain_rate"]*5;}
-else if ($weather["rain_units"] =='in'){echo $weather["rain_rate"]*125;}?>px;max-width:80%;background:rgba(1, 164, 181, .9)">
-<span style='margin-left:105px'>
-<?php echo "<raiblue>".$weather["rain_rate"]."</raiblue><smallrainunit2>".$weather["rain_units"]."</smallrainunit2>";?></span>
+if ($weather["rain_rate"]>1.1811 && $weather["rain_units"] =='in'){echo 'background: rgb(58,139,156);
+    background: linear-gradient(90deg, rgba(58,139,156,1) 0%, rgba(58,139,156,1) 57%, rgba(238,95,117,0.03632478632478631) 100%);';
+    }
+if ($weather["rain_rate"]>30 && $weather["rain_units"] =='mm'){echo 'background: rgb(58,139,156);
+        background: linear-gradient(90deg, rgba(58,139,156,1) 0%, rgba(58,139,156,1) 57%, rgba(238,95,117,0.03632478632478631) 100%);';}  
+else if ($weather["rain_units"] =='mm'){echo $weather["rain_rate"]*3;}
+else if ($weather["rain_units"] =='in'){echo $weather["rain_rate"]*75;}?>px;">
+<rainratevalue><blue>
+<?php echo $weather["rain_rate"]."</blue><smallrainunit2>".$weather["rain_units"]."</smallrainunit2>";?></rainratevalue>
 </div></div>

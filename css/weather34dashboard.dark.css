@@ -4126,22 +4126,20 @@
   }
   .rainrateextra {
     position: absolute;
-    margin-top: 115px;
-    margin-left: 227px;
+    margin-top:110px;
+    margin-left:149px;
     color: #aeb6bf;
   }
   .rainratebar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 4.2rem;
-    height: 1rem;
-    color: #aeb6bf;
+    width:140px;
+    height:1.58em;
     overflow: hidden;
     -webkit-box-shadow: inset 3px 0 0 0 #3b9cac;
     box-shadow: inset 3px 0 0 0 #3b9cac;
     font-family: weathertext2;
-    font-size: 0.6rem;
     line-height: 1.4;
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -4152,18 +4150,19 @@
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
   }
-  .weather34ratebar {
-    height: 1rem;
-    background: rgba(61, 139, 150, 0.7);
-    color: #aeb6bf;
-    font-size: 0.6rem;
-  }
+  .rainratebar,
+  .weather34ratebar,
   .weather34ratebar-red {
     height: 1rem;
-    background: rgba(184, 54, 45, 0.6);
     color: #aeb6bf;
     font-size: 0.6rem;
   }
+  .weather34ratebar {
+    background-color: #009aab99;    
+  }
+  rainratevalue { 
+    margin-left:93px;
+   }
   smallrainrateunit {
     color: #aeb6bf;
     font-family: weathertext2;
