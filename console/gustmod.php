@@ -22,8 +22,7 @@ elseif ($weather["wind_gust_speed"]<=1) { echo"<div class=windbox style='color:#
 </div></smalltempunit></div></div>
 
 <div class="heatcircle" ><div class="heatcircle-content"><valuetextheading1>Beaufort</valuetextheading1>
-<?php  //heat-index/real feel
-
+<?php  //weather34 beaufort symbol
 if ($weather['wind_speed_bft']>=12) {
     echo "<br><div class=tempconverter1><div class=tempmodulehome30-35c>".$weather['wind_speed_bft']. "&nbsp; $beaufort12";}
 else if ($weather['wind_speed_bft']>=11) {
@@ -33,8 +32,7 @@ else if ($weather['wind_speed_bft']>=10) {
 else if ($weather['wind_speed_bft']>=9) {
     echo "<br><div class=tempconverter1><div class=tempmodulehome30-35c>".$weather['wind_speed_bft']. " $beaufort9";}
 else if ($weather['wind_speed_bft']>=8) {
-    echo "<br><div class=tempconverter1><div class=tempmodulehome30-35c>".$weather['wind_speed_bft']. " $beaufort8";}
-    
+    echo "<br><div class=tempconverter1><div class=tempmodulehome30-35c>".$weather['wind_speed_bft']. " $beaufort8";}    
 else if ($weather['wind_speed_bft']>=7) {
         echo "<br><div class=tempconverter1><div class=tempmodulehome30-35c>".$weather['wind_speed_bft']. " &nbsp;$beaufort7";}
 else if ($weather['wind_speed_bft']>=6) {
@@ -42,8 +40,7 @@ else if ($weather['wind_speed_bft']>=6) {
 else if ($weather['wind_speed_bft']>=5) {
         echo "<br><div class=tempconverter1><div class=tempmodulehome20-25c>".$weather['wind_speed_bft']. " &nbsp;$beaufort5";} 
 else if ($weather['wind_speed_bft']>=4) {
-        echo "<br><div class=tempconverter1><div class=tempmodulehome10-15c>".$weather['wind_speed_bft']. " &nbsp;$beaufort4";}   
-        
+        echo "<br><div class=tempconverter1><div class=tempmodulehome10-15c>".$weather['wind_speed_bft']. " &nbsp;$beaufort4";}          
 else if ($weather['wind_speed_bft']>=3) {
             echo "<br><div class=tempconverter1><div class=tempmodulehome10-15c>".$weather['wind_speed_bft']. " &nbsp;$beaufort3";}
 else if ($weather['wind_speed_bft']>=2) {
@@ -51,27 +48,23 @@ else if ($weather['wind_speed_bft']>=2) {
 else if ($weather['wind_speed_bft']>=1) {
             echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['wind_speed_bft']. " &nbsp;$beaufort1";} 
 else if ($weather['wind_speed_bft']==0) {
-            echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['wind_speed_bft']. " &nbsp;$beaufort0";}   
-
+            echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['wind_speed_bft']. " &nbsp;$beaufort0";}  
 ?><smalltempunit2></div></div></div>
 
 <div class="heatcircle2"><div class="heatcircle-content"><valuetextheading1>Beaufort</valuetextheading1>
-<?php //avg today
+<?php //weather34 beaufort word description
 if ( $weather['wind_speed_bft']>=12){echo "<div class=tempconverter1><div class=tempmodulehome40-50c><valuebeaufort>Hurricane";echo $heatindexalert8;}
 else if (  $weather['wind_speed_bft']>=11){echo "<div class=tempconverter1><div class=tempmodulehome35-40c><valuebeaufort>Violent Storm";echo $heatindexalert8;}
 else if (  $weather['wind_speed_bft']>=10){echo "<div class=tempconverter1><div class=tempmodulehome30-35c><valuebeaufort>Storm";echo $heatindexalert8;}
 else if ( $weather['wind_speed_bft']>=9){echo "<div class=tempconverter1><div class=tempmodulehome30-35c><valuebeaufort>Strong Gale";echo $heatindexalert8;}
 else if ( $weather['wind_speed_bft']>=8){echo "<div class=tempconverter1><div class=tempmodulehome30-35c><valuebeaufort>Gale Force";echo $heatindexalert8;}
 else if ( $weather['wind_speed_bft']>=7){echo "<div class=tempconverter1><div class=tempmodulehome30-35c><valuebeaufort>Near Gale "; echo $heatindexalert8;}
-else if ( $weather['wind_speed_bft']>=6){echo "<div class=tempconverter1><div class=tempmodulehome20-25c><valuebeaufort>Strong Breeze";echo $heatindexalert8;}
+else if ( $weather['wind_speed_bft']>=6){echo "<div class=tempconverter1><div class=tempmodulehome20-25c><valuebeaufort>Strong Breeze";}
 else if ( $weather['wind_speed_bft']>=5){echo "<div class=tempconverter1><div class=tempmodulehome20-25c><valuebeaufort>Fresh Breeze";}
 else if ( $weather['wind_speed_bft']>=4){echo "<div class=tempconverter1><div class=tempmodulehome10-15c><valuebeaufort>Moderate Breeze";}
 else if ( $weather['wind_speed_bft']>=3){echo "<div class=tempconverter1><div class=tempmodulehome10-15c><valuebeaufort>Gentle Breeze";}
 else if ( $weather['wind_speed_bft']>=2){echo "<div class=tempconverter1><div class=tempmodulehome0-5c><valuebeaufort>Light Breeze";}
 else if ( $weather['wind_speed_bft']>=1){echo "<div class=tempconverter1><div class=tempmodulehome0-5c><valuebeaufort>Light Winds";}
 else if ( $weather['wind_speed_bft']>=0){echo "<div class=tempconverter1><div class=tempmodulehome0-5c><valuebeaufort>Calm ";}
-
 ?>
-</valuebeaufort></div></div></div></div>
-
-</div>
+</valuebeaufort></div></div></div></div></div>

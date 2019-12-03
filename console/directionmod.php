@@ -167,7 +167,7 @@ else if( $weather["wind_direction_avg"]<=348.75){echo "NNW";}else if( $weather["
 
 
 
-<div class="heatcircle5" ><div class="heatcircle-content"><valuetextheading1>&nbsp;&nbsp;&nbsp;Average Today</valuetextheading1>
+<div class="heatcircle5" ><div class="heatcircle-content"><valuetextheading1>Average Today</valuetextheading1>
 <?php 
 echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>" .number_format($weather['wind_direction_avg'],0)."&deg; &nbsp;";
 if( $weather["wind_direction_avg"]<=11.25){echo "North";}else if( $weather["wind_direction_avg"]<=33.75){echo "NNE";}else if( $weather["wind_direction_avg"]<=56.25){echo "NE";}
@@ -179,7 +179,7 @@ else if( $weather["wind_direction_avg"]<=348.75){echo "NNW";}else if( $weather["
 ?><smalltempunit2></div></div></div>
 
 
-<div class="heatcircle6"><div class="heatcircle-content"><valuetextheading1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Average <?php echo date('F')?></valuetextheading1>
+<div class="heatcircle6"><div class="heatcircle-content"><valuetextheading1>Average <?php echo date('F')?></valuetextheading1>
 <?php 
 echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>" .number_format($weather['wind_direction_avgmonth'],0)."&deg; &nbsp;";
 if( $weather['wind_direction_avgmonth']<=11.25){echo "North";}else if( $weather['wind_direction_avgmonth']<=33.75){echo "NNE";}else if( $weather['wind_direction_avgmonth']<=56.25){echo "NE";}

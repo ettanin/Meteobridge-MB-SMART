@@ -581,12 +581,13 @@ smallrainunit4 {
 }
 
 valuetextheading1 {
-    margin-left: -20px;
+    position: relative;
     color: #aeb6bf;
     font-family: weathertext2;
-    font-size: 1em
+    font-size: 1em;
+    text-align:left;
+    left:7px
 }
-
 .tempmodulehome-50-10c {
     -webkit-box-shadow: inset 2px 0 0 0 #8781bd;
     box-shadow: inset 2px 0 0 0 #8781bd
