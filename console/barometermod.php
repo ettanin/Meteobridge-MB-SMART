@@ -2,19 +2,40 @@
 <meta http-equiv="Content-Type: text/html; charset=UTF-8" />
 
 <style>
-.weather34barometerarrowactual{-webkit-transform:rotate(<?php 
-if ($weather["temp_units"]=='C'){echo $weather["barometer"]*0.02953*50.6;}else if ($weather["temp_units"]=='F'){echo $weather["barometer"]*50.6;}?>deg);
-transform:rotate(<?php if ($weather["temp_units"]=='C'){echo $weather["barometer"]*0.02953*50.6;}else if ($weather["temp_units"]=='F'){echo $weather["barometer"]*50.6;}?>deg);z-index:200}
-
-.weather34barometerarrow24{z-index:10;height:50%;-webkit-transform-origin:50% 100%;-o-transform-origin:50% 100%;transform-origin:50% 100%;z-index:10;}
-.weather34barometerarrow24{-webkit-transform:rotate(<?php 
-if ($weather["temp_units"]=='C' ){echo $weather["barometer_24h"]*0.02953*50.6;}
-else if ($weather["temp_units"]=='F'){echo $weather["barometer_24h"]*50.6;}?>deg);
-transform:rotate(<?php if ($weather["temp_units"]=='C' ){echo $weather["barometer_24h"]*0.02953*50.6;}
-else if ($weather["temp_units"]=='F'){echo $weather["barometer_24h"]*50.6;}?>deg);}
-.weather34barometerarrow24{position:absolute;top:0;left:50%;margin-left:0;width:8px;-moz-transform-origin:50% 100%;-ms-transform-origin:50% 100%;transform-origin:50% 100%}
-.weather34barometerarrow24:after{content:'';position:absolute;text-align:left;left:50%;top:0;width:0;height:0;-webkit-border-radius:0;border-radius:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:8px solid rgba(6, 162, 177, 1.000);border-bottom:0;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transition-duration:3s;-moz-transition-duration:3s;-o-transition-duration:3s;-ms-transition-duration:3s;transition-duration:3s;background:0;z-index:90;}
-.weather34barometerarrow24:before{content:'24H';width:5px;height:5px;position:absolute;z-index:10;left:-2px;top:-16px;border:0;-webkit-border-radius:100%;-moz-border-radius:100%;-o-border-radius:100%;-ms-border-radius:100%;border-radius:100%;font-size:.65em;color:rgba(132, 151, 167, 1.000);font-family:Arial, Helvetica, sans-serif,system;}
+.weather34barometerarrowactual{-webkit-transform:rotate(<?php
+if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
+    echo $weather["barometer"]*0.02953*50.6;
+} elseif ($weather["barometer_units"]=='inHg') {
+    echo $weather["barometer"]*50.6;
+}?>deg);
+transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
+    echo $weather["barometer"]*0.02953*50.6;
+} elseif ($weather["barometer_units"]=='inHg') {
+    echo $weather["barometer"]*50.6;
+}?>deg);z-index:99}
+.weather34barometerarrowmin{-webkit-transform:rotate(<?php
+if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
+    echo $weather["barometer_min"]*0.02953*50.6;
+} elseif ($weather["barometer_units"]=='inHg') {
+    echo $weather["barometer_min"]*50.6;
+}?>deg);
+transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
+    echo $weather["barometer_min"]*0.02953*50.6;
+} elseif ($weather["barometer_units"]=='inHg') {
+    echo $weather["barometer_min"]*50.6;
+}?>deg);z-index:9}
+.weather34barometerarrowmax{-webkit-transform:rotate(<?php
+if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
+    echo $weather["barometer_max"]*0.02953*50.6;
+} elseif ($weather["barometer_units"]=='inHg') {
+    echo $weather["barometer_max"]*50.6;
+}?>deg);
+transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
+    echo $weather["barometer_max"]*0.02953*50.6;
+} elseif ($weather["barometer_units"]=='inHg') {
+    echo $weather["barometer_max"]*50.6;
+}?>deg);z-index:9}
+valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 valuetextba{font-size:1em}
 </style>
 <div
