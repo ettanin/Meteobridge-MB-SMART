@@ -6,18 +6,18 @@ font-family:Headingtext;width:140px;height:13px;font-size:13px;padding-top:2px;c
 align-items:left;justify-content:left;margin-bottom:-5px;top:-20px">
 Wind Gusts <blue><?php echo $weather["wind_units"]?></blue></div>
 <div class="tempcontainer">
-<?php echo "<div class='maxdata'>". $weather["winddmax"]."</div>";?> 
+<?php echo "<div class='maxdata'>". number_format($weather["winddmax"],1)."</div>";?> 
 <?php echo "<div class='mindata'>".$weather["winddmaxtime"]."</div>";?>
 <?php echo "<div class='hidata'>Max</div>";?> 
 <?php echo "<div class='lodata'>Time</div>";?>
 <?php //weather34 sez lets make the temperature look nice 
-if( $weather["wind_gust_speed"]<5){echo '<div class=windbox style="color:#3b9cac">'.number_format($weather["wind_gust_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
-else if( $weather["wind_gust_speed"]<10){echo '<div class=windbox style="color:#9aba2f">'.number_format($weather["wind_gust_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
-else if( $weather["wind_gust_speed"]<20){echo '<div class=windbox style="color:#e6a141;">'.number_format($weather["wind_gust_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
-else if( $weather["wind_gust_speed"]<35){echo '<div class=windbox style="color:#ec5a34;">'.number_format($weather["wind_gust_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
-else if( $weather["wind_gust_speed"]<40){echo '<div class=windbox style="color:#d05f2d;">'.number_format($weather["wind_gust_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
-else if( $weather["wind_gust_speed"]<75){echo '<div class=windbox style="color:#d65b4a;">'.number_format($weather["wind_gust_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
-else if( $weather["wind_gust_speed"]<150){echo '<div class=windbox style="color:#d05f2d;"">'.number_format($weather["wind_gust_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
+//weather34-windgust
+if ($weather["wind_gust_speed"]*$toKnots>=26.9978) {echo "<div class=windbox style='color:#d05f2d;'>",number_format($weather["wind_gust_speed"], 1),'<smalltempunit>'.$weather["wind_units"];}
+elseif ($weather["wind_gust_speed"]*$toKnots>=21.5983) { echo "<div class=windbox style='color:#d65b4a;'>",number_format($weather["wind_gust_speed"], 1),'<smalltempunit>'.$weather["wind_units"];}
+elseif ($weather["wind_gust_speed"]*$toKnots>=16.1987) { echo "<div class=windbox style='color:#d05f2d;'>",number_format($weather["wind_gust_speed"], 1),'<smalltempunit>'.$weather["wind_units"];}
+elseif ($weather["wind_gust_speed"]*$toKnots<16.1987 && $weather["wind_gust_speed"]*$toKnots>=5.39957) {echo "<div class=windbox style='color:#00a4b4'>",number_format($weather["wind_gust_speed"],1),'<smalltempunit>'.$weather["wind_units"];} 
+elseif ($weather["wind_gust_speed"]<=10) {echo"<div class=windbox style='color:#00a4b4'>". number_format($weather["wind_gust_speed"],1),'<smalltempunit>'.$weather["wind_units"];} 
+elseif ($weather["wind_gust_speed"]<=1) { echo"<div class=windbox style='color:#00a4b4'>;". number_format($weather["wind_gust_speed"],1),'<smalltempunit>'.$weather["wind_units"];}
 ?>
 </div></smalltempunit></div></div>
 

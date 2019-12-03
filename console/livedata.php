@@ -97,30 +97,17 @@ if ($livedataFormat=='meteobridge-api'&&$livedata) {
 	$weather["uvdmaxtime"]		= $uvdmaxtime; //seconds	
 		  
     //wind speed-direction
-    $weather["wind_speed_avg"]=round($meteobridgeapi[72], 1);
-    $weather["wind_direction"]=number_format($meteobridgeapi[7], 0);
-    $weather["wind_direction_avg"]=number_format($meteobridgeapi[46], 0);
-    $weather["wind_speed"]=$meteobridgeapi[17];
-    $weather["wind_speed_bft"]=$meteobridgeapi[12];
-    $weather["wind_gust_speed"]=$meteobridgeapi[6];
-    $weather["wind_speed_max"]=round($meteobridgeapi[40], 1);
-    $weather["wind_gust_speed_max"]=number_format($meteobridgeapi[32], 1);
-    $weather["wind_units"]=$meteobridgeapi[13];
-    $weather["wind_speed_avg15"]=$meteobridgeapi[5];
-    $weather["wind__speed_max10"]=number_format($meteobridgeapi[188], 1);
-    $weather["wind__speed_avg10"]=number_format($meteobridgeapi[189], 1);
-    $weather["wind_direction_avg10"]=number_format($meteobridgeapi[190], 1);
-    $weather['winddir6h']=$meteobridgeapi[72];
-    $weather["dirtrend"]=$dirtrend[0];
-    $weather['wind_speed_avg30']=$meteobridgeapi[158];
-    $weather['wind_speed_avgday']=$weather['wind_speed_avg30'];
-    $weather['wind_direction_avgmonth']=$meteobridgeapi[179];
-    if ($weather["wind_gust_speed"]==0) {
-        $weather["wind_gust_speed"]=$weather["wind__speed_avg10"];
-    }
-    if ($weather["wind_direction"]==0) {
-        $weather["wind_direction"]=$weather["wind_direction_avg"];
-    }
+    $weather["wind_speed_avg"]     = $meteobridgeapi[5];
+	$weather["wind_direction"]     = number_format($meteobridgeapi[7],0);
+	$weather["wind_direction_avg"] = number_format($meteobridgeapi[46],0);
+	$weather["wind_speed"]         = number_format($meteobridgeapi[5]);
+	$weather["wind_gust_speed"]    = $meteobridgeapi[6];
+	$weather["wind_speed_bft"]     = $meteobridgeapi[12];
+	$weather["wind_speed_max"]     = $meteobridgeapi[40];	
+	$weather["wind_gust_speed_max"]= $meteobridgeapi[32];	
+	$weather["wind_units"]         = 'm/s'; // m/s or mph or km/h or kts
+	$weather["wind_speed_avg15"]   = $meteobridgeapi[72];
+	$weather["wind_speed_avg30"]   = $meteobridgeapi[73];
     //weather34 windrun based on daily average
     $windrunhr=date('G');
     $windrunmin=(($windrunmin=date('i')/60));
