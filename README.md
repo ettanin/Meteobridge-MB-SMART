@@ -1,11 +1,13 @@
-# This GITHUB repository is for the Meteobridge Weather34 MB Smart Version 1.06 Beta *NO MYSQL KNOWLEDGE REQUIRED 
-(Version 1.06 November 7th 2019)
+# This GITHUB repository is for the Meteobridge Weather34 MB Smart Version 1.07A *NO MYSQL KNOWLEDGE REQUIRED 
+(Version 1.07A December 3rd 2019)
+
+# Adds new simplified tablet layout 
 
 # Many new features , addtional modules , newer options , newer menu structure see screenshot below
 
 # IMPORTANT PLEASE READ THIS "IT IS NOT COMPATIBLE WITH CUMULUS,WEEWX,WIFILOGGER" IT IS DESIGNED FOR METOBERIDGE NANOSD(100% Compatibility) and MBPRO Products(MBPRO 90% compatibility may not display i.e console forecast)
 
-# Version 1.06 has New mb-smart update and backup/restore feature .
+# Version 1.07A has New mb-smart update and backup/restore feature .
 * allows features/fixes to be added with ease by simply using a zip file containing neccessary files to be updated or added.
 * this feature is for version 1.05 onwards do not try and use it with version 1.04 or previous.
 * update files will be release via https://weather34.com/homeweatherstation/ and each update will be dated 
