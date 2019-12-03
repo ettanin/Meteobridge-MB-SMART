@@ -39,7 +39,7 @@ if ($units!='uk') {
 }?>><?php if ($theme == 'dark') {
     echo ' Light Mode';
 } else {
-    echo ' &nbsp;&nbsp;Dark Mode';
+    echo ' &nbsp;Dark Mode';
 }?> </a></div></div></div></div></div>
 <!-- start the weather34 pure css menu-->
 <nav>
@@ -110,9 +110,10 @@ if ($theme == 'dark') {
     echo '<weather34menumarkerdot></weather34menumarkerdot> Dark <menuinfobox>Mode</menuinfobox>';
 }?></a></li>
 </a></li>
+<li><a href="console/consoledavis.php"><weather34menumarkerdot></weather34menumarkerdot> 
+Alternative <menuinfobox>Layout</menuinfobox></a></li> 
 <div class=weather34thinborder></div>
-<li><a href="#"><weather34themenusection><?php echo $smalldots ?> UNITS</weather34themenusection></a></li>
-
+<li><a href="#"><weather34themenusection> UNITS</weather34themenusection></a></li>
 <!-- units -->
 <?php
   if ($units!='us') {
