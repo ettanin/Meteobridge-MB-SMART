@@ -11,4 +11,4 @@ $livedataFormat = "meteobridge-api";
 $livedata   = "../mbridge/MBrealtimeupload.txt";
 $dateFormat   = "d-m-Y";
 $password    = "";
-$uvsensor    = "indoortempmod.php";
+$uvsensor    = "uvindexmod.php";

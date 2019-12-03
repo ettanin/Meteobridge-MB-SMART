@@ -13,7 +13,7 @@ include_once('updater2.php');
 <meta name="application-name" content="Weather34 Console">
 <meta name="msapplication-TileColor" content="#f8f8f8">
 <meta name="theme-color" content="#ffffff">
-<link href="style.min.css?version=<?php echo filemtime('style.css')?>" rel="stylesheet prefetch">
+<link href="console-style.min.css?version=<?php echo filemtime('console-style.min.css')?>" rel="stylesheet prefetch">
 <link rel="preload" href="fonts/clock3-webfont.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="fonts/verbatim-regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/verbatim-medium.woff2" as="font" type="font/woff2" crossorigin>
