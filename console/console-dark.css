@@ -1413,20 +1413,20 @@ weather34-barometerlimitmax {
 
 .consolesetup,
 a {
-    font-size: 12px;
+    font-size: 11px;
     font-family: headingtext;
     text-decoration: none;
-    margin-left: 35px;
+    margin-left: 55px;
     color: #00adbc
 }
 
 .designedby,
 a {
     color: silver;
-    font-size: 12px;
+    font-size: 11px;
     font-family: headingtext;
     text-decoration: none;
-    margin-left: 75%
+    margin-left: 65%
 }
 
 valuebeaufort {
