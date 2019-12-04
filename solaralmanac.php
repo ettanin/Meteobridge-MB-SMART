@@ -66,7 +66,10 @@ smalluvunit{font-size:.85rem;font-family:Arial,Helvetica,system;}
 .uvtoday6-8{background:#efa80f;background:-webkit-linear-gradient(90deg,#efa80f,#d86858);background:linear-gradient(90deg,#efa80f,#d86858)}
 .uvtoday9-10{background:#d05f2d;background:-webkit-linear-gradient(90deg,#d65b4a,#ac2816);background:linear-gradient(90deg,#d65b4a,#ac2816)}
 .uvtoday11{background:#95439f;background:-webkit-linear-gradient(90deg,#95439f,#a475cb);background:linear-gradient(90deg,#95439f,#a475cb)}
-.uvcaution{margin-left:120px;margin-top:112px;font-family:Arial,Helvetica,system}.uvtrend{margin-left:135px;margin-top:48px;z-index:1;color:#fff}.simsekcontainer{float:left;font-family:weathertext,system;-o-font-smoothing:antialiasedleft:0;bottom:0;right:0;position:relative;margin:40px 10px 10px 40px;left:-10px;top:13px}.simsek{font-size:1.55rem;padding-top:12px;color:#f8f8f8;background:rgba(230,161,65,1);border-bottom:18px solid rgba(56,56,60,1);align-items:center;justify-content:center;border-radius:3px}
+.uvcaution{margin-left:120px;margin-top:112px;font-family:Arial,Helvetica,system}
+.uvtrend{margin-left:135px;margin-top:48px;z-index:1;color:#fff}
+.simsekcontainer{float:left;font-family:weathertext,system;-o-font-smoothing:antialiased;left:0;bottom:0;right:0;position:relative;margin:40px 10px 10px 40px;left:-10px;top:13px}
+.simsek{font-size:1.55rem;padding-top:12px;color:#f8f8f8;background:rgba(230,161,65,1);border-bottom:18px solid rgba(56,56,60,1);align-items:center;justify-content:center;border-radius:3px}
 smalluvunit{font-size:.65rem;font-family:Arial,Helvetica,system;}
 sup{font-size:1em}supwm2{font-size:0.7em;vertical-align:super}
 .w34convertrain{position:relative;font-size:.5em;top:10px;color:#c0c0c0;margin-left:5px}
@@ -119,7 +122,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0px}
 	else if ($weather["solarydmax"]>=500)  {
 	echo "<div class='uvtoday6-8'>",$weather["solarydmax"] . "</value>";}
 	else if ($weather["solarydmax"]>=300)  {
-	echo "<div class='uvtoday4-5'>",$weather["solarymax"] . "</value>";} 		
+	echo "<div class='uvtoday4-5'>",$weather["solarydmax"] . "</value>";} 		
 	else if ($weather["solarydmax"]>=-0) {
 	echo "<div class='uvtoday1'>",$weather["solarydmax"] . "</value>";}		
 	echo "<smalluvunit> W/m<sup>2</sup></smalluvunit>"
@@ -171,7 +174,7 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0px}
 	else if ($weather["solarymax"]>=500)  {
 	echo "<div class='uvtoday6-8'>",$weather["solarymax"] . "</value>";}
 	else if ($weather["solarydmax"]>=300)  {
-	echo "<div class='uvtoday4-5'>",$weather["solarYmax"] . "</value>";} 		
+	echo "<div class='uvtoday4-5'>",$weather["solarymax"] . "</value>";} 		
 	else if ($weather["solarymax"]>=-0) {
 	echo "<div class='uvtoday1'>",$weather["solarymax"] . "</value>";}		
 	echo "<smalluvunit> W/m<sup>2</sup></smalluvunit>"
