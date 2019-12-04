@@ -17,6 +17,7 @@ $dateFormat   = "' . $_POST["dateFormat"] . '";
 $password    = "' . $_POST['password'] . '";
 $uvsensor    = "' . $_POST['uvsensor'] . '";
 $defaultlanguage   = "' . $_POST["defaultlanguage"] . '";
+$stationName   = "' . $_POST["stationName"] . '";
 ';
 
     $fp = FOPEN("console-settings.php", "w") or die("Unable to open console-settings.php file check file permissions !");
@@ -410,6 +411,15 @@ $defaultlanguage   = "' . $_POST["defaultlanguage"] . '";
                                         <option>us</option>
                                     </select>
                                     <br><br>
+
+
+                                    <div class="stationvalue"> Station Name</div>
+                                            <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg>
+
+                                            <input name="stationName" type="text" id="stationName" value="<?php echo $stationName; ?>" class="chooseapi">
+                                            <br />                                           
 
                                             </div>
 
