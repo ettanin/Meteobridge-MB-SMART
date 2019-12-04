@@ -1,6 +1,6 @@
 <?php require_once('livedata.php');require_once('common.php');?>
 <div class="modulecaption"><?php echo $lang['Avg Wind'];?> 10 min <blue1><?php echo $weather["wind_units"]?></blue1></div>
-<div class="tempcontainer" style="left:-60px;">
+<div class="tempcontainer" style="left:-75px;">
 <?php 
 if ($weather["wind_speed"]>50){echo "<div class='maxdatawind'>".$lang['Stronggale']."</div>";}
 if ($weather["wind_speed"]>40){echo "<div class='maxdatawind'>".$lang['Galeforce']."</div>";}
