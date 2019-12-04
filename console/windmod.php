@@ -1,21 +1,20 @@
-<?php include('livedata.php');?>
+<?php require_once('livedata.php');require_once('common.php');?>
 <div
 style="position:relative;left:-60px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
 padding:5px;
 font-family:Headingtext;width:180px;height:13px;font-size:13px;padding-top:2px;color:#aaa;
 align-items:left;justify-content:left;margin-bottom:-5px;top:-20px">
-Average 10 min Speed <blue><?php echo $weather["wind_units"]?></blue></div>
+<?php echo $lang['Avg Wind'];?> 10 min <blue><?php echo $weather["wind_units"]?></blue></div>
 <div class="tempcontainer" style="left:-60px;">
 <?php 
-if ($weather["wind_speed"]>50){echo "<div class='maxdatawind'>Gale Force Winds</div>";}
-if ($weather["wind_speed"]>40){echo "<div class='maxdatawind'>Storm Winds</div>";}
-if ($weather["wind_speed"]>30){echo "<div class='maxdatawind'>Very Windy</div>";}
-else if ($weather["wind_speed"]>20){echo "<div class='maxdatawind'>Moderate Winds</div>";}
-else if ($weather["wind_speed"]>10){echo "<div class='maxdatawind'>Breezy Conditions</div>";}
-else if ($weather["wind_speed"]>0){echo "<div class='maxdatawind'>Relatively Calm</div>";}
+if ($weather["wind_speed"]>50){echo "<div class='maxdatawind'>".$lang['Stronggale']."</div>";}
+if ($weather["wind_speed"]>40){echo "<div class='maxdatawind'>".$lang['Galeforce']."</div>";}
+if ($weather["wind_speed"]>30){echo "<div class='maxdatawind'>".$lang['Strongbreeze']."</div>";}
+else if ($weather["wind_speed"]>20){echo "<div class='maxdatawind'>".$lang['Moderatebreeze']."</div>";}
+else if ($weather["wind_speed"]>10){echo "<div class='maxdatawind'>".$lang['Lightbreeze']." </div>";}
+else if ($weather["wind_speed"]>0){echo "<div class='maxdatawind'>".$lang['Calm']."</div>";}
 
 ?> 
-
 <?php echo "<div class='hidata'></div>";?> 
 
 <?php //weather34 sez lets make the temperature look nice 
@@ -30,15 +29,15 @@ else if( $weather["wind_speed"]<150){echo '<div class=windbox style="color:#d05f
 </div></smalltempunit2>
 </div></div>
 
-<div class="heatcircle" ><div class="heatcircle-content">
+<div class="heatcircle" ><div class="heatcircle-content"><valuetextheading1><?php echo $lang['Wind Run']." ".$lang['Today'];?></valuetextheading1>
 <?php 
 //windchill offline with real feel 
-echo "<valuetextheading1>Wind Run</valuetextheading1><br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["windrun34"]."<smalltempunit2>".$distanceunit;
+echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["windrun34"]."<smalltempunit2>".$distanceunit;
 
 ?><smalltempunit2></div></div></div>
 
 
-<div class="heatcircle2"><div class="heatcircle-content"><valuetextheading1>Average Today</valuetextheading1>
+<div class="heatcircle2"><div class="heatcircle-content"><valuetextheading1><?php echo $lang['Avg Wind'];?> <?php echo $lang['Today'];?></valuetextheading1>
 <?php //avg today
 echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["wind_speed_avg30"]."<smalltempunit2>". $weather["wind_units"]."</smalltempunit2>";
 ?>

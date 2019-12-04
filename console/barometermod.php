@@ -1,4 +1,4 @@
-<?php include_once('livedata.php');?>
+<?php require_once('livedata.php');require_once('common.php');?>
 <meta http-equiv="Content-Type: text/html; charset=UTF-8" />
 
 <style>
@@ -43,7 +43,7 @@ style="position:relative;left:-75px;-webkit-border-radius:3px;-moz-border-radius
 padding:5px;
 font-family:Headingtext;width:140px;height:13px;font-size:13px;padding-top:2px;color:#aaa;
 align-items:left;justify-content:left;margin-bottom:-5px;top:-60px">
-Pressure <blue><?php echo $weather["barometer_units"]?></blue></div>
+<?php echo $lang['Barometer']?> <blue><?php echo $weather["barometer_units"]?></blue></div>
 <div class=barometerpos>
 <div class="homeweathercompass2" >
 <div class="homeweathercompass-line2">
@@ -52,16 +52,16 @@ Pressure <blue><?php echo $weather["barometer_units"]?></blue></div>
 
 </div>
 <div class="text2">
-<?php if ($weather["barometer_trend"]>20){echo '<div class="pressuretext"> <ogreen>Steady</ogreen> </div>';}
+<?php if ($weather["barometer_trend"]>20){echo '<div class="pressuretext"> <ogreen>'.$lang['Steady'].'</ogreen> </div>';}
 else if ($weather["barometer_trend"] < -1.3) {
-echo '<div class="pressuretextfast"><oblue>Falling Rapidly</oblue> <fall> '.$fallingsymbol.'</fall></div>';}
+echo '<div class="pressuretextfast"><oblue>'.$lang['Falling'].' '.$lang['Rapidly'].'</oblue> <fall> '.$fallingsymbol.'</fall></div>';}
 else if ($weather["barometer_trend"] < 0) {
-echo '<div class="pressuretext"><oblue>Falling</oblue> <fall> '.$fallingsymbol.'</fall></div>';}
+echo '<div class="pressuretext"><oblue>'.$lang['Falling'].'</oblue> <fall> '.$fallingsymbol.'</fall></div>';}
 else if ($weather["barometer_trend"] > 1.3) {
-echo '<div class="pressuretextfast">Rising Rapidly<rise> '.$risingsymbol.' </rise></div>';}	  
+echo '<div class="pressuretextfast">'.$lang['Rising'].' '.$lang['Rapidly'].'<rise> '.$risingsymbol.' </rise></div>';}	  
 else if ($weather["barometer_trend"] > 0) {
-echo '<div class="pressuretext"> <oorange>Rising</orange> <rise> '.$risingsymbol.' </rise></div>';}	  
-else echo '<div class="pressuretext"> <ogreen>Steady</ogreen> </div>';?>
+echo '<div class="pressuretext"> <oorange>'.$lang['Rising'].'</orange> <rise> '.$risingsymbol.' </rise></div>';}	  
+else echo '<div class="pressuretext"> <ogreen>'.$lang['Steady'].'</ogreen> </div>';?>
 <?php echo "<darkgrey>".$weather["barometer"],"</darkgrey>&nbsp;<span>".$weather["barometer_units"]."</span>";?>
 </div></div></div>
 <div class="barometerlimits"><div class='weather34-barometerruler'>
@@ -70,7 +70,7 @@ else echo "<weather34-barometerlimitminf><value>28</barometerlimitminf><weather3
 
 
 
-<div class="heatcircle3"><div class="heatcircle-content"><valuetextheading1>Max Today</valuetextheading1>
+<div class="heatcircle3"><div class="heatcircle-content"><valuetextheading1>Max <?php echo $lang['Today']?></valuetextheading1>
 
 <?php  //heat-index/real feel
 echo "<br><div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["barometer_max"]." <smalltempunit2>hPa";
@@ -78,7 +78,7 @@ echo "<br><div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["
 ?><smalltempunit2></div></div></div>
 
 
-<div class="heatcircle4"><div class="heatcircle-content"><valuetextheading1>Low Today</valuetextheading1>
+<div class="heatcircle4"><div class="heatcircle-content"><valuetextheading1>Low <?php echo $lang['Today']?></valuetextheading1>
 <?php //avg today
 echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["barometer_min"]." <smalltempunit2>hPa";
 ?>

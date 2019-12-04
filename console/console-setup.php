@@ -16,6 +16,7 @@ $livedata   = "' . $_POST["livedata"] . '";
 $dateFormat   = "' . $_POST["dateFormat"] . '";
 $password    = "' . $_POST['password'] . '";
 $uvsensor    = "' . $_POST['uvsensor'] . '";
+$defaultlanguage   = "' . $_POST["defaultlanguage"] . '";
 ';
 
     $fp = FOPEN("console-settings.php", "w") or die("Unable to open console-settings.php file check file permissions !");
@@ -40,9 +41,9 @@ $uvsensor    = "' . $_POST['uvsensor'] . '";
 
             <div class="login_screen" style="width:60%;max-width:600px;margin:0 auto;color:silver;border:solid 1px grey;padding:10px;
             border-radius:4px;font-size:14px"> <?php echo 'Your Current PHP version is :<oblue><b> ' . phpversion(), '</b></oblue>
-            <br>(PHP 5.6 or higher PHP 7+ is  advised if you are not already using these versions)'; ?>
+            <br>'; ?>
                 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" name="pwd">
-                    Enter Your Password For Meteobridge Setup Screen Below
+                    Enter Your Password To Enter Setup Screen
                     <center>
                         <div class="modal-buttons">
                             <input name="passwd" type="password" class="input-button" /> <input type="submit" name="submit_pwd" value="Login " class="modal-button" />
@@ -60,11 +61,11 @@ $uvsensor    = "' . $_POST['uvsensor'] . '";
                 if (isset($_POST['submit_pwd'])) {
                     $pass = isset($_POST['passwd']) ? $_POST['passwd'] : '';
                     if ($pass != $Password) {
-                        showForm("Alternative Weather34 Console EASY SETUP");
+                        showForm("Alternative Weather34 Console Setup");
                         exit();
                     }
                 } else {
-                    showForm("Alternative Weather34 Console EASY SETUP");
+                    showForm("Alternative Weather34 Console Setup");
                     exit();
                 }
                 ?>
@@ -383,6 +384,32 @@ $uvsensor    = "' . $_POST['uvsensor'] . '";
                                                 <option>uvindexmod.php</option>
                                                 <option>indoortempmod.php</option>
                                             </select>
+
+<br><br>
+<p>
+                                    <div class="stationvalue">
+                                        Language Default Display</div>
+                                    <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="#F05E40" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                        <path d="M12 30 L24 16 12 2" />
+                                    </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                        <path d="M30 12 L16 24 2 12" />
+                                    </svg>
+
+                                            <label name="defaultlanguage"></label>
+                                    <select id="defaultlanguage" name="defaultlanguage" class="choose1">
+                                        <option><?php echo $defaultlanguage; ?></option>
+                                        <option>en</option>
+                                        <option>can</option>
+                                        <option>dk</option>
+                                        <option>dl</option>
+                                        <option>fr</option>
+                                        <option>it</option>
+                                        <option>nl</option>
+                                        <option>sp</option>
+                                        <option>sw</option>
+                                        <option>us</option>
+                                    </select>
+                                    <br><br>
 
                                             </div>
 

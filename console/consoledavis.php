@@ -1,6 +1,8 @@
 <?php 
 include_once('livedata.php');
 include_once('updater2.php');
+include_once('common.php');
+include_once('console-settings.php');
 ?>
 <!DOCTYPE html><html><head>
 <title>Alternative Weather34 </title>
@@ -33,7 +35,7 @@ include_once('updater2.php');
     <li><div id=barometer></div></li>
     <li><div id=uvindex></div></li>    
   </ul>
-  <a href="console-setup.php" target="_blank" class="consolesetup"> <?php echo $settingsicon?> App Setup</a>
+  <a href="console-setup.php" target="_blank" class="consolesetup"> <?php echo $settingsicon?> Web App Setup</a>
   <a href="console-setup.php" target="_blank" class="designedby"> <?php echo $info?> Weather<blue>34</blue> Designed</a>
   <center style="font-size:0.65em">
   <img src='Wxsoft34-app.png' width='20px'> <?php echo "2015-"; ?><?php echo date('Y'); ?> &copy;

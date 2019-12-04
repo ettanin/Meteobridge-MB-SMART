@@ -1,4 +1,4 @@
-<?php include_once('livedata.php');?>
+<?php require_once('livedata.php');require_once('common.php');?>
 <meta http-equiv="Content-Type: text/html; charset=UTF-8" />
 <head>
 <style>
@@ -153,21 +153,88 @@
 <div class="homeweathercompass1">
 <div class="homeweathercompass-line1"><div class="thearrow2"></div><div class="thearrow1"></div></div>
 <div class="text1"><div class="windvalue1" id="windvalue"><?php echo $weather["wind_direction"],"&deg;";?></div></div>
-<div class="windirectiontext1">
-<?php if($weather["wind_direction"]<=11.25){echo "Due <span>North<br></span>";}else if($weather["wind_direction"]<=33.75){echo "North North <br><span>East</span>";}else if($weather["wind_direction"]<=56.25){echo "North <span> East<br></span>";}else if($weather["wind_direction"]<=78.75){echo "East North<br><span>East</span>";}else if($weather["wind_direction"]<=101.25){echo "Due <span> East<br></span>";}
-else if($weather["wind_direction"]<=123.75){echo "East South<br><span>East</span>";}else if($weather["wind_direction"]<=146.25){echo "South <span> East</span>";}else if($weather["wind_direction"]<=168.75){echo "South South<br><span>East</span>";}else if($weather["wind_direction"]<=191.25){echo "Due <span> South</span>";}else if($weather["wind_direction"]<=213.75){echo "South South<br><span>West</span>";}else if($weather["wind_direction"]<=236.25){echo "South <span> West</span>";}else if($weather["wind_direction"]<=258.75){echo "West South<br><span>West</span>";}else if($weather["wind_direction"]<=281.25){echo "Due <span> West</span>";}else if($weather["wind_direction"]<=303.75){echo "West North<br><span>West</span>";}else if($weather["wind_direction"]<=326.25){echo "North <span> West</span>";}else if($weather["wind_direction"]<=348.75){echo "North North<br><span>West</span>";}else{echo "Due <span> North</span>";}?></div>
-<averwordwindword><?php echo "Avg ";if( $weather["wind_direction_avg"]<=11.25){echo "North";}else if( $weather["wind_direction_avg"]<=33.75){echo "NNE";}else if( $weather["wind_direction_avg"]<=56.25){echo "NE";}
-else if( $weather["wind_direction_avg"]<=78.75){echo "ENE";}else if( $weather["wind_direction_avg"]<=101.25){echo "East";}else if( $weather["wind_direction_avg"]<=123.75){echo "ESE";}
-else if( $weather["wind_direction_avg"]<=146.25){echo "SE";}else if( $weather["wind_direction_avg"]<=168.75){echo "SSE";}else if( $weather["wind_direction_avg"]<=191.25){echo "South";}
-else if( $weather["wind_direction_avg"]<=213.75){echo "SSW";}else if( $weather["wind_direction_avg"]<=236.25){echo "SW";}else if( $weather["wind_direction_avg"]<=258.75){echo "WSW";}
-else if( $weather["wind_direction_avg"]<=281.25){echo "West";}else if( $weather["wind_direction_avg"]<=303.75){echo "WNW";}else if( $weather["wind_direction_avg"]<=326.25){echo "NW";}
-else if( $weather["wind_direction_avg"]<=348.75){echo "NNW";}else if( $weather["wind_direction_avg"]<=360){echo "North";}"&deg;"?></averwordwindword>
+
+<div class="windirectiontext1"> 
+<?php  //weather34 wind direction value output
+if ($weather["wind_direction"]<=11.25) {
+    echo $lang['Northdir'] ;
+} elseif ($weather["wind_direction"]<=33.75) {
+    echo $lang['NNEdir'];
+} elseif ($weather["wind_direction"]<=56.25) {
+    echo $lang['NEdir'];
+} elseif ($weather["wind_direction"]<=78.75) {
+    echo $lang['ENEdir'];
+} elseif ($weather["wind_direction"]<=101.25) {
+    echo $lang['Eastdir'];
+} elseif ($weather["wind_direction"]<=123.75) {
+    echo $lang['ESEdir'];
+} elseif ($weather["wind_direction"]<=146.25) {
+    echo $lang['SEdir'];
+} elseif ($weather["wind_direction"]<=168.75) {
+    echo $lang['SSEdir'];
+} elseif ($weather["wind_direction"]<=191.25) {
+    echo $lang['Southdir'];
+} elseif ($weather["wind_direction"]<=213.75) {
+    echo $lang['SSWdir'];
+} elseif ($weather["wind_direction"]<=236.25) {
+    echo $lang['SWdir'];
+} elseif ($weather["wind_direction"]<=258.75) {
+    echo $lang['WSWdir'];
+} elseif ($weather["wind_direction"]<=281.25) {
+    echo $lang['Westdir'];
+} elseif ($weather["wind_direction"]<=303.75) {
+    echo $lang['WNWdir'];
+} elseif ($weather["wind_direction"]<=326.25) {
+    echo $lang['NWdir'];
+} elseif ($weather["wind_direction"]<=348.75) {
+    echo $lang['NNWdir'];
+} else {
+    echo $lang['Northdir'];
+}?></div>
+
+
+<averwordwindword><?php echo $lang['Avg-Dir']." "; if ($weather["wind_direction_avg"]<=11.25) {
+    echo $lang['North'];
+} elseif ($weather["wind_direction_avg"]<=33.75) {
+    echo $lang['NNE'];
+} elseif ($weather["wind_direction_avg"]<=56.25) {
+    echo $lang['NE'];
+} elseif ($weather["wind_direction_avg"]<=78.75) {
+    echo $lang['ENE'];
+} elseif ($weather["wind_direction_avg"]<=101.25) {
+    echo $lang['East'];
+} elseif ($weather["wind_direction_avg"]<=123.75) {
+    echo $lang['ESE'];
+} elseif ($weather["wind_direction_avg"]<=146.25) {
+    echo $lang['SE'];
+} elseif ($weather["wind_direction_avg"]<=168.75) {
+    echo $lang['SSE'];
+} elseif ($weather["wind_direction_avg"]<=191.25) {
+    echo $lang['South'];
+} elseif ($weather["wind_direction_avg"]<=213.75) {
+    echo $lang['SSW'];
+} elseif ($weather["wind_direction_avg"]<=236.25) {
+    echo $lang['SW'];
+} elseif ($weather["wind_direction_avg"]<=258.75) {
+    echo $lang['WSW'];
+} elseif ($weather["wind_direction_avg"]<=281.25) {
+    echo $lang['West'];
+} elseif ($weather["wind_direction_avg"]<=303.75) {
+    echo $lang['WNW'];
+} elseif ($weather["wind_direction_avg"]<=326.25) {
+    echo $lang['NW'];
+} elseif ($weather["wind_direction_avg"]<=348.75) {
+    echo $lang['NNW'];
+} elseif ($weather["wind_direction_avg"]<=360) {
+    echo $lang['North'];
+}"&deg;"?></averwordwindword>
+
 </div></div></div></div></div></div></div>
 
 
 
 
-<div class="heatcircle5" ><div class="heatcircle-content"><valuetextheading1>Average Today</valuetextheading1>
+<div class="heatcircle5" ><div class="heatcircle-content"><valuetextheading1><?php echo $lang['Avg-Dir']?> <?php echo $lang['Today']?></valuetextheading1>
 <?php 
 echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>" .number_format($weather['wind_direction_avg'],0)."&deg; &nbsp;";
 if( $weather["wind_direction_avg"]<=11.25){echo "North";}else if( $weather["wind_direction_avg"]<=33.75){echo "NNE";}else if( $weather["wind_direction_avg"]<=56.25){echo "NE";}
@@ -179,7 +246,7 @@ else if( $weather["wind_direction_avg"]<=348.75){echo "NNW";}else if( $weather["
 ?><smalltempunit2></div></div></div>
 
 
-<div class="heatcircle6"><div class="heatcircle-content"><valuetextheading1>Average <?php echo date('F')?></valuetextheading1>
+<div class="heatcircle6"><div class="heatcircle-content"><valuetextheading1><?php echo $lang['Avg-Dir']?> <?php echo date('F')?></valuetextheading1>
 <?php 
 echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>" .number_format($weather['wind_direction_avgmonth'],0)."&deg; &nbsp;";
 if( $weather['wind_direction_avgmonth']<=11.25){echo "North";}else if( $weather['wind_direction_avgmonth']<=33.75){echo "NNE";}else if( $weather['wind_direction_avgmonth']<=56.25){echo "NE";}
@@ -197,5 +264,5 @@ style="position:relative;left:80px;-webkit-border-radius:3px;-moz-border-radius:
 padding:5px;
 font-family:Headingtext;width:100px;height:13px;font-size:13px;padding-top:2px;color:#aaa;
 align-items:left;justify-content:left;margin-bottom:-5px;top:-85px;display:block">
-Wind Direction</div></div>
+<?php echo $lang['Direction'];?></div></div>
 
