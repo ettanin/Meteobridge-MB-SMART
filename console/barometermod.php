@@ -38,12 +38,7 @@ transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barome
 valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 valuetextba{font-size:1em}
 </style>
-<div
-style="position:relative;left:-75px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
-padding:5px;
-font-family:Headingtext;width:140px;height:13px;font-size:13px;padding-top:2px;color:#aaa;
-align-items:left;justify-content:left;margin-bottom:-5px;top:-60px">
-<?php echo $lang['Barometer']?> <blue><?php echo $weather["barometer_units"]?></blue></div>
+<div class="modulecaptionpressure" ><?php echo $lang['Barometer']?> <blue1><?php echo $weather["barometer_units"]?></blue1></div>
 <div class=barometerpos>
 <div class="homeweathercompass2" >
 <div class="homeweathercompass-line2">

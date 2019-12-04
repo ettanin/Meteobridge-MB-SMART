@@ -13,3 +13,5 @@ $dateFormat   = "d-m-Y";
 $password    = "";
 $uvsensor    = "indoortempmod.php";
 $defaultlanguage   = "en";
+$stationName   = "Console Display ";
+$theme1   = "dark";

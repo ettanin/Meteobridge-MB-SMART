@@ -257,12 +257,4 @@ else if( $weather['wind_direction_avgmonth']<=281.25){echo "West";}else if( $wea
 else if( $weather['wind_direction_avgmonth']<=348.75){echo "NNW";}else if( $weather['wind_direction_avgmonth']<=360){echo "North";}
 ?>
 </smalltempunit2></div></div></div></div></div>
-
-
-<div
-style="position:relative;left:80px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
-padding:5px;
-font-family:Headingtext;width:100px;height:13px;font-size:13px;padding-top:2px;color:#aaa;
-align-items:left;justify-content:left;margin-bottom:-5px;top:-85px;display:block">
-<?php echo $lang['Direction'];?></div></div>
-
+<div class="modulecaptiondirection"><?php echo $lang['Wind']; echo " ".$lang['Direction'];?></div></div>

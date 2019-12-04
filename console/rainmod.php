@@ -1,10 +1,5 @@
 <?php require_once('livedata.php');require_once('common.php');?>
-<div
-style="position:relative;left:-70px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:rgba(74, 99, 111, 0.1);
-padding:5px;
-font-family:Headingtext;width:140px;height:13px;font-size:13px;padding-top:2px;color:#aaa;
-align-items:left;justify-content:left;margin-bottom:-5px;top:-20px">
-<?php echo $lang['Rainfall']?>  <blue><?php echo $weather["rain_units"]?></blue></div>
+<div class="modulecaption"><?php echo $lang['Rainfall']?>  <blue1><?php echo $weather["rain_units"]?></blue1></div>
 <div class="tempcontainer">
 <?php echo "<div class='maxdata'><blue>". $weather["rain_lasthour"]."</blue><smalltempunit4>&nbsp; ".$weather["rain_units"]."</smalltempunit4></div>";?> 
 <?php echo "<div class='mindata'><blue>".$weather["rain_rate"]."</blue><smalltempunit4>&nbsp;".$weather["rain_units"]."</smalltempunit4></div>";?>
