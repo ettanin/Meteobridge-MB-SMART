@@ -37,9 +37,8 @@ include_once('console-settings.php');
   </ul>
   <a href="console-setup.php" target="_blank" class="consolesetup"> <?php echo $settingsicon?> Web App Setup</a>
   <a href="console-setup.php" target="_blank" class="designedby"> <?php echo $info?> Weather<blue>34</blue> Designed</a>
-  <center style="font-size:0.65em">
-  <img src='Wxsoft34-app.png' width='20px'> <?php echo "2015-"; ?><?php echo date('Y'); ?> &copy;
-  WEATHER34 Davis Alternative Console</center>
+  <a href="https://weather34.com/homeweatherstation" class="credit34" target="_blank" alt="https://weather34.com/homeweatherstation" title="https://weather34.com/homeweatherstation">
+  <?php echo "2015-"; ?><?php echo date('Y'); ?> &copy;WEATHER<blue>34</blue> Davis Alternative Console</a>
 </div>  
 </body>
 </html>

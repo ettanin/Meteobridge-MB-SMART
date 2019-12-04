@@ -1423,10 +1423,19 @@ a {
 .designedby,
 a {
     color: silver;
-    font-size: 11px;
+    font-size: 121x;
     font-family: headingtext;
     text-decoration: none;
     margin-left: 65%
+}
+
+.credit34,
+a {
+    color: silver;
+    font-size: 11px;
+    font-family: headingtext;
+    text-decoration: none;
+    margin-left:380px;
 }
 
 valuebeaufort {
