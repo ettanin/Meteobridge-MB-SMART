@@ -12,9 +12,7 @@ include_once('console-settings.php');
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="mask-icon" href="safari-pinned-tab.svg" color="#01a4b4">
 <meta name="apple-mobile-web-app-title" content="Weather34 Console">
-<meta name="application-name" content="<?php echo $stationName; ?>Console">
-<meta name="apple-mobile-web-app-title" content="<?php echo $stationName; ?> Console">
-<meta name="application-name" content="<?php echo $stationName; ?> Console">
+<meta name="application-name" content="Weather34 Console">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
@@ -28,9 +26,9 @@ include_once('console-settings.php');
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="site.webmanifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <meta name="msapplication-TileColor" content="#f8f8f8">
 <link href="console-<?php echo $theme1?>.css?version=<?php echo filemtime('console-'.$theme1.'.css')?>" rel="stylesheet prefetch">
