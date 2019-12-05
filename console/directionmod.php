@@ -228,7 +228,6 @@ if ($weather["wind_direction"]<=11.25) {
 } elseif ($weather["wind_direction_avg"]<=360) {
     echo $lang['North'];
 }"&deg;"?></averwordwindword>
-
 </div></div></div></div></div></div></div>
 
 
