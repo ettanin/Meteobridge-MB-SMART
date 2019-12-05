@@ -1,6 +1,8 @@
 <?php //Console NANOSD settings.php December 2019 //   
  include('settings1.php');
- 
+ $TZconf = $TZ;// PLEASE LEAVE it is fixed 
+ $rise_zenith = 90+ 40/60; // try 50/60 or something/60 until it matches correctly to your sunrise .this allows you to fine tune the sunrise
+ $set_zenith = 90+ 36/60;  // try 50/60 or something/60 until it matches correctly to your sunset .this allows you to fine tune the sunset
  if (array_key_exists('units', $_COOKIE)) { $units = $_COOKIE['units']; } 
  if (array_key_exists('units', $_GET) && ($_GET['units'] == 'us' || $_GET['units'] == 'uk' || $_GET['units'] == 'metric' || $_GET['units'] == 'scandinavia')) 
  { setcookie('units', $_GET['units']); $units = $_GET['units']; } 
