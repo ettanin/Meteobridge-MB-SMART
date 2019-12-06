@@ -14,5 +14,5 @@ $password    = "";
 $uvsensor    = "indoortempmod.php";
 $defaultlanguage   = "dl";
 $stationName   = "Console Display ";
-$theme1   = "dark";
+$theme   = "dark";
 $TZ = "Asia/Singapore";

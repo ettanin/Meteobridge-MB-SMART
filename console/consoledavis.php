@@ -31,7 +31,7 @@ include_once('console-settings.php');
 <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <meta name="msapplication-TileColor" content="#f8f8f8">
-<link href="console-<?php echo $theme1?>.css?version=<?php echo filemtime('console-'.$theme1.'.css')?>" rel="stylesheet prefetch">
+<link href="console-<?php echo $theme?>.css?version=<?php echo filemtime('console-'.$theme.'.css')?>" rel="stylesheet prefetch">
 <link rel="preload" href="fonts/clock3-webfont.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="fonts/verbatim-regular.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="fonts/verbatim-medium.woff" as="font" type="font/woff" crossorigin>
@@ -51,10 +51,18 @@ include_once('console-settings.php');
     <li><div id=barometer></div></li>
     <li><div id=uvindex></div></li>    
   </ul>
-  <a href="console-setup.php" target="_blank" class="consolesetup"> <?php echo $settingsicon?> Web App Setup</a>
-  <a href="console-setup.php" target="_blank" class="designedby"> <?php echo $info?> Weather<blue>34</blue> Designed</a>
-  <a href="https://weather34.com/homeweatherstation" class="credit34" target="_blank" alt="https://weather34.com/homeweatherstation" title="https://weather34.com/homeweatherstation">
-  <?php echo "2015-"; ?><?php echo date('Y'); ?> &copy;WEATHER<blue>34</blue> Davis Alternative Console</a>
+  <div class="nav">
+    <a href="console-setup.php" target="_blank" class="consolesetup"> <?php echo $settingsicon?> Web App Setup</a>
+
+    <a  class="consolesetup" href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>>
+    <?php 
+    if($theme=='dark'){echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Light Mode</vspan>';}
+    else{echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Dark Mode</vspan>';}
+    ?> </a>
+
+    <a href="console-setup.php" target="_blank" class="designedby"> <?php echo $info?> <?php echo "2015-".date('Y')?> Weather<blue>34</blue> Designed </a>  
+    </div>
+  
 </div>  
 </body>
 </html>

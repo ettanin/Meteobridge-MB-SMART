@@ -18,7 +18,7 @@ $password    = "' . $_POST['password'] . '";
 $uvsensor    = "' . $_POST['uvsensor'] . '";
 $defaultlanguage   = "' . $_POST["defaultlanguage"] . '";
 $stationName   = "' . $_POST["stationName"] . '";
-$theme1   = "' . $_POST["theme1"] . '";
+$theme   = "' . $_POST["theme"] . '";
 $TZ = "' . $_POST["TZ"] . '";
 ';
 
@@ -430,9 +430,9 @@ $TZ = "' . $_POST["TZ"] . '";
                                                         <path d="M30 12 L16 24 2 12" />
                                                     </svg>
 
-                                                    <label name="theme1"></label>
-                                                    <select id="theme1" name="theme1" class="choose1">
-                                                        <option><?php echo $theme1; ?></option>
+                                                    <label name="theme"></label>
+                                                    <select id="theme" name="theme" class="choose1">
+                                                        <option><?php echo $theme; ?></option>
                                                         <option>dark</option>
                                                         <option>light</option>
 
