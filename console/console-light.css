@@ -21,7 +21,7 @@
 body {
     font-family: headingtext;
     margin: 0 auto;
-    color: #222;
+    color: #555;
     background: whitesmoke;
     width: 100%;
     max-width: 1024px;
@@ -79,7 +79,7 @@ li {
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #222
+    color: #555
 }
 
 .tempcontainer {
@@ -213,7 +213,7 @@ li {
     z-index: auto;
     position: absolute;
     margin-top: 10px;
-    color: #222;
+    color: #555;
     text-align: center;
     font-family: headingtext
 }
@@ -230,13 +230,13 @@ trendmovementrisingx {
 }
 
 trendmovementsteadyx {
-    color: #222;
+    color: #555;
     font-size: 15px;
     margin-left: 20px
 }
 
 .maxdata {
-    color: #222;
+    color: #555;
     width: 50px;
     padding: 1px;
     left: 0;
@@ -250,7 +250,7 @@ trendmovementsteadyx {
 }
 
 .maxdatawind {
-    color: #222;
+    color: #555;
     width: 150px;
     padding: 1px;
     left: -5px;
@@ -270,14 +270,14 @@ trendmovementsteadyx {
     font-size: 11px;
     line-height: 2;
     margin-top: 0;
-    color: #222;
+    color: #555;
     padding: 2px;
     left: 10px
 }
 
 .mindata {
     margin: 5px auto auto;
-    color: #222;
+    color: #555;
     width: 50px;
     padding: 2px;
     margin-top: 15px;
@@ -305,7 +305,7 @@ trendmovementsteadyx {
     font-size: 11px;
     line-height: 2;
     margin: 5px auto auto;
-    color: #222;
+    color: #555;
     width: 40px;
     padding: 2px;
     margin-top: 0;
@@ -317,7 +317,7 @@ trendmovementsteadyx {
     width: 160px;
     float: left;
     padding: 0;
-    color: #222;
+    color: #555;
     text-align: center;
     font: 500 10px weathertext2;
     line-height: 15px
@@ -427,7 +427,7 @@ blue {
     right: 0;
     width: 3.2rem;
     height: 1rem;
-    color: #222;
+    color: #555;
     overflow: hidden;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -450,7 +450,7 @@ blue {
     display: flex;
     width: 3.2rem;
     height: 1rem;
-    color: #222;
+    color: #555;
     overflow: hidden;
     border: 1px solid rgba(61, 70, 77, .5);
     border-width: thin;
@@ -533,7 +533,7 @@ smallrainunit4 {
     display: flex;
     width: 6.5rem;
     height: 1.5rem;
-    color: #222;
+    color: #555;
     overflow: hidden;
     font-family: weathertext2;
     line-height: 1;
@@ -582,7 +582,7 @@ smallrainunit4 {
 
 valuetextheading1 {
     position: relative;
-    color: #222;
+    color: #555;
     font-family: weathertext2;
     font-size: 1em;
     text-align: left;
@@ -642,7 +642,7 @@ valuetextheading1 {
     display: flex;
     width: 4.1rem;
     height: 1rem;
-    color: #222;
+    color: #555;
     overflow: hidden;
     font-family: weathertext2;
     line-height: 1;
@@ -726,7 +726,7 @@ smalltempunit,
 smalltempunit2,
 smalltempunit4 {
     font-size: .45rem;
-    color: #222
+    color: #555
 }
 
 .daylightcompass2>.daylightcompass-line2,
@@ -887,7 +887,7 @@ uv0 {
     z-index: 10;
     display: block;
     margin: 0 0 auto;
-    color: #222;
+    color: #555;
     text-align: center;
     font-family: headingtext;
     font-size: 18px;
@@ -901,7 +901,7 @@ uv0 {
 averwordwindword {
     position: relative;
     top: 5px;
-    color: #222;
+    color: #555;
     font-size: 12px
 }
 
@@ -967,7 +967,7 @@ homeweathercompass2 {
     width: 90px;
     margin-top: -38px;
     margin-left: 15px;
-    color: #222;
+    color: #555;
     text-align: center;
     font-family: headingtext;
     font-size: 14px
@@ -979,7 +979,7 @@ homeweathercompass2 {
 
 .text2 span,
 .text3 {
-    color: #222;
+    color: #555;
     font-size: 10px
 }
 
@@ -1016,7 +1016,7 @@ homeweathercompass2 {
     margin-top: 129px;
     margin-left: 10px;
     padding: 1px;
-    color: #222;
+    color: #555;
     border-radius: 2px;
     font-size: 10px;
     line-height: 10px;
@@ -1042,7 +1042,7 @@ homeweathercompass2 {
 
 .barometerconv span {
     display: block;
-    color: #222;
+    color: #555;
 }
 
 .barometerlimits {
@@ -1095,7 +1095,7 @@ homeweathercompass2 {
 
 .barometertrend1,
 .barometertrend1 hourtrend {
-    color: #222;
+    color: #555;
     text-align: left;
     line-height: 9px
 }
@@ -1114,12 +1114,12 @@ homeweathercompass2 {
 }
 
 barometerinfo {
-    color: #222;
+    color: #555;
 }
 
 .barometermax {
     margin-top: 10px;
-    color: #222;
+    color: #555;
     font: 10px arial, weathertext2;
     line-height: 9px
 }
@@ -1137,14 +1137,14 @@ barometerinfo {
 }
 
 .barometermax unit {
-    color: #222;
+    color: #555;
     font: 500 10px arial, weathertext2
 }
 
 .barometermin {
     width: 50px;
     margin-left: 240px;
-    color: #222;
+    color: #555;
     font: 10px arial, weathertext2;
     line-height: 9px
 }
@@ -1160,7 +1160,7 @@ barometerinfo {
 }
 
 .barometermin unit {
-    color: #222;
+    color: #555;
 }
 
 .barometertrend falling,
@@ -1420,25 +1420,64 @@ a {
     color:#fff
 }
 
+.consolesetup,
+a {
+    font-size: 12px;
+    font-family: headingtext;
+    text-decoration: none;
+    margin-left: 10px;
+    color: #fff
+}
+
 .designedby,
 a {
     color: #fff;
     font-size: 10px;
     font-family: headingtext;
     text-decoration: none;
-    margin-left: 50%
+    margin-left: 280px
 }
 @media screen and (max-width: 960px) {
-    .designedby,
-a {
-    color: #fff;
-    font-size: 10px;
-    font-family: headingtext;
-    text-decoration: none;
-    margin-left: 39%
+    .designedby{    
+      display:none 
+    }
+
+body{width:650px}
+
+li {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-width: 320px;
+    max-width: 320px;
 }
 }
 
+
+@media screen and (max-width: 640px) {
+    .designedby{    
+        display:none 
+      }
+.consolesetup,
+a {
+    font-size: 10px;
+    font-family: headingtext;
+    text-decoration: none;
+    margin-left: 10px;
+    color: #fff
+}
+
+
+body{width:480px}
+
+li {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-width: 320px;
+    max-width: 320px;
+}
+}
 .credit34,
 a {
     color: #fff;
@@ -1523,6 +1562,7 @@ blue1{color:#eee;font-size:.8em}
     box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);}
 vspan {vertical-align:middle;padding-top:3px;margin-left:30px}
 iconcolor{position:absolute;color:#555;vertical-align:middle;margin-top:5px}
+iconcolor2{position:absolute;color:#4e95a0;vertical-align:middle;margin-top:5px}
 
   
   
