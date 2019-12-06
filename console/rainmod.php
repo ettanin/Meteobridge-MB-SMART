@@ -13,7 +13,7 @@ if ($weather["rain_units"]=="in"){
 echo '<div class=rainbox >'.number_format($weather['rain_today'],2).'<smalltempunit4> '.$weather["rain_units"].'</smalltempunit4>';}
 ?>
 </div></smalltempunit>
-<div class="temptrendphrase" style="margin-left:80%;width:200px;font-size:0.75em;margin-top:-5px">
+<div class="temptrendphrase" style="font-size:.7em;margin-left:15px;max-width:300px">
 <?php  //last rain 
     if ($seconds_ago >= 200000 && $meteobridgeapi[124]>0) {
     echo $preciprain;
