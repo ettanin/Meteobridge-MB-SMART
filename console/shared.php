@@ -1,8 +1,67 @@
-<?php error_reporting(0);
+<?php 
+//original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
+error_reporting(0);
+$copyYear = 2015;$curYear = date('Y');$copyrightcredit='&copy; weather34.com original CSS/SVG/PHP '.$copyYear . (($copyYear != $curYear) ? '-' . $curYear : 'Copyright');
 // Speed
-function msTokmh(&$weather, $field){if(!isset($weather[$field])) return;$weather[$field] = number_format(3.6*$weather[$field],1);}
-function msTokts(&$weather, $field){if(!isset($weather[$field])) return;$weather[$field] = round((float)(1.943844*$weather[$field]), 1);}
-function msTomph(&$weather, $field){if(!isset($weather[$field])) return;$weather[$field] = number_format(2.236936*$weather[$field], 2);}
+function ktsTokmh(&$weather, $field){
+	if(!isset($weather[$field])) return;
+	$weather[$field] = number_format(1.852*$weather[$field],1);
+}
+
+function ktsTomph(&$weather, $field){
+	if(!isset($weather[$field])) return;
+	$weather[$field] = number_format(1.150779*$weather[$field],1);
+}
+
+function ktsToms(&$weather, $field){
+	if(!isset($weather[$field])) return;
+	$weather[$field] = number_format(0.514444*$weather[$field],1);
+}
+
+function mphTokmh(&$weather, $field){
+	if(!isset($weather[$field])) return;
+	$weather[$field] = number_format(1.609344*$weather[$field],1);
+}
+
+function mphTokts(&$weather, $field){
+	if(!isset($weather[$field])) return;
+	$weather[$field] = number_format(0.868976*$weather[$field],1);
+}
+
+function mphToms(&$weather, $field){
+	if(!isset($weather[$field])) return;
+	$weather[$field] = number_format(0.44704*$weather[$field],1);
+}
+
+function kmhTokts(&$weather, $field){
+	if(!isset($weather[$field])) return;
+	$weather[$field] = number_format(0.5399568*$weather[$field],1);
+}
+
+function kmhTomph(&$weather, $field){
+	if(!isset($weather[$field])) return;
+	$weather[$field] = number_format(0.621371*$weather[$field],1);
+}
+
+function kmhToms(&$weather, $field){
+	if(!isset($weather[$field])) return;
+	$weather[$field] = number_format(0.2777778*$weather[$field],1);
+}
+
+function msTokmh(&$weather, $field){
+	if(!isset($weather[$field])) return;
+	$weather[$field] = number_format(3.6*$weather[$field],2);
+}
+
+function msTokts(&$weather, $field){
+	if(!isset($weather[$field])) return;
+	$weather[$field] = round((float)(1.943844*$weather[$field]), 1);
+}
+
+function msTomph(&$weather, $field){
+	if(!isset($weather[$field])) return;
+	$weather[$field] = number_format(2.236936*$weather[$field], 2);
+}
 // Temperature
 function cToF(&$weather, $field){if(!isset($weather[$field])) return;$weather[$field] = cToFDirect($weather[$field]);}
 function fToC(&$weather, $field){if(!isset($weather[$field])) return;$weather[$field] = fToCDirect($weather[$field]);}
