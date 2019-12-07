@@ -46,14 +46,12 @@ valuetextba{font-size:1em}
 <div class="weather34barometerarrowmin"></div>
 <div class="weather34barometerarrowmax"></div>
 </div>
-<div class="text2"><?php if ($weather["barometer_trend"]>20) {
-    echo '<div class="pressuretext"> <ogreen>Steady</ogreen> </div>';
-} elseif ($weather["barometer_trend"] < 0) {
-    echo '<div class="pressuretext"> <oblue>'.$lang['Falling'].'</oblue> <fall> '.$fallingsymbol.'</fall></div>';
+<div class="text2"><?php if ($weather["barometer_trend"] < 0) {
+    echo '<div class="pressuretext" style="width:100px;font-size:0.4em"> '.$lang['Falling'].''.$fallingsymbol.' '.number_format($weather["barometer_trend"],2).'</div>';
 } elseif ($weather["barometer_trend"] > 0) {
-    echo '<div class="pressuretext"> <oorange>'.$lang['Rising'].'</orange> <rise> '.$risingsymbol.' </rise></div>';
+    echo '<div class="pressuretext" style="width:100px;font-size:0.4em">'.$lang['Rising'].'</orange>  '.$risingsymbol.' +'.number_format($weather["barometer_trend"],2).'</div>';
 } else {
-    echo '<div class="pressuretext"> <ogreen>'.$lang['Steady'].'</ogreen> </div>';
+    echo '<div class="pressuretext"> '.$lang['Steady'].'</div>';
 }?>
 <?php echo "<blue>".$weather["barometer"],"</blue>&nbsp;<span>".$weather["barometer_units"]."</span>";?>
 </div></div></div>
