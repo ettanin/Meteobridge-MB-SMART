@@ -13,22 +13,22 @@ if ($weather["rain_units"]=="in"){
 echo '<div class=rainbox >'.number_format($weather['rain_today'],2).'<smalltempunit4> '.$weather["rain_units"].'</smalltempunit4>';}
 ?>
 </div></smalltempunit>
-<div class="temptrendphrase" style="font-size:.7em;margin-left:15px;max-width:300px">
+<div class="temptrendphrase" style="font-size:.7em;margin-left:15px;width:200px">
 <?php  //last rain 
     if ($seconds_ago >= 200000 && $meteobridgeapi[124]>0) {
     echo $preciprain;
      } else if ($seconds_ago >= 172800 && $meteobridgeapi[124]>0) {
-         echo $lang['Last Rainfall']. '<br><blue>'.intval($seconds_ago / 86400) . ' </blue><tunit1>'.$lang['Days'].'</tunit1></blue> '.$lang['Ago'].'</thevalue>';
+         echo $lang['Last Rainfall']. ' <blue>'.intval($seconds_ago / 86400) . ' </blue><tunit1>'.$lang['Days'].'</tunit1></blue> '.$lang['Ago'].'</thevalue>';
      } elseif ($seconds_ago >= 86400 && $meteobridgeapi[124]>0) {
-         echo $lang['Last Rainfall']. '<br><blue>'.intval($seconds_ago / 86400) . ' </blue><tunit1>'.$lang['Day'].'</tunit1></blue> '.$lang['Ago'].'</thevalue>';
+         echo $lang['Last Rainfall']. ' <blue>'.intval($seconds_ago / 86400) . ' </blue><tunit1>'.$lang['Day'].'</tunit1></blue> '.$lang['Ago'].'</thevalue>';
      } elseif ($seconds_ago >= 7200 && $meteobridgeapi[124]>0) {
-         echo $lang['Last Rainfall']. '<br><blue>'.intval($seconds_ago / 3600) . ' </blue><tunit1>'.$lang['Hours'].'</tunit1></blue> '.$lang['Ago'].'</thevalue>';
+         echo $lang['Last Rainfall']. ' <blue>'.intval($seconds_ago / 3600) . ' </blue><tunit1>'.$lang['Hours'].'</tunit1></blue> '.$lang['Ago'].'</thevalue>';
      } elseif ($seconds_ago >= 3600 && $meteobridgeapi[124]>0) {
-         echo $lang['Last Rainfall']. '<br><blue>'.intval($seconds_ago / 3600) . ' </blue><tunit1>'.$lang['Hour'].'</tunit1></blue> '.$lang['Ago'].'</thevalue>';
+         echo $lang['Last Rainfall']. ' <blue>'.intval($seconds_ago / 3600) . ' </blue><tunit1>'.$lang['Hour'].'</tunit1></blue> '.$lang['Ago'].'</thevalue>';
      } elseif ($seconds_ago > 60 && $meteobridgeapi[124]>0) {
-         echo $lang['Last Rainfall']. '<br><blue>'.intval($seconds_ago / 60) . ' </blue><tunit1>'.$lang['Minutes'].'</tunit1></blue> '.$lang['Ago'].'</thevalue>';
+         echo $lang['Last Rainfall']. ' <blue>'.intval($seconds_ago / 60) . ' </blue><tunit1>'.$lang['Minutes'].'</tunit1></blue> '.$lang['Ago'].'</thevalue>';
      } elseif ($seconds_ago <= 60 && $meteobridgeapi[124]>0) {
-         echo $lang['Last Rainfall']. '<br><blue>'.intval($seconds_ago / 60) . ' </blue><tunit1>'.$lang['Minutes'].'</tunit1></blue> '.$lang['Ago'].'</thevalue>';} ?>
+         echo $lang['Last Rainfall']. ' <blue>'.intval($seconds_ago / 60) . ' </blue><tunit1>'.$lang['Minutes'].'</tunit1></blue> '.$lang['Ago'].'</thevalue>';} ?>
 </span></div>
 </div></div>
 

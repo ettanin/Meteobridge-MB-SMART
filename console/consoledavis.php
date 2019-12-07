@@ -73,7 +73,7 @@ include_once('updater2.php');
   
 ?></vspan>
 
-    <a href="console-setup.php" target="_blank" class="designedby">  <?php echo "2015-".date('Y')?> Weather<blue>34</blue> Designed </a>  
+    <a href="console-setup.php" target="_blank" class="designedby">  &copy;<?php echo "2015-".date('Y')?> Weather34 Designed </a>  
     </div>
 
     

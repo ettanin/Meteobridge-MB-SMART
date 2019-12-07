@@ -1422,13 +1422,14 @@ a {
     color: #fff
 }
 
-.designedby,
-a {
+.designedby {
     color: #fff;
-    font-size: 10px;
+    font-size: 9px;
     font-family: headingtext;
     text-decoration: none;
-    margin-left: 450px
+    margin-right: 40px;
+    float:right;
+    margin-top:10px
 }
 
 
@@ -1548,7 +1549,7 @@ iconcolor2 {
     width: 275px;
     max-width: 275px;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-top: -12px;
     padding: 2px;
     border: 1px solid rgba(45, 48, 58, .3);
@@ -1627,7 +1628,7 @@ oorange {
         padding: 6px;
         height: 30px;
         position:fixed;
-        bottom:1px;
+        bottom:0;
         z-index:99999
 
     }

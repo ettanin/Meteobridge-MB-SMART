@@ -13,10 +13,7 @@ else if ($weather["uv"]>=3) {echo '<div class=windbox style="color:#e6a141">'.nu
 else if ($weather["uv"]>=0) {echo '<div class=windbox style="color:#90b12a">'.number_format($weather["uv"],1)."<smalltempunit> &nbsp;UVI";}?>
 </div></smalltempunit>
 <div class="temptrendphrase" style="font-size:0.75em;margin-top:3px">
-
-<?php if ($weather["uv"]>=10) {echo $uviclear.''.$lang['uvalert']; echo "&nbsp; ".$heatindexalert8;}
-else if ($weather["uv"]>=8) {echo $uviclear.''.$lang['uvalert']; echo "&nbsp; ".$heatindexalert8;}
-else if ($weather["uv"]==0 ) {echo $uviclear,'<span>'.$lang['Nocaution'].'</span> ';}?></div>
+</div>
 </span></div>
 </div></div>
 
