@@ -355,7 +355,7 @@ trendmovementsteadyx {
     width: 9rem;
     height: 5rem;
     padding-top: 14px;
-    color:#4e95a0;
+    color: #4e95a0;
     border: 1px solid #8497a7;
     border-bottom: 18px solid #8497a7;
     border-radius: 2px;
@@ -374,7 +374,7 @@ trendmovementsteadyx {
 }
 
 blue {
-    color:#4e95a0
+    color: #4e95a0
 }
 
 .heatcircle,
@@ -868,9 +868,9 @@ uv0 {
     bottom: 25px;
     left: 25px;
     margin: auto;
-    border-top: 8px solid rgba(46, 51, 66,.7);
+    border-top: 8px solid rgba(46, 51, 66, .7);
     border-right: 8px solid #8497a7;
-    border-bottom: 8px solid rgba(46, 51, 66,.7);    
+    border-bottom: 8px solid rgba(46, 51, 66, .7);
     border-left: 8px solid #8497a7;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -895,7 +895,7 @@ uv0 {
 }
 
 .windirectiontext1 span {
-    color:#4e95a0
+    color: #4e95a0
 }
 
 averwordwindword {
@@ -1417,7 +1417,7 @@ a {
     font-family: headingtext;
     text-decoration: none;
     margin-left: 10px;
-    color:#fff
+    color: #fff
 }
 
 .consolesetup,
@@ -1437,54 +1437,61 @@ a {
     text-decoration: none;
     margin-left: 200px
 }
+
 @media screen and (max-width: 960px) {
-    .designedby{    
-      display:none 
+    .designedby {
+        display: none
     }
 
-body{width:650px}
+    body {
+        width: 650px
+    }
 
-li {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    min-width: 320px;
-    max-width: 320px;
-}
+    li {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-width: 320px;
+        max-width: 320px;
+    }
 }
 
 
 @media screen and (max-width: 640px) {
-    .designedby{    
-        display:none 
-      }
-.consolesetup,
-a {
-    font-size: 10px;
-    font-family: headingtext;
-    text-decoration: none;
-    margin-left: 10px;
-    color: #fff
-}
+    .designedby {
+        display: none
+    }
+
+    .consolesetup,
+    a {
+        font-size: 10px;
+        font-family: headingtext;
+        text-decoration: none;
+        margin-left: 10px;
+        color: #fff
+    }
 
 
-body{width:480px}
+    body {
+        width: 480px
+    }
 
-li {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    min-width: 320px;
-    max-width: 320px;
+    li {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-width: 320px;
+        max-width: 320px;
+    }
 }
-}
+
 .credit34,
 a {
     color: #fff;
     font-size: 12px;
     font-family: headingtext;
     text-decoration: none;
-    margin-left:380px;
+    margin-left: 380px;
 }
 
 
@@ -1555,29 +1562,60 @@ valuebeaufort {
     top: -87px;
     color: #fff
 }
-blue1{color:#eee;font-size:.8em}
 
-.nav{margin:0 auto;max-width:95%;background:#8497a7;padding:4px;height:30px;
+blue1 {
+    color: #eee;
+    font-size: .8em
+}
+
+.nav {
+    margin: 0 auto;
+    max-width: 95%;
+    background: #8497a7;
+    padding: 4px;
+    height: 30px;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);}
-vspan {vertical-align:middle;padding-top:3px;margin-left:30px}
-iconcolor{position:absolute;color:#555;vertical-align:middle;margin-top:5px}
-iconcolor2{position:absolute;color:#4e95a0;vertical-align:middle;margin-top:5px}
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
+}
 
-.consoleforecast
-{ 
-    font-size:10px;
-    width:275px;
-    max-width:275px;
-    text-align:left;
-    margin-left:5px;
-    margin-top:-15px;
-    padding:2px;
-    border:1px solid rgba(45, 48, 58, .1);
-    border-radius:2px;
-    -webkit-border-radius:2px;}
+vspan {
+    vertical-align: middle;
+    padding-top: 3px;
+    margin-left: 30px
+}
 
-   oblue{color:#00a4b4 } 
-   oorange{color:#d05f2d}
-  
-  
+iconcolor {
+    position: absolute;
+    color: #555;
+    vertical-align: middle;
+    margin-top: 5px
+}
+
+iconcolor2 {
+    position: absolute;
+    color: #4e95a0;
+    vertical-align: middle;
+    margin-top: 5px
+}
+
+.consoleforecast {
+    font-size: 10px;
+    width: 275px;
+    max-width: 275px;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: -15px;
+    padding: 2px;
+    border: 1px solid rgba(45, 48, 58, .1);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    line-height: 1
+}
+
+oblue {
+    color: #00a4b4
+}
+
+oorange {
+    color: #d05f2d
+}
