@@ -205,7 +205,7 @@ li {
 
 .temptrendphrase {
     margin-left: 0;
-    font-size: 15px
+    font-size: 14px
 }
 
 .temptrendphrase,
@@ -215,24 +215,26 @@ li {
     margin-top: 10px;
     color: #555;
     text-align: center;
-    font-family: headingtext
+    font-family: headingtext;
+    width: 130px;
+    left: -45px
 }
 
 .temptrendx {
-    margin-left: 50%;
+    margin-left: 70px;
     font-size: 0
 }
 
 trendmovementfallingx,
 trendmovementrisingx {
     font-family: headingtext;
-    font-size: 15px
+    font-size: 14px
 }
 
 trendmovementsteadyx {
     color: #555;
     font-size: 15px;
-    margin-left: 20px
+    margin-left: 80px
 }
 
 .maxdata {
@@ -1178,7 +1180,7 @@ suptemp {
 
 .barometerpos {
     position: relative;
-    margin-top: -15px;
+    margin-top: -30px;
     margin-left: -50px
 }
 
@@ -1435,7 +1437,7 @@ a {
     font-size: 10px;
     font-family: headingtext;
     text-decoration: none;
-    margin-left: 200px
+    margin-left: 280px
 }
 
 @media screen and (max-width: 960px) {
@@ -1470,10 +1472,18 @@ a {
         margin-left: 10px;
         color: #fff
     }
+    .consoleunits,
+    a {
+        font-size: 8px;
+        font-family: headingtext;
+        text-decoration: none;
+        margin-left: 10px;
+        color: #fff
+    }
 
 
     body {
-        width: 480px
+        width: 320px
     }
 
     li {
@@ -1482,6 +1492,15 @@ a {
         justify-content: center;
         min-width: 320px;
         max-width: 320px;
+    }
+
+    .nav {
+        margin: 0 auto;
+        max-width: 320px;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
+        padding: 6px;
+        height: 30px
     }
 }
 
@@ -1538,7 +1557,7 @@ valuebeaufort {
     align-items: left;
     justify-content: left;
     margin-bottom: -5px;
-    top: -51px;
+    top: -59px;
     color: #fff;
 }
 
@@ -1570,7 +1589,7 @@ blue1 {
 
 .nav {
     margin: 0 auto;
-    max-width: 95%;
+    max-width: 96.9%;
     background: #8497a7;
     padding: 4px;
     height: 30px;
@@ -1603,8 +1622,8 @@ iconcolor2 {
     width: 275px;
     max-width: 275px;
     text-align: left;
-    margin-left: 5px;
-    margin-top: -15px;
+    margin-left: 20px;
+    margin-top: -12px;
     padding: 2px;
     border: 1px solid rgba(45, 48, 58, .1);
     border-radius: 2px;
@@ -1619,3 +1638,12 @@ oblue {
 oorange {
     color: #d05f2d
 }
+
+.consoleunits,
+    a {
+        font-size: 10px;
+        font-family: headingtext;
+        text-decoration: none;
+        margin-left: 10px;
+        color: #fff
+    }

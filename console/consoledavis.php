@@ -56,23 +56,21 @@ include_once('updater2.php');
 
     <a  class="consolesetup" href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>>
     <?php 
-    if($theme=='dark'){echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Light Mode</vspan>';}
-    else{echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Dark Mode</vspan>';}
+    if($theme=='dark'){echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Light</vspan>';}
+    else{echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Dark</vspan>';}
     ?> </a>
 
 <?php
   if ($units!='us') {
-      echo '<a  class="consolesetup" href="?units=us"><iconcolor2>'.$toggle.' </iconcolor2><vspan>MPH &deg;F </vspan></a>';
+      echo '<a  class="consolesetup" href="?units=us"><iconcolor2>'.$toggle.' </iconcolor2><vspan>&deg;F </vspan></a>';
   }
   if ($units!='metric') {
-    echo '<a  class="consolesetup" href="?units=metric"><iconcolor2>'.$toggle.' </iconcolor2><vspan>KM/H &deg;C</vspan></a>';
+    echo '<a  class="consolesetup" href="?units=metric"><iconcolor2>'.$toggle.' </iconcolor2><vspan>&deg;C</vspan></a>';
   }
   if ($units!='uk') {
-    echo '<a class="consolesetup"  href="?units=uk"><iconcolor2>'.$toggle.' </iconcolor2><vspan>UK &deg;C</vspan></a>';
+    echo '<a class="consolesetup"  href="?units=uk"><iconcolor2>'.$toggle.' </iconcolor2><vspan>UK</vspan></a>';
   }
-  if ($units!='scandinavia') {
-    echo '<a  class="consolesetup" href="?units=scandinavia"><iconcolor2>'.$toggle.' </iconcolor2><vspan>M/S &deg;C</vspan></a>';
-  }
+  
 ?></vspan>
 
     <a href="console-setup.php" target="_blank" class="designedby">  <?php echo "2015-".date('Y')?> Weather<blue>34</blue> Designed </a>  
