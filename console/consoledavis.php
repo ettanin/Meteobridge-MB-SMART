@@ -1,13 +1,11 @@
 <?php 
 include_once('livedata.php');
 include_once('updater2.php');
-include_once('common.php');
-include_once('console-settings.php');
 ?>
 <!DOCTYPE html><html><head>
-<title><?php echo $stationName; ?></title>
-<meta name="title" content="<?php echo $stationName; ?>">
-<meta name="description" content="<?php echo $stationName; ?>">
+<title>Weather34 Sinanoba Istanbul </title>
+<meta name="title" content="Weather34 Sinanoba Istanbul">
+<meta name="description" content="Weather station providing current weather conditions for Sinanoba Istanbul">
 <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="mask-icon" href="safari-pinned-tab.svg" color="#01a4b4">

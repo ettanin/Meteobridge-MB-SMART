@@ -1,18 +1,18 @@
 <?php
-$unit = "english";
-$metric = false;
-$windunit = "mph";
-$distanceunit = "mi";
-$tempunit = "F";
-$rainunit  = "in";
+$unit = "metric";
+$metric = true;
+$windunit = "km/h";
+$distanceunit = "km";
+$tempunit = "C";
+$rainunit  = "mm";
 $rainrate = "/h";
-$pressureunit  = "inHg";
+$pressureunit  = "hPa";
 $livedataFormat = "meteobridge-api";
 $livedata   = "../mbridge/MBrealtimeupload.txt";
 $dateFormat   = "d-m-Y";
 $password    = "";
-$uvsensor    = "indoortempmod.php";
-$defaultlanguage   = "dl";
+$uvsensor    = "uvindexmod.php";
+$defaultlanguage   = "en";
 $stationName   = "Console Display ";
 $theme   = "dark";
 $TZ = "Asia/Singapore";
