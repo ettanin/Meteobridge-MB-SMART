@@ -52,23 +52,23 @@ include_once('updater2.php');
 
  
     <div class="nav">
-    <a href="console-setup.php" target="_blank" class="consolesetup"> <?php echo $settingsicon?> Web App Setup</a>
+    <a href="console-setup.php" target="_blank" class="consolesetup"><?php echo $settingsicon?></a>
 
     <a  class="consolesetup" href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>>
-    <?php 
-    if($theme=='dark'){echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Light</vspan>';}
-    else{echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Dark</vspan>';}
-    ?> </a>
+    <?php if($theme=='dark'){echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Light</vspan>';} else{echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Dark</vspan>';}?> </a>
 
 <?php
   if ($units!='us') {
-      echo '<a  class="consolesetup" href="?units=us"><iconcolor2>'.$toggle.' </iconcolor2><vspan>&deg;F </vspan></a>';
+      echo '<a  class="consoleunits" href="?units=us"><iconcolor2>'.$toggle.' </iconcolor2><vspan>&deg;F </vspan></a>';
   }
   if ($units!='metric') {
-    echo '<a  class="consolesetup" href="?units=metric"><iconcolor2>'.$toggle.' </iconcolor2><vspan>&deg;C</vspan></a>';
+    echo '<a  class="consoleunits" href="?units=metric"><iconcolor2>'.$toggle.' </iconcolor2><vspan>&deg;C</vspan></a>';
   }
   if ($units!='uk') {
-    echo '<a class="consolesetup"  href="?units=uk"><iconcolor2>'.$toggle.' </iconcolor2><vspan>UK</vspan></a>';
+    echo '<a class="consoleunits"  href="?units=uk"><iconcolor2>'.$toggle.' </iconcolor2><vspan>UK</vspan></a>';
+  }
+  if ($units!='scandinavia') {
+    echo '<a class="consoleunits"  href="?units=scandinavia"><iconcolor2>'.$toggle.' </iconcolor2><vspan>M/S</vspan></a>';
   }
   
 ?></vspan>

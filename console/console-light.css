@@ -1437,7 +1437,7 @@ a {
     font-size: 10px;
     font-family: headingtext;
     text-decoration: none;
-    margin-left: 280px
+    margin-left: 450px
 }
 
 @media screen and (max-width: 960px) {
@@ -1477,7 +1477,7 @@ a {
         font-size: 8px;
         font-family: headingtext;
         text-decoration: none;
-        margin-left: 10px;
+        margin-left: 1px;
         color: #fff
     }
 
@@ -1502,6 +1502,12 @@ a {
         padding: 6px;
         height: 30px
     }
+
+    vspan {
+          
+        font-size:9px
+    
+}
 }
 
 .credit34,
