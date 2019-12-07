@@ -16,9 +16,6 @@ else if ($weather["uv"]>=0) {echo '<div class=windbox style="color:#90b12a">'.nu
 
 <?php if ($weather["uv"]>=10) {echo $uviclear.''.$lang['uvalert']; echo "&nbsp; ".$heatindexalert8;}
 else if ($weather["uv"]>=8) {echo $uviclear.''.$lang['uvalert']; echo "&nbsp; ".$heatindexalert8;}
-else if ($weather["uv"]>=6) {echo $uviclear.''.$lang['High']; echo "&nbsp; ".$heatindexalert8;}
-else if ($weather["uv"]>=3) {echo $uviclear.''.$lang['Moderate'];}
-else if ($weather["uv"]>0 ) {echo $uviclear,''.$lang['Low'];}
 else if ($weather["uv"]==0 ) {echo $uviclear,'<span>'.$lang['Nocaution'].'</span> ';}?></div>
 </span></div>
 </div></div>
