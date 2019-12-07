@@ -1178,7 +1178,7 @@ suptemp {
 
 .barometerpos {
     position: relative;
-    margin-top: -30px;
+    margin-top: -15px;
     margin-left: -50px
 }
 
@@ -1531,7 +1531,7 @@ valuebeaufort {
     align-items: left;
     justify-content: left;
     margin-bottom: -5px;
-    top: -60px;
+    top: -51px;
     color: #fff;
 }
 
@@ -1564,5 +1564,20 @@ vspan {vertical-align:middle;padding-top:3px;margin-left:30px}
 iconcolor{position:absolute;color:#555;vertical-align:middle;margin-top:5px}
 iconcolor2{position:absolute;color:#4e95a0;vertical-align:middle;margin-top:5px}
 
+.consoleforecast
+{ 
+    font-size:10px;
+    width:275px;
+    max-width:275px;
+    text-align:left;
+    margin-left:5px;
+    margin-top:-15px;
+    padding:2px;
+    border:1px solid rgba(45, 48, 58, .1);
+    border-radius:2px;
+    -webkit-border-radius:2px;}
+
+   oblue{color:#00a4b4 } 
+   oorange{color:#d05f2d}
   
   

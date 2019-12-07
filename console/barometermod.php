@@ -58,16 +58,42 @@ valuetextba{font-size:1em}
 </span>
 </div></div>
 
-<div class="heatcircle3"><div class="heatcircle-content"><valuetextheading1>Max <?php echo $lang['Today']?></valuetextheading1>
+<div class="heatcircle3">
+<br><div class="consoleforecast">
+<?php  //weather34 script Davis forecast outlook
+$weather["vpforecasttext"]	=str_replace('within', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('ending', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('likely', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('with', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('possible', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('and warmer.', '<oorange>Warmer </oorange>period expected .<br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('and cooler.', '<oblue>Cooler </oblue>period expected.<br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('and ending', 'for', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('to the', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('shift', 'becoming', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('wind shifting', 'shifting', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('wind becoming', 'becoming', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('Windy', '<oorange>Windy</oorange>', $weather["vpforecasttext"]);
+if (anyToC($weather["temp"])<-1){$weather["vpforecasttext"]	=str_replace('Precipitation',  'Risk of <oblue>Snow</oblue>.', $weather["vpforecasttext"]);}
+else if (anyToC($weather["temp"])<1){$weather["vpforecasttext"]	=str_replace('Precipitation',  'Chance of <oblue>Rain</oblue> & <oblue>Sleet</oblue>.', $weather["vpforecasttext"]);}
+$weather["vpforecasttext"]	=str_replace('Precipitation',  'Chance of <oblue>Rain</oblue>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('Increasing clouds', 'Periods of <oblue>Scattered</oblue> Clouds.<br> ', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('and windy', '<oorange>Windy</oorange>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('Mostly clear', 'Becoming or remaining <oorange>Mostly Clear.</oorange><br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('Partly cloudy', 'Becoming or remaining <oblue>Partly</oblue> Cloudy.</oblue><br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('Mostly cloudy', 'Becoming or remaining <oblue>Mostly Cloudy.</oblue> <br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('24 to 48 hours', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('6 to 12 hours', '', $weather["vpforecasttext"]); 
+$weather["vpforecasttext"]	=str_replace('12 to 24 hours', '', $weather["vpforecasttext"]);  
+$weather["vpforecasttext"]	=str_replace('48 to 72 hours', '', $weather["vpforecasttext"]); 
+$weather["vpforecasttext"]	=str_replace('12 hours', '', $weather["vpforecasttext"]); 
+$weather["vpforecasttext"]	=str_replace('6 hours', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('South West', 'SW', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('South East', 'SE', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('W, NW, or N', 'W, NW to North', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('little temperature change.', 'No <oorange>Significant </oorange> change in temperature.<br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace(', possibly heavy at times', '', $weather["vpforecasttext"]);
+echo $weather["vpforecasttext"]	; ?></div></div>
 
-<?php  //heat-index/real feel
-echo "<br><div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["barometer_max"]." <smalltempunit2>hPa";
+<smalltempunit2></div></div></div>
 
-?><smalltempunit2></div></div></div>
-
-
-<div class="heatcircle4"><div class="heatcircle-content"><valuetextheading1>Low <?php echo $lang['Today']?></valuetextheading1>
-<?php //avg today
-echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["barometer_min"]." <smalltempunit2>hPa";
-?>
-</smalltempunit2></div></div></div></div>
