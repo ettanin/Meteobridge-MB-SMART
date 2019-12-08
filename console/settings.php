@@ -1,9 +1,5 @@
 <?php //settings.php December 2016 // 
-  include('console-settings.php');
-  $TZ="Europe/Istanbul";
- 
- $theme = 'light';$dateFormat = 'd-m-Y'; 
- $timeFormat = 'H:i:s';$timeFormatShort = 'H:i';       
+  include('console-settings.php');      
  //set the theme color
 if (array_key_exists('theme', $_GET) && ($_GET['theme'] == 'dark' || $_GET['theme'] == 'light')){SetCookie('theme', $_GET['theme'], time()+15552000);
 $theme = $_GET['theme'];} else if (array_key_exists('theme', $_COOKIE) && ($_COOKIE['theme'] == 'dark' || $_COOKIE['theme'] == 'light')) {
