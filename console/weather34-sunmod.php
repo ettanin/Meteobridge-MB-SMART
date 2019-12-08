@@ -8,7 +8,7 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');header('Content-type: text/html; charset=utf-8');
+include('livedata.php');include('console-settings.php');header('Content-type: text/html; charset=utf-8');
 $TZconf = $TZ; 
 $rise_zenith = 90+ 40/60;  
 $set_zenith = 90+ 36/60; 
