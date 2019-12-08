@@ -20,6 +20,8 @@ $defaultlanguage   = "' . $_POST["defaultlanguage"] . '";
 $stationName   = "' . $_POST["stationName"] . '";
 $theme   = "' . $_POST["theme"] . '";
 $TZ = "' . $_POST["TZ"] . '";
+$lon = ' . $_POST["lon"] . ';
+$lat = ' . $_POST["lat"] . ';
 ';
 
     $fp = FOPEN("console-settings.php", "w") or die("Unable to open console-settings.php file check file permissions !");
@@ -448,7 +450,22 @@ $TZ = "' . $_POST["TZ"] . '";
 
 
                                         <input name="TZ" type="text" id="TZ" value="<?php echo $TZ; ?>" class="choose">
+                                        <br><br>
+                                        <div class="stationvalue">Latitude</div>
+                                            <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg>
 
+                                            <input name="lat" type="text" id="lat" value="<?php echo $lat; ?>" class="choose">
+                                            <br><br>
+                                            <div class="stationvalue">Longitude</div>
+                                            <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                <path d="M12 30 L24 16 12 2" />
+                                            </svg>
+                                            
+                                            <input name="lon" type="lon" id="TZ" value="<?php echo $lon; ?>" class="choose">
+                                            <br>
+                                            <br>
 
                                             </div>
 

@@ -104,9 +104,7 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	//weather34 windrun based on daily average
     $windrunhr=date('G');$windrunmin=(($windrunmin=date('i')/60));$windrunformula=$windrunhr=date('G')+$windrunmin;
 	$weather["windrun34"]=$weather['wind_speed_avg30']*number_format($windrunformula,1);
-	//weather34 meteobridge moon sun data 
-    $weather["moonphase"]=$meteobridgeapi[153];$weather["luminance"]=$meteobridgeapi[154];$weather["daylight"]=$meteobridgeapi[155];if ($meteobridgeapi[156]=='--'){$weather["moonrise"]='In Transit';}
-	else $weather["moonrise"]='<moonrisecolor> '.date($timeFormatShort, strtotime($meteobridgeapi[156]));$weather["moonset"]='<moonsetcolor> '.date($timeFormatShort, strtotime($meteobridgeapi[157]));
+	
 	//weather34 meteobridge real feel 02-08-2018 based on cumulus forum formula (THW)
 	$weather['realfeel'] = round(($weather['temp'] + 0.33*($weather['humidity']/100)*6.105*exp(17.27*$weather['temp']/(237.7+$weather['temp']))- 0.70*$weather["wind_speed"] - 4.00),1);
 	//ken true version from cumulus version
@@ -119,11 +117,45 @@ if ($livedataFormat == 'meteobridge-api' && $livedata) {
 	//humidex josep
 	$t=7.5*$weather["temp"]/(237.7+$weather["temp"]); $et= pow(10,$t);$e=6.112*$et*($weather["humidity"]/100);$weather["humidex"] =number_format($weather["temp"]+(5/9)*($e-10),1);	
 	
-if ($weather['luminance']>99.9){$weather['luminance']=100;}
-if ($weather['luminance']<100){$weather['luminance']=$weather['luminance'];}
+
+//weather34 meteobridge moon data
+$weather["moonphase"]=$meteobridgeapi[153];
+$weather["luminance"]=$meteobridgeapi[154];
+$weather["daylight"]=$meteobridgeapi[155];
+if ($meteobridgeapi[156]=='--') {
+    $weather["moonrise"]='In Transit';
+} else {
+    $weather["moonrise"]=date('g:ia', strtotime($meteobridgeapi[156]));
+}
+$weather["moonset"]=date('g:ia', strtotime($meteobridgeapi[157]));
+if ($weather['luminance']>99.9) {
+    $weather['luminance']=100;
+}
+if ($weather['luminance']<100) {
+    $weather['luminance']=$weather['luminance'];
+}
 //weather34 convert meteobridge lunar segment
-if ($weather["moonphase"]==0) {$weather["moonphase"]='New Moon';}else if ($weather["moonphase"]==1) {$weather["moonphase"]='Waxing Crescent';}else if ($weather["moonphase"]==2 ) {$weather["moonphase"]='First Quarter';}else if ($weather["moonphase"]==3 ) {$weather["moonphase"]='Waxing Gibbous';}else if ($weather["moonphase"]==4 ) {$weather["moonphase"]='Full Moon';}else if ($weather["moonphase"]==5) {$weather["moonphase"]='Waning Gibbous';}else if ($weather["moonphase"]==6) {$weather["moonphase"]='Last Quarter';}else if ($weather["moonphase"]==7){$weather["moonphase"]='Waning Crescent';}
-	
+if ($weather["moonphase"]==0) {
+    $weather["moonphase"]=' New Moon';
+} elseif ($weather["moonphase"]==1) {
+    $weather["moonphase"]=' Waxing Crescent';
+} elseif ($weather["moonphase"]==2) {
+    $weather["moonphase"]=' First Quarter';
+} elseif ($weather["moonphase"]==3) {
+    $weather["moonphase"]=' Waxing Gibbous';
+} elseif ($weather["moonphase"]==4) {
+    $weather["moonphase"]=' Full Moon';
+} elseif ($weather["moonphase"]==5) {
+    $weather["moonphase"]=' Waning Gibbous';
+} elseif ($weather["moonphase"]==6) {
+    $weather["moonphase"]=' Last Quarter';
+} elseif ($weather["moonphase"]==7) {
+    $weather["moonphase"]=' Waning Crescent';
+}
+
+
+
+
 	// weatherflow lightning
 	$weather["lightning"]          = $meteobridgeapi[76];
 	$weather["lightningkm"]        = $meteobridgeapi[75];

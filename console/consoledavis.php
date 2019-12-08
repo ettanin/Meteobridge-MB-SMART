@@ -48,11 +48,10 @@ include_once('updater2.php');
     <li><div id=rain></div></li>
     <li><div id=barometer></div></li>
     <li><div id=uvindex></div></li>
-    <li2></li2> 
-    <li2></li2> 
-    <li2>
-      
-  <div class="clock">
+    <li2><div id=moon></div></li2> 
+    <li2><div id=sun></div></li2> 
+    <li2>      
+   <div class="clock">
   <span id="hour"></span>
   <span id="minute"></span>
   <span id="second"></span>  

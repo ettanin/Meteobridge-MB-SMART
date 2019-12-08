@@ -104,9 +104,9 @@ li2 {
     background: #3d464d;
     border-radius:3px;
     padding:0px;
-    padding-left:50px;
+    padding-left:70px;
     padding-right:0px;
-    padding-top:-5px;
+    padding-top:15px;
     display: flex;
     font-family: clock;
     -webkit-border-radius:3px;
@@ -121,9 +121,10 @@ li2 {
     font-size: 2rem;
     text-transform: uppercase;
     font-family: clock;
-    height:75px;
-    line-height:2;
-    z-index:-10
+    height:64px;
+    line-height:1.2;    
+    margin-top:5px;
+    
 
 }
 .date {
@@ -133,10 +134,142 @@ li2 {
     font-size: .65rem;   
     font-family: clock;    
     line-height:1;      
-    margin-top:50px;
+    margin-top:35px;
     position: absolute;    
     margin-left:-5px
 }
+
+.moonblock {
+    background: #3d464d;
+    border-radius:3px;
+    padding:0px;
+    padding-left:10px;
+    padding-right:0px;
+    padding-top:15px;
+    display: flex;
+    font-family: clock;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    margin-left:0;
+    text-align: center;  
+    width: 250px;
+    position: relative;
+    color: #00a4b4;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: clock;
+    height:64px;
+    line-height:2;    
+    margin-top:5px;
+    font-family: headingtext;
+
+}
+
+.date1 {
+    display:block;
+    background:none;   
+    color: whitesmoke;
+    font-size: .8rem;   
+    font-family: clock;    
+    line-height:1;      
+    margin-top:-60px;
+    position: absolute;    
+    margin-left:65px;font-family: headingtext;
+}
+.date2 {
+    display:block;
+    background:none;   
+    color: whitesmoke;
+    font-size: .8rem;   
+    font-family: clock;    
+    line-height:1;      
+    margin-top:-45px;
+    position: absolute;    
+    margin-left:65px;font-family: headingtext;
+}
+.phase2 {
+    display:block;
+    background:none;   
+    color: whitesmoke;
+    font-size: .8rem;   
+    font-family: clock;    
+    line-height:1;      
+    margin-top:-30px;
+    position: absolute;    
+    margin-left:65px;
+    font-family: headingtext;
+}
+
+.sunblock {
+    background: #3d464d;
+    border-radius:3px;
+    padding:0px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:15px;
+    display: flex;
+    font-family: clock;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    margin-left:0;
+    text-align: left;  
+    width: 250px;
+    position: relative;
+    color: #00a4b4;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: clock;
+    height:64px;
+    line-height:2;    
+    margin-top:5px;
+    font-family: headingtext;
+
+}
+
+.sunrise1 {
+    display:block;
+    background:none;   
+    color: whitesmoke;
+    font-size: .75rem;   
+    font-family: clock;    
+    line-height:1;      
+    margin-top:-65px;
+    position: absolute;    
+    margin-left:15px;
+    font-family: headingtext;
+    text-align: left;
+}
+.sunset1 {
+    display:block;
+    background:none;   
+    color: whitesmoke;
+    font-size: .75rem;   
+    font-family: clock;    
+    line-height:1;      
+    margin-top:-35px;
+    position: absolute;    
+    margin-left:15px;
+    font-family: headingtext;
+    text-align: left;
+}
+.daylight1 {
+    display:block;
+    background:none;   
+    color: whitesmoke;
+    font-size: .75rem;   
+    font-family: clock;    
+    line-height:1;      
+    margin-top:-55px;
+    position: absolute;    
+    margin-left:165px;
+    font-family: headingtext;
+    text-align: left;
+}
+belowthehorizon{font-size:1em;width:80px;display:block}
 
 .tempcontainer {
     position: relative;
@@ -148,6 +281,7 @@ li2 {
     margin: 10px;
     font-family: weathertext2
 }
+orange{color:#d05f2d}
 
 .tempcontainerx {
     position: relative;
@@ -1525,7 +1659,7 @@ background: #232630;
     line-height:.8;  
     align-items: left;
     justify-content: left;    
-    top: -23;
+    top: -23px;
     color: whitesmoke;
    
 }
@@ -1548,7 +1682,7 @@ background: #232630;
     line-height:.8;  
     align-items: left;
     justify-content: left;    
-    top: -51px;
+    top: -50px;
     color: whitesmoke;
     
 }
@@ -1571,7 +1705,7 @@ background: #232630;
     line-height:.8;  
     align-items: left;
     justify-content: left;    
-    top: -91px;
+    top: -90px;
     color: whitesmoke;
    
 }

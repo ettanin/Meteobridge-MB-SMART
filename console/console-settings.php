@@ -15,4 +15,6 @@ $uvsensor    = "uvindexmod.php";
 $defaultlanguage   = "en";
 $stationName   = "Console Display ";
 $theme   = "dark";
-$TZ = "Asia/Singapore";
+$TZ = "Europe/Istanbul";
+$lon = 28.5;
+$lat = 41.2;
