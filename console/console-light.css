@@ -24,7 +24,7 @@ body {
     color: #555;
     background: whitesmoke;
     width: 100%;
-    max-width: 1024px;
+    max-width: 985px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -66,11 +66,11 @@ li {
     justify-content: center;
     min-width: 320px;
     max-width: 420px;
-    padding: 60px 0;
-    height: 230px;
+    padding: 0;
+    height: 200px;
     border: 1px solid #8497a7;
-    border-bottom: 15px solid #8497a7;
-    border-top: 15px solid #8497a7;
+    border-bottom: 5px solid #8497a7;
+    border-top: 5px solid #8497a7;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
@@ -1431,7 +1431,7 @@ a {
     color: #fff
 }
 
-.designedby{
+.designedby {
     color: #fff;
     font-size: 9px;
     font-family: headingtext;
@@ -1465,38 +1465,38 @@ valuebeaufort {
     -moz-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
-    background: #8497a7;
-    padding: 5px;
+    background: #8497a7;    
     font-family: Headingtext;
     max-width: 180px;
-    height: 11px;
+    height: 8px;
     font-size: 11px;
-    padding-top: 5px;
+    padding: 5px;
+    line-height:1;  
     align-items: left;
     justify-content: left;
     margin-bottom: -5px;
-    top: -20px;
+    top: -15px;
     color: #fff;
 }
 
 .modulecaptionpressure {
     position: relative;
-    left: -70px;
+    left: -75px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
-    background: #8497a7;
-    padding: 5px;
+    background: #8497a7;   
     font-family: Headingtext;
     max-width: 180px;
-    height: 11px;
+    height: 8px;
     font-size: 11px;
-    padding-top: 5px;
+    padding: 5px;
+    line-height:1;  
     align-items: left;
     justify-content: left;
     margin-bottom: -5px;
-    top: -59px;
+    top: -55px;
     color: #fff;
 }
 
@@ -1507,17 +1507,17 @@ valuebeaufort {
     -moz-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
-    background: #8497a7;
-    padding: 5px;
+    background: #8497a7;    
     font-family: Headingtext;
     max-width: 180px;
-    height: 11px;
+    height: 8px;
     font-size: 11px;
-    padding-top: 5px;
+    padding: 5px;
+    line-height:1;    
     align-items: left;
     justify-content: left;
     margin-bottom: -5px;
-    top: -87px;
+    top: -83px;
     color: #fff
 }
 
@@ -1528,12 +1528,24 @@ blue1 {
 
 .nav {
     margin: 0 auto;
-    max-width: 96.9%;
-    background: #8497a7;
+    width:900px;
+    background: #35383a;
     padding: 4px;
-    height: 30px;
+    height: 20px;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
     box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
+    padding: 6px;
+        height: 30px;
+        position:fixed;
+        bottom:0;
+        margin-left:35px;
+        z-index:99999;
+        -webkit-border-top-left-radius: 2px;
+-webkit-border-top-right-radius: 2px;
+-moz-border-radius-topleft: 2px;
+-moz-border-radius-topright: 2px;
+border-top-left-radius: 2px;
+border-top-right-radius: 2px;
 }
 
 vspan {
@@ -1561,7 +1573,7 @@ iconcolor2 {
     width: 275px;
     max-width: 275px;
     text-align: left;
-    margin-left: 5px;
+    margin-left: 0;
     margin-top: -12px;
     padding: 2px;
     border: 1px solid rgba(45, 48, 58, .1);
@@ -1604,6 +1616,17 @@ oorange {
         min-width: 320px;
         max-width: 320px;
     }
+
+    .nav {
+        margin: 0 auto;
+        width:600px;        
+        padding: 6px;
+        height: 30px;
+        position:fixed;
+        bottom:0;
+        margin-left:20px;
+        z-index:99999
+    }
 }
 
 
@@ -1644,8 +1667,7 @@ oorange {
 
     .nav {
         margin: 0 auto;
-        width:312px;
-        width:312px;
+        width:308px;        
         -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
         box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
         padding: 6px;
