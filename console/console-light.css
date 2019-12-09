@@ -130,7 +130,7 @@ li2 {
 .date {
     display:block;
     background:none;   
-    color: silver;
+    color: whitesmoke;
     font-size: .65rem;   
     font-family: clock;    
     line-height:1;      
@@ -169,34 +169,34 @@ li2 {
     display:block;
     background:none;   
     color: whitesmoke;
-    font-size: .8rem;   
+    font-size: .75rem;   
     font-family: clock;    
     line-height:1;      
     margin-top:-60px;
     position: absolute;    
-    margin-left:65px;font-family: headingtext;
+    margin-left:60px;font-family: headingtext;
 }
 .date2 {
     display:block;
     background:none;   
     color: whitesmoke;
-    font-size: .8rem;   
+    font-size: .75rem;   
     font-family: clock;    
     line-height:1;      
     margin-top:-45px;
     position: absolute;    
-    margin-left:65px;font-family: headingtext;
+    margin-left:60px;font-family: headingtext;
 }
 .phase2 {
     display:block;
     background:none;   
     color: whitesmoke;
-    font-size: .8rem;   
+    font-size: .75rem;   
     font-family: clock;    
     line-height:1;      
     margin-top:-30px;
     position: absolute;    
-    margin-left:65px;
+    margin-left:60px;
     font-family: headingtext;
 }
 
@@ -261,12 +261,12 @@ li2 {
     line-height:1;      
     margin-top:-55px;
     position: absolute;    
-    margin-left:165px;
+    margin-left:200px;
     font-family: headingtext;
     text-align: left;
 }
 belowthehorizon{font-size:1em;width:80px;display:block}
-orange{color:#d05f2d}
+orange{color:#ff793a}
 .tempcontainer {
     position: relative;
     top: -4px;
@@ -1728,7 +1728,7 @@ blue1 {
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
     box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
     padding: 6px;        
-        position:fixed;
+        position:absolute;
         bottom:0;
         margin-left:35px;
         z-index:99999;

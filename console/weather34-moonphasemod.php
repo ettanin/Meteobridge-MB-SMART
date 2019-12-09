@@ -8,7 +8,7 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');include('console-settings.php');header('Content-type: text/html; charset=utf-8');	?>
+include('livedata.php');include('console-settings.php');include('common.php');header('Content-type: text/html; charset=utf-8');	?>
 <div class="moonblock">
 <div class="weather34moonphasesvg">
 <div id="weather34moonphase"></div>
@@ -21,10 +21,10 @@ function showMoon(){var t=(Date.now()/86400000-Date.UTC(2018,0,17,1,0,0,0)/86400
 
 <div class="date1">
 <weather34moonrisecircle></weather34moonrisecircle >
-Moonrise: <blue><?php  echo $weather['moonrise'];?></div>
+<?php echo $lang['Moonrise']?> <blue><?php  echo $weather['moonrise'];?></div>
 <div class="date2">
 <weather34moonsetcircle ></weather34moonsetcircle >
-Moonset: <orange><?php echo  $weather['moonset'];?></div>
+<?php echo $lang['Moonset']?> <orange><?php echo  $weather['moonset'];?></div>
 
 <div class="phase2"> <weather34phasecircle ></weather34phasecircle>
 
@@ -44,6 +44,6 @@ else if($day===date("l jS F Y",strtotime('2020-10-31'))){echo 'Event: Blue <blue
 else if($day===date("l jS F Y",strtotime('2020-11-30'))){echo 'Event: Lunar <blue>Eclipse</blue>';}	
 else if($day===date("l jS F Y",strtotime('2020-12-14'))){echo 'Event: Total <blue>Eclipse</blue>';}			
 // weather34 moonphase no scraping its calculated from the livedata !
-	else echo "Phase:<blue>" .$weather['moonphase']."</blue>";}?>  
+	else echo $lang['Moonphase']."<blue>" .$weather['moonphase']."</blue>";}?>  
 </div>
 </div></div>
