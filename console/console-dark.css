@@ -67,7 +67,7 @@ li {
     min-width: 320px;
     max-width: 420px;
     padding: 60px 0;
-    height: 200px;
+    height: 190px;
     border: 1px solid rgba(45, 48, 58, .3);
     border-bottom: 2px solid rgba(45, 48, 58, .6);
     border-top: 2px solid rgba(45, 48, 58, .6);
@@ -256,7 +256,6 @@ li2 {
     font-family: headingtext;
     text-align: left;
 }
-
 .thedate {
     display:block;
     background:none;   
@@ -279,7 +278,7 @@ li2 {
     line-height:1;      
     margin-top:-55px;
     position: absolute;    
-    margin-left:200px;
+    margin-left:195px;
     font-family: headingtext;
     text-align: left;
 }
@@ -409,14 +408,14 @@ orange{color:#ff793a}
 
 .temptrendphrase {
     margin-left: 0;
-    font-size: 14px
+    font-size: 13px
 }
 
 .temptrendphrase,
 .temptrendx {
     z-index: auto;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 5px;
     color: #aeb6bf;
     text-align: center;
     font-family: headingtext;
@@ -432,12 +431,12 @@ orange{color:#ff793a}
 trendmovementfallingx,
 trendmovementrisingx {
     font-family: headingtext;
-    font-size: 14px
+    font-size: 13px
 }
 
 trendmovementsteadyx {
     color: #aeb6bf;
-    font-size: 15px;
+    font-size: 13px;
     margin-left: 10px
 }
 
@@ -1056,7 +1055,7 @@ uv0 {
     position: absolute;
     width: 200px;
     height: 200px;
-    margin-top: -100px;
+    margin-top: -90px;
     margin-left: -125px;
     text-align: center
 }
@@ -1673,7 +1672,7 @@ background: #232630;
     line-height:.8;  
     align-items: left;
     justify-content: left;    
-    top: -23px;
+    top: -18px;
     color: whitesmoke;
    
 }
@@ -1696,7 +1695,7 @@ background: #232630;
     line-height:.8;  
     align-items: left;
     justify-content: left;    
-    top: -50px;
+    top: -45px;
     color: whitesmoke;
     
 }
@@ -1719,7 +1718,7 @@ background: #232630;
     line-height:.8;  
     align-items: left;
     justify-content: left;    
-    top: -90px;
+    top: -84px;
     color: whitesmoke;
    
 }
@@ -1785,6 +1784,7 @@ oblue {
 oorange {
     color: #d05f2d
 }
+
 .consoleunits,
     a {
         font-size: 10px;

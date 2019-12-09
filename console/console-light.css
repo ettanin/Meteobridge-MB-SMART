@@ -67,19 +67,19 @@ li {
     min-width: 320px;
     max-width: 420px;
     padding: 0;
-    height: 200px;
-    border: 1px solid #8497a7;
-    border-bottom: 5px solid #8497a7;
-    border-top: 5px solid #8497a7;
+    height: 190px;
+    border: 1px solid #e6e8ef;
+    border-bottom: 5px solid #e6e8ef;
+    border-top: 5px solid #e6e8ef;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
+    box-sizing: border-box;    
     background-color: whitesmoke;
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #555
+    color: #555;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .1), 0 4px 4px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .1), 0 4px 4px rgba(0, 0, 0, .1);
 }
 
 
@@ -101,7 +101,7 @@ li2 {
     
 }
 .clock {
-    background: #3d464d;
+    background: #e6e8ef;
     border-radius:3px;
     padding:0px;
     padding-left:70px;
@@ -130,7 +130,7 @@ li2 {
 .date {
     display:block;
     background:none;   
-    color: whitesmoke;
+    color: #555;
     font-size: .65rem;   
     font-family: clock;    
     line-height:1;      
@@ -140,13 +140,14 @@ li2 {
 }
 
 .moonblock {
-    background: #3d464d;
+    background:#e6e8ef;
     border-radius:3px;
     padding:0px;
     padding-left:10px;
     padding-right:0px;
     padding-top:15px;
-    display: flex;    
+    display: flex;
+    font-family: clock;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     -ms-border-radius:3px;
@@ -157,7 +158,8 @@ li2 {
     position: relative;
     color: #00a4b4;
     font-size: 2rem;
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    font-family: clock;
     height:64px;
     line-height:2;    
     margin-top:5px;
@@ -168,7 +170,7 @@ li2 {
 .date1 {
     display:block;
     background:none;   
-    color: whitesmoke;
+    color: #555;
     font-size: .75rem;   
     font-family: clock;    
     line-height:1;      
@@ -179,18 +181,19 @@ li2 {
 .date2 {
     display:block;
     background:none;   
-    color: whitesmoke;
+    color: #555;
     font-size: .75rem;   
     font-family: clock;    
     line-height:1;      
     margin-top:-45px;
     position: absolute;    
-    margin-left:60px;font-family: headingtext;
+    margin-left:60px;
+    font-family: headingtext;
 }
 .phase2 {
     display:block;
     background:none;   
-    color: whitesmoke;
+    color: #555;
     font-size: .75rem;   
     font-family: clock;    
     line-height:1;      
@@ -201,13 +204,14 @@ li2 {
 }
 
 .sunblock {
-    background: #3d464d;
+    background: #e6e8ef;
     border-radius:3px;
     padding:0px;
     padding-left:0px;
     padding-right:0px;
     padding-top:15px;
-    display: flex;    
+    display: flex;
+    font-family: clock;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     -ms-border-radius:3px;
@@ -218,7 +222,8 @@ li2 {
     position: relative;
     color: #00a4b4;
     font-size: 2rem;
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    font-family: clock;
     height:64px;
     line-height:2;    
     margin-top:5px;
@@ -229,7 +234,7 @@ li2 {
 .sunrise1 {
     display:block;
     background:none;   
-    color: whitesmoke;
+    color: #555;
     font-size: .75rem;   
     font-family: clock;    
     line-height:1;      
@@ -242,7 +247,7 @@ li2 {
 .sunset1 {
     display:block;
     background:none;   
-    color: whitesmoke;
+    color: #555;
     font-size: .75rem;   
     font-family: clock;    
     line-height:1;      
@@ -252,11 +257,10 @@ li2 {
     font-family: headingtext;
     text-align: left;
 }
-
 .thedate {
     display:block;
     background:none;   
-    color: whitesmoke;
+    color: #555;
     font-size: .75rem;   
     font-family: clock;    
     line-height:1;      
@@ -269,17 +273,18 @@ li2 {
 .daylight1 {
     display:block;
     background:none;   
-    color: whitesmoke;
+    color: #555;
     font-size: .75rem;   
     font-family: clock;    
     line-height:1;      
     margin-top:-55px;
     position: absolute;    
-    margin-left:200px;
+    margin-left:195px;
     font-family: headingtext;
     text-align: left;
 }
 belowthehorizon{font-size:1em;width:80px;display:block}
+
 orange{color:#ff793a}
 .tempcontainer {
     position: relative;
@@ -404,19 +409,19 @@ orange{color:#ff793a}
 
 .temptrendphrase {
     margin-left: 0;
-    font-size: 14px
+    font-size: 13px
 }
 
 .temptrendphrase,
 .temptrendx {
     z-index: auto;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 5px;
     color: #555;
     text-align: center;
     font-family: headingtext;
     width: 130px;
-    left: -45px
+    left: -48px
 }
 
 .temptrendx {
@@ -427,12 +432,12 @@ orange{color:#ff793a}
 trendmovementfallingx,
 trendmovementrisingx {
     font-family: headingtext;
-    font-size: 14px
+    font-size: 12px
 }
 
 trendmovementsteadyx {
     color: #555;
-    font-size: 15px;
+    font-size: 13px;
     margin-left: 80px
 }
 
@@ -1051,7 +1056,7 @@ uv0 {
     position: absolute;
     width: 200px;
     height: 200px;
-    margin-top: -100px;
+    margin-top: -90px;
     margin-left: -125px;
     text-align: center
 }
@@ -1667,7 +1672,7 @@ valuebeaufort {
 -moz-border-radius-bottomleft: 2px;
 border-bottom-right-radius: 2px;
 border-bottom-left-radius: 2px;
-background: #8497a7;  
+background:rgba(230, 232, 239, 1);  
     font-family: Headingtext;
     width: auto;
     max-width: 140px;    
@@ -1677,8 +1682,10 @@ background: #8497a7;
     line-height:.8;  
     align-items: left;
     justify-content: left;    
-    top: -23;
-    color: whitesmoke;
+    top: -15px;
+    color: #555;
+    -webkit-box-shadow: inset 0 15px rgba(230, 232, 239, 0.5);
+  box-shadow: inset 0 15px rgba(230, 232, 239, 0.5);
    
 }
 
@@ -1691,7 +1698,7 @@ background: #8497a7;
 -moz-border-radius-bottomleft: 2px;
 border-bottom-right-radius: 2px;
 border-bottom-left-radius: 2px;
-background: #8497a7;  
+background: rgba(230, 232, 239, 1);  
     font-family: Headingtext;
     max-width: 100px;    
     font-size: 11px;
@@ -1700,8 +1707,10 @@ background: #8497a7;
     line-height:.8;  
     align-items: left;
     justify-content: left;    
-    top: -47px;
-    color: whitesmoke;
+    top: -43px;
+    color: #555;
+    -webkit-box-shadow: inset 0 15px rgba(230, 232, 239, 0.5);
+  box-shadow: inset 0 15px rgba(230, 232, 239, 0.5);
     
 }
 
@@ -1714,7 +1723,7 @@ background: #8497a7;
 -moz-border-radius-bottomleft: 2px;
 border-bottom-right-radius: 2px;
 border-bottom-left-radius: 2px;
-background: #8497a7;  
+background:rgba(230, 232, 239, 1);  
     font-family: Headingtext;
     max-width: 140px;    
     font-size: 11px;
@@ -1723,13 +1732,15 @@ background: #8497a7;
     line-height:.8;  
     align-items: left;
     justify-content: left;    
-    top: -87px;
-    color: whitesmoke;
+    top: -81px;
+    color: #555;
+    -webkit-box-shadow: inset 0 15px rgba(230, 232, 239, 0.5);
+  box-shadow: inset 0 15px rgba(230, 232, 239, 0.5);
    
 }
 
 blue1 {
-    color: #eee;
+    color: #00a4b4;
     font-size: .8em
 }
 
