@@ -55,6 +55,6 @@ $darkhours = 23 - $lighthours; $darkminutes = 60 - $lightmins;if ($darkminutes<1
 </div>
 <div class="daylight1"><?php 
 if ($elev >0) echo $sunlight;
-else echo  "<belowthehorizon>Sun is now below the horizon</belowthehorizon>";?>
+else echo  $sundown ?>
 </div>
 
