@@ -1720,7 +1720,7 @@ blue1 {
     background: #3d464d;
     padding: 6px;
     height: 20px;
-    position:absolute;
+    position:relative;
     bottom:0;
     margin-left:35px;
     z-index:99999;
@@ -1730,6 +1730,7 @@ blue1 {
 -moz-border-radius-topright: 2px;
 border-top-left-radius: 2px;
 border-top-right-radius: 2px;
+margin-top:10px
 }
 
 vspan {
