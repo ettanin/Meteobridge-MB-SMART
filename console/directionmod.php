@@ -233,10 +233,10 @@ if ($weather["wind_direction"]<=11.25) {
 
 
 
-<div class="heatcircle5" ><div class="heatcircle-content"><valuetextheading1><?php echo $lang['Avg-Dir']?> <?php echo $lang['Today']?></valuetextheading1>
+<div class="heatcircle5" ><div class="heatcircle-content"><valuetextheading1><?php echo $lang['Avg']?> 10 Min</valuetextheading1>
 <?php 
 echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>" .number_format($weather['wind_direction_avg'],0)."&deg; &nbsp;";
-if( $weather["wind_direction_avg"]<=11.25){echo $lang['North'];}
+if( $weather['wind_direction_avg']<=11.25){echo $lang['North'];}
 else if( $weather["wind_direction_avg"]<=33.75){echo $lang['NNE'];}
 else if( $weather["wind_direction_avg"]<=56.25){echo $lang['NE'];}
 else if( $weather["wind_direction_avg"]<=78.75){echo $lang['ENE'];}
