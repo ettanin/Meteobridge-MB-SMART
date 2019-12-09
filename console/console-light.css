@@ -252,6 +252,20 @@ li2 {
     font-family: headingtext;
     text-align: left;
 }
+
+.thedate {
+    display:block;
+    background:none;   
+    color: whitesmoke;
+    font-size: .75rem;   
+    font-family: clock;    
+    line-height:1;      
+    margin-top:-25px;
+    position: absolute;    
+    margin-left:50px;
+    font-family: headingtext;
+    text-align: left;
+}
 .daylight1 {
     display:block;
     background:none;   
