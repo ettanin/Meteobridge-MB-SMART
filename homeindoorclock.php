@@ -256,19 +256,20 @@ smallhumunit{font-size:1rem;font-family:weathertext2,Arial,Helvetica,system;vert
 .trendicon{top:50px;left:22px;position:absolute;}
 .airqicon{top:50px;left:22px;position:absolute;
 color:<?php 
-if($aqi>300)echo "#99020d";
-else if($aqi>200)echo "#a968b3";
-else if($aqi>150)echo "#d35d4e";
-else if($aqi>100)echo "#d05f2d";
-else if ($aqi>=50) echo "#e6a141";
-else if ($aqi>=0) echo "#90b12a";
-?>;}
+if($aqi>300){echo "#99020d";}
+else if($aqi>200){echo "#a968b3";}
+else if($aqi>150){echo "#d35d4e";}
+else if($aqi>100){echo "#d05f2d";}
+else if ($aqi>=50){echo "#e6a141";}
+else if ($aqi>=0){echo "#90b12a";}
+?>''}
 .humicon{top:50px;left:22px;position:absolute;z-index:999;
 color:<?php 
 if($weather["humidity_indoor"]<35)echo "#d35d4e";
 else if($weather["humidity_indoor"]<60)echo "#e6a141";
 else if($weather["humidity_indoor"]<70)echo "#ec5519";
-else if($weather["humidity_indoor"]<=100)echo "#44a6b5";?>;}
+else if($weather["humidity_indoor"]<=100)echo "#44a6b5";
+?>''}
 
 .orangeclock{color:silver;text-align:center;margin-left:75px;margin-top:43px;font-size:2.35rem;font-family:clock;padding:5px;font-weight:200}
 time{color:rgba(132, 151, 167, 1.000);font-size:8rem;font-weight:100}
@@ -408,7 +409,7 @@ else if($weather["humidity_indoortrend"]==0)echo "<div class='weather34indoortre
   <div class="grid4" >
   <footer> 
  <script>
- var clockID;var yourTimeZoneFrom=<?php echo $UTC?>;var d=new Date();var weekdays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];var months=["January","February","March","April","May","June","July","August","September","October","November","December"];var tzDifference=yourTimeZoneFrom*60+d.getTimezoneOffset();var offset=tzDifference*60*1000;function UpdateClock(){var e=new Date(new Date().getTime()+offset);var c=e.getHours();var a=e.getMinutes();var g=e.getSeconds();var f=e.getFullYear();var h=months[e.getMonth()];var b=e.getDate();var i=weekdays[e.getDay()];if(a<10){a="0"+a}if(g<10){g="0"+g}if(c<10){c="0"+c}document.getElementById("theTime").innerHTML="<div class='orangeclock'> "+i+" "+h+" "+b+" "+f+" <time> "+c+":"+a+":"+g}function StartClock(){clockID=setInterval(UpdateClock,500)}function KillClock(){clearTimeout(clockID)}window.onload=function(){StartClock()}(jQuery);</script>  
+ var clockID;var yourTimeZoneFrom='<?php echo $UTC?>';var d=new Date();var weekdays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];var months=["January","February","March","April","May","June","July","August","September","October","November","December"];var tzDifference=yourTimeZoneFrom*60+d.getTimezoneOffset();var offset=tzDifference*60*1000;function UpdateClock(){var e=new Date(new Date().getTime()+offset);var c=e.getHours();var a=e.getMinutes();var g=e.getSeconds();var f=e.getFullYear();var h=months[e.getMonth()];var b=e.getDate();var i=weekdays[e.getDay()];if(a<10){a="0"+a}if(g<10){g="0"+g}if(c<10){c="0"+c}document.getElementById("theTime").innerHTML="<div class='orangeclock'> "+i+" "+h+" "+b+" "+f+" <time> "+c+":"+a+":"+g}function StartClock(){clockID=setInterval(UpdateClock,500)}function KillClock(){clearTimeout(clockID)}window.onload=function(){StartClock()}(jQuery);</script>  
   weather<blue>34</blue> Indoor iPad Dashboard &copy;2015-<?php echo date('Y');?> 
   <?php };?>
   </footer></div></main>

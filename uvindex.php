@@ -47,7 +47,8 @@ blue{color:rgba(0, 154, 171, 1.000)}
 .temperaturecontainer1{position:absolute;left:20px;margin-top:-5px;margin-bottom:20px;}
 .temperaturecontainer2{position:absolute;left:20px;margin-top:60px}
 smalluvunit{font-size:.9rem;font-family:Arial,Helvetica,system;}
-.uvcontainer1{left:70px;top:0}.uvtoday1,.uvtoday1-3,.uvtoday11,.uvtoday4-5,.uvtoday6-8,.uvtoday9-10{font-family:weathertext2,Arial,Helvetica,system;width:7rem;height:5.5rem;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;display:flex}.uvtoday1,.uvtoday1-3,.uvtoday11,.uvtoday4-5,.uvtoday6-8,.uvtoday9-10{font-size:1.7rem;padding-top:2px;color:#fff;border-bottom:15px solid rgba(56,56,60,1);align-items:center;justify-content:center;border-radius:3px;margin-bottom:10px;}
+.uvcontainer1{left:70px;top:0}.uvtoday1,.uvtoday1-3,.uvtoday11,.uvtoday4-5,.uvtoday6-8,.uvtoday9-10{font-family:weathertext2,Arial,Helvetica,system;width:7rem;height:5.5rem;
+-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;display:flex}.uvtoday1,.uvtoday1-3,.uvtoday11,.uvtoday4-5,.uvtoday6-8,.uvtoday9-10{font-size:1.7rem;padding-top:2px;color:#fff;border-bottom:15px solid rgba(56,56,60,1);align-items:center;justify-content:center;border-radius:3px;margin-bottom:10px;}
 .uvtrend{position:absolute;font-size:1rem}
 .uvtoday1,.uvtoday1-3{background:#9aba2f}
 .uvtoday4-5{background:#ff7c39;background:-webkit-linear-gradient(90deg,#90b12a,#ff7c39);background:linear-gradient(90deg,#90b12a,#ff7c39)}
@@ -55,21 +56,24 @@ smalluvunit{font-size:.9rem;font-family:Arial,Helvetica,system;}
 .uvtoday9-10{background:#d05f2d;background:-webkit-linear-gradient(90deg,#d65b4a,#ac2816);background:linear-gradient(90deg,#d65b4a,#ac2816)}
 .uvtoday11{background:#95439f;background:-webkit-linear-gradient(90deg,#95439f,#a475cb);background:linear-gradient(90deg,#95439f,#a475cb)}
 .uvtrend{margin-left:135px;margin-top:48px;z-index:1;color:#fff}
-.simsekcontainer{float:left;font-family:weathertext,system;-o-font-smoothing:antialiasedleft:0;bottom:0;right:0;position:relative;margin:40px 10px 10px 40px;left:-10px;top:13px}.simsek{font-size:1.55rem;padding-top:12px;color:#f8f8f8;background:rgba(230,161,65,1);border-bottom:18px solid rgba(56,56,60,1);align-items:center;justify-content:center;border-radius:3px}
+.simsekcontainer{float:left;font-family:weathertext,system;-o-font-smoothing:antialiased;bottom:0;right:0;position:relative;margin:40px 10px 10px 40px;left:-10px;top:13px}.simsek{font-size:1.55rem;padding-top:12px;color:#f8f8f8;background:rgba(230,161,65,1);border-bottom:18px solid rgba(56,56,60,1);align-items:center;justify-content:center;border-radius:3px}
 smalluvunit{font-size:.65rem;font-family:Arial,Helvetica,system;}
 sup{font-size:1em}supwm2{font-size:0.7em;vertical-align:super}
 .uvcontainer1{left:-30px;top:-10px}
-.uvtoday1,.uvtoday1-3,.uvtoday11,.uvtoday4-5,.uvtoday6-8,.uvtoday9-10{font-family:weathertext2,Arial,Helvetica,system;width:6rem;height:2.5rem;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;display:flex}.uvtoday1,.uvtoday1-3,.uvtoday11,.uvtoday4-5,.uvtoday6-8,.uvtoday9-10{font-size:1.25rem;padding-top:2px;color:#fff;border-bottom:15px solid rgba(56,56,60,1);align-items:center;justify-content:center;border-radius:3px}
+.uvtoday1,.uvtoday1-3,.uvtoday11,.uvtoday4-5,.uvtoday6-8,.uvtoday9-10{font-family:weathertext2,Arial,Helvetica,system;width:6rem;height:2.5rem;
+-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;display:flex}.uvtoday1,.uvtoday1-3,.uvtoday11,.uvtoday4-5,.uvtoday6-8,.uvtoday9-10{font-size:1.25rem;padding-top:2px;color:#fff;border-bottom:15px solid rgba(56,56,60,1);align-items:center;justify-content:center;border-radius:3px}
 .uvtoday1-3{background:#9aba2f}.uvtoday4-5{background:rgba(230,161,65,1)}.uvtoday6-8{background:rgba(255,124,57,.8)}.uvtoday9-10{background:rgba(211,93,78,.8)}.uvtoday11{background:rgba(204,135,248,.7)}
 .uvcaution{margin-left:0;margin-top:0px;font-family:weathertext2,Arial,Helvetica,system;font-size:1em;}
 .uvtrend{margin-left:135px;margin-top:48px;z-index:1;color:#fff}
-.solartoday1,.solartoday200,.solartoday500,.solartoday1000{font-family:weathertext2,Arial,Helvetica,system;width:6rem;height:2.5rem;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;display:flex}.solartoday1,.solartoday200,.solartoday500,.solartoday1000{font-size:1.25rem;padding-top:2px;color:#fff;border-bottom:15px solid rgba(56,56,60,1);align-items:center;justify-content:center;border-radius:3px}
+.solartoday1,.solartoday200,.solartoday500,.solartoday1000{font-family:weathertext2,Arial,Helvetica,system;width:6rem;height:2.5rem;
+-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;display:flex}.solartoday1,.solartoday200,.solartoday500,.solartoday1000{font-size:1.25rem;padding-top:2px;color:#fff;border-bottom:15px solid rgba(56,56,60,1);align-items:center;justify-content:center;border-radius:3px}
 .solartoday1{background:rgba(74, 99, 111, 1.000)}.solartoday200{background:rgba(230,161,65,1)}.solartoday500{background:rgba(255,124,57,.8)}.solartoday1000{background:rgba(211,93,78,.8)}
-.luxtoday1,.luxtoday200,.luxtoday500,.luxtoday1000{font-family:weathertext2,Arial,Helvetica,system;width:6rem;height:2.5rem;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;display:flex}.luxtoday1,.luxtoday200,.luxtoday500,.luxtoday1000{font-size:1.25rem;padding-top:2px;color:#fff;border-bottom:15px solid rgba(56,56,60,1);align-items:center;justify-content:center;border-radius:3px}
+.luxtoday1,.luxtoday200,.luxtoday500,.luxtoday1000{font-family:weathertext2,Arial,Helvetica,system;width:6rem;height:2.5rem;
+-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;display:flex}.luxtoday1,.luxtoday200,.luxtoday500,.luxtoday1000{font-size:1.25rem;padding-top:2px;color:#fff;border-bottom:15px solid rgba(56,56,60,1);align-items:center;justify-content:center;border-radius:3px}
 .luxtoday1{background:rgba(74, 99, 111, 1.000)}.luxtoday200{background:rgba(230, 161, 65, 1.000)}.luxtoday500{background:rgba(255,124,57,.8)}.luxtoday1000{background:rgba(211,93,78,.8)}
 .solarcontainer1{left:10px;top:0}
-.advisory{font-family:Arial,Helvetica,system;position:absolute;font-size:1rem;line-height:10px;display:inline;width:150px;margin-top:40px;left:120px;} 
-.advisoryguide{font-family:Arial,Helvetica,system;position:absolute;font-size:1rem;line-height:10px;display:inline;width:300px;margin-top:5px;left:3px;text-align:left;} 
+.advisory{font-family:Arial,Helvetica,system;position:absolute;font-size:1rem;line-height:10px;width:150px;margin-top:40px;left:120px;} 
+.advisoryguide{font-family:Arial,Helvetica,system;position:absolute;font-size:1rem;line-height:10px;width:300px;margin-top:5px;left:3px;text-align:left;} 
 .w34convertrain{position:relative;font-size:.5em;top:10px;color:#c0c0c0;margin-left:5px}
 .hitempy{position:relative;background:rgba(61, 64, 66, 0.5);color:#fff;width:90px;padding:1px;-webit-border-radius:2px;border-radius:2px;
 margin-top:-20px;margin-left:92px;padding-left:3px;line-height:11px;font-size:9px}

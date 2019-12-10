@@ -179,7 +179,7 @@ smallmagunit{font-size:.55rem;font-family:Arial,Helvetica,system;font-weight:500
 .magcontainer1{left:70px;top:0}
 .mag1,.mag1-3,.mag11,.mag4-5,.mag6-8,.mag9-10{
 font-family:weathertext2,Arial,Helvetica,system;width:4.5rem;height:2rem;
--webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;
+-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;border-radius:2px;
 font-size:1.2rem;padding-top:12px;color:#fff;border-bottom:11px solid rgba(56,56,60,1);
 align-items:center;justify-content:center;text-align:center;}
 

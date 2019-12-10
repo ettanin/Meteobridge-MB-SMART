@@ -205,19 +205,20 @@ smallhumunit{font-size:.85rem;font-family:weathertext2,Arial,Helvetica,system;ve
 
         
 .trendicon{margin:0 auto;display:flex;margin-top:37px;align-items:center;justify-content:center;font-size:1.85em;font-family:weathertext2;position:absolute;}
-.airqicon{margin:0 auto;display:flex;margin-top:37px;align-items:center;justify-content:center;font-size:1.85em;font-family:weathertext2;position:absolute;color:<?php 
+.airqicon{margin:0 auto;display:flex;margin-top:37px;align-items:center;justify-content:center;font-size:1.85em;font-family:weathertext2;position:absolute;
+color:<?php 
 if($aqiweather["aqi"]>300)echo "#99020d";
 else if($aqiweather["aqi"]>200)echo "#a968b3";
 else if($aqiweather["aqi"]>150)echo "#d35d4e";
 else if($aqiweather["aqi"]>100)echo "#d05f2d";
 else if ($aqiweather["aqi"]>=50) echo "#e6a141";
 else if ($aqiweather["aqi"]>=0) echo "#90b12a";
-?>;}
+?>'';}
 .humicon{margin:0 auto;display:flex;margin-top:37px;align-items:center;justify-content:center;font-size:1.85em;font-family:weathertext2;position:absolute;color:
 <?php if($weather["humidity_indoor"]<35)echo "#d35d4e";
 else if($weather["humidity_indoor"]<60)echo "#e6a141";
 else if($weather["humidity_indoor"]<80)echo "#ec5519";
-else if($weather["humidity_indoor"]<=100)echo "#44a6b5";?>;}
+else if($weather["humidity_indoor"]<=100)echo "#44a6b5";?>'';}
 
 .tempicon{margin:0 auto;display:flex;margin-top:37px;align-items:center;justify-content:center;font-size:1.85em;font-family:weathertext2;position:absolute;color:
 <?php  
@@ -229,7 +230,7 @@ else if ($weather["temp_indoor"]>=26) echo "#d35d4e";
 else if ($weather["temp_indoor"]>18) echo "#ff832f";
 elseif ($weather["temp_indoor"]>15) echo "#e6a141";
 else if ($weather["temp_indoor"]>=0) echo "#44a6b5";
-?>;}
+?>'';}
 
 .mbsmartlogo{position:relative;float:right;top:-20px;}
 

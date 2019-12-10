@@ -84,7 +84,7 @@ var refreshId;$(document).ready(function(){currentfore()});function currentfore(
 <script>
 //weather34  simple javascript clock
 var clockID;
-var yourTimeZoneFrom=<?php echo $UTC?>;
+var yourTimeZoneFrom='<?php echo $UTC?>';
 var d=new Date();
 
 //weather34  translate days

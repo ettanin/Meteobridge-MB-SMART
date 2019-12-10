@@ -47,10 +47,10 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
 .hardwareimagewf{position:relative;display:flex;margin:0 auto;margin-top:10px;opacity:.8}
 
 
-.hardwareimagembpro{position:relative;display:flex;margin:0 auto;margin-top:5px;margin-left:40px;width:120px;display:inline}
-.hardwareimagenano{position:relative;display:flex;margin:0 auto;margin-top:5px;margin-left:40px;width:60px;display:inline}
-.meteocloudimg2{position:relative;display:flex;margin:0 auto;top:0px;width:220px;display:inline;}
-.to-meteocloudimg{position:relative;display:flex;margin:0 auto;top:-10px;width:200px;margin-left:20px;display:inline;}
+.hardwareimagembpro{position:relative;display:flex;margin:0 auto;margin-left:40px;width:120px;}
+.hardwareimagenano{position:relative;display:flex;margin:0 auto;margin-left:40px;width:60px;}
+.meteocloudimg2{position:relative;display:flex;margin:0 auto;top:0px;width:220px;}
+.to-meteocloudimg{position:relative;display:flex;margin:0 auto;top:-10px;width:200px;margin-left:20px;}
 .frame{padding:5px;border-radius:2px;margin-top:10px;border: 1px solid rgba(245, 247, 252,.02);
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.6);}
   .frame1{padding:5px;border-radius:2px;margin-top:5px;border: 1px solid rgba(245, 247, 252,.02);
