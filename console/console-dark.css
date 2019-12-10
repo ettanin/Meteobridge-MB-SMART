@@ -1677,6 +1677,31 @@ background: #232630;
    
 }
 
+.modulecaptionchart {
+    position: relative;
+    left: 145px;
+    -webkit-border-bottom-right-radius: 2px;
+-webkit-border-bottom-left-radius: 2px;
+-moz-border-radius-bottomright: 2px;
+-moz-border-radius-bottomleft: 2px;
+border-bottom-right-radius: 2px;
+border-bottom-left-radius: 2px;
+background: #232630;   
+    font-family: Headingtext;
+    width: auto;
+    max-width: 140px;    
+    font-size: 11px;
+    padding: 4px;
+    padding-bottom:5px;
+    line-height:.8;  
+    align-items: left;
+    justify-content: left;    
+    top: 40px;
+    color: whitesmoke;
+   
+}
+
+
 .modulecaptionpressure {
     position: relative;
     left: 95px;

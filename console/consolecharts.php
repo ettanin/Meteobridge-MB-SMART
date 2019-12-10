@@ -1,6 +1,6 @@
 <?php 
 include_once('livedata.php');
-include_once('updater2.php');
+include_once('updater3.php');
 ?>
 <!DOCTYPE html><html><head>
 <title><?php echo $stationName;?> </title>
@@ -42,46 +42,34 @@ include_once('updater2.php');
     <li><div id=temperature></div></li>
     <li><div id=humidity></div></li>
     <li><div id=dewpoint></div></li>
+
     <li><div id=wind></div></li>
     <li><div id=direction></div></li>
     <li><div id=gust></div></li>
+
     <li><div id=rain></div></li>
     <li><div id=barometer></div></li>
     <li><div id=uvindex></div></li>
+
     <li2><div id=moon></div></li2> 
     <li2><div id=sun></div></li2> 
     <li2><div id=time-date></div></li2>  
   </ul>
 
  
+    
     <div class="nav">
-    <a href="console-setup.php" target="_blank" class="consolesetup"><?php echo $settingsicon?></a>
+    <a href="consoledavis.php" target="_blank" class="consolesetup"><?php echo $backhome?></a>
 
     <a  class="consoleunits" href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>>
     <?php if($theme=='dark'){echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Light</vspan>';} else{echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Dark</vspan>';}?> </a>
-
-<?php
-  if ($units!='us') {
-      echo '<a  class="consoleunits" href="?units=us"><iconcolor2>'.$toggle.' </iconcolor2><vspan>&deg;F </vspan></a>';
-  }
-  if ($units!='metric') {
-    echo '<a  class="consoleunits" href="?units=metric"><iconcolor2>'.$toggle.' </iconcolor2><vspan>&deg;C</vspan></a>';
-  }
-  if ($units!='uk') {
-    echo '<a class="consoleunits"  href="?units=uk"><iconcolor2>'.$toggle.' </iconcolor2><vspan>UK</vspan></a>';
-  }
-  if ($units!='scandinavia') {
-    echo '<a class="consoleunits"  href="?units=scandinavia"><iconcolor2>'.$toggle.' </iconcolor2><vspan>M/S</vspan></a>';
-  }
-  
-?>
-
-<a  class="consoleunits" href="consolecharts.php"> <iconcolor> <?php echo $tothecharts?> </iconcolor><vspan>Charts</vspan></a>
 
 
     <a href="console-setup.php" target="_blank" class="designedby">  &copy;<?php echo "2015-".date('Y')?> Weather34 Designed </a>  
     </div>
 
     
+  
+ </body></html>
   
  </body></html>
