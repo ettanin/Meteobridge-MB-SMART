@@ -77,20 +77,25 @@ if ($positionlastmodule == 'webcamsmall.php') {
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#humidity1").show()}});var c=a("#humidity1");c.load("todayhumiditymodule.php");var b=setInterval(function(){c.load("todayhumiditymodule.php")},1360000)})})(jQuery);
 
-
-
-
-//current day-night forecast
+//weather34 current day-night forecast
 var refreshId;$(document).ready(function(){currentfore()});function currentfore(){$.ajax({cache:false,success:function(a){$("#currentfore").html(a);setTimeout(currentfore,360000)},type:"GET",url:"forecast3wularge.php"})};
 
 </script>
 <script>
-//simple javascript clock
+//weather34  simple javascript clock
 var clockID;
 var yourTimeZoneFrom=<?php echo $UTC?>;
 var d=new Date();
-var weekdays=["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
-var months=["Jan","Feb","March","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+
+//weather34  translate days
+var weekdays=["<?php echo $lang['Sunday']?>","<?php echo $lang['Monday']?>","<?php echo $lang['Tuesday']?>","<?php echo $lang['Wednesday']?>",
+"<?php echo $lang['Thursday']?>","<?php echo $lang['Friday']?>","<?php echo $lang['Saturday']?>"];
+
+//weather34  translate months
+var months=["<?php echo $lang['January']?>","<?php echo $lang['Febuary']?>","<?php echo $lang['March']?>","<?php echo $lang['April']?>","<?php echo $lang['May']?>",
+"<?php echo $lang['June']?>","<?php echo $lang['July']?>","<?php echo $lang['August']?>","<?php echo $lang['September']?>",
+"<?php echo $lang['October']?>","<?php echo $lang['November']?>","<?php echo $lang['December']?>"];
+
 var tzDifference=yourTimeZoneFrom*60+d.getTimezoneOffset();
 var offset=tzDifference*60*1000;
 function UpdateClock(){

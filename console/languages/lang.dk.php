@@ -47,18 +47,18 @@ $lang['Friday']                  = 'Fredag ';
 $lang['Saturday']                = 'Lørdag';
 $lang['Sunday']                  = 'Søndag';
 //months
-$lang['January']                 = 'Januar';
-$lang['Febuary']                 = 'Febuar';
+$lang['January']                 = 'Jan';
+$lang['Febuary']                 = 'Feb';
 $lang['March']                   = 'Marts';
-$lang['April']                   = 'April';
+$lang['April']                   = 'Apr';
 $lang['May']                     = 'Maj';
 $lang['June']                    = 'Juni';
 $lang['July']                    = 'Juli';
-$lang['August']                  = 'August';
-$lang['September']               = 'September';
-$lang['October']                 = 'Oktober';
-$lang['November']                = 'November';
-$lang['December']                = 'December';
+$lang['August']                  = 'Aug';
+$lang['September']               = 'Sep';
+$lang['October']                 = 'Okt';
+$lang['November']                = 'Nov';
+$lang['December']                = 'Dec';
 //temperature
 $lang['Temperature']             = 'Temperatur';
 $lang['Feelslike']               = 'Føles';

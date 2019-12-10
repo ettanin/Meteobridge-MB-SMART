@@ -27,9 +27,9 @@ if ($hemisphere==180){echo '<style>.weather34moonphasesvg{position:relative;-web
 function showMoon(){var t=(Date.now()/86400000-Date.UTC(2018, 0, 17, 1, 0, 0, 0)/86400000)%29.530588853,e=String;document.getElementById("weather34moonphase");var a,n=Math.min(3-t/30*4,1),o=Math.abs(20*n),h=n<0?"0":"1",m=Math.min(3+(t-30)/30*4,1),M=Math.abs(20*m),r=m<0?"0":"1";a="M 20,0 a "+e(o)+",20 0 0 "+h+" 0,40 a "+e(M)+",20 0 0 "+r+" 0,-40",document.getElementById("weather34themoon").setAttribute("d",a)}showMoon();</script>
 </div>
 <div class="moonrise2">
-<?php echo $lang['Moonrise']?>:<blue><?php  echo $weather['moonrise'];?></blue></div>
+<?php echo $lang['Moonrise']?>: <blue><?php  echo $weather['moonrise'];?></blue></div>
 <div class="moonset2">
-<?php echo $lang['Moonset']?>:<orange><?php echo  $weather['moonset'];?></orange></div>
+<?php echo $lang['Moonset']?> : <orange><?php echo  $weather['moonset'];?></orange></div>
 <div class="phase2">
 <?php //2019-2020 lunar events 
 echo " ";{$day = date('l jS F Y');
@@ -45,5 +45,5 @@ else if($day===date("l jS F Y",strtotime('2020-10-31'))){echo 'Event: Blue <blue
 else if($day===date("l jS F Y",strtotime('2020-11-30'))){echo 'Event: Lunar <blue>Eclipse</blue>';}	
 else if($day===date("l jS F Y",strtotime('2020-12-14'))){echo 'Event: Total <blue>Eclipse</blue>';}			
 // weather34 moonphase no scraping its calculated from the livedata !
-	else echo "Phase: <blue>" .$weather['moonphase']."</blue>";}?>  </div>
+	else echo $lang['Moonphase']." <blue>" .$weather['moonphase']."</blue>";}?>  </div>
 </div>
