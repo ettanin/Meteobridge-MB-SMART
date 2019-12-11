@@ -59,7 +59,7 @@ include_once('updater3.php');
  
     
     <div class="nav">
-    <a href="consoledavis.php" target="_blank" class="consolesetup"><?php echo $backhome?></a>
+    <a href="consoledavis.php" class="consolesetup"><?php echo $backhome?></a>
 
     <a  class="consoleunits" href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>>
     <?php if($theme=='dark'){echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Light</vspan>';} else{echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Dark</vspan>';}?> </a>

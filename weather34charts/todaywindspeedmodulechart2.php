@@ -54,7 +54,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[2] >-50)
-					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[6]*<?php echo $conv ;?>)});
+					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[6]<?php echo "*". $conv ?>)});
 			}
 		}
 		requestTempCsv();}function requestTempCsv(){}
@@ -66,7 +66,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[7] >-50)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[7]*<?php echo $conv ;?>)});
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[7]<?php echo "*". $conv ?>)});
 				
 			}
 			drawChart(dataPoints1 , dataPoints2 );
@@ -98,32 +98,23 @@
 			   shared: true, 
  },
 		axisX: {
-			title: "",
-		titleFontColor: "#555",
-		titleFontSize: 8,
-        titleWrap: false,
-		margin: 0,
-		lineThickness: 1,				
-        includeZero: true,
-		gridColor: "#333",
-		gridThickness: 1,	
-		gridDashType: "dot",
-		labelFontSize: 7,
-		labelFontColor:' #888',
-		titleFontFamily: "arial",
-		labelFontFamily: "arial",
-			interval: 12,
+			gridColor: "#333",		    		
+			lineThickness: 1,
+			gridThickness: 1,
+			gridDashType: "dot",	
+			labelFontColor:' #888',
+			labelFontFamily: "Arial",
+			labelFontWeight: "bold",
+			labelFontSize:7.5,
+			interval: 18,
    			intervalType: "hour",
 			minimum:0,
 			crosshair: {
 			enabled: true,
-			snapToDataPoint: true,
-			color: "#fff",
-			labelFontColor: "#fff",
-			labelFontSize:9,
+			snapToDataPoint: true,				
+			labelFontSize:7,
 			labelBackgroundColor: "#44a6b5",
 			labelMaxWidth: 60,
-			
 		}
 			
 			},
