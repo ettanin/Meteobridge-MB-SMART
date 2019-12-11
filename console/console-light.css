@@ -1863,8 +1863,7 @@ oorange {
         margin: 0 auto;
         width:600px;        
         padding: 6px;
-        height: 30px;
-        position:fixed;
+        height: 20px;       
         bottom:0;
         margin-left:20px;
         z-index:99999
@@ -1928,8 +1927,7 @@ oorange {
         -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
         box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
         padding: 6px;
-        height: 30px;
-        position:fixed;
+        height: 20px;       
         bottom:0;
         z-index:99999
     }

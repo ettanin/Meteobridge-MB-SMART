@@ -1841,8 +1841,7 @@ oorange {
         width:600px;
         background: #3d464d;
         padding: 6px;
-        height: 30px;
-        position:fixed;
+        height: 20px;        
         bottom:0;
         margin-left:20px;
         z-index:99999
@@ -1895,8 +1894,7 @@ oorange {
         width:309px;
         background: #3d464d;
         padding: 6px;
-        height: 30px;
-        position:fixed;
+        height: 20px;       
         bottom:0;
         z-index:99999
 
