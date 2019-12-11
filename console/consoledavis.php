@@ -70,7 +70,7 @@ include_once('updater2.php');
   if ($units!='uk') {
     echo '<a class="consoleunits"  href="?units=uk"><iconcolor2>'.$toggle.' </iconcolor2><vspan>UK</vspan></a>';
   }
-  if ($units!='scandinavia') {
+  else if ($units!='scandinavia') {
     echo '<a class="consoleunits"  href="?units=scandinavia"><iconcolor2>'.$toggle.' </iconcolor2><vspan>M/S</vspan></a>';
   }
   
