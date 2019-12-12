@@ -58,25 +58,25 @@ include_once('updater2.php');
     <a href="console-setup.php" target="_blank" class="consolesetup"><?php echo $settingsicon?></a>
 
     <a  class="consoleunits" href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>>
-    <?php if($theme=='dark'){echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Light</vspan>';} else{echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Dark</vspan>';}?> </a>
+    <?php if($theme=='dark'){echo '<iconcolor>'.$toggle.' </iconcolor><vspan2>Light</vspan2>';} else{echo '<iconcolor>'.$toggle.' </iconcolor><vspan2>Dark</vspan2>';}?> </a>
 
 <?php
   if ($units!='us') {
-      echo '<a  class="consoleunits" href="?units=us"><iconcolor2>'.$toggle.' </iconcolor2><vspan>&deg;F </vspan></a>';
+      echo '<a  class="consoleunits" href="?units=us"><iconcolor2>'.$toggle.' </iconcolor2><vspan2>&deg;F </vspan2></a>';
   }
   if ($units!='metric') {
-    echo '<a  class="consoleunits" href="?units=metric"><iconcolor2>'.$toggle.' </iconcolor2><vspan>&deg;C</vspan></a>';
+    echo '<a  class="consoleunits" href="?units=metric"><iconcolor2>'.$toggle.' </iconcolor2><vspan2>&deg;C</vspan2></a>';
   }
   if ($units!='uk') {
-    echo '<a class="consoleunits"  href="?units=uk"><iconcolor2>'.$toggle.' </iconcolor2><vspan>UK</vspan></a>';
+    echo '<a class="consoleunits"  href="?units=uk"><iconcolor2>'.$toggle.' </iconcolor2><vspan2>UK</vspan2></a>';
   }
   else if ($units!='scandinavia') {
-    echo '<a class="consoleunits"  href="?units=scandinavia"><iconcolor2>'.$toggle.' </iconcolor2><vspan>M/S</vspan></a>';
+    echo '<a class="consoleunits"  href="?units=scandinavia"><iconcolor2>'.$toggle.' </iconcolor2><vspan2>M/S</vspan2></a>';
   }
   
 ?>
 
-<a  class="consoleunits" href="consolecharts.php"> <iconcolor> <?php echo $tothecharts?> </iconcolor><vspan>Charts</vspan></a>
+<a  class="consoleunits" href="consolecharts.php"><iconcolor><?php echo $tothecharts?></iconcolor><vspan3>Charts</vspan3></a>
 
 
     <a href="console-setup.php" target="_blank" class="designedby">  &copy;<?php echo "2015-".date('Y')?> Weather34 Designed </a>  

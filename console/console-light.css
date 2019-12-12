@@ -1798,6 +1798,19 @@ vspan {
     padding-top: 3px;
     margin-left: 30px
 }
+vspan2 {
+    position: relative;
+    vertical-align: top;
+    top: 7px;
+    margin-left: 27px
+}
+
+vspan3 {
+    position: relative;
+    vertical-align: top;
+    top: 7px;
+    margin-left: 20px
+}
 
 iconcolor {
     position: absolute;
@@ -1932,7 +1945,7 @@ oorange {
         z-index:99999
     }
 
-    vspan {
+    vspan,vspan2,vspan3 {
           
         font-size:9px
     

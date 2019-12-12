@@ -1777,6 +1777,18 @@ vspan {
     margin-left: 30px;
     color: #fff
 }
+vspan2 {
+    position: relative;
+    vertical-align: top;
+    top: 7px;
+    margin-left: 27px
+}
+vspan3 {
+    position: relative;
+    vertical-align: top;
+    top: 7px;
+    margin-left: 20px
+}
 
 iconcolor {
     position: absolute;
@@ -1909,7 +1921,7 @@ oorange {
         color: #fff
     }
 
-    vspan {        
+    vspan,vspan2 ,vspan3{        
        font-size:9px
     
 }
