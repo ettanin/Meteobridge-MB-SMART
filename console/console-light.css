@@ -273,13 +273,13 @@ li2 {
 .daylight1 {
     display:block;
     background:none;   
-    color: #555;
+    color: whitesmoke;
     font-size: .75rem;   
     font-family: clock;    
     line-height:1;      
-    margin-top:-55px;
+    margin-top:-75px;
     position: absolute;    
-    margin-left:195px;
+    margin-left:210px;
     font-family: headingtext;
     text-align: left;
 }
