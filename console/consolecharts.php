@@ -55,21 +55,10 @@ include_once('updater3.php');
     <li2><div id=sun></div></li2> 
     <li2><div id=time-date></div></li2>  
   </ul>
-
- 
-    
     <div class="nav">
     <a href="consoledavis.php" class="consolesetup"><?php echo $backhome?></a>
-
     <a  class="consoleunits" href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>>
-    <?php if($theme=='dark'){echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Light</vspan>';} else{echo '<iconcolor>'.$toggle.' </iconcolor><vspan>Dark</vspan>';}?> </a>
-
-
+    <?php if($theme=='dark'){echo '<iconcolor>'.$toggle.' </iconcolor><vspan2>Light</vspan2>';} else{echo '<iconcolor>'.$toggle.' </iconcolor><vspan2>Dark</vspan2>';}?> </a>
     <a href="console-setup.php" target="_blank" class="designedby">  &copy;<?php echo "2015-".date('Y')?> Weather34 Designed </a>  
-    </div>
-
-    
-  
- </body></html>
-  
+    </div>  
  </body></html>
