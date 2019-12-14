@@ -126,7 +126,7 @@
 			
 		axisY:{
 		margin: 0,
-		interval: <?php echo $int ;?> ,					
+		interval: <?php echo $int?> ,					
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
@@ -189,7 +189,7 @@
 });</script>
 <body>
 </script>
-<div id="chartContainer2" style=" height:150px;margin-top:25px;-webkit-border-radius:4px;border-radius:4px;"></div></div>
+<div id="chartContainer2" style=" height:150px;margin-top:20px;-webkit-border-radius:4px;border-radius:4px;"></div></div>
 
 
 </body></html>

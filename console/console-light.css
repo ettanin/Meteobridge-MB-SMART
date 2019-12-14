@@ -21,8 +21,8 @@
 body {
     font-family: headingtext;
     margin: 0 auto;
-    color: #555;
-    background: whitesmoke;
+    color: #545454;
+    background: #f5f5f5;
     width: 100%;
     max-width: 985px;
     text-rendering: optimizeLegibility;
@@ -72,14 +72,14 @@ li {
     border-bottom: 5px solid #e6e8ef;
     border-top: 5px solid #e6e8ef;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;    
-    background-color: whitesmoke;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #555;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .1), 0 4px 4px rgba(0, 0, 0, .1);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .1), 0 4px 4px rgba(0, 0, 0, .1);
+    color: #545454;
+    -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.1), 0 2px 2px hsla(0, 0%, 0%, 0.1), 0 4px 4px hsla(0, 0%, 0%, 0.1);
+    box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.1), 0 2px 2px hsla(0, 0%, 0%, 0.1), 0 4px 4px hsla(0, 0%, 0%, 0.1);
 }
 
 
@@ -91,249 +91,211 @@ li2 {
     max-width: 420px;
     padding: 5px;
     height: 75px;
-    border:0;    
+    border: 0;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #aeb6bf
-    
+    color: #afb7c0
 }
+
 .clock {
     background: #e6e8ef;
-    border-radius:3px;
-    padding:0px;
-    padding-left:70px;
-    padding-right:0px;
-    padding-top:15px;
+    border-radius: 3px;
+    padding: 0px;
+    padding-left: 70px;
+    padding-right: 0px;
+    padding-top: 15px;
     display: flex;
     font-family: clock;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
-    margin-left:0;
-    text-align: center;  
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin-left: 0;
+    text-align: center;
     width: 180px;
     position: relative;
-    color: #00a4b4;
+    color: #00a4b3;
     font-size: 2rem;
     text-transform: uppercase;
     font-family: clock;
-    height:64px;
-    line-height:1.2;    
-    margin-top:5px;
-    
+    height: 64px;
+    line-height: 1.2;
+    margin-top: 5px;
+
 
 }
+
 .date {
-    display:block;
-    background:none;   
-    color: #555;
-    font-size: .65rem;   
-    font-family: clock;    
-    line-height:1;      
-    margin-top:35px;
-    position: absolute;    
-    margin-left:-5px
+    display: block;
+    background: none;
+    color: #545454;
+    font-size: .65rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: 35px;
+    position: absolute;
+    margin-left: -5px
 }
 
 .moonblock {
-    background:#e6e8ef;
-    border-radius:3px;
-    padding:0px;
-    padding-left:10px;
-    padding-right:0px;
-    padding-top:15px;
+    background: #e6e8ef;
+    border-radius: 3px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 0px;
+    padding-top: 15px;
     display: flex;
     font-family: clock;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
-    margin-left:0;
-    text-align: center;  
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin-left: 0;
+    text-align: center;
     width: 250px;
     position: relative;
-    color: #00a4b4;
+    color: #00a4b3;
     font-size: 2rem;
     text-transform: uppercase;
     font-family: clock;
-    height:64px;
-    line-height:2;    
-    margin-top:5px;
+    height: 64px;
+    line-height: 2;
+    margin-top: 5px;
     font-family: headingtext;
 
 }
 
 .date1 {
-    display:block;
-    background:none;   
-    color: #555;
-    font-size: .75rem;   
-    font-family: clock;    
-    line-height:1;      
-    margin-top:-60px;
-    position: absolute;    
-    margin-left:60px;font-family: headingtext;
-}
-.date2 {
-    display:block;
-    background:none;   
-    color: #555;
-    font-size: .75rem;   
-    font-family: clock;    
-    line-height:1;      
-    margin-top:-45px;
-    position: absolute;    
-    margin-left:60px;
+    display: block;
+    background: none;
+    color: #545454;
+    font-size: .75rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: -60px;
+    position: absolute;
+    margin-left: 60px;
     font-family: headingtext;
 }
+
+.date2 {
+    display: block;
+    background: none;
+    color: #545454;
+    font-size: .75rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: -45px;
+    position: absolute;
+    margin-left: 60px;
+    font-family: headingtext;
+}
+
 .phase2 {
-    display:block;
-    background:none;   
-    color: #555;
-    font-size: .75rem;   
-    font-family: clock;    
-    line-height:1;      
-    margin-top:-30px;
-    position: absolute;    
-    margin-left:60px;
+    display: block;
+    background: none;
+    color: #545454;
+    font-size: .75rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: -30px;
+    position: absolute;
+    margin-left: 60px;
     font-family: headingtext;
 }
 
 .sunblock {
     background: #e6e8ef;
-    border-radius:3px;
-    padding:0px;
-    padding-left:0px;
-    padding-right:0px;
-    padding-top:15px;
+    border-radius: 3px;
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 15px;
     display: flex;
     font-family: clock;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
-    margin-left:0;
-    text-align: left;  
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin-left: 0;
+    text-align: left;
     width: 250px;
     position: relative;
-    color: #00a4b4;
+    color: #00a4b3;
     font-size: 2rem;
     text-transform: uppercase;
     font-family: clock;
-    height:64px;
-    line-height:2;    
-    margin-top:5px;
+    height: 64px;
+    line-height: 2;
+    margin-top: 5px;
     font-family: headingtext;
 
 }
 
 .sunrise1 {
-    display:block;
-    background:none;   
-    color: #555;
-    font-size: .75rem;   
-    font-family: clock;    
-    line-height:1;      
-    margin-top:-65px;
-    position: absolute;    
-    margin-left:15px;
-    font-family: headingtext;
-    text-align: left;
-}
-.sunset1 {
-    display:block;
-    background:none;   
-    color: #555;
-    font-size: .75rem;   
-    font-family: clock;    
-    line-height:1;      
-    margin-top:-35px;
-    position: absolute;    
-    margin-left:15px;
-    font-family: headingtext;
-    text-align: left;
-}
-.thedate {
-    display:block;
-    background:none;   
-    color: #555;
-    font-size: .75rem;   
-    font-family: clock;    
-    line-height:1;      
-    margin-top:-25px;
-    position: absolute;    
-    margin-left:65px;
-    font-family: headingtext;
-    text-align: left;
-}
-.daylight1 {
-    display:block;
-    background:none;   
-    color: whitesmoke;
-    font-size: .75rem;   
-    font-family: clock;    
-    line-height:1;      
-    margin-top:-75px;
-    position: absolute;    
-    margin-left:210px;
-    font-family: headingtext;
-    text-align: left;
-}
-belowthehorizon{font-size:1em;width:80px;display:block}
-.online{
+    display: block;
+    background: none;
+    color: #545454;
+    font-size: .75rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: -65px;
     position: absolute;
-    font-size:.65em;
-    color:#00a4b4;
-    z-index:100000;
-    margin-top:10px;
-    float:right;
-    padding-left:5px;
-    -webkit-animation: fadein 5s infinite;
-    -moz-animation: fadein 5s infinite;
-    -ms-animation: fadein 5s infinite;
-    -o-animation: fadein 5s infinite;
-    animation: fadein 5s infinite;
-    -webkit-animation-direction:alternate;
-    -moz-animation-direction:alternate;
-    -ms-animation-direction:alternate;
-    -o-animation-direction:alternate;
-    animation-direction:alternate;
+    margin-left: 15px;
+    font-family: headingtext;
+    text-align: left;
 }
 
-@keyframes fadein {
- from { opacity: 0; }
- to   { opacity: 1; }
+.sunset1 {
+    display: block;
+    background: none;
+    color: #545454;
+    font-size: .75rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: -35px;
+    position: absolute;
+    margin-left: 15px;
+    font-family: headingtext;
+    text-align: left;
 }
 
-/* Firefox < 16 */
-@-moz-keyframes fadein {
- from { opacity: 0; }
- to   { opacity: 1; }
+.thedate {
+    display: block;
+    background: none;
+    color: #545454;
+    font-size: .75rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: -25px;
+    position: absolute;
+    margin-left: 50px;
+    font-family: headingtext;
+    text-align: left;
 }
 
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
- from { opacity: 0; }
- to   { opacity: 1; }
+.daylight1 {
+    display: block;
+    background: none; 
+    margin-top: -75px;
+    position: absolute;
+    margin-left: 210px;    
+   
 }
 
-/* Internet Explorer */
-@-ms-keyframes fadein {
- from { opacity: 0; }
- to   { opacity: 1; }
+belowthehorizon {
+    font-size: 1em;
+    width: 80px;
+    display: block
 }
 
-/* Opera < 12.1 */
-@-o-keyframes fadein {
- from { opacity: 0; }
- to   { opacity: 1; }
+orange {
+    color: #ff7738
 }
 
-orange{color:#ff793a}
 .tempcontainer {
     position: relative;
     top: -4px;
@@ -387,9 +349,9 @@ orange{color:#ff793a}
     width: 9rem;
     height: 5rem;
     padding-top: 14px;
-    color: #f8f8f8;
-    border: 1px solid #8497a7;
-    border-bottom: 18px solid #8497a7;
+    color: #f7f7f7;
+    border: 1px solid #8598a8;
+    border-bottom: 18px solid #8598a8;
     border-radius: 2px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -406,53 +368,53 @@ orange{color:#ff793a}
 }
 
 .outsideminus10 {
-    color: #3369e7
+    color: #3268e7
 }
 
 .outsideminus5 {
-    color: #4e95a0
+    color: #4f96a1
 }
 
 .outsideminus,
 .outsidezero {
-    color: #4e95a0
+    color: #4f96a1
 }
 
 .outside0-5 {
-    color: #4e95a0
+    color: #4f96a1
 }
 
 .outside6-10 {
-    color: #88b04b
+    color: #87af4b
 }
 
 .outside11-15 {
-    color: #e6a141
+    color: #e6a241
 }
 
 .outside16-20 {
-    color: #ff7c39
+    color: #ff7a38
 }
 
 .outside21-25 {
-    color: #efa80f
+    color: #f0a90f
 }
 
 .outside26-30 {
-    color: #d05f2d
+    color: #d15f2e
 }
 
 .outside31-35 {
-    color: #d86858
+    color: #d86b5a
 }
 
 .outside36-40 {
-    color: #637ff6
+    color: #657ff6
 }
 
 .outside41-45,
 .outside50 {
-    color: #637ff6
+    color: #657ff6
 }
 
 .temptrendphrase {
@@ -465,11 +427,11 @@ orange{color:#ff793a}
     z-index: auto;
     position: absolute;
     margin-top: 5px;
-    color: #555;
+    color: #545454;
     text-align: center;
     font-family: headingtext;
     width: 130px;
-    left: -48px
+    left: -45px
 }
 
 .temptrendx {
@@ -480,17 +442,17 @@ orange{color:#ff793a}
 trendmovementfallingx,
 trendmovementrisingx {
     font-family: headingtext;
-    font-size: 12px
+    font-size: 13px
 }
 
 trendmovementsteadyx {
-    color: #555;
-    font-size: 13px;
+    color: #545454;
+    font-size: 135px;
     margin-left: 80px
 }
 
 .maxdata {
-    color: #555;
+    color: #545454;
     width: 50px;
     padding: 1px;
     left: 0;
@@ -504,7 +466,7 @@ trendmovementsteadyx {
 }
 
 .maxdatawind {
-    color: #555;
+    color: #545454;
     width: 150px;
     padding: 1px;
     left: -5px;
@@ -524,14 +486,14 @@ trendmovementsteadyx {
     font-size: 11px;
     line-height: 2;
     margin-top: 0;
-    color: #555;
+    color: #545454;
     padding: 2px;
     left: 10px
 }
 
 .mindata {
     margin: 5px auto auto;
-    color: #555;
+    color: #545454;
     width: 50px;
     padding: 2px;
     margin-top: 15px;
@@ -559,7 +521,7 @@ trendmovementsteadyx {
     font-size: 11px;
     line-height: 2;
     margin: 5px auto auto;
-    color: #555;
+    color: #545454;
     width: 40px;
     padding: 2px;
     margin-top: 0;
@@ -571,7 +533,7 @@ trendmovementsteadyx {
     width: 160px;
     float: left;
     padding: 0;
-    color: #555;
+    color: #545454;
     text-align: center;
     font: 500 10px weathertext2;
     line-height: 15px
@@ -584,9 +546,9 @@ trendmovementsteadyx {
     width: 9rem;
     height: 5rem;
     padding-top: 14px;
-    color: #f8f8f8;
-    border: 1px solid #8497a7;
-    border-bottom: 18px solid #8497a7;
+    color: #f7f7f7;
+    border: 1px solid #8598a8;
+    border-bottom: 18px solid #8598a8;
     border-radius: 2px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -609,9 +571,9 @@ trendmovementsteadyx {
     width: 9rem;
     height: 5rem;
     padding-top: 14px;
-    color: #4e95a0;
-    border: 1px solid #8497a7;
-    border-bottom: 18px solid #8497a7;
+    color: #4f96a1;
+    border: 1px solid #8598a8;
+    border-bottom: 18px solid #8598a8;
     border-radius: 2px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -628,7 +590,7 @@ trendmovementsteadyx {
 }
 
 blue {
-    color: #4e95a0
+    color: #4f96a1
 }
 
 .heatcircle,
@@ -681,7 +643,7 @@ blue {
     right: 0;
     width: 3.2rem;
     height: 1rem;
-    color: #555;
+    color: #545454;
     overflow: hidden;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -704,9 +666,9 @@ blue {
     display: flex;
     width: 3.2rem;
     height: 1rem;
-    color: #555;
+    color: #545454;
     overflow: hidden;
-    border: 1px solid rgba(61, 70, 77, .5);
+    border: 1px solid hsla(206, 12%, 27%, 0.502);
     border-width: thin;
     border-radius: 2px;
     font-family: weathertext2;
@@ -745,7 +707,7 @@ smallrainunit4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border: 1px solid rgba(61, 70, 77, .5);
+    border: 1px solid hsla(206, 12%, 27%, 0.5);
     border-width: thin;
     border-radius: 2px;
     font-size: .85em;
@@ -787,11 +749,11 @@ smallrainunit4 {
     display: flex;
     width: 6.5rem;
     height: 1.5rem;
-    color: #555;
+    color: #545454;
     overflow: hidden;
     font-family: weathertext2;
     line-height: 1;
-    border: 1px solid rgba(61, 70, 77, .5);
+    border: 1px solid hsla(206, 12%, 27%, 0.5);
     border-width: thin;
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -810,33 +772,33 @@ smallrainunit4 {
 }
 
 .temphumcircle60-80 {
-    -webkit-box-shadow: inset 2px 0 0 0 #e6a141;
-    box-shadow: inset 2px 0 0 0 #e6a141
+    -webkit-box-shadow: inset 2px 0 0 0 #e6a241;
+    box-shadow: inset 2px 0 0 0 #e6a241
 }
 
 .temphumcircle25-35 {
-    -webkit-box-shadow: inset 2px 0 0 0 #d05f2d;
-    box-shadow: inset 2px 0 0 0 #d05f2d
+    -webkit-box-shadow: inset 2px 0 0 0 #d15f2e;
+    box-shadow: inset 2px 0 0 0 #d15f2e
 }
 
 .temphumcircle35-60 {
-    -webkit-box-shadow: inset 2px 0 0 0 #90b12a;
-    box-shadow: inset 2px 0 0 0 #90b12a
+    -webkit-box-shadow: inset 2px 0 0 0 #90b22a;
+    box-shadow: inset 2px 0 0 0 #90b22a
 }
 
 .temphumcircle80-100 {
-    -webkit-box-shadow: inset 2px 0 0 0 #4e95a0;
-    box-shadow: inset 2px 0 0 0 #4e95a0
+    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
+    box-shadow: inset 2px 0 0 0 #4f96a1
 }
 
 .temphumcircle0-25 {
-    -webkit-box-shadow: inset 2px 0 0 0 #d35d4e;
-    box-shadow: inset 2px 0 0 0 #d35d4e
+    -webkit-box-shadow: inset 2px 0 0 0 #d35f50;
+    box-shadow: inset 2px 0 0 0 #d35f50
 }
 
 valuetextheading1 {
     position: relative;
-    color: #555;
+    color: #545454;
     font-family: weathertext2;
     font-size: 1em;
     text-align: left;
@@ -844,49 +806,49 @@ valuetextheading1 {
 }
 
 .tempmodulehome-50-10c {
-    -webkit-box-shadow: inset 2px 0 0 0 #8781bd;
-    box-shadow: inset 2px 0 0 0 #8781bd
+    -webkit-box-shadow: inset 2px 0 0 0 #8680bc;
+    box-shadow: inset 2px 0 0 0 #8680bc
 }
 
 .tempmodulehome-10-0c {
-    -webkit-box-shadow: inset 2px 0 0 0 #4e95a0;
-    box-shadow: inset 2px 0 0 0 #4e95a0
+    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
+    box-shadow: inset 2px 0 0 0 #4f96a1
 }
 
 .tempmodulehome0-5c {
-    -webkit-box-shadow: inset 2px 0 0 0 #4e95a0;
-    box-shadow: inset 2px 0 0 0 #4e95a0
+    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
+    box-shadow: inset 2px 0 0 0 #4f96a1
 }
 
 .tempmodulehome5-10c {
-    -webkit-box-shadow: inset 2px 0 0 0 #9aba2f;
-    box-shadow: inset 2px 0 0 0 #9aba2f
+    -webkit-box-shadow: inset 2px 0 0 0 #9bbc2f;
+    box-shadow: inset 2px 0 0 0 #9bbc2f
 }
 
 .tempmodulehome10-15c,
 .tempmodulehome15-20c {
-    -webkit-box-shadow: inset 2px 0 0 0 #e6a141;
-    box-shadow: inset 2px 0 0 0 #e6a141
+    -webkit-box-shadow: inset 2px 0 0 0 #e6a241;
+    box-shadow: inset 2px 0 0 0 #e6a241
 }
 
 .tempmodulehome20-25c {
-    -webkit-box-shadow: inset 2px 0 0 0 #ec5a34;
-    box-shadow: inset 2px 0 0 0 #ec5a34
+    -webkit-box-shadow: inset 2px 0 0 0 #ec5732;
+    box-shadow: inset 2px 0 0 0 #ec5732
 }
 
 .tempmodulehome25-30c {
-    -webkit-box-shadow: inset 2px 0 0 0 #d05f2d;
-    box-shadow: inset 2px 0 0 0 #d05f2d
+    -webkit-box-shadow: inset 2px 0 0 0 #d15f2e;
+    box-shadow: inset 2px 0 0 0 #d15f2e
 }
 
 .tempmodulehome30-35c {
-    -webkit-box-shadow: inset 2px 0 0 0 #d65b4a;
-    box-shadow: inset 2px 0 0 0 #d65b4a
+    -webkit-box-shadow: inset 2px 0 0 0 #d55948;
+    box-shadow: inset 2px 0 0 0 #d55948
 }
 
 .tempmodulehome35-40c {
-    -webkit-box-shadow: inset 2px 0 0 0 #dc4953;
-    box-shadow: inset 2px 0 0 0 #dc4953
+    -webkit-box-shadow: inset 2px 0 0 0 #dc4751;
+    box-shadow: inset 2px 0 0 0 #dc4751
 }
 
 .rainmodulehome,
@@ -896,11 +858,11 @@ valuetextheading1 {
     display: flex;
     width: 4.1rem;
     height: 1rem;
-    color: #555;
+    color: #545454;
     overflow: hidden;
     font-family: weathertext2;
     line-height: 1;
-    border: 1px solid rgba(61, 70, 77, .5);
+    border: 1px solid hsla(206, 12%, 27%, 0.5);
     border-width: thin;
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -915,8 +877,8 @@ valuetextheading1 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-shadow: inset 2px 0 0 0 #4e95a0;
-    box-shadow: inset 2px 0 0 0 #4e95a0
+    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
+    box-shadow: inset 2px 0 0 0 #4f96a1
 }
 
 .rainratemodulehome {
@@ -925,8 +887,8 @@ valuetextheading1 {
 }
 
 .tempmodulehome40-50c {
-    -webkit-box-shadow: inset 2px 0 0 0 #e26870;
-    box-shadow: inset 2px 0 0 0 #e26870
+    -webkit-box-shadow: inset 2px 0 0 0 #e26971;
+    box-shadow: inset 2px 0 0 0 #e26971
 }
 
 .rainratemodulehome {
@@ -934,33 +896,33 @@ valuetextheading1 {
 }
 
 raiblue {
-    color: #4e95a0
+    color: #4f96a1
 }
 
 .intempmodulehome0-5c {
-    -webkit-box-shadow: inset 2px 0 0 0 #4e95a0;
-    box-shadow: inset 2px 0 0 0 #4e95a0
+    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
+    box-shadow: inset 2px 0 0 0 #4f96a1
 }
 
 .intempmodulehome5-10c {
-    -webkit-box-shadow: inset 2px 0 0 0 #9aba2f;
-    box-shadow: inset 2px 0 0 0 #9aba2f
+    -webkit-box-shadow: inset 2px 0 0 0 #9bbc2f;
+    box-shadow: inset 2px 0 0 0 #9bbc2f
 }
 
 .intempmodulehome10-15c,
 .intempmodulehome15-20c {
-    -webkit-box-shadow: inset 2px 0 0 0 #e6a141;
-    box-shadow: inset 2px 0 0 0 #e6a141
+    -webkit-box-shadow: inset 2px 0 0 0 #e6a241;
+    box-shadow: inset 2px 0 0 0 #e6a241
 }
 
 .intempmodulehome20-25c {
-    -webkit-box-shadow: inset 2px 0 0 0 #ec5a34;
-    box-shadow: inset 2px 0 0 0 #ec5a34
+    -webkit-box-shadow: inset 2px 0 0 0 #ec5732;
+    box-shadow: inset 2px 0 0 0 #ec5732
 }
 
 .intempmodulehome25-30c {
-    -webkit-box-shadow: inset 2px 0 0 0 #d05f2d;
-    box-shadow: inset 2px 0 0 0 #d05f2d
+    -webkit-box-shadow: inset 2px 0 0 0 #d15f2e;
+    box-shadow: inset 2px 0 0 0 #d15f2e
 }
 
 valuewindunit {
@@ -980,7 +942,7 @@ smalltempunit,
 smalltempunit2,
 smalltempunit4 {
     font-size: .45rem;
-    color: #555
+    color: #545454
 }
 
 .daylightcompass2>.daylightcompass-line2,
@@ -1040,7 +1002,7 @@ smalltempunit4 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #ff7c39;
+    background: #ff7a38;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-border-radius: 50%;
@@ -1050,7 +1012,7 @@ smalltempunit4 {
 }
 
 uv0 {
-    background-color: #90b12a
+    background-color: #90b22a
 }
 
 .thearrow3 {
@@ -1075,7 +1037,7 @@ uv0 {
     left: 2px;
     width: 6px;
     height: 6px;
-    border: 2px solid silver;
+    border: 2px solid #c0c0c0;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1085,7 +1047,7 @@ uv0 {
 
 .text1,
 .windvalue1 {
-    color: #4e95a0;
+    color: #4f96a1;
     font-family: weathertext3;
     font-size: 2rem
 }
@@ -1122,10 +1084,10 @@ uv0 {
     bottom: 25px;
     left: 25px;
     margin: auto;
-    border-top: 8px solid rgba(46, 51, 66, .7);
-    border-right: 8px solid #8497a7;
-    border-bottom: 8px solid rgba(46, 51, 66, .7);
-    border-left: 8px solid #8497a7;
+    border-top: 8px solid hsla(225, 18%, 22%, 0.7);
+    border-right: 8px solid #8598a8;
+    border-bottom: 8px solid hsla(225, 18%, 22%, 0.7);
+    border-left: 8px solid #8598a8;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1141,7 +1103,7 @@ uv0 {
     z-index: 10;
     display: block;
     margin: 0 0 auto;
-    color: #555;
+    color: #545454;
     text-align: center;
     font-family: headingtext;
     font-size: 18px;
@@ -1149,13 +1111,13 @@ uv0 {
 }
 
 .windirectiontext1 span {
-    color: #4e95a0
+    color: #4f96a1
 }
 
 averwordwindword {
     position: relative;
     top: 5px;
-    color: #555;
+    color: #545454;
     font-size: 12px
 }
 
@@ -1181,8 +1143,8 @@ homeweathercompass2 {
     height: 170px;
     margin: auto;
     border: 8px solid;
-    border-top: 8px solid #8497a7;
-    border-right: 8px solid #8497a7;
+    border-top: 8px solid #8598a8;
+    border-right: 8px solid #8598a8;
     border-bottom-color: transparent;
     border-left-color: transparent;
     border-radius: 50%;
@@ -1209,9 +1171,8 @@ homeweathercompass2 {
 }
 
 .text2 {
-    margin-top: 60px;
-    margin-left: 15px;
-    color: #ff7c39;
+    margin-top: -30px;
+    margin-left: 45px;    
     font-size: 2em
 }
 
@@ -1219,21 +1180,21 @@ homeweathercompass2 {
 .pressuretextfast {
     position: absolute;
     width: 90px;
-    margin-top: -38px;
-    margin-left: 15px;
-    color: #555;
+    margin-top: -5px;
+    margin-left: 50px;
+    color: #555555;
     text-align: center;
     font-family: headingtext;
-    font-size: 14px
+    font-size: 13px
 }
 
 .pressuretextfast {
-    color: #d05f2d
+    color: #d15f2e
 }
 
 .text2 span,
 .text3 {
-    color: #555;
+    color: #545454;
     font-size: 10px
 }
 
@@ -1270,7 +1231,7 @@ homeweathercompass2 {
     margin-top: 129px;
     margin-left: 10px;
     padding: 1px;
-    color: #555;
+    color: #545454;
     border-radius: 2px;
     font-size: 10px;
     line-height: 10px;
@@ -1281,14 +1242,14 @@ homeweathercompass2 {
 }
 
 .barometertrend2 span {
-    color: #90b12a
+    color: #90b22a
 }
 
 .barometerconv {
     position: absolute;
     width: 70px;
     margin-top: 132px;
-    color: #90b12a;
+    color: #90b22a;
     text-align: center;
     font: 10px arial, weathertext2;
     line-height: 10px
@@ -1296,7 +1257,7 @@ homeweathercompass2 {
 
 .barometerconv span {
     display: block;
-    color: #555;
+    color: #545454;
 }
 
 .barometerlimits {
@@ -1309,7 +1270,7 @@ homeweathercompass2 {
     left: 50%;
     width: 0;
     height: 0;
-    border-color: #ff793a transparent transparent;
+    border-color: #ff7738 transparent transparent;
     border-width: 10px 5px 0;
     border-style: solid;
     -webkit-transform: translate(-50%, -50%);
@@ -1323,7 +1284,7 @@ homeweathercompass2 {
     left: 2px;
     width: 6px;
     height: 6px;
-    border: 2px solid #e0dfdf;
+    border: 2px solid #e1e0e0;
     border-radius: 50%
 }
 
@@ -1331,7 +1292,7 @@ homeweathercompass2 {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     position: absolute;
-    border: 3px solid #90b12a;
+    border: 3px solid #90b22a;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1349,7 +1310,7 @@ homeweathercompass2 {
 
 .barometertrend1,
 .barometertrend1 hourtrend {
-    color: #555;
+    color: #545454;
     text-align: left;
     line-height: 9px
 }
@@ -1368,12 +1329,12 @@ homeweathercompass2 {
 }
 
 barometerinfo {
-    color: #555;
+    color: #545454;
 }
 
 .barometermax {
     margin-top: 10px;
-    color: #555;
+    color: #545454;
     font: 10px arial, weathertext2;
     line-height: 9px
 }
@@ -1386,19 +1347,19 @@ barometerinfo {
 }
 
 .barometermax span {
-    color: #90b12a;
+    color: #90b22a;
     font: 500 10px arial, weathertext2
 }
 
 .barometermax unit {
-    color: #555;
+    color: #545454;
     font: 500 10px arial, weathertext2
 }
 
 .barometermin {
     width: 50px;
     margin-left: 240px;
-    color: #555;
+    color: #545454;
     font: 10px arial, weathertext2;
     line-height: 9px
 }
@@ -1410,11 +1371,11 @@ barometerinfo {
 }
 
 .barometermin span {
-    color: #90b12a
+    color: #90b22a
 }
 
 .barometermin unit {
-    color: #555;
+    color: #545454;
 }
 
 .barometertrend falling,
@@ -1429,11 +1390,14 @@ suprain2,
 suptemp {
     -webkit-font-smoothing: antialiased
 }
-
 .barometerpos {
+    display: flex; 
     position:relative;
-    top: -15px;
-    margin-left: -50px
+    margin:0 auto ;
+    margin-left:10px ;
+    margin-top:55px;
+    width:300px
+   
 }
 
 .maxpressure,
@@ -1502,7 +1466,7 @@ pressureunits {
     height: 1px;
     margin-top: -55px;
     margin-left: -25px;
-    border: 1px dashed #35383a
+    border: 1px dashed #35393b
 }
 
 weather34-barometerlimitmax,
@@ -1514,12 +1478,12 @@ weather34-barometerlimitmin {
 
 weather34-barometerlimitmin {
     left: -27px;
-    color: #4e95a0
+    color: #4f96a1
 }
 
 weather34-barometerlimitmax {
     left: 140px;
-    color: #ff7c39
+    color: #ff7a38
 }
 
 .thearrow3:after,
@@ -1564,7 +1528,7 @@ weather34-barometerlimitmax {
     left: 50%;
     width: 0;
     height: 0;
-    border-color: #d05f2d transparent transparent;
+    border-color: #d15f2e transparent transparent;
     border-width: 10px 5px 0;
     border-style: solid;
     background-color: 0;
@@ -1579,7 +1543,7 @@ weather34-barometerlimitmax {
     top: -5px;
     left: 2px;
     width: 0;
-    color: #ff7c39;
+    color: #ff7a38;
     border: 0;
     font-family: headingtext;
     font-size: 7px
@@ -1609,7 +1573,7 @@ weather34-barometerlimitmax {
     left: 50%;
     width: 0;
     height: 0;
-    border: 3px solid #4e95a0;
+    border: 3px solid #4f96a1;
     border-radius: 50%;
     background-color: 0;
     -webkit-transform: translate(-50%, -50%);
@@ -1624,7 +1588,7 @@ weather34-barometerlimitmax {
     top: -5px;
     left: 2px;
     width: 0;
-    color: rgba(102, 188, 199, .6);
+    color: hsla(187, 46%, 59%, 0.6);
     border: 0;
     font-size: 5px
 }
@@ -1645,7 +1609,7 @@ weather34-barometerlimitmax {
     left: 50%;
     width: 0;
     height: 0;
-    border: 3px solid rgba(255, 121, 58, .8);
+    border: 3px solid hsla(19, 100%, 61%, 0.8);
     border-radius: 50%;
     background-color: 0;
     -webkit-transform: translate(-50%, -50%);
@@ -1660,7 +1624,7 @@ weather34-barometerlimitmax {
     top: -5px;
     left: 2px;
     width: 0;
-    color: rgba(255, 121, 58, .6);
+    color: hsla(19, 100%, 61%, 0.6);
     border: 0;
     font-size: 5px
 }
@@ -1671,7 +1635,7 @@ a {
     font-family: headingtext;
     text-decoration: none;
     margin-left: 10px;
-    color: #fff
+    color: #ffffff
 }
 
 .consolesetup,
@@ -1680,24 +1644,24 @@ a {
     font-family: headingtext;
     text-decoration: none;
     margin-left: 10px;
-    color: #fff
+    color: #ffffff
 }
 
 .designedby {
-    color: #fff;
+    color: #ffffff;
     font-size: 9px;
     font-family: headingtext;
     text-decoration: none;
     margin-right: 40px;
-    float:right;
-    margin-top:10px
+    float: right;
+    margin-top: 10px
 }
 
 
 
 .credit34,
 a {
-    color: #fff;
+    color: #ffffff;
     font-size: 12px;
     font-family: headingtext;
     text-decoration: none;
@@ -1715,137 +1679,213 @@ valuebeaufort {
     position: relative;
     left: 85px;
     -webkit-border-bottom-right-radius: 2px;
--webkit-border-bottom-left-radius: 2px;
--moz-border-radius-bottomright: 2px;
--moz-border-radius-bottomleft: 2px;
-border-bottom-right-radius: 2px;
-border-bottom-left-radius: 2px;
-background:rgba(230, 232, 239, 1);  
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background: #e6e8ef;
     font-family: Headingtext;
     width: auto;
-    max-width: 140px;    
+    max-width: 140px;
     font-size: 11px;
     padding: 4px;
-    padding-bottom:5px;
-    line-height:.8;  
+    padding-bottom: 5px;
+    line-height: .8;
     align-items: left;
-    justify-content: left;    
+    justify-content: left;
     top: -15px;
-    color: #555;
-    -webkit-box-shadow: inset 0 15px rgba(230, 232, 239, 0.5);
-  box-shadow: inset 0 15px rgba(230, 232, 239, 0.5);
-   
+    color: #545454;
+    -webkit-box-shadow: inset 0 15px hsla(227, 22%, 92%, 0.5);
+    box-shadow: inset 0 15px hsla(227, 22%, 92%, 0.5);
+
 }
 
 .modulecaptionchart {
     position: relative;
     left: 145px;
     -webkit-border-bottom-right-radius: 2px;
--webkit-border-bottom-left-radius: 2px;
--moz-border-radius-bottomright: 2px;
--moz-border-radius-bottomleft: 2px;
-border-bottom-right-radius: 2px;
-border-bottom-left-radius: 2px;
-background:rgba(230, 232, 239, 1);  
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background: #e6e8ef;
     font-family: Headingtext;
     width: auto;
-    max-width: 140px;    
+    max-width: 140px;
     font-size: 11px;
     padding: 4px;
-    padding-bottom:5px;
-    line-height:.8;  
+    padding-bottom: 5px;
+    line-height: .8;
     align-items: left;
-    justify-content: left;       
+    justify-content: left;
     top: 40px;
-    color: #555;
-    -webkit-box-shadow: inset 0 15px rgba(230, 232, 239, 0.5);
-  box-shadow: inset 0 15px rgba(230, 232, 239, 0.5);
-   
+    color: #545454;
+    -webkit-box-shadow: inset 0 15px hsla(227, 22%, 92%, 0.5);
+    box-shadow: inset 0 15px hsla(227, 22%, 92%, 0.5);
+
 }
 
 
 .modulecaptionpressure {
     position: relative;
-    left: 95px;
+    left: 195px;
     -webkit-border-bottom-right-radius: 2px;
--webkit-border-bottom-left-radius: 2px;
--moz-border-radius-bottomright: 2px;
--moz-border-radius-bottomleft: 2px;
-border-bottom-right-radius: 2px;
-border-bottom-left-radius: 2px;
-background: rgba(230, 232, 239, 1);  
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background: #e6e8ef;
     font-family: Headingtext;
-    max-width: 100px;    
+    max-width: 100px;
     font-size: 11px;
     padding: 4px;
-    padding-bottom:5px;
-    line-height:.8;  
+    padding-bottom: 5px;
+    line-height: .8;
     align-items: left;
-    justify-content: left;    
+    justify-content: left;
     top: -43px;
-    color: #555;
-    -webkit-box-shadow: inset 0 15px rgba(230, 232, 239, 0.5);
-  box-shadow: inset 0 15px rgba(230, 232, 239, 0.5);
-    
+    color: #545454;
+    -webkit-box-shadow: inset 0 15px hsla(227, 22%, 92%, 0.5);
+    box-shadow: inset 0 15px hsla(227, 22%, 92%, 0.5);
+
 }
 
 .modulecaptiondirection {
     position: relative;
     left: 85px;
     -webkit-border-bottom-right-radius: 2px;
--webkit-border-bottom-left-radius: 2px;
--moz-border-radius-bottomright: 2px;
--moz-border-radius-bottomleft: 2px;
-border-bottom-right-radius: 2px;
-border-bottom-left-radius: 2px;
-background:rgba(230, 232, 239, 1);  
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background: #e6e8ef;
     font-family: Headingtext;
-    max-width: 140px;    
+    max-width: 140px;
     font-size: 11px;
     padding: 4px;
-    padding-bottom:5px;
-    line-height:.8;  
+    padding-bottom: 5px;
+    line-height: .8;
     align-items: left;
-    justify-content: left;    
-    top: -82px;
-    color: #555;
-    -webkit-box-shadow: inset 0 15px rgba(230, 232, 239, 0.5);
-  box-shadow: inset 0 15px rgba(230, 232, 239, 0.5);
-   
+    justify-content: left;
+    top: -81px;
+    color: #545454;
+    -webkit-box-shadow: inset 0 15px hsla(227, 22%, 92%, 0.502);
+    box-shadow: inset 0 15px hsla(227, 22%, 92%, 0.5);
+
 }
 
+.online {
+    position: absolute;
+    font-size: .65em;
+    color: #00a4b3;
+    z-index: 100000;
+    margin-top: 10px;
+    float: right;
+    padding-left: 5px;
+    -webkit-animation: fadein 5s infinite;
+    -moz-animation: fadein 5s infinite;
+    -ms-animation: fadein 5s infinite;
+    -o-animation: fadein 5s infinite;
+    animation: fadein 5s infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -ms-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 blue1 {
-    color: #00a4b4;
+    color: #00a4b3;
     font-size: .8em
 }
 
 .nav {
     margin: 0 auto;
-    width:900px;
+    width: 900px;
     background: #3d464d;
     padding: 4px;
     height: 20px;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
-    padding: 6px;        
-        position:relative;
-        bottom:0;
-        margin-left:35px;
-        z-index:99999;
-        -webkit-border-top-left-radius: 2px;
--webkit-border-top-right-radius: 2px;
--moz-border-radius-topleft: 2px;
--moz-border-radius-topright: 2px;
-border-top-left-radius: 2px;
-border-top-right-radius: 2px;
-margin-top:10px;
+    -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25), 0 2px 2px hsla(0, 0%, 0%, 0.2), 0 4px 4px hsla(0, 0%, 0%, 0.15);
+    box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25), 0 2px 2px hsla(0, 0%, 0%, 0.2), 0 4px 4px hsla(0, 0%, 0%, 0.15);
+    padding: 6px;
+    position: relative;
+    bottom: 0;
+    margin-left: 35px;
+    z-index: 99999;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-topright: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    margin-top: 10px;
 }
 
 vspan {
     vertical-align: middle;
-    padding-top: 3px;
+    padding-top: 0;
     margin-left: 30px
 }
+
 vspan2 {
     position: relative;
     vertical-align: top;
@@ -1862,14 +1902,14 @@ vspan3 {
 
 iconcolor {
     position: absolute;
-    color: #555;
+    color: #545454;
     vertical-align: middle;
     margin-top: 5px
 }
 
 iconcolor2 {
     position: absolute;
-    color: #4e95a0;
+    color: #4f96a1;
     vertical-align: middle;
     margin-top: 5px
 }
@@ -1879,32 +1919,110 @@ iconcolor2 {
     width: 275px;
     max-width: 275px;
     text-align: left;
-    margin-left: 20px;
-    margin-top: -23px;
-    padding: 2px;    
+    margin-left: 10px;
+    top: -30px;
+    padding: 2px;
     line-height: 1;
-    
+
+}
+
+.maxbox {
+    position: absolute;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    padding: 2px 3px 1px 3px;
+    display: inline-flex;
+    font-size: 9px;
+    margin-top: -135px;
+    z-index: 99999;
+    color: #545454;
+    font-family: Headingtext;
+    background: #e6e8ef;
+    margin-left: -140px;
+}
+
+.minbox {
+    position: absolute;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    padding: 2px 3px 1px 3px;
+    display: inline-flex;
+    font-size: 9px;
+    margin-top: 25px;
+    z-index: 99999;
+    color: #545454;
+    font-family: Headingtext;
+    background: #e6e8ef;
+    margin-left: 55px;
 }
 
 oblue {
-    color: #00a4b4
+    color: #00a4b3
 }
 
 oorange {
-    color: #d05f2d
+    color: #d15f2e
 }
 
 .consoleunits,
-    a {
-        font-size: 10px;
-        font-family: headingtext;
-        text-decoration: none;
-        margin-left: 10px;
-        color: #fff
-    }
+a {
+    font-size: 10px;
+    font-family: headingtext;
+    text-decoration: none;
+    margin-left: 10px;
+    color: #ffffff
+}
+
+
+.legendfeels,
+.legendwetbulb,
+.legendtemp,
+.legenddewpoint {
+    position: absolute;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    padding: 2px 3px 1px 3px;
+    display: inline-flex;
+    font-size: 9px;
+    margin-top: 190px;
+    z-index: 99999;
+    color: #ffffff;
+    font-family: Headingtext;
+}
+
+.legendtemp {
+    background: #d15f2e;
+    margin-left: -90px;
+}
+
+.legendfeels {
+    background: #65696c;
+    margin-left: -60px;
+}
+
+.legendwetbulb {
+    background: #d15f2e;
+    margin-left: -60px;
+}
+
+.legenddewpoint {
+    background: #00a4b3;
+    margin-left: -110px;
+}
 
 @media screen and (max-width: 960px) {
-    .designedby, li2 {
+
+    .designedby,
+    li2 {
         display: none
     }
 
@@ -1922,23 +2040,23 @@ oorange {
 
     .nav {
         margin: 0 auto;
-        width:600px;        
+        width: 600px;
         padding: 6px;
-        height: 20px;       
-        bottom:0;
-        margin-left:20px;
-        z-index:99999
+        height: 20px;
+        bottom: 0;
+        margin-left: 20px;
+        z-index: 99999
     }
 
- 
+
     .clock {
-        position:absolute;
-        margin-top:-200px;
-       
-    
+        position: absolute;
+        margin-top: -200px;
+
+
     }
-    
-    
+
+
 }
 
 
@@ -1953,15 +2071,16 @@ oorange {
         font-family: headingtext;
         text-decoration: none;
         margin-left: 10px;
-        color: #fff
+        color: #ffffff
     }
+
     .consoleunits,
     a {
         font-size: 8px;
         font-family: headingtext;
         text-decoration: none;
         margin-left: 1px;
-        color: #fff
+        color: #ffffff
     }
 
 
@@ -1978,24 +2097,24 @@ oorange {
     }
 
     li2 {
-        display:none
-        
+        display: none
     }
 
     .nav {
         margin: 0 auto;
-        width:308px;        
-        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
-        box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 2px rgba(0, 0, 0, .2), 0 4px 4px rgba(0, 0, 0, .15);
+        width: 308px;
+        -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25), 0 2px 2px hsla(0, 0%, 0%, 0.2), 0 4px 4px hsla(0, 0%, 0%, 0.15);
+        box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25), 0 2px 2px hsla(0, 0%, 0%, 0.2), 0 4px 4px hsla(0, 0%, 0%, 0.15);
         padding: 6px;
-        height: 20px;       
-        bottom:0;
-        z-index:99999
+        height: 20px;
+        bottom: 0;
+        z-index: 99999
     }
 
-    vspan,vspan2,vspan3 {
-          
-        font-size:9px
-    
-}
+    vspan,
+    vspan2,
+    vspan3 {
+
+        font-size: 9px
+    }
 }

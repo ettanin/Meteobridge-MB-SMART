@@ -175,7 +175,7 @@
 	}
 });</script>
 <body>
-<div id="chartContainer2" style=" height:150px;margin-top:25px;-webkit-border-radius:4px;border-radius:4px;"></div></div>
+<div id="chartContainer2" style=" height:150px;margin-top:20px;-webkit-border-radius:4px;border-radius:4px;"></div></div>
 
 
 </body></html>

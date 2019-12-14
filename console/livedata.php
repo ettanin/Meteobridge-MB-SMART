@@ -152,19 +152,6 @@ if ($weather["moonphase"]==0) {
 } elseif ($weather["moonphase"]==7) {
     $weather["moonphase"]=' Waning Crescent';
 }
-
-
-
-
-	// weatherflow lightning
-	$weather["lightning"]          = $meteobridgeapi[76];
-	$weather["lightningkm"]        = $meteobridgeapi[75];
-	$weather["lightningmax"]       = $meteobridgeapi[77];
-	$weather["lightningmaxdist"]   = $meteobridgeapi[75];
-	$weather["lightningtimeago"]   = $meteobridgeapi[76];
-	$weather["lightningmonth"]     = $meteobridgeapi[78];
-	$weather["lightningyear"]      = $meteobridgeapi[79];
-	
 	//temperature
 	$originalDate = $meteobridgeapi[83];
     $tempydmaxtime = date("H:i", strtotime($originalDate));

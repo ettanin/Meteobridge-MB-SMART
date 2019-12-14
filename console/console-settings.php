@@ -1,18 +1,18 @@
 <?php
 $unit = "metric";
 $metric = true;
-$windunit = "km/h";
-$distanceunit = "km";
-$tempunit = "C";
-$rainunit  = "mm";
+$windunit = "mph";
+$distanceunit = "mi";
+$tempunit = "F";
+$rainunit  = "in";
 $rainrate = "/h";
-$pressureunit  = "hPa";
+$pressureunit  = "inHg";
 $livedataFormat = "meteobridge-api";
 $livedata   = "../mbridge/MBrealtimeupload.txt";
 $dateFormat   = "d-m-Y";
 $password    = "";
 $uvsensor    = "uvindexmod.php";
-$defaultlanguage   = "en";
+$defaultlanguage   = "dl";
 $stationName   = "Console Display ";
 $theme   = "dark";
 $TZ = "Europe/Istanbul";

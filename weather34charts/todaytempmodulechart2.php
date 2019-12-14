@@ -132,8 +132,7 @@
 			
 		axisY:{
 		margin: 0,
-		interval:'auto',
-		//maximum: <?php echo $max ;?>,		
+		interval:1,		
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
@@ -144,7 +143,7 @@
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0);  
+        return e.value .toFixed(0) + "°<?php echo $tempunit ;?>" ;  
          },	
 		crosshair: {
 			enabled: true,
@@ -170,8 +169,7 @@
 		
 		{
 			
-			type: "splineArea",
-			lineDashType: "dash",           
+			type: "spline",			         
 			color:"RGBA(208,95,45,1.00)",
 			markerSize:1,
 			showInLegend:false,
@@ -194,7 +192,7 @@
 });</script>
 <body>
 
-<div id="chartContainer2" style=" height:150px;margin-top:25px;-webkit-border-radius:4px;border-radius:4px;"></div></div>
+<div id="chartContainer2" style=" height:150px;margin-top:20px;-webkit-border-radius:4px;border-radius:4px;"></div></div>
 
 
 </body></html>
