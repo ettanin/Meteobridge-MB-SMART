@@ -125,7 +125,7 @@
 		axisY:{
 		margin: 0,
 		interval:<?php echo $interval ;?>,
-		//maximum: <?php echo $max ;?>,		
+		minimum:0,	
 		lineThickness: 1,		
 		gridThickness: 0,	
 		gridDashType: "dot",	
