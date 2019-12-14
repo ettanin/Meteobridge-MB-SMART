@@ -158,8 +158,7 @@
 		data: [
 		{
 			//wind speed
-			type: "spline",
-            //lineDashType: "dash",
+			type: "column",          
 			color:"#d35d4e",
 			markerSize:0,
 			showInLegend:false,

@@ -160,8 +160,7 @@
 		
 		{
 			//10 min  wind SPEED avg
-			type: "line",
-            lineDashType: "dash",
+			type: "column",             
 			color:"#44a6b5",
 			markerSize:0,
 			showInLegend:false,
