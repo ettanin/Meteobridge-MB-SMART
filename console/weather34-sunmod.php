@@ -47,7 +47,7 @@ $darkhours = 23 - $lighthours; $darkminutes = 60 - $lightmins;if ($darkminutes<1
 
 <div class="sunrise1"> <?php echo $sunuphalf.' '. $lang['Sunrise'];?> 
 
-<?php echo $nextrisetxt.' '.$nextrise.'  <br>'.$sunuphalf.' '. $lang['First Light'].'(<blue>'.$nextfirstlight.'</blue>)';?>
+<?php echo $nextrisetxt.' '.$nextrise.'  <br>'.$sunuphalf.' '. $lang['First Light'].' (<blue>'.$nextfirstlight.'</blue>)';?>
 
 </div>
 

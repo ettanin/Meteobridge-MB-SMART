@@ -126,6 +126,7 @@
 		margin: 3,
 		lineThickness: 1,	
 		interval:1,	
+		minimum:0,
 		gridThickness: 1,	
 		gridDashType: "dot",	
         includeZero:true,		

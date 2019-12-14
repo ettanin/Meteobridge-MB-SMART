@@ -127,6 +127,7 @@
 		titleFontSize: 0,
         titleWrap: false,
 		margin: 3,
+		minimum:0,
 		lineThickness: 1,	
 		interval:1,	
 		gridThickness: 1,	
