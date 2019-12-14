@@ -346,11 +346,11 @@ orange {
     display: -ms-flexbox;
     display: flex;
     width: 9rem;
-    height: 5rem;
+    height: 4.55rem;
     padding-top: 14px;
     color: #f7f7f7;
     border: 1px solid #3d464d;
-    border-bottom: 18px solid #3d464d;
+    border-bottom: 10px solid #3d464d;
     border-radius: 2px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -543,11 +543,11 @@ trendmovementsteadyx {
     display: -ms-flexbox;
     display: flex;
     width: 9rem;
-    height: 5rem;
+    height: 4.55rem;
     padding-top: 14px;
     color: #f7f7f7;
     border: 1px solid #3d464d;
-    border-bottom: 18px solid #3d464d;
+    border-bottom: 10px solid #3d464d;
     border-radius: 2px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -568,11 +568,11 @@ trendmovementsteadyx {
     display: -ms-flexbox;
     display: flex;
     width: 9rem;
-    height: 5rem;
+    height: 4.55rem;
     padding-top: 14px;
     color: #00adbd;
     border: 1px solid #3d464d;
-    border-bottom: 18px solid #3d464d;
+    border-bottom: 10px solid #3d464d;
     border-radius: 2px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -1684,7 +1684,7 @@ valuebeaufort {
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: -18px;
+    top: -25px;
     color: #f5f5f5;
 
 }
@@ -1756,7 +1756,7 @@ valuebeaufort {
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: -84px;
+    top: -85px;
     color: #f5f5f5;
 
 }
