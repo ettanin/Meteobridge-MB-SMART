@@ -458,11 +458,11 @@ trendmovementsteadyx {
     left: 0;
     top: 5px;
     position: absolute;
-    font-family: headingtext;
+    font-family: weathertext2;
     background: 0;
     font-size: 12px;
-    line-height: 2;
-    margin-top: 10px
+    line-height: 1;
+    margin-top: 12px
 }
 
 .maxdatawind {
@@ -472,11 +472,11 @@ trendmovementsteadyx {
     left: -5px;
     top: 5px;
     position: absolute;
-    font-family: headingtext;
+    font-family: weathertext2;
     background: 0;
     font-size: 12px;
     line-height: 2;
-    margin-top: 10px
+    margin-top: 5px
 }
 
 .hidata {
@@ -496,13 +496,13 @@ trendmovementsteadyx {
     color: #545454;
     width: 50px;
     padding: 2px;
-    margin-top: 15px;
+    margin-top: 11px;
     left: 60%
 }
 
 .mindata {
     position: absolute;
-    font-family: headingtext;
+    font-family: weathertext2;
     background: 0;
     display: inline;
     border-radius: 2px;
