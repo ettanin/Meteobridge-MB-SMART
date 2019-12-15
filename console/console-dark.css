@@ -1649,6 +1649,16 @@ a {
     margin-top: 0
 }
 
+.designedby {
+    color: #ffffff;
+    font-size: 10px;
+    font-family: headingtext;
+    text-decoration: none;
+    margin-right: 40px;
+    float: right;
+    margin-top: 10px
+}
+
 
 
 
@@ -2000,7 +2010,7 @@ a {
 
 @media screen and (max-width: 960px) {
 
-    li2 {
+    .designedby,li2 {
         display: none
     }
 
@@ -2037,7 +2047,7 @@ a {
 
 
 @media screen and (max-width: 640px) {
-    .desktoplink {
+    .desktoplink,.designedby {
         display: none
     }
 
