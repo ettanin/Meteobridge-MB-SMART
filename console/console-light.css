@@ -1084,10 +1084,10 @@ uv0 {
     bottom: 25px;
     left: 25px;
     margin: auto;
-    border-top: 8px solid hsla(225, 18%, 22%, 0.7);
-    border-right: 8px solid #8598a8;
-    border-bottom: 8px solid hsla(225, 18%, 22%, 0.7);
-    border-left: 8px solid #8598a8;
+    border-top: 8px solid #99a8b4;
+    border-right: 8px solid #ced1da;
+    border-bottom: 8px solid #99a8b4;
+    border-left: 8px solid #ced1da;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1142,9 +1142,9 @@ homeweathercompass2 {
     width: 170px;
     height: 170px;
     margin: auto;
-    border: 8px solid;
-    border-top: 8px solid #8598a8;
-    border-right: 8px solid #8598a8;
+    border: 8px solid #ced1da;
+    border-top: 8px solid #ced1da;
+    border-right: 8px solid #ced1da;
     border-bottom-color: transparent;
     border-left-color: transparent;
     border-radius: 50%;
@@ -1184,7 +1184,7 @@ homeweathercompass2 {
     margin-left: 50px;
     color: #555555;
     text-align: center;
-    font-family: headingtext;
+    font-family: weathertext2;
     font-size: 13px
 }
 
@@ -1573,7 +1573,7 @@ weather34-barometerlimitmax {
     left: 50%;
     width: 0;
     height: 0;
-    border: 3px solid #4f96a1;
+    border: 3px solid #00a4b3;
     border-radius: 50%;
     background-color: 0;
     -webkit-transform: translate(-50%, -50%);
@@ -1945,9 +1945,10 @@ iconcolor2 {
     margin-top: -135px;
     z-index: 99999;
     color: #545454;
-    font-family: Headingtext;
+    font-family: weathertext2;
     background: #e6e8ef;
     margin-left: -140px;
+    
 }
 
 .minbox {
@@ -1963,9 +1964,9 @@ iconcolor2 {
     margin-top: 25px;
     z-index: 99999;
     color: #545454;
-    font-family: Headingtext;
+    font-family: weathertext2;
     background: #e6e8ef;
-    margin-left: 55px;
+    margin-left: 45px;
 }
 
 oblue {

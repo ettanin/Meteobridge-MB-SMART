@@ -1968,7 +1968,7 @@ iconcolor2 {
     margin-top: -135px;
     z-index: 99999;
     color: #ffffff;
-    font-family: Headingtext;
+    font-family: weathertext2;
     background: #22252f;
     margin-left: -140px;
 }
@@ -1986,9 +1986,9 @@ iconcolor2 {
     margin-top: 25px;
     z-index: 99999;
     color: #ffffff;
-    font-family: Headingtext;
+    font-family: weathertext2;
     background: #22252f;
-    margin-left: 55px;
+    margin-left: 45px;
 }
 
 oblue {
