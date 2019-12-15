@@ -264,17 +264,18 @@ li2 {
 }
 
 .thedate {
-    display: block;
+    display: flex;
     background: none;
     color: #545454;
     font-size: .75rem;
     font-family: clock;
     line-height: 1;
     margin-top: -25px;
-    position: absolute;
-    margin-left: 50px;
+    position: absolute;        
     font-family: headingtext;
-    text-align: left;
+    justify-content: center;
+    align-items: center;
+    width:260px
 }
 
 .daylight1 {
