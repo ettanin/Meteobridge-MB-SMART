@@ -101,7 +101,7 @@ li2 {
 }
 
 .clock {
-    background: #3d464d;
+    background: #22252f;
     border-radius: 3px;
     padding: 0px;
     padding-left: 70px;
@@ -124,6 +124,7 @@ li2 {
     height: 64px;
     line-height: 1.2;
     margin-top: 5px;
+   
 
 
 }
@@ -141,7 +142,7 @@ li2 {
 }
 
 .moonblock {
-    background: #3d464d;
+    background: #22252f;
     border-radius: 3px;
     padding: 0px;
     padding-left: 10px;
@@ -165,6 +166,7 @@ li2 {
     line-height: 2;
     margin-top: 5px;
     font-family: headingtext;
+   
 
 }
 
@@ -208,7 +210,7 @@ li2 {
 }
 
 .sunblock {
-    background: #3d464d;
+    background: #22252f;
     border-radius: 3px;
     padding: 0px;
     padding-left: 0px;
@@ -232,7 +234,7 @@ li2 {
     line-height: 2;
     margin-top: 5px;
     font-family: headingtext;
-
+    
 }
 
 .sunrise1 {
@@ -1877,7 +1879,7 @@ blue1 {
 .nav {
     margin: 0 auto;
     width: 900px;
-    background: #3d464d;
+    background: #22252f;
     padding: 6px;
     height: 20px;
     position: relative;
@@ -1994,7 +1996,7 @@ iconcolor2 {
     color: #ffffff;
     font-family: weathertext2;
     background: #22252f;
-    margin-left: -140px;
+    margin-left: -143px;
 }
 
 .minbox {
@@ -2012,7 +2014,7 @@ iconcolor2 {
     color: #ffffff;
     font-family: weathertext2;
     background: #22252f;
-    margin-left: -140px;
+    margin-left: -143px;
 }
 
 oorange {

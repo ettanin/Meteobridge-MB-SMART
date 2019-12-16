@@ -124,6 +124,7 @@ li2 {
     height: 64px;
     line-height: 1.2;
     margin-top: 5px;
+    
 
 
 }
@@ -165,6 +166,7 @@ li2 {
     line-height: 2;
     margin-top: 5px;
     font-family: headingtext;
+   
 
 }
 
@@ -232,6 +234,7 @@ li2 {
     line-height: 2;
     margin-top: 5px;
     font-family: headingtext;
+    
 
 }
 
@@ -1967,7 +1970,7 @@ iconcolor2 {
     color: #545454;
     font-family: weathertext2;
     background: #e6e8ef;
-    margin-left: -140px;
+    margin-left: -143px;
 }
 
 .minbox {
@@ -1985,7 +1988,7 @@ iconcolor2 {
     color: #545454;
     font-family: weathertext2;
     background: #e6e8ef;
-    margin-left: -140px;
+    margin-left: -143px;
 }
 
 oblue {
