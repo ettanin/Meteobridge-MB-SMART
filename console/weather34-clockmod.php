@@ -2,7 +2,9 @@
 <div class="online">
 <?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
 <div class="indoorclock">  <?php echo $hometemp." " .$weather["temp_indoor"] . '<smalltempunit2>&deg;'.$weather["temp_units"] ?></smalltempunit2>
-<?php if($weather["temp_indoor_trend"] >0)echo $risingsymbolsmall;else if($weather["temp_indoor_trend"]<0)echo $fallingsymbolsmall;?>
+<?php 
+if($weather["temp_indoor_trend"] >0)echo $risingsymbolsmall;
+else if($weather["temp_indoor_trend"]<0)echo $fallingsymbolsmall;?>
 </div>  
   <div class="clock">
   <span id="hour"></span>
