@@ -5,7 +5,7 @@
 <?php echo "<div class='maxdata' style='margin-left:10px'><blue>". $weather["rain_lasthour"]."</blue><smalltempunit4>&nbsp; ".$weather["rain_units"]."</smalltempunit4></div>";?> 
 <?php echo "<div class='mindata'><blue>".$weather["rain_rate"]."</blue><smalltempunit4>&nbsp;".$weather["rain_units"]."</smalltempunit4></div>";?>
 <?php echo "<div class='hidata'>".$lang['Last Hour']."</div>";?> 
-<?php echo "<div class='lodata'>".$lang['Rate']."</div>";?>
+<?php echo "<div class='lodata'>Rate</div>";?>
 <?php //weather34 sez lets make the temperature look nice 
 if ($weather["rain_units"]=="mm"){
 echo '<div class=rainbox >'.number_format($weather['rain_today'],1).'<smalltempunit4> '.$weather["rain_units"].'</smalltempunit4>';}
