@@ -263,27 +263,34 @@ li2 {
     text-align: left;
 }
 
+
 .thedate {
-        display: flex;
-        background: none;
-        color: #f5f5f5;
-        font-size: .75rem;
-        font-family: clock;
-        line-height: 1;
-        margin-top: -25px;
-        position: absolute;        
-        font-family: headingtext;
-        justify-content: center;
-        align-items: center;
-        width:260px
-    }
+    display: flex;
+    background: none;
+    color: #f5f5f5;
+    font-size: .75rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: -25px;
+    position: absolute;        
+    font-family: headingtext;
+    justify-content: center;
+    align-items: center;
+    width:260px
+}
 
 .daylight1 {
     display: block;
-    background: none; 
-    margin-top: -75px;
+    background: none;
+    color: #f5f5f5;
+    font-size: .75rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: -55px;
     position: absolute;
-    margin-left: 210px;    
+    margin-left: 195px;
+    font-family: headingtext;
+    text-align: left;
 }
 
 belowthehorizon {
@@ -347,7 +354,7 @@ orange {
     display: -ms-flexbox;
     display: flex;
     width: 9rem;
-    height: 4.55rem;
+    height: 4.2rem;
     padding-top: 14px;
     color: #f7f7f7;
     border: 1px solid #3d464d;
@@ -418,8 +425,10 @@ orange {
 }
 
 .temptrendphrase {
-    margin-left: 0;
-    font-size: 13px
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: weathertext2;
+    width:400px
 }
 
 .temptrendphrase,
@@ -429,7 +438,7 @@ orange {
     margin-top: 5px;
     color: #afb7c0;
     text-align: center;
-    font-family: headingtext;
+    font-family: weathertext2;
     width: 130px;
     left: -45px
 }
@@ -441,13 +450,13 @@ orange {
 
 trendmovementfallingx,
 trendmovementrisingx {
-    font-family: headingtext;
-    font-size: 13px
+    font-family: weathertext2;
+    font-size: 12px
 }
 
 trendmovementsteadyx {
     color: #afb7c0;
-    font-size: 13px;
+    font-size: 12px;
     margin-left: 10px
 }
 
@@ -476,7 +485,7 @@ trendmovementsteadyx {
     background: 0;
     font-size: 12px;
     line-height: 2;
-    margin-top: 5px
+    margin-top: 3px
 }
 
 .hidata {
@@ -544,7 +553,7 @@ trendmovementsteadyx {
     display: -ms-flexbox;
     display: flex;
     width: 9rem;
-    height: 4.55rem;
+    height: 4.2rem;
     padding-top: 14px;
     color: #f7f7f7;
     border: 1px solid #3d464d;
@@ -569,7 +578,7 @@ trendmovementsteadyx {
     display: -ms-flexbox;
     display: flex;
     width: 9rem;
-    height: 4.55rem;
+    height: 4.2rem;
     padding-top: 14px;
     color: #00adbd;
     border: 1px solid #3d464d;
@@ -610,7 +619,7 @@ blue {
 }
 
 .heatcircle2 {
-    margin-top: 60px;
+    margin-top: 55px;
     margin-left: 0
 }
 
@@ -625,12 +634,12 @@ blue {
 }
 
 .heatcircle5 {
-    margin-top: -50px;
+    margin-top: -40px;
     margin-left: 40px
 }
 
 .heatcircle6 {
-    margin-top: 60px;
+    margin-top: 55px;
     margin-left: 0
 }
 
@@ -1136,13 +1145,11 @@ homeweathercompass2 {
 }
 
 .homeweathercompass2>.homeweathercompass-line2 {
-    position: absolute;
-    top: 25px;
-    bottom: 25px;
+    position: absolute;     
     left: 25px;
     width: 170px;
     height: 170px;
-    margin: auto;
+    margin: 0 auto;
     border: 8px solid;
     border-top: 8px solid #3d464d;
     border-right: 8px solid #3d464d;
@@ -1154,7 +1161,10 @@ homeweathercompass2 {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    -o-border-radius: 50%
+    -o-border-radius: 50%;
+    margin-top:-50px
+
+
 }
 
 .homeweathercompass2 {
@@ -1172,21 +1182,28 @@ homeweathercompass2 {
 }
 
 .text2 {
-    margin-top: -30px;
-    margin-left: 45px;    
-    font-size: 2em
+    margin-top: -35px;
+    margin-left: 0;    
+    font-size: 1.75em
 }
 
 .pressuretext,
 .pressuretextfast {
     position: absolute;
-    width: 90px;
-    margin-top: -5px;
-    margin-left: 50px;
-    color: #afb7c0;
+    width:auto;
+    margin-top: 3px;
+    margin-left:0;
+    color: #ffffff;
     text-align: center;
-    font-family: headingtext;
-    font-size: 13px
+    font-family: weathertext2;
+    font-size: 13px;
+    background:#00a4b3;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    padding:1px;
 }
 
 .pressuretextfast {
@@ -1392,15 +1409,6 @@ suptemp {
     -webkit-font-smoothing: antialiased
 }
 
-.barometerpos {
-    display: flex; 
-    position:relative;
-    margin:0 auto ;
-    margin-left:10px ;
-    margin-top:55px;
-    width:300px
-   
-}
 
 .maxpressure,
 .minpressure,
@@ -1647,7 +1655,7 @@ a {
     text-decoration: none;
     margin-right: 40px;
     float: right;
-    margin-top: 0
+    margin-top: 0px
 }
 
 .designedby {
@@ -1659,7 +1667,6 @@ a {
     float: right;
     margin-top: 10px
 }
-
 
 
 
@@ -1696,7 +1703,7 @@ valuebeaufort {
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: -25px;
+    top: -28px;
     color: #f5f5f5;
 
 }
@@ -1729,7 +1736,7 @@ valuebeaufort {
 
 .modulecaptionpressure {
     position: relative;
-    left: 195px;
+    left: 100px;
     -webkit-border-bottom-right-radius: 2px;
     -webkit-border-bottom-left-radius: 2px;
     -moz-border-radius-bottomright: 2px;
@@ -1745,7 +1752,7 @@ valuebeaufort {
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: -45px;
+    top: -73px;
     color: #f5f5f5;
 
 }
@@ -1768,7 +1775,7 @@ valuebeaufort {
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: -85px;
+    top: -84px;
     color: #f5f5f5;
 
 }
@@ -1951,9 +1958,11 @@ iconcolor2 {
     width: 275px;
     max-width: 275px;
     text-align: left;
-    margin-left: 15px;
-    top: -30px;
-    line-height: 1
+    margin-left: 5px;
+    margin-top: 15px;
+    padding: 2px;
+    line-height: 1;
+
 }
 
 .maxbox {
@@ -1966,7 +1975,7 @@ iconcolor2 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: -135px;
+    margin-top: -110px;
     z-index: 99999;
     color: #ffffff;
     font-family: weathertext2;
@@ -1984,16 +1993,12 @@ iconcolor2 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: 25px;
+    margin-top: -95px;
     z-index: 99999;
     color: #ffffff;
     font-family: weathertext2;
     background: #22252f;
-    margin-left: 45px;
-}
-
-oblue {
-    color: #00a4b3
+    margin-left: -140px;
 }
 
 oorange {

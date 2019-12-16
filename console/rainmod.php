@@ -2,7 +2,7 @@
 $raintimeago=$originalDate124;$seconds_ago = (time() - strtotime($raintimeago));?>
 <div class="modulecaption"><?php echo $lang['Rainfall']?>  <blue1><?php echo $weather["rain_units"]?></blue1></div>
 <div class="tempcontainer">
-<?php echo "<div class='maxdata' style='margin-left:10px'><blue>". $weather["rain_lasthour"]."</blue><smalltempunit4>&nbsp; ".$weather["rain_units"]."</smalltempunit4></div>";?> 
+<?php echo "<div class='maxdata' style='margin-left:10px;font-size:11px'><blue>". $weather["rain_lasthour"]."</blue><smalltempunit4>&nbsp; ".$weather["rain_units"]."</smalltempunit4></div>";?> 
 <?php echo "<div class='mindata'><blue>".$weather["rain_rate"]."</blue><smalltempunit4>&nbsp;".$weather["rain_units"]."</smalltempunit4></div>";?>
 <?php echo "<div class='hidata'>".$lang['Last Hour']."</div>";?> 
 <?php echo "<div class='lodata'>Rate</div>";?>
