@@ -22,17 +22,17 @@ else if($weather["rain_rate"]>0){echo '<trendmovementrisingx> &nbsp;'.$lang['Lig
 //steady
 else if($meteobridgeapi[124]>0){
     echo $lang['Last Rainfall'];
-if ($seconds_ago >= 172800) {echo '<blue>'.intval($seconds_ago / 86400) . ' </blue><tunit1>'.$lang['Days'].'</tunit1></blue1></thevalue>
+if ($seconds_ago >= 172800) {echo '<blue> '.intval($seconds_ago / 86400) . ' </blue><tunit1> '.$lang['Days'].'</tunit1></blue1></thevalue>
     ';echo "<maxlow>".$lang['Ago']."</maxlow></weather34top>";}
-else if ($seconds_ago >= 86400) {echo '<blue>'.intval($seconds_ago / 86400) . ' </blue><tunit1>'.$lang['Day'].'</tunit1></blue1></thevalue>
+else if ($seconds_ago >= 86400) {echo '<blue> '.intval($seconds_ago / 86400) . ' </blue><tunit1> '.$lang['Day'].'</tunit1></blue1></thevalue>
     ';echo "<maxlow>".$lang['Ago']."</maxlow></weather34top>";}
-else if ($seconds_ago >= 7200) {echo '<blue>'.intval($seconds_ago / 3600) . ' </blue><tunit1>'.$lang['Hours'].'</tunit1></blue1></thevalue>
+else if ($seconds_ago >= 7200) {echo '<blue> '.intval($seconds_ago / 3600) . ' </blue><tunit1> '.$lang['Hours'].'</tunit1></blue1></thevalue>
     ';echo "<maxlow>".$lang['Ago']."</maxlow></weather34top>";}
-else if ($seconds_ago >= 3600) {echo '<blue>'.intval($seconds_ago / 3600) . ' </blue><tunit1>'.$lang['Hour'].'</tunit1></blue1></thevalue>
+else if ($seconds_ago >= 3600) {echo '<blue> '.intval($seconds_ago / 3600) . ' </blue><tunit1> '.$lang['Hour'].'</tunit1></blue1></thevalue>
     ';echo "<maxlow>".$lang['Ago']."</maxlow></weather34top>";}
-else if ($seconds_ago > 60) {echo '<blue>'.intval($seconds_ago / 60) . ' </blue><tunit1>'.$lang['Minutes'].'</tunit1></blue1></thevalue>
+else if ($seconds_ago > 60) {echo '<blue> '.intval($seconds_ago / 60) . ' </blue><tunit1> '.$lang['Minutes'].'</tunit1></blue1></thevalue>
     ';echo "<maxlow>".$lang['Ago']."</maxlow></weather34top>";}
-else if ($seconds_ago <= 60) {echo '<blue>'.intval($seconds_ago / 60) . ' </blue><tunit1>'.$lang['Minute'].'</tunit1></blue1></thevalue>
+else if ($seconds_ago <= 60) {echo '<blue> '.intval($seconds_ago / 60) . ' </blue><tunit1> '.$lang['Minute'].'</tunit1></blue1></thevalue>
     '; echo "<maxlow>".$lang['Ago']."</maxlow></weather34top>";}
 else echo "";
 
