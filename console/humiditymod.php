@@ -60,7 +60,7 @@ else if ($weather["humidity_ymax"]>0){
 
 <div class="heatcircle2"><div class="heatcircle-content">
 <?php //humidity min yesterday
-echo "<valuetextheading1>".$lang['Month']." Min <blue>".$weather["humidity_ymintime"]."</blue></valuetextheading1><br>";
+echo "<valuetextheading1>".date('Y')." Min <blue>".$weather["humidity_ymintime"]."</blue></valuetextheading1><br>";
 if ($weather["humidity_ymin"]>75){
     echo "
 <div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["humidity_ymin"]."<smalltempunit2>%";

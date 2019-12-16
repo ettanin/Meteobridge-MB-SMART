@@ -86,7 +86,7 @@ echo "
 
 <div class="heatcircle2"><div class="heatcircle-content">
 <?php  //dewpoint min year
-echo "<valuetextheading1>".$lang['Month']." Min <blue>".$weather["tempymintime"]."</blue></valuetextheading1><br>";
+echo "<valuetextheading1>".date('Y')." Min <blue>".$weather["tempymintime"]."</blue></valuetextheading1><br>";
 if ($weather["tempymin"]>24) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
