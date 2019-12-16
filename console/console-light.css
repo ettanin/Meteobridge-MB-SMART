@@ -2067,7 +2067,13 @@ a {
 
 
     }
+    
 
+    .homeweathercompass2>.homeweathercompass-line2 {         
+        left: 350px;
+       
+    }
+    
 
 }
 
@@ -2075,6 +2081,13 @@ a {
 @media screen and (max-width: 640px) {
     .desktoplink,.designedby {
         display: none
+    }
+
+
+    .homeweathercompass2>.homeweathercompass-line2 {         
+        left: 0px;
+        margin-top:-45px  
+       
     }
 
     .consolesetup,

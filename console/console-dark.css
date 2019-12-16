@@ -2049,6 +2049,12 @@ a {
 
 
     }
+
+
+    .homeweathercompass2>.homeweathercompass-line2 {         
+        left: 350px;
+       
+    }
 }
 
 
@@ -2064,6 +2070,12 @@ a {
         text-decoration: none;
         margin-left: 10px;
         color: #ffffff
+    }
+    .homeweathercompass2>.homeweathercompass-line2 {         
+        left: 0px;   
+        margin-top:-45px     
+       
+       
     }
 
 
