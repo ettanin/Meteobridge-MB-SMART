@@ -1736,7 +1736,7 @@ valuebeaufort {
 
 .modulecaptionpressure {
     position: relative;
-    left: 100px;
+    left: 90px;
     -webkit-border-bottom-right-radius: 2px;
     -webkit-border-bottom-left-radius: 2px;
     -moz-border-radius-bottomright: 2px;
@@ -1775,7 +1775,7 @@ valuebeaufort {
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: -84px;
+    top: -85px;
     color: #f5f5f5;
 
 }
