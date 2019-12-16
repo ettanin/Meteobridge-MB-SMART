@@ -1,4 +1,4 @@
-<?php require_once('livedata.php');require_once('common.php');?>
+<?php include('livedata.php');include('common.php');?>
 <div class="modulecaption"><?php echo $lang['Humidity']?> <blue1>%</blue1></div>
 <div class="tempcontainer">
 <?php echo "<div class='maxdata'>". $weather["humidity_min"]."%</div>";?> 
@@ -27,58 +27,58 @@ else echo '<trendmovementsteadyx>'.$steadysymbol.'</trendmovementsteadyx>';?>
 <div class="temptrendphrase">
 <?php 
 //falling
-if($weather["humidity_trend"]<0){echo '&nbsp;&nbsp;'.$lang['Falling'];}
+if($weather["humidity_trend"]<0){echo '&nbsp;&nbsp;'.$lang["Falling"];}
 //rising
-else if($weather["humidity_trend"]>0){echo '&nbsp;&nbsp;'.$lang['Rising'];}
+else if($weather["humidity_trend"]>0){echo '&nbsp;&nbsp;'.$lang["Rising"];}
 //steady
-else echo '&nbsp;&nbsp;&nbsp;'.$lang['Steady'];?>
+else echo '&nbsp;&nbsp;'.$lang["Steady"];?>
 </span></div></div></div>
 
 
 <div class="heatcircle"><div class="heatcircle-content">
-<?php //humidity max yesterday
-if ($weather["humidity_ydmax"]>75){
-    echo "<valuetextheading1>".$lang['Yesterday']." Max</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["humidity_ydmax"]."<smalltempunit2>%";
+<?php //humidity max year
+echo "<valuetextheading1>".date('Y')." Max <blue>".$weather["humidity_ymaxtime"]."</blue></valuetextheading1><br>";
+if ($weather["humidity_ymax"]>75){
+    echo "<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["humidity_ymax"]."<smalltempunit2>%";
 }
 
-else if ($weather["humidity_ydmax"]>60){
-    echo "<valuetextheading1>".$lang['Yesterday']." Max</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["humidity_ydmax"]."<smalltempunit2>%";
+else if ($weather["humidity_ymax"]>60){
+    echo "<div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["humidity_ymax"]."<smalltempunit2>%";
 }
 
-else if ($weather["humidity_ydmax"]>50){
-    echo "<valuetextheading1>".$lang['Yesterday']." Max</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["humidity_ydmax"]."<smalltempunit2>%";
+else if ($weather["humidity_ymax"]>50){
+    echo "
+<div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["humidity_ymax"]."<smalltempunit2>%";
 }
 
-else if ($weather["humidity_ydmax"]>0){
-    echo "<valuetextheading1>".$lang['Yesterday']." Max</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome30-35c>".$weather["humidity_ydmax"]."<smalltempunit2>%";
+else if ($weather["humidity_ymax"]>0){
+    echo "
+<div class=tempconverter1><div class=tempmodulehome30-35c>".$weather["humidity_ymax"]."<smalltempunit2>%";
 }
 ?><smalltempunit2></div></div></div>
 
 
 <div class="heatcircle2"><div class="heatcircle-content">
 <?php //humidity min yesterday
-if ($weather["humidity_ydmin"]>75){
-    echo "<valuetextheading1>".$lang['Yesterday']." Min</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["humidity_ydmin"]."<smalltempunit2>%";
+echo "<valuetextheading1>".$lang['Month']." Min <blue>".$weather["humidity_ymintime"]."</blue></valuetextheading1><br>";
+if ($weather["humidity_ymin"]>75){
+    echo "
+<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["humidity_ymin"]."<smalltempunit2>%";
 }
 
-else if ($weather["humidity_ydmin"]>60){
-    echo "<valuetextheading1>".$lang['Yesterday']." Min</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["humidity_ydmin"]."<smalltempunit2>%";
+else if ($weather["humidity_ymin"]>60){
+    echo "
+<div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["humidity_ymin"]."<smalltempunit2>%";
 }
 
-else if ($weather["humidity_ydmin"]>50){
-    echo "<valuetextheading1>".$lang['Yesterday']." Min</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["humidity_ydmin"]."<smalltempunit2>%";
+else if ($weather["humidity_ymin"]>50){
+    echo "
+<div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["humidity_ymin"]."<smalltempunit2>%";
 }
 
-else if ($weather["humidity_ydmin"]>0){
-    echo "<valuetextheading1>".$lang['Yesterday']." Min</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome30-35c>".$weather["humidity_ydmin"]."<smalltempunit2>%";
+else if ($weather["humidity_ymin"]>0){
+    echo "
+<div class=tempconverter1><div class=tempmodulehome30-35c>".$weather["humidity_ymin"]."<smalltempunit2>%";
 }
 ?>
 </smalltempunit2></div></div></div></div></div>

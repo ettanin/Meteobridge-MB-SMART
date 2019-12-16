@@ -1,7 +1,7 @@
 <?php include('livedata.php');header('Content-type: text/html; charset=utf-8');	?>
 <div class="online">
-<?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?>
-</div>
+<?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
+<div class="indoorclock">  <?php echo $hometemp." " .$weather["temp_indoor"] . '<smalltempunit2>&deg;'.$weather["temp_units"] ?></smalltempunit2></div>  
   <div class="clock">
   <span id="hour"></span>
   <span id="minute"></span>

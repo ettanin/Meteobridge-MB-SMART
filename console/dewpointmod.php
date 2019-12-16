@@ -1,5 +1,5 @@
-<?php require_once('livedata.php');require_once('common.php');?>
-<div class="modulecaption"><?php echo $lang['Dewpoint']?> &deg;<blue1><?php echo $weather["temp_units"]?></blue1></div>
+<?php include('livedata.php');include('common.php');?>
+<div class="modulecaption"><?php echo $lang['Dewpoint']?>&deg;<blue1><?php echo $weather["temp_units"]?></blue1></div>
 <div class="tempcontainer">
 <?php echo "<div class='maxdata'>". $weather["dewmin"]."&deg;</div>";?> 
 <?php echo "<div class='mindata'>".$weather["dewmax"]."&deg;</div>";?>
@@ -50,62 +50,69 @@ else echo '<trendmovementsteadyx>'.$steadysymbol.'</trendmovementsteadyx>';?>
 <div class="temptrendphrase">
 <?php 
 //falling
-if($weather["dewpoint_trend"]<0){echo '&nbsp;&nbsp;'.$lang['Falling'];}
+if($weather["dewpoint_trend"]<0){echo '&nbsp;&nbsp;'.$lang["Falling"];}
+
 //rising
-else if($weather["dewpoint_trend"]>0){echo '&nbsp;&nbsp;'.$lang['Rising'];}
+else if($weather["dewpoint_trend"]>0){echo '&nbsp;&nbsp;'.$lang["Rising"];}
 //steady
-else echo '&nbsp;&nbsp;&nbsp;'.$lang['Steady'];?>
+else echo '&nbsp;&nbsp;'.$lang["Steady"];?>
 </span></div></div></div>
 
 
 
 <div class="heatcircle"><div class="heatcircle-content">
-<?php  //dewpoint max yesterday
-if ($weather["dewydmax"]>24) {
-echo "<valuetextheading1>".$lang['Yesterday']." Max</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["dewydmax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+<?php  //dewpoint max Year
+echo "<valuetextheading1>".date('Y')." Max <blue>".$weather["dewymaxtime"]."</blue></valuetextheading1><br>";
+if ($weather["dewymax"]>24) {
+echo "
+<div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["dewymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 
-else if ($weather["dewydmax"]>19) {
-echo "<valuetextheading1>".$lang['Yesterday']." Max</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["dewydmax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+else if ($weather["dewymax"]>19) {
+echo "
+<div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["dewymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
     
 
-else if ($weather["dewydmax"]>10) {
-echo "<valuetextheading1>".$lang['Yesterday']." Max</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["dewydmax"]."&deg;<smalltempunit2>".$weather["temp_units"];}  
+else if ($weather["dewymax"]>10) {
+echo "
+<div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["dewymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}  
 
-else if ($weather["dewydmax"]>7) {
-echo "<valuetextheading1>".$lang['Yesterday']." Max</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["dewydmax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+else if ($weather["dewymax"]>7) {
+echo "
+<div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["dewymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 
-else if ($weather["dewydmax"]>-50) {
-echo "<valuetextheading1>".$lang['Yesterday']." Max</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["dewydmax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+else if ($weather["dewymax"]>-50) {
+echo "
+<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["dewymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 
 ?><smalltempunit2></div></div></div>
 
 <div class="heatcircle2"><div class="heatcircle-content">
-<?php  //dewpoint min yesterday
-if ($weather["dewydmin"]>24) {
-echo "<valuetextheading1>".$lang['Yesterday']." Min</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["dewydmin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+<?php  //dewpoint min year
+echo "<valuetextheading1>".date('Y')." Min <blue>".$weather["dewymintime"]."</blue></valuetextheading1><br>";
+if ($weather["dewymin"]>24) {
+echo "
+<div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["dewymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 
-else if ($weather["dewydmin"]>19) {
-echo "<valuetextheading1>".$lang['Yesterday']." Min</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["dewydmin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+else if ($weather["dewymin"]>19) {
+echo "
+<div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["dewymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
     
 
-else if ($weather["dewydmin"]>10) {
-echo "<valuetextheading1>".$lang['Yesterday']." Min</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["dewydmin"]."&deg;<smalltempunit2>".$weather["temp_units"];}  
+else if ($weather["dewymin"]>10) {
+echo "
+<div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["dewymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}  
 
-else if ($weather["dewydmin"]>7) {
-echo "<valuetextheading1>".$lang['Yesterday']." Min</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["dewydmin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+else if ($weather["dewymin"]>7) {
+echo "
+<div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["dewymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 
-else if ($weather["dewydmin"]>-50) {
-echo "<valuetextheading1>".$lang['Yesterday']." Min</valuetextheading1><br>
-<div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["dewydmin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+else if ($weather["dewymin"]>2) {
+    echo "
+    <div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["dewymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+
+else if ($weather["dewymin"]>-50) {
+echo "
+<div class=tempconverter1><div class=tempmodulehome-10-0c>".$weather["dewymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 
 ?>
 </smalltempunit2></div></div></div></div></div>

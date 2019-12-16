@@ -299,7 +299,7 @@ belowthehorizon {
 }
 
 orange {
-    color: #dd5b1e
+    color: #ff7738
 }
 
 .tempcontainer {
@@ -616,7 +616,7 @@ blue {
 }
 
 .heatcircle2 {
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 0
 }
 
@@ -631,13 +631,23 @@ blue {
 }
 
 .heatcircle5 {
-    margin-top: -40px;
+    margin-top: -41px;
     margin-left: 40px
 }
 
 .heatcircle6 {
-    margin-top: 51px;
+    margin-top: 43px;
     margin-left: 0
+}
+
+.heatcircleindoor {
+    margin-top: 40px;
+    margin-left: 0px
+}
+
+.heatcirclerainmonth {
+    margin-top: 40px;
+    margin-left: 0px
 }
 
 .tempconvertercircleblue,
@@ -648,7 +658,7 @@ blue {
     position: absolute;
     right: 0;
     width: 3.2rem;
-    height: 1rem;
+    height: .8rem;
     color: #545454;
     overflow: hidden;
     -webkit-box-align: center;
@@ -716,7 +726,7 @@ smallrainunit4 {
     border: 1px solid hsla(206, 12%, 27%, 0.5);
     border-width: thin;
     border-radius: 2px;
-    font-size: .85em;
+    font-size: .8em;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -754,12 +764,12 @@ smallrainunit4 {
     display: -ms-flexbox;
     display: flex;
     width: 6.5rem;
-    height: 1.5rem;
+    height: 1rem;
     color: #545454;
     overflow: hidden;
     font-family: weathertext2;
     line-height: 1;
-    border: 1px solid hsla(206, 12%, 27%, 0.5);
+    border: 1px solid #ced1da;
     border-width: thin;
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -767,7 +777,7 @@ smallrainunit4 {
     border-left: 0;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
-    font-size: 14px;
+    font-size: 13px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1176,16 +1186,17 @@ homeweathercompass2 {
 }
 
 .text2 {
-    margin-top: -35px;
-    margin-left: 0;    
+    margin-top: -30px;
+    margin-left: -5px;    
     font-size: 1.75em
 }
 
 .pressuretext,
 .pressuretextfast {
     position: absolute;
+    display:flex;
     width:auto;
-    margin-top: 3px;
+    margin-top: 5px;
     margin-left:0;
     color: #ffffff;
     text-align: center;
@@ -1197,7 +1208,9 @@ homeweathercompass2 {
     -moz-border-radius:3px;
     -ms-border-radius:3px;
     -o-border-radius:3px;
-    padding:1px;
+    justify-content: center;
+    align-items: center;
+    padding:2px;
 }
 
 .pressuretextfast {
@@ -1742,7 +1755,7 @@ valuebeaufort {
 
 .modulecaptionpressure {
     position: relative;
-    left: 90px;
+    left: 95px;
     -webkit-border-bottom-right-radius: 2px;
     -webkit-border-bottom-left-radius: 2px;
     -moz-border-radius-bottomright: 2px;
@@ -1751,6 +1764,7 @@ valuebeaufort {
     border-bottom-left-radius: 2px;
     background: #e6e8ef;
     font-family: Headingtext;
+    width: auto;
     max-width: 100px;
     font-size: 11px;
     padding: 4px;
@@ -1758,7 +1772,7 @@ valuebeaufort {
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: -71px;
+    top: -69px;
     color: #545454;
     -webkit-box-shadow: inset 0 15px hsla(227, 22%, 92%, 0.5);
     box-shadow: inset 0 15px hsla(227, 22%, 92%, 0.5);
@@ -1783,7 +1797,7 @@ valuebeaufort {
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: -82px;
+    top: -81px;
     color: #545454;
     -webkit-box-shadow: inset 0 15px hsla(227, 22%, 92%, 0.502);
     box-shadow: inset 0 15px hsla(227, 22%, 92%, 0.5);
@@ -1932,11 +1946,11 @@ iconcolor2 {
     max-width: 275px;
     text-align: left;
     margin-left: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 2px;
     line-height: 1;
-
 }
+.indoorclock{font-size:11px;color:#545454;position:absolute;float:none;margin-left:199px;margin-top:12px;z-index:99999}
 
 .maxbox {
     position: absolute;
@@ -2067,13 +2081,13 @@ a {
 
 
     }
-    
+
 
     .homeweathercompass2>.homeweathercompass-line2 {         
         left: 350px;
        
     }
-    
+
 
 }
 
@@ -2082,7 +2096,6 @@ a {
     .desktoplink,.designedby {
         display: none
     }
-
 
     .homeweathercompass2>.homeweathercompass-line2 {         
         left: 30px;

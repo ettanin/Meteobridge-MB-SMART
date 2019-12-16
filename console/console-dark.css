@@ -602,6 +602,7 @@ blue {
     color: #00adbd
 }
 
+
 .heatcircle,
 .heatcircle2,
 .heatcircle3,
@@ -619,12 +620,12 @@ blue {
 }
 
 .heatcircle2 {
-    margin-top: 55px;
+    margin-top: 40px;
     margin-left: 0
 }
 
 .heatcircle3 {
-    margin-top: 5px;
+    margin-top: 0;
     margin-left: -85px
 }
 
@@ -639,10 +640,19 @@ blue {
 }
 
 .heatcircle6 {
-    margin-top: 55px;
+    margin-top: 41px;
     margin-left: 0
 }
 
+.heatcircleindoor {
+    margin-top: 40px;
+    margin-left: 0px
+}
+
+.heatcirclerainmonth {
+    margin-top: 40px;
+    margin-left: 0px
+}
 .tempconvertercircleblue,
 .tempconvertercirclegreen,
 .tempconvertercircleorange,
@@ -757,7 +767,7 @@ smallrainunit4 {
     display: -ms-flexbox;
     display: flex;
     width: 6.5rem;
-    height: 1.5rem;
+    height: 1rem;
     color: #afb7c0;
     overflow: hidden;
     font-family: weathertext2;
@@ -770,7 +780,7 @@ smallrainunit4 {
     border-left: 0;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
-    font-size: 14px;
+    font-size: 13px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1162,7 +1172,7 @@ homeweathercompass2 {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin-top:-50px
+    margin-top:-45px
 
 
 }
@@ -1182,16 +1192,17 @@ homeweathercompass2 {
 }
 
 .text2 {
-    margin-top: -35px;
-    margin-left: 0;    
+    margin-top: -30px;
+    margin-left: -5px;    
     font-size: 1.75em
 }
 
 .pressuretext,
 .pressuretextfast {
     position: absolute;
+    display:flex;
     width:auto;
-    margin-top: 3px;
+    margin-top: 5px;
     margin-left:0;
     color: #ffffff;
     text-align: center;
@@ -1203,7 +1214,9 @@ homeweathercompass2 {
     -moz-border-radius:3px;
     -ms-border-radius:3px;
     -o-border-radius:3px;
-    padding:1px;
+    justify-content: center;
+    align-items: center;
+    padding:2px;
 }
 
 .pressuretextfast {
@@ -1736,7 +1749,7 @@ valuebeaufort {
 
 .modulecaptionpressure {
     position: relative;
-    left: 90px;
+    left: 85px;
     -webkit-border-bottom-right-radius: 2px;
     -webkit-border-bottom-left-radius: 2px;
     -moz-border-radius-bottomright: 2px;
@@ -1745,14 +1758,15 @@ valuebeaufort {
     border-bottom-left-radius: 2px;
     background: #22252f;
     font-family: Headingtext;
-    max-width: 100px;
+    width: auto;
+    max-width: 140px;
     font-size: 11px;
     padding: 4px;
     padding-bottom: 5px;
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: -73px;
+    top: -71px;
     color: #f5f5f5;
 
 }
@@ -1775,7 +1789,7 @@ valuebeaufort {
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: -85px;
+    top: -84px;
     color: #f5f5f5;
 
 }
@@ -1964,7 +1978,7 @@ iconcolor2 {
     line-height: 1;
 
 }
-
+.indoorclock{font-size:11px;color:#ffffff;position:absolute;float:none;margin-left:199px;margin-top:12px;z-index:99999}
 .maxbox {
     position: absolute;
     border-radius: 2px;
@@ -2055,12 +2069,19 @@ a {
         left: 350px;
        
     }
+    
 }
 
 
 @media screen and (max-width: 640px) {
     .desktoplink,.designedby {
         display: none
+    }
+
+    .homeweathercompass2>.homeweathercompass-line2 {         
+        left: 30px;
+        margin-top:-45px  
+       
     }
 
     .consolesetup,
@@ -2070,12 +2091,6 @@ a {
         text-decoration: none;
         margin-left: 10px;
         color: #ffffff
-    }
-    .homeweathercompass2>.homeweathercompass-line2 {         
-        left: 30px;   
-        margin-top:-45px     
-       
-       
     }
 
 
