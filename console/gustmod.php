@@ -126,5 +126,10 @@ else if ($weather['windmmax']>=0 && $weather["wind_units"]=="kts") {
 
 
 ?>
-</valuebeaufort></div></div></div></div>
-</div>
+</valuebeaufort></div></div>
+
+<div class=thetrendgap>
+<?php 
+//windrun
+echo '<div class=thetrendboxblue>'.$lang['Wind'].' Run';echo '&nbsp;'.number_format($weather["windrun34"],1).'<smalltempunit2>&nbsp;';if ($weather["wind_units"]=='km/h'){echo 'km';}else echo 'mi';?>
+</div></div></div></div>

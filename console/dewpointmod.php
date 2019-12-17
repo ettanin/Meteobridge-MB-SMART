@@ -36,27 +36,7 @@ else if($weather["temp_units"]=='F' && $weather["dewpoint"]<113){echo '<div clas
 else if($weather["temp_units"]=='F' && $weather["dewpoint"]<212){echo '<div class=outside50>'.number_format($weather["dewpoint"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
 ?>
 </div></smalltempunit>
-<div class="temptrendx">
-<?php echo $weather["dewpoint_trend"]." </span>\n";
-//falling
-if($weather["dewpoint_trend"]<0){echo '<trendmovementfallingx>'.$fallingsymbol.' '.number_format($weather["dewpoint_trend"],1).'&deg;</trendmovementfallingx>';}
-//rising
-else if($weather["dewpoint_trend"]>0){echo '<trendmovementrisingx>'.$risingsymbol.' +'.number_format($weather["dewpoint_trend"],1).'&deg;</trendmovementfallingx>';}
-//steady
-else echo '<trendmovementsteadyx>'.$steadysymbol.'</trendmovementsteadyx>';?>
-</span></div>
-
-
-<div class="temptrendphrase">
-<?php 
-//falling
-if($weather["dewpoint_trend"]<0){echo '&nbsp;&nbsp;'.$lang["Falling"];}
-
-//rising
-else if($weather["dewpoint_trend"]>0){echo '&nbsp;&nbsp;'.$lang["Rising"];}
-//steady
-else echo '&nbsp;&nbsp;'.$lang["Steady"];?>
-</span></div></div></div>
+</div></div>
 
 
 
@@ -115,4 +95,14 @@ echo "
 <div class=tempconverter1><div class=tempmodulehome-10-0c>".$weather["dewymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 
 ?>
-</smalltempunit2></div></div></div></div></div>
+</smalltempunit2></div></div>
+
+<div class="thetrendgap">
+<?php 
+//falling
+if($weather["dewpoint_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falling'].'';echo '&nbsp;'.$fallingsymbolx.'&nbsp; '.number_format($weather["dewpoint_trend"],1).'&deg;';}
+//rising
+else if($weather["dewpoint_trend"]>0){echo '<div class=thetrendboxorange>'.$lang['Rising'].'';echo '&nbsp;'.$risingsymbolx.'&nbsp; + '.number_format($weather["dewpoint_trend"],1).'&deg;';}
+//steady
+else echo '<div class=thetrendboxblue>'.$lang['Steady'].''.$steadysymbol.'';?>
+</div></div></div></div>

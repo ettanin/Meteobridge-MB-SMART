@@ -460,6 +460,62 @@ trendmovementsteadyx {
     margin-left: 80px
 }
 
+
+.thetrendboxblue,.thetrendboxorange,.thetrendboxgreen
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 8rem;
+    height: .9rem;
+    color: #545454;
+    overflow: hidden;
+    font-family: weathertext2;
+    line-height: 1;
+    border: 1px solid #ced1da;
+    border-width: thin;
+    -webkit-border-left: 0;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    border-left: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    font-size: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: -135px;
+    z-index: auto;
+    position: absolute;
+    margin-top: 25px;
+    
+}
+.thetrendboxblue{ 
+    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
+    box-shadow: inset 2px 0 0 0 #4f96a1;
+}
+.thetrendboxorange{ 
+    -webkit-box-shadow: inset 2px 0 0 0 #d35f50;
+    box-shadow: inset 2px 0 0 0 #d35f50;
+}
+.thetrendboxgreen{ 
+    -webkit-box-shadow: inset 2px 0 0 0 #90b22a;
+    box-shadow: inset 2px 0 0 0 #90b22a;
+}
+.thetrendgap{margin-top:6px}
+.theraingap{margin-top:-34px}
+
+
+
+
+
+
+
+
+
 .maxdata {
     color: #545454;
     width: 50px;

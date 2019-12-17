@@ -165,7 +165,7 @@ $lang['SWdirs']                   = 'Syd Vest';
 $lang['NWdirs']                   = 'Nord Vest';
 //rain
 $lang['raintoday']               = 'Regn i dag';
-$lang['Rate']                    = 'Regn Rate';
+$lang['Rate']                    = 'Rate';
 $lang['Rainfall']                = 'Regn';
 $lang['Precip']                  = 'nedbør'; // must be short name do not use full precipatation !!!! ///
 $lang['Rain']                    = 'Regn';
@@ -427,4 +427,10 @@ $lang['*Warning Nearby'] = '*Advarsel i nærheden';
 $lang['Recent Earthquake'] = 'Seneste jordskælv';
 $lang['Regional Recent Earthquakes'] = 'Seneste regionale jordskælv';
 
+//uv
+$lang['Low Caution']='Lav risiko';
+$lang['Moderate Caution']='Moderat risiko';
+$lang['High Caution']='Høj risiko';
+$lang['Very High Caution']='Høj risiko';
+$lang['Extreme Caution']='Ekstrem risiko';
 ?>

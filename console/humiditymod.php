@@ -12,27 +12,7 @@ else if($weather['humidity']<70){echo '<div class=outside6-10>'.number_format($w
 else if($weather['humidity']<100){echo '<div class=outsidezero>'.number_format($weather['humidity'],0).'<smalltempunit>%</smalltempunit>';}
 
 ?>
-</div></smalltempunit>
-<div class="temptrendx">
-<?php echo $weather["humidity_trend"]." </span>\n";
-//falling
-if($weather["humidity_trend"]<0){echo '<trendmovementfallingx>'.$fallingsymbol.' '.number_format($weather["humidity_trend"],1).'%</trendmovementfallingx>';}
-//rising
-else if($weather["humidity_trend"]>0){echo '<trendmovementrisingx>'.$risingsymbol.' +'.number_format($weather["humidity_trend"],1).'%</trendmovementfallingx>';}
-//steady
-else echo '<trendmovementsteadyx>'.$steadysymbol.'</trendmovementsteadyx>';?>
-</span></div>
-
-
-<div class="temptrendphrase">
-<?php 
-//falling
-if($weather["humidity_trend"]<0){echo '&nbsp;&nbsp;'.$lang["Falling"];}
-//rising
-else if($weather["humidity_trend"]>0){echo '&nbsp;&nbsp;'.$lang["Rising"];}
-//steady
-else echo '&nbsp;&nbsp;'.$lang["Steady"];?>
-</span></div></div></div>
+</div></smalltempunit></div></div>
 
 
 <div class="heatcircle"><div class="heatcircle-content">
@@ -81,4 +61,14 @@ else if ($weather["humidity_ymin"]>0){
 <div class=tempconverter1><div class=tempmodulehome30-35c>".$weather["humidity_ymin"]."<smalltempunit2>%";
 }
 ?>
-</smalltempunit2></div></div></div></div></div>
+</smalltempunit2></div></div>
+
+<div class="thetrendgap">
+<?php 
+//falling
+if($weather["humidity_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falling'].'';echo '&nbsp;'.$fallingsymbolx.'&nbsp; '.number_format($weather["humidity_trend"],1).'%';}
+//rising
+else if($weather["humidity_trend"]>0){echo '<div class=thetrendboxorange>'.$lang['Rising'].'';echo '&nbsp;'.$risingsymbolx.'&nbsp; + '.number_format($weather["humidity_trend"],1).'%';}
+//steady
+else echo '<div class=thetrendboxblue>'.$lang['Steady'].''.$steadysymbol.'';?>
+</div></div></div></div>

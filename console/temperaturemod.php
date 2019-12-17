@@ -35,26 +35,7 @@ else if($weather["temp_units"]=='F' && $weather['temp']<113){echo '<div class=ou
 else if($weather["temp_units"]=='F' && $weather['temp']<212){echo '<div class=outside50>'.number_format($weather['temp'],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
 ?>
 </div></smalltempunit>
-<div class="temptrendx">
-<?php echo $weather["temp_trend"]." </span>\n";
-//falling
-if($weather["temp_trend"]<0){echo '<trendmovementfallingx>'.$fallingsymbol.' '.number_format($weather["temp_trend"],1).'&deg;</trendmovementfallingx>';}
-//rising
-else if($weather["temp_trend"]>0){echo '<trendmovementrisingx>'.$risingsymbol.' +'.number_format($weather["temp_trend"],1).'&deg;</trendmovementfallingx>';}
-//steady
-else echo '<trendmovementsteadyx>'.$steadysymbol.'</trendmovementsteadyx>';?>
-</span></div>
-
-
-<div class="temptrendphrase">
-<?php 
-//falling
-if($weather["temp_trend"]<0){echo '&nbsp;&nbsp;'.$lang["Falling"];}
-//rising
-else if($weather["temp_trend"]>0){echo '&nbsp;&nbsp;'.$lang["Rising"];}
-//steady
-else echo '&nbsp;&nbsp;'.$lang["Steady"];?>
-</span></div></div></div>
+</div></div>
 
 
 
@@ -142,5 +123,15 @@ else if ($weather["temp_units"]=='F' && $weather["temp_avgtoday"]>41){echo "<div
 else if ($weather["temp_units"]=='F' && $weather["temp_avgtoday"]>=32){echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["temp_avgtoday"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 else if ($weather["temp_units"]=='F' && $weather["temp_avgtoday"]>14){echo "<div class=tempconverter1><div class=tempmodulehome-10-0c>". $weather["temp_avgtoday"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 else if ($weather["temp_units"]=='F' && $weather["temp_avgtoday"]>-50){echo "<div class=tempconverter1><div class=tempmodulehome-50-10c>". $weather["temp_avgtoday"]."&deg;<smalltempunit2>".$weather["temp_units"];}?>
-</smalltempunit2></div></div></div></div>
+</smalltempunit2></div></div></div>
 </div>
+
+
+<?php 
+//falling
+if($weather["temp_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falling'].'';echo '&nbsp;'.$fallingsymbolx.'&nbsp; '.number_format($weather["temp_trend"],1).'&deg;';}
+//rising
+else if($weather["temp_trend"]>0){echo '<div class=thetrendboxorange>'.$lang['Rising'].'';echo '&nbsp;'.$risingsymbolx.'&nbsp; + '.number_format($weather["temp_trend"],1).'&deg;';}
+//steady
+else echo '<div class=thetrendboxblue>'.$lang['Steady'].''.$steadysymbol.'';?>
+</div></div></div></div>

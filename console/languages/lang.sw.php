@@ -431,4 +431,11 @@ $lang['*Warning Nearby'] = '*Warning Nearby';
 $lang['Recent Earthquake'] = 'Recent Jordbävningar';
 $lang['Regional Recent Earthquakes'] = 'Regionala Jordbävningar';
 
+//uv
+$lang['Low Caution']='Ingen Risk';
+$lang['Moderate Caution']='Måttlig Risk';
+$lang['High Caution']='Hög Risk';
+$lang['Very High Caution']='Hög Risk';
+$lang['Extreme Caution']='Extrem Risk';
+
 ?>

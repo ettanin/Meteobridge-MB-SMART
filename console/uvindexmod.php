@@ -11,22 +11,24 @@ else if ($weather["uv"]>8) {echo '<div class=windbox style="color:#d35d4e">'.num
 else if ($weather["uv"]>5) {echo '<div class=windbox style="color:#d05f2d">'.number_format($weather["uv"],1)."<smalltempunit> &nbsp;UVI";}
 else if ($weather["uv"]>=3) {echo '<div class=windbox style="color:#e6a141">'.number_format($weather["uv"],1)."<smalltempunit> &nbsp;UVI";}
 else if ($weather["uv"]>=0) {echo '<div class=windbox style="color:#90b12a">'.number_format($weather["uv"],1)."<smalltempunit> &nbsp;UVI";}?>
-</div></smalltempunit>
-<div class="temptrendphrase" style="font-size:0.75em;margin-top:3px">
-</div>
-</span></div>
-</div></div>
-
-
+</div></smalltempunit></span></div></div></div>
 
 <div class="heatcircle"><div class="heatcircle-content">
 <?php  //heat-index/real feel
 echo "<valuetextheading1>&nbsp;&nbsp;".$lang['Solarradiation']." </valuetextheading1><br><div class=tempconverter1><div class=tempmodulehome20-25c >".$weather["solar"]."<smalltempunit2>wm/2";
-
 ?><smalltempunit2></div></div></div>
 
 <div class="heatcircle2"><div class="heatcircle-content"><valuetextheading1>&nbsp;<?php echo $lang['Luminance']?> Lux</valuetextheading1>
 <?php //avg today
-echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["lux"]."<smalltempunit2>Lux";
+echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["lux"]."<smalltempunit2>Lux";?>
+</smalltempunit2></div></div>
+
+<div class=thetrendgap>
+<div class=thetrendboxorange>
+<?php if ($weather["uv"]>=10) {echo $uviclear.$lang['Extreme Caution'];}
+else if ($weather["uv"]>=8) {echo $uviclear.$lang['Very High Caution'];}
+else if ($weather["uv"]>=6) {echo $uviclear.$lang['High Caution'];}
+else if ($weather["uv"]>=3) {echo $uviclear.$lang['Moderate Caution'];}
+else if ($weather["uv"]>=0 ) {echo $uviclear,$lang['Low Caution'];}
 ?>
-</smalltempunit2></div></div></div></div></div>
+</div></div></div></div>

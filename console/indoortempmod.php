@@ -7,36 +7,16 @@ else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<-5){echo '<div cl
 else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<0){echo '<div class=outsidezero>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<5){echo '<div class=outside0-5>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
 else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<10){echo '<div class=outside6-10>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<15){echo '<div class=outside11-15>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<20){echo '<div class=outside16-20>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<25){echo '<div class=outside21-25>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
 else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<30){echo '<div class=outside26-30>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<35){echo '<div class=outside31-35>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<40){echo '<div class=outside36-40>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<45){echo '<div class=outside41-45>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
-else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<100){echo '<div class=outside50>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
+else if($weather["temp_units"]=='C' && $weather["temp_indoor"]<1000){echo '<div class=outside50>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
 //Fahrenheit
 if($weather["temp_units"]=='F' && $weather["temp_indoor"]<14){echo '<div class=outsideminus10>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
 else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<23){echo '<div class=outsideminus5>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
 else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<32){echo '<div class=outsidezero>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
 else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<41){echo '<div class=outside0-5>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
 else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<50){echo '<div class=outside6-10>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<59){echo '<div class=outside11-15>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<68){echo '<div class=outside16-20>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<77){echo '<div class=outside21-25>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
-else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<86){echo '<div class=outside26-30>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<95){echo '<div class=outside31-35>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<104){echo '<div class=outside36-40>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<113){echo '<div class=outside41-45>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<212){echo '<div class=outside50>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
+else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<1000){echo '<div class=outside26-30>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<95){echo '<div class=outside31-35>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<104){echo '<div class=outside36-40>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<113){echo '<div class=outside41-45>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}else if($weather["temp_units"]=='F' && $weather["temp_indoor"]<212){echo '<div class=outside50>'.number_format($weather["temp_indoor"],1).'<smalltempunit>&deg;'.$weather["temp_units"];}
 ?>
-</div></smalltempunit>
-<div class="temptrendx">
-<?php echo $weather["temp_indoor_trend"]." </span>\n";
-//falling
-if($weather["temp_indoor_trend"]<0){echo '<trendmovementfallingx>'.$fallingsymbol.' '.number_format($weather["temp_indoor_trend"],1).'&deg;</trendmovementfallingx>';}
-//rising
-else if($weather["temp_indoor_trend"]>0){echo '<trendmovementrisingx>'.$risingsymbol.' +'.number_format($weather["temp_indoor_trend"],1).'&deg;</trendmovementfallingx>';}
-//steady
-else echo '<trendmovementsteadyx>'.$steadysymbol.'</trendmovementsteadyx>';?>
-</span></div>
-
-
-<div class="temptrendphrase">
-<?php 
-//falling
-if($weather["temp_indoor_trend"]<0){echo '&nbsp;&nbsp;'.$lang['Falling'];}
-//rising
-else if($weather["temp_indoor_trend"]>0){echo '&nbsp;&nbsp;'.$lang['Rising'];}
-//steady
-else echo '&nbsp;&nbsp;&nbsp;'.$lang['Steady'];?>
-</span></div></div></div>
+</div></smalltempunit></div></div></div>
 
 
 
@@ -71,5 +51,15 @@ else if($weather["temp_units"]=='F' && $weather["temp_indoor_feel"]>-50 ){ echo 
 <?php //avg today
 echo "<div class=tempconverter1><div class=tempmodulehome-50-10c>". $weather["humidity_indoor"]."<smalltempunit2>%";
 ?>
-</smalltempunit2></div></div></div></div>
-</div>
+</smalltempunit2></div>
+
+
+<div class=thetrendgap style="margin-left:15px">
+<?php 
+//falling
+if($weather["temp_indoor_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falling'].'';echo '&nbsp;'.$fallingsymbolx.'&nbsp; '.number_format($weather["temp_indoor_trend"],1).'&deg;';}
+//rising
+else if($weather["temp_indoor_trend"]>0){echo '<div class=thetrendboxorange>'.$lang['Rising'].'';echo '&nbsp;'.$risingsymbolx.'&nbsp; + '.number_format($weather["temp_indoor_trend"],1).'&deg;';}
+//steady
+else echo '<div class=thetrendboxblue>'.$lang['Steady'].''.$steadysymbol.'';?>
+</div></div></div></div>

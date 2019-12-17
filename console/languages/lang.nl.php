@@ -424,5 +424,10 @@ $lang['*Warning Nearby'] = '*Waarschuwing in de buurt';
 $lang['Recent Earthquake'] = 'Recente aardbeving';
 $lang['Regional Recent Earthquakes'] = 'Recente regionale aardbevingen';
 
-
+//uv
+$lang['Low Caution']='Laag Risico';
+$lang['Moderate Caution']='Matig Risico';
+$lang['High Caution']='Hoog Risico';
+$lang['Very High Caution']='Hoog Risico';
+$lang['Extreme Caution']='Extreem Risico';
 ?>
