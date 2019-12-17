@@ -33,7 +33,14 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
-    backface-visibility: hidden
+    backface-visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 3s ease-in;
+    -moz-transition: 3s ease-in;
+    -o-transition: 3s opacity;
+    transition: 3s ease-in;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
 }
 
 container {
@@ -124,7 +131,7 @@ li2 {
     height: 64px;
     line-height: 1.2;
     margin-top: 5px;
-   
+
 
 
 }
@@ -166,7 +173,7 @@ li2 {
     line-height: 2;
     margin-top: 5px;
     font-family: headingtext;
-   
+
 
 }
 
@@ -234,7 +241,7 @@ li2 {
     line-height: 2;
     margin-top: 5px;
     font-family: headingtext;
-    
+
 }
 
 .sunrise1 {
@@ -274,11 +281,11 @@ li2 {
     font-family: clock;
     line-height: 1;
     margin-top: -25px;
-    position: absolute;        
+    position: absolute;
     font-family: headingtext;
     justify-content: center;
     align-items: center;
-    width:260px
+    width: 260px
 }
 
 .daylight1 {
@@ -430,7 +437,7 @@ orange {
     margin-left: 10px;
     font-size: 12px;
     font-family: weathertext2;
-    width:400px
+    width: 400px
 }
 
 .temptrendphrase,
@@ -463,8 +470,9 @@ trendmovementsteadyx {
 }
 
 
-.thetrendboxblue,.thetrendboxorange,.thetrendboxgreen
-{
+.thetrendboxblue,
+.thetrendboxorange,
+.thetrendboxgreen {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -493,22 +501,31 @@ trendmovementsteadyx {
     z-index: auto;
     position: absolute;
     margin-top: 25px;
-    
+
 }
-.thetrendboxblue{ 
+
+.thetrendboxblue {
     -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
     box-shadow: inset 2px 0 0 0 #4f96a1;
 }
-.thetrendboxorange{ 
+
+.thetrendboxorange {
     -webkit-box-shadow: inset 2px 0 0 0 #d35f50;
     box-shadow: inset 2px 0 0 0 #d35f50;
 }
-.thetrendboxgreen{ 
+
+.thetrendboxgreen {
     -webkit-box-shadow: inset 2px 0 0 0 #90b22a;
     box-shadow: inset 2px 0 0 0 #90b22a;
 }
-.thetrendgap{margin-top:6px}
-.theraingap{margin-top:-34px}
+
+.thetrendgap {
+    margin-top: 6px
+}
+
+.theraingap {
+    margin-top: -34px
+}
 
 .maxdata {
     color: #afb7c0;
@@ -703,6 +720,7 @@ blue {
     margin-top: 40px;
     margin-left: 0px
 }
+
 .tempconvertercircleblue,
 .tempconvertercirclegreen,
 .tempconvertercircleorange,
@@ -1205,7 +1223,7 @@ homeweathercompass2 {
 }
 
 .homeweathercompass2>.homeweathercompass-line2 {
-    position: absolute;     
+    position: absolute;
     left: 25px;
     width: 170px;
     height: 170px;
@@ -1222,9 +1240,7 @@ homeweathercompass2 {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin-top:-45px
-
-
+    margin-top: -45px
 }
 
 .homeweathercompass2 {
@@ -1243,30 +1259,30 @@ homeweathercompass2 {
 
 .text2 {
     margin-top: -30px;
-    margin-left: -5px;    
+    margin-left: -5px;
     font-size: 1.75em
 }
 
 .pressuretext,
 .pressuretextfast {
     position: absolute;
-    display:flex;
-    width:auto;
+    display: flex;
+    width: auto;
     margin-top: 5px;
-    margin-left:0;
+    margin-left: 0;
     color: #ffffff;
     text-align: center;
     font-family: weathertext2;
     font-size: 13px;
-    background:#00a4b3;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    background: #00a4b3;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
     justify-content: center;
     align-items: center;
-    padding:2px;
+    padding: 2px;
 }
 
 .pressuretextfast {
@@ -2028,7 +2044,17 @@ iconcolor2 {
     line-height: 1;
 
 }
-.indoorclock{font-size:11px;color:#ffffff;position:absolute;float:none;margin-left:180px;margin-top:11px;z-index:99999}
+
+.indoorclock {
+    font-size: 11px;
+    color: #ffffff;
+    position: absolute;
+    float: none;
+    margin-left: 180px;
+    margin-top: 11px;
+    z-index: 99999
+}
+
 .maxbox {
     position: absolute;
     border-radius: 2px;
@@ -2080,7 +2106,8 @@ a {
 
 @media screen and (max-width: 960px) {
 
-    .designedby,li2 {
+    .designedby,
+    li2 {
         display: none
     }
 
@@ -2115,23 +2142,24 @@ a {
     }
 
 
-    .homeweathercompass2>.homeweathercompass-line2 {         
+    .homeweathercompass2>.homeweathercompass-line2 {
         left: 350px;
-       
+
     }
-    
+
 }
 
 
 @media screen and (max-width: 640px) {
-    .desktoplink,.designedby {
+
+    .desktoplink,
+    .designedby {
         display: none
     }
 
-    .homeweathercompass2>.homeweathercompass-line2 {         
+    .homeweathercompass2>.homeweathercompass-line2 {
         left: 30px;
-        margin-top:-45px  
-       
+        margin-top: -45px
     }
 
     .consolesetup,

@@ -41,6 +41,7 @@ include_once('livedata.php');include_once('updater2.php');
 <link rel="preload" href="fonts/verbatim-regular.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="fonts/verbatim-medium.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="fonts/HelveticaNeue-Medium.woff" as="font" type="font/woff" crossorigin>
+<script>function pageLoaded() {document.querySelector("body").style.opacity = 1;}window.onload = pageLoaded;</script>
 </head>
 <body>
 <!-- weather34 NANOSD console flex layout -->
