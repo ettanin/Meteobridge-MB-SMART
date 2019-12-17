@@ -34,12 +34,21 @@ body {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-    opacity: 0;
-    -webkit-transition: 3s opacity;
-    -moz-transition: 3s opacity;
-    -o-transition: 3s opacity;
-    transition: 3s opacity;    
-    -ms-transition: 3s opacity;
+    -webkit-animation-name: fadein;
+    -moz-animation-name: fadein;
+    -o-animation-name: fadein;
+    -ms-animation-name: fadein;
+    animation-name: fadein;
+    -webkit-animation-duration: 2s;  
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 container {
@@ -525,6 +534,56 @@ trendmovementsteadyx {
 .theraingap {
     margin-top: -34px
 }
+
+.thetrendboxbluebaro,
+.thetrendboxorangebaro,
+.thetrendboxgreenbaro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 140px;
+    height: .9rem;
+    color: #afb7c0;
+    overflow: hidden;
+    font-family: weathertext2;
+    line-height: 1;
+    border: 1px solid #3d464d;
+    border-width: thin;
+    -webkit-border-left: 0;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    border-left: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    font-size: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left:0;
+    z-index: auto;
+    position:relative;
+    margin-top: 10px;
+
+}
+
+.thetrendboxbluebaro {
+    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
+    box-shadow: inset 2px 0 0 0 #4f96a1;
+}
+
+.thetrendboxorangebaro {
+    -webkit-box-shadow: inset 2px 0 0 0 #d35f50;
+    box-shadow: inset 2px 0 0 0 #d35f50;
+}
+
+.thetrendboxgreenbaro {
+    -webkit-box-shadow: inset 2px 0 0 0 #90b22a;
+    box-shadow: inset 2px 0 0 0 #90b22a;
+}
+
 
 .maxdata {
     color: #afb7c0;
@@ -1258,7 +1317,7 @@ homeweathercompass2 {
 
 .text2 {
     margin-top: -30px;
-    margin-left: -5px;
+    margin-left: -35px;
     font-size: 1.75em
 }
 
@@ -1831,7 +1890,7 @@ valuebeaufort {
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: -71px;
+    top: -64px;
     color: #f5f5f5;
 
 }
@@ -2038,7 +2097,7 @@ iconcolor2 {
     max-width: 275px;
     text-align: left;
     margin-left: 5px;
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 2px;
     line-height: 1;
 
@@ -2064,12 +2123,12 @@ iconcolor2 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: -110px;
+    margin-top: -90px;
     z-index: 99999;
     color: #ffffff;
     font-family: weathertext2;
     background: #22252f;
-    margin-left: -143px;
+    margin-left: -149px;
 }
 
 .minbox {
@@ -2082,12 +2141,12 @@ iconcolor2 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: -95px;
+    margin-top: -74px;
     z-index: 99999;
     color: #ffffff;
     font-family: weathertext2;
     background: #22252f;
-    margin-left: -143px;
+    margin-left: -149px;
 }
 
 oorange {
