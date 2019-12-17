@@ -35,12 +35,11 @@ body {
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     opacity: 0;
-    -webkit-transition: 3s ease-in;
-    -moz-transition: 3s ease-in;
+    -webkit-transition: 3s opacity;
+    -moz-transition: 3s opacity;
     -o-transition: 3s opacity;
-    transition: 3s ease-in;
-    -webkit-transition-timing-function: ease-in;
-    transition-timing-function: ease-out;
+    transition: 3s opacity;    
+    -ms-transition: 3s opacity;
 }
 
 container {
