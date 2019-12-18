@@ -50,6 +50,21 @@ body {
     -ms-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+.fade-in{-webkit-animation-name: fadein;
+    -moz-animation-name: fadein;
+    -o-animation-name: fadein;
+    -ms-animation-name: fadein;
+    animation-name: fadein;
+    -webkit-animation-duration: 2s;  
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;}
 
 container {
     margin: 0 auto;
@@ -1272,14 +1287,6 @@ averwordwindword {
     animation: rotate 1.5s both linear
 }
 
-homeweathercompass2 {
-    position: absolute;
-    width: 175px;
-    height: 175px;
-    margin-top: -30px;
-    margin-left: 60px
-}
-
 .homeweathercompass2>.homeweathercompass-line2 {
     position: absolute;
     left: 25px;
@@ -1298,7 +1305,7 @@ homeweathercompass2 {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin-top: -45px
+    margin-top: -50px
 }
 
 .homeweathercompass2 {
@@ -1316,9 +1323,10 @@ homeweathercompass2 {
 }
 
 .text2 {
-    margin-top: -30px;
-    margin-left: -35px;
-    font-size: 1.75em
+    position: relative;
+    margin-top: -0px;
+    margin-left: -25px;
+    font-size: 1.55em
 }
 
 .pressuretext,
@@ -1890,7 +1898,7 @@ valuebeaufort {
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: -64px;
+    top: -50px;
     color: #f5f5f5;
 
 }
@@ -2092,14 +2100,13 @@ iconcolor2 {
 }
 
 .consoleforecast {
-    font-size: 10px;
-    width: 275px;
-    max-width: 275px;
+    font-size: 10px;    
+    width: 20rem;
     text-align: left;
-    margin-left: 5px;
-    margin-top: 20px;
-    padding: 2px;
-    line-height: 1;
+    margin-left: -5px;
+    margin-top: 22px;    
+    line-height: .9;
+
 
 }
 
@@ -2123,7 +2130,7 @@ iconcolor2 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: -90px;
+    margin-top: -100px;
     z-index: 99999;
     color: #ffffff;
     font-family: weathertext2;
@@ -2141,7 +2148,7 @@ iconcolor2 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: -74px;
+    margin-top: -84px;
     z-index: 99999;
     color: #ffffff;
     font-family: weathertext2;
