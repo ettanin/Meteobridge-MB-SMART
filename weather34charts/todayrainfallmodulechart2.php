@@ -8,19 +8,30 @@
 	#   canvasJs.js is protected by CREATIVE COMMONS LICENCE BY-NC 3.0  	                           #
 	# 	free for non commercial use and credit must be left in tact . 	                               #
 	# 	                                                                                               #
-	# 	Release: July 2019						  	                                                   #
+	# 	Release: July 2019		Revised December 2019                                                  #
 	# 	                                                                                               #
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	
-	include('preload.php');
+	include('preload.php');	
+    $file_live=file_get_contents("../mbridge/MBrealtimeupload.txt");
+	$meteobridgeapi=explode(" ",$file_live);
+	$weather["rain_today"] = $meteobridgeapi[9];
+    //CONVERT
 	$conv = 1;
 	if ($rainunit == 'in') {$conv= '0.0393701';}	
 	else if ($rainunit == 'mm'){$conv= '1';}
-	$interval = 1;
-	if ($rainunit == 'in') {$interval= '0.5';}	
-	else if ($rainunit == 'mm'){$interval= '5';}
+	//interval Y
+	$raininterval= $weather["rain_today"];
+	if ($raininterval>=30 && $rainunit == 'mm'){$raininterval='10';}
+	else if ($raininterval>=10 && $rainunit == 'mm'){$raininterval='5';}
+	else if ($raininterval>=5 && $rainunit == 'mm'){$raininterval='2';}
+	else if ($raininterval>=0 && $rainunit == 'mm'){$raininterval='1';}
+	//Inches
+	if ($raininterval>=1 && $rainunit == 'in'){$raininterval='2';}
+	else if ($raininterval>=0.5 && $rainunit == 'in'){$raininterval='2.5';}
+	else if ($raininterval>=0 && $rainunit == 'in'){$raininterval='1';}
+	
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
@@ -118,15 +129,15 @@
 			
 			},
 			
-		axisY:{
+		axisY:{			
 		title: "",
 		titleFontColor: "#555",
 		titleFontSize: 0,
         titleWrap: false,
 		margin: 3,
-		lineThickness: 1,	
-		interval:1,	
-		minimum:0,
+		lineThickness: 1,			
+		minimum:0,		
+		interval: <?php echo ''.$raininterval;?>,
 		gridThickness: 1,	
 		gridDashType: "dot",	
         includeZero:true,		
@@ -186,6 +197,4 @@
 <body>
 </script>
 <div id="chartContainer2" style=" height:150px;margin-top:20px;-webkit-border-radius:4px;border-radius:4px;"></div></div>
-
-
 </body></html>

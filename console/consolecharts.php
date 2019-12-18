@@ -35,7 +35,6 @@ include_once('updater3.php');
 <link rel="preload" href="fonts/verbatim-medium.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="fonts/HelveticaNeue-Medium.woff" as="font" type="font/woff" crossorigin>
 <script>function pageLoaded() {document.querySelector("body").style.opacity = 1;}window.onload = pageLoaded;</script>
-<script>function pageLoaded() {document.querySelector("body").style.opacity = 1;}window.onload = pageLoaded;</script>
 </head>
 <body>
 <!-- weather34 NANOSD chart console flex layout -->
@@ -58,10 +57,19 @@ include_once('updater3.php');
     <li2><div id=sun></div></li2> 
     <li2><div id=time-date></div></li2>  
   </ul>
-    <div class="nav">
+  <div class="nav">
     <a href="consoledavis.php" class="consolesetup"><?php echo $backhome?></a>
-    <a  class="consoleunits" href=<?php if($theme=='dark'){echo'?theme=light';}else{echo'?theme=dark';}?>>
-    <?php if($theme=='dark'){echo '<iconcolor>'.$toggle.' </iconcolor><vspan2>Light</vspan2>';} else{echo '<iconcolor>'.$toggle.' </iconcolor><vspan2>Dark</vspan2>';}?> </a>
+    <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
+      <?php
+        if ($theme == 'dark') {echo '<div class="weather34-toggle">
+          <div class="track"></div> 
+        
+         <div class="ball red">Light</div>
+         </div>';} 
+        else {echo '<div class="weather34-toggle">
+          <div class="track"></div> 
+         <div class="ball red">Dark</div>
+         </div>';}?></a>
+      
     <a href="console-setup.php" target="_blank" class="designedby">  &copy;<?php echo "2015-".date('Y')?> Weather34 Designed </a>  
-    </div>  
- </body></html>
+    </div> </body></html>
