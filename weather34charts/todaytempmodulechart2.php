@@ -16,11 +16,10 @@
 	
 	include('preload.php');
 	$conv = 1;
-	if ($windunit == 'mph') {$conv= '(1.8) +32';}
-	if ($units == 'uk' && $windunit == 'mph') {$conv= '1';}
+	if ($tempunit=='C' && $windunit == 'mph') {$conv= '1';}
+	else if ($windunit == 'mph') {$conv= '(1.8) +32';}
 	else if ($windunit == 'm/s') {$conv= '1';}
 	else if ($windunit == 'km/h'){$conv= '1';}
-	else if ($windunit == 'kts'){$conv= '1';}
 	$max = 40;
 	if ($windunit == 'mph') {$max= '120';}
 	else if ($units == 'uk' && $windunit == 'mph') {$max= '40';}

@@ -16,14 +16,18 @@
 	
 	include('preload.php');
 	$conv = 1;
-	if ($windunit == 'mph') {$conv= '(1.8) +32';}
-	if ($units == 'uk' && $windunit == 'mph') {$conv= '1';}
+	if ($tempunit=='C' && $windunit == 'mph') {$conv= '1';}
+	else if ($windunit == 'mph') {$conv= '(1.8) +32';}
 	else if ($windunit == 'm/s') {$conv= '1';}
 	else if ($windunit == 'km/h'){$conv= '1';}
-	$interval = 1;
-	if ($windunit == 'mph') {$interval= '0.5';}
-	else if ($windunit == 'm/s') {$interval= '1';}
-	else if ($windunit == 'km/h'){$interval= '1';}
+	$max = 40;
+	if ($windunit == 'mph') {$max= '120';}
+	else if ($units == 'uk' && $windunit == 'mph') {$max= '40';}
+	else $max= '40';
+	
+	$interval = 5;
+	if ($windunit == 'mph') {$interval= '10';}
+	else $interval= '5';
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
