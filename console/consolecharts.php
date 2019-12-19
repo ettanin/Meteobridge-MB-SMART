@@ -69,5 +69,13 @@ include_once('updater3.php');
           <div class="circleblob"></div> 
          <div class="tog red">Dark</div>
          </div>';}?></a>      
-    <a href="console-setup.php" target="_blank" class="designedby">  &copy;<?php echo "2015-".date('Y')?> Weather34 Designed </a>  
-    </div> </body></html>
+     <a class="desktoplink" href="../index.php" alt="weather34 &copy; 2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>">
+      <div class="weather34-toggled">
+        
+       <div class="tog red">&copy;<?php echo date('Y')?></div> 
+       <div class="logofooter"><img src="Wxsoft34-appsmall.png" width="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
+       </div> </a>
+     
+
+</body>
+</html>
