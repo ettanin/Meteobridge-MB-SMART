@@ -69,48 +69,54 @@ include_once('livedata.php');include_once('updater2.php');
     <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
       <?php
         if ($theme == 'dark') {echo '<div class="weather34-toggle">
-          <div class="track"></div> 
+          <div class="circleblob"></div> 
         
-         <div class="ball red">Light</div>
+         <div class="tog red">Light</div>
          </div>';} 
         else {echo '<div class="weather34-toggle">
-          <div class="track"></div> 
-         <div class="ball red">Dark</div>
+          <div class="circleblob"></div> 
+         <div class="tog red">Dark</div>
          </div>';}?></a>
 
 
 <?php
-  if ($units!='us') {
-      echo '<a href="?units=us" alt="Imperial" title="Imperial">
-      <div class="weather34-toggles">
-      <div class="tracks"></div> 
-      <div class="balls red">&deg;F</div></div></a>';
-  }
-  if ($units!='metric') {
-    echo '<a href="?units=metric" alt="Metric" title="Metric"> <div class="weather34-togglesblue">
-    <div class="tracks"></div> 
-    <div class="balls red">&deg;C</div></div></a>';
-  }
+  if ($units != 'us') {echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
+    <div class="weather34-togglegreen">
+      <div class="circleblob"></div> 
+     <div class="tog red">&deg;F</div>
+     </div>
+    
+    </a> '; }
+  if ($units != 'metric') {echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+    <div class="weather34-toggleblue">
+    <div class="circleblob"></div> 
+   <div class="tog red">&deg;C</div>
+   </div></a>';}
   if ($units!='uk') {
-    echo '<a href="?units=uk" alt="UK Units" title="UK Units"> <div class="weather34-togglesgreen">
-    <div class="tracks"></div> 
-    <div class="balls red">UK</div></div></a>';
+    echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
+    <div class="weather34-toggleblue">
+    <div class="circleblob"></div> 
+   <div class="tog red">UK</div></div></a>';
   }
   else if ($units!='scandinavia') {
-    echo '<a  href="?units=scandinavia" alt="m/s wind" title="m/s wind"> <div class="weather34-togglesgreen">
-    <div class="tracks"></div> 
-    <div class="balls red">M/S</div></div></a>';
+    echo '<a  href="?units=scandinavia" alt="m/s wind" title="m/s wind"> 
+    <div class="weather34-toggleyellow">
+    <div class="circleblob"></div> 
+   <div class="tog red">M/S</div></div></a>';
   }  
 ?>
 
-<a  href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
-<div class="weather34-toggle">
-      <div class="track"></div> 
-      <div class="ball red">Charts</div></div></a>
-      
+<a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
+        <div class="weather34-toggleyellow">
+        <div class="circleblob"></div> 
+       <div class="tog red">Charts</div>
+       </div></a>
+
+
       <a class="desktoplink" href="../index.php" alt="Desktop Version" title="Desktop Version">
       <div class="weather34-toggled">
-        <div class="trackd"></div> 
-       <div class="balld red">Desktop</div>
+        <div class="circleblob"></div> 
+       <div class="tog red">Desktop</div>
        </div> </a>
+     
  </body></html>

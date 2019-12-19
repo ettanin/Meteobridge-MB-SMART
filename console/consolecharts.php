@@ -62,14 +62,12 @@ include_once('updater3.php');
     <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
       <?php
         if ($theme == 'dark') {echo '<div class="weather34-toggle">
-          <div class="track"></div> 
-        
-         <div class="ball red">Light</div>
+          <div class="circleblob"></div> 
+          <div class="tog red">Light</div>
          </div>';} 
         else {echo '<div class="weather34-toggle">
-          <div class="track"></div> 
-         <div class="ball red">Dark</div>
-         </div>';}?></a>
-      
+          <div class="circleblob"></div> 
+         <div class="tog red">Dark</div>
+         </div>';}?></a>      
     <a href="console-setup.php" target="_blank" class="designedby">  &copy;<?php echo "2015-".date('Y')?> Weather34 Designed </a>  
     </div> </body></html>

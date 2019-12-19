@@ -2174,30 +2174,34 @@ a {
 .weather34-toggle {
     cursor: pointer;
     position: relative;
-    display: inline-block;
-    background: #ec5732;
+    display: inline-block;    
     width: 50px;
     height: 14px;
     clear: both;
+    background: #35393b;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;   
     top:-1px;
     margin-left:-5px;
+    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  padding-top:1px; 
 
   }
-  .weather34-toggle.on .track {
+  .weather34-toggle.on .circleblob {
     left: 45px;
   }
   
-  .weather34-toggle .ball {
+  .weather34-toggle .tog {
     width: 0;
     height: 0;
     border: 0;
     background:0;
     
   }
-  .weather34-toggle .ball.red {
+  .weather34-toggle .tog.red {
     float: right;
     border-color: #bfbfbf;
     margin-right:33px;
@@ -2206,46 +2210,49 @@ a {
     line-height:1;
     padding:3px
   }
-  .weather34-toggle .track {
-    width: 10px;
-    height: 10px;
+  .weather34-toggle .circleblob {
+    width: 4px;
+    height: 4px;
     margin: 2px;
     position: absolute;
     left: 0;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: #35393b;
+    border:3px solid #f8f8f8;
+    background: 0;
   }
 
   .weather34-toggles {
     cursor: pointer;
     position: relative;
-    display: inline-block;
-    background: #d35f50;
+    display: inline-block;   
     width: 37px;
     height: 14px;
     clear: both;
+    background: #35393b;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;   
     top:-1px;
-    margin-left:-1px;
-    margin-right:3px
-   
+    margin-left:-5px;
+    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  padding-top:1px; 
 
   }
-  .weather34-toggles.on .tracks {
+  .weather34-toggles.on .circleblob {
     left: 45px;
   }
-  .weather34-toggles .balls {
+  .weather34-toggles .tog {
     width: 0;
     height: 0;
     border: 0;
     background:0;
     
   }
-  .weather34-toggles .balls.red {
+  .weather34-toggles .tog.red {
     float: right;
     border-color: #bfbfbf;
     margin-right:15px;
@@ -2254,51 +2261,55 @@ a {
     line-height:1;
     padding:3px
   }
-  .weather34-toggles .tracks {
-    width: 10px;
-    height: 10px;
+  .weather34-toggles .circleblob {
+    width: 4px;
+    height: 4px;
     margin: 2px;
     position: absolute;
     left: 0;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: #35393b;
+    border:3px solid #E73D3D;
+    background: 0;
   }
 
 
-  .weather34-togglesblue {
+  .weather34-toggleblue {
     cursor: pointer;
     position: relative;
-    display: inline-block;
-    background: #00a4b3;
+    display: inline-block;    
     width: 37px;
     height: 14px;
     clear: both;
+    background: #35393b;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;   
     top:-1px;
-    margin-left:-1px;
-    margin-right:3px
+    margin-left:-5px;
+    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  padding-top:1px; 
    
 
   }
-  .weather34-togglesblue.on .tracks {
+  .weather34-toggleblue.on .circleblob {
     left: 45px;
   }
-  .weather34-togglesblue.on .balls.red {
+  .weather34-toggleblue.on .tog.red {
     opacity: 0;
     visibility: hidden;
   }
-  .weather34-togglesblue .balls {
+  .weather34-toggleblue .tog {
     width: 0;
     height: 0;
     border: 0;
     background:0;
     
   }
-  .weather34-togglesblue .balls.red {
+  .weather34-toggleblue .tog.red {
     float: right;
     border-color: #bfbfbf;
     margin-right:18px;
@@ -2307,24 +2318,24 @@ a {
     line-height:1;
     padding:3px
   }
-  .weather34-togglesblue .tracks {
-    width: 10px;
-    height: 10px;
+  .weather34-toggleblue .circleblob {
+    width: 4px;
+    height: 4px;
     margin: 2px;
     position: absolute;
     left: 0;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: #35393b;
+    border:3px solid #00a4b3;
+    background: 0;
   }
 
 
-  .weather34-togglesgreen {
+  .weather34-togglegreen {
     cursor: pointer;
     position: relative;
-    display: inline-block;
-    background: #87af4b;
+    display: inline-block;   
     width: 37px;
     height: 14px;
     clear: both;
@@ -2333,25 +2344,31 @@ a {
     border-radius: 50px;   
     top:-1px;
     margin-left:-1px;
-    margin-right:3px
-   
+    margin-right:3px;
+    background: #35393b;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;   
+    top:-1px;
+    margin-left:-5px;
+    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  padding-top:1px; 
 
   }
-  .weather34-togglesgreen.on .tracks {
+  .weather34-togglegreen.on .circleblob {
     left: 45px;
   }
-  .weather34-togglesgreen.on .balls.red {
-    opacity: 0;
-    visibility: hidden;
-  }
-  .weather34-togglesgreen .balls {
+  
+  .weather34-togglegreen .tog {
     width: 0;
     height: 0;
     border: 0;
     background:0;
     
   }
-  .weather34-togglesgreen .balls.red {
+  .weather34-togglegreen .tog.red {
     float: right;
     border-color: #bfbfbf;
     margin-right:20px;
@@ -2360,45 +2377,112 @@ a {
     line-height:1;
     padding:3px
   }
-  .weather34-togglesgreen .tracks {
-    width: 10px;
-    height: 10px;
+  .weather34-togglegreen .circleblob {
+    width: 4px;
+    height: 4px;
     margin: 2px;
     position: absolute;
     left: 0;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: #35393b;
+    border:3px solid #90b22a;
+    background: 0;
   }
 
 
 
-  .weather34-toggled {
+
+  .weather34-toggleyellow {
     cursor: pointer;
     position: relative;
-    display: inline-block;
-    background: #00a4b3;
-    width: 60px;
+    display: inline-block;   
+    width: 50px;
     height: 14px;
     clear: both;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;   
-    top:4px
+    top:-1px;
+    margin-left:-1px;
+    margin-right:3px;
+    background: #35393b;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;   
+    top:-1px;
+    margin-left:-5px;
+    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  padding-top:1px; 
 
   }
-  .weather34-toggled.on .trackd {
+  .weather34-toggleyellow.on .circleblob {
+    left: 15px;
+  }
+  
+  .weather34-toggleyellow .tog {
+    width: 0;
+    height: 0;
+    border: 0;
+    background:0;
+    
+  }
+  .weather34-toggleyellow .tog.red {
+    float: right;
+    border-color: #bfbfbf;
+    margin-right:30px;
+    justify-content: center;
+    align-items: center;
+    line-height:1;
+    padding:3px
+  }
+  .weather34-toggleyellow .circleblob {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border:3px solid #e6a241;
+    background: 0;
+  }
+  .weather34-toggled {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;    
+    width: 60px;
+    height: 14px;
+    clear: both;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;       
+    background: #35393b;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;   
+    top:3px;
+    margin-left:-5px;
+    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+  padding-top:1px; 
+
+  }
+  .weather34-toggled.on .circleblob {
     left: 5px;
   }
   
-  .weather34-toggled .balld {
+  .weather34-toggled .tog {
     width: 0;
     height: 0;
     border: 0;
     background:0;
   }
-  .weather34-toggled .balld.red {
+  .weather34-toggled .tog.red {
     float: right;
     border-color: #bfbfbf;
     margin-right:42px;
@@ -2408,17 +2492,19 @@ a {
     padding:3px
   }
   
-  .weather34-toggled .trackd {
-    width: 10px;
-    height: 10px;
+  .weather34-toggled .circleblob {
+    width: 4px;
+    height: 4px;
     margin: 2px;
     position: absolute;
     left: 0;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: #35393b;
+    border:3px solid #e6a241;
+    background: 0;
   }
+  
 
 @media screen and (max-width: 960px) {
 
