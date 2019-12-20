@@ -48,8 +48,9 @@
 		if(allLinesArray.length>0){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].split(',');				
-					dataPoints1.push({label:rowData[0],y:parseFloat(rowData[1]<?php echo "*". $conv ?>)});
+				var rowData = allLinesArray[i].split(',');
+				if ( rowData[1] >-100)			
+				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[1]<?php echo "*". $conv ?>)});
 					
 					
 			}
@@ -61,9 +62,10 @@
 		if(allLinesArray.length>0){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].split(',');				
-					dataPoints2.push({label: rowData[0],y:parseFloat(rowData[2]<?php echo "*". $conv ?>)});
-					//parseFloat(rowData[13])});
+				var rowData = allLinesArray[i].split(',');
+				if ( rowData[1] >-100)						
+				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[2]<?php echo "*". $conv ?>)});
+				
 				
 			}
 			drawChart(dataPoints1,dataPoints2 );
@@ -100,7 +102,7 @@
 			gridDashType: "dot",	
 			titleFontFamily: "arial",	
 			labelFontFamily: "arial",	
-			minimum:-1,		
+			minimum:-0,		
 			interval:40	,
 			intervalType:"day",
 			xValueType: "dateTime",	
