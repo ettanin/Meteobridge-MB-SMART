@@ -3,7 +3,7 @@
 
 <script>
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#wind").show()}});var c=a("#wind");c.load("monthavgwindspeedmodule.php");var b=setInterval(function(){c.load("monthavgwindspeedmodule.php")},130000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#gust").show()}});var c=a("#gust");c.load("monthwindspeedmodule.php");var b=setInterval(function(){c.load("monthawindspeedmodule.php")},130000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#gust").show()}});var c=a("#gust");c.load("monthwindspeedmodule.php");var b=setInterval(function(){c.load("monthwindspeedmodule.php")},130000)})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:false,success:function(){a("#temperature").show()}});var c=a("#temperature");
 c.load("monthtemperaturemodule.php");var b=setInterval(function(){c.load("monthtemperaturemodule.php")},130000)})})(jQuery);
