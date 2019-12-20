@@ -44,7 +44,7 @@ else if( $weather["wind_gust_speed"]<=94 && $weather["wind_units"]=="m/s"){echo 
 ?>
 </div></smalltempunit></div></div>
 
-<div class="heatcircle" ><div class="heatcircle-content"><valuetextheading1><?php echo $lang['Month'];?> Max <blue><?php echo $weather["windymaxtime"]?></blue></valuetextheading1>
+<div class="heatcircle" ><div class="heatcircle-content"><valuetextheading1><?php echo date('Y');?> Max <blue><?php echo $weather["windymaxtime"]?></blue></valuetextheading1>
 <?php  //wind year max
 //kmh
 if ($weather['windymax']>=75 && $weather["wind_units"]=="km/h") {
@@ -96,7 +96,7 @@ echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['wi
 
 ?><smalltempunit2></div></div></div>
 
-<div class="heatcircle2"><div class="heatcircle-content"><valuetextheading1><?php echo date('Y');?> Max <blue><?php echo $weather["windmmaxtime"]?></blue></valuetextheading1>
+<div class="heatcircle2"><div class="heatcircle-content"><valuetextheading1><?php echo $lang['Month'];?> Max <blue><?php echo $weather["windmmaxtime"]?></blue></valuetextheading1>
 <?php  //month wind max
 if ($weather['windmmax']>=75 && $weather["wind_units"]=="km/h") {
     echo "<br><div class=tempconverter1><div class=tempmodulehome30-35c>".$weather['windmmax']. "&nbsp;<smalltempunit2>".$weather["wind_units"];}
