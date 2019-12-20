@@ -13,7 +13,6 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	
 	include('preload.php');include('../settings1.php');
 	$conv = 1;
 	if ($pressureunit  == "hPa"){$conv= '1';}
@@ -28,6 +27,8 @@
 	$limit = '0';
 	if ($pressureunit == 'inHg') {$limit= '20';}
 	else if ($pressureunit  == "hPa") {$limit= '930';}
+	
+	
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -36,20 +37,16 @@
 		<title>OUTDOOR Barometer CHART</title>	
 		<script src=../js/jquery.js></script>
 		
-	';
-	date_default_timezone_set($TZ);
-	$weatherfile =date('Y')."/".date('jMY');?>
-	
-    <br>	
+	';	
+	?>
+    <br>
 	<script type="text/javascript">
-	// today barometer
         $(document).ready(function () {
-
-	var dataPoints1 = [];
-	var dataPoints2 = [];
-	$.ajax({
+		var dataPoints1 = [];
+		var dataPoints2 = [];
+		$.ajax({
 			type: "GET",
-			url: "<?php echo $weatherfile?>.csv",
+			url: "<?php echo date('Y')?>.csv",
 			dataType: "text",
 			cache:false,
 			success: function(data) {processData1(data),processData2(data);}
@@ -61,24 +58,29 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[3] ><?php echo $limit?> )
-					dataPoints1.push({label:rowData[1],y:parseFloat(rowData[3] <?php echo "*". $conv ?>)});		}
+				if ( rowData[9] >0)
+					dataPoints1.push({label:rowData[0],y:parseFloat(rowData[9]<?php echo "*".$conv ?>)});
+					
+					
+			}
 		}
 		requestTempCsv();}function requestTempCsv(){}
 
-		function processData2(allText) {
+	function processData2(allText) {
 		var allLinesArray = allText.split('\n');
 		if(allLinesArray.length>0){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
-				if ( rowData[3] ><?php echo $limit;?>)
-					dataPoints2.push({label:rowData[1],y:parseFloat(rowData[3]<?php echo "*". $conv ?>)});
+				if ( rowData[10] >0)
+					dataPoints2.push({label: rowData[0],y:parseFloat(rowData[10]<?php echo "*".$conv ?>)});
+					//parseFloat(rowData[13])});
 				
 			}
-			drawChart(dataPoints1 );
+			drawChart(dataPoints1,dataPoints2 );
 		}
 	}
+
 
 	
 	function drawChart( dataPoints1) {
@@ -102,23 +104,25 @@
 			   shared: true, 
  },
 		axisX: {
-			gridColor: "#333",		    		
+			gridColor: "#333",
+		    labelFontSize: 7.5,
+			labelFontColor:' #888',
 			lineThickness: 1,
 			gridThickness: 1,
 			gridDashType: "dot",	
-			labelFontColor:' #888',
-			labelFontFamily: "Arial",
-			labelFontWeight: "bold",
-			labelFontSize:7.5,
-			interval: 18,
-   			intervalType: "hour",
-			minimum:0,
+			titleFontFamily: "arial",	
+			labelFontFamily: "arial",	
+			minimum:-1,	
+			interval:40	,
+			intervalType:"day",
+			xValueType: "dateTime",	
 			crosshair: {
 			enabled: true,
-			snapToDataPoint: true,				
-			labelFontSize:7,
-			labelBackgroundColor: "#44a6b5",
-			labelMaxWidth: 60,
+			snapToDataPoint: true,
+			color: "#009bab",
+			labelFontColor: "#F8F8F8",
+			labelFontSize:10,
+			labelBackgroundColor: "#009bab",
 			
 		}
 			
@@ -126,7 +130,7 @@
 			
 		axisY:{
 		margin: 0,
-		interval: <?php echo $int?> ,					
+		interval:<?php echo $int?>,			
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
@@ -159,25 +163,32 @@
  },
 		
 		
-		data: [
+ data: [
 		{
+			//Barometer
 			type: "spline",
-			color:"#44a6b5",
+			color:"#d85026",
 			markerSize:0,
 			showInLegend:false,
-			legendMarkerType: "triangle",
+			legendMarkerType: "circle",
 			lineThickness: 1,
-			markerType: "circle",
-			name:"Barometer",
+			markerType: "none",
+			name:"Hi Barometer",
 			dataPoints: dataPoints1,
-			yValueFormatString:"#0.# °",
-			markerBorderColor: 'red',
-			dataPoints: dataPoints1,
-			
-			yValueFormatString: "##.## <?php echo $pressureunit ;?>",
+			yValueFormatString:"##.## <?php echo $pressureunit ;?>",
 		},
 		{
-			//not using in daily barometer
+			// not used
+			type: "spline",			
+			color:"#00A4B4",
+			markerSize:0,
+			showInLegend:false,
+			legendMarkerType: "circle",
+			lineThickness: 0,
+			markerType: "none",
+			name:"Lo Barometer",
+			dataPoints: dataPoints2,
+			yValueFormatString:"##.## <?php echo $pressureunit ;?>",
 		}
 
 		]
@@ -190,6 +201,7 @@
 <body>
 </script>
 <div id="chartContainer2" style=" height:150px;margin-top:20px;-webkit-border-radius:4px;border-radius:4px;"></div></div>
+
 
 
 </body></html>
