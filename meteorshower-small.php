@@ -44,7 +44,11 @@ $meteorOP=false;
 foreach ($meteor_events as $meteor_check) {if ($meteor_check["event_start"]<=$meteorNow&&$meteorNow<=$meteor_check["event_end"]) {$meteorOP=true;$meteor_default=$meteor_check["event_title"];}};
 //end meteor
 //weather34 next meteor event original idea betejuice of cumulus forum..
-$meteor_nextevent="No Meteor Shower<br>s";
+$meteor_nextevent="No Meteor Shower<br>";
+$meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 12, 23,23),"event_title"=>" Quadrantids <ored>Dec 28th-Jan 12th</ored>","event_end"=>mktime(23, 59, 59, 1, 2,24),);
+$meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 12, 23,22),"event_title"=>" Quadrantids <ored>Dec 28th-Jan 12th</ored>","event_end"=>mktime(23, 59, 59, 1, 2,23),);
+$meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 12, 23,21),"event_title"=>" Quadrantids <ored>Dec 28th-Jan 12th</ored>","event_end"=>mktime(23, 59, 59, 1, 2,22),);
+$meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 12, 23,20),"event_title"=>" Quadrantids <ored>Dec 28th-Jan 12th</ored>","event_end"=>mktime(23, 59, 59, 1, 2,21),);
 $meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 12, 23,19),"event_title"=>" Quadrantids <ored>Dec 28th-Jan 12th</ored>","event_end"=>mktime(23, 59, 59, 1, 2,20),);
 $meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 12, 24),"event_title"=>" Quadrantids <ored>Dec 28th-Jan 12th</ored>","event_end"=>mktime(23, 59, 59, 1, 2),);
 $meteor_eventsnext[]=array("event_start"=>mktime(0, 0, 0, 1, 3),"event_title"=>" Quadrantids <ored>Peak Now</ored>","event_end"=>mktime(23, 59, 59, 1, 4),);
@@ -61,7 +65,7 @@ $meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 11, 5),"event_title
 $meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 11, 12),"event_title"=>" Leonids <ored>Nov 13th-Dec 3rd</ored>","event_end"=>mktime(23, 59, 59, 11, 16),);
 $meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 11, 16),"event_title"=>" Leonids Peaks <ored>Tonight</ored>","event_end"=>mktime(23, 59, 59, 11, 18),);
 $meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 11, 18),"event_title"=>" Geminids <ored>Nov 30th-Dec 17th</ored>","event_end"=>mktime(23, 59, 59, 12, 16),);
-$meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 12, 15),"event_title"=>" Ursids <ored>Dec 17th-Dec 24th</ored>","event_end"=>mktime(23, 59, 59, 12, 18),);
+$meteor_eventsnext[]=array("event_start"=>mktime(23, 59, 59, 12, 15),"event_title"=>" Ursids <ored>Dec 17th-Dec 24th</ored>","event_end"=>mktime(23, 59, 59, 12, 23),);
 $meteorNext=time();$meteorOP=false;
 foreach ($meteor_eventsnext as $meteor_check) {if ($meteor_check["event_start"]<=$meteorNext&&$meteorNext<=$meteor_check["event_end"]) {$meteorOP=true;$meteor_nextevent=$meteor_check["event_title"];}};
 //end meteor nevt event
