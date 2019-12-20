@@ -60,7 +60,8 @@
 		if(allLinesArray.length>0){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].split(',');				
+				var rowData = allLinesArray[i].split(',');	
+				if ( rowData[1] >-100)			
 				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[9]<?php echo "*". $conv ?>)});
 					
 					
@@ -74,6 +75,7 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
+				if ( rowData[1] >-100)
 				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[10]<?php echo "*". $conv ?>)});
 				
 				
@@ -140,6 +142,9 @@
 		labelFontColor:' #888',
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
+		labelFormatter: function ( e ) {
+        return e.value .toFixed(<?php if ($pressureunit == 'hPa' || $pressureunit == 'mb' ){echo '0';} else echo '1';?>) ;
+         },	
 			 
 		crosshair: {
 			enabled: true,

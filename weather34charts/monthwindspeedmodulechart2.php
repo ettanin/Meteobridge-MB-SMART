@@ -52,7 +52,8 @@
 		if(allLinesArray.length>0){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].split(',');				
+				var rowData = allLinesArray[i].split(',');	
+				if ( rowData[1] >-100)			
 				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[6]<?php echo "*". $conv ?>)});
 					
 					
@@ -65,7 +66,8 @@
 		if(allLinesArray.length>0){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].split(',');				
+				var rowData = allLinesArray[i].split(',');
+				if ( rowData[1] >-100)				
 				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[7]<?php echo "*". $conv ?>)});
 				
 				
