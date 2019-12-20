@@ -52,9 +52,8 @@
 		if(allLinesArray.length>0){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].split(',');
-				if ( rowData[8] >-0)
-					dataPoints1.push({label:rowData[0],y:parseFloat(rowData[6]<?php echo "*". $conv ?>)});
+				var rowData = allLinesArray[i].split(',');				
+				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[6]<?php echo "*". $conv ?>)});
 					
 					
 			}
@@ -66,10 +65,9 @@
 		if(allLinesArray.length>0){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].split(',');
-				if ( rowData[9] >0)
-					dataPoints2.push({label: rowData[0],y:parseFloat(rowData[7]<?php echo "*". $conv ?>)});
-					//parseFloat(rowData[13])});
+				var rowData = allLinesArray[i].split(',');				
+				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[7]<?php echo "*". $conv ?>)});
+				
 				
 			}
 			drawChart(dataPoints1,dataPoints2 );
@@ -134,9 +132,6 @@
 		labelFontColor:' #888',
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
-		labelFormatter: function ( e ) {
-        return e.value .toFixed(<?php if ($pressureunit=='inHg'){echo '1';} else echo '0';?>); 
-         },		 
 		crosshair: {
 			enabled: true,
 			snapToDataPoint: true,

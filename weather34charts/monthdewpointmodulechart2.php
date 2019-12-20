@@ -49,11 +49,10 @@
 	
 	function processData1(allText) {
 		var allLinesArray = allText.split('\n');
-		if(allLinesArray.length>0){
-			
+		if(allLinesArray.length>0){			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');				
-					dataPoints1.push({label:rowData[0],y:parseFloat(rowData[3]<?php echo "*". $conv ?>)});
+				dataPoints1.push({label:rowData[0],y:parseFloat(rowData[3]<?php echo "*". $conv ?>)});
 					
 			}
 		}
@@ -65,8 +64,8 @@
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');				
-					dataPoints2.push({label: rowData[0],y:parseFloat(rowData[4]<?php echo "*". $conv ?>)});
-					//parseFloat(rowData[13])});
+				dataPoints2.push({label: rowData[0],y:parseFloat(rowData[4]<?php echo "*". $conv ?>)});
+				
 				
 			}
 			drawChart(dataPoints1,dataPoints2 );
@@ -103,7 +102,7 @@
 			gridDashType: "dot",	
 			titleFontFamily: "arial",	
 			labelFontFamily: "arial",	
-			minimum:0,
+			minimum:-1,
 			interval:3,		
 			intervalType:"day",
 			xValueType: "dateTime",	
@@ -130,9 +129,7 @@
 		labelFontSize: 8,
 		labelFontColor:' #888',
 		labelFontFamily: "Arial",
-		labelFontWeight: "bold",
-		labelFormatter: function ( e ) {return e.value .toFixed(0);  
-         },		 
+			 
 		crosshair: {
 			enabled: true,
 			snapToDataPoint: true,
