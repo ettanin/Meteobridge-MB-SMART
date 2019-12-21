@@ -193,4 +193,50 @@ switch ($lang) {
 
 //path to language files
 include_once 'languages/'.$lang_file;
+
+ //lets translate the current month
+$themonth=date('M');
+if ($themonth=="Dec"){
+    $themonth=$lang['December'];
+}
+else if ($themonth=="Nov"){
+    $themonth=$lang['November'];
+}
+elseif ($themonth=="Oct"){
+    $themonth=$lang['October'];
+}
+elseif ($themonth=="Sep"){
+    $themonth=$lang['September'];
+}
+elseif ($themonth=="Aug"){
+    $themonth=$lang['August'];
+}
+
+elseif ($themonth=="Jul"){
+  $themonth=$lang['July'];
+}
+
+elseif ($themonth=="Jun"){
+  $themonth=$lang['June'];
+}
+
+elseif ($themonth=="May"){
+  $themonth=$lang['May'];
+}
+
+if ($themonth=="Apr"){
+  $themonth=$lang['April'];
+}
+
+if ($themonth=="Mar"){
+  $themonth=$lang['March'];
+}
+
+if ($themonth=="Feb"){
+  $themonth=$lang['Febuary'];
+}
+
+if ($themonth=="Jan"){
+  $themonth=$lang['January'];
+}
 ?>
