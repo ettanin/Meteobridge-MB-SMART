@@ -2789,13 +2789,13 @@ purple {
     color: #8680bc;
 }
 
-.feels {
+.feels,.maxwind  {
     position: absolute;
     margin-top: -7px;
-    margin-left: -125px;
+    margin-left: -145px;
     font-size: 0.6rem;
     font-family: weathertext2;
-    width:100px
+    width:150px
 }
 
 

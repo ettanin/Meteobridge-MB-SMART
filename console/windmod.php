@@ -16,7 +16,6 @@ else if ($weather["wind_speed"]>=25 && $weather["wind_units"]=="mph"){echo "<div
 else if ($weather["wind_speed"]>=9.3 && $weather["wind_units"]=="mph"){echo "<div class='maxdatawind'>".$lang['Moderatebreeze']  ."</div>";}
 else if ($weather["wind_speed"]>=4.9 && $weather["wind_units"]=="mph"){echo "<div class='maxdatawind'>".$lang['Lightbreeze']."</div>";}
 else if ($weather["wind_speed"]>=0 && $weather["wind_units"]=="mph"){echo "<div class='maxdatawind'>".$lang['Calm']."</div>";}
-
 //kts
 if ($weather["wind_speed"]>47 && $weather["wind_units"]=="kts"){echo "<div class='maxdatawind'>".$lang['Stronggale'] ."</div>";}
 else if ($weather["wind_speed"]>=32 && $weather["wind_units"]=="kts"){echo "<div class='maxdatawind'>".$lang['Galeforce'] ."</div>";}
@@ -24,7 +23,6 @@ else if ($weather["wind_speed"]>=25 && $weather["wind_units"]=="kts"){echo "<div
 else if ($weather["wind_speed"]>=9.3 && $weather["wind_units"]=="kts"){echo "<div class='maxdatawind'>".$lang['Moderatebreeze']  ."</div>";}
 else if ($weather["wind_speed"]>=4.9 && $weather["wind_units"]=="kts"){echo "<div class='maxdatawind'>".$lang['Lightbreeze']."</div>";}
 else if ($weather["wind_speed"]>=0 && $weather["wind_units"]=="kts"){echo "<div class='maxdatawind'>".$lang['Calm']."</div>";}
-
 //ms
 if ($weather["wind_speed"]>47 && $weather["wind_units"]=="m/s"){echo "<div class='maxdatawind'>".$lang['Stronggale'] ."</div>";}
 else if ($weather["wind_speed"]>=32 && $weather["wind_units"]=="m/s"){echo "<div class='maxdatawind'>".$lang['Galeforce'] ."</div>";}
@@ -32,8 +30,6 @@ else if ($weather["wind_speed"]>=25 && $weather["wind_units"]=="m/s"){echo "<div
 else if ($weather["wind_speed"]>=9.3 && $weather["wind_units"]=="m/s"){echo "<div class='maxdatawind'>".$lang['Moderatebreeze']  ."</div>";}
 else if ($weather["wind_speed"]>=4.9 && $weather["wind_units"]=="m/s"){echo "<div class='maxdatawind'>".$lang['Lightbreeze']."</div>";}
 else if ($weather["wind_speed"]>=0 && $weather["wind_units"]=="m/s"){echo "<div class='maxdatawind'>".$lang['Calm']."</div>";}
-
-
 ?> 
 
 <?php echo "<div class='hidata'></div>";?> 
@@ -55,7 +51,6 @@ else if( $weather["wind_speed"]<=21.74 && $weather["wind_units"]=="mph"){echo '<
 else if( $weather["wind_speed"]<=24.85 && $weather["wind_units"]=="mph"){echo '<div class=windbox style="color:#d05f2d;">'.number_format($weather["wind_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
 else if( $weather["wind_speed"]<=46.6 && $weather["wind_units"]=="mph"){echo '<div class=windbox style="color:#d65b4a;">'.number_format($weather["wind_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
 else if( $weather["wind_speed"]<=94 && $weather["wind_units"]=="mph"){echo '<div class=windbox style="color:#d05f2d;"">'.number_format($weather["wind_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
-
 //kts
 if( $weather["wind_speed"]<=3.1 && $weather["wind_units"]=="kts"){echo '<div class=windbox style="color:#3b9cac">'.number_format($weather["wind_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
 else if( $weather["wind_speed"]<6.21 && $weather["wind_units"]=="kts"){echo '<div class=windbox style="color:#9aba2f">'.number_format($weather["wind_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
@@ -64,7 +59,6 @@ else if( $weather["wind_speed"]<=21.74 && $weather["wind_units"]=="kts"){echo '<
 else if( $weather["wind_speed"]<=24.85 && $weather["wind_units"]=="kts"){echo '<div class=windbox style="color:#d05f2d;">'.number_format($weather["wind_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
 else if( $weather["wind_speed"]<=46.6 && $weather["wind_units"]=="kts"){echo '<div class=windbox style="color:#d65b4a;">'.number_format($weather["wind_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
 else if( $weather["wind_speed"]<=94 && $weather["wind_units"]=="kts"){echo '<div class=windbox style="color:#d05f2d;"">'.number_format($weather["wind_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
-
 //ms
 if( $weather["wind_speed"]<=3.1 && $weather["wind_units"]=="m/s"){echo '<div class=windbox style="color:#3b9cac">'.number_format($weather["wind_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
 else if( $weather["wind_speed"]<6.21 && $weather["wind_units"]=="m/s"){echo '<div class=windbox style="color:#9aba2f">'.number_format($weather["wind_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
@@ -108,7 +102,6 @@ else if ($weather['wind_speed_bft']>=1) {
             echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['wind_speed_bft']. " &nbsp;$beaufort1";} 
 else if ($weather['wind_speed_bft']==0) {
             echo "<br><div class=tempconverter1><div class=tempmodulehome0-5c>".$weather['wind_speed_bft']. " &nbsp;$beaufort0";}   
-
 ?><smalltempunit2></div></div></div>
 
 
@@ -136,3 +129,29 @@ else if ( $weather['wind_speed_bft']>=0){echo "<div class=tempconverter1><div cl
 //windrun
 echo '<div class=thetrendboxblue>'.$lang['Avg'].' '.$lang['Today'].'';echo '&nbsp;<blue>'.number_format($weather["wind_speed_avg30"],1).'</blue><smalltempunit2>&nbsp;'.$weather["wind_units"].'</smalltempunit2>';?>
 </div></div></div></div>
+
+<div class="maxwind">
+<?php  //60 Min Avg
+echo "60 Min&nbsp;".$lang['Avg']."&nbsp;";
+//kmh
+if($weather["wind_speed_avg"]>=50 && $weather["wind_units"]=="km/h"){echo "<red>" .number_format($weather["wind_speed_avg"],1)."</red>&nbsp;<smalltempunit2> ".$windunit;}
+else if($weather["wind_speed_avg"]>=30 && $weather["wind_units"]=="km/h"){echo "<orange>" .number_format($weather["wind_speed_avg"],1)."</orange>&nbsp;<smalltempunit2>".$windunit;}
+else if($weather["wind_speed_avg"]>=10 && $weather["wind_units"]=="km/h"){echo "<yellow>" .number_format($weather["wind_speed_avg"],1)."</yellow>&nbsp;<smalltempunit2>".$windunit;}
+else if($weather["wind_speed_avg"]>=0 && $weather["wind_units"]=="km/h"){echo "<blue>" .number_format($weather["wind_speed_avg"],1)."</blue>&nbsp;<smalltempunit2>".$windunit;}
+//mph
+if($weather["wind_speed_avg"]>=31 && $weather["wind_units"]=="mph"){echo "<red>" .number_format($weather["wind_speed_avg"],1)."</red>&nbsp;<smalltempunit2> ".$windunit;}
+else if($weather["wind_speed_avg"]>=18.6 && $weather["wind_units"]=="mph"){echo "<orange>" .number_format($weather["wind_speed_avg"],1)."</orange>&nbsp;<smalltempunit2>".$windunit;}
+else if($weather["wind_speed_avg"]>=6.2 && $weather["wind_units"]=="mph"){echo "<yellow>" .number_format($weather["wind_speed_avg"],1)."</yellow>&nbsp;<smalltempunit2>".$windunit;}
+else if($weather["wind_speed_avg"]>=0 && $weather["wind_units"]=="mph"){echo "<blue>" .number_format($weather["wind_speed_avg"],1)."</blue>&nbsp;<smalltempunit2>".$windunit;}
+//kts
+if($weather["wind_speed_avg"]>=26.9 && $weather["wind_units"]=="kts"){echo "<red>" .number_format($weather["wind_speed_avg"],1)."</red>&nbsp;<smalltempunit2> ".$windunit;}
+else if($weather["wind_speed_avg"]>=16.1 && $weather["wind_units"]=="kts"){echo "<orange>" .number_format($weather["wind_speed_avg"],1)."</orange>&nbsp;<smalltempunit2>".$windunit;}
+else if($weather["wind_speed_avg"]>=5.3 && $weather["wind_units"]=="kts"){echo "<yellow>" .number_format($weather["wind_speed_avg"],1)."</yellow>&nbsp;<smalltempunit2>".$windunit;}
+else if($weather["wind_speed_avg"]>=0 && $weather["wind_units"]=="kts"){echo "<blue>" .number_format($weather["wind_speed_avg"],1)."</blue>&nbsp;<smalltempunit2>".$windunit;}
+//ms
+if($weather["wind_speed_avg"]>=13.8 && $weather["wind_units"]=="m/s"){echo "<red>" .number_format($weather["wind_speed_avg"],1)."</red>&nbsp;<smalltempunit2> ".$windunit;}
+else if($weather["wind_speed_avg"]>=8.3 && $weather["wind_units"]=="m/s"){echo "<orange>" .number_format($weather["wind_speed_avg"],1)."</orange>&nbsp;<smalltempunit2>".$windunit;}
+else if($weather["wind_speed_avg"]>=2.7 && $weather["wind_units"]=="m/s"){echo "<yellow>" .number_format($weather["wind_speed_avg"],1)."</yellow>&nbsp;<smalltempunit2>".$windunit;}
+else if($weather["wind_speed_avg"]>=0 && $weather["wind_units"]=="m/s"){echo "<blue>" .number_format($weather["wind_speed_avg"],1)."</blue>&nbsp;<smalltempunit2>".$windunit;}
+?>
+</div>
