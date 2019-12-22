@@ -126,6 +126,15 @@ else if ($weather["temp_units"]=='F' && $weather["temp_avgtoday"]>-50){echo "<di
 </smalltempunit2></div></div></div>
 </div>
 
+<?php 
+//falling
+if($weather["temp_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falling'].'';echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue> '.number_format($weather["temp_trend"],1).'</blue>&deg;';}
+//rising
+else if($weather["temp_trend"]>0){echo '<div class=thetrendboxorange>'.$lang['Rising'].'';echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["temp_trend"],1).'</orange>&deg;';}
+//steady
+else echo '<div class=thetrendboxblue>'.$lang['Steady'].''.$steadysymbol.'';?>
+</div></div>
+
 <div class="feels">
 <?php  //heat-index/real feel
 if(anyToC($weather["heat_index"])>=35){echo $lang['Heatindex']."<red> ".$weather["heat_index"]."</red>&deg;<smalltempunit2>".$weather["temp_units"];}
@@ -159,12 +168,3 @@ else if($weather["temp_units"]=='F' && $weather["realfeel"]>-58 ){ echo $lang['F
 
 ?>
 </div>
-
-<?php 
-//falling
-if($weather["temp_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falling'].'';echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue> '.number_format($weather["temp_trend"],1).'</blue>&deg;';}
-//rising
-else if($weather["temp_trend"]>0){echo '<div class=thetrendboxorange>'.$lang['Rising'].'';echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["temp_trend"],1).'</orange>&deg;';}
-//steady
-else echo '<div class=thetrendboxblue>'.$lang['Steady'].''.$steadysymbol.'';?>
-</div></div></div></div>
