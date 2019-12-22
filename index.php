@@ -37,7 +37,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 <meta name="msapplication-TileColor" content="#f8f8f8">
 <meta name="msapplication-TileImage" content="img/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
-<link href="css/weather34dashboard.<?php echo $theme?>.min.css?version=<?php echo filemtime('css/weather34dashboard.'.$theme.'.min.css')?>" rel="stylesheet prefetch">
+<link href="css/weather34dashboard.<?php echo $theme?>.css?version=<?php echo filemtime('css/weather34dashboard.'.$theme.'.css')?>" rel="stylesheet prefetch">
 <link rel="preload" href="css/fonts/clock3-webfont.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="css/fonts/verbatim-regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="css/fonts/verbatim-medium.woff2" as="font" type="font/woff2" crossorigin>
@@ -319,9 +319,6 @@ if ($positionlastmodule=='airqualitymodule.php') {
   <div class="weather34-mbsmartlogo"><a class="weather34tipfooter" href="https://weather34.com/homeweatherstation/" data-weather34tipfooter="WEATHER34 MB-SMART" target="_blank"><img src="img/weather34-logo.svg" width="47em" height="45em"> <span>weather<ored>34</ored> designed</span></a>
   </div>
   <weather34menumarkerbluegrey></weather34menumarkerbluegrey>&nbsp;<?php echo $lang['Weather Data Provided By']?>&nbsp;<?php echo $stationlocation?> Home Weather Station
-  <?php echo "<img src=img/flags/".$flag.".svg width='15em' height='10em'>"?>
-
-  </div>
-  <div class="weather34refresh"><a href="<?php $_SERVER['PHP_SELF']; ?>"> <?php echo $weather34refreshicon;?></a></div></div>
-  </main>
- </body><?php include_once('updater.php');include_once('menu.php');?><div id=lightningalert></div>
+  <?php echo "<img src=img/flags/".$flag.".svg width='15em' height='10em'>"?></div>
+  <div class="weather34refresh"><a href="console/consoledavis.php" alt="console layout" title="console layout"> <?php echo $console;?></a></div></div>
+  </main> </body><?php include_once('updater.php');include_once('menu.php');?><div id=lightningalert></div>
