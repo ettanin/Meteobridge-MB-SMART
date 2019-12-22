@@ -66,9 +66,9 @@ else if ($weather["humidity_ymin"]>0){
 <div class="thetrendgap">
 <?php 
 //falling
-if($weather["humidity_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falling'].'';echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue> '.number_format($weather["humidity_trend"],1).'</blue>%';}
+if($weather["humidity_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falling'].'';echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue> '.number_format($weather["humidity_trend"],1).'</blue><smalltempunit2>%';}
 //rising
-else if($weather["humidity_trend"]>0){echo '<div class=thetrendboxorange>'.$lang['Rising'].'';echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["humidity_trend"],1).'</orange>%';}
+else if($weather["humidity_trend"]>0){echo '<div class=thetrendboxorange>'.$lang['Rising'].'';echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["humidity_trend"],1).'</orange><smalltempunit2>%';}
 //steady
-else echo '<div class=thetrendboxblue>'.$lang['Steady'].''.$steadysymbol.'';?>
+else echo '<div class=thetrendboxblue>'.$lang['Steady'].''.$steadysymbol.'';?></smalltempunit2>
 </div></div></div></div>
