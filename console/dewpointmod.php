@@ -100,9 +100,9 @@ echo "
 <div class="thetrendgap">
 <?php 
 //falling
-if($weather["dewpoint_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falling'].'';echo '&nbsp;'.$fallingsymbolx.'&nbsp; '.number_format($weather["dewpoint_trend"],1).'&deg;';}
+if($weather["dewpoint_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falling'].'';echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue> '.number_format($weather["dewpoint_trend"],1).'</blue>&deg;';}
 //rising
-else if($weather["dewpoint_trend"]>0){echo '<div class=thetrendboxorange>'.$lang['Rising'].'';echo '&nbsp;'.$risingsymbolx.'&nbsp; + '.number_format($weather["dewpoint_trend"],1).'&deg;';}
+else if($weather["dewpoint_trend"]>0){echo '<div class=thetrendboxorange>'.$lang['Rising'].'';echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["dewpoint_trend"],1).'</orange>&deg;';}
 //steady
 else echo '<div class=thetrendboxblue>'.$lang['Steady'].''.$steadysymbol.'';?>
 </div></div></div></div>

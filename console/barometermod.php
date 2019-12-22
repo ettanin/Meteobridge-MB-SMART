@@ -101,10 +101,10 @@ echo $weather["vpforecasttext"]	; ?></div></div>
 <?php 
 //falling
 if($weather["barometer_trend"]<0){echo '<div class=thetrendboxbluebaro>'.$lang['Falling'];
-echo '&nbsp;'.$fallingsymbolx.'&nbsp; '.number_format($weather["barometer_trend"],2).' &nbsp;<smalltempunit2> '.$weather["barometer_units"];}
+echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue> '.number_format($weather["barometer_trend"],2).' </blue>&nbsp;<smalltempunit2> '.$weather["barometer_units"];}
 //rising
 else if($weather["barometer_trend"]>0){echo '<div class=thetrendboxorangebaro>&nbsp;'.$lang['Rising'];
-echo '&nbsp;'.$risingsymbolx.'&nbsp; + '.number_format($weather["barometer_trend"],2).' &nbsp;<smalltempunit2> '.$weather["barometer_units"];}
+echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["barometer_trend"],2).' </orange>&nbsp;<smalltempunit2> '.$weather["barometer_units"];}
 //steady
 else echo '<div class=thetrendboxbluebaro>'.$lang['Steady'].''.$steadysymbol.'';?>
 </smalltempunit2></div></div></div></div>

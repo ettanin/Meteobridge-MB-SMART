@@ -134,5 +134,5 @@ else if ( $weather['wind_speed_bft']>=0){echo "<div class=tempconverter1><div cl
 <div class=thetrendgap>
 <?php 
 //windrun
-echo '<div class=thetrendboxblue>'.$lang['Avg'].' '.$lang['Today'].'';echo '&nbsp;'.number_format($weather["wind_speed_avg30"],1).'<smalltempunit2>&nbsp;'.$weather["wind_units"].'</smalltempunit2>';?>
+echo '<div class=thetrendboxblue>'.$lang['Avg'].' '.$lang['Today'].'';echo '&nbsp;<blue>'.number_format($weather["wind_speed_avg30"],1).'</blue><smalltempunit2>&nbsp;'.$weather["wind_units"].'</smalltempunit2>';?>
 </div></div></div></div>

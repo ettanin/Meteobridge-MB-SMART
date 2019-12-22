@@ -38,28 +38,25 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c><blue>". $weather[
 
 <div class=theraingap>
 <div class=thetrendboxblue>
-<?php 
-if($weather["rain_rate"]>20){echo '&nbsp;'.$lang['Heavy Rain-Metar'];echo $preciprain;}
-else if($weather["rain_rate"]>10){echo '&nbsp;'.$lang['Moderate Rain-Metar'] ;echo $preciprain;}
-else if($weather["rain_rate"]>=0.4){echo '&nbsp;'.$lang['Steady']." ".$lang['Rain'] ;echo $preciprain;}
-else if($weather["rain_rate"]>0){echo '&nbsp;'.$lang['Light Rain-Metar'];echo $preciprain;}
-//steady
-else if($meteobridgeapi[124]>0){
-    echo $lang['Rain'];
-if ($seconds_ago >= 172800) {echo '&nbsp;<blue> '.intval($seconds_ago / 86400) . ' </blue>&nbsp;<tunit1> '.$lang['Days'].'</tunit1></blue1></thevalue>
-    ';echo "<maxlow>&nbsp;".$lang['Ago']."</maxlow></weather34top>";}
-else if ($seconds_ago >= 86400) {echo '&nbsp;<blue> '.intval($seconds_ago / 86400) . ' </blue>&nbsp;<tunit1> '.$lang['Day'].'</tunit1></blue1></thevalue>
-    ';echo "<maxlow>&nbsp;".$lang['Ago']."</maxlow></weather34top>";}
-else if ($seconds_ago >= 7200) {echo '&nbsp;<blue> '.intval($seconds_ago / 3600) . ' </blue>&nbsp;<tunit1> '.$lang['Hours'].'</tunit1></blue1></thevalue>
-    ';echo "<maxlow>&nbsp;".$lang['Ago']."</maxlow></weather34top>";}
-else if ($seconds_ago >= 3600) {echo '&nbsp;<blue> '.intval($seconds_ago / 3600) . ' </blue>&nbsp;<tunit1> '.$lang['Hour'].'</tunit1></blue1></thevalue>
-    ';echo "<maxlow>&nbsp;".$lang['Ago']."</maxlow></weather34top>";}
-else if ($seconds_ago > 60) {echo '&nbsp;<blue> '.intval($seconds_ago / 60) . ' </blue>&nbsp;<tunit1> '.$lang['Minutes'].'</tunit1></blue1></thevalue>
-    ';echo "<maxlow>&nbsp;".$lang['Ago']."</maxlow></weather34top>";}
-else if ($seconds_ago <= 60) {echo '&nbsp;<blue> '.intval($seconds_ago / 60) . ' </blue>&nbsp;<tunit1> '.$lang['Minute'].'</tunit1></blue1></thevalue>
-    '; echo "<maxlow>&nbsp;".$lang['Ago']."</maxlow></weather34top>";}
-else echo "";
-
+<?php if($meteobridgeapi[124]=='--'){?>
+<?php echo $lastMonth = date('F', strtotime("-1 month")) .$lastMonth; ?>
+ <?php echo "&nbsp;<blue>".$weather["rainlastmonth"]."</blue>&nbsp;<smalltempunit2>".$weather["rain_units"]?></smalltempunit2>
+<?php ;}?>
+<?php if($meteobridgeapi[124]>0){  
+  echo $lang['Rainfall']."&nbsp;"  ;
+if ($seconds_ago >= 172800) {echo '<blue>'.intval($seconds_ago / 86400) . ' </blue>&nbsp;'.$lang['Days'].'</smalltempunit2></blue>
+    ';}
+else if ($seconds_ago >= 86400) {echo '<blue>'.intval($seconds_ago / 86400) . ' </blue>&nbsp;'.$lang['Day'].'</smalltempunit2></blue>
+    ';}
+else if ($seconds_ago >= 7200) {echo '<blue>'.intval($seconds_ago / 3600) . ' </blue>&nbsp;'.$lang['Hours'].'</smalltempunit2></blue>
+    ';}
+else if ($seconds_ago >= 3600) {echo '<blue>'.intval($seconds_ago / 3600) . ' </blue>&nbsp;'.$lang['Hour'].'</smalltempunit2></blue>
+    ';}
+else if ($seconds_ago > 60) {echo '<blue>'.intval($seconds_ago / 60) . ' </blue>&nbsp;'.$lang['Minutes'].'</smalltempunit2></blue>
+    ';}
+else if ($seconds_ago <= 60) {echo '<blue>'.intval($seconds_ago / 60) . ' </blue>&nbsp;'.$lang['Minute'].'</smalltempunit2></blue>
+    ';}
+echo $lang['Ago'];
 }
 ?>
 </div></div>

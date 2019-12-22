@@ -2765,6 +2765,38 @@ alertunit {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+deepblue {
+    color: #1b5c66
+}
+
+green {
+    color: #90b22a;
+}
+
+yellow {
+    color: #e6a241;
+}
+
+orange {
+    color: #ec5732;
+}
+
+red {
+    color: #E73D3D;
+}
+
+purple {
+    color: #8680bc;
+}
+
+.feels {
+    position: absolute;
+    margin-top: -7px;
+    margin-left: -125px;
+    font-size: 0.6rem;
+    font-family: weathertext2;
+    width:100px
+}
 
 
 @media screen and (max-width: 960px) {
