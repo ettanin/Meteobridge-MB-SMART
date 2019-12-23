@@ -99,20 +99,23 @@ li {
     justify-content: center;
     min-width: 320px;
     max-width: 420px;
-    padding: 60px 0;
-    height: 190px;
-    border: 1px solid hsla(226, 13%, 20%, 0.3);
-    border-bottom: 2px solid hsla(226, 13%, 20%, 0.6);
-    border-top: 2px solid hsla(226, 13%, 20%, 0.6);
+    padding: 0;
+    height: 180px;
+    border:1px solid hsla(208, 12%, 24%, 0.2);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25), 0 2px 2px hsla(0, 0%, 0%, 0.2), 0 4px 4px hsla(0, 0%, 0%, 0.15);
-    box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25), 0 2px 2px hsla(0, 0%, 0%, 0.2), 0 4px 4px hsla(0, 0%, 0%, 0.15);
-    background-color: hsla(0, 0%, 0%, 0.25);
+    background-color: #f5f5f5;
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #afb7c0
+    color: #afb7c0;
+    background-color: hsla(0, 0%, 0%, 0.25);      
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    -webkit-border-radius:10px;
 }
 
 
@@ -1835,36 +1838,28 @@ valuebeaufort {
 .modulecaption {
     position: relative;
     left: 85px;
-    -webkit-border-bottom-right-radius: 2px;
-    -webkit-border-bottom-left-radius: 2px;
-    -moz-border-radius-bottomright: 2px;
-    -moz-border-radius-bottomleft: 2px;
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
     background: #22252f;
     font-family: Headingtext;
     width: auto;
     max-width: 140px;
     font-size: 11px;
-    padding: 4px;
+    padding: 5px;
     padding-bottom: 5px;
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: -28px;
+    top: -18px;
     color: #f5f5f5;
-
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
 }
 
 .modulecaptionchart {
     position: relative;
-    left: 145px;
-    -webkit-border-bottom-right-radius: 2px;
-    -webkit-border-bottom-left-radius: 2px;
-    -moz-border-radius-bottomright: 2px;
-    -moz-border-radius-bottomleft: 2px;
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
+    left: 145px;    
     background: #22252f;
     font-family: Headingtext;
     width: auto;
@@ -1875,8 +1870,13 @@ valuebeaufort {
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: 40px;
+    top: 50px;
     color: #f5f5f5;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
 
 
 }
@@ -1884,13 +1884,7 @@ valuebeaufort {
 
 .modulecaptionpressure {
     position: relative;
-    left: 85px;
-    -webkit-border-bottom-right-radius: 2px;
-    -webkit-border-bottom-left-radius: 2px;
-    -moz-border-radius-bottomright: 2px;
-    -moz-border-radius-bottomleft: 2px;
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
+    left: 85px;   
     background: #22252f;
     font-family: Headingtext;
     width: auto;
@@ -1901,20 +1895,19 @@ valuebeaufort {
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: -50px;
+    top: -35px;
     color: #f5f5f5;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
 
 }
 
 .modulecaptiondirection {
     position: relative;
     left: 85px;
-    -webkit-border-bottom-right-radius: 2px;
-    -webkit-border-bottom-left-radius: 2px;
-    -moz-border-radius-bottomright: 2px;
-    -moz-border-radius-bottomleft: 2px;
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
     background: #22252f;
     font-family: Headingtext;
     max-width: 140px;
@@ -1924,9 +1917,13 @@ valuebeaufort {
     line-height: .8;
     align-items: left;
     justify-content: left;
-    top: -85px;
+    top: -74px;
     color: #f5f5f5;
-
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
 }
 
 .online {
@@ -2076,7 +2073,7 @@ iconcolor2 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: 190px;
+    margin-top: 188px;
     z-index: 99999;
     color: #ffffff;
     font-family: Headingtext;
