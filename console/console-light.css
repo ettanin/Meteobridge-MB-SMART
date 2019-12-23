@@ -142,6 +142,8 @@ li2 {
     color: #afb7c0
 }
 
+li3{display:none;}
+
 .clock {
     background: #e6e8ef;
     border-radius: 3px;
@@ -167,9 +169,54 @@ li2 {
     line-height: 1.2;
     margin-top: 5px;
 
-
-
 }
+
+
+.clock2 {
+    background: 0;
+    padding: 3px;
+    display: flex;
+    font-family: clock;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    left: 12px;
+    text-align: center;
+    width: auto;
+    position: relative;
+    color: #00a4b3;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: clock;
+    height: 64px;
+    line-height: 1.2;
+    top: 40px;
+    box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -webkit-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -moz-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -ms-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -o-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.date2 {
+    display: block;
+    background: none;
+    color: #545454;
+    font-size: .65rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: 35px;
+    position: absolute;
+    margin-left: -5px
+}
+
 
 .date {
     display: block;
@@ -280,6 +327,35 @@ li2 {
 
 }
 
+
+.sunblock2 {
+    background: 0;
+    border-radius: 3px;
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 15px;
+    display: flex;
+    font-family: clock;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin-left: 0;
+    text-align: left;
+    width: 250px;
+    position: relative;
+    color: #00a4b3;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: clock;
+    height: 64px;
+    line-height: 1;
+    margin-top: 45px;
+    font-family: headingtext;
+
+}
+
 .sunrise1 {
     display: block;
     background: none;
@@ -306,6 +382,51 @@ li2 {
     margin-left: 15px;
     font-family: headingtext;
     text-align: left;
+}
+
+
+.sunrise2 {
+    display: block;
+    background: none;
+    color: #545454;
+    font-size: .7rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: -45px;
+    position: absolute;
+    margin-left: 0;
+    font-family: headingtext;
+    text-align: left;
+}
+
+.sunset2 {
+    display: block;
+    background: none;
+    color: #545454;
+    font-size: .7rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: -30px;
+    position: absolute;
+    margin-left: 0;
+    font-family: headingtext;
+    text-align: left;
+}
+
+.thedate2 {
+    display: flex;
+    background: none;
+    color: #545454;
+    font-size: .75rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: 50px;
+    position: absolute;
+    font-family: headingtext;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+
 }
 
 .thedate {
@@ -1964,7 +2085,8 @@ valuebeaufort {
     -o-border-radius:3px;
 }
 
-.online {
+.online,
+.online2 {
     position: absolute;
     font-size: .65em;
     color: #00a4b3;
@@ -1982,6 +2104,12 @@ valuebeaufort {
     -ms-animation-direction: alternate;
     -o-animation-direction: alternate;
     animation-direction: alternate;
+}
+
+.online2 {
+    position: relative;
+    top: 3px;
+
 }
 
 @keyframes fadein {
@@ -2825,6 +2953,37 @@ purple {
     width:150px
 }
 @media screen and (max-width: 960px) {
+
+    li3 {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-width: 320px;
+        max-width: 420px;
+        padding: 0;
+        height: 180px;
+        border: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #f5f5f5;
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: #545454;
+        background-color: #f2f2f2 !important;
+        box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+        -webkit-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+        -moz-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+        -ms-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+        -o-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+
 
 
     .designedby,

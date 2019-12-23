@@ -60,6 +60,7 @@ include_once('livedata.php');include_once('updater2.php');
     <li2><div id=moon></div></li2> 
     <li2><div id=sun></div></li2> 
     <li2><div id=time-date></div></li2>  
+    <li3><div id=clock-date></div></li2>
   </ul>
 
  
