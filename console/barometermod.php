@@ -89,14 +89,25 @@ $weather["vpforecasttext"]	=str_replace('South East', 'SE', $weather["vpforecast
 $weather["vpforecasttext"]	=str_replace('W, NW, or N', 'W,NW,to N', $weather["vpforecasttext"]);
 $weather["vpforecasttext"]	=str_replace('little temperature change.', 'No <oorange>Significant </oorange> change in temperature.<br>', $weather["vpforecasttext"]);
 $weather["vpforecasttext"]	=str_replace(', possibly heavy at times', '', $weather["vpforecasttext"]);
-$weather["vpforecasttext"]	=str_replace('becoming', '', $weather["vpforecasttext"]);
-echo $weather["vpforecasttext"]	; ?></div></div>
+$weather["vpforecasttext"]	=str_replace('becoming', '', $weather["vpforecasttext"]);echo $weather["vpforecasttext"]	; 
+
+//weather34 console vue-vp2 Davis forecast icon
+if (preg_match("/Snow/i", $weather["vpforecasttext"]) && anyToC($weather["temp"])<-1)  {echo '<img rel="prefetch" src="forecasticons/snow.svg" class="consoleicon"  alt="snow forecasted" title="snow forecasted">';} 
+else if (preg_match("/Sleet/i", $weather["vpforecasttext"]) && anyToC($weather["temp"])<1)  {echo '<img rel="prefetch" src="forecasticons/sleet.svg" class="consoleicon" alt="sleet forecasted" title="sleet forecasted">';} 
+else if (preg_match("/Rain/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="forecasticons/rainvp.svg" class="consoleicon" alt="rain forecasted" title="rain forecasted">';} 
+else if (preg_match("/Precipitation/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="forecasticons/rainvp.svg" class="consoleicon" alt="rain forecasted" title="rain forecasted">';} 
+else if (preg_match("/Windy/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="forecasticons/windy.svg" class="consoleicon" alt="windy forecasted" title="windy forecasted">';} 
+else if (preg_match("/clear/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="forecasticons/clear.svg" class="consoleicon" alt="clear forecasted" title="clear forecasted">';}
+else if (preg_match("/Partly/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="forecasticons/partly-cloudy-day.svg" class="consoleicon" alt="partly cloudy forecasted" title="partly cloudy forecasted">';} 
+else if (preg_match("/Mostly cloudy/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="forecasticons/mostlycloudy.svg" class="consoleicon" alt="mostly cloudy forecasted" title="mostly cloudy forecasted">';} 
+else if (preg_match("/Scattered/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="forecasticons/scatteredclouds.svg" class="consoleicon" alt="scattered clouds forecasted" title="scattered clouds forecasted">';} 
+?>
+</div></div>
 
 <smalltempunit2></div></div></div>
 
 <div class="maxbox"><orange>Max &nbsp;</orange> <?php echo $weather["barometer_max"] ?> <?php echo $weather["barometer_units"]; ?> <blue>&nbsp;<?php echo $weather["thb0seapressmaxtime"]; ?></div></blue>
 <div class="minbox"><blue>Min &nbsp; </blue> <?php echo $weather["barometer_min"] ?> <?php echo $weather["barometer_units"]; ?> <blue>&nbsp;<?php echo $weather["thb0seapressmintime"]; ?></blue></div>
-
 
 <?php 
 //falling

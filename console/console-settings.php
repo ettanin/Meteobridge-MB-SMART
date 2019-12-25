@@ -1,6 +1,6 @@
 <?php
-$unit = "metric";
-$metric = true;
+$unit = "english";
+$metric = false;
 $windunit = "mph";
 $distanceunit = "mi";
 $tempunit = "F";
@@ -12,10 +12,12 @@ $livedata   = "../mbridge/MBrealtimeupload.txt";
 $dateFormat   = "d-m-Y";
 $password    = "";
 $uvsensor    = "uvindexmod.php";
-$defaultlanguage   = "dl";
-$stationName   = "Console Display ";
+$chartoption    = "todaysolarmodule.php";
+$chartoption2    = "todayindoormodule.php";
+$defaultlanguage   = "en";
+$stationName   = "Singapore Home Weather Station";
 $theme   = "dark";
-$TZ = "Europe/Istanbul";
-$lon = 28.5;
-$lat = 41.2;
-$UTC = "3";
+$TZ = "Asia/Singapore";
+$lon = 103.8317;
+$lat = 1.3551;
+$UTC = "8";

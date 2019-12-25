@@ -2224,8 +2224,13 @@ iconcolor2 {
     margin-left: -5px;
     margin-top: 22px;
     line-height: .9;
+}
 
-
+.consoleicon{
+    position:relative;
+    margin-left:210px;
+    margin-top:-28px;
+    width:35px;
 }
 
 .indoorclock {

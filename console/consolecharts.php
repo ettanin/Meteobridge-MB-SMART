@@ -49,6 +49,18 @@
     <li><div id=rain></div></li>
     <li><div id=barometer></div></li>
     <li><div id=uvindex></div></li>
+    <li3><div id=
+    <?php 
+    if ($chartoption=='todayuvindexmodule.php'){echo "indoor";}
+    else if ($chartoption=='todaysolarmodule.php'){echo "indoor";}
+    else if ($chartoption=='todayindoormodule.php'){echo "";}
+
+
+?>
+    
+    
+    indoor></div></li3>
+    
 
     <li2><div id=moon></div></li2> 
     <li2><div id=sun></div></li2> 
@@ -67,13 +79,10 @@
          <div class="tog red">Dark</div>
          </div>';}?></a>
 
-
-
-
-<a href="consolecharts-month.php" alt="<?php echo $themonth;?> Charts" title="<?php echo $themonth;?> Charts">
-        <div class="weather34-toggleyellow">
+<a href="consolecharts-month.php" alt="<?php echo date('F');?> Charts" title="<?php echo date('F');?> Charts">
+        <div class="weather34-togglechartdate">
         <div class="circleblob"></div> 
-       <div class="tog red"><?php echo $themonth;?></div>
+       <div class="tog red"><?php echo date('F');?></div>
        </div></a>
 
 
@@ -82,6 +91,11 @@
         <div class="circleblob"></div> 
        <div class="tog red"><?php echo date('Y');?></div>
        </div></a>
+
+
+
+
+
 
       <a class="desktoplink" href="../index.php" alt="weather34 &copy; 2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>">
       <div class="weather34-toggled">        
