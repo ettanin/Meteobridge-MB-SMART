@@ -1,32 +1,32 @@
-<?php include_once('livedata.php');?>
+<?php include_once('livedata.php');include('common.php');?>
 <script>
     //weather34 alternative clock for dashboard display 
 function clock() {
   const fullDate = new Date();
 // weather34 day of week
 var day = new Array();
-day[0] = "Sunday";
-day[1] = "Monday";
-day[2] = "Tuesday";
-day[3] = "Wednesday";
-day[4] = "Thursday";
-day[5] = "Friday";
-day[6] = "Saturday";
+day[0] = "<?php echo $lang['Sunday']?>";
+day[1] = "<?php echo $lang['Monday']?>";
+day[2] = "<?php echo $lang['Tuesday']?>";
+day[3] = "<?php echo $lang['Wednesday']?>";
+day[4] = "<?php echo $lang['Thursday']?>";
+day[5] = "<?php echo $lang['Friday']?>";
+day[6] = "<?php echo $lang['Saturday']?>";
 var day = day[fullDate.getDay()];
 //month weather34
 var month = new Array();
-month[0] = "January";
-month[1] = "February";
-month[2] = "March";
-month[3] = "April";
-month[4] = "May";
-month[5] = "June";
-month[6] = "July";
-month[7] = "August";
-month[8] = "September";
-month[9] = "October";
-month[10] = "November";
-month[11] = "December";
+month[0] = "<?php echo $lang['January']?>";
+month[1] = "<?php echo $lang['February']?>";
+month[2] = "<?php echo $lang['March']?>";
+month[3] = "<?php echo $lang['April']?>";
+month[4] = "<?php echo $lang['May']?>";
+month[5] = "<?php echo $lang['June']?>";
+month[6] = "<?php echo $lang['July']?>";
+month[7] = "<?php echo $lang['August']?>";
+month[8] = "<?php echo $lang['September']?>";
+month[9] = "<?php echo $lang['October']?>";
+month[10] = "<?php echo $lang['November']?>";
+month[11] = "<?php echo $lang['December']?>";
 var month = month[fullDate.getMonth()];
 
   var date = fullDate.getDate(); //weather34 date  

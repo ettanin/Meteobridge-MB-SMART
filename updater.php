@@ -106,7 +106,7 @@ var a=e.getMinutes();var g=e.getSeconds();var f=e.getFullYear();var h=months[e.g
 var suffix = "";switch(b) {case 1: case 21: case 31: suffix = 'st'; break;case 2: case 22: suffix = 'nd'; break;case 3: case 23: suffix = 'rd'; break;default: suffix = 'th';}
 var i=weekdays[e.getDay()];
 if(a<10){a="0"+a}if(g<10){g="0"+g}if(c<10){c="0"+c}
-document.getElementById("theTime").innerHTML=" "+i+" "+b+suffix+" "+h+" "+f+" &nbsp;<timeblue>"+c+":"+a+":"+g+amorpm}
+document.getElementById("theTime").innerHTML=" "+i+" "+b+suffix+" "+h+" "+f+" &nbsp;<br><timeblue>"+c+":"+a+":"+g+amorpm}
 function StartClock(){clockID=setInterval(UpdateClock,500)}
 function KillClock(){clearTimeout(clockID)}
 window.onload=function(){StartClock()};
