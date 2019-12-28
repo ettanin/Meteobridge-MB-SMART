@@ -8808,19 +8808,8 @@ weather34toptitle {
   }
 
   weather34toptitle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    font: 500 0.95em headingtext;
-    margin-left: 17%;
-    margin-top: 15px;
-    line-height: 1;
-    color: #aeb6bf;
+    display: none;
   }
-
   .wulargediv {
     width: 360px;
     height: 180px;
@@ -8878,9 +8867,7 @@ weather34toptitle {
     width: 120px;
   }
 
-  .weather34topbarmail {
-    display: none;
-  }
+  
 }
 
 @media screen and (max-width: 640px) {
@@ -10850,7 +10837,8 @@ nav>.iconcolor {
   -webkit-border-radius: 50px;
   border-radius: 50px;
   top: 3px;
-  margin-left: 3px;
+  margin-left: 15px;
+  margin-right:-5px;
   -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
   -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
   box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
@@ -10991,4 +10979,75 @@ nav>.iconcolor {
   border-radius: 50%;
   border: 3px solid #e6a141;
   background: 0;
+}
+
+
+.online2 {
+  position: absolute;
+  font-size: 0;
+  color: #00a4b3;
+  z-index: 100000;
+  margin-top: 10px;    
+  padding-left: 5px;
+  -webkit-animation: fadein 5s infinite;
+  -moz-animation: fadein 5s infinite;
+  -ms-animation: fadein 5s infinite;
+  -o-animation: fadein 5s infinite;
+  animation: fadein 5s infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -ms-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  animation-direction: alternate;    
+  margin-left:50px;
+}
+
+@keyframes fadein {
+  from {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+@-ms-keyframes fadein {
+  from {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
 }

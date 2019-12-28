@@ -10,12 +10,10 @@
 ?>
 
 <div class="weather34admin"><header class="weather34admin__header">
+<div class="online2"><?php 
+if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;
+else echo $wireless?></div>
 <div class="weather34topbarmail">
-<a href="bio.php" data-lity title="Contact WEATHERSTATION Info"><div class="weather34-toggle">
-<div class="circleyellow"></div>  
-<div class="tog yellow">Info</div>
-</div></a>
-
 <?php //metric/non-metric/uk
 if ($units!='us') {
     echo '<a  href="./?units=us"> <div class="weather34-toggle">
