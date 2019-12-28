@@ -11051,59 +11051,31 @@ nav>.iconcolor {
   }
 }
 
-weather34thetime-small {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  left:0px;
-  top: 2px;
-  color:#bbb;
+.weather34thetime-small {  
+  left:0px;  
+  color:silver;
   font-size: 11px;
   font-family: headingtext;
-  line-height: 1;
-  padding: 3px;
-  padding-top: 4px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  list-style: none;  
-  width: 225px;
-  
+  line-height:1.4; 
+  margin-top:-13px;  
 }
 
 timeblue{
-  
-  color:#00adbc;
-  font-size: 24px;
+   color:#00adbc;
+  font-size: 20px;
   font-family: clock;  
-  line-height: 1.2;
+  line-height: 1;
   
   
 }
-.nanouptime3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;  
-  margin-left: 5px;
-  font-family: weathertext2, arial, helvetica;
-  font-size: 9px;
-  width: 225px;
-  color: #aeb6bf;
-  text-align: left;  
-  margin-top: 41px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  list-style: none;  
-  width: 225px;
+.nanouptime3 {  
+  position:relative;
+  left:0px;  
+  color:silver;
+  font-size:10px;
+  font-family: headingtext;
+  line-height:1.4;   
+  top:3px;
 }
 
 .clock2 {
