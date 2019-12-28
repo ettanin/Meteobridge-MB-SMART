@@ -5003,7 +5003,7 @@ valuetextheading1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 4.2rem;
+  width: 4.25em;
   height: 1rem;
   color: #222;
   overflow: hidden;
@@ -5057,7 +5057,7 @@ valuetextheading1 {
 .tempmodulehome-10-0c,
 .tempmodulehome-50-10c,
 .tempmodulehome0-5c {
-  width: 4rem;
+  width: 4.25rem;
 }
 
 .tempmodulehome-50-10c {
