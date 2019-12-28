@@ -10980,15 +10980,13 @@ nav>.iconcolor {
   border: 3px solid #e6a141;
   background: 0;
 }
-
-
 .online2 {
-  position: absolute;
+  position:relative;
   font-size: 0;
   color: #00a4b3;
   z-index: 100000;
-  margin-top: 10px;    
-  padding-left: 5px;
+  top: 10px;    
+  padding-left: 0;
   -webkit-animation: fadein 5s infinite;
   -moz-animation: fadein 5s infinite;
   -ms-animation: fadein 5s infinite;
@@ -10999,7 +10997,8 @@ nav>.iconcolor {
   -ms-animation-direction: alternate;
   -o-animation-direction: alternate;
   animation-direction: alternate;    
-  margin-left:50px;
+  float:none;
+  margin-right:10px;
 }
 
 @keyframes fadein {
@@ -11051,3 +11050,116 @@ nav>.iconcolor {
       opacity: 1
   }
 }
+
+weather34thetime-small {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left:0px;
+  top: 2px;
+  color:#bbb;
+  font-size: 11px;
+  font-family: headingtext;
+  line-height: 1;
+  padding: 3px;
+  padding-top: 4px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;  
+  width: 225px;
+  
+}
+
+timeblue{
+  
+  color:#00adbc;
+  font-size: 24px;
+  font-family: clock;  
+  line-height: 1.2;
+  
+  
+}
+.nanouptime3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;  
+  margin-left: 5px;
+  font-family: weathertext2, arial, helvetica;
+  font-size: 9px;
+  width: 225px;
+  color: #aeb6bf;
+  text-align: left;  
+  margin-top: 41px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;  
+  width: 225px;
+}
+
+.clock2 {
+  background: 0;
+  padding: 5px;
+  display: flex;
+  font-family: clock;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  left: 0;
+  text-align: center;
+  width: auto;
+  position: relative;
+  color: #00a4b3;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: clock;
+  height: 64px;
+  line-height: 1.2;
+  top: 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border:0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.date2 {
+  display: block;
+  background: 0 0;
+  color: #545454;
+  font-size: .65rem;
+  font-family: clock;
+  line-height: 1;
+  margin-top: 35px;
+  position: absolute;
+  margin-left: -5px
+}
+.hardwareinfobig{
+  position: absolute;
+  float: left;
+  margin-left: 10px;
+  font-family: weathertext2, arial, helvetica;
+  font-size: 10px;
+  margin-top:50px;}
+
+  .nanoinfo2 {
+    margin-top: -30px;
+  }

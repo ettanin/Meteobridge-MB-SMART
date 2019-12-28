@@ -10,9 +10,7 @@
 ?>
 
 <div class="weather34admin"><header class="weather34admin__header">
-<div class="online2"><?php 
-if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;
-else echo $wireless?></div>
+
 <div class="weather34topbarmail">
 <?php //metric/non-metric/uk
 if ($units!='us') {
@@ -40,7 +38,9 @@ if ($units!='uk') {
 </div>
 <weather34toptitle><?php echo $stationName; ?>&nbsp;Weather Station</weather34toptitle>
 <div class="weather34toolbar">
-<div class="weather34toolbar__right"><weather34thetime><?php echo $menuclocksvg;?>&nbsp; <div id="theTime"></weather34thetime></div></div>
+<div class="weather34toolbar__right"></div>
+
+
 
 
 <a  href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
@@ -54,9 +54,19 @@ if ($units!='uk') {
           <div class="circledark"></div> 
          <div class="tog dark">Dark</div>
          </div>';}?></a>
+</div>
+<div class="online2"><?php 
+if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;
+else echo $wireless?></div>
+
+</div>
 
 
-</div></div></div></div>
+</div>
+
+
+</div>
+
 <!-- start the weather34 pure css menu-->
 <nav>
  <!-- weather34 dot menu svg-->
