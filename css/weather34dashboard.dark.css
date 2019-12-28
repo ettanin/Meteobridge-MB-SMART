@@ -11051,31 +11051,29 @@ nav>.iconcolor {
   }
 }
 
-.weather34thetime-small {  
-  left:0px;  
+.weather34thetime-small { 
+  display:flex;
+  padding-top:6px;
+  margin-left:45px;  
   color:silver;
-  font-size: 11px;
-  font-family: headingtext;
-  line-height:1.4; 
-  margin-top:-13px;  
+  font-size: 10px;
+  font-family: headingtext;  
+  line-height:.8;   
 }
 
-timeblue{
-   color:#00adbc;
+.timeblue{
+  color:#00adbc;
   font-size: 20px;
   font-family: clock;  
-  line-height: 1;
-  
-  
+  padding-top:4px;  
 }
-.nanouptime3 {  
-  position:relative;
+.nanouptime3 {    
   left:0px;  
   color:silver;
   font-size:10px;
   font-family: headingtext;
-  line-height:1.4;   
-  top:3px;
+  line-height:1; 
+  padding-top:6px;
 }
 
 .clock2 {
