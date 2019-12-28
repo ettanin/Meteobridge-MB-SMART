@@ -26,7 +26,7 @@ https://weather34.com/homeweatherstation/smartupdate.html#setup
 * Scraping data and using unofficial iframes is not a part of this project.Official API sources are required for anything to be considered for use outside the Meteobridge NANOSD upload.All API sources carry some risk of downtime and 99% of the problems can not be resolved without some form of communication from the original API source.
 * Leaf and additional sensors will be added when I actually get around to ordering one and installing.
 
-# ONCE AGAIN IMPORTANT PLEASE READ THIS "IT IS NOT COMPATIBLE WITH CUMULUS,WEEWX,WIFILOGGER" IT IS DESIGNED FOR METOBERIDGE NANOSD(100% Compatibility) and MBPRO Products(MBPRO 95% compatibility )
+# ONCE AGAIN IMPORTANT PLEASE READ THIS "IT IS NOT COMPATIBLE WITH CUMULUS,WEEWX,WIFILOGGER,WEATHER DISPLAY" IT IS DESIGNED FOR METOBERIDGE NANOSD(100% Compatibility) and MBPRO Products(MBPRO 95% compatibility )
 
 # Setup Guides
 * available via the menu at https://weather34.com/homeweatherstation/
