@@ -133,6 +133,57 @@ $eqdist= round(distance($lat, $lon, $lati, $longi)) ;
     </div>';
      }
 
+     //wind chill
+else if ($weather["temp_units"]=='C' && $weather["windchill"]<0){echo '
+  <div class="weather34alert" id="weather34message">
+    <div class="weather34alert-icon">
+      '.$snowalert.'
+    </div>
+    <div class="weather34alert-body">
+      <p>Alert Windchill</p>
+      <valuealertcold>'.$weather["windchill"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
+    </div>
+  </div>';}
+  
+  //F
+  else if ($weather["temp_units"]=='F' && $weather["windchill"]<32){echo '
+    <div class="weather34alert" id="weather34message">
+      <div class="weather34alert-icon">
+        '.$snowalert.'
+      </div>
+      <div class="weather34alert-body">
+        <p>Alert Windchill</p>
+        <valuealertcold>'.$weather["windchill"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
+      </div>
+    </div>';}
+
+
+//real feel
+else if ($weather["temp_units"]=='C' && $weather['realfeel']<0){echo '
+  <div class="weather34alert" id="weather34message">
+    <div class="weather34alert-icon">
+      '.$snowalert.'
+    </div>
+    <div class="weather34alert-body">
+      <p>Alert Feels</p>
+      <valuealertcold>'.$weather['realfeel'].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
+    </div>
+  </div>';}
+  
+  //F
+  else if ($weather["temp_units"]=='F' && $weather['realfeel']<32){echo '
+    <div class="weather34alert" id="weather34message">
+      <div class="weather34alert-icon">
+        '.$snowalert.'
+      </div>
+      <div class="weather34alert-body">
+        <p>Alert Feels</p>
+        <valuealertcold>'.$weather['realfeel'].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
+      </div>
+    </div>';}
+  
+
+
      //cold temp
      elseif ($weather["temp_units"]=='C' && $weather["temp"]<2) {
          echo '
@@ -160,6 +211,8 @@ $eqdist= round(distance($lat, $lon, $lati, $longi)) ;
     </div>
   </div>';
      }
+
+     
 
      //high dewpoint
      elseif ($weather["temp_units"]=='C' && $weather["dewpoint"]>20) {
