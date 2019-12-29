@@ -10892,13 +10892,14 @@ nav>.iconcolor {
   font-family: clock;  
   padding-top:7px;  
 }
-.nanouptime3 {    
-  left:0px;  
+.nanouptime3 { 
+  display: flex; 
   color:#777;
-  font-size:10px;
+  font-size: 10px;
   font-family: headingtext;
-  line-height:.9; 
-  padding-top:4px;  
+  line-height: 1;
+  padding-top: 4px;
+  margin-left: 15%; 
 }
 .clock2 {
   background: 0;
