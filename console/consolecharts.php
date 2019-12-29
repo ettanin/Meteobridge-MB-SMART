@@ -1,4 +1,4 @@
-<?php include_once('livedata.php');include_once('updater3.php');include('common.php');?>
+<?php include_once('livedata.php');include_once('updater3.php');?>
 <!DOCTYPE html><html><head>
 <title> Weather34 Console Charts</title>
 <meta name="title" content="Weather34 Console Charts">
