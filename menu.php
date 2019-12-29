@@ -45,12 +45,12 @@ if ($units!='uk') {
 
 <a  href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
       <?php
-        if ($theme == 'dark') {echo '<div class="weather34-toggle">
+        if ($theme == 'dark') {echo '<div class="weather34-toggle2">
           <div class="circlelight"></div> 
         
          <div class="tog light">Light</div>
          </div>';} 
-        else {echo '<div class="weather34-toggle">
+        else {echo '<div class="weather34-toggle2">
           <div class="circledark"></div> 
          <div class="tog dark">Dark</div>
          </div>';}?></a>
