@@ -430,4 +430,6 @@ $lang['Moderate Caution']='Matig Risico';
 $lang['High Caution']='Hoog Risico';
 $lang['Very High Caution']='Hoog Risico';
 $lang['Extreme Caution']='Extreem Risico';
+
+$lang['Chart Data']='Grafiekgegevens';
 ?>

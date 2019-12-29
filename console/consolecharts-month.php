@@ -66,12 +66,11 @@
          <div class="tog red">Dark</div>
          </div>';}?></a>
 
-<a href="consolecharts.php" alt="Today Charts" title="Today Charts">
+        <a href="consolecharts.php" alt="Today Charts" title="Today Charts">
         <div class="weather34-togglechartdate">
         <div class="circleblob"></div> 
        <div class="tog red"><?php echo $lang['Today'];?></div>
        </div></a>
-
 
        <a href="consolecharts-year.php" alt="<?php echo date('Y');?> Charts" title="<?php echo date('Y');?> Charts">
         <div class="weather34-toggleyellow">
@@ -79,12 +78,7 @@
        <div class="tog red"><?php echo date('Y');?></div>
        </div></a>
 
-
-
-
-
-
-
+       <chartpage><?php echo $lang['Chart Data']?> <?php echo strftime("%B %Y",time()); ?></chartpage>
 
 
       <a class="desktoplink" href="../index.php" alt="weather34 &copy; 2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>">

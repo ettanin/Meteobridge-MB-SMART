@@ -1,4 +1,4 @@
-<?php include_once('livedata.php');include_once('updater3.php');?>
+<?php include_once('livedata.php');include_once('updater3.php');include('common.php');?>
 <!DOCTYPE html><html><head>
 <title> Weather34 Console Charts</title>
 <meta name="title" content="Weather34 Console Charts">
@@ -92,7 +92,7 @@
        <div class="tog red"><?php echo date('Y');?></div>
        </div></a>
 
-
+       <chartpage><?php echo $lang['Chart Data']?> <?php echo strftime("%A %d %B %Y",time()); ?></chartpage>
 
 
 

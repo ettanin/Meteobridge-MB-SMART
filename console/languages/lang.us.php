@@ -434,4 +434,6 @@ $lang['High Caution']='High Risk';
 $lang['Very High Caution']='Very High Risk';
 $lang['Extreme Caution']='Extreme Caution';
 
+$lang['Chart Data']='Chart Data';
+
 ?>

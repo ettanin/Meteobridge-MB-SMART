@@ -72,7 +72,7 @@
        <div class="tog red"><?php echo $lang['Today'];?></div>
        </div></a>
 
-
+       
 
 
        <a href="consolecharts-month.php" alt="<?php echo $themonth;?> Charts" title="<?php echo $themonth;?> Charts">
@@ -80,6 +80,8 @@
         <div class="circleblob"></div> 
        <div class="tog red"><?php echo $themonth?></div>
        </div></a>
+
+       <chartpage><?php echo $lang['Chart Data']?> <?php echo strftime("%Y",time()); ?></chartpage>
 
       <a class="desktoplink" href="../index.php" alt="weather34 &copy; 2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>">
       <div class="weather34-toggled">        
