@@ -71,7 +71,7 @@ setInterval(clock,100);</script>
 <div class="nanoinfo2">
   <div class=mbtype><weather34menumarkerblue></weather34menumarkerblue>  
   <?php if ($mbplatform=="Pro"){echo "MB-".$mbplatform;}else echo "MB-".$mbplatform;?>:<oblue><?php echo $weather["mbplatform"]?></div>
-  <div class=mbfirmware><weather34menumarkerorange></weather34menumarkerorange>&nbsp;Firmware Rev:<oblue><?php echo $weather["swversion"];echo "-",$weather["build"]?></oblue> (Sep 8th,2019)</div>
+  <div class=mbfirmware><weather34menumarkerorange></weather34menumarkerorange>&nbsp;Firmware Rev:<oblue><?php echo $weather["swversion"];echo "-",$weather["build"]?></oblue> </div>
 <?php //meteobridge device uptime
 $nanosduptime = $meteobridgeapi[81];function convert($nanosduptime){$weather34nanotimeago = "";$days1 = intval(intval($nanosduptime) / (3600*24));$hours1 = (intval($nanosduptime) / 3600) % 24;$minutes1 = (intval($nanosduptime) / 60) % 60;$seconds1 = (intval($nanosduptime)) % 60;if($days1> 1){$weather34nanotimeago .= "$days1 Days ";}else {if($days1>0){$weather34nanotimeago .= "$days1 Day ";}if($hours1 > 1){$weather34nanotimeago .= "$hours1 hrs ";}else if($hours1 >=0){$weather34nanotimeago .= "$hours1 hr ";}if($minutes1 > 1){$weather34nanotimeago .= "$minutes1 mins ";}else if($minutes1 >=0){$weather34nanotimeago .= "$minutes1 min ";}}return $weather34nanotimeago;}?>
   <div class=nanouptime><weather34menumarkerred></weather34menumarkerred>  
