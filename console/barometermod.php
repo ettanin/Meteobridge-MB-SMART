@@ -120,7 +120,6 @@ echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["baromet
 else echo '<div class=thetrendboxbluebaro>'.$lang['Steady'].''.$steadysymbol.'';?>
 </smalltempunit2></div></div></div></div>
 
-
 <?php //weather34 clean notifications 
 //snowfall
 if ($weather["temp_units"]=='C' &&  $weather["rain"]>0 && $weather["temp"]<2){echo '
@@ -538,3 +537,4 @@ function closeweather34alert(el) { el.addClass('is-hidden');}
 $('.js-messageClose').on('click', function(e) { closeweather34alert($(this).closest('.weather34alert'));});
 $(document).ready(function() {  setTimeout(function() { closeweather34alert($('#weather34message')); }, 10000);});
 </script>
+
