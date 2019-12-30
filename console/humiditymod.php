@@ -9,7 +9,7 @@
 if($weather['humidity']<30){echo '<div class=outside26-30>'.number_format($weather['humidity'],0).'<smalltempunit>%</smalltempunit>';}
 else if($weather['humidity']<50){echo '<div class=outside6-10>'.number_format($weather['humidity'],0).'<smalltempunit>%</smalltempunit>';}
 else if($weather['humidity']<70){echo '<div class=outside6-10>'.number_format($weather['humidity'],0).'<smalltempunit>%</smalltempunit>';}
-else if($weather['humidity']<100){echo '<div class=outsidezero>'.number_format($weather['humidity'],0).'<smalltempunit>%</smalltempunit>';}
+else if($weather['humidity']<=100){echo '<div class=outsidezero>'.number_format($weather['humidity'],0).'<smalltempunit>%</smalltempunit>';}
 
 ?>
 </div></smalltempunit></div></div>
@@ -31,7 +31,7 @@ else if ($weather["humidity_ymax"]>50){
 <div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["humidity_ymax"]."<smalltempunit2>%";
 }
 
-else if ($weather["humidity_ymax"]>0){
+else if ($weather["humidity_ymax"]>=0){
     echo "
 <div class=tempconverter1><div class=tempmodulehome30-35c>".$weather["humidity_ymax"]."<smalltempunit2>%";
 }
@@ -56,7 +56,7 @@ else if ($weather["humidity_ymin"]>50){
 <div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["humidity_ymin"]."<smalltempunit2>%";
 }
 
-else if ($weather["humidity_ymin"]>0){
+else if ($weather["humidity_ymin"]>=0){
     echo "
 <div class=tempconverter1><div class=tempmodulehome30-35c>".$weather["humidity_ymin"]."<smalltempunit2>%";
 }
