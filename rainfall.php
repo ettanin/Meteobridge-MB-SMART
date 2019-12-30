@@ -134,7 +134,8 @@ $eqdist= round(distance($lat, $lon, $lati, $longi)) ;
      }
 
      //wind chill
-else if ($weather["temp_units"]=='C' && $weather["windchill"]<0){echo '
+     elseif ($weather["temp_units"]=='C' && $weather["windchill"]<0) {
+         echo '
   <div class="weather34alert" id="weather34message">
     <div class="weather34alert-icon">
       '.$snowalert.'
@@ -143,10 +144,12 @@ else if ($weather["temp_units"]=='C' && $weather["windchill"]<0){echo '
       <p>Alert Windchill</p>
       <valuealertcold>'.$weather["windchill"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
     </div>
-  </div>';}
+  </div>';
+     }
   
-  //F
-  else if ($weather["temp_units"]=='F' && $weather["windchill"]<32){echo '
+     //F
+     elseif ($weather["temp_units"]=='F' && $weather["windchill"]<32) {
+         echo '
     <div class="weather34alert" id="weather34message">
       <div class="weather34alert-icon">
         '.$snowalert.'
@@ -155,11 +158,13 @@ else if ($weather["temp_units"]=='C' && $weather["windchill"]<0){echo '
         <p>Alert Windchill</p>
         <valuealertcold>'.$weather["windchill"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
       </div>
-    </div>';}
+    </div>';
+     }
 
 
-//real feel
-else if ($weather["temp_units"]=='C' && $weather['realfeel']<0){echo '
+     //real feel
+     elseif ($weather["temp_units"]=='C' && $weather['realfeel']<0) {
+         echo '
   <div class="weather34alert" id="weather34message">
     <div class="weather34alert-icon">
       '.$snowalert.'
@@ -168,10 +173,12 @@ else if ($weather["temp_units"]=='C' && $weather['realfeel']<0){echo '
       <p>Alert Feels</p>
       <valuealertcold>'.$weather['realfeel'].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
     </div>
-  </div>';}
+  </div>';
+     }
   
-  //F
-  else if ($weather["temp_units"]=='F' && $weather['realfeel']<32){echo '
+     //F
+     elseif ($weather["temp_units"]=='F' && $weather['realfeel']<32) {
+         echo '
     <div class="weather34alert" id="weather34message">
       <div class="weather34alert-icon">
         '.$snowalert.'
@@ -180,7 +187,8 @@ else if ($weather["temp_units"]=='C' && $weather['realfeel']<0){echo '
         <p>Alert Feels</p>
         <valuealertcold>'.$weather['realfeel'].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
       </div>
-    </div>';}
+    </div>';
+     }
   
 
 
@@ -326,6 +334,190 @@ else if ($weather["temp_units"]=='C' && $weather['realfeel']<0){echo '
   </div>';
      }
 
+    
+
+     //Wind Gust Speed above 60kmh or 37mph
+     elseif ($weather["wind_units"]=='km/h' && $weather["wind_speed_max"]>60) {
+         echo '
+  <div class="weather34alert" id="weather34message">
+    <div class="weather34alert-icon">
+      '.$warmalert.'
+    </div>
+    <div class="weather34alert-body">
+      <p>Gale Force</p>
+      <valuealertwarm>'.$weather["wind_speed_max"].'<alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+    </div>
+  </div>';
+     }
+
+     //mph
+     elseif ($weather["wind_units"]=='mph' && $weather["wind_speed_max"]>37) {
+         echo '
+    <div class="weather34alert" id="weather34message">
+      <div class="weather34alert-icon">
+        '.$warmalert.'
+      </div>
+      <div class="weather34alert-body">
+        <p>Gale Force</p>
+        <valuealertwarm>'.$weather["wind_speed_max"].'<alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+      </div>
+    </div>';
+     }
+
+     //kts
+     elseif ($weather["wind_units"]=='kts' && $weather["wind_speed_max"]>32) {
+         echo '
+  <div class="weather34alert" id="weather34message">
+    <div class="weather34alert-icon">
+      '.$warmalert.'
+    </div>
+    <div class="weather34alert-body">
+      <p>Gale Force</p>
+      <valuealertwarm>'.$weather["wind_speed_max"].'<alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+    </div>
+  </div>';
+     }
+  
+  
+     //ms
+     elseif ($weather["wind_units"]=='m/s' && $weather["wind_speed_max"]>16.6) {
+         echo '
+    <div class="weather34alert" id="weather34message">
+      <div class="weather34alert-icon">
+        '.$warmalert.'
+      </div>
+      <div class="weather34alert-body">
+        <p>Gale Force</p>
+        <valuealertwarm>'.$weather["wind_speed_max"].'<alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+      </div>
+    </div>';
+     }
+
+
+
+     //Wind Gust Speed above 55kmh or 34mph
+     elseif ($weather["wind_units"]=='km/h' && $weather["wind_speed_max"]>55) {
+         echo '
+  <div class="weather34alert" id="weather34message">
+    <div class="weather34alert-icon">
+      '.$warmalert.'
+    </div>
+    <div class="weather34alert-body">
+      <p>Strong Winds</p>
+      <valuealertwarm>'.$weather["wind_speed_max"].'<alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+    </div>
+  </div>';
+     }
+
+     //mph
+     elseif ($weather["wind_units"]=='mph' && $weather["wind_speed_max"]>34) {
+         echo '
+    <div class="weather34alert" id="weather34message">
+      <div class="weather34alert-icon">
+        '.$warmalert.'
+      </div>
+      <div class="weather34alert-body">
+        <p>Strong Winds</p>
+        <valuealertwarm>'.$weather["wind_speed_max"].'<alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+      </div>
+    </div>';
+     }
+
+
+     //kts
+     elseif ($weather["wind_units"]=='kts' && $weather["wind_speed_max"]>29.6) {
+         echo '
+  <div class="weather34alert" id="weather34message">
+    <div class="weather34alert-icon">
+      '.$warmalert.'
+    </div>
+    <div class="weather34alert-body">
+      <p>Strong Winds</p>
+      <valuealertwarm>'.$weather["wind_speed_max"].'<alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+    </div>
+  </div>';
+     }
+
+
+     //ms
+     elseif ($weather["wind_units"]=='m/s' && $weather["wind_speed_max"]>15.2) {
+         echo '
+  <div class="weather34alert" id="weather34message">
+    <div class="weather34alert-icon">
+      '.$warmalert.'
+    </div>
+    <div class="weather34alert-body">
+      <p>Strong Winds</p>
+      <valuealertwarm>'.$weather["wind_speed_max"].'<alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+    </div>
+  </div>';
+     }
+
+
+
+
+     //MAX 10 MIN Wind Gust Speed above 45kmh
+     elseif ($weather["wind_units"]=='km/h' && $weather["wind_speed_max"]>45) {
+         echo '
+  <div class="weather34alert" id="weather34message">
+    <div class="weather34alert-icon">
+      '.$coldalert.'
+    </div>
+    <div class="weather34alert-body">
+      <p>Gusty Winds</p>
+      <valuealertcold>'.$weather["wind_speed_max"].'<alertunit>'.$weather["wind_units"].' </valuealertcold></alertunit>
+    </div>
+  </div>';
+     }
+
+
+     //mph
+     elseif ($weather["wind_units"]=='mph' && $weather["wind_speed_max"]>27.9) {
+         echo '
+    <div class="weather34alert" id="weather34message">
+      <div class="weather34alert-icon">
+        '.$coldalert.'
+      </div>
+      <div class="weather34alert-body">
+        <p>Gusty Winds</p>
+        <valuealertcold>'.$weather["wind_speed_max"].'<alertunit>'.$weather["wind_units"].' </valuealertcold></alertunit>
+      </div>
+    </div>';
+     }
+
+
+     //kts
+     elseif ($weather["wind_units"]=='kts' && $weather["wind_speed_max"]>24.2) {
+         echo '
+  <div class="weather34alert" id="weather34message">
+    <div class="weather34alert-icon">
+      '.$coldalert.'
+    </div>
+    <div class="weather34alert-body">
+      <p>Gusty Winds</p>
+      <valuealertcold>'.$weather["wind_speed_max"].'<alertunit>'.$weather["wind_units"].' </valuealertcold></alertunit>
+    </div>
+  </div>';
+     }
+
+
+     //ms
+     elseif ($weather["wind_units"]=='m/s' && $weather["wind_speed_max"]>12.5) {
+         echo '
+  <div class="weather34alert" id="weather34message">
+    <div class="weather34alert-icon">
+      '.$coldalert.'
+    </div>
+    <div class="weather34alert-body">
+      <p>Gusty Winds</p>
+      <valuealertcold>'.$weather["wind_speed_max"].'<alertunit>'.$weather["wind_units"].' </valuealertcold></alertunit>
+    </div>
+  </div>';
+     }
+
+
+
+
      //Wind Gust Speed above 50kmh or 31mph
      elseif ($weather["wind_units"]=='km/h' && $weather["wind_gust_speed"]>50) {
          echo '
@@ -335,7 +527,7 @@ else if ($weather["temp_units"]=='C' && $weather['realfeel']<0){echo '
       </div>
       <div class="weather34alert-body">
         <p>Strong Winds</p>
-        <valuealertcold>'.$weather["wind_gust_speed"].'<alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+        <valuealertcold>'.$weather["wind_gust_speed"].'<alertunit>'.$weather["wind_units"].' </valuealertcold></alertunit>
       </div>
     </div>';
      }
@@ -349,7 +541,7 @@ else if ($weather["temp_units"]=='C' && $weather['realfeel']<0){echo '
         </div>
         <div class="weather34alert-body">
           <p>Strong Winds</p>
-          <valuealertcold>'.$weather["wind_gust_speed"].'<alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+          <valuealertcold>'.$weather["wind_gust_speed"].'<alertunit>'.$weather["wind_units"].' </valuealertcold></alertunit>
         </div>
       </div>';
      }
@@ -363,7 +555,7 @@ else if ($weather["temp_units"]=='C' && $weather['realfeel']<0){echo '
           </div>
           <div class="weather34alert-body">
             <p>Strong Winds</p>
-            <valuealertcold>'.$weather["wind_gust_speed"].'<alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+            <valuealertcold>'.$weather["wind_gust_speed"].'<alertunit>'.$weather["wind_units"].' </valuealertcold></alertunit>
           </div>
         </div>';
      }
@@ -377,13 +569,13 @@ else if ($weather["temp_units"]=='C' && $weather['realfeel']<0){echo '
             </div>
             <div class="weather34alert-body">
               <p>Strong Winds</p>
-              <valuealertcold>'.$weather["wind_gust_speed"].'<alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+              <valuealertcold>'.$weather["wind_gust_speed"].'<alertunit>'.$weather["wind_units"].' </valuealertcold></alertunit>
             </div>
           </div>';
      }
 
      //Wind Speed 10 min Average 25kmh or 15mph
-     elseif ($weather["wind_units"]=='km/h' && $weather["wind_speed"]>22) {
+     elseif ($weather["wind_units"]=='km/h' && $weather["wind_speed"]>25) {
          echo '
   <div class="weather34alert" id="weather34message">
     <div class="weather34alert-icon">
@@ -391,7 +583,7 @@ else if ($weather["temp_units"]=='C' && $weather['realfeel']<0){echo '
     </div>
     <div class="weather34alert-body">
       <p>Gusty Conditions</p>
-      <valuealertcold>40-50+ <alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+      <valuealertcold>40-50+ <alertunit>'.$weather["wind_units"].' </valuealertcold></alertunit>
     </div>
   </div>';
      }
@@ -404,7 +596,7 @@ else if ($weather["temp_units"]=='C' && $weather['realfeel']<0){echo '
       </div>
       <div class="weather34alert-body">
         <p>Gusty Conditions</p>
-        <valuealertcold>30-40+ <alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+        <valuealertcold>30-40+ <alertunit>'.$weather["wind_units"].' </valuealertcold></alertunit>
       </div>
     </div>';
      }
@@ -418,7 +610,7 @@ else if ($weather["temp_units"]=='C' && $weather['realfeel']<0){echo '
       </div>
       <div class="weather34alert-body">
         <p>Gusty Conditions</p>
-        <valuealertcold>16-26+ <alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+        <valuealertcold>16-26+ <alertunit>'.$weather["wind_units"].' </valuealertcold></alertunit>
       </div>
     </div>';
      }
@@ -432,13 +624,15 @@ else if ($weather["temp_units"]=='C' && $weather['realfeel']<0){echo '
       </div>
       <div class="weather34alert-body">
         <p>Gusty Conditions</p>
-        <valuealertcold>11-13+ <alertunit>'.$weather["wind_units"].' </valuealertwarm></alertunit>
+        <valuealertcold>11-13+ <alertunit>'.$weather["wind_units"].' </valuealertcold></alertunit>
       </div>
     </div>';
-     } }
+     }
+ }
+
 ?>
-<script> //fire the weather34 notification or turn off in setup screen
-function closeweather34alert(el) { el.addClass('weather34alert-hide');}
+<script> //fire the weather34 notification
+function closeweather34alert(el) { el.addClass('is-hidden');}
 $('.js-messageClose').on('click', function(e) { closeweather34alert($(this).closest('.weather34alert'));});
 $(document).ready(function() {  setTimeout(function() { closeweather34alert($('#weather34message')); }, 10000);});
-</script> 
+</script>
