@@ -66,10 +66,10 @@
          <div class="tog red">Dark</div>
          </div>';}?></a>
 
-        <a href="consolecharts.php" alt="Today Charts" title="Today Charts">
+<a href="consolecharts.php" alt="Today Charts" title="Today Charts">
         <div class="weather34-togglechartdate">
         <div class="circleblob"></div> 
-       <div class="tog red"><?php echo $lang['Today'];?></div>
+       <div class="tog red">Today</div>
        </div></a>
 
        <a href="consolecharts-year.php" alt="<?php echo date('Y');?> Charts" title="<?php echo date('Y');?> Charts">
@@ -77,15 +77,15 @@
         <div class="circleblob"></div> 
        <div class="tog red"><?php echo date('Y');?></div>
        </div></a>
-
-       <chartpage><?php echo $lang['Chart Data']?> <?php echo strftime("%B %Y",time()); ?></chartpage>
-
+       <chartpage>Data Updated <green><?php 
+       $dayfile=date('Y')."/".date('F');$forecastime=filemtime('../weather34charts/'.$dayfile.'.csv');echo date('jS M g:i a',$forecastime);?>     
+      </green></chartpage>
 
       <a class="desktoplink" href="../index.php" alt="weather34 &copy; 2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>">
       <div class="weather34-toggled">        
        <div class="tog red">&copy;<?php echo date('Y')?></div> 
        <div class="logofooter"><img src="Wxsoft34-appsmall.png" width="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
-       </div> </a>   
+       </div> </a>   </div>
 
 </body>
 </html>

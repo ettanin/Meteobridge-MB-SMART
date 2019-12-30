@@ -49,18 +49,8 @@
     <li><div id=rain></div></li>
     <li><div id=barometer></div></li>
     <li><div id=uvindex></div></li>
-    <li3><div id=
-    <?php 
-    if ($chartoption=='todayuvindexmodule.php'){echo "indoor";}
-    else if ($chartoption=='todaysolarmodule.php'){echo "indoor";}
-    else if ($chartoption=='todayindoormodule.php'){echo "";}
 
-
-?>
-    
-    
-    indoor></div></li3>
-    
+    <li3><div id=solar></div></li>
 
     <li2><div id=moon></div></li2> 
     <li2><div id=sun></div></li2> 
@@ -82,21 +72,16 @@
 <a href="consolecharts-month.php" alt="<?php echo date('F');?> Charts" title="<?php echo date('F');?> Charts">
         <div class="weather34-togglechartdate">
         <div class="circleblob"></div> 
-       <div class="tog red"><?php echo strftime("%B",time()); ?></div>
+       <div class="tog red"><?php echo date('F');?></div>
        </div></a>
-
 
        <a href="consolecharts-year.php" alt="<?php echo date('Y');?> Charts" title="<?php echo date('Y');?> Charts">
         <div class="weather34-toggleyellow">
         <div class="circleblob"></div> 
        <div class="tog red"><?php echo date('Y');?></div>
-       </div></a>
-
-       <chartpage><?php echo $lang['Chart Data']?> <?php echo strftime("%A %d %B %Y",time()); ?></chartpage>
-
-
-
-
+       </div></a> <chartpage>Data Updated <green><?php 
+       $dayfile=date('Y')."/".date('jMY');$forecastime=filemtime('../weather34charts/'.$dayfile.'.csv');echo date('jS M g:i a',$forecastime);?>     
+      </green></chartpage>
       <a class="desktoplink" href="../index.php" alt="weather34 &copy; 2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>">
       <div class="weather34-toggled">        
        <div class="tog red">&copy;<?php echo date('Y')?></div> 
