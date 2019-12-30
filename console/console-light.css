@@ -168,13 +168,15 @@ li3{display:none;}
     height: 64px;
     line-height: 1.2;
     margin-top: 5px;
+    text-align: center;
 
 }
 
 
 .clock2 {
     background: 0;
-    padding: 3px;
+    padding: 5px;
+    padding-left: 10px;
     display: flex;
     font-family: clock;
     -webkit-border-radius: 3px;
@@ -186,12 +188,12 @@ li3{display:none;}
     width: auto;
     position: relative;
     color: #00a4b3;
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
     font-family: clock;
-    height: 64px;
+    height: 50px;
     line-height: 1.2;
-    top: 40px;
+    top: 65px;
     box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
     -webkit-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
     -moz-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
@@ -203,6 +205,35 @@ li3{display:none;}
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     -webkit-border-radius: 10px;
+}
+
+
+.clock3 {
+    background: #e6e8ef;
+    border-radius: 3px;
+    padding: 0px;
+    padding-left: 70px;
+    padding-right: 0px;
+    padding-top: 20px;
+    display: flex;
+    font-family: clock;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin-left: 0;
+    text-align: center;
+    width: 200px;
+    position: relative;
+    color: #00a4b3;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: clock;
+    height: 60px;
+    line-height: 1.2;
+    margin-top: 5px;
+    text-align: center;
+
 }
 
 .date2 {
@@ -436,12 +467,29 @@ li3{display:none;}
     font-size: .75rem;
     font-family: clock;
     line-height: 1;
-    margin-top: -25px;
+    margin-top: 60px;
     position: absolute;
     font-family: headingtext;
     justify-content: center;
     align-items: center;
-    width: 260px
+    width: 260px;
+    z-index:999
+}
+
+.thedate3 {
+    display: flex;
+    background: none;
+    color: #545454;
+    font-size: .75rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: 60px;
+    position: absolute;
+    font-family: headingtext;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    z-index:999
 }
 
 .daylight1 {
@@ -2091,9 +2139,9 @@ valuebeaufort {
     font-size: .65em;
     color: #00a4b3;
     z-index: 100000;
-    margin-top: 10px;
+    margin-top: 7px;
     float: right;
-    padding-left: 5px;
+    padding-left: 10px;
     -webkit-animation: fadein 5s infinite;
     -moz-animation: fadein 5s infinite;
     -ms-animation: fadein 5s infinite;
@@ -2250,7 +2298,7 @@ iconcolor2 {
     color: #545454;
     position: absolute;
     float: none;
-    margin-left: 180px;
+    margin-left: 205px;
     margin-top: 11px;
     z-index: 99999
 }

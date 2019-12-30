@@ -8,86 +8,54 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');header('Content-type: text/html; charset=utf-8');	?>
+include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');	?>
 
 <div class="online2"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
-<script>
-    //weather34 alternative clock for dashboard display 
-function clock() {
-  const fullDate = new Date();
-// weather34 day of week
-var day = new Array();
-day[0] = "Sunday";
-day[1] = "Monday";
-day[2] = "Tuesday";
-day[3] = "Wednesday";
-day[4] = "Thursday";
-day[5] = "Friday";
-day[6] = "Saturday";
-var day = day[fullDate.getDay()];
-//month weather34
-var month = new Array();
-month[0] = "January";
-month[1] = "February";
-month[2] = "March";
-month[3] = "April";
-month[4] = "May";
-month[5] = "June";
-month[6] = "July";
-month[7] = "August";
-month[8] = "September";
-month[9] = "October";
-month[10] = "November";
-month[11] = "December";
-var month = month[fullDate.getMonth()];
+<div id="weather34clock2"></div>
+<script type="text/javascript">
+//weather34 convert to languages
+var tday=[
+"<?php echo $lang['Sunday']?>",
+"<?php echo $lang['Monday']?>",
+"<?php echo $lang['Tuesday']?>",
+"<?php echo $lang['Wednesday']?>",
+"<?php echo $lang['Thursday']?>",
+"<?php echo $lang['Friday']?>",
+"<?php echo $lang['Saturday']?>"];
+//months
+var tmonth=[
+"<?php echo $lang['January']?>",
+"<?php echo $lang['February']?>",
+"<?php echo $lang['March']?>",
+"<?php echo $lang['April']?>",
+"<?php echo $lang['May']?>",
+"<?php echo $lang['June']?>",
+"<?php echo $lang['July']?>",
+"<?php echo $lang['August']?>",
+"<?php echo $lang['September']?>",
+"<?php echo $lang['October']?>",
+"<?php echo $lang['November']?>",
+"<?php echo $lang['December']?>"];
 
-  var date = fullDate.getDate(); //weather34 date  
-  var year = fullDate.getFullYear(); //weather34 year
-  var hours = fullDate.getHours();
-  var mins = fullDate.getMinutes();
-  var secs = fullDate.getSeconds();
+function weather34clock2(){
+var d=new Date();
+var dx=d.toGMTString();
+dx=dx.substr(0,dx.length -3);
+d.setTime(Date.parse(dx))
+d.setSeconds(d.getSeconds() + <?php date_default_timezone_set('$TZ'); echo date('Z'); ?>);
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+if(nhour==0){ap=" AM";nhour=12;}else if(nhour<12){ap=" AM";}else if(nhour==12){ap=" PM";}else if(nhour>12){ap=" PM";nhour-=12;}if(nmin<=9) nmin="0"+nmin;if(nsec<=9) nsec="0"+nsec;
+var clocktext=
+"<div class='thedate2'>"+tday[nday]+","+tmonth[nmonth]+" "+ndate+", "+nyear+" </div><div class='clock2'>"+nhour+":"+nmin+":"+nsec+"<smalltempunit2>"+ap+"</div>";
+document.getElementById('weather34clock2').innerHTML=clocktext;}weather34clock2();setInterval(weather34clock2,1000);
+</script>
+  </div></div>
 
-  if (hours < 10) {
-    hours = "0" + hours;
-  }
-  if (mins < 10) {
-    mins = "0" + mins;
-  }
-  if (secs < 10) {
-    secs = "0" + secs;
-  }
-//weather34 output the time
-  document.getElementById("hour1").innerHTML = hours;
-  document.getElementById("minute1").innerHTML =":" +  mins;
-  document.getElementById("second1").innerHTML =":" + secs;
-// weather34 output the date 
-  document.getElementById("date1").innerHTML =" &nbsp;" + date;
-  document.getElementById("day1").innerHTML =" &nbsp;" + day;
-  document.getElementById("month1").innerHTML =" &nbsp;" + month;
-  document.getElementById("year1").innerHTML =" &nbsp;" + year;
-}
-setInterval(clock,100);</script>
 
-<div class="clock2">
-  <span id="hour1"></span>
-  <span id="minute1"></span>
-  <span id="second1"></span> 
-</div>   
-  <div class="thedate2">
-  <span id="year1"></span>
-  <span id="month1"></span>
-  <span id="date1"></span>
-  <span id="day1"></span>
-  </div>
-<?php
-  $TZ= 'Europe/Istanbul'; 
-$TZconf = $TZ; 
-$UTC = '3';
-$rise_zenith = 90+ 40/60;  
-$set_zenith = 90+ 36/60; 
-$lat = '40.9947318';$lon = '28.5406567';
-$lat1='41.07318'; $lon1='28.25554';
 
+
+<?php 
 date_default_timezone_set($TZ);
 $result = date_sun_info(time(), $lat, $lon);time();
 $sunrisetoday= date_sunrise(time(), SUNFUNCS_RET_STRING, $lat, $lont, $rise_zenith, $UTC);
