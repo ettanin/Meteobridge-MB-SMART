@@ -107,7 +107,7 @@
 			titleFontFamily: "arial",	
 			labelFontFamily: "arial",	
 			minimum:-1,	
-			interval:3,	
+			interval:5,	
 			intervalType:"day",
 			xValueType: "dateTime",	
 			crosshair: {

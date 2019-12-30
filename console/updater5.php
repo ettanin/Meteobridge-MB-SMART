@@ -2,16 +2,15 @@
 <script src="js/jquery.js"></script>
 
 <script>
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#wind").show()}});var c=a("#wind");c.load("yearavgwindspeedmodule.php");var b=setInterval(function(){c.load("yearavgwindspeedmodule.php")},130000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#gust").show()}});var c=a("#gust");c.load("yearwindspeedmodule.php");var b=setInterval(function(){c.load("yearwindspeedmodule.php")},130000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#wind").show()}});var c=a("#wind");c.load("yearavgwindspeedmodule.php");var b=setInterval(function(){c.load("yearavgwindspeedmodule.php")},1130000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#gust").show()}});var c=a("#gust");c.load("yearwindspeedmodule.php");var b=setInterval(function(){c.load("yearwindspeedmodule.php")},1130000)})})(jQuery);
 
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:false,success:function(){a("#temperature").show()}});var c=a("#temperature");
-c.load("yeartemperaturemodule.php");var b=setInterval(function(){c.load("yeartemperaturemodule.php")},130000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#dewpoint").show()}});var c=a("#dewpoint");c.load("yeardewpointmodule.php");var b=setInterval(function(){c.load("yeardewpointmodule.php")},130000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:false,success:function(){a("#temperature").show()}});var c=a("#temperature");c.load("yeartemperaturemodule.php");var b=setInterval(function(){c.load("yeartemperaturemodule.php")},1130000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#dewpoint").show()}});var c=a("#dewpoint");c.load("yeardewpointmodule.php");var b=setInterval(function(){c.load("yeardewpointmodule.php")},1130000)})})(jQuery);
 
 
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#rain").show()}});var c=a("#rain");c.load("yearrainfallmodule.php");var b=setInterval(function(){c.load("yearrainfallmodule.php")},130000)})})(jQuery);
-(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#barometer").show()}});var c=a("#barometer");c.load("yearbarometermodule.php");var b=setInterval(function(){c.load("yearbarometermodule.php")},1300000 )})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#rain").show()}});var c=a("#rain");c.load("yearrainfallmodule.php");var b=setInterval(function(){c.load("yearrainfallmodule.php")},1130000)})})(jQuery);
+(function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#barometer").show()}});var c=a("#barometer");c.load("yearbarometermodule.php");var b=setInterval(function(){c.load("yearbarometermodule.php")},11300000 )})})(jQuery);
 
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#moon").show()}});var c=a("#moon");c.load("weather34-moonphasemod.php");var b=setInterval(function(){c.load("weather34-moonphasemod.php")},130000)})})(jQuery);
 (function(a){a(document).ready(function(){a.ajaxSetup({cache:true,success:function(){a("#sun").show()}});var c=a("#sun");c.load("weather34-sunmod.php");var b=setInterval(function(){c.load("weather34-sunmod.php")},130000)})})(jQuery);
@@ -20,30 +19,30 @@ c.load("yeartemperaturemodule.php");var b=setInterval(function(){c.load("yeartem
 //weather34 alternative clock for dashboard display 
 function clock() {
   const fullDate = new Date();
-// weather34 day of week
+// weather34 day of week translate
 var day = new Array();
-day[0] = "Sunday";
-day[1] = "Monday";
-day[2] = "Tuesday";
-day[3] = "Wednesday";
-day[4] = "Thursday";
-day[5] = "Friday";
-day[6] = "Saturday";
+day[0] = "<?php echo $lang['Sunday']?>" ;
+day[1] = "<?php echo $lang['Monday']?>" ;
+day[2] = "<?php echo $lang['Tuesday']?>" ;
+day[3] = "<?php echo $lang['Wednesday']?>";
+day[4] = "<?php echo $lang['Thursday']?>";
+day[5] = "<?php echo $lang['Friday']?>";
+day[6] = "<?php echo $lang['Saturday']?>";
 var day = day[fullDate.getDay()];
-//month weather34
+//month weather34 translate
 var month = new Array();
-month[0] = "January";
-month[1] = "February";
-month[2] = "March";
-month[3] = "April";
-month[4] = "May";
-month[5] = "June";
-month[6] = "July";
-month[7] = "August";
-month[8] = "September";
-month[9] = "October";
-month[10] = "November";
-month[11] = "December";
+month[0] = "<?php echo $lang['January']?>";
+month[1] = "<?php echo $lang['February']?>";
+month[2] = "<?php echo $lang['March']?>";
+month[3] = "<?php echo $lang['April']?>";
+month[4] = "<?php echo $lang['May']?>";
+month[5] = "<?php echo $lang['June']?>";
+month[6] = "<?php echo $lang['July']?>";
+month[7] = "<?php echo $lang['August']?>";
+month[8] = "<?php echo $lang['September']?>";
+month[9] = "<?php echo $lang['October']?>";
+month[10] = "<?php echo $lang['November']?>";
+month[11] = "<?php echo $lang['December']?>";
 var month = month[fullDate.getMonth()];
 
   var date = fullDate.getDate(); //weather34 date  

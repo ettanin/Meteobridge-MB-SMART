@@ -82,7 +82,7 @@
 <a href="consolecharts-month.php" alt="<?php echo date('F');?> Charts" title="<?php echo date('F');?> Charts">
         <div class="weather34-togglechartdate">
         <div class="circleblob"></div> 
-       <div class="tog red"><?php echo date('F');?></div>
+       <div class="tog red"><?php echo strftime("%B",time()); ?></div>
        </div></a>
 
 

@@ -44,10 +44,7 @@
 
     <li><div id=rain></div></li>
     <li><div id=wind></div></li>    
-    <li><div id=gust></div></li>
-    
-    
-    
+    <li><div id=gust></div></li>    
 
     <li2><div id=moon></div></li2> 
     <li2><div id=sun></div></li2> 
@@ -78,7 +75,7 @@
        <a href="consolecharts-month.php" alt="<?php echo $themonth;?> Charts" title="<?php echo $themonth;?> Charts">
         <div class="weather34-toggleyellow">
         <div class="circleblob"></div> 
-       <div class="tog red"><?php echo $themonth?></div>
+       <div class="tog red"><?php echo strftime("%b",time()); ?></div>
        </div></a>
 
        <chartpage><?php echo $lang['Chart Data']?> <?php echo strftime("%Y",time()); ?></chartpage>
