@@ -198,7 +198,7 @@ if ($notifications=="yes") {
       '.$coldalert.'
     </div>
     <div class="weather34alert-body">
-      <p>Alert Dewpoint '.$heatindexalert8.'</p>
+      <p>Alert Dewpoint </p>
       <valuealertcold>'.$weather["dewpoint"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
     </div>
   </div>';
@@ -212,11 +212,59 @@ if ($notifications=="yes") {
     '.$coldalert.'
   </div>
   <div class="weather34alert-body">
-    <p>Alert Dewpoint '.$heatindexalert8.'</p>
+    <p>Alert Dewpoint </p>
     <valuealertcold>'.$weather["dewpoint"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
   </div>
 </div>';
     }
+
+    //windchill
+else if ($weather["temp_units"]=='C' && $weather["windchill"]<0){echo '
+  <div class="weather34alert" id="weather34message">
+    <div class="weather34alert-icon">
+      '.$snowalert.'
+    </div>
+    <div class="weather34alert-body">
+      <p>Alert Windchill</p>
+      <valuealertcold>'.$weather["windchill"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
+    </div>
+  </div>';}
+
+  else if ($weather["temp_units"]=='F' && $weather["windchill"]<32){echo '
+    <div class="weather34alert" id="weather34message">
+      <div class="weather34alert-icon">
+        '.$snowalert.'
+      </div>
+      <div class="weather34alert-body">
+        <p>Alert Windchill</p>
+        <valuealertcold>'.$weather["windchill"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
+      </div>
+    </div>';}
+
+
+  //feels like cold
+else if ($weather["temp_units"]=='C' && $weather["realfeel"]<0){echo '
+  <div class="weather34alert" id="weather34message">
+    <div class="weather34alert-icon">
+      '.$snowalert.'
+    </div>
+    <div class="weather34alert-body">
+      <p>Alert Feels Like</p>
+      <valuealertcold>'.$weather["realfeel"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
+    </div>
+  </div>';}
+
+  else if ($weather["temp_units"]=='F' && $weather["realfeel"]<32){echo '
+    <div class="weather34alert" id="weather34message">
+      <div class="weather34alert-icon">
+        '.$snowalert.'
+      </div>
+      <div class="weather34alert-body">
+        <p>Alert Feels Like</p>
+        <valuealertcold>'.$weather["realfeel"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
+      </div>
+    </div>';}  
+
 
     //high temperature
     elseif ($weather["temp_units"]=='C' && $weather["temp"]>30) {
