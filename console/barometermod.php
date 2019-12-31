@@ -121,8 +121,21 @@ else echo '<div class=thetrendboxbluebaro>'.$lang['Steady'].''.$steadysymbol.'';
 </smalltempunit2></div></div></div></div>
 
 <?php //weather34 clean notifications 
+
+//offline if no data last 15 minutes
+if(file_exists($livedata)&&time()- filemtime($livedata)>300){echo '
+  <div class="weather34alert" id="weather34message">
+    <div class="weather34alert-icon">
+      '.$warmalert.'
+    </div>
+    <div class="weather34alert-body">
+      <p>Check Hardware '.$heatindexalert8.'</p>
+      <valuealertwarm>Data Offline</valuealertwarm></alertunit>
+    </div>
+  </div>';}
+
 //snowfall
-if ($weather["temp_units"]=='C' &&  $weather["rain"]>0 && $weather["temp"]<2){echo '
+else if ($weather["temp_units"]=='C' &&  $weather["rain"]>0 && $weather["temp"]<2){echo '
     <div class="weather34alert" id="weather34message">
       <div class="weather34alert-icon">
         '.$snowalert.'

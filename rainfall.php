@@ -93,8 +93,20 @@ if ($notifications=="yes") {
     </div>';
     }
 
+  //offline if no data last 15 minutes
+if(file_exists($livedata)&&time()- filemtime($livedata)>300){echo '
+  <div class="weather34alert" id="weather34message">
+    <div class="weather34alert-icon">
+      '.$warmalert.'
+    </div>
+    <div class="weather34alert-body">
+      <p>Check Hardware '.$heatindexalert8.'</p>
+      <valuealertwarm>Offline</valuealertwarm></alertunit>
+    </div>
+  </div>';}
+
     //snowfall
-    if ($weather["temp_units"]=='C' &&  $weather["rain"]>0 && $weather["temp"]<2) {
+    else if ($weather["temp_units"]=='C' &&  $weather["rain"]>0 && $weather["temp"]<2) {
         echo '
   <div class="weather34alert" id="weather34message">
     <div class="weather34alert-icon">
