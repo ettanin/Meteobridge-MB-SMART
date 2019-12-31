@@ -47,7 +47,7 @@ var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
 var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
 if(nhour==0){ap=" AM";nhour=12;}else if(nhour<12){ap=" AM";}else if(nhour==12){ap=" PM";}else if(nhour>12){ap=" PM";nhour-=12;}if(nmin<=9) nmin="0"+nmin;if(nsec<=9) nsec="0"+nsec;
 var clocktext=
-"<div class='thedate2'>"+tday[nday]+","+tmonth[nmonth]+" "+ndate+", "+nyear+" </div><div class='clock2'>"+nhour+":"+nmin+":"+nsec+"<smalltempunit2>"+ap+"</div>";
+"<div class='thedate2'>"+tday[nday]+" "+tmonth[nmonth]+" "+ndate+" "+nyear+" </div><div class='clock2'>"+nhour+":"+nmin+":"+nsec+"<smalltempunit2>"+ap+"</div>";
 document.getElementById('weather34clock2').innerHTML=clocktext;}weather34clock2();setInterval(weather34clock2,1000);
 </script>
   </div></div>
