@@ -2,7 +2,7 @@
 include('console-settings.php');
 if (isset($_POST["Submit"])) {
 
-    $string = '<?php
+$string = '<?php
 $unit = "' . $_POST["unit"] . '";
 $metric = ' . $_POST["metric"] . ';
 $windunit = "' . $_POST["windunit"] . '";
@@ -25,6 +25,7 @@ $TZ = "' . $_POST["TZ"] . '";
 $lon = ' . $_POST["lon"] . ';
 $lat = ' . $_POST["lat"] . ';
 $UTC = "' . $_POST["UTC"] . '";
+$clockformat    = "' . $_POST["clockformat"] . '";
 ';
 
     $fp = FOPEN("console-settings.php", "w") or die("Unable to open console-settings.php file check file permissions !");
@@ -477,6 +478,22 @@ $UTC = "' . $_POST["UTC"] . '";
 
                                         <input name="UTC" type="text" id="UTC" value="<?php echo $UTC; ?>" class="choose">
                                         <p>
+
+
+
+
+                                        <div class="stationvalue">Set the Main Clock Format</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                                                    <path d="M12 30 L24 16 12 2" />
+                                                                                </svg><svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                                                                    <path d="M30 12 L16 24 2 12" />
+                                                                                </svg>
+
+                                                                                <label name="clockformat"></label>
+                                                                                <select id="clockformat" name="clockformat" class="choose1">
+                                                                                    <option><?php echo $clockformat; ?></option>
+                                                                                    <option>24</option>
+                                                                                    <option>12</option>
+                                                                                </select>
 
                                             </div>
 <p>

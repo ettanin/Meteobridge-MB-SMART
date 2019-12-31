@@ -8,13 +8,14 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');	?>
+include('livedata.php');include('common.php');include('console-settings.php');header('Content-type: text/html; charset=utf-8');	?>
 
 <div class="online2"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
 <div id="weather34clock2"></div>
 <script type="text/javascript">
-//weather34 convert to languages
-var tday=[
+var clockID;var yourTimeZoneFrom='<?php echo $UTC?>';var d=new Date();
+var weekdays=[
+//translate weather34 day
 "<?php echo $lang['Sunday']?>",
 "<?php echo $lang['Monday']?>",
 "<?php echo $lang['Tuesday']?>",
@@ -22,8 +23,8 @@ var tday=[
 "<?php echo $lang['Thursday']?>",
 "<?php echo $lang['Friday']?>",
 "<?php echo $lang['Saturday']?>"];
-//months
-var tmonth=[
+//translate weather34 month
+var months=[
 "<?php echo $lang['January']?>",
 "<?php echo $lang['February']?>",
 "<?php echo $lang['March']?>",
@@ -36,23 +37,27 @@ var tmonth=[
 "<?php echo $lang['October']?>",
 "<?php echo $lang['November']?>",
 "<?php echo $lang['December']?>"];
-
-function weather34clock2(){
-var d=new Date();
-var dx=d.toGMTString();
-dx=dx.substr(0,dx.length -3);
-d.setTime(Date.parse(dx))
-d.setSeconds(d.getSeconds() + <?php date_default_timezone_set('$TZ'); echo date('Z'); ?>);
-var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
-if(nhour==0){ap=" AM";nhour=12;}else if(nhour<12){ap=" AM";}else if(nhour==12){ap=" PM";}else if(nhour>12){ap=" PM";nhour-=12;}if(nmin<=9) nmin="0"+nmin;if(nsec<=9) nsec="0"+nsec;
-var clocktext=
-"<div class='thedate2'>"+tday[nday]+" "+tmonth[nmonth]+" "+ndate+" "+nyear+" </div><div class='clock2'>"+nhour+":"+nmin+":"+nsec+"<smalltempunit2>"+ap+"</div>";
-document.getElementById('weather34clock2').innerHTML=clocktext;}weather34clock2();setInterval(weather34clock2,1000);
-</script>
-  </div></div>
-
-
+//calculte the weather34 date-time UTC
+var tzDifference=yourTimeZoneFrom*60+d.getTimezoneOffset();
+var offset=tzDifference*60*1000;
+function UpdateClock(){
+var e=new Date(new Date().getTime()+offset);
+var a=e.getMinutes();
+var g=e.getSeconds();
+var f=e.getFullYear();
+var h=months[e.getMonth()];
+var b=e.getDate();
+// add the weather34 date prefix
+var suffix = "";switch(b) {case 1: case 21: case 31: suffix = 'st'; break;case 2: case 22: suffix = 'nd'; break;case 3: case 23: suffix = 'rd'; break;default: suffix = 'th';}
+var i=weekdays[e.getDay()];if(a<10){a="0"+a}if(g<10){g="0"+g}if(c<10){c="0"+c}
+//weather34 option to use 24/12 hour format
+var c=e.getHours()<?php if ($clockformat == '12') { echo '% 12 || 12';} else { echo '% 24 || 00';}?>;
+document.getElementById("weather34clock2").innerHTML="<div class='thedate2'> "+i+" "+h+" "+b+suffix+" "+f+" </div><div class='clock2'> "+c+":"+a+":"+g+
+"<?php if($clockformat=='12') {echo "<smalltempunit2>".date('a')."</smalltempunit2>";} else {echo "";}?>"
+}
+function StartClock(){clockID=setInterval(UpdateClock,500)}
+function KillClock(){clearTimeout(clockID)}window.onload=function(){StartClock()}(jQuery);</script>
+</div></div>
 
 
 <?php 
@@ -63,12 +68,16 @@ $sunsetoday= date_sunset(time(), SUNFUNCS_RET_STRING, $lat, $lont, $rise_zenith,
 $nextday = time() + 24*60*60;$result2 = date_sun_info($nextday,$lat, $lon);
 //weather34 sunrise 
 $nextrise = $result['sunrise']; $now = time(); 
-if ($now > $nextrise) { $nextrise = date('H:i',$result2['sunrise']);
-$nextrisetxt = 'Sunrise Tomorrow';} 
-else { $nextrisetxt = 'Sunrise Today';$nextrise = date('H:i',$nextrise);} 
+if ($now > $nextrise) { 
+$nextrise = date('H:i',$result2['sunrise']);
+$nextrisetxt = $lang['Tomorrow'];} 
+else { $nextrisetxt = $lang['Today'];
+$nextrise = date('H:i',$nextrise);} 
 //weather34 sunset
 $nextset = $result['sunset'];if ($now > $nextset) { $nextset = date('H:i',$result2['sunset']);
-$nextsettxt = 'Sunset Tomorrow';}else { $nextsettxt = 'Sunset Today'; $nextset = date('H:i',$nextset);} 
+$nextsettxt = $lang['Tomorrow'];}
+else { $nextsettxt = $lang['Today']; 
+$nextset = date('H:i',$nextset);} 
 //weather34 sunrise firstlight
 $nextfirstlight = $result['civil_twilight_begin']; $now = time();if ($now > $nextfirstlight) {$nextfirstlight = date('H:i',$result2['civil_twilight_begin']); } else {$nextfirstlight = date('H:i',$nextfirstlight);} 
 //weather34 sunset last light
@@ -81,8 +90,8 @@ $light =$weather["daylight"]; $daylight = ltrim($light, '0'); $dark = 24 - str_r
 $darkhours = 23 - $lighthours; $darkminutes = 60 - $lightmins;if ($darkminutes<10) $darkminutes= '0' .$darkminutes;else $darkminutes=$darkminutes;$thehour=date('H');$theminute=date('i');?>
 
 <div class="sunblock2"></div>
-<div class="sunrise2"><?php echo $sunuphalf.' '.$nextrisetxt.' '.$nextrise;?></div>
-<div class="sunset2"><?php echo $sundownhalf.' '.$nextsettxt.' '.$nextset;?></div>
+<div class="sunrise2"><?php echo $sunuphalf.' '.$lang['Sunrise'].' '.$nextrisetxt.' '.$nextrise;?></div>
+<div class="sunset2"><?php echo $sundownhalf.' '.$lang['Sunset'].' '.$nextsettxt.' '.$nextset;?></div>
 
 
 
