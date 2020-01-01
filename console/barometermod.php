@@ -173,10 +173,10 @@ else if ($weather["temp_units"]=='C' && $weather["temp"]>12 && $weather["temp"]-
 else if ($weather["temp_units"]=='C' && $weather["temp"]<2){echo '
 <div class="weather34alert" id="weather34message">
   <div class="weather34alert-icon">
-    '.$snowalert.'
+    '.$coldalert.'
   </div>
   <div class="weather34alert-body">
-    <p>Alert Temperature</p>
+    <p>Alert Temperature '.$snowflakesvg.'</p>
     <valuealertcold>'.$weather["temp"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
   </div>
 </div>';}
@@ -185,10 +185,10 @@ else if ($weather["temp_units"]=='C' && $weather["temp"]<2){echo '
 else if ($weather["temp_units"]=='F' && $weather["temp"]<35){echo '
   <div class="weather34alert" id="weather34message">
     <div class="weather34alert-icon">
-      '.$snowalert.'
+      '.$coldalert.'
     </div>
     <div class="weather34alert-body">
-      <p>Alert Temperature</p>
+      <p>Alert Temperature '.$snowflakesvg.'</p>
       <valuealertcold>'.$weather["temp"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
     </div>
   </div>';}
@@ -218,7 +218,7 @@ else if ($weather["temp_units"]=='F' && $weather["dewpoint"]>68 ){echo '
   </div>';}
 
 //low dewpoint
-else if ($weather["temp_units"]=='C' && $weather["dewpoint"]<2 ){echo '
+else if ($weather["temp_units"]=='C' && $weather["dewpoint"]<=1 ){echo '
     <div class="weather34alert" id="weather34message">
       <div class="weather34alert-icon">
         '.$coldalert.'
@@ -230,13 +230,13 @@ else if ($weather["temp_units"]=='C' && $weather["dewpoint"]<2 ){echo '
     </div>';}
 
   //F
-else if ($weather["temp_units"]=='F' && $weather["dewpoint"]<35 ){echo '
+else if ($weather["temp_units"]=='F' && $weather["dewpoint"]<=33.8 ){echo '
   <div class="weather34alert" id="weather34message">
     <div class="weather34alert-icon">
       '.$coldalert.'
     </div>
     <div class="weather34alert-body">
-      <p>Alert Dewpoint</p>
+      <p>Alert Dewpoint '.$snowflakesvg.'</p>
       <valuealertcold>'.$weather["dewpoint"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
     </div>
   </div>';}
@@ -245,10 +245,10 @@ else if ($weather["temp_units"]=='F' && $weather["dewpoint"]<35 ){echo '
 else if ($weather["temp_units"]=='C' && $weather["windchill"]<0){echo '
   <div class="weather34alert" id="weather34message">
     <div class="weather34alert-icon">
-      '.$snowalert.'
+      '.$coldalert.'
     </div>
     <div class="weather34alert-body">
-      <p>Alert Windchill</p>
+      <p>Alert Windchill '.$snowflakesvg.'</p>
       <valuealertcold>'.$weather["windchill"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
     </div>
   </div>';}
@@ -256,10 +256,10 @@ else if ($weather["temp_units"]=='C' && $weather["windchill"]<0){echo '
   else if ($weather["temp_units"]=='F' && $weather["windchill"]<32){echo '
     <div class="weather34alert" id="weather34message">
       <div class="weather34alert-icon">
-        '.$snowalert.'
+        '.$coldalert.'
       </div>
       <div class="weather34alert-body">
-        <p>Alert Windchill</p>
+        <p>Alert Windchill '.$snowflakesvg.'</p>
         <valuealertcold>'.$weather["windchill"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
       </div>
     </div>';}
@@ -269,10 +269,10 @@ else if ($weather["temp_units"]=='C' && $weather["windchill"]<0){echo '
 else if ($weather["temp_units"]=='C' && $weather["realfeel"]<0){echo '
   <div class="weather34alert" id="weather34message">
     <div class="weather34alert-icon">
-      '.$snowalert.'
+      '.$coldalert.'
     </div>
     <div class="weather34alert-body">
-      <p>Alert Feels Like</p>
+      <p>Alert Feels '.$snowflakesvg.'</p>
       <valuealertcold>'.$weather["realfeel"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
     </div>
   </div>';}
@@ -280,10 +280,10 @@ else if ($weather["temp_units"]=='C' && $weather["realfeel"]<0){echo '
   else if ($weather["temp_units"]=='F' && $weather["realfeel"]<32){echo '
     <div class="weather34alert" id="weather34message">
       <div class="weather34alert-icon">
-        '.$snowalert.'
+        '.$coldalert.'
       </div>
       <div class="weather34alert-body">
-        <p>Alert Feels Like</p>
+        <p>Alert Feels '.$snowflakesvg.'</p>
         <valuealertcold>'.$weather["realfeel"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
       </div>
     </div>';}  
@@ -593,7 +593,7 @@ else if ($weather["wind_units"]=='km/h' && $weather["wind_speed"]>25){echo '
 
 ?>
 <script> //fire the weather34 notification
-function closeweather34alert(el) { el.addClass('is-hidden');}
+function closeweather34alert(el) { el.addClass('weather34alert-hide');}
 $('.js-messageClose').on('click', function(e) { closeweather34alert($(this).closest('.weather34alert'));});
 $(document).ready(function() {  setTimeout(function() { closeweather34alert($('#weather34message')); }, 10000);});
 </script>

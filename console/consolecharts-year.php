@@ -1,8 +1,8 @@
 <?php include_once('livedata.php');include_once('updater5.php');date_default_timezone_set($TZ);?>
 <!DOCTYPE html><html><head>
-<title> Weather34 Console Charts</title>
-<meta name="title" content="Weather34 Console Charts">
-<meta name="description" content="Charts for Weather34">
+<title> <?php echo $stationName;?> Console Charts</title>
+<meta name="title" content="<?php echo $stationName;?> Console Charts">
+<meta name="description" content="Charts for <?php echo $stationName;?>">
 <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="mask-icon" href="safari-pinned-tab.svg" color="#01a4b4">
@@ -79,14 +79,14 @@
        </div></a>
 
        <chartpage><?php echo $lang['Updated'] ?> <green><?php 
-       $dayfile=date('Y');$forecastime=filemtime('../weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
+       $dayfile=date('Y');$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
       </green></chartpage>
 
-      <a class="desktoplink" href="../index.php" alt="weather34 &copy; 2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>">
-      <div class="weather34-toggled">        
-       <div class="tog red">&copy;<?php echo date('Y')?></div> 
+      <a class="desktoplink" href="#" alt="weather34 designed" title="weather34 designed">
+      <div class="weather34-toggled">
+        <div class="circleblob"></div> 
+       <div class="tog red">&copy;weather34</div></div>
        <div class="logofooter"><img src="Wxsoft34-appsmall.png" width="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
-       </div> </a>   
-
-</body>
-</html>
+       </div> </a>
+     
+ </body></html>

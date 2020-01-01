@@ -151,10 +151,10 @@ if(file_exists($livedata)&&time()- filemtime($livedata)>300){echo '
         echo '
 <div class="weather34alert" id="weather34message">
 <div class="weather34alert-icon">
-  '.$snowalert.'
+  '.$coldalert.'
 </div>
 <div class="weather34alert-body">
-  <p>Alert Temperature</p>
+  <p>Alert Temp '.$snowflakesvg.'</p>
   <valuealertcold>'.$weather["temp"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
 </div>
 </div>';
@@ -165,10 +165,10 @@ if(file_exists($livedata)&&time()- filemtime($livedata)>300){echo '
         echo '
 <div class="weather34alert" id="weather34message">
   <div class="weather34alert-icon">
-    '.$snowalert.'
+    '.$coldalert.'
   </div>
   <div class="weather34alert-body">
-    <p>Alert Temperature</p>
+    <p>Alert Temp '.$snowflakesvg.'</p>
     <valuealertcold>'.$weather["temp"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
   </div>
 </div>';
@@ -210,7 +210,7 @@ if(file_exists($livedata)&&time()- filemtime($livedata)>300){echo '
       '.$coldalert.'
     </div>
     <div class="weather34alert-body">
-      <p>Alert Dewpoint </p>
+      <p>Alert Dewpoint '.$snowflakesvg.'</p>
       <valuealertcold>'.$weather["dewpoint"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
     </div>
   </div>';
@@ -224,7 +224,7 @@ if(file_exists($livedata)&&time()- filemtime($livedata)>300){echo '
     '.$coldalert.'
   </div>
   <div class="weather34alert-body">
-    <p>Alert Dewpoint </p>
+    <p>Alert Dewpoint '.$snowflakesvg.'</p>
     <valuealertcold>'.$weather["dewpoint"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
   </div>
 </div>';
@@ -234,10 +234,10 @@ if(file_exists($livedata)&&time()- filemtime($livedata)>300){echo '
 else if ($weather["temp_units"]=='C' && $weather["windchill"]<0){echo '
   <div class="weather34alert" id="weather34message">
     <div class="weather34alert-icon">
-      '.$snowalert.'
+      '.$coldalert.'
     </div>
     <div class="weather34alert-body">
-      <p>Alert Windchill</p>
+      <p>Alert Windchill '.$snowflakesvg.'</p>
       <valuealertcold>'.$weather["windchill"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
     </div>
   </div>';}
@@ -245,10 +245,10 @@ else if ($weather["temp_units"]=='C' && $weather["windchill"]<0){echo '
   else if ($weather["temp_units"]=='F' && $weather["windchill"]<32){echo '
     <div class="weather34alert" id="weather34message">
       <div class="weather34alert-icon">
-        '.$snowalert.'
+        '.$coldalert.'
       </div>
       <div class="weather34alert-body">
-        <p>Alert Windchill</p>
+        <p>Alert Windchill '.$snowflakesvg.'</p>
         <valuealertcold>'.$weather["windchill"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
       </div>
     </div>';}
@@ -258,10 +258,10 @@ else if ($weather["temp_units"]=='C' && $weather["windchill"]<0){echo '
 else if ($weather["temp_units"]=='C' && $weather["realfeel"]<0){echo '
   <div class="weather34alert" id="weather34message">
     <div class="weather34alert-icon">
-      '.$snowalert.'
+      '.$coldalert.'
     </div>
     <div class="weather34alert-body">
-      <p>Alert Feels Like</p>
+      <p>Alert Feels '.$snowflakesvg.'</p>
       <valuealertcold>'.$weather["realfeel"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
     </div>
   </div>';}
@@ -269,10 +269,10 @@ else if ($weather["temp_units"]=='C' && $weather["realfeel"]<0){echo '
   else if ($weather["temp_units"]=='F' && $weather["realfeel"]<32){echo '
     <div class="weather34alert" id="weather34message">
       <div class="weather34alert-icon">
-        '.$snowalert.'
+        '.$coldalert.'
       </div>
       <div class="weather34alert-body">
-        <p>Alert Feels Like</p>
+        <p>Alert Feels '.$snowflakesvg.'</p>
         <valuealertcold>'.$weather["realfeel"].'&deg;<alertunit>'.$weather["temp_units"].'</valuealertcold></alertunit>
       </div>
     </div>';}  

@@ -2671,7 +2671,7 @@ a {
 .weather34-toggleyellow .tog.red {
     float: right;
     border-color: #bfbfbf;
-    margin-right: 30px;
+    margin-right: 32px;
     justify-content: center;
     align-items: center;
     line-height: 1;
@@ -2757,7 +2757,7 @@ a {
     cursor: pointer;
     position: relative;
     display: inline-block;
-    width: 60px;
+    width: 75px;
     height: 14px;
     clear: both;
     -moz-border-radius: 50px;
@@ -2768,16 +2768,17 @@ a {
     -webkit-border-radius: 50px;
     border-radius: 50px;
     top: 3px;
-    margin-left: -5px;
+    margin-left: -15px;
     -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
     -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
     box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
     padding-top: 1px;
+    margin-right:10px;
 
 }
 
 .weather34-toggled.on .circleblob {
-    left: 5px;
+    left: 15px;
 }
 
 .weather34-toggled .tog {
@@ -2790,7 +2791,7 @@ a {
 .weather34-toggled .tog.red {
     float: right;
     border-color: #bfbfbf;
-    margin-right: 42px;
+    margin-right: 58px;
     justify-content: center;
     align-items: center;
     line-height: 1;
@@ -2806,14 +2807,14 @@ a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    border: 3px solid #e6a241;
+    border: 3px solid #00a4b3;
     background: 0;
 }
 
 .logofooter {
     position: absolute;
     margin-left: 70px;
-    margin-top: -7px
+    margin-top: -18px
 }
 
 .weather34alert {
@@ -2839,7 +2840,7 @@ a {
 
 }
 
-.weather34alert.is-hidden {
+.weather34alert.weather34alert-hide {
     opacity: 0;
     height: 0;
     font-size: 0;
