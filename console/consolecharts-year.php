@@ -79,7 +79,7 @@
        </div></a>
 
        <chartpage><?php echo $lang['Updated'] ?> <green><?php 
-       $dayfile=date('Y');$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
+       $dayfile=date('Y');$forecastime=filemtime('../weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
       </green></chartpage>
 
       <a class="desktoplink" href="#" alt="weather34 designed" title="weather34 designed">

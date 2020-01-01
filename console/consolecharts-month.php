@@ -81,7 +81,7 @@
        
 
        <chartpage><?php echo $lang['Updated'] ?> <green><?php 
-       $dayfile=date('Y')."/".date('F');$forecastime=filemtime('weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
+       $dayfile=date('Y')."/".date('F');$forecastime=filemtime('../weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
       </green></chartpage>
 
 
