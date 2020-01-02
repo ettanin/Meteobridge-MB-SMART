@@ -145,7 +145,8 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rain_month"]*25.
     
     <?php 
     
-    if ($weather["rainlastmonth"]=="[rain0total-max@M1]"){echo "";}    
+    if ($weather["rainlastmonth"]=="[rain0total-max@M1]"){echo "";}
+    else if ($weather["rainlastmonth"]=="0.0"){echo "";}        
     else if ($meteobridgeapi[179]='--'){
         echo "<div class='hitempy'>
         
