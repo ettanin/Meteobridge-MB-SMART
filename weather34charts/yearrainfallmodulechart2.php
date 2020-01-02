@@ -122,8 +122,8 @@ else if ($raininterval>=0 && $rainunit == 'in'){$raininterval='1';}
 			gridDashType: "dot",	
 			titleFontFamily: "arial",	
 			labelFontFamily: "arial",	
-			minimum:-0,		
-			interval:40	,
+			minimum:-1,		
+			interval:30	,
 			intervalType:"day",
 			xValueType: "dateTime",	
 			crosshair: {
