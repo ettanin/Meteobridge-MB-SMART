@@ -1,4 +1,4 @@
-<?php include_once('livedata.php');include_once('updater3.php');?>
+<?php include_once('livedata.php');include_once('updater6.php');date_default_timezone_set($TZ);?>
 <!DOCTYPE html><html><head>
 <title> <?php echo $stationName;?> Console Charts</title>
 <meta name="title" content="<?php echo $stationName;?> Console Charts">
@@ -38,36 +38,20 @@
 <div class="fade-in">
 <div class="container">
   <ul class="grid-container">
-    <li><div id=temperature></div></li>
-    <li><div id=humidity></div></li>
+    <li><div id=temperature></div></li>    
     <li><div id=dewpoint></div></li>
-
-    <li><div id=wind></div></li>
-    <li><div id=direction></div></li>
-    <li><div id=gust></div></li>
+    <li><div id=barometer></div></li>
 
     <li><div id=rain></div></li>
-    <li><div id=barometer></div></li>
-    <li><div id=uvindex></div></li>
-    <li3><div id=
-    <?php 
-    if ($chartoption=='todayuvindexmodule.php'){echo "indoor";}
-    else if ($chartoption=='todaysolarmodule.php'){echo "indoor";}
-    else if ($chartoption=='todayindoormodule.php'){echo "";}
-
-
-?>
-    
-    
-    indoor></div></li3>
-    
+    <li><div id=wind></div></li>    
+    <li><div id=gust></div></li>    
 
     <li2><div id=moon></div></li2> 
     <li2><div id=sun></div></li2> 
     <li2><div id=time-date></div></li2>  
   </ul>
     <div class="nav">
-    <a href="consoledavis.php" class="consolesetup"><?php echo $backhome?></a>
+    <a href="index.php" class="consolesetup"><?php echo $backhome?></a>
     <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
       <?php
         if ($theme == 'dark') {echo '<div class="weather34-toggle">
@@ -79,28 +63,28 @@
          <div class="tog red">Dark</div>
          </div>';}?></a>
 
-<a href="consolecharts-month.php" alt="<?php echo date('F');?> Charts" title="<?php echo date('F');?> Charts">
+<a href="consolecharts.php" alt="Today Charts" title="Today Charts">
         <div class="weather34-togglechartdate">
         <div class="circleblob"></div> 
-       <div class="tog red"><?php echo strftime("%B",time()); ?></div>
+       <div class="tog red"><?php echo $lang['Today'];?></div>
        </div></a>
 
-       <a href="consolecharts-year.php" alt="<?php echo date('Y');?> Charts" title="<?php echo date('Y');?> Charts">
+       <a href="consolecharts-month.php" alt="Month Charts" title="Month Charts">
+        <div class="weather34-togglechartdate">
+        <div class="circleblob"></div> 
+       <div class="tog red"><?php echo date('F');?></div>
+       </div></a>
+
+
+
+       <a href="consolecharts-year.php" alt="<?php echo $themonth;?> Charts" title="<?php echo $themonth;?> Charts">
         <div class="weather34-toggleyellow">
         <div class="circleblob"></div> 
-       <div class="tog red"><?php echo date('Y');?></div>
+       <div class="tog red"><?php echo strftime("%Y",time()); ?></div>
        </div></a>
 
-       <?php if ($display2019=='yes'){echo '
-        <a href="consolecharts-2019.php">
-        <div class="weather34-toggleorange">
-        <div class="circleblob"></div> 
-       <div class="tog red">2019</div>
-       </div></a>';}
-       ?>
-       
        <chartpage><?php echo $lang['Updated'] ?> <green><?php 
-       $dayfile=date('Y')."/".date('jMY');$forecastime=filemtime('../weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M",$forecastime);?>     
+       $dayfile=date('Y');$forecastime=filemtime('../weather34charts/2019.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
       </green></chartpage>
 
       <a class="desktoplink" href="#" alt="weather34 designed" title="weather34 designed">

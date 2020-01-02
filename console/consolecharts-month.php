@@ -78,7 +78,13 @@
        <div class="tog red"><?php echo date('Y');?></div>
        </div></a>
 
-       
+       <?php if ($display2019=='yes'){echo '
+        <a href="consolecharts-2019.php">
+        <div class="weather34-toggleorange">
+        <div class="circleblob"></div> 
+       <div class="tog red">2019</div>
+       </div></a>';}
+       ?>
 
        <chartpage><?php echo $lang['Updated'] ?> <green><?php 
        $dayfile=date('Y')."/".date('F');$forecastime=filemtime('../weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     

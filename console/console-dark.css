@@ -2573,9 +2573,6 @@ a {
     background: 0;
 }
 
-
-
-
 .weather34-toggleyellow {
     cursor: pointer;
     position: relative;
@@ -2637,6 +2634,131 @@ a {
     background: 0;
 }
 
+
+.weather34-toggleorange {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 14px;
+    clear: both;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -1px;
+    margin-right: 3px;
+    background: #35393b;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -5px;
+    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+    padding-top: 1px;
+
+}
+
+.weather34-toggleorange.on .circleblob {
+    left: 15px;
+}
+
+.weather34-toggleorange .tog {
+    width: 0;
+    height: 0;
+    border: 0;
+    background: 0;
+
+}
+
+.weather34-toggleorange .tog.red {
+    float: right;
+    border-color: #bfbfbf;
+    margin-right: 32px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    padding: 3px
+}
+
+.weather34-toggleorange .circleblob {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #e26613;
+    background: 0;
+}
+
+
+.weather34-togglechartdate{
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 14px;
+    clear: both;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -1px;
+    margin-right: 3px;
+    background: #35393b;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -5px;
+    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+    padding-top: 1px;
+
+}
+
+.weather34-togglechartdate.on .circleblob {
+    left: 15px;
+}
+
+.weather34-togglechartdate .tog {
+    width: 0;
+    height: 0;
+    border: 0;
+    background: 0;
+
+}
+
+.weather34-togglechartdate .tog.red {
+    float: right;
+    border-color: #bfbfbf;
+    margin-right: 0px;
+    justify-content: left;
+    align-items: left;
+    line-height: 1.2;
+    padding: 3px;
+    width:50px
+}
+
+.weather34-togglechartdate .circleblob {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #00a4b3;
+    background: 0;
+}
+
 .weather34-toggled {
     cursor: pointer;
     position: relative;
@@ -2694,70 +2816,6 @@ a {
     border: 3px solid #00a4b3;
     background: 0;
 }
-
-
-.weather34-togglechartdate {
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    width: 70px;
-    height: 14px;
-    clear: both;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    top: -1px;
-    margin-left: -1px;
-    margin-right: 3px;
-    background: #35393b;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    top: -1px;
-    margin-left: -5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    padding-top: 1px;
-
-}
-
-.weather34-togglechartdate.on .circleblob {
-    left: 15px;
-}
-
-.weather34-togglechartdate .tog {
-    width: 0;
-    height: 0;
-    border: 0;
-    background: 0;
-
-}
-
-.weather34-togglechartdate .tog.red {
-    float: right;
-    border-color: #bfbfbf;
-    margin-right: 0px;
-    justify-content: left;
-    align-items: left;
-    line-height: 1.2;
-    padding: 3px;
-    width: 50px
-}
-
-.weather34-togglechartdate .circleblob {
-    width: 4px;
-    height: 4px;
-    margin: 2px;
-    position: absolute;
-    left: 0;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    border: 3px solid #00a4b3;
-    background: 0;
-}
-
 
 
 
@@ -2991,8 +3049,7 @@ chartpage {
 
 @media screen and (max-width: 960px) {
     chartpage {
-        margin-left: 5px;
-        font-size: .6em;
+       display:none
     }
 
     li3 {
