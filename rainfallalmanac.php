@@ -141,12 +141,20 @@ if($weather["rain_units"] =='in'){ echo number_format($weather["rain_month"]*25.
 ?>
 <div></div>
 
-<div class="hitempy">
-    <?php echo $raininfo;?>
-    <?php if ($meteobridgeapi[179]='--'){
-        echo " <blue>".$lang['Rainfall']."</blue> <br>".$lastMonth = strftime('%B',strtotime("-1 month")).$lastMonth." <blue>".$weather['rainlastmonth'],"</blue><smalluvunit>".$weather["rain_units"]."</smalluvunit>";
-    } else if ($rainlasttime == date("M jS Y ")) {
-        echo 'Last <blue>Rainfall</blue><br>Today';
+
+    
+    <?php 
+    
+    if ($weather["rainlastmonth"]=="[rain0total-max@M1]"){echo "";}    
+    else if ($meteobridgeapi[179]='--'){
+        echo "<div class='hitempy'>
+        
+        <blue>".$lang['Rainfall']."</blue> 
+        <br>".$lastMonth = strftime('%B',strtotime("-1 month")).$lastMonth." <blue>".$weather['rainlastmonth'],"</blue>
+        <smalluvunit>".$weather["rain_units"]."</smalluvunit>";
+    } 
+    else if ($rainlasttime == date("M jS Y ")) {
+        echo '<div class="hitempy">Last <blue>Rainfall</blue><br>Today';
     } else {
         echo 'Last <blue>Rainfall</blue><br>'.$rainlasttime;
     }?></blue>

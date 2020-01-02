@@ -24,11 +24,25 @@ if($weather["rainmmax"]>=0 && $weather["rain_units"] =='mm'){ echo "<maxtempblue
 
 <?php if($meteobridgeapi[124]=='--'){?>
 <weather34top> 
- <thedate>
-<?php echo $lastMonth = date('F', strtotime("-1 month")) .$lastMonth; ?>
+<thedate>
+<?php 
+if ($weather["rainlastmonth"]=="[rain0total-max@M1]"){echo "";}
+else if ($weather["rainlastmonth"]=="0.0"){echo "";}
+else echo $lastMonth = date('F', strtotime("-1 month")) .$lastMonth; ?>
  <thevalue><maxtempblue>
-<?php echo $weather["rainlastmonth"]."</maxtempblue><tunit1>".$weather["rain_units"]?></tunit1></thevalue>
-<maxlow><?php echo $lang['Total']?></maxlow>
+<?php 
+if ($weather["rainlastmonth"]=="[rain0total-max@M1]"){echo "";}
+else if ($weather["rainlastmonth"]=="0.0"){echo "";}
+else echo $weather["rainlastmonth"]."</maxtempblue><tunit1>".$weather["rain_units"]
+
+
+
+?></tunit1></thevalue>
+<maxlow><?php 
+
+if ($weather["rainlastmonth"]=="[rain0total-max@M1]"){echo "";}
+else if ($weather["rainlastmonth"]=="0.0"){echo "";}
+else echo $lang['Total']?></maxlow>
 </weather34top>
 <?php ;}?>
 
