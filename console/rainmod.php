@@ -39,8 +39,8 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c><blue>". $weather[
 <div class=theraingap>
 <div class=thetrendboxblue>
 <?php if($meteobridgeapi[124]=='--'){?>
-<?php echo $lastMonth = date('F', strtotime("-1 month")) .$lastMonth; ?>
- <?php echo "&nbsp;<blue>".$weather["rainlastmonth"]."</blue>&nbsp;<smalltempunit2>".$weather["rain_units"]?></smalltempunit2>
+<?php echo $lang['Yesterday'] ?>
+ <?php echo "&nbsp;<blue>".$weather["rainydmax"]."</blue>&nbsp;<smalltempunit2>".$weather["rain_units"]?></smalltempunit2>
 <?php ;}?>
 <?php if($meteobridgeapi[124]>0){  
   echo $lang['Rainfall']."&nbsp;"  ;
