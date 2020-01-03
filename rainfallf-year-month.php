@@ -22,48 +22,39 @@ if($weather["rainmmax"]>=0 && $weather["rain_units"] =='mm'){ echo "<maxtempblue
 </weather34top>
 
 
-<?php if($meteobridgeapi[124]=='--'){?>
+<?php if($meteobridgeapi[124]=='--' || $meteobridgeapi[124]=='[rain0total-max@M1]'){?>
 <weather34top> 
 <thedate>
-<?php 
-if ($weather["rainlastmonth"]=="[rain0total-max@M1]"){echo "";}
-else if ($weather["rainlastmonth"]=="0.0"){echo "";}
-else echo $lastMonth = date('F', strtotime("-1 month")) .$lastMonth; ?>
+<?php echo $lang['Yesterday']?>
  <thevalue><maxtempblue>
 <?php 
-if ($weather["rainlastmonth"]=="[rain0total-max@M1]"){echo "";}
-else if ($weather["rainlastmonth"]=="0.0"){echo "";}
-else echo $weather["rainlastmonth"]."</maxtempblue><tunit1>".$weather["rain_units"]
-
-
-
+ echo $weather["rainydmax"]."</maxtempblue><tunit1>".$weather["rain_units"]
 ?></tunit1></thevalue>
-<maxlow><?php 
-
-if ($weather["rainlastmonth"]=="[rain0total-max@M1]"){echo "";}
-else if ($weather["rainlastmonth"]=="0.0"){echo "";}
-else echo $lang['Total']?></maxlow>
+<maxlow><?php echo $lang['Total']?></maxlow>
 </weather34top>
 <?php ;}?>
-
-<?php if($meteobridgeapi[124]>0){
-    echo "<weather34top>";echo "<thedate>".$lang['Rainfall']."</thedate><br><thevalue>";
-if ($seconds_ago >= 172800) {echo '<maxtempblue>'.intval($seconds_ago / 86400) . ' </maxtempblue><tunit1>'.$lang['Days'].'</tunit1></maxtempblue></thevalue>
-    ';}
-else if ($seconds_ago >= 86400) {echo '<maxtempblue>'.intval($seconds_ago / 86400) . ' </maxtempblue><tunit1>'.$lang['Day'].'</tunit1></maxtempblue></thevalue>
-    ';}
-else if ($seconds_ago >= 7200) {echo '<maxtempblue>'.intval($seconds_ago / 3600) . ' </maxtempblue><tunit1>'.$lang['Hours'].'</tunit1></maxtempblue></thevalue>
-    ';}
-else if ($seconds_ago >= 3600) {echo '<maxtempblue>'.intval($seconds_ago / 3600) . ' </maxtempblue><tunit1>'.$lang['Hour'].'</tunit1></maxtempblue></thevalue>
-    ';}
-else if ($seconds_ago > 60) {echo '<maxtempblue>'.intval($seconds_ago / 60) . ' </maxtempblue><tunit1>'.$lang['Minutes'].'</tunit1></maxtempblue></thevalue>
-    ';}
-else if ($seconds_ago <= 60) {echo '<maxtempblue>'.intval($seconds_ago / 60) . ' </maxtempblue><tunit1>'.$lang['Minutes'].'</tunit1></maxtempblue></thevalue>
-    ';}
-echo "<maxlow>"; echo $lang['Ago']."</maxlow></weather34top>";
+<?php 
+//rain yesterday is dispalyed if no rain last 12 hours
+if($meteobridgeapi[124]>0 || $meteobridgeapi[124]=='[rain0total-max@M1]'){    
+if ($seconds_ago >= 43200) {
+    echo "<weather34top>";echo "<thedate>".$lang['Yesterday']."</thedate><br><thevalue>";    
+    echo '<maxtempblue>'.$weather["rainydmax"]. ' </maxtempblue><tunit1>'.$weather["rain_units"].'</tunit1></maxtempblue></thevalue>
+    '; echo "<maxlow>"; echo $lang['Total']."</maxlow></weather34top>";}
+else if ($seconds_ago >= 7200) {
+    echo "<weather34top>";echo "<thedate>".$lang['Rainfall']."</thedate><br><thevalue>";    
+    echo '<maxtempblue>'.intval($seconds_ago / 3600) . ' </maxtempblue><tunit1>'.$lang['Hours'].'</tunit1></maxtempblue></thevalue>';
+    echo "<maxlow>"; echo $lang['Ago']."</maxlow></weather34top>";}
+else if ($seconds_ago >= 3600) {
+    echo '<maxtempblue>'.intval($seconds_ago / 3600) . ' </maxtempblue><tunit1>'.$lang['Hour'].'</tunit1></maxtempblue></thevalue>';
+    echo "<maxlow>"; echo $lang['Ago']."</maxlow></weather34top>";}
+else if ($seconds_ago > 60) {
+    echo '<maxtempblue>'.intval($seconds_ago / 60) . ' </maxtempblue><tunit1>'.$lang['Minutes'].'</tunit1></maxtempblue></thevalue>';
+    echo "<maxlow>"; echo $lang['Ago']."</maxlow></weather34top>";}
+else if ($seconds_ago <= 60) {
+    echo '<maxtempblue>'.intval($seconds_ago / 60) . ' </maxtempblue><tunit1>'.$lang['Minutes'].'</tunit1></maxtempblue></thevalue>';
+    echo "<maxlow>"; echo $lang['Ago']."</maxlow></weather34top>";}
 }
 ?>
-
 
 <weather34top> 
  <thedate><?php echo $lang['Rainfall']?></thedate>
