@@ -25,7 +25,7 @@ if($weather["rainmmax"]>=0 && $weather["rain_units"] =='mm'){ echo "<maxtempblue
 <?php 
 //rain yesterday is dispalyed if no rain last 12 hours 
 if ($seconds_ago >= 43200) {
-    echo "<weather34top>";echo "<thedate>".$lang['Yesterday']."</thedate><br><thevalue>";    
+    echo "<weather34top>";echo "<thedate>".$lang['Yesterday']."&nbsp;&nbsp;</thedate><br><thevalue>";    
     echo '<maxtempblue>'.$weather["rainydmax"]. ' </maxtempblue><tunit1>'.$weather["rain_units"].'</tunit1></maxtempblue></thevalue>
     '; echo "<maxlow>"; echo $lang['Total']."</maxlow></weather34top>";}
 else if ($seconds_ago >= 7200) {

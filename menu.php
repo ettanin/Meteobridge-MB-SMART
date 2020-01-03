@@ -219,7 +219,6 @@ if ($suppliers =='None') {
 }?></a></li> 
 
 <li><!--hardware info---> <a href="licence.php" data-lity title="Weather34 MB-SMART Licence Info and Download"> <weather34menumarkerdot></weather34menumarkerdot> Download MB-SMART <menuinfobox><?php echo $mbsmartversion ?></menuinfobox></a></li>
-<li><!--hardware info---> <a href="meteocloud.php" data-lity title="View the Meteocloud Network"> <weather34menumarkerdot></weather34menumarkerdot> Meteocloud <menuinfobox>Network</menuinfobox></a></li>
 
 <li><a href="https://weather34.com/homeweatherstation/meteobridge-mb-smart.html" data-title="Weather34 MB-Smart Version" target="_blank"><weather34menumarkerdot></weather34menumarkerdot> Weather34 Designed <menuinfobox>&copy;2015-<?php echo date('Y'); ?></menuinfobox></a></li>
 </div></div>

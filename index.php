@@ -14,29 +14,23 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 <title><?php echo $stationlocation;?> Home Weather Station</title>
 <meta name="title" content="<?php echo $stationlocation;?> Home Weather Station">
 <meta name="description" content="Home weather station providing current weather conditions for <?php echo $stationlocation;?>">
-<!-- Twitter -->
-<meta property="twitter:card" content="img/weather34_template-min.png">
-<meta property="twitter:url" content="">
-<meta property="twitter:title" content="<?php echo $stationlocation;?> Home Weather Station">
-<meta property="twitter:description" content="Home weather station providing current weather conditions for <?php echo $stationlocation;?>">
-<meta property="twitter:image" content="img/weather34_template-min.png">
 <meta content=website property=og:type>
 <meta content="7 days" name=revisit-after>
 <meta content=web name=distribution><meta content="<?php echo $stationlocation;?>" name=author>
 <meta content=INDEX,FOLLOW name=robots>
 <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
 <meta name="mobile-web-app-capable" content="yes">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-<link rel="manifest" href="img/site.webmanifest">
-<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#01a4b4">
-<meta name="apple-mobile-web-app-title" content="Weather34 MB-SMART">
-<meta name="application-name" content="Weather34 MB-SMART">
-<meta name="msapplication-TileColor" content="#f8f8f8">
-<meta name="msapplication-TileImage" content="img/mstile-144x144.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-title" content="Weather34">
+<meta name="application-name" content="Weather34">
 <link href="css/weather34dashboard.<?php echo $theme?>.css?version=<?php echo filemtime('css/weather34dashboard.'.$theme.'.css')?>" rel="stylesheet prefetch">
 <link rel="preload" href="css/fonts/clock3-webfont.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="css/fonts/verbatim-regular.woff2" as="font" type="font/woff2" crossorigin>
