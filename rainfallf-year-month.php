@@ -20,14 +20,22 @@ if($weather["rainmmax"]>=0 && $weather["rain_units"] =='mm'){ echo "<maxtempblue
 </tunit1></thevalue>
 <maxlow><?php echo $lang['Total']?></maxlow>
 </weather34top>
-
-
 <?php 
-//rain yesterday is dispalyed if no rain last 12 hours 
+// *rainfall hours or minutes ago if within last 24 hours
+// *rain yesterday if greater than 0 is displayed if no rain last 24 hours 
+// *if then rain yesterday is 0 rain last month is displayed 
 if ($seconds_ago >= 86400) {
+// rain yesterday if greater than 0 is displayed if no rain last 24 hours 
+if ($weather["rainydmax"]>0){
     echo "<weather34top>";echo "<thedate>".$lang['Yesterday']."&nbsp;&nbsp;</thedate><br><thevalue>";    
-    echo '<maxtempblue>'.$weather["rainydmax"]. ' </maxtempblue><tunit1>'.$weather["rain_units"].'</tunit1></maxtempblue></thevalue>
-    '; echo "<maxlow>"; echo $lang['Total']."</maxlow></weather34top>";}
+    echo '<maxtempblue>'.$weather["rainydmax"]. ' </maxtempblue><tunit1>'.$weather["rain_units"].'</tunit1></maxtempblue></thevalue>'; 
+    echo "<maxlow>"; echo $lang['Total']."</maxlow></weather34top>";}
+// yesterday is 0 rain last month is displayed 
+else { 
+    echo "<weather34top>";echo "<thedate>".$lastMonth = date('F', strtotime("-1 month")) .$lastMonth."&nbsp;&nbsp;</thedate><br><thevalue>";    
+    echo '<maxtempblue>'.$weather["rainlastmonth"]. ' </maxtempblue><tunit1>'.$weather["rain_units"].'</tunit1></maxtempblue></thevalue>'; 
+    echo "<maxlow>"; echo $lang['Total']."</maxlow></weather34top>";}}
+// weather34 sez lets get rain time ago within last 24 Hours ago   
 else if ($seconds_ago >= 7200) {
     echo "<weather34top>";echo "<thedate>".$lang['Rainfall']."</thedate><br><thevalue>";    
     echo '<maxtempblue>'.intval($seconds_ago / 3600) . ' </maxtempblue><tunit1>'.$lang['Hours'].'</tunit1></maxtempblue></thevalue>';
