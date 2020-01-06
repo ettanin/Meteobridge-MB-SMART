@@ -4602,10 +4602,6 @@ thunder {
   margin-top: 130px;
 }
 
-#weather34rainbeaker:before {
-  left: -10px;
-}
-
 rainu {
   font-size: 10px;
   color: #aaa;
@@ -4646,14 +4642,30 @@ rainu {
 
 #weather34rainbeaker:after,
 #weather34rainbeaker:before {
-  border: 5px solid #e9ebf1;
-  border-bottom: 0;
-  border-radius: 4px;
   content: "";
-  height: 5px;
   position: absolute;
   top: 0;
-  width: 10px;
+  width: 5px;
+  height: 0;
+  border: 3px solid #e9ebf1;
+  border-bottom: 0;    
+}
+
+#weather34rainbeaker:before {
+  left: -8px;
+}
+
+#weather34rainbeaker:after {
+  right: -8.5px;
+}
+
+#weather34rainwater {
+  bottom: 0;
+  width: 92px;
+  max-height: 90px;
+  overflow: hidden;
+  border: 0; 
+  background-color: hsla(186, 100%, 34%, 0.6);  
 }
 
 .wfstrikes,
@@ -4666,20 +4678,6 @@ rainu {
 .raincontainer1 {
   position: relative;
   float: left;
-}
-
-#weather34rainbeaker:after {
-  right: -10px;
-}
-
-#weather34rainwater {
-  background-color: rgba(0, 154, 171, 0.6);
-  border: 0;
-  border-radius: 0 0 2px 2px;
-  bottom: 0;
-  max-height: 90px;
-  overflow: hidden;
-  width: 92px;
 }
 
 .raincontainer1 {
