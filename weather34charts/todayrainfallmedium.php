@@ -15,12 +15,24 @@
 	
 	
 	include('preload.php');
+	$file_live=file_get_contents("../mbridge/MBrealtimeupload.txt");
+	$meteobridgeapi=explode(" ",$file_live);
+	$weather["rain_today"] = $meteobridgeapi[9];
 	$conv = 1;
 	if ($rainunit == 'in') {$conv= '0.0393701';}	
-	else if ($rainunit == 'mm'){$conv= '1';}
-	$interval = 1;
-	if ($rainunit == 'in') {$interval= '0.5';}	
-	else if ($rainunit == 'mm'){$interval= '5';}
+	else if ($rainunit == 'mm'){$conv= '1';}	
+//interval Y
+$raininterval= $weather["rain_today"];
+if ($raininterval>=40 && $rainunit == 'mm'){$raininterval=10;}
+else if ($raininterval>=20 && $rainunit == 'mm'){$raininterval=5;}
+else if ($raininterval>=10 && $rainunit == 'mm'){$raininterval=2;}
+else if ($raininterval>1 && $rainunit == 'mm'){$raininterval=2;}
+else if ($raininterval>=0 && $rainunit == 'mm'){$raininterval=1;}
+//Inches
+if ($raininterval>=1 && $rainunit == 'in'){$raininterval=1;}
+else if ($raininterval>=0.5 && $rainunit == 'in'){$raininterval=1;}
+else if ($raininterval>=0 && $rainunit == 'in'){$raininterval=1;}
+
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
@@ -129,7 +141,7 @@
 		margin: 3,
 		minimum:0,
 		lineThickness: 1,	
-		interval:1,	
+		interval: <?php echo $raininterval?>,
 		gridThickness: 1,	
 		gridDashType: "dot",	
         includeZero:true,
