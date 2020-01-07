@@ -1,5 +1,5 @@
 <?php include('livedata.php');include('common.php');?>
-<div class="modulecaption"><?php echo $lang['Avg Wind'];?> 10 min <blue1><?php echo $weather["wind_units"]?></blue1></div>
+<div class="modulecaption"><?php echo $lang['Avg Wind'];?> <blue1><?php echo $weather["wind_units"]?></blue1></div>
 <div class="tempcontainer" style="left:-73px;">
 <?php 
 //kmh

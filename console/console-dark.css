@@ -1990,27 +1990,28 @@ valuebeaufort {
     font-size: .75em;
     margin-left: 2px
 }
-
 .modulecaption {
     position: relative;
-    left: 85px;
+    left: 110px;
+    border-radius: 10px;
     background: #22252f;
     font-family: Headingtext;
     width: auto;
-    max-width: 140px;
+    max-width: 105px;
+    height:10px;
     font-size: 11px;
-    padding: 5px;
-    padding-bottom: 5px;
-    line-height: .8;
+    padding: 2px;  
+    padding-left:4px;     
+    line-height: 1.2;
     align-items: left;
     justify-content: left;
-    top: -18px;
-    color: #f5f5f5;
+    top: -17px;
+    color: #f5f5f5;    
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    -o-border-radius: 3px
 }
 
 .modulecaptionchart {
@@ -2021,9 +2022,8 @@ valuebeaufort {
     width: auto;
     max-width: 140px;
     font-size: 11px;
-    padding: 4px;
-    padding-bottom: 5px;
-    line-height: .8;
+    padding: 5px;
+    padding-bottom: 5px;    
     align-items: left;
     justify-content: left;
     top: 50px;
@@ -2032,23 +2032,21 @@ valuebeaufort {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-
-
+    -o-border-radius: 3px
 }
-
 
 .modulecaptionpressure {
     position: relative;
-    left: 85px;
+    left: 95px;
     background: #22252f;
     font-family: Headingtext;
     width: auto;
-    max-width: 140px;
+    max-width: 100px;
+    height:10px;
     font-size: 11px;
-    padding: 4px;
-    padding-bottom: 5px;
-    line-height: .8;
+    padding: 2px;  
+    padding-left:4px;     
+    line-height: 1.2;   
     align-items: left;
     justify-content: left;
     top: -40px;
@@ -2057,8 +2055,7 @@ valuebeaufort {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-
+    -o-border-radius: 3px
 }
 
 .modulecaptiondirection {
@@ -2067,37 +2064,85 @@ valuebeaufort {
     background: #22252f;
     font-family: Headingtext;
     max-width: 140px;
+    height:10px;
     font-size: 11px;
-    padding: 4px;
-    padding-bottom: 5px;
-    line-height: 1;
+    padding: 2px;  
+    padding-left:4px;     
+    line-height: 1.2;
     align-items: left;
     justify-content: left;
-    top: -74px;
+    top: -72px;
     color: #f5f5f5;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    -o-border-radius: 3px
 }
-
 .modulecaptionrainrate {
     position: relative;
-    left:-125px;
+    left:-75px;
     border-radius:10px;
     background: #22252f;
     font-family: Headingtext;
-    max-width:140px; 
-    height:12px;   
-    font-size: 9.5px;
+    max-width:140px;  
+    height:12px;  
+    font-size: 10px;
     padding: 2px;  
     padding-left:4px;  
     padding-bottom:0;
     line-height: 1.2;
     align-items: left;
     justify-content: left;    
-    top: 2px;
+    top:5px;
+    color: #f5f5f5;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+}
+
+
+.modulecaptionwind {
+    position: relative;
+    left:-70px;
+    border-radius:10px;
+    background: #22252f;
+    font-family: Headingtext;
+    max-width:140px;  
+    height:12px;  
+    font-size: 10px;
+    padding: 2px;  
+    padding-left:4px;  
+    padding-bottom:0;
+    line-height: 1.2;
+    align-items: left;
+    justify-content: left;    
+    top: -15px;
+    color: #f5f5f5;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+}
+.modulecaptiontemp {
+    position: relative;
+    left:-70px;
+    border-radius:10px;
+    background: #22252f;
+    font-family: Headingtext;
+    max-width:140px;  
+    height:12px;  
+    font-size: 10px;
+    padding: 2px;  
+    padding-left:4px;  
+    padding-bottom:0;
+    line-height: 1.2;
+    align-items: left;
+    justify-content: left;    
+    top: -15px;
     color: #f5f5f5;
     border-radius:3px;
     -webkit-border-radius:3px;
