@@ -2078,6 +2078,34 @@ valuebeaufort {
 
 }
 
+.modulecaptionpressure {
+    position: relative;
+    left: 95px;   
+    background: #f8f8f8;
+    font-family: Headingtext;
+    width: auto;
+    max-width: 100px;
+    font-size: 11px;
+    padding: 5px;
+    padding-bottom: px;
+    line-height: .8;
+    align-items: left;
+    justify-content: left;
+    top: -38px;
+    color: #545454;
+    box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -webkit-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -moz-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -ms-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -o-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+
+}
+
 
 
 .modulecaptiondirection {
