@@ -2070,7 +2070,7 @@ valuebeaufort {
     font-size: 11px;
     padding: 4px;
     padding-bottom: 5px;
-    line-height: .8;
+    line-height: 1;
     align-items: left;
     justify-content: left;
     top: -74px;
@@ -2081,6 +2081,31 @@ valuebeaufort {
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
 }
+
+.modulecaptionrainrate {
+    position: relative;
+    left:-125px;
+    border-radius:10px;
+    background: #22252f;
+    font-family: Headingtext;
+    max-width:140px; 
+    height:12px;   
+    font-size: 9.5px;
+    padding: 2px;  
+    padding-left:4px;  
+    padding-bottom:0;
+    line-height: 1.2;
+    align-items: left;
+    justify-content: left;    
+    top: 2px;
+    color: #f5f5f5;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+}
+
 
 .online,
 .online2 {
@@ -2697,7 +2722,7 @@ a {
 }
 
 
-.weather34-togglechartdate{
+.weather34-togglechartdate {
     cursor: pointer;
     position: relative;
     display: inline-block;
@@ -2743,7 +2768,7 @@ a {
     align-items: left;
     line-height: 1.2;
     padding: 3px;
-    width:50px
+    width: 50px
 }
 
 .weather34-togglechartdate .circleblob {
@@ -2779,7 +2804,7 @@ a {
     -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
     box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
     padding-top: 1px;
-    margin-right:10px;
+    margin-right: 10px;
 
 }
 
@@ -3054,23 +3079,23 @@ chartpage {
     height: 100px;
     margin-top: 65px;
     margin-left: 110px;
-  }
-  
-  #raincontainer {
+}
+
+#raincontainer {
     left: -150px;
     width: 208px;
     height: 170px;
     margin-top: -120px;
     overflow: hidden;
-    
-  }
-  
-  #raincontainer,
-  #raincontainer div {
+
+}
+
+#raincontainer,
+#raincontainer div {
     position: absolute;
-  }
-  
-  #weather34rainbeaker {
+}
+
+#weather34rainbeaker {
     bottom: 0;
     left: 14px;
     width: 92px;
@@ -3083,45 +3108,44 @@ chartpage {
     -moz-border-radius: 0 0 2px 2px;
     -ms-border-radius: 0 0 2px 2px;
     -o-border-radius: 0 0 2px 2px;
-  }
-  
-  #weather34rainbeaker:after,
-  #weather34rainbeaker:before {
+}
+
+#weather34rainbeaker:after,
+#weather34rainbeaker:before {
     content: "";
     position: absolute;
     top: 0;
-    width: 4px;
+    width: 0;
     height: 0;
     border: 3px solid #3d464d;
     border-bottom: 0;
-    
 }
-  
-  #weather34rainbeaker:before {
-    left: -11px;
-  }
-  
-  #weather34rainbeaker:after {
-    right: -11px;
-  }
-  
-  #weather34rainwater {
+
+#weather34rainbeaker:before {
+    left: -8px;
+}
+
+#weather34rainbeaker:after {
+    right: -8.5px;
+}
+
+#weather34rainwater {
     bottom: 0;
     width: 92px;
     max-height: 90px;
     overflow: hidden;
-    border: 0;    
+    border: 0;
     background-color: hsla(186, 100%, 34%, 0.6);
-    
+
 }
-  
-  
-  .raincontainer1 {
+
+
+.raincontainer1 {
     top: 0px;
     right: 0;
     bottom: 0;
     left: 25px;
-    margin: 40px 10px 10px 40px;    
+    margin: 40px 10px 10px 40px;
     position: relative;
     float: left;
     right: 0;
@@ -3129,11 +3153,11 @@ chartpage {
     left: 0;
     float: left;
     -o-font-smoothing: antialiased;
-     
 
-  }
-  
-  .raintoday1 {
+
+}
+
+.raintoday1 {
     width: 3.75rem;
     height: 1.5rem;
     padding-top: 7px;
@@ -3152,29 +3176,29 @@ chartpage {
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     background: #44a6b5;
     font-family: weathertext2;
-    margin-left:-46px;
-    margin-top:10px
-  }
-  
-  
-  
-  smallrainunit2b {
+    margin-left: -46px;
+    margin-top: 10px
+}
+
+
+
+smallrainunit2b {
     font-family: weathertext2;
     vertical-align: top;
     top: 2px;
-    font-size:.25rem;
-    color:#ffffff;
-  }
-  
+    font-size: .25rem;
+    color: #ffffff;
+}
+
 
 
 @media screen and (max-width: 960px) {
     chartpage {
-       display:none
+        display: none
     }
 
     li3 {

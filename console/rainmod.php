@@ -35,7 +35,7 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c><blue>". $weather[
 </smalltempunit2></div></div>
 
 <div class=theraingap>
-<div class=thetrendboxblue style="margin-left:-120px">
+<div class=modulecaptionrainrate> 
 <?php
   // *rainfall hours or minutes ago if within last 24 hours
   // *rain yesterday if greater than 0 is displayed if no rain last 24 hours 

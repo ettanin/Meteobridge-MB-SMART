@@ -2079,33 +2079,6 @@ valuebeaufort {
 }
 
 
-.modulecaptionpressure {
-    position: relative;
-    left: 95px;   
-    background: #f8f8f8;
-    font-family: Headingtext;
-    width: auto;
-    max-width: 100px;
-    font-size: 11px;
-    padding: 5px;
-    padding-bottom: px;
-    line-height: .8;
-    align-items: left;
-    justify-content: left;
-    top: -40px;
-    color: #545454;
-    box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-    -webkit-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-    -moz-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-    -ms-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-    -o-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
-
-}
 
 .modulecaptiondirection {
     position: relative;
@@ -2132,6 +2105,36 @@ valuebeaufort {
     -ms-border-radius:3px;
     -o-border-radius:3px;
 }
+
+.modulecaptionrainrate {
+    position: relative;
+    left:-125px;
+    border-radius:10px;
+    background: #f8f8f8;
+    font-family: Headingtext;
+    max-width:140px;  
+    height:12px;  
+    font-size: 10px;
+    padding: 2px;  
+    padding-left:4px;  
+    padding-bottom:0;
+    line-height: 1.2;
+    align-items: left;
+    justify-content: left;    
+    top: 2px;
+    color: #545454;
+    box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -webkit-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -moz-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -ms-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    -o-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+}
+
 
 .online,
 .online2 {
@@ -3123,7 +3126,7 @@ chartpage{
     left: 14px;
     width: 92px;
     height: 95px;
-    border: 4px solid #e9ebf1;
+    border: 4px solid #dee3f0;
     border-top: 0;
     border-radius: 0 0 2px 2px;
     background: url(rain/weather34rainbeakerruler.svg) no-repeat;
@@ -3138,19 +3141,18 @@ chartpage{
     content: "";
     position: absolute;
     top: 0;
-    width: 4px;
+    width: 1px;
     height: 0;
-    border: 3px solid #e9ebf1;
+    border: 3px solid #dee3f0;
     border-bottom: 0;
     
 }
-  
-  #weather34rainbeaker:before {
-    left: -11px;
+#weather34rainbeaker:before {
+    left: -8px;
   }
   
   #weather34rainbeaker:after {
-    right: -11px;
+    right: -8.5px;
   }
   
   #weather34rainwater {
@@ -3185,7 +3187,7 @@ chartpage{
     height: 1.5rem;
     padding-top: 7px;
     color: #fff;
-    border-bottom: 8px solid #e9ebf1;
+    border-bottom: 8px solid #dee3f0;
     border-radius: 3px;
     font-size: 0.8rem;
     -webkit-border-radius: 3px;
