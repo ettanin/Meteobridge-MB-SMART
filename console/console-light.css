@@ -1411,7 +1411,7 @@ uv0 {
     width: 200px;
     height: 200px;
     margin-top: -90px;
-    margin-left: -125px;
+    margin-left: -110px;
     text-align: center
 }
 
@@ -2021,130 +2021,165 @@ valuebeaufort {
     margin-left: 2px
 }
 
+
 .modulecaption {
+    display:flex;
     position: relative;
-    left: 110px;
-    border-radius: 10px;
+    left: 110px;    
+    top: -19px;
+    color: #545454;
+    border-radius:10px;
     background: #f8f8f8;
     font-family: Headingtext;
-    width: auto;
-    max-width: 105px;
-    height:10px;
-    font-size: 11px;
-    padding: 2px;  
-    padding-left:4px;     
+    width:11em;    
+    height:10px;  
+    font-size: 10px;
+    padding: 2px 3px 1px 3px;
     line-height: 1.2;
-    align-items: left;
-    justify-content: left;
-    top: -17px;
+    align-items: center;
+    justify-content: center;       
     color: #545454;
     box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
 }
 
 .modulecaptionchart {
+    display:flex;
     position: relative;
-    left: 145px;
+    left: 145px;    
+    top: 50px;
+    color: #545454;
+    border-radius:10px;
     background: #f8f8f8;
     font-family: Headingtext;
-    width: auto;
-    max-width: 140px;
-    font-size: 11px;
-    padding: 5px;
-    padding-bottom: 5px;    
-    align-items: left;
-    justify-content: left;
-    top: 50px;
+    width:12em;    
+    height:10px;  
+    font-size: 10px;
+    padding: 2px 3px 1px 3px;
+    line-height: 1.2;
+    align-items: center;
+    justify-content: center;      
     color: #545454;
     box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+}
+
+.modulecaptionwindchart {
+    display:flex;
+    position: relative;
+    left: 120px;    
+    top: -19px;
+    color: #545454;
+    border-radius:10px;
+    background: #f8f8f8;
+    font-family: Headingtext;
+    width:11em;    
+    height:12px;  
+    font-size: 10px;
+    padding: 2px 3px 1px 3px;
+    line-height: 1.2;
+    align-items: center;
+    justify-content: center;    
+    color: #545454;
+    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
+    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
+    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
+    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
+    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
 }
 
 .modulecaptionpressure {
+    display:flex;
     position: relative;
-    left: 95px;
+    left: 95px;    
+    top: -43px;
+    color: #545454;
+    border-radius:10px;
     background: #f8f8f8;
     font-family: Headingtext;
-    width: auto;
-    max-width: 100px;
-    height:10px;
-    font-size: 11px;
-    padding: 2px;  
-    padding-left:4px;     
-    line-height: 1.2;   
-    align-items: left;
-    justify-content: left;
-    top: -40px;
+    width:11em;    
+    height:10px;  
+    font-size: 10px;
+    padding: 2px 3px 1px 3px;
+    line-height: 1.2;
+    align-items: center;
+    justify-content: center;     
     color: #545454;
     box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
 }
 
 .modulecaptiondirection {
+    display:flex;
     position: relative;
     left: 85px;
+    top: -75px;
+    color: #545454;
+    border-radius:10px;
     background: #f8f8f8;
     font-family: Headingtext;
-    max-width: 140px;
-    height:10px;
-    font-size: 11px;
-    padding: 2px;  
-    padding-left:4px;     
+    width:11em;    
+    height:10px;  
+    font-size: 10px;
+    padding: 2px 3px 1px 3px;
     line-height: 1.2;
-    align-items: left;
-    justify-content: left;
-    top: -72px;
+    align-items: center;
+    justify-content: center;     
     color: #545454;
     box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
     -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
 }
 .modulecaptionrainrate {
+    display:flex;
     position: relative;
     left:-75px;
     border-radius:10px;
     background: #f8f8f8;
     font-family: Headingtext;
-    max-width:140px;  
-    height:12px;  
+    width:11em;    
+    height:10px;  
     font-size: 10px;
-    padding: 2px;  
-    padding-left:4px;  
-    padding-bottom:0;
+    padding: 2px 3px 1px 3px;
     line-height: 1.2;
-    align-items: left;
-    justify-content: left;    
+    align-items: center;
+    justify-content: center; 
     top:5px;
     color: #545454;
     box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
@@ -2161,20 +2196,19 @@ valuebeaufort {
 
 
 .modulecaptionwind {
+    display:flex;
     position: relative;
     left:-70px;
     border-radius:10px;
     background: #f8f8f8;
     font-family: Headingtext;
-    max-width:140px;  
-    height:12px;  
+    width:11em;    
+    height:10px;  
     font-size: 10px;
-    padding: 2px;  
-    padding-left:4px;  
-    padding-bottom:0;
+    padding: 2px 3px 1px 3px;
     line-height: 1.2;
-    align-items: left;
-    justify-content: left;    
+    align-items: center;
+    justify-content: center;  
     top: -15px;
     color: #545454;
     box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
@@ -2189,20 +2223,19 @@ valuebeaufort {
     -o-border-radius:3px;
 }
 .modulecaptiontemp {
+    display:flex;
     position: relative;
     left:-70px;
     border-radius:10px;
     background: #f8f8f8;
     font-family: Headingtext;
-    max-width:140px;  
-    height:12px;  
-    font-size: 10px;
-    padding: 2px;  
-    padding-left:4px;  
-    padding-bottom:0;
+    width:11em;    
+    height:10px;  
+    font-size: 9px;
+    padding: 2px 3px 1px 3px;
     line-height: 1.2;
-    align-items: left;
-    justify-content: left;    
+    align-items: center;
+    justify-content: center; 
     top: -15px;
     color: #545454;
     box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
@@ -2216,7 +2249,6 @@ valuebeaufort {
     -ms-border-radius:3px;
     -o-border-radius:3px;
 }
-
 
 .online,
 .online2 {
@@ -2302,7 +2334,8 @@ valuebeaufort {
 
 blue1 {
     color: #00a4b3;
-    font-size: .8em
+    font-size: .8em;
+    margin-left:3px
 }
 
 .nav {

@@ -22,7 +22,7 @@
 </div>
 
 
-<div class="modulecaption" style="margin-top:-9px;margin-left:-5px"><?php echo $lang['Rainfall']?> <blue1><?php echo $weather["rain_units"]?></blue1></div>
+<div class="modulecaption" style="margin-top:-9px;margin-left:-15px"><?php echo $lang['Rainfall']?> <blue1><?php echo $weather["rain_units"]?></blue1></div>
 
 <div class="tempcontainer" style="margin-left:40px;margin-right:35px;">
 <div class="weather34i-rairate-bar">

@@ -1389,7 +1389,7 @@ uv0 {
     width: 200px;
     height: 200px;
     margin-top: -90px;
-    margin-left: -125px;
+    margin-left: -110px;
     text-align: center
 }
 
@@ -1990,112 +1990,131 @@ valuebeaufort {
     font-size: .75em;
     margin-left: 2px
 }
+
 .modulecaption {
+    display:flex;
     position: relative;
-    left: 110px;
-    border-radius: 10px;
+    left: 110px;    
+    top: -19px;
+    color: #ffffff;   
     background: #22252f;
     font-family: Headingtext;
-    width: auto;
-    max-width: 105px;
-    height:10px;
-    font-size: 11px;
-    padding: 2px;  
-    padding-left:4px;     
+    width:11em;    
+    height:10px;  
+    font-size: 10px;
+    padding: 2px 3px 1px 3px;
     line-height: 1.2;
-    align-items: left;
-    justify-content: left;
-    top: -17px;
-    color: #f5f5f5;    
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px
+    align-items: center;
+    justify-content: center; 
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
 }
 
 .modulecaptionchart {
+    display:flex;
     position: relative;
-    left: 145px;
+    left: 145px;    
+    top: 50px;
+    color: #ffffff;   
     background: #22252f;
     font-family: Headingtext;
-    width: auto;
-    max-width: 140px;
-    font-size: 11px;
-    padding: 5px;
-    padding-bottom: 5px;    
-    align-items: left;
-    justify-content: left;
-    top: 50px;
-    color: #f5f5f5;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px
+    width:12em;    
+    height:10px;  
+    font-size: 10px;
+    padding: 2px 3px 1px 3px;
+    line-height: 1.2;
+    align-items: center;
+    justify-content: center;    
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+}
+
+.modulecaptionwindchart {
+    display:flex;
+    position: relative;
+    left: 120px;    
+    top: -19px;
+    color: #ffffff;   
+    background: #22252f;
+    font-family: Headingtext;
+    width:11em;    
+    height:10px;  
+    font-size: 10px;
+    padding: 2px 3px 1px 3px;
+    line-height: 1.2;
+    align-items: center;
+    justify-content: center;    
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
 }
 
 .modulecaptionpressure {
+    display:flex;
     position: relative;
-    left: 95px;
+    left: 95px;    
+    top: -43px;
+    color: #ffffff;   
     background: #22252f;
     font-family: Headingtext;
-    width: auto;
-    max-width: 100px;
-    height:10px;
-    font-size: 11px;
-    padding: 2px;  
-    padding-left:4px;     
-    line-height: 1.2;   
-    align-items: left;
-    justify-content: left;
-    top: -40px;
-    color: #f5f5f5;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px
+    width:11em;    
+    height:10px;  
+    font-size: 10px;
+    padding: 2px 3px 1px 3px;
+    line-height: 1.2;
+    align-items: center;
+    justify-content: center; 
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
 }
 
 .modulecaptiondirection {
+    display:flex;
     position: relative;
     left: 85px;
+    top: -75px;
+    color: #ffffff;   
     background: #22252f;
     font-family: Headingtext;
-    max-width: 140px;
-    height:10px;
-    font-size: 11px;
-    padding: 2px;  
-    padding-left:4px;     
+    width:11em;    
+    height:10px;  
+    font-size: 10px;
+    padding: 2px 3px 1px 3px;
     line-height: 1.2;
-    align-items: left;
-    justify-content: left;
-    top: -72px;
-    color: #f5f5f5;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px
+    align-items: center;
+    justify-content: center;  
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
 }
 .modulecaptionrainrate {
+    display:flex;
     position: relative;
     left:-75px;
-    border-radius:10px;
+    color: #ffffff;   
     background: #22252f;
     font-family: Headingtext;
-    max-width:140px;  
-    height:12px;  
+    width:11em;    
+    height:10px;  
     font-size: 10px;
-    padding: 2px;  
-    padding-left:4px;  
-    padding-bottom:0;
+    padding: 2px 3px 1px 3px;
     line-height: 1.2;
-    align-items: left;
-    justify-content: left;    
+    align-items: center;
+    justify-content: center; 
     top:5px;
-    color: #f5f5f5;
     border-radius:3px;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
@@ -2105,22 +2124,20 @@ valuebeaufort {
 
 
 .modulecaptionwind {
+    display:flex;
     position: relative;
     left:-70px;
-    border-radius:10px;
+    color: #ffffff;   
     background: #22252f;
     font-family: Headingtext;
-    max-width:140px;  
-    height:12px;  
+    width:11em;    
+    height:10px;  
     font-size: 10px;
-    padding: 2px;  
-    padding-left:4px;  
-    padding-bottom:0;
+    padding: 2px 3px 1px 3px;
     line-height: 1.2;
-    align-items: left;
-    justify-content: left;    
+    align-items: center;
+    justify-content: center;  
     top: -15px;
-    color: #f5f5f5;
     border-radius:3px;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
@@ -2128,22 +2145,20 @@ valuebeaufort {
     -o-border-radius:3px;
 }
 .modulecaptiontemp {
+    display:flex;
     position: relative;
     left:-70px;
-    border-radius:10px;
+    color: #ffffff;   
     background: #22252f;
     font-family: Headingtext;
-    max-width:140px;  
-    height:12px;  
-    font-size: 10px;
-    padding: 2px;  
-    padding-left:4px;  
-    padding-bottom:0;
+    width:11em;    
+    height:10px;  
+    font-size: 9px;
+    padding: 2px 3px 1px 3px;
     line-height: 1.2;
-    align-items: left;
-    justify-content: left;    
+    align-items: center;
+    justify-content: center; 
     top: -15px;
-    color: #f5f5f5;
     border-radius:3px;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
@@ -2236,7 +2251,8 @@ valuebeaufort {
 
 blue1 {
     color: #07727d;
-    font-size: .8em
+    font-size: .8em;
+    margin-left:3px
 }
 
 .nav {
