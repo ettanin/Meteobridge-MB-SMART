@@ -18,11 +18,35 @@
     src: url(fonts/HelveticaNeue-Medium.woff) format("woff")
 }
 
+:root {
+	--white: #ffffff;
+    --light: #f5f5f5;
+    --dark: #151519;
+    --dark-light: hsla(0, 0%, 0%, 0.251); 
+    --dark-toggle:#35393b;
+    --dark-caption:#22252f;
+	--black: #000000;
+    --deepblue: #00adbd;
+    --blue: #00adbd;
+    --darkred: #703232;
+    --deepred: #703232;
+	--red: #d35f50;
+	--yellow: #e6a241;
+    --green: #90b22a;
+    --orange: #ec5732;
+    --purple: #8680bc;
+    --silver: #afb7c0;
+    --border-dark: #3d464d;
+    --body-text-dark: #afb7c0;
+    --body-text-light: #545454;
+    --blocks: #e6e8ef;
+}
+
 body {
     font-family: headingtext;
     margin: 0 auto;
-    color: #afb7c0;
-    background: #151519;
+    color: var(--body-text-dark);
+    background: var(--dark);
     width: 100%;
     max-width: 985px;
     text-rendering: optimizeLegibility;
@@ -48,7 +72,7 @@ body {
     -moz-animation-fill-mode: both;
     -o-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
-    animation-fill-mode: both;
+    animation-fill-mode: both
 }
 
 .fade-in {
@@ -66,7 +90,7 @@ body {
     -moz-animation-fill-mode: both;
     -o-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
-    animation-fill-mode: both;
+    animation-fill-mode: both
 }
 
 container {
@@ -101,23 +125,22 @@ li {
     max-width: 420px;
     padding: 0;
     height: 180px;
-    border: 1px solid hsla(208, 12%, 24%, 0.2);
+    border: 1px solid hsla(208, 12%, 24%, .2);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: #f5f5f5;
+    background-color: var(--light);
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #afb7c0;
-    background-color: hsla(0, 0%, 0%, 0.25);
+    color: var(--body-text-dark);
+    background-color: hsla(0, 0%, 0%, .25);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    -webkit-border-radius: 10px;
+    -webkit-border-radius: 10px
 }
-
 
 li2 {
     align-items: center;
@@ -133,22 +156,21 @@ li2 {
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #afb7c0
+    color: var(--body-text-dark)
 }
 
 li3 {
-    display: none;
+    display: none
 }
 
 .clock {
-    background: #22252f;
+    background-color: var(--dark-caption);
     border-radius: 3px;
-    padding: 0px;
+    padding: 0;
     padding-left: 70px;
-    padding-right: 0px;
+    padding-right: 0;
     padding-top: 15px;
-    display: flex;
-    font-family: clock;
+    display: flex;    
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -157,28 +179,13 @@ li3 {
     text-align: center;
     width: 180px;
     position: relative;
-    color: #00a4b3;
+    color: var(--blue);
     font-size: 2rem;
     text-transform: uppercase;
     font-family: clock;
     height: 64px;
     line-height: 1.2;
-    margin-top: 5px;
-
-
-
-}
-
-.date {
-    display: block;
-    background: none;
-    color: #f5f5f5;
-    font-size: .65rem;
-    font-family: clock;
-    line-height: 1;
-    margin-top: 35px;
-    position: absolute;
-    margin-left: -5px
+    margin-top: 5px
 }
 
 .clock2 {
@@ -195,10 +202,9 @@ li3 {
     text-align: center;
     width: auto;
     position: relative;
-    color: #00a4b3;
+    color: var(--blue);
     font-size: 3rem;
-    text-transform: uppercase;
-    font-family: clock;
+    text-transform: uppercase;   
     height: 50px;
     line-height: 1.2;
     top: 55px;
@@ -212,7 +218,7 @@ li3 {
 }
 
 .clock3 {
-    background: #22252f;
+    background-color: var(--dark-caption);
     border-radius: 3px;
     padding: 0px;
     padding-left: 70px;
@@ -228,10 +234,9 @@ li3 {
     text-align: center;
     width: 200px;
     position: relative;
-    color: #00a4b3;
+    color: var(--blue);
     font-size: 2rem;
-    text-transform: uppercase;
-    font-family: clock;
+    text-transform: uppercase;    
     height: 60px;
     line-height: 1.2;
     margin-top: 5px;
@@ -242,9 +247,8 @@ li3 {
 .thedate3 {
     display: flex;
     background: none;
-    color: #f5f5f5;
-    font-size: .75rem;
-    font-family: clock;
+    color: var(--light);
+    font-size: .75rem;    
     line-height: 1;
     margin-top: 60px;
     position: absolute;
@@ -257,8 +261,20 @@ li3 {
 
 .date2 {
     display: block;
-    background: none;
-    color: #545454;
+    background: 0 0;
+    color: var(--body-text-light);
+    font-size: .65rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: 35px;
+    position: absolute;
+    margin-left: -5px
+}
+
+.date {
+    display: block;
+    background: 0 0;
+    color: var(--light);
     font-size: .65rem;
     font-family: clock;
     line-height: 1;
@@ -268,14 +284,13 @@ li3 {
 }
 
 .moonblock {
-    background: #22252f;
+    background-color: var(--dark-caption);
     border-radius: 3px;
-    padding: 0px;
+    padding: 0;
     padding-left: 10px;
-    padding-right: 0px;
+    padding-right: 0;
     padding-top: 15px;
-    display: flex;
-    font-family: clock;
+    display: flex;    
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -284,66 +299,62 @@ li3 {
     text-align: center;
     width: 250px;
     position: relative;
-    color: #00a4b3;
+    color: var(--blue);
     font-size: 2rem;
-    text-transform: uppercase;
-    font-family: clock;
+    text-transform: uppercase;    
     height: 64px;
     line-height: 2;
     margin-top: 5px;
-    font-family: headingtext;
-
-
+    font-family: headingtext
 }
 
 .date1 {
     display: block;
-    background: none;
-    color: #f5f5f5;
+    background: 0 0;
+    color: var(--light);
     font-size: .75rem;
     font-family: clock;
     line-height: 1;
     margin-top: -60px;
     position: absolute;
     margin-left: 60px;
-    font-family: headingtext;
+    font-family: headingtext
 }
 
 .date2 {
     display: block;
-    background: none;
-    color: #f5f5f5;
+    background: 0 0;
+    color: var(--light);
     font-size: .75rem;
     font-family: clock;
     line-height: 1;
     margin-top: -45px;
     position: absolute;
     margin-left: 60px;
-    font-family: headingtext;
+    font-family: headingtext
 }
 
 .phase2 {
     display: block;
-    background: none;
-    color: #f5f5f5;
+    background: 0 0;
+    color: var(--light);
     font-size: .75rem;
     font-family: clock;
     line-height: 1;
     margin-top: -30px;
     position: absolute;
     margin-left: 60px;
-    font-family: headingtext;
+    font-family: headingtext
 }
 
 .sunblock {
-    background: #22252f;
+    background-color: var(--dark-caption);
     border-radius: 3px;
-    padding: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 15px;
-    display: flex;
-    font-family: clock;
+    display: flex;    
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -352,104 +363,93 @@ li3 {
     text-align: left;
     width: 250px;
     position: relative;
-    color: #00a4b3;
+    color: var(--blue);
     font-size: 2rem;
-    text-transform: uppercase;
-    font-family: clock;
+    text-transform: uppercase;    
     height: 64px;
     line-height: 2;
     margin-top: 5px;
-    font-family: headingtext;
-
+    font-family: headingtext
 }
 
 .sunblock2 {
     background: 0;
-    padding: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 15px;
-    display: flex;
-    font-family: clock;
+    display: flex;   
     left: -20px;
     text-align: left;
     width: 250px;
-    color: #00a4b3;
+    color: var(--blue);
     font-size: 2rem;
-    text-transform: uppercase;
-    font-family: clock;
+    text-transform: uppercase;    
     height: 64px;
     line-height: 1;
     margin-top: 25px;
-    font-family: headingtext;
-
+    font-family: headingtext
 }
 
 .sunrise1 {
     display: block;
-    background: none;
-    color: #f5f5f5;
-    font-size: .75rem;
-    font-family: clock;
+    background: 0 0;
+    color: var(--light);
+    font-size: .75rem;    
     line-height: 1;
     margin-top: -65px;
     position: absolute;
     margin-left: 15px;
     font-family: headingtext;
-    text-align: left;
+    text-align: left
 }
 
 .sunset1 {
     display: block;
-    background: none;
-    color: #f5f5f5;
-    font-size: .75rem;
-    font-family: clock;
+    background: 0 0;
+    color: var(--light);
+    font-size: .75rem;    
     line-height: 1;
     margin-top: -35px;
     position: absolute;
     margin-left: 15px;
     font-family: headingtext;
-    text-align: left;
+    text-align: left
 }
 
 .sunrise2 {
     display: block;
-    background: none;
-    color: #c0c0c0;
-    font-size: .7rem;
-    font-family: clock;
+    background: 0 0;
+    color: var(--body-text-dark);
+    font-size: .7rem;    
     line-height: 1;
     margin-top: -45px;
     position: absolute;
     margin-left: 0;
     font-family: headingtext;
-    text-align: left;
+    text-align: left
 }
 
 .sunset2 {
     display: block;
-    background: none;
-    color: #c0c0c0;
-    font-size: .7rem;
-    font-family: clock;
+    background: 0 0;
+    color: var(--body-text-dark);
+    font-size: .7rem;   
     line-height: 1;
     margin-top: -30px;
     position: absolute;
     margin-left: 0;
     font-family: headingtext;
-    text-align: left;
+    text-align: left
 }
-
 
 .thedate {
     display: flex;
-    background: none;
-    color: #f5f5f5;
-    font-size: .75rem;
-    font-family: clock;
+    background: 0 0;
+    color: var(--light);
+    font-size: .75rem;    
     line-height: 1;
-    margin-top: 45px;
+    margin-top: -25px;
     position: absolute;
     font-family: headingtext;
     justify-content: center;
@@ -459,32 +459,29 @@ li3 {
 
 .thedate2 {
     display: flex;
-    background: none;
-    color: #c0c0c0;
-    font-size: .75rem;
-    font-family: clock;
+    background: 0 0;
+    color: var(--body-text-dark);
+    font-size: .75rem;    
     line-height: 1;
     margin-top: 40px;
     position: absolute;
     font-family: headingtext;
     justify-content: center;
     align-items: center;
-    width: 260px;
-
+    width: 260px
 }
 
 .daylight1 {
     display: block;
-    background: none;
-    color: #f5f5f5;
-    font-size: .75rem;
-    font-family: clock;
+    background: 0 0;
+    color: var(--light);
+    font-size: .75rem;    
     line-height: 1;
-    margin-top: -75px;
+    margin-top: -55px;
     position: absolute;
-    margin-left: 210px;
+    margin-left: 195px;
     font-family: headingtext;
-    text-align: left;
+    text-align: left
 }
 
 belowthehorizon {
@@ -505,7 +502,7 @@ belowthehorizon {
 }
 
 orange {
-    color: #ff7738
+    color: var(--orange)
 }
 
 .tempcontainerx {
@@ -550,9 +547,9 @@ orange {
     width: 9rem;
     height: 4.2rem;
     padding-top: 14px;
-    color: #f7f7f7;
-    border: 1px solid #3d464d;
-    border-bottom: 10px solid #3d464d;
+    color: var(--light);
+    border: 1px solid var(--border-dark);
+    border-bottom: 10px solid var(--border-dark);
     border-radius: 2px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -630,7 +627,7 @@ orange {
     z-index: auto;
     position: absolute;
     margin-top: 5px;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     text-align: center;
     font-family: weathertext2;
     width: 130px;
@@ -649,25 +646,24 @@ trendmovementrisingx {
 }
 
 trendmovementsteadyx {
-    color: #afb7c0;
+    color: var(--body-text-dark);
     font-size: 12px;
     margin-left: 10px
 }
 
-
 .thetrendboxblue,
-.thetrendboxorange,
-.thetrendboxgreen {
+.thetrendboxgreen,
+.thetrendboxorange {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 8.5rem;
     height: .9rem;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     overflow: hidden;
     font-family: weathertext2;
     line-height: 1;
-    border: 1px solid #3d464d;
+    border: 1px solid var(--border-dark);
     border-width: thin;
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -685,46 +681,37 @@ trendmovementsteadyx {
     margin-left: -140px;
     z-index: auto;
     position: absolute;
-    margin-top: 25px;
-
+    margin-top: 25px
 }
 
 .thetrendboxblue {
-    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
-    box-shadow: inset 2px 0 0 0 #4f96a1;
+    -webkit-box-shadow: inset 2px 0 0 0 var(--blue);
+    box-shadow: inset 2px 0 0 0 var(--blue)
 }
 
 .thetrendboxorange {
-    -webkit-box-shadow: inset 2px 0 0 0 #d35f50;
-    box-shadow: inset 2px 0 0 0 #d35f50;
+    -webkit-box-shadow: inset 2px 0 0 0 var(--red);
+    box-shadow: inset 2px 0 0 0 var(--red)
 }
 
 .thetrendboxgreen {
-    -webkit-box-shadow: inset 2px 0 0 0 #90b22a;
-    box-shadow: inset 2px 0 0 0 #90b22a;
-}
-
-.thetrendgap {
-    margin-top: 6px
-}
-
-.theraingap {
-    margin-top: -154px
+    -webkit-box-shadow: inset 2px 0 0 0 var(--green);
+    box-shadow: inset 2px 0 0 0 var(--green)
 }
 
 .thetrendboxbluebaro,
-.thetrendboxorangebaro,
-.thetrendboxgreenbaro {
+.thetrendboxgreenbaro,
+.thetrendboxorangebaro {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 140px;
+    width: 130px;
     height: .9rem;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     overflow: hidden;
     font-family: weathertext2;
     line-height: 1;
-    border: 1px solid #3d464d;
+    border: 1px solid var(--border-dark);
     border-width: thin;
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -742,28 +729,34 @@ trendmovementsteadyx {
     margin-left: 0;
     z-index: auto;
     position: relative;
-    margin-top: 10px;
-
+    margin-top: 5px
 }
 
 .thetrendboxbluebaro {
-    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
-    box-shadow: inset 2px 0 0 0 #4f96a1;
+    -webkit-box-shadow: inset 2px 0 0 0 var(--blue);
+    box-shadow: inset 2px 0 0 0 var(--blue)
 }
 
 .thetrendboxorangebaro {
-    -webkit-box-shadow: inset 2px 0 0 0 #d35f50;
-    box-shadow: inset 2px 0 0 0 #d35f50;
+    -webkit-box-shadow: inset 2px 0 0 0 var(--red);
+    box-shadow: inset 2px 0 0 0 var(--red)
 }
 
 .thetrendboxgreenbaro {
-    -webkit-box-shadow: inset 2px 0 0 0 #90b22a;
-    box-shadow: inset 2px 0 0 0 #90b22a;
+    -webkit-box-shadow: inset 2px 0 0 0 var(--green);
+    box-shadow: inset 2px 0 0 0 var(--green)
 }
 
+.thetrendgap {
+    margin-top: 6px
+}
+
+.theraingap {
+    margin-top: -154px
+}
 
 .maxdata {
-    color: #afb7c0;
+    color: var(--body-text-dark);
     width: 50px;
     padding: 1px;
     left: 0;
@@ -777,7 +770,7 @@ trendmovementsteadyx {
 }
 
 .maxdatawind {
-    color: #afb7c0;
+    color: var(--body-text-dark);
     width: 150px;
     padding: 1px;
     left: -5px;
@@ -797,14 +790,14 @@ trendmovementsteadyx {
     font-size: 11px;
     line-height: 2;
     margin-top: 0;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     padding: 2px;
     left: 10px
 }
 
 .mindata {
     margin: 5px auto auto;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     width: 50px;
     padding: 2px;
     margin-top: 11px;
@@ -832,7 +825,7 @@ trendmovementsteadyx {
     font-size: 11px;
     line-height: 2;
     margin: 5px auto auto;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     width: 40px;
     padding: 2px;
     margin-top: 0;
@@ -844,7 +837,7 @@ trendmovementsteadyx {
     width: 160px;
     float: left;
     padding: 0;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     text-align: center;
     font: 500 10px weathertext2;
     line-height: 15px
@@ -857,9 +850,9 @@ trendmovementsteadyx {
     width: 9rem;
     height: 4.2rem;
     padding-top: 14px;
-    color: #f7f7f7;
-    border: 1px solid #3d464d;
-    border-bottom: 10px solid #3d464d;
+    color: var(--light);
+    border: 1px solid var(--border-dark);
+    border-bottom: 10px solid var(--border-dark);
     border-radius: 2px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -882,9 +875,9 @@ trendmovementsteadyx {
     width: 9rem;
     height: 4.2rem;
     padding-top: 14px;
-    color: #00adbd;
-    border: 1px solid #3d464d;
-    border-bottom: 10px solid #3d464d;
+    color: var(--blue);
+    border: 1px solid var(--border-dark);
+    border-bottom: 10px solid var(--border-dark);
     border-radius: 2px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -901,9 +894,8 @@ trendmovementsteadyx {
 }
 
 blue {
-    color: #00adbd
+    color: var(--blue)
 }
-
 
 .heatcircle,
 .heatcircle2,
@@ -948,12 +940,12 @@ blue {
 
 .heatcircleindoor {
     margin-top: 40px;
-    margin-left: 0px
+    margin-left: 0
 }
 
 .heatcirclerainmonth {
     margin-top: 40px;
-    margin-left: 0px
+    margin-left: 0
 }
 
 .tempconvertercircleblue,
@@ -965,7 +957,7 @@ blue {
     right: 0;
     width: 3.2rem;
     height: 1rem;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     overflow: hidden;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -988,9 +980,9 @@ blue {
     display: flex;
     width: 3.2rem;
     height: 1rem;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     overflow: hidden;
-    border: 1px solid hsla(206, 12%, 27%, 0.502);
+    border: 1px solid hsla(206, 12%, 27%, .502);
     border-width: thin;
     border-radius: 2px;
     font-family: weathertext2;
@@ -1029,7 +1021,7 @@ smallrainunit4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border: 1px solid hsla(206, 12%, 27%, 0.5);
+    border: 1px solid hsla(206, 12%, 27%, .5);
     border-width: thin;
     border-radius: 2px;
     font-size: .85em;
@@ -1040,6 +1032,16 @@ smallrainunit4 {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px
+}
+
+.indoorclock {
+    font-size: 11px;
+   color: var(--white);
+    position: absolute;
+    float: none;
+    margin-left: 202px;
+    margin-top: 11px;
+    z-index: 99999
 }
 
 .intempmodulehome0-5c,
@@ -1071,11 +1073,11 @@ smallrainunit4 {
     display: flex;
     width: 6.5rem;
     height: 1rem;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     overflow: hidden;
     font-family: weathertext2;
     line-height: 1;
-    border: 1px solid hsla(206, 12%, 27%, 0.5);
+    border: 1px solid hsla(206, 12%, 27%, .5);
     border-width: thin;
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -1104,23 +1106,23 @@ smallrainunit4 {
 }
 
 .temphumcircle35-60 {
-    -webkit-box-shadow: inset 2px 0 0 0 #90b22a;
-    box-shadow: inset 2px 0 0 0 #90b22a
+    -webkit-box-shadow: inset 2px 0 0 0 var(--green);
+    box-shadow: inset 2px 0 0 0 var(--green)
 }
 
 .temphumcircle80-100 {
-    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
-    box-shadow: inset 2px 0 0 0 #4f96a1
+    -webkit-box-shadow: inset 2px 0 0 0 var(--blue);
+    box-shadow: inset 2px 0 0 0 var(--blue)
 }
 
 .temphumcircle0-25 {
-    -webkit-box-shadow: inset 2px 0 0 0 #d35f50;
-    box-shadow: inset 2px 0 0 0 #d35f50
+    -webkit-box-shadow: inset 2px 0 0 0 var(--red);
+    box-shadow: inset 2px 0 0 0 var(--red)
 }
 
 valuetextheading1 {
     position: relative;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     font-family: weathertext2;
     font-size: 1em;
     text-align: left;
@@ -1180,11 +1182,11 @@ valuetextheading1 {
     display: flex;
     width: 4.1rem;
     height: 1rem;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     overflow: hidden;
     font-family: weathertext2;
     line-height: 1;
-    border: 1px solid hsla(206, 12%, 27%, 0.5);
+    border: 1px solid hsla(206, 12%, 27%, .5);
     border-width: thin;
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -1260,10 +1262,14 @@ valuetitleunit {
     font-family: weathertext2
 }
 
-smalltempunit,
 smalltempunit2,
 smalltempunit4 {
     font-size: .45rem;
+    color: #bfbfbf
+}
+
+smalltempunit {
+    font-size: .65rem;
     color: #bfbfbf
 }
 
@@ -1334,7 +1340,7 @@ smalltempunit4 {
 }
 
 uv0 {
-    background-color: #90b22a
+    background-color: var(--green)
 }
 
 .thearrow3 {
@@ -1369,7 +1375,7 @@ uv0 {
 
 .text1,
 .windvalue1 {
-    color: #afb7c0;
+    color: var(--body-text-dark);
     font-family: weathertext3;
     font-size: 2rem
 }
@@ -1406,11 +1412,10 @@ uv0 {
     bottom: 25px;
     left: 25px;
     margin: auto;
-
-    border-top: 8px solid #3d464d;
-    border-right: 8px solid hsla(207, 17%, 59%, 0.6);
-    border-bottom: 8px solid #3d464d;
-    border-left: 8px solid hsla(207, 17%, 59%, 0.6);
+    border-top: 8px solid var(--border-dark);
+    border-right: 8px solid hsla(207, 17%, 59%, .6);
+    border-bottom: 8px solid var(--border-dark);
+    border-left: 8px solid hsla(207, 17%, 59%, .6);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1426,7 +1431,7 @@ uv0 {
     z-index: 10;
     display: block;
     margin: 0 0 auto;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     text-align: center;
     font-family: headingtext;
     font-size: 18px;
@@ -1434,7 +1439,7 @@ uv0 {
 }
 
 .windirectiontext1 span {
-    color: #00adbd
+    color: var(--blue)
 }
 
 averwordwindword {
@@ -1456,8 +1461,8 @@ averwordwindword {
     height: 170px;
     margin: 0 auto;
     border: 8px solid;
-    border-top: 8px solid #3d464d;
-    border-right: 8px solid #3d464d;
+    border-top: 8px solid var(--border-dark);
+    border-right: 8px solid var(--border-dark);
     border-bottom-color: transparent;
     border-left-color: transparent;
     border-radius: 50%;
@@ -1467,7 +1472,7 @@ averwordwindword {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin-top: -50px
+    margin-top: -45px
 }
 
 .homeweathercompass2 {
@@ -1486,8 +1491,8 @@ averwordwindword {
 
 .text2 {
     position: relative;
-    margin-top: -0px;
-    margin-left: -25px;
+    margin-top: 0;
+    margin-left: -5px;
     font-size: 1.55em
 }
 
@@ -1498,7 +1503,7 @@ averwordwindword {
     width: auto;
     margin-top: 5px;
     margin-left: 0;
-    color: #ffffff;
+   color: var(--white);
     text-align: center;
     font-family: weathertext2;
     font-size: 13px;
@@ -1510,7 +1515,7 @@ averwordwindword {
     -o-border-radius: 3px;
     justify-content: center;
     align-items: center;
-    padding: 2px;
+    padding: 2px
 }
 
 .pressuretextfast {
@@ -1519,7 +1524,7 @@ averwordwindword {
 
 .text2 span,
 .text3 {
-    color: #afb7c0;
+    color: var(--body-text-dark);
     font-size: 10px
 }
 
@@ -1556,7 +1561,7 @@ averwordwindword {
     margin-top: 129px;
     margin-left: 10px;
     padding: 1px;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     border-radius: 2px;
     font-size: 10px;
     line-height: 10px;
@@ -1567,14 +1572,14 @@ averwordwindword {
 }
 
 .barometertrend2 span {
-    color: #90b22a
+    color: var(--green)
 }
 
 .barometerconv {
     position: absolute;
     width: 70px;
     margin-top: 132px;
-    color: #90b22a;
+    color: var(--green);
     text-align: center;
     font: 10px arial, weathertext2;
     line-height: 10px
@@ -1582,7 +1587,7 @@ averwordwindword {
 
 .barometerconv span {
     display: block;
-    color: #afb7c0
+    color: var(--body-text-dark)
 }
 
 .barometerlimits {
@@ -1595,7 +1600,7 @@ averwordwindword {
     left: 50%;
     width: 0;
     height: 0;
-    border-color: #ff7738 transparent transparent;
+    border-color: var(--orange) transparent transparent;
     border-width: 10px 5px 0;
     border-style: solid;
     -webkit-transform: translate(-50%, -50%);
@@ -1617,7 +1622,7 @@ averwordwindword {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     position: absolute;
-    border: 3px solid #90b22a;
+    border: 3px solid var(--green);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1635,7 +1640,7 @@ averwordwindword {
 
 .barometertrend1,
 .barometertrend1 hourtrend {
-    color: #afb7c0;
+    color: var(--body-text-dark);
     text-align: left;
     line-height: 9px
 }
@@ -1654,12 +1659,12 @@ averwordwindword {
 }
 
 barometerinfo {
-    color: #afb7c0
+    color: var(--body-text-dark)
 }
 
 .barometermax {
     margin-top: 10px;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     font: 10px arial, weathertext2;
     line-height: 9px
 }
@@ -1672,19 +1677,19 @@ barometerinfo {
 }
 
 .barometermax span {
-    color: #90b22a;
+    color: var(--green);
     font: 500 10px arial, weathertext2
 }
 
 .barometermax unit {
-    color: #afb7c0;
+    color: var(--body-text-dark);
     font: 500 10px arial, weathertext2
 }
 
 .barometermin {
     width: 50px;
     margin-left: 240px;
-    color: #afb7c0;
+    color: var(--body-text-dark);
     font: 10px arial, weathertext2;
     line-height: 9px
 }
@@ -1696,11 +1701,11 @@ barometerinfo {
 }
 
 .barometermin span {
-    color: #90b22a
+    color: var(--green)
 }
 
 .barometermin unit {
-    color: #afb7c0
+    color: var(--body-text-dark)
 }
 
 .barometertrend falling,
@@ -1715,7 +1720,6 @@ suprain2,
 suptemp {
     -webkit-font-smoothing: antialiased
 }
-
 
 .maxpressure,
 .minpressure,
@@ -1890,7 +1894,7 @@ weather34-barometerlimitmax {
     left: 50%;
     width: 0;
     height: 0;
-    border: 3px solid hsla(187, 46%, 59%, 0.8);
+    border: 3px solid hsla(187, 46%, 59%, .8);
     border-radius: 50%;
     background-color: 0;
     -webkit-transform: translate(-50%, -50%);
@@ -1905,7 +1909,7 @@ weather34-barometerlimitmax {
     top: -5px;
     left: 2px;
     width: 0;
-    color: hsla(187, 46%, 59%, 0.6);
+    color: hsla(187, 46%, 59%, .6);
     border: 0;
     font-size: 5px
 }
@@ -1926,7 +1930,7 @@ weather34-barometerlimitmax {
     left: 50%;
     width: 0;
     height: 0;
-    border: 3px solid hsla(19, 100%, 61%, 0.8);
+    border: 3px solid hsla(19, 100%, 61%, .8);
     border-radius: 50%;
     background-color: 0;
     -webkit-transform: translate(-50%, -50%);
@@ -1941,7 +1945,7 @@ weather34-barometerlimitmax {
     top: -5px;
     left: 2px;
     width: 0;
-    color: hsla(19, 100%, 61%, 0.6);
+    color: hsla(19, 100%, 61%, .6);
     border: 0;
     font-size: 5px
 }
@@ -1952,21 +1956,21 @@ a {
     font-family: headingtext;
     text-decoration: none;
     margin-left: 10px;
-    color: #ffffff
+   color: var(--white);
 }
 
 .desktoplink {
-    color: #ffffff;
+   color: var(--white);
     font-size: 10px;
     font-family: headingtext;
     text-decoration: none;
     margin-right: 40px;
     float: right;
-    margin-top: 0px
+    margin-top: 0
 }
 
 .designedby {
-    color: #ffffff;
+   color: var(--white);
     font-size: 10px;
     font-family: headingtext;
     text-decoration: none;
@@ -1975,15 +1979,13 @@ a {
     margin-top: 5px
 }
 
-
-
 .credit34,
 a {
-    color: #ffffff;
+   color: var(--white);
     font-size: 12px;
     font-family: headingtext;
     text-decoration: none;
-    margin-left: 280px;
+    margin-left: 280px
 }
 
 valuebeaufort {
@@ -1996,8 +1998,8 @@ valuebeaufort {
     position: relative;
     left: 110px;    
     top: -19px;
-    color: #ffffff;   
-    background: #22252f;
+    color: var(--white);
+    background-color: var(--dark-caption);
     font-family: Headingtext;
     width:11em;    
     height:10px;  
@@ -2018,8 +2020,8 @@ valuebeaufort {
     position: relative;
     left: 145px;    
     top: 50px;
-    color: #ffffff;   
-    background: #22252f;
+    color: var(--white);
+    background-color: var(--dark-caption);
     font-family: Headingtext;
     width:12em;    
     height:10px;  
@@ -2040,8 +2042,8 @@ valuebeaufort {
     position: relative;
     left: 120px;    
     top: -19px;
-    color: #ffffff;   
-    background: #22252f;
+    color: var(--white);
+    background-color: var(--dark-caption);
     font-family: Headingtext;
     width:11em;    
     height:10px;  
@@ -2061,9 +2063,9 @@ valuebeaufort {
     display:flex;
     position: relative;
     left: 95px;    
-    top: -43px;
-    color: #ffffff;   
-    background: #22252f;
+    top: -45px;
+    color: var(--white);
+    background-color: var(--dark-caption);
     font-family: Headingtext;
     width:11em;    
     height:10px;  
@@ -2083,9 +2085,9 @@ valuebeaufort {
     display:flex;
     position: relative;
     left: 85px;
-    top: -75px;
-    color: #ffffff;   
-    background: #22252f;
+    top: -77px;
+    color: var(--white);
+    background-color: var(--dark-caption);
     font-family: Headingtext;
     width:11em;    
     height:10px;  
@@ -2104,8 +2106,8 @@ valuebeaufort {
     display:flex;
     position: relative;
     left:-75px;
-    color: #ffffff;   
-    background: #22252f;
+    color: var(--white);
+    background-color: var(--dark-caption);
     font-family: Headingtext;
     width:11em;    
     height:10px;  
@@ -2127,8 +2129,8 @@ valuebeaufort {
     display:flex;
     position: relative;
     left:-70px;
-    color: #ffffff;   
-    background: #22252f;
+    color: var(--white);
+    background-color: var(--dark-caption);
     font-family: Headingtext;
     width:11em;    
     height:10px;  
@@ -2148,8 +2150,8 @@ valuebeaufort {
     display:flex;
     position: relative;
     left:-70px;
-    color: #ffffff;   
-    background: #22252f;
+    color: var(--white);
+    background-color: var(--dark-caption);
     font-family: Headingtext;
     width:11em;    
     height:10px;  
@@ -2166,12 +2168,11 @@ valuebeaufort {
     -o-border-radius:3px;
 }
 
-
 .online,
 .online2 {
     position: absolute;
     font-size: 0;
-    color: #00a4b3;
+    color: var(--blue);
     z-index: 100000;
     margin-top: 7px;
     float: right;
@@ -2185,67 +2186,61 @@ valuebeaufort {
     -moz-animation-direction: alternate;
     -ms-animation-direction: alternate;
     -o-animation-direction: alternate;
-    animation-direction: alternate;
-
+    animation-direction: alternate
 }
 
 .online2 {
     position: relative;
-    top: 0px;
-
+    top: 0
 }
 
 @keyframes fadein {
     from {
-        opacity: 0;
+        opacity: 0
     }
 
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
 
-/* Firefox < 16 */
 @-moz-keyframes fadein {
     from {
-        opacity: 0;
+        opacity: 0
     }
 
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
 
-/* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
     from {
-        opacity: 0;
+        opacity: 0
     }
 
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
 
-/* Internet Explorer */
 @-ms-keyframes fadein {
     from {
-        opacity: 0;
+        opacity: 0
     }
 
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
 
-/* Opera < 12.1 */
 @-o-keyframes fadein {
     from {
-        opacity: 0;
+        opacity: 0
     }
 
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
 
@@ -2258,7 +2253,7 @@ blue1 {
 .nav {
     margin: 0 auto;
     width: 900px;
-    background: #22252f;
+    background-color: var(--dark-caption);
     padding: 6px;
     height: 20px;
     position: relative;
@@ -2278,7 +2273,7 @@ vspan {
     vertical-align: middle;
     padding-top: 3px;
     margin-left: 30px;
-    color: #ffffff
+   color: var(--white);
 }
 
 vspan2 {
@@ -2304,15 +2299,15 @@ iconcolor {
 
 iconcolor2 {
     position: absolute;
-    color: #00a4b3;
+    color: var(--blue);
     vertical-align: middle;
     margin-top: 5px
 }
 
+.legenddewpoint,
 .legendfeels,
-.legendwetbulb,
 .legendtemp,
-.legenddewpoint {
+.legendwetbulb {
     position: absolute;
     border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -2324,54 +2319,44 @@ iconcolor2 {
     font-size: 9px;
     margin-top: 188px;
     z-index: 99999;
-    color: #ffffff;
-    font-family: Headingtext;
+   color: var(--white);
+    font-family: Headingtext
 }
 
 .legendtemp {
     background: #d15f2e;
-    margin-left: -90px;
+    margin-left: -90px
 }
 
 .legendfeels {
     background: #35393b;
-    margin-left: -55px;
+    margin-left: -55px
 }
 
 .legendwetbulb {
     background: #d15f2e;
-    margin-left: -55px;
+    margin-left: -55px
 }
 
 .legenddewpoint {
     background: #00a4b3;
-    margin-left: -115px;
+    margin-left: -115px
 }
 
 .consoleforecast {
     font-size: 10px;
     width: 20rem;
     text-align: left;
-    margin-left: -5px;
-    margin-top: 22px;
-    line-height: .9;
+    margin-left: -15px;
+    margin-top: 25px;
+    line-height: .9
 }
 
 .consoleicon {
     position: relative;
-    margin-left: 210px;
-    margin-top: -28px;
+    margin-left: 225px;
+    margin-top: -18px;
     width: 35px;
-}
-
-.indoorclock {
-    font-size: 11px;
-    color: #ffffff;
-    position: absolute;
-    float: none;
-    margin-left: 205px;
-    margin-top: 11px;
-    z-index: 99999
 }
 
 .maxbox {
@@ -2386,10 +2371,10 @@ iconcolor2 {
     font-size: 9px;
     margin-top: -100px;
     z-index: 99999;
-    color: #ffffff;
+   color: var(--white);
     font-family: weathertext2;
-    background: #22252f;
-    margin-left: -149px;
+    background-color: var(--dark-caption);
+    margin-left: -150px
 }
 
 .minbox {
@@ -2402,12 +2387,12 @@ iconcolor2 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: -84px;
+    margin-top: -83px;
     z-index: 99999;
-    color: #ffffff;
+   color: var(--white);
     font-family: weathertext2;
-    background: #22252f;
-    margin-left: -149px;
+    background-color: var(--dark-caption);
+    margin-left: -150px
 }
 
 oorange {
@@ -2420,10 +2405,9 @@ a {
     font-family: headingtext;
     text-decoration: none;
     margin-left: 10px;
-    color: #ffffff;
-    display: inline;
+   color: var(--white);
+    display: inline
 }
-
 
 .weather34-toggle {
     cursor: pointer;
@@ -2438,32 +2422,30 @@ a {
     border-radius: 50px;
     top: -1px;
     margin-left: -5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    padding-top: 1px;
-
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
 }
 
 .weather34-toggle.on .circleblob {
-    left: 45px;
+    left: 45px
 }
 
 .weather34-toggle .tog {
     width: 0;
     height: 0;
     border: 0;
-    background: 0;
-
+    background: 0
 }
 
 .weather34-toggle .tog.red {
     float: right;
     border-color: #bfbfbf;
-    margin-right: 33px;
+    margin-right: 30px;
     justify-content: center;
     align-items: center;
-    line-height: 1;
+    line-height: 1.2;
     padding: 3px
 }
 
@@ -2477,7 +2459,7 @@ a {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     border: 3px solid #f8f8f8;
-    background: 0;
+    background: 0
 }
 
 .weather34-toggles {
@@ -2493,23 +2475,21 @@ a {
     border-radius: 50px;
     top: -1px;
     margin-left: -5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    padding-top: 1px;
-
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
 }
 
 .weather34-toggles.on .circleblob {
-    left: 45px;
+    left: 45px
 }
 
 .weather34-toggles .tog {
     width: 0;
     height: 0;
     border: 0;
-    background: 0;
-
+    background: 0
 }
 
 .weather34-toggles .tog.red {
@@ -2531,10 +2511,9 @@ a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    border: 3px solid #E73D3D;
-    background: 0;
+    border: 3px solid #e73d3d;
+    background: 0
 }
-
 
 .weather34-toggleblue {
     cursor: pointer;
@@ -2549,29 +2528,26 @@ a {
     border-radius: 50px;
     top: -1px;
     margin-left: -5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    padding-top: 1px;
-
-
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
 }
 
 .weather34-toggleblue.on .circleblob {
-    left: 45px;
+    left: 45px
 }
 
 .weather34-toggleblue.on .tog.red {
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden
 }
 
 .weather34-toggleblue .tog {
     width: 0;
     height: 0;
     border: 0;
-    background: 0;
-
+    background: 0
 }
 
 .weather34-toggleblue .tog.red {
@@ -2594,9 +2570,8 @@ a {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     border: 3px solid #00a4b3;
-    background: 0;
+    background: 0
 }
-
 
 .weather34-togglegreen {
     cursor: pointer;
@@ -2617,23 +2592,21 @@ a {
     border-radius: 50px;
     top: -1px;
     margin-left: -5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    padding-top: 1px;
-
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
 }
 
 .weather34-togglegreen.on .circleblob {
-    left: 45px;
+    left: 45px
 }
 
 .weather34-togglegreen .tog {
     width: 0;
     height: 0;
     border: 0;
-    background: 0;
-
+    background: 0
 }
 
 .weather34-togglegreen .tog.red {
@@ -2655,9 +2628,130 @@ a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    border: 3px solid #90b22a;
-    background: 0;
+    border: 3px solid var(--green);
+    background: 0
 }
+
+
+.weather34-toggledark {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 14px;
+    clear: both;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -1px;
+    margin-right: 3px;
+    background: #35393b;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -5px;
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
+}
+
+.weather34-toggledark.on .circleblob {
+    left: 45px
+}
+
+.weather34-toggledark .tog {
+    width: 0;
+    height: 0;
+    border: 0;
+    background: 0
+}
+
+.weather34-toggledark .tog.red {
+    float: right;
+    border-color: #bfbfbf;
+    margin-right: 27px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    padding: 3px
+}
+
+.weather34-toggledark .circleblob {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #777;
+    background: 0
+}
+
+
+.weather34-toggletoday {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 14px;
+    clear: both;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -1px;
+    margin-right: 3px;
+    background: #35393b;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -5px;
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
+}
+
+.weather34-toggletoday.on .circleblob {
+    left: 45px
+}
+
+.weather34-toggletoday .tog {
+    width: 0;
+    height: 0;
+    border: 0;
+    background: 0
+}
+
+.weather34-toggletoday .tog.red {
+    float: right;
+    border-color: #bfbfbf;
+    margin-right: 35px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    padding: 3px
+}
+
+.weather34-toggletoday .circleblob {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid var(--red);
+    background: 0
+}
+
 
 .weather34-toggleyellow {
     cursor: pointer;
@@ -2678,23 +2772,21 @@ a {
     border-radius: 50px;
     top: -1px;
     margin-left: -5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    padding-top: 1px;
-
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
 }
 
 .weather34-toggleyellow.on .circleblob {
-    left: 15px;
+    left: 15px
 }
 
 .weather34-toggleyellow .tog {
     width: 0;
     height: 0;
     border: 0;
-    background: 0;
-
+    background: 0
 }
 
 .weather34-toggleyellow .tog.red {
@@ -2703,7 +2795,7 @@ a {
     margin-right: 32px;
     justify-content: center;
     align-items: center;
-    line-height: 1;
+    line-height: 1.2;
     padding: 3px
 }
 
@@ -2717,7 +2809,7 @@ a {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     border: 3px solid #e6a241;
-    background: 0;
+    background: 0
 }
 
 
@@ -2765,7 +2857,7 @@ a {
     margin-right: 32px;
     justify-content: center;
     align-items: center;
-    line-height: 1;
+    line-height: 1.2;
     padding: 3px
 }
 
@@ -2782,68 +2874,6 @@ a {
     background: 0;
 }
 
-
-.weather34-togglechartdate {
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    width: 70px;
-    height: 14px;
-    clear: both;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    top: -1px;
-    margin-left: -1px;
-    margin-right: 3px;
-    background: #35393b;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    top: -1px;
-    margin-left: -5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    padding-top: 1px;
-
-}
-
-.weather34-togglechartdate.on .circleblob {
-    left: 15px;
-}
-
-.weather34-togglechartdate .tog {
-    width: 0;
-    height: 0;
-    border: 0;
-    background: 0;
-
-}
-
-.weather34-togglechartdate .tog.red {
-    float: right;
-    border-color: #bfbfbf;
-    margin-right: 0px;
-    justify-content: left;
-    align-items: left;
-    line-height: 1.2;
-    padding: 3px;
-    width: 50px
-}
-
-.weather34-togglechartdate .circleblob {
-    width: 4px;
-    height: 4px;
-    margin: 2px;
-    position: absolute;
-    left: 0;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    border: 3px solid #00a4b3;
-    background: 0;
-}
 
 .weather34-toggled {
     cursor: pointer;
@@ -2865,7 +2895,7 @@ a {
     -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
     box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
     padding-top: 1px;
-    margin-right: 10px;
+    margin-right:10px;
 
 }
 
@@ -2903,9 +2933,149 @@ a {
     background: 0;
 }
 
+.weather34-togglechartdate {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 14px;
+    clear: both;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -1px;
+    margin-right: 3px;
+    background: #35393b;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -5px;
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
+}
 
+.weather34-togglechartdate.on .circleblob {
+    left: 5px
+}
 
+.weather34-togglechartdate .tog {
+    width: 0;
+    height: 0;
+    border: 0;
+    background: 0
+}
 
+.weather34-togglechartdate .tog.red {
+    float: right;
+    border-color: #bfbfbf;
+    margin-right: 0;
+    justify-content: left;
+    align-items: left;
+    line-height: 1.2;
+    padding: 3px;
+    width: 55px
+}
+
+.weather34-togglechartdate .circleblob {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #00a4b3;
+    background: 0
+}
+
+.weather34-togglechartdatem {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 14px;
+    clear: both;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -1px;
+    margin-right: 3px;
+    background: #35393b;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -5px;
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
+}
+
+.weather34-togglechartdatem.on .circleblob {
+    left: 5px
+}
+
+.weather34-togglechartdatem .tog {
+    width: 0;
+    height: 0;
+    border: 0;
+    background: 0
+}
+
+.weather34-togglechartdatem .tog.red {
+    float: right;
+    border-color: #bfbfbf;
+    margin-right: 0;
+    justify-content: left;
+    align-items: left;
+    line-height: 1.2;
+    padding: 3px;
+    width: 55px
+}
+
+.weather34-togglechartdatem .circleblob {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #e6a241;
+    background: 0
+}
+
+.weather34-togglechartdatem .tog.red {
+    float: right;
+    border-color: #bfbfbf;
+    margin-right: 0;
+    justify-content: left;
+    align-items: left;
+    line-height: 1.2;
+    padding: 3px;
+    width: 55px
+}
+
+.weather34-togglechartdatem .circleblob {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #e6a241;
+    background: 0
+}
 
 .logofooter {
     position: absolute;
@@ -2913,17 +3083,16 @@ a {
     margin-top: -18px
 }
 
-
 .weather34alert {
     display: table;
     position: relative;
     margin: 5px auto 0;
     width: 200px;
-    color: #fff;
-    transition: all 0.2s ease;
+   color: var(--white);
+    transition: all .2s ease;
     position: fixed;
     top: 1px;
-    right: 10px;
+    right: 25px;
     height: 70px;
     font-family: weathertext2;
     border-radius: 2px;
@@ -2932,9 +3101,10 @@ a {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     padding: 10px;
-    background: #1c1c1f;
-    z-index: 9999999;
-
+    background: #1b1b1b;
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #252529;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #252529;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #252529
 }
 
 .weather34alert.weather34alert-hide {
@@ -2943,7 +3113,7 @@ a {
     font-size: 0;
     padding: 0;
     margin: 0 auto;
-    display: block;
+    display: block
 }
 
 .weather34alert-icon {
@@ -2952,26 +3122,26 @@ a {
     width: 40px;
     padding: 10px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, .25);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #252529;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #252529;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #252529;
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #252529;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #252529;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #252529
 }
 
 .weather34alert-icon>i {
     width: 20px;
-    font-size: 20px;
+    font-size: 20px
 }
 
 .weather34alert-body {
     display: table-cell;
     vertical-align: middle;
-    padding: 10px;
+    padding: 10px
 }
 
 .weather34alert-body>p {
@@ -2984,9 +3154,9 @@ a {
     border-radius: 5px;
     margin-top: -10px;
     margin-left: -5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
     justify-content: center;
     align-items: center;
     height: 12px
@@ -3005,7 +3175,7 @@ valuealertcold {
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     width: 4rem;
-    padding: 5px;
+    padding: 5px
 }
 
 valuealertwarm {
@@ -3021,10 +3191,8 @@ valuealertwarm {
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     width: 4rem;
-    padding: 5px;
+    padding: 5px
 }
-
-
 
 alertunit {
     font-size: .75rem
@@ -3033,70 +3201,46 @@ alertunit {
 .weather34alert-button {
     position: relative;
     margin: 15px 5px -10px;
-    background-color: rgba(0, 0, 0, 0.25);
-    box-shadow: 0 3px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: 0 3px rgba(0, 0, 0, .4);
     border: none;
     padding: 10px 15px;
     font-size: 16px;
     font-family: 'Source Sans Pro';
-    color: #fff;
-    outline: none;
-    cursor: pointer;
+   color: var(--white);
+    outline: 0;
+    cursor: pointer
 }
 
 .weather34alert-button:hover {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, .3)
 }
 
 .weather34alert-button:active {
-    background: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0px rgba(0, 0, 0, 0.4);
-    top: 3px;
+    background: rgba(0, 0, 0, .3);
+    box-shadow: 0 0 rgba(0, 0, 0, .4);
+    top: 3px
 }
 
 .weather34alert-close {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
+    background-color: rgba(0, 0, 0, .3);
+   color: var(--white);
     border: none;
-    outline: none;
+    outline: 0;
     font-size: 20px;
     right: 5px;
     top: 5px;
     opacity: 0;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .weather34alert:hover .weather34alert-close {
-    opacity: 1;
+    opacity: 1
 }
 
 .weather34alert-close:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-deepblue {
-    color: #1b5c66
-}
-
-green {
-    color: #90b22a;
-}
-
-yellow {
-    color: #e6a241;
-}
-
-orange {
-    color: #ec5732;
-}
-
-red {
-    color: #E73D3D;
-}
-
-purple {
-    color: #8680bc;
+    background-color: rgba(0, 0, 0, .5)
 }
 
 .feels,
@@ -3104,14 +3248,18 @@ purple {
     position: absolute;
     margin-top: -7px;
     margin-left: -145px;
-    font-size: 0.6rem;
+    font-size: .6rem;
     font-family: weathertext2;
     width: 150px
 }
 
+a:hover {
+    color: #00a4b3
+}
+
 chartpage {
     position: relative;
-    color: #fff;
+   color: var(--white);
     font-size: .75em;
     font-family: headingtext;
     text-decoration: none;
@@ -3140,28 +3288,28 @@ chartpage {
     height: 100px;
     margin-top: 65px;
     margin-left: 110px;
-}
-
-#raincontainer {
+  }
+  
+  #raincontainer {
     left: -150px;
     width: 208px;
     height: 170px;
     margin-top: -120px;
     overflow: hidden;
-
-}
-
-#raincontainer,
-#raincontainer div {
+    
+  }
+  
+  #raincontainer,
+  #raincontainer div {
     position: absolute;
-}
-
-#weather34rainbeaker {
+  }
+  
+  #weather34rainbeaker {
     bottom: 0;
     left: 14px;
     width: 92px;
     height: 95px;
-    border: 4px solid #3d464d;
+    border: 4px solid var(--border-dark);
     border-top: 0;
     border-radius: 0 0 2px 2px;
     background: url(rain/weather34rainbeakerruler.svg) no-repeat;
@@ -3169,44 +3317,45 @@ chartpage {
     -moz-border-radius: 0 0 2px 2px;
     -ms-border-radius: 0 0 2px 2px;
     -o-border-radius: 0 0 2px 2px;
-}
-
-#weather34rainbeaker:after,
-#weather34rainbeaker:before {
+  }
+  
+  #weather34rainbeaker:after,
+  #weather34rainbeaker:before {
     content: "";
     position: absolute;
     top: 0;
-    width: 0;
+    width: 1px;
     height: 0;
-    border: 3px solid #3d464d;
+    border: 3px solid var(--border-dark);
     border-bottom: 0;
+    
 }
-
-#weather34rainbeaker:before {
-    left: -8px;
-}
-
-#weather34rainbeaker:after {
-    right: -8.5px;
-}
-
-#weather34rainwater {
+  
+  #weather34rainbeaker:before {
+    left: -9px;
+  }
+  
+  #weather34rainbeaker:after {
+    right: -9px;
+  }
+  
+  #weather34rainwater {
     bottom: 0;
     width: 92px;
     max-height: 90px;
     overflow: hidden;
-    border: 0;
+    border: 0;    
     background-color: hsla(186, 100%, 34%, 0.6);
-
+    
 }
-
-
-.raincontainer1 {
+  
+  
+  .raincontainer1 {
     top: 0px;
     right: 0;
     bottom: 0;
     left: 25px;
-    margin: 40px 10px 10px 40px;
+    margin: 40px 10px 10px 40px;    
     position: relative;
     float: left;
     right: 0;
@@ -3214,16 +3363,16 @@ chartpage {
     left: 0;
     float: left;
     -o-font-smoothing: antialiased;
+     
 
-
-}
-
-.raintoday1 {
+  }
+  
+  .raintoday1 {
     width: 3.75rem;
     height: 1.5rem;
     padding-top: 7px;
-    color: #fff;
-    border-bottom: 8px solid #3d464d;
+   color: var(--white);
+    border-bottom: 8px solid var(--border-dark);
     border-radius: 3px;
     font-size: 0.8rem;
     -webkit-border-radius: 3px;
@@ -3237,29 +3386,32 @@ chartpage {
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background: #44a6b5;
+  -ms-flex-pack: center;
+  justify-content: center;
+    background: var(--blue);
     font-family: weathertext2;
-    margin-left: -46px;
-    margin-top: 10px
-}
-
-
-
-smallrainunit2b {
+    margin-left:-46px;
+    margin-top:10px
+  }
+  
+  
+  
+  smallrainunit2b {
     font-family: weathertext2;
     vertical-align: top;
     top: 2px;
-    font-size: .25rem;
-    color: #ffffff;
-}
+    font-size:.25rem;
+    color: var(--white);
+  }
+  
 
 
 
-@media screen and (max-width: 960px) {
+
+@media screen and (max-width:960px) {
+
     chartpage {
-        display: none
+       display:none
     }
 
     li3 {
@@ -3270,21 +3422,21 @@ smallrainunit2b {
         max-width: 420px;
         padding: 0;
         height: 180px;
-        border: 1px solid hsla(208, 12%, 24%, 0.2);
+        border: 1px solid hsla(208, 12%, 24%, .2);
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        background-color: #f5f5f5;
+        background-color: var(--light);
         margin: 0 auto;
         margin-top: 5px;
         margin-bottom: 5px;
-        color: #afb7c0;
-        background-color: hsla(0, 0%, 0%, 0.25);
+        color: var(--body-text-dark);
+        background-color: hsla(0, 0%, 0%, .25);
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-        -webkit-border-radius: 10px;
+        -webkit-border-radius: 10px
     }
 
     .designedby,
@@ -3301,13 +3453,12 @@ smallrainunit2b {
         display: flex;
         justify-content: center;
         min-width: 320px;
-        max-width: 320px;
+        max-width: 320px
     }
 
     .nav {
         margin: 0 auto;
         width: 600px;
-        background: #3d464d;
         padding: 6px;
         height: 20px;
         bottom: 0;
@@ -3317,28 +3468,21 @@ smallrainunit2b {
 
     .clock {
         position: absolute;
-        margin-top: -200px;
-
-
+        margin-top: -200px
     }
-
 
     .homeweathercompass2>.homeweathercompass-line2 {
-        left: 350px;
-
+        left: 350px
     }
-
 }
 
-
-@media screen and (max-width: 640px) {
-
+@media screen and (max-width:640px) {
     chartpage {
-        display: none;
+        display: none
     }
 
-    .desktoplink,
-    .designedby {
+    .designedby,
+    .desktoplink {
         display: none
     }
 
@@ -3353,9 +3497,8 @@ smallrainunit2b {
         font-family: headingtext;
         text-decoration: none;
         margin-left: 10px;
-        color: #ffffff
+       color: var(--white);
     }
-
 
     body {
         width: 320px
@@ -3366,7 +3509,7 @@ smallrainunit2b {
         display: flex;
         justify-content: center;
         min-width: 320px;
-        max-width: 320px;
+        max-width: 320px
     }
 
     li2 {
@@ -3377,7 +3520,6 @@ smallrainunit2b {
         margin: 0 auto;
         width: 309px;
         width: 309px;
-        background: #3d464d;
         padding: 6px;
         height: 20px;
         bottom: 0;
@@ -3390,13 +3532,39 @@ smallrainunit2b {
         font-family: headingtext;
         text-decoration: none;
         margin-left: 2px;
-        color: #ffffff
+       color: var(--white);
     }
-
 
     vspan,
     vspan2,
     vspan3 {
         font-size: 9px
     }
+}
+deepblue {
+    color: var(--deepblue);
+}
+
+green {
+    color: var(--green);
+}
+
+yellow {
+    color: var(--yellow);
+}
+
+orange {
+    color: var(--orange);
+}
+
+red {
+    color: var(--red)
+}
+
+darkred {
+    color: var(--deepred);
+}
+
+purple {
+    color: var(--purple)
 }

@@ -18,11 +18,36 @@
     src: url(fonts/HelveticaNeue-Medium.woff) format("woff")
 }
 
+:root {
+    --white: #ffffff;
+    --light: #f5f5f5;
+    --dark: #151519;
+    --dark-light: hsla(0, 0%, 0%, 0.251);
+    --dark-toggle: #35393b;
+    --dark-caption: #22252f;
+    --light-caption: #ffffff;
+    --black: #000000;
+    --deepblue: #4ba0ad;
+    --blue: #4ba0ad;
+    --darkred: #703232;
+    --deepred: #703232;
+    --red: #d35f50;
+    --yellow: #e6a241;
+    --green: #9bbc2f;
+    --orange: #ec5732;
+    --purple: #8680bc;
+    --silver: #afb7c0;
+    --border-dark: #3d464d;
+    --border-light: #ced1da;
+    --body-text-light: #545454;
+    --blocks: #f0f0f0;
+}
+
 body {
     font-family: headingtext;
     margin: 0 auto;
-    color: #545454;
-    background: #f5f5f5;
+    color: var(--body-text-light);
+    background: var(--white);
     width: 100%;
     max-width: 985px;
     text-rendering: optimizeLegibility;
@@ -33,23 +58,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-animation-name: fadein;
-    -moz-animation-name: fadein;
-    -o-animation-name: fadein;
-    -ms-animation-name: fadein;
-    animation-name: fadein;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    -ms-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both;
-
+    backface-visibility: hidden
 }
 
 .fade-in {
@@ -67,7 +76,7 @@ body {
     -moz-animation-fill-mode: both;
     -o-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
-    animation-fill-mode: both;
+    animation-fill-mode: both
 }
 
 container {
@@ -102,28 +111,27 @@ li {
     max-width: 420px;
     padding: 0;
     height: 180px;
-    border:0;
+    border: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: #f5f5f5;
+    background: var(--light);
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #545454;
-    background-color: #f2f2f2 !important;
-    box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-    -webkit-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-    -moz-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-    -ms-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-    -o-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-    border-radius:10px;
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    -ms-border-radius:10px;
-    -o-border-radius:10px;
-    -webkit-border-radius:10px;
+    color: var(--body-text-light);
+    background-color: var(--white);
+    box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -webkit-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -moz-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -ms-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -o-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px
 }
-
 
 li2 {
     align-items: center;
@@ -139,20 +147,21 @@ li2 {
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #afb7c0
+    color: var(--silver);
 }
 
-li3{display:none;}
+li3 {
+    display: none
+}
 
 .clock {
-    background: #e6e8ef;
+    background: var(--white);
     border-radius: 3px;
-    padding: 0px;
+    padding: 0;
     padding-left: 70px;
-    padding-right: 0px;
+    padding-right: 0;
     padding-top: 15px;
     display: flex;
-    font-family: clock;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -161,85 +170,26 @@ li3{display:none;}
     text-align: center;
     width: 180px;
     position: relative;
-    color: #00a4b3;
+    color: var(--blue);
     font-size: 2rem;
     text-transform: uppercase;
     font-family: clock;
     height: 64px;
     line-height: 1.2;
     margin-top: 5px;
-    text-align: center;
-
+    box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
+    -webkit-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
+    -moz-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
+    -ms-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
+    -o-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
+    
+    
 }
 
-
-.clock2 {
-    background: 0;
-    padding: 5px;
-    padding-left: 10px;
-    display: flex;
-    font-family: clock;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    left: 12px;
-    text-align: center;
-    width: auto;
-    position: relative;
-    color: #00a4b3;
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-family: clock;
-    height: 50px;
-    line-height: 1.2;
-    top: 65px;
-    box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-    -webkit-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-    -moz-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-    -ms-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-    -o-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    -webkit-border-radius: 10px;
-}
-
-
-.clock3 {
-    background: #e6e8ef;
-    border-radius: 3px;
-    padding: 0px;
-    padding-left: 70px;
-    padding-right: 0px;
-    padding-top: 20px;
-    display: flex;
-    font-family: clock;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    margin-left: 0;
-    text-align: center;
-    width: 200px;
-    position: relative;
-    color: #00a4b3;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-family: clock;
-    height: 60px;
-    line-height: 1.2;
-    margin-top: 5px;
-    text-align: center;
-
-}
-
-.date2 {
+.date {
     display: block;
-    background: none;
-    color: #545454;
+    background: 0 0;
+    color: var(--body-text-light);
     font-size: .65rem;
     font-family: clock;
     line-height: 1;
@@ -248,11 +198,91 @@ li3{display:none;}
     margin-left: -5px
 }
 
+.clock2 {
+    background: var(--white);
+    padding: 5px;
+    padding-left: 10px;
+    display: flex;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    left: 12px;
+    text-align: center;
+    width: auto;
+    position: relative;
+    color: var(--blue);
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: clock;
+    height: 50px;
+    line-height: 1.2;
+    top: 65px;
+    box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
+    -webkit-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
+    -moz-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
+    -ms-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
+    -o-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
 
-.date {
-    display: block;
+.clock3 {
+    background: var(--white);
+    border-radius: 3px;
+    padding: 0px;
+    padding-left: 70px;
+    padding-right: 0px;
+    padding-top: 20px;
+    display: flex;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin-left: 0;
+    text-align: center;
+    width: 200px;
+    position: relative;
+    color: var(--blue);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: clock;
+    height: 60px;
+    line-height: 1.2;
+    margin-top: 5px;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -webkit-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -moz-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -ms-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -o-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+
+}
+
+.thedate3 {
+    display: flex;
     background: none;
-    color: #545454;
+    color: var(--body-text-light);
+    font-size: .75rem;
+    line-height: 1;
+    margin-top: 60px;
+    position: absolute;
+    font-family: headingtext;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    z-index: 999
+}
+
+
+.date2 {
+    display: block;
+    background: 0 0;
+    color: var(--body-text-light);
     font-size: .65rem;
     font-family: clock;
     line-height: 1;
@@ -262,14 +292,13 @@ li3{display:none;}
 }
 
 .moonblock {
-    background: #e6e8ef;
+    background: var(--white);
     border-radius: 3px;
-    padding: 0px;
+    padding: 0;
     padding-left: 10px;
-    padding-right: 0px;
+    padding-right: 0;
     padding-top: 15px;
     display: flex;
-    font-family: clock;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -278,66 +307,90 @@ li3{display:none;}
     text-align: center;
     width: 250px;
     position: relative;
-    color: #00a4b3;
+    color: var(--blue);
     font-size: 2rem;
     text-transform: uppercase;
-    font-family: clock;
     height: 64px;
     line-height: 2;
     margin-top: 5px;
     font-family: headingtext;
+    box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -webkit-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -moz-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -ms-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -o-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+}
 
-
+.moonblock2 {
+    background: 0;
+    border-radius: 3px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 0;
+    padding-top: 15px;
+    display: flex;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin-left: 0;
+    text-align: center;
+    width: 250px;
+    position: relative;
+    color: var(--blue);
+    font-size: 2rem;
+    text-transform: uppercase;
+    height: 64px;
+    line-height: 2;
+    margin-top: 5px;
+    font-family: headingtext
 }
 
 .date1 {
     display: block;
-    background: none;
-    color: #545454;
+    background: 0 0;
+    color: var(--body-text-light);
     font-size: .75rem;
-    font-family: clock;
     line-height: 1;
     margin-top: -60px;
     position: absolute;
     margin-left: 60px;
-    font-family: headingtext;
+    font-family: headingtext
 }
 
 .date2 {
     display: block;
-    background: none;
-    color: #545454;
+    background: 0 0;
+    color: var(--body-text-light);
     font-size: .75rem;
-    font-family: clock;
     line-height: 1;
     margin-top: -45px;
     position: absolute;
     margin-left: 60px;
-    font-family: headingtext;
+    font-family: headingtext
 }
 
 .phase2 {
     display: block;
-    background: none;
-    color: #545454;
+    background: 0 0;
+    color: var(--body-text-light);
     font-size: .75rem;
     font-family: clock;
     line-height: 1;
     margin-top: -30px;
     position: absolute;
     margin-left: 60px;
-    font-family: headingtext;
+    font-family: headingtext
 }
 
 .sunblock {
-    background: #e6e8ef;
+    background: var(--white);
     border-radius: 3px;
-    padding: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 15px;
     display: flex;
-    font-family: clock;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -346,28 +399,28 @@ li3{display:none;}
     text-align: left;
     width: 250px;
     position: relative;
-    color: #00a4b3;
+    color: var(--blue);
     font-size: 2rem;
     text-transform: uppercase;
-    font-family: clock;
     height: 64px;
     line-height: 2;
     margin-top: 5px;
     font-family: headingtext;
-
-
+    box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -webkit-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -moz-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -ms-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -o-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
 }
-
 
 .sunblock2 {
     background: 0;
     border-radius: 3px;
-    padding: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 15px;
     display: flex;
-    font-family: clock;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -376,80 +429,87 @@ li3{display:none;}
     text-align: left;
     width: 250px;
     position: relative;
-    color: #00a4b3;
+    color: var(--blue);
     font-size: 2rem;
     text-transform: uppercase;
-    font-family: clock;
     height: 64px;
     line-height: 1;
     margin-top: 45px;
-    font-family: headingtext;
-
+    font-family: headingtext
 }
 
 .sunrise1 {
     display: block;
-    background: none;
-    color: #545454;
+    background: 0 0;
+    color: var(--body-text-light);
     font-size: .75rem;
-    font-family: clock;
     line-height: 1;
     margin-top: -65px;
     position: absolute;
     margin-left: 15px;
     font-family: headingtext;
-    text-align: left;
+    text-align: left
 }
 
 .sunset1 {
     display: block;
-    background: none;
-    color: #545454;
+    background: 0 0;
+    color: var(--body-text-light);
     font-size: .75rem;
-    font-family: clock;
     line-height: 1;
     margin-top: -35px;
     position: absolute;
     margin-left: 15px;
     font-family: headingtext;
-    text-align: left;
+    text-align: left
 }
-
 
 .sunrise2 {
     display: block;
-    background: none;
-    color: #545454;
+    background: 0 0;
+    color: var(--body-text-light);
     font-size: .7rem;
-    font-family: clock;
     line-height: 1;
     margin-top: -45px;
     position: absolute;
     margin-left: 0;
     font-family: headingtext;
-    text-align: left;
+    text-align: left
 }
 
 .sunset2 {
     display: block;
-    background: none;
-    color: #545454;
+    background: 0 0;
+    color: var(--body-text-light);
     font-size: .7rem;
-    font-family: clock;
     line-height: 1;
     margin-top: -30px;
     position: absolute;
     margin-left: 0;
     font-family: headingtext;
-    text-align: left;
+    text-align: left
+}
+
+.thedate {
+    display: flex;
+    background: 0 0;
+    color: var(--body-text-light);
+    font-size: .75rem;
+    font-family: clock;
+    line-height: 1;
+    margin-top: -25px;
+    position: absolute;
+    font-family: headingtext;
+    justify-content: center;
+    align-items: center;
+    width: 260px
 }
 
 .thedate2 {
     display: flex;
     background: none;
-    color: #545454;
+    color: var(--body-text-light);
     font-size: .75rem;
-    font-family: clock;
     line-height: 1;
     margin-top: 50px;
     position: absolute;
@@ -460,50 +520,17 @@ li3{display:none;}
 
 }
 
-.thedate {
-    display: flex;
-    background: none;
-    color: #545454;
-    font-size: .75rem;
-    font-family: clock;
-    line-height: 1;
-    margin-top: 60px;
-    position: absolute;
-    font-family: headingtext;
-    justify-content: center;
-    align-items: center;
-    width: 260px;
-    z-index:999
-}
-
-.thedate3 {
-    display: flex;
-    background: none;
-    color: #545454;
-    font-size: .75rem;
-    font-family: clock;
-    line-height: 1;
-    margin-top: 60px;
-    position: absolute;
-    font-family: headingtext;
-    justify-content: center;
-    align-items: center;
-    width: 260px;
-    z-index:999
-}
-
 .daylight1 {
     display: block;
-    background: none;
-    color: #545454;
+    background: 0 0;
+    color: var(--body-text-light);
     font-size: .75rem;
-    font-family: clock;
     line-height: 1;
-    margin-top: -75px;
+    margin-top: -55px;
     position: absolute;
-    margin-left: 210px;
+    margin-left: 195px;
     font-family: headingtext;
-    text-align: left;
+    text-align: left
 }
 
 belowthehorizon {
@@ -513,7 +540,7 @@ belowthehorizon {
 }
 
 orange {
-    color: #ff7738
+    color: var(--orange);
 }
 
 .tempcontainer {
@@ -533,21 +560,6 @@ orange {
     left: -20px
 }
 
-.maxdata,
-.raintoday1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.maxdata {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-}
 
 .outside0-5,
 .outside11-15,
@@ -569,9 +581,9 @@ orange {
     width: 9rem;
     height: 4.2rem;
     padding-top: 14px;
-    color: #f7f7f7;
-    border: 1px solid #ced1da;
-    border-bottom: 10px solid #ced1da;
+    color: var(--white);
+    border: 1px solid var(--border-light);
+    border-bottom: 10px solid var(--border-light);
     border-radius: 2px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -592,32 +604,32 @@ orange {
 }
 
 .outsideminus5 {
-    color: #4f96a1
+    color: var(--blue);
 }
 
 .outsideminus,
 .outsidezero {
-    color: #4f96a1
+    color: var(--blue);
 }
 
 .outside0-5 {
-    color: #4f96a1
+    color: var(--blue);
 }
 
 .outside6-10 {
-    color: #87af4b
+    color: var(--green)
 }
 
 .outside11-15 {
-    color: #e6a241
+    color: var(--yellow);
 }
 
 .outside16-20 {
-    color: #ff7a38
+    color: #f08652
 }
 
 .outside21-25 {
-    color: #f0a90f
+    color: #f0740f
 }
 
 .outside26-30 {
@@ -647,44 +659,26 @@ orange {
     z-index: auto;
     position: absolute;
     margin-top: 5px;
-    color: #545454;
+    color: var(--body-text-light);
     text-align: center;
     font-family: weathertext2;
     width: 130px;
     left: -45px
 }
 
-.temptrendx {
-    margin-left: 70px;
-    font-size: 0
-}
-
-trendmovementfallingx,
-trendmovementrisingx {
-    font-family: weathertext2;
-    font-size: 12px
-}
-
-trendmovementsteadyx {
-    color: #545454;
-    font-size: 135px;
-    margin-left: 80px
-}
-
-
 .thetrendboxblue,
-.thetrendboxorange,
-.thetrendboxgreen {
+.thetrendboxgreen,
+.thetrendboxorange {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 8.5rem;
     height: .9rem;
-    color: #545454;
+    color: var(--body-text-light);
     overflow: hidden;
     font-family: weathertext2;
     line-height: 1;
-    border: 1px solid #ced1da;
+    border: 1px solid var(--border-light);
     border-width: thin;
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -702,47 +696,38 @@ trendmovementsteadyx {
     margin-left: -140px;
     z-index: auto;
     position: absolute;
-    margin-top: 25px;
-
+    margin-top: 25px
 }
 
 .thetrendboxblue {
-    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
-    box-shadow: inset 2px 0 0 0 #4f96a1;
+    -webkit-box-shadow: inset 2px 0 0 0 var(--blue);
+    ;
+    box-shadow: inset 2px 0 0 0 var(--blue);
 }
 
 .thetrendboxorange {
-    -webkit-box-shadow: inset 2px 0 0 0 #d35f50;
-    box-shadow: inset 2px 0 0 0 #d35f50;
+    -webkit-box-shadow: inset 2px 0 0 0 var(--red);
+    box-shadow: inset 2px 0 0 0 var(--red)
 }
 
 .thetrendboxgreen {
-    -webkit-box-shadow: inset 2px 0 0 0 #90b22a;
-    box-shadow: inset 2px 0 0 0 #90b22a;
+    -webkit-box-shadow: inset 2px 0 0 0 var(--green);
+    box-shadow: inset 2px 0 0 0 var(--green)
 }
-
-.thetrendgap {
-    margin-top: 6px
-}
-
-.theraingap {
-    margin-top: -154px
-}
-
 
 .thetrendboxbluebaro,
-.thetrendboxorangebaro,
-.thetrendboxgreenbaro {
+.thetrendboxgreenbaro,
+.thetrendboxorangebaro {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 140px;
+    width: 130px;
     height: .9rem;
-    color: #545454;
+    color: var(--body-text-light);
     overflow: hidden;
     font-family: weathertext2;
     line-height: 1;
-    border: 1px solid #ced1da;
+    border: 1px solid var(--border-light);
     border-width: thin;
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -760,33 +745,52 @@ trendmovementsteadyx {
     margin-left: 0;
     z-index: auto;
     position: relative;
-    margin-top: 5px;
-
+    margin-top: 5px
 }
 
 .thetrendboxbluebaro {
-    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
-    box-shadow: inset 2px 0 0 0 #4f96a1;
+    -webkit-box-shadow: inset 2px 0 0 0 var(--blue);
+    ;
+    box-shadow: inset 2px 0 0 0 var(--blue);
 }
 
 .thetrendboxorangebaro {
-    -webkit-box-shadow: inset 2px 0 0 0 #d35f50;
-    box-shadow: inset 2px 0 0 0 #d35f50;
+    -webkit-box-shadow: inset 2px 0 0 0 var(--red);
+    box-shadow: inset 2px 0 0 0 var(--red)
 }
 
 .thetrendboxgreenbaro {
-    -webkit-box-shadow: inset 2px 0 0 0 #90b22a;
-    box-shadow: inset 2px 0 0 0 #90b22a;
+    -webkit-box-shadow: inset 2px 0 0 0 var(--green);
+    box-shadow: inset 2px 0 0 0 var(--green)
 }
 
+.thetrendgap {
+    margin-top: 6px
+}
 
+.theraingap {
+    margin-top: -154px
+}
 
+.temptrendx {
+    margin-left: 70px;
+    font-size: 0
+}
 
+trendmovementfallingx,
+trendmovementrisingx {
+    font-family: weathertext2;
+    font-size: 12px
+}
 
-
+trendmovementsteadyx {
+    color: var(--body-text-light);
+    font-size: 135px;
+    margin-left: 80px
+}
 
 .maxdata {
-    color: #545454;
+    color: var(--body-text-light);
     width: 50px;
     padding: 1px;
     left: 0;
@@ -796,11 +800,12 @@ trendmovementsteadyx {
     background: 0;
     font-size: 12px;
     line-height: 1;
-    margin-top: 12px
+    margin-top: 12px;
+
 }
 
 .maxdatawind {
-    color: #545454;
+    color: var(--body-text-light);
     width: 150px;
     padding: 1px;
     left: -5px;
@@ -820,14 +825,14 @@ trendmovementsteadyx {
     font-size: 11px;
     line-height: 2;
     margin-top: 0;
-    color: #545454;
+    color: var(--body-text-light);
     padding: 2px;
     left: 10px
 }
 
 .mindata {
     margin: 5px auto auto;
-    color: #545454;
+    color: var(--body-text-light);
     width: 50px;
     padding: 2px;
     margin-top: 11px;
@@ -855,7 +860,7 @@ trendmovementsteadyx {
     font-size: 11px;
     line-height: 2;
     margin: 5px auto auto;
-    color: #545454;
+    color: var(--body-text-light);
     width: 40px;
     padding: 2px;
     margin-top: 0;
@@ -867,7 +872,7 @@ trendmovementsteadyx {
     width: 160px;
     float: left;
     padding: 0;
-    color: #545454;
+    color: var(--body-text-light);
     text-align: center;
     font: 500 10px weathertext2;
     line-height: 15px
@@ -880,9 +885,9 @@ trendmovementsteadyx {
     width: 9rem;
     height: 4.2rem;
     padding-top: 14px;
-    color: #f7f7f7;
-    border: 1px solid #ced1da;
-    border-bottom: 10px solid #ced1da;
+    color: var(--white);
+    border: 1px solid var(--border-light);
+    border-bottom: 10px solid var(--border-light);
     border-radius: 2px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -905,9 +910,10 @@ trendmovementsteadyx {
     width: 9rem;
     height: 4.2rem;
     padding-top: 14px;
-    color: #4f96a1;
-    border: 1px solid #ced1da;
-    border-bottom: 10px solid #ced1da;
+    color: var(--blue);
+    ;
+    border: 1px solid var(--border-light);
+    border-bottom: 10px solid var(--border-light);
     border-radius: 2px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -924,7 +930,7 @@ trendmovementsteadyx {
 }
 
 blue {
-    color: #4f96a1
+    color: var(--blue);
 }
 
 .heatcircle,
@@ -970,12 +976,28 @@ blue {
 
 .heatcircleindoor {
     margin-top: 40px;
-    margin-left: 0px
+    margin-left: 0
 }
 
 .heatcirclerainmonth {
     margin-top: 40px;
-    margin-left: 0px
+    margin-left: 0
+}
+
+.indoorclock {
+    font-size: 11px;
+    color: var(--body-text-light);
+    position: absolute;
+    float: none;
+    margin-left: 185px;
+    margin-top: 11px;
+    z-index: 99999;
+    width:4.5rem;
+    box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -webkit-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -moz-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -ms-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    -o-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
 }
 
 .tempconvertercircleblue,
@@ -987,7 +1009,7 @@ blue {
     right: 0;
     width: 3.2rem;
     height: .8rem;
-    color: #545454;
+    color: var(--body-text-light);
     overflow: hidden;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -1010,9 +1032,9 @@ blue {
     display: flex;
     width: 3.2rem;
     height: 1rem;
-    color: #545454;
+    color: var(--body-text-light);
     overflow: hidden;
-    border: 1px solid hsla(206, 12%, 27%, 0.502);
+    border: 1px solid hsla(206, 12%, 27%, .502);
     border-width: thin;
     border-radius: 2px;
     font-family: weathertext2;
@@ -1051,7 +1073,7 @@ smallrainunit4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border: 1px solid hsla(206, 12%, 27%, 0.5);
+    border: 1px solid hsla(206, 12%, 27%, .5);
     border-width: thin;
     border-radius: 2px;
     font-size: .8em;
@@ -1091,13 +1113,13 @@ smallrainunit4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 6.5rem;
+    width: 7rem;
     height: 1rem;
-    color: #545454;
+    color: var(--body-text-light);
     overflow: hidden;
     font-family: weathertext2;
     line-height: 1;
-    border: 1px solid #ced1da;
+    border: 1px solid var(--border-light);
     border-width: thin;
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -1112,12 +1134,13 @@ smallrainunit4 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 35px
+    margin-left: 25px
 }
 
 .temphumcircle60-80 {
-    -webkit-box-shadow: inset 2px 0 0 0 #e6a241;
-    box-shadow: inset 2px 0 0 0 #e6a241
+    -webkit-box-shadow: inset 2px 0 0 0 var(--yellow);
+    ;
+    box-shadow: inset 2px 0 0 0 var(--yellow);
 }
 
 .temphumcircle25-35 {
@@ -1126,23 +1149,24 @@ smallrainunit4 {
 }
 
 .temphumcircle35-60 {
-    -webkit-box-shadow: inset 2px 0 0 0 #90b22a;
-    box-shadow: inset 2px 0 0 0 #90b22a
+    -webkit-box-shadow: inset 2px 0 0 0 var(--green);
+    box-shadow: inset 2px 0 0 0 var(--green)
 }
 
 .temphumcircle80-100 {
-    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
-    box-shadow: inset 2px 0 0 0 #4f96a1
+    -webkit-box-shadow: inset 2px 0 0 0 var(--blue);
+    ;
+    box-shadow: inset 2px 0 0 0 var(--blue);
 }
 
 .temphumcircle0-25 {
-    -webkit-box-shadow: inset 2px 0 0 0 #d35f50;
-    box-shadow: inset 2px 0 0 0 #d35f50
+    -webkit-box-shadow: inset 2px 0 0 0 var(--red);
+    box-shadow: inset 2px 0 0 0 var(--red)
 }
 
 valuetextheading1 {
     position: relative;
-    color: #545454;
+    color: var(--body-text-light);
     font-family: weathertext2;
     font-size: 1em;
     text-align: left;
@@ -1155,24 +1179,28 @@ valuetextheading1 {
 }
 
 .tempmodulehome-10-0c {
-    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
-    box-shadow: inset 2px 0 0 0 #4f96a1
+    -webkit-box-shadow: inset 2px 0 0 0 var(--blue);
+    ;
+    box-shadow: inset 2px 0 0 0 var(--blue);
 }
 
 .tempmodulehome0-5c {
-    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
-    box-shadow: inset 2px 0 0 0 #4f96a1
+    -webkit-box-shadow: inset 2px 0 0 0 var(--blue);
+    ;
+    box-shadow: inset 2px 0 0 0 var(--blue);
 }
 
 .tempmodulehome5-10c {
-    -webkit-box-shadow: inset 2px 0 0 0 #9bbc2f;
-    box-shadow: inset 2px 0 0 0 #9bbc2f
+    -webkit-box-shadow: inset 2px 0 0 0 var(--green);
+    ;
+    box-shadow: inset 2px 0 0 0 var(--green);
 }
 
 .tempmodulehome10-15c,
 .tempmodulehome15-20c {
-    -webkit-box-shadow: inset 2px 0 0 0 #e6a241;
-    box-shadow: inset 2px 0 0 0 #e6a241
+    -webkit-box-shadow: inset 2px 0 0 0 var(--yellow);
+    ;
+    box-shadow: inset 2px 0 0 0 var(--yellow);
 }
 
 .tempmodulehome20-25c {
@@ -1202,11 +1230,11 @@ valuetextheading1 {
     display: flex;
     width: 4.1rem;
     height: 1rem;
-    color: #545454;
+    color: var(--body-text-light);
     overflow: hidden;
     font-family: weathertext2;
     line-height: 1;
-    border: 1px solid hsla(206, 12%, 27%, 0.5);
+    border: 1px solid hsla(206, 12%, 27%, .5);
     border-width: thin;
     -webkit-border-left: 0;
     -webkit-border-top-right-radius: 2px;
@@ -1221,8 +1249,9 @@ valuetextheading1 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
-    box-shadow: inset 2px 0 0 0 #4f96a1
+    -webkit-box-shadow: inset 2px 0 0 0 var(--blue);
+    ;
+    box-shadow: inset 2px 0 0 0 var(--blue);
 }
 
 .rainratemodulehome {
@@ -1240,23 +1269,26 @@ valuetextheading1 {
 }
 
 raiblue {
-    color: #4f96a1
+    color: var(--blue);
 }
 
 .intempmodulehome0-5c {
-    -webkit-box-shadow: inset 2px 0 0 0 #4f96a1;
-    box-shadow: inset 2px 0 0 0 #4f96a1
+    -webkit-box-shadow: inset 2px 0 0 0 var(--blue);
+    ;
+    box-shadow: inset 2px 0 0 0 var(--blue);
 }
 
 .intempmodulehome5-10c {
-    -webkit-box-shadow: inset 2px 0 0 0 #9bbc2f;
-    box-shadow: inset 2px 0 0 0 #9bbc2f
+    -webkit-box-shadow: inset 2px 0 0 0 var(--green);
+    ;
+    box-shadow: inset 2px 0 0 0 var(--green);
 }
 
 .intempmodulehome10-15c,
 .intempmodulehome15-20c {
-    -webkit-box-shadow: inset 2px 0 0 0 #e6a241;
-    box-shadow: inset 2px 0 0 0 #e6a241
+    -webkit-box-shadow: inset 2px 0 0 0 var(--yellow);
+    ;
+    box-shadow: inset 2px 0 0 0 var(--yellow);
 }
 
 .intempmodulehome20-25c {
@@ -1282,11 +1314,15 @@ valuetitleunit {
     font-family: weathertext2
 }
 
-smalltempunit,
 smalltempunit2,
 smalltempunit4 {
     font-size: .45rem;
-    color: #545454
+    color: var(--body-text-light)
+}
+
+smalltempunit {
+    font-size: .65rem;
+    color: var(--body-text-light)
 }
 
 .daylightcompass2>.daylightcompass-line2,
@@ -1346,7 +1382,7 @@ smalltempunit4 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #ff7a38;
+    background: var(--orange);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-border-radius: 50%;
@@ -1356,7 +1392,7 @@ smalltempunit4 {
 }
 
 uv0 {
-    background-color: #90b22a
+    background-color: var(--green)
 }
 
 .thearrow3 {
@@ -1381,7 +1417,7 @@ uv0 {
     left: 2px;
     width: 6px;
     height: 6px;
-    border: 2px solid #c0c0c0;
+    border: 2px solid silver;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1391,7 +1427,8 @@ uv0 {
 
 .text1,
 .windvalue1 {
-    color: #4f96a1;
+    color: var(--blue);
+    ;
     font-family: weathertext3;
     font-size: 2rem
 }
@@ -1447,7 +1484,7 @@ uv0 {
     z-index: 10;
     display: block;
     margin: 0 0 auto;
-    color: #545454;
+    color: var(--body-text-light);
     text-align: center;
     font-family: headingtext;
     font-size: 18px;
@@ -1455,13 +1492,13 @@ uv0 {
 }
 
 .windirectiontext1 span {
-    color: #4f96a1
+    color: var(--blue);
 }
 
 averwordwindword {
     position: relative;
     top: 5px;
-    color: #545454;
+    color: var(--body-text-light);
     font-size: 12px
 }
 
@@ -1488,7 +1525,7 @@ averwordwindword {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin-top: -50px;
+    margin-top: -45px
 }
 
 .homeweathercompass2 {
@@ -1507,8 +1544,8 @@ averwordwindword {
 
 .text2 {
     position: relative;
-    margin-top: -0px;
-    margin-left: -25px;
+    margin-top: 0;
+    margin-left: -5px;
     font-size: 1.55em
 }
 
@@ -1519,11 +1556,11 @@ averwordwindword {
     width: auto;
     margin-top: 5px;
     margin-left: 0;
-    color: #ffffff;
+    color: var(--white);
     text-align: center;
     font-family: weathertext2;
     font-size: 13px;
-    background: #00a4b3;
+    background: var(--blue);
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1531,7 +1568,7 @@ averwordwindword {
     -o-border-radius: 3px;
     justify-content: center;
     align-items: center;
-    padding: 2px;
+    padding: 2px
 }
 
 .pressuretextfast {
@@ -1540,7 +1577,7 @@ averwordwindword {
 
 .text2 span,
 .text3 {
-    color: #545454;
+    color: var(--body-text-light);
     font-size: 10px
 }
 
@@ -1577,7 +1614,7 @@ averwordwindword {
     margin-top: 129px;
     margin-left: 10px;
     padding: 1px;
-    color: #545454;
+    color: var(--body-text-light);
     border-radius: 2px;
     font-size: 10px;
     line-height: 10px;
@@ -1588,14 +1625,14 @@ averwordwindword {
 }
 
 .barometertrend2 span {
-    color: #90b22a
+    color: var(--green)
 }
 
 .barometerconv {
     position: absolute;
     width: 70px;
     margin-top: 132px;
-    color: #90b22a;
+    color: var(--green);
     text-align: center;
     font: 10px arial, weathertext2;
     line-height: 10px
@@ -1603,7 +1640,7 @@ averwordwindword {
 
 .barometerconv span {
     display: block;
-    color: #545454;
+    color: var(--body-text-light)
 }
 
 .barometerlimits {
@@ -1616,7 +1653,7 @@ averwordwindword {
     left: 50%;
     width: 0;
     height: 0;
-    border-color: #ff7738 transparent transparent;
+    border-color: var(--orange) transparent transparent;
     border-width: 10px 5px 0;
     border-style: solid;
     -webkit-transform: translate(-50%, -50%);
@@ -1638,7 +1675,7 @@ averwordwindword {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     position: absolute;
-    border: 3px solid #90b22a;
+    border: 3px solid var(--green);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1656,7 +1693,7 @@ averwordwindword {
 
 .barometertrend1,
 .barometertrend1 hourtrend {
-    color: #545454;
+    color: var(--body-text-light);
     text-align: left;
     line-height: 9px
 }
@@ -1675,12 +1712,12 @@ averwordwindword {
 }
 
 barometerinfo {
-    color: #545454;
+    color: var(--body-text-light)
 }
 
 .barometermax {
     margin-top: 10px;
-    color: #545454;
+    color: var(--body-text-light);
     font: 10px arial, weathertext2;
     line-height: 9px
 }
@@ -1693,19 +1730,19 @@ barometerinfo {
 }
 
 .barometermax span {
-    color: #90b22a;
+    color: var(--green);
     font: 500 10px arial, weathertext2
 }
 
 .barometermax unit {
-    color: #545454;
+    color: var(--body-text-light);
     font: 500 10px arial, weathertext2
 }
 
 .barometermin {
     width: 50px;
     margin-left: 240px;
-    color: #545454;
+    color: var(--body-text-light);
     font: 10px arial, weathertext2;
     line-height: 9px
 }
@@ -1717,11 +1754,11 @@ barometerinfo {
 }
 
 .barometermin span {
-    color: #90b22a
+    color: var(--green)
 }
 
 .barometermin unit {
-    color: #545454;
+    color: var(--body-text-light)
 }
 
 .barometertrend falling,
@@ -1736,8 +1773,6 @@ suprain2,
 suptemp {
     -webkit-font-smoothing: antialiased
 }
-
-
 
 .maxpressure,
 .minpressure,
@@ -1817,12 +1852,12 @@ weather34-barometerlimitmin {
 
 weather34-barometerlimitmin {
     left: -27px;
-    color: #4f96a1
+    color: var(--blue);
 }
 
 weather34-barometerlimitmax {
     left: 140px;
-    color: #ff7a38
+    color: var(--orange);
 }
 
 .thearrow3:after,
@@ -1882,7 +1917,7 @@ weather34-barometerlimitmax {
     top: -5px;
     left: 2px;
     width: 0;
-    color: #ff7a38;
+    color: var(--orange);
     border: 0;
     font-family: headingtext;
     font-size: 7px
@@ -1912,7 +1947,8 @@ weather34-barometerlimitmax {
     left: 50%;
     width: 0;
     height: 0;
-    border: 3px solid #4f96a1;
+    border: 3px solid var(--blue);
+    ;
     border-radius: 50%;
     background-color: 0;
     -webkit-transform: translate(-50%, -50%);
@@ -1927,7 +1963,7 @@ weather34-barometerlimitmax {
     top: -5px;
     left: 2px;
     width: 0;
-    color: hsla(187, 46%, 59%, 0.6);
+    color: hsla(187, 46%, 59%, .6);
     border: 0;
     font-size: 5px
 }
@@ -1948,7 +1984,7 @@ weather34-barometerlimitmax {
     left: 50%;
     width: 0;
     height: 0;
-    border: 3px solid hsla(19, 100%, 61%, 0.8);
+    border: 3px solid hsla(19, 100%, 61%, .8);
     border-radius: 50%;
     background-color: 0;
     -webkit-transform: translate(-50%, -50%);
@@ -1963,7 +1999,7 @@ weather34-barometerlimitmax {
     top: -5px;
     left: 2px;
     width: 0;
-    color: hsla(19, 100%, 61%, 0.6);
+    color: hsla(19, 100%, 61%, .6);
     border: 0;
     font-size: 5px
 }
@@ -1974,7 +2010,7 @@ a {
     font-family: headingtext;
     text-decoration: none;
     margin-left: 10px;
-    color: #ffffff
+    color: var(--white)
 }
 
 .consolesetup,
@@ -1983,21 +2019,21 @@ a {
     font-family: headingtext;
     text-decoration: none;
     margin-left: 10px;
-    color: #ffffff
+    color: var(--white)
 }
 
 .desktoplink {
-    color: #ffffff;
+    color: var(--white);
     font-size: 10px;
     font-family: headingtext;
     text-decoration: none;
     margin-right: 40px;
     float: right;
-    margin-top: 0px
+    margin-top: 0
 }
 
 .designedby {
-    color: #ffffff;
+    color: var(--white);
     font-size: 10px;
     font-family: headingtext;
     text-decoration: none;
@@ -2008,253 +2044,254 @@ a {
 
 .credit34,
 a {
-    color: #ffffff;
+    color: var(--white);
     font-size: 12px;
     font-family: headingtext;
     text-decoration: none;
-    margin-left: 380px;
+    margin-left: 380px
 }
-
 
 valuebeaufort {
     font-size: .75em;
     margin-left: 2px
 }
 
-
 .modulecaption {
-    display:flex;
+    display: flex;
     position: relative;
-    left: 110px;    
+    left: 110px;
     top: -19px;
-    color: #545454;
-    border-radius:10px;
-    background: #f8f8f8;
+    color: var(--body-text-light);
+    border-radius: 10px;
+    background-color: var(--light-caption);
     font-family: Headingtext;
-    width:11em;    
-    height:10px;  
+    width: 11em;
+    height: 10px;
     font-size: 10px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center;       
-    color: #545454;
-    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    justify-content: center;
+    color: var(--body-text-light);
+    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .modulecaptionchart {
-    display:flex;
+    display: flex;
     position: relative;
-    left: 145px;    
+    left: 145px;
     top: 50px;
-    color: #545454;
-    border-radius:10px;
-    background: #f8f8f8;
+    color: var(--body-text-light);
+    border-radius: 10px;
+    background-color: var(--light-caption);
     font-family: Headingtext;
-    width:12em;    
-    height:10px;  
+    width: 12em;
+    height: 10px;
     font-size: 10px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center;      
-    color: #545454;
-    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    justify-content: center;
+    color: var(--body-text-light);
+    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .modulecaptionwindchart {
-    display:flex;
+    display: flex;
     position: relative;
-    left: 120px;    
+    left: 120px;
     top: -19px;
-    color: #545454;
-    border-radius:10px;
-    background: #f8f8f8;
+    color: var(--body-text-light);
+    border-radius: 10px;
+    background-color: var(--light-caption);
     font-family: Headingtext;
-    width:11em;    
-    height:12px;  
+    width: 11em;
+    height: 12px;
     font-size: 10px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center;    
-    color: #545454;
-    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    justify-content: center;
+    color: var(--body-text-light);
+    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .modulecaptionpressure {
-    display:flex;
+    display: flex;
     position: relative;
-    left: 95px;    
-    top: -43px;
-    color: #545454;
-    border-radius:10px;
-    background: #f8f8f8;
+    left: 95px;
+    top: -42px;
+    color: var(--body-text-light);
+    border-radius: 10px;
+    background-color: var(--light-caption);
     font-family: Headingtext;
-    width:11em;    
-    height:10px;  
+    width: 11em;
+    height: 10px;
     font-size: 10px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center;     
-    color: #545454;
-    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    justify-content: center;
+    color: var(--body-text-light);
+    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .modulecaptiondirection {
-    display:flex;
+    display: flex;
     position: relative;
     left: 85px;
     top: -75px;
-    color: #545454;
-    border-radius:10px;
-    background: #f8f8f8;
+    color: var(--body-text-light);
+    border-radius: 10px;
+    background-color: var(--light-caption);
     font-family: Headingtext;
-    width:11em;    
-    height:10px;  
+    width: 11em;
+    height: 10px;
     font-size: 10px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center;     
-    color: #545454;
-    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    justify-content: center;
+    color: var(--body-text-light);
+    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
+
 .modulecaptionrainrate {
-    display:flex;
+    display: flex;
     position: relative;
-    left:-75px;
-    border-radius:10px;
-    background: #f8f8f8;
+    left: -75px;
+    border-radius: 10px;
+    background-color: var(--light-caption);
     font-family: Headingtext;
-    width:11em;    
-    height:10px;  
+    width: 11em;
+    height: 10px;
     font-size: 10px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center; 
-    top:5px;
-    color: #545454;
-    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    justify-content: center;
+    top: 20px;
+    color: var(--body-text-light);
+    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 
 .modulecaptionwind {
-    display:flex;
+    display: flex;
     position: relative;
-    left:-70px;
-    border-radius:10px;
-    background: #f8f8f8;
+    left: -70px;
+    border-radius: 10px;
+    background-color: var(--light-caption);
     font-family: Headingtext;
-    width:11em;    
-    height:10px;  
+    width: 11em;
+    height: 10px;
     font-size: 10px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
     top: -15px;
-    color: #545454;
-    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    color: var(--body-text-light);
+    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
+
 .modulecaptiontemp {
-    display:flex;
+    display: flex;
     position: relative;
-    left:-70px;
-    border-radius:10px;
-    background: #f8f8f8;
+    left: -70px;
+    border-radius: 10px;
+    background-color: var(--light-caption);
     font-family: Headingtext;
-    width:11em;    
-    height:10px;  
+    width: 11em;
+    height: 10px;
     font-size: 9px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     top: -15px;
-    color: #545454;
-    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    color: var(--body-text-light);
+    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
+
 
 .online,
 .online2 {
     position: absolute;
     font-size: .65em;
-    color: #00a4b3;
+    color: var(--blue);
     z-index: 100000;
     margin-top: 7px;
     float: right;
@@ -2268,74 +2305,68 @@ valuebeaufort {
     -moz-animation-direction: alternate;
     -ms-animation-direction: alternate;
     -o-animation-direction: alternate;
-    animation-direction: alternate;
+    animation-direction: alternate
 }
 
 .online2 {
     position: relative;
-    top: 3px;
-
+    top: 3px
 }
 
 @keyframes fadein {
     from {
-        opacity: 0;
+        opacity: 0
     }
 
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
 
-/* Firefox < 16 */
 @-moz-keyframes fadein {
     from {
-        opacity: 0;
+        opacity: 0
     }
 
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
 
-/* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
     from {
-        opacity: 0;
+        opacity: 0
     }
 
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
 
-/* Internet Explorer */
 @-ms-keyframes fadein {
     from {
-        opacity: 0;
+        opacity: 0
     }
 
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
 
-/* Opera < 12.1 */
 @-o-keyframes fadein {
     from {
-        opacity: 0;
+        opacity: 0
     }
 
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
 
-
 blue1 {
-    color: #00a4b3;
+    color: var(--blue);
     font-size: .8em;
-    margin-left:3px
+    margin-left: 3px
 }
 
 .nav {
@@ -2344,8 +2375,8 @@ blue1 {
     background: #3d464d;
     padding: 4px;
     height: 20px;
-    -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25), 0 2px 2px hsla(0, 0%, 0%, 0.2), 0 4px 4px hsla(0, 0%, 0%, 0.15);
-    box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25), 0 2px 2px hsla(0, 0%, 0%, 0.2), 0 4px 4px hsla(0, 0%, 0%, 0.15);
+    -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
+    box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
     padding: 6px;
     position: relative;
     bottom: 0;
@@ -2357,7 +2388,7 @@ blue1 {
     -moz-border-radius-topright: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    margin-top: 10px;
+    margin-top: 10px
 }
 
 vspan {
@@ -2382,14 +2413,15 @@ vspan3 {
 
 iconcolor {
     position: absolute;
-    color: #545454;
+    color: var(--body-text-light);
     vertical-align: middle;
     margin-top: 5px
 }
 
 iconcolor2 {
     position: absolute;
-    color: #4f96a1;
+    color: var(--blue);
+    ;
     vertical-align: middle;
     margin-top: 5px
 }
@@ -2398,45 +2430,34 @@ iconcolor2 {
     font-size: 10px;
     width: 20rem;
     text-align: left;
-    margin-left: 5px;
-    margin-top: 22px;
-    line-height: .9;
-}
-.consoleicon{
-    position:relative;
-    margin-left:210px;
-    margin-top:-28px;
-    width:35px;
+    margin-left: -15px;
+    margin-top: 25px;
+    line-height: .9
 }
 
-
-
-.indoorclock {
-    font-size: 11px;
-    color: #545454;
-    position: absolute;
-    float: none;
-    margin-left: 205px;
-    margin-top: 11px;
-    z-index: 99999
+.consoleicon {
+    position: relative;
+    margin-left: 225px;
+    margin-top: -18px;
+    width: 35px;
 }
 
 .maxbox {
-    position: absolute;    
+    position: absolute;
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
     margin-top: -100px;
     z-index: 99999;
-    color: #545454;
+    color: var(--body-text-light);
     font-family: weathertext2;
-    background: #f8f8f8;
+    background-color: var(--light-caption);
     margin-left: -150px;
-    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
+    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -2451,15 +2472,15 @@ iconcolor2 {
     font-size: 9px;
     margin-top: -80px;
     z-index: 99999;
-    color: #545454;
+    color: var(--body-text-light);
     font-family: weathertext2;
-    background: #f8f8f8;
+    background-color: var(--light-caption);
     margin-left: -150px;
-    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
-    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px #fff !important;
+    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -2467,9 +2488,8 @@ iconcolor2 {
     -o-border-radius: 3px
 }
 
-
 oblue {
-    color: #00a4b3
+    color: var(--blue)
 }
 
 oorange {
@@ -2482,14 +2502,13 @@ a {
     font-family: headingtext;
     text-decoration: none;
     margin-left: 10px;
-    color: #ffffff
+    color: var(--white)
 }
 
-
+.legenddewpoint,
 .legendfeels,
-.legendwetbulb,
 .legendtemp,
-.legenddewpoint {
+.legendwetbulb {
     position: absolute;
     border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -2499,30 +2518,31 @@ a {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: 190px;
+    margin-top: 188px;
     z-index: 99999;
-    color: #ffffff;
-    font-family: Headingtext;
+    color: var(--white);
+    font-family: Headingtext
 }
 
 .legendtemp {
     background: #d15f2e;
-    margin-left: -90px;
+    margin-left: -90px
 }
 
 .legendfeels {
     background: #65696c;
-    margin-left: -60px;
+
+
 }
 
 .legendwetbulb {
     background: #d15f2e;
-    margin-left: -60px;
+    margin-left: -60px
 }
 
 .legenddewpoint {
-    background: #00a4b3;
-    margin-left: -110px;
+    background: var(--blue);
+    margin-left: -110px
 }
 
 .weather34-toggle {
@@ -2538,23 +2558,21 @@ a {
     border-radius: 50px;
     top: -1px;
     margin-left: -5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    padding-top: 1px;
-
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
 }
 
 .weather34-toggle.on .circleblob {
-    left: 45px;
+    left: 45px
 }
 
 .weather34-toggle .tog {
     width: 0;
     height: 0;
     border: 0;
-    background: 0;
-
+    background: 0
 }
 
 .weather34-toggle .tog.red {
@@ -2563,7 +2581,7 @@ a {
     margin-right: 33px;
     justify-content: center;
     align-items: center;
-    line-height: 1;
+    line-height: 1.2;
     padding: 3px
 }
 
@@ -2576,8 +2594,8 @@ a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    border: 3px solid #6e6e77;
-    background: 0;
+    border: 3px solid #f8f8f8;
+    background: 0
 }
 
 .weather34-toggles {
@@ -2593,23 +2611,21 @@ a {
     border-radius: 50px;
     top: -1px;
     margin-left: -5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    padding-top: 1px;
-
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
 }
 
 .weather34-toggles.on .circleblob {
-    left: 45px;
+    left: 45px
 }
 
 .weather34-toggles .tog {
     width: 0;
     height: 0;
     border: 0;
-    background: 0;
-
+    background: 0
 }
 
 .weather34-toggles .tog.red {
@@ -2631,10 +2647,9 @@ a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    border: 3px solid #E73D3D;
-    background: 0;
+    border: 3px solid #e73d3d;
+    background: 0
 }
-
 
 .weather34-toggleblue {
     cursor: pointer;
@@ -2649,29 +2664,26 @@ a {
     border-radius: 50px;
     top: -1px;
     margin-left: -5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    padding-top: 1px;
-
-
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
 }
 
 .weather34-toggleblue.on .circleblob {
-    left: 45px;
+    left: 45px
 }
 
 .weather34-toggleblue.on .tog.red {
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden
 }
 
 .weather34-toggleblue .tog {
     width: 0;
     height: 0;
     border: 0;
-    background: 0;
-
+    background: 0
 }
 
 .weather34-toggleblue .tog.red {
@@ -2693,10 +2705,9 @@ a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    border: 3px solid #00a4b3;
-    background: 0;
+    border: 3px solid var(--blue);
+    background: 0
 }
-
 
 .weather34-togglegreen {
     cursor: pointer;
@@ -2717,23 +2728,21 @@ a {
     border-radius: 50px;
     top: -1px;
     margin-left: -5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    padding-top: 1px;
-
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
 }
 
 .weather34-togglegreen.on .circleblob {
-    left: 45px;
+    left: 45px
 }
 
 .weather34-togglegreen .tog {
     width: 0;
     height: 0;
     border: 0;
-    background: 0;
-
+    background: 0
 }
 
 .weather34-togglegreen .tog.red {
@@ -2755,9 +2764,128 @@ a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    border: 3px solid #90b22a;
-    background: 0;
+    border: 3px solid var(--green);
+    background: 0
 }
+
+.weather34-toggledark {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 14px;
+    clear: both;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -1px;
+    margin-right: 3px;
+    background: #35393b;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -5px;
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
+}
+
+.weather34-toggledark.on .circleblob {
+    left: 45px
+}
+
+.weather34-toggledark .tog {
+    width: 0;
+    height: 0;
+    border: 0;
+    background: 0
+}
+
+.weather34-toggledark .tog.red {
+    float: right;
+    border-color: #bfbfbf;
+    margin-right: 27px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    padding: 3px
+}
+
+.weather34-toggledark .circleblob {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #777;
+    background: 0
+}
+
+.weather34-toggletoday {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 14px;
+    clear: both;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -1px;
+    margin-right: 3px;
+    background: #35393b;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -5px;
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
+}
+
+.weather34-toggletoday.on .circleblob {
+    left: 45px
+}
+
+.weather34-toggletoday .tog {
+    width: 0;
+    height: 0;
+    border: 0;
+    background: 0
+}
+
+.weather34-toggletoday .tog.red {
+    float: right;
+    border-color: #bfbfbf;
+    margin-right: 35px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    padding: 3px
+}
+
+.weather34-toggletoday .circleblob {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid var(--red);
+    background: 0
+}
+
 
 .weather34-toggleyellow {
     cursor: pointer;
@@ -2778,23 +2906,21 @@ a {
     border-radius: 50px;
     top: -1px;
     margin-left: -5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    padding-top: 1px;
-
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
 }
 
 .weather34-toggleyellow.on .circleblob {
-    left: 15px;
+    left: 15px
 }
 
 .weather34-toggleyellow .tog {
     width: 0;
     height: 0;
     border: 0;
-    background: 0;
-
+    background: 0
 }
 
 .weather34-toggleyellow .tog.red {
@@ -2816,8 +2942,9 @@ a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    border: 3px solid #e6a241;
-    background: 0;
+    border: 3px solid var(--yellow);
+    ;
+    background: 0
 }
 
 
@@ -2883,68 +3010,6 @@ a {
 }
 
 
-.weather34-togglechartdate{
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    width: 70px;
-    height: 14px;
-    clear: both;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    top: -1px;
-    margin-left: -1px;
-    margin-right: 3px;
-    background: #35393b;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    top: -1px;
-    margin-left: -5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    padding-top: 1px;
-
-}
-
-.weather34-togglechartdate.on .circleblob {
-    left: 15px;
-}
-
-.weather34-togglechartdate .tog {
-    width: 0;
-    height: 0;
-    border: 0;
-    background: 0;
-
-}
-
-.weather34-togglechartdate .tog.red {
-    float: right;
-    border-color: #bfbfbf;
-    margin-right: 0px;
-    justify-content: left;
-    align-items: left;
-    line-height: 1.2;
-    padding: 3px;
-    width:50px
-}
-
-.weather34-togglechartdate .circleblob {
-    width: 4px;
-    height: 4px;
-    margin: 2px;
-    position: absolute;
-    left: 0;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    border: 3px solid #00a4b3;
-    background: 0;
-}
-
 .weather34-toggled {
     cursor: pointer;
     position: relative;
@@ -2965,7 +3030,7 @@ a {
     -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
     box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
     padding-top: 1px;
-    margin-right:10px;
+    margin-right: 10px;
 
 }
 
@@ -2999,8 +3064,154 @@ a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    border: 3px solid #00a4b3;
+    border: 3px solid var(--blue);
     background: 0;
+}
+
+.weather34-togglechartdate {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 14px;
+    clear: both;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -1px;
+    margin-right: 3px;
+    background: #35393b;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -5px;
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
+}
+
+.weather34-togglechartdate.on .circleblob {
+    left: 5px
+}
+
+.weather34-togglechartdate .tog {
+    width: 0;
+    height: 0;
+    border: 0;
+    background: 0
+}
+
+.weather34-togglechartdate .tog.red {
+    float: right;
+    border-color: #bfbfbf;
+    margin-right: 0;
+    justify-content: left;
+    align-items: left;
+    line-height: 1;
+    padding: 3px;
+    width: 55px
+}
+
+.weather34-togglechartdate .circleblob {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid var(--blue);
+    background: 0
+}
+
+.weather34-togglechartdatem {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 14px;
+    clear: both;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -1px;
+    margin-right: 3px;
+    background: #35393b;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -5px;
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px
+}
+
+.weather34-togglechartdatem.on .circleblob {
+    left: 5px
+}
+
+.weather34-togglechartdatem .tog {
+    width: 0;
+    height: 0;
+    border: 0;
+    background: 0
+}
+
+.weather34-togglechartdatem .tog.red {
+    float: right;
+    border-color: #bfbfbf;
+    margin-right: 0;
+    justify-content: left;
+    align-items: left;
+    line-height: 1.2;
+    padding: 3px;
+    width: 55px
+}
+
+.weather34-togglechartdatem .circleblob {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid var(--yellow);
+    ;
+    background: 0
+}
+
+.weather34-togglechartdatem .tog.red {
+    float: right;
+    border-color: #bfbfbf;
+    margin-right: 0;
+    justify-content: left;
+    align-items: left;
+    line-height: 1;
+    padding: 3px;
+    width: 55px
+}
+
+.weather34-togglechartdatem .circleblob {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid var(--yellow);
+    ;
+    background: 0
 }
 
 .logofooter {
@@ -3014,11 +3225,11 @@ a {
     position: relative;
     margin: 5px auto 0;
     width: 200px;
-    color: #fff;
-    transition: all 0.2s ease;
+    color: var(--white);
+    transition: all .2s ease;
     position: fixed;
     top: 1px;
-    right: 10px;
+    right: 25px;
     height: 70px;
     font-family: weathertext2;
     border-radius: 2px;
@@ -3028,8 +3239,7 @@ a {
     -o-border-radius: 4px;
     padding: 10px;
     background: #1c1c1f;
-    z-index: 9999999;
-
+    z-index: 9999999
 }
 
 .weather34alert.weather34alert-hide {
@@ -3038,7 +3248,7 @@ a {
     font-size: 0;
     padding: 0;
     margin: 0 auto;
-    display: block;
+    display: block
 }
 
 .weather34alert-icon {
@@ -3047,29 +3257,29 @@ a {
     width: 40px;
     padding: 10px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, .25);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #252529;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #252529;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #252529;
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #252529;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #252529;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #252529
 }
 
 .weather34alert-icon>i {
     width: 20px;
-    font-size: 20px;
+    font-size: 20px
 }
 
 .weather34alert-body {
     display: table-cell;
     vertical-align: middle;
-    padding: 10px;
+    padding: 10px
 }
 
-.weather34alert-body> p {
+.weather34alert-body>p {
     line-height: 1.2;
     font-size: .7rem;
     font-family: headingtext;
@@ -3079,9 +3289,9 @@ a {
     border-radius: 5px;
     margin-top: -10px;
     margin-left: -5px;
-    -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
-    box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
     justify-content: center;
     align-items: center;
     height: 12px
@@ -3093,14 +3303,14 @@ valuealertcold {
     font-size: 16px;
     font-family: weathertext2;
     background: 0;
-    background: #00a4b3;
+    background: var(--blue);
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     width: 4rem;
-    padding: 5px;
+    padding: 5px
 }
 
 valuealertwarm {
@@ -3109,17 +3319,15 @@ valuealertwarm {
     font-size: 16px;
     font-family: weathertext2;
     background: 0;
-    background: #d55948;
+    background: var(--deepred);
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     width: 4rem;
-    padding: 5px;
+    padding: 5px
 }
-
-
 
 alertunit {
     font-size: .75rem
@@ -3128,126 +3336,111 @@ alertunit {
 .weather34alert-button {
     position: relative;
     margin: 15px 5px -10px;
-    background-color: rgba(0, 0, 0, 0.25);
-    box-shadow: 0 3px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: 0 3px rgba(0, 0, 0, .4);
     border: none;
     padding: 10px 15px;
     font-size: 16px;
     font-family: 'Source Sans Pro';
-    color: #fff;
-    outline: none;
-    cursor: pointer;
+    color: var(--white);
+    outline: 0;
+    cursor: pointer
 }
 
 .weather34alert-button:hover {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, .3)
 }
 
 .weather34alert-button:active {
-    background: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0px rgba(0, 0, 0, 0.4);
-    top: 3px;
+    background: rgba(0, 0, 0, .3);
+    box-shadow: 0 0 rgba(0, 0, 0, .4);
+    top: 3px
 }
 
 .weather34alert-close {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
+    background-color: rgba(0, 0, 0, .3);
+    color: var(--white);
     border: none;
-    outline: none;
+    outline: 0;
     font-size: 20px;
     right: 5px;
     top: 5px;
     opacity: 0;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .weather34alert:hover .weather34alert-close {
-    opacity: 1;
+    opacity: 1
 }
 
 .weather34alert-close:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, .5)
 }
 
-deepblue {
-    color: #1b5c66
-}
 
-green {
-    color: #90b22a;
-}
-
-yellow {
-    color: #e6a241;
-}
-
-orange {
-    color: #ec5732;
-}
-
-red {
-    color: #E73D3D;
-}
-
-purple {
-    color: #8680bc;
-}
-.feels,.maxwind  {
+.feels,
+.maxwind {
     position: absolute;
     margin-top: -7px;
     margin-left: -145px;
-    font-size: 0.6rem;
+    font-size: .6rem;
     font-family: weathertext2;
-    width:150px
+    width: 150px;
+
 }
 
-chartpage{
-    position:relative;
-    color: #fff;
+a:hover {
+    color: var(--blue)
+}
+
+chartpage {
+    position: relative;
+    color: var(--white);
     font-size: .75em;
     font-family: headingtext;
     text-decoration: none;
-    margin-left:10%;
-    top:-4px;
+    margin-left: 10%;
+    top: -4px;
     background: #35393b;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
-    padding:2px;
-    padding-top:5px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding: 2px;
+    padding-top: 5px;
     justify-content: center;
     align-items: center;
     -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
     -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
     box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
-  }
+}
 
-  .weather34i-rairate-bar {
+
+.weather34i-rairate-bar {
     position: absolute;
     width: 120px;
     height: 100px;
     margin-top: 65px;
     margin-left: 110px;
-  }
-  
-  #raincontainer {
+}
+
+#raincontainer {
     left: -150px;
     width: 208px;
     height: 170px;
     margin-top: -120px;
     overflow: hidden;
-    
-  }
-  
-  #raincontainer,
-  #raincontainer div {
+
+}
+
+#raincontainer,
+#raincontainer div {
     position: absolute;
-  }
-  
-  #weather34rainbeaker {
+}
+
+#weather34rainbeaker {
     bottom: 0;
     left: 14px;
     width: 92px;
@@ -3260,10 +3453,10 @@ chartpage{
     -moz-border-radius: 0 0 2px 2px;
     -ms-border-radius: 0 0 2px 2px;
     -o-border-radius: 0 0 2px 2px;
-  }
-  
-  #weather34rainbeaker:after,
-  #weather34rainbeaker:before {
+}
+
+#weather34rainbeaker:after,
+#weather34rainbeaker:before {
     content: "";
     position: absolute;
     top: 0;
@@ -3271,32 +3464,33 @@ chartpage{
     height: 0;
     border: 3px solid #dee3f0;
     border-bottom: 0;
-    
+
 }
+
 #weather34rainbeaker:before {
-    left: -8px;
-  }
-  
-  #weather34rainbeaker:after {
-    right: -8.5px;
-  }
-  
-  #weather34rainwater {
+    left: -9px;
+}
+
+#weather34rainbeaker:after {
+    right: -9px;
+}
+
+#weather34rainwater {
     bottom: 0;
     width: 92px;
     max-height: 90px;
     overflow: hidden;
-    border: 0;    
-    background-color: hsla(186, 100%, 34%, 0.6);    
-  }
-  
-  
-  .raincontainer1 {
+    border: 0;
+    background-color: hsla(186, 100%, 34%, 0.6);
+}
+
+
+.raincontainer1 {
     top: 0px;
     right: 0;
     bottom: 0;
     left: 25px;
-    margin: 40px 10px 10px 40px;    
+    margin: 40px 10px 10px 40px;
     position: relative;
     float: left;
     right: 0;
@@ -3304,16 +3498,16 @@ chartpage{
     left: 0;
     float: left;
     -o-font-smoothing: antialiased;
-     
 
-  }
-  
-  .raintoday1 {
+
+}
+
+.raintoday1 {
     width: 3.75rem;
     height: 1.5rem;
     padding-top: 7px;
-    color: #fff;
-    border-bottom: 8px solid #dee3f0;
+    color: var(--white);
+    border-bottom: 8px solid #e9ebf1;
     border-radius: 3px;
     font-size: 0.8rem;
     -webkit-border-radius: 3px;
@@ -3327,33 +3521,33 @@ chartpage{
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-    background: #44a6b5;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: var(--blue);
     font-family: weathertext2;
-    margin-left:-46px;
-    margin-top:10px
-  }
-  
-  
-  
-  smallrainunit2b {
+    margin-left: -46px;
+    margin-top: 10px
+}
+
+
+
+smallrainunit2b {
     font-family: weathertext2;
     vertical-align: top;
     top: 2px;
-    font-size:.25rem;
-    color:#ffffff;
-  }
+    font-size: .25rem;
+    color: var(--white);
+}
 
 
 
 
 
+@media screen and (max-width:960px) {
 
-@media screen and (max-width: 960px) {
-
-    chartpage{
-       display:none}
+    chartpage {
+        display: none
+    }
 
     li3 {
         align-items: center;
@@ -3366,26 +3560,24 @@ chartpage{
         border: 0;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        background-color: #f5f5f5;
+        background: var(--light);
         margin: 0 auto;
         margin-top: 5px;
         margin-bottom: 5px;
-        color: #545454;
-        background-color: #f2f2f2 !important;
-        box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-        -webkit-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-        -moz-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-        -ms-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
-        -o-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px #FFFFFF !important;
+        color: var(--body-text-light);
+        background-color: var(--white);
+        box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+        -webkit-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+        -moz-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+        -ms-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+        -o-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-        -webkit-border-radius: 10px;
+        -webkit-border-radius: 10px
     }
-
-
 
     .designedby,
     li2 {
@@ -3401,7 +3593,7 @@ chartpage{
         display: flex;
         justify-content: center;
         min-width: 320px;
-        max-width: 320px;
+        max-width: 320px
     }
 
     .nav {
@@ -3414,30 +3606,23 @@ chartpage{
         z-index: 99999
     }
 
-
     .clock {
         position: absolute;
-        margin-top: -200px;
-
-
+        margin-top: -200px
     }
-
 
     .homeweathercompass2>.homeweathercompass-line2 {
-        left: 350px;
-
+        left: 350px
     }
-
-
 }
 
+@media screen and (max-width:640px) {
+    chartpage {
+        display: none;
+    }
 
-@media screen and (max-width: 640px) {
-
-    chartpage{display:none;}
-
-    .desktoplink,
-    .designedby {
+    .designedby,
+    .desktoplink {
         display: none
     }
 
@@ -3452,7 +3637,7 @@ chartpage{
         font-family: headingtext;
         text-decoration: none;
         margin-left: 10px;
-        color: #ffffff
+        color: var(--white)
     }
 
     .consoleunits,
@@ -3461,9 +3646,8 @@ chartpage{
         font-family: headingtext;
         text-decoration: none;
         margin-left: 1px;
-        color: #ffffff
+        color: var(--white)
     }
-
 
     body {
         width: 320px
@@ -3474,7 +3658,7 @@ chartpage{
         display: flex;
         justify-content: center;
         min-width: 320px;
-        max-width: 320px;
+        max-width: 320px
     }
 
     li2 {
@@ -3484,8 +3668,8 @@ chartpage{
     .nav {
         margin: 0 auto;
         width: 308px;
-        -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25), 0 2px 2px hsla(0, 0%, 0%, 0.2), 0 4px 4px hsla(0, 0%, 0%, 0.15);
-        box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25), 0 2px 2px hsla(0, 0%, 0%, 0.2), 0 4px 4px hsla(0, 0%, 0%, 0.15);
+        -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
+        box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
         padding: 6px;
         height: 20px;
         bottom: 0;
@@ -3495,7 +3679,34 @@ chartpage{
     vspan,
     vspan2,
     vspan3 {
-
         font-size: 9px
     }
+}
+
+deepblue {
+    color: var(--deepblue)
+}
+
+green {
+    color: var(--green)
+}
+
+yellow {
+    color: var(--yellow);
+}
+
+orange {
+    color: var(--orange)
+}
+
+red {
+    color: var(--red)
+}
+
+darkred {
+    color: var(--deepred)
+}
+
+purple {
+    color: var(--purple)
 }

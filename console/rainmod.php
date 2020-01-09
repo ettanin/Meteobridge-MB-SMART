@@ -1,5 +1,5 @@
 <?php include('livedata.php');include('common.php');date_default_timezone_set($TZ);$raintimeago=$originalDate124;$seconds_ago = (time() - strtotime($raintimeago));?>
-<div class=modulecaptionrainrate style="top:-13px">
+<div class=modulecaptionrainrate style="top:-5px">
 <?php
   // *rainfall hours or minutes ago if within last 24 hours
   // *rain yesterday if greater than 0 is displayed if no rain last 24 hours 
@@ -22,7 +22,7 @@
 </div>
 
 
-<div class="modulecaption" style="margin-top:-9px;margin-left:-15px"><?php echo $lang['Rainfall']?> <blue1><?php echo $weather["rain_units"]?></blue1></div>
+<div class="modulecaption" style="margin-top:-0px;margin-left:-15px"><?php echo $lang['Rainfall']?> <blue1><?php echo $weather["rain_units"]?></blue1></div>
 
 <div class="tempcontainer" style="margin-left:40px;margin-right:35px;">
 <div class="weather34i-rairate-bar">
