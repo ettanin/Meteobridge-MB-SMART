@@ -42,56 +42,97 @@ else if($weather["temp_units"]=='F' && $weather['temp']<212){echo '<div class=ou
 <div class="heatcircle"><div class="heatcircle-content">
 <?php  //temp max Year
 echo "<valuetextheading1>".date('Y')." Max <blue>".$weather["tempymaxtime"]."</blue></valuetextheading1><br>";
-if ($weather["tempymax"]>24) {
+
+if ($weather["temp_units"]=='F' && $weather["tempymax"]>75.2) {
+    echo "
+    <div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+    
+    else if ($weather["temp_units"]=='F' && $weather["tempymax"]>66.2) {
+    echo "
+    <div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+        
+    
+    else if ($weather["temp_units"]=='F' && $weather["tempymax"]>50) {
+    echo "
+    <div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}  
+    
+    else if ($weather["temp_units"]=='F' && $weather["tempymax"]>44.6) {
+    echo "
+    <div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+    
+    else if ($weather["temp_units"]=='F' && $weather["tempymax"]>-50) {
+    echo "
+    <div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+//C
+if ($weather["temp_units"]=='C' && $weather["tempymax"]>24) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 
-else if ($weather["tempymax"]>19) {
+else if ($weather["temp_units"]=='C' && $weather["tempymax"]>19) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
     
 
-else if ($weather["tempymax"]>10) {
+else if ($weather["temp_units"]=='C' && $weather["tempymax"]>10) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}  
 
-else if ($weather["tempymax"]>7) {
+else if ($weather["temp_units"]=='C' && $weather["tempymax"]>7) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 
-else if ($weather["tempymax"]>-50) {
+else if ($weather["temp_units"]=='C' && $weather["tempymax"]>-50) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 
 ?><smalltempunit2></div></div></div>
 
 <div class="heatcircle2"><div class="heatcircle-content">
-<?php  //dewpoint min year
+<?php  //TEMP min year
 echo "<valuetextheading1>".date('Y')." Min <blue>".$weather["tempymintime"]."</blue></valuetextheading1><br>";
-if ($weather["tempymin"]>24) {
+if ($weather["temp_units"]=='F' && $weather["tempymin"]>75.2) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 
-else if ($weather["tempymin"]>19) {
+else if ($weather["temp_units"]=='F' && $weather["tempymin"]>66.2) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
     
 
-else if ($weather["tempymin"]>10) {
+else if ($weather["temp_units"]=='F' && $weather["tempymin"]>50) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}  
 
-else if ($weather["tempymin"]>7) {
+else if ($weather["temp_units"]=='F' && $weather["tempymin"]>44.6) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 
-else if ($weather["tempymin"]>2) {
-    echo "
-    <div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
-
-else if ($weather["tempymin"]>-50) {
+else if ($weather["temp_units"]=='F' && $weather["tempymin"]>-50) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome-10-0c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+
+//C
+if ($weather["temp_units"]=='C' && $weather["tempymin"]>24) {
+    echo "
+    <div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+    
+    else if ($weather["temp_units"]=='C' && $weather["tempymin"]>19) {
+    echo "
+    <div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+        
+    
+    else if ($weather["temp_units"]=='C' && $weather["tempymin"]>10) {
+    echo "
+    <div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}  
+    
+    else if ($weather["temp_units"]=='C' && $weather["tempymin"]>7) {
+    echo "
+    <div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}    
+        
+    else if ($weather["temp_units"]=='C' && $weather["tempymin"]>-50) {
+    echo "
+    <div class=tempconverter1><div class=tempmodulehome-10-0c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
+    
 
 ?>
 </smalltempunit2></div></div></div>

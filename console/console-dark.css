@@ -477,16 +477,16 @@ li3 {
     color: var(--light);
     font-size: .75rem;    
     line-height: 1;
-    margin-top: -55px;
+    margin-top: -70px;
     position: absolute;
-    margin-left: 195px;
+    margin-left: 205px;
     font-family: headingtext;
     text-align: left
 }
 
 belowthehorizon {
     font-size: 1em;
-    width: 80px;
+    width: 70px;
     display: block
 }
 
@@ -2354,8 +2354,8 @@ iconcolor2 {
 
 .consoleicon {
     position: relative;
-    margin-left: 225px;
-    margin-top: -18px;
+    margin-left: 240px;
+    margin-top: -38px;
     width: 35px;
 }
 

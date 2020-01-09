@@ -29,8 +29,8 @@
     --black: #000000;
     --deepblue: #4ba0ad;
     --blue: #4ba0ad;
-    --darkred: #703232;
-    --deepred: #703232;
+    --darkred: #b44545;
+    --deepred: #b44545;
     --red: #d35f50;
     --yellow: #e6a241;
     --green: #9bbc2f;
@@ -182,8 +182,8 @@ li3 {
     -moz-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
     -ms-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
     -o-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
-    
-    
+
+
 }
 
 .date {
@@ -526,16 +526,16 @@ li3 {
     color: var(--body-text-light);
     font-size: .75rem;
     line-height: 1;
-    margin-top: -55px;
+    margin-top: -70px;
     position: absolute;
-    margin-left: 195px;
+    margin-left: 205px;
     font-family: headingtext;
     text-align: left
 }
 
 belowthehorizon {
     font-size: 1em;
-    width: 80px;
+    width: 70px;
     display: block
 }
 
@@ -989,15 +989,10 @@ blue {
     color: var(--body-text-light);
     position: absolute;
     float: none;
-    margin-left: 185px;
-    margin-top: 11px;
+    margin-left: 200px;
+    margin-top: 14px;
     z-index: 99999;
-    width:4.5rem;
-    box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
-    -webkit-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
-    -moz-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
-    -ms-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
-    -o-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
+    width: 4.25rem;
 }
 
 .tempconvertercircleblue,
@@ -1250,7 +1245,6 @@ valuetextheading1 {
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-shadow: inset 2px 0 0 0 var(--blue);
-    ;
     box-shadow: inset 2px 0 0 0 var(--blue);
 }
 
@@ -1392,7 +1386,7 @@ smalltempunit {
 }
 
 uv0 {
-    background-color: var(--green)
+    background-color: var(--green);
 }
 
 .thearrow3 {
@@ -1428,7 +1422,6 @@ uv0 {
 .text1,
 .windvalue1 {
     color: var(--blue);
-    ;
     font-family: weathertext3;
     font-size: 2rem
 }
@@ -2293,7 +2286,7 @@ valuebeaufort {
     font-size: .65em;
     color: var(--blue);
     z-index: 100000;
-    margin-top: 7px;
+    margin-top: 12px;
     float: right;
     padding-left: 10px;
     -webkit-animation: fadein 5s infinite;
@@ -2310,7 +2303,7 @@ valuebeaufort {
 
 .online2 {
     position: relative;
-    top: 3px
+    top: 8px
 }
 
 @keyframes fadein {
@@ -2437,8 +2430,8 @@ iconcolor2 {
 
 .consoleicon {
     position: relative;
-    margin-left: 225px;
-    margin-top: -18px;
+    margin-left: 240px;
+    margin-top: -38px;
     width: 35px;
 }
 
