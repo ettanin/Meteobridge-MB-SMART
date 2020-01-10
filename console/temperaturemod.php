@@ -46,20 +46,15 @@ echo "<valuetextheading1>".date('Y')." Max <blue>".$weather["tempymaxtime"]."</b
 if ($weather["temp_units"]=='F' && $weather["tempymax"]>75.2) {
     echo "
     <div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
-    
     else if ($weather["temp_units"]=='F' && $weather["tempymax"]>66.2) {
     echo "
     <div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
-        
-    
     else if ($weather["temp_units"]=='F' && $weather["tempymax"]>50) {
     echo "
-    <div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}  
-    
+    <div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
     else if ($weather["temp_units"]=='F' && $weather["tempymax"]>44.6) {
     echo "
     <div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
-    
     else if ($weather["temp_units"]=='F' && $weather["tempymax"]>-50) {
     echo "
     <div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
@@ -67,20 +62,15 @@ if ($weather["temp_units"]=='F' && $weather["tempymax"]>75.2) {
 if ($weather["temp_units"]=='C' && $weather["tempymax"]>24) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
-
 else if ($weather["temp_units"]=='C' && $weather["tempymax"]>19) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
-    
-
 else if ($weather["temp_units"]=='C' && $weather["tempymax"]>10) {
 echo "
-<div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}  
-
+<div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];} 
 else if ($weather["temp_units"]=='C' && $weather["tempymax"]>7) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
-
 else if ($weather["temp_units"]=='C' && $weather["tempymax"]>-50) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome0-5c>".$weather["tempymax"]."&deg;<smalltempunit2>".$weather["temp_units"];}
@@ -93,20 +83,15 @@ echo "<valuetextheading1>".date('Y')." Min <blue>".$weather["tempymintime"]."</b
 if ($weather["temp_units"]=='F' && $weather["tempymin"]>75.2) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
-
 else if ($weather["temp_units"]=='F' && $weather["tempymin"]>66.2) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
-    
-
 else if ($weather["temp_units"]=='F' && $weather["tempymin"]>50) {
 echo "
-<div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}  
-
+<div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];} 
 else if ($weather["temp_units"]=='F' && $weather["tempymin"]>44.6) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
-
 else if ($weather["temp_units"]=='F' && $weather["tempymin"]>-50) {
 echo "
 <div class=tempconverter1><div class=tempmodulehome-10-0c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
@@ -115,20 +100,15 @@ echo "
 if ($weather["temp_units"]=='C' && $weather["tempymin"]>24) {
     echo "
     <div class=tempconverter1><div class=tempmodulehome25-30c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
-    
     else if ($weather["temp_units"]=='C' && $weather["tempymin"]>19) {
     echo "
-    <div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
-        
-    
+    <div class=tempconverter1><div class=tempmodulehome20-25c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}    
     else if ($weather["temp_units"]=='C' && $weather["tempymin"]>10) {
     echo "
-    <div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}  
-    
+    <div class=tempconverter1><div class=tempmodulehome10-15c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];} 
     else if ($weather["temp_units"]=='C' && $weather["tempymin"]>7) {
     echo "
-    <div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}    
-        
+    <div class=tempconverter1><div class=tempmodulehome5-10c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}          
     else if ($weather["temp_units"]=='C' && $weather["tempymin"]>-50) {
     echo "
     <div class=tempconverter1><div class=tempmodulehome-10-0c>".$weather["tempymin"]."&deg;<smalltempunit2>".$weather["temp_units"];}
@@ -176,11 +156,27 @@ else if($weather["temp_trend"]>0){echo '<div class=thetrendboxorange>'.$lang['Ri
 else echo '<div class=thetrendboxblue>'.$lang['Steady'].''.$steadysymbol.'';?>
 </div></div>
 
+<div class="indoortemp"> 
+<?php //indoor temp
+echo $hometemp." ";
+//c
+if($weather["temp_units"]=='C' && $weather["temp_indoor"]<15) {echo '<blue>'.$weather["temp_indoor"].'</blue> &deg;';}
+else if($weather["temp_units"]=='C' && $weather["temp_indoor"]>24) {echo '<red>'.$weather["temp_indoor"].'</red> &deg;';}
+else if($weather["temp_units"]=='C' && $weather["temp_indoor"]>19) {echo '<orange>'.$weather["temp_indoor"].'</orange> &deg;';}
+else if($weather["temp_units"]=='C' && $weather["temp_indoor"]>=15) {echo '<yellow>'.$weather["temp_indoor"].'</yellow> &deg;';}
+//f
+if($weather["temp_units"]=='F' && $weather["temp_indoor"]<59) {echo '<blue>'.$weather["temp_indoor"].'</blue> &deg;';}
+else if($weather["temp_units"]=='F' && $weather["temp_indoor"]>75.2) {echo '<red>'.$weather["temp_indoor"].'</red> &deg;';}
+else if($weather["temp_units"]=='F' && $weather["temp_indoor"]>66.2) {echo '<orange>'.$weather["temp_indoor"].'</orange> &deg;';}
+else if($weather["temp_units"]=='F' && $weather["temp_indoor"]>=59) {echo '<yellow>'.$weather["temp_indoor"].'</yellow> &deg;';}
+if($weather["temp_indoor_trend"] >0)echo $risingsymbolsmall;
+else if($weather["temp_indoor_trend"]<0)echo $fallingsymbolsmall;?>
+</div>
+
 <div class="feels">
 <?php  //heat-index/real feel
 if(anyToC($weather["heat_index"])>=35){echo $heatindexalert8." ".$lang['Heatindex']."<red> ".$weather["heat_index"]."</red>&deg;<smalltempunit2>".$weather["temp_units"];}
 else if(anyToC($weather["heat_index"])>=30 ){echo $heatindexalert8." ".$lang['Heatindex']."<red> ".$weather["heat_index"]."</red>&deg;<smalltempunit2>".$weather["temp_units"];}
-
 //C real feel 
 else if ($weather["temp_units"]=='C' && $weather["windchill"]<0){ echo $lang['Windchill']." <blue>".$weather["windchill"]."&deg;</blue><smalltempunit2>".$weather["temp_units"];}
 else if ($weather["temp_units"]=='C' && $weather["realfeel"]>=35){ echo $lang['Feelslike']."<purple> ".$weather['realfeel']."&deg;</purple><smalltempunit2>".$weather["temp_units"];}
@@ -205,6 +201,5 @@ else if($weather["temp_units"]=='F' && $weather["realfeel"]>=41 ){ echo $lang['F
 else if($weather["temp_units"]=='F' && $weather["realfeel"]>=32 ){ echo $lang['Feelslike']."<blue> ".$weather['realfeel']."</blue>&deg;<smalltempunit2>".$weather["temp_units"];}
 else if($weather["temp_units"]=='F' && $weather["realfeel"]>-14 ){ echo $lang['Feelslike']."<blue> ".$weather['realfeel']."</blue>&deg;<smalltempunit2>".$weather["temp_units"];}
 else if($weather["temp_units"]=='F' && $weather["realfeel"]>-58 ){ echo $lang['Feelslike']."<deepblue> ".$weather['realfeel']."</deepblue>&deg;<smalltempunit2>".$weather["temp_units"];}
-
 ?>
 </div>

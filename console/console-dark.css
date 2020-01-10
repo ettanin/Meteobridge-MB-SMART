@@ -1033,15 +1033,46 @@ smallrainunit4 {
     -ms-border-radius: 2px;
     -o-border-radius: 2px
 }
-
-.indoorclock {
-    font-size: 11px;
-   color: var(--white);
+.indoortemp {
+    font-size: 10px;
+    color: var(--silver);
     position: absolute;
     float: none;
-    margin-left: 202px;
-    margin-top: 11px;
-    z-index: 99999
+    margin-left: 60px;
+    margin-top: 120px;
+    z-index: 99999;
+    width: 4.5rem;
+    line-height:1.2;
+    height:12px;     
+    background-color: var(--dark-caption); 
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    font-family:weathertext2;
+}
+.indoorhumidity {
+    font-size: 10px;
+    color: var(--silver);
+    position: absolute;
+    float: none;
+    margin-left: 60px;
+    margin-top: 40px;
+    z-index: 99999;
+    width: 4.5rem;
+    line-height:1.2;
+    height:12px;   
+    background-color: var(--dark-caption);    
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    font-family:weathertext2;
+}
+bluesmall{
+    font-size:9px;    
 }
 
 .intempmodulehome0-5c,

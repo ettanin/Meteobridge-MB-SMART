@@ -71,4 +71,14 @@ if($weather["humidity_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falli
 else if($weather["humidity_trend"]>0){echo '<div class=thetrendboxorange>'.$lang['Rising'].'';echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["humidity_trend"],1).'</orange><smalltempunit2>%';}
 //steady
 else echo '<div class=thetrendboxblue>'.$lang['Steady'].''.$steadysymbol.'';?></smalltempunit2>
-</div></div></div></div>
+</div></div>
+
+<div class="indoorhumidity"> 
+<?php //indoor humidity
+echo $hometemp." ";
+if($weather["humidity_indoor"]>70) {echo '<blue>'.$weather["humidity_indoor"].'</blue> <smalltempunit2>%</smalltempunit2>';}
+else if($weather["humidity_indoor"]>=40) {echo '<green>'.$weather["humidity_indoor"].'</green> <smalltempunit2>%</smalltempunit2>';}
+else if($weather["humidity_indoor"]<40) {echo '<red>'.$weather["humidity_indoor"].'</red> <smalltempunit2>%</smalltempunit2>';}
+if($weather["humidity_indoortrend"] >0)echo $risingsymbolsmall;
+else if($weather["humidity_indoortrend"]<0)echo $fallingsymbolsmall;?>
+</div>

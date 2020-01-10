@@ -1,11 +1,6 @@
 <?php include('livedata.php');include('common.php');header('Content-type: text/html; charset=utf-8');	?>
 <div class="online">
 <?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
-<div class="indoorclock">  <?php echo $hometemp." " .$weather["temp_indoor"] . '<smalltempunit2>&deg;'.$weather["temp_units"] ?></smalltempunit2>
-<?php 
-if($weather["temp_indoor_trend"] >0)echo $risingsymbolsmall;
-else if($weather["temp_indoor_trend"]<0)echo $fallingsymbolsmall;?>
-</div> 
 <div id="weather34clock4"></div>
 <script type="text/javascript">
 var clockID;var yourTimeZoneFrom='<?php echo $UTC?>';var d=new Date();
