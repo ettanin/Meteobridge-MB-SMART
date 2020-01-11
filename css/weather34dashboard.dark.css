@@ -7575,8 +7575,12 @@ maxtemporange {
   color: #d05f2d;
 }
 
+maxtempyellow1 {
+  color: #f58709;
+}
+
 maxtempyellow {
-  color: #ff832f;
+  color: #e29913;
 }
 
 maxtempgreen {
