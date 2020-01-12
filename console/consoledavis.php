@@ -105,6 +105,13 @@ include_once('livedata.php');include_once('updater2.php');
        </div></a>
 
 
+<a href="outlookwu.php" data-lity alt="5 day Forecast" title="5 day Forecast">
+        <div class="weather34-toggledf">
+        <div class="circleblob"></div> 
+       <div class="tog red">Forecast</div>
+       </div></a>
+
+
       <a class="desktoplink" href="../index.php" alt="Desktop Version" title="Desktop Version">
       <div class="weather34-toggled">
         <div class="circleblob"></div> 
