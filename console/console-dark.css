@@ -3496,13 +3496,10 @@ chartpage {
     color: var(--white);
   }
   
-
-
   .lity {
-    display:flex;
     z-index: 9990;
     position: fixed;
-    top:0;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -3511,7 +3508,6 @@ chartpage {
     background: hsla(214, 10%, 14%, 0.5);
     outline: 0 !important;
     white-space: nowrap;
-    width:auto
   }
   
   .lity.lity-opened {
@@ -3528,13 +3524,12 @@ chartpage {
   }
   
   .lity-wrap {
-    display:flex;
     z-index: 9990;
     position: fixed;
-    top: 5%;
+    top:0;
     right: 0;
     bottom: 0;
-    left: 5%;
+    left: 0;
     margin: 0 auto;
     outline: 0 !important;
     text-align: center;
@@ -3569,19 +3564,20 @@ chartpage {
     z-index: 9992;
     display: inline-block;
     position: relative;
-    max-width: 100%;
+    max-width: 98%;
     max-height: 98%;
     margin: 0 auto;
     outline: 0 !important;
     text-align: left;
     vertical-align: middle;
     white-space: normal;
+   
   }
   
   .lity-content {
     z-index: 9993;
     width: 100%;
-    max-width: 960px;
+    max-width: 820px;
     -webkit-transform: scale(1);
     transform: scale(1);
   }
@@ -3609,10 +3605,10 @@ chartpage {
     z-index: 9994;
     -webkit-appearance: none;
     position: absolute;
-    top: 12px;
+    top: -24px;
     width: 20px;
     float: right;
-    right: 10%;
+    right: 5%;
     padding: 0;
     color: #fff;
     border: 0;
@@ -3633,6 +3629,8 @@ chartpage {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    margin-top:-63px;
+   
   }
   
   .lity-close::-moz-focus-inner {
@@ -3678,8 +3676,7 @@ chartpage {
   
   .lity-iframe .lity-container {
     width: 100%;
-    max-width: 960px;
-    height:auto;
+    max-width: 820px;
     margin: 0 auto;
   }
   
@@ -3687,16 +3684,15 @@ chartpage {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    max-width: 900px;
-    height: 100%;
-    max-height:600px;    
+    width: 98%;
+    max-width: 820px;
+    height: 600px;
     padding-top: 56.25%;
     overflow: auto;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     pointer-events: auto;
-    
+    margin-top:-100px;
   }
   
   .lity-iframe-container iframe {
@@ -3706,10 +3702,10 @@ chartpage {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    max-width: 900px;
-    height:100%;
-    max-height:425px;
+    width: 98%;
+    max-width: 820px;
+    height: 600px;
+    max-height:425px;    
     margin: 0 auto;
     background: linear-gradient(135deg, #212428, #2f363f);
     background: #1e2124;
@@ -3722,12 +3718,12 @@ chartpage {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    border-radius:5px;
   }
   
   .lity-hide {
     display: none;
   }
+
 
 
 
@@ -3738,12 +3734,12 @@ chartpage {
     }
 
     .lity-iframe-container iframe {        
-        max-height:600px;
+        max-height:500px;
     }
 
 
     .lity-close {       
-         right: 3%;           
+         right: 5%;           
     }   
 
     li3 {
@@ -3814,10 +3810,17 @@ chartpage {
     }
 
     .weather34-toggledf {       
-        margin-left: -5px;        
+       display:none      
+    }
+
+    .lity-iframe-container iframe {        
+        max-height:600px;
     }
 
 
+    .lity-close {       
+         right: 5%;           
+    }   
     .designedby,
     .desktoplink {
         display: none
