@@ -15,15 +15,35 @@ else if ($weather["uv"]==0) {echo '<div class=windbox style="color:#90b12a">0.0<
 }?>
 </div></smalltempunit></span></div></div></div>
 
+
+
 <div class="heatcircle"><div class="heatcircle-content">
-<?php  //heat-index/real feel
-echo "<valuetextheading1>&nbsp;&nbsp;".$lang['Solarradiation']." </valuetextheading1><br><div class=tempconverter1><div class=tempmodulehome20-25c >".$weather["solar"]."<smalltempunit2>wm/2";
+<?php  //solar
+echo "<valuetextheading1>&nbsp;&nbsp;".$lang['Solarradiation']."</valuetextheading1><br>";
+if ($weather["solar"]>800){
+    echo "
+<div class=tempconverter1><div class=tempmodulehome30-35c >".$weather["solar"]."<smalltempunit2>wm/2";
+}
+else if ($weather["solar"]>=500){
+    echo "
+<div class=tempconverter1><div class=tempmodulehome20-25c >".$weather["solar"]."<smalltempunit2>wm/2";
+}
+else if ($weather["solar"]>0){
+    echo "
+<div class=tempconverter1><div class=tempmodulehome10-15c >".$weather["solar"]."<smalltempunit2>wm/2";
+}
+else if ($weather["solar"]>=0){
+    echo "
+<div class=tempconverter1><div class=tempmodulehome0-5c >".$weather["solar"]."<smalltempunit2>wm/2";
+}
 ?><smalltempunit2></div></div></div>
 
 <div class="heatcircle2"><div class="heatcircle-content"><valuetextheading1>&nbsp;<?php echo $lang['Luminance']?> Lux</valuetextheading1>
-<?php //avg today
-echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["lux"]."<smalltempunit2>Lux";?>
+<?php //lux
+echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["lux"]."<smalltempunit2>Lux";
+?>
 </smalltempunit2></div></div>
+
 
 <div class=thetrendgap>
 <div class=thetrendboxorange>
