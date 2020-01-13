@@ -1071,6 +1071,26 @@ smallrainunit4 {
     -o-border-radius: 2px;
     font-family:weathertext2;
 }
+
+.indoortrend {
+    font-size: 10px;
+    color: var(--silver);
+    position: absolute;
+    float: none;
+    margin-left: 25px;
+    margin-top: 40px;
+    z-index: 99999;
+    width: 7.5rem;
+    line-height: 1.2;
+    height: 12px;
+    background-color: var(--dark-caption);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    font-family: weathertext2;
+}
 bluesmall{
     font-size:9px;    
 }
