@@ -307,12 +307,12 @@ li3 {
     text-align: center;
     width: 250px;
     position: relative;
-    color: var(--blue);
-    font-size: 2rem;
-    text-transform: uppercase;
+    color: var(--body-text-light);
+    font-size: 12px;
+    text-transform: capitalize;    
     height: 64px;
     line-height: 2;
-    margin-top: 5px;
+    margin-top: 5px;    
     font-family: headingtext;
     box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
     -webkit-box-shadow: 0 5px 5px rgba(104, 132, 157, .5), 0 -2px 5px var(--white);
@@ -2459,19 +2459,21 @@ iconcolor2 {
 }
 
 .consoleforecast {
-    font-size: 10px;
-    width: 20rem;
+    font-size: 11px;
+    width: 10rem;
     text-align: left;
-    margin-left: -15px;
-    margin-top: 25px;
-    line-height: .9
+    margin-left: 5px;
+    margin-top: 3px;
+    line-height: 1;
+    font-family: headingtext;
+    
 }
 
 .consoleicon {
     position: relative;
-    margin-left: 240px;
-    margin-top: -38px;
-    width: 35px;
+    margin-left: 190px;
+    margin-top: -35px;
+    width: 40px;
 }
 
 .maxbox {
@@ -2503,6 +2505,52 @@ iconcolor2 {
     display: inline-flex;
     font-size: 9px;
     margin-top: -80px;
+    z-index: 99999;
+    color: var(--body-text-light);
+    font-family: weathertext2;
+    background-color: var(--light-caption);
+    margin-left: -150px;
+    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px
+}
+
+.maxboxy {
+    position: absolute;
+    padding: 2px 3px 1px 3px;
+    display: inline-flex;
+    font-size: 9px;
+    margin-top: 14px;
+    z-index: 99999;
+    color: var(--body-text-light);
+    font-family: weathertext2;
+    background-color: var(--light-caption);
+    margin-left: -150px;
+    box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -webkit-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -moz-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -ms-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    -o-box-shadow: 0 3px 3px rgba(104, 132, 157, .5), 0 -2px 3px var(--white);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px
+}
+
+.minboxy {
+    position: absolute;
+    padding: 2px 3px 1px 3px;
+    display: inline-flex;
+    font-size: 9px;
+    margin-top: 33px;
     z-index: 99999;
     color: var(--body-text-light);
     font-family: weathertext2;
@@ -3840,7 +3888,7 @@ smallrainunit2b {
     width: 98%;
     max-width: 820px;
     height: 600px;
-    max-height:425px;    
+    max-height:450px;    
     margin: 0 auto;
     background: linear-gradient(135deg, #212428, #2f363f);
     background: #1e2124;

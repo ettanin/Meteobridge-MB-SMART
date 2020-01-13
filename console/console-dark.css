@@ -299,9 +299,9 @@ li3 {
     text-align: center;
     width: 250px;
     position: relative;
-    color: var(--blue);
-    font-size: 2rem;
-    text-transform: uppercase;    
+    color: var(--white);
+    font-size: 12px;
+    text-transform: capitalize;    
     height: 64px;
     line-height: 2;
     margin-top: 5px;
@@ -2375,19 +2375,21 @@ iconcolor2 {
 }
 
 .consoleforecast {
-    font-size: 10px;
-    width: 20rem;
+    font-size: 11px;
+    width: 10rem;
     text-align: left;
-    margin-left: -15px;
-    margin-top: 25px;
-    line-height: .9
+    margin-left: 5px;
+    margin-top: 3px;
+    line-height: 1;
+    font-family: headingtext;
+    
 }
 
 .consoleicon {
     position: relative;
-    margin-left: 240px;
-    margin-top: -38px;
-    width: 35px;
+    margin-left: 190px;
+    margin-top: -35px;
+    width: 40px;
 }
 
 .maxbox {
@@ -2421,6 +2423,35 @@ iconcolor2 {
     margin-top: -83px;
     z-index: 99999;
    color: var(--white);
+    font-family: weathertext2;
+    background-color: var(--dark-caption);
+    margin-left: -150px
+}
+
+.maxboxy {
+    position: absolute;
+    padding: 2px 3px 1px 3px;
+    display: inline-flex;
+    font-size: 9px;
+    margin-top: 15px;
+    z-index: 99999;
+    color: var(--white);
+    font-family: weathertext2;
+    background-color: var(--dark-caption);
+    margin-left: -150px
+}
+
+.minboxy {
+    position: absolute;
+    padding: 2px 3px 1px 3px;
+    display: inline-flex;
+    font-size: 9px;
+    margin-top: 33px;
+    z-index: 99999;
+    color: var(--body-text-light);
+    font-family: weathertext2;
+    background-color: var(--light-caption);
+    color: var(--white);
     font-family: weathertext2;
     background-color: var(--dark-caption);
     margin-left: -150px
