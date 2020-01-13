@@ -3001,8 +3001,7 @@ a {
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
-    top: -1px;
-    margin-left: -1px;
+    top: -1px;    
     margin-right: 3px;
     background: #35393b;
     -moz-border-radius: 50px;
@@ -4029,6 +4028,12 @@ smallrainunit2b {
     .weather34-toggledf {       
         display:none      
      }
+
+     .weather34-toggleyellow,.weather34-toggleblue {
+        
+        margin-left: 2px;
+        
+    }
  
      .lity-iframe-container iframe {        
         max-height:600px;

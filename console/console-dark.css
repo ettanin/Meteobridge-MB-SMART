@@ -3146,18 +3146,7 @@ a {
     width: 55px
 }
 
-.weather34-togglechartdatem .circleblob {
-    width: 4px;
-    height: 4px;
-    margin: 2px;
-    position: absolute;
-    left: 0;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    border: 3px solid #e6a241;
-    background: 0
-}
+
 
 
 
@@ -3866,6 +3855,9 @@ chartpage {
 
     .weather34-toggledf {       
        display:none      
+    }
+    .weather34-toggleyellow,.weather34-toggleblue {        
+        margin-left: 2px;        
     }
 
     .lity-iframe-container iframe {        
