@@ -19,9 +19,11 @@
 	$weather["dewymax"]=$meteobridgeapi[54];
 	
 	$conv = 1;
-	if ($tempunit == 'F') {$conv= '(1.8) +32';}	
-	$interval = 1;
-	if ($tempunit == 'F') {$interval= '0.5';}
+	if ($tempunit  == 'F') {$conv= '(1.8) +32';}	
+	if ($tempunit  =='F') {$interval= '10';}
+	if ($tempunit  =='C') {$interval= '5';}
+	if ($tempunit  == 'F') {$unit= 'F';}
+	if ($tempunit  == 'C') {$unit= 'C';}	
 
 
 	//F
@@ -185,7 +187,7 @@
 			markerType: "none",
 			name:"Hi Dewpoint",
 			dataPoints: dataPoints1,
-			yValueFormatString:"##.## <?php echo $tempunit ;?>",
+			yValueFormatString:"##.## <?php echo $unit ;?>",
 		},
 		{
 			
@@ -198,7 +200,7 @@
 			markerType: "none",
 			name:"Lo Dewpoint",
 			dataPoints: dataPoints2,
-			yValueFormatString:"##.## <?php echo $tempunit ;?>",
+			yValueFormatString:"##.## <?php echo $unit ;?>",
 		}
 
 		]

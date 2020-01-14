@@ -26,10 +26,10 @@
 	
 	$conv = 1;
 	if ($tempunit  == 'F') {$conv= '(1.8) +32';}	
-	$max = 50;
-	if ($tempunit  == 'F') {$max= '120';}	
-	$interval = 5;
-	if ($tempunit  == 'F') {$interval= '10';}
+	if ($tempunit  =='F') {$interval= '10';}
+	if ($tempunit  =='C') {$interval= '5';}
+	if ($tempunit  == 'F') {$unit= 'F';}
+	if ($tempunit  == 'C') {$unit= 'C';}	
 
 	//F
     if ($tempunit='F') {
@@ -171,7 +171,7 @@
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(1) + " °<?php echo $tempunit ;?> " ;  
+        return e.value .toFixed(1) + " °<?php echo $unit ;?> " ;  
          },		 
 		 crosshair: {
 			enabled: true,
@@ -202,7 +202,7 @@
 			markerType: "circle",
 			name:" Hi Dewpoint",
 			dataPoints: dataPoints1,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			yValueFormatString: "#0.# °<?php echo $unit ;?>",
 			
 		},
 		{
@@ -217,7 +217,7 @@
 			markerType: "circle",
 			name:" Lo Dewpoint",
 			dataPoints: dataPoints2,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			yValueFormatString: "#0.# °<?php echo $unit ;?>",
 			
 		}
 

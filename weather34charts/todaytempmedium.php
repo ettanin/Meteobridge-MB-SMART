@@ -33,10 +33,11 @@
 	
 	$conv = 1;
 	if ($tempunit  == 'F') {$conv= '(1.8) +32';}	
-	$max = 50;
-	if ($tempunit  == 'F') {$max= '120';}	
-	$interval = 5;
-	if ($tempunit  == 'F') {$interval= '10';}
+	if ($tempunit  =='F') {$interval= '10';}
+	if ($tempunit  =='C') {$interval= '5';}
+	if ($tempunit  == 'F') {$unit= 'F';}
+	if ($tempunit  == 'C') {$unit= 'C';}	
+
 
 	//F
     if ($tempunit='F') {
@@ -253,7 +254,7 @@
 			markerType: "circle",
 			name:" Temperature",
 			dataPoints: dataPoints1,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			yValueFormatString: "#0.# °<?php echo $unit ;?>",
 			
 		},
 		{
@@ -267,7 +268,7 @@
 			markerType: "circle",
 			name:" Real Feel",
 			dataPoints: dataPoints2,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			yValueFormatString: "#0.# °<?php echo $unit ;?>",
 			
 		}
 		

@@ -21,10 +21,10 @@
 	$weather["dewmmin"]		    = $meteobridgeapi[50]; //dew min month		
 	$conv = 1;
 	if ($tempunit  == 'F') {$conv= '(1.8) +32';}	
-	$max = 50;
-	if ($tempunit  == 'F') {$max= '120';}	
-	$interval = 5;
-	if ($tempunit  == 'F') {$interval= '10';}
+	if ($tempunit=='F') {$interval= '10';}
+	if ($tempunit=='C') {$interval= '5';}
+	if ($tempunit  == 'F') {$unit= 'F';}
+	if ($tempunit  == 'C') {$unit= 'C';}		
 
 	//F
     if ($tempunit='F') {
@@ -162,18 +162,16 @@
         titleWrap: false,
 		margin: 8,
 		lineThickness: 0.5,		
-		gridThickness: 1,		
-        includeZero: false,
-		interval:<?php if ($tempunit=='F'){echo 10 ;} else echo '5';?>,
-		maximum:<?php if ($tempunit=='F'){echo 90 ;} else echo '35';?>,
-		//minimum:'auto',
+		gridThickness: 1,
+		interval:<?php echo $interval?>,		
+        includeZero: false,		
 		gridColor: "#333",
 		labelFontSize: 8,
 		labelFontColor:' #aaa',
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0) + "°<?php echo $tempunit ;?>" ;  
+        return e.value .toFixed(0) + "° <?php echo $unit?>" ;  
          },		 
 		 crosshair: {
 			enabled: true,
@@ -213,7 +211,7 @@
 			markerType: "circle",
 			lineThickness: 0,
 			markerType: "circle",
-			name:" Hi Dewpoint °<?php echo $tempunit;?>",
+			name:" Hi Dewpoint °<?php echo $unit;?>",
 			dataPoints: dataPoints1,
 			yValueFormatString: "##.#",
 			
@@ -238,7 +236,7 @@
 			legendMarkerType: "circle",
 			lineThickness: 1,
 			markerType: "circle",
-			name:" Lo Dewpoint °<?php echo $tempunit;?>",
+			name:" Lo Dewpoint °<?php echo $unit;?>",
 			dataPoints: dataPoints2,
 			yValueFormatString: "##.#",
 			

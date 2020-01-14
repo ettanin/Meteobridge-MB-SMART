@@ -28,10 +28,10 @@
 	
 	$conv = 1;
 	if ($tempunit  == 'F') {$conv= '(1.8) +32';}	
-	$max = 50;
-	if ($tempunit  == 'F') {$max= '120';}	
-	$interval = 5;
-	if ($tempunit  == 'F') {$interval= '10';}
+	if ($tempunit  =='F') {$interval= '10';}
+	if ($tempunit  =='C') {$interval= '5';}
+	if ($tempunit  == 'F') {$unit= 'F';}
+	if ($tempunit  == 'C') {$unit= 'C';}	
 
 	//F
     if ($tempunit='F') {
@@ -165,7 +165,7 @@
 			},
 			
 		axisY:{
-		title: "Temperature | Dewpoint (°<?php echo $tempunit ;?>) Recorded",
+		title: "Temperature | Dewpoint (°<?php echo $unit ;?>) Recorded",
 		titleFontColor: "#555",
 		titleFontSize: 10,
         titleWrap: false,
@@ -182,7 +182,7 @@
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0) + "°<?php echo $tempunit ;?>" ;  
+        return e.value .toFixed(0) + "°<?php echo $unit ;?>" ;  
          },		 
 		crosshair: {
 			enabled: true,
@@ -191,7 +191,7 @@
 			labelFontColor: "#fff",
 			labelFontSize:12,
 			labelBackgroundColor: "#ff832f",
-			valueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			valueFormatString: "#0.# °<?php echo $unit ;?>",
 		}	 
       },
 	  
@@ -214,7 +214,7 @@
 			markerType: "circle",
 			name:" Temperature",
 			dataPoints: dataPoints1,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			yValueFormatString: "#0.# °<?php echo $unit ;?>",
 			
 		},
 		{
@@ -228,7 +228,7 @@
 			markerType: "circle",
 			name:" DewPoint",
 			dataPoints: dataPoints2,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			yValueFormatString: "#0.# °<?php echo $unit ;?>",
 			
 		}
 

@@ -21,10 +21,10 @@
 	
 	$conv = 1;
 	if ($tempunit  == 'F') {$conv= '(1.8) +32';}	
-	$max = 50;
-	if ($tempunit  == 'F') {$max= '120';}	
-	$interval = 5;
-	if ($tempunit  == 'F') {$interval= '10';}
+	if ($tempunit  =='F') {$interval= '10';}
+	if ($tempunit  =='C') {$interval= '5';}
+	if ($tempunit  == 'F') {$unit= 'F';}
+	if ($tempunit  == 'C') {$unit= 'C';}		
 
 	//F
     if ($tempunit='F') {
@@ -164,7 +164,7 @@
 		titleFontSize: 8,
         titleWrap: false,
 		margin: 0,
-		interval:<?php if ($tempunit=='F'){echo 10 ;} else echo '5';?>,	
+		interval:<?php echo $interval?>,	
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
@@ -175,7 +175,7 @@
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0) + "°<?php echo $tempunit ;?>" ;  
+        return e.value .toFixed(0) + "°<?php echo $unit ;?>" ;  
          },	 
 		crosshair: {
 			enabled: true,
@@ -205,7 +205,7 @@
 			legendMarkerType: "circle",			
 			name:" Hi Temp",
 			dataPoints: dataPoints1,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			yValueFormatString: "#0.# °<?php echo $unit ;?>",
 			
 		},
 		{
@@ -220,7 +220,7 @@
 			markerType: "circle",
 			name:" Lo Temp",
 			dataPoints: dataPoints2,
-			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			yValueFormatString: "#0.# °<?php echo $unit ;?>",
 			
 		}
 

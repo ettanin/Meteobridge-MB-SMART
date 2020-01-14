@@ -19,9 +19,11 @@
     $weather["tempymax"]=$meteobridgeapi2[90];	
 	
 	$conv = 1;
-	if ($tempunit == 'F') {$conv= '(1.8) +32';}	
-	$interval = 1;
-	if ($tempunit == 'F') {$interval= '0.5';}
+	if ($tempunit  == 'F') {$conv= '(1.8) +32';}	
+	if ($tempunit  =='F') {$interval= '10';}
+	if ($tempunit  =='C') {$interval= '5';}
+	if ($tempunit  == 'F') {$unit= 'F';}
+	if ($tempunit  == 'C') {$unit= 'C';}	
 
 	//F
 	if ($tempunit='F'){
@@ -48,7 +50,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>OUTDOOR Barometer CHART</title>	
+		<title>OUTDOOR Temp Month CHART</title>	
 		<script src=../js/jquery.js></script>
 		
 	';	
@@ -187,7 +189,7 @@
 			markerType: "none",
 			name:"Hi Temperature",
 			dataPoints: dataPoints1,
-			yValueFormatString:"##.## <?php echo $tempunit ;?>",
+			yValueFormatString:"##.## <?php echo $unit ;?>",
 		},
 		{
 			
@@ -200,7 +202,7 @@
 			markerType: "none",
 			name:"Lo Temperature",
 			dataPoints: dataPoints2,
-			yValueFormatString:"##.## <?php echo $tempunit ;?>",
+			yValueFormatString:"##.## <?php echo $unit ;?>",
 		}
 
 		]
