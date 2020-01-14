@@ -15,20 +15,89 @@
 	
 	
 	include('preload.php');
+	$file_live=file_get_contents("../mbridge/MBrealtimeupload.txt");
+	$meteobridgeapi=explode(" ",$file_live);	
+	$weather["temp"]=$meteobridgeapi[2];  
+	$weather["temp_avgtoday"]=$meteobridgeapi[152]; 
+	$weather["temp_today_high"]=$meteobridgeapi[26];
+    $weather["temp_today_low"]=$meteobridgeapi[28];   
+    $weather["dewpoint"]=number_format($meteobridgeapi[4], 1);    
+	$weather["humidity"]=number_format($meteobridgeapi[3], 0);
+	$weather["wind_speed"]=$meteobridgeapi[17];
+	//real feel
+    $weather['realfeel']=round(($weather['temp'] + 0.33*($weather['humidity']/100)*6.105*exp(17.27*$weather['temp']/(237.7+$weather['temp']))- 0.70*$weather["wind_speed"] - 4.00), 1);
+    $t=7.5*$weather["temp"]/(237.7+$weather["temp"]);
+    $et=pow(10, $t);
+	$e=6.112*$et*($weather["humidity"]/100);  
+	
+	
 	$conv = 1;
-	if ($tempunit=='C' && $windunit == 'mph') {$conv= '1';}
-	else if ($windunit == 'mph') {$conv= '(1.8) +32';}
-	else if ($windunit == 'm/s') {$conv= '1';}
-	else if ($windunit == 'km/h'){$conv= '1';}
-	$max = 40;
-	if ($windunit == 'mph') {$max= '120';}
-	else if ($units == 'uk' && $windunit == 'mph') {$max= '40';}
-	else $max= '40';
-	
+	if ($tempunit  == 'F') {$conv= '(1.8) +32';}	
+	$max = 50;
+	if ($tempunit  == 'F') {$max= '120';}	
 	$interval = 5;
-	if ($windunit == 'mph') {$interval= '10';}
-	else $interval= '5';
+	if ($tempunit  == 'F') {$interval= '10';}
+
+	//F
+    if ($tempunit='F') {
+        if ($weather["temp_today_high"]<=41) {
+            $dewcolor= '#4ba0ad';
+        } elseif ($weather["temp_today_high"]<50) {
+            $dewcolor= '#9bbc2f';
+        } elseif ($weather["temp_today_high"]<59) {
+            $dewcolor= '#e6a141';
+        } elseif ($weather["temp_today_high"]<77) {
+            $dewcolor= '#ec5732';
+        } elseif ($weather["temp_today_high"]<150) {
+            $dewcolor= '#d35f50';
+        }
+    }
+	//C
+    if ($tempunit='C') {
+        if ($weather["temp_today_high"]<=5) {
+            $tempcolor= '#4ba0ad';
+        } elseif ($weather["temp_today_high"]<10) {
+            $dewcolor= '#9bbc2f';
+        } elseif ($weather["temp_today_high"]<15) {
+            $dewcolor= '#e6a141';
+        } elseif ($weather["temp_today_high"]<25) {
+            $dewcolor= '#ec5732';
+        } elseif ($weather["temp_today_high"]<50) {
+            $dewcolor= '#d35f50';
+        }
+	}
 	
+
+
+
+	//F
+    if ($tempunit='F') {
+        if ($weather['realfeel']<=41) {
+            $feelcolor= '#4ba0ad';
+        } elseif ($weather['realfeel']<50) {
+            $feelcolor= '#9bbc2f';
+        } elseif ($weather['realfeel']<59) {
+            $feelcolor= '#e6a141';
+        } elseif ($weather['realfeel']<77) {
+            $feelcolor= '#ec5732';
+        } elseif ($weather['realfeel']<150) {
+            $feelcolor= '#d35f50';
+        }
+    }
+	//C
+    if ($tempunit='C') {
+        if ($weather['realfeel']<=5) {
+            $dewfeel= '#4ba0ad';
+        } elseif ($weather['realfeel']<10) {
+            $feelcolor= '#9bbc2f';
+        } elseif ($weather['realfeel']<15) {
+            $feelcolor= '#e6a141';
+        } elseif ($weather['realfeel']<25) {
+            $feelcolor= '#ec5732';
+        } elseif ($weather['realfeel']<50) {
+            $feelcolor= '#d35f50';
+        }
+    }
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
@@ -137,8 +206,7 @@
 		titleFontSize: 8,
         titleWrap: false,
 		margin: 3,
-		interval:'auto',
-		//maximum: <?php echo $max ;?>,		
+		interval:'auto',			
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
@@ -149,7 +217,7 @@
 		titleFontFamily: "arial",
 		labelFontFamily: "arial",
 		labelFormatter: function ( e ) {
-        return e.value .toFixed(0) + "°<?php echo $tempunit ;?>" ;  
+        return e.value .toFixed(0) + "°" ;  
          },	
 		crosshair: {
 			enabled: true,
@@ -175,9 +243,9 @@
 		
 		{
 			
-			type: "splineArea",
+			type: "spline",
            
-			color:"rgba(208, 95, 45, 1.000)",
+			color:"<?php echo  $dewcolor?>",
 			markerSize:1,
 			showInLegend:false,
 			legendMarkerType: "circle",
@@ -191,7 +259,7 @@
 		{
 			type: "spline",
 			lineDashType: "dash",
-			color:"#d35d4e",
+			color:"<?php echo  $realcolor?>",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",

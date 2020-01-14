@@ -941,7 +941,23 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   <main class="grid1" >
     <articlegraph> 
   <div class=actualg><?php echo date('Y');?> <?php echo $lang['Temperature']?>
-  <temp><?php echo "Max ",$weather["tempymax"]."&deg;"?> </temp><dewpoint><?php echo "Min ",$weather["tempymin"]."&deg;"?> </dewpoint>  </div>   
+  <temp style="background:<?php 
+if($tempunit=='F'){
+if ($weather['tempymax']<=41 ){echo '#4ba0ad';}
+ else if ($weather['tempymax']<50 ){echo '#9bbc2f';}
+ else if ($weather['tempymax']<59 ){echo'#e6a141';}
+ else if ($weather['tempymax']<77 ){echo'#ec5732';}
+ else if ($weather['tempymax']<150 ){echo'#d35f50';}}
+if ($tempunit=='C') {
+if ($weather['tempymax']<=5) {    echo '#4ba0ad';} 
+ elseif ($weather['tempymax']<10) {echo '#9bbc2f';} 
+ elseif ($weather['tempymax']<15) {echo'#e6a141';} 
+ elseif ($weather['tempymax']<25) {echo'#ec5732';} 
+ elseif ($weather['tempymax']<50) {echo'#d35f50';}
+ }?>">
+  <?php echo "Max ",$weather["tempymax"]."&deg;"?> 
+  
+  </temp><dewpoint><?php echo "Min ",$weather["tempymin"]."&deg;"?> </dewpoint>  </div>   
   <iframe  src="weather34charts/yearlytemperaturemedium.php" frameborder="0" scrolling="no" width="100%" height="120px" ></iframe>
    
   </articlegraph> 

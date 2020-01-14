@@ -86,13 +86,53 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0;text-transfor
   <main class="grid1">
    
   <articlegraph> 
- <div class=actualg><?php echo $lang['Dewpoint']." ".strftime('%B',time());?> <temp><?php echo "Max ",$weather["dewmmax"]." &deg;" ?> </temp><dewpoint><?php echo "Min ",$weather["dewmmin"]." &deg;" ?> </dewpoint></div>   
+ <div class=actualg><?php echo $lang['Dewpoint']." ".strftime('%B',time());?>
+
+ <temp style="background:<?php 
+if($tempunit=='F'){
+if ($weather['dewmmax']<=41 ){echo '#4ba0ad';}
+ else if ($weather['dewmmax']<50 ){echo '#9bbc2f';}
+ else if ($weather['dewmmax']<59 ){echo'#e6a141';}
+ else if ($weather['dewmmax']<77 ){echo'#ec5732';}
+ else if ($weather['dewmmax']<150 ){echo'#d35f50';}}
+if ($tempunit=='C') {
+if ($weather['dewmmax']<=5) {    echo '#4ba0ad';} 
+ elseif ($weather['dewmmax']<10) {echo '#9bbc2f';} 
+ elseif ($weather['dewmmax']<15) {echo'#e6a141';} 
+ elseif ($weather['dewmmax']<25) {echo'#ec5732';} 
+ elseif ($weather['dewmmax']<50) {echo'#d35f50';}
+ }?>">
+ 
+ 
+ <?php echo "Max ",$weather["dewmmax"]." &deg;" ?> </temp>
+ 
+ <dewpoint><?php echo "Min ",$weather["dewmmin"]." &deg;" ?> </dewpoint></div>   
     
   <iframe  src="weather34charts/monthlydewpointsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>   
   </articlegraph> 
   
   <articlegraph> 
-  <div class=actualg><?php echo date('Y')." ".$lang['Dewpoint']?> <temp><?php echo "Max ",$weather["dewymax"]." &deg;" ?> </temp><dewpoint><?php echo "Min ",$weather["dewymin"]." &deg;" ?> </dewpoint></div>   
+  <div class=actualg><?php echo date('Y')." ".$lang['Dewpoint']?> 
+  
+  <temp   style="background:<?php 
+if($tempunit=='F'){
+if ($weather['dewymax']<=41 ){echo '#4ba0ad';}
+ else if ($weather['dewymax']<50 ){echo '#9bbc2f';}
+ else if ($weather['dewymax']<59 ){echo'#e6a141';}
+ else if ($weather['dewymax']<77 ){echo'#ec5732';}
+ else if ($weather['dewymax']<150 ){echo'#d35f50';}}
+if ($tempunit=='C') {
+if ($weather['dewymax']<=5) {    echo '#4ba0ad';} 
+ elseif ($weather['dewymax']<10) {echo '#9bbc2f';} 
+ elseif ($weather['dewymax']<15) {echo'#e6a141';} 
+ elseif ($weather['dewymax']<25) {echo'#ec5732';} 
+ elseif ($weather['dewymax']<50) {echo'#d35f50';}
+ }?>">
+  
+  <?php echo "Max ",$weather["dewymax"]." &deg;" ?> 
+  </temp><dewpoint>
+  
+  <?php echo "Min ",$weather["dewymin"]." &deg;" ?> </dewpoint></div>   
   <iframe  src="weather34charts/yearlydewpointsmall.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 

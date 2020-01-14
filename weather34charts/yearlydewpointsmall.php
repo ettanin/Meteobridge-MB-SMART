@@ -15,15 +15,45 @@
 	
 	
 	include('preload.php');
+	$file_live=file_get_contents("../mbridge/MBrealtimeupload.txt");
+	$meteobridgeapi=explode(" ",$file_live);	
+	$weather["dewymax"]		    = $meteobridgeapi[54]; //temp max year
+	
 	$conv = 1;
-	if ($tempunit=='C' && $windunit == 'mph') {$conv= '1';}
-	else if ($windunit == 'mph') {$conv= '(1.8) +32';}
-	else if ($windunit == 'm/s') {$conv= '1';}
-	else if ($windunit == 'km/h'){$conv= '1';}
-	$interval = 1;
-	if ($windunit == 'mph') {$interval= '0.5';}
-	else if ($windunit == 'm/s') {$interval= '1';}
-	else if ($windunit == 'km/h'){$interval= '1';}
+	if ($tempunit  == 'F') {$conv= '(1.8) +32';}	
+	$max = 50;
+	if ($tempunit  == 'F') {$max= '120';}	
+	$interval = 5;
+	if ($tempunit  == 'F') {$interval= '10';}
+
+	//F
+    if ($tempunit='F') {
+        if ($weather["dewymax"]<=41 ) {
+            $tempcolor= '#4ba0ad';
+        } elseif ($weather["dewymax"]<50 ) {
+            $tempcolor= '#9bbc2f';
+        } elseif ($weather["dewymax"]<59 ) {
+            $tempcolor= '#e6a141';
+        } elseif ($weather["dewymax"]<77 ) {
+            $tempcolor= '#ec5732';
+        } elseif ($weather["dewymax"]<150 ) {
+            $tempcolor= '#d35f50';
+        }
+    }
+	//C
+    if ($tempunit='C') {
+        if ($weather["dewymax"]<=5 ) {
+            $tempcolor= '#4ba0ad';
+        } elseif ($weather["dewymax"]<10 ) {
+            $tempcolor= '#9bbc2f';
+        } elseif ($weather["dewymax"]<15 ) {
+            $tempcolor= '#e6a141';
+        } elseif ($weather["dewymax"]<25 ) {
+            $tempcolor= '#ec5732';
+        } elseif ($weather["dewymax"]<50 ) {
+            $tempcolor= '#d35f50';
+        }
+    }
 	
 	$weatherfile = date('Y');
 	
@@ -32,7 +62,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>Dewpoint Month CHART</title>	
+		<title>Dewpoint Year CHART</title>	
 		<script src=../js/jquery.js></script>
 		<script src=canvasJs.js></script>
 	';	
@@ -169,7 +199,7 @@
 			data: [
 		{
 			type: "column",
-			color:"#ec5519",
+			color:"<?php echo $tempcolor?>",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",

@@ -14,16 +14,52 @@
 	####################################################################################################
 	
 	include('preload.php');
-	$weatherfile = date('F');
+	$file_live=file_get_contents("../mbridge/MBrealtimeupload.txt");
+	$meteobridgeapi=explode(" ",$file_live);	
+	$weather["tempmmax"]		    = $meteobridgeapi[86]; //temp max month	
+	$weather["tempmmin"]		    = $meteobridgeapi[88]; //temp min month
+	
+	
 	$conv = 1;
-	if ($tempunit=='C' && $windunit == 'mph') {$conv= '1';}
-	else if ($windunit == 'mph') {$conv= '(1.8) +32';}
-	else if ($windunit == 'm/s') {$conv= '1';}
-	else if ($windunit == 'km/h'){$conv= '1';}
-	$interval = 1;
-	if ($windunit == 'mph') {$interval= '0.5';}
-	else if ($windunit == 'm/s') {$interval= '1';}
-	else if ($windunit == 'km/h'){$interval= '1';}
+	if ($tempunit  == 'F') {$conv= '(1.8) +32';}	
+	$max = 50;
+	if ($tempunit  == 'F') {$max= '120';}	
+	$interval = 5;
+	if ($tempunit  == 'F') {$interval= '10';}
+
+
+
+	//F
+    if ($tempunit='F') {
+        if ($weather["tempmmax"]<=41 ) {
+            $tempcolor= '#4ba0ad';
+        } elseif ($weather["tempmmax"]<50 ) {
+            $tempcolor= '#9bbc2f';
+        } elseif ($weather["tempmmax"]<59 ) {
+            $tempcolor= '#e6a141';
+        } elseif ($weather["tempmmax"]<77 ) {
+            $tempcolor= '#ec5732';
+        } elseif ($weather["tempmmax"]<150 ) {
+            $tempcolor= '#d35f50';
+        }
+    }
+	//C
+    if ($tempunit='C') {
+        if ($weather["tempmmax"]<=5 ) {
+            $tempcolor= '#4ba0ad';
+        } elseif ($weather["tempmmax"]<10 ) {
+            $tempcolor= '#9bbc2f';
+        } elseif ($weather["tempmmax"]<15 ) {
+            $tempcolor= '#e6a141';
+        } elseif ($weather["tempmmax"]<25 ) {
+            $tempcolor= '#ec5732';
+        } elseif ($weather["tempmmax"]<50 ) {
+            $tempcolor= '#d35f50';
+        }
+    }
+
+	$weatherfile = date('F');
+	
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -168,7 +204,7 @@
 	   		indexLabelFontWeight: "bold",
        		indexLabelWrap: true,
 	   		indexLabelPlacement: "outside",			
-			color:"#ec5519",
+			color:"<?php echo $tempcolor?>",
 			markerSize:0,			
 			showInLegend:false,
 			legendMarkerType: "circle",

@@ -110,21 +110,66 @@ align-items:center;justify-content:center;margin-bottom:10px;top:0}
   
   <articlegraph> 
   <div class=actualt>
-  <temp><?php echo "Max ",$weather["temp_today_high"]."&deg;"?> </temp> 
+  <temp style="background:<?php 
+if($tempunit=='F'){
+if ($weather['temp_today_high']<=41 ){echo '#4ba0ad';}
+ else if ($weather['temp_today_high']<50 ){echo '#9bbc2f';}
+ else if ($weather['temp_today_high']<59 ){echo'#e6a141';}
+ else if ($weather['temp_today_high']<77 ){echo'#ec5732';}
+ else if ($weather['temp_today_high']<150 ){echo'#d35f50';}}
+if ($tempunit=='C') {
+if ($weather['temp_today_high']<=5) {    echo '#4ba0ad';} 
+ elseif ($weather['temp_today_high']<10) {echo '#9bbc2f';} 
+ elseif ($weather['temp_today_high']<15) {echo'#e6a141';} 
+ elseif ($weather['temp_today_high']<25) {echo'#ec5732';} 
+ elseif ($weather['temp_today_high']<50) {echo'#d35f50';}
+ }?>"> 
+<?php echo "Max ",$weather["temp_today_high"]."&deg;"?> </temp> 
+  
+  
   <dewpoint><?php echo "Min ",$weather["temp_today_low"]."&deg;"?> </dewpoint>
-  <feel>Feels--</feel>     
+  
+  
+  <feel style="background:<?php 
+ if ($weather['realfeel']<=5 ){echo '#4ba0ad';}
+ else if ($weather['realfeel']<10 ){echo '#9bbc2f';}
+ else if ($weather['realfeel']<15 ){echo'#e6a141';}
+ else if ($weather['realfeel']<25 ){echo'#ec5732';}
+ else if ($weather['realfeel']<50 ){echo'#d35f50';}?>">
+ <?php echo $lang['Feelslike']?>
+  
+  
+  
+  
+  </feel>     
   </div>  
   <iframe  src="weather34charts/todaytempmedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
    
   </articlegraph> 
   <articlegraph> 
   <div class=actualt>
-  <temp><?php echo $lang['Dewpoint']?> <?php echo "Max ",$weather["dewmax"]."&deg;"?> </temp> 
-  <dewpoint><?php echo $lang['Dewpoint']?> <?php echo "Min ",$weather["dewmin"]."&deg;"?> </dewpoint> 
-  <wetbulb><?php echo $lang['Wetbulb']?>--</wetbulb> 
+  <temp style="background:<?php 
+if($tempunit=='F'){
+if ($weather['dewmax']<=41 ){echo '#4ba0ad';}
+ else if ($weather['dewmax']<50 ){echo '#9bbc2f';}
+ else if ($weather['dewmax']<59 ){echo'#e6a141';}
+ else if ($weather['dewmax']<77 ){echo'#ec5732';}
+ else if ($weather['dewmax']<150 ){echo'#d35f50';}}
+if ($tempunit=='C') {
+if ($weather['dewmax']<=5) {    echo '#4ba0ad';} 
+ elseif ($weather['dewmax']<10) {echo '#9bbc2f';} 
+ elseif ($weather['dewmax']<15) {echo'#e6a141';} 
+ elseif ($weather['dewmax']<25) {echo'#ec5732';} 
+ elseif ($weather['dewmax']<50) {echo'#d35f50';}
+ }?>"> 
+  <?php echo $lang['Dewpoint']?> <?php echo "Max ",$weather["dewmax"]."&deg;"?> </temp> 
+
+
+  <dewpoint><?php echo $lang['Dewpoint']?> <?php echo "Min ",$weather["dewmin"]."&deg;"?> </dewpoint>  
+
+
   </span></blue></div>  
-  <iframe  src="weather34charts/todaydewmedium.php" frameborder="0" scrolling="no" width="100%"></iframe>
-   
+  <iframe  src="weather34charts/todaydewmedium.php" frameborder="0" scrolling="no" width="100%"></iframe>   
   </articlegraph> 
   
     

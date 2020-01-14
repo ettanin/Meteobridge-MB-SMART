@@ -42,29 +42,29 @@
 
 	//F
     if ($tempunit='F') {
-        if ($weather["temp_avgtoday"]<=41 ) {
+        if ($weather["temp_today_high"]<=41 ) {
             $tempcolor= '#4ba0ad';
-        } elseif ($weather["temp_avgtoday"]<50 ) {
+        } elseif ($weather["temp_today_high"]<50 ) {
             $tempcolor= '#9bbc2f';
-        } elseif ($weather["temp_avgtoday"]<59 ) {
+        } elseif ($weather["temp_today_high"]<59 ) {
             $tempcolor= '#e6a141';
-        } elseif ($weather["temp_avgtoday"]<77 ) {
+        } elseif ($weather["temp_today_high"]<77 ) {
             $tempcolor= '#ec5732';
-        } elseif ($weather["temp_avgtoday"]<150 ) {
+        } elseif ($weather["temp_today_high"]<150 ) {
             $tempcolor= '#d35f50';
         }
     }
 	//C
     if ($tempunit='C') {
-        if ($weather["temp_avgtoday"]<=5 ) {
+        if ($weather["temp_today_high"]<=5 ) {
             $tempcolor= '#4ba0ad';
-        } elseif ($weather["temp_avgtoday"]<10 ) {
+        } elseif ($weather["temp_today_high"]<10 ) {
             $tempcolor= '#9bbc2f';
-        } elseif ($weather["temp_avgtoday"]<15 ) {
+        } elseif ($weather["temp_today_high"]<15 ) {
             $tempcolor= '#e6a141';
-        } elseif ($weather["temp_avgtoday"]<25 ) {
+        } elseif ($weather["temp_today_high"]<25 ) {
             $tempcolor= '#ec5732';
-        } elseif ($weather["temp_avgtoday"]<50 ) {
+        } elseif ($weather["temp_today_high"]<50 ) {
             $tempcolor= '#d35f50';
         }
     }
