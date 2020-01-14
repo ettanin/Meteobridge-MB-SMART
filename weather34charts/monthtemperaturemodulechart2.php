@@ -19,22 +19,32 @@
 	$weather["tempydmin"]=$meteobridgeapi[84];    
     $weather["tempmmax"]=$meteobridgeapi[86];    
     $weather["tempmmin"]=$meteobridgeapi[88];
-    $weather["tempymax"]=$meteobridgeapi[90];	
-
-	$tempcolor="RGBA(208,95,45,1)";
-	if ($weather["tempmmax"]<=5){$tempcolor= '#4ba0ad';}
-	else if ($weather["tempmmax"]<10){$tempcolor= '#9bbc2f';}
-	else if ($weather["tempmmax"]<15){$tempcolor= '#e6a141';}
-	else if ($weather["tempmmax"]<25){$tempcolor= '#ec5732';}
-	else if ($weather["tempmmax"]<50){$tempcolor= '#d35f50';}
-
-
-
+	$weather["tempymax"]=$meteobridgeapi[90];	
+	
 	$conv = 1;
 	if ($tempunit == 'F') {$conv= '(1.8) +32';}	
 	$interval = 1;
 	if ($tempunit == 'F') {$interval= '0.5';}
 	$weatherfile = date('F');	
+	
+
+	
+	//F
+if ($tempunit='F'){
+	if ($weather["tempmmax"]<=41){$tempcolor= '#4ba0ad';}
+	else if ($weather["tempmmax"]<=50){$tempcolor= '#9bbc2f';}
+	else if ($weather["tempmmax"]<=59){$tempcolor= '#e6a141';}
+	else if ($weather["tempmmax"]<=77){$tempcolor= '#ec5732';}
+	else if ($weather["tempmmax"]<=150){$tempcolor= '#d35f50';}}
+	//C
+	if ($tempunit='C'){
+	if ($weather["tempmmax"]<=5){$tempcolor= '#4ba0ad';}
+	else if ($weather["tempmmax"]<=10){$tempcolor= '#9bbc2f';}
+	else if ($weather["tempmmax"]<=15){$tempcolor= '#e6a141';}
+	else if ($weather["dewymax"]<=25){$tempcolor= '#ec5732';}
+	else if ($weather["tempmmax"]<=50){$tempcolor= '#d35f50';}}
+
+
 	
 	
 	

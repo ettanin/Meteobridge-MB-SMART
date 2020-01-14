@@ -14,21 +14,30 @@
 	####################################################################################################
 	
 	include('preload.php');	
-	$file_live=file_get_contents("../mbridge/MBrealtimeupload.txt");
-	$meteobridgeapi=explode(" ",$file_live);	
-    $weather["tempymax"]=$meteobridgeapi[90];	
-
-	$tempcolor="RGBA(208,95,45,1)";
-	if ($weather["tempymax"]<=5){$tempcolor= '#4ba0ad';}
-	else if ($weather["tempymax"]<10){$tempcolor= '#9bbc2f';}
-	else if ($weather["tempymax"]<15){$tempcolor= '#e6a141';}
-	else if ($weather["tempymax"]<25){$tempcolor= '#ec5732';}
-	else if ($weather["tempymax"]<50){$tempcolor= '#d35f50';}
-
+	$file_live2=file_get_contents("../mbridge/MBrealtimeupload.txt");
+	$meteobridgeapi2=explode(" ",$file_live2);	
+    $weather["tempymax"]=$meteobridgeapi2[90];	
+	
 	$conv = 1;
 	if ($tempunit == 'F') {$conv= '(1.8) +32';}	
 	$interval = 1;
 	if ($tempunit == 'F') {$interval= '0.5';}
+
+	//F
+	if ($tempunit='F'){
+	if ($weather["tempymax"]<=41){$tempcolor= '#4ba0ad';}
+	else if ($weather["tempymax"]<=50){$tempcolor= '#9bbc2f';}
+	else if ($weather["tempymax"]<=59){$tempcolor= '#e6a141';}
+	else if ($weather["tempymax"]<=77){$tempcolor= '#ec5732';}
+	else if ($weather["tempymax"]<=150){$tempcolor= '#d35f50';}}
+	//C
+	if ($tempunit='C'){
+	if ($weather["tempymax"]<=5){$tempcolor= '#4ba0ad';}
+	else if ($weather["tempymax"]<=10){$tempcolor= '#9bbc2f';}
+	else if ($weather["tempymax"]<=15){$tempcolor= '#e6a141';}
+	else if ($weather["tempymax"]<=25){$tempcolor= '#ec5732';}
+	else if ($weather["tempymax"]<=50){$tempcolor= '#d35f50';}}
+	
 	$weatherfile = date('F');	
 	
 	

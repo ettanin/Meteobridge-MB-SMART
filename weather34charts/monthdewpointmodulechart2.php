@@ -16,19 +16,30 @@
 	include('preload.php');	
 	$file_live2=file_get_contents("../mbridge/MBrealtimeupload.txt");
 	$meteobridgeapi2=explode(" ",$file_live2);
-    $weather["dewmmax2"]=$meteobridgeapi2[48];
-
-	if ($weather["dewmmax2"]<=5){$dewcolor= '#4ba0ad';}
-	else if ($weather["dewmmax2"]<10){$dewcolor= '#9bbc2f';}
-	else if ($weather["dewmmax2"]<15){$dewcolor= '#e6a141';}
-	else if ($weather["dewmmax2"]<25){$dewcolor= '#ec5732';}
-	else if ($weather["dewmmax2"]<50){$dewcolor= '#d35f50';}
-
+	$weather["dewmmax"]=$meteobridgeapi2[48];
+	
 	$conv = 1;
 	if ($tempunit == 'F') {$conv= '(1.8) +32';}	
 	$interval = 1;
 	if ($tempunit == 'F') {$interval= '0.5';}
 	$weatherfile = date('F');	
+	
+
+//F
+if ($tempunit='F'){
+	if ($weather["dewmmax"]<=41){$tempcolor= '#4ba0ad';}
+	else if ($weather["dewmmax"]<=50){$tempcolor= '#9bbc2f';}
+	else if ($weather["dewmmax"]<=59){$tempcolor= '#e6a141';}
+	else if ($weather["dewmmax"]<=77){$tempcolor= '#ec5732';}
+	else if ($weather["dewmmax"]<=150){$tempcolor= '#d35f50';}}
+	//C
+	if ($tempunit='C'){
+	if ($weather["dewmmax"]<=5){$tempcolor= '#4ba0ad';}
+	else if ($weather["dewmmax"]<=10){$tempcolor= '#9bbc2f';}
+	else if ($weather["dewmmax"]<=15){$tempcolor= '#e6a141';}
+	else if ($weather["dewymax"]<=25){$tempcolor= '#ec5732';}
+	else if ($weather["dewmmax"]<=50){$tempcolor= '#d35f50';}}
+
 	
 	
 	
@@ -167,7 +178,7 @@
 		{
 			
 			type: "spline",			
-			color:"<?php echo $dewcolor?>",
+			color:"<?php echo $tempcolor?>",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",

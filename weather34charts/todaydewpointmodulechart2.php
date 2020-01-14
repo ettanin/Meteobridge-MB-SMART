@@ -15,44 +15,53 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	include('preload.php');
+	include('preload.php');	
 	$file_live=file_get_contents("../mbridge/MBrealtimeupload.txt");
 	$meteobridgeapi=explode(" ",$file_live);	
-	$weather["dewpoint"]=number_format($meteobridgeapi[4], 1);    
-	$weather["dewmax"]=$meteobridgeapi[63];   
-	$weather["dewmin"]=$meteobridgeapi[65];
-	$weather["temp"]=$meteobridgeapi[2];
-	$weather["barometer"]=$meteobridgeapi[10];
+	$weather["temp"]=$meteobridgeapi[2];  
+	$weather["temp_avgtoday"]=$meteobridgeapi[152]; 
+	$weather["temp_today_high"]=$meteobridgeapi[26];
+    $weather["temp_today_low"]=$meteobridgeapi[28];   
+    $weather["dewpoint"]=number_format($meteobridgeapi[4], 1);    
 	$weather["humidity"]=number_format($meteobridgeapi[3], 0);
-
-
-//wetbulb
-$Tc =($weather['temp']);$P = $weather['barometer'];$RH = $weather['humidity'];
-$Tdc = (($Tc - (14.55 + 0.114 * $Tc) * (1 - (0.01 * $RH)) - pow((2.5 + 0.007 * $Tc) * (1 - (0.01 * $RH)), 3) - (15.9 + 0.117 * $Tc) * pow(1 - (0.01 * $RH), 14)));
-$E = (6.11 * pow(10, (7.5 * $Tdc / (237.7 + $Tdc))));
-$wetbulbcalc = (((0.00066 * $P) * $Tc) + ((4098 * $E) / pow(($Tdc + 237.7), 2) * $Tdc)) / ((0.00066 * $P) + (4098 * $E) / pow(($Tdc + 237.7), 2));
-$wetbulbx =number_format($wetbulbcalc, 1);
-$weather['wetbulb']=$wetbulbx;
+	$weather["wind_speed"]=$meteobridgeapi[17];
 	
-	$dewpointcolor="#df341d";$wetbulbcolor="#df341d";
-	if ($weather['dewmin']<=5){$dewpointcolor= '#4ba0ad';}
-	else if ($weather['dewmin']<10){$dewpointcolor= '#9bbc2f';}
-	else if ($weather['dewmin']<15){$dewpointcolor= '#e6a141';}
-	else if ($weather['dewmin']<25){$dewpointcolor= '#ec5732';}
-	else if ($weather['dewmin']<50){$dewpointcolor= '#d35f50';}	
+	
+	$conv = 1;
+	if ($tempunit == 'F') {$conv= '(1.8) +32';}	
+	$interval = 1;
+	if ($tempunit == 'F') {$interval= '0.5';}
 
-	if ($weather['wetbulb']<=5){$wetbulbcolor= '#4ba0ad';}
-	else if ($weather['wetbulb']<10){$wetbulbcolor= '#9bbc2f';}
-	else if ($weather['wetbulb']<15){$wetbulbcolor= '#e6a141';}
-	else if ($weather['wetbulb']<25){$wetbulbcolor= '#ec5732';}
-	else if ($weather['wetbulb']<50){$wetbulbcolor= '#d35f50';}
-    $conv = 1;
-	if ($tempunit == 'F') {$conv= '(1.8) +32';}
-	$max = 50;
-	if ($tempunit == 'F') {$max= '120';}
-	else $max= '40';
-	$interval = 5;
-	if ($tempunit == 'F') {$interval= '10';}
+	//F
+    if ($tempunit='F') {
+        if ($weather["dewpoint"]<=41 ) {
+            $dewcolor= '#4ba0ad';
+        } elseif ($weather["dewpoint"]<50 ) {
+            $dewcolor= '#9bbc2f';
+        } elseif ($weather["dewpoint"]<59 ) {
+            $dewcolor= '#e6a141';
+        } elseif ($weather["dewpoint"]<77 ) {
+            $dewcolor= '#ec5732';
+        } elseif ($weather["dewpoint"]<150 ) {
+            $dewcolor= '#d35f50';
+        }
+    }
+	//C
+    if ($tempunit='C') {
+        if ($weather["dewpoint"]<=5 ) {
+            $tempcolor= '#4ba0ad';
+        } elseif ($weather["dewpoint"]<10 ) {
+            $dewcolor= '#9bbc2f';
+        } elseif ($weather["dewpoint"]<15 ) {
+            $dewcolor= '#e6a141';
+        } elseif ($weather["dewpoint"]<25 ) {
+            $dewcolor= '#ec5732';
+        } elseif ($weather["dewpoint"]<50 ) {
+            $dewcolor= '#d35f50';
+        }
+    }
+
+
 	
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -156,8 +165,7 @@ $weather['wetbulb']=$wetbulbx;
 			
 		axisY:{
 		margin: 0,
-		interval:1,
-		//maximum: <?php echo $max ;?>,		
+		interval:1,		
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
@@ -195,7 +203,7 @@ $weather['wetbulb']=$wetbulbx;
 		{
 			
 			type: "spline",           
-			color:"<?php echo $dewpointcolor;?>",
+			color:"<?php echo $dewcolor;?>",
 			markerSize:1,
 			showInLegend:false,
 			legendMarkerType: "circle",

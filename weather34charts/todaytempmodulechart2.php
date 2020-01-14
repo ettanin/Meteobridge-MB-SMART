@@ -15,13 +15,14 @@
 	
 	
 	include('preload.php');
+	
 	$file_live=file_get_contents("../mbridge/MBrealtimeupload.txt");
 	$meteobridgeapi=explode(" ",$file_live);	
 	$weather["temp"]=$meteobridgeapi[2];  
 	$weather["temp_avgtoday"]=$meteobridgeapi[152]; 
 	$weather["temp_today_high"]=$meteobridgeapi[26];
     $weather["temp_today_low"]=$meteobridgeapi[28];   
-    $weather["dewpoint"]=number_format($meteobridgeapi[4], 1);    
+    $weather['realfeel']=number_format($meteobridgeapi[4], 1);    
 	$weather["humidity"]=number_format($meteobridgeapi[3], 0);
 	$weather["wind_speed"]=$meteobridgeapi[17];
 	//real feel
@@ -29,23 +30,56 @@
     $t=7.5*$weather["temp"]/(237.7+$weather["temp"]);
     $et=pow(10, $t);
 	$e=6.112*$et*($weather["humidity"]/100);  	
-	$realcolor="#df341d";
-	if ($weather['realfeel']< $weather['temp']){$realcolor= 'hsla(185, 100%, 35%,1)';}	
-	
-
-	
-	if ($weather["temp"]<=5){$tempcolor= '#4ba0ad';}
-	else if ($weather["temp_avgtoday"]<10){$tempcolor= '#9bbc2f';}
-	else if ($weather["temp_avgtoday"]<15){$tempcolor= '#e6a141';}
-	else if ($weather["temp_avgtoday"]<25){$tempcolor= '#ec5732';}
-	else if ($weather["temp_avgtoday"]<50){$tempcolor= '#d35f50';}
 
 	$conv = 1;
-	if ($tempunit == 'F') {$conv= '(1.8) +32';}
+	if ($tempunit  == 'F') {$conv= '(1.8) +32';}	
 	$max = 50;
-	if ($tempunit == 'F') {$max= '120';}
+	if ($tempunit  == 'F') {$max= '120';}	
 	$interval = 5;
-	if ($tempunit == 'F') {$interval= '10';}
+	if ($tempunit  == 'F') {$interval= '10';}
+
+	//F
+	if ($tempunit='F'){
+		if ($weather["temp_avgtoday"]<=41){$tempcolor= '#4ba0ad';}
+		else if ($weather["temp_avgtoday"]<=50){$tempcolor= '#9bbc2f';}
+		else if ($weather["temp_avgtoday"]<=59){$tempcolor= '#e6a141';}
+		else if ($weather["temp_avgtoday"]<=77){$tempcolor= '#ec5732';}
+		else if ($weather["temp_avgtoday"]<=150){$tempcolor= '#d35f50';}}
+		//C
+		if ($tempunit='F'){
+		if ($weather["temp_avgtoday"]<=5){$tempcolor= '#4ba0ad';}
+		else if ($weather["temp_avgtoday"]<=10){$tempcolor= '#9bbc2f';}
+		else if ($weather["temp_avgtoday"]<=15){$tempcolor= '#e6a141';}
+		else if ($weather["temp_avgtoday"]<=25){$tempcolor= '#ec5732';}
+		else if ($weather["temp_avgtoday"]<=50){$tempcolor= '#d35f50';}}
+
+	//F
+    if ($tempunit='F') {
+        if ($weather['realfeel']<=41 ) {
+            $dewcolor= '#4ba0ad';
+        } elseif ($weather['realfeel']<50 ) {
+            $dewcolor= '#9bbc2f';
+        } elseif ($weather['realfeel']<59 ) {
+            $dewcolor= '#e6a141';
+        } elseif ($weather['realfeel']<77 ) {
+            $dewcolor= '#ec5732';
+        } elseif ($weather['realfeel']<150 ) {
+            $dewcolor= '#d35f50';
+        }}
+	//C
+    if ($tempunit='C') {
+        if ($weather['realfeel']<=5) {
+            $tempcolor= '#4ba0ad';
+        } elseif ($weather['realfeel']<10) {
+            $dewcolor= '#9bbc2f';
+        } elseif ($weather['realfeel']<15) {
+            $dewcolor= '#e6a141';
+        } elseif ($weather['realfeel']<25) {
+            $dewcolor= '#ec5732';
+        } elseif ($weather['realfeel']<50) {
+            $dewcolor= '#d35f50';
+        }}
+	
 	
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -204,7 +238,7 @@
 			type: "spline",
 			lineDashType: "dash",
 			//color:"#009bab",
-			color:"<?php echo $realcolor;?>",
+			color:"<?php echo $dewcolor;?>",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
