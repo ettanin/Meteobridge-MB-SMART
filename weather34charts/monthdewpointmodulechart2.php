@@ -13,12 +13,21 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	include('preload.php');include('../settings1.php');
-	
+	include('preload.php');	
+	$file_live2=file_get_contents("../mbridge/MBrealtimeupload.txt");
+	$meteobridgeapi2=explode(" ",$file_live2);
+    $weather["dewmmax2"]=$meteobridgeapi2[48];
+
+	if ($weather["dewmmax2"]<=5){$dewcolor= '#4ba0ad';}
+	else if ($weather["dewmmax2"]<10){$dewcolor= '#9bbc2f';}
+	else if ($weather["dewmmax2"]<15){$dewcolor= '#e6a141';}
+	else if ($weather["dewmmax2"]<25){$dewcolor= '#ec5732';}
+	else if ($weather["dewmmax2"]<50){$dewcolor= '#d35f50';}
+
 	$conv = 1;
 	if ($tempunit == 'F') {$conv= '(1.8) +32';}	
 	$interval = 1;
-	if ($tempunit == 'F') {$interval= '0.5';}	
+	if ($tempunit == 'F') {$interval= '0.5';}
 	$weatherfile = date('F');	
 	
 	
@@ -52,9 +61,9 @@
 		if(allLinesArray.length>0){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].split(',');	
-				if ( rowData[1] >-100)			
-					dataPoints1.push({label:rowData[0],y:parseFloat(rowData[3]<?php echo "*". $conv ?>)});
+				var rowData = allLinesArray[i].split(',');
+				if ( rowData[1] >-100)
+					dataPoints1.push({label:rowData[0],y:parseFloat(rowData[3]*<?php echo $conv ?>)});
 					
 			}
 		}
@@ -65,9 +74,9 @@
 		if(allLinesArray.length>0){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].split(',');	
-				if ( rowData[1] >-100)			
-					dataPoints2.push({label: rowData[0],y:parseFloat(rowData[4]<?php echo "*". $conv ?>)});
+				var rowData = allLinesArray[i].split(',');
+				if ( rowData[1] >-100)
+					dataPoints2.push({label: rowData[0],y:parseFloat(rowData[4]*<?php echo $conv ?>)});
 					//parseFloat(rowData[13])});
 				
 			}
@@ -105,7 +114,7 @@
 			gridDashType: "dot",	
 			titleFontFamily: "arial",	
 			labelFontFamily: "arial",	
-			minimum:-1,
+			minimum:-1,	
 			interval:5,		
 			intervalType:"day",
 			xValueType: "dateTime",	
@@ -133,8 +142,7 @@
 		labelFontColor:' #888',
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
-		labelFormatter: function ( e ) {return e.value .toFixed(0);  
-         },		 
+			 
 		crosshair: {
 			enabled: true,
 			snapToDataPoint: true,
@@ -158,12 +166,12 @@
  data: [
 		{
 			
-			type: "column",
-			color:"#d85026",
+			type: "spline",			
+			color:"<?php echo $dewcolor?>",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
-			lineThickness: 0,
+			lineThickness: 1,
 			markerType: "none",
 			name:"Hi Dewpoint",
 			dataPoints: dataPoints1,
@@ -173,10 +181,11 @@
 			
 			type: "spline",			
 			color:"#00A4B4",
+			lineDashType: "dash",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
-			lineThickness: 0,
+			lineThickness: 1,
 			markerType: "none",
 			name:"Lo Dewpoint",
 			dataPoints: dataPoints2,

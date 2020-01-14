@@ -13,13 +13,31 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 	
-	include('preload.php');include('../settings1.php');
-	
+	include('preload.php');
+	$file_live=file_get_contents("../mbridge/MBrealtimeupload.txt");
+	$meteobridgeapi=explode(" ",$file_live);	
+	$weather["tempydmin"]=$meteobridgeapi[84];    
+    $weather["tempmmax"]=$meteobridgeapi[86];    
+    $weather["tempmmin"]=$meteobridgeapi[88];
+    $weather["tempymax"]=$meteobridgeapi[90];	
+
+	$tempcolor="RGBA(208,95,45,1)";
+	if ($weather["tempmmax"]<=5){$tempcolor= '#4ba0ad';}
+	else if ($weather["tempmmax"]<10){$tempcolor= '#9bbc2f';}
+	else if ($weather["tempmmax"]<15){$tempcolor= '#e6a141';}
+	else if ($weather["tempmmax"]<25){$tempcolor= '#ec5732';}
+	else if ($weather["tempmmax"]<50){$tempcolor= '#d35f50';}
+
+
+
 	$conv = 1;
 	if ($tempunit == 'F') {$conv= '(1.8) +32';}	
 	$interval = 1;
-	if ($tempunit == 'F') {$interval= '0.5';}	
+	if ($tempunit == 'F') {$interval= '0.5';}
 	$weatherfile = date('F');	
+	
+	
+	
 	
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -49,9 +67,9 @@
 		if(allLinesArray.length>0){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].split(',');	
-				if ( rowData[1] >-100)			
-					dataPoints1.push({label:rowData[0],y:parseFloat(rowData[1]<?php echo "*". $conv ?>)});
+				var rowData = allLinesArray[i].split(',');
+				if ( rowData[1] >-100)
+					dataPoints1.push({label:rowData[0],y:parseFloat(rowData[1]*<?php echo $conv ?>)});
 					
 					
 			}
@@ -63,9 +81,9 @@
 		if(allLinesArray.length>0){
 			
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
-				var rowData = allLinesArray[i].split(',');	
-				if ( rowData[1] >-100)			
-					dataPoints2.push({label: rowData[0],y:parseFloat(rowData[2]<?php echo "*". $conv ?>)});
+				var rowData = allLinesArray[i].split(',');
+				if ( rowData[1] >-100)
+					dataPoints2.push({label: rowData[0],y:parseFloat(rowData[2]*<?php echo $conv ?>)});
 					//parseFloat(rowData[13])});
 				
 			}
@@ -103,7 +121,7 @@
 			gridDashType: "dot",	
 			titleFontFamily: "arial",	
 			labelFontFamily: "arial",	
-			minimum:-1,
+			minimum:-1,	
 			interval:5,		
 			intervalType:"day",
 			xValueType: "dateTime",	
@@ -114,7 +132,6 @@
 			labelFontColor: "#F8F8F8",
 			labelFontSize:10,
 			labelBackgroundColor: "#009bab",
-			
 			
 		}
 			
@@ -132,8 +149,7 @@
 		labelFontColor:' #888',
 		labelFontFamily: "Arial",
 		labelFontWeight: "bold",
-		labelFormatter: function ( e ) {return e.value .toFixed(0);  
-         },		 
+			 
 		crosshair: {
 			enabled: true,
 			snapToDataPoint: true,
@@ -156,13 +172,13 @@
 		
  data: [
 		{
-			//Barometer
-			type: "column",
-			color:"#d85026",
+			//temp
+			type: "spline",			
+			color:"<?php echo $tempcolor?>",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
-			lineThickness: 0,
+			lineThickness: 1,
 			markerType: "none",
 			name:"Hi Temp",
 			dataPoints: dataPoints1,
@@ -172,10 +188,11 @@
 			// not used
 			type: "spline",			
 			color:"#00A4B4",
+			lineDashType: "dash",
 			markerSize:0,
 			showInLegend:false,
 			legendMarkerType: "circle",
-			lineThickness: 0,
+			lineThickness: 1,
 			markerType: "none",
 			name:"Lo Temp",
 			dataPoints: dataPoints2,

@@ -15,19 +15,37 @@
 	
 	
 	include('preload.php');
-	$conv = 1;
-	if ($tempunit=='C' && $windunit == 'mph') {$conv= '1';}
-	else if ($windunit == 'mph') {$conv= '(1.8) +32';}
-	else if ($windunit == 'm/s') {$conv= '1';}
-	else if ($windunit == 'km/h'){$conv= '1';}
-	$max = 40;
-	if ($windunit == 'mph') {$max= '120';}
-	else if ($units == 'uk' && $windunit == 'mph') {$max= '40';}
-	else $max= '40';
+	$file_live=file_get_contents("../mbridge/MBrealtimeupload.txt");
+	$meteobridgeapi=explode(" ",$file_live);	
+	$weather["temp"]=$meteobridgeapi[2];  
+	$weather["temp_avgtoday"]=$meteobridgeapi[152]; 
+	$weather["temp_today_high"]=$meteobridgeapi[26];
+    $weather["temp_today_low"]=$meteobridgeapi[28];   
+    $weather["dewpoint"]=number_format($meteobridgeapi[4], 1);    
+	$weather["humidity"]=number_format($meteobridgeapi[3], 0);
+	$weather["wind_speed"]=$meteobridgeapi[17];
+	//real feel
+    $weather['realfeel']=round(($weather['temp'] + 0.33*($weather['humidity']/100)*6.105*exp(17.27*$weather['temp']/(237.7+$weather['temp']))- 0.70*$weather["wind_speed"] - 4.00), 1);
+    $t=7.5*$weather["temp"]/(237.7+$weather["temp"]);
+    $et=pow(10, $t);
+	$e=6.112*$et*($weather["humidity"]/100);  	
+	$realcolor="#df341d";
+	if ($weather['realfeel']< $weather['temp']){$realcolor= 'hsla(185, 100%, 35%,1)';}	
 	
+
+	
+	if ($weather["temp"]<=5){$tempcolor= '#4ba0ad';}
+	else if ($weather["temp_avgtoday"]<10){$tempcolor= '#9bbc2f';}
+	else if ($weather["temp_avgtoday"]<15){$tempcolor= '#e6a141';}
+	else if ($weather["temp_avgtoday"]<25){$tempcolor= '#ec5732';}
+	else if ($weather["temp_avgtoday"]<50){$tempcolor= '#d35f50';}
+
+	$conv = 1;
+	if ($tempunit == 'F') {$conv= '(1.8) +32';}
+	$max = 50;
+	if ($tempunit == 'F') {$max= '120';}
 	$interval = 5;
-	if ($windunit == 'mph') {$interval= '10';}
-	else $interval= '5';
+	if ($tempunit == 'F') {$interval= '10';}
 	
     echo '
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -63,7 +81,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[2] >-50)
-					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[2]<?php echo "*". $conv ?>)});
+					dataPoints1.push({label: rowData[1],y:parseFloat(rowData[2]*<?php echo $conv ?>)});
 			}
 		}
 		requestTempCsv();}function requestTempCsv(){}
@@ -75,7 +93,7 @@
 			for (var i = 0; i <= allLinesArray.length-1; i++) {
 				var rowData = allLinesArray[i].split(',');
 				if ( rowData[7] >-50)
-					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[9]<?php echo "*". $conv ?>)});
+					dataPoints2.push({label: rowData[1],y:parseFloat(rowData[9]*<?php echo $conv ?>)});
 				
 			}
 			drawChart(dataPoints1 , dataPoints2 );
@@ -107,7 +125,7 @@
 			   shared: true, 
  },
  axisX: {
-	gridColor: "#333",    		
+	gridColor: "#333",		    		
 			lineThickness: 1,
 			gridThickness: 1,
 			gridDashType: "dot",	
@@ -131,7 +149,8 @@
 			
 		axisY:{
 		margin: 0,
-		interval:1,		
+		interval:1,
+		//maximum: <?php echo $max ;?>,		
 		lineThickness: 1,		
 		gridThickness: 1,	
 		gridDashType: "dot",	
@@ -168,15 +187,31 @@
 		
 		{
 			
-			type: "spline",			         
-			color:"RGBA(208,95,45,1.00)",
+			type: "spline",			        
+			color:"<?php echo $tempcolor;?>",
 			markerSize:1,
 			showInLegend:false,
 			legendMarkerType: "circle",
 			lineThickness: 1,
 			markerType: "circle",
-			name:" Temperature",
+			name:"Temperature",
 			dataPoints: dataPoints1,
+			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
+			
+		}
+		,
+		{
+			type: "spline",
+			lineDashType: "dash",
+			//color:"#009bab",
+			color:"<?php echo $realcolor;?>",
+			markerSize:0,
+			showInLegend:false,
+			legendMarkerType: "circle",
+			lineThickness: 1,
+			markerType: "circle",
+			name:"- - - Real Feel",
+			dataPoints: dataPoints2,
 			yValueFormatString: "#0.# °<?php echo $tempunit ;?>",
 			
 		}
@@ -192,6 +227,7 @@
 <body>
 
 <div id="chartContainer2" style=" height:150px;margin-top:20px;-webkit-border-radius:4px;border-radius:4px;"></div></div>
+
 
 
 </body></html>
