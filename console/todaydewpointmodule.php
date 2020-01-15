@@ -1,6 +1,6 @@
 <?php include('livedata.php');include('common.php');?>
  <div class="modulecaptionchart"><?php echo $lang['Dewpoint']?> <blue1> &nbsp;&deg;<?php echo $weather["temp_units"]?></blue1></div> 
- <iframe  class="charttempmodule" src="../weather34charts/todaydewpointmodulechart2.php" frameborder="0" scrolling="no" width="320px" height="250px"></iframe>  
+ <iframe  class="charttempmodule" src="weather34charts/todaydewpointmodulechart2.php" frameborder="0" scrolling="no" width="320px" height="250px"></iframe>  
  <div class="legendtemp" style="background:<?php 
  if ($weather["dewmin"]<=5 ){echo '#4ba0ad';}
  else if ($weather["dewmin"]<10 ){echo '#9bbc2f';}

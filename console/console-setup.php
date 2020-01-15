@@ -27,6 +27,7 @@ $lon = ' . $_POST["lon"] . ';
 $lat = ' . $_POST["lat"] . ';
 $UTC = "' . $_POST["UTC"] . '";
 $clockformat    = "' . $_POST["clockformat"] . '";
+$hemisphere   = "' . $_POST["hemisphere"] . '";
 ';
 
     $fp = FOPEN("console-settings.php", "w") or die("Unable to open console-settings.php file check file permissions !");
@@ -565,18 +566,31 @@ $clockformat    = "' . $_POST["clockformat"] . '";
                                                 <option>no</option>
                                             </select>
 
+<P>
+                                            <div class="stationvalue">
+                                              Reverse the moonphase for southern hemisphere (i.e. Australia etc..)</div>
+                                                                                                                                
+                                              <svg id="i-chevron-bottom" viewBox="0 0 32 32" width="10" height="10" fill="#777" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+                                               <path d="M30 12 L16 24 2 12" /></svg>
+                                              <select id="hemisphere" name="hemisphere" class="choose1">
+                                              <option><?php echo $hemisphere; ?></option>
+                                              <option>0</option>
+                                               <option>180</option></select>
 
-
-
-
-
+                                               <br><span style="color:#777;">
+                                                <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                <path d="M16 14 L16 23 M16 8 L16 10" />
+                                                <circle cx="16" cy="16" r="14" /></svg> 0 for northern hemisphere <br>
+                                                  <svg id="i-info" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                 <path d="M16 14 L16 23 M16 8 L16 10" />
+                                                 <circle cx="16" cy="16" r="14" /></svg> 180 for southern hemisphere </span>
+<br><br>
+                                                <div class="seperator"></div>
 
 </div>
 <p>
 
 <br>
-
-
                                         <div class="weatheroptions">
                                             <br><br>
 

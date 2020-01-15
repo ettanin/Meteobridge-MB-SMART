@@ -8,9 +8,10 @@
  $weather["tempymax"]=$meteobridgeapi[90];
  ?>
  <div class="modulecaptionchart"><?php echo $lang['Temperature']?> &nbsp;<blue1>&deg;<?php echo $weather["temp_units"]; ?></blue1></div> 
- <iframe  class="charttempmodule" src="../weather34charts/monthtemperaturemodulechart2.php" frameborder="0" scrolling="no" width="320px" height="250px"></iframe>  
- <div class="legenddewpoint">Min</div> 
- <div class="legendwetbulb" style="background:<?php 
+ <iframe  class="charttempmodule" src="weather34charts/monthtemperaturemodulechart2.php" frameborder="0" scrolling="no" width="320px" height="250px"></iframe>  
+ 
+
+ <div class="legenddewpoint">Min</div><div class="legendwetbulb" style="background-color:<?php 
  if ($weather["tempmmax"]<=5 ){echo '#4ba0ad';}
  else if ($weather["tempmmax"]<10 ){echo '#9bbc2f';}
  else if ($weather["tempmmax"]<15 ){echo'#e6a141';}

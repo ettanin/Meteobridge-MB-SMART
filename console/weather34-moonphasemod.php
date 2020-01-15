@@ -8,11 +8,19 @@
 	#   https://www.weather34.com 	                                                                   #
 	####################################################################################################
 //original weather34 script original css/svg/php by weather34 2015-2019 clearly marked as original by weather34//
-include('livedata.php');include('console-settings.php');include('common.php');header('Content-type: text/html; charset=utf-8');	?>
+include('livedata.php');include('console-settings.php');include('common.php');header('Content-type: text/html; charset=utf-8');	
+?>
 <div class="moonblock">
 <div class="weather34moonphasesvg">
+<?php // lets rotate for Tony (Beaumaris-Weather) down under
+if ($hemisphere==0){echo '<style>.weather34moonphasesvg{-webkit-transform: rotate('.$hemisphere.'deg);transform: rotate('.$hemisphere.'deg);}
+</style>';}
+if ($hemisphere==180){echo '<style>.weather34moonphasesvg{-webkit-transform: rotate('.$hemisphere.'deg);transform: rotate('.$hemisphere.'deg);margin-left:-18px;margin-bottom:25px;}
+</style>';}
+?>
 <div id="weather34moonphase"></div>
-<svg id="weather34 simple moonphase svg" viewBox="0 0 60 60" width="60px"><circle cx="20" cy="20" r="20" fill="rgba(86,95,103,.8)"/><path id="weather34themoon" fill="rgba(230, 232, 239, .3)"/></svg></div>    
+<svg id="weather34 simple moonphase svg" viewBox="0 0 60 60" width="60px"><circle cx="20" cy="20" r="20" fill="rgba(86,95,103,.8)"/>
+<path id="weather34themoon" fill="rgba(230, 232, 239, .3)"/></svg></div>    
 
 <script>
 // simple weather34 svg moonphase small module//

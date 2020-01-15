@@ -4,7 +4,7 @@
  $weather["humidity_max"]=number_format($meteobridgeapi[59],0);
  ?>  
  <div class="modulecaptionchart"><?php echo $lang['Humidity']?> &nbsp;<blue1>%</blue1></div> 
- <iframe  class="charttempmodule" src="../weather34charts/todayhumiditymodulechart2.php" frameborder="0" scrolling="no" width="320px" height="250px"></iframe>  
+ <iframe  class="charttempmodule" src="weather34charts/todayhumiditymodulechart2.php" frameborder="0" scrolling="no" width="320px" height="250px"></iframe>  
  
  <div class="legenddewpoint" style="background:<?php 
  if ($weather["humidity_max"]<=100 ){echo '#4ba0ad';}
