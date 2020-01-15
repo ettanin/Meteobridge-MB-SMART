@@ -56,7 +56,7 @@ if ($tempunit='F'){
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>OUTDOOR Barometer CHART</title>	
+		<title>OUTDOOR Dewpoint CHART</title>	
 		<script src=../js/jquery.js></script>
 		
 	';	
@@ -68,7 +68,7 @@ if ($tempunit='F'){
 		var dataPoints2 = [];
 		$.ajax({
 			type: "GET",
-			url: "<?php echo date('Y')?>/<?php echo $weatherfile;?>.csv",
+			url: "../../weather34charts/<?php echo date('Y')?>/<?php echo $weatherfile;?>.csv",
 			dataType: "text",
 			cache:false,
 			success: function(data) {processData1(data),processData2(data);}
