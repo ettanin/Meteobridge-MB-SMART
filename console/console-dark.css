@@ -699,6 +699,71 @@ trendmovementsteadyx {
     box-shadow: inset 2px 0 0 0 var(--green)
 }
 
+
+.theuvgreen,
+.theuvyellow,
+.theuvorange,
+.theuvred,
+.theuvpurple {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 8.5rem;
+    height: .9rem;
+    color: var(--body-text-dark);
+    overflow: hidden;
+    font-family: weathertext2;
+    line-height: 1;
+    border: 1px solid var(--border-dark);
+    border-width: thin;
+    -webkit-border-left: 0;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    border-left: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    font-size: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: -140px;
+    z-index: auto;
+    position: absolute;
+    margin-top: 25px
+}
+
+
+
+
+.theuvgreen {
+    -webkit-box-shadow: inset 2px 0 0 0 var(--green);
+    box-shadow: inset 2px 0 0 0 var(--green)
+}
+
+.theuvyellow {
+    -webkit-box-shadow: inset 2px 0 0 0 var(--yellow);
+    box-shadow: inset 2px 0 0 0 var(--yellow)
+}
+
+.theuvorange {
+    -webkit-box-shadow: inset 2px 0 0 0 var(--orange);
+    box-shadow: inset 2px 0 0 0 var(--orange)
+}
+
+.theuvred {
+    -webkit-box-shadow: inset 2px 0 0 0 var(--red);
+    box-shadow: inset 2px 0 0 0 var(--red)
+}
+
+.theuvpurple {
+    -webkit-box-shadow: inset 2px 0 0 0 var(--purple);
+    box-shadow: inset 2px 0 0 0 var(--purple)
+}
+
+
 .thetrendboxbluebaro,
 .thetrendboxgreenbaro,
 .thetrendboxorangebaro {

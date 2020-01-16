@@ -46,11 +46,11 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["lux"]
 
 
 <div class=thetrendgap>
-<div class=thetrendboxorange>
-<?php if ($weather["uv"]>=10) {echo $uviclear.$lang['Extreme Caution'];}
-else if ($weather["uv"]>=8) {echo $uviclear.$lang['Very High Caution'];}
-else if ($weather["uv"]>=6) {echo $uviclear.$lang['High Caution'];}
-else if ($weather["uv"]>=3) {echo $uviclear.$lang['Moderate Caution'];}
-else if ($weather["uv"]>=0 ) {echo $uviclear,$lang['Low Caution'];}
+<?php 
+if ($weather["uv"]>=10) {echo "<div class=theuvpurple>".$uviclear.$lang['Extreme Caution'];}
+else if ($weather["uv"]>=8) {echo "<div class=theuvred>".$uviclear.$lang['Very High Caution'];}
+else if ($weather["uv"]>=6) {echo "<div class=theuvorange>".$uviclear.$lang['High Caution'];}
+else if ($weather["uv"]>=3) {echo "<div class=theuvyellow>".$uviclear.$lang['Moderate Caution'];}
+else if ($weather["uv"]>=0 ) {echo "<div class=theuvgreen>".$uviclear,$lang['Low Caution'];}
 ?>
 </div></div></div></div>
