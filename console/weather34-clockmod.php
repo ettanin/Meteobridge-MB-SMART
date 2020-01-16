@@ -42,7 +42,8 @@ var b=e.getDate();
 var suffix = "";switch(b) {case 1: case 21: case 31: suffix = 'st'; break;case 2: case 22: suffix = 'nd'; break;case 3: case 23: suffix = 'rd'; break;default: suffix = 'th';}
 var i=weekdays[e.getDay()];if(a<10){a="0"+a}if(g<10){g="0"+g}if(c<10){c="0"+c}
 //weather34 option to use 24/12 hour format
-var c=e.getHours()<?php if ($clockformat == '12') { echo '% 12 || 12';} else { echo '% 24 || 00';}?>;
+var c=e.getHours()
+<?php if ($clockformat == '12') { echo '% 12 || 12';} else { echo '% 24 || 00';}?>;
 document.getElementById("weather34clock4").innerHTML="<div class='thedate3'> "+i+" "+h+" "+b+suffix+" "+f+" </div><div class='clock3'> "+c+":"+a+":"+g+
 "<?php if($clockformat=='12') {echo "<smalltempunit2>".date('a')."</smalltempunit2>";} else {echo "";}?>"}
 function StartClock(){clockID=setInterval(UpdateClock,500)}
