@@ -473,15 +473,17 @@ li3 {
 
 .daylight1 {
     display: block;
-    background: 0 0;
-    color: var(--light);
-    font-size: .75rem;    
+    background: 0 0;    
+    font-size: 0;
     line-height: 1;
-    margin-top: -70px;
+    margin-top: -80px;
     position: absolute;
-    margin-left: 205px;
-    font-family: headingtext;
-    text-align: left
+    margin-left: 215px;    
+    text-align: left;   
+}
+
+.daylight1 svg{   
+    width:20px
 }
 
 belowthehorizon {
