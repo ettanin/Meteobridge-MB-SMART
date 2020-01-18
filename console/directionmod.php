@@ -51,17 +51,17 @@
     }
 
     .thearrow2:before {
-        content: '      ';
+        content:'';
         color: rgba(208, 95, 45, 1.000);
         font-family: headingtext;
-        font-size: .85em;
-        width: 5px;
-        height: 5px;
+        font-size:0;
+        width: .5em;
+        height: .5em;
         position: absolute;
         z-index: 9;
-        left: 2px;
+        margin-left: -2px;
         top: -5px;
-        border: 1px solid RGBA(255, 255, 255, 1);
+        border: 2px solid RGBA(255, 255, 255, .8);
         -webkit-border-radius: 100%;
         -moz-border-radius: 100%;
         -o-border-radius: 100%;

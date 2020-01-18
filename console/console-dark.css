@@ -1495,7 +1495,7 @@ uv0 {
 .windvalue1 {
     color: var(--body-text-dark);
     font-family: weathertext3;
-    font-size: 2rem
+    font-size: 1.5rem
 }
 
 .windvalue1 {
@@ -1510,9 +1510,9 @@ uv0 {
 .homeweathercompass1 {
     z-index: 1;
     position: absolute;
-    width: 200px;
-    height: 200px;
-    margin-top: -90px;
+    width: 180px;
+    height: 180px;
+    margin-top: -75px;
     margin-left: -110px;
     text-align: center
 }
@@ -1552,7 +1552,7 @@ uv0 {
     color: var(--body-text-dark);
     text-align: center;
     font-family: headingtext;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1
 }
 
@@ -1562,9 +1562,9 @@ uv0 {
 
 averwordwindword {
     position: relative;
-    top: 5px;
+    top: 0;
     color: #bfbfbf;
-    font-size: 12px
+    font-size: 11px
 }
 
 .animated1 .thearrow1 {
