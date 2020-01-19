@@ -5509,18 +5509,25 @@ windblue {
 
 .trendpressure {
   position: relative;
-  top: 140px;
+  top: 138px;
   left: -60px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: left;
-  -ms-flex-pack: left;
-  justify-content: left;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   float: left;
-  width: 90px;
+  width: 60px;
   font-size: 9px;
   line-height: 1;
+  border: 1px solid rgba(74, 99, 111, 0.2);
+  border-radius:3px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  -ms-border-radius:3px;
+  -o-border-radius:3px;
+  padding:1px
 }
 
 pressureunits {
@@ -8033,6 +8040,7 @@ maxtempgreen {
   justify-content: left;
   margin: 0 auto;
   background: 0;
+  line-height:1.2
 }
 
 .updatedtime,
@@ -8672,6 +8680,20 @@ weather34toptitle {
     justify-content: left;
     margin: 0 auto;
     background: 0;
+    line-height:1.65
+    
+    
+  }
+
+  .moduleupdatetime {
+    position: relative;
+    font: 9px weathertext2;
+    margin-left: 230px;
+    padding: 0;
+    margin-top: -33px;
+    color: #aeb6bf;
+    line-height: 10px;
+    margin-bottom: 0;
   }
 
   .updatedtime,
@@ -8681,13 +8703,13 @@ weather34toptitle {
     font: 0.65em weathertext2;
     margin-left: 235px;
     padding: 0;
-    margin-top: -32px;
+    margin-top: -3px;
     color: #aeb6bf;
     line-height: 10px;
   }
 
   .updatedtime1 {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     width: 75px;
   }
 
@@ -9015,7 +9037,7 @@ weather34toptitle {
     width: 140px;
     height: 1.5em;
     font-size: 10px;
-    top: -18px;
+    top: -20px;
     color: #aeb6bf;
     -webkit-box-align: left;
     -ms-flex-align: left;
@@ -9025,6 +9047,7 @@ weather34toptitle {
     justify-content: left;
     margin: 0 auto;
     background: 0;
+    line-height:1.5
   }
 
   .updatedtime,

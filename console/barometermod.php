@@ -4,36 +4,36 @@
 <style>
 .weather34barometerarrowactual{-webkit-transform:rotate(<?php
 if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
-    echo $weather["barometer"]*0.02953*50.6;
+    echo $weather["barometer"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
-    echo $weather["barometer"]*50.6;
+    echo $weather["barometer"]*50.5;
 }?>deg);
 transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
-    echo $weather["barometer"]*0.02953*50.6;
+    echo $weather["barometer"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
-    echo $weather["barometer"]*50.6;
+    echo $weather["barometer"]*50.5;
 }?>deg);z-index:99}
 .weather34barometerarrowmin{-webkit-transform:rotate(<?php
 if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
-    echo $weather["barometer_min"]*0.02953*50.6;
+    echo $weather["barometer_min"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
-    echo $weather["barometer_min"]*50.6;
+    echo $weather["barometer_min"]*50.5;
 }?>deg);
 transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
-    echo $weather["barometer_min"]*0.02953*50.6;
+    echo $weather["barometer_min"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
-    echo $weather["barometer_min"]*50.6;
+    echo $weather["barometer_min"]*50.5;
 }?>deg);z-index:9}
 .weather34barometerarrowmax{-webkit-transform:rotate(<?php
 if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
-    echo $weather["barometer_max"]*0.02953*50.6;
+    echo $weather["barometer_max"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
-    echo $weather["barometer_max"]*50.6;
+    echo $weather["barometer_max"]*50.5;
 }?>deg);
 transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
-    echo $weather["barometer_max"]*0.02953*50.6;
+    echo $weather["barometer_max"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
-    echo $weather["barometer_max"]*50.6;
+    echo $weather["barometer_max"]*50.5;
 }?>deg);z-index:9}
 valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 </style>

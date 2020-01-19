@@ -17,6 +17,30 @@
   font-family: headingtext;
   src: url(fonts/HelveticaNeue-Medium.woff) format("woff");
 }
+:root {
+  --white: #ffffff;
+  --light: #f5f5f5;
+  --dark: #151519;
+  --dark-light: hsla(0, 0%, 0%, 0.251);
+  --dark-toggle: #35393b;
+  --dark-caption: #22252f;
+  --light-caption: #ffffff;
+  --black: #000000;
+  --deepblue: #4ba0ad;
+  --blue: #4ba0ad;
+  --darkred: #703232;
+  --deepred: #703232;
+  --red: #d35f50;
+  --yellow: #e6a241;
+  --green: #9bbc2f;
+  --orange: #ec5732;
+  --purple: #8680bc;
+  --silver: #afb7c0;
+  --border-dark: #3d464d;
+  --border-light: #ced1da;
+  --body-text-light: #545454;
+  --blocks: #ffffff;
+}
 
 img {
   image-rendering: auto;
@@ -152,7 +176,8 @@ html {
 }
 
 body {
-  background: #fff;
+  background: hsl(240, 14%, 97%);
+  background: radial-gradient(circle, hsl(240, 14%, 97%) 0%, hsl(0, 0%, 100%) 50%, hsl(240, 14%, 97%) 100%);
   clear: both;
   cursor: url(mouse/weather34bluecursor.png), n-resize;
   text-align: center;
@@ -4401,11 +4426,9 @@ moonsetcolor {
   position: absolute;
   width: 4.2rem;
   height: 0.8rem;
-  margin-top: 125px;
+  margin-top: 124px;
   margin-left: 115px;
-  overflow: hidden;
-  border: 1px solid #e6e8ef;
-  border-radius: 2px;
+  overflow: hidden;  
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -4416,7 +4439,17 @@ moonsetcolor {
   justify-content: center;
   line-height: 1;
   padding: 3px;
-  background: 0;
+  box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -webkit-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -ms-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+ 
 }
 
 .weather34beaufort1-3 {
@@ -4461,9 +4494,7 @@ indoorred1 {
   height: 0.8rem;
   margin-top: 120px;
   margin-left: 5px;
-  color: #222;
-  border: 1px solid #e6e8ef;
-  background: 0;
+  color: #222;  
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -4471,11 +4502,18 @@ indoorred1 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-family: weathertext2;
-  -webkit-border-top-right-radius: 2px;
-  -webkit-border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+  font-family: weathertext2;  
+  box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -webkit-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -ms-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  padding-top:3px
 }
 
 .averagetoday1 {
@@ -4494,9 +4532,7 @@ indoorred1 {
   height: 0.8rem;
   margin-top: -1px;
   margin-left: 235px;
-  color: #222;
-  border: 1px solid #e6e8ef;
-  background: 0;
+  color: #222;  
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -4505,10 +4541,17 @@ indoorred1 {
   -ms-flex-pack: center;
   justify-content: center;
   font-family: weathertext2;
-  -webkit-border-top-right-radius: 2px;
-  -webkit-border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+  box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -webkit-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -ms-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  padding-top:3px
 }
 
 .windruntoday1 {
@@ -4648,7 +4691,7 @@ rainu {
   width: 5px;
   height: 0;
   border: 3px solid #e9ebf1;
-  border-bottom: 0;    
+  border-bottom: 0;
 }
 
 #weather34rainbeaker:before {
@@ -4664,8 +4707,8 @@ rainu {
   width: 92px;
   max-height: 90px;
   overflow: hidden;
-  border: 0; 
-  background-color: hsla(186, 100%, 34%, 0.6);  
+  border: 0;
+  background-color: hsla(186, 100%, 34%, 0.6);
 }
 
 .wfstrikes,
@@ -5605,13 +5648,24 @@ windblue {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: left;
-  -ms-flex-pack: left;
-  justify-content: left;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   float: left;
-  width: 80px;
+  width: 60px;
   font-size: 9px;
   line-height: 1;
+  box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -webkit-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -ms-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  padding-top:3px
 }
 
 pressureunits {
@@ -8236,17 +8290,21 @@ weather34thetime {
 }
 
 .topframe {
-  top: 24px;
   position: absolute;
-  border: 1px solid rgba(245, 247, 252, 0.5);
-  -webkit-box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
-  background: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  top: 24px;
   width: 220px;
   height: 55px;
+  border: 1px solid hsla(223, 54%, 97%, 0.5);
+  border-radius: 2px;
+  box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -webkit-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -ms-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
   left: 2px;
 }
 
@@ -8428,7 +8486,7 @@ weather34toptitle {
 }
 
 @media screen and (max-width: 960px) {
-  
+
   .grid1 {
     display: grid;
     grid-template-columns: 360px 360px;
@@ -10667,7 +10725,7 @@ nav>.iconcolor {
   border-radius: 50px;
   top: 3px;
   margin-left: 15px;
-  margin-right:-5px;
+  margin-right: -5px;
   -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
   -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
   box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
@@ -10821,7 +10879,7 @@ nav>.iconcolor {
   border-radius: 50px;
   top: 2px;
   margin-left: 15px;
-  margin-right:-5px;
+  margin-right: -5px;
   -moz-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
   -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
   box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
@@ -10892,11 +10950,11 @@ nav>.iconcolor {
 }
 
 .online2 {
-  position:relative;
+  position: relative;
   font-size: 0;
   color: #00a4b3;
   z-index: 100000;
-  top: 10px;    
+  top: 10px;
   padding-left: 0;
   -webkit-animation: fadein 5s infinite;
   -moz-animation: fadein 5s infinite;
@@ -10907,85 +10965,88 @@ nav>.iconcolor {
   -moz-animation-direction: alternate;
   -ms-animation-direction: alternate;
   -o-animation-direction: alternate;
-  animation-direction: alternate;    
-  float:none;
-  margin-right:10px;
+  animation-direction: alternate;
+  float: none;
+  margin-right: 10px;
 }
 
 @keyframes fadein {
   from {
-      opacity: 0
+    opacity: 0
   }
 
   to {
-      opacity: 1
+    opacity: 1
   }
 }
 
 @-moz-keyframes fadein {
   from {
-      opacity: 0
+    opacity: 0
   }
 
   to {
-      opacity: 1
+    opacity: 1
   }
 }
 
 @-webkit-keyframes fadein {
   from {
-      opacity: 0
+    opacity: 0
   }
 
   to {
-      opacity: 1
+    opacity: 1
   }
 }
 
 @-ms-keyframes fadein {
   from {
-      opacity: 0
+    opacity: 0
   }
 
   to {
-      opacity: 1
+    opacity: 1
   }
 }
 
 @-o-keyframes fadein {
   from {
-      opacity: 0
+    opacity: 0
   }
 
   to {
-      opacity: 1
+    opacity: 1
   }
 }
-.weather34thetime-small { 
-  display:flex;
-  padding-top:6px;
-  margin-left:45px;  
-  color:#222;
+
+.weather34thetime-small {
+  display: flex;
+  padding-top: 6px;
+  margin-left: 45px;
+  color: #222;
   font-size: 10px;
   font-family: headingtext;
-  line-height:.8;   
+  line-height: .8;
 }
 
-.timeblue{
-  color:#00adbc;
+.timeblue {
+  color: #00adbc;
   font-size: 20px;
-  font-family: clock;  
-  padding-top:7px;  
+  font-family: clock;
+  padding-top: 7px;
 }
-.nanouptime3 { 
-  display: flex; 
-  color:#777;
+
+.nanouptime3 {
+  display: flex;
+  color: #777;
   font-size: 10px;
   font-family: headingtext;
   line-height: 1;
   padding-top: 4px;
-  margin-left: 15%; 
+  margin-left: 15%;
 }
+
 .clock2 {
   background: 0;
   padding: 5px;
@@ -11012,7 +11073,7 @@ nav>.iconcolor {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   -webkit-border-radius: 10px;
-  border:0;
+  border: 0;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -11032,17 +11093,19 @@ nav>.iconcolor {
   position: absolute;
   margin-left: -5px
 }
-.hardwareinfobig{
+
+.hardwareinfobig {
   position: absolute;
   float: left;
   margin-left: 10px;
   font-family: weathertext2, arial, helvetica;
   font-size: 10px;
-  margin-top:52px;}
+  margin-top: 52px;
+}
 
-  .nanoinfo2 {
-    margin-top: -18px;
-  }
+.nanoinfo2 {
+  margin-top: -18px;
+}
 
 
 .weather34alert {
@@ -11070,7 +11133,7 @@ nav>.iconcolor {
   z-index: 99999
 }
 
-.weather34alert.weather34alert-hide{
+.weather34alert.weather34alert-hide {
   opacity: 0;
   height: 0;
   font-size: 0;

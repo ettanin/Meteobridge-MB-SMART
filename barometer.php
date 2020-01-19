@@ -15,36 +15,36 @@ header('Content-type: text/html; charset=utf-8');?>
 <style>
 .weather34barometerarrowactual{-webkit-transform:rotate(<?php
 if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
-    echo $weather["barometer"]*0.02953*50.6;
+    echo $weather["barometer"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
-    echo $weather["barometer"]*50.6;
+    echo $weather["barometer"]*50.5;
 }?>deg);
 transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
-    echo $weather["barometer"]*0.02953*50.6;
+    echo $weather["barometer"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
-    echo $weather["barometer"]*50.6;
+    echo $weather["barometer"]*50.5;
 }?>deg);z-index:99}
 .weather34barometerarrowmin{-webkit-transform:rotate(<?php
 if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
-    echo $weather["barometer_min"]*0.02953*50.6;
+    echo $weather["barometer_min"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
-    echo $weather["barometer_min"]*50.6;
+    echo $weather["barometer_min"]*50.5;
 }?>deg);
 transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
-    echo $weather["barometer_min"]*0.02953*50.6;
+    echo $weather["barometer_min"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
-    echo $weather["barometer_min"]*50.6;
+    echo $weather["barometer_min"]*50.5;
 }?>deg);z-index:9}
 .weather34barometerarrowmax{-webkit-transform:rotate(<?php
 if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
-    echo $weather["barometer_max"]*0.02953*50.6;
+    echo $weather["barometer_max"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
-    echo $weather["barometer_max"]*50.6;
+    echo $weather["barometer_max"]*50.5;
 }?>deg);
 transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
-    echo $weather["barometer_max"]*0.02953*50.6;
+    echo $weather["barometer_max"]*0.02953*50.5;
 } elseif ($weather["barometer_units"]=='inHg') {
-    echo $weather["barometer_max"]*50.6;
+    echo $weather["barometer_max"]*50.5;
 }?>deg);z-index:9}
 valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 </style>
@@ -60,7 +60,7 @@ valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 <?php echo '<valuetext> Lo ('.$weather["thb0seapressmintime"].')<br><minblue>',$weather["barometer_min"],'&nbsp;</minblue><pressureunits>',$weather["barometer_units"],' </pressureunits></valuetext></div>';?></div>
 
 <div class="trendpressure">
-<?php  echo "<valuetexttr>".$lang['Last Hour']."<valuetexttr>";
+<?php  
 if ($weather["barometer_trend"] < 0) {
     echo '<br><fall> '.$fallingsymbol.'</fall>&nbsp;<valuetextba>';
     echo number_format($weather["barometer_trend"], 3), '</valuetextba><pressureunits>';
@@ -100,9 +100,9 @@ if ($weather["temp_units"]=='C') {
 </span>
 <div class="barometerlimits"><div class='weather34-barometerruler'>
 <?php if ($weather["barometer_units"]=='mb' or $weather["barometer_units"]=="hPa") {
-    echo "<weather34-barometerlimitmin><value>950</weather34-barometerlimitmin><weather34-barometerlimitmax><value>1050</weather34-barometerlimitmax>";
+    echo "<weather34-barometerlimitmin><value>935</weather34-barometerlimitmin><weather34-barometerlimitmax><value>1055</weather34-barometerlimitmax>";
 } else {
-    echo "<weather34-barometerlimitminf><value>28</barometerlimitminf><weather34-barometerlimitmaxf><value>31</weather34-barometerlimitmaxf>";
+    echo "<weather34-barometerlimitminf><value>27.5</barometerlimitminf><weather34-barometerlimitmaxf><value>31.5</weather34-barometerlimitmaxf>";
 }?></div></div></div>
 <?php 
 if ($weather['mbplatform']=="VOCORE2" OR $weather['mbplatform']=="CARAMBOLA2"){;}
