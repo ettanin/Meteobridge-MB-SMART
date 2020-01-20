@@ -2690,7 +2690,7 @@ headerinfo {
   height: 1px;
   border: 1px dashed #e6e8ef;
   background: 0;
-  margin-left: 65px;
+  margin-left: 67px;
   margin-top: 62px;
 }
 
@@ -2713,14 +2713,14 @@ weather34-barometerlimitmax {
 }
 
 weather34-barometerlimitminf {
-  left: -20px;
+  left: -27px;
   color: #07727d;
 }
 
 weather34-barometerlimitmaxf {
   position: absolute;
   margin-top: 0;
-  left: 163px;
+  left: 166px;
   font-size: 11px;
   color: #8c2c2b;
 }
@@ -5643,7 +5643,7 @@ windblue {
 }
 
 .trendpressure {
-  top: 140px;
+  top: 138px;
   left: -60px;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -5652,9 +5652,9 @@ windblue {
   -ms-flex-pack: center;
   justify-content: center;
   float: left;
-  width: 60px;
+  width: 80px;
   font-size: 9px;
-  line-height: 1;
+  line-height: 1.5;
   box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
   -webkit-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
   -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
@@ -5665,7 +5665,7 @@ windblue {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
-  padding-top:3px
+  padding-top:2px
 }
 
 pressureunits {

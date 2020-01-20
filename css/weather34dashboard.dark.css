@@ -2589,7 +2589,7 @@ solarluxvalue {
   width: 135px;
   height: 1px;
   border: 1px dashed #35383a;
-  margin-left: 65px;
+  margin-left: 67px;
   margin-top: 62px;
 }
 
@@ -2612,14 +2612,14 @@ weather34-barometerlimitmax {
 }
 
 weather34-barometerlimitminf {
-  left: -20px;
+  left: -27px;
   color: #4dafbd;
 }
 
 weather34-barometerlimitmaxf {
   position: absolute;
   margin-top: 0;
-  left: 163px;
+  left: 164px;
   font-size: 11px;
   color: #ff7c39;
 }
@@ -5509,7 +5509,7 @@ windblue {
 
 .trendpressure {
   position: relative;
-  top: 138px;
+  top: 140px;
   left: -60px;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -5518,9 +5518,9 @@ windblue {
   -ms-flex-pack: center;
   justify-content: center;
   float: left;
-  width: 60px;
+  width: 80px;
   font-size: 9px;
-  line-height: 1;
+  line-height: 1.5;
   border: 1px solid rgba(74, 99, 111, 0.2);
   border-radius:3px;
   -webkit-border-radius:3px;

@@ -63,10 +63,10 @@ valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 <?php  
 if ($weather["barometer_trend"] < 0) {
     echo '<br><fall> '.$fallingsymbol.'</fall>&nbsp;<valuetextba>';
-    echo number_format($weather["barometer_trend"], 3), '</valuetextba><pressureunits>';
+    echo number_format($weather["barometer_trend"], 3), ' p/hr</valuetextba><pressureunits>';
 } elseif ($weather["barometer_trend"] > 0) {
     echo '<br><rising><rise> '.$risingsymbol.'&nbsp;</rise>+<valuetextba> ';
-    echo number_format($weather["barometer_trend"], 3), ' </valuetextba>';
+    echo number_format($weather["barometer_trend"], 3), ' p/hr</valuetextba>';
 } else {
     echo '<br><ogreen> '.$steadysymbol.'</ogreen><valuetextba>'.number_format($weather["barometer_trend"], 3).'</valuetextba></div>';
 }?></valuetext>
