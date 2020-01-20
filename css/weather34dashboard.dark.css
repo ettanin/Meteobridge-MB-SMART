@@ -5509,25 +5509,26 @@ windblue {
 
 .trendpressure {
   position: relative;
-  top: 140px;
   left: -60px;
+  top: 138px;
+  width:auto;
+  max-width:180px;
+  float: left;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  float: left;
-  width: 80px;
   font-size: 9px;
   line-height: 1.5;
   border: 1px solid rgba(74, 99, 111, 0.2);
-  border-radius:3px;
-  -webkit-border-radius:3px;
-  -moz-border-radius:3px;
-  -ms-border-radius:3px;
-  -o-border-radius:3px;
-  padding:1px
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  padding: 0 1em;
 }
 
 pressureunits {

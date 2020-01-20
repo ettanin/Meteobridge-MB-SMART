@@ -5643,18 +5643,19 @@ windblue {
 }
 
 .trendpressure {
-  top: 138px;
+  top: 140px;
   left: -60px;
+  width:auto;
+  max-width:180px;
+  float: left;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-size: 9px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  float: left;
-  width: 80px;
-  font-size: 9px;
-  line-height: 1.5;
+  line-height: 1.25;
   box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
   -webkit-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
   -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
@@ -5665,7 +5666,7 @@ windblue {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
-  padding-top:2px
+  padding: 0 1em;
 }
 
 pressureunits {
