@@ -687,18 +687,18 @@ trendmovementsteadyx {
 }
 
 .thetrendboxblue {
-    -webkit-box-shadow: inset 2px 0 0 0 var(--blue);
-    box-shadow: inset 2px 0 0 0 var(--blue)
+    -webkit-box-shadow: inset 3px 0 0 0 var(--blue);
+    box-shadow: inset 3px 0 0 0 var(--blue)
 }
 
 .thetrendboxorange {
-    -webkit-box-shadow: inset 2px 0 0 0 var(--red);
-    box-shadow: inset 2px 0 0 0 var(--red)
+    -webkit-box-shadow: inset 3px 0 0 0 var(--red);
+    box-shadow: inset 3px 0 0 0 var(--red)
 }
 
 .thetrendboxgreen {
-    -webkit-box-shadow: inset 2px 0 0 0 var(--green);
-    box-shadow: inset 2px 0 0 0 var(--green)
+    -webkit-box-shadow: inset 3px 0 0 0 var(--green);
+    box-shadow: inset 3px 0 0 0 var(--green)
 }
 
 
@@ -741,28 +741,28 @@ trendmovementsteadyx {
 
 
 .theuvgreen {
-    -webkit-box-shadow: inset 2px 0 0 0 var(--green);
-    box-shadow: inset 2px 0 0 0 var(--green)
+    -webkit-box-shadow: inset 3px 0 0 0 var(--green);
+    box-shadow: inset 3px 0 0 0 var(--green)
 }
 
 .theuvyellow {
-    -webkit-box-shadow: inset 2px 0 0 0 var(--yellow);
-    box-shadow: inset 2px 0 0 0 var(--yellow)
+    -webkit-box-shadow: inset 3px 0 0 0 var(--yellow);
+    box-shadow: inset 3px 0 0 0 var(--yellow)
 }
 
 .theuvorange {
-    -webkit-box-shadow: inset 2px 0 0 0 var(--orange);
-    box-shadow: inset 2px 0 0 0 var(--orange)
+    -webkit-box-shadow: inset 3px 0 0 0 var(--orange);
+    box-shadow: inset 3px 0 0 0 var(--orange)
 }
 
 .theuvred {
-    -webkit-box-shadow: inset 2px 0 0 0 var(--red);
-    box-shadow: inset 2px 0 0 0 var(--red)
+    -webkit-box-shadow: inset 3px 0 0 0 var(--red);
+    box-shadow: inset 3px 0 0 0 var(--red)
 }
 
 .theuvpurple {
-    -webkit-box-shadow: inset 2px 0 0 0 var(--purple);
-    box-shadow: inset 2px 0 0 0 var(--purple)
+    -webkit-box-shadow: inset 3px 0 0 0 var(--purple);
+    box-shadow: inset 3px 0 0 0 var(--purple)
 }
 
 
@@ -800,18 +800,18 @@ trendmovementsteadyx {
 }
 
 .thetrendboxbluebaro {
-    -webkit-box-shadow: inset 2px 0 0 0 var(--blue);
-    box-shadow: inset 2px 0 0 0 var(--blue)
+    -webkit-box-shadow: inset 3px 0 0 0 var(--blue);
+    box-shadow: inset 3px 0 0 0 var(--blue)
 }
 
 .thetrendboxorangebaro {
-    -webkit-box-shadow: inset 2px 0 0 0 var(--red);
-    box-shadow: inset 2px 0 0 0 var(--red)
+    -webkit-box-shadow: inset 3px 0 0 0 var(--red);
+    box-shadow: inset 3px 0 0 0 var(--red)
 }
 
 .thetrendboxgreenbaro {
-    -webkit-box-shadow: inset 2px 0 0 0 var(--green);
-    box-shadow: inset 2px 0 0 0 var(--green)
+    -webkit-box-shadow: inset 3px 0 0 0 var(--green);
+    box-shadow: inset 3px 0 0 0 var(--green)
 }
 
 .thetrendgap {
@@ -1214,28 +1214,28 @@ bluesmall{
 }
 
 .temphumcircle60-80 {
-    -webkit-box-shadow: inset 2px 0 0 0 #e6a241;
-    box-shadow: inset 2px 0 0 0 #e6a241
+    -webkit-box-shadow: inset 3px 0 0 0 #e6a241;
+    box-shadow: inset 3px 0 0 0 #e6a241
 }
 
 .temphumcircle25-35 {
-    -webkit-box-shadow: inset 2px 0 0 0 #d15f2e;
-    box-shadow: inset 2px 0 0 0 #d15f2e
+    -webkit-box-shadow: inset 3px 0 0 0 #d15f2e;
+    box-shadow: inset 3px 0 0 0 #d15f2e
 }
 
 .temphumcircle35-60 {
-    -webkit-box-shadow: inset 2px 0 0 0 var(--green);
-    box-shadow: inset 2px 0 0 0 var(--green)
+    -webkit-box-shadow: inset 3px 0 0 0 var(--green);
+    box-shadow: inset 3px 0 0 0 var(--green)
 }
 
 .temphumcircle80-100 {
-    -webkit-box-shadow: inset 2px 0 0 0 var(--blue);
-    box-shadow: inset 2px 0 0 0 var(--blue)
+    -webkit-box-shadow: inset 3px 0 0 0 var(--blue);
+    box-shadow: inset 3px 0 0 0 var(--blue)
 }
 
 .temphumcircle0-25 {
-    -webkit-box-shadow: inset 2px 0 0 0 var(--red);
-    box-shadow: inset 2px 0 0 0 var(--red)
+    -webkit-box-shadow: inset 3px 0 0 0 var(--red);
+    box-shadow: inset 3px 0 0 0 var(--red)
 }
 
 valuetextheading1 {
@@ -1248,49 +1248,49 @@ valuetextheading1 {
 }
 
 .tempmodulehome-50-10c {
-    -webkit-box-shadow: inset 2px 0 0 0 #8680bc;
-    box-shadow: inset 2px 0 0 0 #8680bc
+    -webkit-box-shadow: inset 3px 0 0 0 #8680bc;
+    box-shadow: inset 3px 0 0 0 #8680bc
 }
 
 .tempmodulehome-10-0c {
-    -webkit-box-shadow: inset 2px 0 0 0 #487da8;
-    box-shadow: inset 2px 0 0 0 #487da8
+    -webkit-box-shadow: inset 3px 0 0 0 #487da8;
+    box-shadow: inset 3px 0 0 0 #487da8
 }
 
 .tempmodulehome0-5c {
-    -webkit-box-shadow: inset 2px 0 0 0 #3b9cab;
-    box-shadow: inset 2px 0 0 0 #3b9cab
+    -webkit-box-shadow: inset 3px 0 0 0 #3b9cab;
+    box-shadow: inset 3px 0 0 0 #3b9cab
 }
 
 .tempmodulehome5-10c {
-    -webkit-box-shadow: inset 2px 0 0 0 #9bbc2f;
-    box-shadow: inset 2px 0 0 0 #9bbc2f
+    -webkit-box-shadow: inset 3px 0 0 0 #9bbc2f;
+    box-shadow: inset 3px 0 0 0 #9bbc2f
 }
 
 .tempmodulehome10-15c,
 .tempmodulehome15-20c {
-    -webkit-box-shadow: inset 2px 0 0 0 #e6a241;
-    box-shadow: inset 2px 0 0 0 #e6a241
+    -webkit-box-shadow: inset 3px 0 0 0 #e6a241;
+    box-shadow: inset 3px 0 0 0 #e6a241
 }
 
 .tempmodulehome20-25c {
-    -webkit-box-shadow: inset 2px 0 0 0 #ec5732;
-    box-shadow: inset 2px 0 0 0 #ec5732
+    -webkit-box-shadow: inset 3px 0 0 0 #ec5732;
+    box-shadow: inset 3px 0 0 0 #ec5732
 }
 
 .tempmodulehome25-30c {
-    -webkit-box-shadow: inset 2px 0 0 0 #d15f2e;
-    box-shadow: inset 2px 0 0 0 #d15f2e
+    -webkit-box-shadow: inset 3px 0 0 0 #d15f2e;
+    box-shadow: inset 3px 0 0 0 #d15f2e
 }
 
 .tempmodulehome30-35c {
-    -webkit-box-shadow: inset 2px 0 0 0 #d55948;
-    box-shadow: inset 2px 0 0 0 #d55948
+    -webkit-box-shadow: inset 3px 0 0 0 #d55948;
+    box-shadow: inset 3px 0 0 0 #d55948
 }
 
 .tempmodulehome35-40c {
-    -webkit-box-shadow: inset 2px 0 0 0 #dc4751;
-    box-shadow: inset 2px 0 0 0 #dc4751
+    -webkit-box-shadow: inset 3px 0 0 0 #dc4751;
+    box-shadow: inset 3px 0 0 0 #dc4751
 }
 
 .rainmodulehome,
@@ -1319,8 +1319,8 @@ valuetextheading1 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-shadow: inset 2px 0 0 0 #3b9cab;
-    box-shadow: inset 2px 0 0 0 #3b9cab
+    -webkit-box-shadow: inset 3px 0 0 0 #3b9cab;
+    box-shadow: inset 3px 0 0 0 #3b9cab
 }
 
 .rainratemodulehome {
@@ -1329,8 +1329,8 @@ valuetextheading1 {
 }
 
 .tempmodulehome40-50c {
-    -webkit-box-shadow: inset 2px 0 0 0 #e26971;
-    box-shadow: inset 2px 0 0 0 #e26971
+    -webkit-box-shadow: inset 3px 0 0 0 #e26971;
+    box-shadow: inset 3px 0 0 0 #e26971
 }
 
 .rainratemodulehome {
@@ -1342,29 +1342,29 @@ raiblue {
 }
 
 .intempmodulehome0-5c {
-    -webkit-box-shadow: inset 2px 0 0 0 #3b9cab;
-    box-shadow: inset 2px 0 0 0 #3b9cab
+    -webkit-box-shadow: inset 3px 0 0 0 #3b9cab;
+    box-shadow: inset 3px 0 0 0 #3b9cab
 }
 
 .intempmodulehome5-10c {
-    -webkit-box-shadow: inset 2px 0 0 0 #9bbc2f;
-    box-shadow: inset 2px 0 0 0 #9bbc2f
+    -webkit-box-shadow: inset 3px 0 0 0 #9bbc2f;
+    box-shadow: inset 3px 0 0 0 #9bbc2f
 }
 
 .intempmodulehome10-15c,
 .intempmodulehome15-20c {
-    -webkit-box-shadow: inset 2px 0 0 0 #e6a241;
-    box-shadow: inset 2px 0 0 0 #e6a241
+    -webkit-box-shadow: inset 3px 0 0 0 #e6a241;
+    box-shadow: inset 3px 0 0 0 #e6a241
 }
 
 .intempmodulehome20-25c {
-    -webkit-box-shadow: inset 2px 0 0 0 #ec5732;
-    box-shadow: inset 2px 0 0 0 #ec5732
+    -webkit-box-shadow: inset 3px 0 0 0 #ec5732;
+    box-shadow: inset 3px 0 0 0 #ec5732
 }
 
 .intempmodulehome25-30c {
-    -webkit-box-shadow: inset 2px 0 0 0 #d15f2e;
-    box-shadow: inset 2px 0 0 0 #d15f2e
+    -webkit-box-shadow: inset 3px 0 0 0 #d15f2e;
+    box-shadow: inset 3px 0 0 0 #d15f2e
 }
 
 valuewindunit {
@@ -2363,8 +2363,8 @@ valuebeaufort {
 }
 
 blue1 {
-    color: #07727d;
-    font-size: .8em;
+    color:var(--blue);
+    font-size: .85em;
     margin-left:3px
 }
 
@@ -3568,12 +3568,12 @@ chartpage {
   
   .raintoday1 {
     width: 3.75rem;
-    height: 1.5rem;
+    height: 1.75rem;
     padding-top: 7px;
    color: var(--white);
     border-bottom: 8px solid var(--border-dark);
     border-radius: 3px;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -3592,6 +3592,20 @@ chartpage {
     margin-left:-46px;
     margin-top:10px
   }
+
+  rainunitmm,
+rainunitin {
+    position:absolute;
+    font-size: .6rem;
+    color: var(--white);
+    margin-top: -41px;
+    margin-left: -20px;
+    font-family: headingtext
+}
+
+rainunitin {
+    margin-left: -40px
+}
   
   
   

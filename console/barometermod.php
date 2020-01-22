@@ -52,13 +52,8 @@ valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 <?php echo "<blue>".$weather["barometer"],"</blue><span>".$weather["barometer_units"]."</span>";?> </div>
 <smalltempunit2></div></div></div>
 
-
 <div class="maxbox"><orange>Max &nbsp;</orange> <?php echo $weather["barometer_max"] ?> <?php echo $weather["barometer_units"]; ?> <blue>&nbsp;<?php echo $weather["thb0seapressmaxtime"]; ?></div></blue>
 <div class="minbox"><blue>Min &nbsp; </blue> <?php echo $weather["barometer_min"] ?> <?php echo $weather["barometer_units"]; ?> <blue>&nbsp;<?php echo $weather["thb0seapressmintime"]; ?></blue></div>
-
-
-
-
 
 <?php 
 //falling

@@ -34,11 +34,16 @@ else if ($weather["rain_units"] =='in' && $weather["rain_today"]){echo $weather[
 
 
 <div class="raincontainer1">
-<?php if ($weather["rain_units"] =='in'){	echo '<div class=raintoday1>'.number_format($weather["rain_today"],2)."<smallrainunit2b> ".$weather["rain_units"];}
-else if ($weather["rain_units"] =='mm' && $weather["rain_today"]<10){echo '<div class=raintoday1>'.number_format($weather["rain_today"],2)." <smallrainunit2b>".$weather["rain_units"];}
+<?php if ($weather["rain_units"] =='in'){	echo '<div class=raintoday1>'.number_format($weather["rain_today"],2);}
+else if ($weather["rain_units"] =='mm' && $weather["rain_today"]<10){echo '<div class=raintoday1>'.number_format($weather["rain_today"],2);}
   else if ($weather["rain_units"] =='mm'){
-  echo '<div class=raintoday1>'.number_format($weather["rain_today"],1)."<smallrainunit2b>".$weather["rain_units"];}
-?></smallrainunit2b></div></div>
+  echo '<div class=raintoday1>'.number_format($weather["rain_today"],1);}
+?></div>
+<?php //rain units
+if ($weather["rain_units"] =='mm'){echo "<rainunitmm>mm </rainunitmm>";}
+if ($weather["rain_units"] =='in'){echo "<rainunitin>in </rainunitin>";}
+?></div>
+
 
 <div class="heatcircle" style="margin-left:100px;"><div class="heatcircle-content">
 <?php  //last 24 hours rainfall or current rain rate
