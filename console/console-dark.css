@@ -564,7 +564,8 @@ orange {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
-    background: var(--blocks-background);
+    background: hsla(225, 10%, 8%, 0.2);
+    background: linear-gradient(84deg, hsla(225, 10%, 8%, 0.2) 0%, hsla(206, 12%, 27%, 0.2) 100%);
 }
 
 .outsideminus10 {
@@ -836,7 +837,8 @@ trendmovementsteadyx {
     background: 0;
     font-size: 12px;
     line-height: 1;
-    margin-top: 12px
+    margin-top: 12px;
+    background:0
 }
 
 .maxdatawind {
@@ -877,7 +879,7 @@ trendmovementsteadyx {
 .mindata {
     position: absolute;
     font-family: weathertext2;
-    background: var(--blocks-background);
+    background: 0;
     display: inline;
     border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -891,7 +893,7 @@ trendmovementsteadyx {
 .lodata {
     position: absolute;
     font-family: headingtext;
-    background: var(--blocks-background);
+    background: 0;
     font-size: 11px;
     line-height: 2;
     margin: 5px auto auto;
@@ -936,7 +938,8 @@ trendmovementsteadyx {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
-    background: var(--blocks-background);
+    background: hsla(225, 10%, 8%, 0.2);
+    background: linear-gradient(84deg, hsla(225, 10%, 8%, 0.2) 0%, hsla(206, 12%, 27%, 0.2) 100%);
 }
 
 .rainbox {
@@ -1218,7 +1221,8 @@ bluesmall {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 35px
+    margin-left: 35px;
+    
 }
 
 .temphumcircle60-80 {
