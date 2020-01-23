@@ -19,27 +19,30 @@
 }
 
 :root {
-	--white: #ffffff;
+    --white: #ffffff;
     --light: #f5f5f5;
-    --dark: #151519;
-    --dark-light: hsla(0, 0%, 0%, 0.251); 
-    --dark-toggle:#35393b;
-    --dark-caption:#22252f;
-	--black: #000000;
+    --dark: #131417;
+    --dark-light: hsla(0, 0%, 0%, 0.251);
+    --dark-toggle: #35393b;
+    --dark-caption: rgba(66, 70, 72, 0.429);
+    --black: #000000;
     --deepblue: #00adbd;
     --blue: #00adbd;
+    --rainblue: #00adbd;
     --darkred: #703232;
     --deepred: #703232;
-	--red: #d35f50;
-	--yellow: #e6a241;
+    --red: #d35f50;
+    --yellow: #e6a241;
     --green: #90b22a;
     --orange: #ec5732;
     --purple: #8680bc;
-    --silver: #afb7c0;
+    --silver: #cdd6e0;
     --border-dark: #3d464d;
     --body-text-dark: #afb7c0;
     --body-text-light: #545454;
     --blocks: #e6e8ef;
+    --modules: #1e1f26;
+    --blocks-background: hsla(198, 14%, 14%, 0.19);
 }
 
 body {
@@ -125,7 +128,6 @@ li {
     max-width: 420px;
     padding: 0;
     height: 180px;
-    border: 1px solid hsla(208, 12%, 24%, .2);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: var(--light);
@@ -133,13 +135,12 @@ li {
     margin-top: 5px;
     margin-bottom: 5px;
     color: var(--body-text-dark);
-    background-color: hsla(0, 0%, 0%, .25);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    -webkit-border-radius: 10px
+    background-color: var(--modules);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 li2 {
@@ -164,13 +165,13 @@ li3 {
 }
 
 .clock {
-    background-color: var(--dark-caption);
+    background-color: var(--modules);
     border-radius: 3px;
     padding: 0;
     padding-left: 70px;
     padding-right: 0;
     padding-top: 15px;
-    display: flex;    
+    display: flex;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -204,7 +205,7 @@ li3 {
     position: relative;
     color: var(--blue);
     font-size: 3rem;
-    text-transform: uppercase;   
+    text-transform: uppercase;
     height: 50px;
     line-height: 1.2;
     top: 55px;
@@ -214,11 +215,11 @@ li3 {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     -webkit-border-radius: 10px;
-    border: 1px solid hsla(208, 12%, 24%, 0.2);
+
 }
 
 .clock3 {
-    background-color: var(--dark-caption);
+    background-color: var(--modules);
     border-radius: 3px;
     padding: 0px;
     padding-left: 70px;
@@ -236,7 +237,7 @@ li3 {
     position: relative;
     color: var(--blue);
     font-size: 2rem;
-    text-transform: uppercase;    
+    text-transform: uppercase;
     height: 60px;
     line-height: 1.2;
     margin-top: 5px;
@@ -247,8 +248,8 @@ li3 {
 .thedate3 {
     display: flex;
     background: none;
-    color: var(--light);
-    font-size: .75rem;    
+    color: var(--silver);
+    font-size: .75rem;
     line-height: 1;
     margin-top: 60px;
     position: absolute;
@@ -262,7 +263,7 @@ li3 {
 .date2 {
     display: block;
     background: 0 0;
-    color: var(--body-text-light);
+    color: var(--silver);
     font-size: .65rem;
     font-family: clock;
     line-height: 1;
@@ -274,7 +275,7 @@ li3 {
 .date {
     display: block;
     background: 0 0;
-    color: var(--light);
+    color: var(--silver);
     font-size: .65rem;
     font-family: clock;
     line-height: 1;
@@ -284,13 +285,13 @@ li3 {
 }
 
 .moonblock {
-    background-color: var(--dark-caption);
+    background-color: var(--modules);
     border-radius: 3px;
     padding: 0;
     padding-left: 10px;
     padding-right: 0;
     padding-top: 15px;
-    display: flex;    
+    display: flex;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -299,9 +300,9 @@ li3 {
     text-align: center;
     width: 250px;
     position: relative;
-    color: var(--white);
+    color: var(--silver);
     font-size: 12px;
-    text-transform: capitalize;    
+    text-transform: capitalize;
     height: 64px;
     line-height: 2;
     margin-top: 5px;
@@ -311,7 +312,7 @@ li3 {
 .date1 {
     display: block;
     background: 0 0;
-    color: var(--light);
+    color: var(--silver);
     font-size: .75rem;
     font-family: clock;
     line-height: 1;
@@ -324,7 +325,7 @@ li3 {
 .date2 {
     display: block;
     background: 0 0;
-    color: var(--light);
+    color: var(--silver);
     font-size: .75rem;
     font-family: clock;
     line-height: 1;
@@ -348,13 +349,13 @@ li3 {
 }
 
 .sunblock {
-    background-color: var(--dark-caption);
+    background-color: var(--modules);
     border-radius: 3px;
     padding: 0;
     padding-left: 0;
     padding-right: 0;
     padding-top: 15px;
-    display: flex;    
+    display: flex;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -365,7 +366,7 @@ li3 {
     position: relative;
     color: var(--blue);
     font-size: 2rem;
-    text-transform: uppercase;    
+    text-transform: uppercase;
     height: 64px;
     line-height: 2;
     margin-top: 5px;
@@ -378,13 +379,13 @@ li3 {
     padding-left: 0;
     padding-right: 0;
     padding-top: 15px;
-    display: flex;   
+    display: flex;
     left: -20px;
     text-align: left;
     width: 250px;
     color: var(--blue);
     font-size: 2rem;
-    text-transform: uppercase;    
+    text-transform: uppercase;
     height: 64px;
     line-height: 1;
     margin-top: 25px;
@@ -394,8 +395,8 @@ li3 {
 .sunrise1 {
     display: block;
     background: 0 0;
-    color: var(--light);
-    font-size: .75rem;    
+    color: var(--silver);
+    font-size: .75rem;
     line-height: 1;
     margin-top: -65px;
     position: absolute;
@@ -407,8 +408,8 @@ li3 {
 .sunset1 {
     display: block;
     background: 0 0;
-    color: var(--light);
-    font-size: .75rem;    
+    color: var(--silver);
+    font-size: .75rem;
     line-height: 1;
     margin-top: -35px;
     position: absolute;
@@ -420,8 +421,8 @@ li3 {
 .sunrise2 {
     display: block;
     background: 0 0;
-    color: var(--body-text-dark);
-    font-size: .7rem;    
+    color: var(--silver);
+    font-size: .7rem;
     line-height: 1;
     margin-top: -45px;
     position: absolute;
@@ -433,8 +434,8 @@ li3 {
 .sunset2 {
     display: block;
     background: 0 0;
-    color: var(--body-text-dark);
-    font-size: .7rem;   
+    color: var(--silver);
+    font-size: .7rem;
     line-height: 1;
     margin-top: -30px;
     position: absolute;
@@ -446,8 +447,8 @@ li3 {
 .thedate {
     display: flex;
     background: 0 0;
-    color: var(--light);
-    font-size: .75rem;    
+    color: var(--silver);
+    font-size: .75rem;
     line-height: 1;
     margin-top: -25px;
     position: absolute;
@@ -461,7 +462,7 @@ li3 {
     display: flex;
     background: 0 0;
     color: var(--body-text-dark);
-    font-size: .75rem;    
+    font-size: .75rem;
     line-height: 1;
     margin-top: 40px;
     position: absolute;
@@ -473,22 +474,20 @@ li3 {
 
 .daylight1 {
     display: block;
-    background: 0 0;    
-    font-size: 0;
+    background: 0 0;
+    color: var(--silver);
+    font-size: .75rem;
     line-height: 1;
-    margin-top: -80px;
+    margin-top: -55px;
     position: absolute;
-    margin-left: 215px;    
-    text-align: left;   
-}
-
-.daylight1 svg{   
-    width:20px
+    margin-left: 195px;
+    font-family: headingtext;
+    text-align: left
 }
 
 belowthehorizon {
     font-size: 1em;
-    width: 70px;
+    width: 80px;
     display: block
 }
 
@@ -564,7 +563,8 @@ orange {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
-    -o-border-radius: 2px
+    -o-border-radius: 2px;
+    background: var(--blocks-background);
 }
 
 .outsideminus10 {
@@ -683,7 +683,8 @@ trendmovementsteadyx {
     margin-left: -140px;
     z-index: auto;
     position: absolute;
-    margin-top: 25px
+    margin-top: 25px;
+    background: var(--blocks-background);
 }
 
 .thetrendboxblue {
@@ -700,6 +701,7 @@ trendmovementsteadyx {
     -webkit-box-shadow: inset 3px 0 0 0 var(--green);
     box-shadow: inset 3px 0 0 0 var(--green)
 }
+
 
 
 .theuvgreen,
@@ -734,7 +736,8 @@ trendmovementsteadyx {
     margin-left: -140px;
     z-index: auto;
     position: absolute;
-    margin-top: 25px
+    margin-top: 25px;
+    background: var(--blocks-background);
 }
 
 
@@ -764,7 +767,6 @@ trendmovementsteadyx {
     -webkit-box-shadow: inset 3px 0 0 0 var(--purple);
     box-shadow: inset 3px 0 0 0 var(--purple)
 }
-
 
 .thetrendboxbluebaro,
 .thetrendboxgreenbaro,
@@ -796,7 +798,8 @@ trendmovementsteadyx {
     margin-left: 0;
     z-index: auto;
     position: relative;
-    margin-top: 5px
+    margin-top: 5px;
+    background: var(--blocks-background);
 }
 
 .thetrendboxbluebaro {
@@ -874,7 +877,7 @@ trendmovementsteadyx {
 .mindata {
     position: absolute;
     font-family: weathertext2;
-    background: 0;
+    background: var(--blocks-background);
     display: inline;
     border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -888,7 +891,7 @@ trendmovementsteadyx {
 .lodata {
     position: absolute;
     font-family: headingtext;
-    background: 0;
+    background: var(--blocks-background);
     font-size: 11px;
     line-height: 2;
     margin: 5px auto auto;
@@ -932,7 +935,8 @@ trendmovementsteadyx {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
-    -o-border-radius: 2px
+    -o-border-radius: 2px;
+    background: var(--blocks-background);
 }
 
 .rainbox {
@@ -957,7 +961,8 @@ trendmovementsteadyx {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
-    -o-border-radius: 2px
+    -o-border-radius: 2px;
+    background: var(--blocks-background);
 }
 
 blue {
@@ -1100,6 +1105,7 @@ smallrainunit4 {
     -ms-border-radius: 2px;
     -o-border-radius: 2px
 }
+
 .indoortemp {
     font-size: 10px;
     color: var(--silver);
@@ -1109,16 +1115,17 @@ smallrainunit4 {
     margin-top: 120px;
     z-index: 99999;
     width: 4.5rem;
-    line-height:1.2;
-    height:12px;     
-    background-color: var(--dark-caption); 
+    line-height: 1.2;
+    height: 12px;
+    background-color: hsla(203, 18%, 23%, 0.429);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
-    font-family:weathertext2;
+    font-family: weathertext2;
 }
+
 .indoorhumidity {
     font-size: 10px;
     color: var(--silver);
@@ -1128,15 +1135,15 @@ smallrainunit4 {
     margin-top: 40px;
     z-index: 99999;
     width: 4.5rem;
-    line-height:1.2;
-    height:12px;   
-    background-color: var(--dark-caption);    
+    line-height: 1.2;
+    height: 12px;
+    background-color: hsla(203, 18%, 23%, 0.429);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
-    font-family:weathertext2;
+    font-family: weathertext2;
 }
 
 .indoortrend {
@@ -1145,12 +1152,12 @@ smallrainunit4 {
     position: absolute;
     float: none;
     margin-left: 25px;
-    margin-top: 40px;
+    margin-top: 38px;
     z-index: 99999;
-    width: 7.5rem;
+    width: 7rem;
     line-height: 1.2;
     height: 12px;
-    background-color: var(--dark-caption);
+    background-color: hsla(203, 18%, 23%, 0.429);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -1158,8 +1165,9 @@ smallrainunit4 {
     -o-border-radius: 2px;
     font-family: weathertext2;
 }
-bluesmall{
-    font-size:9px;    
+
+bluesmall {
+    font-size: 9px;
 }
 
 .intempmodulehome0-5c,
@@ -1495,7 +1503,7 @@ uv0 {
 .windvalue1 {
     color: var(--body-text-dark);
     font-family: weathertext3;
-    font-size: 1.5rem
+    font-size: 1.75rem
 }
 
 .windvalue1 {
@@ -1519,7 +1527,7 @@ uv0 {
 
 .text1 {
     z-index: 10;
-    margin: 60px 0 auto;
+    margin: 55px 0 auto;
     text-align: center
 }
 
@@ -1610,7 +1618,7 @@ averwordwindword {
 .text2 {
     position: relative;
     margin-top: 0;
-    margin-left: -35px;
+    margin-left: -5px;
     font-size: 1.55em
 }
 
@@ -1621,7 +1629,7 @@ averwordwindword {
     width: auto;
     margin-top: 5px;
     margin-left: 0;
-   color: var(--white);
+    color: var(--silver);
     text-align: center;
     font-family: weathertext2;
     font-size: 13px;
@@ -2074,11 +2082,11 @@ a {
     font-family: headingtext;
     text-decoration: none;
     margin-left: 10px;
-   color: var(--white);
+    color: var(--silver);
 }
 
 .desktoplink {
-   color: var(--white);
+    color: var(--silver);
     font-size: 10px;
     font-family: headingtext;
     text-decoration: none;
@@ -2088,7 +2096,7 @@ a {
 }
 
 .designedby {
-   color: var(--white);
+    color: var(--silver);
     font-size: 10px;
     font-family: headingtext;
     text-decoration: none;
@@ -2099,7 +2107,7 @@ a {
 
 .credit34,
 a {
-   color: var(--white);
+    color: var(--silver);
     font-size: 12px;
     font-family: headingtext;
     text-decoration: none;
@@ -2112,178 +2120,180 @@ valuebeaufort {
 }
 
 .modulecaption {
-    display:flex;
+    display: flex;
     position: relative;
-    left: 110px;    
+    left: 110px;
     top: -19px;
-    color: var(--white);
-    background-color: var(--dark-caption);
+    color: var(--silver);
+    background-color: hsla(203, 18%, 23%, 0.429);
     font-family: Headingtext;
-    width:11em;    
-    height:10px;  
+    width: 11em;
+    height: 10px;
     font-size: 10px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center; 
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    justify-content: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .modulecaptionchart {
-    display:flex;
+    display: flex;
     position: relative;
-    left: 145px;    
+    left: 145px;
     top: 50px;
-    color: var(--white);
-    background-color: var(--dark-caption);
+    color: var(--silver);
+    background-color: hsla(203, 18%, 23%, 0.429);
     font-family: Headingtext;
-    width:12em;    
-    height:10px;  
+    width: 12em;
+    height: 10px;
     font-size: 10px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center;    
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    justify-content: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .modulecaptionwindchart {
-    display:flex;
+    display: flex;
     position: relative;
-    left: 120px;    
+    left: 120px;
     top: -19px;
-    color: var(--white);
-    background-color: var(--dark-caption);
+    color: var(--silver);
+    background-color: #414547;
     font-family: Headingtext;
-    width:11em;    
-    height:10px;  
+    width: 11em;
+    height: 10px;
     font-size: 10px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center;    
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    justify-content: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .modulecaptionpressure {
-    display:flex;
+    display: flex;
     position: relative;
-    left: 95px;    
+    left: 95px;
     top: -45px;
-    color: var(--white);
-    background-color: var(--dark-caption);
+    color: var(--silver);
+    background-color: hsla(203, 18%, 23%, 0.429);
     font-family: Headingtext;
-    width:11em;    
-    height:10px;  
+    width: 11em;
+    height: 10px;
     font-size: 10px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center; 
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    justify-content: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .modulecaptiondirection {
-    display:flex;
+    display: flex;
     position: relative;
     left: 85px;
     top: -77px;
-    color: var(--white);
-    background-color: var(--dark-caption);
+    color: var(--silver);
+    background-color: hsla(203, 18%, 23%, 0.429);
     font-family: Headingtext;
-    width:11em;    
-    height:10px;  
+    width: 11em;
+    height: 10px;
     font-size: 10px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center;  
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    justify-content: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
+
 .modulecaptionrainrate {
-    display:flex;
+    display: flex;
     position: relative;
-    left:-75px;
-    color: var(--white);
-    background-color: var(--dark-caption);
+    left: -75px;
+    color: var(--silver);
+    background-color: hsla(203, 18%, 23%, 0.429);
     font-family: Headingtext;
-    width:11em;    
-    height:10px;  
+    width: 11em;
+    height: 10px;
     font-size: 10px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center; 
-    top:5px;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    justify-content: center;
+    top: 5px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 
 .modulecaptionwind {
-    display:flex;
+    display: flex;
     position: relative;
-    left:-70px;
-    color: var(--white);
-    background-color: var(--dark-caption);
+    left: -70px;
+    color: var(--silver);
+    background-color: hsla(203, 18%, 23%, 0.429);
     font-family: Headingtext;
-    width:11em;    
-    height:10px;  
+    width: 11em;
+    height: 10px;
     font-size: 10px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
     top: -15px;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
+
 .modulecaptiontemp {
-    display:flex;
+    display: flex;
     position: relative;
-    left:-70px;
-    color: var(--white);
-    background-color: var(--dark-caption);
+    left: -70px;
+    color: var(--silver);
+    background-color: hsla(203, 18%, 23%, 0.429);
     font-family: Headingtext;
-    width:11em;    
-    height:10px;  
+    width: 11em;
+    height: 10px;
     font-size: 9px;
     padding: 2px 3px 1px 3px;
     line-height: 1.2;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     top: -15px;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .online,
@@ -2363,15 +2373,15 @@ valuebeaufort {
 }
 
 blue1 {
-    color:var(--blue);
+    color: var(--blue);
     font-size: .85em;
-    margin-left:3px
+    margin-left: 3px
 }
 
 .nav {
     margin: 0 auto;
-    width: 900px;
-    background-color: var(--dark-caption);
+    width: 908px;
+    background-color: var(--modules);
     padding: 6px;
     height: 20px;
     position: relative;
@@ -2391,7 +2401,7 @@ vspan {
     vertical-align: middle;
     padding-top: 3px;
     margin-left: 30px;
-   color: var(--white);
+    color: var(--silver);
 }
 
 vspan2 {
@@ -2437,7 +2447,7 @@ iconcolor2 {
     font-size: 9px;
     margin-top: 188px;
     z-index: 99999;
-   color: var(--white);
+    color: var(--silver);
     font-family: Headingtext
 }
 
@@ -2469,7 +2479,7 @@ iconcolor2 {
     margin-top: 3px;
     line-height: 1;
     font-family: headingtext;
-    
+
 }
 
 .consoleicon {
@@ -2491,9 +2501,9 @@ iconcolor2 {
     font-size: 9px;
     margin-top: -100px;
     z-index: 99999;
-   color: var(--white);
+    color: var(--silver);
     font-family: weathertext2;
-    background-color: var(--dark-caption);
+    background-color: hsla(203, 18%, 23%, 0.429);
     margin-left: -150px
 }
 
@@ -2509,9 +2519,9 @@ iconcolor2 {
     font-size: 9px;
     margin-top: -83px;
     z-index: 99999;
-   color: var(--white);
+    color: var(--silver);
     font-family: weathertext2;
-    background-color: var(--dark-caption);
+    background-color: hsla(203, 18%, 23%, 0.429);
     margin-left: -150px
 }
 
@@ -2522,9 +2532,9 @@ iconcolor2 {
     font-size: 9px;
     margin-top: 15px;
     z-index: 99999;
-    color: var(--white);
+    color: var(--silver);
     font-family: weathertext2;
-    background-color: var(--dark-caption);
+    background-color: hsla(203, 18%, 23%, 0.429);
     margin-left: -150px
 }
 
@@ -2538,9 +2548,9 @@ iconcolor2 {
     color: var(--body-text-light);
     font-family: weathertext2;
     background-color: var(--light-caption);
-    color: var(--white);
+    color: var(--silver);
     font-family: weathertext2;
-    background-color: var(--dark-caption);
+    background-color: hsla(203, 18%, 23%, 0.429);
     margin-left: -150px
 }
 
@@ -2554,7 +2564,7 @@ a {
     font-family: headingtext;
     text-decoration: none;
     margin-left: 10px;
-   color: var(--white);
+    color: var(--silver);
     display: inline
 }
 
@@ -3044,7 +3054,7 @@ a {
     -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
     box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
     padding-top: 1px;
-    margin-right:10px;
+    margin-right: 10px;
 
 }
 
@@ -3081,6 +3091,9 @@ a {
     border: 3px solid #00a4b3;
     background: 0;
 }
+
+
+
 
 .weather34-togglechartdate {
     cursor: pointer;
@@ -3213,6 +3226,21 @@ a {
     width: 55px
 }
 
+.weather34-togglechartdatem .circleblob {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #e6a241;
+    background: 0
+}
+
+
+
 
 
 
@@ -3237,7 +3265,7 @@ a {
     -webkit-box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
     box-shadow: inset 0px 1px 2px #121117, 0px 1px 1px #3e3d4b;
     padding-top: 1px;
-    margin-right:10px;
+    margin-right: 10px;
 
 }
 
@@ -3276,6 +3304,8 @@ a {
 }
 
 
+
+
 .logofooter {
     position: absolute;
     margin-left: 70px;
@@ -3287,7 +3317,7 @@ a {
     position: relative;
     margin: 5px auto 0;
     width: 200px;
-   color: var(--white);
+    color: var(--white);
     transition: all .2s ease;
     position: fixed;
     top: 1px;
@@ -3393,6 +3423,38 @@ valuealertwarm {
     padding: 5px
 }
 
+valuealertorange {
+    line-height: 1;
+    top: 5px;
+    font-size: 16px;
+    font-family: weathertext2;
+    background: 0;
+    background: var(--orange);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    width: 4rem;
+    padding: 5px
+}
+
+valuealertyellow {
+    line-height: 1;
+    top: 5px;
+    font-size: 16px;
+    font-family: weathertext2;
+    background: 0;
+    background: var(--yellow);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    width: 4rem;
+    padding: 5px
+}
+
 alertunit {
     font-size: .75rem
 }
@@ -3406,7 +3468,7 @@ alertunit {
     padding: 10px 15px;
     font-size: 16px;
     font-family: 'Source Sans Pro';
-   color: var(--white);
+    color: var(--white);
     outline: 0;
     cursor: pointer
 }
@@ -3424,7 +3486,7 @@ alertunit {
 .weather34alert-close {
     position: absolute;
     background-color: rgba(0, 0, 0, .3);
-   color: var(--white);
+    color: var(--white);
     border: none;
     outline: 0;
     font-size: 20px;
@@ -3452,13 +3514,22 @@ alertunit {
     width: 150px
 }
 
+.frost {
+    position: absolute;
+    margin-top: -47px;
+    margin-left: -145px;
+    font-size: .6rem;
+    font-family: weathertext2;
+    width: 150px;
+}
+
 a:hover {
     color: #00a4b3
 }
 
 chartpage {
     position: relative;
-   color: var(--white);
+    color: var(--white);
     font-size: .75em;
     font-family: headingtext;
     text-decoration: none;
@@ -3487,23 +3558,23 @@ chartpage {
     height: 100px;
     margin-top: 65px;
     margin-left: 110px;
-  }
-  
-  #raincontainer {
+}
+
+#raincontainer {
     left: -150px;
     width: 208px;
     height: 170px;
     margin-top: -120px;
     overflow: hidden;
-    
-  }
-  
-  #raincontainer,
-  #raincontainer div {
+
+}
+
+#raincontainer,
+#raincontainer div {
     position: absolute;
-  }
-  
-  #weather34rainbeaker {
+}
+
+#weather34rainbeaker {
     bottom: 0;
     left: 14px;
     width: 92px;
@@ -3516,10 +3587,10 @@ chartpage {
     -moz-border-radius: 0 0 2px 2px;
     -ms-border-radius: 0 0 2px 2px;
     -o-border-radius: 0 0 2px 2px;
-  }
-  
-  #weather34rainbeaker:after,
-  #weather34rainbeaker:before {
+}
+
+#weather34rainbeaker:after,
+#weather34rainbeaker:before {
     content: "";
     position: absolute;
     top: 0;
@@ -3527,34 +3598,34 @@ chartpage {
     height: 0;
     border: 3px solid var(--border-dark);
     border-bottom: 0;
-    
+
 }
-  
-  #weather34rainbeaker:before {
+
+#weather34rainbeaker:before {
     left: -9px;
-  }
-  
-  #weather34rainbeaker:after {
+}
+
+#weather34rainbeaker:after {
     right: -9px;
-  }
-  
-  #weather34rainwater {
+}
+
+#weather34rainwater {
     bottom: 0;
     width: 92px;
     max-height: 90px;
     overflow: hidden;
-    border: 0;    
+    border: 0;
     background-color: hsla(186, 100%, 34%, 0.6);
-    
+
 }
-  
-  
-  .raincontainer1 {
+
+
+.raincontainer1 {
     top: 0px;
     right: 0;
     bottom: 0;
     left: 25px;
-    margin: 40px 10px 10px 40px;    
+    margin: 40px 10px 10px 40px;
     position: relative;
     float: left;
     right: 0;
@@ -3562,15 +3633,15 @@ chartpage {
     left: 0;
     float: left;
     -o-font-smoothing: antialiased;
-     
 
-  }
-  
-  .raintoday1 {
+
+}
+
+.raintoday1 {
     width: 3.75rem;
     height: 1.75rem;
     padding-top: 7px;
-   color: var(--white);
+    color: var(--white);
     border-bottom: 8px solid var(--border-dark);
     border-radius: 3px;
     font-size: 1.2rem;
@@ -3585,17 +3656,17 @@ chartpage {
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-    background: var(--blue);
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: var(--rainblue);
     font-family: weathertext2;
-    margin-left:-46px;
-    margin-top:10px
-  }
+    margin-left: -46px;
+    margin-top: 10px
+}
 
-  rainunitmm,
+rainunitmm,
 rainunitin {
-    position:absolute;
+    position: absolute;
     font-size: .6rem;
     color: var(--white);
     margin-top: -41px;
@@ -3606,18 +3677,17 @@ rainunitin {
 rainunitin {
     margin-left: -40px
 }
-  
-  
-  
-  smallrainunit2b {
+
+smallrainunit2b {
     font-family: weathertext2;
     vertical-align: top;
     top: 2px;
-    font-size:.25rem;
+    font-size: .25rem;
     color: var(--white);
-  }
-  
-  .lity {
+}
+
+
+.lity {
     z-index: 9990;
     position: fixed;
     top: 0;
@@ -3629,42 +3699,42 @@ rainunitin {
     background: hsla(214, 10%, 14%, 0.5);
     outline: 0 !important;
     white-space: nowrap;
-  }
-  
-  .lity.lity-opened {
+}
+
+.lity.lity-opened {
     opacity: 1;
-  }
-  
-  .lity.lity-closed {
+}
+
+.lity.lity-closed {
     opacity: 0;
-  }
-  
-  .lity * {
+}
+
+.lity * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  
-  .lity-wrap {
+}
+
+.lity-wrap {
     z-index: 9990;
     position: fixed;
-    top:0;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: 0 auto;
     outline: 0 !important;
     text-align: center;
-  }
-  
-  .lity-wrap:before {
+}
+
+.lity-wrap:before {
     content: "";
     display: inline-block;
     height: 100%;
     margin-right: -0.25em;
     vertical-align: middle;
-  }
-  
-  .lity-loader {
+}
+
+.lity-loader {
     z-index: 9991;
     position: absolute;
     top: 50%;
@@ -3675,13 +3745,13 @@ rainunitin {
     text-align: center;
     font-family: headingtext;
     font-size: 14px;
-  }
-  
-  .lity-loading .lity-loader {
+}
+
+.lity-loading .lity-loader {
     opacity: 1;
-  }
-  
-  .lity-container {
+}
+
+.lity-container {
     z-index: 9992;
     display: inline-block;
     position: relative;
@@ -3692,24 +3762,24 @@ rainunitin {
     text-align: left;
     vertical-align: middle;
     white-space: normal;
-   
-  }
-  
-  .lity-content {
+
+}
+
+.lity-content {
     z-index: 9993;
     width: 100%;
     max-width: 820px;
     -webkit-transform: scale(1);
     transform: scale(1);
-  }
-  
-  .lity-closed .lity-content,
-  .lity-loading .lity-content {
+}
+
+.lity-closed .lity-content,
+.lity-loading .lity-content {
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
-  }
-  
-  .lity-content:after {
+}
+
+.lity-content:after {
     z-index: -1;
     content: "";
     display: block;
@@ -3720,9 +3790,9 @@ rainunitin {
     left: 0;
     width: auto;
     height: auto;
-  }
-  
-  .lity-close {
+}
+
+.lity-close {
     z-index: 9994;
     -webkit-appearance: none;
     position: absolute;
@@ -3750,19 +3820,19 @@ rainunitin {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    margin-top:38px;
-   
-  }
-  
-  .lity-close::-moz-focus-inner {
+    margin-top: 38px;
+
+}
+
+.lity-close::-moz-focus-inner {
     padding: 0;
     border: 0;
-  }
-  
-  .lity-close:active,
-  .lity-close:focus,
-  .lity-close:hover,
-  .lity-close:visited {
+}
+
+.lity-close:active,
+.lity-close:focus,
+.lity-close:hover,
+.lity-close:visited {
     padding: 0;
     color: #fff;
     border: 0;
@@ -3782,26 +3852,26 @@ rainunitin {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-  }
-  
-  .lity-close:active {
+}
+
+.lity-close:active {
     color: #565f67;
-  }
-  
-  .lity-image img {
+}
+
+.lity-image img {
     display: block;
     max-width: 100%;
     border: 0;
     line-height: 0;
-  }
-  
-  .lity-iframe .lity-container {
+}
+
+.lity-iframe .lity-container {
     width: 100%;
     max-width: 820px;
     margin: 0 auto;
-  }
-  
-  .lity-iframe-container {
+}
+
+.lity-iframe-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3812,11 +3882,11 @@ rainunitin {
     overflow: auto;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    pointer-events: auto;    
-    margin-left:15px
-  }
-  
-  .lity-iframe-container iframe {
+    pointer-events: auto;
+    margin-left: 15px
+}
+
+.lity-iframe-container iframe {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3826,7 +3896,7 @@ rainunitin {
     width: 98%;
     max-width: 820px;
     height: 600px;
-    max-height:450px;
+    max-height: 450px;
     margin: 0 auto;
     background: linear-gradient(135deg, #212428, #2f363f);
     background: #1e2124;
@@ -3839,33 +3909,34 @@ rainunitin {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    border-radius:5px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
-  
-  .lity-hide {
+
+.lity-hide {
     display: none;
-  }
+}
+
 
 
 
 @media screen and (max-width:960px) {
 
     chartpage {
-       display:none
+        display: none
     }
 
-    .lity-iframe-container iframe {        
-        max-height:500px;
+    .lity-iframe-container iframe {
+        max-height: 500px;
     }
 
+    .lity-close {
+        right: 5%;
+    }
 
-    .lity-close {       
-         right: 5%;           
-    }   
 
     li3 {
         align-items: center;
@@ -3883,7 +3954,7 @@ rainunitin {
         margin-top: 5px;
         margin-bottom: 5px;
         color: var(--body-text-dark);
-        background-color: hsla(0, 0%, 0%, .25);
+        background-color: var(--modules);
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
@@ -3934,21 +4005,18 @@ rainunitin {
         display: none
     }
 
-    .weather34-toggledf {       
-       display:none      
-    }
-    .weather34-toggleyellow,.weather34-toggleblue {        
-        margin-left: 2px;        
+    .lity-iframe-container iframe {
+        max-height: 600px;
     }
 
-    .lity-iframe-container iframe {        
-        max-height:600px;
+    .weather34-toggledf {
+        display: none
     }
 
+    .lity-close {
+        right: 5%;
+    }
 
-    .lity-close {       
-         right: 5%;           
-    }   
     .designedby,
     .desktoplink {
         display: none
@@ -3959,13 +4027,17 @@ rainunitin {
         margin-top: -45px
     }
 
+    .weather34-toggledf {
+        margin-left: -5px;
+    }
+
     .consolesetup,
     a {
         font-size: 10px;
         font-family: headingtext;
         text-decoration: none;
         margin-left: 10px;
-       color: var(--white);
+        color: var(--white);
     }
 
     body {
@@ -4000,7 +4072,7 @@ rainunitin {
         font-family: headingtext;
         text-decoration: none;
         margin-left: 2px;
-       color: var(--white);
+        color: var(--white);
     }
 
     vspan,
@@ -4009,6 +4081,7 @@ rainunitin {
         font-size: 9px
     }
 }
+
 deepblue {
     color: var(--deepblue);
 }
