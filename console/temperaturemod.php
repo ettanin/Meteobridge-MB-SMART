@@ -156,29 +156,6 @@ else if($weather["temp_trend"]>0){echo '<div class=thetrendboxorange>'.$lang['Ri
 else echo '<div class=thetrendboxblue>'.$lang['Steady'].''.$steadysymbol.'';?>
 </div></div>
 
-<div class="indoortemp"> 
-<?php //indoor temp
-//c
-if($weather["temp_units"]=='C' && $weather["temp_indoor"]<15) {
-echo '<blue>'.$hometemp.'&nbsp;'.$weather["temp_indoor"].'</blue> &deg;';}
-else if($weather["temp_units"]=='C' && $weather["temp_indoor"]>24) {
-echo '<red>'.$hometemp.'&nbsp;'.$weather["temp_indoor"].'</red> &deg;';}
-else if($weather["temp_units"]=='C' && $weather["temp_indoor"]>19) {
-echo '<orange>'.$hometemp.'&nbsp;'.$weather["temp_indoor"].'</orange> &deg;';}
-else if($weather["temp_units"]=='C' && $weather["temp_indoor"]>=15) {
-echo '<yellow>'.$hometemp.'&nbsp;'.$weather["temp_indoor"].'</yellow> &deg;';}
-//f
-if($weather["temp_units"]=='F' && $weather["temp_indoor"]<59) {
-echo '<blue>'.$hometemp.'&nbsp;'.$weather["temp_indoor"].'</blue> &deg;';}
-else if($weather["temp_units"]=='F' && $weather["temp_indoor"]>75.2) {
-echo '<red>'.$hometemp.'&nbsp;'.$weather["temp_indoor"].'</red> &deg;';}
-else if($weather["temp_units"]=='F' && $weather["temp_indoor"]>66.2) {
-echo '<orange>'.$hometemp.'&nbsp;'.$weather["temp_indoor"].'</orange> &deg;';}
-else if($weather["temp_units"]=='F' && $weather["temp_indoor"]>=59) {
-echo '<yellow>'.$hometemp.'&nbsp;'.$weather["temp_indoor"].'</yellow> &deg;';}
-if($weather["temp_indoor_trend"] >0)echo $risingsymbolsmall;
-else if($weather["temp_indoor_trend"]<0)echo $fallingsymbolsmall;?>
-</div>
 
 
 <div class="feels">
