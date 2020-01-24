@@ -65,7 +65,7 @@ if ($notifications=="yes") {
         '.$warmalert.'
       </div>
       <div class="weather34alert-body">
-      <p>Earthquake <orange>'.$eqdist.' </orange>km </p>
+      <p>Earthquake <orange>'.$eqdist.' km</orange> </p>
         <valuealertwarm>'.$magnitude.' <alertunit2>magnitude</alertunit2></valuealertwarm></alertunit>
       </div>
     </div>';
@@ -76,7 +76,7 @@ if ($notifications=="yes") {
             '.$warmalert.'
           </div>
           <div class="weather34alert-body">
-            <p>Earthquake <orange>'.$eqdist.' </orange>km </p>
+            <p>Earthquake <orange>'.$eqdist.' km</orange> </p>
             <valuealertyellow>'.$magnitude.' <alertunit2>magnitude</alertunit2></valuealertyellow></alertunit>
           </div>
         </div>';
@@ -87,7 +87,7 @@ if ($notifications=="yes") {
         '.$warmalert.'
       </div>
       <div class="weather34alert-body">
-      <p>Earthquake <orange>'.$eqdist.' </orange>km </p>
+      <p>Earthquake <orange>'.$eqdist.' km</orange> </p>
         <valuealertcold>'.$magnitude.' <alertunit2>magnitude</alertunit2></valuealertcold></alertunit>
       </div>
     </div>';
