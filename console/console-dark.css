@@ -141,7 +141,8 @@ li {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    border: 1px thin hsla(217, 15%, 17%, 0.5);
+    border: 1px thin hsla(217, 15%, 17%, 0.5);   
+    border-bottom: 10px solid  hsla(217, 15%, 17%, 0.5);
 }
 
 li2 {
@@ -158,11 +159,14 @@ li2 {
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: var(--body-text-dark)
+    color: var(--body-text-dark);
+    
+   
 }
 
 li3 {
-    display: none
+    display: none;
+    
 }
 
 .clock {
@@ -187,7 +191,9 @@ li3 {
     font-family: clock;
     height: 64px;
     line-height: 1.2;
-    margin-top: 5px
+    margin-top: 5px;
+   
+    
 }
 
 .clock2 {
@@ -216,6 +222,8 @@ li3 {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     -webkit-border-radius: 10px;
+   
+   
 
 }
 
@@ -243,6 +251,10 @@ li3 {
     line-height: 1.2;
     margin-top: 5px;
     text-align: center;
+    border: 1px thin hsla(217, 15%, 17%, 0.5);   
+    border-bottom: 10px solid  hsla(217, 15%, 17%, 0.5);
+   
+   
 
 }
 
@@ -307,7 +319,9 @@ li3 {
     height: 64px;
     line-height: 2;
     margin-top: 5px;
-    font-family: headingtext
+    font-family: headingtext;
+    border: 1px thin hsla(217, 15%, 17%, 0.5);   
+    border-bottom: 10px solid  hsla(217, 15%, 17%, 0.5);
 }
 
 .date1 {
@@ -371,7 +385,9 @@ li3 {
     height: 64px;
     line-height: 2;
     margin-top: 5px;
-    font-family: headingtext
+    font-family: headingtext;
+    border: 1px thin hsla(217, 15%, 17%, 0.5);   
+    border-bottom: 10px solid  hsla(217, 15%, 17%, 0.5);
 }
 
 .sunblock2 {
@@ -390,7 +406,8 @@ li3 {
     height: 64px;
     line-height: 1;
     margin-top: 25px;
-    font-family: headingtext
+    font-family: headingtext;
+   
 }
 
 .sunrise1 {
@@ -399,7 +416,7 @@ li3 {
     color: var(--silver);
     font-size: .75rem;
     line-height: 1;
-    margin-top: -65px;
+    margin-top: -75px;
     position: absolute;
     margin-left: 15px;
     font-family: headingtext;
@@ -412,7 +429,7 @@ li3 {
     color: var(--silver);
     font-size: .75rem;
     line-height: 1;
-    margin-top: -35px;
+    margin-top: -45px;
     position: absolute;
     margin-left: 15px;
     font-family: headingtext;
@@ -475,17 +492,16 @@ li3 {
 
 .daylight1 {
     display: block;
-    background: 0 0;    
+    background: 0 0;
+    color: var(--silver);
+    font-size: .75rem;
     line-height: 1;
-    margin-top: -75px;
+    margin-top: -80px;
     position: absolute;
     margin-left: 215px;
     font-family: headingtext;
-    text-align: left;
-    width:16px
+    text-align: left
 }
-
-
 
 belowthehorizon {
     font-size: 1em;
@@ -1138,7 +1154,7 @@ smallrainunit4 {
     float: none;
     width: auto;
     font-size: 22px;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 5px;
     font-family: weathertext2;
 }
@@ -1147,14 +1163,14 @@ smallrainunit4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 9px;
+    font-size: 10px;
     color: var(--silver);
     position: absolute;
     float: none;
-    margin-left: 130px;
+    margin-left: 135px;
     margin-top: 5px;
     z-index: 99999;
-    width: 7rem;
+    width: 6.5rem;
     line-height: 1.5;
     height: 16px;
     background-color: hsla(203, 18%, 23%, 0.429);
@@ -1176,14 +1192,14 @@ smallrainunit4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 9px;
+    font-size: 10px;
     color: var(--silver);
     position: absolute;
     float: none;
-    margin-left: 130px;
+    margin-left: 135px;
     margin-top: 30px;
     z-index: 99999;
-    width: 7rem;
+    width: 6.5rem;
     line-height: 1.5;
     height: 16px;
     background-color: hsla(203, 18%, 23%, 0.429);
@@ -2209,7 +2225,7 @@ valuebeaufort {
     display: flex;
     position: relative;
     left: 145px;
-    top: 50px;
+    top: 53px;
     color: var(--silver);
     background-color: hsla(203, 18%, 23%, 0.429);
     font-family: Headingtext;
@@ -2231,7 +2247,7 @@ valuebeaufort {
     display: flex;
     position: relative;
     left: 120px;
-    top: -19px;
+    top: -10px;
     color: var(--silver);
     background-color: #414547;
     font-family: Headingtext;
@@ -2275,7 +2291,7 @@ valuebeaufort {
     display: flex;
     position: relative;
     left: 85px;
-    top: -77px;
+    top: -75px;
     color: var(--silver);
     background-color: hsla(203, 18%, 23%, 0.429);
     font-family: Headingtext;
@@ -2307,7 +2323,7 @@ valuebeaufort {
     line-height: 1.2;
     align-items: center;
     justify-content: center;
-    top: 5px;
+    top: 15px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -4024,7 +4040,9 @@ smallrainunit2b {
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-        -webkit-border-radius: 10px
+        -webkit-border-radius: 10px;
+        border: 1px thin hsla(217, 15%, 17%, 0.5);   
+    border-bottom: 10px solid  hsla(217, 15%, 17%, 0.5);
     }
 
     .designedby,
