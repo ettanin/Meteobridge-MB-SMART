@@ -21,12 +21,12 @@
 :root {
     --white: #ffffff;
     --light: #f5f5f5;
-    --dark: #151519;
+    --dark: #4a5568;
     --dark-light: hsla(0, 0%, 0%, 0.251);
     --dark-toggle: #35393b;
-    --dark-caption: #22252f;
+    --dark-caption: #4a5568;
     --light-caption: #ffffff;
-    --black: #000000;
+    --black: #4a5568;
     --deepblue: #4ba0ad;
     --blue: #4ba0ad;
     --rainblue: #00adbd;
@@ -39,17 +39,16 @@
     --purple: #8680bc;
     --silver: #afb7c0;
     --border-dark: #3d464d;
-    --border-light: #ced1da;
-    --body-text-light: #545454;
+    --border-light: #E2E8F0;
+    --body-text-light: #4a5568;
     --blocks: #ffffff;
 }
 
 body {
     font-family: headingtext;
     margin: 0 auto;
-    color: var(--body-text-light);
-    background: hsl(240, 14%, 97%);
-    background: radial-gradient(circle, hsl(240, 14%, 97%) 0%, hsl(0, 0%, 100%) 50%, hsl(240, 14%, 97%) 100%);
+    background-color: hsla(210, 11%, 96%,.5);
+  color: #4a5568;
     width: 100%;
     max-width: 985px;
     text-rendering: optimizeLegibility;
@@ -116,23 +115,22 @@ li {
     border: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background: var(--light);
+    background-color:white;
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
     color: var(--body-text-light);
-    background-color: var(--white);
     box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
     -webkit-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
     -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
     -ms-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
     -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    -webkit-border-radius: 10px
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px
+    
 }
 
 li2 {
@@ -150,6 +148,17 @@ li2 {
     margin-top: 5px;
     margin-bottom: 5px;
     color: var(--silver);
+    box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -webkit-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -ms-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background: white;
 }
 
 li3 {
@@ -157,7 +166,7 @@ li3 {
 }
 
 .clock {
-    background: var(--blocks);
+    background: white;
     border-radius: 3px;
     padding: 0;
     padding-left: 70px;
@@ -184,6 +193,11 @@ li3 {
     -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
     -ms-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
     -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px
 }
 
 .date {
@@ -199,14 +213,10 @@ li3 {
 }
 
 .clock2 {
-    background: 0;
+    background:white;
     padding: 5px;
     padding-left: 10px;
-    display: flex;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    display: flex;    
     left: 12px;
     text-align: center;
     width: auto;
@@ -218,21 +228,11 @@ li3 {
     height: 50px;
     line-height: 1.2;
     top: 65px;
-    box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
-    -webkit-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
-    -moz-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
-    -ms-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
-    -o-box-shadow: 0px 5px 5px rgba(104, 132, 157, 0.5), 0px -2px 5px var(--white);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    -webkit-border-radius: 10px;
+    
 }
 
 .clock3 {
-    background: var(--blocks);
+   
     border-radius: 3px;
     padding: 0px;
     padding-left: 70px;
@@ -255,11 +255,7 @@ li3 {
     line-height: 1.2;
     margin-top: 5px;
     text-align: center;
-    box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
-    -webkit-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
-    -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
-    -ms-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
-    -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    
 
 }
 
@@ -291,8 +287,7 @@ li3 {
     margin-left: -5px
 }
 
-.moonblock {
-    background: var(--blocks);
+.moonblock {   
     border-radius: 3px;
     padding: 0;
     padding-left: 10px;
@@ -314,11 +309,7 @@ li3 {
     line-height: 2;
     margin-top: 5px;
     font-family: headingtext;
-    box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
-    -webkit-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
-    -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
-    -ms-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
-    -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    
 }
 
 .moonblock2 {
@@ -384,7 +375,7 @@ li3 {
 }
 
 .sunblock {
-    background: var(--blocks);
+   
     border-radius: 3px;
     padding: 0;
     padding-left: 0;
@@ -406,11 +397,6 @@ li3 {
     line-height: 2;
     margin-top: 5px;
     font-family: headingtext;
-    box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
-    -webkit-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
-    -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
-    -ms-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
-    -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
 }
 
 .sunblock2 {
@@ -522,22 +508,21 @@ li3 {
 }
 
 .daylight1 {
-    display: block;
+    display: flex;
     background: 0 0;
     color: var(--body-text-light);
     font-size: .75rem;
     line-height: 1;
-    margin-top: -80px;
+    margin-top: -75px;
     position: absolute;
-    margin-left: 215px;
-    font-family: headingtext;
-    text-align: left
+    margin-left: 225px;
+
+
+
 }
 
 belowthehorizon {
-    font-size: 1em;
-    width: 80px;
-    display: block
+    display: flex;
 }
 
 orange {
@@ -582,10 +567,7 @@ orange {
     width: 9rem;
     height: 4.2rem;
     padding-top: 14px;
-    color: var(--white);
-    border: 1px solid var(--border-light);
-    border-bottom: 10px solid var(--border-light);
-    border-radius: 2px;
+    color: var(--white);    
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -594,10 +576,17 @@ orange {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px
+    box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -webkit-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -ms-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    
 }
 
 .outsideminus10 {
@@ -947,10 +936,7 @@ trendmovementsteadyx {
     width: 9rem;
     height: 4.2rem;
     padding-top: 14px;
-    color: var(--white);
-    border: 1px solid var(--border-light);
-    border-bottom: 10px solid var(--border-light);
-    border-radius: 2px;
+    color: var(--white);    
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -958,11 +944,17 @@ trendmovementsteadyx {
     font-size: 2.5rem;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px
+    justify-content: center;  
+    box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -webkit-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -ms-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px
 }
 
 .rainbox {
@@ -1052,8 +1044,8 @@ blue {
     color: var(--silver);
     position: absolute;
     float: none;
-    margin-left: -95px;
-    margin-top: 5px;
+    margin-left: -110px;
+    margin-top: 0px;
     z-index: 99999;
     width: 15rem;
     line-height: 1.2;
@@ -1064,6 +1056,7 @@ blue {
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
     font-family: weathertext2;
+
 }
 
 .indoortemp-mod value {
@@ -1074,6 +1067,7 @@ blue {
     margin-left: 10px;
     margin-top: 5px;
     font-family: weathertext2;
+
 }
 
 
@@ -1086,9 +1080,9 @@ blue {
     position: absolute;
     float: none;
     margin-left: 135px;
-    margin-top: 5px;
+    margin-top: 0;
     z-index: 99999;
-    width: 6.5rem;
+    width: 7.5rem;
     line-height: 2;
     height: 20px;
     box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
@@ -1120,9 +1114,9 @@ blue {
     position: absolute;
     float: none;
     margin-left: 135px;
-    margin-top: 30px;
+    margin-top: 25px;
     z-index: 99999;
-    width: 6.5rem;
+    width: 7.5rem;
     line-height: 2;
     height: 20px;
     box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
@@ -1153,8 +1147,8 @@ indoor-temp-trend {
     color: var(--dark);
     position: absolute;
     float: none;
-    margin-left: 50px;
-    margin-top: 40px;
+    margin-left: 38px;
+    margin-top: 30px;
     z-index: 99999;
     width: 4rem;
     line-height: 1;
@@ -1436,8 +1430,7 @@ valuetextheading2 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-shadow: inset 3px 0 0 0 var(--blue);
-    ;
+    -webkit-box-shadow: inset 3px 0 0 0 var(--blue);   
     box-shadow: inset 3px 0 0 0 var(--blue);
 }
 
@@ -1536,7 +1529,9 @@ windtodaymax {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    -o-border-radius: 50%
+    -o-border-radius: 50%;
+    box-shadow: 2px 2px 2px 0px #DFE4EA inset, -2px -2px 2px 0px #ffffff inset;
+
 }
 
 .thearrow,
@@ -1616,15 +1611,32 @@ uv0 {
     -o-border-radius: 50%
 }
 
-.text1,
-.windvalue1 {
+.text1{
     color: var(--blue);
     font-family: weathertext3;
-    font-size: 1.45rem
+    font-size: 1.55rem;
+    
 }
 
 .windvalue1 {
-    margin-left: 5px
+    display:flex;
+    margin-left: 60px;       
+    margin-top:-5px;
+    margin-bottom:5px;
+    background:white;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width:60px;
+    padding-left:4px;
+    padding-right:4px;   
+    text-shadow:1px 1px hsla(0, 0%, 80%,.5); 
+    font-size: 1.75rem;
+    color: var(--blue);
+    font-family: weathertext3;
 }
 
 .windirection1 {
@@ -1637,7 +1649,7 @@ uv0 {
     position: absolute;
     width: 180px;
     height: 180px;
-    margin-top: -75px;
+    margin-top: -80px;
     margin-left: -110px;
     text-align: center
 }
@@ -1663,12 +1675,14 @@ uv0 {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    -o-border-radius: 50%
+    -o-border-radius: 50%;
+    
 }
 
 .rainblue1 {
     bottom: 5px
 }
+
 
 .homeweathercompass1>.windirectiontext1 {
     z-index: 10;
@@ -1678,7 +1692,8 @@ uv0 {
     text-align: center;
     font-family: headingtext;
     font-size: 15px;
-    line-height: 1
+    line-height: 1;
+    
 }
 
 .windirectiontext1 span {
@@ -1716,7 +1731,8 @@ averwordwindword {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin-top: -45px
+    margin-top: -45px;
+
 }
 
 .homeweathercompass2 {
@@ -1736,7 +1752,7 @@ averwordwindword {
 .text2 {
     position: relative;
     margin-top: 0;
-    margin-left: -35px;
+    margin-left: -30px;
     font-size: 1.55em
 }
 
@@ -2640,7 +2656,7 @@ iconcolor2 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: -100px;
+    margin-top: -107px;
     z-index: 99999;
     color: var(--body-text-light);
     font-family: weathertext2;
@@ -2663,7 +2679,7 @@ iconcolor2 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: -80px;
+    margin-top: -90px;
     z-index: 99999;
     color: var(--body-text-light);
     font-family: weathertext2;
@@ -2686,7 +2702,7 @@ iconcolor2 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: 15px;
+    margin-top: 12px;
     z-index: 99999;
     color: var(--body-text-light);
     font-family: weathertext2;
@@ -2709,7 +2725,7 @@ iconcolor2 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: 33px;
+    margin-top: 30px;
     z-index: 99999;
     color: var(--body-text-light);
     font-family: weathertext2;
@@ -2849,7 +2865,7 @@ a {
     -webkit-border-radius: 50px;
     border-radius: 50px;
     top: -1px;
-    margin-left: -5px;
+    margin-left: 0;
     -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
     -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
     box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
@@ -2902,7 +2918,7 @@ a {
     -webkit-border-radius: 50px;
     border-radius: 50px;
     top: -1px;
-    margin-left: -0px;
+    margin-left: 0;
     -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
     -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
     box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
@@ -3025,7 +3041,7 @@ a {
     -webkit-border-radius: 50px;
     border-radius: 50px;
     top: -1px;
-    margin-left: -5px;
+    margin-left: 0;
     -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
     -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
     box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
@@ -3084,7 +3100,7 @@ a {
     -webkit-border-radius: 50px;
     border-radius: 50px;
     top: -1px;
-    margin-left: -5px;
+    margin-left: 0;
     -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
     -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
     box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
@@ -3182,7 +3198,6 @@ a {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     border: 3px solid var(--yellow);
-    ;
     background: 0
 }
 
@@ -3318,14 +3333,14 @@ a {
     -webkit-border-radius: 50px;
     border-radius: 50px;
     top: -1px;
-    margin-left: -1px;
+    margin-left: 3px;
     margin-right: 3px;
     background: #35393b;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
     top: -1px;
-    margin-left: 0;
+    margin-left: -5px;
     -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
     -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
     box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
