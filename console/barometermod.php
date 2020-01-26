@@ -52,7 +52,7 @@ valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 </div>
 <div class="text2"><?php echo "<blue>".$weather["barometer"],"</blue><span>".$weather["barometer_units"]."</span>";?> </div></div></div>
 
-<div class="heatcircleindoor" style="margin-top:0px;margin-left:156px">
+<div class="heatcircleindoor" style="margin-top:-12px;margin-left:156px">
 <div class="heatcircle-content"><?php echo date('Y')?> Max <blue><?php echo $weather["thb0seapressyearmaxtime"]?></blue>
 <?php //avg today
 echo "<div class=tempconverter1><div class=tempmodulehome20-25c>". $weather["thb0seapressymax"]."<smalltempunit2>".$weather["barometer_units"];?></smalltempunit2></div></div>
@@ -70,18 +70,13 @@ echo "<div class=tempconverter1><div class=tempmodulehome15-20c style='font-size
 echo $weather['thb0seapressmmin']."<smalltempunit2>".$weather["barometer_units"] 
 ?></smalltempunit2></div></div>
 
-<div class="btrend">
+<div style="margin-top:-35px;margin-left:-305px;">
 <?php 
 //falling
-if($weather["barometer_trend"]<0){echo '';echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue> '.number_format($weather["barometer_trend"],2).'</blue>';}
+if($weather["barometer_trend"]<0){echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue>'.number_format($weather["barometer_trend"],2).'</blue>';}
 //rising
 else if($weather["barometer_trend"]>0){echo '&nbsp;';echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["barometer_trend"],2).'</orange>';}
 //steady
-else echo $lang['Steady'].''.$steadysymbol.'';?>
+else echo 'Steady'.$steadysymbol.'';?>
 </div></div></div></div>
-
-
 </div><div>
-
-
-

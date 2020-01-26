@@ -3,11 +3,11 @@
 <head>
 <style>
 .thearrow2 {
-        -webkit-transform: rotate(<?php echo $weather["wind_direction"]; ?>deg);
-        -moz-transform: rotate(<?php echo $weather["wind_direction"]; ?>deg);
-        -o-transform: rotate(<?php echo $weather["wind_direction"]; ?>deg);
-        -ms-transform: rotate(<?php echo $weather["wind_direction"]; ?>deg);
-        transform: rotate(<?php echo $weather["wind_direction"]; ?>deg);
+        -webkit-transform: rotate(<?php echo $weather["wind_direction"]+45; ?>deg);
+        -moz-transform: rotate(<?php echo $weather["wind_direction"]+45; ?>deg);
+        -o-transform: rotate(<?php echo $weather["wind_direction"]+45; ?>deg);
+        -ms-transform: rotate(<?php echo $weather["wind_direction"]+45; ?>deg);
+        transform: rotate(<?php echo $weather["wind_direction"]+45; ?>deg);
         position: absolute;
         z-index: 200;
         top: 0;
@@ -70,11 +70,11 @@
     }
 
     .thearrow1 {
-        -webkit-transform: rotate(<?php echo $weather["wind_direction_avg"]; ?>deg);
-        -moz-transform: rotate(<?php echo $weather["wind_direction_avg"]; ?>deg);
-        -o-transform: rotate(<?php echo $weather["wind_direction_avg"]; ?>deg);
-        -ms-transform: rotate(<?php echo $weather["wind_direction_avg"]; ?>deg);
-        transform: rotate(<?php echo $weather["wind_direction_avg"]; ?>deg);
+        -webkit-transform: rotate(<?php echo $weather["wind_direction_avg"]+45; ?>deg);
+        -moz-transform: rotate(<?php echo $weather["wind_direction_avg"]+45; ?>deg);
+        -o-transform: rotate(<?php echo $weather["wind_direction_avg"]+45; ?>deg);
+        -ms-transform: rotate(<?php echo $weather["wind_direction_avg"]+45; ?>deg);
+        transform: rotate(<?php echo $weather["wind_direction_avg"]+45; ?>deg);
         position: absolute;
         z-index: 200;
         top: 0;
