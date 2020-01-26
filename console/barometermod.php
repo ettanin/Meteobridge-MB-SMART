@@ -73,9 +73,9 @@ echo $weather['thb0seapressmmin']."<smalltempunit2>".$weather["barometer_units"]
 <div class="btrend">
 <?php 
 //falling
-if($weather["barometer_trend"]<0){echo '';echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue> '.number_format($weather["barometer_trend"],1).'</blue><br>'.$lang['Last Hour'];}
+if($weather["barometer_trend"]<0){echo '';echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue> '.number_format($weather["barometer_trend"],2).'</blue>';}
 //rising
-else if($weather["barometer_trend"]>0){echo '&nbsp;';echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["barometer_trend"],1).'</orange><br>'.$lang['Last Hour'];}
+else if($weather["barometer_trend"]>0){echo '&nbsp;';echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["barometer_trend"],2).'</orange>';}
 //steady
 else echo $lang['Steady'].''.$steadysymbol.'';?>
 </div></div></div></div>

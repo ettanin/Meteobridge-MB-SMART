@@ -1689,8 +1689,8 @@ averwordwindword {
 .homeweathercompass2>.homeweathercompass-line2 {
     position: absolute;
     left: -125px;
-    width: 105px;
-    height: 105px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto;    
     border: 8px solid rgba(50, 56, 59, 0.1);
     border-top: 8px solid var(--border-dark);
@@ -1703,7 +1703,8 @@ averwordwindword {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     margin-top: 0px;
-    box-shadow: -1px -1px 1px 0 rgba(255, 255, 255, 0.04) inset, 1px 1px 1px 0 hsla(206, 15%, 73%, 0.11) inset;
+    box-shadow: inset -2px -2px 4px rgba(116, 116, 131, 0.1),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
     
   
