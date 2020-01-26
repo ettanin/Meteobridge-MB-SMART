@@ -44,8 +44,8 @@ var i=weekdays[e.getDay()];if(a<10){a="0"+a}if(g<10){g="0"+g}if(c<10){c="0"+c}
 //weather34 option to use 24/12 hour format
 var c=e.getHours()
 <?php if ($clockformat == '12') { echo '% 12 || 12';} else { echo '% 24 || 00';}?>;
-document.getElementById("weather34clock4").innerHTML="<div class='thedate3'> "+i+" "+h+" "+b+suffix+" "+f+" </div><div class='clock3'> "+c+":"+a+":"+g+
+document.getElementById("weather34clock4").innerHTML="<div class='thedate3'> "+i+" "+h+" "+b+suffix+" "+f+" </div><div class='clock3'><time> "+c+":"+a+":"+g+
 "<?php if($clockformat=='12') {echo "<smalltempunit2>".date('a')."</smalltempunit2>";} else {echo "";}?>"}
 function StartClock(){clockID=setInterval(UpdateClock,500)}
-function KillClock(){clearTimeout(clockID)}window.onload=function(){StartClock()}(jQuery);</script>
+function KillClock(){clearTimeout(clockID)}window.onload=function(){StartClock()}(jQuery);</script></time>
 </div></div>
