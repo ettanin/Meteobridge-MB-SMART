@@ -1733,6 +1733,12 @@ averwordwindword {
     font-family: weathertext3;
 }
 
+.thetrend{
+    margin-top:-35px;
+    margin-left:-320px;
+    font-size:1.25em
+}
+
 .pressuretext,
 .pressuretextfast {
     position: absolute;
@@ -4111,6 +4117,11 @@ smallrainunit2b {
     .homeweathercompass2>.homeweathercompass-line2 {
         left: 195px
     }
+
+    .text2 {
+
+        margin-left: 40px;
+    }
 }
 
 @media screen and (max-width:640px) {
@@ -4130,6 +4141,10 @@ smallrainunit2b {
         right: 5%;
     }
 
+    .text2 {
+
+        margin-left: 45px;
+    }
     .designedby,
     .desktoplink {
         display: none

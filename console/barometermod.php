@@ -70,7 +70,7 @@ echo "<div class=tempconverter1><div class=tempmodulehome15-20c style='font-size
 echo $weather['thb0seapressmmin']."<smalltempunit2>".$weather["barometer_units"] 
 ?></smalltempunit2></div></div>
 
-<div style="margin-top:-35px;margin-left:-305px;">
+<div class="thetrend">
 <?php 
 //falling
 if($weather["barometer_trend"]<0){echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue>'.number_format($weather["barometer_trend"],2).'</blue>';}
@@ -78,5 +78,4 @@ if($weather["barometer_trend"]<0){echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue>'.n
 else if($weather["barometer_trend"]>0){echo '&nbsp;';echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["barometer_trend"],2).'</orange>';}
 //steady
 else echo 'Steady'.$steadysymbol.'';?>
-</div></div></div></div>
-</div><div>
+</div></div></div></div></div><div>

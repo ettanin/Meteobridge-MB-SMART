@@ -1704,7 +1704,12 @@ uv0 {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin-top: 30px;       
+    margin-top: 30px; 
+    box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;   
+  background-image: linear-gradient(45deg, hsla(250, 12%, 90%,.3) 25%, transparent 25%, transparent 75%, hsla(250, 12%, 90%,.3) 75%), linear-gradient(45deg, hsla(250, 12%, 90%,.3) 25%, 
+  transparent 25%, transparent 75%, hsla(250, 12%, 90%,.3) 75%);
+  background-size: 2px 2px;
+  background-position: 0 0, 1px 1px;      
 }  
 
 
@@ -1759,7 +1764,11 @@ averwordwindword {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     margin-top: -5px;    
-    box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
+    box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;   
+  background-image: linear-gradient(45deg, hsla(250, 12%, 90%,.3) 25%, transparent 25%, transparent 75%, hsla(250, 12%, 90%,.3) 75%), linear-gradient(45deg, hsla(250, 12%, 90%,.3) 25%, 
+  transparent 25%, transparent 75%, hsla(250, 12%, 90%,.3) 75%);
+  background-size: 2px 2px;
+  background-position: 0 0, 1px 1px;
   
 }
 
@@ -1783,6 +1792,12 @@ averwordwindword {
     text-shadow:1px 1px hsla(0, 0%, 80%,.5);    
     color: var(--blue);
     font-family: weathertext3;
+}
+
+.thetrend{
+    margin-top:-30px;
+    margin-left:-320px;
+    font-size:1.25em
 }
 
 .pressuretext,
@@ -4260,7 +4275,10 @@ smallrainunit2b {
     .lity-close {
         right: 3%;
     }
+    .text2 {
 
+        margin-left: 37px;
+    }
     li3 {
         align-items: center;
         display: flex;
@@ -4342,7 +4360,10 @@ smallrainunit2b {
     .weather34-toggledf {
         display: none
     }
+    .text2 {
 
+        margin-left: 40px;
+    }
     .designedby,
     .desktoplink {
         display: none
