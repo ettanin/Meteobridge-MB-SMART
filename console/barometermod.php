@@ -79,4 +79,15 @@ echo "<div class=tempconverter1><div class=tempmodulehome15-20c style='font-size
 echo $weather["barometer_min"]."<smalltempunit2>".$weather["barometer_units"] 
 ?></smalltempunit2></div></div>
 
-</div></div></div></div><div>
+<?php
+//weather34 console vue-vp2 Davis forecast icon
+if (preg_match("/Snow/i", $weather["vpforecasttext"]) && anyToC($weather["temp"])<-1)  {echo '<img rel="prefetch" src="forecasticons/snow.svg" class="consoleicon1"  alt="snow forecasted" title="snow forecasted">';} 
+else if (preg_match("/Sleet/i", $weather["vpforecasttext"]) && anyToC($weather["temp"])<1)  {echo '<img rel="prefetch" src="forecasticons/sleet.svg" class="consoleicon1" alt="sleet forecasted" title="sleet forecasted">';} 
+else if (preg_match("/Rain/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="forecasticons/rainvp.svg" class="consoleicon1" alt="rain forecasted" title="rain forecasted">';} 
+else if (preg_match("/Precipitation/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="forecasticons/rainvp.svg" class="consoleicon1" alt="rain forecasted" title="rain forecasted">';} 
+else if (preg_match("/Windy/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="forecasticons/windy.svg" class="consoleicon1" alt="windy forecasted" title="windy forecasted">';} 
+else if (preg_match("/clear/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="forecasticons/clear.svg" class="consoleicon1" alt="clear forecasted" title="clear forecasted">';}
+else if (preg_match("/Partly/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="forecasticons/partly-cloudy-day.svg" class="consoleicon1" alt="partly cloudy forecasted" title="partly cloudy forecasted">';} 
+else if (preg_match("/Mostly cloudy/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="forecasticons/mostlycloudy.svg" class="consoleicon1" alt="mostly cloudy forecasted" title="mostly cloudy forecasted">';} 
+else if (preg_match("/Scattered/i", $weather["vpforecasttext"])) {echo '<img rel="prefetch" src="forecasticons/scatteredclouds.svg" class="consoleicon1" alt="scattered clouds forecasted" title="scattered clouds forecasted">';} 
+?>

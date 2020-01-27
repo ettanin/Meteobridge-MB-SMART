@@ -1783,7 +1783,7 @@ averwordwindword {
 
 .text2 {
     position: absolute;
-    margin-top: 35px;
+    margin-top: 42px;
     margin-left: 45px;
     font-size: 1.25em;
     text-shadow: 1px 1px hsla(0, 0%, 80%, .5);
@@ -2697,6 +2697,13 @@ iconcolor2 {
     margin-left: 190px;
     margin-top: -35px;
     width: 40px;
+}
+
+.consoleicon1 {
+    position: absolute;
+    margin-left: -163px;
+    margin-top: -100px;
+    width: 25px;
 }
 
 .maxbox {
