@@ -80,6 +80,42 @@ echo $weather["barometer_min"]."<smalltempunit2>".$weather["barometer_units"]
 ?></smalltempunit2></div></div>
 
 <?php
+
+//weather34 script Davis forecast outlook
+$weather["vpforecasttext"]	=str_replace('within', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('ending', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('likely', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('with', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('possible', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('and warmer.', '<oorange>Warmer </oorange>period expected .<br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('and cooler.', '<blue>Cooler </blue>period expected.<br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('and ending', 'for', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('to the', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('shift', 'becoming', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('wind shifting', 'shifting', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('wind becoming', 'becoming', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('Windy', '<oorange>Windy</oorange>', $weather["vpforecasttext"]);
+if (anyToC($weather["temp"])<-1){$weather["vpforecasttext"]	=str_replace('Precipitation',  'Risk of <blue>Snow</blue>.', $weather["vpforecasttext"]);}
+else if (anyToC($weather["temp"])<1){$weather["vpforecasttext"]	=str_replace('Precipitation',  'Chance of <blue>Rain</blue> & <blue>Sleet</blue>.', $weather["vpforecasttext"]);}
+$weather["vpforecasttext"]	=str_replace('Precipitation',  'Chance of <blue>Rain</blue>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('Increasing clouds', 'Periods of <blue>Scattered Clouds</blue><br> ', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('and windy', '<oorange>Windy</oorange>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('Mostly clear', '<oorange>Mostly Clear </oorange> Conditions<br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('Partly cloudy', '<blue>Partly Cloudy</blue> Conditions<br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('Mostly cloudy', '<blue>Mostly Cloudy </blue> Conditions<br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('24 to 48 hours', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('6 to 12 hours', '', $weather["vpforecasttext"]); 
+$weather["vpforecasttext"]	=str_replace('12 to 24 hours', '', $weather["vpforecasttext"]);  
+$weather["vpforecasttext"]	=str_replace('48 to 72 hours', '', $weather["vpforecasttext"]); 
+$weather["vpforecasttext"]	=str_replace('12 hours', '', $weather["vpforecasttext"]); 
+$weather["vpforecasttext"]	=str_replace('6 hours', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('South West', 'SW', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('South East', 'SE', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('W, NW, or N', 'W,NW,to N', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('little temperature change.', 'No <oorange>Significant </oorange> change in temperature.<br>', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace(', possibly heavy at times', '', $weather["vpforecasttext"]);
+$weather["vpforecasttext"]	=str_replace('becoming', '', $weather["vpforecasttext"]);
+
 //weather34 console vue-vp2 Davis forecast icon
 if (preg_match("/Snow/i", $weather["vpforecasttext"]) && anyToC($weather["temp"])<-1)  {echo '<img rel="prefetch" src="forecasticons/snow.svg" class="consoleicon1"  alt="snow forecasted" title="snow forecasted">';} 
 else if (preg_match("/Sleet/i", $weather["vpforecasttext"]) && anyToC($weather["temp"])<1)  {echo '<img rel="prefetch" src="forecasticons/sleet.svg" class="consoleicon1" alt="sleet forecasted" title="sleet forecasted">';} 
