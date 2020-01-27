@@ -47,12 +47,12 @@ $darkhours = 23 - $lighthours; $darkminutes = 60 - $lightmins;if ($darkminutes<1
 
 <div class="sunrise1"> <?php echo $sunuphalf.' '. $lang['Sunrise'];?> 
 
-<?php echo $nextrisetxt.' '.$nextrise.'  <br>'.$sunuphalf.' '. $lang['Daylight'].' (<blue>'.$light.'</blue> hrs)';?>
+<?php echo $nextrisetxt.' (<orange>'.$nextrise.'</orange>)<br>'.$sunuphalf.' '. $lang['Daylight'].' (<blue>'.$light.'</blue> hrs)';?>
 
 </div>
 
-<div class="sunset1"> <?php echo $sundownhalf.' '.$lang['Sunset'];?> 
-<?php echo $nextsettxt.' '.$nextset.'  <br>'.$sundownhalf.' '. $lang['Darkness'].' (<blue>'.$darkhours,":".$darkminutes.'</blue> hrs)';?>
+<div class="sunset1"><?php echo $sundownhalf.' '.$lang['Sunset'];?> 
+<?php echo $nextsettxt.' (<blue>'.$nextset.'</blue>)<br>'.$sundownhalf.' '. $lang['Darkness'].' (<blue>'.$darkhours,":".$darkminutes.'</blue> hrs)';?>
 </div>
 <div class="daylight1"><?php echo $hrs."<smalltempunit2>hrs</smalltempunit2>:". $min."<smalltempunit2>min</smalltempunit2>" ?></div> 
 <tdiv class=till><?php echo $txt?></div>
