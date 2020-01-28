@@ -1,5 +1,5 @@
 <?php include('livedata.php');include('common.php');?>
-<div class="modulecaption"><?php echo $lang['Dewpoint']?>&deg;<blue1><?php echo $weather["temp_units"]?></blue1></div>
+<div class="modulecaption"><?php echo $lang['Dewpoint']?></div>
 <div class="tempcontainer">
 <?php echo "<div class='maxdata'>". $weather["dewmin"]."&deg;</div>";?> 
 <?php echo "<div class='mindata'>".$weather["dewmax"]."&deg;</div>";?>

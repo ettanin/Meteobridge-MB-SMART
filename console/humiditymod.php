@@ -1,18 +1,18 @@
 <?php include('livedata.php');include('common.php');?>
-<div class="modulecaption"><?php echo $lang['Humidity']?> <blue1>%</blue1></div>
+<div class="modulecaption"><?php echo $lang['Humidity']?></div>
 <div class="tempcontainer">
 <?php echo "<div class='maxdata'>". $weather["humidity_min"]."%</div>";?> 
 <?php echo "<div class='mindata'>".$weather["humidity_max"]."%</div>";?>
 <?php echo "<div class='hidata'>Min</div>";?> 
 <?php echo "<div class='lodata'>Max</div>";?>
 <?php //weather34 sez lets make the temperature look nice 
-if($weather['humidity']<30){echo '<div class=outside26-30>'.number_format($weather['humidity'],0).'<smalltempunit>%</smalltempunit>';}
-else if($weather['humidity']<50){echo '<div class=outside6-10>'.number_format($weather['humidity'],0).'<smalltempunit>%</smalltempunit>';}
-else if($weather['humidity']<70){echo '<div class=outside6-10>'.number_format($weather['humidity'],0).'<smalltempunit>%</smalltempunit>';}
-else if($weather['humidity']<=100){echo '<div class=outsidezero>'.number_format($weather['humidity'],0).'<smalltempunit>%</smalltempunit>';}
+if($weather['humidity']<30){echo '<div class=outside26-30>'.number_format($weather['humidity'],0).'<smallhumidityunit>%</smallhumidityunit>';}
+else if($weather['humidity']<50){echo '<div class=outside6-10>'.number_format($weather['humidity'],0).'<smallhumidityunit>%</smallhumidityunit>';}
+else if($weather['humidity']<70){echo '<div class=outside6-10>'.number_format($weather['humidity'],0).'<smallhumidityunit>%</smallhumidityunit>';}
+else if($weather['humidity']<=100){echo '<div class=outsidezero>'.number_format($weather['humidity'],0).'<smallhumidityunit>%</smallhumidityunit>';}
 
 ?>
-</div></smalltempunit></div></div>
+</div></div></div>
 
 
 <div class="heatcircle"><div class="heatcircle-content">

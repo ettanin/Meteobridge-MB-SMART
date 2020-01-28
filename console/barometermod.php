@@ -37,7 +37,7 @@ transform:rotate(<?php if ($weather["barometer_units"]=='mb' or $weather["barome
 }?>deg);z-index:9}
 valuetextba{font-size:1em}valuetextbc{font-size:1.1em}valuetexttr{font-size:8px}
 </style>
-<div class="modulecaptionpressure">Pressure &nbsp;<blue1><?php echo $weather["barometer_units"]?></blue1></div>
+<div class="modulecaptionpressure"><?php echo $lang['Barometer']?></div>
 
 
 
@@ -64,13 +64,13 @@ else echo 'Steady'.$steadysymbol.'';?>
 <div class="heatcircleindoor" style="margin-top:-3px;margin-left:156px">
 <div class="heatcircle-content"><?php echo date('Y')?> Max <blue><?php echo $weather["thb0seapressyearmaxtime"]?></blue>
 <?php //avg today
-echo "<div class=tempconverter1><div class=tempmodulehome20-25c>". $weather["thb0seapressymax"]."<smalltempunit2>".$weather["barometer_units"];?></smalltempunit2></div></div>
+echo "<div class=tempconverter1><div class=tempmodulehome20-25c>". $weather["thb0seapressymax"]."<smalltempunit2>&nbsp;".$weather["barometer_units"];?></smalltempunit2></div></div>
 
 
 
 <div class="heatcircle-content" style="margin-top:5px"><?php echo date('Y')?> Min <blue><?php echo $weather["thb0seapressyearmintime"]?></blue>
 <?php //avg today
-echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["thb0seapressymin"]."<smalltempunit2>".$weather["barometer_units"];?></smalltempunit2></div></div>
+echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["thb0seapressymin"]."<smalltempunit2>&nbsp;".$weather["barometer_units"];?></smalltempunit2></div></div>
 
 
 <div class="heatcircle-content" style="margin-top:5px"><?php echo $lang['Today']?> <orange>Max</orange>-<blue>Min</blue>

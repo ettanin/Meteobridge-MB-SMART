@@ -1,5 +1,5 @@
 <?php include('livedata.php');include('common.php');?>
-<div class="modulecaption"><?php echo $lang['Temperature']; ?> &deg;<blue1><?php echo $weather["temp_units"]?></blue1></div>
+<div class="modulecaption"><?php echo $lang['Temperature']; ?></div>
 <div class="tempcontainer">
 <?php echo "<div class='maxdata'>". $weather["temp_today_low"]."&deg;</div>";?> 
 <?php echo "<div class='mindata'>".$weather["temp_today_high"]."&deg;</div>";?>
@@ -145,8 +145,9 @@ else if ($weather["temp_units"]=='F' && $weather["temp_avgtoday"]>=32){echo "<di
 else if ($weather["temp_units"]=='F' && $weather["temp_avgtoday"]>14){echo "<div class=tempconverter1><div class=tempmodulehome-10-0c>". $weather["temp_avgtoday"]."&deg;<smalltempunit2>".$weather["temp_units"];}
 else if ($weather["temp_units"]=='F' && $weather["temp_avgtoday"]>-50){echo "<div class=tempconverter1><div class=tempmodulehome-50-10c>". $weather["temp_avgtoday"]."&deg;<smalltempunit2>".$weather["temp_units"];}?>
 </smalltempunit2></div></div></div>
-</div>
 
+
+<div class="thetrendgaptemp">
 <?php 
 //falling
 if($weather["temp_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falling'].'';echo '&nbsp;'.$fallingsymbolx.'&nbsp;<blue> '.number_format($weather["temp_trend"],1).'</blue>&deg;';}
@@ -154,7 +155,7 @@ if($weather["temp_trend"]<0){echo '<div class=thetrendboxblue>'.$lang['Falling']
 else if($weather["temp_trend"]>0){echo '<div class=thetrendboxorange>'.$lang['Rising'].'';echo '&nbsp;'.$risingsymbolx.'&nbsp;<orange> + '.number_format($weather["temp_trend"],1).'</orange>&deg;';}
 //steady
 else echo '<div class=thetrendboxblue>'.$lang['Steady'].''.$steadysymbol.'';?>
-</div></div>
+</div></div></div></div>
 
 
 

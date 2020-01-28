@@ -1,5 +1,5 @@
 <?php require_once('livedata.php');require_once('common.php');?>
-<div class="modulecaption">UV-Index <blue1>UVI</blue1></div>
+<div class="modulecaption">UV-Index</div>
 <div class="tempcontainer">
 <?php echo "<div class='maxdata'>". $weather["uvdmax"]."<smalltempunit4>uvi</smalltempunit4></div>";?> 
 <?php echo "<div class='mindata'>".$weather["uvdmaxtime"]."</div>";?>
@@ -22,25 +22,25 @@ else if ($weather["uv"]==0) {echo '<div class=windbox style="color:#90b12a">0.0<
 echo "<valuetextheading1>&nbsp;&nbsp;".$lang['Solarradiation']."</valuetextheading1><br>";
 if ($weather["solar"]>800){
     echo "
-<div class=tempconverter1><div class=tempmodulehome30-35c >".$weather["solar"]."<smalltempunit2>wm/2";
+<div class=tempconverter1><div class=tempmodulehome30-35c >".$weather["solar"]."<smalltempunit2>&nbsp;wm/2";
 }
 else if ($weather["solar"]>=500){
     echo "
-<div class=tempconverter1><div class=tempmodulehome20-25c >".$weather["solar"]."<smalltempunit2>wm/2";
+<div class=tempconverter1><div class=tempmodulehome20-25c >".$weather["solar"]."<smalltempunit2>&nbsp;wm/2";
 }
 else if ($weather["solar"]>0){
     echo "
-<div class=tempconverter1><div class=tempmodulehome10-15c >".$weather["solar"]."<smalltempunit2>wm/2";
+<div class=tempconverter1><div class=tempmodulehome10-15c >".$weather["solar"]."<smalltempunit2>&nbsp;wm/2";
 }
 else if ($weather["solar"]>=0){
     echo "
-<div class=tempconverter1><div class=tempmodulehome0-5c >".$weather["solar"]."<smalltempunit2>wm/2";
+<div class=tempconverter1><div class=tempmodulehome0-5c >".$weather["solar"]."<smalltempunit2>&nbsp;wm/2";
 }
 ?><smalltempunit2></div></div></div>
 
-<div class="heatcircle2"><div class="heatcircle-content"><valuetextheading1>&nbsp;<?php echo $lang['Luminance']?> Lux</valuetextheading1>
+<div class="heatcircle2"><div class="heatcircle-content"><valuetextheading1>&nbsp;<?php echo $lang['Luminance']?></valuetextheading1>
 <?php //lux
-echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["lux"]."<smalltempunit2>Lux";
+echo "<div class=tempconverter1><div class=tempmodulehome0-5c>". $weather["lux"]."<smalltempunit2>&nbsp;Lux";
 ?>
 </smalltempunit2></div></div>
 

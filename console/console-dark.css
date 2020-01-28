@@ -207,7 +207,7 @@ li3 {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    left: 12px;
+    left: 25px;
     text-align: center;
     width: auto;
     position: relative;
@@ -223,7 +223,8 @@ li3 {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     -webkit-border-radius: 10px;
-
+    font-family: weathertext2;
+    color: var(--silver);
 
 
 }
@@ -244,13 +245,13 @@ li3 {
     text-align: left;
     width: 310px;
     position: relative;
-    color: var(--blue);
+    color: var(--silver);
     font-size: 2rem;
     text-transform: uppercase;
     height: 64px;
     line-height: 2;
     margin-top: 5px;
-    font-family: weathertext3;
+    font-family: weathertext2;
     border: 1px thin hsla(217, 15%, 17%, 0.5);
     border-bottom: 10px solid hsla(217, 15%, 17%, 0.5);
 
@@ -588,30 +589,22 @@ orange {
 .outsideminus10,
 .outsideminus5,
 .outsidezero {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    width: 9rem;
-    height: 4.2rem;
-    padding-top: 14px;
-    color: var(--light);
-    border: 1px solid var(--border-dark);
-    border-bottom: 10px solid var(--border-dark);
-    border-radius: 2px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    flex-direction: column;
     align-items: center;
+    padding: 35px 5px;
+    padding-bottom:10px;
+    position: relative;
+    background: transparent;
+    border-radius: 5px;       
+    width: 8.55rem;
+    height: 3rem;
     font-family: weathertext3;
-    font-size: 2.5rem;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
+    font-size: 2.25rem;     
     background: hsla(225, 10%, 8%, 0.2);
     background: linear-gradient(84deg, hsla(225, 10%, 8%, 0.2) 0%, hsla(206, 12%, 27%, 0.2) 100%);
+    border: 1px solid var(--border-dark);
+    border-bottom: 10px solid var(--border-dark);
 }
 
 .outsideminus10 {
@@ -866,7 +859,18 @@ trendmovementsteadyx {
 }
 
 .thetrendgap {
-    margin-top: 6px
+    position:absolute;
+    margin-top: 20px
+}
+
+.thetrendgapwind {
+    position:absolute;
+    margin-top: 20px
+}
+
+.thetrendgaptemp {
+    position:absolute;
+    margin-top: 14px
 }
 
 .theraingap {
@@ -964,30 +968,23 @@ trendmovementsteadyx {
 }
 
 .windbox {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    width: 9rem;
-    height: 4.2rem;
-    padding-top: 14px;
-    color: var(--light);
-    border: 1px solid var(--border-dark);
-    border-bottom: 10px solid var(--border-dark);
-    border-radius: 2px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    flex-direction: column;
     align-items: center;
+    padding: 35px 5px;
+    padding-bottom:10px;
+    position: relative;
+    background: transparent;
+    border-radius: 5px;       
+    width: 8.55rem;
+    height: 3rem;
     font-family: weathertext3;
-    font-size: 2.5rem;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
+    font-size: 2.25rem;     
     background: hsla(225, 10%, 8%, 0.2);
     background: linear-gradient(84deg, hsla(225, 10%, 8%, 0.2) 0%, hsla(206, 12%, 27%, 0.2) 100%);
+    border: 1px solid var(--border-dark);
+    border-bottom: 10px solid var(--border-dark);
+   
 }
 
 .rainbox {
@@ -1520,9 +1517,59 @@ smalltempunit4 {
     color: #bfbfbf
 }
 
+
+
 smalltempunit {
+    display:flex;
     font-size: .65rem;
-    color: #bfbfbf
+    color: #bfbfbf;
+    background-color: hsla(204, 31%, 21%, 0.429);
+    position:relative;
+    font-size: .65rem;
+    width:1.75rem;
+    height:3.2rem;
+    margin-left:95px;
+    margin-top:0px;
+    border-radius:2px;
+    font-family:weathertext2;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.34rem 0.34rem;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -ms-border-radius:2px;
+    -o-border-radius:2px;
+}
+
+smallhumidityunit {
+    display:flex;
+    font-size: .65rem;
+    color: #bfbfbf;
+    background-color: hsla(204, 31%, 21%, 0.429);
+    position:relative;
+    font-size: .75rem;
+    width:1.2rem;
+    height:3.5rem;
+    margin-left:95px;
+    top:-25px;
+    left:-10px;
+    border-radius:2px;
+    font-family:weathertext2;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.36rem 0.36rem;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -ms-border-radius:2px;
+    -o-border-radius:2px;
 }
 
 .daylightcompass2>.daylightcompass-line2,
@@ -2269,7 +2316,7 @@ valuebeaufort {
     display: flex;
     position: relative;
     left: 110px;
-    top: -19px;
+    top: -10px;
     color: var(--silver);
    background-color: hsla(204, 31%, 21%, 0.429);
     font-family: Headingtext;
@@ -2357,7 +2404,7 @@ valuebeaufort {
     display: flex;
     position: relative;
     left: 85px;
-    top: -75px;
+    top: -72px;
     color: var(--silver);
    background-color: hsla(204, 31%, 21%, 0.429);
     font-family: Headingtext;
@@ -2401,7 +2448,7 @@ valuebeaufort {
 .modulecaptionwind {
     display: flex;
     position: relative;
-    left: -70px;
+    left: 70px;
     color: var(--silver);
    background-color: hsla(204, 31%, 21%, 0.429);
     font-family: Headingtext;

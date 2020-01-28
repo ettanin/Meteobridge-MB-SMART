@@ -1,5 +1,5 @@
 <?php include('livedata.php');include('common.php');?>
-<div class="modulecaption"><?php echo $lang['Windspeed'];?> <blue1><?php echo $weather["wind_units"]?></blue1></div>
+<div class="modulecaption"><?php echo $lang['Windspeed'];?></div>
 <div class="tempcontainer">
 <?php echo "<div class='maxdata'>". number_format($weather["winddmax"],1). "<smalltempunit2>".$weather["wind_units"]."</smalltempunit2></div>";?> 
 <?php echo "<div class='mindata'>".$weather["winddmaxtime"]."</div>";?>
