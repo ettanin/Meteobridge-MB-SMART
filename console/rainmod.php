@@ -45,7 +45,7 @@ if ($weather["rain_units"] =='in'){echo "<rainunitin>in </rainunitin>";}
 ?></div>
 
 
-<div class="heatcircle" style="margin-left:100px;"><div class="heatcircle-content">
+<div class="heatcirclerain" style="margin-left:100px;"><div class="heatcircle-content">
 <?php  //last 24 hours rainfall or current rain rate
 if ($weather["rain_rate"]>0){
   echo "<valuetextheading1>".$lang['Rain']." Rate </valuetextheading1><br><div class=tempconverter1>
