@@ -1517,59 +1517,34 @@ smalltempunit4 {
     color: #bfbfbf
 }
 
-
-
 smalltempunit {
-    display:flex;
+    position:relative;   
     font-size: .65rem;
-    color: #bfbfbf;
-    background-color: hsla(204, 31%, 21%, 0.429);
-    position:relative;
-    font-size: .65rem;
-    width:1.75rem;
-    height:3.2rem;
-    margin-left:95px;
-    margin-top:0px;
-    border-radius:2px;
+    color: var(--silver);    
+    width:2.25rem;
+    height:1rem;    
+    margin-left:100px;
+    margin-top:-5px;
+    border-radius:3px;
     font-family:weathertext2;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 0.34rem 0.34rem;
-    -webkit-border-radius:2px;
-    -moz-border-radius:2px;
-    -ms-border-radius:2px;
-    -o-border-radius:2px;
+    background-color: hsla(204, 31%, 21%, 0.429);
+
 }
 
 smallhumidityunit {
-    display:flex;
+    position:relative;   
     font-size: .65rem;
-    color: #bfbfbf;
-    background-color: hsla(204, 31%, 21%, 0.429);
-    position:relative;
-    font-size: .75rem;
-    width:1.2rem;
-    height:3.5rem;
-    margin-left:95px;
+    color: var(--silver);     
+    width:2rem;
+    height:1rem;    
+    margin-left:100px;
+    margin-top:-5px;
+    border-radius:3px;
+    font-family:weathertext2;    
     top:-25px;
     left:-10px;
-    border-radius:2px;
-    font-family:weathertext2;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 0.36rem 0.36rem;
-    -webkit-border-radius:2px;
-    -moz-border-radius:2px;
-    -ms-border-radius:2px;
-    -o-border-radius:2px;
+    background-color: hsla(204, 31%, 21%, 0.429);
+    
 }
 
 .daylightcompass2>.daylightcompass-line2,
