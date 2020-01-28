@@ -428,7 +428,7 @@ $windchillmintime2=date($dateFormat,strtotime($originalDatechill));
 	$solaroriginalDate4 = $meteobridgeapi[112];
     $solarymaxtime = date($dateFormat, strtotime($solaroriginalDate4));	
 	$solaroriginalDate6 = $meteobridgeapi[106];
-    $solardmaxtime = date($dateFormat, strtotime($solaroriginalDate6));	
+    $solardmaxtime = date("H:i", strtotime($solaroriginalDate6));	
 	
 	$weather["solarydmax"]		    = number_format($meteobridgeapi[107],0, '.', ''); //temp max yesterday
 	$weather["solarydmaxtime"]		= $solarydmaxtime; //seconds	

@@ -386,8 +386,13 @@ $consoleforecast    = "' . $_POST['consoleforecast'] . '";
                                                 <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
                                                 <circle cx="16" cy="16" r="4" />
                                             </svg>
-                                            Do you have UV Index and Solar Sensor Installed </div>
+                                            Do you have UV Index and Solar Sensor Installed ? 3 options <br>
+                                        uvindexmod.php if you have uvindex + solar<br>
+                                        solarmod.php if you only have a solar radiation sensor<br>
+                                        indoortempmod.php if oyu have none of above
                                         
+                                        </div>
+                                        <br>
 
                                             <label name="unit"></label>
                                             <div class="stationvalue">choose which file to use</div> <svg id="i-chevron-right" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="rgba(86, 95, 103, 1.000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
@@ -398,6 +403,7 @@ $consoleforecast    = "' . $_POST['consoleforecast'] . '";
                                             <select id="uvsensor" name="uvsensor" class="choose1">
                                                 <option><?php echo $uvsensor; ?></option>
                                                 <option>uvindexmod.php</option>
+                                                <option>solarmod.php</option>
                                                 <option>indoortempmod.php</option>
                                             </select>
 
