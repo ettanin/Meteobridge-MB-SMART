@@ -34,8 +34,8 @@ if($weather["temp_units"]=='F' && $weather["temp_indoor"]<59) {
 </div>
 
 <indoor-temp-trend>
-<?php if($weather["temp_indoor_trend"] >0)echo "<orange>".$lang['Rising']."</orange>&nbsp; ". $risingsymbolsmall;
-else if($weather["temp_indoor_trend"]<0)echo "<blue>".$lang['Falling']."</blue>&nbsp; ". $fallingsymbolsmall;
+<?php if($weather["temp_indoor_trend"] >0)echo $lang['Rising']."&nbsp; ". $risingsymbolsmall;
+else if($weather["temp_indoor_trend"]<0)echo $lang['Falling']."&nbsp; ". $fallingsymbolsmall;
 else echo $lang['Steady']." &nbsp;";?>
 </indoor-temp-trend>
 
