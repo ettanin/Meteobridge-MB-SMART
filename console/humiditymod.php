@@ -8,7 +8,7 @@
 <?php //weather34 sez lets make the temperature look nice 
 if($weather['humidity']<30){echo '<div class=outside26-30>'.number_format($weather['humidity'],0).'<smallhumidityunit>%</smallhumidityunit>';}
 else if($weather['humidity']<50){echo '<div class=outside6-10>'.number_format($weather['humidity'],0).'<smallhumidityunit>%</smallhumidityunit>';}
-else if($weather['humidity']<70){echo '<div class=outside6-10>'.number_format($weather['humidity'],0).'<smallhumidityunit>%</smallhumidityunit>';}
+else if($weather['humidity']<70){echo '<div class=outside11-15>'.number_format($weather['humidity'],0).'<smallhumidityunit>%</smallhumidityunit>';}
 else if($weather['humidity']<=100){echo '<div class=outsidezero>'.number_format($weather['humidity'],0).'<smallhumidityunit>%</smallhumidityunit>';}
 ?>
 </div>
