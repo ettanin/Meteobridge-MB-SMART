@@ -3648,7 +3648,7 @@ chartpage {
     position: absolute;
     width: 120px;
     height: 100px;
-    margin-top: 65px;
+    margin-top: 70px;
     margin-left: 110px
 }
 
@@ -3665,10 +3665,10 @@ chartpage {
     position: absolute
 }
 
-#weather34rainbeaker {
+#weather34rainbeaker {  
     bottom: 0;
     left: 14px;
-    width: 92px;
+    width: 100px;
     height: 95px;
     border: 4px solid #dee3f0;
     border-top: 0;
@@ -3701,8 +3701,8 @@ chartpage {
 
 #weather34rainwater {
     bottom: 0;
-    width: 92px;
-    max-height: 90px;
+    width: 100px;
+    max-height: 95px;
     overflow: hidden;
     border: 0;
     background-color: hsla(186, 100%, 34%, .6)
@@ -3752,8 +3752,8 @@ chartpage {
     justify-content: center;
     background: var(--rainblue);
     font-family: weathertext2;
-    margin-left: -46px;
-    margin-top: 10px
+    margin-left: -42px;
+    margin-top: 20px
 }
 
 rainunitin,
