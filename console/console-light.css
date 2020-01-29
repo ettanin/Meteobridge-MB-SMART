@@ -1509,6 +1509,13 @@ smallhumidityunit {
     left: -15px;
     opacity: .7
 }
+tempman {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    margin-left: -90px;
+    margin-top: -28px;
+}
 
 windtodaymax {
     font-size: .55rem;
