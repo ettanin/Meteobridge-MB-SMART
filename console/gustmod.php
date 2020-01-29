@@ -41,7 +41,25 @@ else if( $weather["wind_gust_speed"]<=24.85 && $weather["wind_units"]=="m/s"){ec
 else if( $weather["wind_gust_speed"]<=46.6 && $weather["wind_units"]=="m/s"){echo '<div class=windbox style="color:#d65b4a;">'.number_format($weather["wind_gust_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
 else if( $weather["wind_gust_speed"]<=94 && $weather["wind_units"]=="m/s"){echo '<div class=windbox style="color:#d05f2d;"">'.number_format($weather["wind_gust_speed"],1).'<smalltempunit>'.$weather["wind_units"];}
 ?>
-</div></smalltempunit></div></div>
+</div></smalltempunit>
+
+<?php //man walking-running
+echo "<tempman>";
+//kmh
+if($weather["wind_gust_speed"]<=5 && $weather["wind_units"]=="km/h"){ echo "<blue>".$walkingman."</blue>";}
+else if($weather["wind_gust_speed"]<=10 && $weather["wind_units"]=="km/h"){ echo "<green>".$walkingman."</green>";}
+else if($weather["wind_gust_speed"]<=40 && $weather["wind_units"]=="km/h"){ echo "<yellow>".$runningslow."</yellow>";}
+else if($weather["wind_gust_speed"]<=50 && $weather["wind_units"]=="km/h"){ echo "<orange>".$runningsfast."</orange>";}
+else if($weather["wind_gust_speed"]<=200 && $weather["wind_units"]=="km/h"){ echo "<red>".$runningsfast."</red>";}
+//mph
+if($weather["wind_gust_speed"]<=3.1 && $weather["wind_units"]=="mph"){ echo "<blue>".$walkingman."</blue>";}
+else if($weather["wind_gust_speed"]<=6.21 && $weather["wind_units"]=="mph"){ echo "<green>".$walkingman."</green>";}
+else if($weather["wind_gust_speed"]<=21.74 && $weather["wind_units"]=="mph"){ echo "<yellow>".$runningslow."</yellow>";}
+else if($weather["wind_gust_speed"]<=75 && $weather["wind_units"]=="mph"){ echo "<orange>".$runningsfast."</orange>";}
+else if($weather["wind_gust_speed"]<=200 && $weather["wind_units"]=="mph"){ echo "<red>".$runningsfast."</red>";}
+echo "</tempman>";?>
+
+</div></div>
 
 <div class="heatcircle" ><div class="heatcircle-content"><valuetextheading1><?php echo date('Y');?> Max <blue><?php echo $weather["windymaxtime"]?></blue></valuetextheading1>
 <?php  //wind year max

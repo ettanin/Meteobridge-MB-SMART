@@ -1528,6 +1528,14 @@ tempman {
     margin-top: -35px;
 }
 
+umbrella {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    margin-left: 40px;
+    margin-top: 98px;
+}
+
 .daylightcompass2>.daylightcompass-line2,
 .homeweathercompass1>.homeweathercompass-line1,
 .homeweathercompass2>.homeweathercompass-line2 {

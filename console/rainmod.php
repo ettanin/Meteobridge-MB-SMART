@@ -32,6 +32,11 @@
 else if ($weather["rain_units"] =='in' && $weather["rain_today"]){echo $weather["rain_today"]*25.4*2.5;}?>px;">      
 </div></div></div></div> 
 
+<?php //rain umbrella
+echo "<umbrella>";
+if($weather["rain_rate"]>0){ echo "<blue>".$umbrella."</blue>";}
+echo "</umbrella>";
+ ?>
 
 <div class="raincontainer1">
 <?php if ($weather["rain_units"] =='in'){	echo '<div class=raintoday1>'.number_format($weather["rain_today"],2);}

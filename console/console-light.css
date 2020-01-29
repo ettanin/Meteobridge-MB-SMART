@@ -1014,7 +1014,7 @@ blue {
 }
 
 .heatcirclerain {
-    margin-top: 5px;
+    margin-top: 18px;
     margin-left: 93px
 }
 
@@ -1516,6 +1516,14 @@ tempman {
     margin-left: -90px;
     margin-top: -28px;
 }
+umbrella {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    margin-left: 40px;
+    margin-top: 115px;
+}
+
 
 windtodaymax {
     font-size: .55rem;
@@ -3663,7 +3671,7 @@ chartpage {
     left: -150px;
     width: 208px;
     height: 170px;
-    margin-top: -120px;
+    margin-top: -110px;
     overflow: hidden
 }
 
