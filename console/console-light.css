@@ -1018,6 +1018,66 @@ blue {
     margin-left: 93px
 }
 
+.heatcirclerain1 {
+    position:absolute;
+    margin-top: -70px;
+    margin-left: -125px
+}
+
+.rainratetextheading ratevalue {
+    color: #3d8b96;
+  }
+  
+  .rainrateextra {
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 150px;    
+  }
+  
+  .rainratebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 117px;
+    height: 1.58em;
+    overflow: hidden;
+    -webkit-box-shadow: inset 3px 0 0 0 #3b9cac;
+    box-shadow: inset 3px 0 0 0 #3b9cac;
+    font-family: weathertext2;
+    line-height: 1.2;
+    -webkit-border-left: 0;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    border: 1px solid #e6e8ef;
+    border-width: thin;
+    border-left: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+  
+  .rainratebar,
+  .weather34ratebar {
+    height: 1rem;    
+    font-size: 0.6rem;
+  }
+  
+  .weather34ratebar {
+    background-color: hsla(186, 100%, 34%, 0.6);
+  }
+  
+  rainratevalue {
+    margin-left:36px;
+    font-size: 13px;
+  }
+  
+  smallrainrateunit {
+    color: #222;
+    font-family: headingtext;
+    font-size: 0.45rem;
+    vertical-align: text-top;
+  }
+  
+
 .indoortemp-mod {
     font-size: 10px;
     color: var(--silver);
@@ -1058,7 +1118,11 @@ blue {
     -ms-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
     -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
     margin-left: 150px;
-    margin-top: -45px
+    margin-top: -45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 indoor-temp-trend {

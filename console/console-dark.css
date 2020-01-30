@@ -1053,6 +1053,69 @@ blue {
     margin-left: 93px
 }
 
+.heatcirclerain1 {
+    position: absolute;
+    margin-top: -70px;
+    margin-left: -119px
+}
+.rainratetextheading {
+    color: #aeb6bf;
+    font-family: weathertext2;
+    font-size: 0.6em;
+    margin-top: 5px;
+}
+
+.rainratetextheading ratevalue {
+    color: #3d8b96;
+}
+
+.rainrateextra {
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 149px;
+}
+
+.rainratebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 120px;
+    height: 1.58em;
+    overflow: hidden;
+    -webkit-box-shadow: inset 3px 0 0 0 #3b9cac;
+    box-shadow: inset 3px 0 0 0 #3b9cac;
+    font-family: weathertext2;
+    line-height: 1.4;
+    -webkit-border-left: 0;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    border: 1px solid hsla(206, 12%, 27%, 0.502);
+    border-width: thin;
+    border-left: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.rainratebar,
+.weather34ratebar {
+    height: 1rem;
+    color: #aeb6bf;
+    font-size: 0.6rem;
+}
+
+.weather34ratebar {
+    background-color: hsla(186, 100%, 34%, 0.6);
+}
+
+rainratevalue {
+    margin-left: 39px;
+    font-size: 13px;
+    line-height:1.2
+}
+
+
+
+
 .theraincontainer {
     position: relative;
     top: -5px;
@@ -1123,6 +1186,10 @@ smallrainunit4 {
     top: 2px;
     font-family: weathertext2
 }
+
+
+
+
 
 .tempconverter {
     position: absolute;
@@ -2629,7 +2696,7 @@ iconcolor2 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: 180px;
+    margin-top: 187px;
     z-index: 99999;
     color: var(--white);
     font-family: Headingtext
