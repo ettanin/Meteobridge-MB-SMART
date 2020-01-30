@@ -13,8 +13,8 @@ else if ($weather["solar"]>=0){echo '<div class=windbox style="color:#e6a141;fon
 
 <?php //uv indicator
 echo "<uvman>";
-if($weather["solar"]>500){ echo "<orange>".$uvicon."</orange>";}
-else if($weather["solar"]>0){ echo "<yellow>".$uvicon."</yellow>";}
+if($weather["solar"]>500){ echo "<orange>".$solaricon."</orange>";}
+else if($weather["solar"]>0){ echo "<yellow>".$solaricon."</yellow>";}
 echo "</uvman>";
  ?>
 

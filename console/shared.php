@@ -252,4 +252,7 @@ $uvicon='<svg width="28pt" height="26pt" data-name="Layer 1" id="uv" version="we
 <defs><style>.weather34circle{fill:currentColor;}.uvword{fill:#fff;}</style></defs><circle class="weather34circle" cx="32" cy="32" r="17"/>
 <path class="uvword" d="M24.79,27.75V33.7c0,1.78.67,2.68,1.87,2.68s1.9-.86,1.9-2.68V27.75h2.33v5.79c0,3.19-1.61,4.7-4.3,4.7s-4.14-1.44-4.14-4.73V27.75Z"/>
 <path class="uvword" d="M35.35,38.08,32,27.75H34.6l1.26,4.37c.35,1.23.67,2.41.92,3.69h0c.26-1.24.58-2.47.93-3.65l1.32-4.41h2.48L38.07,38.08Z"/></svg>';
+$solaricon='<svg width="22pt" height="22pt" data-name="Layer 1" id="solar" version="weather34 solar circle" viewBox="0 0 64 64">
+<defs><style>.weather34circle{fill:currentColor;}.uvword{fill:#currentColor;}</style></defs><circle class="weather34circle" cx="32" cy="32" r="17"/>
+';
 ?>
