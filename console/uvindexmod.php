@@ -9,13 +9,21 @@
 if ($weather["uv"]>10) {echo '<div class=windbox style="color:#8781bd">'.number_format($weather["uv"],1)."<smalltempunit> &nbsp;UVI";}
 else if ($weather["uv"]>8) {echo '<div class=windbox style="color:#d35d4e">'.number_format($weather["uv"],1)."<smalltempunit> &nbsp;UVI";}
 else if ($weather["uv"]>5) {echo '<div class=windbox style="color:#d05f2d">'.number_format($weather["uv"],1)."<smalltempunit> &nbsp;UVI";}
-else if ($weather["uv"]>=3){echo '<div class=windbox style="color:#e6a141">'.number_format($weather["uv"],1)."<smalltempunit> &nbsp;UVI";}
-else if ($weather["uv"]>0) {echo '<div class=windbox style="color:#90b12a">'.number_format($weather["uv"],1)."<smalltempunit> &nbsp;UVI";}
-else if ($weather["uv"]==0) {echo '<div class=windbox style="color:#90b12a">0.0</smalltempunit>';
-}?>
-</div></smalltempunit></span></div></div></div>
+else if ($weather["uv"]>=3) {echo '<div class=windbox style="color:#e6a141">'.number_format($weather["uv"],1)."<smalltempunit> &nbsp;UVI";}
+else if ($weather["uv"]>=0) {echo '<div class=windbox style="color:#90b12a">'.number_format($weather["uv"],1)."<smalltempunit> &nbsp;UVI";}?>
+</div></smalltempunit>
 
-
+<?php //uv indicator
+echo "<uvman>";
+//c
+if($weather["uv"]>10){ echo "<purple>".$uvicon."</purple>";}
+else if($weather["uv"]>8){ echo "<darkred>".$uvicon."</darkred>";}
+else if($weather["uv"]>5){ echo "<orange>".$uvicon."</orange>";}
+else if($weather["uv"]>3){ echo "<yellow>".$uvicon."</yellow>";}
+else if($weather["uv"]>0){ echo "<green>".$uvicon."</green>";}
+echo "</uvman>";
+ ?>
+</div></div>
 
 <div class="heatcircle"><div class="heatcircle-content">
 <?php  //solar

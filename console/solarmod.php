@@ -9,7 +9,17 @@
 if ($weather["solar"]>800) {echo '<div class=windbox style="color:#d05f2d;font-size:2.1em" >'.number_format($weather["solar"],0)."<smalltempunit>&nbsp;wm/2";}
 else if ($weather["solar"]>=0){echo '<div class=windbox style="color:#e6a141;font-size:2.1em">'.number_format($weather["solar"],0)."<smalltempunit>&nbsp;wm/2";}
 ?>
-</div></smalltempunit2></span></div></div></div>
+</div></smalltempunit2>
+
+<?php //uv indicator
+echo "<uvman>";
+if($weather["solar"]>500){ echo "<orange>".$uvicon."</orange>";}
+else if($weather["solar"]>0){ echo "<yellow>".$uvicon."</yellow>";}
+echo "</uvman>";
+ ?>
+
+
+</div></div></div>
 
 
 

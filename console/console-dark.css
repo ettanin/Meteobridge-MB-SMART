@@ -1532,8 +1532,23 @@ umbrella {
     position: absolute;
     width: 4rem;
     height: 4rem;
-    margin-left: 40px;
+    margin-left: -105px;
     margin-top: 98px;
+}
+uvman{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    margin-left: -90px;
+    margin-top: -42px;
+}
+
+windindicator{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    margin-left: -88px;
+    margin-top: -32px;
 }
 
 .daylightcompass2>.daylightcompass-line2,

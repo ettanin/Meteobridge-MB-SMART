@@ -71,8 +71,8 @@ else if( $weather["wind_speed"]<=200 && $weather["wind_units"]=="m/s"){echo '<di
 ?>
 </div></smalltempunit2>
 
-<?php //man walking-running
-echo "<tempman>";
+<?php //windindicator
+echo "<windindicator>";
 //kmh
 if($weather["wind_speed"]<=5 && $weather["wind_units"]=="km/h"){ echo "<blue>".$walkingman."</blue>";}
 else if($weather["wind_speed"]<=10 && $weather["wind_units"]=="km/h"){ echo "<green>".$walkingman."</green>";}
@@ -98,7 +98,7 @@ else if($weather["wind_speed"]<=5.39 && $weather["wind_units"]=="kts"){ echo "<g
 else if($weather["wind_speed"]<=21.59 && $weather["wind_units"]=="kts"){ echo "<yellow>".$runningslow."</yellow>";}
 else if($weather["wind_speed"]<=26.99 && $weather["wind_units"]=="kts"){ echo "<orange>".$runningfast."</orange>";}
 else if($weather["wind_speed"]<=200 && $weather["wind_units"]=="kts"){ echo "<red>".$runningfast."</red>";}
-echo "</tempman>";?>
+echo "</windindicator>";?>
 
 </div></div>
 
