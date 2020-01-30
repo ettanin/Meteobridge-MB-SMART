@@ -52,7 +52,7 @@ echo "<div class=tempconverter1><div class=tempmodulehome0-5c><blue>". $weather[
 
 <div class="heatcirclerain1" ><div class="heatcircle-content">
 <div class="rainrateextra">
-<valuetextheading1><?php echo $lang['Rain']?> Rate </valuetextheading1>
+<valuetextheading1><?php echo $lang['Rain']?> Rate per/hr</valuetextheading1>
 <div class=rainratebar>
 <div class="weather34ratebar" style="width:
 <?php //weather34 rain rate bar 
