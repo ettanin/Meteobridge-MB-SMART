@@ -34,7 +34,7 @@ else if ($weather["rain_units"] =='in' && $weather["rain_today"]){echo $weather[
 
 <?php //rain umbrella
 echo "<umbrella>";
-if($weather["rain_rate"]>0){ echo "<blue>".$umbrella."</blue>";}
+if($weather["rain_lasthour"]>0){ echo "<blue>".$umbrella."</blue>";}
 echo "</umbrella>";
  ?>
 

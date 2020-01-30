@@ -44,7 +44,7 @@ if ($tempunit='F'){
 	if ($weather["dewmmax"]<=5){$tempcolor= '#4ba0ad';}
 	else if ($weather["dewmmax"]<=10){$tempcolor= '#9bbc2f';}
 	else if ($weather["dewmmax"]<=15){$tempcolor= '#e6a141';}
-	else if ($weather["dewymax"]<=25){$tempcolor= '#ec5732';}
+	else if ($weather["dewmmax"]<=25){$tempcolor= '#ec5732';}
 	else if ($weather["dewmmax"]<=50){$tempcolor= '#d35f50';}}
 
 	

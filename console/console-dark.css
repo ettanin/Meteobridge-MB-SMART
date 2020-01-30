@@ -2629,9 +2629,9 @@ iconcolor2 {
     padding: 2px 3px 1px 3px;
     display: inline-flex;
     font-size: 9px;
-    margin-top: 188px;
+    margin-top: 180px;
     z-index: 99999;
-    color: var(--silver);
+    color: var(--white);
     font-family: Headingtext
 }
 
