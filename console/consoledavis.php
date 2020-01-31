@@ -101,14 +101,20 @@ include_once('livedata.php');include_once('updater2.php');
 <a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
         <div class="weather34-toggleyellow">
         <div class="circleblob"></div> 
-       <div class="tog red">Charts</div>
+        <div class="tog red">Charts</div>
        </div></a>
 
 
 <a href="outlookwu.php" data-lity alt="5 day Forecast" title="5 day Forecast">
         <div class="weather34-toggledf">
         <div class="circleblob"></div> 
-       <div class="tog red">Forecast</div>
+        <div class="tog red">Forecast</div>
+       </div></a>
+
+  <a href="outlookwutext.php" data-lity alt="Summary Forecast" title="Summary Forecast">
+        <div class="weather34-toggledsummary">
+        <div class="circleblob"></div> 
+        <div class="tog red">Summary</div>
        </div></a>
 
 

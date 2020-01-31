@@ -3542,6 +3542,66 @@ a {
     background: 0
 }
 
+.weather34-toggledsummary {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 14px;
+    clear: both;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background: #35393b;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: -1px;
+    margin-left: -18px;
+    -moz-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    -webkit-box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    box-shadow: inset 0 1px 2px #121117, 0 1px 1px #3e3d4b;
+    padding-top: 1px;
+    margin-right: 10px
+}
+
+.weather34-toggledf.on .circleblob {
+    left: 15px
+}
+
+.weather34-toggledsummary .tog {
+    width: 0;
+    height: 0;
+    border: 0;
+    background: 0
+}
+
+.weather34-toggledsummary .tog.red {
+    float: right;
+    border-color: #bfbfbf;
+    margin-right: 58px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    padding: 3px
+}
+
+.weather34-toggledsummary .circleblob {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #e26702;
+    background: 0
+}
+
+
+
+
 .logofooter {
     position: absolute;
     margin-left: 70px;
@@ -4239,7 +4299,7 @@ smallrainunit2b {
         max-height: 600px
     }
 
-    .weather34-toggledf {
+    .weather34-toggledf,.weather34-toggledsummary {
         display: none
     }
 
@@ -4254,11 +4314,7 @@ smallrainunit2b {
 
     .homeweathercompass2>.homeweathercompass-line2 {
         left: -120px
-    }
-
-    .weather34-toggledf {
-        margin-left: -5px
-    }
+    }  
 
     .consolesetup,
     a {
