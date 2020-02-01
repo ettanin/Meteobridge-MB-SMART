@@ -231,16 +231,16 @@ echo '<br>';
 //lightning wu
 echo '<div class=wuahead>';
 if ($wuskythunder>0 )  {echo 'Thunderstorms expected '.$wuskydayTime.'';}
-else if ($wuskythunder1>0 )  {echo ' <ored>Thunder</ored> '.$wuskydayTime1. '&nbsp;'.$lightningalert8.'';}
-else if ($wuskythunder2>0 )  {echo ' <ored>Thunder</ored> '.$wuskydayTime2. '&nbsp;'.$lightningalert8.'';}
-else if ($wuskythunder3>0 )  {echo ' <ored>Thunder</ored> '.$wuskydayTime3. '&nbsp;'.$lightningalert8.'';}
-else if ($wuskythunder4>0 )  {echo ' <ored>Thunder</ored> '.$wuskydayTime4. '&nbsp;'.$lightningalert8.'';}
-else if ($wuskythunder5>0 )  {echo ' <ored>Thunder</ored> '.$wuskydayTime5. '&nbsp;'.$lightningalert8.'';}
-else if ($wuskythunder6>0 )  {echo ' <ored>Thunder</ored> '.$wuskydayTime6. '&nbsp;'.$lightningalert8.'';}
-else if ($wuskythunder7>0 )  {echo ' <ored>Thunder</ored> '.$wuskydayTime7. '&nbsp;'.$lightningalert8.'';}
-else if ($wuskythunder8>0 )  {echo ' <ored>Thunder</ored> '.$wuskydayTime8. '&nbsp;'.$lightningalert8.'';}
-else if ($wuskythunder9>0 )  {echo ' <ored>Thunder</ored> '.$wuskydayTime9. '&nbsp;'.$lightningalert8.'';}
-else if ($wuskythunder10>0 )  {echo ' <ored>Thunder</ored> '.$wuskydayTime10. '&nbsp;'.$lightningalert8.'';}
+else if ($wuskythunder1>0 )  {echo ' <orange>Thunder</orange> '.$wuskydayTime1. '&nbsp;'.$lightningalert8.'';}
+else if ($wuskythunder2>0 )  {echo ' <orange>Thunder</orange> '.$wuskydayTime2. '&nbsp;'.$lightningalert8.'';}
+else if ($wuskythunder3>0 )  {echo ' <orange>Thunder</orange> '.$wuskydayTime3. '&nbsp;'.$lightningalert8.'';}
+else if ($wuskythunder4>0 )  {echo ' <orange>Thunder</orange> '.$wuskydayTime4. '&nbsp;'.$lightningalert8.'';}
+else if ($wuskythunder5>0 )  {echo ' <orange>Thunder</orange> '.$wuskydayTime5. '&nbsp;'.$lightningalert8.'';}
+else if ($wuskythunder6>0 )  {echo ' <orange>Thunder</orange> '.$wuskydayTime6. '&nbsp;'.$lightningalert8.'';}
+else if ($wuskythunder7>0 )  {echo ' <orange>Thunder</orange> '.$wuskydayTime7. '&nbsp;'.$lightningalert8.'';}
+else if ($wuskythunder8>0 )  {echo ' <orange>Thunder</orange> '.$wuskydayTime8. '&nbsp;'.$lightningalert8.'';}
+else if ($wuskythunder9>0 )  {echo ' <orange>Thunder</orange> '.$wuskydayTime9. '&nbsp;'.$lightningalert8.'';}
+else if ($wuskythunder10>0 )  {echo ' <orange>Thunder</orange> '.$wuskydayTime10. '&nbsp;'.$lightningalert8.'';}
 //snowfall wu
 else if ($wuskysnow>0 )  {echo ' <blue>Snow</blue> '.$wuskydayTime. '&nbsp;'.$freezing.'';}
 else if ($wuskysnow1>0 )  {echo ' <blue>Snow</blue> '.$wuskydayTime1. '&nbsp;'.$freezing.'';}
