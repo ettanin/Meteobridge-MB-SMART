@@ -224,7 +224,7 @@ li3 {
 
 .clock3 {
     position: relative;
-    font-family: weathertext2;
+    font-family: headingtext;
     font-size: .75rem;
     color: var(--light);  
     
