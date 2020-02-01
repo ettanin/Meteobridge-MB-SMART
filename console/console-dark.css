@@ -1027,13 +1027,20 @@ trendmovementsteadyx {
 
 .thetrendgap {
     position: absolute;
-    margin-top: 12px
+    margin-top: 22px
 }
 
 .thetrendgapwind {
     position: absolute;
     margin-top: 20px
 }
+.thetrendgaptemp{
+    position: absolute;
+    margin-top: 17px
+}
+
+
+
 
 .theraingap {
     margin-top: -154px
