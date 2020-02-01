@@ -37,6 +37,11 @@
 <!-- weather34 NANOSD console flex layout -->
 <div class="fade-in">
 <div class="container">
+<div class="nav-top">   
+<div class="weather34-indoor"><?php echo $timeicon?> <div id="weather34clock4"></div></div>
+<div class="desktoplink2"><?php echo $headerlocation?>Istanbul Sinanoba  
+<div class="online"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
+</div></div> 
   <ul class="grid-container">
     <li><div id=temperature></div></li>
     <li><div id=humidity></div></li>
@@ -54,12 +59,7 @@
     if ($chartoption=='todayuvindexmodule.php'){echo "indoor";}
     else if ($chartoption=='todaysolarmodule.php'){echo "indoor";}
     else if ($chartoption=='todayindoormodule.php'){echo "";}
-
-
-?>
-    
-    
-    indoor></div></li3>
+?> indoor></div></li3>
     
 
     <li2><div id=moon></div></li2> 

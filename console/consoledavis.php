@@ -38,7 +38,12 @@ include_once('livedata.php');include_once('updater2.php');
 <!-- weather34 NANOSD console flex layout -->
 <div class="fade-in">
 <div class="container">
-  <ul class="grid-container">
+<div class="nav-top">   
+<div class="weather34-indoor"><?php echo $timeicon?> <div id="weather34clock4"></div></div>
+<div class="desktoplink2"><?php echo $headerlocation?> <?php echo $stationName?>
+<div class="online"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
+</div></div> 
+<ul class="grid-container">
     <li><div id=temperature></div></li>
     <li><div id=humidity></div></li>
     <li><div id=dewpoint></div></li>
@@ -55,9 +60,8 @@ include_once('livedata.php');include_once('updater2.php');
   </ul>
 
  
-    <div class="nav">
-    <a href="console-setup.php" target="_blank" class="consolesetup" alt="Setup Screen" title="Setup Screen"> <?php echo $settingsicon ?></a>
-
+  <div class="nav-bottom">
+    <a href="console-setup.php" target="_blank" class="console/consolesetup" alt="Setup Screen" title="Setup Screen"> <?php echo $settingsicon ?></a>
     <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
       <?php
         if ($theme == 'dark') {echo '<div class="weather34-toggle">
@@ -70,20 +74,15 @@ include_once('livedata.php');include_once('updater2.php');
          <div class="tog red">Dark</div>
          </div>';}?></a>
 
-
 <?php
   if ($units != 'us') {echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
     <div class="weather34-togglegreen">
       <div class="circleblob"></div> 
-     <div class="tog red">&deg;F</div>
-     </div>
-    
-    </a> '; }
+     <div class="tog red">&deg;F</div></div></a>'; }
   if ($units != 'metric') {echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
     <div class="weather34-toggleblue">
     <div class="circleblob"></div> 
-   <div class="tog red">&deg;C</div>
-   </div></a>';}
+   <div class="tog red">&deg;C</div></div></a>';}
   if ($units!='uk') {
     echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
     <div class="weather34-toggleblue">
