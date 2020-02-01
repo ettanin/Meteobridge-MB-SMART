@@ -2751,7 +2751,7 @@ valuebeaufort {
 .modulecaptionrainrate {
     position: absolute;
     margin-top: -8px;
-    margin-left: -85px;
+    margin-left: -65px;
     font-size: .6rem;
     font-family: weathertext2;
     width: 150px;
@@ -2769,7 +2769,7 @@ valuebeaufort {
     position: relative;
     align-items: center;
     justify-content: center;
-    left: 85px;
+    left:105px;
     top: -8px;
     font-size: .6rem;
     font-family: weathertext2;

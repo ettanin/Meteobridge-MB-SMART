@@ -2720,7 +2720,7 @@ valuebeaufort {
 .modulecaptionrainrate {
     display: flex;
     position: relative;
-    left: -75px;
+    left: -60px;
     color: var(--silver);
     background-color: hsla(204, 31%, 21%, .429);
     font-family: Headingtext;
@@ -2742,7 +2742,7 @@ valuebeaufort {
 .modulecaptionrain {
     display: flex;
     position: relative;
-    left: 85px;
+    left: 115px;
     top: -20px;
     color: var(--silver);
     background-color: hsla(204, 31%, 21%, .429);
