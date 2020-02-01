@@ -533,7 +533,7 @@ li3 {
     color: var(--body-text-light);
     font-size: .7rem;
     line-height: 1;
-    margin-top: -5px;
+    top: 5px;
     position: absolute;
     margin-left: -15px;
     font-family: headingtext;
@@ -563,7 +563,7 @@ li3 {
     color: var(--body-text-light);
     font-size: 1.75rem;
     line-height: 1;
-    margin-top: -55px;
+    top: 20px;
     position: absolute;
     margin-left:-5px;
     font-family: weathertext2;
@@ -2592,11 +2592,11 @@ a {
     font-size: 10px;
     font-family: headingtext;
     text-decoration: none;
-    margin-right: 40px;
+    margin-right:40px;
     float: right;
     margin-top: 0;
     word-wrap: break-word;
-    width:200px
+    width:auto
 }
 
 .designedby {
