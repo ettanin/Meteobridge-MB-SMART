@@ -550,13 +550,12 @@ li3 {
 .wuicondesc {      
     color: var(--body-text-light);
     font-size: .6rem;
-    line-height: 1;
+    line-height: .9;
     margin-top: 40px;
     position: absolute;
-    margin-left: 160px;
+    margin-left: 145px;
     font-family: headingtext;
-    width:200px;
-    
+    width:200px;   
 }
 
 .wutemp {     
