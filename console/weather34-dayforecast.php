@@ -268,17 +268,17 @@ else if ($wuskyrain10>0 )  {echo ' <blue>Rain</blue> '.$wuskydayTime10. '&nbsp;'
 //tomorrow temperature
 //imperial
 else if ($weather["temp_units"]=='F'){
-if ($wuskydayTempHigh2>80.6 ){  echo "<red>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</red>", $wuskydayTime2."";}
-else if ($wuskydayTempHigh2>66.2 ){  echo "<orange>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</orange>", $wuskydayTime2."";}
-else if ($wuskydayTempHigh2>=55 ){  echo "<yellow>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</yellow>", $wuskydayTime2."";}
-else if ($wuskydayTempHigh2>=44.6 ){  echo "<green>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</green>", $wuskydayTime2."";}
-else if ($wuskydayTempHigh2>-50 ){  echo "<blue>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</blue>", $wuskydayTime2."";}}
+if ($wuskydayTempHigh2>80.6 ){  echo "<red>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</red>&nbsp;", $wuskydayTime2."";}
+else if ($wuskydayTempHigh2>66.2 ){  echo "<orange>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</orange>&nbsp;", $wuskydayTime2."";}
+else if ($wuskydayTempHigh2>=55 ){  echo "<yellow>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</yellow>&nbsp;", $wuskydayTime2."";}
+else if ($wuskydayTempHigh2>=44.6 ){  echo "<green>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</green>&nbsp;", $wuskydayTime2."";}
+else if ($wuskydayTempHigh2>-50 ){  echo "<blue>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</blue>&nbsp;", $wuskydayTime2."";}}
 
 //metric
 else if ($weather["temp_units"]=='C'){
-if ($wuskydayTempHigh2>27 ){  echo "<red>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</red>", $wuskydayTime2."";}
-else if ($wuskydayTempHigh2>=19 ){  echo "<orange>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</orange>", $wuskydayTime2."";}
-else if ($wuskydayTempHigh2>=12.7 ){  echo "<yellow>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</yellow>", $wuskydayTime2."";}
-else if ($wuskydayTempHigh2>=7 ){  echo "<green>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</green>", $wuskydayTime2."";}
-else if ($wuskydayTempHigh2>-50 ){  echo "<blue>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</blue>", $wuskydayTime2."";}}
+if ($wuskydayTempHigh2>27 ){  echo "<red>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</red>&nbsp;", $wuskydayTime2."";}
+else if ($wuskydayTempHigh2>=19 ){  echo "<orange>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</orange>&nbsp;", $wuskydayTime2."";}
+else if ($wuskydayTempHigh2>=12.7 ){  echo "<yellow>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</yellow>&nbsp;", $wuskydayTime2."";}
+else if ($wuskydayTempHigh2>=7 ){  echo "<green>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</green>&nbsp;", $wuskydayTime2."";}
+else if ($wuskydayTempHigh2>-50 ){  echo "<blue>".number_format($wuskydayTempHigh2,0). "°".$weather['temp_units']."</blue>&nbsp;", $wuskydayTime2."";}}
 ?></div></div></div></div>
