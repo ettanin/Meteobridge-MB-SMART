@@ -117,11 +117,10 @@ include_once('livedata.php');include_once('updater2.php');
        </div></a>
 
 
-      <a class="desktoplink" href="../index.php" alt="Desktop Version" title="Desktop Version">
+       <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">
       <div class="weather34-toggled">
         <div class="circleblob"></div> 
-       <div class="tog red">Desktop</div></div>
-       <div class="logofooter"><img src="Wxsoft34-appsmall.png" width="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
-       </div> </a>
-     
+       <div class="tog red">&copy;weather34</div></div>
+       <div class="logofooter"><img src="Wxsoft34-appsmall.png" width="25px"height="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
+       </a></div> 
  </body></html>
