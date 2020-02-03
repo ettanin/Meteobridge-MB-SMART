@@ -2542,13 +2542,23 @@ a {
     float: right;
     margin-top: 0
 }
-.desktoplink2 {    
-    margin-right:40px;
-    float: right;
-    margin-top: -2px;   
+.desktoplink3 {
     color: var(--white);
     font-size: 10px;
     font-family: headingtext;
+    text-decoration: none;
+    margin-right:40px;
+    float: right;
+    margin-top: 0;
+    word-wrap: break-word;
+    width:auto
+}
+
+.desktoplinkicon {  
+    position:absolute;   
+    margin-left:85px;
+    float:left;     
+    margin-top: -15px;
 }
 
 .designedby {
@@ -4535,18 +4545,12 @@ smallrainunit2b {
 }
 
 @media screen and (max-width:640px) {
-    chartpage {
+    chartpage ,.desktoplinkicon,.desktoplink3 {
         display: none
     }
     .weather34-togglechartdate,.weather34-toggleyellow{font-size:.55rem}
 
     
-    .desktoplink2 {    
-            margin-right:40px;
-            float: right;
-            margin-top: -18px;   
-        }
-
 
         .nav-bottom{    
             width:110%;

@@ -39,10 +39,21 @@ include_once('livedata.php');include_once('updater2.php');
 <div class="fade-in">
 <div class="container">
 <div class="nav-top">   
-<div class="weather34-indoor"><?php echo $timeicon?> <div id="weather34clock4"></div></div>
-<div class="desktoplink2"><a href="../index.php" alt="desktop version" title="desktop version"><?php echo $desktop?></a>
+
+<div class="weather34-indoor">
+
+<?php echo $timeicon?> <div id="weather34clock4"></div>
+<div class="desktoplinkicon"><a href="../index.php" alt="desktop version" title="desktop version"><?php echo $desktop?></a>
+
+</div>
+</div>
+
+
+<div class="desktoplink3"><?php echo $headerlocation?> <?php echo $stationName?></div>
 <div class="online"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
-</div></div> 
+
+
+</div>
 <ul class="grid-container">
     <li><div id=temperature></div></li>
     <li><div id=humidity></div></li>
