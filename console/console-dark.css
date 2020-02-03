@@ -2542,16 +2542,13 @@ a {
     float: right;
     margin-top: 0
 }
-.desktoplink2 {
+.desktoplink2 {    
+    margin-right:40px;
+    float: right;
+    margin-top: -2px;   
     color: var(--white);
     font-size: 10px;
     font-family: headingtext;
-    text-decoration: none;
-    margin-right:40px;
-    float: right;
-    margin-top: 0;
-    word-wrap: break-word;
-    width:auto
 }
 
 .designedby {
@@ -3179,7 +3176,7 @@ a {
     cursor: pointer;
     position: relative;
     display: inline-block;
-    width: 37px;
+    width: 60px;
     height: 14px;
     clear: both;
     background: #35393b;
@@ -3211,13 +3208,15 @@ a {
 }
 
 .weather34-toggleblue .tog.red {
-    float: right;
+    float: left;
     border-color: #bfbfbf;
-    margin-right: 18px;
+    margin-right:0px;
     justify-content: center;
     align-items: center;
     line-height: 1;
-    padding: 3px
+    padding: 3px;
+    margin-left:12px;
+    width:50px
 }
 
 .weather34-toggleblue .circleblob {
@@ -3237,7 +3236,7 @@ a {
     cursor: pointer;
     position: relative;
     display: inline-block;
-    width: 37px;
+    width: 60px;
     height: 14px;
     clear: both;
     -moz-border-radius: 50px;
@@ -3270,13 +3269,15 @@ a {
 }
 
 .weather34-togglegreen .tog.red {
-    float: right;
+    float: left;
     border-color: #bfbfbf;
-    margin-right: 20px;
+    margin-right:0px;
     justify-content: center;
     align-items: center;
     line-height: 1;
-    padding: 3px
+    padding: 3px;
+    margin-left:12px;
+    width:50px
 }
 
 .weather34-togglegreen .circleblob {
@@ -3288,7 +3289,7 @@ a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    border: 3px solid var(--yellow);
+    border: 3px solid var(--orange);
     background: 0
 }
 
@@ -3414,7 +3415,7 @@ a {
     cursor: pointer;
     position: relative;
     display: inline-block;
-    width: 50px;
+    width: 60px;
     height: 14px;
     clear: both;
     -moz-border-radius: 50px;
@@ -3447,13 +3448,15 @@ a {
 }
 
 .weather34-toggleyellow .tog.red {
-    float: right;
+    float: left;
     border-color: #bfbfbf;
-    margin-right: 32px;
+    margin-right:0px;
     justify-content: center;
     align-items: center;
-    line-height: 1.2;
-    padding: 3px
+    line-height: 1;
+    padding: 3px;
+    margin-left:12px;
+    width:50px
 }
 
 .weather34-toggleyellow .circleblob {
@@ -3506,13 +3509,15 @@ a {
 }
 
 .weather34-toggleorange .tog.red {
-    float: right;
+    float: left;
     border-color: #bfbfbf;
-    margin-right: 32px;
+    margin-right:0px;
     justify-content: center;
     align-items: center;
-    line-height: 1.2;
-    padding: 3px
+    line-height: 1;
+    padding: 3px;
+    margin-left:12px;
+    width:50px
 }
 
 .weather34-toggleorange .circleblob {
@@ -3589,7 +3594,7 @@ a {
     cursor: pointer;
     position: relative;
     display: inline-block;
-    width: 75px;
+    width: 60px;
     height: 14px;
     clear: both;
     -moz-border-radius: 50px;
@@ -3622,14 +3627,15 @@ a {
 }
 
 .weather34-togglechartdate .tog.red {
-    float: right;
+    float:left;
     border-color: #bfbfbf;
     margin-right: 0;
     justify-content: left;
     align-items: left;
     line-height: 1.2;
     padding: 3px;
-    width: 55px
+    width: 50px;
+    margin-left:12px
 }
 
 .weather34-togglechartdate .circleblob {
@@ -4446,7 +4452,7 @@ smallrainunit2b {
 }
 
 @media screen and (max-width:960px) {
-    chartpage {
+    chartpage,.weather34-toggledsummary ,.weather34-toggledf{
         display: none
     }
 
@@ -4532,18 +4538,24 @@ smallrainunit2b {
     chartpage {
         display: none
     }
+    .weather34-togglechartdate,.weather34-toggleyellow{font-size:.55rem}
 
-    .desktoplink2 {
-        color: var(--white);
-        font-size: 9px;
-        font-family: headingtext;
-        text-decoration: none;
-        margin-right: 45px;
-        float: right;
-        margin-top: -15px;
-    }
+    
+    .desktoplink2 {    
+            margin-right:40px;
+            float: right;
+            margin-top: -18px;   
+        }
 
-    .weather34-toggledsummary {
+
+        .nav-bottom{    
+            width:110%;
+            margin:0 auto;
+            margin-left:-25px
+        }
+   
+
+    .weather34-toggledsummary,.weather34-toggledf {
         display:none
     }
 

@@ -40,7 +40,7 @@ include_once('livedata.php');include_once('updater2.php');
 <div class="container">
 <div class="nav-top">   
 <div class="weather34-indoor"><?php echo $timeicon?> <div id="weather34clock4"></div></div>
-<div class="desktoplink2"><?php echo $headerlocation?> <?php echo $stationName?>
+<div class="desktoplink2"><a href="../index.php" alt="desktop version" title="desktop version"><?php echo $desktop?></a>
 <div class="online"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
 </div></div> 
 <ul class="grid-container">
@@ -61,7 +61,7 @@ include_once('livedata.php');include_once('updater2.php');
 
  
   <div class="nav-bottom">
-    <a href="console-setup.php" target="_blank" class="console/consolesetup" alt="Setup Screen" title="Setup Screen"> <?php echo $settingsicon ?></a>
+    <a href="console-setup.php" target="_blank"  alt="Setup Screen" title="Setup Screen"> <?php echo $settingsicon ?></a>
     <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
       <?php
         if ($theme == 'dark') {echo '<div class="weather34-toggle">
@@ -75,25 +75,61 @@ include_once('livedata.php');include_once('updater2.php');
          </div>';}?></a>
 
 <?php
-  if ($units != 'us') {echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
-    <div class="weather34-togglegreen">
-      <div class="circleblob"></div> 
-     <div class="tog red">&deg;F</div></div></a>'; }
-  if ($units != 'metric') {echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+  if ($units=='us') {     
+     echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
     <div class="weather34-toggleblue">
     <div class="circleblob"></div> 
-   <div class="tog red">&deg;C</div></div></a>';}
-  if ($units!='uk') {
+   <div class="tog red">&deg;C km/h</div></div></a>';  
     echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
     <div class="weather34-toggleblue">
     <div class="circleblob"></div> 
-   <div class="tog red">UK</div></div></a>';
-  }
-  else if ($units!='scandinavia') {
+   <div class="tog red">&deg;C UK</div></div></a>';  
     echo '<a  href="?units=scandinavia" alt="m/s wind" title="m/s wind"> 
     <div class="weather34-toggleyellow">
     <div class="circleblob"></div> 
-   <div class="tog red">M/S</div></div></a>';
+   <div class="tog red">&deg;C ms</div></div></a>';
+  }
+  if ($units=='uk'){echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
+    <div class="weather34-togglegreen">
+      <div class="circleblob"></div> 
+     <div class="tog red">&deg;F mph</div></div></a>';      
+     echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+    <div class="weather34-toggleblue">
+    <div class="circleblob"></div> 
+   <div class="tog red">&deg;C km/h</div></div></a>';
+    echo '<a  href="?units=scandinavia" alt="m/s wind" title="m/s wind"> 
+    <div class="weather34-toggleyellow">
+    <div class="circleblob"></div> 
+   <div class="tog red">&deg;C ms</div></div></a>';
+  }  
+  if ($units=='metric'){
+    echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
+    <div class="weather34-togglegreen">
+      <div class="circleblob"></div> 
+     <div class="tog red">&deg;F mph</div></div></a>';   
+     echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
+    <div class="weather34-toggleblue">
+    <div class="circleblob"></div> 
+   <div class="tog red">&deg;C UK</div></div></a>';   
+    echo '<a  href="?units=scandinavia" alt="m/s wind" title="m/s wind"> 
+    <div class="weather34-toggleyellow">
+    <div class="circleblob"></div> 
+   <div class="tog red">&deg;C ms</div></div></a>';
+  }  
+
+  if ($units=='scandinavia'){
+    echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
+    <div class="weather34-togglegreen">
+      <div class="circleblob"></div> 
+     <div class="tog red">&deg;F mph</div></div></a>';  
+     echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+    <div class="weather34-toggleblue">
+    <div class="circleblob"></div> 
+   <div class="tog red">&deg;C km/h</div></div></a>';   
+     echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
+    <div class="weather34-toggleblue">
+    <div class="circleblob"></div> 
+   <div class="tog red">&deg;C UK</div></div></a>';       
   }  
 ?>
 
