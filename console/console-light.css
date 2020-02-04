@@ -2610,6 +2610,19 @@ a {
     width:auto
 }
 
+.desktoplink4{
+    color: var(--white);
+    font-size: 11px;
+    font-family: headingtext;
+    text-decoration: none;
+    margin-left: 140px;
+    float: none;
+    margin-top:-15px;
+    word-wrap: break-word;
+    width: 300px;
+    max-width:300px
+}
+
 .desktoplinkicon {  
     position:absolute;   
     margin-left:85px;

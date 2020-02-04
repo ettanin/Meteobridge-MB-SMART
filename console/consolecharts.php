@@ -37,14 +37,12 @@
 <!-- weather34 NANOSD console flex layout -->
 <div class="fade-in">
 <div class="container">
-<div class="nav-top">  
-<div class="weather34-indoor">
-<?php echo $timeicon?> <div id="weather34clock4"></div>
-<div class="desktoplinkicon"><a href="../index.php" alt="desktop version" title="desktop version"><?php echo $desktop?></a>
+<div class="nav-top">   
+<div class="weather34-indoor"><?php echo $timeicon?> <div id="weather34clock4"></div>
+<div class="desktoplink4"><?php echo $chartcalendar; echo date($dateFormat);?> Charts</div></div>
+<div class="desktoplink3"><?php echo $headerlocation?>Istanbul Sinanoba  
+<div class="online"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div>
 </div></div>
-<div class="desktoplink3"><?php echo $headerlocation?> <?php echo $stationName?></div>
-<div class="online"><?php if(file_exists($livedata)&&time()- filemtime($livedata)>300)echo $wirelessoffline;else echo $wireless?></div></div>
-
   <ul class="grid-container">
     <li><div id=temperature></div></li>
     <li><div id=humidity></div></li>
