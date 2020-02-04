@@ -94,7 +94,7 @@ else if ($aqiweather["aqi"]>=250){echo "<darkred>".$aqiweather["aqi"]."</darkred
 else if ($aqiweather["aqi"]>=200){echo "<red>".$aqiweather["aqi"]."</red>";}
 else if ($aqiweather["aqi"]>=150){echo "<red>".$aqiweather["aqi"]."</red>";}
 else if ($aqiweather["aqi"]>=100){echo "<orange>".$aqiweather["aqi"]."</orange";}
-else if ($aqiweather["aqi"]>=50){echo "<yellow".$aqiweather["aqi"]."</yellow>";}
+else if ($aqiweather["aqi"]>=50){echo "<yellow>".$aqiweather["aqi"]."</yellow>";}
 else if ($aqiweather["aqi"]>=0){echo "<green>".$aqiweather["aqi"]."</green>";}
 echo '<br>';
 
