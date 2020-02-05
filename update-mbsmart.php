@@ -50,9 +50,9 @@ class Unzipper
             closedir($dh);
 
             if (!empty($this->zipfiles)) {
-                $GLOBALS['status'] = array('info' => '.zip or .gz or .rar files found, ready for extraction');
+                $GLOBALS['status'] = array('info' => '.zip files found, ready for updating');
             } else {
-                $GLOBALS['status'] = array('info' => 'No .zip or .gz or rar files found. So only zipping functionality available.');
+                $GLOBALS['status'] = array('info' => 'No .zip files found.');
             }
         }
     }
@@ -126,10 +126,10 @@ class Unzipper
                 $zip->close();
                 $GLOBALS['status'] = array('success' => 'Updated successfully now check site for any errors ');
             } else {
-                $GLOBALS['status'] = array('error' => 'Error: Directory not writeable by webserver.');
+                $GLOBALS['status'] = array('error' => 'Error: Files/Directory not writeable by webserver.');
             }
         } else {
-            $GLOBALS['status'] = array('error' => 'Error: Cannot read .zip archive.');
+            $GLOBALS['status'] = array('error' => 'Error: Cannot read .zip update archive.');
         }
     }
 }
