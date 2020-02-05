@@ -226,15 +226,16 @@ li3 {
     position: relative;
     font-family: headingtext;
     font-size: .75rem;
-    color: var(--light);  
-    
+    color: var(--light);
+
 }
 
 .clock3 time {
-    position:absolute;
-    top:-17px;
-    margin-left:20px;    
+    position: absolute;
+    top: -17px;
+    margin-left: 20px;
 }
+
 .thedate3 {
     display: none
 }
@@ -510,93 +511,92 @@ belowthehorizon {
 }
 
 
-.aqicon {   
-    background: 0 0;   
+.aqicon {
+    background: 0 0;
     margin-top: -32px;
     position: absolute;
-    margin-left: 200px;  
-    
+    margin-left: 200px;
+
 }
 
-.wuicon {   
-    background: 0 0;   
-    margin-top: -6px;
+.wuicon {
+    background: 0 0;
+    margin-top: -3px;
     position: absolute;
-    margin-left: 220px;  
-    
+    margin-left: 225px;
 }
 
-.wuicondesc { 
-        
-        color: var(--silver);    
-        display:flex;    
-        font-size: .6rem;
-        line-height: .9;
-        margin-top: 4px;
-        position: absolute;
-        margin-left: 120px;
-        font-family: headingtext;
-        width:100px;   
-        justify-content: center;
-        align-items: center;
-        word-wrap: break-word;
-    
+.wuicondesc {
+    color: var(--silver);
+    display: flex;
+    font-size: .6rem;
+    line-height: .9;
+    margin-top: 6px;
+    position: absolute;
+    margin-left: 115px;
+    font-family: headingtext;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
 }
 
-.wutemp { 
-    
+.wutemp {
+
     color: var(--silver);
     font-size: 1.75rem;
     line-height: 1;
     top: 22px;
     position: absolute;
-    margin-left:15px;
+    margin-left: 15px;
     font-family: weathertext2;
     text-align: left
 }
 
-.wuahead{      
+.wuahead {
     color: var(--silver);
     font-size: .6rem;
     line-height: 1;
     margin-top: 10px;
     position: absolute;
-    margin-left:5px;
+    margin-left: 5px;
     font-family: headingtext;
     text-align: left;
-    width:300px;
+    width: 300px;
 }
-wuunits{
-    font-size:1rem;   
-    vertical-align:top;
+
+wuunits {
+    font-size: 1rem;
+    vertical-align: top;
 }
 
 .weather34-indoor {
     position: relative;
     display: inline-block;
-    width: 250px;    
-    clear: both; 
+    width: 250px;
+    clear: both;
     top: -3px;
-    margin-left: 10px;    
+    margin-left: 10px;
     padding-top: 0px;
-    font-size:13px;
-    font-family:weathertext2;
-    line-height:2
+    font-size: 13px;
+    font-family: weathertext2;
+    line-height: 2
 }
+
 .indoorblock {
-    
+
     padding: 0;
     padding-left: 10px;
     padding-right: 0;
     padding-top: 0;
-    display: flex;    
+    display: flex;
     margin-left: 0;
     text-align: center;
     width: 250px;
     position: relative;
     color: var(--light);
     font-size: 12px;
-    text-transform: capitalize;    
+    text-transform: capitalize;
     line-height: 2;
     margin-top: -60px;
     font-family: headingtext
@@ -630,7 +630,7 @@ wuunits{
     position: relative;
     background: 0 0;
     border-radius: 5px;
-    border:0;
+    border: 0;
     width: 7rem;
     height: 2.5rem;
     font-family: weathertext2;
@@ -662,7 +662,7 @@ indoor-temp-trend2 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    
+
 }
 
 .indoorhumidity-mod2 {
@@ -678,7 +678,7 @@ indoor-temp-trend2 {
     z-index: 99999;
     width: 6.5rem;
     line-height: 2;
-    height: 20px;    
+    height: 20px;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -709,7 +709,7 @@ indoor-temp-trend2 {
     width: 6.5rem;
     line-height: 2;
     height: 20px;
-       border-radius: 2px;
+    border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
@@ -1049,7 +1049,8 @@ trendmovementsteadyx {
     position: absolute;
     margin-top: 20px
 }
-.thetrendgaptemp{
+
+.thetrendgaptemp {
     position: absolute;
     margin-top: 17px
 }
@@ -1253,7 +1254,7 @@ blue {
 }
 
 .heatcirclerain {
-    margin-top:-10px;
+    margin-top: -10px;
     margin-left: 120px
 }
 
@@ -1316,7 +1317,7 @@ blue {
 rainratevalue {
     margin-left: 39px;
     font-size: 13px;
-    line-height:1.2
+    line-height: 1.2
 }
 
 
@@ -1971,7 +1972,7 @@ uv0 {
     width: 110px;
     height: 110px;
     margin: 0 auto;
-    border: 8px solid rgba(110, 116, 121,.8);
+    border: 8px solid rgba(110, 116, 121, .8);
     border-top: 8px solid var(--border-dark);
     border-right: 8px solid var(--border-dark);
     border-radius: 50%;
@@ -2025,7 +2026,7 @@ averwordwindword {
     width: 100px;
     height: 100px;
     margin: 0 auto;
-    border: 8px solid rgba(110, 116, 121,.8);
+    border: 8px solid rgba(110, 116, 121, .8);
     border-top: 8px solid var(--border-dark);
     border-right: 8px solid var(--border-dark);
     border-radius: 50%;
@@ -2542,35 +2543,36 @@ a {
     float: right;
     margin-top: 0
 }
+
 .desktoplink3 {
     color: var(--white);
     font-size: 10px;
     font-family: headingtext;
     text-decoration: none;
-    margin-right:40px;
+    margin-right: 40px;
     float: right;
     margin-top: 0;
     word-wrap: break-word;
-    width:auto
+    width: auto
 }
 
-.desktoplink4{
+.desktoplink4 {
     color: var(--white);
     font-size: 11px;
     font-family: headingtext;
     text-decoration: none;
     margin-left: 140px;
     float: none;
-    margin-top:-15px;
+    margin-top: -15px;
     word-wrap: break-word;
     width: 300px;
-    max-width:300px
+    max-width: 300px
 }
 
-.desktoplinkicon {  
-    position:absolute;   
-    margin-left:85px;
-    float:left;     
+.desktoplinkicon {
+    position: absolute;
+    margin-left: 85px;
+    float: left;
     margin-top: -15px;
 }
 
@@ -2803,7 +2805,7 @@ valuebeaufort {
     color: var(--blue);
     z-index: 100000;
     margin-top: -22px;
-    float:right;
+    float: right;
     padding-left: 10px;
     -webkit-animation: fadein 5s infinite;
     -moz-animation: fadein 5s infinite;
@@ -2815,7 +2817,7 @@ valuebeaufort {
     -ms-animation-direction: alternate;
     -o-animation-direction: alternate;
     animation-direction: alternate;
-    right:10px
+    right: 10px
 }
 
 .online2 {
@@ -2880,34 +2882,35 @@ blue1 {
 }
 
 .nav-top {
-    margin: 0 auto;    
-    max-width:1024px;
+    margin: 0 auto;
+    max-width: 1024px;
     background: #3d464d;
     padding: 6px 0 0 0;
     height: 20px;
     -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
-    box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);   
-    line-height:2;
+    box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
+    line-height: 2;
     position: relative;
-    bottom: 0; 
+    bottom: 0;
     margin-top: 0px;
-    margin-bottom:0;    
+    margin-bottom: 0;
 }
 
-.nav-bottom,.nav {
-    margin: 0 auto;    
-    max-width:1024px;
+.nav-bottom,
+.nav {
+    margin: 0 auto;
+    max-width: 1024px;
     background: #3d464d;
-    padding: 4px ;
+    padding: 4px;
     height: 20px;
     -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
     box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
     position: relative;
-    bottom: 0;  
-    margin-top:10px
+    bottom: 0;
+    margin-top: 10px
 }
 
-  
+
 
 vspan {
     vertical-align: middle;
@@ -3233,13 +3236,13 @@ a {
 .weather34-toggleblue .tog.red {
     float: left;
     border-color: #bfbfbf;
-    margin-right:0px;
+    margin-right: 0px;
     justify-content: center;
     align-items: center;
     line-height: 1;
     padding: 3px;
-    margin-left:12px;
-    width:50px
+    margin-left: 12px;
+    width: 50px
 }
 
 .weather34-toggleblue .circleblob {
@@ -3294,13 +3297,13 @@ a {
 .weather34-togglegreen .tog.red {
     float: left;
     border-color: #bfbfbf;
-    margin-right:0px;
+    margin-right: 0px;
     justify-content: center;
     align-items: center;
     line-height: 1;
     padding: 3px;
-    margin-left:12px;
-    width:50px
+    margin-left: 12px;
+    width: 50px
 }
 
 .weather34-togglegreen .circleblob {
@@ -3473,13 +3476,13 @@ a {
 .weather34-toggleyellow .tog.red {
     float: left;
     border-color: #bfbfbf;
-    margin-right:0px;
+    margin-right: 0px;
     justify-content: center;
     align-items: center;
     line-height: 1;
     padding: 3px;
-    margin-left:12px;
-    width:50px
+    margin-left: 12px;
+    width: 50px
 }
 
 .weather34-toggleyellow .circleblob {
@@ -3534,13 +3537,13 @@ a {
 .weather34-toggleorange .tog.red {
     float: left;
     border-color: #bfbfbf;
-    margin-right:0px;
+    margin-right: 0px;
     justify-content: center;
     align-items: center;
     line-height: 1;
     padding: 3px;
-    margin-left:12px;
-    width:50px
+    margin-left: 12px;
+    width: 50px
 }
 
 .weather34-toggleorange .circleblob {
@@ -3650,7 +3653,7 @@ a {
 }
 
 .weather34-togglechartdate .tog.red {
-    float:left;
+    float: left;
     border-color: #bfbfbf;
     margin-right: 0;
     justify-content: left;
@@ -3658,7 +3661,7 @@ a {
     line-height: 1.2;
     padding: 3px;
     width: 50px;
-    margin-left:12px
+    margin-left: 12px
 }
 
 .weather34-togglechartdate .circleblob {
@@ -4128,7 +4131,7 @@ chartpage {
     left: -150px;
     width: 208px;
     height: 170px;
-    margin-top: -120px;   
+    margin-top: -120px;
 }
 
 #raincontainer,
@@ -4475,7 +4478,10 @@ smallrainunit2b {
 }
 
 @media screen and (max-width:960px) {
-    chartpage,.weather34-toggledsummary ,.weather34-toggledf{
+
+    chartpage,
+    .weather34-toggledsummary,
+    .weather34-toggledf {
         display: none
     }
 
@@ -4532,8 +4538,8 @@ smallrainunit2b {
     }
 
     .nav {
-        margin:0 auto;
-        width:600px;
+        margin: 0 auto;
+        width: 600px;
         padding: 6px;
         height: 20px;
         bottom: 0;
@@ -4541,7 +4547,7 @@ smallrainunit2b {
         z-index: 99999
     }
 
-   
+
 
     .clock {
         position: absolute;
@@ -4558,22 +4564,30 @@ smallrainunit2b {
 }
 
 @media screen and (max-width:640px) {
-    chartpage ,.desktoplinkicon,.desktoplink3 {
+
+    chartpage,
+    .desktoplinkicon,
+    .desktoplink3 {
         display: none
     }
-    .weather34-togglechartdate,.weather34-toggleyellow{font-size:.55rem}
 
-    
+    .weather34-togglechartdate,
+    .weather34-toggleyellow {
+        font-size: .55rem
+    }
 
-        .nav-bottom{    
-            width:110%;
-            margin:0 auto;
-            margin-left:-25px
-        }
-   
 
-    .weather34-toggledsummary,.weather34-toggledf {
-        display:none
+
+    .nav-bottom {
+        width: 110%;
+        margin: 0 auto;
+        margin-left: -25px
+    }
+
+
+    .weather34-toggledsummary,
+    .weather34-toggledf {
+        display: none
     }
 
     .text2 {

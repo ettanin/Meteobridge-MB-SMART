@@ -203,6 +203,8 @@ echo '<div class="wudesc">'.$wuskydayTime.'s Forecast</div>
 if ($wuskydaynight=='D'){echo '<img src="wuicons/'.$wuskydayIcon.'.svg" width="60" height="50" alt="'.$wuskydesc.'" title="'.$wuskydesc.'"></img>';}
 if ($wuskydaynight=='N'){echo '<img src="wuicons/nt_'.$wuskydayIcon.'.svg" width="60" height="50" alt="'.$wuskydesc.'" title="'.$wuskydesc.'"></img>';}
 // icon description
+$wuskydesc	=str_replace('Wind', 'Windy Conditions', $wuskydesc);
+$wuskydesc	=str_replace('/', ' ', $wuskydesc);
 echo '</div>
 <div class="wuicondesc">'.$wuskydesc.'</div><br>
 

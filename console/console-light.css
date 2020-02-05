@@ -550,9 +550,9 @@ li3 {
 
 .wuicon {   
     background: 0 0;   
-    margin-top: -6px;
+    margin-top: -3px;
     position: absolute;
-    margin-left: 195px;    
+    margin-left: 200px;    
 }
 
 .wuicondesc {      
@@ -560,9 +560,9 @@ li3 {
     display:flex;    
     font-size: .6rem;
     line-height: .9;
-    margin-top: 3px;
+    margin-top: 6px;
     position: absolute;
-    margin-left: 105px;
+    margin-left: 90px;
     font-family: headingtext;
     width:100px;   
     justify-content: center;
