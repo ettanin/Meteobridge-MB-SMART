@@ -32,7 +32,7 @@ if ($weather["rainydmax"]>0){
     echo "<maxlow>"; echo $lang['Total']."</maxlow></weather34top>";}
 // yesterday is 0 rain last month is displayed 
 else { 
-    echo "<weather34top>";echo "<thedate>".$lastMonth = date('F', strtotime("-1 month")) .$lastMonth."&nbsp;&nbsp;</thedate><br><thevalue>";    
+    echo "<weather34top>";echo "<thedate>".$lastMonth = strftime('%B',strtotime("-1 month")) .$lastMonth."&nbsp;&nbsp;</thedate><br><thevalue>";    
     echo '<maxtempblue>'.$weather["rainlastmonth"]. ' </maxtempblue><tunit1>'.$weather["rain_units"].'</tunit1></maxtempblue></thevalue>'; 
     echo "<maxlow>"; echo $lang['Total']."</maxlow></weather34top>";}}
 // weather34 sez lets get rain time ago within last 24 Hours ago   

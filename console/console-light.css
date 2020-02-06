@@ -41,7 +41,19 @@
     --border-dark: #3d464d;
     --border-light: #E2E8F0;
     --body-text-light: #4a5568;
-    --blocks: #ffffff
+    --blocks: #ffffff;
+    --temp-5-10: #7face6;
+    --temp-0-5: #51b4c4;
+    --temp0-5: #00adbd;
+    --temp5-10: #9bbc2f;
+    --temp10-15: #e6a241;
+    --temp15-20: #da721e;
+    --temp20-25: #d87040;
+    --temp25-30: #e64b24;
+    --temp30-35: #cc504c;
+    --temp35-40: #88342e;
+    --temp40-45: #962a5c;
+    --temp45-50: #813062;
 }
 
 body {
@@ -672,54 +684,106 @@ orange {
     -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white)
 }
 
+
 .outsideminus10 {
-    color: #3268e7
+    color: var(--temp-5-10);
 }
 
 .outsideminus5 {
-    color: var(--blue)
+    color: var(--temp-0-5);
 }
 
 .outsideminus,
 .outsidezero {
-    color: var(--blue)
+    color: var(--temp-0-5);
 }
 
 .outside0-5 {
-    color: var(--blue)
+    color: var(--temp0-5);
 }
 
 .outside6-10 {
-    color: var(--green)
+    color: var(--temp5-10);
 }
 
 .outside11-15 {
-    color: var(--yellow)
+    color: var(--temp10-15);
 }
 
 .outside16-20 {
-    color: #f08652
+    color: var(--temp15-20);
 }
 
 .outside21-25 {
-    color: #f0740f
+    color: var(--temp20-25);
 }
 
 .outside26-30 {
-    color: #d15f2e
+    color: var(--temp25-30);
 }
 
 .outside31-35 {
-    color: #d86b5a
+    color: var(--temp30-35);
 }
 
 .outside36-40 {
-    color: #657ff6
+    color: var(--temp35-40);
 }
 
 .outside41-45,
 .outside50 {
-    color: #657ff6
+    color: var(--temp45-50);
+}
+
+
+icon-minus10 {
+    color: var(--temp-5-10);
+}
+
+icon-minus5 {
+    color: var(--temp-0-5);
+}
+
+icon-minus,
+icon-zero {
+    color: var(--temp-0-5);
+}
+
+icon-0-5 {
+    color: var(--temp0-5);
+}
+
+icon-6-10 {
+    color: var(--temp5-10);
+}
+
+icon-11-15 {
+    color: var(--temp10-15);
+}
+
+icon-16-20 {
+    color: var(--temp15-20);
+}
+
+icon-21-25 {
+    color: var(--temp20-25);
+}
+
+icon-26-30 {
+    color: var(--temp25-30);
+}
+
+icon-31-35 {
+    color: var(--temp30-35);
+}
+
+icon-36-40 {
+    color: var(--temp35-40);
+}
+
+icon-41-45,
+icon-50 {
+    color: var(--temp45-50);
 }
 
 .temptrendphrase {
