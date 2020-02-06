@@ -108,6 +108,12 @@ body {
     animation-fill-mode: both
 }
 
+.weather34-tablet{
+    border:5px solid #3d464d;
+    border-bottom:50px solid #3d464d;    
+    padding:0;  
+}
+
 container {
     margin: 0 auto;
     width: 100%;
@@ -136,16 +142,16 @@ li {
     align-items: center;
     display: flex;
     justify-content: center;
-    min-width: 320px;
-    max-width: 420px;
+    min-width: 310px;
+    max-width: 310px;
     padding: 0;
-    height: 180px;
+    height: 175px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: var(--light);
     margin: 0 auto;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom:5px;
     color: var(--body-text-dark);
     background-color: var(--modules);
     border-radius: 5px;
@@ -161,8 +167,8 @@ li2 {
     align-items: center;
     display: flex;
     justify-content: center;
-    min-width: 320px;
-    max-width: 420px;
+    min-width: 310px;
+    max-width: 310px;
     padding: 0;
     height: 75px;
     border: 0;
@@ -170,7 +176,7 @@ li2 {
     box-sizing: border-box;
     margin: 0 auto;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom:-10px;
     color: var(--body-text-dark)
 }
 
@@ -2636,7 +2642,7 @@ a {
     position: absolute;
     margin-left: 85px;
     float: left;
-    margin-top: -15px;
+    margin-top: -13px;
 }
 
 .designedby {
@@ -2732,7 +2738,7 @@ valuebeaufort {
 .modulecaptionpressure {
     display: flex;
     position: relative;
-    left: 195px;
+    left: 185px;
     top: -20px;
     color: var(--silver);
     background-color: hsla(204, 31%, 21%, .429);
@@ -2867,7 +2873,7 @@ valuebeaufort {
     font-size: .65em;
     color: var(--blue);
     z-index: 100000;
-    margin-top: -22px;
+    margin-top: -20px;
     float: right;
     padding-left: 10px;
     -webkit-animation: fadein 5s infinite;
@@ -2949,28 +2955,24 @@ blue1 {
     max-width: 1024px;
     background: #3d464d;
     padding: 6px 0 0 0;
-    height: 20px;
-    -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
-    box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
+    height: 20px;   
     line-height: 2;
     position: relative;
     bottom: 0;
-    margin-top: 0px;
+    margin-top: -5px;
     margin-bottom: 0;
 }
 
 .nav-bottom,
 .nav {
+    position:absolute;
     margin: 0 auto;
     max-width: 1024px;
-    background: #3d464d;
-    padding: 4px;
-    height: 20px;
-    -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
-    box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
+    background:0;
+    padding: 2px;    
     position: relative;
     bottom: 0;
-    margin-top: 10px
+    bottom: -40px
 }
 
 
@@ -4560,10 +4562,10 @@ smallrainunit2b {
         align-items: center;
         display: flex;
         justify-content: center;
-        min-width: 320px;
-        max-width: 420px;
+        min-width: 305px;
+        max-width: 305px;
         padding: 0;
-        height: 180px;
+        height: 175px;
         border: 1px solid hsla(208, 12%, 24%, .2);
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -4596,8 +4598,8 @@ smallrainunit2b {
         align-items: center;
         display: flex;
         justify-content: center;
-        min-width: 320px;
-        max-width: 320px
+        min-width: 305px;
+        max-width: 305px
     }
 
     .nav {
@@ -4630,7 +4632,7 @@ smallrainunit2b {
 
     chartpage,
     .desktoplinkicon,
-    .desktoplink3 {
+    .desktoplink3{
         display: none
     }
 
@@ -4639,13 +4641,27 @@ smallrainunit2b {
         font-size: .55rem
     }
 
+    .weather34-tablet{       
+        border:0;
+     }
 
-
-    .nav-bottom {
-        width: 110%;
-        margin: 0 auto;
-        margin-left: -25px
+     .nav-top {        
+        margin-top: 0px;       
     }
+
+
+     .nav,.nav-bottom {
+        margin: 0 auto;
+        width: 317px;       
+        padding: 2px;
+        height: 20px;
+        bottom: 0;
+        z-index: 99999;
+        background: #3d464d;
+    }
+
+    .online{margin-top:-19px}
+
 
 
     .weather34-toggledsummary,
@@ -4707,15 +4723,15 @@ smallrainunit2b {
         display: none
     }
 
-    .nav {
-        margin: 0 auto;
-        width: 309px;
-        width: 309px;
-        padding: 6px;
-        height: 20px;
-        bottom: 0;
-        z-index: 99999
+    li3 {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-width: 320px;
+        max-width: 320px
     }
+
+    
 
     .consoleunits,
     a {

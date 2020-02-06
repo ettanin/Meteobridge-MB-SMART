@@ -74,6 +74,12 @@ body {
     backface-visibility: hidden
 }
 
+.weather34-tablet{
+    border:5px solid #3d464d;
+    border-bottom:50px solid #3d464d;    
+    padding:0;  
+}
+
 .fade-in {
     -webkit-animation-name: fadein;
     -moz-animation-name: fadein;
@@ -120,10 +126,10 @@ li {
     align-items: center;
     display: flex;
     justify-content: center;
-    min-width: 320px;
-    max-width: 420px;
+    min-width: 315px;
+    max-width: 315px;
     padding: 0;
-    height: 180px;
+    height: 170px;
     border: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -148,16 +154,16 @@ li2 {
     align-items: center;
     display: flex;
     justify-content: center;
-    min-width: 300px;
-    max-width: 420px;
-    padding: 5px;
+     min-width: 315px;
+    max-width: 315px;
+    padding: 0;
     height: 75px;
     border: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 auto;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom:-15px;
     color: var(--silver);
     background: #fff;
     box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
@@ -2691,7 +2697,7 @@ a {
     position:absolute;   
     margin-left:85px;
     float:left;     
-    margin-top: -15px;
+    margin-top: -13px;
 }
 
 .designedby {
@@ -2984,33 +2990,29 @@ blue1 {
 }
 
 .nav-top {
-    margin: 0 auto;    
-    max-width:1024px;
+    margin: 0 auto;
+    max-width: 1024px;
     background: #3d464d;
     padding: 6px 0 0 0;
-    height: 20px;
-    -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
-    box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);   
-    line-height:2;
+    height: 20px;   
+    line-height: 2;
     position: relative;
     bottom: 0;
-    margin-top: 0px;
-    margin-bottom:0;    
+    margin-top: -5px;
+    margin-bottom: 0;
 }
 
-.nav-bottom,.nav {
-    margin: 0 auto;    
-    max-width:1024px;
-    background: #3d464d;
-    padding: 4px ;
-    height: 20px;
-    -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
-    box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
+.nav-bottom,
+.nav {
+    position:absolute;
+    margin: 0 auto;
+    max-width: 1024px;
+    background:0;
+    padding: 2px;    
     position: relative;
-    bottom: 0;  
-    margin-top:0px
+    bottom: 0;
+    bottom: -40px
 }
-
 vspan {
     vertical-align: middle;
     padding-top: 0;
@@ -4547,10 +4549,10 @@ smallrainunit2b {
         align-items: center;
         display: flex;
         justify-content: center;
-        min-width: 320px;
-        max-width: 420px;
+        min-width: 315px;
+        max-width: 315px;
         padding: 0;
-        height: 180px;
+        height: 170px;
         border: 0;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -4565,13 +4567,12 @@ smallrainunit2b {
         -moz-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
         -ms-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
         -o-box-shadow: 0 2px 2px rgba(104, 132, 157, .5), 0 -2px 2px var(--white);
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-        -webkit-border-radius: 10px
-    }
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
 
     .designedby,
     li2 {
@@ -4586,8 +4587,8 @@ smallrainunit2b {
         align-items: center;
         display: flex;
         justify-content: center;
-        min-width: 320px;
-        max-width: 320px
+        min-width: 315px;
+        max-width: 315px
     }
 
     .homeweathercompass2>.homeweathercompass-line2 {
@@ -4698,7 +4699,7 @@ smallrainunit2b {
         display: none
     }
 
-    .nav {
+   .nav {
         margin: 0 auto;
         width: 308px;
         -webkit-box-shadow: 0 1px 1px hsla(0, 0%, 0%, .25), 0 2px 2px hsla(0, 0%, 0%, .2), 0 4px 4px hsla(0, 0%, 0%, .15);
@@ -4708,6 +4709,25 @@ smallrainunit2b {
         bottom: 0;
         z-index: 99999
     }
+
+    .nav,.nav-bottom {
+        margin: 0 auto;
+        width: 320px;       
+        padding: 3px;
+        height: 20px;
+        bottom: 0;
+        z-index: 99999;
+        background: #3d464d;
+        margin-top:10px;
+        margin-left:-8px
+    }
+    .nav-top{top:0px;
+        padding-top:10px}
+
+
+    .weather34-tablet{       
+        border:0;
+     }
 
     vspan,
     vspan2,

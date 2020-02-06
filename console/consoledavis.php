@@ -36,17 +36,14 @@ include_once('livedata.php');include_once('updater2.php');
 </head>
 <body>
 <!-- weather34 NANOSD console flex layout -->
+<div class="weather34-tablet">
 <div class="fade-in">
 <div class="container">
-<div class="nav-top">   
-
+<div class="nav-top"> 
 <div class="weather34-indoor">
-
 <?php echo $timeicon?> <div id="weather34clock4"></div>
 <div class="desktoplinkicon"><a href="../index.php" alt="desktop version" title="desktop version"><?php echo $desktop?></a>
-
-</div>
-</div>
+</div></div>
 
 
 <div class="desktoplink3"><?php echo $headerlocation?> <?php echo $stationName?></div>
@@ -95,10 +92,7 @@ include_once('livedata.php');include_once('updater2.php');
     <div class="weather34-toggleblue">
     <div class="circleblob"></div> 
    <div class="tog red">&deg;C UK</div></div></a>';  
-    echo '<a  href="?units=scandinavia" alt="m/s wind" title="m/s wind"> 
-    <div class="weather34-toggleyellow">
-    <div class="circleblob"></div> 
-   <div class="tog red">&deg;C ms</div></div></a>';
+    
   }
   if ($units=='uk'){echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
     <div class="weather34-togglegreen">
@@ -108,10 +102,7 @@ include_once('livedata.php');include_once('updater2.php');
     <div class="weather34-toggleblue">
     <div class="circleblob"></div> 
    <div class="tog red">&deg;C km/h</div></div></a>';
-    echo '<a  href="?units=scandinavia" alt="m/s wind" title="m/s wind"> 
-    <div class="weather34-toggleyellow">
-    <div class="circleblob"></div> 
-   <div class="tog red">&deg;C ms</div></div></a>';
+   
   }  
   if ($units=='metric'){
     echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
@@ -122,10 +113,7 @@ include_once('livedata.php');include_once('updater2.php');
     <div class="weather34-toggleblue">
     <div class="circleblob"></div> 
    <div class="tog red">&deg;C UK</div></div></a>';   
-    echo '<a  href="?units=scandinavia" alt="m/s wind" title="m/s wind"> 
-    <div class="weather34-toggleyellow">
-    <div class="circleblob"></div> 
-   <div class="tog red">&deg;C ms</div></div></a>';
+    
   }  
 
   if ($units=='scandinavia'){
