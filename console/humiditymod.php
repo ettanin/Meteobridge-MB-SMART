@@ -12,17 +12,14 @@ else if($weather['humidity']<70){echo '<div class=outside11-15>'.number_format($
 else if($weather['humidity']<=100){echo '<div class=outsidezero>'.number_format($weather['humidity'],0).'<smallhumidityunit>%</smallhumidityunit>';}
 ?>
 </div>
-<?php //dewpoint man
+<?php //humidity man
 echo "<tempman>";
-//c
-if($weather['humidity']<30){ echo "<red>".$tempman."</red>";}
-else if($weather['humidity']<50){ echo "<green>".$tempman."</green>";}
-else if($weather['humidity']<70){ echo "<yellow>".$tempman."</yellow>";}
-else if($weather['humidity']<100){ echo "<blue>".$tempman."</blue>";}
+if($weather['humidity']<30){ echo "<icon-26-30>".$tempman."</icon-26-30>";}
+else if($weather['humidity']<50){ echo "<icon-6-10>".$tempman."</icon-6-10>";}
+else if($weather['humidity']<70){ echo "<icon-11-15>".$tempman."</icon-11-15>";}
+else if($weather['humidity']<100){ echo "<icon-zero>".$tempman."</icon-zero>";}
 echo "</tempman>";
- ?>
-</div></div>
-
+ ?></div></div>
 
 <div class="heatcircle"><div class="heatcircle-content">
 <?php //humidity max year
