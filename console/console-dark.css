@@ -129,7 +129,8 @@ container {
     margin: 0 auto;
     text-align: center;
     align-items: center;
-    justify-items: center
+    justify-items: center;
+    width: 100%;
 }
 
 ul {
