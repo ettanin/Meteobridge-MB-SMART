@@ -70,35 +70,29 @@
   </ul>
     <div class="nav">
     <a href="consoledavis.php" alt="previous page" title="previous page"><?php echo $backhome?></a>
-    <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
-      <?php
-        if ($theme == 'dark') {echo '<div class="weather34-toggle">
-          <div class="circleblob"></div> 
-          <div class="tog red">Light</div>
-         </div>';} 
-        else {echo '<div class="weather34-toggle">
-          <div class="circleblob"></div> 
-         <div class="tog red">Dark</div>
-         </div>';}?></a>
 
-<a href="consolecharts-month.php" alt="<?php echo date('F');?> Charts" title="<?php echo date('F');?> Charts">
-        <div class="weather34-togglechartdate">
-        <div class="circleblob"></div> 
-       <div class="tog red"><?php echo strftime("%B",time()); ?></div>
-       </div></a>
+    <a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
+    <?php
+        if ($theme == 'dark') {
+          echo '<div class="weather34-sphere-dark"></div>
+          <bottom-bar-text>Light</bottom-bar-text>';} 
+        else {
+          echo '<div class="weather34-sphere-dark"></div>
+          <bottom-bar-text>Dark</bottom-bar-text>';}?></a>
 
-       <a href="consolecharts-year.php" alt="<?php echo date('Y');?> Charts" title="<?php echo date('Y');?> Charts">
-        <div class="weather34-toggleyellow">
-        <div class="circleblob"></div> 
-       <div class="tog red"><?php echo date('Y');?></div>
-       </div></a>
+<a href="consolecharts-month.php" alt="<?php echo date('M');?> Charts" title="<?php echo date('M');?> Charts">
+       <div class="weather34-sphere-orange"></div>
+          <bottom-bar-text><?php echo date('F');?></bottom-bar-text></a>
+
+          <a href="consolecharts-year.php" alt="<?php echo date('Y');?> Charts" title="<?php echo date('Y');?> Charts">
+       <div class="weather34-sphere-blue"></div>
+          <bottom-bar-text><?php echo date('Y');?></bottom-bar-text></a>
+
 
        <?php if ($display2019=='yes'){echo '
         <a href="consolecharts-2019.php">
-        <div class="weather34-toggleorange">
-        <div class="circleblob"></div> 
-       <div class="tog red">2019</div>
-       </div></a>';}
+        <div class="weather34-sphere-yellow"></div>
+          <bottom-bar-text>2019</bottom-bar-text></a>';}
        ?>
        
        <chartpage><?php echo $lang['Updated'] ?> <?php 
