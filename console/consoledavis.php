@@ -69,111 +69,74 @@ include_once('livedata.php');include_once('updater2.php');
 
  
   <div class="nav-bottom">
-    <a href="console-setup.php" target="_blank"  alt="Setup Screen" title="Setup Screen"> <?php echo $settingsicon ?></a>
-    <a class="consoleunits" href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
-      <?php
-        if ($theme == 'dark') {echo '<div class="weather34-toggle">
-          <div class="circleblob"></div> 
-        
-         <div class="tog red">Light</div>
-         </div>';} 
-        else {echo '<div class="weather34-toggle">
-          <div class="circleblob"></div> 
-         <div class="tog red">Dark</div>
-         </div>';}?></a>
+  <a href="console/console-setup.php" target="_blank" alt="Setup Screen" title="Setup Screen"> <?php echo $settingsicon ?></a>
+
+<a href=<?php if ($theme == 'dark') { echo '?theme=light';} else {echo '?theme=dark';} ?>>
+  <?php
+    if ($theme == 'dark') {echo '<div class="weather34-sphere-dark"></div><bottom-bar-text>Light</bottom-bar-text>
+     ';} 
+    else {echo '<div class="weather34-sphere-dark"></div><bottom-bar-text>Dark</bottom-bar-text>
+     ';}?></a>
+     
 
 <?php 
   if ($units=='us') {     
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-    <div class="weather34-toggleblue">
-    <div class="circleblob"></div> 
-   <div class="tog red">&deg;C km/h</div></div></a>';  
-    echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
-    <div class="weather34-toggleblue">
-    <div class="circleblob"></div> 
-   <div class="tog red">&deg;C UK</div></div></a>';  
+     <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';  
+
+    echo '<a href="?units=scandinavia" alt="MS Units" title="MS Units"> 
+   <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C ms</bottom-bar-text></a>';  
     
   }
-  if ($units=='uk'){echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
-    <div class="weather34-togglegreen">
-      <div class="circleblob"></div> 
-     <div class="tog red">&deg;F mph</div></div></a>';      
+  if ($units=='uk'){
+    echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
+    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
+
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-    <div class="weather34-toggleblue">
-    <div class="circleblob"></div> 
-   <div class="tog red">&deg;C km/h</div></div></a>';
+    <div class="weather34-sphere-blue"></div><bottom-bar-text>C km/h</bottom-bar-text></a>';  
    
   }  
   if ($units=='metric'){
     echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
-    <div class="weather34-togglegreen">
-      <div class="circleblob"></div> 
-     <div class="tog red">&deg;F mph</div></div></a>';   
+    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
+
      echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
-    <div class="weather34-toggleblue">
-    <div class="circleblob"></div> 
-   <div class="tog red">&deg;C UK</div></div></a>';   
+     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C mph</bottom-bar-text></a>';  
     
   }  
 
   if ($units=='scandinavia'){
     echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
-    <div class="weather34-togglegreen">
-      <div class="circleblob"></div> 
-     <div class="tog red">&deg;F mph</div></div></a>';  
+    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
+
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-    <div class="weather34-toggleblue">
-    <div class="circleblob"></div> 
-   <div class="tog red">&deg;C km/h</div></div></a>';   
-     echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
-    <div class="weather34-toggleblue">
-    <div class="circleblob"></div> 
-   <div class="tog red">&deg;C UK</div></div></a>';       
+     <div class="weather34-sphere-blue"></div><bottom-bar-text>C km/h</bottom-bar-text></a>';     
+      
   }  
   else if ($units==''){   
     echo '<a  href="?units=us" alt="Imperial Units" title="Imperial Units">
-    <div class="weather34-togglegreen">
-      <div class="circleblob"></div> 
-     <div class="tog red">&deg;F mph</div></div></a>';    
-    echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-   <div class="weather34-toggleblue">
-   <div class="circleblob"></div> 
-  <div class="tog red">&deg;C km/h</div></div></a>';  
-   echo '<a href="?units=uk" alt="UK Units" title="UK Units"> 
-   <div class="weather34-toggleblue">
-   <div class="circleblob"></div> 
-  <div class="tog red">&deg;C UK</div></div></a>';  
-   echo '<a  href="?units=scandinavia" alt="m/s wind" title="m/s wind"> 
-   <div class="weather34-toggleyellow">
-   <div class="circleblob"></div> 
-  <div class="tog red">&deg;C ms</div></div></a>';
-  }
+    <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
+    
+     echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
+     <div class="weather34-sphere-blue"></div><bottom-bar-text>C km/h</bottom-bar-text></a>';  
+   
+   }
 ?>
 
 <a href="consolecharts.php" alt="Daily Charts" title="Daily Charts">
-        <div class="weather34-toggleyellow">
-        <div class="circleblob"></div> 
-        <div class="tog red">Charts</div>
-       </div></a>
+<div class="weather34-sphere-yellow"></div><bottom-bar-text>Charts</bottom-bar-text></a>
 
 
 <a href="outlookwu.php" data-lity alt="5 day Forecast" title="5 day Forecast">
-        <div class="weather34-toggledf">
-        <div class="circleblob"></div> 
-        <div class="tog red">Forecast</div>
-       </div></a>
+<div class="weather34-sphere-orangefore"></div>
+  <bottom-bar-textfore>Forecast</bottom-bar-textfore></a>
 
   <a href="outlookwutext.php" data-lity alt="Summary Forecast" title="Summary Forecast">
-        <div class="weather34-toggledsummary">
-        <div class="circleblob"></div> 
-        <div class="tog red">Summary</div>
-       </div></a>
+  <div class="weather34-sphere-red"></div>
+  <bottom-bar-textfore>Summary</bottom-bar-textfore></a>
 
-
-       <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">
-      <div class="weather34-toggled">
-        <div class="circleblob"></div> 
-       <div class="tog red">&copy;weather34</div></div>
-       <div class="logofooter"><img src="Wxsoft34-appsmall.png" width="25px"height="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
+  <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">      
+       <div class="logofooter">
+        <img src="Wxsoft34-appsmall.png" width="25px"height="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
        </a></div> 
  </body></html>

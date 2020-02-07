@@ -2659,13 +2659,13 @@ a {
 }
 
 .desktoplink {
-    color: var(--white);
+    color: var(--silver);
     font-size: 10px;
     font-family: headingtext;
     text-decoration: none;
-    margin-right: 40px;
+    margin-right: 100px;
     float: right;
-    margin-top: 0
+    margin-top: 17px
 }
 
 .desktoplink3 {
@@ -4531,6 +4531,61 @@ smallrainunit2b {
     display: none
 }
 
+.weather34-sphere-orange,.weather34-sphere-blue,.weather34-sphere-yellow,.weather34-sphere-red,.weather34-sphere-green,.weather34-sphere-orangefore {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;        
+    font-size: 100%;
+    position: relative;    
+    display: inline-block;
+    margin: 2px;
+  }
+
+  .weather34-sphere-orange {    
+    background:var(--orange);   
+  }
+
+  .weather34-sphere-orangefore {    
+    background:var(--orange);   
+  }
+
+  .weather34-sphere-blue {    
+    background:var(--blue);   
+  }
+
+  .weather34-sphere-red {    
+    background:var(--red);   
+  }
+
+  .weather34-sphere-yellow {   
+    background:var(--yellow);   
+  }
+
+  .weather34-sphere-green{    
+    background:var(--green);   
+  }
+
+  .weather34-sphere-dark {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;        
+    font-size: 100%;
+    position: relative;
+    background: #a2a6a8;    
+    display: inline-block;
+    margin: 2px;
+   
+  }  
+
+  bottom-bar-text,bottom-bar-textfore {
+    position:relative;
+    font-size:11px;
+    vertical-align:middle;
+    margin-left:1px;
+    color: var(--white);
+    top:-5px;
+    }
+
 @media screen and (max-width:960px) {
     chartpage ,.weather34-toggledf ,.weather34-toggledsummary{
         display: none
@@ -4616,7 +4671,7 @@ smallrainunit2b {
 }
 
 @media screen and (max-width:640px) {
-    chartpage ,.desktoplinkicon,.desktoplink3{
+    chartpage ,.desktoplinkicon,.desktoplink3,.weather34-sphere-orangefore,.weather34-sphere-red,bottom-bar-textfore {
         display: none
     }
     .weather34-togglechartdate,.weather34-toggleyellow{font-size:.55rem}

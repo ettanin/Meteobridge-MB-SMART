@@ -90,15 +90,12 @@
        </div></a>';}
        ?>
 
-       <chartpage><?php echo $lang['Updated'] ?> <green><?php 
+       <chartpage><?php echo $lang['Updated'] ?> <?php 
        $dayfile=date('Y');$forecastime=filemtime('../weather34charts/'.$dayfile.'.csv');echo strftime("%A %d %B %Y %l:%M %p",$forecastime);?>     
-      </green></chartpage>
+      </chartpage>
 
-      <a class="desktoplink" href="#" alt="weather34 designed" title="weather34 designed">
-      <div class="weather34-toggled">
-        <div class="circleblob"></div> 
-       <div class="tog red">&copy;weather34</div></div>
-       <div class="logofooter"><img src="Wxsoft34-appsmall.png" width="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
-       </div> </a>
-     
+      <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">      
+       <div class="logofooter">
+        <img src="Wxsoft34-appsmall.png" width="25px"height="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
+       </a></div> 
  </body></html>
