@@ -93,7 +93,7 @@ include_once('livedata.php');include_once('updater2.php');
     <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
 
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-    <div class="weather34-sphere-blue"></div><bottom-bar-text>C km/h</bottom-bar-text></a>';  
+    <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';  
    
   }  
   if ($units=='metric'){
@@ -110,7 +110,7 @@ include_once('livedata.php');include_once('updater2.php');
     <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
 
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-     <div class="weather34-sphere-blue"></div><bottom-bar-text>C km/h</bottom-bar-text></a>';     
+     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';     
       
   }  
   else if ($units==''){   
@@ -118,7 +118,7 @@ include_once('livedata.php');include_once('updater2.php');
     <div class="weather34-sphere-orange"></div><bottom-bar-text>&deg;F mph</bottom-bar-text></a>';  
     
      echo '<a  href="?units=metric" alt="Metric Units" title="Metric Units">
-     <div class="weather34-sphere-blue"></div><bottom-bar-text>C km/h</bottom-bar-text></a>';  
+     <div class="weather34-sphere-blue"></div><bottom-bar-text>&deg;C km/h</bottom-bar-text></a>';  
    
    }
 ?>
