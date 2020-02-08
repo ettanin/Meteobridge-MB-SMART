@@ -2646,6 +2646,12 @@ a {
     margin-top: -13px;
 }
 
+.weather34-refreshicon {  
+    position:absolute;    
+    right: 50px;    
+    margin-top:-23px
+}
+
 .designedby {
     color: var(--silver);
     font-size: 10px;
@@ -4673,6 +4679,21 @@ smallrainunit2b {
         z-index: 99999
     }
 
+    .nav-bottom,
+    .nav {
+        position: absolute;
+        margin: 0 auto;
+        max-width: 1024px;
+        background: 0;
+        padding: 2px;
+        position: relative;
+        bottom: -40px;
+    }
+
+    .desktoplink {
+        margin-top: 15px
+    }
+
 
 
     .clock {
@@ -4687,13 +4708,17 @@ smallrainunit2b {
     .text2 {
         margin-left: 40px
     }
+
+    .weather34-refreshicon{
+        margin-top: -25px;   }
+
 }
 
 @media screen and (max-width:640px) {
 
     chartpage,
     .desktoplinkicon,
-    .desktoplink3,.weather34-sphere-orangefore,.weather34-sphere-red,bottom-bar-textfore {
+    .desktoplink3,.weather34-sphere-orangefore,.weather34-sphere-red,.weather34-refreshicon,bottom-bar-textfore {
         display: none
     }
 

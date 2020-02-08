@@ -135,6 +135,10 @@ include_once('livedata.php');include_once('updater2.php');
   <div class="weather34-sphere-red"></div>
   <bottom-bar-textfore>Summary</bottom-bar-textfore></a>
 
+  <div class="weather34-refreshicon">
+<a href="index.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
+<?php echo $weather34refreshicon?></a></div>
+
   <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">      
        <div class="logofooter">
         <img src="Wxsoft34-appsmall.png" width="25px"height="25px" alt="weather34 &copy;2015-<?php echo date('Y')?>" title="weather34 &copy;2015-<?php echo date('Y')?>"></div></div>
