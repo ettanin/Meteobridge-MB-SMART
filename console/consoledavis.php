@@ -32,12 +32,10 @@ include_once('livedata.php');include_once('updater2.php');
 <link rel="preload" href="fonts/verbatim-regular.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="fonts/verbatim-medium.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="fonts/HelveticaNeue-Medium.woff" as="font" type="font/woff" crossorigin>
-<script>function pageLoaded() {document.querySelector("body").style.opacity = 1;}window.onload = pageLoaded;</script>
 </head>
 <body>
 <!-- weather34 NANOSD console flex layout -->
 <div class="weather34-tablet">
-<div class="fade-in">
 <div class="container">
 <div class="nav-top"> 
 <div class="weather34-indoor">
@@ -136,7 +134,7 @@ include_once('livedata.php');include_once('updater2.php');
   <bottom-bar-textfore>Summary</bottom-bar-textfore></a>
 
   <div class="weather34-refreshicon">
-<a href="index.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
+<a href="consoledavis.php" alt="refresh this dashboard " title="weather34 refresh this dashboard ">
 <?php echo $weather34refreshicon?></a></div>
 
   <a class="desktoplink" href="info.html" data-lity alt="weather34 info console " title="info console">      
