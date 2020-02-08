@@ -16,7 +16,7 @@ var day = day[fullDate.getDay()];
 //month weather34
 var month = new Array();
 month[0] = "<?php echo $lang['January']?>";
-month[1] = "<?php echo $lang['February']?>";
+month[1] = "<?php echo $lang['Febuary']?>";
 month[2] = "<?php echo $lang['March']?>";
 month[3] = "<?php echo $lang['April']?>";
 month[4] = "<?php echo $lang['May']?>";

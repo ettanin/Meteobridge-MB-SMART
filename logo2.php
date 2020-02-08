@@ -17,7 +17,7 @@ var day = day[fullDate.getDay()];
 //month weather34
 var month = new Array();
 month[0] = "January";
-month[1] = "February";
+month[1] = "Febuary";
 month[2] = "March";
 month[3] = "April";
 month[4] = "May";
